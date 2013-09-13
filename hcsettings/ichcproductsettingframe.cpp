@@ -61,6 +61,16 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
     if(ICVirtualHost::GlobalVirtualHost()->FixtureDefine() == 1)
         ui->positiveCheckBox->click();
 
+
+    if(ICVirtualHost::GlobalVirtualHost()->StandbyPos() == 0)
+    {
+        ui->posInside->click();
+    }
+    else if(ICVirtualHost::GlobalVirtualHost()->StandbyPos() == 1)
+    {
+        ui->posOutside->click();
+    }
+
     connect(ICMold::CurrentMold(),
             SIGNAL(MoldNumberParamChanged()),
             this,
@@ -177,6 +187,8 @@ void ICHCProductSettingFrame::InitCheckBox()
 {
     buttongroup_->addButton(ui->reversedCheckBox,0);
     buttongroup_->addButton(ui->positiveCheckBox,1);
+    ui->posGroup->setId(ui->posInside, 0);
+    ui->posGroup->setId(ui->posOutside, 1);
 
     QList<QAbstractButton*> buttons = buttongroup_->buttons();
     for(int i = 0; i != buttons.size(); ++i)
@@ -187,6 +199,10 @@ void ICHCProductSettingFrame::InitCheckBox()
                 this,
                 SLOT(FixtureBoxChange()));
     }
+    connect(ui->posGroup,
+            SIGNAL(buttonClicked(int)),
+            this,
+            SLOT(StandbyPosChanged(int)));
     buttongroup_->setExclusive(true);
 }
 
@@ -194,3 +210,11 @@ void ICHCProductSettingFrame::on_countUnitBox_currentIndexChanged(int index)
 {
     ICMold::CurrentMold()->SetMoldParam(ICMold::CountUnit, index);
 }
+
+
+void ICHCProductSettingFrame::StandbyPosChanged(int id)
+{
+    ICVirtualHost::GlobalVirtualHost()->SetStandbyPos(id);
+}
+
+

@@ -9,7 +9,7 @@ ICMachineFigure::ICMachineFigure(QWidget *parent) :
     ui(new Ui::ICMachineFigure)
 {
     ui->setupUi(this);
-    ui->figure->resize(this->size());
+//    ui->figure->resize(this->size());
 
     QIntValidator * validator = new QIntValidator(0, 65530, this);
     ui->xsec1->setValidator(validator);
@@ -21,6 +21,17 @@ ICMachineFigure::ICMachineFigure(QWidget *parent) :
     ui->xsec2->SetDecimalPlaces(1);
     ui->xsec3->SetDecimalPlaces(1);
     ui->xsec4->SetDecimalPlaces(1);
+
+
+    ui->zsec1->setValidator(validator);
+    ui->zsec2->setValidator(validator);
+//    ui->zsec3->setValidator(validator);
+//    ui->zsec4->setValidator(validator);
+
+    ui->zsec1->SetDecimalPlaces(1);
+    ui->zsec2->SetDecimalPlaces(1);
+//    ui->zsec3->SetDecimalPlaces(1);
+//    ui->zsec4->SetDecimalPlaces(1);
 
     ICLineEditWrapper* wrapper = new ICLineEditWrapper(ui->xsec1,
                                                        ICVirtualHost::SM_X_SEC1,
@@ -42,6 +53,27 @@ ICMachineFigure::ICMachineFigure(QWidget *parent) :
                                     ICLineEditWrapper::System,
                                     ICLineEditWrapper::OneFraction);
     wrappers_.append(wrapper);
+
+    wrapper = new ICLineEditWrapper(ui->zsec1,
+                                    ICVirtualHost::SM_Z_SEC1,
+                                    ICLineEditWrapper::System,
+                                    ICLineEditWrapper::OneFraction);
+    wrappers_.append(wrapper);
+    wrapper = new ICLineEditWrapper(ui->zsec2,
+                                    ICVirtualHost::SM_Z_SEC2,
+                                    ICLineEditWrapper::System,
+                                    ICLineEditWrapper::OneFraction);
+    wrappers_.append(wrapper);
+//    wrapper = new ICLineEditWrapper(ui->zsec3,
+//                                    ICVirtualHost::SM_Z_SEC3,
+//                                    ICLineEditWrapper::System,
+//                                    ICLineEditWrapper::OneFraction);
+//    wrappers_.append(wrapper);
+//    wrapper = new ICLineEditWrapper(ui->zsec4,
+//                                    ICVirtualHost::SM_Z_SEC4,
+//                                    ICLineEditWrapper::System,
+//                                    ICLineEditWrapper::OneFraction);
+//    wrappers_.append(wrapper);
 }
 
 ICMachineFigure::~ICMachineFigure()

@@ -2467,13 +2467,13 @@ Reason</source>
     <name>ICHCProductSettingFrame</name>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="14"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="138"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="148"/>
         <source>Frame</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="138"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="139"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="149"/>
         <source>Product</source>
         <translation>产品数</translation>
     </message>
@@ -2483,31 +2483,31 @@ Reason</source>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="128"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="144"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="154"/>
         <source>Sampling Interval</source>
         <translation>取样间隔</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="29"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="145"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="155"/>
         <source>Bad Product</source>
         <translation>不良品数</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="46"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="148"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="158"/>
         <source>Fixture</source>
         <translation>治具定义</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="101"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="143"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="153"/>
         <source>TryProduct</source>
         <translation>试产模数</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="219"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="151"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="161"/>
         <source>Reversed Phase</source>
         <translation>反相</translation>
     </message>
@@ -2548,14 +2548,29 @@ Reason</source>
         <translation>计数选择</translation>
     </message>
     <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="284"/>
+        <source>Standby Pos</source>
+        <translation>待机位置</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="318"/>
+        <source>Inside</source>
+        <translation>型内</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="362"/>
+        <source>Outside</source>
+        <translation>型外</translation>
+    </message>
+    <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="175"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="152"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="162"/>
         <source>Positive Phase</source>
         <translation>正相</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="108"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="140"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="150"/>
         <source>Wait Mold Opened Limit Time</source>
         <translation>等待开模时间</translation>
     </message>
@@ -2573,25 +2588,25 @@ Reason</source>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="56"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="141"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="151"/>
         <source>s</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="115"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="146"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="156"/>
         <source>Alarm Times</source>
         <translation>报警时间</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="36"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="147"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="157"/>
         <source>Times</source>
         <translation>s</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="88"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="142"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="152"/>
         <source>Product Clear</source>
         <translation>产品清零</translation>
     </message>
@@ -4507,10 +4522,50 @@ Please enter an digit between </source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinefigure.ui" line="123"/>
-        <location filename="hcsettings/icmachinefigure.ui" line="142"/>
+        <location filename="hcsettings/icmachinefigure.ui" line="38"/>
+        <source>Z Oil Pos Max</source>
+        <translation>油缸最大位置</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachinefigure.ui" line="55"/>
+        <source>X Up Inside Max</source>
+        <translation>X轴型内上升位置可移动最大位置</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachinefigure.ui" line="82"/>
+        <source>X Up Outside Max</source>
+        <translation>X轴型外上升位置可移动最大位置</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachinefigure.ui" line="99"/>
+        <source>X Down Inside Max</source>
+        <translation>X轴型内下降位置可移动最大位置</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachinefigure.ui" line="112"/>
+        <location filename="hcsettings/icmachinefigure.ui" line="152"/>
         <source>TextLabel</source>
         <translation></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachinefigure.ui" line="132"/>
+        <source>X Down Inside Min</source>
+        <translation>X轴型内下降位置可移动最小位置</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachinefigure.ui" line="139"/>
+        <source>X Up Outside Min</source>
+        <translation>X轴型外上升位置可移动最小位置</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachinefigure.ui" line="172"/>
+        <source>X Up Inside Min</source>
+        <translation>X轴型内上升位置可移动最小位置</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachinefigure.ui" line="179"/>
+        <source>Z Oil Pos Min</source>
+        <translation>油缸最小位置</translation>
     </message>
     <message>
         <source>Save</source>

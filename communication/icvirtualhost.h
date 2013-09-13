@@ -569,8 +569,10 @@ public:
     void SetMidMoldCheck(bool isCheck);
     bool IsEjectionLink() const { return (SystemParameter(SYS_Function).toInt() & 0x000000C0) != 0;}
     void SetEjectionLink(bool permit);
-    bool IsAlarmWhenOrigin() const { return (SystemParameter(SYS_Function).toInt() & 0x00000300) != 0;}
+    bool IsAlarmWhenOrigin() const { return (SystemParameter(SYS_Function).toInt() & 0x00000100) != 0;}
     void SetAlarmWhenOrigin(bool isAlarm);
+    int StandbyPos() const { return (SystemParameter(SYS_Function).toInt() & 0x00000200) >> 9;}
+    void SetStandbyPos(int pos);
     bool IsPositionDetect() const { return (SystemParameter(SYS_Function).toInt() & 0x00000C00) != 0;}
     void SetPositionDetect(bool detect);
     int OriginPosition() const { return (SystemParameter(SYS_Function).toInt() & 0x00003000) >> 12;}
@@ -876,8 +878,17 @@ inline void ICVirtualHost::SetEjectionLink(bool permit)
 inline void ICVirtualHost::SetAlarmWhenOrigin(bool isAlarm)
 {
     int val = SystemParameter(SYS_Function).toInt();
-    val &= 0xFFFFFDFF;
+    val &= 0xFFFFFEFF;
     (isAlarm ? val |= 0x00000100 : val &= 0xFFFFFEFF);
+    systemParamMap_.insert(SYS_Function, val);
+    isParamChanged_ = true;
+}
+
+inline void ICVirtualHost::SetStandbyPos(int pos)
+{
+    int val = SystemParameter(SYS_Function).toInt();
+    val &= 0xFFFFFDFF;
+    (pos ? val |= 0x00000200 : val &= 0xFFFFFDFF);
     systemParamMap_.insert(SYS_Function, val);
     isParamChanged_ = true;
 }

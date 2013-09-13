@@ -28,6 +28,7 @@ private slots:
     void on_productClearButton_clicked();
 
     void FixtureBoxChange();
+    void StandbyPosChanged(int id);
     void retranslateUi_();
 
     void on_countUnitBox_currentIndexChanged(int index);
