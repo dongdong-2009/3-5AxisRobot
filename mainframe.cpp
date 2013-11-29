@@ -688,6 +688,7 @@ void MainFrame::StatusRefreshed()
     }
     else if(runningStatus_ == ICVirtualHost::Stop)
     {
+        actionDialog_->hide();
         speed_ = "0";
         //        statusStr_ = tr("Stop");
 #ifdef Q_WS_X11
