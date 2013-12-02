@@ -95,7 +95,7 @@ void ICHCInstructionPageFrame::showEvent(QShowEvent *e)
         ui->aMinusBtn->show();
         ui->aPlusBtn->show();
     }
-    if(ICParametersSave::Instance()->IsExtentFunctionUsed())
+    if(ICParametersSave::Instance()->IsExtentFunctionUsed() && currentEdit_ == 0)
     {
         ui->flagsButton->show();
         ui->conditionsToolButton->show();
