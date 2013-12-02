@@ -95,6 +95,10 @@ void ICHCInstructionPageFrame::showEvent(QShowEvent *e)
         ui->aMinusBtn->show();
         ui->aPlusBtn->show();
     }
+    if(currentEdit_ == 0)
+    {
+        ui->waitToolButton->show();
+    }
     if(ICParametersSave::Instance()->IsExtentFunctionUsed() && currentEdit_ == 0)
     {
         ui->flagsButton->show();
@@ -734,6 +738,10 @@ void ICHCInstructionPageFrame::on_deleteToolButton_clicked()
 void ICHCInstructionPageFrame::on_commandButton_clicked()
 {
     ui->settingStackedWidget->setCurrentIndex(0);
+    if(currentEdit_ == 0)
+    {
+        ui->waitToolButton->show();
+    }
 }
 
 void ICHCInstructionPageFrame::FindIndex_(int currentIndex, int& groupItemIndex, int &topItemIndex, int &subItemIndex)
@@ -935,17 +943,18 @@ void ICHCInstructionPageFrame::OnProgramChanged(int index, QString name)
 //    ui->moldComboBox->setCurrentIndex(index);
     ui->programLabel->setText(name);
     UpdateHostParam();
-    if(index > 0)
-    {
-        ui->flagsButton->hide();
-        ui->conditionsToolButton->hide();
-        ui->waitToolButton->hide();
-    }
-    else
+
+    if(index == 0 && ICParametersSave::Instance()->IsExtentFunctionUsed())
     {
         ui->flagsButton->show();
         ui->conditionsToolButton->show();
         ui->waitToolButton->show();
+    }
+    else
+    {
+        ui->flagsButton->hide();
+        ui->conditionsToolButton->hide();
+        ui->waitToolButton->hide();
     }
 
 }
