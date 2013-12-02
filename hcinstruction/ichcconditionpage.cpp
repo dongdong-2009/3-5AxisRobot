@@ -48,15 +48,15 @@ QList<ICMoldItem> ICHCConditionPage::CreateCommandImpl() const
     item.SetAction(ICMold::ACTCHECKINPUT);
     item.SetPos(0);
     item.SetIFVal(buttonGroup->checkedId());
-    if(item.IFVal() == 3)
-    {
-        item.SetSVal(7);
-    }
-    else if(item.IFVal() == 4)
-    {
-        item.SetSVal(6);
-    }
-    else if(item.IFVal() == 11)
+//    if(item.IFVal() == 3)
+//    {
+//        item.SetSVal(7);
+//    }
+//    else if(item.IFVal() == 4)
+//    {
+//        item.SetSVal(6);
+//    }
+    if(item.IFVal() == 11)
     {
         item.SetIFPos(ui->moldCountEdit->TransThisTextToThisInt());
         item.SetSVal(ui->subComboBox->currentIndex());
