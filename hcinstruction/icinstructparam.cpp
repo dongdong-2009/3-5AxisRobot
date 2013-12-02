@@ -145,7 +145,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
 //            drs 
             if(moldItem.IFVal() == 0)
             {
-//                commandStr += tr("Defective Products");
+                commandStr += tr("Defective Products");
             }
             else if(moldItem.IFVal() == 1)
             {
@@ -157,11 +157,11 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             }
             else if(moldItem.IFVal() ==3)
             {
-//                commandStr += tr("Try Product");
+                commandStr += tr("Try Product");
             }
             else if(moldItem.IFVal() ==4)
             {
-//                commandStr += tr("Sampling");
+                commandStr += tr("Sampling");
             }
             else if(moldItem.IFVal() == 5)
             {
@@ -193,21 +193,25 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             }
             commandStr += " ";
 //            commandStr += " " + tr("ON:Macro") + QString::number(moldItem.RVal()) + " ";
-            if(moldItem.SVal() == 5)
+//            if(moldItem.SVal() == 5)
+//            {
+//                commandStr += tr("Defective Products") + " ";
+//            }
+//            else if(moldItem.SVal() == 7)
+//            {
+//                commandStr += tr("Try Product") + " ";
+//            }
+//            else if(moldItem.SVal() == 6)
+//            {
+//                commandStr += tr("Sampling") + " ";
+//            }
+            if(moldItem.SVal() == 7)
             {
-                commandStr += tr("Defective Products") + " ";
-            }
-            else if(moldItem.SVal() == 7)
-            {
-                commandStr += tr("Try Product") + " ";
-            }
-            else if(moldItem.SVal() == 6)
-            {
-                commandStr += tr("Sampling") + " ";
+                commandStr += tr("Overalls") + " ";
             }
             else
             {
-                commandStr += tr("Sub-") + QString::number(moldItem.SVal() + 1) + " ";
+               commandStr += tr("Sub-") + QString::number(moldItem.SVal() + 1) + " ";
             }
 
             commandStr += tr("Return Line") + QString::number((int)moldItem.DVal());

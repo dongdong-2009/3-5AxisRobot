@@ -935,6 +935,18 @@ void ICHCInstructionPageFrame::OnProgramChanged(int index, QString name)
 //    ui->moldComboBox->setCurrentIndex(index);
     ui->programLabel->setText(name);
     UpdateHostParam();
+    if(index > 0)
+    {
+        ui->flagsButton->hide();
+        ui->conditionsToolButton->hide();
+        ui->waitToolButton->hide();
+    }
+    else
+    {
+        ui->flagsButton->show();
+        ui->conditionsToolButton->show();
+        ui->waitToolButton->show();
+    }
 
 }
 

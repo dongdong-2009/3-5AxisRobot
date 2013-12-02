@@ -31,16 +31,7 @@
    <property name="spacing">
     <number>2</number>
    </property>
-   <property name="leftMargin">
-    <number>2</number>
-   </property>
-   <property name="topMargin">
-    <number>2</number>
-   </property>
-   <property name="rightMargin">
-    <number>2</number>
-   </property>
-   <property name="bottomMargin">
+   <property name="margin">
     <number>2</number>
    </property>
    <item>
@@ -380,44 +371,6 @@ padding:5px;
            </property>
           </widget>
          </item>
-         <item row="4" column="1">
-          <widget class="QToolButton" name="waitToolButton">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>140</width>
-             <height>48</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>140</width>
-             <height>48</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>Wait</string>
-           </property>
-           <property name="icon">
-            <iconset resource="../resource.qrc">
-             <normaloff>:/resource/wait(32).png</normaloff>:/resource/wait(32).png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>32</width>
-             <height>32</height>
-            </size>
-           </property>
-           <property name="toolButtonStyle">
-            <enum>Qt::ToolButtonTextBesideIcon</enum>
-           </property>
-          </widget>
-         </item>
          <item row="3" column="1">
           <widget class="QToolButton" name="pneumaticButton">
            <property name="sizePolicy">
@@ -608,7 +561,45 @@ padding:5px;
            </property>
           </widget>
          </item>
-         <item row="5" column="0">
+         <item row="5" column="1">
+          <widget class="QToolButton" name="conditionsToolButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>48</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>140</width>
+             <height>48</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Conditions</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../resource.qrc">
+             <normaloff>:/resource/jump(32).png</normaloff>:/resource/jump(32).png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="toolButtonStyle">
+            <enum>Qt::ToolButtonTextBesideIcon</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
           <widget class="QToolButton" name="otherButton">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -646,8 +637,8 @@ padding:5px;
            </property>
           </widget>
          </item>
-         <item row="5" column="1">
-          <widget class="QToolButton" name="conditionsToolButton">
+         <item row="5" column="0">
+          <widget class="QToolButton" name="waitToolButton">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
              <horstretch>0</horstretch>
@@ -667,11 +658,11 @@ padding:5px;
             </size>
            </property>
            <property name="text">
-            <string>Conditions</string>
+            <string>Wait</string>
            </property>
            <property name="icon">
             <iconset resource="../resource.qrc">
-             <normaloff>:/resource/jump(32).png</normaloff>:/resource/jump(32).png</iconset>
+             <normaloff>:/resource/wait(32).png</normaloff>:/resource/wait(32).png</iconset>
            </property>
            <property name="iconSize">
             <size>

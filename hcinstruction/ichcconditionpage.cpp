@@ -10,8 +10,8 @@ ICHCConditionPage::ICHCConditionPage(QWidget *parent) :
     ui->setupUi(this);
     ui->returnLineEdit->setValidator(new QIntValidator(-32767, 32767, this));
     buttonGroup = new QButtonGroup ;
-    ui->subComboBox->setCurrentIndex(5);
-    ui->subComboBox->setEnabled(false);
+//    ui->subComboBox->setCurrentIndex(5);
+//    ui->subComboBox->setEnabled(false);
     ui->returnLineEdit->setText("1");
     InitCheckPointBox();
     ui->moldCountEdit->setEnabled(false);
@@ -89,36 +89,36 @@ void ICHCConditionPage::InitCheckPointBox()
     for(int i = 0; i != buttons.size(); ++i)
     {
         buttons[i]->setCheckable(true);
-        connect(buttons[i],
-                SIGNAL(clicked()),
-                this,
-                SLOT(BoxClicked()));
+//        connect(buttons[i],
+//                SIGNAL(clicked()),
+//                this,
+//                SLOT(BoxClicked()));
     }
     buttonGroup->setExclusive(true);
 }
 
 void ICHCConditionPage::BoxClicked()
 {
-    int temp = buttonGroup->checkedId();
-    switch(temp)
-    {
-    case 0:
-        ui->subComboBox->setCurrentIndex(5);
-        ui->subComboBox->setEnabled(false);
-        break;
-    case 3:
-        ui->subComboBox->setCurrentIndex(6);
-        ui->subComboBox->setEnabled(false);
-        break;
-    case 4:
-        ui->subComboBox->setCurrentIndex(7);
-        ui->subComboBox->setEnabled(false);
-        break;
-    default:
-        ui->subComboBox->setCurrentIndex(0);
-        ui->subComboBox->setEnabled(true);
-        break;
-    }
+//    int temp = buttonGroup->checkedId();
+//    switch(temp)
+//    {
+//    case 0:
+//        ui->subComboBox->setCurrentIndex(5);
+//        ui->subComboBox->setEnabled(false);
+//        break;
+//    case 3:
+//        ui->subComboBox->setCurrentIndex(6);
+//        ui->subComboBox->setEnabled(false);
+//        break;
+//    case 4:
+//        ui->subComboBox->setCurrentIndex(7);
+//        ui->subComboBox->setEnabled(false);
+//        break;
+//    default:
+//        ui->subComboBox->setCurrentIndex(0);
+//        ui->subComboBox->setEnabled(true);
+//        break;
+//    }
 }
 
 void ICHCConditionPage::on_productCountBox_toggled(bool checked)
