@@ -116,23 +116,23 @@ ICVirtualHost::ICVirtualHost(QObject *parent) :
     {
         qWarning("open watchdog fail!");
     }
-//#ifndef Q_WS_X11
-//#ifdef HC_ARMV6
-//    QTimer::singleShot(REFRESH_TIME, this, SLOT(RefreshStatus()));
-//#else
+    //#ifndef Q_WS_X11
+    //#ifdef HC_ARMV6
+    //    QTimer::singleShot(REFRESH_TIME, this, SLOT(RefreshStatus()));
+    //#else
     timer_->start(15);
-//#endif
-//#endif
+    //#endif
+    //#endif
 
 }
 
 //slots:
 void ICVirtualHost::SetMoldParam(int param, int value)
 {
-//    Q_ASSERT_X(moldParamToAddrPos_.contains(param),
-//               "ICVirtualHost::SetMoldParam();",
-//               (QString::number(param) + " is not a corrent param").toAscii());
-//    ICCommandProcessor::Instance()->ModifyMoldParam(moldParamToAddrPos_.value(param), value);
+    //    Q_ASSERT_X(moldParamToAddrPos_.contains(param),
+    //               "ICVirtualHost::SetMoldParam();",
+    //               (QString::number(param) + " is not a corrent param").toAscii());
+    //    ICCommandProcessor::Instance()->ModifyMoldParam(moldParamToAddrPos_.value(param), value);
     Q_UNUSED(param)
     Q_UNUSED(value)
     isParamChanged_ = true;
@@ -188,7 +188,7 @@ void ICVirtualHost::RefreshStatus()
         if(swKey == -1)
         {
             swKey = keyboard->CurrentSwitchStatus();
-//            qDebug()<<"swKey"<<swKey<<CurrentStatus();
+            //            qDebug()<<"swKey"<<swKey<<CurrentStatus();
             if(StatusToKey(CurrentStatus()) != swKey)
             {
                 switch(swKey)
@@ -210,7 +210,7 @@ void ICVirtualHost::RefreshStatus()
                 default:
                     if(CurrentStatus() != Stop)
                     {
-//                        qDebug("Turn Stop Auto");
+                        //                        qDebug("Turn Stop Auto");
                         ICCommandProcessor::Instance()->ExecuteHCCommand(IC::CMD_TurnStop, 0);
                     }
                 }
@@ -220,7 +220,7 @@ void ICVirtualHost::RefreshStatus()
         {
             keyboardHandler->SwitchChanged(swKey);
         }
-//        keyboardHandler->SwitchChanged(keyboard->TakeSwitchValue());
+        //        keyboardHandler->SwitchChanged(keyboard->TakeSwitchValue());
         keyboardHandler->Keypressed(key);
         keyboardHandler->PulleyChanged(keyboard->TakePulleyValue());
         flag_ = false;
@@ -236,9 +236,9 @@ void ICVirtualHost::RefreshStatus()
             currentStatus_ = 0;
         }
         queryStatusCommand_.SetStartAddr(currentAddr_);
-//        qDebug()<<"Query Time:"<<testTime.restart();
+        //        qDebug()<<"Query Time:"<<testTime.restart();
 
-   //     qApp->processEvents();
+        //     qApp->processEvents();
 
         result = commandProcess->ExecuteCommand(queryStatusCommand_).value<ICCommunicationCommandBase::ResultVector>();
         if(queryStatusCommand_.NeedToReconfig())
@@ -246,9 +246,9 @@ void ICVirtualHost::RefreshStatus()
             qDebug("reconfigure");
             ReConfigure();
             flag_ = true;
-//#ifdef HC_ARMV6
-//            QTimer::singleShot(REFRESH_TIME, this, SLOT(RefreshStatus()));
-//#endif
+            //#ifdef HC_ARMV6
+            //            QTimer::singleShot(REFRESH_TIME, this, SLOT(RefreshStatus()));
+            //#endif
             return;
         }
         if(!result.isEmpty())  //Success,return to status
@@ -281,47 +281,47 @@ void ICVirtualHost::RefreshStatus()
             statusMap_.insert(DbgP1, 100);
             statusMap_.insert(DbgQ1, 110);
             statusMap_.insert(Time, 500);
-//            if(flag)
-//            {
-//                statusMap_.insert(ErrCode, 304);
-//                flag = FALSE;
-//            }
-//            else
-//            {
-//                statusMap_.insert(ErrCode, 0);
-//                flag = TRUE ;
-//            }
+            //            if(flag)
+            //            {
+            //                statusMap_.insert(ErrCode, 304);
+            //                flag = FALSE;
+            //            }
+            //            else
+            //            {
+            //                statusMap_.insert(ErrCode, 0);
+            //                flag = TRUE ;
+            //            }
 
 
 #endif
-//            statusMap_.insert(
-//            statusMap_.insert(Input0, 1025);
-//            statusMap_.insert(YPos, 0);
-//            qDebug()<<"Resend time:"<<testTime.restart();
+            //            statusMap_.insert(
+            //            statusMap_.insert(Input0, 1025);
+            //            statusMap_.insert(YPos, 0);
+            //            qDebug()<<"Resend time:"<<testTime.restart();
             ++tryTimes_;
-//            qCritical()<<"connect to host fail in refresh status"<<tryTimes_;
-//            static int test = 0;
+            //            qCritical()<<"connect to host fail in refresh status"<<tryTimes_;
+            //            static int test = 0;
             if(tryTimes_ == 200)
             {
-//                qCritical("Connect to host fail!!");
+                //                qCritical("Connect to host fail!!");
 #ifdef Q_WS_X11
                 statusMap_.insert(ErrCode, 0);
                 statusMap_.insert(XPos, rand());
-//                statusMap_.insert(DbgP0, (2 << 8));
+                //                statusMap_.insert(DbgP0, (2 << 8));
 #else
                 statusMap_.insert(ErrCode, 500);
 #endif
                 tryTimes_ = 0;
                 statusMap_.insert(Status, ICVirtualHost::Stop);
-//                statusMap_.insert(DbgX0, ICVirtualHost::AutoRunning);
+                //                statusMap_.insert(DbgX0, ICVirtualHost::AutoRunning);
                 emit StatusRefreshed();
-//                emit StepChanged(test++ % 10);
+                //                emit StepChanged(test++ % 10);
             }
-//            flag_ =true;
-//            QTimer::singleShot(5, this, SLOT(RefreshStatus()));
-//#ifdef HC_ARMV6
-//            QTimer::singleShot(REFRESH_TIME, this, SLOT(RefreshStatus()));
-//#endif
+            //            flag_ =true;
+            //            QTimer::singleShot(5, this, SLOT(RefreshStatus()));
+            //#ifdef HC_ARMV6
+            //            QTimer::singleShot(REFRESH_TIME, this, SLOT(RefreshStatus()));
+            //#endif
             return;
         }
         freshCount_ = (freshCount_ + 1) % 2;
@@ -380,9 +380,9 @@ void ICVirtualHost::RefreshStatus()
         }
     }
 
-//#ifdef HC_ARMV6
-//            QTimer::singleShot(REFRESH_TIME, this, SLOT(RefreshStatus()));
-//#endif
+    //#ifdef HC_ARMV6
+    //            QTimer::singleShot(REFRESH_TIME, this, SLOT(RefreshStatus()));
+    //#endif
 }
 
 void ICVirtualHost::SaveSystemConfig()
@@ -409,7 +409,7 @@ void ICVirtualHost::SaveSystemConfig()
     QFile::copy("./sysconfig/system.txt", "./sysconfig/system.txt~");
     file.write(toWrite);
     file.close();
-//    system("rm ./sysconfig/system.txt~");
+    //    system("rm ./sysconfig/system.txt~");
     QFile::remove("./sysconfig/system.txt~");
 }
 
@@ -566,7 +566,7 @@ void ICVirtualHost::InitSystem_()
     {
         tempItemValues.resize(systemParamMap_.size());
     }
-//    tempItemValues.append(0);
+    //    tempItemValues.append(0);
 
     GetAxisParam_("./sysconfig/paramx.txt",
                   SYS_X_Length,
@@ -756,8 +756,8 @@ void ICVirtualHost::InitMold_()
     QString configPath = path;
     configPath.chop(3);
     configPath += "fnc";
-//    Q_ASSERT_X(QFile::exists(path), "ICVirtualHost::InitMold_", "act is not exits");
-//    Q_ASSERT_X(QFile::exists(configPath), "ICVirtualHost::InitMold_", "fnc is not exits");
+    //    Q_ASSERT_X(QFile::exists(path), "ICVirtualHost::InitMold_", "act is not exits");
+    //    Q_ASSERT_X(QFile::exists(configPath), "ICVirtualHost::InitMold_", "fnc is not exits");
     if(!QFile::exists(path) || !QFile::exists(configPath))
     {
         path = "./records/ERRRT.act";
@@ -932,7 +932,7 @@ void ICVirtualHost::InitAddrToSysPosMap_()
     addrToSysPos_.insert(SM_LMTVC, SYS_LMT_vC);
     addrToSysPos_.insert(SM_ARM_CONFIG, SYS_ARM_CONFIG);
     addrToSysPos_.insert(SM_YEarlyEnd, SYS_YEarlyEnd);
-//    addrToSysPos_.insert(SM_ZEarlyEnd, SYS_ZEarlyEnd);
+    //    addrToSysPos_.insert(SM_ZEarlyEnd, SYS_ZEarlyEnd);
     addrToSysPos_.insert(SM_WaitMoldOpenLimit, ACT_WaitMoldOpened);
     addrToSysPos_.insert(SM_TIMEMFOR, ACT_MainForward);
     addrToSysPos_.insert(SM_TIMEMBACK, ACT_MainBackward);
@@ -985,7 +985,7 @@ void ICVirtualHost::InitAddrToSysPosMap_()
     moldParamToAddrPos_.insert(ICMold::StandbyPose, SM_StandBy);  //待机姿势
     moldParamToAddrPos_.insert(ICMold::TryProduct, SM_TryProduct); //试产
     moldParamToAddrPos_.insert(ICMold::Sampling, SM_Sampling); //取样
-//    moldParamToAddrPos_.insert(ICMold::)
+    //    moldParamToAddrPos_.insert(ICMold::)
 
     //    addrToSysPos_.insert(SM_MAINUP, ACT_MainUp);			//主上限制
     //    addrToSysPos_.insert(SM_MAINDOWN, ACT_MainDown);		//主下限制
@@ -1039,7 +1039,7 @@ void ICVirtualHost::SaveAxisParamHelper_(const QString &fileName, int start, int
         QFile::copy("./sysconfig/" + fileName, "./sysconfig/" + fileName + "~");
         file.write(toWrite);
         file.close();
-//        system(QString("rm ./sysconfig/%1~").arg(fileName).toAscii());
+        //        system(QString("rm ./sysconfig/%1~").arg(fileName).toAscii());
         QFile::remove("./sysconfig/" + fileName + "~");
     }
 }
@@ -1053,5 +1053,30 @@ void ICVirtualHost::RestartRefreshStatus()
 {
     this->blockSignals(false);
 }
+
+int ICVirtualHost::GetActualPos(ICAxis axis, uint axisLastPos) const
+{
+    if(XPos + axis > QPos)
+    {
+        int16_t tmp = HostStatus(static_cast<ICStatus>(XPos + axis)).toInt();
+        int ret = tmp;
+        ret *= 10;
+        if(tmp >= 0)
+        {
+            return ret += ((axisLastPos >> (axis * 4)) & 0xF);
+        }
+        else
+        {
+            return ret -=((axisLastPos >> (axis * 4)) & 0xF);
+        }
+    }
+    else
+    {
+        int tmp = HostStatus(static_cast<ICStatus>(XPos + axis)).toInt();
+        tmp *= 10;
+        return tmp += ((axisLastPos >> (axis * 4)) & 0xF);
+    }
+}
+
 
 ICVirtualHost::~ICVirtualHost(){}

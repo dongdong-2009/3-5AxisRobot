@@ -1036,19 +1036,4 @@ inline int ICVirtualHost::GetActualPos(ICAxis axis) const
 
 }
 
-inline int ICVirtualHost::GetActualPos(ICAxis axis, uint axisLastPos) const
-{
-    int16_t tmp = HostStatus(static_cast<ICStatus>(XPos + axis)).toInt();
-    int ret = tmp;
-    ret *= 10;
-    if(tmp >= 0)
-    {
-        return ret += ((axisLastPos >> (axis * 4)) & 0xF);
-    }
-    else
-    {
-        return ret -=((axisLastPos >> (axis * 4)) & 0xF);
-    }
-}
-
 #endif // ICVIRTUALHOST_H
