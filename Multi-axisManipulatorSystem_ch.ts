@@ -381,13 +381,13 @@
         <location filename="hcsettings/axissettingsframe.cpp" line="94"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="136"/>
         <source>Min pos inside mold</source>
-        <translation>模内最小位置</translation>
+        <translation>模内下降最小位置</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="95"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="137"/>
         <source>Max pos inside mold</source>
-        <translation>模内最大位置</translation>
+        <translation>模内下降最大位置</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="108"/>
@@ -4632,8 +4632,38 @@ Please enter an digit between </source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinefigure.ui" line="123"/>
-        <location filename="hcsettings/icmachinefigure.ui" line="142"/>
+        <location filename="hcsettings/icmachinefigure.ui" line="37"/>
+        <source>Inside Up X Min</source>
+        <translation>模内上升X轴最小位置</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachinefigure.ui" line="44"/>
+        <source>Inside Up X Max</source>
+        <translation>模内上升X轴最大位置</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachinefigure.ui" line="51"/>
+        <source>Inside Down X Min</source>
+        <translation>模内下降X轴最小位置</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachinefigure.ui" line="58"/>
+        <source>Inside Down X Max</source>
+        <translation>模内下降X轴最大位置</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachinefigure.ui" line="65"/>
+        <source>Outside Up X Min</source>
+        <translation>模外上升X轴最小位置</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachinefigure.ui" line="72"/>
+        <source>Outside Up X Max</source>
+        <translation>模外上升X轴最大位置</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachinefigure.ui" line="105"/>
+        <location filename="hcsettings/icmachinefigure.ui" line="118"/>
         <source>TextLabel</source>
         <translation></translation>
     </message>

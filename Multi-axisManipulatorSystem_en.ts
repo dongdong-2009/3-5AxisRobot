@@ -3749,8 +3749,38 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinefigure.ui" line="123"/>
-        <location filename="hcsettings/icmachinefigure.ui" line="142"/>
+        <location filename="hcsettings/icmachinefigure.ui" line="37"/>
+        <source>Inside Up X Min</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachinefigure.ui" line="44"/>
+        <source>Inside Up X Max</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachinefigure.ui" line="51"/>
+        <source>Inside Down X Min</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachinefigure.ui" line="58"/>
+        <source>Inside Down X Max</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachinefigure.ui" line="65"/>
+        <source>Outside Up X Min</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachinefigure.ui" line="72"/>
+        <source>Outside Up X Max</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachinefigure.ui" line="105"/>
+        <location filename="hcsettings/icmachinefigure.ui" line="118"/>
         <source>TextLabel</source>
         <translation type="unfinished"></translation>
     </message>

@@ -9,7 +9,7 @@ ICMachineFigure::ICMachineFigure(QWidget *parent) :
     ui(new Ui::ICMachineFigure)
 {
     ui->setupUi(this);
-    ui->figure->resize(this->size());
+//    ui->figure->resize(this->size());
 
     QIntValidator * validator = new QIntValidator(0, 65530, this);
     ui->xsec1->setValidator(validator);
