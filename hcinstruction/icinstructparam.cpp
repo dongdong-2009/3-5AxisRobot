@@ -290,6 +290,14 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             {
                 commandStr += tr("Product Clear");
             }
+            if(moldItem.IFVal() == 2)
+            {
+                commandStr += tr("Wait X037");
+            }
+            if(moldItem.IFVal() == 3)
+            {
+                commandStr += tr("Wait X023");
+            }
             return commandStr;
         }
     }

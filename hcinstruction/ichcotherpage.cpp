@@ -22,6 +22,14 @@ QList<ICMoldItem> ICHCOtherPage::CreateCommandImpl() const
     {
         item.SetIFVal(1);
     }
+    if(ui->x037Button->isChecked())
+    {
+        item.SetIFVal(2);
+    }
+    if(ui->x023Button->isChecked())
+    {
+        item.SetIFVal(3);
+    }
     ret.append(item);
     return ret;
 }
