@@ -3749,38 +3749,38 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinefigure.ui" line="37"/>
+        <location filename="hcsettings/icmachinefigure.ui" line="166"/>
         <source>Inside Up X Min</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinefigure.ui" line="44"/>
+        <location filename="hcsettings/icmachinefigure.ui" line="51"/>
         <source>Inside Up X Max</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinefigure.ui" line="51"/>
+        <location filename="hcsettings/icmachinefigure.ui" line="110"/>
         <source>Inside Down X Min</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinefigure.ui" line="58"/>
+        <location filename="hcsettings/icmachinefigure.ui" line="117"/>
         <source>Inside Down X Max</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinefigure.ui" line="65"/>
+        <location filename="hcsettings/icmachinefigure.ui" line="44"/>
         <source>Outside Up X Min</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinefigure.ui" line="72"/>
+        <location filename="hcsettings/icmachinefigure.ui" line="87"/>
         <source>Outside Up X Max</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinefigure.ui" line="105"/>
-        <location filename="hcsettings/icmachinefigure.ui" line="118"/>
+        <location filename="hcsettings/icmachinefigure.ui" line="64"/>
+        <location filename="hcsettings/icmachinefigure.ui" line="130"/>
         <source>TextLabel</source>
         <translation type="unfinished"></translation>
     </message>
