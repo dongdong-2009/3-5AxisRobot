@@ -103,6 +103,8 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
     ui->limitLabel->hide();
     ui->limitTimeEdit->hide();
     ui->limitUnitLabel->hide();
+    ui->forwardBox->hide();
+    ui->backwardBox->hide();
     bool isMoldCount = false;
 
 
@@ -193,6 +195,18 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
             ui->horizontalBox->show();
             ui->verticalBox->show();
             ui->verticalBox->setChecked(true);
+        }
+        else if(item->Action() == ICMold::ACTMAINFORWARD || item->Action() == ICMold::ACTVICEFORWARD)
+        {
+            ui->backwardBox->show();
+            ui->forwardBox->show();
+            ui->forwardBox->setChecked(true);
+        }
+        else if(item->Action() == ICMold::ACTMAINBACKWARD || item->Action() == ICMold::ACTVICEBACKWARD)
+        {
+            ui->backwardBox->show();
+            ui->forwardBox->show();
+            ui->backwardBox->setChecked(true);
         }
         //子程序编辑，可以修改返回步号
         else if(item->Action() == ICMold::ACTCHECKINPUT)
@@ -365,6 +379,19 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
             }
         }
         
+        if(!ui->forwardBox->isHidden())
+        {
+            if(ui->forwardBox->isChecked())
+            {
+                item->SetAction((item->Action() == ICMold::ACTMAINBACKWARD ||
+                                item->Action() == ICMold::ACTMAINFORWARD) ? ICMold::ACTMAINFORWARD : ICMold::ACTVICEFORWARD);
+            }
+            else
+            {
+                item->SetAction((item->Action() == ICMold::ACTVICEBACKWARD ||
+                                item->Action() == ICMold::ACTVICEFORWARD) ? ICMold::ACTVICEBACKWARD : ICMold::ACTMAINBACKWARD);
+            }
+        }
     }
     return isok;
 }

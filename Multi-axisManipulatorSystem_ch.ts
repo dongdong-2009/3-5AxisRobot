@@ -4051,7 +4051,7 @@ Reason</source>
         <translation>编辑</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.ui" line="115"/>
+        <location filename="hcinstruction/icinstructmodifydialog.ui" line="60"/>
         <source>Position</source>
         <translation>位置</translation>
     </message>
@@ -4061,13 +4061,13 @@ Reason</source>
         <translation>提前减速</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.ui" line="538"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="211"/>
+        <location filename="hcinstruction/icinstructmodifydialog.ui" line="545"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="225"/>
         <source>Limit Time</source>
         <translation>限制时间</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.ui" line="202"/>
+        <location filename="hcinstruction/icinstructmodifydialog.ui" line="147"/>
         <source>vertical</source>
         <translation>垂直</translation>
     </message>
@@ -4077,36 +4077,36 @@ Reason</source>
         <translation>水平</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.ui" line="108"/>
-        <location filename="hcinstruction/icinstructmodifydialog.ui" line="218"/>
+        <location filename="hcinstruction/icinstructmodifydialog.ui" line="53"/>
+        <location filename="hcinstruction/icinstructmodifydialog.ui" line="225"/>
         <source>mm</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.ui" line="101"/>
+        <location filename="hcinstruction/icinstructmodifydialog.ui" line="46"/>
         <source>Speed</source>
         <translation>速度</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.ui" line="65"/>
-        <location filename="hcinstruction/icinstructmodifydialog.ui" line="334"/>
+        <location filename="hcinstruction/icinstructmodifydialog.ui" line="211"/>
+        <location filename="hcinstruction/icinstructmodifydialog.ui" line="290"/>
         <source>%</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.ui" line="42"/>
+        <location filename="hcinstruction/icinstructmodifydialog.ui" line="188"/>
         <location filename="hcinstruction/icinstructmodifydialog.cpp" line="99"/>
         <source>Delay Time</source>
         <translation>延迟时间</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.ui" line="225"/>
-        <location filename="hcinstruction/icinstructmodifydialog.ui" line="561"/>
+        <location filename="hcinstruction/icinstructmodifydialog.ui" line="163"/>
+        <location filename="hcinstruction/icinstructmodifydialog.ui" line="520"/>
         <source>s</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.ui" line="58"/>
+        <location filename="hcinstruction/icinstructmodifydialog.ui" line="204"/>
         <source>           End Position</source>
         <oldsource>End Position</oldsource>
         <translation>            提前位置</translation>
@@ -4122,28 +4122,38 @@ Reason</source>
         <translation>设入</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.ui" line="72"/>
+        <location filename="hcinstruction/icinstructmodifydialog.ui" line="612"/>
+        <source>Forward</source>
+        <translation>前进</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructmodifydialog.ui" line="669"/>
+        <source>Backward</source>
+        <translation>后退</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructmodifydialog.ui" line="218"/>
         <source>Select</source>
         <translation>选择</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.ui" line="151"/>
+        <location filename="hcinstruction/icinstructmodifydialog.ui" line="96"/>
         <source>Bad Product</source>
         <translation>不良品使能</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="170"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="172"/>
         <source>speed</source>
         <translation>速度</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="200"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="214"/>
         <source>Return Step</source>
         <translation>返回步号</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="220"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="236"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="234"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="250"/>
         <source>Times</source>
         <translation>间隔模数</translation>
     </message>
