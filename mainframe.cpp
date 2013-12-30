@@ -1249,8 +1249,10 @@ void MainFrame::Register()
     resetTime = ICParametersSave::Instance()->RestTime(0);
     if(resetTime < 0)
     {
+#ifdef Q_WS_QWS
         QMessageBox::information(NULL,tr("tips"),tr("No Register. System Restart Now..."));
-//        system("reboot");
+        system("reboot");
+#endif
     }
 }
 

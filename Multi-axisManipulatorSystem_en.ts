@@ -1868,17 +1868,17 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcotherpage.ui" line="55"/>
+        <location filename="hcinstruction/ichcotherpage.ui" line="58"/>
         <source>Other</source>
         <translation type="unfinished">Manipulator I/O</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcotherpage.ui" line="87"/>
+        <location filename="hcinstruction/ichcotherpage.ui" line="90"/>
         <source>Product Clear</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcotherpage.ui" line="135"/>
+        <location filename="hcinstruction/ichcotherpage.ui" line="141"/>
         <source>wait X023</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6187,7 +6187,7 @@ Would you want to restart now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1292"/>
+        <location filename="mainframe.cpp" line="1294"/>
         <source>Spare Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6219,14 +6219,14 @@ Would you want to restart now?</source>
     <message>
         <location filename="mainframe.cpp" line="865"/>
         <location filename="mainframe.cpp" line="869"/>
-        <location filename="mainframe.cpp" line="1252"/>
-        <location filename="mainframe.cpp" line="1292"/>
-        <location filename="mainframe.cpp" line="1299"/>
+        <location filename="mainframe.cpp" line="1253"/>
+        <location filename="mainframe.cpp" line="1294"/>
+        <location filename="mainframe.cpp" line="1301"/>
         <source>tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1299"/>
+        <location filename="mainframe.cpp" line="1301"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6251,7 +6251,7 @@ Would you want to restart now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1252"/>
+        <location filename="mainframe.cpp" line="1253"/>
         <source>No Register. System Restart Now...</source>
         <translation type="unfinished"></translation>
     </message>
