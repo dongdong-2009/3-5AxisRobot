@@ -1,3 +1,4 @@
+//安全点页面
 #include <QMessageBox>
 #include "axissettingsframe.h"
 #include "ui_axissettingsframe.h"
@@ -161,15 +162,19 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
         iSafe = ICVirtualHost::SYS_A_InSafe;
         oSafe = ICVirtualHost::SYS_A_OutSafe;
         total = ICParametersSave::Instance()->DistanceRotation("A");
-//        minText = tr("Internal security zone");
-//        maxText = tr("External security zone");
-        minText = tr("Transeve security zone(Less)");
-        maxText = tr("Transeve security zone(Lagger)");
-        ui->minUnitLabel->setText(tr("degree"));
-        ui->maxUnitLabel->setText(tr("degree"));
-        ui->label_2->hide();
-        ui->label_4->hide();
-        ui->maximumDisplacementLineEdit->hide();
+        //f2_LR特殊机型，A轴为伺服时改为和x轴一样
+        minText = tr("Min pos inside mold");
+        maxText = tr("Max pos inside mold");
+        ui->label_2->show();
+        ui->label_4->show();
+        ui->maximumDisplacementLineEdit->show();
+//        minText = tr("Transeve security zone(Less)");
+//        maxText = tr("Transeve security zone(Lagger)");
+//        ui->minUnitLabel->setText(tr("degree"));
+//        ui->maxUnitLabel->setText(tr("degree"));
+//        ui->label_2->hide();
+//        ui->label_4->hide();
+//        ui->maximumDisplacementLineEdit->hide();
     }
     else if(currentAxis_ == ICVirtualHost::ICAxis_AxisB)
     {
