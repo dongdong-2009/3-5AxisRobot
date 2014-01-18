@@ -9,7 +9,11 @@ ICPageSwitch::ICPageSwitch(QWidget *parent) :
     checkedBG_(":/resource/menuBtnCheckedBG.png")
 {
     setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+#ifdef HC_SK_5
+    setIconSize(QSize(25, 25));
+#else
     setIconSize(QSize(48, 48));
+#endif
     setMaximumSize(sizeHint());
     setMinimumSize(sizeHint());
 }

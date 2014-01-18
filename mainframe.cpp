@@ -253,7 +253,12 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     connect(simulateKnob_,
             SIGNAL(autoButtonClicked()),
             SLOT(ShowAutoPage()));
+#ifdef HC_SK_5
+    this->setFixedSize(640, 480);
+#else
     this->setFixedSize(800, 600);
+#endif
+
 #endif
 #ifdef Q_WS_X11
             ShowInstructPage();
@@ -1249,8 +1254,10 @@ void MainFrame::Register()
     resetTime = ICParametersSave::Instance()->RestTime(0);
     if(resetTime < 0)
     {
+#ifndef Q_WS_X11
         QMessageBox::information(NULL,tr("tips"),tr("No Register. System Restart Now..."));
 //        system("reboot");
+#endif
     }
 }
 

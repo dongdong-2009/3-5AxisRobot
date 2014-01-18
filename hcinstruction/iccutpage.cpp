@@ -60,6 +60,10 @@ ICCutPage::ICCutPage(QWidget *parent) :
                 &buttonSignalMapper_,
                 SLOT(map()));
     }
+#ifdef HC_SK_5
+    ui->tableWidget->setColumnWidth(0, 36);
+#endif
+
     ui->tableWidget->resizeColumnsToContents();
 
     commandKeyMap_.insert(settingButtons_.at(0), qMakePair(static_cast<int>(IC::VKEY_CLIP1ON), static_cast<int>(IC::VKEY_CLIP1OFF)));

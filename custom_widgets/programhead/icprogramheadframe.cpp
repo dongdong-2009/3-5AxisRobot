@@ -30,7 +30,7 @@ ICProgramHeadFrame::ICProgramHeadFrame(QWidget *parent) :
     {
         ui->restTimeLabel->clear();
     }
-
+    ui->restTimeLabel->hide();
 }
 
 ICProgramHeadFrame::~ICProgramHeadFrame()

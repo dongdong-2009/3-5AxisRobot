@@ -50,8 +50,14 @@ ICPeripheryPage::ICPeripheryPage(QWidget *parent) :
                 SLOT(map()));
 
     }
+#ifdef HC_SK_5
+    ui->actionWidget->setColumnWidth(0, 36);
+    ui->actionWidget->setColumnWidth(1, 97);
+#else
     ui->actionWidget->setColumnWidth(0, 50);
     ui->actionWidget->setColumnWidth(1, 97);
+#endif
+
 
     commandKeyMap_.insert(settingButtons_.at(0), qMakePair(static_cast<int>(IC::VKEY_CLIP7ON), static_cast<int>(IC::VKEY_CLIP7OFF)));
     commandKeyMap_.insert(settingButtons_.at(1), qMakePair(static_cast<int>(IC::VKEY_CLIP8ON), static_cast<int>(IC::VKEY_CLIP8OFF)));

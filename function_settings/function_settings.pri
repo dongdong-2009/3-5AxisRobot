@@ -46,7 +46,8 @@ SOURCES += \
 #    function_settings/placementotherframe.cpp
 
 FORMS += \
-    function_settings/moldinformation.ui
+#    function_settings/moldinformation.ui \
+#    function_settings/moldinformation_5.ui
     #function_settings/icstacksettingpageframe.ui \
     #function_settings/icstandbysettingframe.ui \
     #function_settings/icsystemsettingframe.ui \
@@ -66,3 +67,10 @@ FORMS += \
 #    function_settings/placementweighframe.ui \
 #    function_settings/placementmaterialhandlepositionframe.ui \
 #    function_settings/placementotherframe.ui
+
+contains(DEFINES, HC_SK_8){
+FORMS += moldinformation.ui
+}
+contains(DEFINES, HC_SK_5){
+FORMS += moldinformation_5.ui
+}

@@ -20,7 +20,7 @@ RCC_DIR = temp_8_d
 }
 win32{INCLUDEPATH += ./}
 SOURCES += main.cpp \
-    mainframe.cpp \
+     mainframe.cpp \
     icaxispositionlabel.cpp \
     #icalarmdescriptiondialog.cpp \
     icsystemconfig.cpp \
@@ -39,8 +39,8 @@ SOURCES += main.cpp \
     icprogramformatchecker.cpp \
     icconfigformatchecker.cpp \
     simulateknob.cpp
-HEADERS += mainframe.h \
-    icaxispositionlabel.h \
+HEADERS += icaxispositionlabel.h \
+    mainframe.h \
     #icalarmdescriptiondialog.h \
     icsystemconfig.h \
     icparameterssave.h \
@@ -60,7 +60,7 @@ HEADERS += mainframe.h \
     icconfigformatchecker.h \
     simulateknob.h
 
-FORMS    += mainframe.ui \
+FORMS    +=  \
     #icalarmdescriptiondialog.ui \
     icorigindialog.ui \
     icreturnpage.ui \
@@ -68,7 +68,27 @@ FORMS    += mainframe.ui \
     icactiondialog.ui \
     ichostcomparepage.ui \
     ictipswidget.ui \
-    simulateknob.ui
+    simulateknob.ui \
+
+
+SK_SIZE = 5
+equals(SK_SIZE, 8){
+message("Define 8")
+DEFINES += HC_SK_8
+FORMS    += mainframe.ui
+}
+equals(SK_SIZE ,5){
+message("Define 5")
+DEFINES += HC_SK_5
+FORMS    += mainframe_5.ui
+}
+
+#其他页面有修改则在pri文件中添加以下（分HC_SK_5和HC_SK_8）
+#contains(DEFINES, HC_SK_8){
+#HEADERS += mainframe.h
+#SOURCES += mainframe.cpp
+#FORMS += mainframe.ui
+#}
 
 include (./categorypage/categorypage.pri)
 include (custom_widgets/custom_widgets.pri)
@@ -94,3 +114,13 @@ OTHER_FILES += \
     sysconfig/alarminfomation-ch \
     sysconfig/hintinfomation-ch \
     sysconfig/hintinfomation-en
+
+QMAKE_POST_LINK += "cp *.qm $$DESTDIR"
+CONFIG(debug, debug|release){
+system("python rename_ui.py temp_8_d")
+#QMAKE_POST_LINK += "cp *.qm bin_debug"
+}else{
+system("python rename_ui.py temp_8")
+QMAKE_POST_LINK += "&& arm-linux-strip $$DESTDIR/$$TARGET && HCbcrypt.sh -r $$DESTDIR/$$TARGET"
+}
+

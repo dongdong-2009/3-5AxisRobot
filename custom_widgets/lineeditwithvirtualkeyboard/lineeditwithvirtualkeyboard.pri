@@ -9,5 +9,12 @@ SOURCES += \
     virtualkeyboarddialog.cpp \
     iclineeditwithvirtualkeyboard.cpp
 
-FORMS += \
-    virtualkeyboarddialog.ui
+#FORMS +=
+#    virtualkeyboarddialog.ui
+
+contains(DEFINES, HC_SK_8){
+FORMS += virtualkeyboarddialog.ui
+}
+contains(DEFINES, HC_SK_5){
+FORMS += virtualkeyboarddialog_5.ui
+}

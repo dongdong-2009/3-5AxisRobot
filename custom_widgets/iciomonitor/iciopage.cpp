@@ -14,8 +14,13 @@ ICIOPage::ICIOPage(QWidget *parent) :
     outputOnPixmap_(":/resource/ledgreen(16).png")
 {
     frameLayout_ = new QVBoxLayout();
+#ifdef HC_SK_5
+    frameLayout_->setContentsMargins(2, 0, 2, 0);
+    frameLayout_->setSpacing(12);
+#else
     frameLayout_->setContentsMargins(2, 10, 2, 2);
     frameLayout_->setSpacing(15);
+#endif
     this->setLayout(frameLayout_);
     for(int i = 0; i != 6; ++i)
     {
@@ -81,6 +86,8 @@ void ICIOPage::BindingIOPoints(const QList<ICIOPoint> &points)
             nums = new QLabel(point.PointNum());
             descr = new QLabel(point.PointDescription());
             leds = new QLabel();
+            leds->setMaximumHeight(18);
+            leds->setMinimumHeight(18);
             itemLayout_ = new QHBoxLayout();
             leds->setPixmap(offPixmap_);
             ledToPoint_.insert(leds, point);
