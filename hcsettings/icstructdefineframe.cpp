@@ -11,6 +11,24 @@
 #include <QDebug>
 #include "mainframe.h"
 
+typedef union{
+struct {
+    unsigned    a1 : 4; //---1000b-代表板上第一个轴通道，1001b--代表第二个轴通道，。。。直到1111b---代表第八个轴通道，实际主板上面只能到1100b，即第5个轴
+    unsigned    a2 : 4;
+    unsigned    a3 : 4; //----不指定，则采用0，对当前五轴来说就是五个伺服应该是 ---1000b,1001b,1010b,1011b,1100b，即 8,9,10,11,12
+    unsigned    a4 : 4;
+    unsigned    a5 : 4;
+    unsigned    a6 : 4;
+    unsigned    a7 : 4;
+    unsigned    a8 : 4;
+}split;
+struct {
+    unsigned resv1 : 16;
+    unsigned resv2 : 16;
+}resv;
+uint port;
+}AXIS_MODIFY_DATA;
+
 ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::ICStructDefineFrame)
@@ -156,6 +174,19 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
     {
         ui->adjNoUse->setChecked(true);
     }
+
+    AXIS_MODIFY_DATA data;
+    data.port = (host->SystemParameter(ICVirtualHost::SYS_Config_Resv1).toInt() << 16) |
+            (host->SystemParameter(ICVirtualHost::SYS_Config_Resv2).toInt());
+    ui->portX1->setCurrentIndex(data.split.a1 == 0 ? 0 : data.split.a1 - 7);
+    ui->portY1->setCurrentIndex(data.split.a2 == 0 ? 0 : data.split.a2 - 7);
+    ui->portZ->setCurrentIndex(data.split.a3 == 0 ? 0 : data.split.a3 - 7);
+    ui->portX2->setCurrentIndex(data.split.a4 == 0 ? 0 : data.split.a4 - 7);
+    ui->portY2->setCurrentIndex(data.split.a5 == 0 ? 0 : data.split.a5 - 7);
+    ui->portA->setCurrentIndex(data.split.a6 == 0 ? 0 : data.split.a6 - 7);
+    ui->portB->setCurrentIndex(data.split.a7 == 0 ? 0 : data.split.a7 - 7);
+    ui->portC->setCurrentIndex(data.split.a8 == 0 ? 0 : data.split.a8 - 7);
+
 }
 
 ICStructDefineFrame::~ICStructDefineFrame()
@@ -284,6 +315,18 @@ void ICStructDefineFrame::on_saveButton_clicked()
     dataBuffer[2] = outDefine_;
 //    dataBuffer[3] = ICVirtualHost::GlobalVirtualHost()->FixtureDefineSwitch(ui->fixtureSelectBox->currentIndex());
     dataBuffer[3] = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toUInt();
+//    dataBuffer[4]
+    AXIS_MODIFY_DATA data;
+    data.split.a1 = ui->portX1->currentIndex() == 0 ? 0 : ui->portX1->currentIndex() + 7;
+    data.split.a2 = ui->portY1->currentIndex() == 0 ? 0 : ui->portY1->currentIndex() + 7;
+    data.split.a3 = ui->portZ->currentIndex() == 0 ? 0 : ui->portZ->currentIndex() + 7;
+    data.split.a4 = ui->portX2->currentIndex() == 0 ? 0 : ui->portX2->currentIndex() + 7;
+    data.split.a5 = ui->portY2->currentIndex() == 0 ? 0 : ui->portY2->currentIndex() + 7;
+    data.split.a6 = ui->portA->currentIndex() == 0 ? 0 : ui->portA->currentIndex() + 7;
+    data.split.a7 = ui->portB->currentIndex() == 0 ? 0 : ui->portB->currentIndex() + 7;
+    data.split.a8 = ui->portC->currentIndex() == 0 ? 0 : ui->portC->currentIndex() + 7;
+    dataBuffer[4] = data.resv.resv1;
+    dataBuffer[5] = data.resv.resv2;
     for(int i = 0; i != 6; ++i)
     {
         sum += dataBuffer.at(i);

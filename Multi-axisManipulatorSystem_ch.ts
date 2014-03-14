@@ -6667,39 +6667,57 @@ Please enter an digit between </source>
     <name>ICStructDefineFrame</name>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="14"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="181"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="208"/>
         <source>Form</source>
         <translation>组合动作选择</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="36"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="182"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1558"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1564"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="209"/>
         <source>Signal Define</source>
         <translation>限位定义</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="387"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="193"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="32"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="38"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="220"/>
         <source>Arm Define</source>
         <translation>轴定义</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="409"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="462"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="487"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="512"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="544"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="576"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="608"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="640"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="195"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="199"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="203"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="207"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="211"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="215"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="219"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="223"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="66"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="125"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="156"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="187"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="225"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="263"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="301"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="339"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="399"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="403"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="453"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="457"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="507"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="511"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="561"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="565"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="615"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="619"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="676"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="680"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="758"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="762"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="812"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="816"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="222"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="226"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="230"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="234"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="238"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="242"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="246"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="250"/>
         <source>None</source>
         <translation>无</translation>
     </message>
@@ -6728,8 +6746,8 @@ Please enter an digit between </source>
         <translation type="obsolete">需上升和下降限位</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1579"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="273"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2144"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="300"/>
         <source>Save</source>
         <translation>保存</translation>
     </message>
@@ -6738,239 +6756,325 @@ Please enter an digit between </source>
         <translation type="obsolete">手臂选择</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="98"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="183"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1626"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="210"/>
         <source>Single Arm</source>
         <translation>单臂</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="146"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="184"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1674"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="211"/>
         <source>Double Arm</source>
         <translation>双臂</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="183"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="185"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1711"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="212"/>
         <source>Main Arm</source>
         <translation>主臂</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="223"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="336"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="186"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="190"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1751"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1864"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="213"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="217"/>
         <source>Down Limit</source>
         <translation>下降限</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="346"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="187"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="191"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1874"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="214"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="218"/>
         <source>Backword Limit</source>
         <translation>后退限</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="356"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="188"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="192"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1884"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="215"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="219"/>
         <source>Forward Limit</source>
         <translation>前进限</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="318"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="189"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1846"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="216"/>
         <source>Sub Arm</source>
         <translation>副臂</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="249"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1777"/>
         <source>Backward Limit</source>
         <translation>后退限</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="276"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1804"/>
         <source>Forword Limit</source>
         <translation>前进限</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="414"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="467"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="492"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="517"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="549"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="581"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="613"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="645"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="196"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="200"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="204"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="208"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="212"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="216"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="220"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="224"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="71"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="130"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="161"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="192"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="230"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="268"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="306"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="344"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="223"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="227"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="231"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="235"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="239"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="243"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="247"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="251"/>
         <source>Pneumatic</source>
         <translation>气动轴</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="419"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="472"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="497"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="522"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="554"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="586"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="618"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="650"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="197"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="201"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="205"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="209"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="213"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="217"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="221"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="225"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="76"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="135"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="166"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="197"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="235"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="273"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="311"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="349"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="224"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="228"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="232"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="236"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="240"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="244"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="248"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="252"/>
         <source>Servo</source>
         <translation>伺服轴</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="427"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="194"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="84"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="718"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="221"/>
         <source>X1</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="434"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="198"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="91"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="739"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="225"/>
         <source>C</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="441"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="202"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="98"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="366"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="229"/>
         <source>Z</source>
         <oldsource>C</oldsource>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="448"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="206"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="105"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="380"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="233"/>
         <source>A</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="530"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="210"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="205"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="657"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="237"/>
         <source>B</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="562"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="214"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="243"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="732"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="241"/>
         <source>Y1</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="594"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="218"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="281"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="725"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="245"/>
         <source>X2</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="626"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="222"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="319"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="373"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="249"/>
         <source>Y2</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="668"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="226"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="360"/>
+        <source>Port Define</source>
+        <translation>端口定义</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="408"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="462"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="516"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="570"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="624"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="685"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="767"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="821"/>
+        <source>S1</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="413"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="467"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="521"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="575"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="629"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="690"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="772"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="826"/>
+        <source>S2</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="418"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="472"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="526"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="580"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="634"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="695"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="777"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="831"/>
+        <source>S3</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="423"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="477"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="531"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="585"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="639"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="700"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="782"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="836"/>
+        <source>S4</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="428"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="482"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="536"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="590"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="644"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="705"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="787"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="841"/>
+        <source>S5</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="433"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="487"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="541"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="595"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="649"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="710"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="792"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="846"/>
+        <source>S6</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="858"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="864"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="253"/>
         <source>Out Define</source>
         <translation>预留定义</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="797"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="227"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="993"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="254"/>
         <source>1</source>
         <translation>Y017</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="904"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="942"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="980"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1018"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1056"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1164"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1202"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1240"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="251"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="253"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="255"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="257"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="259"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="261"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="263"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="265"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1100"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1138"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1176"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1214"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1252"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1360"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1398"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1436"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="278"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="280"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="282"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="284"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="286"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="288"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="290"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="292"/>
         <source>Normal</source>
         <translation>调位</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1466"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2027"/>
         <source>Adjust</source>
         <translation>调位</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="717"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="752"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="787"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1094"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1129"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1278"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1313"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1348"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="252"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="254"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="256"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="258"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="260"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="262"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="264"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="266"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="913"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="948"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="983"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1290"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1325"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1474"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1509"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1544"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="279"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="281"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="283"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="285"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="287"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="289"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="291"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="293"/>
         <source>Extent</source>
         <translation>预留</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="804"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1000"/>
         <source>5</source>
         <translation>Y035</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="811"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1007"/>
         <source>2</source>
         <translation>Y022</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="851"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1047"/>
         <source>6</source>
         <translation>Y036</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="858"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1054"/>
         <source>3</source>
         <translation>Y031</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="865"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1061"/>
         <source>7</source>
         <translation>备用</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="872"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1068"/>
         <source>4</source>
         <translation>Y032</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="818"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1014"/>
         <source>8</source>
         <translation>备用</translation>
     </message>
@@ -6991,28 +7095,29 @@ Please enter an digit between </source>
         <translation type="obsolete">正相</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1361"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="267"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1916"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1922"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="294"/>
         <source>Other Define</source>
         <translation>其他定义</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1427"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="268"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1988"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="295"/>
         <source>Escape</source>
         <translation>型内逃跑</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1404"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1498"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="271"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1965"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2059"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="298"/>
         <source>Use</source>
         <translation>使用</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1459"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1536"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="272"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2020"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2097"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="299"/>
         <source>No Use</source>
         <translation>不使用</translation>
     </message>
@@ -7021,12 +7126,12 @@ Please enter an digit between </source>
         <translation type="obsolete">手臂结构选择</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="310"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="338"/>
         <source>Tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="310"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="338"/>
         <source>Save Sucessfully!</source>
         <translation>保存成功!</translation>
     </message>
@@ -7612,21 +7717,21 @@ Would you want to restart now?</source>
         <translation>步序</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="864"/>
-        <location filename="mainframe.cpp" line="868"/>
-        <location filename="mainframe.cpp" line="1251"/>
-        <location filename="mainframe.cpp" line="1291"/>
-        <location filename="mainframe.cpp" line="1298"/>
+        <location filename="mainframe.cpp" line="865"/>
+        <location filename="mainframe.cpp" line="869"/>
+        <location filename="mainframe.cpp" line="1252"/>
+        <location filename="mainframe.cpp" line="1292"/>
+        <location filename="mainframe.cpp" line="1299"/>
         <source>tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1291"/>
+        <location filename="mainframe.cpp" line="1292"/>
         <source>Spare Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="868"/>
+        <location filename="mainframe.cpp" line="869"/>
         <source>No Register</source>
         <translation>没有注册</translation>
     </message>
@@ -7636,7 +7741,7 @@ Would you want to restart now?</source>
         <translation>功能</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1298"/>
+        <location filename="mainframe.cpp" line="1299"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation>没有注册，系统将在十分钟后重启</translation>
     </message>
@@ -7646,17 +7751,17 @@ Would you want to restart now?</source>
         <translation>监视</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="864"/>
+        <location filename="mainframe.cpp" line="865"/>
         <source>Spear Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="900"/>
+        <location filename="mainframe.cpp" line="901"/>
         <source>Records</source>
         <translation>档案</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1251"/>
+        <location filename="mainframe.cpp" line="1252"/>
         <source>No Register. System Restart Now...</source>
         <translation>没有注册，系统现在重启...</translation>
     </message>
@@ -7717,7 +7822,7 @@ Would you want to restart now?</source>
         <translation type="obsolete">还没进行原点!</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="852"/>
+        <location filename="mainframe.cpp" line="853"/>
         <source>Instruct</source>
         <translation>教导</translation>
     </message>

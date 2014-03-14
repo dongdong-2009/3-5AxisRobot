@@ -94,3 +94,7 @@ OTHER_FILES += \
     sysconfig/alarminfomation-ch \
     sysconfig/hintinfomation-ch \
     sysconfig/hintinfomation-en
+
+CONFIG(release, debug|release) {
+QMAKE_POST_LINK = arm-linux-strip $$DESTDIR/$$TARGET && HCbcrypt.sh -r $$DESTDIR/$$TARGET && cp *.qm bin -f
+}
