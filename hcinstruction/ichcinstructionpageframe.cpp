@@ -969,7 +969,9 @@ bool ICHCInstructionPageFrame::SaveCurrentEdit()
     else
     {
         ICMacroSubroutine::Instance()->SetSubRoutine(ICMold::UIItemToMoldItem(programList_), currentEdit_ - 1);
-        return ICMacroSubroutine::Instance()->SaveMacroSubroutieFile(currentEdit_ - 1);
+        bool isOk =  ICMacroSubroutine::Instance()->SaveMacroSubroutieFile(currentEdit_ - 1);
+        system(QString("cp subs/sub7.prg  records/%1").arg(ICParametersSave::Instance()->MoldName("").replace(".act", ".sub")).toAscii());
+        return isOk;
     }
 }
 

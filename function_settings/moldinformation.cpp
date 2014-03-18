@@ -144,6 +144,7 @@ bool MoldInformation::CreateNewSourceFile(const QString & fileName)
         newFile.write("0 0 255 1 0 0 0 80 0 81\n1 0 255 2 0 0 0 80 0 83\n2 0 255 3 0 0 0 80 0 85\n3 0 255 17 0 0 0 0 0 20\n4 0 255 14 0 0 0 0 0 18\n5 0 255 13 0 0 0 0 0 18\n6 1 255 29 0 0 0 1 0 37\n7 2 255 32 0 0 0 0 5 46");
 #endif
         QFile::copy(recordFilePath_ + "/Base.fnc", recordFilePath_ + "/" + fileNameNoExtent + "fnc");
+        QFile::copy(recordFilePath_ + "/Base.sub", recordFilePath_ + "/" + fileNameNoExtent + "sub");
         newFile.close();
         QMessageBox::warning(this, tr("Success"),
                              tr("New file success."),
@@ -197,15 +198,26 @@ bool MoldInformation::CopySourceFile(const QString & originFileName, const QStri
     QString targetConfigFilePath = targetFilePathName;
     targetConfigFilePath.chop(3);
     targetConfigFilePath += "fnc";
+
+    QString originSubFilePath = originFilePathName;
+    originSubFilePath.chop(3);
+    originSubFilePath += "sub";
+    QString targetSubFilePath = targetFilePathName;
+    targetSubFilePath.chop(3);
+    targetSubFilePath += "sub";
     //    QFile::copy(originConfigFilePath, targetConfigFilePath);
     if(QFile::copy(originFilePathName, targetFilePathName))
     {
         if(QFile::copy(originConfigFilePath, targetConfigFilePath))
         {
-            QMessageBox::information(this, tr("Success"),
+            if(QFile::copy(originSubFilePath, targetSubFilePath))
+            {
+                QMessageBox::information(this, tr("Success"),
                                      tr("Copy file success!"),
                                      QMessageBox::Ok);
-            return true;
+                return true;
+            }
+            QFile::remove(targetConfigFilePath);
         }
         QFile::remove(targetFilePathName);
     }
@@ -229,12 +241,16 @@ bool MoldInformation::DeleteSourceFile(const QString & fileName)
 
     QString filePathName = recordFilePath_ + fileName;
     QString configFile = filePathName;
+    QString subFile = filePathName;
     configFile.chop(3);
     configFile += "fnc";
+    subFile.chop(3);
+    subFile += "sub";
     if(QFile::exists(filePathName))
     {
         QFile::remove(filePathName);
         QFile::remove(configFile);
+        QFile::remove(subFile);
         //        QFile::remove(ICSettingConfig::ConfigPath() + fileName);
         //        QMessageBox::information(this, tr("Success"),
         //                                 tr("File deleted success!"),
@@ -339,6 +355,7 @@ void MoldInformation::on_loadToolButton_clicked()
                 //                ICMold::CurrentMold()->ReadMoldFile(
                 return;
             }
+            system(QString("cp %1 subs/sub7.prg").arg(filePathName.replace(".act", ".sub")).toAscii());
             ICTipsWidget tipsWidget(tr("Loading..."));
             tipsWidget.show();qApp->processEvents();
             ICVirtualHost::GlobalVirtualHost()->ReConfigure();
