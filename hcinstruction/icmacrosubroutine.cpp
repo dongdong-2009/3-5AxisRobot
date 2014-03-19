@@ -28,6 +28,7 @@ bool ICMacroSubroutine::ReadMacroSubroutieFiles(const QString &dir)
     QString fileName;
     QList<ICMoldItem> sub;
     ICMoldItem subItem;
+    subroutines_.clear();
     foreach(fileName, fileList)
     {
         file.setFileName(fileDir.filePath(fileName));

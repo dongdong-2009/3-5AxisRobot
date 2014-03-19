@@ -112,6 +112,7 @@ private:
     QList<ICGroupMoldUIItem> programList_;
     int currentEdit_;
     bool isProgramChanged_;
+    bool isShowed_;
 };
 
 #endif // ICHCINSTRUCTIONPAGEFRAME_H

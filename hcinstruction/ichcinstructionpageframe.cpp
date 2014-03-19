@@ -61,7 +61,8 @@ ICHCInstructionPageFrame::ICHCInstructionPageFrame(QWidget *parent) :
     recordPath_("./records/"),
     currentAction_(None),
     currentEdit_(0),
-    isProgramChanged_(false)
+    isProgramChanged_(false),
+    isShowed_(false)
 {
     ui->setupUi(this);
 //    ui->otherButton->hide();
@@ -110,6 +111,7 @@ void ICHCInstructionPageFrame::showEvent(QShowEvent *e)
         ui->conditionsToolButton->hide();
     }
     QFrame::showEvent(e);
+    isShowed_ = true;
 //    connect(ICVirtualHost::GlobalVirtualHost(),
 //            SIGNAL(StepChanged(int)),
 //            this,
@@ -131,6 +133,7 @@ void ICHCInstructionPageFrame::showEvent(QShowEvent *e)
 
 void ICHCInstructionPageFrame::hideEvent(QHideEvent *e)
 {
+    if(!isShowed_) return;
     qDebug("instruct hide");
     modifyDialog_->hide();
     QFrame::hideEvent(e);
@@ -153,6 +156,7 @@ void ICHCInstructionPageFrame::hideEvent(QHideEvent *e)
     {
         ICCommandProcessor::Instance()->ExecuteHCCommand(IC::CMD_TurnManual, 0);
     }
+    isShowed_ = false;
 
  //   ICInstructParam::Instance()->UpdateHostParam();
 

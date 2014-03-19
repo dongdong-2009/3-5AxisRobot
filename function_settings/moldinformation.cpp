@@ -13,6 +13,7 @@
 #include "icbackuputility.h"
 #include "icprogramformatchecker.h"
 #include "icconfigformatchecker.h"
+#include "icmacrosubroutine.h"
 #include <QFileDialog>
 
 
@@ -355,7 +356,10 @@ void MoldInformation::on_loadToolButton_clicked()
                 //                ICMold::CurrentMold()->ReadMoldFile(
                 return;
             }
-            system(QString("cp %1 subs/sub7.prg").arg(filePathName.replace(".act", ".sub")).toAscii());
+            system(QString("cp %1 subs/sub7.prg  -f").arg(filePathName.replace(".act", ".sub")).toAscii());
+            ICMacroSubroutine::Instance()->ReadMacroSubroutieFiles("subs");
+            qDebug()<<ICMacroSubroutine::Instance()->SubRoutine(7).size();
+//            ICVirtualHost::GlobalVirtualHost()->InitSubs_();
             ICTipsWidget tipsWidget(tr("Loading..."));
             tipsWidget.show();qApp->processEvents();
             ICVirtualHost::GlobalVirtualHost()->ReConfigure();
@@ -532,6 +536,7 @@ void MoldInformation::on_importToolButton_clicked()
 
     QStringList acts = dir.entryList(QStringList()<<"*.act");
     QStringList fncs = dir.entryList(QStringList()<<"*.fnc");
+//    QStringList subList = dir.entryList(QStringList()<<"*.sub");
     acts_ = src_dir.entryList(QStringList()<<"*.act");
 
 
@@ -624,6 +629,7 @@ void MoldInformation::on_importToolButton_clicked()
             }
             selectedImportItemName_.append(item_text + ".act");
             selectedImportItemName_.append(item_text + ".fnc");
+             selectedImportItemName_.append(item_text + ".sub");
             flagItem = FALSE ;
         }
     }
@@ -654,6 +660,7 @@ void MoldInformation::on_importToolButton_clicked()
         }
         selectedImportItemName_.append(str + ".act");
         selectedImportItemName_.append(str + ".fnc");
+        selectedImportItemName_.append(str + ".sub");
         flagItem_ = FALSE;
     }
     ICTipsWidget tipsWidget(tr("Restoring, please wait..."));
@@ -756,6 +763,7 @@ void MoldInformation::on_exportToolButton_clicked()
             }
             selectedExportItemName_.append(item_text + ".act");
             selectedExportItemName_.append(item_text + ".fnc");
+            selectedExportItemName_.append(item_text + ".sub");
             flagItem = FALSE ;
         }
     }
@@ -776,6 +784,7 @@ void MoldInformation::on_exportToolButton_clicked()
         }
         selectedExportItemName_.append(str + ".act");
         selectedExportItemName_.append(str + ".fnc");
+        selectedExportItemName_.append(str + ".sub");
         flagItem_ = FALSE;
     }
     if(selectedExportItemName_.size() == 0)

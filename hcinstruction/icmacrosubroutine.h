@@ -101,7 +101,8 @@ private:
 
 inline QList<ICMoldItem> ICMacroSubroutine::SubRoutine(int group) const
 {
-    Q_ASSERT_X(group < subroutines_.size(), "ICMacroSubroutine::SubRoutine", "group is out of range");
+//    Q_ASSERT_X(group < subroutines_.size(), "ICMacroSubroutine::SubRoutine", "group is out of range");
+    if(group < 0 || group > subroutines_.size()) return QList<ICMoldItem>();
     return subroutines_.at(group);
 }
 
