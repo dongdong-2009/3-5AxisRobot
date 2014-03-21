@@ -201,3 +201,7 @@ QAbstractItemView::item:selected:active, QListView::item:selected:!active {
 ICTipsWidget{
      background: lightgreen;
 }
+
+QWidget{
+	background:white;
+}
