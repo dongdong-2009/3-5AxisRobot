@@ -283,13 +283,13 @@
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="94"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="123"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="124"/>
         <source>Internal security zone</source>
         <translation>型内安全区</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="116"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="124"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="125"/>
         <source>External security zone</source>
         <translation>型外安全区</translation>
     </message>
@@ -304,8 +304,8 @@
         <location filename="hcsettings/axissettingsframe.ui" line="176"/>
         <location filename="hcsettings/axissettingsframe.ui" line="195"/>
         <location filename="hcsettings/axissettingsframe.ui" line="243"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="83"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="84"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="85"/>
         <source>mm</source>
         <translation></translation>
     </message>
@@ -378,50 +378,48 @@
         <translation type="obsolete">完成</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="94"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="136"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="95"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="137"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="166"/>
         <source>Min pos inside mold</source>
         <translation>模内最小位置</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="95"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="137"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="96"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="138"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="167"/>
         <source>Max pos inside mold</source>
         <translation>模内最大位置</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="108"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="149"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="109"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="150"/>
         <source>Max standby pos</source>
         <translation>最大待机位置</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="109"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="150"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="110"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="151"/>
         <source>Leave origin pos</source>
         <translation>离开原点位置</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="166"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="183"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="198"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="188"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="203"/>
         <source>Transeve security zone(Less)</source>
         <translation>横行安全范围(小于)</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="167"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="184"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="199"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="189"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="204"/>
         <source>Transeve security zone(Lagger)</source>
         <translation>横行安全范围(大于)</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="168"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="169"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="185"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="186"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="200"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="201"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="190"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="191"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="205"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="206"/>
         <source>degree</source>
         <translation>度</translation>
     </message>
@@ -430,12 +428,12 @@
         <translation type="obsolete">横行安全范围(大于)</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="411"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="416"/>
         <source>Information</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="411"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="416"/>
         <source>Save Successfully!</source>
         <translation>保存成功!</translation>
     </message>
@@ -2191,8 +2189,8 @@ Reason</source>
         <translation>主菜单</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="446"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="654"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="450"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="658"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
@@ -2209,22 +2207,22 @@ Reason</source>
         <translation type="obsolete">该模号是当前模号!</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="447"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="451"/>
         <source>Can not add standby position program</source>
         <translation>不能添加待机点步骤</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="640"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="644"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="641"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="645"/>
         <source>Stand program can not be delete action</source>
         <translation>标准程序不能删除动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="655"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="659"/>
         <source>Can not delete standby position program</source>
         <translation>不能删除待机点步骤</translation>
     </message>
@@ -4701,7 +4699,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="262"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="244"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="245"/>
         <source>Mechanical length</source>
         <translation>机械长度</translation>
     </message>
@@ -4711,39 +4709,40 @@ Please enter an digit between </source>
         <location filename="hcsettings/icmachinestructpage.ui" line="366"/>
         <location filename="hcsettings/icmachinestructpage.ui" line="407"/>
         <location filename="hcsettings/icmachinestructpage.ui" line="448"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="239"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="240"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="241"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="242"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="243"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="244"/>
         <source>mm</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="303"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="266"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="279"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="294"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="307"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="319"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="267"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="280"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="295"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="308"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="320"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="336"/>
         <source>Maximum displacement</source>
         <translation>最大移动</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="344"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="291"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="292"/>
         <source>Internal security zone</source>
         <translation>型内安全区</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="385"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="292"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="293"/>
         <source>External security zone</source>
         <translation>型外安全区</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="426"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="245"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="246"/>
         <source>Distance/Rotation</source>
         <translation>每转距离</translation>
     </message>
@@ -4788,152 +4787,144 @@ Please enter an digit between </source>
         <translation>清除测试</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="23"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="79"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="24"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="80"/>
         <source>X1 Axis</source>
         <oldsource>X Axis</oldsource>
         <translation>X1轴</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="24"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="80"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="25"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="81"/>
         <source>Y1 Axis</source>
         <oldsource>Y Axis</oldsource>
         <translation>Y1轴</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="25"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="81"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="26"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="82"/>
         <source>Z Axis</source>
         <translation>Z轴</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="26"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="82"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="27"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="83"/>
         <source>X2 Axis</source>
         <translation>X2轴</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="27"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="83"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="28"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="84"/>
         <source>Y2 Axis</source>
         <translation>Y2轴</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="28"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="84"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="29"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="85"/>
         <source>A Axis</source>
         <translation>A轴</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="29"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="85"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="30"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="86"/>
         <source>B Axis</source>
         <translation>B轴</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="30"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="86"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="31"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="87"/>
         <source>C Axis</source>
         <translation>C轴</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="31"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="87"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="32"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="88"/>
         <source>Struct Define</source>
         <translation>结构</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="32"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="88"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="33"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="89"/>
         <source>Time</source>
         <translation>时间</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="263"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="304"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="264"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="305"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="333"/>
         <source>Min pos inside mold</source>
         <translation>模内最小位置</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="264"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="305"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="265"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="306"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="334"/>
         <source>Max pos inside mold</source>
         <translation>模内最大位置</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="276"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="316"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="277"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="317"/>
         <source>Max standby pos</source>
         <translation>最大待机位置</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="277"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="317"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="278"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="318"/>
         <source>Leave origin pos</source>
         <translation>离开原点位置</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="333"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="360"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="385"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="363"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="388"/>
         <source>Transever security zone(Less)</source>
         <translation>横行安全范围(小于)</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="334"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="361"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="386"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="364"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="389"/>
         <source>Transever security zone(Lagger)</source>
         <translation>横行安全范围(大于)</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="335"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="336"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="337"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="338"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="339"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="362"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="363"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="364"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="365"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="366"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="395"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="396"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="397"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="367"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="368"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="369"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="398"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="399"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="400"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="401"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="402"/>
         <source>degree</source>
         <translation>度</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="340"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="367"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="400"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="370"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="403"/>
         <source>Max Rotate</source>
         <translation>最大旋转</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="341"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="368"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="401"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="371"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="404"/>
         <source>Machine Per</source>
         <translation>电机每圈</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="349"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="376"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="394"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="379"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="397"/>
         <source>Origin Offset</source>
         <translation>原点偏置</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="594"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="597"/>
         <source>Information</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="594"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="597"/>
         <source>Save Successfully!</source>
         <translation>保存成功!</translation>
     </message>
@@ -7552,63 +7543,67 @@ Would you want to restart now?</source>
         <translation>多轴机械手控制系统</translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="192"/>
+        <location filename="mainframe.ui" line="183"/>
         <source>Z:</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="237"/>
+        <location filename="mainframe.ui" line="228"/>
         <source>X1:</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="282"/>
+        <location filename="mainframe.ui" line="273"/>
         <source>Y1:</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="327"/>
+        <location filename="mainframe.ui" line="318"/>
         <source>X2:</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="372"/>
+        <location filename="mainframe.ui" line="363"/>
         <source>Y2:</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="489"/>
+        <location filename="mainframe.ui" line="480"/>
         <source>A:</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="521"/>
-        <location filename="mainframe.ui" line="566"/>
-        <location filename="mainframe.ui" line="611"/>
+        <location filename="mainframe.ui" line="512"/>
+        <source>mm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainframe.ui" line="557"/>
+        <location filename="mainframe.ui" line="602"/>
         <source>Degree</source>
         <translation>度</translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="534"/>
+        <location filename="mainframe.ui" line="525"/>
         <source>B:</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="579"/>
+        <location filename="mainframe.ui" line="570"/>
         <source>C:</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="224"/>
-        <location filename="mainframe.ui" line="269"/>
-        <location filename="mainframe.ui" line="314"/>
-        <location filename="mainframe.ui" line="359"/>
-        <location filename="mainframe.ui" line="404"/>
+        <location filename="mainframe.ui" line="215"/>
+        <location filename="mainframe.ui" line="260"/>
+        <location filename="mainframe.ui" line="305"/>
+        <location filename="mainframe.ui" line="350"/>
+        <location filename="mainframe.ui" line="395"/>
         <source>mm    </source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="631"/>
+        <location filename="mainframe.ui" line="622"/>
         <source>Step</source>
         <translation>步序</translation>
     </message>
@@ -7820,13 +7815,13 @@ Would you want to restart now?</source>
         <location filename="function_settings/moldinformation.cpp" line="225"/>
         <location filename="function_settings/moldinformation.cpp" line="236"/>
         <location filename="function_settings/moldinformation.cpp" line="263"/>
-        <location filename="function_settings/moldinformation.cpp" line="396"/>
-        <location filename="function_settings/moldinformation.cpp" line="409"/>
-        <location filename="function_settings/moldinformation.cpp" line="428"/>
-        <location filename="function_settings/moldinformation.cpp" line="438"/>
-        <location filename="function_settings/moldinformation.cpp" line="448"/>
-        <location filename="function_settings/moldinformation.cpp" line="610"/>
-        <location filename="function_settings/moldinformation.cpp" line="648"/>
+        <location filename="function_settings/moldinformation.cpp" line="398"/>
+        <location filename="function_settings/moldinformation.cpp" line="411"/>
+        <location filename="function_settings/moldinformation.cpp" line="430"/>
+        <location filename="function_settings/moldinformation.cpp" line="440"/>
+        <location filename="function_settings/moldinformation.cpp" line="450"/>
+        <location filename="function_settings/moldinformation.cpp" line="613"/>
+        <location filename="function_settings/moldinformation.cpp" line="652"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
@@ -7838,14 +7833,14 @@ Please input the file name.</source>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="106"/>
-        <location filename="function_settings/moldinformation.cpp" line="530"/>
-        <location filename="function_settings/moldinformation.cpp" line="573"/>
-        <location filename="function_settings/moldinformation.cpp" line="587"/>
-        <location filename="function_settings/moldinformation.cpp" line="592"/>
-        <location filename="function_settings/moldinformation.cpp" line="694"/>
-        <location filename="function_settings/moldinformation.cpp" line="877"/>
-        <location filename="function_settings/moldinformation.cpp" line="894"/>
-        <location filename="function_settings/moldinformation.cpp" line="905"/>
+        <location filename="function_settings/moldinformation.cpp" line="532"/>
+        <location filename="function_settings/moldinformation.cpp" line="576"/>
+        <location filename="function_settings/moldinformation.cpp" line="590"/>
+        <location filename="function_settings/moldinformation.cpp" line="595"/>
+        <location filename="function_settings/moldinformation.cpp" line="699"/>
+        <location filename="function_settings/moldinformation.cpp" line="884"/>
+        <location filename="function_settings/moldinformation.cpp" line="901"/>
+        <location filename="function_settings/moldinformation.cpp" line="912"/>
         <source>Warnning</source>
         <translation>警告</translation>
     </message>
@@ -7905,18 +7900,18 @@ Please try a new name</source>
         <translation type="obsolete">没有选择文件</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="449"/>
+        <location filename="function_settings/moldinformation.cpp" line="451"/>
         <source>Are you sure to delete the selected files?</source>
         <oldsource>Are you sure to delete the selected files </oldsource>
         <translation>确定删除选择的文件吗?</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="661"/>
+        <location filename="function_settings/moldinformation.cpp" line="666"/>
         <source>Restoring, please wait...</source>
         <translation>还原中，请稍后...</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="573"/>
+        <location filename="function_settings/moldinformation.cpp" line="576"/>
         <source>Wrong program format!</source>
         <translation>错误的程序格式！</translation>
     </message>
@@ -7926,46 +7921,46 @@ Please try a new name</source>
         <translation>已经在当前模号上！</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="587"/>
+        <location filename="function_settings/moldinformation.cpp" line="590"/>
         <source>Wrong config format!!!</source>
         <translation>错误的配置格式!</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="592"/>
+        <location filename="function_settings/moldinformation.cpp" line="595"/>
         <source>Wrong config format!</source>
         <translation>错误的模组参数格式！</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="620"/>
-        <location filename="function_settings/moldinformation.cpp" line="641"/>
-        <location filename="function_settings/moldinformation.cpp" line="752"/>
-        <location filename="function_settings/moldinformation.cpp" line="773"/>
+        <location filename="function_settings/moldinformation.cpp" line="623"/>
+        <location filename="function_settings/moldinformation.cpp" line="645"/>
+        <location filename="function_settings/moldinformation.cpp" line="757"/>
+        <location filename="function_settings/moldinformation.cpp" line="779"/>
         <source>tips</source>
         <oldsource>t1ips</oldsource>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="620"/>
-        <location filename="function_settings/moldinformation.cpp" line="641"/>
-        <location filename="function_settings/moldinformation.cpp" line="752"/>
-        <location filename="function_settings/moldinformation.cpp" line="773"/>
+        <location filename="function_settings/moldinformation.cpp" line="623"/>
+        <location filename="function_settings/moldinformation.cpp" line="645"/>
+        <location filename="function_settings/moldinformation.cpp" line="757"/>
+        <location filename="function_settings/moldinformation.cpp" line="779"/>
         <source>%1 is exist,replace it?</source>
         <translation>%1文件存在，是否替换？</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="694"/>
+        <location filename="function_settings/moldinformation.cpp" line="699"/>
         <source>Wrong program format!!!</source>
         <translation>错误的程序格式!!!</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="716"/>
-        <location filename="function_settings/moldinformation.cpp" line="815"/>
+        <location filename="function_settings/moldinformation.cpp" line="721"/>
+        <location filename="function_settings/moldinformation.cpp" line="822"/>
         <source>Information</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="716"/>
-        <location filename="function_settings/moldinformation.cpp" line="815"/>
+        <location filename="function_settings/moldinformation.cpp" line="721"/>
+        <location filename="function_settings/moldinformation.cpp" line="822"/>
         <source>Operation finished!</source>
         <translation>操作完成！</translation>
     </message>
@@ -7974,8 +7969,8 @@ Please try a new name</source>
         <translation type="obsolete">备份文件不完整！</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="730"/>
-        <location filename="function_settings/moldinformation.cpp" line="853"/>
+        <location filename="function_settings/moldinformation.cpp" line="735"/>
+        <location filename="function_settings/moldinformation.cpp" line="860"/>
         <source>USB is not connected!</source>
         <translation>没有检测到U盘！</translation>
     </message>
@@ -7984,24 +7979,24 @@ Please try a new name</source>
         <translation type="obsolete">没有勾选模号</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="788"/>
+        <location filename="function_settings/moldinformation.cpp" line="795"/>
         <source>Backuping, please wait...</source>
         <translation>备份中，请稍后...</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="880"/>
+        <location filename="function_settings/moldinformation.cpp" line="887"/>
         <source>Refresh File List, please wait...</source>
         <translation>刷新文件列表，请稍后...</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="894"/>
-        <location filename="function_settings/moldinformation.cpp" line="905"/>
+        <location filename="function_settings/moldinformation.cpp" line="901"/>
+        <location filename="function_settings/moldinformation.cpp" line="912"/>
         <source>Backup files is incomplete!</source>
         <translation>备份文件不完整！</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="530"/>
-        <location filename="function_settings/moldinformation.cpp" line="877"/>
+        <location filename="function_settings/moldinformation.cpp" line="532"/>
+        <location filename="function_settings/moldinformation.cpp" line="884"/>
         <source>Backup files is not exists!</source>
         <translation>没有可用的备份文件!</translation>
     </message>
@@ -8017,8 +8012,8 @@ Please try a new name</source>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="307"/>
         <location filename="function_settings/moldinformation.cpp" line="324"/>
-        <location filename="function_settings/moldinformation.cpp" line="730"/>
-        <location filename="function_settings/moldinformation.cpp" line="853"/>
+        <location filename="function_settings/moldinformation.cpp" line="735"/>
+        <location filename="function_settings/moldinformation.cpp" line="860"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
@@ -8039,7 +8034,7 @@ Please try a new name</source>
         <translation>模组数据已损坏，请更换其它模组!</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="361"/>
+        <location filename="function_settings/moldinformation.cpp" line="363"/>
         <source>Loading...</source>
         <translation>载入中...</translation>
     </message>
@@ -8053,24 +8048,24 @@ Please try a new name</source>
         <translation type="obsolete">装载模号成功！</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="397"/>
-        <location filename="function_settings/moldinformation.cpp" line="429"/>
-        <location filename="function_settings/moldinformation.cpp" line="611"/>
-        <location filename="function_settings/moldinformation.cpp" line="649"/>
+        <location filename="function_settings/moldinformation.cpp" line="399"/>
+        <location filename="function_settings/moldinformation.cpp" line="431"/>
+        <location filename="function_settings/moldinformation.cpp" line="614"/>
+        <location filename="function_settings/moldinformation.cpp" line="653"/>
         <source>The mold file </source>
         <translation>模号文件</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="399"/>
-        <location filename="function_settings/moldinformation.cpp" line="431"/>
-        <location filename="function_settings/moldinformation.cpp" line="613"/>
-        <location filename="function_settings/moldinformation.cpp" line="651"/>
+        <location filename="function_settings/moldinformation.cpp" line="401"/>
+        <location filename="function_settings/moldinformation.cpp" line="433"/>
+        <location filename="function_settings/moldinformation.cpp" line="616"/>
+        <location filename="function_settings/moldinformation.cpp" line="655"/>
         <source> is being used</source>
         <translation>正被使用</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="410"/>
-        <location filename="function_settings/moldinformation.cpp" line="439"/>
+        <location filename="function_settings/moldinformation.cpp" line="412"/>
+        <location filename="function_settings/moldinformation.cpp" line="441"/>
         <source>Stand programs can not be delete!</source>
         <translation>标准程序不能删除！</translation>
     </message>

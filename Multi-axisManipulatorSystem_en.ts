@@ -183,13 +183,13 @@
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="94"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="123"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="124"/>
         <source>Internal security zone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="116"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="124"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="125"/>
         <source>External security zone</source>
         <translation type="unfinished"></translation>
     </message>
@@ -214,8 +214,8 @@
         <location filename="hcsettings/axissettingsframe.ui" line="176"/>
         <location filename="hcsettings/axissettingsframe.ui" line="195"/>
         <location filename="hcsettings/axissettingsframe.ui" line="243"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="83"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="84"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="85"/>
         <source>mm</source>
         <translation type="unfinished"></translation>
     </message>
@@ -250,60 +250,58 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="94"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="136"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="95"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="137"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="166"/>
         <source>Min pos inside mold</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="95"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="137"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="96"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="138"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="167"/>
         <source>Max pos inside mold</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="108"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="149"/>
-        <source>Max standby pos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="109"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="150"/>
+        <source>Max standby pos</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/axissettingsframe.cpp" line="110"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="151"/>
         <source>Leave origin pos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="166"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="183"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="198"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="188"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="203"/>
         <source>Transeve security zone(Less)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="167"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="184"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="199"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="189"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="204"/>
         <source>Transeve security zone(Lagger)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="168"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="169"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="185"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="186"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="200"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="201"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="190"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="191"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="205"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="206"/>
         <source>degree</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="411"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="416"/>
         <source>Information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="411"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="416"/>
         <source>Save Successfully!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1654,28 +1652,28 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="446"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="654"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="450"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="658"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="447"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="451"/>
         <source>Can not add standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="640"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="644"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="641"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="645"/>
         <source>Stand program can not be delete action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="655"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="659"/>
         <source>Can not delete standby position program</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3802,7 +3800,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="262"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="244"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="245"/>
         <source>Mechanical length</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3812,39 +3810,40 @@ Please enter an digit between </source>
         <location filename="hcsettings/icmachinestructpage.ui" line="366"/>
         <location filename="hcsettings/icmachinestructpage.ui" line="407"/>
         <location filename="hcsettings/icmachinestructpage.ui" line="448"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="239"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="240"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="241"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="242"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="243"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="244"/>
         <source>mm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="303"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="266"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="279"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="294"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="307"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="319"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="267"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="280"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="295"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="308"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="320"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="336"/>
         <source>Maximum displacement</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="344"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="291"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="292"/>
         <source>Internal security zone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="385"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="292"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="293"/>
         <source>External security zone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="426"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="245"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="246"/>
         <source>Distance/Rotation</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3889,152 +3888,144 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="23"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="79"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="24"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="80"/>
         <source>X1 Axis</source>
         <oldsource>X Axis</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="24"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="80"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="25"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="81"/>
         <source>Y1 Axis</source>
         <oldsource>Y Axis</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="25"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="81"/>
-        <source>Z Axis</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="26"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="82"/>
-        <source>X2 Axis</source>
+        <source>Z Axis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="27"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="83"/>
-        <source>Y2 Axis</source>
+        <source>X2 Axis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="28"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="84"/>
-        <source>A Axis</source>
+        <source>Y2 Axis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="29"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="85"/>
-        <source>B Axis</source>
+        <source>A Axis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="30"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="86"/>
-        <source>C Axis</source>
+        <source>B Axis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="31"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="87"/>
-        <source>Struct Define</source>
+        <source>C Axis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="32"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="88"/>
-        <source>Time</source>
+        <source>Struct Define</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="263"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="304"/>
-        <source>Min pos inside mold</source>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="33"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="89"/>
+        <source>Time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="264"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="305"/>
-        <source>Max pos inside mold</source>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="333"/>
+        <source>Min pos inside mold</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="276"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="316"/>
-        <source>Max standby pos</source>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="265"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="306"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="334"/>
+        <source>Max pos inside mold</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="277"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="317"/>
+        <source>Max standby pos</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="278"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="318"/>
         <source>Leave origin pos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="333"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="360"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="385"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="363"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="388"/>
         <source>Transever security zone(Less)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="334"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="361"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="386"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="364"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="389"/>
         <source>Transever security zone(Lagger)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="335"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="336"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="337"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="338"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="339"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="362"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="363"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="364"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="365"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="366"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="395"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="396"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="397"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="367"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="368"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="369"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="398"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="399"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="400"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="401"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="402"/>
         <source>degree</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="340"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="367"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="400"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="370"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="403"/>
         <source>Max Rotate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="341"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="368"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="401"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="371"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="404"/>
         <source>Machine Per</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="349"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="376"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="394"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="379"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="397"/>
         <source>Origin Offset</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="594"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="597"/>
         <source>Information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="594"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="597"/>
         <source>Save Successfully!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6126,63 +6117,67 @@ Would you want to restart now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="192"/>
+        <location filename="mainframe.ui" line="183"/>
         <source>Z:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="237"/>
+        <location filename="mainframe.ui" line="228"/>
         <source>X1:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="282"/>
+        <location filename="mainframe.ui" line="273"/>
         <source>Y1:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="327"/>
+        <location filename="mainframe.ui" line="318"/>
         <source>X2:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="372"/>
+        <location filename="mainframe.ui" line="363"/>
         <source>Y2:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="489"/>
+        <location filename="mainframe.ui" line="480"/>
         <source>A:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="521"/>
-        <location filename="mainframe.ui" line="566"/>
-        <location filename="mainframe.ui" line="611"/>
+        <location filename="mainframe.ui" line="512"/>
+        <source>mm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainframe.ui" line="557"/>
+        <location filename="mainframe.ui" line="602"/>
         <source>Degree</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="534"/>
+        <location filename="mainframe.ui" line="525"/>
         <source>B:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="579"/>
+        <location filename="mainframe.ui" line="570"/>
         <source>C:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="224"/>
-        <location filename="mainframe.ui" line="269"/>
-        <location filename="mainframe.ui" line="314"/>
-        <location filename="mainframe.ui" line="359"/>
-        <location filename="mainframe.ui" line="404"/>
+        <location filename="mainframe.ui" line="215"/>
+        <location filename="mainframe.ui" line="260"/>
+        <location filename="mainframe.ui" line="305"/>
+        <location filename="mainframe.ui" line="350"/>
+        <location filename="mainframe.ui" line="395"/>
         <source>mm    </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="631"/>
+        <location filename="mainframe.ui" line="622"/>
         <source>Step</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6350,13 +6345,13 @@ Would you want to restart now?</source>
         <location filename="function_settings/moldinformation.cpp" line="225"/>
         <location filename="function_settings/moldinformation.cpp" line="236"/>
         <location filename="function_settings/moldinformation.cpp" line="263"/>
-        <location filename="function_settings/moldinformation.cpp" line="396"/>
-        <location filename="function_settings/moldinformation.cpp" line="409"/>
-        <location filename="function_settings/moldinformation.cpp" line="428"/>
-        <location filename="function_settings/moldinformation.cpp" line="438"/>
-        <location filename="function_settings/moldinformation.cpp" line="448"/>
-        <location filename="function_settings/moldinformation.cpp" line="610"/>
-        <location filename="function_settings/moldinformation.cpp" line="648"/>
+        <location filename="function_settings/moldinformation.cpp" line="398"/>
+        <location filename="function_settings/moldinformation.cpp" line="411"/>
+        <location filename="function_settings/moldinformation.cpp" line="430"/>
+        <location filename="function_settings/moldinformation.cpp" line="440"/>
+        <location filename="function_settings/moldinformation.cpp" line="450"/>
+        <location filename="function_settings/moldinformation.cpp" line="613"/>
+        <location filename="function_settings/moldinformation.cpp" line="652"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6368,14 +6363,14 @@ Please input the file name.</source>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="106"/>
-        <location filename="function_settings/moldinformation.cpp" line="530"/>
-        <location filename="function_settings/moldinformation.cpp" line="573"/>
-        <location filename="function_settings/moldinformation.cpp" line="587"/>
-        <location filename="function_settings/moldinformation.cpp" line="592"/>
-        <location filename="function_settings/moldinformation.cpp" line="694"/>
-        <location filename="function_settings/moldinformation.cpp" line="877"/>
-        <location filename="function_settings/moldinformation.cpp" line="894"/>
-        <location filename="function_settings/moldinformation.cpp" line="905"/>
+        <location filename="function_settings/moldinformation.cpp" line="532"/>
+        <location filename="function_settings/moldinformation.cpp" line="576"/>
+        <location filename="function_settings/moldinformation.cpp" line="590"/>
+        <location filename="function_settings/moldinformation.cpp" line="595"/>
+        <location filename="function_settings/moldinformation.cpp" line="699"/>
+        <location filename="function_settings/moldinformation.cpp" line="884"/>
+        <location filename="function_settings/moldinformation.cpp" line="901"/>
+        <location filename="function_settings/moldinformation.cpp" line="912"/>
         <source>Warnning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6438,8 +6433,8 @@ Please try a new name</source>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="307"/>
         <location filename="function_settings/moldinformation.cpp" line="324"/>
-        <location filename="function_settings/moldinformation.cpp" line="730"/>
-        <location filename="function_settings/moldinformation.cpp" line="853"/>
+        <location filename="function_settings/moldinformation.cpp" line="735"/>
+        <location filename="function_settings/moldinformation.cpp" line="860"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6465,7 +6460,7 @@ Please try a new name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="361"/>
+        <location filename="function_settings/moldinformation.cpp" line="363"/>
         <source>Loading...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6475,112 +6470,112 @@ Please try a new name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="397"/>
-        <location filename="function_settings/moldinformation.cpp" line="429"/>
-        <location filename="function_settings/moldinformation.cpp" line="611"/>
-        <location filename="function_settings/moldinformation.cpp" line="649"/>
+        <location filename="function_settings/moldinformation.cpp" line="399"/>
+        <location filename="function_settings/moldinformation.cpp" line="431"/>
+        <location filename="function_settings/moldinformation.cpp" line="614"/>
+        <location filename="function_settings/moldinformation.cpp" line="653"/>
         <source>The mold file </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="399"/>
-        <location filename="function_settings/moldinformation.cpp" line="431"/>
-        <location filename="function_settings/moldinformation.cpp" line="613"/>
-        <location filename="function_settings/moldinformation.cpp" line="651"/>
+        <location filename="function_settings/moldinformation.cpp" line="401"/>
+        <location filename="function_settings/moldinformation.cpp" line="433"/>
+        <location filename="function_settings/moldinformation.cpp" line="616"/>
+        <location filename="function_settings/moldinformation.cpp" line="655"/>
         <source> is being used</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="410"/>
-        <location filename="function_settings/moldinformation.cpp" line="439"/>
+        <location filename="function_settings/moldinformation.cpp" line="412"/>
+        <location filename="function_settings/moldinformation.cpp" line="441"/>
         <source>Stand programs can not be delete!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="661"/>
+        <location filename="function_settings/moldinformation.cpp" line="666"/>
         <source>Restoring, please wait...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="573"/>
+        <location filename="function_settings/moldinformation.cpp" line="576"/>
         <source>Wrong program format!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="449"/>
+        <location filename="function_settings/moldinformation.cpp" line="451"/>
         <source>Are you sure to delete the selected files?</source>
         <oldsource>Are you sure to delete the selected files </oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="587"/>
+        <location filename="function_settings/moldinformation.cpp" line="590"/>
         <source>Wrong config format!!!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="592"/>
+        <location filename="function_settings/moldinformation.cpp" line="595"/>
         <source>Wrong config format!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="620"/>
-        <location filename="function_settings/moldinformation.cpp" line="641"/>
-        <location filename="function_settings/moldinformation.cpp" line="752"/>
-        <location filename="function_settings/moldinformation.cpp" line="773"/>
+        <location filename="function_settings/moldinformation.cpp" line="623"/>
+        <location filename="function_settings/moldinformation.cpp" line="645"/>
+        <location filename="function_settings/moldinformation.cpp" line="757"/>
+        <location filename="function_settings/moldinformation.cpp" line="779"/>
         <source>tips</source>
         <oldsource>t1ips</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="620"/>
-        <location filename="function_settings/moldinformation.cpp" line="641"/>
-        <location filename="function_settings/moldinformation.cpp" line="752"/>
-        <location filename="function_settings/moldinformation.cpp" line="773"/>
+        <location filename="function_settings/moldinformation.cpp" line="623"/>
+        <location filename="function_settings/moldinformation.cpp" line="645"/>
+        <location filename="function_settings/moldinformation.cpp" line="757"/>
+        <location filename="function_settings/moldinformation.cpp" line="779"/>
         <source>%1 is exist,replace it?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="694"/>
+        <location filename="function_settings/moldinformation.cpp" line="699"/>
         <source>Wrong program format!!!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="716"/>
-        <location filename="function_settings/moldinformation.cpp" line="815"/>
+        <location filename="function_settings/moldinformation.cpp" line="721"/>
+        <location filename="function_settings/moldinformation.cpp" line="822"/>
         <source>Information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="716"/>
-        <location filename="function_settings/moldinformation.cpp" line="815"/>
+        <location filename="function_settings/moldinformation.cpp" line="721"/>
+        <location filename="function_settings/moldinformation.cpp" line="822"/>
         <source>Operation finished!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="730"/>
-        <location filename="function_settings/moldinformation.cpp" line="853"/>
+        <location filename="function_settings/moldinformation.cpp" line="735"/>
+        <location filename="function_settings/moldinformation.cpp" line="860"/>
         <source>USB is not connected!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="788"/>
+        <location filename="function_settings/moldinformation.cpp" line="795"/>
         <source>Backuping, please wait...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="880"/>
+        <location filename="function_settings/moldinformation.cpp" line="887"/>
         <source>Refresh File List, please wait...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="894"/>
-        <location filename="function_settings/moldinformation.cpp" line="905"/>
+        <location filename="function_settings/moldinformation.cpp" line="901"/>
+        <location filename="function_settings/moldinformation.cpp" line="912"/>
         <source>Backup files is incomplete!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="530"/>
-        <location filename="function_settings/moldinformation.cpp" line="877"/>
+        <location filename="function_settings/moldinformation.cpp" line="532"/>
+        <location filename="function_settings/moldinformation.cpp" line="884"/>
         <source>Backup files is not exists!</source>
         <translation type="unfinished"></translation>
     </message>
