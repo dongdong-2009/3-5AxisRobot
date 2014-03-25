@@ -123,4 +123,3 @@ system("python rename_ui.py temp_8_d")
 system("python rename_ui.py temp_8")
 QMAKE_POST_LINK += "&& arm-linux-strip $$DESTDIR/$$TARGET && HCbcrypt.sh -r $$DESTDIR/$$TARGET"
 }
-
