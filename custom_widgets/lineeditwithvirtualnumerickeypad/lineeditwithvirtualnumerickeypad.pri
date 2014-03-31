@@ -13,5 +13,15 @@ SOURCES += \
     custom_widgets/lineeditwithvirtualnumerickeypad/iclineeditwithvirtualnumerickeypad.cpp \
     custom_widgets/lineeditwithvirtualnumerickeypad/icfunctionsettingpagename.cpp
 
-FORMS += \
-    custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog.ui
+#FORMS +=
+#    custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog.ui \
+#    custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui
+
+RESOURCES += \
+    resource.qrc
+contains(DEFINES, HC_SK_8){
+FORMS += virtualnumerickeypaddialog.ui
+}
+contains(DEFINES, HC_SK_5){
+FORMS += virtualnumerickeypaddialog_5.ui
+}

@@ -35,16 +35,46 @@ SOURCES += \
 
 FORMS += \
     #hcsettings/basicsettingsframe.ui \
-    hcsettings/axissettingsframe.ui \
+#    hcsettings/axissettingsframe.ui \
     hcsettings/ichcsettingsframe.ui \
-    hcsettings/ichcstackedsettingsframe.ui \
+#    hcsettings/ichcstackedsettingsframe.ui \
     hcsettings/ichctimeframe.ui \
     hcsettings/ichcmovementframe.ui \
-    hcsettings/ichcdetectionframe.ui \
-    hcsettings/ichcproductsettingframe.ui \
-    hcsettings/ichcsystemsettingsframe.ui \
+#    hcsettings/ichcdetectionframe.ui \
+#    hcsettings/ichcproductsettingframe.ui \
+#    hcsettings/ichcsystemsettingsframe.ui \
     hcsettings/icmachineconfigpage.ui \
     hcsettings/icadminpassworddialog.ui \
-    hcsettings/icstructdefineframe.ui \
-    hcsettings/icmachinestructpage.ui \
-    hcsettings/icmachinefigure.ui
+#    hcsettings/icstructdefineframe.ui \
+#    hcsettings/icmachinestructpage.ui \
+    hcsettings/icmachinefigure.ui \
+#    hcsettings/ichcsystemsettingsframe_5.ui
+#    hcsettings/icstructdefineframe_5.ui \
+#    hcsettings/ichcstackedsettingsframe_5.ui \
+#    hcsettings/ichcdetectionfram_5.ui
+#    hcsettings/icmachinestructpage_5.ui
+    hcsettings/ichctimeframe_5.ui
+
+
+
+contains(DEFINES, HC_SK_8){
+FORMS += hcsettings/icstructdefineframe.ui \
+    hcsettings/ichcstackedsettingsframe.ui \
+    hcsettings/ichcdetectionframe.ui \
+    hcsettings/ichcsystemsettingsframe.ui \
+     hcsettings/icmachinestructpage.ui \
+    hcsettings/axissettingsframe.ui \
+hcsettings/ichcproductsettingframe.ui
+}
+contains(DEFINES, HC_SK_5){
+FORMS += hcsettings/icstructdefineframe_5.ui \
+    hcsettings/ichcstackedsettingsframe_5.ui \
+    hcsettings/ichcdetectionframe_5.ui \
+    hcsettings/ichcsystemsettingsframe_5.ui \
+    hcsettings/icmachinestructpage_5.ui \
+    hcsettings/axissettingsframe_5.ui \
+hcsettings/ichcproductsettingframe_5.ui
+}
+
+RESOURCES += \
+    resource.qrc

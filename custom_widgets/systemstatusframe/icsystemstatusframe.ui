@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>283</width>
-    <height>52</height>
+    <height>53</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,8 @@
    <string notr="true">background: gray;
 border-radius:24px;
 border: 2px solid;
-border-color: rgb(255, 255, 255);</string>
+border-color: rgb(255, 255, 255);
+</string>
   </property>
   <property name="frameShape">
    <enum>QFrame::StyledPanel</enum>

@@ -128,15 +128,21 @@ color: rgb(255, 255, 0);</string>
      <item>
       <widget class="QToolButton" name="aAddButton">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
        <property name="minimumSize">
         <size>
-         <width>64</width>
-         <height>48</height>
+         <width>59</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>59</width>
+         <height>16777215</height>
         </size>
        </property>
        <property name="text">
@@ -147,15 +153,21 @@ color: rgb(255, 255, 0);</string>
      <item>
       <widget class="QToolButton" name="aSubButton">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
        <property name="minimumSize">
         <size>
-         <width>64</width>
-         <height>48</height>
+         <width>59</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>59</width>
+         <height>16777215</height>
         </size>
        </property>
        <property name="text">
@@ -166,15 +178,21 @@ color: rgb(255, 255, 0);</string>
      <item>
       <widget class="QToolButton" name="bAddButton">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
        <property name="minimumSize">
         <size>
-         <width>64</width>
-         <height>48</height>
+         <width>59</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>59</width>
+         <height>16777215</height>
         </size>
        </property>
        <property name="text">
@@ -185,15 +203,21 @@ color: rgb(255, 255, 0);</string>
      <item>
       <widget class="QToolButton" name="bSubButton">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
        <property name="minimumSize">
         <size>
-         <width>64</width>
-         <height>48</height>
+         <width>59</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>59</width>
+         <height>16777215</height>
         </size>
        </property>
        <property name="text">
@@ -220,15 +244,21 @@ color: rgb(255, 255, 0);</string>
         <bool>true</bool>
        </property>
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
        <property name="minimumSize">
         <size>
-         <width>64</width>
-         <height>0</height>
+         <width>59</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>45</height>
         </size>
        </property>
        <property name="mouseTracking">
@@ -263,15 +293,21 @@ color: rgb(255, 255, 0);</string>
         <bool>true</bool>
        </property>
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
        <property name="minimumSize">
         <size>
-         <width>64</width>
-         <height>0</height>
+         <width>59</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>45</height>
         </size>
        </property>
        <property name="mouseTracking">
@@ -306,15 +342,21 @@ color: rgb(255, 255, 0);</string>
         <bool>true</bool>
        </property>
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
        <property name="minimumSize">
         <size>
-         <width>64</width>
-         <height>0</height>
+         <width>59</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>45</height>
         </size>
        </property>
        <property name="acceptDrops">
@@ -346,15 +388,21 @@ color: rgb(255, 255, 0);</string>
         <bool>true</bool>
        </property>
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
        <property name="minimumSize">
         <size>
-         <width>64</width>
-         <height>0</height>
+         <width>59</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>45</height>
         </size>
        </property>
        <property name="styleSheet">
@@ -380,15 +428,21 @@ color: rgb(255, 255, 0);</string>
         <bool>true</bool>
        </property>
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
        <property name="minimumSize">
         <size>
-         <width>64</width>
-         <height>0</height>
+         <width>59</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>45</height>
         </size>
        </property>
        <property name="styleSheet">

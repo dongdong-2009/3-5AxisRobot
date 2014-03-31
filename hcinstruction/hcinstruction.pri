@@ -57,26 +57,62 @@ SOURCES += \
     hcinstruction/ichcotherpage.cpp
 
 FORMS += \
-    hcinstruction/ichcinstructionpageframe.ui \
-    hcinstruction/actionsettingframe.ui \
+#    hcinstruction/ichcinstructionpageframe.ui \
     #hcinstruction/ichcparametersframe.ui \
     #hcinstruction/routesettingdialog.ui \
-    hcinstruction/ichcinjectionpage.ui \
-    hcinstruction/ichcfixturepage.ui \
-    hcinstruction/ichcconditionpage.ui \
-    hcinstruction/ichcprogrammonitorframe.ui \
+#    hcinstruction/ichcinjectionpage.ui \
+#    hcinstruction/actionsettingframe.ui \
+#    hcinstruction/ichcfixturepage.ui \
+#    hcinstruction/ichcconditionpage.ui \
+#    hcinstruction/ichcprogrammonitorframe.ui \
     #hcinstruction/ichceditordialog.ui \
     #hcinstruction/icmacroparameditorframe.ui \
     hcinstruction/icautorunrevise.ui \
     hcinstruction/icinstructioneditorbase.ui \
     hcinstruction/icflagseditor.ui \
-    hcinstruction/icpneumaticactionpage.ui \
-    hcinstruction/icinstructmodifydialog.ui \
-    hcinstruction/icwaitconditioneditor.ui \
+#    hcinstruction/icpneumaticactionpage.ui \
+#    hcinstruction/icinstructmodifydialog.ui \
+#    hcinstruction/icwaitconditioneditor.ui \
     hcinstruction/icperipherypage.ui \
-    hcinstruction/icperipheryparametereditor.ui \
-    hcinstruction/iccutpage.ui \
+#    hcinstruction/icperipheryparametereditor.ui \
+#    hcinstruction/iccutpage.ui \
     hcinstruction/icprogramselector.ui \
     hcinstruction/icstackeditor.ui \
-    hcinstruction/icprogramguidepage.ui \
+#    hcinstruction/icprogramguidepage.ui \
     hcinstruction/ichcotherpage.ui
+
+
+
+#    hcinstruction/ichcinstructionpageframe_5.ui
+
+RESOURCES += \
+    resource.qrc
+
+contains(DEFINES, HC_SK_8){
+FORMS += hcinstruction/ichcinstructionpageframe.ui \
+    hcinstruction/icwaitconditioneditor.ui \
+    hcinstruction/icprogramguidepage.ui \
+    hcinstruction/icpneumaticactionpage.ui \
+    hcinstruction/icperipheryparametereditor.ui \
+    hcinstruction/ichcinjectionpage.ui \
+    hcinstruction/ichcfixturepage.ui \
+    hcinstruction/ichcconditionpage.ui \
+    hcinstruction/iccutpage.ui \
+    hcinstruction/actionsettingframe.ui \
+    hcinstruction/ichcprogrammonitorframe.ui \
+    hcinstruction/icinstructmodifydialog.ui
+}
+contains(DEFINES, HC_SK_5){
+FORMS += hcinstruction/ichcinstructionpageframe_5.ui \
+    hcinstruction/icwaitconditioneditor_5.ui \
+    hcinstruction/icprogramguidepage_5.ui \
+    hcinstruction/icpneumaticactionpage_5.ui \
+    hcinstruction/icperipheryparametereditor_5.ui \
+    hcinstruction/ichcinjectionpage_5.ui \
+    hcinstruction/ichcfixturepage_5.ui \
+    hcinstruction/ichcconditionpage_5.ui \
+    hcinstruction/iccutpage_5.ui \
+    hcinstruction/actionsettingframe_5.ui \
+    hcinstruction/ichcprogrammonitorframe_5.ui \
+    hcinstruction/icinstructmodifydialog_5.ui
+}

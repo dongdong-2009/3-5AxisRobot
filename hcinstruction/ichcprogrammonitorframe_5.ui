@@ -280,13 +280,13 @@ color: rgb(255, 255, 0);</string>
        <property name="minimumSize">
         <size>
          <width>120</width>
-         <height>48</height>
+         <height>41</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
          <width>120</width>
-         <height>48</height>
+         <height>41</height>
         </size>
        </property>
        <property name="text">
@@ -318,13 +318,13 @@ color: rgb(255, 255, 0);</string>
        <property name="minimumSize">
         <size>
          <width>120</width>
-         <height>48</height>
+         <height>41</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
          <width>120</width>
-         <height>48</height>
+         <height>41</height>
         </size>
        </property>
        <property name="text">
@@ -350,13 +350,13 @@ color: rgb(255, 255, 0);</string>
        <property name="minimumSize">
         <size>
          <width>120</width>
-         <height>48</height>
+         <height>41</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
          <width>120</width>
-         <height>48</height>
+         <height>41</height>
         </size>
        </property>
        <property name="text">
@@ -382,13 +382,13 @@ color: rgb(255, 255, 0);</string>
        <property name="minimumSize">
         <size>
          <width>120</width>
-         <height>48</height>
+         <height>41</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
          <width>120</width>
-         <height>48</height>
+         <height>41</height>
         </size>
        </property>
        <property name="text">
@@ -414,13 +414,13 @@ color: rgb(255, 255, 0);</string>
        <property name="minimumSize">
         <size>
          <width>120</width>
-         <height>48</height>
+         <height>41</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
          <width>120</width>
-         <height>48</height>
+         <height>41</height>
         </size>
        </property>
        <property name="text">

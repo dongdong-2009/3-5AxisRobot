@@ -9,6 +9,14 @@
 #include "icparameterconversion.h"
 
 #include <QDebug>
+#ifdef HC_SK_5
+#define WIDTH 640
+#define HEIGHT 480
+#else
+#define WIDTH 800
+#define HEIGHT 600
+#endif
+
 
 //public:
 ICLineEditWithVirtualNumericKeypad::ICLineEditWithVirtualNumericKeypad(QWidget * parent)
@@ -41,7 +49,7 @@ void ICLineEditWithVirtualNumericKeypad::mousePressEvent(QMouseEvent *e)
     virtualNumericKeypadDialog_->ResetDisplay();
     QPoint topLeft = this->mapToGlobal(this->rect().topLeft());
     QPoint toMove;
-    if(topLeft.x() + virtualNumericKeypadDialog_->width() <= 800)
+    if(topLeft.x() + virtualNumericKeypadDialog_->width() <= WIDTH)
     {
         toMove.setX(topLeft.x());
     }
@@ -51,20 +59,20 @@ void ICLineEditWithVirtualNumericKeypad::mousePressEvent(QMouseEvent *e)
     }
     else
     {
-        toMove.setX(300);
+        toMove.setX(HEIGHT/2);
     }
-    if(topLeft.y() + 48 + virtualNumericKeypadDialog_->height() <= 600)
+    if(topLeft.y() + 48 + virtualNumericKeypadDialog_->height() <= HEIGHT)
     {
         toMove.setY(topLeft.y() + 48);
     }
     else
     {
-        toMove.setY(600 - virtualNumericKeypadDialog_->height());
+        toMove.setY(HEIGHT - virtualNumericKeypadDialog_->height());
         if(topLeft.x() - virtualNumericKeypadDialog_->width() >= 0)
         {
             toMove.setX(topLeft.x() - virtualNumericKeypadDialog_->width());
         }
-        else if(topLeft.x() + this->width() + virtualNumericKeypadDialog_->width() <= 800)
+        else if(topLeft.x() + this->width() + virtualNumericKeypadDialog_->width() <= WIDTH)
         {
             toMove.setX(topLeft.x() + this->width());
         }

@@ -63,9 +63,13 @@ ICHCFixturePage::ICHCFixturePage(QWidget *parent) :
                 SLOT(map()));
     }
 //    ui->tableWidget->resizeColumnsToContents();
+#ifdef HC_SK_5
+    ui->tableWidget->setColumnWidth(0, 36);
+    ui->tableWidget->setColumnWidth(1, 100);
+#else
     ui->tableWidget->setColumnWidth(0, 50);
     ui->tableWidget->setColumnWidth(1, 140);
-
+#endif
 //    currentPosMap_.insert(ui->fixture1CurrentLabel, 0);
 //    currentPosMap_.insert(ui->fixture2CurrentLabel, 1);
 //    currentPosMap_.insert(ui->fixture3CurrentLabel, 2);

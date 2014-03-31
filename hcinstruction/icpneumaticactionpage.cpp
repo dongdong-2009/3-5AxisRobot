@@ -56,9 +56,14 @@ ICPneumaticActionPage::ICPneumaticActionPage(QWidget *parent) :
                 SLOT(map()));
 
     }
-
+#ifdef HC_SK_5
+    ui->tableWidget->setColumnWidth(0, 36);
+    ui->tableWidget->setColumnWidth(1, 70);
+#else
     ui->tableWidget->setColumnWidth(0, 50);
     ui->tableWidget->setColumnWidth(1, 97);
+#endif
+
 
     commandKeyMap_.insert(settingButtons_.at(0), qMakePair(static_cast<int>(IC::VKEY_RESERVE1_ON), static_cast<int>(IC::VKEY_RESERVE1_OFF)));
     commandKeyMap_.insert(settingButtons_.at(1), qMakePair(static_cast<int>(IC::VKEY_RESERVE2_ON), static_cast<int>(IC::VKEY_RESERVE2_OFF)));

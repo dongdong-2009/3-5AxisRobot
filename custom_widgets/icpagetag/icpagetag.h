@@ -15,8 +15,11 @@ public:
 
     IconSide Direction() const {return iconSide_;}
     void SetDirection(IconSide iconSide) { iconSide_ = iconSide;}
-
+#ifdef HC_SK_5
+    QSize sizeHint() const { return QSize(390, 50);}
+#else
     QSize sizeHint() const { return QSize(430, 55);}
+#endif
     QSize minimumSizeHint() const { return sizeHint();}
 
 protected:

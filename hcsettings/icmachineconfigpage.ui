@@ -25,7 +25,20 @@
     </widget>
    </item>
    <item row="0" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="toleranceLineEdit"/>
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="toleranceLineEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
    </item>
    <item row="1" column="0">
     <widget class="QLabel" name="x1ALabel">
@@ -38,7 +51,20 @@
     </widget>
    </item>
    <item row="1" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="xADEdit"/>
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="xADEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
    </item>
    <item row="1" column="5">
     <widget class="QLabel" name="x1MLabel">
@@ -51,7 +77,20 @@
     </widget>
    </item>
    <item row="1" column="6">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="xMaxSpeedEdit"/>
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="xMaxSpeedEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
    </item>
    <item row="2" column="0">
     <widget class="QLabel" name="y1ALabel">
@@ -64,7 +103,20 @@
     </widget>
    </item>
    <item row="2" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="yADEdit"/>
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="yADEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
    </item>
    <item row="2" column="5">
     <widget class="QLabel" name="y1MLabel">
@@ -77,7 +129,20 @@
     </widget>
    </item>
    <item row="2" column="6">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="yMaxSpeedEdit"/>
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="yMaxSpeedEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
    </item>
    <item row="3" column="0">
     <widget class="QLabel" name="zALabel">
@@ -90,7 +155,20 @@
     </widget>
    </item>
    <item row="3" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="zADEdit"/>
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="zADEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
    </item>
    <item row="3" column="5">
     <widget class="QLabel" name="zMLabel">
@@ -103,7 +181,20 @@
     </widget>
    </item>
    <item row="3" column="6">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="zMaxSpeedEdit"/>
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="zMaxSpeedEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
    </item>
    <item row="1" column="3">
     <widget class="QLabel" name="x1SLabel">
@@ -157,7 +248,20 @@
     </widget>
    </item>
    <item row="4" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="x2ADEdit"/>
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="x2ADEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
    </item>
    <item row="4" column="5">
     <widget class="QLabel" name="x2MLabel">
@@ -170,7 +274,20 @@
     </widget>
    </item>
    <item row="4" column="6">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="x2MaxSpeedEdit"/>
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="x2MaxSpeedEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
    </item>
    <item row="5" column="0">
     <widget class="QLabel" name="y2ALabel">
@@ -183,7 +300,20 @@
     </widget>
    </item>
    <item row="5" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="y2ADEdit"/>
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="y2ADEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
    </item>
    <item row="5" column="5">
     <widget class="QLabel" name="y2MLabel">
@@ -196,7 +326,20 @@
     </widget>
    </item>
    <item row="5" column="6">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="y2MaxSpeedEdit"/>
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="y2MaxSpeedEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
    </item>
    <item row="4" column="3">
     <widget class="QLabel" name="x2SLabel">
@@ -223,7 +366,20 @@
     </widget>
    </item>
    <item row="6" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="aADEdit"/>
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="aADEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
    </item>
    <item row="6" column="3">
     <widget class="QLabel" name="aSLabel">
@@ -243,7 +399,20 @@
     </widget>
    </item>
    <item row="6" column="6">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="aMaxSpeedEdit"/>
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="aMaxSpeedEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
    </item>
    <item row="7" column="0">
     <widget class="QLabel" name="bALabel">
@@ -256,7 +425,20 @@
     </widget>
    </item>
    <item row="7" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="bADEdit"/>
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="bADEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
    </item>
    <item row="7" column="3">
     <widget class="QLabel" name="bSLabel">
@@ -276,7 +458,20 @@
     </widget>
    </item>
    <item row="7" column="6">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="bMaxSpeedEdit"/>
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="bMaxSpeedEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
    </item>
    <item row="8" column="0">
     <widget class="QLabel" name="cALabel">
@@ -289,7 +484,20 @@
     </widget>
    </item>
    <item row="8" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="cADEdit"/>
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="cADEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
    </item>
    <item row="8" column="3">
     <widget class="QLabel" name="cSLabel">
@@ -309,7 +517,20 @@
     </widget>
    </item>
    <item row="8" column="6">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="cMaxSpeedEdit"/>
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="cMaxSpeedEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
    </item>
    <item row="0" column="5">
     <widget class="QLabel" name="label_4">
@@ -322,7 +543,20 @@
     </widget>
    </item>
    <item row="0" column="6">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="pullPushDistance"/>
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="pullPushDistance">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
    </item>
    <item row="0" column="7">
     <widget class="QLabel" name="label_18">
