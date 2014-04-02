@@ -34,6 +34,7 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
     ui(new Ui::ICStructDefineFrame)
 {
     ui->setupUi(this);
+    ui->protDefineContainer->hide();
     buttongroup_ = new QButtonGroup ;
 
     ui->buttonGroupA->setId(ui->normalABox,0);

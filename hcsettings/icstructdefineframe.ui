@@ -355,7 +355,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QGroupBox" name="armDefineBox_2">
+        <widget class="QGroupBox" name="protDefineContainer">
          <property name="title">
           <string>Port Define</string>
          </property>
@@ -2130,7 +2130,6 @@ QRadioButton::indicator:unchecked:disabled
  <buttongroups>
   <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroupA"/>
-  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroupB"/>
   <buttongroup name="buttonGroupC"/>
   <buttongroup name="buttonGroupD"/>
@@ -2138,5 +2137,6 @@ QRadioButton::indicator:unchecked:disabled
   <buttongroup name="buttonGroupF"/>
   <buttongroup name="buttonGroupG"/>
   <buttongroup name="buttonGroupH"/>
+  <buttongroup name="buttonGroup"/>
  </buttongroups>
 </ui>

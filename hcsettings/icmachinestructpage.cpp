@@ -292,6 +292,7 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
         maxText = tr("External security zone");
         ui->distanceRotationEdit->SetDecimalPlaces(2);
         ui->label_2->setText(tr("Maximum displacement"));
+        minSecValidator_->setBottom(1);
 
     }
     else if(currentAxis_ == ICVirtualHost::ICAxis_AxisX2)
