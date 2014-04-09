@@ -264,23 +264,25 @@ void ICVirtualHost::RefreshStatus()
         else
         {
 #ifdef Q_WS_X11
-            statusMap_.insert(XPos, 10);
-            statusMap_.insert(YPos, 10);
-            statusMap_.insert(ZPos, 10);
-            statusMap_.insert(PPos, 10);
-            statusMap_.insert(QPos, 10);
-            statusMap_.insert(CPos, 10);
-            statusMap_.insert(DbgX0, 10);
-            statusMap_.insert(DbgY0, 148);
-            statusMap_.insert(DbgZ0, 3052);
-            statusMap_.insert(DbgP0, (2 << 8));
-            statusMap_.insert(DbgQ0, 60);
-            statusMap_.insert(DbgX1, 150);
-            statusMap_.insert(DbgY1, 123);
-            statusMap_.insert(DbgZ1, 50);
-            statusMap_.insert(DbgP1, 100);
-            statusMap_.insert(DbgQ1, 110);
-            statusMap_.insert(Time, 500);
+            statusMap_.insert(XPos, 0);
+            statusMap_.insert(YPos, 0);
+            statusMap_.insert(ZPos, 0);
+            statusMap_.insert(PPos, 0);
+            statusMap_.insert(QPos, 0);
+            statusMap_.insert(CPos, 0);
+            statusMap_.insert(DbgX0,0);
+            statusMap_.insert(DbgY0,0);
+            statusMap_.insert(DbgZ0,0);
+            statusMap_.insert(DbgP0,0);
+            statusMap_.insert(DbgQ0, 0);
+            statusMap_.insert(DbgX1, 0);
+            statusMap_.insert(DbgY1, 0);
+            statusMap_.insert(DbgZ1, 0);
+            statusMap_.insert(DbgP1, 0);
+            statusMap_.insert(DbgQ1, 0);
+            statusMap_.insert(Time, 0);
+            statusMap_.insert(AxisLastPos1, 0);
+            statusMap_.insert(AxisLastPos2, 0);
             //            if(flag)
             //            {
             //                statusMap_.insert(ErrCode, 304);
@@ -306,7 +308,7 @@ void ICVirtualHost::RefreshStatus()
                 //                qCritical("Connect to host fail!!");
 #ifdef Q_WS_X11
                 statusMap_.insert(ErrCode, 0);
-                statusMap_.insert(XPos, rand());
+//                statusMap_.insert(XPos, rand());
                 //                statusMap_.insert(DbgP0, (2 << 8));
 #else
                 statusMap_.insert(ErrCode, 500);

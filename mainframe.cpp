@@ -475,14 +475,14 @@ void MainFrame::UpdateTranslate()
     ui->cycleTimeAndFinistWidget->SetAlarmInfo(ICAlarmString::Instance()->AlarmInfo(errCode_));
     ui->cycleTimeAndFinistWidget->SetCycleTime(QString().sprintf("%.1f", cycleTime_ / 200.0));
     ui->cycleTimeAndFinistWidget->SetFinished(oldFinishCount_);
-    ui->xPosLabel->setText(QString().sprintf("%.1f", oldXPos_ / 10.0));
-    ui->yPosLabel->setText(QString().sprintf("%.1f", oldYPos_ / 10.0));
-    ui->zPosLabel->setText(QString().sprintf("%.1f", oldZPos_ / 10.0));
-    ui->pPosLabel->setText(QString().sprintf("%.1f", oldX2Pos_ / 10.0));
-    ui->qPosLabel->setText(QString().sprintf("%.1f", oldY2Pos_ / 10.0));
-    ui->aPosLabel->setText(QString().sprintf("%.1f", oldAPos_ / 10.0));
-    ui->bPosLabel->setText(QString().sprintf("%.1f", oldBPos_ / 10.0));
-    ui->cPosLabel->setText(QString().sprintf("%.1f", oldCPos_ / 10.0));
+    ui->xPosLabel->setText(QString().sprintf("%.2f", oldXPos_ / 100.0));
+    ui->yPosLabel->setText(QString().sprintf("%.2f", oldYPos_ / 100.0));
+    ui->zPosLabel->setText(QString().sprintf("%.2f", oldZPos_ / 100.0));
+    ui->pPosLabel->setText(QString().sprintf("%.2f", oldX2Pos_ / 100.0));
+    ui->qPosLabel->setText(QString().sprintf("%.2f", oldY2Pos_ / 100.0));
+    ui->aPosLabel->setText(QString().sprintf("%.2f", oldAPos_ / 100.0));
+    ui->bPosLabel->setText(QString().sprintf("%.2f", oldBPos_ / 100.0));
+    ui->cPosLabel->setText(QString().sprintf("%.2f", oldCPos_ / 100.0));
     ui->stepLabel->setText(QString::number(oldStep_));
 }
 
