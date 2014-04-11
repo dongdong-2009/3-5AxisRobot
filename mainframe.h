@@ -157,7 +157,7 @@ private:
     bool isBPosChanged_;
     bool isCPosChanged_;
     int axisDefine_;
-    int timerID_;
+    QTimer timer_;
 
     bool isFlag;
     QList<QList<QWidget*> > axisWidgets_;

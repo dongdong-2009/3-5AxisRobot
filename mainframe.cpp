@@ -201,7 +201,11 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     //            SIGNAL(StatusRefreshed()),
     //            this,
     //            SLOT(StatusRefreshed()));
-    timerID_ = ICTimerPool::Instance()->Start(ICTimerPool::RefreshTime, this, SLOT(StatusRefreshed()));
+//    timerID_ = ICTimerPool::Instance()->Start(ICTimerPool::RefreshTime, this, SLOT(StatusRefreshed()));
+    connect(&timer_,
+            SIGNAL(timeout()),
+            SLOT(StatusRefreshed()));
+    timer_.start(ICTimerPool::RefreshTime);
     emit LoadMessage("Ready to Refresh");
     InitCategoryPage();
     InitInterface();
@@ -271,7 +275,7 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
 
 MainFrame::~MainFrame()
 {
-    ICTimerPool::Instance()->Stop(timerID_, this, SLOT(StatusRefreshed()));
+//    ICTimerPool::Instance()->Stop(timerID_, this, SLOT(StatusRefreshed()));
     delete nullButton_;
     delete buttonGroup_;
     delete ui;
