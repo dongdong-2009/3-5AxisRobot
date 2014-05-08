@@ -17,9 +17,9 @@ TestSoundPage::TestSoundPage(QWidget *parent) :
 #ifdef HC_3AXIS
     beepFD_ = open("/dev/szhc_beep", O_WRONLY);
 #endif
-#ifndef HC_3AXIS
+//#ifndef HC_3AXIS
     ::system("szhc-any-char /dev/szhc_beep 0 20");
-#endif
+//#endif
 }
 
 TestSoundPage::~TestSoundPage()

@@ -27,9 +27,7 @@ HardwareTest::HardwareTest(QWidget *parent) :
     reportPage_ = new TestReportPage();
     AddTestPageHelper_(keyboardWidget_);
     AddTestPageHelper_(colorWidget_);
-#ifndef HC_3AXIS
     AddTestPageHelper_(brightnessWidget_);
-#endif
     AddTestPageHelper_(backlightWidget_);
     AddTestPageHelper_(soundWidget_);
     AddTestPageHelper_(touchScreenWidget_);

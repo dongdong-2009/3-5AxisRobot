@@ -62,7 +62,7 @@ void TestLedPage::Question()
     int ledFD_ = open("/dev/szhc_leds", O_WRONLY);
 
 #ifdef HC_3AXIS
-    int cmd = 2;
+    int cmd = 0;
 #else
     int cmd = 0;
 #endif

@@ -33,6 +33,8 @@ private:
     Ui::TestLCDColorPage *ui;
 
     QStringList colors_;
+    QStringList colorsName_;
+    QStringList fcolors_;
     int currentColorIndex_;
     QTimer timer_;
     bool isTestPassed_;

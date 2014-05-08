@@ -10,6 +10,10 @@ TestLCDColorPage::TestLCDColorPage(QWidget *parent) :
 {
     ui->setupUi(this);
     colors_<<"black"<<"red"<<"green"<<"blue"<<"white";
+    fcolors_<<"white"<<"black"<<"black"<<"black"<<"black";
+    colorsName_<<QString::fromUtf8("黑色")<<QString::fromUtf8("红色")
+                 <<QString::fromUtf8("绿色")<<QString::fromUtf8("蓝色")
+                   <<QString::fromUtf8("白色");
     currentColorIndex_ = 0;
     connect(&timer_,
             SIGNAL(timeout()),
@@ -48,8 +52,10 @@ void TestLCDColorPage::hideEvent(QHideEvent *e)
 
 void TestLCDColorPage::ChangeColor()
 {
-    ui->info->setText("");
-    QString style = QString("background-color:%1;").arg(colors_.at(currentColorIndex_++));
+    int ci = currentColorIndex_;
+    ui->info->setText(colorsName_[ci]);
+    QString style = QString("background-color:%1;color:%2").arg(colors_.at(currentColorIndex_++))
+            .arg(fcolors_.at(ci));
     this->setStyleSheet(style);
     if(currentColorIndex_ == colors_.size())
     {
