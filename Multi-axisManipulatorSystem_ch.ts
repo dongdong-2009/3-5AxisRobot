@@ -7,7 +7,7 @@
         <location filename="hcinstruction/actionsettingframe.ui" line="14"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="14"/>
         <source>Frame</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="877"/>

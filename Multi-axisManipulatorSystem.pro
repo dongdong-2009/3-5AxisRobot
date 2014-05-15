@@ -107,7 +107,8 @@ RESOURCES += \
     initconfig.qrc
 
 TRANSLATIONS += Multi-axisManipulatorSystem_ch.ts \
-    Multi-axisManipulatorSystem_en.ts
+    Multi-axisManipulatorSystem_en.ts \
+    Multi-axisManipulatorSystem_pt.ts
 
 OTHER_FILES += \
     sysconfig/alarminfomation-en \
