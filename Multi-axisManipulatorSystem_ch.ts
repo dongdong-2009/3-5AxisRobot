@@ -7894,7 +7894,7 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.cpp" line="377"/>
         <source>Tips</source>
-        <translation>提示</translation>
+        <translation type="unfinished">提示</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.cpp" line="377"/>
