@@ -455,7 +455,7 @@
             <enum>Qt::NoFocus</enum>
            </property>
            <property name="text">
-            <string>+</string>
+            <string notr="true">+</string>
            </property>
           </widget>
          </item>
@@ -483,7 +483,7 @@
             <enum>Qt::NoFocus</enum>
            </property>
            <property name="text">
-            <string>-</string>
+            <string notr="true">-</string>
            </property>
           </widget>
          </item>

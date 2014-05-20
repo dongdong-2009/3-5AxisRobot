@@ -114,7 +114,8 @@ OTHER_FILES += \
     sysconfig/alarminfomation-en \
     sysconfig/alarminfomation-ch \
     sysconfig/hintinfomation-ch \
-    sysconfig/hintinfomation-en
+    sysconfig/hintinfomation-en \
+    sysconfig/alarminfomation-pt
 
 QMAKE_POST_LINK += "cp *.qm $$DESTDIR"
 CONFIG(debug, debug|release){

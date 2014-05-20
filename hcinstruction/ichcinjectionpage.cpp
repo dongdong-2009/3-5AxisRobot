@@ -64,7 +64,7 @@ ICHCInjectionPage::ICHCInjectionPage(QWidget *parent) :
     ui->tableWidget->setColumnWidth(1, 110);
 #else
     ui->tableWidget->setColumnWidth(0, 50);
-    ui->tableWidget->setColumnWidth(1, 140);
+    ui->tableWidget->setColumnWidth(1, 180);
 #endif
 
 

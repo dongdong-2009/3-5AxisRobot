@@ -20,8 +20,8 @@ RESOURCES += \
     resource.qrc
 
 contains(DEFINES, HC_SK_8){
-FORMS += passworddialog.ui
+FORMS += $$PWD/passworddialog.ui
 }
 contains(DEFINES, HC_SK_5){
-FORMS += passworddialog_5.ui
+FORMS += $$PWD/passworddialog_5.ui
 }

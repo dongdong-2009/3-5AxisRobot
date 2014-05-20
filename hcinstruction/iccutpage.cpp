@@ -62,6 +62,8 @@ ICCutPage::ICCutPage(QWidget *parent) :
     }
 #ifdef HC_SK_5
     ui->tableWidget->setColumnWidth(0, 36);
+#else
+//    ui->tableWidget->setColumnWidth(0, 60);
 #endif
 
     ui->tableWidget->resizeColumnsToContents();

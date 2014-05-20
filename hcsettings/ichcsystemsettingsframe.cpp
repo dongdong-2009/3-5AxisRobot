@@ -26,6 +26,7 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
 
     ui->languageButtonGroup->setId(ui->chineseBox,0);
     ui->languageButtonGroup->setId(ui->englishBox,1);
+    ui->languageButtonGroup->setId(ui->ptBox, 2);
     InitParameter();
     ui->extentFunctionCheckBox->setChecked(ICParametersSave::Instance()->IsExtentFunctionUsed());
     ui->limitFunctionBox->setChecked(ICParametersSave::Instance()->IsRegisterFunctinOn());
@@ -129,6 +130,10 @@ void ICHCSystemSettingsFrame::languageBoxChange()
     else if(ui->languageButtonGroup->checkedId() == 1)
     {
         paraSave->SetCountry(QLocale::UnitedStates);
+    }
+    else if(ui->languageButtonGroup->checkedId() == 2)
+    {
+        paraSave->SetCountry(QLocale::Portugal);
     }
 }
 
