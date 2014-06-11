@@ -151,22 +151,24 @@ void ICAlarmFrame::OnCurrentAlarmChanged(int currentAlarmNum)
             }
         }
     }
-    if(ui->alarmHistoryTableWidget->rowCount() > 49)
+    QDateTime t = QDateTime::currentDateTime();
+    QFile alarmLogFile(AlarmLogFileName);
+    QTextStream alarmTextStream(&alarmLogFile);
+
+    QString alarms;
+    if(alarmLogFile.open(QIODevice::ReadOnly | QIODevice::Text))
     {
-        ui->alarmHistoryTableWidget->removeRow(ui->alarmHistoryTableWidget->rowCount() - 1);
-
-        QFile alarmLogFile(AlarmLogFileName);
-        QTextStream alarmTextStream(&alarmLogFile);
-
-        QString alarms;
-        if(alarmLogFile.open(QIODevice::ReadOnly | QIODevice::Text))
+        alarms = alarmTextStream.readAll();
+        alarmLogFile.close();
+    }
+    int firstAlarmIndex = alarms.indexOf("\n");
+    if(firstAlarmIndex >= 0)
+    {
+        QDateTime oldDate = QDateTime::fromString(alarms.left(firstAlarmIndex).split(" ").at(1), "yy-MM-dd_hh:mm");
+        int days = oldDate.daysTo(t);
+        if(days > 30)
         {
-            alarms = alarmTextStream.readAll();
-            alarmLogFile.close();
-        }
-        if(!alarms.isEmpty())
-        {
-            int firstAlarmIndex = alarms.indexOf("\n");
+            ui->alarmHistoryTableWidget->removeRow(ui->alarmHistoryTableWidget->rowCount() - 1);
             alarms.remove(0, firstAlarmIndex + 1);
             alarms_.pop_front();
             if(!alarmsNoSolve_.isEmpty())
@@ -176,13 +178,42 @@ void ICAlarmFrame::OnCurrentAlarmChanged(int currentAlarmNum)
                     alarmsNoSolve_[i].second-- ;
                 }
             }
-        }
-        if(alarmLogFile.open(QIODevice::WriteOnly | QIODevice::Truncate | QIODevice::Text))
-        {
-            alarmTextStream<<alarms;
-            alarmLogFile.close();
+            if(alarmLogFile.open(QIODevice::WriteOnly | QIODevice::Truncate | QIODevice::Text))
+            {
+                alarmTextStream<<alarms;
+                alarmLogFile.close();
+            }
         }
     }
+//    if(ui->alarmHistoryTableWidget->rowCount() > 49)
+//    {
+
+
+//        QString alarms;
+//        if(alarmLogFile.open(QIODevice::ReadOnly | QIODevice::Text))
+//        {
+//            alarms = alarmTextStream.readAll();
+//            alarmLogFile.close();
+//        }
+//        if(!alarms.isEmpty())
+//        {
+//            int firstAlarmIndex = alarms.indexOf("\n");
+//            alarms.remove(0, firstAlarmIndex + 1);
+//            alarms_.pop_front();
+//            if(!alarmsNoSolve_.isEmpty())
+//            {
+//                for(int i = 0 ; i < alarmsNoSolve_.size() ; ++i)
+//                {
+//                    alarmsNoSolve_[i].second-- ;
+//                }
+//            }
+//        }
+//        if(alarmLogFile.open(QIODevice::WriteOnly | QIODevice::Truncate | QIODevice::Text))
+//        {
+//            alarmTextStream<<alarms;
+//            alarmLogFile.close();
+//        }
+//    }
     QString alarmDateTime = QDateTime::currentDateTime().toString("yy-MM-dd hh:mm");
     AppendNewLineInTable(currentAlarmNum, alarmDateTime,
                          alarmString_->AlarmInfoMap().value(currentAlarmNum),tr("no-solve"));
