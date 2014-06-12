@@ -76,20 +76,31 @@ void ICAlarmFrame::ReadAlarmInfoInFile()
     alarmLogFile.close();
 //    QStringList alarmItems = alarmFile.split('\n', QString::SkipEmptyParts);
     alarms_ = alarmFile.split('\n', QString::SkipEmptyParts);
+    QStringList alarmsOrigin = alarms_;
     QStringList optionList;
     int alarmNum;
+    QDateTime t = QDateTime::currentDateTime();
+    QString oldDS;
+    QDateTime oldDate;
+    int oldAlarmCount = -1;
     for(int i = 0; i != alarms_.size(); ++i)
     {
         optionList = alarms_.at(i).split(' ');
+        if(oldAlarmCount < 0)
+        {
+            oldDS = optionList.at(1);
+            oldDate = QDateTime::fromString(oldDS, "yyyy-MM-dd_hh:mm");
+            if(oldDate.daysTo(t) <=30) oldAlarmCount = i;
+        }
         if(optionList.size() == 2)
         {
-            optionList.append(tr("no-solve"));
+            optionList.append(("no-solve"));
         }
         //防止出现报警后未清除报警然后断电，重启系统后报警最后修改时间为乱码的问题
-        else if(optionList.size() == 3 && optionList.at(2).size() != 14)
-        {
-            optionList[2] = QString(tr("no-solve"));
-        }
+//        else if(optionList.size() == 3 && optionList.at(2).size() != 14)
+//        {
+//            optionList[2] = QString(tr("no-solve"));
+//        }
 
         alarmNum = optionList.at(0).toInt();
         QString alarmInfo = alarmString_->AlarmInfo(alarmNum);
@@ -98,14 +109,29 @@ void ICAlarmFrame::ReadAlarmInfoInFile()
                              alarmInfo,
                              optionList[2].replace('_', ' '));
     }
+    if(oldAlarmCount < 0) oldAlarmCount = alarmsOrigin.size();
+
+    for(int i = 0; i < oldAlarmCount; ++i)
+    {
+        alarmsOrigin.pop_front();
+    }
+    if(alarmLogFile.open(QFile::WriteOnly | QFile::Text))
+    {
+        alarmLogFile.write(alarmsOrigin.join("\n").toLatin1());
+        alarmLogFile.write("\n");
+        alarmLogFile.close();
+    }
+
+
 }
 
 void ICAlarmFrame::AppendNewLineInTable(int currentAlarmNum, const QString & alarmDateTime, const QString & alarmInfo,const QString & alarmModifyTime)
 {
+    QString resolveTime = alarmModifyTime == "no-solve"? tr("no-solve") : alarmModifyTime;
     QTableWidgetItem * alarmDateTimeItem = new QTableWidgetItem(alarmDateTime);
     QTableWidgetItem * alarmNumItem = new QTableWidgetItem(QString::number(currentAlarmNum));
     QTableWidgetItem * alramInfoItem = new QTableWidgetItem(alarmInfo);
-    QTableWidgetItem * alarmModifyTimeItem = new QTableWidgetItem(alarmModifyTime);
+    QTableWidgetItem * alarmModifyTimeItem = new QTableWidgetItem(resolveTime);
 
     ui->alarmHistoryTableWidget->insertRow(0);
     ui->alarmHistoryTableWidget->setItem(0, 2, alarmDateTimeItem);
@@ -133,10 +159,10 @@ void ICAlarmFrame::RestoreAlarmInfoInLog(int currentAlarmNum, QString alarmDateT
         alarmPair_.first = currentAlarmNum ;
         alarmPair_.second=  alarms_.count() - 1 ;
         alarmsNoSolve_.append(alarmPair_);
-        if(alarmsNoSolve_.size() > 50)
-        {
-            alarmsNoSolve_.pop_front();
-        }
+//        if(alarmsNoSolve_.size() > 50)
+//        {
+//            alarmsNoSolve_.pop_front();
+//        }
     }
 }
 void ICAlarmFrame::OnCurrentAlarmChanged(int currentAlarmNum)
@@ -162,9 +188,10 @@ void ICAlarmFrame::OnCurrentAlarmChanged(int currentAlarmNum)
         alarmLogFile.close();
     }
     int firstAlarmIndex = alarms.indexOf("\n");
-    if(firstAlarmIndex >= 0)
+    if(firstAlarmIndex >= 10)
     {
-        QDateTime oldDate = QDateTime::fromString(alarms.left(firstAlarmIndex).split(" ").at(1), "yy-MM-dd_hh:mm");
+        QString oldDS = alarms.left(firstAlarmIndex).split(" ").at(1);
+        QDateTime oldDate = QDateTime::fromString(oldDS, "yyyy-MM-dd_hh:mm");
         int days = oldDate.daysTo(t);
         if(days > 30)
         {
@@ -214,11 +241,11 @@ void ICAlarmFrame::OnCurrentAlarmChanged(int currentAlarmNum)
 //            alarmLogFile.close();
 //        }
 //    }
-    QString alarmDateTime = QDateTime::currentDateTime().toString("yy-MM-dd hh:mm");
+    QString alarmDateTime = QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm");
     AppendNewLineInTable(currentAlarmNum, alarmDateTime,
                          alarmString_->AlarmInfoMap().value(currentAlarmNum),tr("no-solve"));
 
-    RestoreAlarmInfoInLog(currentAlarmNum, alarmDateTime,tr("no-solve"));
+    RestoreAlarmInfoInLog(currentAlarmNum, alarmDateTime,("no-solve"));
 
     ICAlarmString::Instance()->SetPriorAlarmNum(currentAlarmNum);
 }
@@ -245,7 +272,7 @@ void ICAlarmFrame::on_alarmHistoryTableWidget_clicked(QModelIndex index)
 
 void ICAlarmFrame::AlarmModifyTime()
 {
-    QString alarmModifyTime = QDateTime::currentDateTime().toString("yy-MM-dd hh:mm");
+    QString alarmModifyTime = QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm");
     QFile alarmLogFile(AlarmLogFileName);
 //    QFile temporaryFile;
 //    temporaryFile.setFileName(TemporyFileName);
@@ -256,7 +283,7 @@ void ICAlarmFrame::AlarmModifyTime()
 //    }
     for(int i = 0 ; i < alarmsNoSolve_.size() ; ++i)
     {
-        alarms_[alarmsNoSolve_[i].second].replace(tr("no-solve"),alarmModifyTime.replace(' ','_'));
+        alarms_[alarmsNoSolve_[i].second].replace(("no-solve"),alarmModifyTime.replace(' ','_'));
     }
 
     if(alarmLogFile.open(QIODevice::WriteOnly | QIODevice::Text))
