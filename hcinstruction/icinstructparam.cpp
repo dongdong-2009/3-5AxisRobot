@@ -292,12 +292,21 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             }
             if(moldItem.IFVal() == 2)
             {
-                commandStr += tr("Wait X037");
+                commandStr += tr("Wait X026");
             }
             if(moldItem.IFVal() == 3)
             {
-                commandStr += tr("Wait X023");
+                commandStr += tr("Wait X040");
             }
+            if(moldItem.IFVal() == 4)
+            {
+                commandStr += tr("Wait X043");
+            }
+            if(moldItem.IFVal() == 5)
+            {
+                commandStr += tr("Wait X044");
+            }
+            commandStr += tr("Limit Time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 1);
             return commandStr;
         }
     }

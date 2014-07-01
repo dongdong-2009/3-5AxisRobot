@@ -6,6 +6,8 @@ ICHCOtherPage::ICHCOtherPage(QWidget *parent) :
     ui(new Ui::ICHCOtherPage)
 {
     ui->setupUi(this);
+    ui->limitEdit->setValidator(new QIntValidator(0, 1000, this));
+    ui->limitEdit->SetDecimalPlaces(1);
 }
 
 ICHCOtherPage::~ICHCOtherPage()
@@ -30,6 +32,15 @@ QList<ICMoldItem> ICHCOtherPage::CreateCommandImpl() const
     {
         item.SetIFVal(3);
     }
+    if(ui->x043Button->isChecked())
+    {
+        item.SetIFVal(4);
+    }
+    if(ui->x044Button->isChecked())
+    {
+        item.SetIFVal(5);
+    }
+    item.SetDVal(ui->limitEdit->TransThisTextToThisInt());
     ret.append(item);
     return ret;
 }
