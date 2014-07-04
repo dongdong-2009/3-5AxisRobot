@@ -213,6 +213,9 @@ static unsigned int compute_response_length(modbus_param_t *mb_param,
             length = 5;
         }
         break;
+    case FC_HC_MANUAL_RUN:
+        length = 8;
+        break;
 #else
 	case FC_READ_COIL_STATUS:
 	case FC_READ_INPUT_STATUS: {
@@ -831,6 +834,9 @@ static int modbus_receive(modbus_param_t *mb_param,
         {
             query_nb_value = response_nb_value = 7;
         }
+        case FC_HC_MANUAL_RUN:
+            query_nb_value = response_nb_value = 10;
+            break;
 #else
 		case FC_READ_COIL_STATUS:
 		case FC_READ_INPUT_STATUS:
@@ -1444,6 +1450,62 @@ static int hc_runtime_modify_query(modbus_param_t *mb_param,
     return ret;
 }
 
+int hc_manual_run(modbus_param_t *mb_param,
+                                   int slave,
+                                   int num,
+                                   int gm,
+                                   int sub,
+                                   int pos,
+                                   int ifval)
+{
+    int ret;
+    int query_length;
+    uint8_t query[16];
+    uint8_t response[MAX_MESSAGE_LENGTH];
+
+    query[0]  = slave;
+    query[1]  = FC_HC_MANUAL_RUN;
+    query[2]  = num;
+    query[3]  = gm;
+    query[4]  = sub;
+    query[5]  = pos >> 8;
+    query[6]  = pos & 0x00ff;
+    query[7] = ifval;
+
+    query_length = 8;
+
+    ret = modbus_send(mb_param, query, query_length);
+    if (ret > 0)
+    {
+        int i;
+
+        ret = modbus_receive(mb_param, query, response);
+//        qDebug()<<"ret"
+        printf("ret: %d\n", ret);
+        if(ret < 0) return -1;
+        for(int i = 0; i != ret; ++i)
+        {
+            printf("i:%d ", response[i]);
+        }
+        printf("\n");
+
+//        if(ret != query_length) return -1;
+
+        /* If ret is negative, the loop is jumped ! */
+        for (i = 0; i < ret; i++)
+        {
+            if(response[i] != query[i])
+            {
+                return -1;
+            }
+        }
+        return ret;
+    }
+
+    return -1;
+}
+
+
 /* Reads the holding registers in a slave and put the data into an
    array */
 int read_holding_registers(modbus_param_t *mb_param, int slave,
@@ -1503,6 +1565,8 @@ static int set_single(modbus_param_t *mb_param, int slave, int function,
 
 	return ret;
 }
+
+
 
 /* Turns ON or OFF a single coil in the slave device */
 int force_single_coil(modbus_param_t *mb_param, int slave,
@@ -2827,6 +2891,8 @@ int hc_update_host_start(modbus_param_t *mb_param, int slave)
     ret = modbus_send(mb_param, query, query_length);
     return ret;
 }
+
+
 
 
 /* Initializes the modbus_param_t structure for RTU

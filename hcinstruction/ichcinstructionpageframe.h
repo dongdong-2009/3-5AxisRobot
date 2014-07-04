@@ -67,6 +67,8 @@ private slots:
     void OnActionButtonReleased();
     void OnGuideFinished();
 
+    void on_tryButton_clicked();
+
 signals:
 //    void JumpToProgramEditorPage();
 

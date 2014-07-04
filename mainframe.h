@@ -41,6 +41,8 @@ public:
 
     bool NoInStop();
 
+    int CurrentLevel() const;
+
 public Q_SLOTS:
     void StatusRefreshed();
     void ShowManualPage();

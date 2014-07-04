@@ -229,7 +229,12 @@ void ICKeyboardHandler::Keypressed(int keyValue)
     {
         if(!ICParametersSave::Instance()->IsSingleArm())
         {
-            if(status == ICVirtualHost::Stop)
+            if(status == ICVirtualHost::Stop ||
+                    (
+                    icMainFrame->CurrentLevel() < ICParametersSave::MachineAdmin &&
+                    ! ICVirtualHost::GlobalVirtualHost()->IsOrigined()
+                        )
+               )
             {
                 return;
             }
@@ -240,7 +245,12 @@ void ICKeyboardHandler::Keypressed(int keyValue)
     case ICKeyboard::VFB_Pose_Horizontal:
     case ICKeyboard::VFB_Pose_Vertical:
     {
-        if(status == ICVirtualHost::Stop)
+        if(status == ICVirtualHost::Stop ||
+                (
+                icMainFrame->CurrentLevel() < ICParametersSave::MachineAdmin &&
+                ! ICVirtualHost::GlobalVirtualHost()->IsOrigined()
+                    )
+           )
         {
             return;
         }
@@ -249,7 +259,12 @@ void ICKeyboardHandler::Keypressed(int keyValue)
     break;
     default:
     {
-        if(status == ICVirtualHost::Stop)
+        if(status == ICVirtualHost::Stop ||
+                (
+                icMainFrame->CurrentLevel() < ICParametersSave::MachineAdmin &&
+                ! ICVirtualHost::GlobalVirtualHost()->IsOrigined()
+                    )
+           )
         {
             return;
         }

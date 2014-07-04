@@ -1449,3 +1449,8 @@ void MainFrame::InitSpareTime()
     }
 
 }
+
+int MainFrame::CurrentLevel() const
+{
+    return ICProgramHeadFrame::Instance()->CurrentLevel();
+}
