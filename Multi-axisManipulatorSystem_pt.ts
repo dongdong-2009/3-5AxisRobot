@@ -300,13 +300,13 @@
         <location filename="hcsettings/axissettingsframe.cpp" line="94"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="136"/>
         <source>Min pos inside mold</source>
-        <translation>Min - Posição min. do Y-DW no Molde</translation>
+        <translation>Min-Posição min. do Y-DW no Molde</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="95"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="137"/>
         <source>Max pos inside mold</source>
-        <translation>Max - Posição max. do Y-DW no Molde</translation>
+        <translation>Max-Posição max. do Y-DW no Molde</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="108"/>
@@ -4360,13 +4360,13 @@ Please enter an digit between </source>
         <location filename="hcsettings/icmachinestructpage.cpp" line="264"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="306"/>
         <source>Min pos inside mold</source>
-        <translation>Min - Posição min. do Y-DW no Molde</translation>
+        <translation>Min-Posição min. do Y-DW no Molde</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="265"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="307"/>
         <source>Max pos inside mold</source>
-        <translation>Max - Posição max. do Y-DW no Molde</translation>
+        <translation>Max-Posição max. do Y-DW no Molde</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="277"/>
@@ -4437,12 +4437,12 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="596"/>
         <source>Information</source>
-        <translation type="unfinished">Imediato</translation>
+        <translation>Imediato</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="596"/>
         <source>Save Successfully!</source>
-        <translation type="unfinished">Guardar com sucesso!</translation>
+        <translation>Guardar com sucesso!</translation>
     </message>
 </context>
 <context>

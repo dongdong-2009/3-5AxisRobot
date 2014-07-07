@@ -41,7 +41,7 @@ void ICPageTag::paintEvent(QPaintEvent *e)
             painter.drawPixmap(this->rect(), leftPressBG_);
         }
         painter.drawPixmap(90, 10, icon().pixmap(iconSize()));
-        painter.drawText(QRect(0, 10, this->width() - 140, iconSize().height()), text(), Qt::AlignRight | Qt::AlignVCenter);
+        painter.drawText(QRect(0, 10, this->width() - 120, iconSize().height()), text(), Qt::AlignRight | Qt::AlignVCenter);
         painter.end();
     }
     else
@@ -59,7 +59,7 @@ void ICPageTag::paintEvent(QPaintEvent *e)
         {
             painter.drawPixmap(this->rect(), rightPressBG_);
         }
-        painter.drawText(QRect(110, 10, this->width(), iconSize().height()), text(), Qt::AlignLeft | Qt::AlignVCenter);
+        painter.drawText(QRect(80, 10, this->width(), iconSize().height()), text(), Qt::AlignLeft | Qt::AlignVCenter);
         painter.drawPixmap(this->rect().right() - iconSize().width() - 130, 10, icon().pixmap(iconSize()));
         painter.end();
     }

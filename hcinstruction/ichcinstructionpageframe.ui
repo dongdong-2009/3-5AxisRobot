@@ -110,10 +110,6 @@ border-radius: 0px;</string>
            <property name="text">
             <string>Guide</string>
            </property>
-           <property name="icon">
-            <iconset resource="../resource.qrc">
-             <normaloff>:/resource/parameter.png</normaloff>:/resource/parameter.png</iconset>
-           </property>
            <property name="iconSize">
             <size>
              <width>32</width>
@@ -155,10 +151,6 @@ border-radius: 0px;</string>
            </property>
            <property name="text">
             <string>Program</string>
-           </property>
-           <property name="icon">
-            <iconset resource="../resource.qrc">
-             <normaloff>:/resource/editor.png</normaloff>:/resource/editor.png</iconset>
            </property>
            <property name="iconSize">
             <size>
