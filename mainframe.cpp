@@ -48,6 +48,8 @@
 #include "ictimerpool.h"
 #include "ichostcomparepage.h"
 #include "icupdatesystem.h"
+#include "icvirtualkey.h"
+#include "ickeyboard.h"
 #if defined(Q_WS_WIN32) || defined(Q_WS_X11)
 #include "simulateknob.h"
 #endif
@@ -82,6 +84,8 @@
 //private:
 //    MainFrame* mainFrame_;
 //};
+
+QMap<int, int> keyMap;
 
 
 MainFrame *icMainFrame = NULL;
@@ -263,6 +267,8 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     this->setFixedSize(800, 600);
 #endif
 
+    keyMap.insert(Qt::Key_A, IC::VKEY_AADD);
+
 #endif
 #ifdef Q_WS_X11
             ShowInstructPage();
@@ -338,7 +344,12 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
         break;
     default:
     {
-        QWidget::keyPressEvent(e);
+        ICKeyboard *keyboard = ICKeyboard::Instace();
+        keyboard->SetPressed(true);
+        int key = keyMap.value(e->key());
+        keyboard->SetKeyValue(key);
+        KeyToInstructEditor(key);
+//        QWidget::keyPressEvent(e);
     }
     }
 }

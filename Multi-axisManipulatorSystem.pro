@@ -17,7 +17,10 @@ OBJECTS_DIR = temp_8_d
 UI_DIR = temp_8_d
 MOC_DIR = temp_8_d
 RCC_DIR = temp_8_d
+#LIBS += -L/vendor/icframework/libs_debug -liccore
 }
+#INCLUDEPATH += vendor/ICCustomWidgets/include
+#INCLUDEPATH += vendor/IndustrialSystemFramework/include
 win32{INCLUDEPATH += ./}
 SOURCES += main.cpp \
      mainframe.cpp \
