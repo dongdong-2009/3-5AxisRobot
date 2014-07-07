@@ -41,7 +41,7 @@ void ICPageTag::paintEvent(QPaintEvent *e)
             painter.drawPixmap(this->rect(), leftPressBG_);
         }
         painter.drawPixmap(90, 10, icon().pixmap(iconSize()));
-        painter.drawText(QRect(0, 10, this->width() - 150, iconSize().height()), text(), Qt::AlignRight | Qt::AlignVCenter);
+        painter.drawText(QRect(0, 10, this->width() - 140, iconSize().height()), text(), Qt::AlignRight | Qt::AlignVCenter);
         painter.end();
     }
     else

@@ -31,7 +31,16 @@
    <property name="spacing">
     <number>2</number>
    </property>
-   <property name="margin">
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
     <number>2</number>
    </property>
    <item>
@@ -80,13 +89,13 @@
            </property>
            <property name="minimumSize">
             <size>
-             <width>140</width>
+             <width>110</width>
              <height>24</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>150</width>
+             <width>110</width>
              <height>24</height>
             </size>
            </property>
@@ -126,13 +135,13 @@ border-radius: 0px;</string>
            </property>
            <property name="minimumSize">
             <size>
-             <width>140</width>
+             <width>145</width>
              <height>24</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>140</width>
+             <width>145</width>
              <height>24</height>
             </size>
            </property>
