@@ -3020,12 +3020,12 @@ Infomation</source>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1507"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1280"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1509"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="808"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="826"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="844"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="862"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="880"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="898"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="810"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="828"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="846"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="864"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="882"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="900"/>
         <source>Internal security zone</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3034,12 +3034,12 @@ Infomation</source>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1539"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1318"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1541"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="809"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="827"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="845"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="863"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="881"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="899"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="811"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="829"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="847"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="865"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="883"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="901"/>
         <source>External security zone</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3059,57 +3059,57 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="34"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="156"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="158"/>
         <source>X1 Axis</source>
         <oldsource>X Axis</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="35"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="157"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="159"/>
         <source>Y1 Axis</source>
         <oldsource>Y Axis</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="36"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="158"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="160"/>
         <source>Z Axis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="37"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="159"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="161"/>
         <source>X2 Axis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="38"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="160"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="162"/>
         <source>Y2 Axis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="39"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="161"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="163"/>
         <source>A Axis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="40"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="162"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="164"/>
         <source>B Axis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="41"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="163"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="165"/>
         <source>C Axis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="42"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="164"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="166"/>
         <source>Struct Define</source>
         <translation type="unfinished">Struct.Def.</translation>
     </message>
@@ -3155,145 +3155,145 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="113"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="216"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="218"/>
         <source>Key Tone(ON)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="118"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="220"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="222"/>
         <source>Key Tone(OFF)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="231"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="258"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="351"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="355"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="233"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="260"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="353"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="357"/>
         <source>Information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="232"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="234"/>
         <source>Please enter the old password and new password!</source>
         <oldsource>Please enter the olp password and new password!</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="250"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="310"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="332"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="389"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="429"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="463"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="609"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1211"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="252"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="312"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="334"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="391"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="431"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="465"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="611"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1213"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="251"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="253"/>
         <source>Old password is wrong!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="259"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="261"/>
         <source>Change password successfully!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="310"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="332"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="389"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="429"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="463"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="609"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="312"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="334"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="391"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="431"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="465"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="611"/>
         <source>USB is not connected!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="313"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="335"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="392"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="315"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="337"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="394"/>
         <source>Backuping, please wait...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="351"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="353"/>
         <source>Operation finished!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="355"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="357"/>
         <source>Operation fail!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="432"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="466"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="612"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="434"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="468"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="614"/>
         <source>Restoring, please wait...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="442"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="474"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="727"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="444"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="476"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="729"/>
         <source>Backup files is broken!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1253"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1258"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1280"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1285"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1297"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1308"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1320"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1255"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1260"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1282"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1287"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1299"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1310"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1322"/>
         <source>Warnning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="772"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="774"/>
         <source>Min pos inside mold</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="773"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="775"/>
         <source>Max pos inside mold</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="790"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="792"/>
         <source>Max standby pos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="791"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="793"/>
         <source>Leave origin pos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1212"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1214"/>
         <source>The system will be reboot to calibrate! Do you want to continue?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1253"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1258"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1255"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1260"/>
         <source>Wrong system config format!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1280"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1285"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1282"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1287"/>
         <source>Wrong Axis config format!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1297"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1308"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1320"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1299"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1310"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1322"/>
         <source>Wrong Rotation config format!</source>
         <translation type="unfinished"></translation>
     </message>

@@ -147,10 +147,12 @@ void ICHCSystemSettingsFrame::changeEvent(QEvent *e)
         ICParametersSave* paraSave = ICParametersSave::Instance();
 
         int index = (paraSave->Country() == QLocale::China) ? 0 : 1;
-        if(index == 0)
+        if(paraSave->Country() == QLocale::China)
             ui->chineseBox->setChecked(true);
-        else if(index == 1)
+        else if(paraSave->Country() == QLocale::English)
             ui->englishBox->setChecked(true);
+        else if(paraSave->Country() == QLocale::Portugal)
+            ui->ptBox->setChecked(true);
     //    ui->languageComboBox->setCurrentIndex(index);
         ui->dateTimeEdit->setDateTime(QDateTime::currentDateTime());
         ui->axisXToolButton->setText(tr("X1 Axis"));
