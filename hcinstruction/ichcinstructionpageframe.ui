@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>913</width>
+    <width>999</width>
     <height>446</height>
    </rect>
   </property>
@@ -556,7 +556,7 @@ padding:5px;
             <string>Cut</string>
            </property>
            <property name="icon">
-            <iconset resource="../resource.qrc">
+            <iconset>
              <normaloff>:/resource/fixture_check(32).png</normaloff>:/resource/fixture_check(32).png</iconset>
            </property>
            <property name="iconSize">
@@ -910,6 +910,15 @@ padding:5px;
        </property>
        <property name="text">
         <string>Try</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
+       <property name="autoRepeatDelay">
+        <number>50</number>
+       </property>
+       <property name="autoRepeatInterval">
+        <number>50</number>
        </property>
       </widget>
      </item>
