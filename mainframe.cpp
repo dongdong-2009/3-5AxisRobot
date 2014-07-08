@@ -315,6 +315,7 @@ void MainFrame::changeEvent(QEvent *e)
 
 void MainFrame::keyPressEvent(QKeyEvent *e)
 {
+    qDebug()<<"key:"<<e->key();
     switch(e->key())
     {
     case ICKeyboard::FB_F1:

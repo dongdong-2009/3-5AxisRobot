@@ -801,11 +801,8 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.cpp" line="86"/>
-        <location filename="categorypage/icalarmframe.cpp" line="91"/>
-        <location filename="categorypage/icalarmframe.cpp" line="188"/>
-        <location filename="categorypage/icalarmframe.cpp" line="190"/>
-        <location filename="categorypage/icalarmframe.cpp" line="228"/>
+        <location filename="categorypage/icalarmframe.cpp" line="130"/>
+        <location filename="categorypage/icalarmframe.cpp" line="246"/>
         <source>no-solve</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6886,76 +6883,76 @@ Would you want to restart now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1303"/>
+        <location filename="mainframe.cpp" line="1314"/>
         <source>Spare Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="878"/>
+        <location filename="mainframe.cpp" line="889"/>
         <source>No Register</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="474"/>
+        <location filename="mainframe.cpp" line="485"/>
         <source>Function</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="475"/>
+        <location filename="mainframe.cpp" line="486"/>
         <source>Monitor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="477"/>
+        <location filename="mainframe.cpp" line="488"/>
         <source>Record</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="476"/>
+        <location filename="mainframe.cpp" line="487"/>
         <source>Alarm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="874"/>
-        <location filename="mainframe.cpp" line="878"/>
-        <location filename="mainframe.cpp" line="1262"/>
-        <location filename="mainframe.cpp" line="1303"/>
-        <location filename="mainframe.cpp" line="1310"/>
+        <location filename="mainframe.cpp" line="885"/>
+        <location filename="mainframe.cpp" line="889"/>
+        <location filename="mainframe.cpp" line="1273"/>
+        <location filename="mainframe.cpp" line="1314"/>
+        <location filename="mainframe.cpp" line="1321"/>
         <source>tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1310"/>
+        <location filename="mainframe.cpp" line="1321"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="478"/>
+        <location filename="mainframe.cpp" line="489"/>
         <source>Return</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="664"/>
+        <location filename="mainframe.cpp" line="675"/>
         <source>Hint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="874"/>
+        <location filename="mainframe.cpp" line="885"/>
         <source>Spear Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="910"/>
+        <location filename="mainframe.cpp" line="921"/>
         <source>Records</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1262"/>
+        <location filename="mainframe.cpp" line="1273"/>
         <source>No Register. System Restart Now...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="862"/>
+        <location filename="mainframe.cpp" line="873"/>
         <source>Instruct</source>
         <translation type="unfinished"></translation>
     </message>
