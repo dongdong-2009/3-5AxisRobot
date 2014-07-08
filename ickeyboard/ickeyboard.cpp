@@ -47,9 +47,9 @@ ICKeyboard::~ICKeyboard()
 
 void ICKeyboard::Receive()
 {
-    pimpl_->keyboardReceiver_.start();
-    pimpl_->knobReceiver_.start();
-    pimpl_->pulleyReceiver_.start();
+//    pimpl_->keyboardReceiver_.start();
+//    pimpl_->knobReceiver_.start();
+//    pimpl_->pulleyReceiver_.start();
 }
 
 int ICKeyboard::TakeKeyValue()
@@ -84,20 +84,20 @@ void ICKeyboard::SetKeyValue(int value)
 int ICKeyboard::TakeSwitchValue()
 {
     //    QMutexLocker locker(&switchMutex_);
-    if(!switchMutex_.tryLock())
-    {
-        return -1;
-    }
+//    if(!switchMutex_.tryLock())
+//    {
+//        return -1;
+//    }
     int switchValue = switchValue_;
     switchValue_ = -1;
-    switchMutex_.unlock();
+//    switchMutex_.unlock();
     //    isSwitchTaken_ = true;
     return switchValue;
 }
 
 int ICKeyboard::CurrentSwitchStatus() const
 {
-    QMutexLocker locker(&switchMutex_);
+//    QMutexLocker locker(&switchMutex_);
     if(currentSwitchValue_ == ICKeyboard::KS_AutoStatu || currentSwitchValue_ == ICKeyboard::KS_ManualStatu)
     {
         return currentSwitchValue_;
@@ -107,7 +107,7 @@ int ICKeyboard::CurrentSwitchStatus() const
 
 void ICKeyboard::SetSwitchValue(int value)
 {
-    QMutexLocker locker(&switchMutex_);
+//    QMutexLocker locker(&switchMutex_);
     //    if(isSwitchTaken_)
     //    {
     switchValue_ = value;
@@ -118,23 +118,23 @@ void ICKeyboard::SetSwitchValue(int value)
 
 int ICKeyboard::TakePulleyValue()
 {
-    if(!pulleyMutex_.tryLock())
-    {
-        return 0;
-    }
+//    if(!pulleyMutex_.tryLock())
+//    {
+//        return 0;
+//    }
     int pulleyValue = pulleyValue_;
     pulleyValue_ = 0;
-    pulleyMutex_.unlock();
+//    pulleyMutex_.unlock();
     return pulleyValue;
 
 }
 
 bool ICKeyboard::SetPulleyValue(int value)
 {
-    if(!pulleyMutex_.tryLock())
-    {
-        return false;
-    }
+//    if(!pulleyMutex_.tryLock())
+//    {
+//        return false;
+//    }
     pulleyValue_ += value;
     pulleyMutex_.unlock();
     return true;

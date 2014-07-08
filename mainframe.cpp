@@ -86,6 +86,8 @@
 //};
 
 QMap<int, int> keyMap;
+QMap<int, int> knobMap;
+QMap<int, int> pulleyMap;
 
 
 MainFrame *icMainFrame = NULL;
@@ -205,7 +207,7 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     //            SIGNAL(StatusRefreshed()),
     //            this,
     //            SLOT(StatusRefreshed()));
-//    timerID_ = ICTimerPool::Instance()->Start(ICTimerPool::RefreshTime, this, SLOT(StatusRefreshed()));
+    //    timerID_ = ICTimerPool::Instance()->Start(ICTimerPool::RefreshTime, this, SLOT(StatusRefreshed()));
     connect(&timer_,
             SIGNAL(timeout()),
             SLOT(StatusRefreshed()));
@@ -248,6 +250,41 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     QTimer::singleShot(ICParametersSave::Instance()->BackLightTime() * 60000, this, SLOT(CheckedInput()));
     QTimer::singleShot(1000, this, SLOT(ClearPosColor()));
 
+    keyMap.insert(Qt::Key_F11, IC::VKEY_START);
+    keyMap.insert(Qt::Key_X, IC::VKEY_STOP);
+    keyMap.insert(Qt::Key_S, IC::VKEY_ORIGIN);
+    keyMap.insert(Qt::Key_D, IC::VKEY_RETURN);
+    keyMap.insert(Qt::Key_I, IC::VKEY_UP);
+    keyMap.insert(Qt::Key_N, IC::VKEY_DOWN);
+
+    keyMap.insert(Qt::Key_F9, IC::VKEY_X1SUB);
+    keyMap.insert(Qt::Key_U, IC::VKEY_X1ADD);
+    keyMap.insert(Qt::Key_Z, IC::VKEY_Y1SUB);
+    keyMap.insert(Qt::Key_V, IC::VKEY_Y1ADD);
+
+    keyMap.insert(Qt::Key_B, IC::VKEY_ZSUB);
+    keyMap.insert(Qt::Key_A, IC::VKEY_ZADD);
+    keyMap.insert(Qt::Key_G, IC::VKEY_CSUB);
+    keyMap.insert(Qt::Key_F, IC::VKEY_CADD);
+
+    keyMap.insert(Qt::Key_Q, IC::VKEY_X2SUB);
+    keyMap.insert(Qt::Key_K, IC::VKEY_X2ADD);
+    keyMap.insert(Qt::Key_P, IC::VKEY_Y2SUB);
+    keyMap.insert(Qt::Key_L, IC::VKEY_Y2ADD);
+
+    keyMap.insert(Qt::Key_C, ICKeyboard::FB_F1);
+    keyMap.insert(Qt::Key_W, ICKeyboard::FB_F2);
+    keyMap.insert(Qt::Key_R, ICKeyboard::FB_F3);
+    keyMap.insert(Qt::Key_M, ICKeyboard::FB_F4);
+    keyMap.insert(Qt::Key_H, ICKeyboard::FB_F5);
+
+    knobMap.insert(Qt::Key_F4, ICKeyboard::KS_ManualStatu);
+    knobMap.insert(Qt::Key_F7, ICKeyboard::KS_StopStatu);
+    knobMap.insert(Qt::Key_F5, ICKeyboard::KS_AutoStatu);
+
+    pulleyMap.insert(Qt::Key_Up, -1);
+    pulleyMap.insert(Qt::Key_Down, 1);
+
     //    QTimer::singleShot(100, this, SLOT(InitHeavyPage()));
 #if defined(Q_WS_WIN32) || defined(Q_WS_X11)
     simulateKnob_ = new SimulateKnob();
@@ -267,13 +304,13 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     this->setFixedSize(800, 600);
 #endif
 
-    keyMap.insert(Qt::Key_A, IC::VKEY_AADD);
+
 
 #endif
 #ifdef Q_WS_X11
-            ShowInstructPage();
+    ShowInstructPage();
     //       ShowManualPage();
-//         ShowAutoPage();
+    //         ShowAutoPage();
 #endif
 
 }
@@ -281,7 +318,7 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
 
 MainFrame::~MainFrame()
 {
-//    ICTimerPool::Instance()->Stop(timerID_, this, SLOT(StatusRefreshed()));
+    //    ICTimerPool::Instance()->Stop(timerID_, this, SLOT(StatusRefreshed()));
     delete nullButton_;
     delete buttonGroup_;
     delete ui;
@@ -315,43 +352,63 @@ void MainFrame::changeEvent(QEvent *e)
 
 void MainFrame::keyPressEvent(QKeyEvent *e)
 {
-    qDebug()<<"key:"<<e->key();
-    switch(e->key())
+    qDebug()<<"KeyEvent:"<<e->key();
+    if(keyMap.contains(e->key()))
     {
-    case ICKeyboard::FB_F1:
-    {
-        ui->functionPageButton->click();
-    }
-        break;
-    case ICKeyboard::FB_F2:
-    {
-        ui->monitorPageButton->click();
-    }
-        break;
-    case ICKeyboard::FB_F3:
-    {
-        ui->recordPageButton->click();
-    }
-        break;
-    case ICKeyboard::FB_F4:
-    {
-        ui->alarmPageButton->click();
-    }
-        break;
-    case ICKeyboard::FB_F5:
-    {
-        ui->returnPageButton->click();
-    }
-        break;
-    default:
-    {
-        ICKeyboard *keyboard = ICKeyboard::Instace();
-        keyboard->SetPressed(true);
         int key = keyMap.value(e->key());
-        keyboard->SetKeyValue(key);
-        KeyToInstructEditor(key);
-//        QWidget::keyPressEvent(e);
+        qDebug()<<"Key:"<<key;
+        switch(key)
+        {
+        case ICKeyboard::FB_F1:
+        {
+            ui->functionPageButton->click();
+        }
+            break;
+        case ICKeyboard::FB_F2:
+        {
+            ui->monitorPageButton->click();
+        }
+            break;
+        case ICKeyboard::FB_F3:
+        {
+            ui->recordPageButton->click();
+        }
+            break;
+        case ICKeyboard::FB_F4:
+        {
+            ui->alarmPageButton->click();
+        }
+            break;
+        case ICKeyboard::FB_F5:
+        {
+            ui->returnPageButton->click();
+        }
+            break;
+        default:
+        {
+            ICKeyboard *keyboard = ICKeyboard::Instace();
+            keyboard->SetPressed(true);
+            keyboard->SetKeyValue(key);
+            KeyToInstructEditor(key);
+            //        QWidget::keyPressEvent(e);
+        }
+        }
     }
+    else if(knobMap.contains(e->key()))
+    {
+        ICKeyboard::Instace()->SetSwitchValue(knobMap.value(e->key()));
+    }
+    else if(pulleyMap.contains(e->key()))
+    {
+        ICKeyboard::Instace()->SetPulleyValue(pulleyMap.value(e->key()));
+    }
+}
+
+void MainFrame::keyReleaseEvent(QKeyEvent *e)
+{
+    if(keyMap.contains(e->key()))
+    {
+        ICKeyboard::Instace()->SetPressed(false);
     }
 }
 
@@ -566,7 +623,7 @@ void MainFrame::StatusRefreshed()
     //    }
     uint axisLast = virtualHost->HostStatus(ICVirtualHost::AxisLastPos1).toUInt() |
             (virtualHost->HostStatus(ICVirtualHost::AxisLastPos2).toUInt() << 16);
-//    int pos = virtualHost->HostStatus(ICVirtualHost::XPos).toInt() * 10 + (axisLast1 & 0xF);
+    //    int pos = virtualHost->HostStatus(ICVirtualHost::XPos).toInt() * 10 + (axisLast1 & 0xF);
     int pos = virtualHost->GetActualPos(ICVirtualHost::ICAxis_AxisX1, axisLast);
     if(pos != oldXPos_)
     {
@@ -1272,7 +1329,7 @@ void MainFrame::Register()
     {
 #ifndef Q_WS_X11
         QMessageBox::information(NULL,tr("tips"),tr("No Register. System Restart Now..."));
-//        system("reboot");
+        //        system("reboot");
 #endif
     }
 }
@@ -1313,14 +1370,14 @@ void MainFrame::InitSpareTime()
         if(resetTime > 0)
         {
             QMessageBox::information(NULL,tr("tips"),tr("Spare Time %1 Hour").arg(resetTime));
-//            connect(registe_timer,SIGNAL(timeout()),this,SLOT(CountRestTime()));
-//            registe_timer->start(1000*15);
+            //            connect(registe_timer,SIGNAL(timeout()),this,SLOT(CountRestTime()));
+            //            registe_timer->start(1000*15);
             registe_timer->start(1000*3600);
         }
         else if(resetTime < 0)
         {
             QMessageBox::information(NULL,tr("tips"),tr("No Register,The System Will Reboot after 10 minutes"));
-//            connect(reboot_timer,SIGNAL(timeout()),this,SLOT(Register()));
+            //            connect(reboot_timer,SIGNAL(timeout()),this,SLOT(Register()));
             //            registe_timer->start(1000*60*10);
             reboot_timer->start(1000*60*10);
 
@@ -1328,8 +1385,8 @@ void MainFrame::InitSpareTime()
     }
     else
     {
-//        connect(registe_timer,SIGNAL(timeout()),this,SLOT(CountRestTime()));
-//        registe_timer->start(1000*15); //15秒减一次（方便测试）
+        //        connect(registe_timer,SIGNAL(timeout()),this,SLOT(CountRestTime()));
+        //        registe_timer->start(1000*15); //15秒减一次（方便测试）
         registe_timer->start(1000*3600);
     }
 

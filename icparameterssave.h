@@ -25,7 +25,7 @@ public:
     {
         if(instance_ == NULL)
         {
-            instance_ = new ICParametersSave("sysconfig/systemParameter.hc");
+            instance_ = new ICParametersSave("sysconfig/Multi-axisManipulatorSystem.ini");
         }
         return instance_;
     }

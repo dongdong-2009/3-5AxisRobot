@@ -108,14 +108,14 @@ ICVirtualHost::ICVirtualHost(QObject *parent) :
     //    RefreshStatus();
     //    RefreshStatus();
 #ifndef Q_WS_WIN32
-    watchdogFd_ = open("/dev/watchdog",O_RDONLY );
+//    watchdogFd_ = open("/dev/watchdog",O_RDONLY );
 #else
-    watchdogFd_ = 0;
+//    watchdogFd_ = 0;
 #endif
-    if(watchdogFd_ < 0)
-    {
-        qWarning("open watchdog fail!");
-    }
+//    if(watchdogFd_ < 0)
+//    {
+//        qWarning("open watchdog fail!");
+//    }
     //#ifndef Q_WS_X11
     //#ifdef HC_ARMV6
     //    QTimer::singleShot(REFRESH_TIME, this, SLOT(RefreshStatus()));
@@ -376,7 +376,7 @@ void ICVirtualHost::RefreshStatus()
 
             emit StatusRefreshed();
 #ifndef Q_WS_WIN32
-            ioctl(watchdogFd_, WDIOC_KEEPALIVE);
+//            ioctl(watchdogFd_, WDIOC_KEEPALIVE);
 #endif
             flag_ = true;
             //            qDebug("Run query");
