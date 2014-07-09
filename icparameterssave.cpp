@@ -46,11 +46,13 @@ ICParametersSave::~ICParametersSave()
     delete translator_;
 }
 
-void ICParametersSave::SaveParameter(const QString & group,const QString & key, const QVariant & value)
+void ICParametersSave::SaveParameter(const QString & group,const QString & key, const QVariant & value, bool issync)
 {
     this->beginGroup(group);
     this->setValue(key,value);
     this->endGroup();
+    if(issync)
+        this->sync();
 }
 
 QVariant ICParametersSave::GetParameter(const QString & group,const QString & key,const QVariant & defaultValue)
