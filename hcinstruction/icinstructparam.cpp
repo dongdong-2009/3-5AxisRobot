@@ -74,9 +74,17 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             {
                 commandStr += tr("X037");
             }
-            else
+            else if(moldItem.SVal() == 7)
             {
                 commandStr += tr("X023");
+            }
+            else if(moldItem.SVal() == 8)
+            {
+                commandStr += tr("X016");
+            }
+            else if(moldItem.SVal() ==9)
+            {
+                commandStr += tr("X017");
             }
 //            commandStr += tr("Fixture");
 //            commandStr += QString::number(moldItem.SVal() + 1);
