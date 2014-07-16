@@ -50,6 +50,7 @@
 #include "icupdatesystem.h"
 #include "icvirtualkey.h"
 #include "ickeyboard.h"
+//#include "ickeyboardhandler.h"
 #if defined(Q_WS_WIN32) || defined(Q_WS_X11)
 #include "simulateknob.h"
 #endif
@@ -250,12 +251,12 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     QTimer::singleShot(ICParametersSave::Instance()->BackLightTime() * 60000, this, SLOT(CheckedInput()));
     QTimer::singleShot(1000, this, SLOT(ClearPosColor()));
 
-    keyMap.insert(Qt::Key_F11, IC::VKEY_START);
-    keyMap.insert(Qt::Key_X, IC::VKEY_STOP);
-    keyMap.insert(Qt::Key_S, IC::VKEY_ORIGIN);
-    keyMap.insert(Qt::Key_D, IC::VKEY_RETURN);
-    keyMap.insert(Qt::Key_I, IC::VKEY_UP);
-    keyMap.insert(Qt::Key_N, IC::VKEY_DOWN);
+    keyMap.insert(Qt::Key_F11, ICKeyboard::VFB_Run);
+    keyMap.insert(Qt::Key_X, ICKeyboard::FB_Stop);
+    keyMap.insert(Qt::Key_S, ICKeyboard::FB_Origin);
+    keyMap.insert(Qt::Key_D, ICKeyboard::FB_Reset);
+    keyMap.insert(Qt::Key_I, ICKeyboard::FB_Up);
+    keyMap.insert(Qt::Key_N, ICKeyboard::FB_Down);
 
     keyMap.insert(Qt::Key_F9, IC::VKEY_X1SUB);
     keyMap.insert(Qt::Key_U, IC::VKEY_X1ADD);
@@ -390,6 +391,7 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
             keyboard->SetPressed(true);
             keyboard->SetKeyValue(key);
             KeyToInstructEditor(key);
+//            ICKeyboardHandler::Instance()->Keypressed(key);
             //        QWidget::keyPressEvent(e);
         }
         }
@@ -397,6 +399,7 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
     else if(knobMap.contains(e->key()))
     {
         ICKeyboard::Instace()->SetSwitchValue(knobMap.value(e->key()));
+//        ICKeyboardHandler::Instance()->Keypressed(key);
     }
     else if(pulleyMap.contains(e->key()))
     {
