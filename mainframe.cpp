@@ -258,20 +258,20 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     keyMap.insert(Qt::Key_I, ICKeyboard::FB_Up);
     keyMap.insert(Qt::Key_N, ICKeyboard::FB_Down);
 
-    keyMap.insert(Qt::Key_F9, IC::VKEY_X1SUB);
-    keyMap.insert(Qt::Key_U, IC::VKEY_X1ADD);
-    keyMap.insert(Qt::Key_Z, IC::VKEY_Y1SUB);
-    keyMap.insert(Qt::Key_V, IC::VKEY_Y1ADD);
+    keyMap.insert(Qt::Key_F9, ICKeyboard::VFB_X1Sub);
+    keyMap.insert(Qt::Key_U, ICKeyboard::VFB_X1Add);
+    keyMap.insert(Qt::Key_Z, ICKeyboard::VFB_Y1Sub);
+    keyMap.insert(Qt::Key_V, ICKeyboard::VFB_Y1Add);
 
-    keyMap.insert(Qt::Key_B, IC::VKEY_ZSUB);
-    keyMap.insert(Qt::Key_A, IC::VKEY_ZADD);
-    keyMap.insert(Qt::Key_G, IC::VKEY_CSUB);
-    keyMap.insert(Qt::Key_F, IC::VKEY_CADD);
+    keyMap.insert(Qt::Key_B, ICKeyboard::VFB_ZSub);
+    keyMap.insert(Qt::Key_A, ICKeyboard::VFB_ZAdd);
+    keyMap.insert(Qt::Key_G, ICKeyboard::VFB_CSub);
+    keyMap.insert(Qt::Key_F, ICKeyboard::VFB_CAdd);
 
-    keyMap.insert(Qt::Key_Q, IC::VKEY_X2SUB);
-    keyMap.insert(Qt::Key_K, IC::VKEY_X2ADD);
-    keyMap.insert(Qt::Key_P, IC::VKEY_Y2SUB);
-    keyMap.insert(Qt::Key_L, IC::VKEY_Y2ADD);
+    keyMap.insert(Qt::Key_Q, ICKeyboard::VFB_X2Sub);
+    keyMap.insert(Qt::Key_K, ICKeyboard::VFB_X2Add);
+    keyMap.insert(Qt::Key_P, ICKeyboard::VFB_Y2Sub);
+    keyMap.insert(Qt::Key_L, ICKeyboard::VFB_Y2Add);
 
     keyMap.insert(Qt::Key_C, ICKeyboard::FB_F1);
     keyMap.insert(Qt::Key_W, ICKeyboard::FB_F2);
@@ -309,9 +309,10 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
 
 #endif
 #ifdef Q_WS_X11
-    ShowInstructPage();
-    //       ShowManualPage();
+//    ShowInstructPage();
+           ShowManualPage();
     //         ShowAutoPage();
+//    ShowOrigin();
 #endif
 
 }
@@ -388,9 +389,30 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
         default:
         {
             ICKeyboard *keyboard = ICKeyboard::Instace();
-            keyboard->SetPressed(true);
             keyboard->SetKeyValue(key);
-            KeyToInstructEditor(key);
+            if(key == IC::VKEY_X1ADD ||
+                    key == IC::VKEY_Y1ADD ||
+                    key == IC::VKEY_ZADD ||
+                    key == IC::VKEY_X2ADD ||
+                    key == IC::VKEY_Y2ADD ||
+                    key == IC::VKEY_AADD ||
+                    key == IC::VKEY_BADD ||
+                    key == IC::VKEY_CADD ||
+                    key == IC::VKEY_X1SUB ||
+                    key == IC::VKEY_Y1SUB ||
+                    key == IC::VKEY_ZSUB ||
+                    key == IC::VKEY_X2SUB ||
+                    key == IC::VKEY_Y2SUB ||
+                    key == IC::VKEY_ASUB ||
+                    key == IC::VKEY_BSUB ||
+                    key == IC::VKEY_CSUB)
+            {
+                keyboard->SetPressed(true);
+                if(instructPage_->isVisible())
+                {
+                    KeyToInstructEditor(key);
+                }
+            }
 //            ICKeyboardHandler::Instance()->Keypressed(key);
             //        QWidget::keyPressEvent(e);
         }

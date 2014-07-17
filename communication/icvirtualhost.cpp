@@ -171,6 +171,7 @@ void ICVirtualHost::RefreshStatus()
         if(keyboard->IsPressed())
         {
             (key == -1) ? key = oldKey_ : oldKey_ = key;
+            qDebug()<<"repeat:"<<key;
         }
         if(key == ICKeyboard::VFB_X1Add || key == ICKeyboard::VFB_X1Sub)
         {
@@ -411,9 +412,11 @@ void ICVirtualHost::SaveSystemConfig()
     }
     QFile::copy("./sysconfig/system.txt", "./sysconfig/system.txt~");
     file.write(toWrite);
+    file.flush();
     file.close();
     //    system("rm ./sysconfig/system.txt~");
     QFile::remove("./sysconfig/system.txt~");
+    ::system("sync");
 }
 
 void ICVirtualHost::SaveAxisParam(int axis)
@@ -1041,9 +1044,11 @@ void ICVirtualHost::SaveAxisParamHelper_(const QString &fileName, int start, int
         }
         QFile::copy("./sysconfig/" + fileName, "./sysconfig/" + fileName + "~");
         file.write(toWrite);
+        file.flush();
         file.close();
         //        system(QString("rm ./sysconfig/%1~").arg(fileName).toAscii());
         QFile::remove("./sysconfig/" + fileName + "~");
+        ::system("sync");
     }
 }
 

@@ -8301,51 +8301,51 @@ Would you want to restart now?</source>
         <translation>步序</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="943"/>
-        <location filename="mainframe.cpp" line="947"/>
-        <location filename="mainframe.cpp" line="1331"/>
-        <location filename="mainframe.cpp" line="1372"/>
-        <location filename="mainframe.cpp" line="1379"/>
+        <location filename="mainframe.cpp" line="946"/>
+        <location filename="mainframe.cpp" line="950"/>
+        <location filename="mainframe.cpp" line="1334"/>
+        <location filename="mainframe.cpp" line="1375"/>
+        <location filename="mainframe.cpp" line="1382"/>
         <source>tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1372"/>
+        <location filename="mainframe.cpp" line="1375"/>
         <source>Spare Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="947"/>
+        <location filename="mainframe.cpp" line="950"/>
         <source>No Register</source>
         <translation>没有注册</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="543"/>
+        <location filename="mainframe.cpp" line="546"/>
         <source>Function</source>
         <translation>功能</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1379"/>
+        <location filename="mainframe.cpp" line="1382"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation>没有注册，系统将在十分钟后重启</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="544"/>
+        <location filename="mainframe.cpp" line="547"/>
         <source>Monitor</source>
         <translation>监视</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="943"/>
+        <location filename="mainframe.cpp" line="946"/>
         <source>Spear Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="979"/>
+        <location filename="mainframe.cpp" line="982"/>
         <source>Records</source>
         <translation>档案</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1331"/>
+        <location filename="mainframe.cpp" line="1334"/>
         <source>No Register. System Restart Now...</source>
         <translation>没有注册，系统现在重启...</translation>
     </message>
@@ -8362,12 +8362,12 @@ Would you want to restart now?</source>
         <translation type="obsolete">欢迎</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="546"/>
+        <location filename="mainframe.cpp" line="549"/>
         <source>Record</source>
         <translation>档案</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="545"/>
+        <location filename="mainframe.cpp" line="548"/>
         <source>Alarm</source>
         <translation>报警</translation>
     </message>
@@ -8384,12 +8384,12 @@ Would you want to restart now?</source>
         <translation type="obsolete">巨集参数从异常中恢复，请先检查巨集参数！</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="547"/>
+        <location filename="mainframe.cpp" line="550"/>
         <source>Return</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="733"/>
+        <location filename="mainframe.cpp" line="736"/>
         <source>Hint</source>
         <translation>提示</translation>
     </message>
@@ -8406,7 +8406,7 @@ Would you want to restart now?</source>
         <translation type="obsolete">还没进行原点!</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="931"/>
+        <location filename="mainframe.cpp" line="934"/>
         <source>Instruct</source>
         <translation>教导</translation>
     </message>

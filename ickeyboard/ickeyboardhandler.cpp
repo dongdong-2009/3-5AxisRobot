@@ -103,6 +103,7 @@ void ICKeyboardHandler::Keypressed(int keyValue)
     {
         return;
     }
+//    qDebug()<<"handle key press"<<keyValue;
     bool isBackLight = icMainFrame->IsBackLightOff();
     icMainFrame->SetHasInput(true);
     if(isBackLight)

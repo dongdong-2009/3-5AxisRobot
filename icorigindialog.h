@@ -19,6 +19,7 @@ Q_SIGNALS:
     void OriginStatusChanged(bool);
 
 protected:
+    void keyPressEvent(QKeyEvent *e);
     void showEvent(QShowEvent *e);
     void hideEvent(QHideEvent *e);
     void changeEvent(QEvent *e);
