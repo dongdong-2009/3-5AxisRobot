@@ -390,22 +390,22 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
         {
             ICKeyboard *keyboard = ICKeyboard::Instace();
             keyboard->SetKeyValue(key);
-            if(key == IC::VKEY_X1ADD ||
-                    key == IC::VKEY_Y1ADD ||
-                    key == IC::VKEY_ZADD ||
-                    key == IC::VKEY_X2ADD ||
-                    key == IC::VKEY_Y2ADD ||
-                    key == IC::VKEY_AADD ||
-                    key == IC::VKEY_BADD ||
-                    key == IC::VKEY_CADD ||
-                    key == IC::VKEY_X1SUB ||
-                    key == IC::VKEY_Y1SUB ||
-                    key == IC::VKEY_ZSUB ||
-                    key == IC::VKEY_X2SUB ||
-                    key == IC::VKEY_Y2SUB ||
-                    key == IC::VKEY_ASUB ||
-                    key == IC::VKEY_BSUB ||
-                    key == IC::VKEY_CSUB)
+            if(key == ICKeyboard::VFB_X1Add ||
+                    key == ICKeyboard::VFB_Y1Add ||
+                    key == ICKeyboard::VFB_ZAdd ||
+                    key == ICKeyboard::VFB_X2Add ||
+                    key == ICKeyboard::VFB_Y2Add ||
+                    key == ICKeyboard::VFB_AAdd ||
+                    key == ICKeyboard::VFB_BAdd ||
+                    key == ICKeyboard::VFB_CAdd ||
+                    key == ICKeyboard::VFB_X1Sub ||
+                    key == ICKeyboard::VFB_Y1Sub ||
+                    key == ICKeyboard::VFB_ZSub ||
+                    key == ICKeyboard::VFB_X2Sub ||
+                    key == ICKeyboard::VFB_Y2Sub ||
+                    key == ICKeyboard::VFB_ASub ||
+                    key == ICKeyboard::VFB_BSub ||
+                    key == ICKeyboard::VFB_CSub)
             {
                 keyboard->SetPressed(true);
                 if(instructPage_->isVisible())
