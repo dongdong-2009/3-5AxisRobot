@@ -1,5 +1,5 @@
-#include "icupdatesystem.h"
-#include "ui_icupdatesystem.h"
+#include "icupdatesystempage.h"
+#include "ui_icupdatesystempage.h"
 
 #include <QSettings>
 #include <QDir>
@@ -20,7 +20,8 @@
 #include <QTextStream>
 #include "icparameterssave.h"
 #include <QRegExp>
-//ICUpdateSystem *icUpdateSystem = NULL;
+#include "ictipswidget.h"
+//ICUpdateSystemPage *ICUpdateSystemPage = NULL;
 
 
 static void BuildShiftMap(int beg, int* map)
@@ -36,10 +37,10 @@ static void BuildShiftMap(int beg, int* map)
     }
 }
 
-ICUpdateSystem * ICUpdateSystem::instance_ = NULL;
-ICUpdateSystem::ICUpdateSystem(QWidget *parent) :
+ICUpdateSystemPage * ICUpdateSystemPage::instance_ = NULL;
+ICUpdateSystemPage::ICUpdateSystemPage(QWidget *parent) :
     QFrame(parent),
-    ui(new Ui::ICUpdateSystem),
+    ui(new Ui::ICUpdateSystemPage),
     updateIniPath_("/mnt/udisk/HCUpdate_5A/"),
     updateHostPath_("/mnt/udisk/HCUpdateHost_5A/"),
     updateSettings_(NULL),
@@ -54,7 +55,7 @@ ICUpdateSystem::ICUpdateSystem(QWidget *parent) :
 {
     ui->setupUi(this);
     InitInterface();
-//    icUpdateSystem = this;
+//    ICUpdateSystemPage = this;
 //    hostStatusToStringMap_.insert(-1, "Connect Host Fail");
     connect(&timer_,
             SIGNAL(timeout()),
@@ -65,9 +66,20 @@ ICUpdateSystem::ICUpdateSystem(QWidget *parent) :
             this,
             SLOT(RefreshRestTime()));
 //    refresh_restTimer->start(1000*60*60);
+    updateSystem_ = new ICUpdateSystem();
+#ifdef Q_WS_X11
+    model_ = new ICUpdatePackModel(QDir::homePath() + "/HCUpdate_UpdateTest");
+    updateSystem_->SetPacksDir(QDir::homePath() + "/HCUpdate_UpdateTest");
+#else
+    model_ = new ICUpdatePackModel("/mnt/udisk/");
+    updateSystem_->SetPacksDir("/mnt/udisk/");
+#endif
+    model_->setHeaderData(0, Qt::Horizontal, tr("Name"));
+    model_->setHeaderData(1, Qt::Horizontal, tr("Create Time"));
+    ui->packetTable->setModel(model_);
 }
 
-ICUpdateSystem::~ICUpdateSystem()
+ICUpdateSystemPage::~ICUpdateSystemPage()
 {
     delete ui;
     if(updateSettings_ != NULL)
@@ -81,7 +93,7 @@ ICUpdateSystem::~ICUpdateSystem()
 
 }
 
-void ICUpdateSystem::changeEvent(QEvent *e)
+void ICUpdateSystemPage::changeEvent(QEvent *e)
 {
     QFrame::changeEvent(e);
     switch (e->type()) {
@@ -93,7 +105,7 @@ void ICUpdateSystem::changeEvent(QEvent *e)
     }
 }
 
-void ICUpdateSystem::showEvent(QShowEvent *e)
+void ICUpdateSystemPage::showEvent(QShowEvent *e)
 {
 //    timer_.start(1000);
     if(ICParametersSave::Instance()->IsRegisterFunctinOn())
@@ -108,7 +120,7 @@ void ICUpdateSystem::showEvent(QShowEvent *e)
     QFrame::showEvent(e);
 }
 
-void ICUpdateSystem::hideEvent(QHideEvent *e)
+void ICUpdateSystemPage::hideEvent(QHideEvent *e)
 {
     timer_.stop();
     ui->updateToolButton->setEnabled(false);
@@ -121,107 +133,21 @@ void ICUpdateSystem::hideEvent(QHideEvent *e)
     QFrame::hideEvent(e);
 }
 
-void ICUpdateSystem::on_refreshToolButton_clicked()
-{
-    RefreshUSBIniInfo();
-}
 
-void ICUpdateSystem::on_updateToolButton_clicked()
+void ICUpdateSystemPage::on_updateToolButton_clicked()
 {
     SystemUpdateStart();
 }
 
-void ICUpdateSystem::SystemUpdateStart()
+void ICUpdateSystemPage::SystemUpdateStart()
 {
-    QDir dir("/proc/scsi/usb-storage");
-    if(!dir.exists())
-    {
-        QMessageBox::warning(this,tr("tips"),tr("USB no exists...")) ;
-        ui->hmiVersionShowLabel->setText(tr("No available HMI version"));
-        ui->hostVersionShowLabel->setText(tr("No available Host version"));
-        ui->updatePasswardLabel->setText(tr("No available New SuperPassward"));
-        ui->connectHostButton->setEnabled(false);
-        ui->updateToolButton->setEnabled(false);
-        ui->updatePasswardButton->setEnabled(false);
-        return;
-    }
-    if(updateSettings_ == NULL)
-    {
-        return;
-    }
-    ICParametersSave::Instance()->setIniCodec("UTF-8");
-    ICParametersSave::Instance()->SetClient(QString::fromUtf8(updateSettings_->value("Client","").toString().toAscii()));
-    ICParametersSave::Instance()->SetShipmentDate(updateSettings_->value("ShipmentDate","").toString());
-    QStringList updateFileList = updateSettings_->childGroups();
-    if(updateFileList.count() > 0)
-    {
-        ui->copyFilesProgressBar->setRange(0, updateFileList.count() + 2);
-        ui->copyFilesProgressBar->setValue(0);
-    }
-
-    if(updateFileList.isEmpty())
-    {
-        return;
-    }
-
-    QDir targetFileDir;
-    for(int i = 0; i < updateFileList.count(); ++i)
-    {
-        updateSettings_->beginGroup(updateFileList.at(i));
-        targetFileDir.setPath(updateSettings_->value("targetPath").toString());
-
-        if(!targetFileDir.absolutePath().isEmpty())
-        {
-            targetFileDir.mkpath(targetFileDir.absolutePath());
-            QFile updateFile(targetFileDir.absolutePath() + '/' + updateFileList.at(i));
-            if(updateFile.exists())
-            {
-                updateFile.remove();
-            }
-
-            QDir currentFileDir(updateIniPath_);
-            currentFileDir.cd(updateSettings_->value("currentPath").toString());
-
-            QFile::copy(currentFileDir.absolutePath() + '/' + updateFileList.at(i),
-                        targetFileDir.absolutePath() + '/' + updateFileList.at(i));
-            ui->copyFilesProgressBar->setValue(i + 1);
-        }
-        updateSettings_->endGroup();
-    }
-    //    if(QFile::exists("/opt/Qt/bin/custom_step.sh"))
-    //    {
-    //        system("cd /opt/Qt/bin && chmod +x custom_step.sh && ./custom_step.sh && rm /opt/Qt/bin/custom_step.sh");
-    //    }
-    if(QFile::exists("/opt/Qt/bin/Multi-axisManipulatorSystem.bfe"))
-    {
-        system("cd /opt/Qt/bin \
-               && mv Multi-axisManipulatorSystem Multi-axisManipulatorSystemOld \
-               && decrypt.sh Multi-axisManipulatorSystem.bfe \
-               && rm Multi-axisManipulatorSystemOld");
-    }
-    ui->copyFilesProgressBar->setValue(ui->copyFilesProgressBar->value() + 1);
-    if(QFile::exists("/opt/Qt/bin/custom_step.sh"))
-    {
-        system("cd /opt/Qt/bin && chmod +x custom_step.sh && ./custom_step.sh && rm /opt/Qt/bin/custom_step.sh");
-    }
-    ui->copyFilesProgressBar->setValue(ui->copyFilesProgressBar->value() + 1);
-    int ret = QMessageBox::information(this, tr("Congratulations"),
-                                       tr("Update finish\n"
-                                          "You must restart this program\n"
-                                          "Would you want to restart now?"),
-                                       QMessageBox::Yes | QMessageBox::Cancel,
-                                       QMessageBox::Yes);
-    switch(ret)
-    {
-    case QMessageBox::Yes:
-        RestartAndUpdateTheProgram();
-        break;
-    default:
-        break;
-    }
+    ICTipsWidget tipWidget(tr("System Updating..."));
+    tipWidget.show();
+    qApp->processEvents();
+    updateSystem_->StartUpdate(model_->data(ui->packetTable->currentIndex()).toString());
 }
 
-void ICUpdateSystem::RefreshUSBIniInfo()
+void ICUpdateSystemPage::RefreshUSBIniInfo()
 {
     if(updateSettings_ != NULL)
     {
@@ -237,8 +163,8 @@ void ICUpdateSystem::RefreshUSBIniInfo()
 
     updateSettings_ = new QSettings(updateIniPath_ + "HCUpdate", QSettings::IniFormat);
     updateHostSettings_ = new QSettings(updateHostPath_ + "HCUpdateHost", QSettings::IniFormat);
-    ui->hmiVersionShowLabel->setText(updateSettings_->value("version", tr("No available HMI version")).toString());
-    ui->hostVersionShowLabel->setText(updateHostSettings_->value("version", tr("No available Host version")).toString());
+//    ui->hmiVersionShowLabel->setText(updateSettings_->value("version", tr("No available HMI version")).toString());
+//    ui->hostVersionShowLabel->setText(updateHostSettings_->value("version", tr("No available Host version")).toString());
 
     QString str;
     str = updateSettings_->value("superPassward").toString();
@@ -246,7 +172,7 @@ void ICUpdateSystem::RefreshUSBIniInfo()
         str = QString(tr("No available New SuperPassward"));
     else
         str = QString(tr("New SuperPassward"));
-    ui->updatePasswardLabel->setText(str);
+//    ui->updatePasswardLabel->setText(str);
     if(!updateSettings_->value("version","").toString().isEmpty())
     {
         ui->updateToolButton->setEnabled(true);
@@ -276,20 +202,20 @@ void ICUpdateSystem::RefreshUSBIniInfo()
 
         if(updateFileList.count() > 0)
         {
-            ui->copyFilesProgressBar->setRange(0, updateFileList.count());
-            ui->copyFilesProgressBar->setValue(0);
+//            ui->copyFilesProgressBar->setRange(0, updateFileList.count());
+//            ui->copyFilesProgressBar->setValue(0);
         }
 }
 
-void ICUpdateSystem::RestartAndUpdateTheProgram()
+void ICUpdateSystemPage::RestartAndUpdateTheProgram()
 {
     //    qApp->notify(qApp, new QCloseEvent());
     system("reboot");
 }
 
-void ICUpdateSystem::InitInterface()
+void ICUpdateSystemPage::InitInterface()
 {
-    ui->copyFilesProgressBar->setValue(0);
+//    ui->copyFilesProgressBar->setValue(0);
 
 //    ui->versionLabel->setEnabled(false);
 //    ui->versionShowLabel->setEnabled(false);
@@ -305,7 +231,7 @@ void ICUpdateSystem::InitInterface()
 //    ui->rebootShowLabel->setStyleSheet("border: 1px solid rgb(192,192,192);");
 }
 
-void ICUpdateSystem::keyPressEvent(QKeyEvent *e)
+void ICUpdateSystemPage::keyPressEvent(QKeyEvent *e)
 {
     switch(e->key())
     {
@@ -323,7 +249,7 @@ void ICUpdateSystem::keyPressEvent(QKeyEvent *e)
     QFrame::keyPressEvent(e);
 }
 
-void ICUpdateSystem::updateHostButton()
+void ICUpdateSystemPage::updateHostButton()
 {
     if(updateHostSettings_ == NULL)
     {
@@ -334,7 +260,7 @@ void ICUpdateSystem::updateHostButton()
     {
         return;
     }
-    ui->copyFilesProgressBar->setValue(0);
+//    ui->copyFilesProgressBar->setValue(0);
     QFile file(updateHostPath_ + updateFileList.at(0));
     if(file.open(QFile::ReadOnly))
     {
@@ -347,7 +273,7 @@ void ICUpdateSystem::updateHostButton()
             QByteArray readySend(file.readAll());
             file.close();
             bool isTranSuccessful = true;
-            ui->copyFilesProgressBar->setRange(0, readySend.size() / 32);
+//            ui->copyFilesProgressBar->setRange(0, readySend.size() / 32);
             for(int addr = 0; addr != readySend.size() / 32; ++addr)
             {
                 tranCommand.SetDataBuffer(readySend.mid(addr << 5, 32));
@@ -355,7 +281,7 @@ void ICUpdateSystem::updateHostButton()
                 isTranSuccessful = isTranSuccessful && processor->ExecuteCommand(tranCommand).toBool();
                 if(isTranSuccessful)
                 {
-                    ui->copyFilesProgressBar->setValue(addr + 1);
+//                    ui->copyFilesProgressBar->setValue(addr + 1);
                 }
                 else
                 {
@@ -383,7 +309,7 @@ void ICUpdateSystem::updateHostButton()
     QMessageBox::warning(this, tr("Warning"), tr("Update Host fail!"));
 }
 
-void ICUpdateSystem::QueryStatus()
+void ICUpdateSystemPage::QueryStatus()
 {
     ICUpdateHostQueryCommand command;
     status_ = ICCommandProcessor::Instance()->ExecuteCommand(command).toInt();
@@ -428,10 +354,10 @@ void ICUpdateSystem::QueryStatus()
     ////        ui->rebootButton->setEnabled(false);
     //        timer_.stop();
     //    }
-    ui->statusLabel->setText(QString::number(status_));
+//    ui->statusLabel->setText(QString::number(status_));
 }
 
-void ICUpdateSystem::rebootButton()
+void ICUpdateSystemPage::rebootButton()
 {
     ICUpdateHostRestartCommand rebootCommand;
     ICCommandProcessor::Instance()->ExecuteCommand(rebootCommand);
@@ -443,15 +369,15 @@ void ICUpdateSystem::rebootButton()
 //    }
 }
 
-void ICUpdateSystem::on_connectHostButton_clicked()
+void ICUpdateSystemPage::on_connectHostButton_clicked()
 {
     QDir dir("/proc/scsi/usb-storage");
     if(!dir.exists())
     {
         QMessageBox::warning(this,tr("tips"),tr("USB no exists...")) ;
-        ui->hmiVersionShowLabel->setText(tr("No available HMI version"));
-        ui->hostVersionShowLabel->setText(tr("No available Host version"));
-        ui->updatePasswardLabel->setText(tr("No available New SuperPassward"));
+//        ui->hmiVersionShowLabel->setText(tr("No available HMI version"));
+//        ui->hostVersionShowLabel->setText(tr("No available Host version"));
+//        ui->updatePasswardLabel->setText(tr("No available New SuperPassward"));
         ui->connectHostButton->setEnabled(false);
         ui->updateToolButton->setEnabled(false);
         ui->updatePasswardButton->setEnabled(false);
@@ -472,7 +398,7 @@ void ICUpdateSystem::on_connectHostButton_clicked()
 //    rebootButton();
 }
 
-void ICUpdateSystem::writeHostButton()
+void ICUpdateSystemPage::writeHostButton()
 {
     ICUpdateHostFinishCommand finishCommand;
     ICCommandProcessor::Instance()->ExecuteCommand(finishCommand);
@@ -488,7 +414,7 @@ void ICUpdateSystem::writeHostButton()
 //    }
 }
 
-void ICUpdateSystem::on_updateLogoButton_clicked()
+void ICUpdateSystemPage::on_updateLogoButton_clicked()
 {
  #ifndef Q_WS_X11
     if(!CheckIsUsbAttached())
@@ -505,7 +431,7 @@ void ICUpdateSystem::on_updateLogoButton_clicked()
 }
 
 
-void ICUpdateSystem::on_generateBtn_clicked()
+void ICUpdateSystemPage::on_generateBtn_clicked()
 {
     QString ret;
     qsrand(QDateTime::currentDateTime().toMSecsSinceEpoch());
@@ -516,7 +442,7 @@ void ICUpdateSystem::on_generateBtn_clicked()
     ui->machineCode->setText(ret);
 }
 
-int ICUpdateSystem::Register(const QString& code, const QString& machineCode)
+int ICUpdateSystemPage::Register(const QString& code, const QString& machineCode)
 {
 //    int pMap[10];
 //    for(int i = 0; i != 10; ++i)
@@ -645,7 +571,7 @@ int ICUpdateSystem::Register(const QString& code, const QString& machineCode)
     return sortRet.right(6).toInt() * 24 * 7;
 }
 
-void ICUpdateSystem::on_registerBtn_clicked()
+void ICUpdateSystemPage::on_registerBtn_clicked()
 {
     if(ui->machineCode->text().isNull())
     {
@@ -679,7 +605,7 @@ void ICUpdateSystem::on_registerBtn_clicked()
     ICProgramHeadFrame::Instance()->ReashRestTime();
 }
 
-void ICUpdateSystem::RefreshRestTime()
+void ICUpdateSystemPage::RefreshRestTime()
 {
     int rest_time = ICParametersSave::Instance()->RestTime(0);
     if(rest_time == 0)
@@ -693,7 +619,7 @@ void ICUpdateSystem::RefreshRestTime()
 //int pMap_[10];
 //int sortMap_[16] = {1,2,3,5,7,11,13,0,4,6,8,10,12,14,9,15};
 
-bool ICUpdateSystem::CheckIsUsbAttached() const
+bool ICUpdateSystemPage::CheckIsUsbAttached() const
 {
     QDir dir("/proc/scsi/usb-storage");
     if(!dir.exists())
@@ -715,7 +641,7 @@ bool ICUpdateSystem::CheckIsUsbAttached() const
 
 }
 
-void ICUpdateSystem::on_updatePasswardButton_clicked()
+void ICUpdateSystemPage::on_updatePasswardButton_clicked()
 {
 //    QFile file(fileName);
 //    QTextStream stream(&file);
@@ -733,9 +659,9 @@ void ICUpdateSystem::on_updatePasswardButton_clicked()
     if(!dir.exists())
     {
         QMessageBox::warning(this,tr("tips"),tr("USB no exists...")) ;
-        ui->hmiVersionShowLabel->setText(tr("No available HMI version"));
-        ui->hostVersionShowLabel->setText(tr("No available Host version"));
-        ui->updatePasswardLabel->setText(tr("No available New SuperPassward"));
+//        ui->hmiVersionShowLabel->setText(tr("No available HMI version"));
+//        ui->hostVersionShowLabel->setText(tr("No available Host version"));
+//        ui->updatePasswardLabel->setText(tr("No available New SuperPassward"));
         ui->connectHostButton->setEnabled(false);
         ui->updateToolButton->setEnabled(false);
         ui->updatePasswardButton->setEnabled(false);
@@ -761,4 +687,26 @@ void ICUpdateSystem::on_updatePasswardButton_clicked()
         ICParametersSave::Instance()->SetSuperPassward(str);
         QMessageBox::information(this,tr("Tips"),tr("Super Passward Update Succeed."));
 //    }
+}
+
+void ICUpdateSystemPage::on_scanPanel_clicked()
+{
+    ICTipsWidget tipWidget(tr("Scanning..."));
+    tipWidget.show();
+    qApp->processEvents();
+    model_->SetScanPattern("HCRobotPanel*.bfe");
+    model_->fetchMore(model_->index(0, 0));
+    ui->packetTable->resizeColumnsToContents();
+    ui->packetTable->setCurrentIndex(QModelIndex());
+}
+
+void ICUpdateSystemPage::on_scanHost_clicked()
+{
+    ICTipsWidget tipWidget(tr("Scanning..."));
+    tipWidget.show();
+    qApp->processEvents();
+    model_->SetScanPattern("HCRobotHost*.bfe");
+    model_->fetchMore(model_->index(0, 0));
+    ui->packetTable->resizeColumnsToContents();
+    ui->packetTable->setCurrentIndex(QModelIndex());
 }

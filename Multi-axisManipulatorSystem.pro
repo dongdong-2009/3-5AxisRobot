@@ -34,7 +34,6 @@ SOURCES += main.cpp \
     icreturnpage.cpp \
     icscreensaver.cpp \
     icactiondialog.cpp \
-    ictimerpool.cpp \
     ichostcomparepage.cpp \
     icbackuputility.cpp \
     ictipswidget.cpp \
@@ -54,7 +53,6 @@ HEADERS += icaxispositionlabel.h \
     icscreensaver.h \
     config.h \
     icactiondialog.h \
-    ictimerpool.h \
     ichostcomparepage.h \
     icbackuputility.h \
     ictipswidget.h \
@@ -104,6 +102,9 @@ include (hcsettings/hcsettings.pri)
 include (hcinstruction/hcinstruction.pri)
 include (ickeyboard/ickeyboard.pri)
 include (hcmaintains/hcmaintains.pri)
+
+include (vendor/IndustrialSystemFramework/ICUtility/ICUtility.pri)
+include (vendor/ICCustomWidgets/icupdatepackmodel/icupdatepackmodel.pri)
 
 RESOURCES += \
     resource.qrc \

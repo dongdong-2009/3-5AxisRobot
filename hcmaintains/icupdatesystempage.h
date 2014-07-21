@@ -1,29 +1,31 @@
-#ifndef ICUPDATESYSTEM_H
-#define ICUPDATESYSTEM_H
+#ifndef ICUpdateSystemPage_H
+#define ICUpdateSystemPage_H
 
 #include <QFrame>
 #include <QTimer>
+#include "icupdatepackmodel.h"
 #include "icprogramheadframe.h"
+#include "icupdatesystem.h"
 
 namespace Ui {
-    class ICUpdateSystem;
+    class ICUpdateSystemPage;
 }
 
 class QSettings;
 
-class ICUpdateSystem : public QFrame {
+class ICUpdateSystemPage : public QFrame {
     Q_OBJECT
 public:
-//    ICUpdateSystem(QWidget *parent = 0);
-    static ICUpdateSystem * Instance(QWidget *parent = 0)
+//    ICUpdateSystemPage(QWidget *parent = 0);
+    static ICUpdateSystemPage * Instance(QWidget *parent = 0)
     {
         if(instance_ == NULL)
         {
-            instance_ = new ICUpdateSystem(parent);
+            instance_ = new ICUpdateSystemPage(parent);
         }
         return instance_;
     }
-    ~ICUpdateSystem();
+    ~ICUpdateSystemPage();
 
 protected:
     void changeEvent(QEvent *e);
@@ -37,9 +39,9 @@ private:
     int Register(const QString& , const QString& );
 
 private:
-    Ui::ICUpdateSystem *ui;
-    static ICUpdateSystem * instance_;
-    explicit ICUpdateSystem(QWidget *parent = 0);
+    Ui::ICUpdateSystemPage *ui;
+    static ICUpdateSystemPage * instance_;
+    explicit ICUpdateSystemPage(QWidget *parent = 0);
     const QString updateIniPath_;
     const QString updateHostPath_;
     QSettings *updateSettings_;
@@ -53,6 +55,8 @@ private:
     bool connectHostFlag;
 
     QString fileName;
+    ICUpdatePackModel* model_;
+    ICUpdateSystem* updateSystem_;
 
     void updateHostButton();
     void writeHostButton();
@@ -63,7 +67,6 @@ private:
 
 private slots:
     void on_updateToolButton_clicked();
-    void on_refreshToolButton_clicked();
     void SystemUpdateStart();
     void RefreshUSBIniInfo();
     void QueryStatus();
@@ -74,9 +77,11 @@ private slots:
     void on_generateBtn_clicked();
     void RefreshRestTime();
     void on_updatePasswardButton_clicked();
+    void on_scanPanel_clicked();
+    void on_scanHost_clicked();
 };
 
 //TODEBUG
-//extern ICUpdateSystem *icUpdateSystem;
+//extern ICUpdateSystemPage *ICUpdateSystemPage;
 
-#endif // ICUPDATESYSTEM_H
+#endif // ICUpdateSystemPage_H

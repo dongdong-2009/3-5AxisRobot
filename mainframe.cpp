@@ -47,7 +47,7 @@
 #include "icactiondialog.h"
 #include "ictimerpool.h"
 #include "ichostcomparepage.h"
-#include "icupdatesystem.h"
+#include "icupdatesystempage.h"
 #include "icvirtualkey.h"
 #include "ickeyboard.h"
 //#include "ickeyboardhandler.h"
@@ -139,7 +139,7 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
 
 
     InitSpareTime();
-    connect(ICUpdateSystem::Instance(),
+    connect(ICUpdateSystemPage::Instance(),
             SIGNAL(RegisterSucceed()),
             this,
             SLOT(InitSpareTime()));

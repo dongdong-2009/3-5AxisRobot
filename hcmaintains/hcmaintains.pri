@@ -1,21 +1,23 @@
 INCLUDEPATH += $$PWD
 
 HEADERS += \
-    hcmaintains/icupdatesystem.h \
-    hcmaintains/icupdatelogodialog.h
+    hcmaintains/icupdatelogodialog.h \
+    hcmaintains/icupdatesystempage.h
 
 SOURCES += \
-    hcmaintains/icupdatesystem.cpp \
-    hcmaintains/icupdatelogodialog.cpp
+    hcmaintains/icupdatelogodialog.cpp \
+    hcmaintains/icupdatesystempage.cpp
 
 FORMS += \
 #    hcmaintains/icupdatesystem.ui \
     hcmaintains/icupdatelogodialog.ui \
+    hcmaintains/icupdatesystempage.ui \
+    hcmaintains/icupdatesystempage_5.ui
 
 
 contains(DEFINES, HC_SK_8){
-FORMS +=  hcmaintains/icupdatesystem.ui
+FORMS += 
 }
 contains(DEFINES, HC_SK_5){
-FORMS +=  hcmaintains/icupdatesystem_5.ui
+FORMS += 
 }
