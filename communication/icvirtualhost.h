@@ -472,7 +472,8 @@ public:
 #endif
         SM_StandBy,  //待机姿势
         SM_TryProduct, //试产
-        SM_Sampling //取样
+        SM_Sampling, //取样
+        SM_LANGUAGE
     };
 
     enum ICTeachParamAddr

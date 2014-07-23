@@ -54,6 +54,7 @@ ICMachineConfigPage::ICMachineConfigPage(QWidget *parent) :
     ui->bMaxSpeedEdit->setValidator(validator);
     ui->cMaxSpeedEdit->setValidator(validator);
 
+
     ICLineEditWrapper* wrapper = new ICLineEditWrapper(ui->xADEdit,
                                                        ICVirtualHost::SM_ACCTIMEX,
                                                        ICLineEditWrapper::System,
@@ -162,6 +163,10 @@ ICMachineConfigPage::ICMachineConfigPage(QWidget *parent) :
                                     ICLineEditWrapper::System,
                                     ICLineEditWrapper::OneFraction);
     wrappers_.append(wrapper);
+
+    ui->servoFlex->blockSignals(true);
+    ui->servoFlex->setCurrentIndex(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Language).toInt());
+    ui->servoFlex->blockSignals(false);
 }
 
 ICMachineConfigPage::~ICMachineConfigPage()
@@ -175,7 +180,13 @@ void ICMachineConfigPage::changeEvent(QEvent *e)
     QWidget::changeEvent(e);
     switch (e->type()) {
     case QEvent::LanguageChange:
+    {
+        int ci = ui->servoFlex->currentIndex();
+        ui->servoFlex->blockSignals(true);
         ui->retranslateUi(this);
+        ui->servoFlex->setCurrentIndex(ci);
+        ui->servoFlex->blockSignals(false);
+    }
         break;
     default:
         break;
@@ -301,4 +312,9 @@ void ICMachineConfigPage::HideWidgets_(QList<QWidget *> &widgets)
     {
         widgets[i]->hide();
     }
+}
+
+void ICMachineConfigPage::on_servoFlex_currentIndexChanged(int index)
+{
+    ICVirtualHost::GlobalVirtualHost()->SetSystemParameter(ICVirtualHost::SYS_Language, index);
 }

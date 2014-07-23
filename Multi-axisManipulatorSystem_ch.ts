@@ -1010,11 +1010,8 @@ Reason</source>
         <translation type="obsolete">解决办法</translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.cpp" line="86"/>
-        <location filename="categorypage/icalarmframe.cpp" line="91"/>
-        <location filename="categorypage/icalarmframe.cpp" line="188"/>
-        <location filename="categorypage/icalarmframe.cpp" line="190"/>
-        <location filename="categorypage/icalarmframe.cpp" line="228"/>
+        <location filename="categorypage/icalarmframe.cpp" line="130"/>
+        <location filename="categorypage/icalarmframe.cpp" line="246"/>
         <source>no-solve</source>
         <translation>未解决</translation>
     </message>
@@ -4861,96 +4858,141 @@ Please enter an digit between </source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="20"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="172"/>
+        <source>Servo Flex</source>
+        <translation>伺服刚性</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="412"/>
         <source>Tolerance</source>
         <translation>容差</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="46"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="438"/>
         <source>X1 Acceleration and Deceleration</source>
         <oldsource>X Acceleration and Deceleration</oldsource>
         <translation>X1轴加减速时间</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="72"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="464"/>
         <source>X1 Max Speed</source>
         <oldsource>X Max Speed</oldsource>
         <translation>X1最高速度</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="98"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="490"/>
         <source>Y1 Acceleration and Deceleration</source>
         <oldsource>Y Acceleration and Deceleration</oldsource>
         <translation>Y1轴加减速时间</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="124"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="516"/>
         <source>Y1 Max Speed</source>
         <oldsource>Y Max Speed</oldsource>
         <translation>Y1最高速度</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="150"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="542"/>
         <source>Z Acceleration and Deceleration</source>
         <translation>Z轴加减速时间</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="176"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="584"/>
         <source>Z Max Speed</source>
         <translation>Z最高速度</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="243"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="595"/>
+        <source>0-soft</source>
+        <translation>0-软</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="600"/>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="605"/>
+        <source>2</source>
+        <translation>2</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="610"/>
+        <source>3</source>
+        <translation>3</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="615"/>
+        <source>4</source>
+        <translation>4</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="620"/>
+        <source>5</source>
+        <translation>5</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="625"/>
+        <source>6</source>
+        <translation>6</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="630"/>
+        <source>7-hard</source>
+        <translation>7-硬</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="61"/>
         <source>X2 Acceleration and Deceleration</source>
         <translation>X2轴加减速时间</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="269"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="97"/>
         <source>X2 Max Speed</source>
         <translation>X2最高速度</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="295"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="87"/>
         <source>Y2 Acceleration and Deceleration</source>
         <translation>Y2轴加减速时间</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="321"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="198"/>
         <source>Y2 Max Speed</source>
         <translation>Y2最高速度</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="361"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="261"/>
         <source>A Acceleration and Deceleration</source>
         <translation>A轴加减速时间</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="394"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="271"/>
         <source>A Max Speed</source>
         <translation>A最高速度</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="420"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="320"/>
         <source>B Acceleration and Deceleration</source>
         <translation>B轴加减速时间</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="453"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="346"/>
         <source>B Max Speed</source>
         <translation>B最高速度</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="479"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="379"/>
         <source>C Acceleration and Deceleration</source>
         <translation>C轴加减速时间</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="512"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="389"/>
         <source>C Max Speed</source>
         <translation>C最高速度</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="538"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="162"/>
         <source>Pull Push Distance</source>
         <translation>引拔距离</translation>
     </message>
@@ -4967,20 +5009,20 @@ Please enter an digit between </source>
         <translation type="obsolete">Z提前结束位置</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="236"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="564"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="54"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="155"/>
         <source>mm</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="202"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="209"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="216"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="347"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="354"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="387"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="446"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="505"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="20"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="27"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="34"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="224"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="247"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="254"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="313"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="372"/>
         <source>s</source>
         <translation></translation>
     </message>
