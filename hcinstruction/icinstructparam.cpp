@@ -314,7 +314,19 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             {
                 commandStr += tr("Wait X044");
             }
-            commandStr += tr("Limit Time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 1);
+            if(moldItem.IFVal() == 6)
+            {
+                commandStr += tr("Wait X016");
+            }
+            if(moldItem.IFVal() == 7)
+            {
+                commandStr += tr("Wait X017");
+            }
+            if(moldItem.IFVal() == 8)
+            {
+                commandStr += tr("Wait X036");
+            }
+            commandStr += tr("Limit Time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 2);
             return commandStr;
         }
     }
