@@ -6596,6 +6596,11 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="420"/>
+        <source>Update Host Process:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="77"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
@@ -6635,7 +6640,7 @@ Please enter an digit between </source>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="336"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="377"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="661"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="678"/>
         <source>tips</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6646,67 +6651,67 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="377"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="661"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="678"/>
         <source>USB no exists...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="422"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="439"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="422"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="439"/>
         <source>USB is not exist!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="578"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="584"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="595"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="601"/>
         <source>Wrong Register Code!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="590"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="607"/>
         <source>Register Success!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="593"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="612"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="610"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="629"/>
         <source>No Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="597"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="614"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="631"/>
         <source>hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="616"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="633"/>
         <source>No Register!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="682"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="688"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="699"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="705"/>
         <source>Tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="682"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="699"/>
         <source>Passward Format Error,Need to Alphabet Or Number.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="688"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="705"/>
         <source>Super Passward Update Succeed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="694"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="705"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="711"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="722"/>
         <source>Scanning...</source>
         <translation type="unfinished"></translation>
     </message>

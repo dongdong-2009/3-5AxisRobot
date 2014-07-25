@@ -8037,177 +8037,182 @@ Would you want to restart now?</source>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="70"/>
         <source>5.Register</source>
-        <translation type="unfinished">5.用户注册</translation>
+        <translation>5.用户注册</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="83"/>
         <source>MachineCode:</source>
-        <translation type="unfinished">机器码:</translation>
+        <translation>机器码:</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="102"/>
         <source>Generate</source>
-        <translation type="unfinished">获取</translation>
+        <translation>获取</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="115"/>
         <source>RegisterCode:</source>
-        <translation type="unfinished">注册:</translation>
+        <translation>注册:</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="162"/>
         <source>Register</source>
-        <translation type="unfinished">注册</translation>
+        <translation>注册</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="190"/>
         <source>RestTime:</source>
-        <translation type="unfinished">剩余时间:</translation>
+        <translation>剩余时间:</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="270"/>
         <source>Update Logo</source>
-        <translation type="unfinished">更新图片</translation>
+        <translation>更新图片</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="295"/>
         <source>Scan Panel</source>
-        <translation type="unfinished"></translation>
+        <translation>扫描手控</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="323"/>
         <source>Update HMI</source>
-        <translation type="unfinished">更新手控</translation>
+        <translation>更新手控</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="348"/>
         <source>Scan Host</source>
-        <translation type="unfinished"></translation>
+        <translation>扫描主机</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="376"/>
         <source>Update Host</source>
-        <translation type="unfinished">更新主机</translation>
+        <translation>更新主机</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="404"/>
         <source>Update</source>
-        <translation type="unfinished">更新</translation>
+        <translation>更新</translation>
+    </message>
+    <message>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="420"/>
+        <source>Update Host Process:</source>
+        <translation>主机更新进度：</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="77"/>
         <source>Name</source>
-        <translation type="unfinished">名称</translation>
+        <translation>名称</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="78"/>
         <source>Create Time</source>
-        <translation type="unfinished"></translation>
+        <translation>创建时间</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="144"/>
         <source>System Updating...</source>
-        <translation type="unfinished"></translation>
+        <translation>系统更新中...</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="172"/>
         <source>No available New SuperPassward</source>
-        <translation type="unfinished">没有可以用的超级密码</translation>
+        <translation>没有可以用的超级密码</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="174"/>
         <source>New SuperPassward</source>
-        <translation type="unfinished">新超级密码</translation>
+        <translation>新超级密码</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="288"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="309"/>
         <source>Warning</source>
-        <translation type="unfinished">警告</translation>
+        <translation>警告</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="288"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="309"/>
         <source>Update Host fail!</source>
-        <translation type="unfinished">更新主机失败！</translation>
+        <translation>更新主机失败！</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="336"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="377"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="661"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="678"/>
         <source>tips</source>
-        <translation type="unfinished">提示</translation>
+        <translation>提示</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="336"/>
         <source>Update Host Successful!</source>
-        <translation type="unfinished">主机更新成功！</translation>
+        <translation>主机更新成功！</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="377"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="661"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="678"/>
         <source>USB no exists...</source>
-        <translation type="unfinished">U盘目录不存在...</translation>
+        <translation>U盘目录不存在...</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="422"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="439"/>
         <source>warning</source>
-        <translation type="unfinished">警告</translation>
+        <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="422"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="439"/>
         <source>USB is not exist!</source>
-        <translation type="unfinished">没有找到U盘！</translation>
+        <translation>没有找到U盘！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="578"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="584"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="595"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="601"/>
         <source>Wrong Register Code!</source>
-        <translation type="unfinished">注册码错误！</translation>
+        <translation>注册码错误！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="590"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="607"/>
         <source>Register Success!</source>
-        <translation type="unfinished">注册成功！</translation>
+        <translation>注册成功！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="593"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="612"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="610"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="629"/>
         <source>No Limit</source>
-        <translation type="unfinished">无限制</translation>
+        <translation>无限制</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="597"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="614"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="631"/>
         <source>hour</source>
-        <translation type="unfinished">小时</translation>
+        <translation>小时</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="616"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="633"/>
         <source>No Register!</source>
-        <translation type="unfinished">没有注册！</translation>
+        <translation>没有注册！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="682"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="688"/>
-        <source>Tips</source>
-        <translation type="unfinished">提示</translation>
-    </message>
-    <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="682"/>
-        <source>Passward Format Error,Need to Alphabet Or Number.</source>
-        <translation type="unfinished">密码格式错误，必须为字母数字或者混合.</translation>
-    </message>
-    <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="688"/>
-        <source>Super Passward Update Succeed.</source>
-        <translation type="unfinished">超级密码更新成功.</translation>
-    </message>
-    <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="694"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="699"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="705"/>
+        <source>Tips</source>
+        <translation>提示</translation>
+    </message>
+    <message>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="699"/>
+        <source>Passward Format Error,Need to Alphabet Or Number.</source>
+        <translation>密码格式错误，必须为字母数字或者混合.</translation>
+    </message>
+    <message>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="705"/>
+        <source>Super Passward Update Succeed.</source>
+        <translation>超级密码更新成功.</translation>
+    </message>
+    <message>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="711"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="722"/>
         <source>Scanning...</source>
-        <translation type="unfinished"></translation>
+        <translation>扫描中...</translation>
     </message>
 </context>
 <context>
