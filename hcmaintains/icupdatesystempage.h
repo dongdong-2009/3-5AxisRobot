@@ -43,7 +43,7 @@ private:
     static ICUpdateSystemPage * instance_;
     explicit ICUpdateSystemPage(QWidget *parent = 0);
     const QString updateIniPath_;
-    const QString updateHostPath_;
+    QString updateHostPath_;
     QSettings *updateSettings_;
     QSettings *updateHostSettings_;
 

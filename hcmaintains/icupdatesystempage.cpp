@@ -202,8 +202,8 @@ void ICUpdateSystemPage::RefreshUSBIniInfo()
 
         if(updateFileList.count() > 0)
         {
-//            ui->copyFilesProgressBar->setRange(0, updateFileList.count());
-//            ui->copyFilesProgressBar->setValue(0);
+            ui->copyFilesProgressBar->setRange(0, updateFileList.count());
+            ui->copyFilesProgressBar->setValue(0);
         }
 }
 
@@ -215,7 +215,7 @@ void ICUpdateSystemPage::RestartAndUpdateTheProgram()
 
 void ICUpdateSystemPage::InitInterface()
 {
-//    ui->copyFilesProgressBar->setValue(0);
+    ui->copyFilesProgressBar->setValue(0);
 
 //    ui->versionLabel->setEnabled(false);
 //    ui->versionShowLabel->setEnabled(false);
@@ -260,7 +260,7 @@ void ICUpdateSystemPage::updateHostButton()
     {
         return;
     }
-//    ui->copyFilesProgressBar->setValue(0);
+    ui->copyFilesProgressBar->setValue(0);
     QFile file(updateHostPath_ + updateFileList.at(0));
     if(file.open(QFile::ReadOnly))
     {
@@ -273,7 +273,7 @@ void ICUpdateSystemPage::updateHostButton()
             QByteArray readySend(file.readAll());
             file.close();
             bool isTranSuccessful = true;
-//            ui->copyFilesProgressBar->setRange(0, readySend.size() / 32);
+            ui->copyFilesProgressBar->setRange(0, readySend.size() / 32);
             for(int addr = 0; addr != readySend.size() / 32; ++addr)
             {
                 tranCommand.SetDataBuffer(readySend.mid(addr << 5, 32));
@@ -281,7 +281,7 @@ void ICUpdateSystemPage::updateHostButton()
                 isTranSuccessful = isTranSuccessful && processor->ExecuteCommand(tranCommand).toBool();
                 if(isTranSuccessful)
                 {
-//                    ui->copyFilesProgressBar->setValue(addr + 1);
+                    ui->copyFilesProgressBar->setValue(addr + 1);
                 }
                 else
                 {
@@ -382,6 +382,23 @@ void ICUpdateSystemPage::on_connectHostButton_clicked()
         ui->updateToolButton->setEnabled(false);
         ui->updatePasswardButton->setEnabled(false);
         return;
+    }
+    QString packName = model_->data(ui->packetTable->currentIndex()).toString();
+    QDir packPath_("/mnt/udisk/");
+    if(packPath_.exists(packName))
+    {
+        QFile file(packPath_.absoluteFilePath(packName));
+        QString tmpFile = QDir::temp().absoluteFilePath(packName);
+        system(QString("rm " + tmpFile).toAscii());
+        if(file.copy(tmpFile))
+        {
+            system(("decrypt.sh " + tmpFile).toAscii());
+            tmpFile.chop(4);
+            system(QString("cd %1 && tar -xf %2").arg(QDir::tempPath()).arg(tmpFile).toAscii());
+            tmpFile.chop(4);
+            updateHostPath_ = QDir::temp().absoluteFilePath(tmpFile);
+//            return system(QString("cd %1 && chmod +x ./UpdateSystem.sh &&./UpdateSystem.sh").arg(QDir::temp().absoluteFilePath(tmpFile)).toAscii()) > 0;
+        }
     }
     ICUpdateHostStart linkCmd;
     ICCommandProcessor* processor = ICCommandProcessor::Instance();
