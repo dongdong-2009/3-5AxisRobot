@@ -2,6 +2,7 @@
 #include "ui_icmachineconfigpage.h"
 #include "iclineeditwrapper.h"
 #include "icvirtualhost.h"
+#include "icparameterssave.h"
 
 ICMachineConfigPage::ICMachineConfigPage(QWidget *parent) :
     QWidget(parent),
@@ -164,9 +165,9 @@ ICMachineConfigPage::ICMachineConfigPage(QWidget *parent) :
                                     ICLineEditWrapper::OneFraction);
     wrappers_.append(wrapper);
 
-    ui->servoFlex->blockSignals(true);
-    ui->servoFlex->setCurrentIndex(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Language).toInt());
-    ui->servoFlex->blockSignals(false);
+//    ui->servoFlex->blockSignals(true);
+//    ui->servoFlex->setCurrentIndex(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Language).toInt());
+//    ui->servoFlex->blockSignals(false);
 }
 
 ICMachineConfigPage::~ICMachineConfigPage()
@@ -181,11 +182,11 @@ void ICMachineConfigPage::changeEvent(QEvent *e)
     switch (e->type()) {
     case QEvent::LanguageChange:
     {
-        int ci = ui->servoFlex->currentIndex();
-        ui->servoFlex->blockSignals(true);
+//        int ci = ui->servoFlex->currentIndex();
+//        ui->servoFlex->blockSignals(true);
         ui->retranslateUi(this);
-        ui->servoFlex->setCurrentIndex(ci);
-        ui->servoFlex->blockSignals(false);
+//        ui->servoFlex->setCurrentIndex(ci);
+//        ui->servoFlex->blockSignals(false);
     }
         break;
     default:
@@ -207,6 +208,7 @@ void ICMachineConfigPage::hideEvent(QHideEvent *e)
 
 void ICMachineConfigPage::showEvent(QShowEvent *e)
 {
+//    bool isExtent = ICParametersSave::Instance()->IsExtentFunctionUsed();
     UpdateAxisDefine_();
     QWidget::showEvent(e);
 }
