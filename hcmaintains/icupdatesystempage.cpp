@@ -123,10 +123,10 @@ void ICUpdateSystemPage::showEvent(QShowEvent *e)
 void ICUpdateSystemPage::hideEvent(QHideEvent *e)
 {
     timer_.stop();
-    ui->updateToolButton->setEnabled(false);
+//    ui->updateToolButton->setEnabled(false);
     ui->updatePasswardButton->setEnabled(false);
 //    ui->updateHostButton->setEnabled(false);
-    ui->connectHostButton->setEnabled(false);
+//    ui->connectHostButton->setEnabled(false);
 //    ui->writeHostButton->setEnabled(false);
 //    ui->rebootButton->setEnabled(false);
     ICVirtualHost::GlobalVirtualHost()->RestartRefreshStatus();
@@ -175,11 +175,11 @@ void ICUpdateSystemPage::RefreshUSBIniInfo()
 //    ui->updatePasswardLabel->setText(str);
     if(!updateSettings_->value("version","").toString().isEmpty())
     {
-        ui->updateToolButton->setEnabled(true);
+//        ui->updateToolButton->setEnabled(true);
     }
     else
     {
-        ui->updateToolButton->setEnabled(false);
+//        ui->updateToolButton->setEnabled(false);
     }
     if(!updateSettings_->value("superPassward","").toString().isEmpty())
     {
@@ -191,11 +191,11 @@ void ICUpdateSystemPage::RefreshUSBIniInfo()
     }
     if(!updateHostSettings_->value("version", "").toString().isEmpty())
     {
-        ui->connectHostButton->setEnabled(true);
+//        ui->connectHostButton->setEnabled(true);
     }
     else
     {
-        ui->connectHostButton->setEnabled(false);
+//        ui->connectHostButton->setEnabled(false);
     }
     /*******************************************/
         QStringList updateFileList = updateSettings_->childGroups();
@@ -378,8 +378,8 @@ void ICUpdateSystemPage::on_connectHostButton_clicked()
 //        ui->hmiVersionShowLabel->setText(tr("No available HMI version"));
 //        ui->hostVersionShowLabel->setText(tr("No available Host version"));
 //        ui->updatePasswardLabel->setText(tr("No available New SuperPassward"));
-        ui->connectHostButton->setEnabled(false);
-        ui->updateToolButton->setEnabled(false);
+//        ui->connectHostButton->setEnabled(false);
+//        ui->updateToolButton->setEnabled(false);
         ui->updatePasswardButton->setEnabled(false);
         return;
     }
@@ -679,9 +679,9 @@ void ICUpdateSystemPage::on_updatePasswardButton_clicked()
 //        ui->hmiVersionShowLabel->setText(tr("No available HMI version"));
 //        ui->hostVersionShowLabel->setText(tr("No available Host version"));
 //        ui->updatePasswardLabel->setText(tr("No available New SuperPassward"));
-        ui->connectHostButton->setEnabled(false);
-        ui->updateToolButton->setEnabled(false);
-        ui->updatePasswardButton->setEnabled(false);
+//        ui->connectHostButton->setEnabled(false);
+//        ui->updateToolButton->setEnabled(false);
+//        ui->updatePasswardButton->setEnabled(false);
         return;
     }
     if(updateSettings_ == NULL)
