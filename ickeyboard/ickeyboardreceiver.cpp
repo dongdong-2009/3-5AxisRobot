@@ -111,6 +111,7 @@ void ICKeyboardReceiver::run()
                 //                continue;
                 if(key != oldKeyValue_)
                 {
+                    specialKeyCount_ = 0;
                     keyboard->SetPressed(true);
                     oldKeyValue_ = key;
                     keyboard->SetKeyValue(key);
@@ -134,6 +135,7 @@ void ICKeyboardReceiver::run()
 //            }
             if(key != oldKeyValue_)
             {
+                specialKeyCount_ = 0;
                 oldKeyValue_ = key;
                 if(key == ICKeyboard::FB_NULL)
                 {
