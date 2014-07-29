@@ -6921,76 +6921,86 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1397"/>
+        <location filename="mainframe.cpp" line="1421"/>
         <source>Spare Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="972"/>
+        <location filename="mainframe.cpp" line="996"/>
         <source>No Register</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="568"/>
+        <location filename="mainframe.cpp" line="592"/>
         <source>Function</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="569"/>
+        <location filename="mainframe.cpp" line="593"/>
         <source>Monitor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="571"/>
+        <location filename="mainframe.cpp" line="595"/>
         <source>Record</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="570"/>
+        <location filename="mainframe.cpp" line="594"/>
         <source>Alarm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="968"/>
-        <location filename="mainframe.cpp" line="972"/>
-        <location filename="mainframe.cpp" line="1356"/>
-        <location filename="mainframe.cpp" line="1397"/>
-        <location filename="mainframe.cpp" line="1404"/>
+        <location filename="mainframe.cpp" line="992"/>
+        <location filename="mainframe.cpp" line="996"/>
+        <location filename="mainframe.cpp" line="1380"/>
+        <location filename="mainframe.cpp" line="1421"/>
+        <location filename="mainframe.cpp" line="1428"/>
         <source>tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1404"/>
+        <location filename="mainframe.cpp" line="1428"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="572"/>
+        <location filename="mainframe.cpp" line="596"/>
         <source>Return</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="758"/>
+        <location filename="mainframe.cpp" line="377"/>
+        <source>Recal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainframe.cpp" line="378"/>
+        <source>You have press the recal sequence, recal after reboot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainframe.cpp" line="782"/>
         <source>Hint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="968"/>
+        <location filename="mainframe.cpp" line="992"/>
         <source>Spear Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1004"/>
+        <location filename="mainframe.cpp" line="1028"/>
         <source>Records</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1356"/>
+        <location filename="mainframe.cpp" line="1380"/>
         <source>No Register. System Restart Now...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="956"/>
+        <location filename="mainframe.cpp" line="980"/>
         <source>Instruct</source>
         <translation type="unfinished"></translation>
     </message>

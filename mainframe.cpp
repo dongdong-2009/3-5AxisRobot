@@ -89,6 +89,15 @@
 QMap<int, int> keyMap;
 QMap<int, int> knobMap;
 QMap<int, int> pulleyMap;
+QList<int> currentKeySeq;
+const QList<int> recalKeySeq = QList<int>()<<ICKeyboard::FB_F5
+                                          <<ICKeyboard::FB_F1
+                                            <<ICKeyboard::FB_F4
+                                              <<ICKeyboard::FB_F1
+                                                <<ICKeyboard::FB_F3
+                                                  <<ICKeyboard::FB_F1
+                                                    <<ICKeyboard::FB_F2
+                                                      <<ICKeyboard::FB_F5;
 
 
 MainFrame *icMainFrame = NULL;
@@ -358,6 +367,21 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
     if(keyMap.contains(e->key()))
     {
         int key = keyMap.value(e->key());
+        currentKeySeq.append(key);
+        if(currentKeySeq.size() == recalKeySeq.size())
+        {
+            if(currentKeySeq == recalKeySeq)
+            {
+                ::system("touch /mnt/config_data/recal");
+                int ret = QMessageBox::warning(this,
+                                     tr("Recal"),
+                                     tr("You have press the recal sequence, recal after reboot"),
+                                     QMessageBox::Yes | QMessageBox::No);
+                if(ret == QMessageBox::Yes) ::system("reboot");
+
+            }
+            currentKeySeq.clear();
+        }
         qDebug()<<"Key:"<<key;
         switch(key)
         {
@@ -421,6 +445,7 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
     else if(knobMap.contains(e->key()))
     {
         ICKeyboard::Instace()->SetSwitchValue(knobMap.value(e->key()));
+        currentKeySeq.clear();
 //        ICKeyboardHandler::Instance()->Keypressed(key);
     }
     else if(pulleyMap.contains(e->key()))
