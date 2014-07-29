@@ -145,6 +145,7 @@ void ICKeyboardReceiver::run()
                 }
                 if(key >= ICKeyboard::FB_F1 && key <= ICKeyboard::FB_F5)
                 {
+                    specialKeyCount_ = 0;
                     bool isBackLight = icMainFrame->IsBackLightOff();
                     icMainFrame->SetHasInput(true);
                     if(!isBackLight)
