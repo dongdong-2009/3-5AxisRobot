@@ -50,6 +50,7 @@
 #include "icupdatesystempage.h"
 #include "icvirtualkey.h"
 #include "ickeyboard.h"
+#include "icrecaldialog.h"
 //#include "ickeyboardhandler.h"
 #if defined(Q_WS_WIN32) || defined(Q_WS_X11)
 #include "simulateknob.h"
@@ -372,12 +373,14 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
         {
             if(currentKeySeq == recalKeySeq)
             {
-                ::system("touch /mnt/config_data/recal");
-                int ret = QMessageBox::warning(this,
-                                     tr("Recal"),
-                                     tr("You have press the recal sequence, recal after reboot"),
-                                     QMessageBox::Yes | QMessageBox::No);
-                if(ret == QMessageBox::Yes) ::system("reboot");
+                ICRecalDialog recalDialog;
+                recalDialog.exec();
+//                ::system("touch /mnt/config_data/recal");
+//                int ret = QMessageBox::warning(this,
+//                                     tr("Recal"),
+//                                     tr("You have press the recal sequence, recal after reboot"),
+//                                     QMessageBox::Yes | QMessageBox::No);
+//                if(ret == QMessageBox::Yes) ::system("reboot");
 
             }
             currentKeySeq.clear();

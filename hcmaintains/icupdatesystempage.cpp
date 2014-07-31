@@ -144,7 +144,9 @@ void ICUpdateSystemPage::SystemUpdateStart()
     ICTipsWidget tipWidget(tr("System Updating..."));
     tipWidget.show();
     qApp->processEvents();
-    updateSystem_->StartUpdate(model_->data(ui->packetTable->currentIndex()).toString());
+    QModelIndex mI = ui->packetTable->currentIndex();
+//    QString packName = model_->data(index.sibling(mI->row(), 0).toString();
+    updateSystem_->StartUpdate(model_->data(mI.sibling(mI.row(), 0)).toString());
 }
 
 void ICUpdateSystemPage::RefreshUSBIniInfo()
@@ -354,7 +356,7 @@ void ICUpdateSystemPage::QueryStatus()
     ////        ui->rebootButton->setEnabled(false);
     //        timer_.stop();
     //    }
-//    ui->statusLabel->setText(QString::number(status_));
+    ui->statusLabel->setText(QString::number(status_));
 }
 
 void ICUpdateSystemPage::rebootButton()
@@ -371,6 +373,9 @@ void ICUpdateSystemPage::rebootButton()
 
 void ICUpdateSystemPage::on_connectHostButton_clicked()
 {
+    QModelIndex mI = ui->packetTable->currentIndex();
+    QString packName = model_->data(mI.sibling(mI.row(), 0)).toString();
+#ifdef Q_WS_QWS
     QDir dir("/proc/scsi/usb-storage");
     if(!dir.exists())
     {
@@ -383,13 +388,15 @@ void ICUpdateSystemPage::on_connectHostButton_clicked()
         ui->updatePasswardButton->setEnabled(false);
         return;
     }
-    QString packName = model_->data(ui->packetTable->currentIndex()).toString();
     QDir packPath_("/mnt/udisk/");
+#else
+    QDir packPath_(QDir::homePath() + "/HCUpdate_UpdateTest");
+#endif
     if(packPath_.exists(packName))
     {
         QFile file(packPath_.absoluteFilePath(packName));
         QString tmpFile = QDir::temp().absoluteFilePath(packName);
-        system(QString("rm " + tmpFile).toAscii());
+//        system(QString("rm " + tmpFile).toAscii());
         if(file.copy(tmpFile))
         {
             system(("decrypt.sh " + tmpFile).toAscii());

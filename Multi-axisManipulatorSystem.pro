@@ -40,7 +40,8 @@ SOURCES += main.cpp \
     icdataformatchecker.cpp \
     icprogramformatchecker.cpp \
     icconfigformatchecker.cpp \
-    simulateknob.cpp
+    simulateknob.cpp \
+    icrecaldialog.cpp
 HEADERS += icaxispositionlabel.h \
     mainframe.h \
     #icalarmdescriptiondialog.h \
@@ -59,7 +60,8 @@ HEADERS += icaxispositionlabel.h \
     icdataformatchecker.h \
     icprogramformatchecker.h \
     icconfigformatchecker.h \
-    simulateknob.h
+    simulateknob.h \
+    icrecaldialog.h
 
 FORMS    +=  \
     #icalarmdescriptiondialog.ui \
@@ -70,6 +72,7 @@ FORMS    +=  \
     ichostcomparepage.ui \
     ictipswidget.ui \
     simulateknob.ui \
+    icrecaldialog.ui
 
 
 SK_SIZE = 8

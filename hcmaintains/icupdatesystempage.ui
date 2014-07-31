@@ -423,14 +423,27 @@
   <widget class="QProgressBar" name="copyFilesProgressBar">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>190</x>
      <y>306</y>
-     <width>451</width>
+     <width>411</width>
      <height>23</height>
     </rect>
    </property>
    <property name="value">
     <number>24</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="statusLabel">
+   <property name="geometry">
+    <rect>
+     <x>148</x>
+     <y>307</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>
