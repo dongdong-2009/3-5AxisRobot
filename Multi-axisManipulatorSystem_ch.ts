@@ -6901,6 +6901,29 @@ Please enter an digit between </source>
     </message>
 </context>
 <context>
+    <name>ICRecalDialog</name>
+    <message>
+        <location filename="icrecaldialog.ui" line="14"/>
+        <source>Dialog</source>
+        <translation>重新校屏</translation>
+    </message>
+    <message>
+        <location filename="icrecaldialog.ui" line="20"/>
+        <source>You pressed the recal sequence.Need to recal?</source>
+        <translation>你按下了重新校屏指令，需要重新校正吗？</translation>
+    </message>
+    <message>
+        <location filename="icrecaldialog.ui" line="38"/>
+        <source>No(F4)</source>
+        <translation>否(F4)</translation>
+    </message>
+    <message>
+        <location filename="icrecaldialog.ui" line="51"/>
+        <source>Yes(F5)</source>
+        <translation>是(F5)</translation>
+    </message>
+</context>
+<context>
     <name>ICReturnPage</name>
     <message>
         <location filename="icreturnpage.ui" line="14"/>
@@ -8115,102 +8138,102 @@ Would you want to restart now?</source>
         <translation>系统更新中...</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="172"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="174"/>
         <source>No available New SuperPassward</source>
         <translation>没有可以用的超级密码</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="174"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="176"/>
         <source>New SuperPassward</source>
         <translation>新超级密码</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="288"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="309"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="290"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="311"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="288"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="309"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="290"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="311"/>
         <source>Update Host fail!</source>
         <translation>更新主机失败！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="336"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="377"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="678"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="338"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="382"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="685"/>
         <source>tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="336"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="338"/>
         <source>Update Host Successful!</source>
         <translation>主机更新成功！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="377"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="678"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="382"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="685"/>
         <source>USB no exists...</source>
         <translation>U盘目录不存在...</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="439"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="446"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="439"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="446"/>
         <source>USB is not exist!</source>
         <translation>没有找到U盘！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="595"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="601"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="602"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="608"/>
         <source>Wrong Register Code!</source>
         <translation>注册码错误！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="607"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="614"/>
         <source>Register Success!</source>
         <translation>注册成功！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="610"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="629"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="617"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="636"/>
         <source>No Limit</source>
         <translation>无限制</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="614"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="631"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="621"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="638"/>
         <source>hour</source>
         <translation>小时</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="633"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="640"/>
         <source>No Register!</source>
         <translation>没有注册！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="699"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="705"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="706"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="712"/>
         <source>Tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="699"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="706"/>
         <source>Passward Format Error,Need to Alphabet Or Number.</source>
         <translation>密码格式错误，必须为字母数字或者混合.</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="705"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="712"/>
         <source>Super Passward Update Succeed.</source>
         <translation>超级密码更新成功.</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="711"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="722"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="718"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="729"/>
         <source>Scanning...</source>
         <translation>扫描中...</translation>
     </message>
@@ -8425,61 +8448,59 @@ Would you want to restart now?</source>
         <translation>步序</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="993"/>
-        <location filename="mainframe.cpp" line="997"/>
-        <location filename="mainframe.cpp" line="1381"/>
-        <location filename="mainframe.cpp" line="1422"/>
-        <location filename="mainframe.cpp" line="1429"/>
+        <location filename="mainframe.cpp" line="996"/>
+        <location filename="mainframe.cpp" line="1000"/>
+        <location filename="mainframe.cpp" line="1384"/>
+        <location filename="mainframe.cpp" line="1425"/>
+        <location filename="mainframe.cpp" line="1432"/>
         <source>tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1422"/>
+        <location filename="mainframe.cpp" line="1425"/>
         <source>Spare Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="997"/>
+        <location filename="mainframe.cpp" line="1000"/>
         <source>No Register</source>
         <translation>没有注册</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="593"/>
+        <location filename="mainframe.cpp" line="596"/>
         <source>Function</source>
         <translation>功能</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1429"/>
+        <location filename="mainframe.cpp" line="1432"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation>没有注册，系统将在十分钟后重启</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="594"/>
+        <location filename="mainframe.cpp" line="597"/>
         <source>Monitor</source>
         <translation>监视</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="377"/>
         <source>Recal</source>
-        <translation>重新校屏</translation>
+        <translation type="obsolete">重新校屏</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="378"/>
         <source>You have press the recal sequence, recal after reboot</source>
-        <translation>你按下了重新校屏序列，重启后开始校正，重启吗？</translation>
+        <translation type="obsolete">你按下了重新校屏序列，重启后开始校正，重启吗？</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="993"/>
+        <location filename="mainframe.cpp" line="996"/>
         <source>Spear Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1029"/>
+        <location filename="mainframe.cpp" line="1032"/>
         <source>Records</source>
         <translation>档案</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1381"/>
+        <location filename="mainframe.cpp" line="1384"/>
         <source>No Register. System Restart Now...</source>
         <translation>没有注册，系统现在重启...</translation>
     </message>
@@ -8496,12 +8517,12 @@ Would you want to restart now?</source>
         <translation type="obsolete">欢迎</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="596"/>
+        <location filename="mainframe.cpp" line="599"/>
         <source>Record</source>
         <translation>档案</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="595"/>
+        <location filename="mainframe.cpp" line="598"/>
         <source>Alarm</source>
         <translation>报警</translation>
     </message>
@@ -8518,12 +8539,12 @@ Would you want to restart now?</source>
         <translation type="obsolete">巨集参数从异常中恢复，请先检查巨集参数！</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="597"/>
+        <location filename="mainframe.cpp" line="600"/>
         <source>Return</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="783"/>
+        <location filename="mainframe.cpp" line="786"/>
         <source>Hint</source>
         <translation>提示</translation>
     </message>
@@ -8540,7 +8561,7 @@ Would you want to restart now?</source>
         <translation type="obsolete">还没进行原点!</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="981"/>
+        <location filename="mainframe.cpp" line="984"/>
         <source>Instruct</source>
         <translation>教导</translation>
     </message>

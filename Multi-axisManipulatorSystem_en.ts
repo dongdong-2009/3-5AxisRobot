@@ -5643,6 +5643,29 @@ Please enter an digit between </source>
     </message>
 </context>
 <context>
+    <name>ICRecalDialog</name>
+    <message>
+        <location filename="icrecaldialog.ui" line="14"/>
+        <source>Dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icrecaldialog.ui" line="20"/>
+        <source>You pressed the recal sequence.Need to recal?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icrecaldialog.ui" line="38"/>
+        <source>No(F4)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icrecaldialog.ui" line="51"/>
+        <source>Yes(F5)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ICReturnPage</name>
     <message>
         <location filename="icreturnpage.ui" line="14"/>
@@ -6616,102 +6639,102 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="172"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="174"/>
         <source>No available New SuperPassward</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="174"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="176"/>
         <source>New SuperPassward</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="288"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="309"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="290"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="311"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="288"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="309"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="290"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="311"/>
         <source>Update Host fail!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="336"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="377"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="678"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="338"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="382"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="685"/>
         <source>tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="336"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="338"/>
         <source>Update Host Successful!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="377"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="678"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="382"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="685"/>
         <source>USB no exists...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="439"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="446"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="439"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="446"/>
         <source>USB is not exist!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="595"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="601"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="602"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="608"/>
         <source>Wrong Register Code!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="607"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="614"/>
         <source>Register Success!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="610"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="629"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="617"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="636"/>
         <source>No Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="614"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="631"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="621"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="638"/>
         <source>hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="633"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="640"/>
         <source>No Register!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="699"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="705"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="706"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="712"/>
         <source>Tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="699"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="706"/>
         <source>Passward Format Error,Need to Alphabet Or Number.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="705"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="712"/>
         <source>Super Passward Update Succeed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="711"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="722"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="718"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="729"/>
         <source>Scanning...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6921,86 +6944,76 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1422"/>
+        <location filename="mainframe.cpp" line="1425"/>
         <source>Spare Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="997"/>
+        <location filename="mainframe.cpp" line="1000"/>
         <source>No Register</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="593"/>
+        <location filename="mainframe.cpp" line="596"/>
         <source>Function</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="594"/>
+        <location filename="mainframe.cpp" line="597"/>
         <source>Monitor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="596"/>
+        <location filename="mainframe.cpp" line="599"/>
         <source>Record</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="595"/>
+        <location filename="mainframe.cpp" line="598"/>
         <source>Alarm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="993"/>
-        <location filename="mainframe.cpp" line="997"/>
-        <location filename="mainframe.cpp" line="1381"/>
-        <location filename="mainframe.cpp" line="1422"/>
-        <location filename="mainframe.cpp" line="1429"/>
+        <location filename="mainframe.cpp" line="996"/>
+        <location filename="mainframe.cpp" line="1000"/>
+        <location filename="mainframe.cpp" line="1384"/>
+        <location filename="mainframe.cpp" line="1425"/>
+        <location filename="mainframe.cpp" line="1432"/>
         <source>tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1429"/>
+        <location filename="mainframe.cpp" line="1432"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="597"/>
+        <location filename="mainframe.cpp" line="600"/>
         <source>Return</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="377"/>
-        <source>Recal</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="mainframe.cpp" line="378"/>
-        <source>You have press the recal sequence, recal after reboot</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="mainframe.cpp" line="783"/>
+        <location filename="mainframe.cpp" line="786"/>
         <source>Hint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="993"/>
+        <location filename="mainframe.cpp" line="996"/>
         <source>Spear Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1029"/>
+        <location filename="mainframe.cpp" line="1032"/>
         <source>Records</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1381"/>
+        <location filename="mainframe.cpp" line="1384"/>
         <source>No Register. System Restart Now...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="981"/>
+        <location filename="mainframe.cpp" line="984"/>
         <source>Instruct</source>
         <translation type="unfinished"></translation>
     </message>
