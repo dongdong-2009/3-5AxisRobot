@@ -31,7 +31,16 @@
    <property name="spacing">
     <number>2</number>
    </property>
-   <property name="margin">
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
     <number>2</number>
    </property>
    <item>
@@ -165,7 +174,7 @@ border-radius: 0px;</string>
         </layout>
        </item>
        <item>
-        <widget class="QListWidget" name="moldContentListWidget">
+        <widget class="ICListWidget" name="moldContentListWidget">
          <property name="minimumSize">
           <size>
            <width>300</width>
@@ -1022,6 +1031,13 @@ padding:5px;
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ICListWidget</class>
+   <extends>QListWidget</extends>
+   <header>iclistwidget.h</header>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="../resource.qrc"/>
   <include location="../resource.qrc"/>

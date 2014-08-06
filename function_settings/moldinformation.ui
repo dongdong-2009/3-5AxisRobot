@@ -208,7 +208,7 @@ QMessageBox QAbstractButton
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QTableWidget" name="informationTableWidget">
+      <widget class="ICTableWidget" name="informationTableWidget">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>0</horstretch>
@@ -491,6 +491,11 @@ QMessageBox QAbstractButton
    <class>ICLineEditWithVirtualKeyboard</class>
    <extends>QLineEdit</extends>
    <header>iclineeditwithvirtualkeyboard.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ICTableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>ictablewidget.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

@@ -22,7 +22,7 @@
     </widget>
    </item>
    <item>
-    <widget class="QListWidget" name="flagListWidget">
+    <widget class="ICListWidget" name="flagListWidget">
      <property name="editTriggers">
       <set>QAbstractItemView::NoEditTriggers</set>
      </property>
@@ -46,6 +46,13 @@
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ICListWidget</class>
+   <extends>QListWidget</extends>
+   <header>iclistwidget.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

@@ -10,7 +10,7 @@
 #include "icmacrosubroutine.h"
 #include "icvirtualkey.h"
 #include "ickeyboard.h"
-#include <QMessageBox>
+#include "icmessagebox.h"
 #include "icprogramheadframe.h"
 #include "icparameterssave.h"
 
@@ -172,7 +172,7 @@ void ICHCProgramMonitorFrame::showEvent(QShowEvent *e)
     }
     if(!checkResult.isEmpty())
     {
-        QMessageBox::warning(this,
+        ICMessageBox::ICWarning(this,
                              tr("Warning"),
                              checkResult);
     }
@@ -183,7 +183,7 @@ void ICHCProgramMonitorFrame::showEvent(QShowEvent *e)
     //                             checkResult + tr("Do you want to ignor this warning?"),
     //                             QMessageBox::Yes | QMessageBox::No) == QMessageBox::Yes)
     //        {
-    //            ICVirtualHost::GlobalVirtualHost()->SetFixtureCheck(false);
+//                ICVirtualHost::GlobalVirtualHost()->SetFixtureCheck(false);
     //        }
     //    }
 }

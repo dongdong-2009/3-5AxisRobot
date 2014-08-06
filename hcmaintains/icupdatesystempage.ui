@@ -220,7 +220,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QTableView" name="packetTable">
+  <widget class="ICTableView" name="packetTable">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -452,6 +452,11 @@
    <class>ICLineEditWithVirtualNumericKeypad</class>
    <extends>QLineEdit</extends>
    <header>iclineeditwithvirtualnumerickeypad.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ICTableView</class>
+   <extends>QTableView</extends>
+   <header>ictableview.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

@@ -5,7 +5,6 @@
 #include <QTextStream>
 #include <QDateTime>
 #include <QTimer>
-#include <QMessageBox>
 #include <QStringList>
 #include <QPair>
 

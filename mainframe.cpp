@@ -386,6 +386,7 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
             currentKeySeq.clear();
         }
         qDebug()<<"Key:"<<key;
+        SetHasInput(true);
         switch(key)
         {
         case ICKeyboard::FB_F1:

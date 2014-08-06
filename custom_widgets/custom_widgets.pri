@@ -21,3 +21,17 @@ include (iclineeditwrapper/iclineeditwrapper.pri)
 include (iccommandkeywrapper/iccommandkeywrapper.pri)
 include (iciopointwrapper/iciopointwrapper.pri)
 include (icpictureview/icpictureview.pri)
+
+HEADERS += \
+    custom_widgets/iclistwidget.h \
+    custom_widgets/ictablewidget.h \
+    custom_widgets/ictableview.h \
+    custom_widgets/icmessagebox.h \
+    custom_widgets/iccombobox.h
+
+SOURCES += \
+    custom_widgets/iclistwidget.cpp \
+    custom_widgets/ictablewidget.cpp \
+    custom_widgets/ictableview.cpp \
+    custom_widgets/icmessagebox.cpp \
+    custom_widgets/iccombobox.cpp

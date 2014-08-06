@@ -95,7 +95,7 @@ QCheckBox::indicator:unchecked:disabled
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="productFixtureBox">
+           <widget class="ICComboBox" name="productFixtureBox">
             <item>
              <property name="text">
               <string>Fixture-1</string>
@@ -155,7 +155,7 @@ QCheckBox::indicator:unchecked:disabled
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="outletFixtureBox">
+           <widget class="ICComboBox" name="outletFixtureBox">
             <property name="currentIndex">
              <number>1</number>
             </property>
@@ -876,20 +876,25 @@ QCheckBox::indicator:unchecked:disabled
    <header>icinstructioneditorbase.h</header>
    <container>1</container>
   </customwidget>
+  <customwidget>
+   <class>ICComboBox</class>
+   <extends>QComboBox</extends>
+   <header>iccombobox.h</header>
+  </customwidget>
  </customwidgets>
  <resources/>
  <connections/>
  <buttongroups>
+  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroupOutlet"/>
+  <buttongroup name="buttonGroupZ"/>
   <buttongroup name="buttonGroupA"/>
   <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroupB"/>
-  <buttongroup name="buttonGroupC"/>
-  <buttongroup name="buttonGroupX1"/>
-  <buttongroup name="buttonGroupOutlet"/>
-  <buttongroup name="buttonGroupX2"/>
   <buttongroup name="buttonGroupY1"/>
-  <buttongroup name="buttonGroup"/>
-  <buttongroup name="buttonGroupZ"/>
+  <buttongroup name="buttonGroupC"/>
   <buttongroup name="buttonGroupY2"/>
+  <buttongroup name="buttonGroupX1"/>
+  <buttongroup name="buttonGroupX2"/>
  </buttongroups>
 </ui>

@@ -73,6 +73,7 @@ ICHCInstructionPageFrame::ICHCInstructionPageFrame(QWidget *parent) :
 //    LoadAllRecordFileInfo();
 
     InitParameter();
+
 //    ui->conditionsToolButton->hide();
 }
 
@@ -166,6 +167,7 @@ void ICHCInstructionPageFrame::changeEvent(QEvent *e)
         break;
     }
 }
+
 
 void ICHCInstructionPageFrame::OptionButtonClicked()
 {

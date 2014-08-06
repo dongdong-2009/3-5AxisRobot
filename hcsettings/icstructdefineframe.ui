@@ -48,7 +48,7 @@
            <number>3</number>
           </property>
           <item row="0" column="1">
-           <widget class="QComboBox" name="x1Box">
+           <widget class="ICComboBox" name="x1Box">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -107,7 +107,7 @@
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QComboBox" name="y1Box">
+           <widget class="ICComboBox" name="y1Box">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -138,7 +138,7 @@
            </widget>
           </item>
           <item row="2" column="5">
-           <widget class="QComboBox" name="cBox">
+           <widget class="ICComboBox" name="cBox">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -169,7 +169,7 @@
            </widget>
           </item>
           <item row="0" column="5">
-           <widget class="QComboBox" name="aBox">
+           <widget class="ICComboBox" name="aBox">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -207,7 +207,7 @@
            </widget>
           </item>
           <item row="2" column="1">
-           <widget class="QComboBox" name="zBox">
+           <widget class="ICComboBox" name="zBox">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -245,7 +245,7 @@
            </widget>
           </item>
           <item row="1" column="5">
-           <widget class="QComboBox" name="bBox">
+           <widget class="ICComboBox" name="bBox">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -283,7 +283,7 @@
            </widget>
           </item>
           <item row="0" column="3">
-           <widget class="QComboBox" name="x2Box">
+           <widget class="ICComboBox" name="x2Box">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -321,7 +321,7 @@
            </widget>
           </item>
           <item row="1" column="3">
-           <widget class="QComboBox" name="y2Box">
+           <widget class="ICComboBox" name="y2Box">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -382,7 +382,7 @@
            </widget>
           </item>
           <item row="2" column="1">
-           <widget class="QComboBox" name="portZ">
+           <widget class="ICComboBox" name="portZ">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -433,7 +433,7 @@
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QComboBox" name="portY1">
+           <widget class="ICComboBox" name="portY1">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -484,7 +484,7 @@
            </widget>
           </item>
           <item row="1" column="3">
-           <widget class="QComboBox" name="portY2">
+           <widget class="ICComboBox" name="portY2">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -535,7 +535,7 @@
            </widget>
           </item>
           <item row="2" column="5">
-           <widget class="QComboBox" name="portC">
+           <widget class="ICComboBox" name="portC">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -586,7 +586,7 @@
            </widget>
           </item>
           <item row="0" column="3">
-           <widget class="QComboBox" name="portX2">
+           <widget class="ICComboBox" name="portX2">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -644,7 +644,7 @@
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="QComboBox" name="portX1">
+           <widget class="ICComboBox" name="portX1">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -723,7 +723,7 @@
            </widget>
           </item>
           <item row="1" column="5">
-           <widget class="QComboBox" name="portB">
+           <widget class="ICComboBox" name="portB">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -774,7 +774,7 @@
            </widget>
           </item>
           <item row="0" column="5">
-           <widget class="QComboBox" name="portA">
+           <widget class="ICComboBox" name="portA">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2089,18 +2089,25 @@ QRadioButton::indicator:unchecked:disabled
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ICComboBox</class>
+   <extends>QComboBox</extends>
+   <header>iccombobox.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroupB"/>
-  <buttongroup name="buttonGroupC"/>
-  <buttongroup name="buttonGroupD"/>
-  <buttongroup name="buttonGroupE"/>
-  <buttongroup name="buttonGroupF"/>
-  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroupG"/>
   <buttongroup name="buttonGroupH"/>
   <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroupA"/>
+  <buttongroup name="buttonGroupB"/>
+  <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroupC"/>
+  <buttongroup name="buttonGroupD"/>
+  <buttongroup name="buttonGroupE"/>
+  <buttongroup name="buttonGroupF"/>
  </buttongroups>
 </ui>
