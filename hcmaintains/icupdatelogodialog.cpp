@@ -54,6 +54,7 @@ void ICUpdateLogoDialog::on_setToStartup_clicked()
         QFile::copy(startupPage_, "/opt/Qt/bin/resource/startup_page.png");
 #endif
     }
+    ::system("sync");
     QMessageBox::information(this,tr("Tips"),tr("Setting success,In operation after reboot!"));
 }
 
@@ -76,6 +77,7 @@ void ICUpdateLogoDialog::on_setToStandby_clicked()
         QFile::copy(standbyPage_, "/opt/Qt/bin/resource/Standby.png");
 #endif
     }
+    ::system("sync");
     QMessageBox::information(this,tr("Tips"),tr("Setting success,In operation after reboot!"));
 }
 

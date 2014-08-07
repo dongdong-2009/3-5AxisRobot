@@ -76,6 +76,12 @@ void ICOriginDialog::keyPressEvent(QKeyEvent *e)
     {
         ICKeyboardHandler::Instance()->Keypressed(ICKeyboard::VFB_Run);
     }
+    else
+    {
+        QKeyEvent* ke = new QKeyEvent(*e);
+        qApp->postEvent(this->parentWidget(), ke);
+        this->accept();
+    }
 }
 
 void ICOriginDialog::StepChanged(int step)

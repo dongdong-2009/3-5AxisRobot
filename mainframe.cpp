@@ -275,8 +275,8 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
 
     keyMap.insert(Qt::Key_B, ICKeyboard::VFB_ZSub);
     keyMap.insert(Qt::Key_A, ICKeyboard::VFB_ZAdd);
-    keyMap.insert(Qt::Key_G, ICKeyboard::VFB_CSub);
-    keyMap.insert(Qt::Key_F, ICKeyboard::VFB_CAdd);
+    keyMap.insert(Qt::Key_G, ICKeyboard::VFB_Pose_Horizontal);
+    keyMap.insert(Qt::Key_F, ICKeyboard::VFB_Pose_Vertical);
 
     keyMap.insert(Qt::Key_Q, ICKeyboard::VFB_X2Sub);
     keyMap.insert(Qt::Key_K, ICKeyboard::VFB_X2Add);
@@ -365,6 +365,7 @@ void MainFrame::changeEvent(QEvent *e)
 void MainFrame::keyPressEvent(QKeyEvent *e)
 {
     qDebug()<<"KeyEvent:"<<e->key();
+    SetHasInput(true);
     if(keyMap.contains(e->key()))
     {
         int key = keyMap.value(e->key());
@@ -386,7 +387,6 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
             currentKeySeq.clear();
         }
         qDebug()<<"Key:"<<key;
-        SetHasInput(true);
         switch(key)
         {
         case ICKeyboard::FB_F1:
@@ -433,7 +433,9 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
                     key == ICKeyboard::VFB_Y2Sub ||
                     key == ICKeyboard::VFB_ASub ||
                     key == ICKeyboard::VFB_BSub ||
-                    key == ICKeyboard::VFB_CSub)
+                    key == ICKeyboard::VFB_CSub ||
+                    key == ICKeyboard::VFB_Pose_Horizontal ||
+                    key == ICKeyboard::VFB_Pose_Vertical)
             {
                 keyboard->SetPressed(true);
                 if(instructPage_->isVisible())

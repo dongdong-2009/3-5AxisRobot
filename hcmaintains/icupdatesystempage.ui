@@ -241,7 +241,7 @@
     <rect>
      <x>610</x>
      <y>10</y>
-     <width>95</width>
+     <width>111</width>
      <height>320</height>
     </rect>
    </property>
@@ -260,12 +260,6 @@
         <height>48</height>
        </size>
       </property>
-      <property name="maximumSize">
-       <size>
-        <width>95</width>
-        <height>16777215</height>
-       </size>
-      </property>
       <property name="text">
        <string>Update Logo</string>
       </property>
@@ -274,7 +268,7 @@
     <item>
      <widget class="QToolButton" name="scanPanel">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
@@ -283,12 +277,6 @@
        <size>
         <width>80</width>
         <height>48</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>95</width>
-        <height>16777215</height>
        </size>
       </property>
       <property name="text">
@@ -313,12 +301,6 @@
         <height>48</height>
        </size>
       </property>
-      <property name="maximumSize">
-       <size>
-        <width>100</width>
-        <height>16777215</height>
-       </size>
-      </property>
       <property name="text">
        <string>Update HMI</string>
       </property>
@@ -327,7 +309,7 @@
     <item>
      <widget class="QToolButton" name="scanHost">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
@@ -336,12 +318,6 @@
        <size>
         <width>80</width>
         <height>48</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>95</width>
-        <height>16777215</height>
        </size>
       </property>
       <property name="text">
@@ -366,12 +342,6 @@
         <height>48</height>
        </size>
       </property>
-      <property name="maximumSize">
-       <size>
-        <width>100</width>
-        <height>16777215</height>
-       </size>
-      </property>
       <property name="text">
        <string>Update Host</string>
       </property>
@@ -379,9 +349,6 @@
     </item>
     <item>
      <widget class="QToolButton" name="updatePasswardButton">
-      <property name="enabled">
-       <bool>false</bool>
-      </property>
       <property name="sizePolicy">
        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
         <horstretch>0</horstretch>
@@ -394,14 +361,8 @@
         <height>48</height>
        </size>
       </property>
-      <property name="maximumSize">
-       <size>
-        <width>100</width>
-        <height>16777215</height>
-       </size>
-      </property>
       <property name="text">
-       <string>Update</string>
+       <string>Update Super Password</string>
       </property>
      </widget>
     </item>
