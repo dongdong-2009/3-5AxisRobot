@@ -53,6 +53,8 @@ private slots:
 
     void on_cycle_clicked();
 
+    void on_pauseButton_clicked();
+
 private:
     void InitSignal();
     void UpdateUIProgramList_();

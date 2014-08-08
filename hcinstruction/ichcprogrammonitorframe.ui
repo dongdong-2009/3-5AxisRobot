@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>711</width>
+    <width>800</width>
     <height>517</height>
    </rect>
   </property>
@@ -429,6 +429,38 @@ color: rgb(255, 255, 0);</string>
        <property name="icon">
         <iconset resource="../resource.qrc">
          <normaloff>:/resource/switch_off.png</normaloff>:/resource/switch_off.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="pauseButton">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>48</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>48</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Pause</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resource.qrc">
+         <normaloff>:/resource/wait(32).png</normaloff>:/resource/wait(32).png</iconset>
        </property>
        <property name="iconSize">
         <size>

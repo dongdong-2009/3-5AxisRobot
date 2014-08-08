@@ -789,3 +789,8 @@ void ICHCProgramMonitorFrame::on_cycle_clicked()
 {
     ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_CYCLE);
 }
+
+void ICHCProgramMonitorFrame::on_pauseButton_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_PAUSE);
+}
