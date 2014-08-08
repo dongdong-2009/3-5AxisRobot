@@ -2363,6 +2363,12 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="459"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="803"/>
+        <source>Pause</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="54"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="80"/>
         <source>Has not teach check Fixture-1!</source>
@@ -2422,6 +2428,11 @@ Infomation</source>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="762"/>
         <source>Speed Enable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="798"/>
+        <source>Run</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

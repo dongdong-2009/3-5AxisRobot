@@ -53,7 +53,7 @@ private slots:
 
     void on_cycle_clicked();
 
-    void on_pauseButton_clicked();
+    void on_pauseButton_toggled(bool checked);
 
 private:
     void InitSignal();

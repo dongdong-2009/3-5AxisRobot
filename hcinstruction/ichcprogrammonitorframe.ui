@@ -442,7 +442,7 @@ color: rgb(255, 255, 0);</string>
       </widget>
      </item>
      <item>
-      <widget class="QToolButton" name="pauseButton">
+      <widget class="QPushButton" name="pauseButton">
        <property name="minimumSize">
         <size>
          <width>120</width>
@@ -468,8 +468,8 @@ color: rgb(255, 255, 0);</string>
          <height>32</height>
         </size>
        </property>
-       <property name="toolButtonStyle">
-        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       <property name="checkable">
+        <bool>true</bool>
        </property>
       </widget>
      </item>

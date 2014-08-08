@@ -113,6 +113,7 @@ enum ICVirtualKey
     VKEY_SERVO_EN,
     VKEY_SERVO_UN,
     VKEY_PAUSE,
+    VKEY_RESTART,
 };
 
 }//namespace IC{

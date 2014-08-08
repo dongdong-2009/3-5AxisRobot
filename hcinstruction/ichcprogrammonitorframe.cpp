@@ -790,7 +790,18 @@ void ICHCProgramMonitorFrame::on_cycle_clicked()
     ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_CYCLE);
 }
 
-void ICHCProgramMonitorFrame::on_pauseButton_clicked()
+
+void ICHCProgramMonitorFrame::on_pauseButton_toggled(bool checked)
 {
-    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_PAUSE);
+    if(checked)
+    {
+//        ui->pauseButton->setText(tr("Run"));
+        ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_PAUSE);
+    }
+    else
+    {
+//        ui->pauseButton->setText(tr("Pause"));
+        ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_RESTART);
+
+    }
 }

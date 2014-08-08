@@ -279,7 +279,7 @@ color: rgb(255, 255, 0);</string>
        </property>
        <property name="minimumSize">
         <size>
-         <width>120</width>
+         <width>100</width>
          <height>41</height>
         </size>
        </property>
@@ -317,7 +317,7 @@ color: rgb(255, 255, 0);</string>
        </property>
        <property name="minimumSize">
         <size>
-         <width>120</width>
+         <width>100</width>
          <height>41</height>
         </size>
        </property>
@@ -349,7 +349,7 @@ color: rgb(255, 255, 0);</string>
       <widget class="QToolButton" name="singleStepButton">
        <property name="minimumSize">
         <size>
-         <width>120</width>
+         <width>100</width>
          <height>41</height>
         </size>
        </property>
@@ -381,7 +381,7 @@ color: rgb(255, 255, 0);</string>
       <widget class="QToolButton" name="cycle">
        <property name="minimumSize">
         <size>
-         <width>120</width>
+         <width>100</width>
          <height>41</height>
         </size>
        </property>
@@ -413,7 +413,7 @@ color: rgb(255, 255, 0);</string>
       <widget class="QToolButton" name="speedEnableButton">
        <property name="minimumSize">
         <size>
-         <width>120</width>
+         <width>100</width>
          <height>41</height>
         </size>
        </property>
@@ -429,6 +429,38 @@ color: rgb(255, 255, 0);</string>
        <property name="icon">
         <iconset resource="../resource.qrc">
          <normaloff>:/resource/switch_off.png</normaloff>:/resource/switch_off.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="pauseButton">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Pause</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resource.qrc">
+         <normaloff>:/resource/wait(32).png</normaloff>:/resource/wait(32).png</iconset>
        </property>
        <property name="iconSize">
         <size>
