@@ -115,7 +115,7 @@
         <location filename="hcinstruction/actionsettingframe_5.ui" line="129"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1055"/>
         <source>Vertical-2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ver-2</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="277"/>
@@ -123,7 +123,7 @@
         <location filename="hcinstruction/actionsettingframe_5.ui" line="88"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1014"/>
         <source>Horizon-2</source>
-        <translation type="unfinished"></translation>
+        <translation>Hor-2</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="1237"/>
@@ -141,13 +141,13 @@
         <location filename="hcinstruction/actionsettingframe.ui" line="1370"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1212"/>
         <source>Vertical-1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ver-1</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="1329"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1171"/>
         <source>Horizon-1</source>
-        <translation type="unfinished"></translation>
+        <translation>Hor-2</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="180"/>
@@ -155,7 +155,7 @@
         <location filename="hcinstruction/actionsettingframe_5.ui" line="323"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1544"/>
         <source>Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>FW</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="877"/>
@@ -173,7 +173,7 @@
         <location filename="hcinstruction/actionsettingframe.ui" line="1641"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="609"/>
         <source>Speed(%)</source>
-        <translation type="unfinished"></translation>
+        <translation>SPD(%)</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="139"/>
@@ -181,7 +181,7 @@
         <location filename="hcinstruction/actionsettingframe_5.ui" line="276"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1503"/>
         <source>Backward</source>
-        <translation type="unfinished"></translation>
+        <translation>BW</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="616"/>
@@ -1593,7 +1593,7 @@ Infomation</source>
         <location filename="hcinstruction/ichcinjectionpage_5.ui" line="139"/>
         <source>Ejection Permit</source>
         <oldsource>Close Mold Permit 2</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Eje.Permit</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.ui" line="138"/>
@@ -4160,24 +4160,24 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="231"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="240"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="351"/>
         <source>Security Point</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="262"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="277"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="382"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="244"/>
         <source>Mechanical length</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="284"/>
-        <location filename="hcsettings/icmachinestructpage.ui" line="325"/>
-        <location filename="hcsettings/icmachinestructpage.ui" line="366"/>
-        <location filename="hcsettings/icmachinestructpage.ui" line="407"/>
-        <location filename="hcsettings/icmachinestructpage.ui" line="448"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="258"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="299"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="340"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="403"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="444"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="411"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="459"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="507"/>
@@ -4192,7 +4192,7 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="303"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="318"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="430"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="266"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="279"/>
@@ -4203,70 +4203,70 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="344"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="359"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="478"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="291"/>
         <source>Internal security zone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="385"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="381"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="526"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="292"/>
         <source>External security zone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="426"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="422"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="574"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="245"/>
         <source>Distance/Rotation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="473"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="469"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="628"/>
         <source>Save</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="483"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="479"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="638"/>
         <source>Test Feedback</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="495"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="491"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="650"/>
         <source>Test</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="505"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="501"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="673"/>
         <source>Feedback</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="515"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="511"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="696"/>
         <source>Z Signal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="539"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="535"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="733"/>
         <source>+Test</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="558"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="554"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="752"/>
         <source>-Test</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="577"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="573"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="771"/>
         <source>Clear</source>
         <translation type="unfinished"></translation>

@@ -5091,24 +5091,24 @@ Please enter an digit between </source>
         <translation>组合动作选择</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="231"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="240"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="351"/>
         <source>Security Point</source>
         <translation>安全点</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="262"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="277"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="382"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="244"/>
         <source>Mechanical length</source>
         <translation>机械长度</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="284"/>
-        <location filename="hcsettings/icmachinestructpage.ui" line="325"/>
-        <location filename="hcsettings/icmachinestructpage.ui" line="366"/>
-        <location filename="hcsettings/icmachinestructpage.ui" line="407"/>
-        <location filename="hcsettings/icmachinestructpage.ui" line="448"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="258"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="299"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="340"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="403"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="444"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="411"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="459"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="507"/>
@@ -5123,7 +5123,7 @@ Please enter an digit between </source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="303"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="318"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="430"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="266"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="279"/>
@@ -5134,70 +5134,70 @@ Please enter an digit between </source>
         <translation>最大移动</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="344"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="359"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="478"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="291"/>
         <source>Internal security zone</source>
         <translation>型内安全区</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="385"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="381"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="526"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="292"/>
         <source>External security zone</source>
         <translation>型外安全区</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="426"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="422"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="574"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="245"/>
         <source>Distance/Rotation</source>
         <translation>每转距离</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="473"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="469"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="628"/>
         <source>Save</source>
         <translation>保存</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="483"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="479"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="638"/>
         <source>Test Feedback</source>
         <translation>测试反馈</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="495"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="491"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="650"/>
         <source>Test</source>
         <translation>测试</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="505"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="501"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="673"/>
         <source>Feedback</source>
         <translation>反馈</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="515"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="511"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="696"/>
         <source>Z Signal</source>
         <translation>Z信号</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="539"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="535"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="733"/>
         <source>+Test</source>
         <translation>电机正转</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="558"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="554"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="752"/>
         <source>-Test</source>
         <translation>电机反转</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="577"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="573"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="771"/>
         <source>Clear</source>
         <translation>清除测试</translation>
