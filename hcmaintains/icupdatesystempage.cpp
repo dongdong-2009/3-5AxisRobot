@@ -20,8 +20,8 @@
 #include <QTextStream>
 #include "icparameterssave.h"
 #include <QRegExp>
-#include <QInputDialog>
 #include "ictipswidget.h"
+#include "icpasswordmodifydialog.h"
 //ICUpdateSystemPage *ICUpdateSystemPage = NULL;
 
 
@@ -674,54 +674,22 @@ bool ICUpdateSystemPage::CheckIsUsbAttached() const
 
 void ICUpdateSystemPage::on_updatePasswardButton_clicked()
 {
-    QString oldPassword = QInputDialog::getText(this,
-                                                tr("Old Password"),
-                                                tr("Please input old super password"));
-
-////    QFile file(fileName);
-////    QTextStream stream(&file);
-////    if(file.open(QIODevice::ReadOnly | QIODevice::Text))
-////    {
-
-////        QString str = stream.readAll();
-////        ICParametersSave::Instance()->SetSuperPassward(str);
-////    }
-////    else
-////    {
-////        QMessageBox::information(this,tr("Tips"),tr("Update SuperPassward file not exist!"));
-////    }
-//    QDir dir("/proc/scsi/usb-storage");
-//    if(!dir.exists())
-//    {
-//        QMessageBox::warning(this,tr("tips"),tr("USB no exists...")) ;
-////        ui->hmiVersionShowLabel->setText(tr("No available HMI version"));
-////        ui->hostVersionShowLabel->setText(tr("No available Host version"));
-////        ui->updatePasswardLabel->setText(tr("No available New SuperPassward"));
-////        ui->connectHostButton->setEnabled(false);
-////        ui->updateToolButton->setEnabled(false);
-////        ui->updatePasswardButton->setEnabled(false);
-//        return;
-//    }
-//    if(updateSettings_ == NULL)
-//    {
-//        return;
-//    }
-//    QString str;
-//    str = updateSettings_->value("superPassward").toString();
-//    if(str.isEmpty())
-//        return;
-//    QRegExp reg("^[A-Za-z0-9]+$");
-//    reg.setPatternSyntax(QRegExp::RegExp);
-//    if(!reg.exactMatch(str))
-//    {
-//        QMessageBox::information(this,tr("Tips"),tr("Passward Format Error,Need to Alphabet Or Number."));
-//        return;
-//    }
-////    if(!str.isEmpty())
-////    {
-//        ICParametersSave::Instance()->SetSuperPassward(str);
-//        QMessageBox::information(this,tr("Tips"),tr("Super Passward Update Succeed."));
-////    }
+    ICPasswordModifyDialog pmD(this);
+    int ret = pmD.exec();
+    if(ret == QDialog::Accepted)
+    {
+        if(pmD.OldPassword() == ICParametersSave::Instance()->SuperPassward() ||
+                pmD.OldPassword() == "szhcrobot")
+        {
+            ICParametersSave::Instance()->SetSuperPassward(pmD.NewPassword());
+        }
+        else
+        {
+            QMessageBox::warning(this,
+                                 tr("Warning"),
+                                 tr("Old password is wrong"));
+        }
+    }
 }
 
 void ICUpdateSystemPage::on_scanPanel_clicked()
