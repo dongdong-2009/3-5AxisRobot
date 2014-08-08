@@ -222,7 +222,11 @@ void ICHCStackedSettingsFrame::changeEvent(QEvent *e)
     switch (e->type()) {
     case QEvent::LanguageChange:
     {
+        int index= ui->countWayBox->currentIndex();
+        ui->countWayBox->blockSignals(true);
         ui->retranslateUi(this);
+        ui->countWayBox->setCurrentIndex(index);
+        ui->countWayBox->blockSignals(false);
     }
         break;
     default:

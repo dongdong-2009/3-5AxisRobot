@@ -2742,48 +2742,56 @@ Reason</source>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="235"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="300"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="155"/>
         <source>Alarm When Up</source>
         <translation>模内上升报警</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="240"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="305"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="156"/>
         <source>Alarm Once</source>
         <translation>即时报警</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="259"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="324"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="157"/>
         <source>All</source>
         <translation>全部</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="264"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="329"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="158"/>
         <source>Good</source>
         <translation>良品</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="269"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="334"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="159"/>
         <source>Stack-1</source>
         <translation>堆叠1组</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="274"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="339"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="160"/>
         <source>Stack-2</source>
         <translation>堆叠2组</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="279"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="344"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="161"/>
         <source>Stack-3</source>
         <translation>堆叠3组</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="284"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="349"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="162"/>
         <source>Stack-4</source>
         <translation>堆叠4组</translation>
     </message>
@@ -7852,31 +7860,31 @@ Please enter an digit between </source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="141"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="150"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="156"/>
         <source>RegisterCode:</source>
         <translation>注册:</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="216"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="225"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="231"/>
         <source>RestTime:</source>
         <translation>剩余时间:</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="74"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="68"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="77"/>
         <source>1.Verify the device</source>
         <translation>1.确认设备</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="128"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="137"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="143"/>
         <source>Generate</source>
         <translation>获取</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="188"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="197"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="203"/>
         <source>Register</source>
         <translation>注册</translation>
@@ -7886,21 +7894,21 @@ Please enter an digit between </source>
         <translation type="obsolete">设备</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="480"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="477"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="495"/>
         <source>2.Verify the update version</source>
         <translation>2.确认更新版本</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="304"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="313"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="319"/>
         <source>HML Version</source>
         <translation>手控版本</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="380"/>
-        <location filename="hcmaintains/icupdatesystem.ui" line="411"/>
-        <location filename="hcmaintains/icupdatesystem.ui" line="552"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="389"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="420"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="543"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="395"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="426"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="567"/>
@@ -7908,13 +7916,13 @@ Please enter an digit between </source>
         <translation>版本</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="259"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="268"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="274"/>
         <source>3.Copy files</source>
         <translation>3.复制文件</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="336"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="345"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="351"/>
         <source>4.Status</source>
         <translation>4.主机状态</translation>
@@ -7924,7 +7932,7 @@ Please enter an digit between </source>
         <translation type="obsolete">复制文件中</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="323"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="332"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="338"/>
         <source>Reboot</source>
         <oldsource>4.Reboot</oldsource>
@@ -7939,55 +7947,55 @@ Please enter an digit between </source>
         <translation type="obsolete">写入主机</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="439"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="442"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="454"/>
         <source>Update Host</source>
         <translation>更新主机</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="284"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="293"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="299"/>
         <source>Refresh</source>
         <translation>刷新</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="349"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="358"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="364"/>
         <source>Host Version</source>
         <translation>主机版本</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="109"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="112"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="118"/>
         <source>MachineCode:</source>
         <translation>机器码:</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="467"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="464"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="482"/>
         <source>Update HMI</source>
         <translation>更新手控</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="96"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="99"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="105"/>
         <source>5.Register</source>
         <translation>5.用户注册</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="61"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="55"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="64"/>
         <source>Update Logo</source>
         <translation>更新图片</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="493"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="490"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="508"/>
         <source>Update Super Passward</source>
         <translation>更新超级密码</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="521"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="512"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="536"/>
         <source>Update</source>
         <translation>更新</translation>

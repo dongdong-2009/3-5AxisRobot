@@ -1081,7 +1081,7 @@ Infomation</source>
     <message>
         <location filename="categorypage/icfunctionpageframe.cpp" line="203"/>
         <source>Security Point Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Security Settings</translation>
     </message>
     <message>
         <location filename="categorypage/icfunctionpageframe.cpp" line="205"/>
@@ -2078,48 +2078,56 @@ Infomation</source>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="235"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="300"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="155"/>
         <source>Alarm When Up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="240"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="305"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="156"/>
         <source>Alarm Once</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="259"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="324"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="157"/>
         <source>All</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="264"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="329"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="158"/>
         <source>Good</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="269"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="334"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="159"/>
         <source>Stack-1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="274"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="339"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="160"/>
         <source>Stack-2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="279"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="344"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="161"/>
         <source>Stack-3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="284"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="349"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="162"/>
         <source>Stack-4</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4317,7 +4325,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icmachinestructpage.cpp" line="31"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="87"/>
         <source>Struct Define</source>
-        <translation>Struct.Def.</translation>
+        <translation>Struct</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="32"/>
@@ -5283,7 +5291,7 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage.ui" line="245"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="332"/>
         <source>Set In</source>
-        <translation type="unfinished">Save</translation>
+        <translation>Set In</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="449"/>
@@ -6440,39 +6448,39 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="216"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="225"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="231"/>
         <source>RestTime:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="74"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="68"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="77"/>
         <source>1.Verify the device</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="480"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="477"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="495"/>
         <source>2.Verify the update version</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="141"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="150"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="156"/>
         <source>RegisterCode:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="304"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="313"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="319"/>
         <source>HML Version</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="380"/>
-        <location filename="hcmaintains/icupdatesystem.ui" line="411"/>
-        <location filename="hcmaintains/icupdatesystem.ui" line="552"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="389"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="420"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="543"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="395"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="426"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="567"/>
@@ -6480,87 +6488,87 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="128"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="137"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="143"/>
         <source>Generate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="188"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="197"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="203"/>
         <source>Register</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="259"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="268"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="274"/>
         <source>3.Copy files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="336"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="345"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="351"/>
         <source>4.Status</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="493"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="490"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="508"/>
         <source>Update Super Passward</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="521"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="512"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="536"/>
         <source>Update</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="323"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="332"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="338"/>
         <source>Reboot</source>
         <oldsource>4.Reboot</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="284"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="293"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="299"/>
         <source>Refresh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="349"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="358"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="364"/>
         <source>Host Version</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="109"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="112"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="118"/>
         <source>MachineCode:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="467"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="464"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="482"/>
         <source>Update HMI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="96"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="99"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="105"/>
         <source>5.Register</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="439"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="442"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="454"/>
         <source>Update Host</source>
         <oldsource>Connect Host</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystem.ui" line="61"/>
+        <location filename="hcmaintains/icupdatesystem.ui" line="55"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="64"/>
         <source>Update Logo</source>
         <translation type="unfinished"></translation>
@@ -8084,7 +8092,7 @@ Admin</source>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1299"/>
         <source>Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation>BS</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1371"/>
@@ -8211,7 +8219,7 @@ Admin</source>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog.ui" line="516"/>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="516"/>
         <source>Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">BS</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog.ui" line="544"/>
