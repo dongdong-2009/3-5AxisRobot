@@ -256,7 +256,7 @@
         <location filename="hcsettings/axissettingsframe.ui" line="400"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="521"/>
         <source>Set In</source>
-        <translation type="unfinished"></translation>
+        <translation>Save</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="272"/>
@@ -1123,7 +1123,7 @@ Infomation</source>
         <location filename="hcinstruction/ichcconditionpage.ui" line="167"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="170"/>
         <source>Defective Products</source>
-        <translation type="unfinished"></translation>
+        <translation>Bad Pro</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="362"/>
@@ -1143,7 +1143,7 @@ Infomation</source>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="104"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="569"/>
         <source>Try Product</source>
-        <translation type="unfinished"></translation>
+        <translation>Try Pro</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="102"/>
@@ -1263,7 +1263,7 @@ Infomation</source>
         <location filename="hcsettings/ichcdetectionframe.ui" line="97"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="166"/>
         <source>Detect fixture 1</source>
-        <translation type="unfinished"></translation>
+        <translation>CHK.Fixture-1</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="50"/>
@@ -1296,7 +1296,7 @@ Infomation</source>
         <location filename="hcsettings/ichcdetectionframe.ui" line="460"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="162"/>
         <source>Reversed Phase</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">RP</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="82"/>
@@ -1305,86 +1305,86 @@ Infomation</source>
         <location filename="hcsettings/ichcdetectionframe.ui" line="465"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="163"/>
         <source>Positive Phase</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">PP</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="169"/>
         <source>Detect sucker 1</source>
-        <translation type="unfinished"></translation>
+        <translation>CHK.Sucker-1</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="247"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="172"/>
         <source>Detect fixture 2</source>
-        <translation type="unfinished"></translation>
+        <translation>CHK.Fixture-2</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="175"/>
         <source>Detect sucker 2</source>
-        <translation type="unfinished"></translation>
+        <translation>CHK.Sucker-2</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="182"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="178"/>
         <source>Detect fixture 3</source>
-        <translation type="unfinished"></translation>
+        <translation>CHK.Fixture-3</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="254"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="193"/>
         <source>Ejection Link Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Eje. Link Lock</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="104"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="196"/>
         <source>Detect Postion</source>
-        <translation type="unfinished"></translation>
+        <translation>Z.Move Pos</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="329"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="211"/>
         <source>Limit Lock Mold</source>
-        <translation type="unfinished"></translation>
+        <translation>Limit CM.</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="324"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="212"/>
         <source>No Limit Lock Mold</source>
-        <translation type="unfinished"></translation>
+        <translation>No Limit CM.</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="90"/>
         <source>Hor Standby</source>
         <oldsource>Standby Pose</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Hor. Standby</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="549"/>
         <source>Auto Run</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="298"/>
         <source>Close Mold</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="337"/>
         <source>U/D Position</source>
-        <translation type="unfinished"></translation>
+        <translation>U/D Ret Pos</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="499"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="198"/>
         <source>Don&apos;t need Mold Opened Signal</source>
-        <translation type="unfinished"></translation>
+        <translation>Don&apos;t need OM. Signal</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="473"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="207"/>
         <source>IMM Emergency</source>
-        <translation type="unfinished"></translation>
+        <translation>IMM.EMER.</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="210"/>
@@ -1395,13 +1395,13 @@ Infomation</source>
         <location filename="hcsettings/ichcdetectionframe.ui" line="504"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="197"/>
         <source>Need Mold Opened Signal</source>
-        <translation type="unfinished"></translation>
+        <translation>Need OM. Signal</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="634"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="199"/>
         <source>Detect Origin</source>
-        <translation type="unfinished"></translation>
+        <translation>Origin</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="541"/>
@@ -1412,7 +1412,7 @@ Infomation</source>
     <message>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="203"/>
         <source>Orgin Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Orgin Pos</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="285"/>
@@ -1440,25 +1440,25 @@ Infomation</source>
         <location filename="hcsettings/ichcdetectionframe.ui" line="143"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="181"/>
         <source>Detect fixture 4</source>
-        <translation type="unfinished"></translation>
+        <translation>CHK.Fixture-4</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="563"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="184"/>
         <source>Detect Mid Mold</source>
-        <translation type="unfinished"></translation>
+        <translation>CHK. Mid Mold</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="376"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="187"/>
         <source>Detect Security Door</source>
-        <translation type="unfinished"></translation>
+        <translation>CHK. Security Door</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="556"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="188"/>
         <source>Detect Pressure</source>
-        <translation type="unfinished"></translation>
+        <translation>CHK. Press</translation>
     </message>
 </context>
 <context>
@@ -1528,7 +1528,7 @@ Infomation</source>
         <location filename="hcinstruction/ichcfixturepage.ui" line="154"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="154"/>
         <source>Current/Setting</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Cur/Setting</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
@@ -1586,7 +1586,7 @@ Infomation</source>
         <location filename="hcinstruction/ichcinjectionpage_5.ui" line="134"/>
         <source>Close Mold Permit</source>
         <oldsource>Close Mold Permit 1</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>CM.Permit</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.ui" line="133"/>
@@ -1619,7 +1619,7 @@ Infomation</source>
         <location filename="hcinstruction/ichcinjectionpage.ui" line="153"/>
         <location filename="hcinstruction/ichcinjectionpage_5.ui" line="159"/>
         <source>Current/Setting</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Cur/Setting</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.ui" line="158"/>
@@ -1631,7 +1631,7 @@ Infomation</source>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="21"/>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="95"/>
         <source>Close Mold Permit  </source>
-        <translation type="unfinished"></translation>
+        <translation>CM.Permit</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="21"/>
@@ -1790,7 +1790,7 @@ Infomation</source>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="623"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="629"/>
         <source>Other</source>
-        <translation type="unfinished">Manipulator I/O</translation>
+        <translation>Other</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="745"/>
@@ -1856,7 +1856,7 @@ Infomation</source>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="113"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="130"/>
         <source>Other</source>
-        <translation type="unfinished">Manipulator I/O</translation>
+        <translation>Other</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="114"/>
@@ -2067,7 +2067,7 @@ Infomation</source>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="274"/>
         <location filename="hcsettings/ichcproductsettingframe.cpp" line="153"/>
         <source>Reversed Phase</source>
-        <translation type="unfinished"></translation>
+        <translation>RP</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="227"/>
@@ -2135,7 +2135,7 @@ Infomation</source>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="230"/>
         <location filename="hcsettings/ichcproductsettingframe.cpp" line="154"/>
         <source>Positive Phase</source>
-        <translation type="unfinished"></translation>
+        <translation>PP</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="108"/>
@@ -2307,7 +2307,7 @@ Infomation</source>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="762"/>
         <source>Speed Enable</source>
-        <translation type="unfinished"></translation>
+        <translation>Speed En</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="747"/>
@@ -2322,7 +2322,7 @@ Infomation</source>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="762"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="772"/>
         <source>Speed Disable</source>
-        <translation type="unfinished"></translation>
+        <translation>Speed Un</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="363"/>
@@ -3048,7 +3048,7 @@ Infomation</source>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="41"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="158"/>
         <source>Struct Define</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Struct.Def.</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="66"/>
@@ -3723,12 +3723,12 @@ Infomation</source>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="199"/>
         <source>Defective Products</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Bad Pro</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="203"/>
         <source>Try Product</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Try Pro</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="207"/>
@@ -4317,7 +4317,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icmachinestructpage.cpp" line="31"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="87"/>
         <source>Struct Define</source>
-        <translation type="unfinished"></translation>
+        <translation>Struct.Def.</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="32"/>
@@ -4999,7 +4999,7 @@ Please enter an digit between </source>
     <message>
         <location filename="hcinstruction/icperipherypage.ui" line="128"/>
         <source>Current/Setting</source>
-        <translation type="unfinished"></translation>
+        <translation>Cur/Setting</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.ui" line="133"/>
@@ -5125,7 +5125,7 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="148"/>
         <location filename="hcinstruction/icpneumaticactionpage_5.ui" line="154"/>
         <source>Current/Setting</source>
-        <translation type="unfinished"></translation>
+        <translation>Cur/Setting</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="153"/>
@@ -5283,7 +5283,7 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage.ui" line="245"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="332"/>
         <source>Set In</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Save</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="449"/>
