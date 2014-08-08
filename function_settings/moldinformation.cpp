@@ -539,41 +539,7 @@ void MoldInformation::on_importToolButton_clicked()
     //            return;
     //        }
     //    }
-    QFile file;
-    QString actContent;
-    ICProgramFormatChecker programChecker;
-    for(int i = 0; i != acts.size(); ++i)
-    {
-        file.setFileName(dir.absoluteFilePath(acts.at(i)));
-        actContent.clear();
-        file.open(QFile::ReadOnly | QFile::Text);
-        actContent = file.readAll();
-        file.close();
-        if(!programChecker.Check(actContent))
-        {
-            QMessageBox::warning(this, tr("Warnning"), tr("Wrong program format!"));
-            return;
-        }
-    }
-    ICConfigFormatChecker configFormatChecker;
-    for(int i = 0; i != fncs.size(); ++i)
-    {
-        file.setFileName(dir.absoluteFilePath(fncs.at(i)));
-        actContent.clear();
-        file.open(QFile::ReadOnly | QFile::Text);
-        actContent = file.readAll();
-        file.close();
-        if(!configFormatChecker.CheckRowCount(actContent, 58,ICDataFormatChecker::kCompareEqual))
-        {
-            QMessageBox::warning(this, tr("Warnning"), tr("Wrong config format!!!"));
-            return;
-        }
-        if(!configFormatChecker.Check(actContent))
-        {
-            QMessageBox::warning(this, tr("Warnning"), tr("Wrong config format!"));
-            return;
-        }
-    }
+
     int rows_ = ui->informationTableWidget->rowCount();
     bool flagItem = TRUE ;
     bool flagItem_ = TRUE ;
@@ -639,6 +605,41 @@ void MoldInformation::on_importToolButton_clicked()
         selectedImportItemName_.append(str + ".fnc");
         flagItem_ = FALSE;
     }
+
+    QFile file;
+    QString actContent;
+    ICProgramFormatChecker programChecker;
+    ICConfigFormatChecker configFormatChecker;
+    for(int i = 0; i != selectedImportItemName_.size(); ++i)
+    {
+        file.setFileName(dir.absoluteFilePath(selectedImportItemName_.at(i)));
+        actContent.clear();
+        file.open(QFile::ReadOnly | QFile::Text);
+        actContent = file.readAll();
+        file.close();
+        if(selectedImportItemName_.at(i).endsWith(".act"))
+        {
+            if(!programChecker.Check(actContent))
+            {
+                QMessageBox::warning(this, tr("Warnning"), tr("Wrong program format!"));
+                return;
+            }
+        }
+        else if(selectedImportItemName_.at(i).endsWith(".fnc"))
+        {
+            if(!configFormatChecker.CheckRowCount(actContent, 58,ICDataFormatChecker::kCompareEqual))
+            {
+                QMessageBox::warning(this, tr("Warnning"), tr("Wrong config format!!!"));
+                return;
+            }
+            if(!configFormatChecker.Check(actContent))
+            {
+                QMessageBox::warning(this, tr("Warnning"), tr("Wrong config format!"));
+                return;
+            }
+        }
+    }
+
     ICTipsWidget tipsWidget(tr("Restoring, please wait..."));
     if(!flagItem || !flagItem_)
     {
@@ -774,7 +775,7 @@ void MoldInformation::on_exportToolButton_clicked()
     }
 
     ICBackupUtility backupUtility;
-#if defined(Q_WS_WIN32) || defined(Q_WS_X11)
+//#if defined(Q_WS_WIN32) || defined(Q_WS_X11)
     bool ret = backupUtility.BackupDir("./records",
                                        getFileDir + "/HC5ABackup/records",
                                        selectedExportItemName_);
@@ -782,15 +783,15 @@ void MoldInformation::on_exportToolButton_clicked()
                                          getFileDir + "/HC5ABackup/subs",
                                          selectedExportItemName_<<"sub[0-7].prg");
 
-#else
+//#else
 
-    bool ret = backupUtility.BackupDir("/opt/Qt/bin/records",
-                                       "/mnt/udisk/HC5ABackup/records",
-                                       selectedExportItemName_);
-    ret = ret && backupUtility.BackupDir("/opt/Qt/bin/subs",
-                                         "/mnt/udisk/HC5ABackup/subs",
-                                         selectedExportItemName_<<"sub[0-7].prg");
-#endif
+//    bool ret = backupUtility.BackupDir("/opt/Qt/bin/records",
+//                                       "/mnt/udisk/HC5ABackup/records",
+//                                       selectedExportItemName_);
+//    ret = ret && backupUtility.BackupDir("/opt/Qt/bin/subs",
+//                                         "/mnt/udisk/HC5ABackup/subs",
+//                                         selectedExportItemName_<<"sub[0-7].prg");
+//#endif
     if(!flagItem || !flagItem_)
     {
         QMessageBox::information(this,tr("Information"), tr("Operation finished!"));

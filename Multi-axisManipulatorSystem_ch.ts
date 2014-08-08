@@ -6067,6 +6067,49 @@ Please enter an digit between </source>
     </message>
 </context>
 <context>
+    <name>ICPasswordModifyDialog</name>
+    <message>
+        <location filename="custom_widgets/icpasswordmodifydialog.ui" line="14"/>
+        <source>Dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/icpasswordmodifydialog.ui" line="20"/>
+        <source>Old Super Password:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/icpasswordmodifydialog.ui" line="30"/>
+        <source>New Super Password:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/icpasswordmodifydialog.ui" line="40"/>
+        <source>Confirm New Super Password:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/icpasswordmodifydialog.ui" line="56"/>
+        <source>Cancel</source>
+        <translation type="unfinished">取消</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/icpasswordmodifydialog.ui" line="69"/>
+        <source>Ok</source>
+        <translation type="unfinished">确定</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/icpasswordmodifydialog.cpp" line="34"/>
+        <source>warning</source>
+        <translation type="unfinished">警告</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/icpasswordmodifydialog.cpp" line="35"/>
+        <source>Two password is not the same!</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ICPeripheryPage</name>
     <message>
         <location filename="hcinstruction/icperipherypage.ui" line="14"/>
@@ -8154,6 +8197,7 @@ Would you want to restart now?</source>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="291"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="312"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="689"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
@@ -8218,14 +8262,13 @@ Would you want to restart now?</source>
         <translation>没有注册！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="678"/>
-        <source>Old Password</source>
-        <translation type="unfinished">旧密码</translation>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="690"/>
+        <source>Old password is wrong</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="679"/>
-        <source>Please input old super password</source>
-        <translation type="unfinished"></translation>
+        <source>Old Password</source>
+        <translation type="obsolete">旧密码</translation>
     </message>
     <message>
         <source>Tips</source>
@@ -8240,8 +8283,8 @@ Would you want to restart now?</source>
         <translation type="obsolete">超级密码更新成功.</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="729"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="740"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="697"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="708"/>
         <source>Scanning...</source>
         <translation>扫描中...</translation>
     </message>

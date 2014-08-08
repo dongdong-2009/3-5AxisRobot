@@ -4970,6 +4970,49 @@ Please enter an digit between </source>
     </message>
 </context>
 <context>
+    <name>ICPasswordModifyDialog</name>
+    <message>
+        <location filename="custom_widgets/icpasswordmodifydialog.ui" line="14"/>
+        <source>Dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/icpasswordmodifydialog.ui" line="20"/>
+        <source>Old Super Password:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/icpasswordmodifydialog.ui" line="30"/>
+        <source>New Super Password:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/icpasswordmodifydialog.ui" line="40"/>
+        <source>Confirm New Super Password:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/icpasswordmodifydialog.ui" line="56"/>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/icpasswordmodifydialog.ui" line="69"/>
+        <source>Ok</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/icpasswordmodifydialog.cpp" line="34"/>
+        <source>warning</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/icpasswordmodifydialog.cpp" line="35"/>
+        <source>Two password is not the same!</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ICPeripheryPage</name>
     <message>
         <location filename="hcinstruction/icperipherypage.ui" line="14"/>
@@ -6651,6 +6694,7 @@ Please enter an digit between </source>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="291"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="312"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="689"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6715,18 +6759,13 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="678"/>
-        <source>Old Password</source>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="690"/>
+        <source>Old password is wrong</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="679"/>
-        <source>Please input old super password</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="729"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="740"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="697"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="708"/>
         <source>Scanning...</source>
         <translation type="unfinished"></translation>
     </message>
