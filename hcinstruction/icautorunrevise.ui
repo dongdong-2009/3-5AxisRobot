@@ -54,7 +54,11 @@
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="delayEdit"/>
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="delayEdit">
+         <property name="text">
+          <string notr="true"/>
+         </property>
+        </widget>
        </item>
        <item row="2" column="0">
         <widget class="QLabel" name="speedLabel">
@@ -73,7 +77,11 @@
         </widget>
        </item>
        <item row="2" column="1">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="speedEdit"/>
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="speedEdit">
+         <property name="text">
+          <string notr="true"/>
+         </property>
+        </widget>
        </item>
        <item row="3" column="0">
         <widget class="QLabel" name="positionLabel">
@@ -92,7 +100,11 @@
         </widget>
        </item>
        <item row="3" column="1">
-        <widget class="ICIncrementalLineEdit" name="posEdit"/>
+        <widget class="ICIncrementalLineEdit" name="posEdit">
+         <property name="text">
+          <string notr="true"/>
+         </property>
+        </widget>
        </item>
        <item row="0" column="2">
         <widget class="QLabel" name="sLabel">
@@ -132,7 +144,11 @@
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="limitEdit"/>
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="limitEdit">
+         <property name="text">
+          <string notr="true"/>
+         </property>
+        </widget>
        </item>
        <item row="1" column="2">
         <widget class="QLabel" name="limitUnitLabel">

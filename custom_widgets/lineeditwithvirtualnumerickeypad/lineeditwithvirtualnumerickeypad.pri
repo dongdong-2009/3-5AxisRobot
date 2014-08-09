@@ -20,8 +20,8 @@ SOURCES += \
 RESOURCES += \
     resource.qrc
 contains(DEFINES, HC_SK_8){
-FORMS += virtualnumerickeypaddialog.ui
+FORMS += $$PWD/virtualnumerickeypaddialog.ui
 }
 contains(DEFINES, HC_SK_5){
-FORMS += virtualnumerickeypaddialog_5.ui
+FORMS += $$PWD/virtualnumerickeypaddialog_5.ui
 }

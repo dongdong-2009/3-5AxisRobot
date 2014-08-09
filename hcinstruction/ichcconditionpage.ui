@@ -441,7 +441,7 @@ QRadioButton::indicator:unchecked:disabled
         <item row="5" column="2">
          <widget class="ICLineEditWithVirtualNumericKeypad" name="moldCountEdit">
           <property name="text">
-           <string>0</string>
+           <string notr="true">0</string>
           </property>
          </widget>
         </item>
@@ -575,7 +575,7 @@ QRadioButton::indicator:unchecked:disabled
          </size>
         </property>
         <property name="text">
-         <string>0</string>
+         <string notr="true">0</string>
         </property>
        </widget>
       </item>

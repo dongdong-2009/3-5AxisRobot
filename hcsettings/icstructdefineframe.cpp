@@ -323,6 +323,10 @@ void ICStructDefineFrame::retranslateUi_()
     ui->tabWidget->setTabText(3,tr("Other Define"));
     ui->adjUse->setText(tr("Use"));
     ui->adjNoUse->setText(tr("No Use"));
+    ui->label_27->setText(tr("Servo Flex"));
+    ui->label_19->setText(tr("Adjust"));
+    ui->label_10->setText(tr("Reserve"));
+    ui->label_11->setText(tr("Reserve"));
 }
 
 void ICStructDefineFrame::on_saveButton_clicked()

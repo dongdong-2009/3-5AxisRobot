@@ -16,7 +16,7 @@ public:
     ~ICHCOtherPage();
     
 protected:
-//    void changeEvent(QEvent *);
+    void changeEvent(QEvent *);
 //    void showEvent(QShowEvent *e);
 //    void hideEvent(QHideEvent *e);
     void SyncStatusImpl(const QList<ICMoldItem> &items){}
