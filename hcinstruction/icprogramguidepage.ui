@@ -880,16 +880,16 @@ QCheckBox::indicator:unchecked:disabled
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroupA"/>
-  <buttongroup name="buttonGroup_2"/>
-  <buttongroup name="buttonGroupB"/>
   <buttongroup name="buttonGroupC"/>
+  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroupZ"/>
+  <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroupY1"/>
+  <buttongroup name="buttonGroupY2"/>
   <buttongroup name="buttonGroupX1"/>
   <buttongroup name="buttonGroupOutlet"/>
   <buttongroup name="buttonGroupX2"/>
-  <buttongroup name="buttonGroupY1"/>
-  <buttongroup name="buttonGroup"/>
-  <buttongroup name="buttonGroupZ"/>
-  <buttongroup name="buttonGroupY2"/>
+  <buttongroup name="buttonGroupA"/>
+  <buttongroup name="buttonGroupB"/>
  </buttongroups>
 </ui>

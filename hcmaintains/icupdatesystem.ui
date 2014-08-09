@@ -438,6 +438,12 @@
        <height>38</height>
       </size>
      </property>
+     <property name="maximumSize">
+      <size>
+       <width>120</width>
+       <height>16777215</height>
+      </size>
+     </property>
      <property name="text">
       <string>Update Host</string>
      </property>
@@ -458,6 +464,12 @@
       <size>
        <width>110</width>
        <height>38</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>120</width>
+       <height>16777215</height>
       </size>
      </property>
      <property name="text">
@@ -506,6 +518,12 @@
       <size>
        <width>110</width>
        <height>38</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>120</width>
+       <height>16777215</height>
       </size>
      </property>
      <property name="text">

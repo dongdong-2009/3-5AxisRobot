@@ -258,6 +258,18 @@ void ICStructDefineFrame::retranslateUi_()
     ui->y2Box->setItemText(2,tr("Servo"));
     ui->outDefineBox->setTitle(tr("Out Define"));
     ui->label->setText(tr("1"));
+    ui->servoFlex->setItemText(0, tr("0-soft"));
+    ui->servoFlex->setItemText(1, "1");
+    ui->servoFlex->setItemText(2, "1");
+    ui->servoFlex->setItemText(3, "1");
+    ui->servoFlex->setItemText(4, "1");
+    ui->servoFlex->setItemText(5, "1");
+    ui->servoFlex->setItemText(6, "1");
+    ui->servoFlex->setItemText(7, tr("7-hard"));
+
+
+
+
 //    ui->outABox->setItemText(0,tr("Normal"));
 //    ui->outABox->setItemText(1,tr("Extent"));
 //    ui->label_8->setText(tr("5"));
@@ -304,6 +316,13 @@ void ICStructDefineFrame::retranslateUi_()
     ui->useCheckBox->setText(tr("Use"));
     ui->noUseCheckBox->setText(tr("No Use"));
     ui->saveButton->setText(tr("Save"));
+
+    ui->tabWidget->setTabText(0,tr("Arm Define"));
+    ui->tabWidget->setTabText(1,tr("Out Define"));
+    ui->tabWidget->setTabText(2,tr("Signal Define"));
+    ui->tabWidget->setTabText(3,tr("Other Define"));
+    ui->adjUse->setText(tr("Use"));
+    ui->adjNoUse->setText(tr("No Use"));
 }
 
 void ICStructDefineFrame::on_saveButton_clicked()
