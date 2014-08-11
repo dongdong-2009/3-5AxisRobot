@@ -1325,6 +1325,7 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="90"/>
+        <location filename="hcsettings/ichcdetectionframe.cpp" line="210"/>
         <source>Hor Standby</source>
         <oldsource>Standby Pose</oldsource>
         <translation>Hor. Standby</translation>
@@ -1357,11 +1358,6 @@ Infomation</source>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="207"/>
         <source>IMM Emergency</source>
         <translation>IMM.EMER.</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcdetectionframe.cpp" line="210"/>
-        <source>Down Position</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="504"/>

@@ -1650,6 +1650,7 @@ Reason</source>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="90"/>
+        <location filename="hcsettings/ichcdetectionframe.cpp" line="210"/>
         <source>Hor Standby</source>
         <oldsource>Standby Pose</oldsource>
         <translation>水平待机</translation>
@@ -1684,9 +1685,8 @@ Reason</source>
         <translation>注塑机急停</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcdetectionframe.cpp" line="210"/>
         <source>Down Position</source>
-        <translation>型内下降姿势</translation>
+        <translation type="obsolete">型内下降姿势</translation>
     </message>
     <message>
         <source>Escape</source>
