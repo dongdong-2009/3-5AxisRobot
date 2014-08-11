@@ -207,7 +207,8 @@ void ICHCDetectionFrame::RetranslateUi_()
     ui->label_7->setText(tr("IMM Emergency"));
     ui->detectIMMComboBox->setItemText(0, noUse);
     ui->detectIMMComboBox->setItemText(1, use);
-    ui->label_16->setText(tr("Down Position"));
+    ui->label_16->setText(tr("Hor Standby"));
     ui->standbyPositionBox->setItemText(0, tr("Limit Lock Mold"));//限制锁模
     ui->standbyPositionBox->setItemText(1, tr("No Limit Lock Mold"));//不限制锁模
+
 }
