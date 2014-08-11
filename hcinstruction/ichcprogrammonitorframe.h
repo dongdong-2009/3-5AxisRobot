@@ -52,6 +52,9 @@ private slots:
     void LevelChanged(int);
 
     void on_cycle_clicked();
+    void on_productReset_clicked();
+
+    void LoadRunningMold(int index);
 
 private:
     void InitSignal();
@@ -92,6 +95,7 @@ private:
     QMap<int, QString> checkResultMap_;
     int fixtureCount_[6];
     QTimer refreshTimer_;
+    int runningMold_;
 //    QMap<ICMoldItem*, ICMoldItem> modifyMap_;
 };
 #endif // ICHCPROGRAMMONITORFRAME_H

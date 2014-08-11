@@ -2,6 +2,7 @@
 #include "ui_ichcprogrammonitorframe.h"
 
 
+#include <QFile>
 #include "icinstructparam.h"
 #include "icparameterconversion.h"
 #include "icvirtualhost.h"
@@ -13,6 +14,7 @@
 #include <QMessageBox>
 #include "icprogramheadframe.h"
 #include "icparameterssave.h"
+#include "ictipswidget.h"
 
 ICHCProgramMonitorFrame::ICHCProgramMonitorFrame(QWidget *parent) :
     QFrame(parent),
@@ -23,7 +25,8 @@ ICHCProgramMonitorFrame::ICHCProgramMonitorFrame(QWidget *parent) :
     oldStep_(-1),
     currentMoldNum_(8),
     switchOn_(":/resource/switch_on.png"),
-    switchOff_(":/resource/switch_off.png")
+    switchOff_(":/resource/switch_off.png"),
+    runningMold_(0)
 {
     ui->setupUi(this);
 
@@ -96,6 +99,7 @@ void ICHCProgramMonitorFrame::showEvent(QShowEvent *e)
     ICVirtualHost::GlobalVirtualHost()->SetSpeedEnable(false);
     ui->speedEnableButton->setIcon(switchOff_);
     ui->speedEnableButton->setText(tr("Speed Disable"));
+    LoadRunningMold(runningMold_);
     SetProduct(ICMold::CurrentMold()->MoldParam(ICMold::Product));
     currentMoldNum_ = host->HostStatus(ICVirtualHost::S).toInt();
     UpdateHostParam();
@@ -308,7 +312,37 @@ void ICHCProgramMonitorFrame::StatusRefreshed()
         ui->infoLabel->setText("");
     }
 
-//    ui->stackedProducts->setText(QString::number(host->HostStatus(ICVirtualHost::S).toInt()));
+    uint product = host->HostStatus(ICVirtualHost::DbgX1).toUInt();
+    if(product == ICMold::CurrentMold()->MoldParam(ICMold::Product))
+    {
+        ++runningMold_;
+        QStringList pl = ICParametersSave::Instance()->AutoMoldList();
+        if(runningMold_ >= pl.size())
+        {
+            if(!ICParametersSave::Instance()->IsAutoRecycleEnabled())
+            {
+                --runningMold_;
+                ui->runningMold->setText(tr("Finished"));
+                return;
+            }
+        }
+        runningMold_ = runningMold_ % pl.size();
+        if(pl.at(runningMold_).isEmpty()) return;
+        ICCommandProcessor* cp = ICCommandProcessor::Instance();
+        cp->ExecuteVirtualKeyCommand(IC::VKEY_STOP);
+        cp->ExecuteHCCommand(IC::CMD_TurnStop, 0);
+        LoadRunningMold(runningMold_);
+        ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_PRODUCT_CLEAR);
+        ICVirtualHost::GlobalVirtualHost()->SetHostStatus(ICVirtualHost::DbgX1, 0);
+        SetProduct(ICMold::CurrentMold()->MoldParam(ICMold::Product));
+        UpdateHostParam();
+        cp->ExecuteHCCommand(IC::CMD_TurnAuto, 0,
+                             ICMold::CurrentMold()->SyncAct() + ICMacroSubroutine::Instance()->SyncAct(),
+                             ICMold::CurrentMold()->SyncSum() + ICMacroSubroutine::Instance()->SyncSum());
+        cp->ExecuteVirtualKeyCommand(IC::VKEY_START);
+    }
+    ui->runningMold->setText(QString::number(runningMold_));
+    //    ui->stackedProducts->setText(QString::number(host->HostStatus(ICVirtualHost::S).toInt()));
     //    if(host->CurrentStatus() != ICVirtualHost::Auto)
     //    {
     //        qDebug("isModify change to false in auto");
@@ -788,4 +822,45 @@ void ICHCProgramMonitorFrame::on_singleStepButton_released()
 void ICHCProgramMonitorFrame::on_cycle_clicked()
 {
     ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_CYCLE);
+}
+
+void ICHCProgramMonitorFrame::LoadRunningMold(int index)
+{
+    if(!ICParametersSave::Instance()->IsAutoProductEnabled())
+        return;
+    QStringList productList = ICParametersSave::Instance()->AutoMoldList();
+    if(index >= productList.size()) return;
+    QString moldName = productList.at(index) + ".act";
+    QString filePathName = "./records/" + moldName;
+    if(QFile::exists(filePathName))
+    {
+        if(!ICMold::CurrentMold()->ReadMoldFile(filePathName))
+        {
+            QMessageBox::critical(this, tr("critical"), tr("Read mold or mold para fail! Please change other mold!"));
+//                ICMold::CurrentMold()->ReadMoldFile(
+            return;
+        }
+        ICTipsWidget tipsWidget(tr("Loading..."));
+        tipsWidget.show();qApp->processEvents();
+        ICVirtualHost::GlobalVirtualHost()->ReConfigure();
+
+        ICParametersSave::Instance()->SetMoldName(moldName);
+        ICProgramHeadFrame::Instance()->SetCurrentMoldName(moldName);
+    }
+}
+
+void ICHCProgramMonitorFrame::on_productReset_clicked()
+{
+    runningMold_ = 0;
+    ICCommandProcessor* cp = ICCommandProcessor::Instance();
+    cp->ExecuteVirtualKeyCommand(IC::VKEY_STOP);
+    cp->ExecuteHCCommand(IC::CMD_TurnStop, 0);
+    LoadRunningMold(runningMold_);
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_PRODUCT_CLEAR);
+    SetProduct(ICMold::CurrentMold()->MoldParam(ICMold::Product));
+    UpdateHostParam();
+    cp->ExecuteHCCommand(IC::CMD_TurnAuto, 0,
+                         ICMold::CurrentMold()->SyncAct() + ICMacroSubroutine::Instance()->SyncAct(),
+                         ICMold::CurrentMold()->SyncSum() + ICMacroSubroutine::Instance()->SyncSum());
+//    cp->ExecuteVirtualKeyCommand(IC::VKEY_START);
 }

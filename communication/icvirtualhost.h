@@ -555,6 +555,7 @@ public:
     void SetSystemParameter(ICSystemParameterAddr which, QVariant value);
 
     QVariant HostStatus(ICStatus status) const;
+    void SetHostStatus(ICStatus status, const QVariant& v);
 
     static ICVirtualHost* GlobalVirtualHost() { return globalVirtualHost_;}
     static void SetGlobalVirtualHost(ICVirtualHost* virtualHost) {globalVirtualHost_ = virtualHost;}
@@ -772,6 +773,11 @@ inline QVariant ICVirtualHost::HostStatus(ICStatus status) const
 {
     Q_ASSERT_X(statusMap_.contains(status), "GetHostStatus", (QString::number(status) + " is not a correct status").toAscii());
     return statusMap_.value(status);
+}
+
+inline void ICVirtualHost::SetHostStatus(ICStatus status, const QVariant &v)
+{
+    statusMap_.insert(status, v);
 }
 
 inline bool ICVirtualHost::IsInputOn(int pos) const
