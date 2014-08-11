@@ -2951,17 +2951,12 @@ Reason</source>
         <translation type="obsolete">当前产量</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="125"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="207"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="125"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="207"/>
         <source>0.00</source>
         <translation>0.0</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="86"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="157"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="249"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="86"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="157"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="249"/>
@@ -6772,25 +6767,19 @@ Please enter an digit between </source>
         <translation></translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/icprogramheadframe.ui" line="87"/>
+        <location filename="custom_widgets/programhead/icprogramheadframe.ui" line="96"/>
         <source>Mold:</source>
         <oldsource>Mold</oldsource>
         <translation>当前模号：</translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/icprogramheadframe.ui" line="106"/>
-        <source>name</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/programhead/icprogramheadframe.ui" line="133"/>
+        <location filename="custom_widgets/programhead/icprogramheadframe.ui" line="142"/>
         <source>Run Time:</source>
         <translation>自动运行：</translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/icprogramheadframe.ui" line="147"/>
         <source>0.0h</source>
-        <translation>0.0小时</translation>
+        <translation type="obsolete">0.0小时</translation>
     </message>
     <message>
         <source>Level</source>
@@ -6798,7 +6787,7 @@ Please enter an digit between </source>
         <translation type="obsolete">权限等级</translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/icprogramheadframe.ui" line="205"/>
+        <location filename="custom_widgets/programhead/icprogramheadframe.ui" line="214"/>
         <source>Machine Operator</source>
         <translation>操作员</translation>
     </message>

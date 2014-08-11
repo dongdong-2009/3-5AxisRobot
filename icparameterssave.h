@@ -3,6 +3,7 @@
 
 #include <QSettings>
 #include <QString>
+#include <QStringList>
 #include <QLocale>
 #include <QTranslator>
 #ifndef Q_WS_WIN32
@@ -98,6 +99,12 @@ public:
 
     QString ShipmentDate() { return GetParameter(SystemMachine, "ShipmentDate", "").toString();}
     void SetShipmentDate(const QString &date)  { SaveParameter(SystemMachine, "ShipmentDate", date);}
+
+    QStringList AutoMoldList() { return GetParameter(ProductConfig, "AutoMoldList", QStringList()).toStringList();}
+    void SetAutoMoldList(const QStringList& ml) { SaveParameter(ProductConfig, "AutoMoldList", ml);}
+
+    bool IsAutoProductEnabled() { return GetParameter(ProductConfig, "IsAutoProductEnabled", false).toBool();}
+    void SetAutoProductEnable(bool en) { SaveParameter(ProductConfig, "IsAutoProductEnabled", en);}
 
 signals:
     void CurrentLanguageChanged();
