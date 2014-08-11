@@ -14,7 +14,7 @@ ICMonitorPageFrame::ICMonitorPageFrame(QWidget *parent) :
     otherPageRight_ = new ICIOMonitorPageBase();
     euPageLeft_ = new ICIOMonitorPageBase();
     euPageRight_ = new ICIOMonitorPageBase();
-//    Init_();
+    Init_();
 }
 
 ICMonitorPageFrame::~ICMonitorPageFrame()
