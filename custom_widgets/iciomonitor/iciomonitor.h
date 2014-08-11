@@ -14,6 +14,7 @@ public:
     void AddPage(ICIOMonitorPageBase* page, const QString &pageTitle);
 
     int PageCount() const;
+    void Clear();
 
 public Q_SLOTS:
 

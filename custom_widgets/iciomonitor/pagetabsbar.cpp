@@ -57,3 +57,18 @@ void PageTabsBar::TabClicked()
     QAbstractButton *button = qobject_cast<QAbstractButton*>(sender());
     emit NeedToSwitchPage(tabsWidgetMap_.value(button));
 }
+
+void PageTabsBar::Clear()
+{
+    if(tabButtonGroup_->buttons().size() > 0)
+        tabButtonGroup_->buttons().at(0)->click();
+//    QList<QAbstractButton*> bs = tabsWidgetMap_.keys();
+//    for(int i = 0; i != bs.size(); ++i)
+//    {
+//        delete bs[i];
+//        bs[i] = NULL;
+//    }
+//    tabsWidgetMap_.clear();
+//    tabsWidgetToTabButtonMap_.clear();
+////    frameLayout_
+}

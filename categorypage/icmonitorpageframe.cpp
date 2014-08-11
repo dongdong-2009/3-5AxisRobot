@@ -14,7 +14,7 @@ ICMonitorPageFrame::ICMonitorPageFrame(QWidget *parent) :
     otherPageRight_ = new ICIOMonitorPageBase();
     euPageLeft_ = new ICIOMonitorPageBase();
     euPageRight_ = new ICIOMonitorPageBase();
-    Init_();
+//    Init_();
 }
 
 ICMonitorPageFrame::~ICMonitorPageFrame()
@@ -37,6 +37,8 @@ void ICMonitorPageFrame::changeEvent(QEvent *e)
 
 void ICMonitorPageFrame::Init_()
 {
+    ui->icMonitorFrameleft->Clear();
+    ui->icMonitorFrameRight->Clear();
     QList<ICIOPoint> points;
     points.append(ICIOPoint("X010", tr("Horizontal-1"), 0));
     points.append(ICIOPoint("X011", tr("Vertical-1"), 1));
