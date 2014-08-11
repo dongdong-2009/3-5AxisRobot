@@ -35,6 +35,8 @@ private slots:
 
     void on_getFailWay_activated(int index);
 
+    void on_saveButton_clicked();
+
 private:
     Ui::ICHCProductSettingFrame *ui;
     QList<ICLineEditWrapper*> wrappers_;

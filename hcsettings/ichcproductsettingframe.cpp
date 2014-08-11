@@ -135,6 +135,12 @@ void ICHCProductSettingFrame::changeEvent(QEvent *e)
         break;
     }
 }
+
+void ICHCProductSettingFrame::showEvent(QShowEvent *e)
+{
+
+}
+
 void ICHCProductSettingFrame::retranslateUi_()
 {
     this->setWindowTitle(tr("Frame"));
@@ -210,4 +216,9 @@ void ICHCProductSettingFrame::on_countUnitBox_currentIndexChanged(int index)
 void ICHCProductSettingFrame::on_getFailWay_activated(int index)
 {
     ICVirtualHost::GlobalVirtualHost()->SetGetFailAlarmWay(index);
+}
+
+void ICHCProductSettingFrame::on_saveButton_clicked()
+{
+
 }

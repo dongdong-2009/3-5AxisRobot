@@ -262,6 +262,8 @@ void MoldInformation::UpdateInformationTable()
     QFileInfoList userProgramList;
     qDebug()<<"start1";
     QFileInfo tmp;
+    moldNameList_.clear();
+    QString tmpName;
     foreach(tmp, fileInfoList_)
     {
         if(IsStandProgram(tmp.fileName()))
@@ -272,6 +274,9 @@ void MoldInformation::UpdateInformationTable()
         {
             userProgramList.append(tmp);
         }
+        tmpName = tmp.fileName();
+        tmpName.chop(4);
+        moldNameList_.append(tmpName);
     }
     qDebug()<<"end1";
 

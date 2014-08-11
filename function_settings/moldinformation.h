@@ -31,6 +31,8 @@ public:
 
     bool IsStandProgram(const QString& name) const { return standPrograms_.contains(name);}
 
+    QStringList MoldNameList() const { return moldNameList_;}
+
     ~MoldInformation();
 
 protected:
@@ -64,6 +66,7 @@ private:
     QStringList selectedImportItemName_;
     QStringList acts_ ;
     QString getFileDir_ ;
+    QStringList moldNameList_;
 //    ICHCSystemSettingsFrame ichcsystemsettingsframe_ ;
 //    QList<QTableWidgetItem *>itemSelectedList ;
 
