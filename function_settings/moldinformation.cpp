@@ -658,7 +658,7 @@ void MoldInformation::on_importToolButton_clicked()
                                         selectedImportItemName_);
 #else
     bool ret = backupUtility.RestoreDir("/mnt/udisk/HC5ABackup/records",
-                                        "/opt/Qt/bin/records",
+                                        "./records",
                                         selectedImportItemName_);
 #endif
     dir.cdUp();
@@ -689,7 +689,7 @@ void MoldInformation::on_importToolButton_clicked()
     if(ret)
     {
         ret = ret && backupUtility.RestoreDir("/mnt/udisk/HC5ABackup/subs",
-                                              "/opt/Qt/bin/subs",
+                                              "./subs",
                                               selectedImportItemName_<<"sub[0-7].prg");
     }
 #endif

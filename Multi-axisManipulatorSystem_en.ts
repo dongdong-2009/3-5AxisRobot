@@ -7159,8 +7159,8 @@ Please enter an digit between </source>
         <location filename="function_settings/moldinformation.cpp" line="409"/>
         <location filename="function_settings/moldinformation.cpp" line="419"/>
         <location filename="function_settings/moldinformation.cpp" line="429"/>
-        <location filename="function_settings/moldinformation.cpp" line="591"/>
-        <location filename="function_settings/moldinformation.cpp" line="629"/>
+        <location filename="function_settings/moldinformation.cpp" line="557"/>
+        <location filename="function_settings/moldinformation.cpp" line="595"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7173,13 +7173,13 @@ Please input the file name.</source>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="105"/>
         <location filename="function_settings/moldinformation.cpp" line="511"/>
-        <location filename="function_settings/moldinformation.cpp" line="554"/>
-        <location filename="function_settings/moldinformation.cpp" line="568"/>
-        <location filename="function_settings/moldinformation.cpp" line="573"/>
-        <location filename="function_settings/moldinformation.cpp" line="675"/>
-        <location filename="function_settings/moldinformation.cpp" line="858"/>
-        <location filename="function_settings/moldinformation.cpp" line="875"/>
-        <location filename="function_settings/moldinformation.cpp" line="886"/>
+        <location filename="function_settings/moldinformation.cpp" line="624"/>
+        <location filename="function_settings/moldinformation.cpp" line="632"/>
+        <location filename="function_settings/moldinformation.cpp" line="637"/>
+        <location filename="function_settings/moldinformation.cpp" line="676"/>
+        <location filename="function_settings/moldinformation.cpp" line="859"/>
+        <location filename="function_settings/moldinformation.cpp" line="876"/>
+        <location filename="function_settings/moldinformation.cpp" line="887"/>
         <source>Warnning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7242,8 +7242,8 @@ Please try a new name</source>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="290"/>
         <location filename="function_settings/moldinformation.cpp" line="307"/>
-        <location filename="function_settings/moldinformation.cpp" line="711"/>
-        <location filename="function_settings/moldinformation.cpp" line="834"/>
+        <location filename="function_settings/moldinformation.cpp" line="712"/>
+        <location filename="function_settings/moldinformation.cpp" line="835"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7281,16 +7281,16 @@ Please try a new name</source>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="378"/>
         <location filename="function_settings/moldinformation.cpp" line="410"/>
-        <location filename="function_settings/moldinformation.cpp" line="592"/>
-        <location filename="function_settings/moldinformation.cpp" line="630"/>
+        <location filename="function_settings/moldinformation.cpp" line="558"/>
+        <location filename="function_settings/moldinformation.cpp" line="596"/>
         <source>The mold file </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="380"/>
         <location filename="function_settings/moldinformation.cpp" line="412"/>
-        <location filename="function_settings/moldinformation.cpp" line="594"/>
-        <location filename="function_settings/moldinformation.cpp" line="632"/>
+        <location filename="function_settings/moldinformation.cpp" line="560"/>
+        <location filename="function_settings/moldinformation.cpp" line="598"/>
         <source> is being used</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7301,12 +7301,12 @@ Please try a new name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="642"/>
+        <location filename="function_settings/moldinformation.cpp" line="643"/>
         <source>Restoring, please wait...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="554"/>
+        <location filename="function_settings/moldinformation.cpp" line="624"/>
         <source>Wrong program format!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7317,74 +7317,74 @@ Please try a new name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="568"/>
+        <location filename="function_settings/moldinformation.cpp" line="632"/>
         <source>Wrong config format!!!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="573"/>
+        <location filename="function_settings/moldinformation.cpp" line="637"/>
         <source>Wrong config format!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="601"/>
-        <location filename="function_settings/moldinformation.cpp" line="622"/>
-        <location filename="function_settings/moldinformation.cpp" line="733"/>
-        <location filename="function_settings/moldinformation.cpp" line="754"/>
+        <location filename="function_settings/moldinformation.cpp" line="567"/>
+        <location filename="function_settings/moldinformation.cpp" line="588"/>
+        <location filename="function_settings/moldinformation.cpp" line="734"/>
+        <location filename="function_settings/moldinformation.cpp" line="755"/>
         <source>tips</source>
         <oldsource>t1ips</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="601"/>
-        <location filename="function_settings/moldinformation.cpp" line="622"/>
-        <location filename="function_settings/moldinformation.cpp" line="733"/>
-        <location filename="function_settings/moldinformation.cpp" line="754"/>
+        <location filename="function_settings/moldinformation.cpp" line="567"/>
+        <location filename="function_settings/moldinformation.cpp" line="588"/>
+        <location filename="function_settings/moldinformation.cpp" line="734"/>
+        <location filename="function_settings/moldinformation.cpp" line="755"/>
         <source>%1 is exist,replace it?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="675"/>
+        <location filename="function_settings/moldinformation.cpp" line="676"/>
         <source>Wrong program format!!!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="697"/>
-        <location filename="function_settings/moldinformation.cpp" line="796"/>
+        <location filename="function_settings/moldinformation.cpp" line="698"/>
+        <location filename="function_settings/moldinformation.cpp" line="797"/>
         <source>Information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="697"/>
-        <location filename="function_settings/moldinformation.cpp" line="796"/>
+        <location filename="function_settings/moldinformation.cpp" line="698"/>
+        <location filename="function_settings/moldinformation.cpp" line="797"/>
         <source>Operation finished!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="711"/>
-        <location filename="function_settings/moldinformation.cpp" line="834"/>
+        <location filename="function_settings/moldinformation.cpp" line="712"/>
+        <location filename="function_settings/moldinformation.cpp" line="835"/>
         <source>USB is not connected!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="769"/>
+        <location filename="function_settings/moldinformation.cpp" line="770"/>
         <source>Backuping, please wait...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="861"/>
+        <location filename="function_settings/moldinformation.cpp" line="862"/>
         <source>Refresh File List, please wait...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="875"/>
-        <location filename="function_settings/moldinformation.cpp" line="886"/>
+        <location filename="function_settings/moldinformation.cpp" line="876"/>
+        <location filename="function_settings/moldinformation.cpp" line="887"/>
         <source>Backup files is incomplete!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="511"/>
-        <location filename="function_settings/moldinformation.cpp" line="858"/>
+        <location filename="function_settings/moldinformation.cpp" line="859"/>
         <source>Backup files is not exists!</source>
         <translation type="unfinished"></translation>
     </message>
