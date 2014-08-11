@@ -5,6 +5,8 @@
 #include "icmold.h"
 #include "icvirtualhost.h"
 #include "icvirtualkey.h"
+#include "moldinformation.h"
+#include "icparameterssave.h"
 
 ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
     QFrame(parent),
@@ -138,7 +140,43 @@ void ICHCProductSettingFrame::changeEvent(QEvent *e)
 
 void ICHCProductSettingFrame::showEvent(QShowEvent *e)
 {
-
+    QStringList items = MoldInformation::Instance()->MoldNameList();
+    items.prepend(tr("None"));
+    ui->mBox_1->clear();
+    ui->mBox_1->addItems(items);
+    ui->mBox_2->clear();
+    ui->mBox_2->addItems(items);
+    ui->mBox_3->clear();
+    ui->mBox_3->addItems(items);
+    ui->mBox_4->clear();
+    ui->mBox_4->addItems(items);
+    ui->mBox_5->clear();
+    ui->mBox_5->addItems(items);
+    ui->mBox_6->clear();
+    ui->mBox_6->addItems(items);
+    ui->mBox_7->clear();
+    ui->mBox_7->addItems(items);
+    ui->mBox_8->clear();
+    ui->mBox_8->addItems(items);
+    QStringList autoProductList = ICParametersSave::Instance()->AutoMoldList();
+    int toPad = (8 - autoProductList.size());
+    for(int i = 0; i < toPad; ++i)
+    {
+        autoProductList.append("");
+    }
+    ui->mBox_1->setCurrentIndex(ui->mBox_1->findText(autoProductList.at(0)));
+    ui->mBox_2->setCurrentIndex(ui->mBox_2->findText(autoProductList.at(1)));
+    ui->mBox_3->setCurrentIndex(ui->mBox_3->findText(autoProductList.at(2)));
+    ui->mBox_4->setCurrentIndex(ui->mBox_4->findText(autoProductList.at(3)));
+    ui->mBox_5->setCurrentIndex(ui->mBox_5->findText(autoProductList.at(4)));
+    ui->mBox_6->setCurrentIndex(ui->mBox_6->findText(autoProductList.at(5)));
+    ui->mBox_7->setCurrentIndex(ui->mBox_7->findText(autoProductList.at(6)));
+    ui->mBox_8->setCurrentIndex(ui->mBox_8->findText(autoProductList.at(7)));
+    ui->autoProductGroupBox->blockSignals(true);
+    ui->autoProductGroupBox->setChecked(ICParametersSave::Instance()->IsAutoProductEnabled());
+    ui->autoProductGroupBox->blockSignals(false);
+    ui->autoRecycle->setChecked(ICParametersSave::Instance()->IsAutoRecycleEnabled());
+    QFrame::showEvent(e);
 }
 
 void ICHCProductSettingFrame::retranslateUi_()
@@ -220,5 +258,21 @@ void ICHCProductSettingFrame::on_getFailWay_activated(int index)
 
 void ICHCProductSettingFrame::on_saveButton_clicked()
 {
+    QStringList ret;
+    ret.append(ui->mBox_1->currentText());
+    ret.append(ui->mBox_2->currentText());
+    ret.append(ui->mBox_3->currentText());
+    ret.append(ui->mBox_4->currentText());
+    ret.append(ui->mBox_5->currentText());
+    ret.append(ui->mBox_6->currentText());
+    ret.append(ui->mBox_7->currentText());
+    ret.append(ui->mBox_8->currentText());
+    ICParametersSave::Instance()->SetAutoMoldList(ret);
+    ICParametersSave::Instance()->SetAutoRecycleEnable(ui->autoRecycle->isChecked());
 
+}
+
+void ICHCProductSettingFrame::on_autoProductGroupBox_toggled(bool arg1)
+{
+    ICParametersSave::Instance()->SetAutoProductEnable(arg1);
 }

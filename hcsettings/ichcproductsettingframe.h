@@ -37,6 +37,8 @@ private slots:
 
     void on_saveButton_clicked();
 
+    void on_autoProductGroupBox_toggled(bool arg1);
+
 private:
     Ui::ICHCProductSettingFrame *ui;
     QList<ICLineEditWrapper*> wrappers_;

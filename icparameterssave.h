@@ -106,6 +106,9 @@ public:
     bool IsAutoProductEnabled() { return GetParameter(ProductConfig, "IsAutoProductEnabled", false).toBool();}
     void SetAutoProductEnable(bool en) { SaveParameter(ProductConfig, "IsAutoProductEnabled", en);}
 
+    bool IsAutoRecycleEnabled() { return GetParameter(ProductConfig, "IsAutoRecycleEnabled", false).toBool();}
+    void SetAutoRecycleEnable(bool en) { SaveParameter(ProductConfig, "IsAutoRecycleEnabled", en);}
+
 signals:
     void CurrentLanguageChanged();
 
