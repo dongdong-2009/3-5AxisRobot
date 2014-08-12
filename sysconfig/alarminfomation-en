@@ -180,6 +180,7 @@
 330:Position is changed, please reboot
 331:Position parameters is fail
 332:Output is changed, please reboot
+333:Axis is changed, please reboot
 360:X2 axis parameters check fail
 361:Y2 axis parameters check fail
 362:A axis parameters check fail
