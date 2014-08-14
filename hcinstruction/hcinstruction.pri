@@ -56,7 +56,7 @@ SOURCES += \
     $$PWD/icstackeditor.cpp \
     $$PWD/icprogramguidepage.cpp \
     $$PWD/ichcotherpage.cpp \
-    hcinstruction/iccommenteditor.cpp
+    $$PWD/iccommenteditor.cpp
 
 FORMS += \
 #    $$PWD/ichcinstructionpageframe.ui \
@@ -82,7 +82,7 @@ FORMS += \
     $$PWD/icstackeditor.ui \
 #    $$PWD/icprogramguidepage.ui \
     $$PWD/ichcotherpage.ui \
-    hcinstruction/iccommenteditor.ui
+    $$PWD/iccommenteditor.ui
 
 
 

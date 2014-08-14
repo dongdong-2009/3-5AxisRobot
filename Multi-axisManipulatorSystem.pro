@@ -5,6 +5,8 @@ TARGET = Multi-axisManipulatorSystem
 TEMPLATE = app
 QMAKE_CFLAGS += -std=c99
 
+QT += sql
+
 OBJECTS_DIR = temp_8
 UI_DIR = temp_8
 MOC_DIR = temp_8

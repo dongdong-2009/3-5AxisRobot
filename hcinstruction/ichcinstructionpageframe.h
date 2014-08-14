@@ -101,6 +101,7 @@ private:
     QWidget * programPage_;
     QWidget * stackPage_;
     QWidget * otherPage_;
+    QWidget * commentPage_;
     ICProgramGuidePage * guidePage_;
     ICInstructModifyDialog *modifyDialog_;
 

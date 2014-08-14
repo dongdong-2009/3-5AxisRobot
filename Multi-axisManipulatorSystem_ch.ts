@@ -3051,11 +3051,6 @@ Reason</source>
         <translation>不能修改待机点位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="798"/>
-        <source>Run</source>
-        <translation>运行</translation>
-    </message>
-    <message>
         <source>Do you want to ignor this warning?</source>
         <translation type="obsolete">需要忽略这个警告吗?</translation>
     </message>
@@ -3172,12 +3167,6 @@ Reason</source>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="395"/>
         <source>Cycle</source>
         <translation>单循环</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="459"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="803"/>
-        <source>Pause</source>
-        <translation>暂停</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="762"/>

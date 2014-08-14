@@ -60,6 +60,7 @@ void ICInstructModifyDialog::changeEvent(QEvent *e)
 
 bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
 {
+    if(item->Action() == ICMold::ACTCOMMENT) return false;
     currentItem = item;
     ui->positionLabel->hide();
     

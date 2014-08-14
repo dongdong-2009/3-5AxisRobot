@@ -34,6 +34,11 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
 {
     QString commandStr;
 //    commandStr += QString::number(moldItem.Seq()) + " ";
+    if(moldItem.Action() == ICMold::ACTCOMMENT)
+    {
+        commandStr += QString(tr("#Comment:%1").arg(moldItem.Comment()));
+        return commandStr;
+    }
     if(moldItem.Num() == 0)
     {
         commandStr += tr("Home") + "    " + "*" + "    ";

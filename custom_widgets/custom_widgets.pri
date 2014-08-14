@@ -23,20 +23,25 @@ include (iciopointwrapper/iciopointwrapper.pri)
 include (icpictureview/icpictureview.pri)
 
 HEADERS += \
-    custom_widgets/iclistwidget.h \
-    custom_widgets/ictablewidget.h \
-    custom_widgets/ictableview.h \
-    custom_widgets/icmessagebox.h \
-    custom_widgets/iccombobox.h \
-    custom_widgets/icpasswordmodifydialog.h
+    $$PWD/iclistwidget.h \
+    $$PWD/ictablewidget.h \
+    $$PWD/ictableview.h \
+    $$PWD/icmessagebox.h \
+    $$PWD/iccombobox.h \
+    $$PWD/icpasswordmodifydialog.h \
+    $$PWD/icplaintextedit.h \
+    $$PWD/icinputmethodkeyboard.h
 
 SOURCES += \
-    custom_widgets/iclistwidget.cpp \
-    custom_widgets/ictablewidget.cpp \
-    custom_widgets/ictableview.cpp \
-    custom_widgets/icmessagebox.cpp \
-    custom_widgets/iccombobox.cpp \
-    custom_widgets/icpasswordmodifydialog.cpp
+    $$PWD/iclistwidget.cpp \
+    $$PWD/ictablewidget.cpp \
+    $$PWD/ictableview.cpp \
+    $$PWD/icmessagebox.cpp \
+    $$PWD/iccombobox.cpp \
+    $$PWD/icpasswordmodifydialog.cpp \
+    $$PWD/icplaintextedit.cpp \
+    $$PWD/icinputmethodkeyboard.cpp
 
 FORMS += \
-    custom_widgets/icpasswordmodifydialog.ui
+    $$PWD/icinputmethodkeyboard.ui \
+    $$PWD/icpasswordmodifydialog.ui

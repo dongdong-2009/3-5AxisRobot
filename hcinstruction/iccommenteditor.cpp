@@ -2,7 +2,7 @@
 #include "ui_iccommenteditor.h"
 
 ICCommentEditor::ICCommentEditor(QWidget *parent) :
-    QWidget(parent),
+    ICInstructionEditorBase(parent),
     ui(new Ui::ICCommentEditor)
 {
     ui->setupUi(this);
@@ -23,4 +23,19 @@ void ICCommentEditor::changeEvent(QEvent *e)
     default:
         break;
     }
+}
+
+QList<ICMoldItem> ICCommentEditor::CreateCommandImpl() const
+{
+    QList<ICMoldItem> ret;
+    ICMoldItem item;
+    item.SetAction(ICMold::ACTCOMMENT);
+    item.SetComment(ui->plainTextEdit->toPlainText());
+    ret.append(item);
+    return ret;
+}
+
+QString ICCommentEditor::Comment()
+{
+    return ui->plainTextEdit->toPlainText();
 }

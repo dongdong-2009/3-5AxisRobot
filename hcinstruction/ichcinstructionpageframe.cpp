@@ -33,6 +33,7 @@
 #include "icactioncommand.h"
 #include "icprogramguidepage.h"
 #include "ichcotherpage.h"
+#include "iccommenteditor.h"
 
 #include <QDebug>
 #include <QMessageBox>
@@ -58,6 +59,7 @@ ICHCInstructionPageFrame::ICHCInstructionPageFrame(QWidget *parent) :
     stackPage_(NULL),
     guidePage_(NULL),
     otherPage_(NULL),
+    commentPage_(NULL),
     recordPath_("./records/"),
     currentAction_(None),
     currentEdit_(0),
@@ -253,6 +255,12 @@ void ICHCInstructionPageFrame::OptionButtonClicked()
         optionButtonToPage_.insert(ui->otherButton, otherPage_);
         ui->settingStackedWidget->addWidget(otherPage_);
     }
+    else if(commentPage_ == NULL && optionButton == ui->commentButton)
+    {
+        commentPage_ = new ICCommentEditor();
+        optionButtonToPage_.insert(ui->commentButton, commentPage_);
+        ui->settingStackedWidget->addWidget(commentPage_);
+    }
     ui->settingStackedWidget->setCurrentWidget(optionButtonToPage_.value(optionButton));
 }
 
@@ -336,6 +344,9 @@ void ICHCInstructionPageFrame::InitSignal()
             SIGNAL(clicked()),
             SLOT(OptionButtonClicked()));
     connect(ui->otherButton,
+            SIGNAL(clicked()),
+            SLOT(OptionButtonClicked()));
+    connect(ui->commentButton,
             SIGNAL(clicked()),
             SLOT(OptionButtonClicked()));
 }
@@ -423,6 +434,7 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
     ICInstructionEditorBase* editor = qobject_cast<ICInstructionEditorBase*>(ui->settingStackedWidget->currentWidget());
     ICFlagsEditor *flagsEditor = qobject_cast<ICFlagsEditor*> (editor);
     ActionSettingFrame *servoEditor = qobject_cast<ActionSettingFrame*>(editor);
+    ICCommentEditor *commentEdit = qobject_cast<ICCommentEditor*>(editor);
     if(editor == NULL)
     {
         return;
@@ -447,6 +459,7 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
     }
     bool isParallel = false;
     bool isServo = false;
+    bool isComment = false;
     if(flagsEditor != NULL)
     {
         isParallel = true;
@@ -454,6 +467,10 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
     if(servoEditor != NULL)
     {
         isServo = true;
+    }
+    if(commentEdit != NULL)
+    {
+        isComment = true;
     }
     QList<ICMoldItem> items = editor->CreateCommand();
     if(items.isEmpty() && !isParallel)
@@ -484,6 +501,14 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
                 }
                 groupItem.SetStepNum(gIndex);
                 insertedGroupItems.append(groupItem);
+            }
+            else if(isComment)
+            {
+//                ICGroupMoldUIItem
+                ICTopMoldUIItem topItem;
+                topItem.SetBaseItem(items.at(0));
+//                topItem.SetComment(commentEdit->Comment());
+                programList_[gIndex].PrependTopMoldUIItem(topItem);
             }
             else
             {
@@ -804,6 +829,7 @@ void ICHCInstructionPageFrame::on_upButton_clicked()
             return;
         }
         ICGroupMoldUIItem *item = &programList_[gIndex];
+        if(item->MoldItemAt(0)->Action() == ICMold::ACTCOMMENT) return;
         if(item->TopItemCount() == 1) //group up
         {
             item->SetStepNum(gIndex - 1);
@@ -883,6 +909,7 @@ void ICHCInstructionPageFrame::on_downButton_clicked()
             return;
         }
         ICGroupMoldUIItem* groupItem = &programList_[gIndex];
+        if(groupItem->MoldItemAt(0)->Action() == ICMold::ACTCOMMENT) return;
         if(groupItem->ItemCount() == 1) //group item down
         {
             groupItem->AddOtherGroup(programList_.at(gIndex + 1));

@@ -52,9 +52,7 @@ void ICAutoRunRevise::changeEvent(QEvent *e)
 
 bool ICAutoRunRevise::ShowModifyItem(const ICMoldItem *item, ICMoldItem* ret, const QString &text)
 {
-    qDebug("In show editor");
-    qDebug()<<(item == NULL);
-    qDebug()<<(ret == NULL);
+    if(item->Action() == ICMold::ACTCOMMENT) return false;
 
     ui->currentMoldItemLabel->setText(text);
     ui->positionLabel->hide();

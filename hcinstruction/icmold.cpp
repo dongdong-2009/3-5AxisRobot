@@ -188,8 +188,9 @@ bool ICMold::ReadMoldFile(const QString &fileName, bool isLoadParams)
     {
         return false;
     }
+    QTextStream fs(&file);
 //    moldName_ = fileName;
-    QString content = file.readAll();
+    QString content = fs.readAll();
     file.close();
     //    content = content.remove('\r');
 
@@ -213,7 +214,8 @@ bool ICMold::ReadMoldFile(const QString &fileName, bool isLoadParams)
     {
         qDebug()<<"in"<<i;
         items = records.at(i).split(' ', QString::SkipEmptyParts);
-        if(items.size() != 10)
+        if(items.size() != 10 &&
+                items.size() != 11)
         {
             qDebug()<<i<<"th line size wrong";
             return false;
@@ -228,6 +230,10 @@ bool ICMold::ReadMoldFile(const QString &fileName, bool isLoadParams)
                           items.at(7).toUInt(),
                           items.at(8).toUInt(),
                           items.at(9).toUInt());
+        if(items.size() == 11)
+        {
+            moldItem.SetComment(items.at(10));
+        }
         tempmoldContent.append(moldItem);
     }
     qDebug("read ok");
@@ -307,6 +313,7 @@ bool ICMold::SaveMoldFile(bool isSaveParams)
     }
     for(int i = 0; i != moldContent_.size(); ++i)
     {
+        qDebug()<<moldContent_.at(i).ToString();
         toWrite += moldContent_.at(i).ToString() + "\n";
     }
     ICFile file(moldName_);
@@ -373,7 +380,8 @@ uint ICMold::SyncAct() const
     uint ret = 0;
     for(int i = 0; i != moldContent_.size(); ++i)
     {
-        ret += moldContent_.at(i).GMVal();
+        if(moldContent_.at(i).Action() != ACTCOMMENT)
+            ret += moldContent_.at(i).GMVal();
     }
     return ret;
 }
@@ -383,7 +391,8 @@ uint ICMold::SyncSum() const
     uint ret = 0;
     for(int i = 0; i != moldContent_.size(); ++i)
     {
-        ret += moldContent_.at(i).Sum();
+        if(moldContent_.at(i).Action() != ACTCOMMENT)
+            ret += moldContent_.at(i).Sum();
     }
     return ret;
 }
@@ -409,10 +418,13 @@ void ICMold::Delete(int step, QList<ICMoldItem> &sourceItems)
 
 void ICMold::MoldReSum(QList<ICMoldItem> &items)
 {
+    int seq = 0;
     for(int i = 0; i != items.size(); ++i)
     {
-        items[i].SetSeq(i);
+        items[i].SetSeq(seq);
         items[i].ReSum();
+        if(items.at(i).Action() != ACTCOMMENT)
+            ++seq;
     }
 }
 

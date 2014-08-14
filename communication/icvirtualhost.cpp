@@ -780,6 +780,17 @@ void ICVirtualHost::WriteMoldTohost_()
 {
     QVector<uint8_t> dataSection;
     QList<ICMoldItem> moldContent = currentMold_->MoldContent();
+    QList<ICMoldItem>::iterator p = moldContent.begin();
+    while(p != moldContent.end())
+    {
+        if((*p).Action() == ICMold::ACTCOMMENT)
+        {
+            p = moldContent.erase(p);
+            continue;
+        }
+        ++p;
+
+    }
     ICMoldItem moldItem;
     ICCommandProcessor* commandProcessor = ICCommandProcessor::Instance();
     ICWriteParameters writeParamtersCommand;

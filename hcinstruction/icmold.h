@@ -6,6 +6,7 @@
 #include <QString>
 #include <QSharedData>
 #include <stdint.h>
+#include <QDebug>
 
 class ICMoldItem
 {
@@ -149,6 +150,9 @@ public:
         SetSVal(count & 0xFF);
     }
 
+    QString Comment() const { return comment_;}
+    void SetComment(const QString& comment) { comment_ = comment;}
+
 private:
     uint seq_;
     uint num_;
@@ -159,6 +163,7 @@ private:
     uint ifPos_;
     uint sVal_;
     uint dVal_;
+    QString comment_;
     mutable uint sum_;
 };
 
@@ -216,16 +221,20 @@ public:
     int SubItemCount() const { return subItems_.size();}
     bool IsSyncSubItem(int pos) const;
 //    void ReCalSubNum();
+//    QString Comment() const { return comment_;}
+//    void SetComment(const QString& comment) { comment_ = comment; }
 
 private:
     ICMoldItem baseItem_;
     QList<ICSubMoldUIItem> subItems_;
+//    QString comment_;
 };
 
 class ICGroupMoldUIItem
 {
 public://ICTopMoldUIItem * topItem = &programList_[gIndex].at(tIndex);
     void AddToMoldUIItem(const ICTopMoldUIItem &item) { topItems_.append(item);}
+    void PrependTopMoldUIItem(const ICTopMoldUIItem &item) {topItems_.prepend(item);}
 
     int StepNum() const { return topItems_.first().StepNum();}
     void SetStepNum(int stepNum);
@@ -242,6 +251,8 @@ public://ICTopMoldUIItem * topItem = &programList_[gIndex].at(tIndex);
     void AddOtherGroup(const ICGroupMoldUIItem& other);
     QList<ICMoldItem> ToMoldItems() const;
     QStringList ToStringList() const;
+
+
 private:
     QList<ICTopMoldUIItem> topItems_;
 };
@@ -250,8 +261,13 @@ private:
 inline QByteArray ICMoldItem::ToString() const
 {
     QByteArray ret;
-    ret = QString().sprintf("%u %u %u %u %u %u %u %u %u %u",
-                            seq_, num_, subNum_, gmVal_, pos_, ifVal_, ifPos_, sVal_, dVal_, sum_).toAscii();
+
+    QString tmp = (QString().sprintf("%u %u %u %u %u %u %u %u %u %u ",
+                                     seq_, num_, subNum_, gmVal_, pos_, ifVal_, ifPos_, sVal_, dVal_, sum_));
+    tmp += comment_;
+    ret = tmp.toUtf8();
+//    qDebug()<<"tmp:"<<tmp;
+//    qDebug()<<"ret:"<<ret;
     return ret;
 }
 
@@ -350,7 +366,8 @@ public:
         ACT_WaitMoldOpened = 29,
         ACT_Cut,
         ACTParallel = 31,
-        ACTEND
+        ACTEND,
+        ACTCOMMENT
     };
 
     enum CLIPGROUP
