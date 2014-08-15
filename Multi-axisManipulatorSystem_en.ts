@@ -2180,7 +2180,7 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="247"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="244"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="227"/>
         <source>Time</source>
         <translation type="unfinished"></translation>
@@ -2192,7 +2192,7 @@ Infomation</source>
         <translation type="unfinished">Reserve {0.00?}</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="165"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="162"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="103"/>
         <source>Setted products</source>
         <translation type="unfinished"></translation>
@@ -2205,47 +2205,47 @@ Infomation</source>
         <translation type="unfinished">Reserve {0?}</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="422"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="419"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="395"/>
         <source>Cycle</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="97"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="94"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="185"/>
         <source>Get Time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="107"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="104"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="93"/>
         <source>Good products</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="117"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="114"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="164"/>
         <source>Stacked products</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="192"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="189"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="178"/>
         <source>TextLabel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="237"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="234"/>
         <source>Running group</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="289"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="286"/>
         <source>Restart</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="320"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="317"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="293"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
@@ -2338,7 +2338,7 @@ Infomation</source>
         <translation>trace</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="454"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="451"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="427"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="101"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="231"/>
@@ -2348,14 +2348,14 @@ Infomation</source>
         <translation>SPD Un</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="390"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="387"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="363"/>
         <source>Single Step</source>
         <oldsource>Single Cycle</oldsource>
         <translation>Step Run</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="358"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="355"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="331"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="787"/>
         <source>No Follow</source>
