@@ -240,6 +240,7 @@ public://ICTopMoldUIItem * topItem = &programList_[gIndex].at(tIndex);
     void SetStepNum(int stepNum);
     int ItemCount() const;
     int TopItemCount() const { return topItems_.size();}
+    int RunableTopItemCount();
     const ICTopMoldUIItem& at(int index) const { return topItems_.at(index);}
     ICTopMoldUIItem& at(int index) { return topItems_[index];}
     ICMoldItem* MoldItemAt(int index);

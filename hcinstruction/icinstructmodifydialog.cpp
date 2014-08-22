@@ -106,6 +106,7 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
     ui->limitUnitLabel->hide();
     ui->forwardBox->hide();
     ui->backwardBox->hide();
+//    ui->earlySpeedLabel->hide();
     bool isMoldCount = false;
 
 
@@ -113,6 +114,7 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
     {
         if( item->Action() <= ICMold::GB)
         {
+//            ui->earlySpeedLabel->show();
             ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
             ICVirtualHost::ICSystemParameter addr;
             switch(item->Action())

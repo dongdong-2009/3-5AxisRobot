@@ -188,9 +188,9 @@ bool ICMold::ReadMoldFile(const QString &fileName, bool isLoadParams)
     {
         return false;
     }
-    QTextStream fs(&file);
+//    QTextStream fs(&file);
 //    moldName_ = fileName;
-    QString content = fs.readAll();
+    QString content = QString::fromUtf8(file.readAll());
     file.close();
     //    content = content.remove('\r');
 
@@ -313,7 +313,6 @@ bool ICMold::SaveMoldFile(bool isSaveParams)
     }
     for(int i = 0; i != moldContent_.size(); ++i)
     {
-        qDebug()<<moldContent_.at(i).ToString();
         toWrite += moldContent_.at(i).ToString() + "\n";
     }
     ICFile file(moldName_);
@@ -517,6 +516,20 @@ QStringList ICMold::UIItemsToStringList(const QList<ICGroupMoldUIItem> &items)
     {
         item = items.at(i);
         ret.append(item.ToStringList());
+    }
+    return ret;
+}
+
+
+int ICGroupMoldUIItem::RunableTopItemCount()
+{
+    int ret = 0;
+    for(int i = 0 ; i != topItems_.size(); ++i)
+    {
+        if(topItems_[i].BaseItem()->Action() != ICMold::ACTCOMMENT)
+        {
+            ++ret;
+        }
     }
     return ret;
 }

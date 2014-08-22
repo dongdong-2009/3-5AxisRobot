@@ -481,6 +481,20 @@ void ICVirtualHost::InitSubs_()
 void ICVirtualHost::WriteSubTohost_()
 {
     ICMacroSubroutine::ICMacroAllSubroutine allSubs = subroutines_->SubRoutines();
+    for(int i = 0; i != allSubs.size(); ++i)
+    {
+        QList<ICMoldItem>::iterator p = allSubs[i].begin();
+        while(p != allSubs[i].end())
+        {
+            if((*p).Action() == ICMold::ACTCOMMENT)
+            {
+                p = allSubs[i].erase(p);
+                continue;
+            }
+            ++p;
+
+        }
+    }
     QList<ICMoldItem> sub;
     ICMoldItem subItem;
     ICCommandProcessor* commandProcessor = ICCommandProcessor::Instance();

@@ -144,6 +144,7 @@ void ICHCInstructionPageFrame::hideEvent(QHideEvent *e)
 //    ICMold::CurrentMold()->SetMoldContent(ICMold::UIItemToMoldItem(programList_));
 //    ICMold::CurrentMold()->SaveMoldFile();
     if(SaveCurrentEdit() == true || isProgramChanged_)
+            ICVirtualHost::GlobalVirtualHost()->ReConfigure();
     {
         ICVirtualHost::GlobalVirtualHost()->ReConfigure();
         isProgramChanged_ = false;
@@ -504,11 +505,15 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
             }
             else if(isComment)
             {
-//                ICGroupMoldUIItem
                 ICTopMoldUIItem topItem;
                 topItem.SetBaseItem(items.at(0));
-//                topItem.SetComment(commentEdit->Comment());
-                programList_[gIndex].PrependTopMoldUIItem(topItem);
+                if(programList_[gIndex].MoldItemAt(0)->Action() == ICMold::ACTEND &&
+                        gIndex != 0)
+                {
+                    programList_[gIndex - 1].AddToMoldUIItem(topItem);
+                }
+                else
+                    programList_[gIndex].PrependTopMoldUIItem(topItem);
             }
             else
             {
@@ -691,6 +696,18 @@ void ICHCInstructionPageFrame::on_deleteToolButton_clicked()
         else
         {
             programList_[gIndex].RemoveTopItem(tIndex);
+            if(programList_.at(gIndex).TopItemCount() == 1 &&
+                    programList_[gIndex].MoldItemAt(0)->Action() == ICMold::ACTCOMMENT)
+            {
+                ICTopMoldUIItem topItem;
+                topItem.SetBaseItem(*(programList_[gIndex].MoldItemAt(0)));
+                programList_[gIndex - 1].AddToMoldUIItem(topItem);
+                programList_.removeAt(gIndex);
+                for(int i = gIndex; i != programList_.size(); ++i)
+                {
+                    programList_[i].SetStepNum(i);
+                }
+            }
         }
     }
     else
@@ -829,7 +846,7 @@ void ICHCInstructionPageFrame::on_upButton_clicked()
             return;
         }
         ICGroupMoldUIItem *item = &programList_[gIndex];
-        if(item->MoldItemAt(0)->Action() == ICMold::ACTCOMMENT) return;
+//        if(item->MoldItemAt(0)->Action() == ICMold::ACTCOMMENT) return;
         if(item->TopItemCount() == 1) //group up
         {
             item->SetStepNum(gIndex - 1);
@@ -872,6 +889,7 @@ void ICHCInstructionPageFrame::on_upButton_clicked()
             }
         }
     }
+//    isEdit_ = true;
     UpdateUIProgramList_();
 }
 
@@ -909,7 +927,7 @@ void ICHCInstructionPageFrame::on_downButton_clicked()
             return;
         }
         ICGroupMoldUIItem* groupItem = &programList_[gIndex];
-        if(groupItem->MoldItemAt(0)->Action() == ICMold::ACTCOMMENT) return;
+//        if(groupItem->MoldItemAt(0)->Action() == ICMold::ACTCOMMENT) return;
         if(groupItem->ItemCount() == 1) //group item down
         {
             groupItem->AddOtherGroup(programList_.at(gIndex + 1));
@@ -921,6 +939,10 @@ void ICHCInstructionPageFrame::on_downButton_clicked()
         }
         else //split group item
         {
+            if(groupItem->MoldItemAt(tIndex)->Action() == ICMold::ACTCOMMENT) return;
+            if(groupItem->MoldItemAt(tIndex - 1)->Action() == ICMold::ACTCOMMENT &&
+                    groupItem->RunableTopItemCount() < 2) return;
+//            if(groupItem->MoldItemAt(groupItem->ItemCount() - 1)->Action() == ICMold::ACTCOMMENT) return;
             QList<ICGroupMoldUIItem> gItems = programList_.at(gIndex).SpliteToTwoGroup(tIndex);
             gItems[0].SetStepNum(gIndex);
             gItems[1].SetStepNum(gIndex + 1);
@@ -948,6 +970,7 @@ void ICHCInstructionPageFrame::on_downButton_clicked()
 //            return;
 //        }
     }
+//    isEdit_ = true;
     UpdateUIProgramList_();
 }
 
@@ -972,11 +995,13 @@ bool ICHCInstructionPageFrame::SaveCurrentEdit()
     if(currentEdit_ == 0)
     {
         ICMold::CurrentMold()->SetMoldContent(ICMold::UIItemToMoldItem(programList_));
+        ICMold::CurrentMold()->MoldReSum();
         return ICMold::CurrentMold()->SaveMoldFile();
     }
     else
     {
         ICMacroSubroutine::Instance()->SetSubRoutine(ICMold::UIItemToMoldItem(programList_), currentEdit_ - 1);
+        ICMacroSubroutine::Instance()->SubRoutineResum(currentEdit_ - 1);
         return ICMacroSubroutine::Instance()->SaveMacroSubroutieFile(currentEdit_ - 1);
     }
 }
@@ -1030,3 +1055,4 @@ void  ICHCInstructionPageFrame::OnGuideFinished()
     ICMold::CurrentMold()->SetMoldContent(guidePage_->CreateCommand());
     UpdateHostParam();
 }
+

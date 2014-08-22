@@ -173,6 +173,7 @@ void ICMonitorPageFrame::Init_()
     points.append(ICIOPoint("", tr("En C7"), 43));
     points.append(ICIOPoint("", tr("En A8"), 42));
 //    points.append(ICIOPoint("", tr("Blank 0"), 34));
+    points.append(ICIOPoint("", tr("Recycle"), 47));
 //    points.append(ICIOPoint("", tr("Blank 1"), 36));
 //    points.append(ICIOPoint("", tr("Blank2"), 39));
 //    points.append(ICIOPoint("", tr("Blank3"), 47));
