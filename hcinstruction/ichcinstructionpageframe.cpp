@@ -940,8 +940,24 @@ void ICHCInstructionPageFrame::on_downButton_clicked()
         else //split group item
         {
             if(groupItem->MoldItemAt(tIndex)->Action() == ICMold::ACTCOMMENT) return;
-            if(groupItem->MoldItemAt(tIndex - 1)->Action() == ICMold::ACTCOMMENT &&
-                    groupItem->RunableTopItemCount() < 2) return;
+            bool up = false;
+            bool dw = false;
+            int runableCount = 0;
+            for(int i = 0; i != tIndex; ++i)
+            {
+                if(groupItem->MoldItemAt(i)->Action() != ICMold::ACTCOMMENT)
+                    ++runableCount;
+            }
+            if(runableCount == 0) return;
+            runableCount = 0;
+            for(int i = tIndex; i != groupItem->ItemCount(); ++i)
+            {
+                if(groupItem->MoldItemAt(i)->Action() != ICMold::ACTCOMMENT)
+                    ++runableCount;
+            }
+            if(runableCount == 0 ) return;
+//            if(groupItem->MoldItemAt(tIndex - 1)->Action() == ICMold::ACTCOMMENT &&
+//                    groupItem->RunableTopItemCount() < 2) return;
 //            if(groupItem->MoldItemAt(groupItem->ItemCount() - 1)->Action() == ICMold::ACTCOMMENT) return;
             QList<ICGroupMoldUIItem> gItems = programList_.at(gIndex).SpliteToTwoGroup(tIndex);
             gItems[0].SetStepNum(gIndex);
