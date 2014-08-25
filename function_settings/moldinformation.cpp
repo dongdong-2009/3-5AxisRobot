@@ -775,7 +775,7 @@ void MoldInformation::on_exportToolButton_clicked()
     }
 
     ICBackupUtility backupUtility;
-//#if defined(Q_WS_WIN32) || defined(Q_WS_X11)
+#if defined(Q_WS_WIN32) || defined(Q_WS_X11)
     bool ret = backupUtility.BackupDir("./records",
                                        getFileDir + "/HC5ABackup/records",
                                        selectedExportItemName_);
@@ -783,15 +783,15 @@ void MoldInformation::on_exportToolButton_clicked()
                                          getFileDir + "/HC5ABackup/subs",
                                          selectedExportItemName_<<"sub[0-7].prg");
 
-//#else
+#else
 
-//    bool ret = backupUtility.BackupDir("/opt/Qt/bin/records",
-//                                       "/mnt/udisk/HC5ABackup/records",
-//                                       selectedExportItemName_);
-//    ret = ret && backupUtility.BackupDir("/opt/Qt/bin/subs",
-//                                         "/mnt/udisk/HC5ABackup/subs",
-//                                         selectedExportItemName_<<"sub[0-7].prg");
-//#endif
+    bool ret = backupUtility.BackupDir("./records",
+                                       "/mnt/udisk/HC5ABackup/records",
+                                       selectedExportItemName_);
+    ret = ret && backupUtility.BackupDir("./subs",
+                                         "/mnt/udisk/HC5ABackup/subs",
+                                         selectedExportItemName_<<"sub[0-7].prg");
+#endif
     if(!flagItem || !flagItem_)
     {
         QMessageBox::information(this,tr("Information"), tr("Operation finished!"));

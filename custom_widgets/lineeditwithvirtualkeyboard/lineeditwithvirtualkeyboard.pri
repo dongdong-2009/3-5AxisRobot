@@ -13,8 +13,8 @@ SOURCES += \
 #    virtualkeyboarddialog.ui
 
 contains(DEFINES, HC_SK_8){
-FORMS += virtualkeyboarddialog.ui
+FORMS += $$PWD/virtualkeyboarddialog.ui
 }
 contains(DEFINES, HC_SK_5){
-FORMS += virtualkeyboarddialog_5.ui
+FORMS += $$PWD/virtualkeyboarddialog_5.ui
 }

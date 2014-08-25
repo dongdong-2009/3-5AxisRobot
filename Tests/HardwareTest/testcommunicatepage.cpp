@@ -17,13 +17,13 @@ TestCommunicatePage::TestCommunicatePage(QWidget *parent) :
             SLOT(OnTimerOut()));
     sentCount_ = -1;
     succeesfulCount_ = -1;
-    testTimes_ = 100;
+    testTimes_ = 1000000000;
 
-    serialFD_ = open("/dev/ttyS0", O_RDWR | O_NOCTTY | O_NDELAY);
+    serialFD_ = open("/dev/ttySZHC0", O_RDWR | O_NOCTTY | O_NDELAY);
     if(serialFD_ < 0)
     {
         perror("open");
-        qCritical()<<"Error Can't open the device /dev/ttyS0 (errno"<<errno<<")";
+        qCritical()<<"Error Can't open the device /dev/ttySZHC0 (errno"<<errno<<")";
         return;
     }
     tcgetattr(serialFD_, &(oldTios_));

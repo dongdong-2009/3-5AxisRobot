@@ -11,8 +11,8 @@ SOURCES += \
 FORMS += \
 #    hcmaintains/icupdatesystem.ui \
     hcmaintains/icupdatelogodialog.ui \
-    hcmaintains/icupdatesystempage.ui \
-    hcmaintains/icupdatesystempage_5.ui
+    hcmaintains/icupdatesystempage.ui
+#    hcmaintains/icupdatesystempage_5.ui
 
 
 contains(DEFINES, HC_SK_8){
