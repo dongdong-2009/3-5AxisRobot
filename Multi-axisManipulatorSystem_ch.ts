@@ -1585,11 +1585,13 @@ Reason</source>
     <name>ICHCDetectionFrame</name>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="14"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="14"/>
         <source>Frame</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="97"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="97"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="166"/>
         <source>Detect fixture 1</source>
         <translation>夹具1检测</translation>
@@ -1602,6 +1604,13 @@ Reason</source>
         <location filename="hcsettings/ichcdetectionframe.ui" line="433"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="594"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="626"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="50"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="213"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="368"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="402"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="433"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="594"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="626"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="164"/>
         <source>Use</source>
         <translation>使用</translation>
@@ -1614,6 +1623,13 @@ Reason</source>
         <location filename="hcsettings/ichcdetectionframe.ui" line="428"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="589"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="621"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="45"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="208"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="363"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="407"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="428"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="589"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="621"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="165"/>
         <source>Not Use</source>
         <translation>不使用</translation>
@@ -1623,6 +1639,10 @@ Reason</source>
         <location filename="hcsettings/ichcdetectionframe.ui" line="130"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="169"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="460"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="77"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="130"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="169"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="460"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="162"/>
         <source>Reversed Phase</source>
         <translation>反相</translation>
@@ -1632,6 +1652,10 @@ Reason</source>
         <location filename="hcsettings/ichcdetectionframe.ui" line="135"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="174"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="465"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="82"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="135"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="174"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="465"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="163"/>
         <source>Positive Phase</source>
         <translation>正相</translation>
@@ -1643,6 +1667,7 @@ Reason</source>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="247"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="247"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="172"/>
         <source>Detect fixture 2</source>
         <translation>夹具2检测</translation>
@@ -1654,63 +1679,74 @@ Reason</source>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="182"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="182"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="178"/>
         <source>Detect fixture 3</source>
         <translation>夹具3检测</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="254"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="254"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="193"/>
         <source>Ejection Link Lock</source>
         <translation>顶针连锁</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="104"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="104"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="196"/>
         <source>Detect Postion</source>
         <translation>横行姿势</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="329"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="329"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="211"/>
         <source>Limit Lock Mold</source>
         <translation>限制锁模</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="324"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="324"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="212"/>
         <source>No Limit Lock Mold</source>
         <translation>不限制锁模</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="90"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="90"/>
         <source>Hor Standby</source>
         <oldsource>Standby Pose</oldsource>
         <translation>水平待机</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="549"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="549"/>
         <source>Auto Run</source>
         <translation>全自动</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="298"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="298"/>
         <source>Close Mold</source>
         <translation>锁模到位</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="337"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="337"/>
         <source>U/D Position</source>
         <translation>上下复归姿势</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="499"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="499"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="198"/>
         <source>Don&apos;t need Mold Opened Signal</source>
         <translation>不需开模终止</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="473"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="473"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="207"/>
         <source>IMM Emergency</source>
         <translation>注塑机急停</translation>
@@ -1726,18 +1762,21 @@ Reason</source>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="504"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="504"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="197"/>
         <source>Need Mold Opened Signal</source>
         <translation>必须开模终止</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="634"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="634"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="199"/>
         <source>Detect Origin</source>
         <translation>原点复归</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="541"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="541"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="202"/>
         <source>Don&apos;t Limit</source>
         <translation>不限制</translation>
@@ -1754,6 +1793,8 @@ Reason</source>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="285"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="536"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="285"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="536"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="201"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="205"/>
         <source>Horizontal</source>
@@ -1761,6 +1802,7 @@ Reason</source>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="290"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="290"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="206"/>
         <source>No Limit</source>
         <translation>无限制</translation>
@@ -1768,6 +1810,8 @@ Reason</source>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="280"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="531"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="280"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="531"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="200"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="204"/>
         <source>Vertical</source>
@@ -1779,6 +1823,7 @@ Reason</source>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="143"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="143"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="181"/>
         <source>Detect fixture 4</source>
         <translation>夹具4检测</translation>
@@ -1789,18 +1834,21 @@ Reason</source>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="563"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="563"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="184"/>
         <source>Detect Mid Mold</source>
         <translation>中板模检测</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="376"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="376"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="187"/>
         <source>Detect Security Door</source>
         <translation>安全门检测</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="556"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="556"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="188"/>
         <source>Detect Pressure</source>
         <translation>压力检测</translation>
@@ -7190,7 +7238,7 @@ Please enter an digit between </source>
     <name>ICStructDefineFrame</name>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="14"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="20"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="14"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="213"/>
         <source>Form</source>
         <translation>组合动作选择</translation>
@@ -7198,7 +7246,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1534"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1540"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="63"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1534"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1540"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="214"/>
         <source>Signal Define</source>
         <translation>限位定义</translation>
@@ -7206,7 +7255,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="32"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="38"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1306"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="32"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="38"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="225"/>
         <source>Arm Define</source>
         <translation>轴定义</translation>
@@ -7228,14 +7278,22 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="662"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="741"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="792"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1334"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1387"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1412"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1437"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1469"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1501"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1533"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1565"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="66"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="125"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="156"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="187"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="225"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="263"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="301"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="339"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="400"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="451"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="502"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="553"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="604"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="662"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="741"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="792"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="227"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="231"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="235"/>
@@ -7273,7 +7331,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2084"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1776"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="2084"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="305"/>
         <source>Save</source>
         <translation>保存</translation>
@@ -7284,21 +7342,21 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1593"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="143"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1593"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="215"/>
         <source>Single Arm</source>
         <translation>单臂</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1641"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="203"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1641"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="216"/>
         <source>Double Arm</source>
         <translation>双臂</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1678"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="227"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1678"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="217"/>
         <source>Main Arm</source>
         <translation>主臂</translation>
@@ -7306,8 +7364,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1703"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1804"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="279"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="431"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1703"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1804"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="218"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="222"/>
         <source>Down Limit</source>
@@ -7315,7 +7373,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1814"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="453"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1814"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="219"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="223"/>
         <source>Backword Limit</source>
@@ -7323,7 +7381,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1824"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="475"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1824"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="220"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="224"/>
         <source>Forward Limit</source>
@@ -7331,20 +7389,20 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1798"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="398"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1798"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="221"/>
         <source>Sub Arm</source>
         <translation>副臂</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1729"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="317"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1729"/>
         <source>Backward Limit</source>
         <translation>后退限</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1756"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="356"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1756"/>
         <source>Forword Limit</source>
         <translation>前进限</translation>
     </message>
@@ -7357,14 +7415,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="268"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="306"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="344"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1339"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1392"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1417"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1442"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1474"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1506"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1538"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1570"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="71"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="130"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="161"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="192"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="230"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="268"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="306"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="344"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="228"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="232"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="236"/>
@@ -7385,14 +7443,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="273"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="311"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="349"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1344"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1397"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1422"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1447"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1479"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1511"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1543"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1575"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="76"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="135"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="166"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="197"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="235"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="273"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="311"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="349"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="229"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="233"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="237"/>
@@ -7407,7 +7465,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="84"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="700"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1352"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="84"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="700"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="226"/>
         <source>X1</source>
         <translation></translation>
@@ -7415,7 +7474,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="91"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="721"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1359"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="91"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="721"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="230"/>
         <source>C</source>
         <translation></translation>
@@ -7423,7 +7483,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="98"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="366"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1366"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="98"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="366"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="234"/>
         <source>Z</source>
         <oldsource>C</oldsource>
@@ -7432,7 +7493,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="105"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="380"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1373"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="105"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="380"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="238"/>
         <source>A</source>
         <translation></translation>
@@ -7440,7 +7502,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="205"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="642"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1455"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="205"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="642"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="242"/>
         <source>B</source>
         <translation></translation>
@@ -7448,7 +7511,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="243"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="714"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1487"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="243"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="714"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="246"/>
         <source>Y1</source>
         <translation></translation>
@@ -7456,7 +7520,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="281"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="707"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1519"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="281"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="707"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="250"/>
         <source>X2</source>
         <translation></translation>
@@ -7464,13 +7529,15 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="319"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="373"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1551"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="319"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="373"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="254"/>
         <source>Y2</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="360"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="360"/>
         <source>Port Define</source>
         <translation>端口定义</translation>
     </message>
@@ -7483,6 +7550,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="667"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="746"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="797"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="405"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="456"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="507"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="558"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="609"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="667"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="746"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="797"/>
         <source>S1</source>
         <translation></translation>
     </message>
@@ -7495,6 +7570,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="672"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="751"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="802"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="410"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="461"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="512"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="563"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="614"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="672"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="751"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="802"/>
         <source>S2</source>
         <translation></translation>
     </message>
@@ -7507,6 +7590,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="677"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="756"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="807"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="415"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="466"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="517"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="568"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="619"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="677"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="756"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="807"/>
         <source>S3</source>
         <translation></translation>
     </message>
@@ -7519,6 +7610,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="682"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="761"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="812"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="420"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="471"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="522"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="573"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="624"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="682"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="761"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="812"/>
         <source>S4</source>
         <translation></translation>
     </message>
@@ -7531,6 +7630,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="687"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="766"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="817"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="425"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="476"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="527"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="578"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="629"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="687"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="766"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="817"/>
         <source>S5</source>
         <translation></translation>
     </message>
@@ -7543,20 +7650,29 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="692"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="771"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="822"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="430"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="481"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="532"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="583"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="634"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="692"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="771"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="822"/>
         <source>S6</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="834"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="840"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="505"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="834"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="840"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="258"/>
         <source>Out Define</source>
         <translation>预留定义</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="969"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="950"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="969"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="259"/>
         <source>1</source>
         <translation>Y017</translation>
@@ -7570,14 +7686,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="1336"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1374"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1412"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="557"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="601"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="645"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="689"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="815"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1124"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1168"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1212"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1076"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1114"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1152"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1190"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1228"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1336"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1374"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1412"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="283"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="285"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="287"/>
@@ -7591,7 +7707,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1967"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1607"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1967"/>
         <source>Adjust</source>
         <translation>调位</translation>
     </message>
@@ -7604,14 +7720,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="1450"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1485"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1520"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="733"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="774"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="859"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="940"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1001"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1042"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1083"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1256"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="889"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="924"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="959"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1266"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1301"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1450"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1485"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1520"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="284"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="286"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="288"/>
@@ -7625,43 +7741,43 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="976"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="879"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="976"/>
         <source>5</source>
         <translation>Y035</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="983"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="869"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="983"/>
         <source>2</source>
         <translation>Y022</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1023"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1266"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1023"/>
         <source>6</source>
         <translation>Y036</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1030"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1276"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1030"/>
         <source>3</source>
         <translation>Y031</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1037"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="889"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1037"/>
         <source>7</source>
         <translation>备用</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1044"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="899"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1044"/>
         <source>4</source>
         <translation>Y032</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="990"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="960"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="990"/>
         <source>8</source>
         <translation>备用</translation>
     </message>
@@ -7684,14 +7800,15 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1856"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1862"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1586"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1856"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1862"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="299"/>
         <source>Other Define</source>
         <translation>其他定义</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1928"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1725"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1928"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="300"/>
         <source>Escape</source>
         <translation>型内逃跑</translation>
@@ -7699,8 +7816,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1905"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1999"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1639"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1715"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1905"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1999"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="303"/>
         <source>Use</source>
         <translation>使用</translation>
@@ -7708,8 +7825,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1960"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="2037"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1677"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1757"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1960"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="2037"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="304"/>
         <source>No Use</source>
         <translation>不使用</translation>
@@ -7861,75 +7978,52 @@ Please enter an digit between </source>
 <context>
     <name>ICUpdateSystem</name>
     <message>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="20"/>
-        <source>Frame</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="156"/>
         <source>RegisterCode:</source>
-        <translation>注册:</translation>
+        <translation type="obsolete">注册:</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="231"/>
         <source>RestTime:</source>
-        <translation>剩余时间:</translation>
+        <translation type="obsolete">剩余时间:</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="77"/>
         <source>1.Verify the device</source>
-        <translation>1.确认设备</translation>
+        <translation type="obsolete">1.确认设备</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="143"/>
         <source>Generate</source>
-        <translation>获取</translation>
+        <translation type="obsolete">获取</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="203"/>
         <source>Register</source>
-        <translation>注册</translation>
+        <translation type="obsolete">注册</translation>
     </message>
     <message>
         <source>Device</source>
         <translation type="obsolete">设备</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="495"/>
         <source>2.Verify the update version</source>
-        <translation>2.确认更新版本</translation>
+        <translation type="obsolete">2.确认更新版本</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="319"/>
         <source>HML Version</source>
-        <translation>手控版本</translation>
+        <translation type="obsolete">手控版本</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="395"/>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="426"/>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="567"/>
         <source>Version</source>
-        <translation>版本</translation>
+        <translation type="obsolete">版本</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="274"/>
         <source>3.Copy files</source>
-        <translation>3.复制文件</translation>
+        <translation type="obsolete">3.复制文件</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="351"/>
         <source>4.Status</source>
-        <translation>4.主机状态</translation>
+        <translation type="obsolete">4.主机状态</translation>
     </message>
     <message>
         <source>Copy Files</source>
         <translation type="obsolete">复制文件中</translation>
-    </message>
-    <message>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="338"/>
-        <source>Reboot</source>
-        <oldsource>4.Reboot</oldsource>
-        <translation></translation>
     </message>
     <message>
         <source>Restart</source>
@@ -7940,49 +8034,40 @@ Please enter an digit between </source>
         <translation type="obsolete">写入主机</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="454"/>
         <source>Update Host</source>
-        <translation>更新主机</translation>
+        <translation type="obsolete">更新主机</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="299"/>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation type="obsolete">刷新</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="364"/>
         <source>Host Version</source>
-        <translation>主机版本</translation>
+        <translation type="obsolete">主机版本</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="118"/>
         <source>MachineCode:</source>
-        <translation>机器码:</translation>
+        <translation type="obsolete">机器码:</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="482"/>
         <source>Update HMI</source>
-        <translation>更新手控</translation>
+        <translation type="obsolete">更新手控</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="105"/>
         <source>5.Register</source>
-        <translation>5.用户注册</translation>
+        <translation type="obsolete">5.用户注册</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="64"/>
         <source>Update Logo</source>
-        <translation>更新图片</translation>
+        <translation type="obsolete">更新图片</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="508"/>
         <source>Update Super Passward</source>
-        <translation>更新超级密码</translation>
+        <translation type="obsolete">更新超级密码</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="536"/>
         <source>Update</source>
-        <translation>更新</translation>
+        <translation type="obsolete">更新</translation>
     </message>
     <message>
         <source>Congratulations</source>
@@ -8292,7 +8377,7 @@ Would you want to restart now?</source>
 <context>
     <name>ICVirtualHost</name>
     <message>
-        <location filename="communication/icvirtualhost.cpp" line="95"/>
+        <location filename="communication/icvirtualhost.cpp" line="96"/>
         <source>Error</source>
         <translation>错误</translation>
     </message>
@@ -9794,6 +9879,7 @@ Admin</source>
     <name>VirtualKeyboardDialog</name>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="14"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="14"/>
         <source>Keyboard</source>
         <translation>键盘</translation>
     </message>
@@ -9803,205 +9889,245 @@ Admin</source>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="73"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="73"/>
         <source>V</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="107"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="107"/>
         <source>H</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="141"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="141"/>
         <source>O</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="175"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="175"/>
         <source>B</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="209"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="209"/>
         <source>E</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="243"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="243"/>
         <source>P</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="277"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="277"/>
         <source>R</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="311"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="311"/>
         <source>W</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="345"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="345"/>
         <source>I</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="379"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="379"/>
         <source>7</source>
         <oldsource>/</oldsource>
         <translation>7</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="413"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="413"/>
         <source>A</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="447"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="447"/>
         <source>F</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="481"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="481"/>
         <source>J</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="515"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="515"/>
         <source>Y</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="549"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="549"/>
         <source>2</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="583"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="583"/>
         <source>0</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="617"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="617"/>
         <source>N</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="651"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="651"/>
         <source>5</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="685"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="685"/>
         <source>C</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="719"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="719"/>
         <source>L</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="753"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="753"/>
         <source>S</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="787"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="787"/>
         <source>8</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="821"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="821"/>
         <source>6</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="889"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="889"/>
         <source>Z</source>
         <oldsource>;</oldsource>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1405"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1405"/>
         <source>(</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1439"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1439"/>
         <source>)</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="855"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="855"/>
         <source>3</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="923"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="923"/>
         <source>M</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="957"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="957"/>
         <source>T</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="991"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="991"/>
         <source>1</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1025"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1025"/>
         <source>Q</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1059"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1059"/>
         <source>9</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1161"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1161"/>
         <source>4</source>
         <oldsource>.</oldsource>
         <translation>4</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1195"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1195"/>
         <source>U</source>
         <oldsource>,</oldsource>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1093"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1093"/>
         <source>G</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1127"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1127"/>
         <source>K</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1229"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1229"/>
         <source>X</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1263"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1263"/>
         <source>D</source>
         <translation></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1335"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1335"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1299"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1299"/>
         <source>Backspace</source>
         <translation>退格</translation>
     </message>
@@ -10011,6 +10137,7 @@ Admin</source>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1371"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1371"/>
         <source>OK</source>
         <translation>确定</translation>
     </message>

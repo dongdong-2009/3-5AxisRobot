@@ -325,6 +325,7 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
 //    ShowOrigin();
 #endif
 
+           qDebug("Mainframe Init finished");
 }
 
 

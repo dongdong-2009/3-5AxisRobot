@@ -41,7 +41,8 @@ SOURCES += main.cpp \
     icprogramformatchecker.cpp \
     icconfigformatchecker.cpp \
     simulateknob.cpp \
-    icrecaldialog.cpp
+    icrecaldialog.cpp \
+    icfile.cpp
 HEADERS += icaxispositionlabel.h \
     mainframe.h \
     #icalarmdescriptiondialog.h \
@@ -61,7 +62,8 @@ HEADERS += icaxispositionlabel.h \
     icprogramformatchecker.h \
     icconfigformatchecker.h \
     simulateknob.h \
-    icrecaldialog.h
+    icrecaldialog.h \
+    icfile.h
 
 FORMS    +=  \
     #icalarmdescriptiondialog.ui \
@@ -75,7 +77,7 @@ FORMS    +=  \
     icrecaldialog.ui
 
 
-SK_SIZE = 5
+SK_SIZE = 8
 equals(SK_SIZE, 8){
 message("Define 8")
 DEFINES += HC_SK_8

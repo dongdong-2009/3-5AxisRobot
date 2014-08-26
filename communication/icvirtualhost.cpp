@@ -24,6 +24,7 @@
 #include <QDebug>
 #include <QTime>
 #include "icactioncommand.h"
+#include "icfile.h"
 
 #define REFRESH_TIME 10
 static QTime testTime;
@@ -391,12 +392,12 @@ void ICVirtualHost::RefreshStatus()
 
 void ICVirtualHost::SaveSystemConfig()
 {
-    QFile file("./sysconfig/system.txt");
-    if(!file.open(QFile::WriteOnly | QFile::Text))
-    {
-        qCritical("open system file fail when save!");
-        return;
-    }
+//    QFile file("./sysconfig/system.txt");
+//    if(!file.open(QFile::WriteOnly | QFile::Text))
+//    {
+//        qCritical("open system file fail when save!");
+//        return;
+//    }
     int sum = 0;
     for(ICSystemParameter i = SYS_Language; i != SYS_CheckSum; i = static_cast<ICSystemParameter>(i + 1))
     {
@@ -410,12 +411,14 @@ void ICVirtualHost::SaveSystemConfig()
     {
         toWrite += systemParamMap_.value(i).toByteArray() + "\n";
     }
-    QFile::copy("./sysconfig/system.txt", "./sysconfig/system.txt~");
-    file.write(toWrite);
-    file.flush();
-    file.close();
-    //    system("rm ./sysconfig/system.txt~");
-    QFile::remove("./sysconfig/system.txt~");
+    ICFile file("./sysconfig/system.txt");
+    file.ICWrite(toWrite);
+//    QFile::copy("./sysconfig/system.txt", "./sysconfig/system.txt~");
+//    file.write(toWrite);
+//    file.flush();
+//    file.close();
+//    //    system("rm ./sysconfig/system.txt~");
+//    QFile::remove("./sysconfig/system.txt~");
     ::system("sync");
 }
 
