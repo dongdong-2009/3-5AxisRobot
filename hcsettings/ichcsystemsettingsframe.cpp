@@ -431,7 +431,7 @@ void ICHCSystemSettingsFrame::on_restoreMachineButton_clicked()
 
         ICBackupUtility backupUtility;
         bool ret = (backupUtility.RestoreDir("/mnt/udisk/HC5ABackup/sysconfig",
-                                             "/opt/Qt/bin/sysconfig",
+                                             "./sysconfig",
                                              QStringList()<<"param*.txt"<<"DistanceRotation"));
         Information(ret, tr("Backup files is broken!"));
         //    QDir dir("/mnt/udisk/HC5ABackup/sysconfig");
@@ -463,7 +463,7 @@ void ICHCSystemSettingsFrame::on_restoreSystemButton_clicked()
     {
         ICBackupUtility backupUtility;
         bool ret = (backupUtility.RestoreDir("/mnt/udisk/HC5ABackup/sysconfig",
-                                             "/opt/Qt/bin/sysconfig",
+                                             "./sysconfig",
                                              QStringList()<<"system.txt"));
         Information(ret, tr("Backup files is broken!"));
         //    QDir dir("/mnt/udisk/HC5ABackup/sysconfig");
@@ -695,18 +695,18 @@ void ICHCSystemSettingsFrame::on_restoreAllButton_clicked()
     {
         ICBackupUtility backupUtility;
         ret = backupUtility.RestoreDir("/mnt/udisk/HC5ABackup/sysconfig",
-                                       "/opt/Qt/bin/sysconfig",
+                                       "./sysconfig",
                                        QStringList()<<"param*.txt"<<"DistanceRotation");
         ret = ret && backupUtility.RestoreDir("/mnt/udisk/HC5ABackup/sysconfig",
-                                              "/opt/Qt/bin/sysconfig",
+                                              "./sysconfig",
                                               QStringList()<<"system.txt");
 
         ret = ret && backupUtility.RestoreDir("/mnt/udisk/HC5ABackup/records",
-                                            "/opt/Qt/bin/records",
+                                            "./records",
                                             QStringList()<<"*.act"<<"*.fnc");
 
         ret = ret && backupUtility.RestoreDir("/mnt/udisk/HC5ABackup/subs",
-                                                  "/opt/Qt/bin/subs",
+                                                  "./subs",
                                                   QStringList()<<"sub[0-7].prg");
 
         Information(ret);
