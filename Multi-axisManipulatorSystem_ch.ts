@@ -4364,6 +4364,11 @@ Reason</source>
         <source>Frame</source>
         <translation></translation>
     </message>
+    <message>
+        <location filename="categorypage/icinitialframe.ui" line="45"/>
+        <source>Alarm Clear</source>
+        <translation>伺服使能</translation>
+    </message>
 </context>
 <context>
     <name>ICInstructModifyDialog</name>

@@ -3452,6 +3452,11 @@ ModifyTime</source>
         <source>Frame</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="categorypage/icinitialframe.ui" line="45"/>
+        <source>Alarm Clear</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ICInstructModifyDialog</name>

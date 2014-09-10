@@ -34,6 +34,7 @@ private slots:
 //    void on_pushButton_clicked();
 
 private slots:
+    void on_alarmClear_toggled(bool checked);
 };
 
 #endif // ICINITIALFRAME_H

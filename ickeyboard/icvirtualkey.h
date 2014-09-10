@@ -102,7 +102,10 @@ enum ICVirtualKey
     VKEY_CLIP5OFF,
     VKEY_CLIP6OFF,
     VKEY_CLIP7OFF,
-    VKEY_CLIP8OFF
+    VKEY_CLIP8OFF,
+
+    VKEY_ON_ALARM = 0xA6,
+    VKEY_OFF_ALARM = 0xA7
 };
 
 }//namespace IC{
