@@ -22,7 +22,16 @@
 </string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
-   <property name="margin">
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
     <number>2</number>
    </property>
    <item>
@@ -231,18 +240,24 @@ height:30px;</string>
           <string>Security Point</string>
          </property>
          <layout class="QGridLayout" name="gridLayout">
-          <item row="0" column="3">
-           <spacer name="horizontalSpacer_2">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
+          <item row="2" column="2">
+           <widget class="QLabel" name="minUnitLabel">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
             </property>
-            <property name="sizeHint" stdset="0">
+            <property name="minimumSize">
              <size>
-              <width>40</width>
-              <height>20</height>
+              <width>26</width>
+              <height>0</height>
              </size>
             </property>
-           </spacer>
+            <property name="text">
+             <string>mm</string>
+            </property>
+           </widget>
           </item>
           <item row="0" column="0">
            <widget class="QLabel" name="label">
@@ -264,7 +279,11 @@ height:30px;</string>
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="ICLineEditWithVirtualNumericKeypad" name="mechanicalLengthLineEdit"/>
+           <widget class="ICLineEditWithVirtualNumericKeypad" name="mechanicalLengthLineEdit">
+            <property name="text">
+             <string notr="true"/>
+            </property>
+           </widget>
           </item>
           <item row="0" column="2">
            <widget class="QLabel" name="label_3">
@@ -305,7 +324,11 @@ height:30px;</string>
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="ICLineEditWithVirtualNumericKeypad" name="maximumDisplacementLineEdit"/>
+           <widget class="ICLineEditWithVirtualNumericKeypad" name="maximumDisplacementLineEdit">
+            <property name="text">
+             <string notr="true"/>
+            </property>
+           </widget>
           </item>
           <item row="1" column="2">
            <widget class="QLabel" name="label_4">
@@ -346,24 +369,9 @@ height:30px;</string>
            </widget>
           </item>
           <item row="2" column="1">
-           <widget class="ICLineEditWithVirtualNumericKeypad" name="internalSecurityZoneLineEdit"/>
-          </item>
-          <item row="2" column="2">
-           <widget class="QLabel" name="minUnitLabel">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>26</width>
-              <height>0</height>
-             </size>
-            </property>
+           <widget class="ICLineEditWithVirtualNumericKeypad" name="internalSecurityZoneLineEdit">
             <property name="text">
-             <string>mm</string>
+             <string notr="true"/>
             </property>
            </widget>
           </item>
@@ -387,7 +395,11 @@ height:30px;</string>
            </widget>
           </item>
           <item row="3" column="1">
-           <widget class="ICLineEditWithVirtualNumericKeypad" name="externalSecurityZoneLineEdit"/>
+           <widget class="ICLineEditWithVirtualNumericKeypad" name="externalSecurityZoneLineEdit">
+            <property name="text">
+             <string notr="true"/>
+            </property>
+           </widget>
           </item>
           <item row="3" column="2">
            <widget class="QLabel" name="maxUnitLabel">
@@ -428,7 +440,11 @@ height:30px;</string>
            </widget>
           </item>
           <item row="4" column="1">
-           <widget class="ICLineEditWithVirtualNumericKeypad" name="distanceRotationEdit"/>
+           <widget class="ICLineEditWithVirtualNumericKeypad" name="distanceRotationEdit">
+            <property name="text">
+             <string notr="true"/>
+            </property>
+           </widget>
           </item>
           <item row="4" column="2">
            <widget class="QLabel" name="label_11">
@@ -497,7 +513,11 @@ height:30px;</string>
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QLineEdit" name="testLineEdit"/>
+           <widget class="QLineEdit" name="testLineEdit">
+            <property name="text">
+             <string notr="true"/>
+            </property>
+           </widget>
           </item>
           <item row="2" column="0">
            <widget class="QLabel" name="label_6">
@@ -507,7 +527,11 @@ height:30px;</string>
            </widget>
           </item>
           <item row="2" column="1">
-           <widget class="QLineEdit" name="feedbackEdit"/>
+           <widget class="QLineEdit" name="feedbackEdit">
+            <property name="text">
+             <string notr="true"/>
+            </property>
+           </widget>
           </item>
           <item row="3" column="0">
            <widget class="QLabel" name="label_7">
@@ -517,7 +541,11 @@ height:30px;</string>
            </widget>
           </item>
           <item row="3" column="1">
-           <widget class="QLineEdit" name="zSignalEdit"/>
+           <widget class="QLineEdit" name="zSignalEdit">
+            <property name="text">
+             <string notr="true"/>
+            </property>
+           </widget>
           </item>
           <item row="4" column="0" colspan="2">
            <layout class="QHBoxLayout" name="horizontalLayout_2">

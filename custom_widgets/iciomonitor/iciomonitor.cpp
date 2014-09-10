@@ -8,6 +8,7 @@
 #include "pagetabsbar.h"
 #include "pageswitchbar.h"
 #include "iciomonitorpagebase.h"
+#include <QDebug>
 
 
 class ICIOMonitor::ICIOMonitorPrivate
@@ -75,6 +76,17 @@ ICIOMonitor::ICIOMonitor(QWidget *parent) :
 }
 
 ICIOMonitor::~ICIOMonitor(){}
+
+void ICIOMonitor::Clear()
+{
+//    int count =pimpl_->contentWidget_->count();
+//    for(int i = 0; i != count; ++i)
+//    {
+//        pimpl_->contentWidget_->removeWidget(pimpl_->contentWidget_->widget(i));
+//    }
+    pimpl_->pageTabsBar_->Clear();
+//    qDebug()<<"dsfsdf"<<count;
+}
 
 void ICIOMonitor::AddPage(ICIOMonitorPageBase *page, const QString &pageTitle)
 {

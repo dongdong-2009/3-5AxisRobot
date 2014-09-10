@@ -89,6 +89,7 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
 #endif
 
     testvalue = FALSE;
+    ui->systemConfigPages->removeTab(4);
 }
 
 ICHCSystemSettingsFrame::~ICHCSystemSettingsFrame()

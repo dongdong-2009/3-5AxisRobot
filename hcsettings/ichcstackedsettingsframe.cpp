@@ -15,7 +15,7 @@ ICHCStackedSettingsFrame::ICHCStackedSettingsFrame(QWidget *parent) :
     ui->setupUi(this);
 
     InitInterface();
-    ui->currentPageLabel->setText(ui->page0ToolButton->text());
+//    ui->currentPageLabel->setText(ui->page0ToolButton->text());
     currentPage_ = 0;
     RefreshStackParams_(currentPage_);
     connect(ICMold::CurrentMold(),
@@ -33,7 +33,7 @@ void ICHCStackedSettingsFrame::on_page3ToolButton_clicked()
 {
     QList<int> status = GetCurrentStatus_();
     SetStackStatus_(status);
-    ui->currentPageLabel->setText(ui->page3ToolButton->text());
+//    ui->currentPageLabel->setText(ui->page3ToolButton->text());
     currentPage_ = 3;
     RefreshStackParams_(currentPage_);
 }
@@ -43,7 +43,7 @@ void ICHCStackedSettingsFrame::on_page2ToolButton_clicked()
 
     QList<int> status = GetCurrentStatus_();
     SetStackStatus_(status);
-    ui->currentPageLabel->setText(ui->page2ToolButton->text());
+//    ui->currentPageLabel->setText(ui->page2ToolButton->text());
     currentPage_ = 2;
     RefreshStackParams_(currentPage_);
 }
@@ -54,7 +54,7 @@ void ICHCStackedSettingsFrame::on_page1ToolButton_clicked()
     QList<int> status = GetCurrentStatus_();
     SetStackStatus_(status);
 
-    ui->currentPageLabel->setText(ui->page1ToolButton->text());
+//    ui->currentPageLabel->setText(ui->page1ToolButton->text());
     currentPage_ = 1;
     RefreshStackParams_(currentPage_);
 }
@@ -63,7 +63,7 @@ void ICHCStackedSettingsFrame::on_page0ToolButton_clicked()
 {
     QList<int> status = GetCurrentStatus_();
     SetStackStatus_(status);
-    ui->currentPageLabel->setText(ui->page0ToolButton->text());
+//    ui->currentPageLabel->setText(ui->page0ToolButton->text());
     currentPage_ = 0;
     RefreshStackParams_(currentPage_);
 }
@@ -222,7 +222,11 @@ void ICHCStackedSettingsFrame::changeEvent(QEvent *e)
     switch (e->type()) {
     case QEvent::LanguageChange:
     {
+        int index= ui->countWayBox->currentIndex();
+        ui->countWayBox->blockSignals(true);
         ui->retranslateUi(this);
+        ui->countWayBox->setCurrentIndex(index);
+        ui->countWayBox->blockSignals(false);
     }
         break;
     default:

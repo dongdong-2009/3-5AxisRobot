@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>855</width>
+    <width>800</width>
     <height>337</height>
    </rect>
   </property>
@@ -30,7 +30,7 @@
      </property>
      <property name="minimumSize">
       <size>
-       <width>148</width>
+       <width>120</width>
        <height>48</height>
       </size>
      </property>
@@ -62,7 +62,7 @@
      </property>
      <property name="minimumSize">
       <size>
-       <width>148</width>
+       <width>120</width>
        <height>48</height>
       </size>
      </property>
@@ -115,7 +115,7 @@
      </property>
      <property name="minimumSize">
       <size>
-       <width>148</width>
+       <width>120</width>
        <height>48</height>
       </size>
      </property>
@@ -154,7 +154,7 @@
      </property>
      <property name="minimumSize">
       <size>
-       <width>148</width>
+       <width>120</width>
        <height>48</height>
       </size>
      </property>
@@ -193,7 +193,7 @@
      </property>
      <property name="minimumSize">
       <size>
-       <width>148</width>
+       <width>120</width>
        <height>48</height>
       </size>
      </property>
@@ -265,7 +265,7 @@
      </property>
      <property name="minimumSize">
       <size>
-       <width>148</width>
+       <width>120</width>
        <height>48</height>
       </size>
      </property>
@@ -309,7 +309,7 @@
      </property>
      <property name="minimumSize">
       <size>
-       <width>148</width>
+       <width>120</width>
        <height>48</height>
       </size>
      </property>
@@ -348,7 +348,7 @@
      </property>
      <property name="minimumSize">
       <size>
-       <width>148</width>
+       <width>120</width>
        <height>48</height>
       </size>
      </property>
@@ -387,7 +387,7 @@
      </property>
      <property name="minimumSize">
       <size>
-       <width>148</width>
+       <width>120</width>
        <height>48</height>
       </size>
      </property>
@@ -413,7 +413,7 @@
     <widget class="ICComboBox" name="detectPressureComboBox">
      <property name="minimumSize">
       <size>
-       <width>148</width>
+       <width>120</width>
        <height>48</height>
       </size>
      </property>
@@ -445,7 +445,7 @@
      </property>
      <property name="minimumSize">
       <size>
-       <width>148</width>
+       <width>120</width>
        <height>48</height>
       </size>
      </property>
@@ -484,7 +484,7 @@
      </property>
      <property name="minimumSize">
       <size>
-       <width>148</width>
+       <width>120</width>
        <height>48</height>
       </size>
      </property>
@@ -516,7 +516,7 @@
      </property>
      <property name="minimumSize">
       <size>
-       <width>148</width>
+       <width>120</width>
        <height>48</height>
       </size>
      </property>
@@ -574,7 +574,7 @@
      </property>
      <property name="minimumSize">
       <size>
-       <width>148</width>
+       <width>120</width>
        <height>48</height>
       </size>
      </property>
@@ -606,7 +606,7 @@
      </property>
      <property name="minimumSize">
       <size>
-       <width>148</width>
+       <width>120</width>
        <height>48</height>
       </size>
      </property>

@@ -923,6 +923,7 @@ void ICVirtualHost::InitAddrToSysPosMap_()
     addrToSysPos_.insert(SM_TIMEVFOR, ACT_ViceForward);
     addrToSysPos_.insert(SM_TIMEVBACK, ACT_ViceBackward);
     addrToSysPos_.insert(SM_Global_Speed, SYS_Global_Speed);
+    addrToSysPos_.insert(SM_LANGUAGE, SYS_Language);
     addrToSysPos_.insert(SM_ACCTIMEX, SYS_AccTimeX);
     addrToSysPos_.insert(SM_ACCTIMEY, SYS_AccTimeY);
     addrToSysPos_.insert(SM_ACCTIMEZ, SYS_AccTimeZ);

@@ -55,6 +55,12 @@ QCheckBox::indicator:unchecked:disabled
      </property>
      <widget class="QWidget" name="page1">
       <layout class="QVBoxLayout" name="verticalLayout_13">
+       <property name="leftMargin">
+        <number>2</number>
+       </property>
+       <property name="rightMargin">
+        <number>2</number>
+       </property>
        <item>
         <widget class="QGroupBox" name="selectArmBox">
          <property name="title">
@@ -87,6 +93,12 @@ QCheckBox::indicator:unchecked:disabled
           <string>Get Product Fixture</string>
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="leftMargin">
+           <number>2</number>
+          </property>
+          <property name="rightMargin">
+           <number>2</number>
+          </property>
           <item>
            <widget class="QLabel" name="label">
             <property name="text">
@@ -147,6 +159,12 @@ QCheckBox::indicator:unchecked:disabled
           <string>Get Outlet Fixture</string>
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="leftMargin">
+           <number>2</number>
+          </property>
+          <property name="rightMargin">
+           <number>2</number>
+          </property>
           <item>
            <widget class="QLabel" name="label_2">
             <property name="text">
@@ -272,7 +290,7 @@ QCheckBox::indicator:unchecked:disabled
             <item>
              <widget class="ICLineEditWithVirtualNumericKeypad" name="zEdit">
               <property name="text">
-               <string>0.0</string>
+               <string notr="true">0.0</string>
               </property>
              </widget>
             </item>
@@ -317,7 +335,7 @@ QCheckBox::indicator:unchecked:disabled
             <item>
              <widget class="ICLineEditWithVirtualNumericKeypad" name="aEdit">
               <property name="text">
-               <string>0.0</string>
+               <string notr="true">0.0</string>
               </property>
              </widget>
             </item>
@@ -362,7 +380,7 @@ QCheckBox::indicator:unchecked:disabled
             <item>
              <widget class="ICLineEditWithVirtualNumericKeypad" name="bEdit">
               <property name="text">
-               <string>0.0</string>
+               <string notr="true">0.0</string>
               </property>
              </widget>
             </item>
@@ -407,7 +425,7 @@ QCheckBox::indicator:unchecked:disabled
             <item>
              <widget class="ICLineEditWithVirtualNumericKeypad" name="cEdit">
               <property name="text">
-               <string>0.0</string>
+               <string notr="true">0.0</string>
               </property>
              </widget>
             </item>
@@ -473,7 +491,7 @@ QCheckBox::indicator:unchecked:disabled
             <item>
              <widget class="ICLineEditWithVirtualNumericKeypad" name="x1Edit">
               <property name="text">
-               <string>0.0</string>
+               <string notr="true">0.0</string>
               </property>
              </widget>
             </item>
@@ -521,7 +539,7 @@ QCheckBox::indicator:unchecked:disabled
             <item>
              <widget class="ICLineEditWithVirtualNumericKeypad" name="y1Edit">
               <property name="text">
-               <string>0.0</string>
+               <string notr="true">0.0</string>
               </property>
              </widget>
             </item>
@@ -584,7 +602,7 @@ QCheckBox::indicator:unchecked:disabled
             <item>
              <widget class="ICLineEditWithVirtualNumericKeypad" name="x2Edit">
               <property name="text">
-               <string>0.0</string>
+               <string notr="true">0.0</string>
               </property>
              </widget>
             </item>
@@ -629,7 +647,7 @@ QCheckBox::indicator:unchecked:disabled
             <item>
              <widget class="ICLineEditWithVirtualNumericKeypad" name="y2Edit">
               <property name="text">
-               <string>0.0</string>
+               <string notr="true">0.0</string>
               </property>
              </widget>
             </item>
@@ -885,16 +903,16 @@ QCheckBox::indicator:unchecked:disabled
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup"/>
-  <buttongroup name="buttonGroupOutlet"/>
-  <buttongroup name="buttonGroupZ"/>
-  <buttongroup name="buttonGroupA"/>
-  <buttongroup name="buttonGroup_2"/>
-  <buttongroup name="buttonGroupB"/>
-  <buttongroup name="buttonGroupY1"/>
-  <buttongroup name="buttonGroupC"/>
   <buttongroup name="buttonGroupY2"/>
   <buttongroup name="buttonGroupX1"/>
   <buttongroup name="buttonGroupX2"/>
+  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroupA"/>
+  <buttongroup name="buttonGroupB"/>
+  <buttongroup name="buttonGroupC"/>
+  <buttongroup name="buttonGroupOutlet"/>
+  <buttongroup name="buttonGroupZ"/>
+  <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroupY1"/>
  </buttongroups>
 </ui>

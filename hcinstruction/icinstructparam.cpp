@@ -90,6 +90,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
                 commandStr += tr("End");
             }
             commandStr += actionGroupMap_.value(action);
+            commandStr += QObject::tr("Delay time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 2) + "      ";
             return commandStr;
         }
         commandStr += actionGroupMap_.value(action) + ": ";

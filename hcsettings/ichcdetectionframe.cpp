@@ -166,15 +166,15 @@ void ICHCDetectionFrame::RetranslateUi_()
     ui->label->setText(tr("Detect fixture 1"));
     ui->detectFixture1ComboBox->setItemText(0, rp);
     ui->detectFixture1ComboBox->setItemText(1, pp);
-    ui->label_5->setText(tr("Detect sucker 1"));
-    ui->detectSucker1ComboBox->setItemText(0, rp);
-    ui->detectSucker1ComboBox->setItemText(1, pp);
+    ui->label_5->setText(tr("Close Mold"));
+    ui->detectSucker1ComboBox->setItemText(0, noUse);
+    ui->detectSucker1ComboBox->setItemText(1, use);
     ui->label_2->setText(tr("Detect fixture 2"));
     ui->detectFixture2ComboBox->setItemText(0, rp);
     ui->detectFixture2ComboBox->setItemText(1, pp);
-    ui->label_6->setText(tr("Detect sucker 2"));
-    ui->detectSucker2ComboBox->setItemText(0, rp);
-    ui->detectSucker2ComboBox->setItemText(1, pp);
+    ui->label_6->setText(tr("Auto Run"));
+    ui->detectSucker2ComboBox->setItemText(0, noUse);
+    ui->detectSucker2ComboBox->setItemText(1, use);
     ui->label_3->setText(tr("Detect fixture 3"));
     ui->detectFixture3ComboBox->setItemText(0, rp);
     ui->detectFixture3ComboBox->setItemText(1, pp);
@@ -207,7 +207,8 @@ void ICHCDetectionFrame::RetranslateUi_()
     ui->label_7->setText(tr("IMM Emergency"));
     ui->detectIMMComboBox->setItemText(0, noUse);
     ui->detectIMMComboBox->setItemText(1, use);
-    ui->label_16->setText(tr("Down Position"));
-    ui->standbyPositionBox->setItemText(0, tr("Limit Lock Mold"));//限制锁模
-    ui->standbyPositionBox->setItemText(1, tr("No Limit Lock Mold"));//不限制锁模
+    ui->label_16->setText(tr("Hor Standby"));
+    ui->standbyPositionBox->setItemText(1, tr("Limit Lock Mold"));//限制锁模
+    ui->standbyPositionBox->setItemText(0, tr("No Limit Lock Mold"));//不限制锁模
+
 }

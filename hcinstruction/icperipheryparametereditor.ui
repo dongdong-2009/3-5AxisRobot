@@ -14,13 +14,22 @@
    <string>Form</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
-   <property name="margin">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
     <number>0</number>
    </property>
    <item>
     <widget class="ICLineEditWithVirtualNumericKeypad" name="delayEdit">
      <property name="text">
-      <string>0.0</string>
+      <string notr="true">0.0</string>
      </property>
     </widget>
    </item>
@@ -33,8 +42,20 @@
    </item>
    <item>
     <widget class="ICLineEditWithVirtualNumericKeypad" name="timesEdit">
+     <property name="minimumSize">
+      <size>
+       <width>70</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>70</width>
+       <height>16777215</height>
+      </size>
+     </property>
      <property name="text">
-      <string>0</string>
+      <string notr="true">0</string>
      </property>
     </widget>
    </item>

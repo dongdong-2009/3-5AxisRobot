@@ -22,6 +22,7 @@ Q_SIGNALS:
 
 public Q_SLOTS:
     void AddTab(QWidget* tabWidget, const QString & tabName);
+    void Clear();
 private Q_SLOTS:
     void TabClicked();
 private:

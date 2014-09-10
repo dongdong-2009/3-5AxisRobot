@@ -22,6 +22,9 @@ protected:
     void hideEvent(QHideEvent *e);
     void showEvent(QShowEvent *e);
 
+private slots:
+    void on_servoFlex_currentIndexChanged(int index);
+
 private:
     void UpdateAxisDefine_();
     void ShowWidgets_(QList<QWidget*>& widgets);

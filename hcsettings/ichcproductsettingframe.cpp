@@ -152,6 +152,16 @@ void ICHCProductSettingFrame::retranslateUi_()
 //    ui->fixtureSelectBox->setItemText(1,tr("Positive Phase"));
     ui->reversedCheckBox->setText(tr("Reversed Phase"));
     ui->positiveCheckBox->setText(tr("Positive Phase"));
+    ui->getFailWay->setItemText(0, tr("Alarm When Up"));
+    ui->getFailWay->setItemText(1, tr("Alarm Once"));
+    ui->countUnitBox->setItemText(0, tr("All"));
+    ui->countUnitBox->setItemText(1, tr("Good"));
+    ui->countUnitBox->setItemText(2, tr("Stack-1"));
+    ui->countUnitBox->setItemText(3, tr("Stack-2"));
+    ui->countUnitBox->setItemText(4, tr("Stack-3"));
+    ui->countUnitBox->setItemText(5, tr("Stack-4"));
+    ui->label_18->setText(tr("Count Ways"));
+    ui->label_10->setText(tr("Get Fail"));
 }
 
 void ICHCProductSettingFrame::OnMoldNumberParamChanged()

@@ -111,7 +111,7 @@ QComboBox::down-arrow:on { /* shift the arrow when popup is open */
 QLineEdit {
      border: 2px solid gray;
      border-radius: 6px;
-     padding: 0 8px;
+     padding: 0 4px;
      /*background: rgb(79, 223, 255);*/
      /*selection-background-color: darkgray;*/
 }
@@ -200,8 +200,4 @@ QAbstractItemView::item:selected:active, QListView::item:selected:!active {
 
 ICTipsWidget{
      background: lightgreen;
-}
-
-QWidget{
-	background:white;
 }

@@ -180,6 +180,7 @@
 330:Position is changed, please reboot
 331:Position parameters is fail
 332:Output is changed, please reboot
+333:Axis is changed, please reboot
 360:X2 axis parameters check fail
 361:Y2 axis parameters check fail
 362:A axis parameters check fail
@@ -247,6 +248,8 @@
 1022：The position is horizontal when origin
 1023:The position is vertical when traving
 1024:The position is horizontal when traving
+1025:The position is wrong when down inside
+1027:Close mold is not finish
 1038：The Z axis is not in the inner security zone when bad product
 1039：The Z axis setting is not in the inner security zone when bad product
 1040:The action of forward is not Z axis
@@ -293,6 +296,11 @@
 1163:horizontal limit is off after position change to horizon
 1164:Vertical limit is off after position change to verizon
 1165:Out of Security area when horizontal
+1170:Can not check the main upper limmit when position-2 changing
+1171:Can not check the sub upper limmit when position-2 changing
+1172:Mold-opened signal is off when position-2 changing
+1173:horizontal limit is off after position-2 change to horizon
+1174:Out of Security area when horizontal-2
 1180:Main upper limmit is off when air action Travel in and Travel out
 1181:Sub upper limmit is off when air action Travel in and Travel out
 1182:Travel in limmit is off after Travel in
@@ -307,6 +315,7 @@
 1191:Can not check the upper limmit when Travel in the dangerous zone in manual status
 1192:Current position is less than the moveabel security position
 1193:Current position is larger than the moveable security position
+1194:Y2 is not on the up pos
 1200:Clip1 signal off, Clip1 valve on.
 1201:Clip1 signal on, Clip1 valve off.
 1202:Clip2 signal off, Clip2 valve on.
@@ -319,6 +328,12 @@
 1209:Suck1 signal on, Suck1 valve off.
 1210:Suck2 signal off, Suck2 valve on.
 1211:Suck2 signal on, Suck2 valve off.
+1212:Clip7 signal off, Clip7 valve on.
+1213:Clip7 signal on, Clip7 valve off.
+1214:Clip8 signal off, Clip8 valve on.
+1215:Clip8 signal on, Clip8 valve off.
+1250:Can not check X037
+1251:Can not check X023
 1300:Please check Waiting Pose.
 1301:Please check Main up signal.
 1302:Please check Vice up signal.
@@ -339,3 +354,4 @@
 1400:Not all up signal on.
 1401:Currnt point and waiting point are not both inside
 1402:Currnt point and waiting point are not both outside
+1403:Can not check the Y2 up limit
