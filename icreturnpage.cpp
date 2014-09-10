@@ -64,7 +64,7 @@ void ICReturnPage::keyPressEvent(QKeyEvent *e)
     {
         QKeyEvent* ke = new QKeyEvent(*e);
         qApp->postEvent(this->parentWidget(), ke);
-        this->accept();
+//        this->accept();
     }
 }
 
@@ -76,7 +76,7 @@ void ICReturnPage::StatusRefresh()
         ui->label->setText(tr("Returnning"));
         isRan_ = true;
     }
-    else if(isReturn == 0 || ICVirtualHost::GlobalVirtualHost()->CurrentStatus() != ICVirtualHost::Return)
+    else if(ICVirtualHost::GlobalVirtualHost()->CurrentStatus() != ICVirtualHost::Return)
     {
         if(isRan_)
         {

@@ -80,7 +80,7 @@ void ICOriginDialog::keyPressEvent(QKeyEvent *e)
     {
         QKeyEvent* ke = new QKeyEvent(*e);
         qApp->postEvent(this->parentWidget(), ke);
-        this->accept();
+//        this->accept();
     }
 }
 
