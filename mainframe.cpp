@@ -511,8 +511,8 @@ void MainFrame::InitCategoryPage()
     centerStackedLayout_->addWidget(monitorPage_);
     emit LoadMessage("Monitor page has been loaded");
 
-    originExecutingPage_ = new ICOriginDialog();
-    returnExecutingPage_ = new ICReturnPage();
+    originExecutingPage_ = new ICOriginDialog(this);
+    returnExecutingPage_ = new ICReturnPage(this);
     //    centerStackedLayout_->addWidget(originExecutingPage_);
     emit LoadMessage("Origin page has been loaded");
 

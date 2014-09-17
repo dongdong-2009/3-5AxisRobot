@@ -52,7 +52,10 @@ void ICParametersSave::SaveParameter(const QString & group,const QString & key, 
     this->setValue(key,value);
     this->endGroup();
     if(issync)
+    {
         this->sync();
+        ::system("sync");
+    }
 }
 
 QVariant ICParametersSave::GetParameter(const QString & group,const QString & key,const QVariant & defaultValue)
