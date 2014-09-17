@@ -39,11 +39,18 @@ private slots:
 
     void on_autoProductGroupBox_toggled(bool arg1);
 
+    void OnProductMoldNameChanged(int index);
+//    void OnProductClearClicked();
+
 private:
     Ui::ICHCProductSettingFrame *ui;
     QList<ICLineEditWrapper*> wrappers_;
     QButtonGroup* buttongroup_ ;
     void InitCheckBox();
+
+    QWidgetList mboxs_;
+    QWidgetList pcEdits_;
+    QWidgetList clearButtons_;
 };
 
 #endif // ICHCPRODUCTSETTINGFRAME_H

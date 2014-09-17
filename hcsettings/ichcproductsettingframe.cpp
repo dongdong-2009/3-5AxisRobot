@@ -70,6 +70,23 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
             this,
             SLOT(OnMoldNumberParamChanged()));
     ui->countUnitBox->setCurrentIndex(ICMold::CurrentMold()->MoldParam(ICMold::CountUnit));
+
+    mboxs_<<ui->mBox_1<<ui->mBox_2<<ui->mBox_3<<ui->mBox_4<<ui->mBox_5<<ui->mBox_6<<ui->mBox_7
+            <<ui->mBox_8<<ui->mBox_9<<ui->mBox_10<<ui->mBox_11<<ui->mBox_12;
+
+    pcEdits_<<ui->pc_1<<ui->pc_2<<ui->pc_3<<ui->pc_4<<ui->pc_5<<ui->pc_6<<ui->pc_7
+            <<ui->pc_8<<ui->pc_9<<ui->pc_10<<ui->pc_11<<ui->pc_12;
+
+    clearButtons_<<ui->clear_1<<ui->clear_2<<ui->clear_3<<ui->clear_4<<ui->clear_5<<ui->clear_6<<ui->clear_7
+            <<ui->clear_8<<ui->clear_9<<ui->clear_10<<ui->clear_11<<ui->clear_12;
+
+    for(int i = 0 ; i != mboxs_.size(); ++i)
+    {
+        connect(mboxs_.at(i),
+                SIGNAL(currentIndexChanged(int)),
+                SLOT(OnProductMoldNameChanged(int)));
+    }
+
 }
 
 ICHCProductSettingFrame::~ICHCProductSettingFrame()
@@ -142,24 +159,39 @@ void ICHCProductSettingFrame::showEvent(QShowEvent *e)
 {
     QStringList items = MoldInformation::Instance()->MoldNameList();
     items.prepend(tr("None"));
-    ui->mBox_1->clear();
-    ui->mBox_1->addItems(items);
-    ui->mBox_2->clear();
-    ui->mBox_2->addItems(items);
-    ui->mBox_3->clear();
-    ui->mBox_3->addItems(items);
-    ui->mBox_4->clear();
-    ui->mBox_4->addItems(items);
-    ui->mBox_5->clear();
-    ui->mBox_5->addItems(items);
-    ui->mBox_6->clear();
-    ui->mBox_6->addItems(items);
-    ui->mBox_7->clear();
-    ui->mBox_7->addItems(items);
-    ui->mBox_8->clear();
-    ui->mBox_8->addItems(items);
+    QComboBox* tmp;
+    for(int i = 0 ; i != mboxs_.size(); ++i)
+    {
+        tmp = qobject_cast<QComboBox*>(mboxs_[i]);
+        tmp->clear();
+        tmp->addItems(items);
+    }
+//    ui->mBox_1->clear();
+//    ui->mBox_1->addItems(items);
+//    ui->mBox_2->clear();
+//    ui->mBox_2->addItems(items);
+//    ui->mBox_3->clear();
+//    ui->mBox_3->addItems(items);
+//    ui->mBox_4->clear();
+//    ui->mBox_4->addItems(items);
+//    ui->mBox_5->clear();
+//    ui->mBox_5->addItems(items);
+//    ui->mBox_6->clear();
+//    ui->mBox_6->addItems(items);
+//    ui->mBox_7->clear();
+//    ui->mBox_7->addItems(items);
+//    ui->mBox_8->clear();
+//    ui->mBox_8->addItems(items);
+//    ui->mBox_9->clear();
+//    ui->mBox_9->addItems(items);
+//    ui->mBox_10->clear();
+//    ui->mBox_10->addItems(items);
+//    ui->mBox_11->clear();
+//    ui->mBox_11->addItems(items);
+//    ui->mBox_12->clear();
+//    ui->mBox_12->addItems(items);
     QStringList autoProductList = ICParametersSave::Instance()->AutoMoldList();
-    int toPad = (8 - autoProductList.size());
+    int toPad = (mboxs_.size() - autoProductList.size());
     for(int i = 0; i < toPad; ++i)
     {
         autoProductList.append("");
@@ -172,6 +204,10 @@ void ICHCProductSettingFrame::showEvent(QShowEvent *e)
     ui->mBox_6->setCurrentIndex(ui->mBox_6->findText(autoProductList.at(5)));
     ui->mBox_7->setCurrentIndex(ui->mBox_7->findText(autoProductList.at(6)));
     ui->mBox_8->setCurrentIndex(ui->mBox_8->findText(autoProductList.at(7)));
+    ui->mBox_9->setCurrentIndex(ui->mBox_9->findText(autoProductList.at(8)));
+    ui->mBox_10->setCurrentIndex(ui->mBox_10->findText(autoProductList.at(9)));
+    ui->mBox_11->setCurrentIndex(ui->mBox_11->findText(autoProductList.at(10)));
+    ui->mBox_12->setCurrentIndex(ui->mBox_12->findText(autoProductList.at(11)));
     ui->autoProductGroupBox->blockSignals(true);
     ui->autoProductGroupBox->setChecked(ICParametersSave::Instance()->IsAutoProductEnabled());
     ui->autoProductGroupBox->blockSignals(false);
@@ -275,4 +311,24 @@ void ICHCProductSettingFrame::on_saveButton_clicked()
 void ICHCProductSettingFrame::on_autoProductGroupBox_toggled(bool arg1)
 {
     ICParametersSave::Instance()->SetAutoProductEnable(arg1);
+}
+
+void ICHCProductSettingFrame::OnProductMoldNameChanged(int index)
+{
+//    qDebug()<<text;
+    if(index == 0) return;
+    QComboBox* w = qobject_cast<QComboBox*>(sender());
+    ICMold mold;
+    if(!mold.ReadMoldFile(w->currentText() + ".act")) return;
+    int row = 0;
+    for(int i = 0; i != mboxs_.size(); ++i)
+    {
+        if(w == mboxs_.at(i))
+        {
+            row = i;
+            break;
+        }
+    }
+    ICLineEditWithVirtualNumericKeypad *e = qobject_cast<ICLineEditWithVirtualNumericKeypad*>(pcEdits_.at(row));
+    e->SetThisIntToThisText(mold.MoldParam(ICMold::Product));
 }

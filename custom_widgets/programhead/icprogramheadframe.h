@@ -33,8 +33,8 @@ public:
     QTimer restTime_;
     void SetCurrentLevel(int level);
 
-    void StartAutoTime(){if(!autoTime_.isActive()) autoTime_.start(60000);}
-    void StopAutoTime(){autoMin_ = 0; autoTime_.stop(); UpdateAutoTime();}
+    void StartAutoTime(){/*if(!autoTime_.isActive()) autoTime_.start(60000);*/}
+    void StopAutoTime(){/*autoMin_ = 0; autoTime_.stop(); UpdateAutoTime();*/}
 
 Q_SIGNALS:
     void LevelChanged(int);

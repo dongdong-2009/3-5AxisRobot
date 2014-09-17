@@ -31,6 +31,8 @@ ICProgramHeadFrame::ICProgramHeadFrame(QWidget *parent) :
         ui->restTimeLabel->clear();
     }
     ui->restTimeLabel->hide();
+    autoTime_.start(60000);
+    UpdateAutoTime();
 }
 
 ICProgramHeadFrame::~ICProgramHeadFrame()
@@ -82,7 +84,7 @@ void ICProgramHeadFrame::UpdateDateTime()
 
 void ICProgramHeadFrame::UpdateAutoTime()
 {
-    ui->autoTimeLabel->setText(QString(tr("%1 h")).arg(autoMin_ / qreal(60), 0, 'g', 1));
+    ui->autoTimeLabel->setText(QString(tr("%1 h %2 m")).arg(autoMin_ / 60).arg(autoMin_ % 60));
     ++autoMin_;
 }
 
