@@ -23,13 +23,6 @@
    <item>
     <layout class="QVBoxLayout" name="verticalLayout_3">
      <item>
-      <widget class="QLabel" name="currentPageLabel">
-       <property name="text">
-        <string>Current page</string>
-       </property>
-      </widget>
-     </item>
-     <item>
       <layout class="QVBoxLayout" name="verticalLayout">
        <property name="spacing">
         <number>25</number>
@@ -44,13 +37,13 @@
          </property>
          <property name="minimumSize">
           <size>
-           <width>80</width>
+           <width>84</width>
            <height>48</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>80</width>
+           <width>84</width>
            <height>48</height>
           </size>
          </property>
@@ -785,10 +778,10 @@
  <resources/>
  <connections/>
  <buttongroups>
+  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroup_3"/>
   <buttongroup name="buttonGroup_4"/>
   <buttongroup name="buttonGroup_5"/>
-  <buttongroup name="buttonGroup"/>
-  <buttongroup name="buttonGroup_2"/>
  </buttongroups>
 </ui>

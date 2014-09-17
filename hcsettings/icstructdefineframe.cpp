@@ -260,11 +260,11 @@ void ICStructDefineFrame::retranslateUi_()
     ui->label->setText(tr("1"));
     ui->servoFlex->setItemText(0, tr("0-soft"));
     ui->servoFlex->setItemText(1, "1");
-    ui->servoFlex->setItemText(2, "1");
-    ui->servoFlex->setItemText(3, "1");
-    ui->servoFlex->setItemText(4, "1");
-    ui->servoFlex->setItemText(5, "1");
-    ui->servoFlex->setItemText(6, "1");
+    ui->servoFlex->setItemText(2, "2");
+    ui->servoFlex->setItemText(3, "3");
+    ui->servoFlex->setItemText(4, "4");
+    ui->servoFlex->setItemText(5, "5");
+    ui->servoFlex->setItemText(6, "6");
     ui->servoFlex->setItemText(7, tr("7-hard"));
 
 
