@@ -140,9 +140,9 @@ void HCManualFixtureFrame::StatusRefreshed()
     static QPixmap on(":/resource/ledgreen(16).png");
     static QPixmap inOn(":/resource/ledred(16).png");
     static ICVirtualHost *host = ICVirtualHost::GlobalVirtualHost();
-    for(int i = 0; i != fixtureInLabels.size(); ++i)
+    for(int i = 0; i != fixtureInLabels.size() - 1; ++i)
     {
-        if(host->IsInputOn(15 + i))
+        if(host->IsInputOn(3 + i))
         {
             if(!clips_.at(i))
             {
@@ -160,9 +160,9 @@ void HCManualFixtureFrame::StatusRefreshed()
         }
     }
 
-    for(int i = 0; i != fixtureOutLabels.size(); ++i)
+    for(int i = 0; i != fixtureOutLabels.size() - 1; ++i)
     {
-        if(host->IsOutputOn(15 + i))
+        if(host->IsOutputOn(3 + i))
         {
             if(!clips_.at(i + fixtureOutLabels.size()))
             {
@@ -178,6 +178,24 @@ void HCManualFixtureFrame::StatusRefreshed()
                 fixtureOutLabels[i]->setPixmap(off);
             }
         }
+    }
+
+    if(host->IsInputOn(22))
+    {
+        ui->sc3In->setPixmap(inOn);
+    }
+    else
+    {
+        ui->sc3In->setPixmap(off);
+    }
+
+    if(host->IsOutputOn(22))
+    {
+        ui->sc3Out->setPixmap(on);
+    }
+    else
+    {
+        ui->sc3Out->setPixmap(off);
     }
 
 }

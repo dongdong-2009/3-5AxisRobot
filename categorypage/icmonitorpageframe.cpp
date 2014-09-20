@@ -56,16 +56,16 @@ void ICMonitorPageFrame::Init_()
     points.append(ICIOPoint("X024", tr("Sub clear-1"), 12));
     points.append(ICIOPoint("X025", tr("Sub clear-2"), 13));
 //    points.append(ICIOPoint("X026", tr("Reserve"), 14));
-    points.append(ICIOPoint("X026", tr("Sub clear-3"), 14));
-    points.append(ICIOPoint("X027", tr("Reserve-1"), 15));
+    points.append(ICIOPoint("X026", tr("X026"), 14));
+    points.append(ICIOPoint("X027", tr("Watch Dog"), 15));
 
-    points.append(ICIOPoint("X030", tr("Reserve-2"), 16));
-    points.append(ICIOPoint("X031", tr("Reserve-3"), 17));
-    points.append(ICIOPoint("X032", tr("Reserve-4"), 18));
-    points.append(ICIOPoint("X033", tr("Reserve-5"), 19));
-    points.append(ICIOPoint("X034", tr("Reserve-6"), 20));
-    points.append(ICIOPoint("X035", tr("X035"), 21));
-    points.append(ICIOPoint("X036", tr("X036"), 22));
+    points.append(ICIOPoint("X030", tr("Reserve-1"), 16));
+    points.append(ICIOPoint("X031", tr("Reserve-2"), 17));
+    points.append(ICIOPoint("X032", tr("Reserve-3"), 18));
+    points.append(ICIOPoint("X033", tr("Reserve-4"), 19));
+    points.append(ICIOPoint("X034", tr("Reserve-5"), 20));
+    points.append(ICIOPoint("X035", tr("Reserve-6"), 21));
+    points.append(ICIOPoint("X036", tr("Sub clear-3"), 22));
     points.append(ICIOPoint("X037", tr("X037"), 23));
 
     points.append(ICIOPoint("X040", tr("X1 Origin"), 24));
@@ -106,16 +106,16 @@ void ICMonitorPageFrame::Init_()
     points.append(ICIOPoint("Y023", tr("Main Clear-3 Valve"), 11));//备用输出2
     points.append(ICIOPoint("Y024", tr("Sub Clear-1 Valve"), 12));
     points.append(ICIOPoint("Y025", tr("Sub Clear-2 Valve"), 13));
-    points.append(ICIOPoint("Y026", tr("Sub Clear-3 Valve"), 14));
-    points.append(ICIOPoint("Y027", tr("Reserve-1 Valve"), 15));
+    points.append(ICIOPoint("Y026", tr("Y026"), 14));
+    points.append(ICIOPoint("Y027", tr("Watch Dog"), 15));
 
-    points.append(ICIOPoint("Y030", tr("Reserve-2 Valve"), 16));
-    points.append(ICIOPoint("Y031", tr("Reserve-3 Valve"), 17));
-    points.append(ICIOPoint("Y032", tr("Reserve-4 Valve"), 18));
-    points.append(ICIOPoint("Y033", tr("Reserve-5 Valve"), 19));
-    points.append(ICIOPoint("Y034", tr("Reserve-6 Valve"), 20));
-    points.append(ICIOPoint("Y035", tr("Y035"), 21));//4
-    points.append(ICIOPoint("Y036", tr("Y036"), 22));//3
+    points.append(ICIOPoint("Y030", tr("Reserve-1 Valve"), 16));
+    points.append(ICIOPoint("Y031", tr("Reserve-2 Valve"), 17));
+    points.append(ICIOPoint("Y032", tr("Reserve-3 Valve"), 18));
+    points.append(ICIOPoint("Y033", tr("Reserve-4 Valve"), 19));
+    points.append(ICIOPoint("Y034", tr("Reserve-5 Valve"), 20));
+    points.append(ICIOPoint("Y035", tr("Reserve-6"), 21));//4
+    points.append(ICIOPoint("Y036", tr("Sub Clear-3 Valve"), 22));//3
     points.append(ICIOPoint("Y037", tr("Y037"), 23));
 
     points.append(ICIOPoint("Y040", tr("Y040"), 24));

@@ -60,23 +60,30 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
 
         if(action == ACT_Cut)
         {
-            if(moldItem.SVal() < 4)
+            if(moldItem.SVal() < 3)
             {
-                commandStr += tr("Fixture");
+                commandStr += tr("MS");
                 commandStr += QString::number(moldItem.SVal() + 1);
             }
             else if(moldItem.SVal() < 6)
             {
-                commandStr += tr("Sucker");
-                commandStr += QString::number(moldItem.SVal() - 3);
+                commandStr += tr("SS");
+                commandStr += QString::number(moldItem.SVal() - 2);
             }
-            else if(moldItem.SVal() == 6)
+            else if(moldItem.SVal() < 9)
             {
-                commandStr += tr("X037");
+                commandStr += tr("MC");
+                commandStr += QString::number(moldItem.SVal() - 5);
+            }
+            else if(moldItem.SVal() < 12)
+            {
+                commandStr += tr("SC");
+                commandStr += QString::number(moldItem.SVal() - 8);
             }
             else
             {
-                commandStr += tr("X023");
+                commandStr += tr("Reserve");
+                commandStr += QString::number(moldItem.SVal() - 11);
             }
 //            commandStr += tr("Fixture");
 //            commandStr += QString::number(moldItem.SVal() + 1);

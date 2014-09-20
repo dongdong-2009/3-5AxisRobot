@@ -98,7 +98,7 @@ void HCManualReservePage::StatusRefreshed()
     static ICVirtualHost *host = ICVirtualHost::GlobalVirtualHost();
     for(int i = 0; i != inLabels.size(); ++i)
     {
-        if(host->IsInputOn(3 + i))
+        if(host->IsInputOn(16 + i))
         {
             if(!clips_.at(i))
             {
@@ -118,7 +118,7 @@ void HCManualReservePage::StatusRefreshed()
 
     for(int i = 0; i != outLabels.size(); ++i)
     {
-        if(host->IsOutputOn(3 + i))
+        if(host->IsOutputOn(16 + i))
         {
             if(!clips_.at(i + inLabels.size()))
             {

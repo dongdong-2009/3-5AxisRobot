@@ -17,8 +17,10 @@ ICCutPage::ICCutPage(QWidget *parent) :
     QPushButton * button;
 //    ICLineEditWithVirtualNumericKeypad* delays = new ICLineEditWithVirtualNumericKeypad[ui->tableWidget->rowCount()];
 //    ICLineEditWithVirtualNumericKeypad *delayEdit;
-    ioNames_<<tr("Fixture1  ")<<tr("Fixture2  ")<<tr("Fixture3  ")<<tr("Fixture4  ")
-           <<tr("Sucker1   ")<<tr("Sucker2   ")<<tr("X037  ")<<tr("X023  ");
+    ioNames_<<tr("MS1 CHK")<<tr("MS2 CHK")<<tr("MS3 CHK")<<tr("SS1 CHK")
+           <<tr("SS2 CHK")<<tr("SS3 CHK")<<tr("MC1 CHK")<<tr("MC2 CHK")<<tr("MC3 CHK")
+             <<tr("SC1 CHK")<<tr("SC2 CHK")<<tr("SC3 CHK")<<tr("Reserve1 CHK")<<tr("Reserve2 CHK")
+            <<tr("Reserve3 CHK")<<tr("Reserve4 CHK")<<tr("Reserve5 CHK")<<tr("Reserve6 CHK");
     onClipToOffClip_.insert(ICMold::ACTCLIP1ON, ICMold::ACTCLIP1OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP2ON, ICMold::ACTCLIP2OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP3ON, ICMold::ACTCLIP3OFF);
@@ -27,6 +29,17 @@ ICCutPage::ICCutPage(QWidget *parent) :
     onClipToOffClip_.insert(ICMold::ACTCLIP6ON, ICMold::ACTCLIP6OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP7ON, ICMold::ACTCLIP7OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP8ON, ICMold::ACTCLIP8OFF);
+    onClipToOffClip_.insert(1000, 2000);
+    onClipToOffClip_.insert(1001, 2001);
+    onClipToOffClip_.insert(1002, 2002);
+    onClipToOffClip_.insert(1003, 2003);
+    onClipToOffClip_.insert(1004, 2004);
+    onClipToOffClip_.insert(1005, 2005);
+    onClipToOffClip_.insert(1006, 2006);
+    onClipToOffClip_.insert(1007, 2007);
+    onClipToOffClip_.insert(1008, 2008);
+    onClipToOffClip_.insert(1009, 2009);
+
     offClipToOnClip_.insert(ICMold::ACTCLIP1OFF, ICMold::ACTCLIP1ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP2OFF, ICMold::ACTCLIP2ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP3OFF, ICMold::ACTCLIP3ON);
@@ -35,6 +48,16 @@ ICCutPage::ICCutPage(QWidget *parent) :
     offClipToOnClip_.insert(ICMold::ACTCLIP6OFF, ICMold::ACTCLIP6ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP7OFF, ICMold::ACTCLIP7ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP8OFF, ICMold::ACTCLIP8ON);
+    offClipToOnClip_.insert(2000, 1000);
+    offClipToOnClip_.insert(2001, 1001);
+    offClipToOnClip_.insert(2002, 1002);
+    offClipToOnClip_.insert(2003, 1003);
+    offClipToOnClip_.insert(2004, 1004);
+    offClipToOnClip_.insert(2005, 1005);
+    offClipToOnClip_.insert(2006, 1006);
+    offClipToOnClip_.insert(2007, 1007);
+    offClipToOnClip_.insert(2008, 1008);
+    offClipToOnClip_.insert(2009, 1009);
     QList<uint> initStatus = onClipToOffClip_.values();
 //    QIntValidator *validator = new QIntValidator(0, 2000, this);
     for(int i = 0; i != ui->tableWidget->rowCount(); ++i)
@@ -110,8 +133,10 @@ void ICCutPage::changeEvent(QEvent *e)
     case QEvent::LanguageChange:
         ui->retranslateUi(this);
         ioNames_.clear();
-        ioNames_<<tr("Fixture1  ")<<tr("Fixture2  ")<<tr("Fixture3  ")<<tr("Fixture4  ")
-               <<tr("Sucker1   ")<<tr("Sucker2   ")<<tr("X037  ")<<tr("X023  ");
+        ioNames_<<tr("MS1 CHK")<<tr("MS2 CHK")<<tr("MS3 CHK")<<tr("SS1 CHK")
+               <<tr("SS2 CHK")<<tr("SS3 CHK")<<tr("MC1 CHK")<<tr("MC2 CHK")<<tr("MC3 CHK")
+                 <<tr("SC1 CHK")<<tr("SC2 CHK")<<tr("SC3 CHK")<<tr("Reserve1 CHK")<<tr("Reserve2 CHK")
+                <<tr("Reserve3 CHK")<<tr("Reserve4 CHK")<<tr("Reserve5 CHK")<<tr("Reserve6 CHK");
         for(int i = 0; i != settingButtons_.size(); ++i)
         {
             settingButtons_[i]->setText(ioNames_.at(i));

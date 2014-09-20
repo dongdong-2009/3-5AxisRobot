@@ -107,42 +107,92 @@ QRadioButton::indicator:unchecked:disabled
      </attribute>
      <row>
       <property name="text">
-       <string>Fixture1</string>
+       <string>MS1 CHK</string>
       </property>
      </row>
      <row>
       <property name="text">
-       <string>Fixture2</string>
+       <string>MS2 CHK</string>
       </property>
      </row>
      <row>
       <property name="text">
-       <string>Fixture3</string>
+       <string>MS3 CHK</string>
       </property>
      </row>
      <row>
       <property name="text">
-       <string>Fixture4</string>
+       <string>SS1 CHK</string>
       </property>
      </row>
      <row>
       <property name="text">
-       <string>Sucker1</string>
+       <string>SS2 CHK</string>
       </property>
      </row>
      <row>
       <property name="text">
-       <string>Sucker2</string>
+       <string>SS3 CHK</string>
       </property>
      </row>
      <row>
       <property name="text">
-       <string>X037</string>
+       <string>MC1 CHK</string>
       </property>
      </row>
      <row>
       <property name="text">
-       <string>X023</string>
+       <string>MC2 CHK</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>MC3 CHK</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>SC1 CHK</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>SC2 CHK</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>SC3 CHK</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>R-1 CHK</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>R-2 CHK</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>R-3 CHK</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>R-4 CHK</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>R-5 CHK</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>R-6 CHK</string>
       </property>
      </row>
      <column>
@@ -254,6 +304,56 @@ QRadioButton::indicator:unchecked:disabled
       <property name="text">
        <string/>
       </property>
+      <property name="checkState">
+       <enum>Unchecked</enum>
+      </property>
+     </item>
+     <item row="8" column="0">
+      <property name="checkState">
+       <enum>Unchecked</enum>
+      </property>
+     </item>
+     <item row="9" column="0">
+      <property name="checkState">
+       <enum>Unchecked</enum>
+      </property>
+     </item>
+     <item row="10" column="0">
+      <property name="checkState">
+       <enum>Unchecked</enum>
+      </property>
+     </item>
+     <item row="11" column="0">
+      <property name="checkState">
+       <enum>Unchecked</enum>
+      </property>
+     </item>
+     <item row="12" column="0">
+      <property name="checkState">
+       <enum>Unchecked</enum>
+      </property>
+     </item>
+     <item row="13" column="0">
+      <property name="checkState">
+       <enum>Unchecked</enum>
+      </property>
+     </item>
+     <item row="14" column="0">
+      <property name="checkState">
+       <enum>Unchecked</enum>
+      </property>
+     </item>
+     <item row="15" column="0">
+      <property name="checkState">
+       <enum>Unchecked</enum>
+      </property>
+     </item>
+     <item row="16" column="0">
+      <property name="checkState">
+       <enum>Unchecked</enum>
+      </property>
+     </item>
+     <item row="17" column="0">
       <property name="checkState">
        <enum>Unchecked</enum>
       </property>
