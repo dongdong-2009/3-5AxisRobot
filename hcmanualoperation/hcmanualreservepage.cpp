@@ -4,18 +4,21 @@
 #include "iccommandkeywrapper.h"
 #include "icvirtualhost.h"
 
+QList<QLabel*> inLabels;
+QList<QLabel*> outLabels;
+
 HCManualReservePage::HCManualReservePage(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::HCManualReservePage),
-    clips_(6, false)
+    clips_(32, false)
 {
     ui->setupUi(this);
-    ui->reserve1InLabel->hide();
-    ui->reserve2InLabel->hide();
-    ui->reserve3InLabel->hide();
-    ui->reserve4InLabel->hide();
-    ui->reserve5InLabel->hide();
-    ui->reserve6InLabel->hide();
+//    ui->reserve1InLabel->hide();
+//    ui->reserve2InLabel->hide();
+//    ui->reserve3InLabel->hide();
+//    ui->reserve4InLabel->hide();
+//    ui->reserve5InLabel->hide();
+//    ui->reserve6InLabel->hide();
     ICCommandKeyWrapper *wrapper;
     wrapper = new ICCommandKeyWrapper(ui->connectReserve1ToolButton, IC::VKEY_RESERVE1_ON);
     wrappers_.append(wrapper);
@@ -42,6 +45,12 @@ HCManualReservePage::HCManualReservePage(QWidget *parent) :
     wrappers_.append(wrapper);
     wrapper = new ICCommandKeyWrapper(ui->disconnectReserve6ToolButton, IC::VKEY_RESERVE6_OFF);
     wrappers_.append(wrapper);
+
+    inLabels<<ui->reserve1InLabel<<ui->reserve2InLabel<<ui->reserve3InLabel
+              <<ui->reserve4InLabel<<ui->reserve5InLabel<<ui->reserve6InLabel;
+
+    outLabels<<ui->reserve1StatusLabel<<ui->reserve2StatusLabel<<ui->reserve3StatusLabel
+               <<ui->reserve4StatusLabel<<ui->reserve5StatusLabel<<ui->reserve6StatusLabel;
 
 }
 
@@ -87,124 +96,45 @@ void HCManualReservePage::StatusRefreshed()
     static QPixmap on(":/resource/ledgreen(16).png");
     static QPixmap inOn(":/resource/ledred(16).png");
     static ICVirtualHost *host = ICVirtualHost::GlobalVirtualHost();
-    if(host->PeripheryOutput(0) == 1)
+    for(int i = 0; i != inLabels.size(); ++i)
     {
-        if(host->IsOutputOn(7))
+        if(host->IsInputOn(3 + i))
         {
-            if(!clips_.at(0))
+            if(!clips_.at(i))
             {
-                clips_.setBit(0);
-                ui->reserve1StatusLabel->setPixmap(on);
+                clips_.setBit(i);
+                inLabels[i]->setPixmap(inOn);
             }
         }
         else
         {
-            if(clips_.at(0))
+            if(clips_.at(i))
             {
-                clips_.clearBit(0);
-                ui->reserve1StatusLabel->setPixmap(off);
+                clips_.clearBit(i);
+                inLabels[i]->setPixmap(off);
             }
         }
     }
 
-    if(host->PeripheryOutput(1) == 1)
+    for(int i = 0; i != outLabels.size(); ++i)
     {
-        if(host->IsOutputOn(10))
+        if(host->IsOutputOn(3 + i))
         {
-            if(!clips_.at(1))
+            if(!clips_.at(i + inLabels.size()))
             {
-                clips_.setBit(1);
-                ui->reserve2StatusLabel->setPixmap(on);
+                clips_.setBit(i + inLabels.size());
+                outLabels[i]->setPixmap(on);
             }
         }
         else
         {
-            if(clips_.at(1))
+            if(clips_.at(i + inLabels.size()))
             {
-                clips_.clearBit(1);
-                ui->reserve2StatusLabel->setPixmap(off);
+                clips_.clearBit(i + inLabels.size());
+                outLabels[i]->setPixmap(off);
             }
         }
     }
 
-    if(host->PeripheryOutput(2) == 1)
-    {
-        if(host->IsOutputOn(17))
-        {
-            if(!clips_.at(2))
-            {
-                clips_.setBit(2);
-                ui->reserve3StatusLabel->setPixmap(on);
-            }
-        }
-        else
-        {
-            if(clips_.at(2))
-            {
-                clips_.clearBit(2);
-                ui->reserve3StatusLabel->setPixmap(off);
-            }
-        }
-    }
-
-    if(host->PeripheryOutput(3) == 1)
-    {
-        if(host->IsOutputOn(18))
-        {
-            if(!clips_.at(3))
-            {
-                clips_.setBit(3);
-                ui->reserve4StatusLabel->setPixmap(on);
-            }
-        }
-        else
-        {
-            if(clips_.at(3))
-            {
-                clips_.clearBit(3);
-                ui->reserve4StatusLabel->setPixmap(off);
-            }
-        }
-    }
-
-    if(host->PeripheryOutput(4) == 1)
-    {
-        if(host->IsOutputOn(21))
-        {
-            if(!clips_.at(4))
-            {
-                clips_.setBit(4);
-                ui->reserve5StatusLabel->setPixmap(on);
-            }
-        }
-        else
-        {
-            if(clips_.at(4))
-            {
-                clips_.clearBit(4);
-                ui->reserve5StatusLabel->setPixmap(off);
-            }
-        }
-    }
-
-    if(host->PeripheryOutput(5) == 1)
-    {
-        if(host->IsOutputOn(22))
-        {
-            if(!clips_.at(5))
-            {
-                clips_.setBit(5);
-                ui->reserve6StatusLabel->setPixmap(on);
-            }
-        }
-        else
-        {
-            if(clips_.at(5))
-            {
-                clips_.clearBit(5);
-                ui->reserve6StatusLabel->setPixmap(off);
-            }
-        }
-    }
 
 }

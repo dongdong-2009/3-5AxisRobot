@@ -797,11 +797,11 @@ inline bool ICVirtualHost::IsInputOn(int pos) const
         uint temp = 1 << (pos - 32);
         return euInputBits_ & temp;
     }
-    else if(pos < 64)
-    {
-        uint temp = 1 << (pos - 40);
-        return output1Bits_ & temp;
-    }
+//    else if(pos < 64)
+//    {
+//        uint temp = 1 << (pos - 40);
+//        return output1Bits_ & temp;
+//    }
     return false;
 }
 

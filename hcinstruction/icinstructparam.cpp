@@ -320,6 +320,28 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             commandStr += QObject::tr("Times:") + QString::number(moldItem.ActualMoldCount()) + " ";
             commandStr += " ";
         }
+        else if(action == ICMold::ACTCLIP1ON ||
+                action == ICMold::ACTCLIP2ON ||
+                action == ICMold::ACTCLIP3ON ||
+                action == ICMold::ACTCLIP4ON ||
+                action == ICMold::ACTCLIP5ON ||
+                action == ICMold::ACTCLIP6ON ||
+                action == ICMold::ACTCLIP1OFF ||
+                action == ICMold::ACTCLIP2OFF ||
+                action == ICMold::ACTCLIP3OFF ||
+                action == ICMold::ACTCLIP4OFF ||
+                action == ICMold::ACTCLIP5OFF ||
+                action == ICMold::ACTCLIP6OFF  )
+        {
+            if(moldItem.IFVal() == 0)
+            {
+                commandStr += QObject::tr("Off") + " ";
+            }
+            else
+            {
+                commandStr += QObject::tr("On") + " ";
+            }
+        }
 //        else if(action == ICMold::ACT_AUX1)
 //        {
 //            if(moldItem.Num() == 0)
@@ -401,12 +423,12 @@ void ICInstructParam::InstallMoldInfo()
     actionGroupMap_.insert(ACT_Cut, QObject::tr("Cut"));
     actionGroupMap_.insert(ACT_OTHER, QObject::tr("Other"));
 
-    clipGroupMap_[ACTCLIP1ON] = QObject::tr("Clip1 ON");
-    clipGroupMap_[ACTCLIP2ON] = QObject::tr("Clip2 ON");
-    clipGroupMap_[ACTCLIP3ON] = QObject::tr("Clip3 ON");
-    clipGroupMap_[ACTCLIP4ON] = QObject::tr("Clip4 ON");
-    clipGroupMap_[ACTCLIP5ON] = QObject::tr("Sucker1 ON");
-    clipGroupMap_[ACTCLIP6ON] = QObject::tr("Sucker2 ON");
+    clipGroupMap_[ACTCLIP1ON] = QObject::tr("MS1");
+    clipGroupMap_[ACTCLIP2ON] = QObject::tr("MS2");
+    clipGroupMap_[ACTCLIP3ON] = QObject::tr("MS3");
+    clipGroupMap_[ACTCLIP4ON] = QObject::tr("SS1");
+    clipGroupMap_[ACTCLIP5ON] = QObject::tr("SS2");
+    clipGroupMap_[ACTCLIP6ON] = QObject::tr("SS3");
     clipGroupMap_[ACTCLIP7ON] = QObject::tr("Injection ON");
     clipGroupMap_[ACTCLIP8ON] = QObject::tr("Conveyor ON");
     clipGroupMap_[ACTCLSMDON] = QObject::tr("Lock Mold ON");
@@ -419,12 +441,12 @@ void ICInstructParam::InstallMoldInfo()
 //    clipGroupMap_[ACTCLIP14ON] = QObject::tr("Clip14 ON");
 //    clipGroupMap_[ACTCLIP15ON] = QObject::tr("Clip15 ON");
 //    clipGroupMap_[ACTCLIP16ON] = QObject::tr("Clip16 ON");
-    clipGroupMap_[ACTCLIP1OFF] = QObject::tr("Clip1 OFF");
-    clipGroupMap_[ACTCLIP2OFF] = QObject::tr("Clip2 OFF");
-    clipGroupMap_[ACTCLIP3OFF] = QObject::tr("Clip3 OFF");
-    clipGroupMap_[ACTCLIP4OFF] = QObject::tr("Clip4 OFF");
-    clipGroupMap_[ACTCLIP5OFF] = QObject::tr("Sucker1 OFF");
-    clipGroupMap_[ACTCLIP6OFF] = QObject::tr("Sucker2 OFF");
+    clipGroupMap_[ACTCLIP1OFF] = QObject::tr("MC1");
+    clipGroupMap_[ACTCLIP2OFF] = QObject::tr("MC2");
+    clipGroupMap_[ACTCLIP3OFF] = QObject::tr("MC3");
+    clipGroupMap_[ACTCLIP4OFF] = QObject::tr("SC1");
+    clipGroupMap_[ACTCLIP5OFF] = QObject::tr("SC2");
+    clipGroupMap_[ACTCLIP6OFF] = QObject::tr("SC3");
     clipGroupMap_[ACTCLIP7OFF] = QObject::tr("Injection OFF");
     clipGroupMap_[ACTCLIP8OFF] = QObject::tr("Conveyor OFF");
     clipGroupMap_[ACTCLSMDOFF] = QObject::tr("Lock Mold OFF");

@@ -66,6 +66,16 @@ ICHCProgramMonitorFrame::ICHCProgramMonitorFrame(QWidget *parent) :
             this,
             SLOT(LevelChanged(int)));
     LevelChanged(ICProgramHeadFrame::Instance()->CurrentLevel());
+    productSetinggEdits_ <<ui->pc_1<<ui->pc_2<<ui->pc_3<<ui->pc_4<<ui->pc_5
+                           <<ui->pc_6<<ui->pc_7<<ui->pc_8<<ui->pc_9<<ui->pc_10
+                             <<ui->pc_11<<ui->pc_12;
+    pls_<<ui->pl_1<<ui->pl_2<<ui->pl_3<<ui->pl_4<<ui->pl_5<<ui->pl_6<<ui->pl_7
+          <<ui->pl_8<<ui->pl_9<<ui->pl_10<<ui->pl_11<<ui->pl_12;
+    for(int i = 0; i != pls_.size(); ++i)
+    {
+        pls_.at(i)->setText(QString(tr("%1:Wating")).arg(i + 1));
+    }
+    pls_.at(runningMold_)->setText(QString(tr("%1:Running")).arg(runningMold_ + 1));
 }
 
 ICHCProgramMonitorFrame::~ICHCProgramMonitorFrame()
@@ -190,6 +200,16 @@ void ICHCProgramMonitorFrame::showEvent(QShowEvent *e)
     //            ICVirtualHost::GlobalVirtualHost()->SetFixtureCheck(false);
     //        }
     //    }
+    QStringList autoProductList = ICParametersSave::Instance()->AutoMoldList();
+    ICMold mold;
+    for(int i = 0; i != autoProductList.size(); ++i)
+    {
+        if(mold.ReadMoldFile(QString("./records/%1.act").arg(autoProductList.at(i))))
+        {
+            productSetinggEdits_[i]->SetThisIntToThisText(mold.MoldParam(ICMold::Product));
+        }
+
+    }
 }
 
 
@@ -206,9 +226,9 @@ void ICHCProgramMonitorFrame::hideEvent(QHideEvent *e)
         ICMold::CurrentMold()->SaveMoldFile();
 //        isModify_ = false;
         if(ICKeyboard::Instace()->CurrentSwitchStatus() != ICKeyboard::KS_AutoStatu)
-         {
-             isModify_ = false;
-         }
+        {
+            isModify_ = false;
+        }
     }
     //    modifyMap_.clear();
     QFrame::hideEvent(e);
@@ -247,7 +267,7 @@ void ICHCProgramMonitorFrame::LevelChanged(int level)
 }
 void ICHCProgramMonitorFrame::SetTime(int time)
 {
-    ui->timeLabel->setText(ICParameterConversion::TransThisIntToThisText(time, 2));
+//    ui->timeLabel->setText(ICParameterConversion::TransThisIntToThisText(time, 2));
 }
 
 //void ICHCProgramMonitorFrame::SetFullTime(int fullTime)
@@ -257,7 +277,7 @@ void ICHCProgramMonitorFrame::SetTime(int time)
 
 void ICHCProgramMonitorFrame::SetProduct(int product)
 {
-    ui->settedProductsLabel->setText(QString::number(product));
+//    ui->settedProductsLabel->setText(QString::number(product));
 }
 
 //void ICHCProgramMonitorFrame::SetCurrentFinished(int currentFinished)
@@ -277,7 +297,7 @@ void ICHCProgramMonitorFrame::StatusRefreshed()
         oldTime_ = newTime_;
         SetTime(newTime_);
     }
-    ui->getTime->setText(ICParameterConversion::TransThisIntToThisText(host->HostStatus(ICVirtualHost::DbgY1).toUInt(), 2));
+//    ui->getTime->setText(ICParameterConversion::TransThisIntToThisText(host->HostStatus(ICVirtualHost::DbgY1).toUInt(), 2));
     newCycleTimes_ = host->HostStatus(ICVirtualHost::DbgX1).toUInt();
     if(newCycleTimes_ != oldCycleTimes_)
     {
@@ -289,13 +309,13 @@ void ICHCProgramMonitorFrame::StatusRefreshed()
     if(newGoodP_ != oldGoodP_)
     {
         oldGoodP_ = newGoodP_;
-        ui->goodProducts->setText(QString::number(oldGoodP_));
+//        ui->goodProducts->setText(QString::number(oldGoodP_));
     }
     newStackedP_ = host->HostStatus(ICVirtualHost::DbgZ1).toUInt();
     if(newStackedP_ != oldStackedP_)
     {
         oldStackedP_ = newStackedP_;
-        ui->stackedProducts->setText(QString::number(oldStackedP_));
+//        ui->stackedProducts->setText(QString::number(oldStackedP_));
     }
     int status = host->HostStatus(ICVirtualHost::DbgP0).toInt();
     int mode = host->HostStatus(ICVirtualHost::DbgX0).toInt();
@@ -315,6 +335,7 @@ void ICHCProgramMonitorFrame::StatusRefreshed()
     uint product = host->HostStatus(ICVirtualHost::DbgX1).toUInt();
     if(product == ICMold::CurrentMold()->MoldParam(ICMold::Product))
     {
+        pls_.at(runningMold_)->setText(QString(tr("%1:Finished")).arg(runningMold_ + 1));
         ++runningMold_;
         QStringList pl = ICParametersSave::Instance()->AutoMoldList();
         if(runningMold_ >= pl.size())
@@ -322,12 +343,17 @@ void ICHCProgramMonitorFrame::StatusRefreshed()
             if(!ICParametersSave::Instance()->IsAutoRecycleEnabled())
             {
                 --runningMold_;
-                ui->runningMold->setText(tr("Finished"));
+//                ui->runningMold->setText(tr("Finished"));
                 return;
+            }
+            for(int i = 0; i != pls_.size(); ++i)
+            {
+                pls_.at(i)->setText(QString(tr("%1:Waiting")).arg(i + 1));
             }
         }
         runningMold_ = runningMold_ % pl.size();
         if(pl.at(runningMold_).isEmpty()) return;
+        pls_.at(runningMold_)->setText(QString(tr("%1:Running")).arg(runningMold_ + 1));
         ICCommandProcessor* cp = ICCommandProcessor::Instance();
         cp->ExecuteVirtualKeyCommand(IC::VKEY_STOP);
         cp->ExecuteHCCommand(IC::CMD_TurnStop, 0);
@@ -341,7 +367,7 @@ void ICHCProgramMonitorFrame::StatusRefreshed()
                              ICMold::CurrentMold()->SyncSum() + ICMacroSubroutine::Instance()->SyncSum());
         cp->ExecuteVirtualKeyCommand(IC::VKEY_START);
     }
-    ui->runningMold->setText(QString::number(runningMold_));
+//    ui->runningMold->setText(QString::number(runningMold_));
     //    ui->stackedProducts->setText(QString::number(host->HostStatus(ICVirtualHost::S).toInt()));
     //    if(host->CurrentStatus() != ICVirtualHost::Auto)
     //    {
@@ -862,5 +888,10 @@ void ICHCProgramMonitorFrame::on_productReset_clicked()
     cp->ExecuteHCCommand(IC::CMD_TurnAuto, 0,
                          ICMold::CurrentMold()->SyncAct() + ICMacroSubroutine::Instance()->SyncAct(),
                          ICMold::CurrentMold()->SyncSum() + ICMacroSubroutine::Instance()->SyncSum());
+    for(int i = 0; i != pls_.size(); ++i)
+    {
+        pls_.at(i)->setText(QString(tr("%1:Wating")).arg(i + 1));
+    }
+    pls_.at(runningMold_)->setText(QString(tr("%1:Running")).arg(runningMold_ + 1));
 //    cp->ExecuteVirtualKeyCommand(IC::VKEY_START);
 }

@@ -40,7 +40,8 @@ private slots:
     void on_autoProductGroupBox_toggled(bool arg1);
 
     void OnProductMoldNameChanged(int index);
-//    void OnProductClearClicked();
+    void OnProductCountChanged(const QString& text);
+    void OnProductClearClicked();
 
 private:
     Ui::ICHCProductSettingFrame *ui;

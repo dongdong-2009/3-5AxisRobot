@@ -7,6 +7,9 @@
 #include <QTimer>
 #include "icmold.h"
 
+class ICLineEditWithVirtualNumericKeypad;
+class QLabel;
+
 namespace Ui {
     class ICHCProgramMonitorFrame;
 }
@@ -96,6 +99,8 @@ private:
     int fixtureCount_[6];
     QTimer refreshTimer_;
     int runningMold_;
+    QList<ICLineEditWithVirtualNumericKeypad*> productSetinggEdits_;
+    QList<QLabel*> pls_;
 //    QMap<ICMoldItem*, ICMoldItem> modifyMap_;
 };
 #endif // ICHCPROGRAMMONITORFRAME_H

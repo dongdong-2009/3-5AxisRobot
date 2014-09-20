@@ -5,30 +5,91 @@
 #include "icvirtualhost.h"
 #include "ictimerpool.h"
 
+QList<QLabel*> fixtureInLabels;
+QList<QLabel*> fixtureOutLabels;
+
 HCManualFixtureFrame::HCManualFixtureFrame(QWidget *parent) :
     QFrame(parent),
     ui(new Ui::HCManualFixtureFrame),
-    clips_(8, false)
+    clips_(32, false)
 {
     ui->setupUi(this);
     ICCommandKeyWrapper *wrapper;
-    wrapper = new ICCommandKeyWrapper(ui->connectFixture1ToolButton, IC::VKEY_CLIP1ON);
+    wrapper = new ICCommandKeyWrapper(ui->ms1On, IC::VKEY_CLIP1ON);
     wrappers_.append(wrapper);
-    wrapper = new ICCommandKeyWrapper(ui->connectFixture2ToolButton, IC::VKEY_CLIP2ON);
+    wrapper = new ICCommandKeyWrapper(ui->ms2On, IC::VKEY_CLIP2ON);
     wrappers_.append(wrapper);
-    wrapper = new ICCommandKeyWrapper(ui->connectFixture3ToolButton, IC::VKEY_CLIP3ON);
-    wrappers_.append(wrapper);
-    wrapper = new ICCommandKeyWrapper(ui->connectFixture4ToolButton, IC::VKEY_CLIP4ON);
+    wrapper = new ICCommandKeyWrapper(ui->ms3On, IC::VKEY_CLIP3ON);
     wrappers_.append(wrapper);
 
-    wrapper = new ICCommandKeyWrapper(ui->disconnectFixture1ToolButton, IC::VKEY_CLIP1OFF);
+    wrapper = new ICCommandKeyWrapper(ui->ss1On, IC::VKEY_CLIP4ON);
     wrappers_.append(wrapper);
-    wrapper = new ICCommandKeyWrapper(ui->disconnectFixture2ToolButton, IC::VKEY_CLIP2OFF);
+    wrapper = new ICCommandKeyWrapper(ui->ss2On, IC::VKEY_CLIP5ON);
     wrappers_.append(wrapper);
-    wrapper = new ICCommandKeyWrapper(ui->disconnectFixture3ToolButton, IC::VKEY_CLIP3OFF);
+    wrapper = new ICCommandKeyWrapper(ui->ss3On, IC::VKEY_CLIP6ON);
     wrappers_.append(wrapper);
-    wrapper = new ICCommandKeyWrapper(ui->disconnectFixture4ToolButton, IC::VKEY_CLIP4OFF);
+
+    wrapper = new ICCommandKeyWrapper(ui->mc1On, IC::VKEY_CLIP7ON);
     wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->mc2On, IC::VKEY_CLIP8ON);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->mc3On, IC::VKEY_CLIP9ON);
+    wrappers_.append(wrapper);
+
+    wrapper = new ICCommandKeyWrapper(ui->sc1On, IC::VKEY_CLIP10ON);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->sc2On, IC::VKEY_CLIP11ON);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->sc3On, IC::VKEY_CLIP12ON);
+    wrappers_.append(wrapper);
+
+    wrapper = new ICCommandKeyWrapper(ui->ms1Off, IC::VKEY_CLIP1OFF);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->ms2Off, IC::VKEY_CLIP2OFF);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->ms3Off, IC::VKEY_CLIP3OFF);
+    wrappers_.append(wrapper);
+
+    wrapper = new ICCommandKeyWrapper(ui->ss1Off, IC::VKEY_CLIP4OFF);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->ss2Off, IC::VKEY_CLIP5OFF);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->ss3Off, IC::VKEY_CLIP6OFF);
+    wrappers_.append(wrapper);
+
+    wrapper = new ICCommandKeyWrapper(ui->ms1Off, IC::VKEY_CLIP1OFF);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->ms2Off, IC::VKEY_CLIP2OFF);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->ms3Off, IC::VKEY_CLIP3OFF);
+    wrappers_.append(wrapper);
+
+    wrapper = new ICCommandKeyWrapper(ui->ss1Off, IC::VKEY_CLIP4OFF);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->ss2Off, IC::VKEY_CLIP5OFF);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->ss3Off, IC::VKEY_CLIP6OFF);
+    wrappers_.append(wrapper);
+
+    wrapper = new ICCommandKeyWrapper(ui->mc1Off, IC::VKEY_CLIP7OFF);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->mc2Off, IC::VKEY_CLIP8OFF);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->mc3Off, IC::VKEY_CLIP9OFF);
+    wrappers_.append(wrapper);
+
+    wrapper = new ICCommandKeyWrapper(ui->sc1Off, IC::VKEY_CLIP10OFF);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->sc2Off, IC::VKEY_CLIP11OFF);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->sc3Off, IC::VKEY_CLIP12OFF);
+    wrappers_.append(wrapper);
+
+    fixtureInLabels<<ui->ms1In<<ui->ms2In<<ui->ms3In<<ui->ss1In<<ui->ss2In<<ui->ss3In
+              <<ui->mc1In<<ui->mc2In<<ui->mc3In<<ui->sc1In<<ui->sc2In<<ui->sc3In;
+
+    fixtureOutLabels<<ui->ms1Out<<ui->ms2Out<<ui->ms3Out<<ui->ss1Out<<ui->ss2Out<<ui->ss3Out
+              <<ui->mc1Out<<ui->mc2Out<<ui->mc3Out<<ui->sc1Out<<ui->sc2Out<<ui->sc3Out;
 }
 
 HCManualFixtureFrame::~HCManualFixtureFrame()
@@ -79,132 +140,44 @@ void HCManualFixtureFrame::StatusRefreshed()
     static QPixmap on(":/resource/ledgreen(16).png");
     static QPixmap inOn(":/resource/ledred(16).png");
     static ICVirtualHost *host = ICVirtualHost::GlobalVirtualHost();
-    if(host->IsClipOn(0))
+    for(int i = 0; i != fixtureInLabels.size(); ++i)
     {
-        if(!clips_.at(0))
+        if(host->IsInputOn(15 + i))
         {
-            clips_.setBit(0);
-            ui->fixture1StatusLabel->setPixmap(on);
+            if(!clips_.at(i))
+            {
+                clips_.setBit(i);
+                fixtureInLabels[i]->setPixmap(inOn);
+            }
+        }
+        else
+        {
+            if(clips_.at(i))
+            {
+                clips_.clearBit(i);
+                fixtureInLabels[i]->setPixmap(off);
+            }
         }
     }
-    else
+
+    for(int i = 0; i != fixtureOutLabels.size(); ++i)
     {
-        if(clips_.at(0))
+        if(host->IsOutputOn(15 + i))
         {
-            clips_.clearBit(0);
-            ui->fixture1StatusLabel->setPixmap(off);
+            if(!clips_.at(i + fixtureOutLabels.size()))
+            {
+                clips_.setBit(i + fixtureOutLabels.size());
+                fixtureOutLabels[i]->setPixmap(on);
+            }
+        }
+        else
+        {
+            if(clips_.at(i + fixtureOutLabels.size()))
+            {
+                clips_.clearBit(i + fixtureOutLabels.size());
+                fixtureOutLabels[i]->setPixmap(off);
+            }
         }
     }
-    if(host->IsClipOn(1))
-    {
-        if(!clips_.at(1))
-        {
-            clips_.setBit(1);
-            ui->fixture2StatusLabel->setPixmap(on);
-        }
-    }
-    else
-    {
-        if(clips_.at(1))
-        {
-            clips_.clearBit(1);
-            ui->fixture2StatusLabel->setPixmap(off);
-        }
-    }
-    if(host->IsOutputOn(20))
-    {
-        if(!clips_.at(2))
-        {
-            clips_.setBit(2);
-            ui->fixture3StatusLabel->setPixmap(on);
-        }
-    }
-    else
-    {
-        if(clips_.at(2))
-        {
-            clips_.clearBit(2);
-            ui->fixture3StatusLabel->setPixmap(off);
-        }
-    }
-    if(host->IsClipOn(3))
-    {
-        if(!clips_.at(3))
-        {
-            clips_.setBit(3);
-            ui->fixture4StatusLabel->setPixmap(on);
-        }
-    }
-    else
-    {
-        if(clips_.at(3))
-        {
-            clips_.clearBit(3);
-            ui->fixture4StatusLabel->setPixmap(off);
-        }
-    }
-    if(host->IsInputOn(2))
-    {
-        if(!clips_.at(4))
-        {
-            clips_.setBit(4);
-            ui->fixture1InLabel->setPixmap(inOn);
-        }
-    }
-    else
-    {
-        if(clips_.at(4))
-        {
-            clips_.clearBit(4);
-            ui->fixture1InLabel->setPixmap(off);
-        }
-    }
-    if(host->IsInputOn(3))
-    {
-        if(!clips_.at(5))
-        {
-            clips_.setBit(5);
-            ui->fixture2InLabel->setPixmap(inOn);
-        }
-    }
-    else
-    {
-        if(clips_.at(5))
-        {
-            clips_.clearBit(5);
-            ui->fixture2InLabel->setPixmap(off);
-        }
-    }
-    if(host->IsInputOn(20))
-    {
-        if(!clips_.at(6))
-        {
-            clips_.setBit(6);
-            ui->fixture3InLabel->setPixmap(inOn);
-        }
-    }
-    else
-    {
-        if(clips_.at(6))
-        {
-            clips_.clearBit(6);
-            ui->fixture3InLabel->setPixmap(off);
-        }
-    }
-    if(host->IsInputOn(9))
-    {
-        if(!clips_.at(7))
-        {
-            clips_.setBit(7);
-            ui->fixture4InLabel->setPixmap(inOn);
-        }
-    }
-    else
-    {
-        if(clips_.at(7))
-        {
-            clips_.clearBit(7);
-            ui->fixture4InLabel->setPixmap(off);
-        }
-    }
+
 }

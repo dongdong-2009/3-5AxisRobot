@@ -85,6 +85,13 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
         connect(mboxs_.at(i),
                 SIGNAL(currentIndexChanged(int)),
                 SLOT(OnProductMoldNameChanged(int)));
+
+        connect(pcEdits_.at(i),
+                SIGNAL(textChanged (QString)),
+                SLOT(OnProductCountChanged(QString)));
+        connect(clearButtons_.at(i),
+                SIGNAL(clicked()),
+                SLOT(OnProductClearClicked()));
     }
 
 }
@@ -295,17 +302,22 @@ void ICHCProductSettingFrame::on_getFailWay_activated(int index)
 void ICHCProductSettingFrame::on_saveButton_clicked()
 {
     QStringList ret;
-    ret.append(ui->mBox_1->currentText());
-    ret.append(ui->mBox_2->currentText());
-    ret.append(ui->mBox_3->currentText());
-    ret.append(ui->mBox_4->currentText());
-    ret.append(ui->mBox_5->currentText());
-    ret.append(ui->mBox_6->currentText());
-    ret.append(ui->mBox_7->currentText());
-    ret.append(ui->mBox_8->currentText());
+    QComboBox* cb;
+    for(int i = 0; i != mboxs_.size(); ++i)
+    {
+        cb = qobject_cast<QComboBox*>(mboxs_.at(i));
+        ret.append(cb->currentText());
+    }
+//    ret.append(ui->mBox_1->currentText());
+//    ret.append(ui->mBox_2->currentText());
+//    ret.append(ui->mBox_3->currentText());
+//    ret.append(ui->mBox_4->currentText());
+//    ret.append(ui->mBox_5->currentText());
+//    ret.append(ui->mBox_6->currentText());
+//    ret.append(ui->mBox_7->currentText());
+//    ret.append(ui->mBox_8->currentText());
     ICParametersSave::Instance()->SetAutoMoldList(ret);
     ICParametersSave::Instance()->SetAutoRecycleEnable(ui->autoRecycle->isChecked());
-
 }
 
 void ICHCProductSettingFrame::on_autoProductGroupBox_toggled(bool arg1)
@@ -319,7 +331,7 @@ void ICHCProductSettingFrame::OnProductMoldNameChanged(int index)
     if(index == 0) return;
     QComboBox* w = qobject_cast<QComboBox*>(sender());
     ICMold mold;
-    if(!mold.ReadMoldFile(w->currentText() + ".act")) return;
+    if(!mold.ReadMoldFile(QString("./records/%1.act").arg(w->currentText()))) return;
     int row = 0;
     for(int i = 0; i != mboxs_.size(); ++i)
     {
@@ -331,4 +343,45 @@ void ICHCProductSettingFrame::OnProductMoldNameChanged(int index)
     }
     ICLineEditWithVirtualNumericKeypad *e = qobject_cast<ICLineEditWithVirtualNumericKeypad*>(pcEdits_.at(row));
     e->SetThisIntToThisText(mold.MoldParam(ICMold::Product));
+//    mold.SaveMoldParamsFile();
+}
+
+void ICHCProductSettingFrame::OnProductCountChanged(const QString &text)
+{
+    ICLineEditWithVirtualNumericKeypad* w = qobject_cast<ICLineEditWithVirtualNumericKeypad*>(sender());
+    int row = 0;
+    for(int i = 0; i != pcEdits_.size(); ++i)
+    {
+        if(w == pcEdits_.at(i))
+        {
+            row = i;
+            break;
+        }
+    }
+    ICMold mold;
+    QComboBox* c = qobject_cast<QComboBox*>(mboxs_.at(row));
+    if(!mold.ReadMoldFile(QString("./records/%1.act").arg(c->currentText()))) return;
+    mold.SetMoldParam(ICMold::Product, text.toUInt());
+    mold.SaveMoldParamsFile();
+}
+
+void ICHCProductSettingFrame::OnProductClearClicked()
+{
+    QWidget *w = qobject_cast<QWidget*>(sender());
+    int row = 0;
+    for(int i = 0; i != clearButtons_.size(); ++i)
+    {
+        if(w == clearButtons_.at(i))
+        {
+            row = i;
+            break;
+        }
+    }
+    ICLineEditWithVirtualNumericKeypad *e = qobject_cast<ICLineEditWithVirtualNumericKeypad*>(pcEdits_.at(row));
+    e->setText("0");
+//    ICMold mold;
+//    QComboBox* c = qobject_cast<QComboBox*>(mboxs_.at(row));
+//    if(!mold.ReadMoldFile(QString("./records/%1.act").arg(c->currentText()))) return;
+//    mold.SetMoldParam(0);
+//    mold.SaveMoldParamsFile();
 }
