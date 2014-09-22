@@ -73,6 +73,8 @@ ICHCInstructionPageFrame::ICHCInstructionPageFrame(QWidget *parent) :
 //    LoadAllRecordFileInfo();
 
     InitParameter();
+    ui->stackButton->hide();
+    ui->guideButton->hide();
 //    ui->conditionsToolButton->hide();
 }
 

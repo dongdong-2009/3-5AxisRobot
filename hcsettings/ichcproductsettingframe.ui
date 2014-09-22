@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>871</width>
     <height>400</height>
    </rect>
   </property>
@@ -821,17 +821,17 @@ QRadioButton::indicator:unchecked:disabled
             </property>
            </widget>
           </item>
-          <item row="4" column="1">
-           <widget class="QCheckBox" name="autoRecycle">
-            <property name="text">
-             <string>Auto Recycle</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="2">
+          <item row="4" column="3">
            <widget class="QPushButton" name="saveButton">
             <property name="text">
              <string>Save</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1" colspan="2">
+           <widget class="QCheckBox" name="autoRecycle">
+            <property name="text">
+             <string>Auto Recycle</string>
             </property>
            </widget>
           </item>

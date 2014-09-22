@@ -1263,7 +1263,6 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="121"/>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="545"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="104"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="569"/>
         <source>Try Product</source>
@@ -1271,7 +1270,6 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="437"/>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="540"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="99"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="217"/>
         <source>Sampling</source>
@@ -1320,7 +1318,6 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="535"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="94"/>
         <source>Bad Product</source>
         <translation type="unfinished"></translation>
@@ -1359,6 +1356,21 @@ Infomation</source>
         <location filename="hcinstruction/ichcconditionpage.ui" line="294"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="525"/>
         <source>Sucker-2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="535"/>
+        <source>Sub-6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="540"/>
+        <source>Sub-7</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="545"/>
+        <source>Sub-8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2056,28 +2068,28 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="442"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="650"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="444"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="652"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="443"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="445"/>
         <source>Can not add standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="636"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="638"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="637"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="639"/>
         <source>Stand program can not be delete action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="651"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="653"/>
         <source>Can not delete standby position program</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2379,12 +2391,12 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="834"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="827"/>
         <source>Save</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="827"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="834"/>
         <source>Auto Recycle</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3975,19 +3987,16 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="206"/>
         <source>Defective Products</source>
-        <translation type="unfinished">Bad Pro</translation>
+        <translation type="obsolete">Bad Pro</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="210"/>
         <source>Try Product</source>
-        <translation type="unfinished">Try Pro</translation>
+        <translation type="obsolete">Try Pro</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="214"/>
         <source>Sampling</source>
-        <translation type="unfinished">Samp</translation>
+        <translation type="obsolete">Samp</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="221"/>
@@ -5880,18 +5889,22 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcinstruction/icprogramselector.ui" line="73"/>
-        <source>Bad Product</source>
+        <source>Sub-6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramselector.ui" line="78"/>
-        <source>Sampling</source>
-        <translation type="unfinished">Samp</translation>
+        <source>Sub-7</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramselector.ui" line="83"/>
-        <source>TryProduct</source>
+        <source>Sub-8</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sampling</source>
+        <translation type="obsolete">Samp</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramselector.ui" line="112"/>

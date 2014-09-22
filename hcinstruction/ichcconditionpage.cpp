@@ -16,6 +16,10 @@ ICHCConditionPage::ICHCConditionPage(QWidget *parent) :
     InitCheckPointBox();
     ui->moldCountEdit->setEnabled(false);
     ui->moldCountEdit->setValidator(new QIntValidator(0, 65530, this));
+
+    ui->defectiveProductsBox->hide();
+    ui->samplingBox->hide();
+    ui->tryProductBox->hide();
 }
 
 ICHCConditionPage::~ICHCConditionPage()

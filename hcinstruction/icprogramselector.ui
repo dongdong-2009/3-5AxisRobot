@@ -70,17 +70,17 @@
      </item>
      <item>
       <property name="text">
-       <string>Bad Product</string>
+       <string>Sub-6</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>Sampling</string>
+       <string>Sub-7</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>TryProduct</string>
+       <string>Sub-8</string>
       </property>
      </item>
     </widget>

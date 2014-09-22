@@ -201,22 +201,22 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             }
             commandStr += " ";
 //            commandStr += " " + tr("ON:Macro") + QString::number(moldItem.RVal()) + " ";
-            if(moldItem.SVal() == 5)
-            {
-                commandStr += tr("Defective Products") + " ";
-            }
-            else if(moldItem.SVal() == 7)
-            {
-                commandStr += tr("Try Product") + " ";
-            }
-            else if(moldItem.SVal() == 6)
-            {
-                commandStr += tr("Sampling") + " ";
-            }
-            else
-            {
+//            if(moldItem.SVal() == 5)
+//            {
+//                commandStr += tr("Defective Products") + " ";
+//            }
+//            else if(moldItem.SVal() == 7)
+//            {
+//                commandStr += tr("Try Product") + " ";
+//            }
+//            else if(moldItem.SVal() == 6)
+//            {
+//                commandStr += tr("Sampling") + " ";
+//            }
+//            else
+//            {
                 commandStr += tr("Sub-") + QString::number(moldItem.SVal() + 1) + " ";
-            }
+//            }
 
             commandStr += tr("Return Line") + QString::number((int)moldItem.DVal());
             commandStr += QObject::tr("Limit time:") + ICParameterConversion::TransThisIntToThisText(moldItem.Pos(), 2) + "      ";

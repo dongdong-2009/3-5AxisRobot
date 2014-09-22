@@ -319,7 +319,7 @@
         <location filename="hcsettings/axissettingsframe_5.ui" line="107"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="123"/>
         <source>Internal security zone</source>
-        <translation>型内安全区</translation>
+        <translation>最小移动</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="133"/>
@@ -430,7 +430,7 @@
         <location filename="hcsettings/axissettingsframe.cpp" line="94"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="136"/>
         <source>Min pos inside mold</source>
-        <translation>模内下降最小位置</translation>
+        <translation>最小移动</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="95"/>
@@ -442,7 +442,7 @@
         <location filename="hcsettings/axissettingsframe.cpp" line="108"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="149"/>
         <source>Max standby pos</source>
-        <translation>最大待机位置</translation>
+        <translation>最小移动</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="109"/>
@@ -455,7 +455,7 @@
         <location filename="hcsettings/axissettingsframe.cpp" line="183"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="198"/>
         <source>Transeve security zone(Less)</source>
-        <translation>横行安全范围(小于)</translation>
+        <translation>最小移动</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="167"/>
@@ -1552,7 +1552,6 @@ Reason</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="121"/>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="545"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="104"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="569"/>
         <source>Try Product</source>
@@ -1560,7 +1559,6 @@ Reason</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="437"/>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="540"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="99"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="217"/>
         <source>Sampling</source>
@@ -1609,7 +1607,6 @@ Reason</source>
         <translation>子程序5</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="535"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="94"/>
         <source>Bad Product</source>
         <translation>不良品</translation>
@@ -1675,16 +1672,19 @@ Reason</source>
         <translation>吸2</translation>
     </message>
     <message>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="535"/>
         <source>Sub-6</source>
-        <translation type="obsolete">子程序6</translation>
+        <translation type="unfinished">子程序6</translation>
     </message>
     <message>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="540"/>
         <source>Sub-7</source>
-        <translation type="obsolete">子程序7</translation>
+        <translation type="unfinished">子程序7</translation>
     </message>
     <message>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="545"/>
         <source>Sub-8</source>
-        <translation type="obsolete">子程序8</translation>
+        <translation type="unfinished">子程序8</translation>
     </message>
     <message>
         <source>ON:</source>
@@ -2532,13 +2532,13 @@ Reason</source>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="357"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="363"/>
         <source>Injection</source>
-        <translation>塑机信号</translation>
+        <translation>机械信号</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="319"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="325"/>
         <source>Fixture</source>
-        <translation>治具</translation>
+        <translation>功能</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="623"/>
@@ -2576,7 +2576,7 @@ Reason</source>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="471"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="477"/>
         <source>Periphery</source>
-        <translation>辅助设备</translation>
+        <translation>器械设备</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="547"/>
@@ -2657,8 +2657,8 @@ Reason</source>
         <translation>主菜单</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="442"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="650"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="444"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="652"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
@@ -2675,22 +2675,22 @@ Reason</source>
         <translation type="obsolete">该模号是当前模号!</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="443"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="445"/>
         <source>Can not add standby position program</source>
         <translation>不能添加待机点步骤</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="636"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="638"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="637"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="639"/>
         <source>Stand program can not be delete action</source>
         <translation>标准程序不能删除动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="651"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="653"/>
         <source>Can not delete standby position program</source>
         <translation>不能删除待机点步骤</translation>
     </message>
@@ -3103,12 +3103,12 @@ Reason</source>
         <translation>清除</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="834"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="827"/>
         <source>Save</source>
         <translation>保存</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="827"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="834"/>
         <source>Auto Recycle</source>
         <translation>重复循环</translation>
     </message>
@@ -4851,9 +4851,8 @@ Reason</source>
         <translation type="obsolete">提前结束位置：</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="206"/>
         <source>Defective Products</source>
-        <translation>不良品</translation>
+        <translation type="obsolete">不良品</translation>
     </message>
     <message>
         <source>Macro</source>
@@ -4893,62 +4892,62 @@ Reason</source>
         <location filename="hcinstruction/icinstructparam.cpp" line="229"/>
         <source>Mold Opened</source>
         <oldsource>Mold Opened 1</oldsource>
-        <translation>开模完</translation>
+        <translation>启动信号</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="236"/>
         <source>Security Door Closed</source>
-        <translation>安全门关</translation>
+        <translation>安全信号</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="248"/>
         <source>CLIP1</source>
-        <translation>夹1确认</translation>
+        <translation>主喷枪3</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="252"/>
         <source>CLIP2</source>
-        <translation>夹2确认</translation>
+        <translation>副喷枪1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="256"/>
         <source>CLIP3</source>
-        <translation>夹3确认</translation>
+        <translation>副喷枪2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="260"/>
         <source>CLIP4</source>
-        <translation>夹4确认</translation>
+        <translation>副喷枪3</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="264"/>
         <source>CLIP5</source>
-        <translation>吸1确认</translation>
+        <translation>主清洗1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="268"/>
         <source>CLIP6</source>
-        <translation>吸2确认</translation>
+        <translation>主清洗2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="272"/>
         <source>EUEJF</source>
-        <translation>顶针进到位</translation>
+        <translation>主清洗3</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="276"/>
         <source>EUEJB</source>
-        <translation>顶针退到位</translation>
+        <translation>副清洗1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="281"/>
         <source>EUCOREIN</source>
-        <translation>入芯到位</translation>
+        <translation>副清洗2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="285"/>
         <source>EUCOREOUT</source>
-        <translation>出芯到位</translation>
+        <translation>副清洗3</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="295"/>
@@ -5009,13 +5008,13 @@ Reason</source>
         <location filename="hcinstruction/icinstructparam.cpp" line="160"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="240"/>
         <source>X043</source>
-        <translation></translation>
+        <translation>主喷枪1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="164"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="244"/>
         <source>X044</source>
-        <translation></translation>
+        <translation>主喷枪2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="176"/>
@@ -5057,14 +5056,12 @@ Reason</source>
         <translation type="obsolete">计数方式</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="210"/>
         <source>Try Product</source>
-        <translation>试产</translation>
+        <translation type="obsolete">试产</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="214"/>
         <source>Sampling</source>
-        <translation>取样</translation>
+        <translation type="obsolete">取样</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="218"/>
@@ -5476,7 +5473,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="478"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="291"/>
         <source>Internal security zone</source>
-        <translation>型内安全区</translation>
+        <translation>最小移动</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="393"/>
@@ -5606,7 +5603,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icmachinestructpage.cpp" line="263"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="305"/>
         <source>Min pos inside mold</source>
-        <translation>模内最小位置</translation>
+        <translation>最小移动</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="264"/>
@@ -5618,7 +5615,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icmachinestructpage.cpp" line="276"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="317"/>
         <source>Max standby pos</source>
-        <translation>最大待机位置</translation>
+        <translation>最小移动</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="277"/>
@@ -5631,7 +5628,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icmachinestructpage.cpp" line="361"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="386"/>
         <source>Transever security zone(Less)</source>
-        <translation>横行安全范围(小于)</translation>
+        <translation>最小移动</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="335"/>
@@ -7438,31 +7435,31 @@ Please enter an digit between </source>
         <translation>子程序5</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramselector.ui" line="73"/>
         <source>Bad Product</source>
-        <translation>不良品</translation>
+        <translation type="obsolete">不良品</translation>
+    </message>
+    <message>
+        <source>Sampling</source>
+        <translation type="obsolete">取样</translation>
+    </message>
+    <message>
+        <source>TryProduct</source>
+        <translation type="obsolete">试产</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icprogramselector.ui" line="73"/>
+        <source>Sub-6</source>
+        <translation type="unfinished">子程序6</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramselector.ui" line="78"/>
-        <source>Sampling</source>
-        <translation>取样</translation>
+        <source>Sub-7</source>
+        <translation type="unfinished">子程序7</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramselector.ui" line="83"/>
-        <source>TryProduct</source>
-        <translation>试产</translation>
-    </message>
-    <message>
-        <source>Sub-6</source>
-        <translation type="obsolete">子程序6</translation>
-    </message>
-    <message>
-        <source>Sub-7</source>
-        <translation type="obsolete">子程序7</translation>
-    </message>
-    <message>
         <source>Sub-8</source>
-        <translation type="obsolete">子程序8</translation>
+        <translation type="unfinished">子程序8</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramselector.ui" line="112"/>
@@ -8719,82 +8716,82 @@ Would you want to restart now?</source>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="91"/>
         <source>Wait Mold Opened</source>
         <oldsource>Wait Mold Opened 1</oldsource>
-        <translation>等待开模完</translation>
+        <translation>等待启动信号</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="87"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="113"/>
         <source>Wait Security Door Closed</source>
-        <translation>等待安全门关</translation>
+        <translation>等待安全信号</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="107"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="135"/>
         <source>Wait X043</source>
-        <translation>等待X043</translation>
+        <translation>等待主喷枪1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="127"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="157"/>
         <source>Wait X044</source>
         <oldsource>Wati X044</oldsource>
-        <translation>等待X044</translation>
+        <translation>等待主喷枪2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="77"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="179"/>
         <source>Wait XCLIP1</source>
         <oldsource>XCLIP1</oldsource>
-        <translation>等待夹1确认</translation>
+        <translation>等待主喷枪3</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="97"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="201"/>
         <source>Wait XCLIP2</source>
         <oldsource>XCLIP2</oldsource>
-        <translation>等待夹2确认</translation>
+        <translation>等待副喷枪1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="117"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="223"/>
         <source>Wait XCLIP3</source>
         <oldsource>XCLIP3</oldsource>
-        <translation>等待夹3确认</translation>
+        <translation>等待副喷枪2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="137"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="245"/>
         <source>Wait XCLIP4</source>
         <oldsource>XCLIP4</oldsource>
-        <translation>等待夹4确认</translation>
+        <translation>等待副喷枪3</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="157"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="267"/>
         <source>Wait XCLIP5</source>
         <oldsource>XCLIP5</oldsource>
-        <translation>等待吸1确认</translation>
+        <translation>等待主清洗1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="177"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="289"/>
         <source>Wait XCLIP6</source>
         <oldsource>XCLIP6</oldsource>
-        <translation>等待吸2确认</translation>
+        <translation>等待主清洗2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="147"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="311"/>
         <source>Wait EUEJF</source>
         <oldsource>EUEJF</oldsource>
-        <translation>等待顶针进到位</translation>
+        <translation>等待主清洗3</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="167"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="333"/>
         <source>Wait EUEJB</source>
         <oldsource>EUEJB</oldsource>
-        <translation>等待顶针退到位</translation>
+        <translation>等待副清洗1</translation>
     </message>
     <message>
         <source>Wait Mold Opened 2</source>
@@ -8805,14 +8802,14 @@ Would you want to restart now?</source>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="355"/>
         <source>Wait EUCOREIN</source>
         <oldsource>EUCOREIN</oldsource>
-        <translation>等待入芯到位</translation>
+        <translation>等待副清洗2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="197"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="377"/>
         <source>Wait EUCOREOUT</source>
         <oldsource>EUCOREOUT</oldsource>
-        <translation>等待出芯到位</translation>
+        <translation>等待副清洗3</translation>
     </message>
 </context>
 <context>
