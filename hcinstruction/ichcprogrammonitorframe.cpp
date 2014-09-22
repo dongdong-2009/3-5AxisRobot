@@ -76,6 +76,8 @@ ICHCProgramMonitorFrame::ICHCProgramMonitorFrame(QWidget *parent) :
         pls_.at(i)->setText(QString(tr("%1:Wating")).arg(i + 1));
     }
     pls_.at(runningMold_)->setText(QString(tr("%1:Running")).arg(runningMold_ + 1));
+    pls_.at(runningMold_)->setStyleSheet("background:green");
+
 }
 
 ICHCProgramMonitorFrame::~ICHCProgramMonitorFrame()
@@ -333,9 +335,18 @@ void ICHCProgramMonitorFrame::StatusRefreshed()
     }
 
     uint product = host->HostStatus(ICVirtualHost::DbgX1).toUInt();
+    ui->curNF->setText(QString::number(productSetinggEdits_.at(runningMold_)->TransThisTextToThisInt() - product));
+    uint total = 0;
+    for(int i = 0; i != runningMold_; ++i)
+    {
+        total += productSetinggEdits_.at(i)->TransThisTextToThisInt();
+    }
+    total += product;
+    ui->total->setText(QString::number(total));
     if(product == ICMold::CurrentMold()->MoldParam(ICMold::Product))
     {
         pls_.at(runningMold_)->setText(QString(tr("%1:Finished")).arg(runningMold_ + 1));
+        pls_.at(runningMold_)->setStyleSheet("background:blue");
         ++runningMold_;
         QStringList pl = ICParametersSave::Instance()->AutoMoldList();
         if(runningMold_ >= pl.size())
@@ -349,11 +360,13 @@ void ICHCProgramMonitorFrame::StatusRefreshed()
             for(int i = 0; i != pls_.size(); ++i)
             {
                 pls_.at(i)->setText(QString(tr("%1:Waiting")).arg(i + 1));
+                pls_.at(i)->setStyleSheet("");
             }
         }
         runningMold_ = runningMold_ % pl.size();
         if(pl.at(runningMold_).isEmpty()) return;
         pls_.at(runningMold_)->setText(QString(tr("%1:Running")).arg(runningMold_ + 1));
+        pls_.at(runningMold_)->setStyleSheet("background:green");
         ICCommandProcessor* cp = ICCommandProcessor::Instance();
         cp->ExecuteVirtualKeyCommand(IC::VKEY_STOP);
         cp->ExecuteHCCommand(IC::CMD_TurnStop, 0);
@@ -893,7 +906,9 @@ void ICHCProgramMonitorFrame::on_productReset_clicked()
     for(int i = 0; i != pls_.size(); ++i)
     {
         pls_.at(i)->setText(QString(tr("%1:Wating")).arg(i + 1));
+        pls_.at(i)->setStyleSheet("");
     }
     pls_.at(runningMold_)->setText(QString(tr("%1:Running")).arg(runningMold_ + 1));
+    pls_.at(runningMold_)->setStyleSheet("background:green");
 //    cp->ExecuteVirtualKeyCommand(IC::VKEY_START);
 }
