@@ -970,3 +970,13 @@ bool MoldInformation::CheckIsUsbAttached() const
     return content.contains(QRegExp("/dev/sd[a-z]*[1-9]*"));
 
 }
+
+QStringList MoldInformation::MoldNameList() const
+{
+    QStringList ret;
+    for(int i = 0 ; i != ui->informationTableWidget->rowCount(); ++i)
+    {
+        ret.append(ui->informationTableWidget->item(i, 0)->text());
+    }
+    return ret;
+}

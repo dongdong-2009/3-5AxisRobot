@@ -184,12 +184,12 @@ void ICHCProgramMonitorFrame::showEvent(QShowEvent *e)
             needWarn = true;
         }
     }
-    if(!checkResult.isEmpty())
-    {
-        QMessageBox::warning(this,
-                             tr("Warning"),
-                             checkResult);
-    }
+//    if(!checkResult.isEmpty())
+//    {
+//        QMessageBox::warning(this,
+//                             tr("Warning"),
+//                             checkResult);
+//    }
     //    if(needWarn)
     //    {
     //        if(QMessageBox::warning(this,
@@ -878,6 +878,8 @@ void ICHCProgramMonitorFrame::LoadRunningMold(int index)
 void ICHCProgramMonitorFrame::on_productReset_clicked()
 {
     runningMold_ = 0;
+//    SetProduct(0);
+    ICVirtualHost::GlobalVirtualHost()->SetHostStatus(ICVirtualHost::DbgX1, 0);
     ICCommandProcessor* cp = ICCommandProcessor::Instance();
     cp->ExecuteVirtualKeyCommand(IC::VKEY_STOP);
     cp->ExecuteHCCommand(IC::CMD_TurnStop, 0);

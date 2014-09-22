@@ -261,7 +261,7 @@ QList<ICMoldItem> ICHCFixturePage::CreateCommandImpl() const
         if(ui->tableWidget->item(i,0)->checkState() == Qt::Checked)
         {
             clip = buttonToClip_.value(qobject_cast<QAbstractButton*>(ui->tableWidget->cellWidget(i, 1)));
-            if(clip > 1000)
+            if(clip >= 1000)
             {
                 clip -= 1000;
                 isOff = true;

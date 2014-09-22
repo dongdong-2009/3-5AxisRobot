@@ -31,7 +31,7 @@ public:
 
     bool IsStandProgram(const QString& name) const { return standPrograms_.contains(name);}
 
-    QStringList MoldNameList() const { return moldNameList_;}
+    QStringList MoldNameList() const ;/*{ return moldNameList_;}*/
 
     ~MoldInformation();
 

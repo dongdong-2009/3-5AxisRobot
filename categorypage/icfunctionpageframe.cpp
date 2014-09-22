@@ -19,6 +19,7 @@
 
 #include "icprogramheadframe.h"
 #include "icparameterssave.h"
+#include "icmssettingspage.h"
 
 #include <QDebug>
 
@@ -45,7 +46,8 @@ public:
         }
         else if(clickedButton == functionPage->ui->securityPointSettingWidget)
         {
-            return new ICHCSettingsFrame(parent);
+//            return new ICHCSettingsFrame(parent);
+            return new ICMSSettingsPage(parent);
         }
         else if(clickedButton == functionPage->ui->stackSettingWidget)
         {
@@ -79,7 +81,7 @@ ICFunctionPageFrame::ICFunctionPageFrame(QWidget *parent, QStackedLayout * backF
     InitSettingPage();
     UpdateTranslate();
     InitSignal();
-
+    ui->stackSettingWidget->hide();
 //    backFrameCenterStackedLayout_->setCurrentWidget(this);
 }
 
@@ -200,7 +202,7 @@ void ICFunctionPageFrame::SettingButtonClicked()
 
 void ICFunctionPageFrame::UpdateTranslate()
 {
-    ui->securityPointSettingWidget->setText(tr("Security Point Settings"));
+    ui->securityPointSettingWidget->setText(tr("Main Sub Settings"));
     ui->systemSettingWidget->setText(tr("System Settings"));
     ui->machineStructConfig->setText(tr("Struct Settings"));
     ui->stackSettingWidget->setText(tr("Stack Settings"));

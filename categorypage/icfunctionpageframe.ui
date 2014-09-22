@@ -63,7 +63,7 @@
       </spacer>
      </item>
      <item>
-      <widget class="ICPageTag" name="stackSettingWidget" native="true">
+      <widget class="ICPageTag" name="systemSettingWidget" native="true">
        <property name="minimumSize">
         <size>
          <width>350</width>
@@ -120,7 +120,10 @@
       </spacer>
      </item>
      <item>
-      <widget class="ICPageTag" name="systemSettingWidget" native="true">
+      <widget class="ICPageTag" name="machineStructConfig" native="true">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="minimumSize">
         <size>
          <width>350</width>
@@ -174,10 +177,7 @@
       </spacer>
      </item>
      <item>
-      <widget class="ICPageTag" name="machineStructConfig" native="true">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
+      <widget class="ICPageTag" name="maintainWidget" native="true">
        <property name="minimumSize">
         <size>
          <width>350</width>
@@ -231,7 +231,7 @@
       </spacer>
      </item>
      <item>
-      <widget class="ICPageTag" name="maintainWidget" native="true">
+      <widget class="ICPageTag" name="stackSettingWidget" native="true">
        <property name="minimumSize">
         <size>
          <width>350</width>
