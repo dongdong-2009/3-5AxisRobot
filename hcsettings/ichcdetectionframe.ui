@@ -20,40 +20,8 @@
    <enum>QFrame::Plain</enum>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="5" column="7">
-    <widget class="QComboBox" name="detectSucker2ComboBox">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>120</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>100</width>
-       <height>48</height>
-      </size>
-     </property>
-     <item>
-      <property name="text">
-       <string>Not Use</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Use</string>
-      </property>
-     </item>
-    </widget>
-   </item>
    <item row="1" column="1">
-    <widget class="QComboBox" name="detectFixture1ComboBox">
+    <widget class="QComboBox" name="ms1">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -74,39 +42,52 @@
      </property>
      <item>
       <property name="text">
-       <string>Reversed Phase</string>
+       <string>PP</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>Positive Phase</string>
+       <string>RP</string>
       </property>
      </item>
     </widget>
    </item>
    <item row="4" column="3">
-    <widget class="QLabel" name="label_16">
+    <widget class="QLabel" name="sc2l">
      <property name="text">
-      <string>Hor Standby</string>
+      <string>SC2</string>
      </property>
     </widget>
    </item>
+   <item row="1" column="5">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
    <item row="1" column="0">
-    <widget class="QLabel" name="label">
+    <widget class="QLabel" name="ms1l">
      <property name="text">
-      <string>Detect fixture 1</string>
+      <string>MS1</string>
      </property>
     </widget>
    </item>
    <item row="1" column="3">
-    <widget class="QLabel" name="label_13">
+    <widget class="QLabel" name="ms2l">
      <property name="text">
-      <string>Detect Postion</string>
+      <string>MS2</string>
      </property>
     </widget>
    </item>
    <item row="3" column="1">
-    <widget class="QComboBox" name="detectFixture3ComboBox">
+    <widget class="QComboBox" name="mc1">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -127,64 +108,25 @@
      </property>
      <item>
       <property name="text">
-       <string>Reversed Phase</string>
+       <string>PP</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>Positive Phase</string>
-      </property>
-     </item>
-    </widget>
-   </item>
-   <item row="4" column="0">
-    <widget class="QLabel" name="label_4">
-     <property name="text">
-      <string>Detect fixture 4</string>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="1">
-    <widget class="QComboBox" name="detectFixture4ComboBox">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>120</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>100</width>
-       <height>16777215</height>
-      </size>
-     </property>
-     <item>
-      <property name="text">
-       <string>Reversed Phase</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Positive Phase</string>
+       <string>RP</string>
       </property>
      </item>
     </widget>
    </item>
    <item row="3" column="0">
-    <widget class="QLabel" name="label_3">
+    <widget class="QLabel" name="mc1l">
      <property name="text">
-      <string>Detect fixture 3</string>
+      <string>MC1</string>
      </property>
     </widget>
    </item>
    <item row="1" column="7">
-    <widget class="QComboBox" name="detectSecurityComboBox">
+    <widget class="QComboBox" name="ms3">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -205,12 +147,12 @@
      </property>
      <item>
       <property name="text">
-       <string>Not Use</string>
+       <string>PP</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>Use</string>
+       <string>RP</string>
       </property>
      </item>
     </widget>
@@ -228,35 +170,22 @@
      </property>
     </spacer>
    </item>
-   <item row="1" column="5">
-    <spacer name="horizontalSpacer">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>40</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
    <item row="2" column="0">
-    <widget class="QLabel" name="label_2">
+    <widget class="QLabel" name="ss1l">
      <property name="text">
-      <string>Detect fixture 2</string>
+      <string>SS1</string>
      </property>
     </widget>
    </item>
    <item row="4" column="6">
-    <widget class="QLabel" name="label_12">
+    <widget class="QLabel" name="sc3l">
      <property name="text">
-      <string>Ejection Link Lock</string>
+      <string>SC3</string>
      </property>
     </widget>
    </item>
    <item row="3" column="4">
-    <widget class="QComboBox" name="originPositionBox">
+    <widget class="QComboBox" name="mc2">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -277,30 +206,18 @@
      </property>
      <item>
       <property name="text">
-       <string>Vertical</string>
+       <string>PP</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>Horizontal</string>
+       <string>RP</string>
       </property>
      </item>
-     <item>
-      <property name="text">
-       <string>No Limit</string>
-      </property>
-     </item>
-    </widget>
-   </item>
-   <item row="5" column="3">
-    <widget class="QLabel" name="label_5">
-     <property name="text">
-      <string>Close Mold</string>
-     </property>
     </widget>
    </item>
    <item row="4" column="4">
-    <widget class="QComboBox" name="standbyPositionBox">
+    <widget class="QComboBox" name="sc2">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -321,25 +238,213 @@
      </property>
      <item>
       <property name="text">
-       <string>No Limit Lock Mold</string>
+       <string>PP</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>Limit Lock Mold</string>
+       <string>RP</string>
       </property>
      </item>
     </widget>
    </item>
    <item row="3" column="3">
-    <widget class="QLabel" name="label_15">
+    <widget class="QLabel" name="mc2l">
      <property name="text">
-      <string>U/D Position</string>
+      <string>MC2</string>
      </property>
     </widget>
    </item>
-   <item row="5" column="1">
-    <widget class="QComboBox" name="detectIMMComboBox">
+   <item row="1" column="6">
+    <widget class="QLabel" name="ms3l">
+     <property name="text">
+      <string>MS3</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="7">
+    <widget class="QComboBox" name="mc3">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>48</height>
+      </size>
+     </property>
+     <item>
+      <property name="text">
+       <string>PP</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>RP</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QComboBox" name="ss1">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>48</height>
+      </size>
+     </property>
+     <item>
+      <property name="text">
+       <string>PP</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>RP</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="2" column="4">
+    <widget class="QComboBox" name="ss2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>48</height>
+      </size>
+     </property>
+     <item>
+      <property name="text">
+       <string>PP</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>RP</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="1" column="4">
+    <widget class="QComboBox" name="ms2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>48</height>
+      </size>
+     </property>
+     <item>
+      <property name="text">
+       <string>PP</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>RP</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="3" column="6">
+    <widget class="QLabel" name="mc3l">
+     <property name="text">
+      <string>MC3</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QLabel" name="ss2l">
+     <property name="text">
+      <string>SS2</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="7">
+    <widget class="QComboBox" name="sc3">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>48</height>
+      </size>
+     </property>
+     <item>
+      <property name="text">
+       <string>PP</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>RP</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="2" column="6">
+    <widget class="QLabel" name="ss3l">
+     <property name="text">
+      <string>SS3</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="7">
+    <widget class="QComboBox" name="ss3">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -360,25 +465,25 @@
      </property>
      <item>
       <property name="text">
-       <string>Not Use</string>
+       <string>PP</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>Use</string>
+       <string>RP</string>
       </property>
      </item>
     </widget>
    </item>
-   <item row="1" column="6">
-    <widget class="QLabel" name="label_10">
+   <item row="4" column="0">
+    <widget class="QLabel" name="sc1l">
      <property name="text">
-      <string>Detect Security Door</string>
+      <string>SC1</string>
      </property>
     </widget>
    </item>
-   <item row="3" column="7">
-    <widget class="QComboBox" name="detectMidMoldComboBox">
+   <item row="4" column="1">
+    <widget class="QComboBox" name="sc1">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -394,22 +499,29 @@
      <property name="maximumSize">
       <size>
        <width>100</width>
-       <height>48</height>
+       <height>16777215</height>
       </size>
      </property>
      <item>
       <property name="text">
-       <string>Use</string>
+       <string>PP</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>Not Use</string>
+       <string>RP</string>
       </property>
      </item>
     </widget>
    </item>
-   <item row="2" column="7">
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>Detect Pressure</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
     <widget class="QComboBox" name="detectPressureComboBox">
      <property name="minimumSize">
       <size>
@@ -433,206 +545,6 @@
        <string>Use</string>
       </property>
      </item>
-    </widget>
-   </item>
-   <item row="2" column="1">
-    <widget class="QComboBox" name="detectFixture2ComboBox">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>120</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>100</width>
-       <height>48</height>
-      </size>
-     </property>
-     <item>
-      <property name="text">
-       <string>Reversed Phase</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Positive Phase</string>
-      </property>
-     </item>
-    </widget>
-   </item>
-   <item row="5" column="0">
-    <widget class="QLabel" name="label_7">
-     <property name="text">
-      <string>IMM Emergency</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="4">
-    <widget class="QComboBox" name="detectOriginBox">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>120</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>100</width>
-       <height>48</height>
-      </size>
-     </property>
-     <item>
-      <property name="text">
-       <string>Don't need Mold Opened Signal</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Need Mold Opened Signal</string>
-      </property>
-     </item>
-    </widget>
-   </item>
-   <item row="1" column="4">
-    <widget class="QComboBox" name="detectPositionBox">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>120</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>100</width>
-       <height>48</height>
-      </size>
-     </property>
-     <item>
-      <property name="text">
-       <string>Vertical</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Horizontal</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Don't Limit</string>
-      </property>
-     </item>
-    </widget>
-   </item>
-   <item row="5" column="6">
-    <widget class="QLabel" name="label_6">
-     <property name="text">
-      <string>Auto Run</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="6">
-    <widget class="QLabel" name="label_9">
-     <property name="text">
-      <string>Detect Pressure</string>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="6">
-    <widget class="QLabel" name="label_11">
-     <property name="text">
-      <string>Detect Mid Mold</string>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="4">
-    <widget class="QComboBox" name="detectSucker1ComboBox">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>120</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>100</width>
-       <height>48</height>
-      </size>
-     </property>
-     <item>
-      <property name="text">
-       <string>Not Use</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Use</string>
-      </property>
-     </item>
-    </widget>
-   </item>
-   <item row="4" column="7">
-    <widget class="QComboBox" name="ejectionLinkLockBox">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>120</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>100</width>
-       <height>48</height>
-      </size>
-     </property>
-     <item>
-      <property name="text">
-       <string>Not Use</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Use</string>
-      </property>
-     </item>
-    </widget>
-   </item>
-   <item row="2" column="3">
-    <widget class="QLabel" name="label_14">
-     <property name="text">
-      <string>Detect Origin</string>
-     </property>
     </widget>
    </item>
   </layout>
