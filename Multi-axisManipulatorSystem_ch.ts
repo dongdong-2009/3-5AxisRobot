@@ -3276,19 +3276,19 @@ Reason</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="76"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="906"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="908"/>
         <source>%1:Wating</source>
         <translation>%1:等待中</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="78"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="367"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="909"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="368"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="911"/>
         <source>%1:Running</source>
         <translation>%1:运行中</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="563"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="565"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
@@ -3317,22 +3317,22 @@ Reason</source>
         <translation type="obsolete">完</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="564"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="566"/>
         <source>Can not edit standby position program</source>
         <translation>不能修改待机点位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="876"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="878"/>
         <source>critical</source>
         <translation>错误</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="876"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="878"/>
         <source>Read mold or mold para fail! Please change other mold!</source>
         <translation>模组数据已损坏，请更换其它模组!</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="880"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="882"/>
         <source>Loading...</source>
         <translation>载入中...</translation>
     </message>
@@ -3341,7 +3341,7 @@ Reason</source>
         <translation type="obsolete">需要忽略这个警告吗?</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="818"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="820"/>
         <source>Follow</source>
         <translation>跟随</translation>
     </message>
@@ -3350,8 +3350,8 @@ Reason</source>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="427"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="113"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="253"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="833"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="843"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="835"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="845"/>
         <source>Speed Disable</source>
         <translation>调速禁止</translation>
     </message>
@@ -3426,8 +3426,8 @@ Reason</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="156"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="330"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="337"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="316"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="323"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="178"/>
         <source>TextLabel</source>
         <translation></translation>
@@ -3451,12 +3451,12 @@ Reason</source>
         <translation>自动生产:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="316"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="330"/>
         <source>Cur.not finished:</source>
         <translation>当前没完成:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="323"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="337"/>
         <source>Total:</source>
         <translation>总产量:</translation>
     </message>
@@ -3469,7 +3469,7 @@ Reason</source>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="406"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="331"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="824"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="826"/>
         <source>No Follow</source>
         <translation>不跟随</translation>
     </message>
@@ -3480,7 +3480,7 @@ Reason</source>
         <translation>半自动</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="833"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="835"/>
         <source>Speed Enable</source>
         <translation>调速允许</translation>
     </message>

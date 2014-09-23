@@ -2556,8 +2556,8 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="156"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="330"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="337"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="316"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="323"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="178"/>
         <source>TextLabel</source>
         <translation type="unfinished"></translation>
@@ -2573,12 +2573,12 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="316"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="330"/>
         <source>Cur.not finished:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="323"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="337"/>
         <source>Total:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2626,19 +2626,19 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="76"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="906"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="908"/>
         <source>%1:Wating</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="78"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="367"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="909"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="368"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="911"/>
         <source>%1:Running</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="563"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="565"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2663,32 +2663,32 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="564"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="566"/>
         <source>Can not edit standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="833"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="835"/>
         <source>Speed Enable</source>
         <translation>SPD En</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="876"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="878"/>
         <source>critical</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="876"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="878"/>
         <source>Read mold or mold para fail! Please change other mold!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="880"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="882"/>
         <source>Loading...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="818"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="820"/>
         <source>Follow</source>
         <translation>trace</translation>
     </message>
@@ -2697,8 +2697,8 @@ Infomation</source>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="427"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="113"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="253"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="833"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="843"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="835"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="845"/>
         <source>Speed Disable</source>
         <translation>SPD Un</translation>
     </message>
@@ -2712,7 +2712,7 @@ Infomation</source>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="406"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="331"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="824"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="826"/>
         <source>No Follow</source>
         <translation>Untrace</translation>
     </message>
