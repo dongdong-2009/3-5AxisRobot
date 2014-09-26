@@ -70,7 +70,7 @@ void ICHCStackedSettingsFrame::on_page0ToolButton_clicked()
 
 void ICHCStackedSettingsFrame::InitInterface()
 {
-    QIntValidator * validator = new QIntValidator(0, 65535, this);
+    QIntValidator * validator = new QIntValidator(0, 32760, this);
     QIntValidator * validator_ = new QIntValidator(0, 65530, this);
 
     ui->xRPLatticeLineEdit->SetDecimalPlaces(0);
@@ -116,16 +116,19 @@ void ICHCStackedSettingsFrame::RefreshStackParams_(int group)
     {
         ui->yzxCheckBox->setChecked(true);
     }
-    ui->xRPLatticeLineEdit->SetThisIntToThisText(stackParams.at(ICMold::X_Array));
+    ui->xRPLatticeLineEdit->SetThisIntToThisText(stackParams.at(ICMold::X_Array) & 0x7FFF);
     seqH & 32 ? ui->xRPCheckBox->click() : ui->xPPCheckBox->click();
+    ui->xUnit->setChecked(stackParams.at(ICMold::X_Array) >> 15);
     ui->xRPStepLineEdit->SetThisIntToThisText(stackParams.at(ICMold::X_Gap));
-    ui->yRPLatticeLineEdit->SetThisIntToThisText(stackParams.at(ICMold::Y_Array));
+    ui->yRPLatticeLineEdit->SetThisIntToThisText(stackParams.at(ICMold::Y_Array) & 0x7FFF);
     seqH & 64 ? ui->yRPCheckBox->click() : ui->yPPCheckBox->click();
     ui->yPPCheckBox->setChecked(!ui->yRPCheckBox->isChecked());
+    ui->yUnit->setChecked(stackParams.at(ICMold::Y_Array) >> 15);
     ui->yRPStepLineEdit->SetThisIntToThisText(stackParams.at(ICMold::Y_Gap));
-    ui->zRPLatticeLineEdit->SetThisIntToThisText(stackParams.at(ICMold::Z_Array));
+    ui->zRPLatticeLineEdit->SetThisIntToThisText(stackParams.at(ICMold::Z_Array) & 0x7FFF);
     seqH & 128 ? ui->zRPCheckBox->click() : ui->zPPCheckBox->click();
     ui->zPPCheckBox->setChecked(!ui->zRPCheckBox->isChecked());
+    ui->zUnit->setChecked(stackParams.at(ICMold::Z_Array) >> 15);
     ui->zRPStepLineEdit->SetThisIntToThisText(stackParams.at(ICMold::Z_Gap));
     ui->countWayBox->setCurrentIndex(ICMold::CurrentMold()->MoldParam(static_cast<ICMold::ICMoldParam>(currentPage_)));
 //    switch(stackParams.at(ICMold::Seq))
@@ -180,11 +183,11 @@ QList<int> ICHCStackedSettingsFrame::GetCurrentStatus_() const
     }
 
     status.append(seqH + seqL);
-    status.append(ui->xRPLatticeLineEdit->TransThisTextToThisInt());
-    status.append(ui->yRPLatticeLineEdit->TransThisTextToThisInt());
-    status.append(ui->zRPLatticeLineEdit->TransThisTextToThisInt());
-    status.append(ui->xRPStepLineEdit->TransThisTextToThisInt());
-    status.append(ui->yRPStepLineEdit->TransThisTextToThisInt());
+    status.append(ui->xRPLatticeLineEdit->TransThisTextToThisInt() | (ui->xUnit->isChecked() << 15));
+    status.append(ui->yRPLatticeLineEdit->TransThisTextToThisInt() | (ui->yUnit->isChecked() << 15));
+    status.append(ui->zRPLatticeLineEdit->TransThisTextToThisInt() | (ui->zUnit->isChecked() << 15));
+    status.append(ui->xRPStepLineEdit->TransThisTextToThisInt() );
+    status.append(ui->yRPStepLineEdit->TransThisTextToThisInt() );
     status.append(ui->zRPStepLineEdit->TransThisTextToThisInt());
     status.append(ui->countWayBox->currentIndex());
 //    status.append(ui->xRPCheckBox->isChecked() ? 1 : 0);
@@ -237,4 +240,28 @@ void ICHCStackedSettingsFrame::changeEvent(QEvent *e)
 void ICHCStackedSettingsFrame::OnMoldNumberParamChanged()
 {
     RefreshStackParams_(currentPage_);
+}
+
+void ICHCStackedSettingsFrame::on_xUnit_toggled(bool checked)
+{
+    if(checked)
+        ui->xRPStepLineEdit->SetDecimalPlaces(1);
+    else
+        ui->xRPStepLineEdit->SetDecimalPlaces(2);
+}
+
+void ICHCStackedSettingsFrame::on_yUnit_toggled(bool checked)
+{
+    if(checked)
+        ui->yRPStepLineEdit->SetDecimalPlaces(1);
+    else
+        ui->yRPStepLineEdit->SetDecimalPlaces(2);
+}
+
+void ICHCStackedSettingsFrame::on_zUnit_toggled(bool checked)
+{
+    if(checked)
+        ui->zRPStepLineEdit->SetDecimalPlaces(1);
+    else
+        ui->zRPStepLineEdit->SetDecimalPlaces(2);
 }
