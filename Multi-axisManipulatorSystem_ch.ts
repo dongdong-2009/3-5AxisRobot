@@ -1752,22 +1752,6 @@ Reason</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="45"/>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="111"/>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="150"/>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="209"/>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="241"/>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="287"/>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="319"/>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="351"/>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="383"/>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="429"/>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="468"/>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="507"/>
-        <source>RP</source>
-        <translation>反相</translation>
-    </message>
-    <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="50"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="116"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="155"/>
@@ -1780,6 +1764,22 @@ Reason</source>
         <location filename="hcsettings/ichcdetectionframe.ui" line="434"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="473"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="512"/>
+        <source>RP</source>
+        <translation>反相</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="45"/>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="111"/>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="150"/>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="209"/>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="241"/>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="287"/>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="319"/>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="351"/>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="383"/>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="429"/>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="468"/>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="507"/>
         <source>PP</source>
         <translation>正相</translation>
     </message>
@@ -6361,7 +6361,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="59"/>
         <source>X026</source>
-        <translation type="unfinished">主喷枪2 {026?}</translation>
+        <translation>X026</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="68"/>
@@ -6402,7 +6402,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="69"/>
         <source>X037</source>
-        <translation></translation>
+        <translation>气压检测</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="73"/>
@@ -6412,7 +6412,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="76"/>
         <source>X045</source>
-        <translation></translation>
+        <translation>产品计数</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="77"/>
@@ -6472,7 +6472,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="109"/>
         <source>Y026</source>
-        <translation type="unfinished"></translation>
+        <translation>Y026</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="118"/>

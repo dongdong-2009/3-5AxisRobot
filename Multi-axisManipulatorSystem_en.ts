@@ -1399,22 +1399,6 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="45"/>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="111"/>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="150"/>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="209"/>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="241"/>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="287"/>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="319"/>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="351"/>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="383"/>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="429"/>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="468"/>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="507"/>
-        <source>RP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="50"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="116"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="155"/>
@@ -1427,6 +1411,22 @@ Infomation</source>
         <location filename="hcsettings/ichcdetectionframe.ui" line="434"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="473"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="512"/>
+        <source>RP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="45"/>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="111"/>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="150"/>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="209"/>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="241"/>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="287"/>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="319"/>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="351"/>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="383"/>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="429"/>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="468"/>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="507"/>
         <source>PP</source>
         <translation type="unfinished"></translation>
     </message>
