@@ -29,6 +29,12 @@ private slots:
     void on_page3ToolButton_clicked();
     void OnMoldNumberParamChanged();
 
+    void on_xUnit_toggled(bool checked);
+
+    void on_yUnit_toggled(bool checked);
+
+    void on_zUnit_toggled(bool checked);
+
 private:
     void InitInterface();
     QList<int> GetCurrentStatus_() const;
