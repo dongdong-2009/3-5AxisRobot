@@ -4816,7 +4816,7 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="107"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="171"/>
         <source>Sub Clear-1 Valve</source>
         <oldsource>Horizontal-2 Valve</oldsource>
         <translation type="unfinished">Hor-2 Valve</translation>
@@ -4891,7 +4891,12 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="181"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="175"/>
+        <source>Blank2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="183"/>
         <source>En C6</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4901,7 +4906,7 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="183"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="181"/>
         <source>En A8</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4981,13 +4986,7 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="169"/>
-        <source>Mold Close Permit</source>
-        <oldsource>Mold Close</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="168"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="174"/>
         <source>Mold Open Permit</source>
         <oldsource>Eject Forward Permit</oldsource>
         <translation type="unfinished"></translation>
@@ -5038,31 +5037,6 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="53"/>
-        <source>Main Clear-1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="54"/>
-        <source>Main Clear-2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="55"/>
-        <source>Main clear-3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="56"/>
-        <source>Sub clear-1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="57"/>
-        <source>Sub clear-2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="59"/>
         <source>X026</source>
         <translation type="unfinished"></translation>
@@ -5075,6 +5049,31 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="62"/>
         <source>Reserve-1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="53"/>
+        <source>X021</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="54"/>
+        <source>X022</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="55"/>
+        <source>X023</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="56"/>
+        <source>X024</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="57"/>
+        <source>X025</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5155,21 +5154,46 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="104"/>
-        <source>Main Clear-1 Valve</source>
+        <source>Y021</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="105"/>
-        <source>Main Clear-2 Valve</source>
+        <source>Y022</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="106"/>
-        <source>Main Clear-3 Valve</source>
+        <source>Y023</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="107"/>
+        <source>Y024</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="108"/>
+        <source>Y025</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="168"/>
+        <source>Main Clear-1 Valve</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="169"/>
+        <source>Main Clear-2 Valve</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="170"/>
+        <source>Main Clear-3 Valve</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="172"/>
         <source>Sub Clear-2 Valve</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5180,6 +5204,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="118"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="173"/>
         <source>Sub Clear-3 Valve</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5250,38 +5275,23 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="170"/>
-        <source>Eject Forward Permit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="172"/>
-        <source>Eject Backward Permit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="175"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="179"/>
         <source>Core 1 In Permit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="177"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="180"/>
         <source>Core 2 In Permit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="178"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="184"/>
         <source>Core 2 Out Permit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="176"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="185"/>
         <source>Core 1 Out Permit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="180"/>
-        <source>Robot</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

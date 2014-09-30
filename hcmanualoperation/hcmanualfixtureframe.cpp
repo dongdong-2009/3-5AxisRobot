@@ -90,6 +90,13 @@ HCManualFixtureFrame::HCManualFixtureFrame(QWidget *parent) :
 
     fixtureOutLabels<<ui->ms1Out<<ui->ms2Out<<ui->ms3Out<<ui->ss1Out<<ui->ss2Out<<ui->ss3Out
               <<ui->mc1Out<<ui->mc2Out<<ui->mc3Out<<ui->sc1Out<<ui->sc2Out<<ui->sc3Out;
+
+    ui->mc1In->hide();
+    ui->mc2In->hide();
+    ui->mc3In->hide();
+    ui->sc1In->hide();
+    ui->sc2In->hide();
+    ui->sc3In->hide();
 }
 
 HCManualFixtureFrame::~HCManualFixtureFrame()
@@ -142,6 +149,10 @@ void HCManualFixtureFrame::StatusRefreshed()
     static ICVirtualHost *host = ICVirtualHost::GlobalVirtualHost();
     for(int i = 0; i != fixtureInLabels.size() - 1; ++i)
     {
+        if(i > 5)
+        {
+            break;
+        }
         if(host->IsInputOn(3 + i))
         {
             if(!clips_.at(i))
@@ -162,6 +173,10 @@ void HCManualFixtureFrame::StatusRefreshed()
 
     for(int i = 0; i != fixtureOutLabels.size() - 1; ++i)
     {
+        if(i > 5)
+        {
+            break;
+        }
         if(host->IsOutputOn(3 + i))
         {
             if(!clips_.at(i + fixtureOutLabels.size()))
@@ -180,16 +195,56 @@ void HCManualFixtureFrame::StatusRefreshed()
         }
     }
 
-    if(host->IsInputOn(22))
+//    if(host->IsInputOn(22))
+//    {
+//        ui->sc3In->setPixmap(inOn);
+//    }
+//    else
+//    {
+//        ui->sc3In->setPixmap(off);
+//    }
+
+    if(host->IsOutputOn(32))
     {
-        ui->sc3In->setPixmap(inOn);
+        ui->mc1Out->setPixmap(on);
     }
     else
     {
-        ui->sc3In->setPixmap(off);
+        ui->mc1Out->setPixmap(off);
     }
-
-    if(host->IsOutputOn(22))
+    if(host->IsOutputOn(33))
+    {
+        ui->mc2Out->setPixmap(on);
+    }
+    else
+    {
+        ui->mc2Out->setPixmap(off);
+    }
+    if(host->IsOutputOn(34))
+    {
+        ui->mc3Out->setPixmap(on);
+    }
+    else
+    {
+        ui->mc3Out->setPixmap(off);
+    }
+    if(host->IsOutputOn(35))
+    {
+        ui->sc1Out->setPixmap(on);
+    }
+    else
+    {
+        ui->sc1Out->setPixmap(off);
+    }
+    if(host->IsOutputOn(36))
+    {
+        ui->sc2Out->setPixmap(on);
+    }
+    else
+    {
+        ui->sc2Out->setPixmap(off);
+    }
+    if(host->IsOutputOn(37))
     {
         ui->sc3Out->setPixmap(on);
     }

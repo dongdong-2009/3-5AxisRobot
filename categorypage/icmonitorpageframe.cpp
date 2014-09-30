@@ -50,11 +50,11 @@ void ICMonitorPageFrame::Init_()
     points.append(ICIOPoint("X017", tr("Sub Shot-2"), 7));
 
     points.append(ICIOPoint("X020", tr("Sub Shot-3"), 8));
-    points.append(ICIOPoint("X021", tr("Main Clear-1"), 9));
-    points.append(ICIOPoint("X022", tr("Main Clear-2"), 10));
-    points.append(ICIOPoint("X023", tr("Main clear-3"), 11));
-    points.append(ICIOPoint("X024", tr("Sub clear-1"), 12));
-    points.append(ICIOPoint("X025", tr("Sub clear-2"), 13));
+    points.append(ICIOPoint("X021", tr("X021"), 9));
+    points.append(ICIOPoint("X022", tr("X022"), 10));
+    points.append(ICIOPoint("X023", tr("X023"), 11));
+    points.append(ICIOPoint("X024", tr("X024"), 12));
+    points.append(ICIOPoint("X025", tr("X025"), 13));
 //    points.append(ICIOPoint("X026", tr("Reserve"), 14));
     points.append(ICIOPoint("X026", tr("X026"), 14));
     points.append(ICIOPoint("X027", tr("Watch Dog"), 15));
@@ -101,11 +101,11 @@ void ICMonitorPageFrame::Init_()
     points.append(ICIOPoint("Y017", tr("Sub Shot-2 Valve"), 7));
 
     points.append(ICIOPoint("Y020", tr("Sub Shot-3 Valve"), 8));
-    points.append(ICIOPoint("Y021", tr("Main Clear-1 Valve"), 9));
-    points.append(ICIOPoint("Y022", tr("Main Clear-2 Valve"), 10));//1
-    points.append(ICIOPoint("Y023", tr("Main Clear-3 Valve"), 11));//备用输出2
-    points.append(ICIOPoint("Y024", tr("Sub Clear-1 Valve"), 12));
-    points.append(ICIOPoint("Y025", tr("Sub Clear-2 Valve"), 13));
+    points.append(ICIOPoint("Y021", tr("Y021"), 9));
+    points.append(ICIOPoint("Y022", tr("Y022"), 10));//1
+    points.append(ICIOPoint("Y023", tr("Y023"), 11));//备用输出2
+    points.append(ICIOPoint("Y024", tr("Y024"), 12));
+    points.append(ICIOPoint("Y025", tr("Y025"), 13));
     points.append(ICIOPoint("Y026", tr("Y026"), 14));
     points.append(ICIOPoint("Y027", tr("Watch Dog"), 15));
 
@@ -165,25 +165,25 @@ void ICMonitorPageFrame::Init_()
     euPageRight_->BindingPointsToInputPage(points);
 
     points.clear();
-    points.append(ICIOPoint("", tr("Mold Open Permit"), 38)); //允许开模
-    points.append(ICIOPoint("", tr("Mold Close Permit"), 32));
-    points.append(ICIOPoint("", tr("Eject Forward Permit"), 33));
+    points.append(ICIOPoint("", tr("Main Clear-1 Valve"), 32));
+    points.append(ICIOPoint("", tr("Main Clear-2 Valve"), 33));
+    points.append(ICIOPoint("", tr("Main Clear-3 Valve"), 34));
+    points.append(ICIOPoint("", tr("Sub Clear-1 Valve"), 35));
+    points.append(ICIOPoint("", tr("Sub Clear-2 Valve"), 36));
+    points.append(ICIOPoint("", tr("Sub Clear-3 Valve"), 37));
+//    points.append(ICIOPoint("", tr("Mold Open Permit"), 38)); //允许开模
+//    points.append(ICIOPoint("", tr("Blank2"), 39));
 //    points.append(ICIOPoint("", tr("Thimble Permit 1"), 33));
-    points.append(ICIOPoint("", tr("Eject Backward Permit"), 37));
 //    points.append(ICIOPoint("", tr("Thimble Permit 2"), 37));
 //    points.append(ICIOPoint("", tr("Mode Close Permit 2"), 40));
-    points.append(ICIOPoint("", tr("Core 1 In Permit"), 40));
-    points.append(ICIOPoint("", tr("Core 1 Out Permit"), 46));
-    points.append(ICIOPoint("", tr("Core 2 In Permit"), 41));
-    points.append(ICIOPoint("", tr("Core 2 Out Permit"), 45));
+//    points.append(ICIOPoint("", tr("Core 1 In Permit"), 40));
+//    points.append(ICIOPoint("", tr("Core 2 In Permit"), 41));
+//    points.append(ICIOPoint("", tr("En A8"), 42));
+//    points.append(ICIOPoint("", tr("En C7"), 43));
+//    points.append(ICIOPoint("", tr("En C6"), 44));
+//    points.append(ICIOPoint("", tr("Core 2 Out Permit"), 45));
+//    points.append(ICIOPoint("", tr("Core 1 Out Permit"), 46));
 
-    points.append(ICIOPoint("", tr("Robot"), 35));
-    points.append(ICIOPoint("", tr("En C6"), 44));
-    points.append(ICIOPoint("", tr("En C7"), 43));
-    points.append(ICIOPoint("", tr("En A8"), 42));
-//    points.append(ICIOPoint("", tr("Blank 0"), 34));
-//    points.append(ICIOPoint("", tr("Blank 1"), 36));
-//    points.append(ICIOPoint("", tr("Blank2"), 39));
 //    points.append(ICIOPoint("", tr("Blank3"), 47));
 
     euPageLeft_->BindingPointsToOutpuPage(points);
