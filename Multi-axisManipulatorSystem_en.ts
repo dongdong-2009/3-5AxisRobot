@@ -4891,26 +4891,6 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="175"/>
-        <source>Blank2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="183"/>
-        <source>En C6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="182"/>
-        <source>En C7</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="181"/>
-        <source>En A8</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="145"/>
         <source>Mold Closed</source>
         <translation type="unfinished"></translation>
@@ -4983,12 +4963,6 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="160"/>
         <source>ES</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="174"/>
-        <source>Mold Open Permit</source>
-        <oldsource>Eject Forward Permit</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5178,6 +5152,16 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="110"/>
+        <source>Y027</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="118"/>
+        <source>Y036</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="168"/>
         <source>Main Clear-1 Valve</source>
         <translation type="unfinished"></translation>
@@ -5203,14 +5187,12 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="118"/>
         <location filename="categorypage/icmonitorpageframe.cpp" line="173"/>
         <source>Sub Clear-3 Valve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="60"/>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="110"/>
         <source>Watch Dog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5272,26 +5254,6 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="128"/>
         <source>Y047</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="179"/>
-        <source>Core 1 In Permit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="180"/>
-        <source>Core 2 In Permit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="184"/>
-        <source>Core 2 Out Permit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="185"/>
-        <source>Core 1 Out Permit</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

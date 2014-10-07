@@ -277,8 +277,8 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
         maxText = tr("Leave origin pos");
         ui->distanceRotationEdit->SetDecimalPlaces(2);
         ui->label_2->setText(tr("Maximum displacement"));
-        minSecValidator_->setBottom(10);
-        maxSecValidator_->setBottom(500);
+//        minSecValidator_->setBottom(10);
+//        maxSecValidator_->setBottom(500);
 
     }
     else if(currentAxis_ == ICVirtualHost::ICAxis_AxisZ)
@@ -292,7 +292,7 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
         maxText = tr("External security zone");
         ui->distanceRotationEdit->SetDecimalPlaces(2);
         ui->label_2->setText(tr("Maximum displacement"));
-        minSecValidator_->setBottom(1);
+//        minSecValidator_->setBottom(1);
 
     }
     else if(currentAxis_ == ICVirtualHost::ICAxis_AxisX2)

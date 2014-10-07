@@ -2885,7 +2885,7 @@ Reason</source>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="113"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="130"/>
         <source>Fixture</source>
-        <translation>夹具</translation>
+        <translation>喷枪/清洗</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="114"/>
@@ -5982,7 +5982,6 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="60"/>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="110"/>
         <source>Watch Dog</source>
         <translation>通信看门狗</translation>
     </message>
@@ -6259,26 +6258,6 @@ Please enter an digit between </source>
         <translation type="obsolete">允许锁模2</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="183"/>
-        <source>En C6</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="182"/>
-        <source>En C7</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="175"/>
-        <source>Blank2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="181"/>
-        <source>En A8</source>
-        <translation></translation>
-    </message>
-    <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="155"/>
         <source>IMM Reject</source>
         <translation>不良品</translation>
@@ -6366,7 +6345,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="68"/>
         <source>Sub clear-3</source>
-        <translation>副清洗3限</translation>
+        <translation>X036</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="62"/>
@@ -6500,6 +6479,16 @@ Please enter an digit between </source>
         <translation></translation>
     </message>
     <message>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="110"/>
+        <source>Y027</source>
+        <translation>Y027</translation>
+    </message>
+    <message>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="118"/>
+        <source>Y036</source>
+        <translation>Y036</translation>
+    </message>
+    <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="168"/>
         <source>Main Clear-1 Valve</source>
         <translation>主清洗1阀</translation>
@@ -6525,7 +6514,6 @@ Please enter an digit between </source>
         <translation>Y026</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="118"/>
         <location filename="categorypage/icmonitorpageframe.cpp" line="173"/>
         <source>Sub Clear-3 Valve</source>
         <translation>副清洗3阀</translation>
@@ -6664,10 +6652,9 @@ Please enter an digit between </source>
         <translation type="obsolete">允许锁模</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="174"/>
         <source>Mold Open Permit</source>
         <oldsource>Eject Forward Permit</oldsource>
-        <translation>允许开模</translation>
+        <translation type="obsolete">允许开模</translation>
     </message>
     <message>
         <source>B Origin Limit</source>
@@ -6706,24 +6693,20 @@ Please enter an digit between </source>
         <translation type="obsolete">允许顶退</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="179"/>
         <source>Core 1 In Permit</source>
-        <translation>允许入芯1</translation>
+        <translation type="obsolete">允许入芯1</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="180"/>
         <source>Core 2 In Permit</source>
-        <translation>允许入芯2</translation>
+        <translation type="obsolete">允许入芯2</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="184"/>
         <source>Core 2 Out Permit</source>
-        <translation>允许出芯2</translation>
+        <translation type="obsolete">允许出芯2</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="185"/>
         <source>Core 1 Out Permit</source>
-        <translation>允许出芯1</translation>
+        <translation type="obsolete">允许出芯1</translation>
     </message>
     <message>
         <source>Robot</source>

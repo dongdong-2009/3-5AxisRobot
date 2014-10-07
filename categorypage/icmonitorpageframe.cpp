@@ -107,7 +107,7 @@ void ICMonitorPageFrame::Init_()
     points.append(ICIOPoint("Y024", tr("Y024"), 12));
     points.append(ICIOPoint("Y025", tr("Y025"), 13));
     points.append(ICIOPoint("Y026", tr("Y026"), 14));
-    points.append(ICIOPoint("Y027", tr("Watch Dog"), 15));
+    points.append(ICIOPoint("Y027", tr("Y027"), 15));
 
     points.append(ICIOPoint("Y030", tr("Reserve-1 Valve"), 16));
     points.append(ICIOPoint("Y031", tr("Reserve-2 Valve"), 17));
@@ -115,7 +115,7 @@ void ICMonitorPageFrame::Init_()
     points.append(ICIOPoint("Y033", tr("Reserve-4 Valve"), 19));
     points.append(ICIOPoint("Y034", tr("Reserve-5 Valve"), 20));
     points.append(ICIOPoint("Y035", tr("Reserve-6"), 21));//4
-    points.append(ICIOPoint("Y036", tr("Sub Clear-3 Valve"), 22));//3
+    points.append(ICIOPoint("Y036", tr("Y036"), 22));//3
     points.append(ICIOPoint("Y037", tr("Y037"), 23));
 
     points.append(ICIOPoint("Y040", tr("Y040"), 24));
