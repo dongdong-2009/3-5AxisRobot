@@ -60,7 +60,11 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
         ui->reversedCheckBox->click();
     if(ICVirtualHost::GlobalVirtualHost()->FixtureDefine() == 1)
         ui->positiveCheckBox->click();
-
+    int v = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt();
+    v &= 0xFFFF;
+    v >>= 15;
+//    ui->fixtureComboBox->setCurrentIndex((ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt() >> 15) & 1);
+    ui->fixtureComboBox->setCurrentIndex(v);
     ui->getFailWay->setCurrentIndex(ICVirtualHost::GlobalVirtualHost()->GetFailAlarmWay());
 
     connect(ICMold::CurrentMold(),
@@ -182,13 +186,17 @@ void ICHCProductSettingFrame::on_productClearButton_clicked()
 void ICHCProductSettingFrame::FixtureBoxChange()
 {
     ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
-    host->SetSystemParameter(ICVirtualHost::SYS_Config_Fixture, host->FixtureDefineSwitch(buttongroup_->checkedId()));
+    int v = host->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt();
+    v &= 0x8000;
+    v |= host->FixtureDefineSwitch(buttongroup_->checkedId());
+    host->SetSystemParameter(ICVirtualHost::SYS_Config_Fixture, v);
 }
 
 void ICHCProductSettingFrame::InitCheckBox()
 {
     buttongroup_->addButton(ui->reversedCheckBox,0);
     buttongroup_->addButton(ui->positiveCheckBox,1);
+//    buttongroup_->addButton(ui->positiveCheckBox,2);
 
     QList<QAbstractButton*> buttons = buttongroup_->buttons();
     for(int i = 0; i != buttons.size(); ++i)
@@ -210,4 +218,13 @@ void ICHCProductSettingFrame::on_countUnitBox_currentIndexChanged(int index)
 void ICHCProductSettingFrame::on_getFailWay_activated(int index)
 {
     ICVirtualHost::GlobalVirtualHost()->SetGetFailAlarmWay(index);
+}
+
+void ICHCProductSettingFrame::on_fixtureComboBox_currentIndexChanged(int index)
+{
+    ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
+    int v = host->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt();
+    v &= 0x7FFF;
+    v |= (index << 15);
+    host->SetSystemParameter(ICVirtualHost::SYS_Config_Fixture, v);
 }
