@@ -628,7 +628,7 @@ public:
     int PeripheryOutput(int number) const;
     void CalPeripheryOutput(int & config, int number, int val);
     void SetPeripheryOutput(int config) { systemParamMap_.insert(SYS_Config_Out, config);}
-    int FixtureDefine() const { return (systemParamMap_.value(SYS_Config_Fixture).toInt()) == 0x0555 ? 1 : 0;}
+    int FixtureDefine() const { return (systemParamMap_.value(SYS_Config_Fixture).toInt() & 0x7FFF) == 0x0555 ? 1 : 0;}
     void SetFixtureDefine(int val) { systemParamMap_.insert(SYS_Config_Fixture, val == 0 ? 0x0AAA : 0x0555);}
     int FixtureDefineSwitch(int index) const {return index == 0 ? 0x0AAA : 0x0555;}
 
