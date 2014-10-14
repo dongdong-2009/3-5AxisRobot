@@ -20,6 +20,8 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
     ui->samplingEdit_3->setValidator(new QIntValidator(0, 65535, ui->samplingEdit_3));
     ui->waitTimeEdit->SetDecimalPlaces(1);
     ui->waitTimeEdit->setValidator(new QIntValidator(0, 32760, ui->waitTimeEdit));
+    ui->recycleTimeEdit->SetDecimalPlaces(1);
+    ui->recycleTimeEdit->setValidator(new QIntValidator(0, 30000, ui->recycleTimeEdit));
     ICLineEditWrapper *wrapper = new ICLineEditWrapper(ui->productLineEdit,
                                                        ICMold::Product,
                                                        ICLineEditWrapper::Mold,
@@ -36,6 +38,12 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
                                                        ICMold::Sampling,
                                                        ICLineEditWrapper::Mold,
                                                        ICLineEditWrapper::Integer);
+    wrappers_.append(wrapper);
+
+    wrapper = new ICLineEditWrapper(ui->recycleTimeEdit,
+                                                       ICMold::CheckClip8,
+                                                       ICLineEditWrapper::Mold,
+                                                       ICLineEditWrapper::OneFraction);
     wrappers_.append(wrapper);
 
     wrapper = new ICLineEditWrapper(ui->waitTimeEdit,
