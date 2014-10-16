@@ -120,6 +120,7 @@
       </item>
       <item row="0" column="0" colspan="4">
        <layout class="QGridLayout" name="gridLayout">
+<<<<<<< HEAD
         <item row="0" column="0">
          <widget class="QLabel" name="label">
           <property name="sizePolicy">
@@ -147,6 +148,20 @@
             <height>0</height>
            </size>
           </property>
+=======
+        <property name="horizontalSpacing">
+         <number>2</number>
+        </property>
+        <item row="6" column="2">
+         <widget class="ICLineEditWithVirtualNumericKeypad" name="moldCountEdit">
+          <property name="text">
+           <string notr="true">0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QCheckBox" name="tryProductBox">
+>>>>>>> 83a748a... 1.添加吸3吸4
           <property name="styleSheet">
            <string notr="true">::indicator {
      width: 32px;
@@ -173,6 +188,7 @@ QRadioButton::indicator:unchecked:disabled
 }</string>
           </property>
           <property name="text">
+<<<<<<< HEAD
            <string>Defective Products</string>
           </property>
           <property name="checked">
@@ -182,6 +198,14 @@ QRadioButton::indicator:unchecked:disabled
         </item>
         <item row="1" column="1">
          <widget class="QCheckBox" name="samplingBox">
+=======
+           <string>Try Product</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0" colspan="2">
+         <widget class="QCheckBox" name="productCountBox">
+>>>>>>> 83a748a... 1.添加吸3吸4
           <property name="styleSheet">
            <string notr="true">::indicator {
      width: 32px;
@@ -208,12 +232,168 @@ QRadioButton::indicator:unchecked:disabled
 }</string>
           </property>
           <property name="text">
+<<<<<<< HEAD
            <string>Sampling</string>
           </property>
          </widget>
         </item>
         <item row="1" column="2">
          <widget class="QCheckBox" name="fixture4Box">
+=======
+           <string>Product Count</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Check Point</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QCheckBox" name="fixture1Box">
+>>>>>>> 83a748a... 1.添加吸3吸4
+          <property name="styleSheet">
+           <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+QRadioButton::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+QRadioButton::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+          </property>
+          <property name="text">
+           <string>Fixture-1</string>
+          </property>
+         </widget>
+        </item>
+<<<<<<< HEAD
+        <item row="2" column="0">
+         <widget class="QCheckBox" name="x044checkBox">
+=======
+        <item row="1" column="1">
+         <widget class="QCheckBox" name="fixture3Box">
+>>>>>>> 83a748a... 1.添加吸3吸4
+          <property name="styleSheet">
+           <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+QRadioButton::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+QRadioButton::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+          </property>
+          <property name="text">
+<<<<<<< HEAD
+           <string>X044</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QCheckBox" name="fixture1Box">
+=======
+           <string>Fixture-3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QCheckBox" name="defectiveProductsBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>20</width>
+            <height>0</height>
+           </size>
+          </property>
+>>>>>>> 83a748a... 1.添加吸3吸4
+          <property name="styleSheet">
+           <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+QRadioButton::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+QRadioButton::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+          </property>
+          <property name="text">
+<<<<<<< HEAD
+           <string>Fixture-1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QCheckBox" name="sucker1Box">
+=======
+           <string>Defective Products</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QCheckBox" name="fixture4Box">
+>>>>>>> 83a748a... 1.添加吸3吸4
           <property name="styleSheet">
            <string notr="true">::indicator {
      width: 32px;
@@ -245,7 +425,7 @@ QRadioButton::indicator:unchecked:disabled
          </widget>
         </item>
         <item row="2" column="0">
-         <widget class="QCheckBox" name="x044checkBox">
+         <widget class="QCheckBox" name="fixture2Box">
           <property name="styleSheet">
            <string notr="true">::indicator {
      width: 32px;
@@ -272,71 +452,7 @@ QRadioButton::indicator:unchecked:disabled
 }</string>
           </property>
           <property name="text">
-           <string>X044</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="1">
-         <widget class="QCheckBox" name="fixture1Box">
-          <property name="styleSheet">
-           <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-QRadioButton::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-QRadioButton::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-          </property>
-          <property name="text">
-           <string>Fixture-1</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="2">
-         <widget class="QCheckBox" name="sucker1Box">
-          <property name="styleSheet">
-           <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-QRadioButton::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-QRadioButton::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-          </property>
-          <property name="text">
-           <string>Sucker-1</string>
+           <string>Fixture-2</string>
           </property>
          </widget>
         </item>
@@ -372,8 +488,13 @@ QRadioButton::indicator:unchecked:disabled
           </property>
          </widget>
         </item>
+<<<<<<< HEAD
         <item row="3" column="1">
          <widget class="QCheckBox" name="fixture2Box">
+=======
+        <item row="1" column="2">
+         <widget class="QCheckBox" name="sucker1Box">
+>>>>>>> 83a748a... 1.添加吸3吸4
           <property name="styleSheet">
            <string notr="true">::indicator {
      width: 32px;
@@ -400,7 +521,11 @@ QRadioButton::indicator:unchecked:disabled
 }</string>
           </property>
           <property name="text">
+<<<<<<< HEAD
            <string>Fixture-2</string>
+=======
+           <string>Sucker-1</string>
+>>>>>>> 83a748a... 1.添加吸3吸4
           </property>
          </widget>
         </item>
@@ -436,8 +561,13 @@ QRadioButton::indicator:unchecked:disabled
           </property>
          </widget>
         </item>
+<<<<<<< HEAD
         <item row="4" column="0">
          <widget class="QCheckBox" name="tryProductBox">
+=======
+        <item row="5" column="0">
+         <widget class="QCheckBox" name="samplingBox">
+>>>>>>> 83a748a... 1.添加吸3吸4
           <property name="styleSheet">
            <string notr="true">::indicator {
      width: 32px;
@@ -464,12 +594,20 @@ QRadioButton::indicator:unchecked:disabled
 }</string>
           </property>
           <property name="text">
+<<<<<<< HEAD
            <string>Try Product</string>
+=======
+           <string>Sampling</string>
+>>>>>>> 83a748a... 1.添加吸3吸4
           </property>
          </widget>
         </item>
         <item row="4" column="1">
+<<<<<<< HEAD
          <widget class="QCheckBox" name="fixture3Box">
+=======
+         <widget class="QCheckBox" name="x044checkBox">
+>>>>>>> 83a748a... 1.添加吸3吸4
           <property name="styleSheet">
            <string notr="true">::indicator {
      width: 32px;
@@ -496,12 +634,20 @@ QRadioButton::indicator:unchecked:disabled
 }</string>
           </property>
           <property name="text">
+<<<<<<< HEAD
            <string>Fixture-3</string>
           </property>
          </widget>
         </item>
         <item row="5" column="0">
          <widget class="QCheckBox" name="productCountBox">
+=======
+           <string>X044</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QCheckBox" name="sucker3Box">
           <property name="styleSheet">
            <string notr="true">::indicator {
      width: 32px;
@@ -528,7 +674,40 @@ QRadioButton::indicator:unchecked:disabled
 }</string>
           </property>
           <property name="text">
-           <string>Product Count</string>
+           <string>Sucker-3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QCheckBox" name="sucker4Box">
+>>>>>>> 83a748a... 1.添加吸3吸4
+          <property name="styleSheet">
+           <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+QRadioButton::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+QRadioButton::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+          </property>
+          <property name="text">
+           <string>Sucker-4</string>
           </property>
          </widget>
         </item>

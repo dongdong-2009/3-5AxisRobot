@@ -137,12 +137,12 @@ QRadioButton::indicator:unchecked:disabled
      </row>
      <row>
       <property name="text">
-       <string>X037</string>
+       <string>Sucker3</string>
       </property>
      </row>
      <row>
       <property name="text">
-       <string>X023</string>
+       <string>Sucker4</string>
       </property>
      </row>
      <column>

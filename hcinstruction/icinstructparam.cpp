@@ -65,7 +65,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
                 commandStr += tr("Fixture");
                 commandStr += QString::number(moldItem.SVal() + 1);
             }
-            else if(moldItem.SVal() < 6)
+            else if(moldItem.SVal() < 8)
             {
                 commandStr += tr("Sucker");
                 commandStr += QString::number(moldItem.SVal() - 3);
@@ -192,6 +192,14 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             {
                 commandStr += tr("Mold Count") + ":" + QString::number(moldItem.IFPos());
             }
+            else if(moldItem.IFVal() == 12)
+            {
+                commandStr += tr("X016 OFF");
+            }
+            else if(moldItem.IFVal() == 13)
+            {
+                commandStr += tr("X036 OFF");
+            }
             commandStr += " ";
 //            commandStr += " " + tr("ON:Macro") + QString::number(moldItem.RVal()) + " ";
             if(moldItem.SVal() == 5)
@@ -293,7 +301,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
     else
     {
         action = moldItem.Clip();
-        commandStr += clipGroupMap_.value(action) + ": ";
+        commandStr += clipGroupMap_.value(action) + "";
         if(clipStatusList_.contains(action))
         {
             commandStr += QObject::tr("Times:") + QString::number(moldItem.ActualMoldCount()) + " ";
@@ -311,13 +319,17 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
         {
             if(moldItem.IFVal() == 0)
             {
-                commandStr += QObject::tr("Off") + " ";
+                commandStr += QObject::tr("Off");
             }
             else
             {
-                commandStr += QObject::tr("On") + " ";
+                commandStr += QObject::tr("On");
             }
-            commandStr += QObject::tr("Times:") + QString::number(moldItem.ActualMoldCount()) + " ";
+            if(action != ICMold::ACT_AUX5 && action != ICMold::ACT_AUX6)
+            {
+                commandStr += " ";
+                commandStr += QObject::tr("Times:") + QString::number(moldItem.ActualMoldCount()) + " ";
+            }
             commandStr += " ";
         }
 //        else if(action == ICMold::ACT_AUX1)
@@ -355,6 +367,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
     }
     else
     {
+        commandStr += " ";
         commandStr += QObject::tr("Delay time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 2) + "      ";
     }
 
@@ -439,8 +452,8 @@ void ICInstructParam::InstallMoldInfo()
     clipGroupMap_[ACT_AUX2] = QObject::tr("Reserve 2");
     clipGroupMap_[ACT_AUX3] = QObject::tr("Reserve 3");
     clipGroupMap_[ACT_AUX4] = QObject::tr("Reserve 4");
-    clipGroupMap_[ACT_AUX5] = QObject::tr("Reserve 5");
-    clipGroupMap_[ACT_AUX6] = QObject::tr("Reserve 6");
+    clipGroupMap_[ACT_AUX5] = QObject::tr("Sucker 3");
+    clipGroupMap_[ACT_AUX6] = QObject::tr("Sucker 4");
 //    clipGroupMap_[ACTCLIP14OFF] = QObject::tr("Clip14 OFF");
 //    clipGroupMap_[ACTCLIP15OFF] = QObject::tr("Clip15 OFF");
 //    clipGroupMap_[ACTCLIP16OFF] = QObject::tr("Clip16 OFF");

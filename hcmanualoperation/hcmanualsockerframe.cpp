@@ -21,6 +21,16 @@ HCManualSockerFrame::HCManualSockerFrame(QWidget *parent) :
     wrapper = new ICCommandKeyWrapper(ui->disconnectSucker2ToolButton, IC::VKEY_CLIP6OFF);
     wrappers_.append(wrapper);
 
+    wrapper = new ICCommandKeyWrapper(ui->connectSucker3ToolButton, IC::VKEY_RESERVE5_ON);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->connectSucker4ToolButton, IC::VKEY_RESERVE6_ON);
+    wrappers_.append(wrapper);
+
+    wrapper = new ICCommandKeyWrapper(ui->disconnectSucker3ToolButton, IC::VKEY_RESERVE5_OFF);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->disconnectSucker4ToolButton, IC::VKEY_RESERVE6_OFF);
+    wrappers_.append(wrapper);
+
 }
 
 HCManualSockerFrame::~HCManualSockerFrame()
@@ -101,4 +111,41 @@ void HCManualSockerFrame::StatusRefreshed()
     {
         ui->sucker2Label->setPixmap(off);
     }
+
+    if(host->IsInputOn(6))
+    {
+        ui->sucker3Label->setPixmap(inOn);
+    }
+    else
+    {
+        ui->sucker3Label->setPixmap(off);
+    }
+
+    if(host->IsInputOn(22))
+    {
+        ui->sucker4Label->setPixmap(inOn);
+    }
+    else
+    {
+        ui->sucker4Label->setPixmap(off);
+    }
+
+    if(host->IsOutputOn(21))
+    {
+        ui->sucker3StatusLabel->setPixmap(on);
+    }
+    else
+    {
+        ui->sucker3StatusLabel->setPixmap(off);
+    }
+
+    if(host->IsOutputOn(22))
+    {
+        ui->sucker4StatusLabel->setPixmap(on);
+    }
+    else
+    {
+        ui->sucker4StatusLabel->setPixmap(off);
+    }
+
 }
