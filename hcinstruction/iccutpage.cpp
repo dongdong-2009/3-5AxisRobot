@@ -18,7 +18,8 @@ ICCutPage::ICCutPage(QWidget *parent) :
 //    ICLineEditWithVirtualNumericKeypad* delays = new ICLineEditWithVirtualNumericKeypad[ui->tableWidget->rowCount()];
 //    ICLineEditWithVirtualNumericKeypad *delayEdit;
     ioNames_<<tr("Fixture1  ")<<tr("Fixture2  ")<<tr("Fixture3  ")<<tr("Fixture4  ")
-           <<tr("Sucker1   ")<<tr("Sucker2   ")<<tr("X037  ")<<tr("X023  ");
+           <<tr("Sucker1   ")<<tr("Sucker2   ")
+          <<tr("Sucker3  ")<<tr("Sucker4  ");
     onClipToOffClip_.insert(ICMold::ACTCLIP1ON, ICMold::ACTCLIP1OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP2ON, ICMold::ACTCLIP2OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP3ON, ICMold::ACTCLIP3OFF);
@@ -111,7 +112,8 @@ void ICCutPage::changeEvent(QEvent *e)
         ui->retranslateUi(this);
         ioNames_.clear();
         ioNames_<<tr("Fixture1  ")<<tr("Fixture2  ")<<tr("Fixture3  ")<<tr("Fixture4  ")
-               <<tr("Sucker1   ")<<tr("Sucker2   ")<<tr("X037  ")<<tr("X023  ");
+               <<tr("Sucker1   ")<<tr("Sucker2   ")
+              <<tr("Sucker3  ")<<tr("Sucker4  ");
         for(int i = 0; i != settingButtons_.size(); ++i)
         {
             settingButtons_[i]->setText(ioNames_.at(i));
