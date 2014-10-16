@@ -4341,65 +4341,75 @@ Reason</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="236"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="237"/>
+        <source>Sucker</source>
+        <translation>吸</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="237"/>
+        <source>Valve</source>
+        <translation>阀</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="239"/>
         <source>Reserve</source>
         <translation>预留</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="260"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="270"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="315"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="325"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="263"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="273"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="318"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="328"/>
         <source>Horizon-1</source>
         <translation>水平1</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="266"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="285"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="269"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="288"/>
         <source>C Origin</source>
         <translation>C轴原点</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="279"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="289"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="297"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="307"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="282"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="292"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="300"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="310"/>
         <source>Vertical-1</source>
         <translation>垂直1</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="303"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="321"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="306"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="324"/>
         <source>C Origin Limit</source>
         <translation>C轴起点极限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="335"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="338"/>
         <source>Adjust Sub Forward</source>
         <translation>副臂前进调位</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="346"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="349"/>
         <source>A Origin/Horizon-2</source>
         <translation>A轴原点/水平2限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="357"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="360"/>
         <source>Adjust Sub Backward</source>
         <translation>副臂后退调位</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="361"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="364"/>
         <source>Adjust Sub Up</source>
         <translation>副臂上升调位</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="368"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="371"/>
         <source>X2 In Limit</source>
         <translation>X2轴起点极限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="372"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="375"/>
         <source>Y2 In Limit</source>
         <translation>Y2轴起点极限</translation>
     </message>

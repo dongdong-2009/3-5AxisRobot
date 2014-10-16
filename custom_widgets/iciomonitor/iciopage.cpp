@@ -233,7 +233,10 @@ void ICIOPage::showEvent(QShowEvent *e)
         {
             if(host->PeripheryOutput(i) == 1)
             {
-                recsLabels_[i]->setText(tr("Reserve") + QString::number(i+1));
+                if(i > 3)
+                    recsLabels_[i]->setText(tr("Sucker") + QString::number(i - 1) + tr("Valve"));
+                else
+                    recsLabels_[i]->setText(tr("Reserve") + QString::number(i+1));
             }
             else
             {
