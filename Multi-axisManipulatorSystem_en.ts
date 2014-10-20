@@ -2142,22 +2142,22 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="152"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="376"/>
         <source>A+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="177"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="401"/>
         <source>A-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="202"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="426"/>
         <source>B+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="227"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="451"/>
         <source>B-</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4784,8 +4784,8 @@ Please enter an digit between </source>
         <translation type="obsolete">Sucker2 {5?}</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="88"/>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="89"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="107"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="108"/>
         <source>Other</source>
         <translation>Manipulator I/O</translation>
     </message>
@@ -4810,25 +4810,26 @@ Please enter an digit between </source>
         <translation type="obsolete">Fixture2 Valve</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="101"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="120"/>
         <source>Sub Shot-2 Valve</source>
         <oldsource>Adjust Sub Back</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="171"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="151"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="196"/>
         <source>Sub Clear-1 Valve</source>
         <oldsource>Horizontal-2 Valve</oldsource>
         <translation type="unfinished">Hor-2 Valve</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="116"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="135"/>
         <source>Reserve-5 Valve</source>
         <oldsource>Reserve-6 Valve</oldsource>
         <translation type="unfinished">Fixture3 Valve</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="98"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="117"/>
         <source>Main Shot-2 Valve</source>
         <oldsource>Sucker2 Valve</oldsource>
         <translation type="unfinished"></translation>
@@ -4853,7 +4854,7 @@ Please enter an digit between </source>
         <translation type="obsolete">Ver-2</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="103"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="122"/>
         <source>Sub Shot-3 Valve</source>
         <oldsource>Fixtur4 Valve</oldsource>
         <translation type="unfinished">Fixture4 Valve</translation>
@@ -4863,13 +4864,13 @@ Please enter an digit between </source>
         <translation type="obsolete">Injector</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="113"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="132"/>
         <source>Reserve-2 Valve</source>
         <oldsource>Vice Forward Valve</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="99"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="118"/>
         <source>Main Shot-3 Valve</source>
         <oldsource>Sucke1 Valve</oldsource>
         <translation type="unfinished">Sucker1 Valve</translation>
@@ -4880,88 +4881,102 @@ Please enter an digit between </source>
         <translation type="obsolete">Conveyor</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="140"/>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="141"/>
         <source>EU</source>
-        <translation>Injection Machine I/O</translation>
+        <translation type="obsolete">Injection Machine I/O</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="159"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="103"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="184"/>
         <source>Safe Door</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="145"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="89"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="170"/>
         <source>Mold Closed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="144"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="88"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="169"/>
         <source>Mold Opened</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="161"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="105"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="186"/>
         <source>Mold Inter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="162"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="106"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="187"/>
         <source>IMM Auto</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="147"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="91"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="172"/>
         <source>Eject Backward</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="146"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="90"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="171"/>
         <source>Eject Forward</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="158"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="102"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="183"/>
         <source>ZC7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="157"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="101"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="182"/>
         <source>ZC6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="156"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="100"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="181"/>
         <source>ZC5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="152"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="96"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="177"/>
         <source>Core 2 Out</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="151"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="95"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="176"/>
         <source>Core 2 In</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="150"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="94"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="175"/>
         <source>Core 1 Out</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="149"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="93"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="174"/>
         <source>Core 1 In</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="155"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="99"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="180"/>
         <source>IMM Reject</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="160"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="104"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="185"/>
         <source>ES</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5072,7 +5087,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="67"/>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="117"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="136"/>
         <source>Reserve-6</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5102,92 +5117,97 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="94"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="113"/>
         <source>Y10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="95"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="114"/>
         <source>Y11</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="96"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="115"/>
         <source>Y12</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="97"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="116"/>
         <source>Main Shot-1 Valve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="100"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="119"/>
         <source>Sub Shot-1 Valve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="104"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="123"/>
         <source>Y021</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="105"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="124"/>
         <source>Y022</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="106"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="125"/>
         <source>Y023</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="107"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="126"/>
         <source>Y024</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="108"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="127"/>
         <source>Y025</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="110"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="129"/>
         <source>Y027</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="118"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="137"/>
         <source>Y036</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="168"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="148"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="193"/>
         <source>Main Clear-1 Valve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="169"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="149"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="194"/>
         <source>Main Clear-2 Valve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="170"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="150"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="195"/>
         <source>Main Clear-3 Valve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="172"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="152"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="197"/>
         <source>Sub Clear-2 Valve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="109"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="128"/>
         <source>Y026</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="173"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="153"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="198"/>
         <source>Sub Clear-3 Valve</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5197,62 +5217,62 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="112"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="131"/>
         <source>Reserve-1 Valve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="114"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="133"/>
         <source>Reserve-3 Valve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="115"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="134"/>
         <source>Reserve-4 Valve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="119"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="138"/>
         <source>Y037</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="121"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="140"/>
         <source>Y040</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="122"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="141"/>
         <source>Y041</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="123"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="142"/>
         <source>Y042</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="124"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="143"/>
         <source>Y043</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="125"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="144"/>
         <source>Y044</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="126"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="145"/>
         <source>Y045</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="127"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="146"/>
         <source>Y046</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="128"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="147"/>
         <source>Y047</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5865,6 +5885,11 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="custom_widgets/programhead/icprogramheadframe.ui" line="236"/>
+        <source>TextLabel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>0.0h</source>
         <translation type="obsolete">Reserve {0.0h?}</translation>
     </message>
@@ -5875,23 +5900,23 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="25"/>
-        <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="136"/>
+        <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="137"/>
         <source>Spare Time: %1 h</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="87"/>
+        <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="88"/>
         <source>%1 h %2 m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="130"/>
+        <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="131"/>
         <source>No Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="27"/>
-        <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="138"/>
+        <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="139"/>
         <source>No Register!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6675,7 +6700,7 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/systemstatusframe/icsystemstatusframe.ui" line="181"/>
+        <location filename="custom_widgets/systemstatusframe/icsystemstatusframe.ui" line="199"/>
         <source>IMM Signal</source>
         <translation type="unfinished"></translation>
     </message>

@@ -30,7 +30,16 @@ border-color: rgb(255, 255, 255);
    <property name="spacing">
     <number>0</number>
    </property>
-   <property name="margin">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
     <number>0</number>
    </property>
    <item>
@@ -42,7 +51,16 @@ border-color: rgb(255, 255, 255);
       <property name="spacing">
        <number>0</number>
       </property>
-      <property name="margin">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
        <number>0</number>
       </property>
       <item>
@@ -170,7 +188,7 @@ color:rgb(255, 0, 255);</string>
       <string notr="true">#immButton
 {
 border:none;
-color: rgb(255, 255, 0);
+color: gray
 }
 #immButton:pressed{
      background-color:blue;

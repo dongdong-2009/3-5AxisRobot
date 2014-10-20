@@ -33,6 +33,7 @@ ICProgramHeadFrame::ICProgramHeadFrame(QWidget *parent) :
     ui->restTimeLabel->hide();
     autoTime_.start(60000);
     UpdateAutoTime();
+    ui->logo->setPixmap(QPixmap("./resource/logo.png"));
 }
 
 ICProgramHeadFrame::~ICProgramHeadFrame()

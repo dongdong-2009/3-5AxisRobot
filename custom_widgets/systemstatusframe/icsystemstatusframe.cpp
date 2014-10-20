@@ -124,6 +124,6 @@ void ICSystemStatusFrame::InitInterface()
 
 void ICSystemStatusFrame::on_immButton_clicked()
 {
-    tuneMoldDialog_->show();
+//    tuneMoldDialog_->show();
 }
 

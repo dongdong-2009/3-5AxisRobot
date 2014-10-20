@@ -705,7 +705,7 @@
         <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="992"/>
         <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="1081"/>
         <source>ON</source>
-        <translation>通</translation>
+        <translation>开</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="69"/>
@@ -721,7 +721,7 @@
         <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="1033"/>
         <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="1122"/>
         <source>OFF</source>
-        <translation>断</translation>
+        <translation>关</translation>
     </message>
     <message>
         <source>Fixture 4</source>
@@ -1765,7 +1765,7 @@ Reason</source>
         <location filename="hcsettings/ichcdetectionframe.ui" line="473"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="512"/>
         <source>RP</source>
-        <translation>反相</translation>
+        <translation>断</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="45"/>
@@ -1781,7 +1781,7 @@ Reason</source>
         <location filename="hcsettings/ichcdetectionframe.ui" line="468"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="507"/>
         <source>PP</source>
-        <translation>正相</translation>
+        <translation>通</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="58"/>
@@ -2751,22 +2751,22 @@ Reason</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="152"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="376"/>
         <source>A+</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="177"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="401"/>
         <source>A-</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="202"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="426"/>
         <source>B+</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="227"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="451"/>
         <source>B-</source>
         <translation></translation>
     </message>
@@ -6028,8 +6028,8 @@ Please enter an digit between </source>
         <translation type="obsolete">C轴伺服报警</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="88"/>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="89"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="107"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="108"/>
         <source>Other</source>
         <translation>机械手I/O信号</translation>
     </message>
@@ -6054,7 +6054,7 @@ Please enter an digit between </source>
         <translation type="obsolete">夹2阀</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="101"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="120"/>
         <source>Sub Shot-2 Valve</source>
         <oldsource>Adjust Sub Back</oldsource>
         <translation>副喷枪2阀</translation>
@@ -6068,7 +6068,8 @@ Please enter an digit between </source>
         <translation type="obsolete">备用输出2</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="171"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="151"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="196"/>
         <source>Sub Clear-1 Valve</source>
         <oldsource>Horizontal-2 Valve</oldsource>
         <translation>副清洗1阀</translation>
@@ -6078,13 +6079,13 @@ Please enter an digit between </source>
         <translation type="obsolete">运行指示灯</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="116"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="135"/>
         <source>Reserve-5 Valve</source>
         <oldsource>Reserve-6 Valve</oldsource>
         <translation>预留5阀</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="98"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="117"/>
         <source>Main Shot-2 Valve</source>
         <oldsource>Sucker2 Valve</oldsource>
         <translation>主喷枪2阀</translation>
@@ -6121,7 +6122,7 @@ Please enter an digit between </source>
         <translation type="obsolete">备用输出6</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="103"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="122"/>
         <source>Sub Shot-3 Valve</source>
         <oldsource>Fixtur4 Valve</oldsource>
         <translation>副喷枪3阀</translation>
@@ -6157,7 +6158,7 @@ Please enter an digit between </source>
         <translation type="obsolete">锁模允许附加</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="113"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="132"/>
         <source>Reserve-2 Valve</source>
         <oldsource>Vice Forward Valve</oldsource>
         <translation>预留2阀</translation>
@@ -6177,7 +6178,7 @@ Please enter an digit between </source>
         <translation type="obsolete">副下降阀/扩展4</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="99"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="118"/>
         <source>Main Shot-3 Valve</source>
         <oldsource>Sucke1 Valve</oldsource>
         <translation>主喷枪3阀</translation>
@@ -6227,10 +6228,8 @@ Please enter an digit between </source>
         <translation type="obsolete">预留6</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="140"/>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="141"/>
         <source>EU</source>
-        <translation>注塑机I/O信号</translation>
+        <translation type="obsolete">注塑机I/O信号</translation>
     </message>
     <message>
         <source>Mode open In 2</source>
@@ -6241,7 +6240,8 @@ Please enter an digit between </source>
         <translation type="obsolete">安全门2</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="159"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="103"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="184"/>
         <source>Safe Door</source>
         <translation>安全门</translation>
     </message>
@@ -6258,17 +6258,20 @@ Please enter an digit between </source>
         <translation type="obsolete">允许锁模2</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="155"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="99"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="180"/>
         <source>IMM Reject</source>
         <translation>不良品</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="145"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="89"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="170"/>
         <source>Mold Closed</source>
         <translation>锁模终止</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="144"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="88"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="169"/>
         <source>Mold Opened</source>
         <translation>开模终止</translation>
     </message>
@@ -6399,7 +6402,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="67"/>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="117"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="136"/>
         <source>Reserve-6</source>
         <translation>预留6限</translation>
     </message>
@@ -6429,202 +6432,217 @@ Please enter an digit between </source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="94"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="113"/>
         <source>Y10</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="95"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="114"/>
         <source>Y11</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="96"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="115"/>
         <source>Y12</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="97"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="116"/>
         <source>Main Shot-1 Valve</source>
         <translation>主喷枪1阀</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="100"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="119"/>
         <source>Sub Shot-1 Valve</source>
         <translation>副喷枪1阀</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="104"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="123"/>
         <source>Y021</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="105"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="124"/>
         <source>Y022</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="106"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="125"/>
         <source>Y023</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="107"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="126"/>
         <source>Y024</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="108"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="127"/>
         <source>Y025</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="110"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="129"/>
         <source>Y027</source>
         <translation>Y027</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="118"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="137"/>
         <source>Y036</source>
         <translation>Y036</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="168"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="148"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="193"/>
         <source>Main Clear-1 Valve</source>
         <translation>主清洗1阀</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="169"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="149"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="194"/>
         <source>Main Clear-2 Valve</source>
         <translation>主清洗2阀</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="170"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="150"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="195"/>
         <source>Main Clear-3 Valve</source>
         <translation>主清洗3阀</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="172"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="152"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="197"/>
         <source>Sub Clear-2 Valve</source>
         <translation>副清洗2阀</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="109"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="128"/>
         <source>Y026</source>
         <translation>Y026</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="173"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="153"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="198"/>
         <source>Sub Clear-3 Valve</source>
         <translation>副清洗3阀</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="112"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="131"/>
         <source>Reserve-1 Valve</source>
         <translation>预留1阀</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="114"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="133"/>
         <source>Reserve-3 Valve</source>
         <translation>预留3阀</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="115"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="134"/>
         <source>Reserve-4 Valve</source>
         <translation>预留4阀</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="119"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="138"/>
         <source>Y037</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="121"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="140"/>
         <source>Y040</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="122"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="141"/>
         <source>Y041</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="123"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="142"/>
         <source>Y042</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="124"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="143"/>
         <source>Y043</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="125"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="144"/>
         <source>Y044</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="126"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="145"/>
         <source>Y045</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="127"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="146"/>
         <source>Y046</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="128"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="147"/>
         <source>Y047</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="161"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="105"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="186"/>
         <source>Mold Inter</source>
         <translation>中板模</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="162"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="106"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="187"/>
         <source>IMM Auto</source>
         <translation>全自动</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="147"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="91"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="172"/>
         <source>Eject Backward</source>
         <translation>顶针后退到位</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="146"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="90"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="171"/>
         <source>Eject Forward</source>
         <translation>顶针前进到位</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="158"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="102"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="183"/>
         <source>ZC7</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="157"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="101"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="182"/>
         <source>ZC6</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="156"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="100"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="181"/>
         <source>ZC5</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="152"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="96"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="177"/>
         <source>Core 2 Out</source>
         <translation>出芯2到位</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="151"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="95"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="176"/>
         <source>Core 2 In</source>
         <translation>入芯2到位</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="150"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="94"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="175"/>
         <source>Core 1 Out</source>
         <translation>出芯1到位</translation>
     </message>
@@ -6637,12 +6655,14 @@ Please enter an digit between </source>
         <translation type="obsolete">主前进限</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="149"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="93"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="174"/>
         <source>Core 1 In</source>
         <translation>入芯1到位</translation>
     </message>
     <message>
-        <location filename="categorypage/icmonitorpageframe.cpp" line="160"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="104"/>
+        <location filename="categorypage/icmonitorpageframe.cpp" line="185"/>
         <source>ES</source>
         <translation>急停</translation>
     </message>
@@ -7461,6 +7481,11 @@ Please enter an digit between </source>
         <translation>运行时间：</translation>
     </message>
     <message>
+        <location filename="custom_widgets/programhead/icprogramheadframe.ui" line="236"/>
+        <source>TextLabel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>0.0h</source>
         <translation type="obsolete">0.0小时</translation>
     </message>
@@ -7480,12 +7505,12 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="25"/>
-        <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="136"/>
+        <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="137"/>
         <source>Spare Time: %1 h</source>
         <translation>剩余时间:%1h</translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="87"/>
+        <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="88"/>
         <source>%1 h %2 m</source>
         <translation>%1时%2分</translation>
     </message>
@@ -7494,13 +7519,13 @@ Please enter an digit between </source>
         <translation type="obsolete">%1 小时</translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="130"/>
+        <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="131"/>
         <source>No Limit</source>
         <translation>无限制</translation>
     </message>
     <message>
         <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="27"/>
-        <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="138"/>
+        <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="139"/>
         <source>No Register!</source>
         <translation>没有注册！</translation>
     </message>
@@ -8382,7 +8407,7 @@ Please enter an digit between </source>
         <translation></translation>
     </message>
     <message>
-        <location filename="custom_widgets/systemstatusframe/icsystemstatusframe.ui" line="181"/>
+        <location filename="custom_widgets/systemstatusframe/icsystemstatusframe.ui" line="199"/>
         <source>IMM Signal</source>
         <translation>塑机信号</translation>
     </message>

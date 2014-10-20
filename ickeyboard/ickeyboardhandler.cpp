@@ -157,9 +157,9 @@ void ICKeyboardHandler::Keypressed(int keyValue)
             {
                 currentSpeed = 10;
             }
-            if(currentSpeed > 200)
+            if(currentSpeed > 100)
             {
-                currentSpeed = 200;
+                currentSpeed = 100;
             }
 
             host->SetGlobalSpeed(currentSpeed);

@@ -85,6 +85,25 @@ void ICMonitorPageFrame::Init_()
 //    points.append(ICIOPoint("X055", tr("A Servo Alarm"), 53));
 //    points.append(ICIOPoint("X056", tr("B Servo Alarm"), 54));
 //    points.append(ICIOPoint("X057", tr("C Servo Alarm"), 55));
+    points.append(ICIOPoint("", tr("Mold Opened"), 35));
+    points.append(ICIOPoint("", tr("Mold Closed"), 34));
+    points.append(ICIOPoint("", tr("Eject Forward"), 39));
+    points.append(ICIOPoint("", tr("Eject Backward"), 38));
+//    points.append(ICIOPoint("", tr("Mode open In 2"), 46)); //开模2完
+    points.append(ICIOPoint("", tr("Core 1 In"), 46)); //入芯1到位
+    points.append(ICIOPoint("", tr("Core 1 Out"), 45));
+    points.append(ICIOPoint("", tr("Core 2 In"), 44));
+    points.append(ICIOPoint("", tr("Core 2 Out"), 43));
+
+//    points.append(ICIOPoint("", tr("Safe Door 2"), 33));//安全门2
+    points.append(ICIOPoint("", tr("IMM Reject"), 33));//不良品
+    points.append(ICIOPoint("", tr("ZC5"), 42));
+    points.append(ICIOPoint("", tr("ZC6"), 41));
+    points.append(ICIOPoint("", tr("ZC7"), 40));
+    points.append(ICIOPoint("", tr("Safe Door"), 32));
+    points.append(ICIOPoint("", tr("ES"), 47));
+    points.append(ICIOPoint("", tr("Mold Inter"), 36));
+    points.append(ICIOPoint("", tr("IMM Auto"), 37));
     ui->icMonitorFrameleft->AddPage(otherPageLeft_, tr("Other"));
     ui->icMonitorFrameRight->AddPage(otherPageRight_, tr("Other"));
     otherPageLeft_->BindingPointsToInputPage(points);
@@ -126,6 +145,12 @@ void ICMonitorPageFrame::Init_()
     points.append(ICIOPoint("Y045", tr("Y045"), 29));//4
     points.append(ICIOPoint("Y046", tr("Y046"), 30));//3
     points.append(ICIOPoint("Y047", tr("Y047"), 31));
+    points.append(ICIOPoint("", tr("Main Clear-1 Valve"), 32));
+    points.append(ICIOPoint("", tr("Main Clear-2 Valve"), 33));
+    points.append(ICIOPoint("", tr("Main Clear-3 Valve"), 34));
+    points.append(ICIOPoint("", tr("Sub Clear-1 Valve"), 35));
+    points.append(ICIOPoint("", tr("Sub Clear-2 Valve"), 36));
+    points.append(ICIOPoint("", tr("Sub Clear-3 Valve"), 37));
 //#ifdef HC_8AXIS
 //    points.append(ICIOPoint("Y022", tr("Reserve 1"), 10));//1
 //    points.append(ICIOPoint("Y023", tr("Reserve 2"), 11));//2
@@ -137,8 +162,8 @@ void ICMonitorPageFrame::Init_()
     otherPageLeft_->BindingPointsToOutpuPage(points);
     otherPageRight_->BindingPointsToOutpuPage(points);
 
-    ui->icMonitorFrameleft->AddPage(euPageLeft_, tr("EU"));
-    ui->icMonitorFrameRight->AddPage(euPageRight_, tr("EU"));
+//    ui->icMonitorFrameleft->AddPage(euPageLeft_, tr("EU"));
+//    ui->icMonitorFrameRight->AddPage(euPageRight_, tr("EU"));
 
     points.clear();
     points.append(ICIOPoint("", tr("Mold Opened"), 35));
@@ -161,8 +186,8 @@ void ICMonitorPageFrame::Init_()
     points.append(ICIOPoint("", tr("Mold Inter"), 36));
     points.append(ICIOPoint("", tr("IMM Auto"), 37));
 
-    euPageLeft_->BindingPointsToInputPage(points);
-    euPageRight_->BindingPointsToInputPage(points);
+//    euPageLeft_->BindingPointsToInputPage(points);
+//    euPageRight_->BindingPointsToInputPage(points);
 
     points.clear();
     points.append(ICIOPoint("", tr("Main Clear-1 Valve"), 32));
@@ -186,6 +211,6 @@ void ICMonitorPageFrame::Init_()
 
 //    points.append(ICIOPoint("", tr("Blank3"), 47));
 
-    euPageLeft_->BindingPointsToOutpuPage(points);
-    euPageRight_->BindingPointsToOutpuPage(points);
+//    euPageLeft_->BindingPointsToOutpuPage(points);
+//    euPageRight_->BindingPointsToOutpuPage(points);
 }
