@@ -986,8 +986,8 @@ Reason</source>
         <translation type="obsolete">解决办法</translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.cpp" line="129"/>
-        <location filename="categorypage/icalarmframe.cpp" line="245"/>
+        <location filename="categorypage/icalarmframe.cpp" line="130"/>
+        <location filename="categorypage/icalarmframe.cpp" line="248"/>
         <source>no-solve</source>
         <translation>未解决</translation>
     </message>

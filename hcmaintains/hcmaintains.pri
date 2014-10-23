@@ -16,8 +16,8 @@ FORMS += \
 
 
 contains(DEFINES, HC_SK_8){
-FORMS += 
+#FORMS += hcmaintains/icupdatesystempage.ui
 }
 contains(DEFINES, HC_SK_5){
-FORMS += 
+#FORMS += hcmaintains/icupdatesystempage_5.ui
 }
