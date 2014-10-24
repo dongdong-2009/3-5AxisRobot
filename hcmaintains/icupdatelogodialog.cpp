@@ -7,6 +7,7 @@ ICUpdateLogoDialog::ICUpdateLogoDialog(QWidget *parent) :
     ui(new Ui::ICUpdateLogoDialog)
 {
     ui->setupUi(this);
+    this->showMaximized();
 }
 
 ICUpdateLogoDialog::~ICUpdateLogoDialog()

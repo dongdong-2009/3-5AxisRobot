@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>635</width>
+    <width>648</width>
     <height>446</height>
    </rect>
   </property>
@@ -225,14 +225,8 @@ padding:5px;
        </property>
        <property name="minimumSize">
         <size>
-         <width>293</width>
+         <width>320</width>
          <height>0</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>266</width>
-         <height>16777215</height>
         </size>
        </property>
        <property name="frameShape">

@@ -135,7 +135,7 @@ color: rgb(255, 255, 0);</string>
       <number>20</number>
      </property>
      <item>
-      <widget class="QToolButton" name="aAddButton">
+      <widget class="QPushButton" name="aAddButton">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
@@ -160,7 +160,7 @@ color: rgb(255, 255, 0);</string>
       </widget>
      </item>
      <item>
-      <widget class="QToolButton" name="aSubButton">
+      <widget class="QPushButton" name="aSubButton">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
@@ -185,7 +185,7 @@ color: rgb(255, 255, 0);</string>
       </widget>
      </item>
      <item>
-      <widget class="QToolButton" name="bAddButton">
+      <widget class="QPushButton" name="bAddButton">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
@@ -210,7 +210,7 @@ color: rgb(255, 255, 0);</string>
       </widget>
      </item>
      <item>
-      <widget class="QToolButton" name="bSubButton">
+      <widget class="QPushButton" name="bSubButton">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>

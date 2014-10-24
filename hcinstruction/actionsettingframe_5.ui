@@ -20,7 +20,16 @@
    <enum>QFrame::Raised</enum>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <property name="margin">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
     <number>0</number>
    </property>
    <property name="spacing">
@@ -37,13 +46,13 @@
          </property>
          <property name="minimumSize">
           <size>
-           <width>59</width>
+           <width>80</width>
            <height>0</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>60</width>
+           <width>80</width>
            <height>32</height>
           </size>
          </property>
@@ -219,13 +228,13 @@
          </property>
          <property name="minimumSize">
           <size>
-           <width>59</width>
+           <width>80</width>
            <height>0</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>60</width>
+           <width>80</width>
            <height>32</height>
           </size>
          </property>
@@ -624,13 +633,13 @@
          </property>
          <property name="minimumSize">
           <size>
-           <width>59</width>
+           <width>80</width>
            <height>0</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>60</width>
+           <width>80</width>
            <height>32</height>
           </size>
          </property>
@@ -806,13 +815,13 @@
          </property>
          <property name="minimumSize">
           <size>
-           <width>59</width>
+           <width>80</width>
            <height>0</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>60</width>
+           <width>80</width>
            <height>32</height>
           </size>
          </property>
@@ -963,13 +972,13 @@
          </property>
          <property name="minimumSize">
           <size>
-           <width>59</width>
+           <width>80</width>
            <height>0</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>60</width>
+           <width>80</width>
            <height>32</height>
           </size>
          </property>
@@ -1120,13 +1129,13 @@
          </property>
          <property name="minimumSize">
           <size>
-           <width>59</width>
+           <width>80</width>
            <height>0</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>60</width>
+           <width>80</width>
            <height>32</height>
           </size>
          </property>
@@ -1255,13 +1264,13 @@
          </property>
          <property name="minimumSize">
           <size>
-           <width>59</width>
+           <width>80</width>
            <height>0</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>60</width>
+           <width>80</width>
            <height>32</height>
           </size>
          </property>
@@ -1452,13 +1461,13 @@
          </property>
          <property name="minimumSize">
           <size>
-           <width>59</width>
+           <width>80</width>
            <height>0</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>60</width>
+           <width>80</width>
            <height>32</height>
           </size>
          </property>
@@ -1771,13 +1780,13 @@
  <resources/>
  <connections/>
  <buttongroups>
+  <buttongroup name="y1BoxbuttonGroup"/>
   <buttongroup name="cBoxbuttonGroup"/>
+  <buttongroup name="y2BoxbuttonGroup"/>
+  <buttongroup name="x1BoxbuttonGroup"/>
   <buttongroup name="x2BoxbuttonGroup"/>
   <buttongroup name="zBoxbuttonGroup"/>
-  <buttongroup name="y1BoxbuttonGroup"/>
   <buttongroup name="aBoxbuttonGroup"/>
-  <buttongroup name="y2BoxbuttonGroup"/>
   <buttongroup name="bBoxbuttonGroup"/>
-  <buttongroup name="x1BoxbuttonGroup"/>
  </buttongroups>
 </ui>

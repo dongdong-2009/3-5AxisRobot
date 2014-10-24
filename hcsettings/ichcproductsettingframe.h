@@ -34,7 +34,7 @@ private slots:
 
     void on_getFailWay_activated(int index);
 
-    void on_fixtureComboBox_currentIndexChanged(int index);
+//    void on_fixtureComboBox_currentIndexChanged(int index);
 
     void on_productSave_toggled(bool checked);
 

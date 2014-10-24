@@ -1910,49 +1910,20 @@ QCheckBox::indicator:unchecked:disabled
           <string>Other Define</string>
          </property>
          <layout class="QGridLayout" name="gridLayout_3">
-          <item row="0" column="0">
-           <widget class="QLabel" name="label_18">
-            <property name="text">
-             <string>Escape</string>
+          <item row="1" column="5">
+           <spacer name="horizontalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
             </property>
-           </widget>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
-          <item row="0" column="1" colspan="2">
-           <widget class="QCheckBox" name="useCheckBox">
-            <property name="styleSheet">
-             <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-QRadioButton::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-QRadioButton::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-            </property>
-            <property name="text">
-             <string>Use</string>
-            </property>
-            <property name="checked">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="3">
+          <item row="0" column="3" colspan="2">
            <widget class="QCheckBox" name="noUseCheckBox">
             <property name="styleSheet">
              <string notr="true">::indicator {
@@ -1984,10 +1955,10 @@ QRadioButton::indicator:unchecked:disabled
             </property>
            </widget>
           </item>
-          <item row="1" column="0">
-           <widget class="QLabel" name="label_19">
+          <item row="1" column="6">
+           <widget class="QLabel" name="label_27">
             <property name="text">
-             <string>Adjust</string>
+             <string>Servo Flex</string>
             </property>
            </widget>
           </item>
@@ -2029,7 +2000,7 @@ QRadioButton::indicator:unchecked:disabled
             </attribute>
            </widget>
           </item>
-          <item row="1" column="3">
+          <item row="1" column="3" colspan="2">
            <widget class="QCheckBox" name="adjNoUse">
             <property name="styleSheet">
              <string notr="true">::indicator {
@@ -2067,30 +2038,56 @@ QRadioButton::indicator:unchecked:disabled
             </attribute>
            </widget>
           </item>
-          <item row="2" column="0" colspan="2">
-           <widget class="QLabel" name="label_27">
-            <property name="text">
-             <string>Servo Flex</string>
+          <item row="0" column="1" colspan="2">
+           <widget class="QCheckBox" name="useCheckBox">
+            <property name="styleSheet">
+             <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+QRadioButton::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+QRadioButton::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
             </property>
-            <property name="alignment">
-             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            <property name="text">
+             <string>Use</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
-          <item row="1" column="4">
-           <spacer name="horizontalSpacer_7">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_18">
+            <property name="text">
+             <string>Escape</string>
             </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
+           </widget>
           </item>
-          <item row="2" column="2" colspan="2">
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_19">
+            <property name="text">
+             <string>Adjust</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="7">
            <widget class="QComboBox" name="servoFlex">
             <item>
              <property name="text">
@@ -2130,6 +2127,30 @@ QRadioButton::indicator:unchecked:disabled
             <item>
              <property name="text">
               <string>7-hard</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="0" column="6">
+           <widget class="QLabel" name="label_28">
+            <property name="styleSheet">
+             <string notr="true">height:27px ;</string>
+            </property>
+            <property name="text">
+             <string>In Mold Limit</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="7">
+           <widget class="ICComboBox" name="fixtureComboBox">
+            <item>
+             <property name="text">
+              <string>Limit</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>NoLimit</string>
              </property>
             </item>
            </widget>
@@ -2189,15 +2210,15 @@ QRadioButton::indicator:unchecked:disabled
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroupE"/>
   <buttongroup name="buttonGroup_2"/>
-  <buttongroup name="buttonGroupF"/>
-  <buttongroup name="buttonGroupG"/>
   <buttongroup name="buttonGroup"/>
-  <buttongroup name="buttonGroupH"/>
   <buttongroup name="buttonGroupA"/>
   <buttongroup name="buttonGroupB"/>
   <buttongroup name="buttonGroupC"/>
   <buttongroup name="buttonGroupD"/>
+  <buttongroup name="buttonGroupE"/>
+  <buttongroup name="buttonGroupF"/>
+  <buttongroup name="buttonGroupG"/>
+  <buttongroup name="buttonGroupH"/>
  </buttongroups>
 </ui>

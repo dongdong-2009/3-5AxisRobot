@@ -16,7 +16,7 @@ void ICPlainTextEdit::mousePressEvent(QMouseEvent *e)
 {
     if(!keyboard_->isVisible())
     {
-        keyboard_->move(0, 230);
+        keyboard_->move(0, 140);
         keyboard_->show();
     }
     QPlainTextEdit::mousePressEvent(e);

@@ -816,12 +816,12 @@ void MainFrame::StatusRefreshed()
             ui->cycleTimeAndFinistWidget->SetAlarmInfo("");
         }
     }
-    finishCount_ = virtualHost->HostStatus(ICVirtualHost::DbgX1).toUInt();
-    if(finishCount_ != oldFinishCount_)
-    {
-        ui->cycleTimeAndFinistWidget->SetFinished(virtualHost->HostStatus(ICVirtualHost::DbgX1).toUInt());
-        oldFinishCount_ = finishCount_;
-    }
+//    finishCount_ = virtualHost->HostStatus(ICVirtualHost::DbgX1).toUInt();
+//    if(finishCount_ != oldFinishCount_)
+//    {
+//        ui->cycleTimeAndFinistWidget->SetFinished(virtualHost->HostStatus(ICVirtualHost::DbgX1).toUInt());
+//        oldFinishCount_ = finishCount_;
+//    }
     cycleTime_ = virtualHost->HostStatus(ICVirtualHost::Time).toUInt();
     if(cycleTime_ != oldCycleTime_)
     {
@@ -837,6 +837,25 @@ void MainFrame::StatusRefreshed()
                         ui->systemStatusFrame->SetOriginStatus(StatusLabel::OFFSTATUS);
     }
     runningStatus_ = virtualHost->CurrentStatus();
+
+
+    if(runningStatus_ == ICVirtualHost::Auto &&
+            virtualHost->HostStatus(ICVirtualHost::DbgX0) == ICVirtualHost::AutoRunning)
+    {
+
+        finishCount_ = virtualHost->HostStatus(ICVirtualHost::DbgA0).toUInt() |
+                (virtualHost->HostStatus(ICVirtualHost::DbgA1).toUInt() << 16);
+        if(finishCount_ != oldFinishCount_)
+        {
+            ui->cycleTimeAndFinistWidget->SetFinished(finishCount_);
+            virtualHost->SetFinishProductCount(finishCount_);
+            oldFinishCount_ = finishCount_;
+            if(ICParametersSave::Instance()->IsProductSave())
+            {
+                virtualHost->SaveSystemConfig();
+            }
+        }
+    }
 
     if(runningStatus_ == ICVirtualHost::Manual)
     {
@@ -933,17 +952,6 @@ void MainFrame::StatusRefreshed()
         else if(runningStatus_ == ICVirtualHost::AutoRunning)
         {
             ui->systemStatusFrame->SetAutoStatus(ICSystemStatusFrame::Running);
-            finishCount_ = virtualHost->HostStatus(ICVirtualHost::DbgX1).toUInt();
-            if(finishCount_ != oldFinishCount_)
-            {
-                ui->cycleTimeAndFinistWidget->SetFinished(finishCount_);
-                virtualHost->SetFinishProductCount(finishCount_);
-                oldFinishCount_ = finishCount_;
-                if(ICParametersSave::Instance()->IsProductSave())
-                {
-                    virtualHost->SaveSystemConfig();
-                }
-            }
             //            ui->functionPageButton->setEnabled(false);
             //            ui->recordPageButton->setEnabled(false);
         }
