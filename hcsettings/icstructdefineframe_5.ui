@@ -1862,19 +1862,14 @@ QCheckBox::indicator:unchecked:disabled
           <string>Other Define</string>
          </property>
          <layout class="QGridLayout" name="gridLayout_3">
-          <property name="leftMargin">
-           <number>2</number>
-          </property>
-          <property name="topMargin">
-           <number>4</number>
-          </property>
-          <property name="rightMargin">
-           <number>2</number>
-          </property>
-          <property name="bottomMargin">
-           <number>2</number>
-          </property>
-          <item row="0" column="2">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_18">
+            <property name="text">
+             <string>Escape</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" colspan="2">
            <widget class="QCheckBox" name="useCheckBox">
             <property name="styleSheet">
              <string notr="true">::indicator {
@@ -1906,26 +1901,6 @@ QRadioButton::indicator:unchecked:disabled
             </property>
             <property name="checked">
              <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="4">
-           <spacer name="horizontalSpacer_7">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="0" column="0">
-           <widget class="QLabel" name="label_18">
-            <property name="text">
-             <string>Escape</string>
             </property>
            </widget>
           </item>
@@ -1968,7 +1943,7 @@ QRadioButton::indicator:unchecked:disabled
             </property>
            </widget>
           </item>
-          <item row="1" column="2">
+          <item row="1" column="1" colspan="2">
            <widget class="QCheckBox" name="adjUse">
             <property name="styleSheet">
              <string notr="true">::indicator {
@@ -2044,6 +2019,73 @@ QRadioButton::indicator:unchecked:disabled
             </attribute>
            </widget>
           </item>
+          <item row="2" column="0" colspan="2">
+           <widget class="QLabel" name="label_27">
+            <property name="text">
+             <string>Servo Flex</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <spacer name="horizontalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="2" column="2" colspan="2">
+           <widget class="QComboBox" name="servoFlex">
+            <item>
+             <property name="text">
+              <string>0-soft</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string notr="true">1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string notr="true">2</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string notr="true">3</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string notr="true">4</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string notr="true">5</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string notr="true">6</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>7-hard</string>
+             </property>
+            </item>
+           </widget>
+          </item>
          </layout>
         </widget>
        </item>
@@ -2099,15 +2141,15 @@ QRadioButton::indicator:unchecked:disabled
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroupG"/>
-  <buttongroup name="buttonGroupH"/>
-  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroupA"/>
   <buttongroup name="buttonGroupB"/>
-  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroupC"/>
   <buttongroup name="buttonGroupD"/>
+  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroupE"/>
   <buttongroup name="buttonGroupF"/>
+  <buttongroup name="buttonGroupG"/>
+  <buttongroup name="buttonGroupH"/>
+  <buttongroup name="buttonGroup_2"/>
  </buttongroups>
 </ui>
