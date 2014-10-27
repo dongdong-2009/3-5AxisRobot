@@ -24,8 +24,19 @@ SOURCES += \
     hcmanualoperation/hcmanualadjustframe.cpp \
     hcmanualoperation/hcmanualreservepage.cpp
 
+contains(DEFINES, HC_SK_8){
 FORMS += \
-    hcmanualoperation/ichcmanualoperationpageframe.ui \
+    hcmanualoperation/hcmanualadjustframe.ui \
+    hcmanualoperation/ichcmanualoperationpageframe.ui
+}
+
+contains(DEFINES, HC_SK_5){
+FORMS += \
+    hcmanualoperation/hcmanualadjustframe_5.ui \
+    hcmanualoperation/ichcmanualoperationpageframe_5.ui
+}
+
+FORMS += \
     #hcmanualoperation/hcmanualalternateioframe.ui \
     hcmanualoperation/hcmanualfixtureframe.ui \
     hcmanualoperation/hcmanualsockerframe.ui \
@@ -33,5 +44,4 @@ FORMS += \
     hcmanualoperation/hcservoarmcontrolframe.ui \
     #hcmanualoperation/hcmanualfunctionframe.ui \
     hcmanualoperation/hcmanualotherioframe.ui \
-    hcmanualoperation/hcmanualadjustframe.ui \
     hcmanualoperation/hcmanualreservepage.ui
