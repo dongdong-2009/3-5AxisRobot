@@ -293,8 +293,8 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     knobMap.insert(Qt::Key_F7, ICKeyboard::KS_StopStatu);
     knobMap.insert(Qt::Key_F5, ICKeyboard::KS_AutoStatu);
 
-    pulleyMap.insert(Qt::Key_Up, -1);
-    pulleyMap.insert(Qt::Key_Down, 1);
+    pulleyMap.insert(Qt::Key_F13, -1);
+    pulleyMap.insert(Qt::Key_F14, 1);
 
     //    QTimer::singleShot(100, this, SLOT(InitHeavyPage()));
 #if defined(Q_WS_WIN32) || defined(Q_WS_X11)

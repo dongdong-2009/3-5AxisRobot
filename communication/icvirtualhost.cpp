@@ -413,13 +413,6 @@ void ICVirtualHost::SaveSystemConfig()
     }
     ICFile file("./sysconfig/system.txt");
     file.ICWrite(toWrite);
-//    QFile::copy("./sysconfig/system.txt", "./sysconfig/system.txt~");
-//    file.write(toWrite);
-//    file.flush();
-//    file.close();
-//    //    system("rm ./sysconfig/system.txt~");
-//    QFile::remove("./sysconfig/system.txt~");
-    ::system("sync");
 }
 
 void ICVirtualHost::SaveAxisParam(int axis)
@@ -1038,22 +1031,13 @@ void ICVirtualHost::GetAxisParam_(const QString &file, int start, int end, QVect
 
 void ICVirtualHost::SaveAxisParamHelper_(const QString &fileName, int start, int end)
 {
-    QFile file("./sysconfig/" + fileName);
-    if(file.open(QFile::WriteOnly | QFile::Text))
+    QByteArray toWrite;
+    for(ICSystemParameter i = static_cast<ICSystemParameter>(start); i != static_cast<ICSystemParameter>(end); i = static_cast<ICSystemParameter>(i + 1))
     {
-        QByteArray toWrite;
-        for(ICSystemParameter i = static_cast<ICSystemParameter>(start); i != static_cast<ICSystemParameter>(end); i = static_cast<ICSystemParameter>(i + 1))
-        {
-            toWrite += systemParamMap_.value(i).toByteArray() + "\n";
-        }
-        QFile::copy("./sysconfig/" + fileName, "./sysconfig/" + fileName + "~");
-        file.write(toWrite);
-        file.flush();
-        file.close();
-        //        system(QString("rm ./sysconfig/%1~").arg(fileName).toAscii());
-        QFile::remove("./sysconfig/" + fileName + "~");
-        ::system("sync");
+        toWrite += systemParamMap_.value(i).toByteArray() + "\n";
     }
+    ICFile file("./sysconfig/" + fileName);
+    file.ICWrite(toWrite);
 }
 
 void ICVirtualHost::StopRefreshStatus()

@@ -1,8 +1,8 @@
 INCLUDEPATH += $$PWD
 DEPENDPATH += $$PWD
 
-HEADERS += icpagetag.h
+HEADERS += $$PWD/icpagetag.h
 
-SOURCES += icpagetag.cpp
+SOURCES += $$PWD/icpagetag.cpp
 
-RESOURCES += icpagetagImages.qrc
+RESOURCES += $$PWD/icpagetagImages.qrc

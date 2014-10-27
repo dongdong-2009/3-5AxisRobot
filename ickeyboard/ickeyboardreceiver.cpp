@@ -168,15 +168,15 @@ void ICKeyboardReceiver::run()
             }
             else
             {
-                if(key == ICKeyboard::FB_F5)
-                {
-                    ++specialKeyCount_;
-                    if(specialKeyCount_ == 500)
-                    {
-                        ::system("cd /home/szhc && echo recal >>recal");
-                        specialKeyCount_ = 0;
-                    }
-                }
+//                if(key == ICKeyboard::FB_F5)
+//                {
+//                    ++specialKeyCount_;
+//                    if(specialKeyCount_ == 500)
+//                    {
+//                        ::system("cd /home/root && echo recal >>recal");
+//                        specialKeyCount_ = 0;
+//                    }
+//                }
             }
 //            ::system("echo end readkey >> keylog");
 //            msleep(100);

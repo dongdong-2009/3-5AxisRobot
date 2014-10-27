@@ -26,14 +26,14 @@ SOURCES += \
 
 contains(DEFINES, HC_SK_8){
 FORMS += \
-    hcmanualoperation/hcmanualadjustframe.ui \
-    hcmanualoperation/ichcmanualoperationpageframe.ui
+    $$PWD/hcmanualadjustframe.ui \
+    $$PWD/ichcmanualoperationpageframe.ui
 }
 
 contains(DEFINES, HC_SK_5){
 FORMS += \
-    hcmanualoperation/hcmanualadjustframe_5.ui \
-    hcmanualoperation/ichcmanualoperationpageframe_5.ui
+    $$PWD/hcmanualadjustframe_5.ui \
+    $$PWD/ichcmanualoperationpageframe_5.ui
 }
 
 FORMS += \

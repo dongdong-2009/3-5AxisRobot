@@ -524,98 +524,117 @@
     <name>HCManualAdjustFrame</name>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="14"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="14"/>
         <source>Form</source>
         <translation>组合动作选择</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="474"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="492"/>
         <source>SubArm Advance +</source>
         <translation>副臂前进+</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="674"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="692"/>
         <source>X023</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="152"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="170"/>
         <source>SubArm Advance -</source>
         <translation>副臂向前-</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="183"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="201"/>
         <source>Machine Reverse</source>
         <translation>电机反转</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="377"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="395"/>
         <source>Y035</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="205"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="223"/>
         <source>Adjust Forbid</source>
         <translation>禁止调位</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="536"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="554"/>
         <source>SubArm Back -</source>
         <translation>副臂后退-</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="37"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="55"/>
         <source>Y022</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="505"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="523"/>
         <source>SubArm Back + </source>
         <translation>副臂后退+</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="90"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="108"/>
         <source>SubArm Up + </source>
         <translation>副臂上升+</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="121"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="139"/>
         <source>SubArm Down + </source>
         <translation>副臂下降+</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="264"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="282"/>
         <source>SubArm Up -</source>
         <translation>副臂上升-</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="295"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="313"/>
         <source>SubArm Down -</source>
         <translation>副臂下降-</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="317"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="335"/>
         <source>Y031</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="361"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="379"/>
         <source>Y032</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="586"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="604"/>
         <source>Y017</source>
         <oldsource>Y033</oldsource>
         <translation></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="630"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="648"/>
         <source>X030</source>
         <oldsource>X026</oldsource>
         <translation></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="449"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="467"/>
         <source>X033</source>
         <translation></translation>
     </message>
@@ -7209,8 +7228,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1534"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1540"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1534"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1540"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1564"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1570"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="215"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="322"/>
         <source>Signal Define</source>
@@ -7219,8 +7238,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="32"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="38"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="32"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="38"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="44"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="50"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="226"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="320"/>
         <source>Arm Define</source>
@@ -7243,22 +7262,22 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="662"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="741"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="792"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="66"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="125"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="156"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="187"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="225"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="263"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="301"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="339"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="400"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="451"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="502"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="553"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="604"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="662"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="741"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="792"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="84"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="143"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="174"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="205"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="243"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="281"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="319"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="357"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="430"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="481"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="532"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="583"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="634"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="692"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="771"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="822"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="228"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="232"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="236"/>
@@ -7296,7 +7315,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2126"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="2126"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="2156"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="318"/>
         <source>Save</source>
         <translation>保存</translation>
@@ -7307,21 +7326,21 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1593"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1593"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1623"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="216"/>
         <source>Single Arm</source>
         <translation>单臂</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1641"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1641"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1671"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="217"/>
         <source>Double Arm</source>
         <translation>双臂</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1678"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1678"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1705"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="218"/>
         <source>Main Arm</source>
         <translation>主臂</translation>
@@ -7329,8 +7348,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1703"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1804"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1703"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1804"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1730"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1831"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="219"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="223"/>
         <source>Down Limit</source>
@@ -7338,7 +7357,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1814"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1814"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1841"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="220"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="224"/>
         <source>Backword Limit</source>
@@ -7346,7 +7365,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1824"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1824"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1851"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="221"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="225"/>
         <source>Forward Limit</source>
@@ -7354,20 +7373,20 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1798"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1798"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1825"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="222"/>
         <source>Sub Arm</source>
         <translation>副臂</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1729"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1729"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1756"/>
         <source>Backward Limit</source>
         <translation>后退限</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1756"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1756"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1783"/>
         <source>Forword Limit</source>
         <translation>前进限</translation>
     </message>
@@ -7380,14 +7399,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="268"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="306"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="344"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="71"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="130"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="161"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="192"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="230"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="268"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="306"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="344"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="89"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="148"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="179"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="210"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="248"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="286"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="324"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="362"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="229"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="233"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="237"/>
@@ -7408,14 +7427,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="273"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="311"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="349"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="76"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="135"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="166"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="197"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="235"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="273"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="311"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="349"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="94"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="153"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="184"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="215"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="253"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="291"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="329"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="367"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="230"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="234"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="238"/>
@@ -7430,8 +7449,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="84"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="700"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="84"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="700"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="102"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="730"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="227"/>
         <source>X1</source>
         <translation></translation>
@@ -7439,8 +7458,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="91"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="721"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="91"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="721"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="109"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="751"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="231"/>
         <source>C</source>
         <translation></translation>
@@ -7448,8 +7467,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="98"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="366"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="98"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="366"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="116"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="396"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="235"/>
         <source>Z</source>
         <oldsource>C</oldsource>
@@ -7458,8 +7477,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="105"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="380"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="105"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="380"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="123"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="410"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="239"/>
         <source>A</source>
         <translation></translation>
@@ -7467,8 +7486,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="205"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="642"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="205"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="642"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="223"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="672"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="243"/>
         <source>B</source>
         <translation></translation>
@@ -7476,8 +7495,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="243"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="714"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="243"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="714"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="261"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="744"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="247"/>
         <source>Y1</source>
         <translation></translation>
@@ -7485,8 +7504,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="281"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="707"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="281"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="707"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="299"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="737"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="251"/>
         <source>X2</source>
         <translation></translation>
@@ -7494,15 +7513,15 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="319"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="373"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="319"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="373"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="337"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="403"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="255"/>
         <source>Y2</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="360"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="360"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="378"/>
         <source>Port Define</source>
         <translation>端口定义</translation>
     </message>
@@ -7515,14 +7534,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="667"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="746"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="797"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="405"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="456"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="507"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="558"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="609"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="667"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="746"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="797"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="435"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="486"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="537"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="588"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="639"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="697"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="776"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="827"/>
         <source>S1</source>
         <translation></translation>
     </message>
@@ -7535,14 +7554,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="672"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="751"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="802"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="410"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="461"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="512"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="563"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="614"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="672"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="751"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="802"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="440"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="491"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="542"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="593"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="644"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="702"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="781"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="832"/>
         <source>S2</source>
         <translation></translation>
     </message>
@@ -7555,14 +7574,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="677"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="756"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="807"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="415"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="466"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="517"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="568"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="619"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="677"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="756"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="807"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="445"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="496"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="547"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="598"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="649"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="707"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="786"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="837"/>
         <source>S3</source>
         <translation></translation>
     </message>
@@ -7575,14 +7594,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="682"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="761"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="812"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="420"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="471"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="522"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="573"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="624"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="682"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="761"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="812"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="450"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="501"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="552"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="603"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="654"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="712"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="791"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="842"/>
         <source>S4</source>
         <translation></translation>
     </message>
@@ -7595,14 +7614,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="687"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="766"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="817"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="425"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="476"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="527"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="578"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="629"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="687"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="766"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="817"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="455"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="506"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="557"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="608"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="659"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="717"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="796"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="847"/>
         <source>S5</source>
         <translation></translation>
     </message>
@@ -7615,22 +7634,22 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="692"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="771"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="822"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="430"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="481"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="532"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="583"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="634"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="692"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="771"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="822"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="460"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="511"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="562"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="613"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="664"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="722"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="801"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="852"/>
         <source>S6</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="834"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="840"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="834"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="840"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="864"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="870"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="259"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="321"/>
         <source>Out Define</source>
@@ -7638,7 +7657,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="969"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="969"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="999"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="260"/>
         <source>1</source>
         <translation>Y017</translation>
@@ -7652,14 +7671,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="1336"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1374"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1412"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1076"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1114"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1152"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1190"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1228"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1336"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1374"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1412"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1106"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1144"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1182"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1220"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1258"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1366"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1404"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1442"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="296"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="298"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="300"/>
@@ -7673,28 +7692,28 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1955"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1942"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1972"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="327"/>
         <source>Adjust</source>
         <translation>调位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2038"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="2025"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="2055"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="326"/>
         <source>Servo Flex</source>
         <translation>运动刚性</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2049"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="2049"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="2079"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="261"/>
         <source>0-soft</source>
         <translation>0-软</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2084"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="2084"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="2114"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="268"/>
         <source>7-hard</source>
         <translation>7-硬</translation>
@@ -7708,14 +7727,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="1450"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1485"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1520"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="889"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="924"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="959"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1266"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1301"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1450"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1485"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1520"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="919"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="954"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="989"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1296"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1331"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1480"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1515"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1550"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="297"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="299"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="301"/>
@@ -7729,43 +7748,43 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="976"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="976"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1006"/>
         <source>5</source>
         <translation>Y035</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="983"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="983"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1013"/>
         <source>2</source>
         <translation>Y022</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1023"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1023"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1053"/>
         <source>6</source>
         <translation>Y036</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1030"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1030"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1060"/>
         <source>3</source>
         <translation>Y031</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1037"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1037"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1067"/>
         <source>7</source>
         <translation>备用</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1044"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1044"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1074"/>
         <source>4</source>
         <translation>Y032</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="990"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="990"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1020"/>
         <source>8</source>
         <translation>备用</translation>
     </message>
@@ -7788,8 +7807,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1856"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1862"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1856"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1862"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1886"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1892"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="312"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="323"/>
         <source>Other Define</source>
@@ -7797,7 +7816,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1868"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1868"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1898"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="313"/>
         <source>Escape</source>
         <translation>型内逃跑</translation>
@@ -7805,8 +7824,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1900"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1987"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1900"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1974"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1930"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="2004"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="316"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="324"/>
         <source>Use</source>
@@ -7815,8 +7834,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1935"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="2025"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1935"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="2012"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1965"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="2042"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="317"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="325"/>
         <source>No Use</source>
@@ -8259,6 +8278,7 @@ Would you want to restart now?</source>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="145"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="377"/>
         <source>System Updating...</source>
         <translation>系统更新中...</translation>
     </message>
@@ -8275,7 +8295,7 @@ Would you want to restart now?</source>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="291"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="312"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="689"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="642"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
@@ -8287,7 +8307,6 @@ Would you want to restart now?</source>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="339"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="383"/>
         <source>tips</source>
         <translation>提示</translation>
     </message>
@@ -8297,56 +8316,55 @@ Would you want to restart now?</source>
         <translation>主机更新成功！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="383"/>
         <source>USB no exists...</source>
-        <translation>U盘目录不存在...</translation>
+        <translation type="obsolete">U盘目录不存在...</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="453"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="406"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="453"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="406"/>
         <source>USB is not exist!</source>
         <translation>没有找到U盘！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="609"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="615"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="562"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="568"/>
         <source>Wrong Register Code!</source>
         <translation>注册码错误！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="621"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="574"/>
         <source>Register Success!</source>
         <translation>注册成功！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="624"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="643"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="577"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="596"/>
         <source>No Limit</source>
         <translation>无限制</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="628"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="645"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="581"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="598"/>
         <source>hour</source>
         <translation>小时</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="647"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="600"/>
         <source>No Register!</source>
         <translation>没有注册！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="690"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="643"/>
         <source>Old password is wrong</source>
         <translation>旧密码错误！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="697"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="708"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="650"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="661"/>
         <source>Scanning...</source>
         <translation>扫描中...</translation>
     </message>

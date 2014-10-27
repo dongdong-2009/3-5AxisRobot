@@ -148,6 +148,7 @@ bool MoldInformation::CreateNewSourceFile(const QString & fileName)
         QMessageBox::warning(this, tr("Success"),
                              tr("New file success."),
                              QMessageBox::Ok);
+        system("sync");
         return true;
     }
     else
@@ -205,9 +206,11 @@ bool MoldInformation::CopySourceFile(const QString & originFileName, const QStri
             QMessageBox::information(this, tr("Success"),
                                      tr("Copy file success!"),
                                      QMessageBox::Ok);
+            system("sync");
             return true;
         }
         QFile::remove(targetFilePathName);
+        system("sync");
     }
     QMessageBox::information(this, tr("warning"),
                              tr("Destination file already exists!\n"
@@ -239,6 +242,7 @@ bool MoldInformation::DeleteSourceFile(const QString & fileName)
         //        QMessageBox::information(this, tr("Success"),
         //                                 tr("File deleted success!"),
         //                                 QMessageBox::Ok);
+        system("sync");
         return true;
     }
     else
@@ -696,6 +700,7 @@ void MoldInformation::on_importToolButton_clicked()
     if(!flagItem || !flagItem_)
     {
         QMessageBox::information(this,tr("Information"), tr("Operation finished!"));
+        system("sync");
     }
 }
 
@@ -795,6 +800,7 @@ void MoldInformation::on_exportToolButton_clicked()
     if(!flagItem || !flagItem_)
     {
         QMessageBox::information(this,tr("Information"), tr("Operation finished!"));
+        system("sync");
     }
 
 }

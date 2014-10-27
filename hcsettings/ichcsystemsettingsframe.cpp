@@ -1207,7 +1207,7 @@ void ICHCSystemSettingsFrame::on_calibrationBtn_clicked()
                             tr("The system will be reboot to calibrate! Do you want to continue?"),
                             QMessageBox::Ok | QMessageBox::Cancel) == QMessageBox::Ok)
     {
-        ::system("cd /mnt/config_data && echo recal >>recal && reboot");
+        ::system("cd /home/root && echo recal >>recal && reboot");
     }
 
 }

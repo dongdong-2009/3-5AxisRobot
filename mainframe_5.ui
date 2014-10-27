@@ -43,7 +43,16 @@
    <property name="spacing">
     <number>0</number>
    </property>
-   <property name="margin">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
     <number>0</number>
    </property>
    <item>
@@ -53,7 +62,7 @@
        <property name="minimumSize">
         <size>
          <width>0</width>
-         <height>49</height>
+         <height>52</height>
         </size>
        </property>
        <property name="maximumSize">
@@ -75,7 +84,7 @@
        <property name="minimumSize">
         <size>
          <width>0</width>
-         <height>49</height>
+         <height>52</height>
         </size>
        </property>
        <property name="maximumSize">

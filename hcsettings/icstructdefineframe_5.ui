@@ -1570,6 +1570,12 @@ QRadioButton::indicator:unchecked:disabled
           <string>Signal Define</string>
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="topMargin">
+           <number>2</number>
+          </property>
+          <property name="bottomMargin">
+           <number>2</number>
+          </property>
           <item>
            <widget class="QWidget" name="widget" native="true">
             <layout class="QHBoxLayout" name="horizontalLayout">
@@ -1705,6 +1711,12 @@ QRadioButton::indicator:unchecked:disabled
                   <string>Main Arm</string>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout">
+                  <property name="topMargin">
+                   <number>2</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>2</number>
+                  </property>
                   <item>
                    <widget class="QCheckBox" name="mainArmDownLimitButton">
                     <property name="styleSheet">
@@ -1825,6 +1837,12 @@ QCheckBox::indicator:unchecked:disabled
                   <string>Sub Arm</string>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_2">
+                  <property name="topMargin">
+                   <number>2</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>2</number>
+                  </property>
                   <item>
                    <widget class="QCheckBox" name="subArmDownLimitButton">
                     <property name="text">
@@ -2171,15 +2189,15 @@ QRadioButton::indicator:unchecked:disabled
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroupD"/>
   <buttongroup name="buttonGroupE"/>
+  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroupF"/>
   <buttongroup name="buttonGroupG"/>
-  <buttongroup name="buttonGroupH"/>
   <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroupH"/>
   <buttongroup name="buttonGroupA"/>
   <buttongroup name="buttonGroupB"/>
   <buttongroup name="buttonGroupC"/>
-  <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroupD"/>
  </buttongroups>
 </ui>
