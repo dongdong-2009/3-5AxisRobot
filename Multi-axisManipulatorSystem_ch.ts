@@ -2408,26 +2408,31 @@ Reason</source>
     <name>ICHCManualOperationPageFrame</name>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="14"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe_5.ui" line="14"/>
         <source>Frame</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="149"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe_5.ui" line="158"/>
         <source>A+</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="174"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe_5.ui" line="183"/>
         <source>A-</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="199"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe_5.ui" line="208"/>
         <source>B+</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="224"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe_5.ui" line="233"/>
         <source>B-</source>
         <translation></translation>
     </message>
