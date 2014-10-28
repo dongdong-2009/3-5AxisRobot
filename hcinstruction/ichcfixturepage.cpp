@@ -69,7 +69,7 @@ ICHCFixturePage::ICHCFixturePage(QWidget *parent) :
     }
 //    ui->tableWidget->resizeColumnsToContents();
 #ifdef HC_SK_5
-    ui->tableWidget->setColumnWidth(0, 36);
+    ui->tableWidget->setColumnWidth(0, 46);
     ui->tableWidget->setColumnWidth(1, 100);
 #else
     ui->tableWidget->setColumnWidth(0, 50);

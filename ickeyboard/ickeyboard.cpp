@@ -108,7 +108,7 @@ int ICKeyboard::CurrentSwitchStatus() const
 void ICKeyboard::SetSwitchValue(int value)
 {
 //    QMutexLocker locker(&switchMutex_);
-        if(isSwitchTaken_)
+//        if(isSwitchTaken_)
         {
             switchValue_ = value;
             currentSwitchValue_ = value;

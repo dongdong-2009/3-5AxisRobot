@@ -57,7 +57,7 @@ ICPneumaticActionPage::ICPneumaticActionPage(QWidget *parent) :
 
     }
 #ifdef HC_SK_5
-    ui->tableWidget->setColumnWidth(0, 36);
+    ui->tableWidget->setColumnWidth(0, 46);
     ui->tableWidget->setColumnWidth(1, 70);
 #else
     ui->tableWidget->setColumnWidth(0, 50);

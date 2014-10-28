@@ -1218,7 +1218,8 @@ void MainFrame::CheckedInput()
     if(!IsInput())
     {
         ShowScreenSaver();
-        system("BackLight off");
+//        system("BackLight off");
+        system("BackLight.sh 0");
         SetBackLightOff(true);
     }
     SetHasInput(false);

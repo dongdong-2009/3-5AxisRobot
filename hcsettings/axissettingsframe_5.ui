@@ -31,7 +31,16 @@
    <property name="spacing">
     <number>0</number>
    </property>
-   <property name="margin">
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
     <number>2</number>
    </property>
    <item>
@@ -336,6 +345,12 @@
         <string>Test Feedback</string>
        </property>
        <layout class="QFormLayout" name="formLayout_2">
+        <property name="leftMargin">
+         <number>2</number>
+        </property>
+        <property name="rightMargin">
+         <number>2</number>
+        </property>
         <property name="bottomMargin">
          <number>0</number>
         </property>
@@ -410,6 +425,9 @@
         </item>
         <item row="3" column="0" colspan="2">
          <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>4</number>
+          </property>
           <item>
            <widget class="QPushButton" name="testPushButton">
             <property name="sizePolicy">

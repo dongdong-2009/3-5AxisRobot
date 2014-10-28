@@ -2,78 +2,78 @@ INCLUDEPATH += $$PWD
 DEPENDPATH += $$PWD
 
 HEADERS += \
-    #hcsettings/basicsettingsframe.h \
-    hcsettings/axissettingsframe.h \
-    hcsettings/ichcsettingsframe.h \
-    hcsettings/ichcstackedsettingsframe.h \
-    hcsettings/ichctimeframe.h \
-    hcsettings/ichcmovementframe.h \
-    hcsettings/ichcdetectionframe.h \
-    hcsettings/ichcproductsettingframe.h \
-    hcsettings/ichcsystemsettingsframe.h \
-    hcsettings/icmachineconfigpage.h \
-    hcsettings/icadminpassworddialog.h \
-    hcsettings/icstructdefineframe.h \
-    hcsettings/icmachinestructpage.h \
-    hcsettings/icmachinefigure.h
+    #$$PWD/basicsettingsframe.h \
+    $$PWD/axissettingsframe.h \
+    $$PWD/ichcsettingsframe.h \
+    $$PWD/ichcstackedsettingsframe.h \
+    $$PWD/ichctimeframe.h \
+    $$PWD/ichcmovementframe.h \
+    $$PWD/ichcdetectionframe.h \
+    $$PWD/ichcproductsettingframe.h \
+    $$PWD/ichcsystemsettingsframe.h \
+    $$PWD/icmachineconfigpage.h \
+    $$PWD/icadminpassworddialog.h \
+    $$PWD/icstructdefineframe.h \
+    $$PWD/icmachinestructpage.h \
+    $$PWD/icmachinefigure.h
 
 SOURCES += \
-    #hcsettings/basicsettingsframe.cpp \
-    hcsettings/axissettingsframe.cpp \
-    hcsettings/ichcsettingsframe.cpp \
-    hcsettings/ichcstackedsettingsframe.cpp \
-    hcsettings/ichctimeframe.cpp \
-    hcsettings/ichcmovementframe.cpp \
-    hcsettings/ichcdetectionframe.cpp \
-    hcsettings/ichcproductsettingframe.cpp \
-    hcsettings/ichcsystemsettingsframe.cpp \
-    hcsettings/icmachineconfigpage.cpp \
-    hcsettings/icadminpassworddialog.cpp \
-    hcsettings/icstructdefineframe.cpp \
-    hcsettings/icmachinestructpage.cpp \
-    hcsettings/icmachinefigure.cpp
+    #$$PWD/basicsettingsframe.cpp \
+    $$PWD/axissettingsframe.cpp \
+    $$PWD/ichcsettingsframe.cpp \
+    $$PWD/ichcstackedsettingsframe.cpp \
+    $$PWD/ichctimeframe.cpp \
+    $$PWD/ichcmovementframe.cpp \
+    $$PWD/ichcdetectionframe.cpp \
+    $$PWD/ichcproductsettingframe.cpp \
+    $$PWD/ichcsystemsettingsframe.cpp \
+    $$PWD/icmachineconfigpage.cpp \
+    $$PWD/icadminpassworddialog.cpp \
+    $$PWD/icstructdefineframe.cpp \
+    $$PWD/icmachinestructpage.cpp \
+    $$PWD/icmachinefigure.cpp
 
 FORMS += \
-    #hcsettings/basicsettingsframe.ui \
-#    hcsettings/axissettingsframe.ui \
-    hcsettings/ichcsettingsframe.ui \
-#    hcsettings/ichcstackedsettingsframe.ui \
-    hcsettings/ichctimeframe.ui \
-    hcsettings/ichcmovementframe.ui \
-#    hcsettings/ichcdetectionframe.ui \
-#    hcsettings/ichcproductsettingframe.ui \
-#    hcsettings/ichcsystemsettingsframe.ui \
-    hcsettings/icmachineconfigpage.ui \
-    hcsettings/icadminpassworddialog.ui \
-#    hcsettings/icstructdefineframe.ui \
-#    hcsettings/icmachinestructpage.ui \
-    hcsettings/icmachinefigure.ui \
-#    hcsettings/ichcsystemsettingsframe_5.ui
-#    hcsettings/icstructdefineframe_5.ui \
-#    hcsettings/ichcstackedsettingsframe_5.ui \
-#    hcsettings/ichcdetectionfram_5.ui
-#    hcsettings/icmachinestructpage_5.ui
-    hcsettings/ichctimeframe_5.ui
+    #$$PWD/basicsettingsframe.ui \
+#    $$PWD/axissettingsframe.ui \
+    $$PWD/ichcsettingsframe.ui \
+#    $$PWD/ichcstackedsettingsframe.ui \
+    $$PWD/ichctimeframe.ui \
+    $$PWD/ichcmovementframe.ui \
+#    $$PWD/ichcdetectionframe.ui \
+#    $$PWD/ichcproductsettingframe.ui \
+#    $$PWD/ichcsystemsettingsframe.ui \
+    $$PWD/icmachineconfigpage.ui \
+    $$PWD/icadminpassworddialog.ui \
+#    $$PWD/icstructdefineframe.ui \
+#    $$PWD/icmachinestructpage.ui \
+    $$PWD/icmachinefigure.ui \
+#    $$PWD/ichcsystemsettingsframe_5.ui
+#    $$PWD/icstructdefineframe_5.ui \
+#    $$PWD/ichcstackedsettingsframe_5.ui \
+#    $$PWD/ichcdetectionfram_5.ui
+#    $$PWD/icmachinestructpage_5.ui
+    $$PWD/ichctimeframe_5.ui
 
 
 
 contains(DEFINES, HC_SK_8){
-FORMS += hcsettings/icstructdefineframe.ui \
-    hcsettings/ichcstackedsettingsframe.ui \
-    hcsettings/ichcdetectionframe.ui \
-    hcsettings/ichcsystemsettingsframe.ui \
-     hcsettings/icmachinestructpage.ui \
-    hcsettings/axissettingsframe.ui \
-hcsettings/ichcproductsettingframe.ui
+FORMS += $$PWD/icstructdefineframe.ui \
+    $$PWD/ichcstackedsettingsframe.ui \
+    $$PWD/ichcdetectionframe.ui \
+    $$PWD/ichcsystemsettingsframe.ui \
+     $$PWD/icmachinestructpage.ui \
+    $$PWD/axissettingsframe.ui \
+$$PWD/ichcproductsettingframe.ui
 }
 contains(DEFINES, HC_SK_5){
-FORMS += hcsettings/icstructdefineframe_5.ui \
-    hcsettings/ichcstackedsettingsframe_5.ui \
-    hcsettings/ichcdetectionframe_5.ui \
-    hcsettings/ichcsystemsettingsframe_5.ui \
-    hcsettings/icmachinestructpage_5.ui \
-    hcsettings/axissettingsframe_5.ui \
-hcsettings/ichcproductsettingframe_5.ui
+FORMS += $$PWD/icstructdefineframe_5.ui \
+    $$PWD/ichcstackedsettingsframe_5.ui \
+    $$PWD/ichcdetectionframe_5.ui \
+    $$PWD/ichcsystemsettingsframe_5.ui \
+    $$PWD/icmachinestructpage_5.ui \
+    $$PWD/axissettingsframe_5.ui \
+$$PWD/ichcproductsettingframe_5.ui
 }
 
 RESOURCES += \

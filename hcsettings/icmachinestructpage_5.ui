@@ -22,7 +22,16 @@
 </string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
-   <property name="margin">
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
     <number>2</number>
    </property>
    <item>
@@ -641,6 +650,12 @@ height:30px;</string>
           <property name="fieldGrowthPolicy">
            <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
           </property>
+          <property name="leftMargin">
+           <number>2</number>
+          </property>
+          <property name="rightMargin">
+           <number>2</number>
+          </property>
           <property name="bottomMargin">
            <number>0</number>
           </property>
@@ -715,6 +730,9 @@ height:30px;</string>
           </item>
           <item row="4" column="0" colspan="2">
            <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <property name="spacing">
+             <number>4</number>
+            </property>
             <item>
              <widget class="QPushButton" name="testPushButton">
               <property name="sizePolicy">
