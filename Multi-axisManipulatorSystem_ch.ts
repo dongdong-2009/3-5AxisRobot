@@ -2248,7 +2248,7 @@ Reason</source>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="111"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="105"/>
         <source>Guide</source>
-        <translation>程序快速设定</translation>
+        <translation>快速设定</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="157"/>
