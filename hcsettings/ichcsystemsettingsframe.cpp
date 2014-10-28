@@ -73,7 +73,7 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
     armValueToName_.insert(1, tr("Double Arm"));
     ui->backLightTimeEdit->setValidator(new QIntValidator(1, 60, this));
     ui->backLightTimeEdit->SetThisIntToThisText(ICParametersSave::Instance()->BackLightTime());
-    ui->brightnessBar->setValue((9 - ICParametersSave::Instance()->Brightness()));
+    ui->brightnessBar->setValue((ICParametersSave::Instance()->Brightness()));
 
     QList<QAbstractButton*> buttons_ = ui->languageButtonGroup->buttons();
     for(int i = 0; i != buttons_.size(); ++i)
@@ -1186,7 +1186,7 @@ void ICHCSystemSettingsFrame::StatusRefresh()
     QString os(osInfo_.release);
 #endif
     os += "; ";
-    ui->versionLabel->setText("Version: OS:" + os + QString("App %1;Libs:4.7.3; Host:").arg(SW_VERSION) + ICVirtualHost::GlobalVirtualHost()->HostStatus(ICVirtualHost::Time).toString());
+    ui->versionLabel->setText("Version: OS:" + os + QString("App %1; Host:").arg(SW_VERSION) + ICVirtualHost::GlobalVirtualHost()->HostStatus(ICVirtualHost::Time).toString());
 }
 
 void ICHCSystemSettingsFrame::on_structSelectHostButton_clicked()
@@ -1215,12 +1215,12 @@ void ICHCSystemSettingsFrame::on_calibrationBtn_clicked()
 void ICHCSystemSettingsFrame::on_brightMinus_clicked()
 {
     uint brightness = ui->brightnessBar->value();
-    if(brightness == 0)
+    if(brightness == 1)
     {
         return;
     }
     ui->brightnessBar->setValue((--brightness));
-    ICParametersSave::Instance()->SetBrightness(9 - brightness);
+    ICParametersSave::Instance()->SetBrightness(brightness);
 }
 
 void ICHCSystemSettingsFrame::on_brightPlus_clicked()
@@ -1231,7 +1231,7 @@ void ICHCSystemSettingsFrame::on_brightPlus_clicked()
         return;
     }
     ui->brightnessBar->setValue((++brightness));
-    ICParametersSave::Instance()->SetBrightness(9 -brightness);
+    ICParametersSave::Instance()->SetBrightness(brightness);
 }
 
 bool ICHCSystemSettingsFrame::CheckRestoreSystemFiles_()

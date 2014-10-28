@@ -367,43 +367,43 @@
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="474"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="492"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="469"/>
         <source>SubArm Advance +</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="674"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="692"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="416"/>
         <source>X023</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="152"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="170"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="500"/>
         <source>SubArm Advance -</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="183"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="201"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="108"/>
         <source>Machine Reverse</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="377"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="395"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="212"/>
         <source>Y035</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="205"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="223"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="438"/>
         <source>Adjust Forbid</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="536"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="554"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="562"/>
         <source>SubArm Back -</source>
         <translation type="unfinished"></translation>
     </message>
@@ -415,63 +415,63 @@
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="505"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="523"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="531"/>
         <source>SubArm Back + </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="90"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="108"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="655"/>
         <source>SubArm Up + </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="121"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="139"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="593"/>
         <source>SubArm Down + </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="264"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="282"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="686"/>
         <source>SubArm Up -</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="295"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="313"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="624"/>
         <source>SubArm Down -</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="317"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="335"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="152"/>
         <source>Y031</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="361"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="379"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="196"/>
         <source>Y032</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="586"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="604"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="328"/>
         <source>Y017</source>
         <oldsource>Y033</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="630"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="648"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="372"/>
         <source>X030</source>
         <oldsource>X026</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="449"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="467"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="284"/>
         <source>X033</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5921,13 +5921,13 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1729"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1756"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1768"/>
         <source>Backward Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1756"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1783"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1795"/>
         <source>Forword Limit</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6358,8 +6358,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1856"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1862"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1886"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1892"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1904"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1910"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="312"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="323"/>
         <source>Other Define</source>
@@ -6367,7 +6367,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1868"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1898"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1916"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="313"/>
         <source>Escape</source>
         <translation type="unfinished"></translation>
@@ -6375,8 +6375,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1900"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1987"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1930"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="2004"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1948"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="2022"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="316"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="324"/>
         <source>Use</source>
@@ -6385,8 +6385,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1935"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="2025"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1965"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="2042"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1983"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="2060"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="317"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="325"/>
         <source>No Use</source>
@@ -6394,56 +6394,56 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1955"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1972"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1990"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="327"/>
         <source>Adjust</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2038"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="2055"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="2073"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="326"/>
         <source>Servo Flex</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2049"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="2079"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="2097"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="261"/>
         <source>0-soft</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2084"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="2114"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="2132"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="268"/>
         <source>7-hard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2126"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="2156"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="2174"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="318"/>
         <source>Save</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1593"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1623"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1629"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="216"/>
         <source>Single Arm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1641"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1671"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1677"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="217"/>
         <source>Double Arm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1678"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1705"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1711"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="218"/>
         <source>Main Arm</source>
         <translation type="unfinished"></translation>
@@ -6451,8 +6451,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1703"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1804"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1730"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1831"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1742"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1849"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="219"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="223"/>
         <source>Down Limit</source>
@@ -6460,7 +6460,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1814"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1841"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1859"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="220"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="224"/>
         <source>Backword Limit</source>
@@ -6468,7 +6468,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1824"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1851"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1869"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="221"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="225"/>
         <source>Forward Limit</source>
@@ -6476,7 +6476,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1798"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1825"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1837"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="222"/>
         <source>Sub Arm</source>
         <translation type="unfinished"></translation>
@@ -6501,12 +6501,12 @@ Please enter an digit between </source>
 <context>
     <name>ICSystemStatusFrame</name>
     <message>
-        <location filename="custom_widgets/systemstatusframe/icsystemstatusframe.ui" line="14"/>
+        <location filename="custom_widgets/systemstatusframe/icsystemstatusframe.ui" line="20"/>
         <source>Frame</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/systemstatusframe/icsystemstatusframe.ui" line="181"/>
+        <location filename="custom_widgets/systemstatusframe/icsystemstatusframe.ui" line="205"/>
         <source>IMM Signal</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6603,71 +6603,85 @@ Please enter an digit between </source>
     <name>ICUpdateSystemPage</name>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="20"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="20"/>
         <source>Frame</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="70"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="70"/>
         <source>5.Register</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="83"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="83"/>
         <source>MachineCode:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="102"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="102"/>
         <source>Generate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="115"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="115"/>
         <source>RegisterCode:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="162"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="162"/>
         <source>Register</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="190"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="190"/>
         <source>RestTime:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="264"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="264"/>
         <source>Update Logo</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="283"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="283"/>
         <source>Scan Panel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="305"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="305"/>
         <source>Update HMI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="324"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="324"/>
         <source>Scan Host</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="346"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="346"/>
         <source>Update Host</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="365"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="365"/>
         <source>Update Super Password</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="381"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="381"/>
         <source>Update Host Process:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6898,37 +6912,37 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="mainframe.ui" line="192"/>
-        <location filename="mainframe_5.ui" line="207"/>
+        <location filename="mainframe_5.ui" line="216"/>
         <source>Z:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="mainframe.ui" line="237"/>
-        <location filename="mainframe_5.ui" line="252"/>
+        <location filename="mainframe_5.ui" line="261"/>
         <source>X1:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="mainframe.ui" line="282"/>
-        <location filename="mainframe_5.ui" line="297"/>
+        <location filename="mainframe_5.ui" line="306"/>
         <source>Y1:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="mainframe.ui" line="327"/>
-        <location filename="mainframe_5.ui" line="342"/>
+        <location filename="mainframe_5.ui" line="351"/>
         <source>X2:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="mainframe.ui" line="372"/>
-        <location filename="mainframe_5.ui" line="387"/>
+        <location filename="mainframe_5.ui" line="396"/>
         <source>Y2:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="mainframe.ui" line="489"/>
-        <location filename="mainframe_5.ui" line="504"/>
+        <location filename="mainframe_5.ui" line="513"/>
         <source>A:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6936,21 +6950,21 @@ Please enter an digit between </source>
         <location filename="mainframe.ui" line="521"/>
         <location filename="mainframe.ui" line="566"/>
         <location filename="mainframe.ui" line="611"/>
-        <location filename="mainframe_5.ui" line="536"/>
-        <location filename="mainframe_5.ui" line="581"/>
-        <location filename="mainframe_5.ui" line="626"/>
+        <location filename="mainframe_5.ui" line="545"/>
+        <location filename="mainframe_5.ui" line="590"/>
+        <location filename="mainframe_5.ui" line="635"/>
         <source>Degree</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="mainframe.ui" line="534"/>
-        <location filename="mainframe_5.ui" line="549"/>
+        <location filename="mainframe_5.ui" line="558"/>
         <source>B:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="mainframe.ui" line="579"/>
-        <location filename="mainframe_5.ui" line="594"/>
+        <location filename="mainframe_5.ui" line="603"/>
         <source>C:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6960,17 +6974,17 @@ Please enter an digit between </source>
         <location filename="mainframe.ui" line="314"/>
         <location filename="mainframe.ui" line="359"/>
         <location filename="mainframe.ui" line="404"/>
-        <location filename="mainframe_5.ui" line="239"/>
-        <location filename="mainframe_5.ui" line="284"/>
-        <location filename="mainframe_5.ui" line="329"/>
-        <location filename="mainframe_5.ui" line="374"/>
-        <location filename="mainframe_5.ui" line="419"/>
+        <location filename="mainframe_5.ui" line="248"/>
+        <location filename="mainframe_5.ui" line="293"/>
+        <location filename="mainframe_5.ui" line="338"/>
+        <location filename="mainframe_5.ui" line="383"/>
+        <location filename="mainframe_5.ui" line="428"/>
         <source>mm    </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="mainframe.ui" line="631"/>
-        <location filename="mainframe_5.ui" line="646"/>
+        <location filename="mainframe_5.ui" line="655"/>
         <source>Step</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7149,18 +7163,18 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="83"/>
-        <location filename="function_settings/moldinformation.cpp" line="176"/>
-        <location filename="function_settings/moldinformation.cpp" line="184"/>
-        <location filename="function_settings/moldinformation.cpp" line="212"/>
-        <location filename="function_settings/moldinformation.cpp" line="223"/>
-        <location filename="function_settings/moldinformation.cpp" line="246"/>
-        <location filename="function_settings/moldinformation.cpp" line="377"/>
-        <location filename="function_settings/moldinformation.cpp" line="390"/>
-        <location filename="function_settings/moldinformation.cpp" line="409"/>
-        <location filename="function_settings/moldinformation.cpp" line="419"/>
-        <location filename="function_settings/moldinformation.cpp" line="429"/>
-        <location filename="function_settings/moldinformation.cpp" line="557"/>
-        <location filename="function_settings/moldinformation.cpp" line="595"/>
+        <location filename="function_settings/moldinformation.cpp" line="177"/>
+        <location filename="function_settings/moldinformation.cpp" line="185"/>
+        <location filename="function_settings/moldinformation.cpp" line="215"/>
+        <location filename="function_settings/moldinformation.cpp" line="226"/>
+        <location filename="function_settings/moldinformation.cpp" line="250"/>
+        <location filename="function_settings/moldinformation.cpp" line="381"/>
+        <location filename="function_settings/moldinformation.cpp" line="394"/>
+        <location filename="function_settings/moldinformation.cpp" line="413"/>
+        <location filename="function_settings/moldinformation.cpp" line="423"/>
+        <location filename="function_settings/moldinformation.cpp" line="433"/>
+        <location filename="function_settings/moldinformation.cpp" line="561"/>
+        <location filename="function_settings/moldinformation.cpp" line="599"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7172,14 +7186,14 @@ Please input the file name.</source>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="105"/>
-        <location filename="function_settings/moldinformation.cpp" line="511"/>
-        <location filename="function_settings/moldinformation.cpp" line="624"/>
-        <location filename="function_settings/moldinformation.cpp" line="632"/>
-        <location filename="function_settings/moldinformation.cpp" line="637"/>
-        <location filename="function_settings/moldinformation.cpp" line="676"/>
-        <location filename="function_settings/moldinformation.cpp" line="859"/>
-        <location filename="function_settings/moldinformation.cpp" line="876"/>
-        <location filename="function_settings/moldinformation.cpp" line="887"/>
+        <location filename="function_settings/moldinformation.cpp" line="515"/>
+        <location filename="function_settings/moldinformation.cpp" line="628"/>
+        <location filename="function_settings/moldinformation.cpp" line="636"/>
+        <location filename="function_settings/moldinformation.cpp" line="641"/>
+        <location filename="function_settings/moldinformation.cpp" line="680"/>
+        <location filename="function_settings/moldinformation.cpp" line="865"/>
+        <location filename="function_settings/moldinformation.cpp" line="882"/>
+        <location filename="function_settings/moldinformation.cpp" line="893"/>
         <source>Warnning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7190,7 +7204,7 @@ Please input the file name.</source>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="148"/>
-        <location filename="function_settings/moldinformation.cpp" line="205"/>
+        <location filename="function_settings/moldinformation.cpp" line="206"/>
         <source>Success</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7200,191 +7214,191 @@ Please input the file name.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="155"/>
+        <location filename="function_settings/moldinformation.cpp" line="156"/>
         <source>The file has been existing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="156"/>
+        <location filename="function_settings/moldinformation.cpp" line="157"/>
         <source>File already exists,
 Please change a new name.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="177"/>
-        <location filename="function_settings/moldinformation.cpp" line="224"/>
+        <location filename="function_settings/moldinformation.cpp" line="178"/>
+        <location filename="function_settings/moldinformation.cpp" line="227"/>
         <source>Source file name is empty,
 Please choose an existing file.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="185"/>
+        <location filename="function_settings/moldinformation.cpp" line="186"/>
         <source>New file name is empty,
 Please write the destination file name.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="206"/>
+        <location filename="function_settings/moldinformation.cpp" line="207"/>
         <source>Copy file success!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="213"/>
+        <location filename="function_settings/moldinformation.cpp" line="216"/>
         <source>Destination file already exists!
 Please try a new name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="247"/>
+        <location filename="function_settings/moldinformation.cpp" line="251"/>
         <source>File does not exist!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="290"/>
-        <location filename="function_settings/moldinformation.cpp" line="307"/>
-        <location filename="function_settings/moldinformation.cpp" line="712"/>
-        <location filename="function_settings/moldinformation.cpp" line="835"/>
+        <location filename="function_settings/moldinformation.cpp" line="294"/>
+        <location filename="function_settings/moldinformation.cpp" line="311"/>
+        <location filename="function_settings/moldinformation.cpp" line="717"/>
+        <location filename="function_settings/moldinformation.cpp" line="841"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="290"/>
-        <location filename="function_settings/moldinformation.cpp" line="307"/>
+        <location filename="function_settings/moldinformation.cpp" line="294"/>
+        <location filename="function_settings/moldinformation.cpp" line="311"/>
         <source>file name is empty</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="329"/>
+        <location filename="function_settings/moldinformation.cpp" line="333"/>
         <source>On the Current mold already!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="338"/>
+        <location filename="function_settings/moldinformation.cpp" line="342"/>
         <source>critical</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="338"/>
+        <location filename="function_settings/moldinformation.cpp" line="342"/>
         <source>Read mold or mold para fail! Please change other mold!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="342"/>
+        <location filename="function_settings/moldinformation.cpp" line="346"/>
         <source>Loading...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="329"/>
+        <location filename="function_settings/moldinformation.cpp" line="333"/>
         <source>Tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="378"/>
-        <location filename="function_settings/moldinformation.cpp" line="410"/>
-        <location filename="function_settings/moldinformation.cpp" line="558"/>
-        <location filename="function_settings/moldinformation.cpp" line="596"/>
+        <location filename="function_settings/moldinformation.cpp" line="382"/>
+        <location filename="function_settings/moldinformation.cpp" line="414"/>
+        <location filename="function_settings/moldinformation.cpp" line="562"/>
+        <location filename="function_settings/moldinformation.cpp" line="600"/>
         <source>The mold file </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="380"/>
-        <location filename="function_settings/moldinformation.cpp" line="412"/>
-        <location filename="function_settings/moldinformation.cpp" line="560"/>
-        <location filename="function_settings/moldinformation.cpp" line="598"/>
+        <location filename="function_settings/moldinformation.cpp" line="384"/>
+        <location filename="function_settings/moldinformation.cpp" line="416"/>
+        <location filename="function_settings/moldinformation.cpp" line="564"/>
+        <location filename="function_settings/moldinformation.cpp" line="602"/>
         <source> is being used</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="391"/>
-        <location filename="function_settings/moldinformation.cpp" line="420"/>
+        <location filename="function_settings/moldinformation.cpp" line="395"/>
+        <location filename="function_settings/moldinformation.cpp" line="424"/>
         <source>Stand programs can not be delete!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="643"/>
+        <location filename="function_settings/moldinformation.cpp" line="647"/>
         <source>Restoring, please wait...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="624"/>
+        <location filename="function_settings/moldinformation.cpp" line="628"/>
         <source>Wrong program format!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="430"/>
+        <location filename="function_settings/moldinformation.cpp" line="434"/>
         <source>Are you sure to delete the selected files?</source>
         <oldsource>Are you sure to delete the selected files </oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="632"/>
+        <location filename="function_settings/moldinformation.cpp" line="636"/>
         <source>Wrong config format!!!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="637"/>
+        <location filename="function_settings/moldinformation.cpp" line="641"/>
         <source>Wrong config format!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="567"/>
-        <location filename="function_settings/moldinformation.cpp" line="588"/>
-        <location filename="function_settings/moldinformation.cpp" line="734"/>
-        <location filename="function_settings/moldinformation.cpp" line="755"/>
+        <location filename="function_settings/moldinformation.cpp" line="571"/>
+        <location filename="function_settings/moldinformation.cpp" line="592"/>
+        <location filename="function_settings/moldinformation.cpp" line="739"/>
+        <location filename="function_settings/moldinformation.cpp" line="760"/>
         <source>tips</source>
         <oldsource>t1ips</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="567"/>
-        <location filename="function_settings/moldinformation.cpp" line="588"/>
-        <location filename="function_settings/moldinformation.cpp" line="734"/>
-        <location filename="function_settings/moldinformation.cpp" line="755"/>
+        <location filename="function_settings/moldinformation.cpp" line="571"/>
+        <location filename="function_settings/moldinformation.cpp" line="592"/>
+        <location filename="function_settings/moldinformation.cpp" line="739"/>
+        <location filename="function_settings/moldinformation.cpp" line="760"/>
         <source>%1 is exist,replace it?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="676"/>
+        <location filename="function_settings/moldinformation.cpp" line="680"/>
         <source>Wrong program format!!!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="698"/>
-        <location filename="function_settings/moldinformation.cpp" line="797"/>
+        <location filename="function_settings/moldinformation.cpp" line="702"/>
+        <location filename="function_settings/moldinformation.cpp" line="802"/>
         <source>Information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="698"/>
-        <location filename="function_settings/moldinformation.cpp" line="797"/>
+        <location filename="function_settings/moldinformation.cpp" line="702"/>
+        <location filename="function_settings/moldinformation.cpp" line="802"/>
         <source>Operation finished!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="712"/>
-        <location filename="function_settings/moldinformation.cpp" line="835"/>
+        <location filename="function_settings/moldinformation.cpp" line="717"/>
+        <location filename="function_settings/moldinformation.cpp" line="841"/>
         <source>USB is not connected!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="770"/>
+        <location filename="function_settings/moldinformation.cpp" line="775"/>
         <source>Backuping, please wait...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="862"/>
+        <location filename="function_settings/moldinformation.cpp" line="868"/>
         <source>Refresh File List, please wait...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="876"/>
-        <location filename="function_settings/moldinformation.cpp" line="887"/>
+        <location filename="function_settings/moldinformation.cpp" line="882"/>
+        <location filename="function_settings/moldinformation.cpp" line="893"/>
         <source>Backup files is incomplete!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="511"/>
-        <location filename="function_settings/moldinformation.cpp" line="859"/>
+        <location filename="function_settings/moldinformation.cpp" line="515"/>
+        <location filename="function_settings/moldinformation.cpp" line="865"/>
         <source>Backup files is not exists!</source>
         <translation type="unfinished"></translation>
     </message>

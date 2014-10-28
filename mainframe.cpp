@@ -765,7 +765,7 @@ void MainFrame::StatusRefreshed()
 #ifdef HC_ARMV6
         ioctl(ledFD_, 0, ledFlags_);
 #else
-        ioctl(ledFD_, 2, ledFlags_);
+        ioctl(ledFD_, 0, ledFlags_);
 #endif
 #endif
     }

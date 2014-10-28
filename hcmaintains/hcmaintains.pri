@@ -11,13 +11,13 @@ SOURCES += \
 FORMS += \
 #    hcmaintains/icupdatesystem.ui \
     hcmaintains/icupdatelogodialog.ui \
-    hcmaintains/icupdatesystempage.ui
+#    hcmaintains/icupdatesystempage.ui
 #    hcmaintains/icupdatesystempage_5.ui
 
 
 contains(DEFINES, HC_SK_8){
-#FORMS += hcmaintains/icupdatesystempage.ui
+FORMS += $$PWD/icupdatesystempage.ui
 }
 contains(DEFINES, HC_SK_5){
-#FORMS += hcmaintains/icupdatesystempage_5.ui
+FORMS += $$PWD/icupdatesystempage_5.ui
 }
