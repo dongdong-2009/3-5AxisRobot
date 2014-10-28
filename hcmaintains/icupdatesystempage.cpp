@@ -254,62 +254,7 @@ void ICUpdateSystemPage::keyPressEvent(QKeyEvent *e)
 
 void ICUpdateSystemPage::updateHostButton()
 {
-    if(updateHostSettings_ == NULL)
-    {
-        return;
-    }
-    QStringList updateFileList = updateHostSettings_->childGroups();
-    if(updateFileList.isEmpty())
-    {
-        return;
-    }
-    ui->copyFilesProgressBar->setValue(0);
-    QFile file(updateHostPath_ + updateFileList.at(0));
-    if(file.open(QFile::ReadOnly))
-    {
-        ICCommandProcessor* processor = ICCommandProcessor::Instance();
-        ICUpdateHostRequestCommand reqCommand;
-        if(processor->ExecuteCommand(reqCommand).toBool())
-        {
-            qDebug("req successful");
-            ICUpdateHostTransferCommand tranCommand;
-            QByteArray readySend(file.readAll());
-            file.close();
-            bool isTranSuccessful = true;
-            ui->copyFilesProgressBar->setRange(0, readySend.size() / 32);
-            for(int addr = 0; addr != readySend.size() / 32; ++addr)
-            {
-                tranCommand.SetDataBuffer(readySend.mid(addr << 5, 32));
-                tranCommand.SetStartAddr(addr);
-                isTranSuccessful = isTranSuccessful && processor->ExecuteCommand(tranCommand).toBool();
-                if(isTranSuccessful)
-                {
-                    ui->copyFilesProgressBar->setValue(addr + 1);
-                }
-                else
-                {
-                    QMessageBox::warning(this, tr("Warning"), tr("Update Host fail!"));
-                    return ;
-                }
-            }
-            qDebug("tran successful");
-//            QMessageBox::information(this, tr("Congratulations"),
-//                                     tr("Send to  Host finished!"));
-//            ui->writeHostButton->setEnabled(true);
-
-            return;
-//            ICUpdateHostFinishCommand finishCommand;
-//            if(processor->ExecuteCommand(finishCommand).toBool())
-//            {
-//                QMessageBox::information(this, tr("Congratulations"),
-//                                         tr("Update Host finished!"));
-
-//                return;
-//            }
-
-        }
-    }
-    QMessageBox::warning(this, tr("Warning"), tr("Update Host fail!"));
+    SystemUpdateStart();
 }
 
 void ICUpdateSystemPage::QueryStatus()
