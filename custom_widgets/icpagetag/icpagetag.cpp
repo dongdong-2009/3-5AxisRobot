@@ -41,9 +41,9 @@ void ICPageTag::paintEvent(QPaintEvent *e)
             painter.drawPixmap(this->rect(), leftPressBG_);
         }
 //        painter.drawPixmap(90, 10, icon().pixmap(iconSize()));
-        painter.drawPixmap(80, 0, icon().pixmap(iconSize()));
+        painter.drawPixmap(80, 5, icon().pixmap(iconSize()));
 //        painter.drawText(QRect(0, 10, this->width() - 150, iconSize().height()), text(), Qt::AlignRight | Qt::AlignVCenter);
-        painter.drawText(QRect(0, 0, this->width() - 150, iconSize().height()), text(), Qt::AlignRight | Qt::AlignVCenter);
+        painter.drawText(QRect(0, 5, this->width() - 150, iconSize().height()), text(), Qt::AlignRight | Qt::AlignVCenter);
         painter.end();
     }
     else
@@ -62,9 +62,9 @@ void ICPageTag::paintEvent(QPaintEvent *e)
             painter.drawPixmap(this->rect(), rightPressBG_);
         }
 //        painter.drawText(QRect(110, 10, this->width(), iconSize().height()), text(), Qt::AlignLeft | Qt::AlignVCenter);
-        painter.drawText(QRect(110, 0, this->width(), iconSize().height()), text(), Qt::AlignLeft | Qt::AlignVCenter);
+        painter.drawText(QRect(110, 5, this->width(), iconSize().height()), text(), Qt::AlignLeft | Qt::AlignVCenter);
 //        painter.drawPixmap(this->rect().right() - iconSize().width() - 130, 10, icon().pixmap(iconSize()));
-        painter.drawPixmap(this->rect().right() - iconSize().width() - 110, 0, icon().pixmap(iconSize()));
+        painter.drawPixmap(this->rect().right() - iconSize().width() - 110, 5, icon().pixmap(iconSize()));
         painter.end();
     }
     QWidget::paintEvent(e);
