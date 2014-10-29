@@ -20,107 +20,10 @@
    <enum>QFrame::Plain</enum>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="0">
-    <widget class="QLabel" name="label">
-     <property name="text">
-      <string>Vertical-1</string>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="verticalineEdit">
+   <item row="4" column="5">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="mainArmUpEdit">
      <property name="text">
       <string notr="true"/>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="0">
-    <widget class="QLabel" name="label_2">
-     <property name="text">
-      <string>Horizontal-1</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="horizontalLineEdit">
-     <property name="text">
-      <string notr="true"/>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="0">
-    <widget class="QLabel" name="label_15">
-     <property name="text">
-      <string>Main Arm Forward</string>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="0">
-    <widget class="QLabel" name="label_16">
-     <property name="text">
-      <string>Main Arm Backward</string>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="mainArmForwardEdit">
-     <property name="text">
-      <string notr="true"/>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="mainArmBackwardEdit">
-     <property name="text">
-      <string notr="true"/>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="2">
-    <widget class="QLabel" name="label_17">
-     <property name="text">
-      <string>s</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="2">
-    <widget class="QLabel" name="label_18">
-     <property name="text">
-      <string>s</string>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="2">
-    <widget class="QLabel" name="label_19">
-     <property name="text">
-      <string>s</string>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="2">
-    <widget class="QLabel" name="label_20">
-     <property name="text">
-      <string>s</string>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="7">
-    <spacer name="horizontalSpacer">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>40</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="0" column="4">
-    <widget class="QLabel" name="label_3">
-     <property name="text">
-      <string>Secondary arm up</string>
      </property>
     </widget>
    </item>
@@ -131,31 +34,87 @@
      </property>
     </widget>
    </item>
-   <item row="0" column="6">
-    <widget class="QLabel" name="label_21">
+   <item row="2" column="4">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Secondary arm go forward</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_15">
+     <property name="text">
+      <string>Main Arm Forward</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="6">
+    <widget class="QLabel" name="label_23">
      <property name="text">
       <string>s</string>
      </property>
     </widget>
    </item>
-   <item row="1" column="4">
-    <widget class="QLabel" name="label_4">
-     <property name="text">
-      <string>Secondary arm down</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="5">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="secondaryArmDownLineEdit">
+   <item row="2" column="1">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="vertical2LineEdit">
      <property name="text">
       <string notr="true"/>
      </property>
     </widget>
    </item>
-   <item row="1" column="6">
-    <widget class="QLabel" name="label_22">
+   <item row="4" column="2">
+    <widget class="QLabel" name="label_19">
      <property name="text">
       <string>s</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>Vertical-2</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="mainArmBackwardEdit">
+     <property name="text">
+      <string notr="true"/>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="4">
+    <widget class="QLabel" name="label_28">
+     <property name="text">
+      <string>Main Arm Down</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="4">
+    <widget class="QLabel" name="label_27">
+     <property name="text">
+      <string>Main Arm Up</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="6">
+    <widget class="QLabel" name="label_29">
+     <property name="text">
+      <string>s</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="verticalineEdit">
+     <property name="text">
+      <string notr="true"/>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="5">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="mainArmDownEdit">
+     <property name="text">
+      <string notr="true"/>
      </property>
     </widget>
    </item>
@@ -172,17 +131,51 @@
      </property>
     </spacer>
    </item>
-   <item row="2" column="0">
-    <widget class="QLabel" name="label_7">
+   <item row="1" column="5">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="secondaryArmDownLineEdit">
      <property name="text">
-      <string>Vertical-2</string>
+      <string notr="true"/>
      </property>
     </widget>
    </item>
-   <item row="2" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="vertical2LineEdit">
+   <item row="1" column="4">
+    <widget class="QLabel" name="label_4">
      <property name="text">
-      <string notr="true"/>
+      <string>Secondary arm down</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="7">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="3" column="6">
+    <widget class="QLabel" name="label_24">
+     <property name="text">
+      <string>s</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="6">
+    <widget class="QLabel" name="label_22">
+     <property name="text">
+      <string>s</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="6">
+    <widget class="QLabel" name="label_21">
+     <property name="text">
+      <string>s</string>
      </property>
     </widget>
    </item>
@@ -193,45 +186,17 @@
      </property>
     </widget>
    </item>
-   <item row="3" column="0">
-    <widget class="QLabel" name="label_8">
+   <item row="0" column="4">
+    <widget class="QLabel" name="label_3">
      <property name="text">
-      <string>Horizontal-2</string>
+      <string>Secondary arm up</string>
      </property>
     </widget>
    </item>
-   <item row="3" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="horizontal2LineEdit">
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_16">
      <property name="text">
-      <string notr="true"/>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="2">
-    <widget class="QLabel" name="label_26">
-     <property name="text">
-      <string>s</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="4">
-    <widget class="QLabel" name="label_5">
-     <property name="text">
-      <string>Secondary arm go forward</string>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="4">
-    <widget class="QLabel" name="label_6">
-     <property name="text">
-      <string>Secondary arm go backward</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="5">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="secondayGoForwardLineEdit">
-     <property name="text">
-      <string notr="true"/>
+      <string>Main Arm Backward</string>
      </property>
     </widget>
    </item>
@@ -242,45 +207,38 @@
      </property>
     </widget>
    </item>
-   <item row="2" column="6">
-    <widget class="QLabel" name="label_23">
-     <property name="text">
-      <string>s</string>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="6">
-    <widget class="QLabel" name="label_24">
-     <property name="text">
-      <string>s</string>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="4">
-    <widget class="QLabel" name="label_27">
-     <property name="text">
-      <string>Main Arm Up</string>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="4">
-    <widget class="QLabel" name="label_28">
-     <property name="text">
-      <string>Main Arm Down</string>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="5">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="mainArmUpEdit">
+   <item row="2" column="5">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="secondayGoForwardLineEdit">
      <property name="text">
       <string notr="true"/>
      </property>
     </widget>
    </item>
-   <item row="4" column="6">
-    <widget class="QLabel" name="label_29">
+   <item row="1" column="1">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="horizontalLineEdit">
      <property name="text">
-      <string>s</string>
+      <string notr="true"/>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="mainArmForwardEdit">
+     <property name="text">
+      <string notr="true"/>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="4">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>Secondary arm go backward</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>Horizontal-2</string>
      </property>
     </widget>
    </item>
@@ -291,10 +249,94 @@
      </property>
     </widget>
    </item>
-   <item row="5" column="5">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="mainArmDownEdit">
+   <item row="1" column="2">
+    <widget class="QLabel" name="label_18">
+     <property name="text">
+      <string>s</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="horizontal2LineEdit">
      <property name="text">
       <string notr="true"/>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Horizontal-1</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QLabel" name="label_26">
+     <property name="text">
+      <string>s</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QLabel" name="label_17">
+     <property name="text">
+      <string>s</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Vertical-1</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_31">
+     <property name="text">
+      <string>Come In</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="comeInEdit">
+     <property name="text">
+      <string notr="true"/>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2" colspan="2">
+    <widget class="QLabel" name="label_20">
+     <property name="text">
+      <string>s</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="2">
+    <widget class="QLabel" name="label_32">
+     <property name="text">
+      <string>s</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="4">
+    <widget class="QLabel" name="label_33">
+     <property name="text">
+      <string>Go Out</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="5">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="goOutEdit">
+     <property name="text">
+      <string notr="true"/>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="6">
+    <widget class="QLabel" name="label_34">
+     <property name="text">
+      <string>s</string>
      </property>
     </widget>
    </item>

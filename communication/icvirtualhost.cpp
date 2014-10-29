@@ -974,6 +974,8 @@ void ICVirtualHost::InitAddrToSysPosMap_()
     addrToSysPos_.insert(SM_C_SEC2, ACT_C_Sec2);
     addrToSysPos_.insert(SM_C_SEC3, ACT_C_Sec3);
     addrToSysPos_.insert(SM_C_SEC4, ACT_C_Sec4);
+    addrToSysPos_.insert(SM_MAININ, ACT_ComeIn);
+    addrToSysPos_.insert(SM_MAINOUT, ACT_GoOut);
     moldParamToAddrPos_.insert(ICMold::CheckClip1, SM_CHKCLIP1);
     moldParamToAddrPos_.insert(ICMold::CheckClip2, SM_CHKCLIP2);
     moldParamToAddrPos_.insert(ICMold::CheckClip3, SM_CHKCLIP3);

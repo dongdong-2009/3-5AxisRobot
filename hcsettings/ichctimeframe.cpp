@@ -48,6 +48,8 @@ void ICHCTimeFrame::InitInterFace()
     BindingParam_(ui->mainArmBackwardEdit, ICVirtualHost::SM_TIMEMBACK);
     BindingParam_(ui->mainArmUpEdit, ICVirtualHost::SM_TIMEMUP);
     BindingParam_(ui->mainArmDownEdit, ICVirtualHost::SM_TIMEMDOWN);
+    BindingParam_(ui->comeInEdit, ICVirtualHost::SM_MAININ);
+    BindingParam_(ui->goOutEdit, ICVirtualHost::SM_MAINOUT);
 }
 
 void ICHCTimeFrame::BindingParam_(QLineEdit *edit, int addr)

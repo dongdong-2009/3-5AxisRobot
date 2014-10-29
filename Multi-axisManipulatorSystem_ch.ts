@@ -4172,7 +4172,7 @@ Reason</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichctimeframe.ui" line="26"/>
+        <location filename="hcsettings/ichctimeframe.ui" line="290"/>
         <location filename="hcsettings/ichctimeframe_5.ui" line="26"/>
         <source>Vertical-1</source>
         <oldsource>Vertical</oldsource>
@@ -4183,7 +4183,7 @@ Reason</source>
         <translation type="obsolete">夹/放1</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichctimeframe.ui" line="199"/>
+        <location filename="hcsettings/ichctimeframe.ui" line="241"/>
         <location filename="hcsettings/ichctimeframe_5.ui" line="262"/>
         <source>Horizontal-2</source>
         <oldsource>Horizontal</oldsource>
@@ -4202,7 +4202,7 @@ Reason</source>
         <translation type="obsolete">夹/放4</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichctimeframe.ui" line="123"/>
+        <location filename="hcsettings/ichctimeframe.ui" line="192"/>
         <location filename="hcsettings/ichctimeframe_5.ui" line="159"/>
         <source>Secondary arm up</source>
         <translation>副臂上升</translation>
@@ -4222,7 +4222,7 @@ Reason</source>
         <translation type="obsolete">吸/放2</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichctimeframe.ui" line="220"/>
+        <location filename="hcsettings/ichctimeframe.ui" line="40"/>
         <location filename="hcsettings/ichctimeframe_5.ui" line="292"/>
         <source>Secondary arm go forward</source>
         <translation>副臂前进</translation>
@@ -4232,7 +4232,7 @@ Reason</source>
         <translation type="obsolete">喷油</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichctimeframe.ui" line="227"/>
+        <location filename="hcsettings/ichctimeframe.ui" line="234"/>
         <location filename="hcsettings/ichctimeframe_5.ui" line="299"/>
         <source>Secondary arm go backward</source>
         <translation>副臂后退</translation>
@@ -4242,36 +4242,38 @@ Reason</source>
         <translation type="obsolete">传送带</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichctimeframe.ui" line="40"/>
+        <location filename="hcsettings/ichctimeframe.ui" line="269"/>
         <location filename="hcsettings/ichctimeframe_5.ui" line="49"/>
         <source>Horizontal-1</source>
         <translation>水平1</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichctimeframe.ui" line="54"/>
+        <location filename="hcsettings/ichctimeframe.ui" line="47"/>
         <location filename="hcsettings/ichctimeframe_5.ui" line="72"/>
         <source>Main Arm Forward</source>
         <translation>主臂前进</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichctimeframe.ui" line="61"/>
+        <location filename="hcsettings/ichctimeframe.ui" line="199"/>
         <location filename="hcsettings/ichctimeframe_5.ui" line="79"/>
         <source>Main Arm Backward</source>
         <translation>主臂后退</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichctimeframe.ui" line="82"/>
-        <location filename="hcsettings/ichctimeframe.ui" line="89"/>
-        <location filename="hcsettings/ichctimeframe.ui" line="96"/>
+        <location filename="hcsettings/ichctimeframe.ui" line="54"/>
+        <location filename="hcsettings/ichctimeframe.ui" line="68"/>
         <location filename="hcsettings/ichctimeframe.ui" line="103"/>
-        <location filename="hcsettings/ichctimeframe.ui" line="137"/>
-        <location filename="hcsettings/ichctimeframe.ui" line="158"/>
-        <location filename="hcsettings/ichctimeframe.ui" line="192"/>
-        <location filename="hcsettings/ichctimeframe.ui" line="213"/>
+        <location filename="hcsettings/ichctimeframe.ui" line="164"/>
+        <location filename="hcsettings/ichctimeframe.ui" line="171"/>
+        <location filename="hcsettings/ichctimeframe.ui" line="178"/>
+        <location filename="hcsettings/ichctimeframe.ui" line="185"/>
         <location filename="hcsettings/ichctimeframe.ui" line="248"/>
         <location filename="hcsettings/ichctimeframe.ui" line="255"/>
+        <location filename="hcsettings/ichctimeframe.ui" line="276"/>
         <location filename="hcsettings/ichctimeframe.ui" line="283"/>
-        <location filename="hcsettings/ichctimeframe.ui" line="290"/>
+        <location filename="hcsettings/ichctimeframe.ui" line="311"/>
+        <location filename="hcsettings/ichctimeframe.ui" line="318"/>
+        <location filename="hcsettings/ichctimeframe.ui" line="339"/>
         <location filename="hcsettings/ichctimeframe_5.ui" line="118"/>
         <location filename="hcsettings/ichctimeframe_5.ui" line="125"/>
         <location filename="hcsettings/ichctimeframe_5.ui" line="132"/>
@@ -4288,19 +4290,29 @@ Reason</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichctimeframe.ui" line="178"/>
+        <location filename="hcsettings/ichctimeframe.ui" line="75"/>
         <location filename="hcsettings/ichctimeframe_5.ui" line="232"/>
         <source>Vertical-2</source>
         <translation>垂直2</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichctimeframe.ui" line="262"/>
+        <location filename="hcsettings/ichctimeframe.ui" line="96"/>
         <location filename="hcsettings/ichctimeframe_5.ui" line="352"/>
         <source>Main Arm Up</source>
         <translation>主臂上升</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichctimeframe.ui" line="269"/>
+        <location filename="hcsettings/ichctimeframe.ui" line="297"/>
+        <source>Come In</source>
+        <translation>横入</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichctimeframe.ui" line="325"/>
+        <source>Go Out</source>
+        <translation>横出</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichctimeframe.ui" line="89"/>
         <location filename="hcsettings/ichctimeframe_5.ui" line="359"/>
         <source>Main Arm Down</source>
         <translation>主臂下降</translation>
