@@ -572,7 +572,7 @@ public:
     void SetMidMoldCheck(bool isCheck);
     bool IsEjectionLink() const { return (SystemParameter(SYS_Function).toInt() & 0x00000040) != 0;}
     void SetEjectionLink(bool permit);
-    bool IsAlarmWhenOrigin() const { return (SystemParameter(SYS_Function).toInt() & 0x00000300) != 0;}
+    bool IsAlarmWhenOrigin() const { return (SystemParameter(SYS_Function).toInt() & 0x00000100) != 0;}
     void SetAlarmWhenOrigin(bool isAlarm);
     bool IsPositionDetect() const { return (SystemParameter(SYS_Function).toInt() & 0x00000C00) != 0;}
     void SetPositionDetect(bool detect);
@@ -888,7 +888,7 @@ inline void ICVirtualHost::SetEjectionLink(bool permit)
 inline void ICVirtualHost::SetAlarmWhenOrigin(bool isAlarm)
 {
     int val = SystemParameter(SYS_Function).toInt();
-    val &= 0xFFFFFDFF;
+    val &= 0xFFFFFEFF;
     (isAlarm ? val |= 0x00000100 : val &= 0xFFFFFEFF);
     systemParamMap_.insert(SYS_Function, val);
     isParamChanged_ = true;
