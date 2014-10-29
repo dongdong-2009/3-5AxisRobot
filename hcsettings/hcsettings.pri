@@ -53,7 +53,7 @@ FORMS += \
 #    $$PWD/ichcstackedsettingsframe_5.ui \
 #    $$PWD/ichcdetectionfram_5.ui
 #    $$PWD/icmachinestructpage_5.ui
-    $$PWD/ichctimeframe_5.ui
+    $$PWD/ichctimeframe.ui
 
 
 
