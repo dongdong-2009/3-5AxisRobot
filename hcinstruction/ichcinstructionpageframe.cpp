@@ -1072,3 +1072,7 @@ void  ICHCInstructionPageFrame::OnGuideFinished()
     UpdateHostParam();
 }
 
+void ICHCInstructionPageFrame::on_tryButton_clicked()
+{
+
+}
