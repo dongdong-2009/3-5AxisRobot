@@ -874,6 +874,29 @@ Infomation</source>
     </message>
 </context>
 <context>
+    <name>ICBackupDialog</name>
+    <message>
+        <location filename="icbackupdialog.ui" line="14"/>
+        <source>Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icbackupdialog.ui" line="20"/>
+        <source>You pressed the backup sequence.Need to backups?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icbackupdialog.ui" line="38"/>
+        <source>No(F4)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icbackupdialog.ui" line="51"/>
+        <source>Yes(F5)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ICCategoryPageBaseFrame</name>
     <message>
         <location filename="categorypage/iccategorypagebaseframe.ui" line="14"/>
@@ -3335,6 +3358,10 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="652"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="667"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="673"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="690"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1248"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1253"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1275"/>
@@ -3343,6 +3370,18 @@ Infomation</source>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1303"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1315"/>
         <source>Warnning</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="652"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="690"/>
+        <source>Wrong program format!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="667"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="673"/>
+        <source>Wrong config format!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7136,76 +7175,76 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1430"/>
+        <location filename="mainframe.cpp" line="1447"/>
         <source>Spare Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1004"/>
+        <location filename="mainframe.cpp" line="1021"/>
         <source>No Register</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="600"/>
+        <location filename="mainframe.cpp" line="616"/>
         <source>Function</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="601"/>
+        <location filename="mainframe.cpp" line="617"/>
         <source>Monitor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="603"/>
+        <location filename="mainframe.cpp" line="619"/>
         <source>Record</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="602"/>
+        <location filename="mainframe.cpp" line="618"/>
         <source>Alarm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1000"/>
-        <location filename="mainframe.cpp" line="1004"/>
-        <location filename="mainframe.cpp" line="1389"/>
-        <location filename="mainframe.cpp" line="1430"/>
-        <location filename="mainframe.cpp" line="1437"/>
+        <location filename="mainframe.cpp" line="1017"/>
+        <location filename="mainframe.cpp" line="1021"/>
+        <location filename="mainframe.cpp" line="1406"/>
+        <location filename="mainframe.cpp" line="1447"/>
+        <location filename="mainframe.cpp" line="1454"/>
         <source>tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1437"/>
+        <location filename="mainframe.cpp" line="1454"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="604"/>
+        <location filename="mainframe.cpp" line="620"/>
         <source>Return</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="790"/>
+        <location filename="mainframe.cpp" line="807"/>
         <source>Hint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1000"/>
+        <location filename="mainframe.cpp" line="1017"/>
         <source>Spear Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1036"/>
+        <location filename="mainframe.cpp" line="1053"/>
         <source>Records</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1389"/>
+        <location filename="mainframe.cpp" line="1406"/>
         <source>No Register. System Restart Now...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="988"/>
+        <location filename="mainframe.cpp" line="1005"/>
         <source>Instruct</source>
         <translation type="unfinished"></translation>
     </message>

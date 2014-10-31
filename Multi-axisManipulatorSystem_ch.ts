@@ -1083,6 +1083,29 @@ Reason</source>
     </message>
 </context>
 <context>
+    <name>ICBackupDialog</name>
+    <message>
+        <location filename="icbackupdialog.ui" line="14"/>
+        <source>Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icbackupdialog.ui" line="20"/>
+        <source>You pressed the backup sequence.Need to backups?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icbackupdialog.ui" line="38"/>
+        <source>No(F4)</source>
+        <translation type="unfinished">不(F4)</translation>
+    </message>
+    <message>
+        <location filename="icbackupdialog.ui" line="51"/>
+        <source>Yes(F5)</source>
+        <translation type="unfinished">Yes(F5)</translation>
+    </message>
+</context>
+<context>
     <name>ICCategoryPageBaseFrame</name>
     <message>
         <location filename="categorypage/iccategorypagebaseframe.ui" line="14"/>
@@ -4123,6 +4146,10 @@ Reason</source>
         <translation>备份文件不完整！</translation>
     </message>
     <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="652"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="667"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="673"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="690"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1248"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1253"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1275"/>
@@ -4142,12 +4169,16 @@ Reason</source>
         <translation type="obsolete">备份文件不完整！</translation>
     </message>
     <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="652"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="690"/>
         <source>Wrong program format!</source>
-        <translation type="obsolete">错误的程序格式！</translation>
+        <translation type="unfinished">错误的程序格式！</translation>
     </message>
     <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="667"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="673"/>
         <source>Wrong config format!</source>
-        <translation type="obsolete">错误的模组参数格式！</translation>
+        <translation type="unfinished">错误的模组参数格式！</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="767"/>
@@ -8756,51 +8787,51 @@ Would you want to restart now?</source>
         <translation>步序</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1000"/>
-        <location filename="mainframe.cpp" line="1004"/>
-        <location filename="mainframe.cpp" line="1389"/>
-        <location filename="mainframe.cpp" line="1430"/>
-        <location filename="mainframe.cpp" line="1437"/>
+        <location filename="mainframe.cpp" line="1017"/>
+        <location filename="mainframe.cpp" line="1021"/>
+        <location filename="mainframe.cpp" line="1406"/>
+        <location filename="mainframe.cpp" line="1447"/>
+        <location filename="mainframe.cpp" line="1454"/>
         <source>tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1430"/>
+        <location filename="mainframe.cpp" line="1447"/>
         <source>Spare Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1004"/>
+        <location filename="mainframe.cpp" line="1021"/>
         <source>No Register</source>
         <translation>没有注册</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="600"/>
+        <location filename="mainframe.cpp" line="616"/>
         <source>Function</source>
         <translation>功能</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1437"/>
+        <location filename="mainframe.cpp" line="1454"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation>没有注册，系统将在十分钟后重启</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="601"/>
+        <location filename="mainframe.cpp" line="617"/>
         <source>Monitor</source>
         <translation>监视</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1000"/>
+        <location filename="mainframe.cpp" line="1017"/>
         <source>Spear Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1036"/>
+        <location filename="mainframe.cpp" line="1053"/>
         <source>Records</source>
         <translation>档案</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1389"/>
+        <location filename="mainframe.cpp" line="1406"/>
         <source>No Register. System Restart Now...</source>
         <translation>没有注册，系统现在重启...</translation>
     </message>
@@ -8817,12 +8848,12 @@ Would you want to restart now?</source>
         <translation type="obsolete">欢迎</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="603"/>
+        <location filename="mainframe.cpp" line="619"/>
         <source>Record</source>
         <translation>档案</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="602"/>
+        <location filename="mainframe.cpp" line="618"/>
         <source>Alarm</source>
         <translation>报警</translation>
     </message>
@@ -8839,12 +8870,12 @@ Would you want to restart now?</source>
         <translation type="obsolete">巨集参数从异常中恢复，请先检查巨集参数！</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="604"/>
+        <location filename="mainframe.cpp" line="620"/>
         <source>Return</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="790"/>
+        <location filename="mainframe.cpp" line="807"/>
         <source>Hint</source>
         <translation>提示</translation>
     </message>
@@ -8861,7 +8892,7 @@ Would you want to restart now?</source>
         <translation type="obsolete">还没进行原点!</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="988"/>
+        <location filename="mainframe.cpp" line="1005"/>
         <source>Instruct</source>
         <translation>教导</translation>
     </message>

@@ -51,6 +51,7 @@
 #include "icvirtualkey.h"
 #include "ickeyboard.h"
 #include "icrecaldialog.h"
+#include "icbackupdialog.h"
 //#include "ickeyboardhandler.h"
 #if defined(Q_WS_WIN32) || defined(Q_WS_X11)
 #include "simulateknob.h"
@@ -93,12 +94,21 @@ QMap<int, int> pulleyMap;
 QList<int> currentKeySeq;
 const QList<int> recalKeySeq = QList<int>()<<ICKeyboard::FB_F5
                                           <<ICKeyboard::FB_F1
-                                            <<ICKeyboard::FB_F4
-                                              <<ICKeyboard::FB_F1
-                                                <<ICKeyboard::FB_F3
-                                                  <<ICKeyboard::FB_F1
-                                                    <<ICKeyboard::FB_F2
-                                                      <<ICKeyboard::FB_F5;
+                                         <<ICKeyboard::FB_F4
+                                        <<ICKeyboard::FB_F1
+                                       <<ICKeyboard::FB_F3
+                                      <<ICKeyboard::FB_F1
+                                     <<ICKeyboard::FB_F2
+                                    <<ICKeyboard::FB_F5;
+
+const QList<int> backupKeySeq = QList<int>()<<ICKeyboard::FB_F5
+                                           <<ICKeyboard::FB_F2
+                                          <<ICKeyboard::FB_F4
+                                         <<ICKeyboard::FB_F2
+                                        <<ICKeyboard::FB_F3
+                                       <<ICKeyboard::FB_F2
+                                      <<ICKeyboard::FB_F1
+                                     <<ICKeyboard::FB_F5;
 
 
 MainFrame *icMainFrame = NULL;
@@ -385,8 +395,14 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
 //                if(ret == QMessageBox::Yes) ::system("reboot");
 
             }
+            else if(currentKeySeq == backupKeySeq)
+            {
+                ICBackupDialog backupDialog;
+                backupDialog.exec();
+            }
             currentKeySeq.clear();
         }
+
         qDebug()<<"Key:"<<key;
         switch(key)
         {
@@ -757,6 +773,7 @@ void MainFrame::StatusRefreshed()
     newLedFlags_ |= (virtualHost->IsInputOn(32)? 4 : 0);
     newLedFlags_ |= (virtualHost->IsOutputOn(32)? 2 : 0);
     newLedFlags_ |= (virtualHost->IsOutputOn(33)? 1 : 0);
+
     if(newLedFlags_ != ledFlags_)
     {
         ledFlags_ = newLedFlags_;
@@ -1049,7 +1066,7 @@ void MainFrame::ShowOrigin()
     {
         //        ui->systemStatusFrame->SetOriginStatus(StatusLabel::ONSTATUS);
         //        isOriginShown_ = true;
-        originExecutingPage_->open();
+        originExecutingPage_->show();
     }
 }
 
@@ -1071,7 +1088,7 @@ void MainFrame::ShowReturn()
     if(!isReturnShown_)
     {
         isReturnShown_ = true;
-        returnExecutingPage_->open();
+        returnExecutingPage_->show();
     }
 }
 

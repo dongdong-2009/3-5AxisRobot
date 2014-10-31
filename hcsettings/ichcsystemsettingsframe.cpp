@@ -649,7 +649,7 @@ void ICHCSystemSettingsFrame::on_restoreAllButton_clicked()
         file.close();
         if(!programChecker.Check(actContent))
         {
-//            QMessageBox::warning(this, tr("Warnning"), tr("Wrong program format!"));
+            QMessageBox::warning(this, tr("Warnning"), tr("Wrong program format!"));
             ret = false;
             return;
         }
@@ -664,13 +664,13 @@ void ICHCSystemSettingsFrame::on_restoreAllButton_clicked()
         file.close();
         if(!configFormatChecker.CheckRowCount(actContent, 58,ICDataFormatChecker::kCompareEqual))
         {
-//            QMessageBox::warning(this, tr("Warnning"), tr("Wrong config format!"));
+            QMessageBox::warning(this, tr("Warnning"), tr("Wrong config format!"));
             ret = false;
             return;
         }
         if(!configFormatChecker.Check(actContent))
         {
-//            QMessageBox::warning(this, tr("Warnning"), tr("Wrong config format!"));
+            QMessageBox::warning(this, tr("Warnning"), tr("Wrong config format!"));
             ret = false;
             return;
         }
@@ -687,7 +687,7 @@ void ICHCSystemSettingsFrame::on_restoreAllButton_clicked()
         file.close();
         if(!programChecker.Check(actContent))
         {
-//            QMessageBox::warning(this, tr("Warnning"), tr("Wrong program format!"));
+            QMessageBox::warning(this, tr("Warnning"), tr("Wrong program format!"));
             ret = false;
             return;
         }
