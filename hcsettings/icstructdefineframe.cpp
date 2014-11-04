@@ -10,6 +10,9 @@
 #include <QMessageBox>
 #include <QDebug>
 #include "mainframe.h"
+#include "icactioncommand.h"
+#include "icvirtualkey.h"
+#include <QHideEvent>
 
 typedef union{
 struct {
@@ -28,6 +31,76 @@ struct {
 }resv;
 uint port;
 }AXIS_MODIFY_DATA;
+
+typedef union{
+    struct {
+        u_int16_t a1 : 3;
+        u_int16_t a2 : 3;
+        u_int16_t a3 : 3;
+        u_int16_t a4 : 3;
+        u_int16_t a5 : 3;
+        u_int16_t resv : 1;
+    }mode;
+    u_int16_t allMode;
+}AxisMode;
+
+
+
+typedef union{
+    struct {
+        u_int16_t x : 2;
+        u_int16_t y : 2;
+        u_int16_t z : 2;
+        u_int16_t p : 2;
+        u_int16_t q : 2;
+        u_int16_t a : 2;
+        u_int16_t b : 2;
+        u_int16_t c : 2;
+    }b;
+    u_int16_t combine;
+}OriginStatus;
+
+typedef union{
+    struct {
+        u_int32_t y0 : 1;
+        u_int32_t y1 : 1;
+        u_int32_t y2 : 1;
+        u_int32_t y3 : 1;
+        u_int32_t y4 : 1;
+        u_int32_t y5 : 1;
+        u_int32_t y6 : 1;
+        u_int32_t y7 : 1;
+
+        u_int32_t y10 : 1;
+        u_int32_t y11 : 1;
+        u_int32_t y12 : 1;
+        u_int32_t y13 : 1;
+        u_int32_t y14 : 1;
+        u_int32_t y15 : 1;
+        u_int32_t y16 : 1;
+        u_int32_t y17 : 1;
+
+        u_int32_t y20 : 1;
+        u_int32_t y21 : 1;
+        u_int32_t y22 : 1;
+        u_int32_t y23 : 1;
+        u_int32_t y24 : 1;
+        u_int32_t y25 : 1;
+        u_int32_t y26 : 1;
+        u_int32_t y27 : 1;
+
+        u_int32_t y30 : 1;
+        u_int32_t y31 : 1;
+        u_int32_t y32 : 1;
+        u_int32_t y33 : 1;
+        u_int32_t y34 : 1;
+        u_int32_t y35 : 1;
+        u_int32_t y36 : 1;
+        u_int32_t y37 : 1;
+    }b;
+    u_int16_t combine16[2];
+    u_int32_t combine32;
+}OutputWay;
 
 ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
     QWidget(parent),
@@ -176,7 +249,6 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
         ui->adjNoUse->setChecked(true);
     }
 
-    ui->servoFlex->setCurrentIndex(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Resv1).toInt());
 //    AXIS_MODIFY_DATA data;
 //    data.port = (host->SystemParameter(ICVirtualHost::SYS_Config_Resv1).toInt() << 16) |
 //            (host->SystemParameter(ICVirtualHost::SYS_Config_Resv2).toInt());
@@ -188,7 +260,98 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
 //    ui->portA->setCurrentIndex(data.split.a6 == 0 ? 0 : data.split.a6 - 7);
 //    ui->portB->setCurrentIndex(data.split.a7 == 0 ? 0 : data.split.a7 - 7);
 //    ui->portC->setCurrentIndex(data.split.a8 == 0 ? 0 : data.split.a8 - 7);
+    AxisMode axisMode;
+    axisMode.allMode = host->SystemParameter(ICVirtualHost::SYS_Config_Resv1).toInt();
+//    ui->waitTime->SetThisIntToThisText(recycleMode.split.time);
+//    ui->waitTime->SetDecimalPlaces(1);
+//    ui->waitTime->setValidator(new QIntValidator(0, 100, this));
+    ui->os1->setCurrentIndex(axisMode.mode.a1);
+    ui->os2->setCurrentIndex(axisMode.mode.a2);
+    ui->os3->setCurrentIndex(axisMode.mode.a3);
+    ui->os4->setCurrentIndex(axisMode.mode.a4);
+    ui->os5->setCurrentIndex(axisMode.mode.a5);
+    ui->osGroupBox->setChecked(axisMode.mode.resv);
 
+    OutputWay outWay;
+    outWay.combine16[0] = host->SystemParameter(ICVirtualHost::ACT_C_Sec3).toUInt();
+    outWay.combine16[1] = host->SystemParameter(ICVirtualHost::ACT_C_Sec4).toUInt();
+    ui->y10Reset->setChecked(outWay.b.y0);
+    ui->y11Reset->setChecked(outWay.b.y1);
+    ui->y12Reset->setChecked(outWay.b.y2);
+    ui->y13Reset->setChecked(outWay.b.y3);
+    ui->y14Reset->setChecked(outWay.b.y4);
+    ui->y15Reset->setChecked(outWay.b.y5);
+    ui->y16Reset->setChecked(outWay.b.y6);
+    ui->y17Reset->setChecked(outWay.b.y7);
+
+    ui->y20Reset->setChecked(outWay.b.y10);
+    ui->y21Reset->setChecked(outWay.b.y11);
+    ui->y22Reset->setChecked(outWay.b.y12);
+    ui->y23Reset->setChecked(outWay.b.y13);
+    ui->y24Reset->setChecked(outWay.b.y14);
+    ui->y25Reset->setChecked(outWay.b.y15);
+    ui->y26Reset->setChecked(outWay.b.y16);
+    ui->y27Reset->setChecked(outWay.b.y17);
+
+    ui->y30Reset->setChecked(outWay.b.y20);
+    ui->y31Reset->setChecked(outWay.b.y21);
+    ui->y32Reset->setChecked(outWay.b.y22);
+    ui->y33Reset->setChecked(outWay.b.y23);
+    ui->y34Reset->setChecked(outWay.b.y24);
+    ui->y35Reset->setChecked(outWay.b.y25);
+    ui->y36Reset->setChecked(outWay.b.y26);
+    ui->y37Reset->setChecked(outWay.b.y27);
+
+    ui->y40Reset->setChecked(outWay.b.y30);
+    ui->y41Reset->setChecked(outWay.b.y31);
+    ui->y42Reset->setChecked(outWay.b.y32);
+    ui->y43Reset->setChecked(outWay.b.y33);
+    ui->y44Reset->setChecked(outWay.b.y34);
+    ui->y45Reset->setChecked(outWay.b.y35);
+    ui->y46Reset->setChecked(outWay.b.y36);
+    ui->y47Reset->setChecked(outWay.b.y37);
+
+    ui->y10Reset->hide();
+    ui->y11Reset->hide();
+//    ui->y12Reset->hide();
+//    ui->y13Reset->hide();
+//    ui->y14Reset->hide();
+//    ui->y15Reset->hide();
+    ui->y16Reset->hide();
+//    ui->y17Reset->hide();
+
+//    ui->y20Reset->hide();
+    ui->y21Reset->hide();
+//    ui->y22Reset->hide();
+    ui->y23Reset->hide();
+    ui->y24Reset->hide();
+//    ui->y25Reset->hide();
+    ui->y26Reset->hide();
+    ui->y27Reset->hide();
+
+    ui->y30Reset->hide();
+//    ui->y31Reset->hide();
+//    ui->y32Reset->hide();
+    ui->y33Reset->hide();
+//    ui->y34Reset->hide();
+//    ui->y35Reset->hide();
+//    ui->y36Reset->hide();
+//    ui->y37Reset->hide();
+
+    ui->y40Reset->hide();
+    ui->y41Reset->hide();
+    ui->y42Reset->hide();
+    ui->y43Reset->hide();
+    ui->y44Reset->hide();
+    ui->y45Reset->hide();
+    ui->y46Reset->hide();
+    ui->y47Reset->hide();
+
+    ui->fixtureDefineBox_2->hide();
+
+
+    oldStyle = ui->oStartBtn->styleSheet();
+    newStyle = "border-style: outset;border-width: 2px;border-radius: 6px;border-color: gray;background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(0, 255, 0, 255), stop:1 rgba(255, 255, 255, 255));padding-right: 6px;padding-left:6px;";
 }
 
 ICStructDefineFrame::~ICStructDefineFrame()
@@ -207,6 +370,114 @@ void ICStructDefineFrame::changeEvent(QEvent *e)
     default:
         break;
     }
+}
+
+void ICStructDefineFrame::hideEvent(QHideEvent *e)
+{
+    icMainFrame->BlockOrignShow(false);
+    ICCommandProcessor::Instance()->ExecuteHCCommand(IC::CMD_TurnStop, 0);
+    ui->tabWidget->setCurrentIndex(0);
+    QWidget::hideEvent(e);
+}
+
+void ICStructDefineFrame::timerEvent(QTimerEvent *)
+{
+    if(ui->tabWidget->currentIndex() != 4) return;
+    ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
+    if(host->CurrentStatus() == ICVirtualHost::Origin)
+    {
+        ui->oStartBtn->setStyleSheet(newStyle);
+        ui->oStartBtn->setText(tr("Origining"));
+    }
+    else
+    {
+        ui->oStartBtn->setStyleSheet(oldStyle);
+        ui->oX1Btn->setStyleSheet(oldStyle);
+        ui->oX2Btn->setStyleSheet(oldStyle);
+        ui->oY1Btn->setStyleSheet(oldStyle);
+        ui->oY2Btn->setStyleSheet(oldStyle);
+        ui->oZBtn->setStyleSheet(oldStyle);
+        ui->oABtn->setStyleSheet(oldStyle);
+        ui->oBBtn->setStyleSheet(oldStyle);
+        ui->oCBtn->setStyleSheet(oldStyle);
+        ui->oStartBtn->setText(tr("Start"));
+        return;
+    }
+
+    OriginStatus os;
+    os.combine = host->HostStatus(ICVirtualHost::DbgX1).toUInt();
+    if(os.b.x)
+    {
+        ui->oX1Btn->setStyleSheet(newStyle);
+    }
+    else
+    {
+        ui->oX1Btn->setStyleSheet(oldStyle);
+    }
+
+    if(os.b.y)
+    {
+        ui->oY1Btn->setStyleSheet(newStyle);
+    }
+    else
+    {
+        ui->oY1Btn->setStyleSheet(oldStyle);
+    }
+
+    if(os.b.z)
+    {
+        ui->oZBtn->setStyleSheet(newStyle);
+    }
+    else
+    {
+        ui->oZBtn->setStyleSheet(oldStyle);
+    }
+
+    if(os.b.p)
+    {
+        ui->oX2Btn->setStyleSheet(newStyle);
+    }
+    else
+    {
+        ui->oX2Btn->setStyleSheet(oldStyle);
+    }
+
+    if(os.b.q)
+    {
+        ui->oY2Btn->setStyleSheet(newStyle);
+    }
+    else
+    {
+        ui->oY2Btn->setStyleSheet(oldStyle);
+    }
+
+    if(os.b.a)
+    {
+        ui->oABtn->setStyleSheet(newStyle);
+    }
+    else
+    {
+        ui->oABtn->setStyleSheet(oldStyle);
+    }
+
+    if(os.b.b)
+    {
+        ui->oBBtn->setStyleSheet(newStyle);
+    }
+    else
+    {
+        ui->oBBtn->setStyleSheet(oldStyle);
+    }
+
+    if(os.b.c)
+    {
+        ui->oCBtn->setStyleSheet(newStyle);
+    }
+    else
+    {
+        ui->oCBtn->setStyleSheet(oldStyle);
+    }
+
 }
 
 void ICStructDefineFrame::retranslateUi_()
@@ -258,18 +529,6 @@ void ICStructDefineFrame::retranslateUi_()
     ui->y2Box->setItemText(2,tr("Servo"));
     ui->outDefineBox->setTitle(tr("Out Define"));
     ui->label->setText(tr("1"));
-    ui->servoFlex->setItemText(0, tr("0-soft"));
-    ui->servoFlex->setItemText(1, "1");
-    ui->servoFlex->setItemText(2, "2");
-    ui->servoFlex->setItemText(3, "3");
-    ui->servoFlex->setItemText(4, "4");
-    ui->servoFlex->setItemText(5, "5");
-    ui->servoFlex->setItemText(6, "6");
-    ui->servoFlex->setItemText(7, tr("7-hard"));
-
-
-
-
 //    ui->outABox->setItemText(0,tr("Normal"));
 //    ui->outABox->setItemText(1,tr("Extent"));
 //    ui->label_8->setText(tr("5"));
@@ -316,21 +575,47 @@ void ICStructDefineFrame::retranslateUi_()
     ui->useCheckBox->setText(tr("Use"));
     ui->noUseCheckBox->setText(tr("No Use"));
     ui->saveButton->setText(tr("Save"));
-
-    ui->tabWidget->setTabText(0,tr("Arm Define"));
-    ui->tabWidget->setTabText(1,tr("Out Define"));
-    ui->tabWidget->setTabText(2,tr("Signal Define"));
-    ui->tabWidget->setTabText(3,tr("Other Define"));
-    ui->adjUse->setText(tr("Use"));
-    ui->adjNoUse->setText(tr("No Use"));
-    ui->label_27->setText(tr("Servo Flex"));
-    ui->label_19->setText(tr("Adjust"));
-    ui->label_10->setText(tr("Reserve"));
-    ui->label_11->setText(tr("Reserve"));
 }
 
 void ICStructDefineFrame::on_saveButton_clicked()
 {
+    OutputWay outWay;
+    outWay.b.y0 = 0;
+    outWay.b.y1 = 0;
+    outWay.b.y2 = ui->y12Reset->isChecked();
+    outWay.b.y3 = ui->y13Reset->isChecked();
+    outWay.b.y4 = ui->y14Reset->isChecked();
+    outWay.b.y5 = ui->y15Reset->isChecked();
+    outWay.b.y6 = 0;
+    outWay.b.y7 = ui->y17Reset->isChecked();
+
+    outWay.b.y10 = ui->y20Reset->isChecked();
+    outWay.b.y11 = 0;
+    outWay.b.y12 = ui->y22Reset->isChecked();
+    outWay.b.y13 = 0;
+    outWay.b.y14 = 0;
+    outWay.b.y15 = ui->y25Reset->isChecked();
+    outWay.b.y16 = 0;
+    outWay.b.y17 = 0;
+
+    outWay.b.y20 = 0;
+    outWay.b.y21 = ui->y31Reset->isChecked();
+    outWay.b.y22 = ui->y32Reset->isChecked();
+    outWay.b.y23 = 0;
+    outWay.b.y24 = ui->y34Reset->isChecked();
+    outWay.b.y25 = ui->y35Reset->isChecked();
+    outWay.b.y26 = ui->y36Reset->isChecked();
+    outWay.b.y27 = ui->y37Reset->isChecked();
+
+    outWay.b.y30 = 0;
+    outWay.b.y31 = 0;
+    outWay.b.y32 = 0;
+    outWay.b.y33 = 0;
+    outWay.b.y34 = 0;
+    outWay.b.y35 = 0;
+    outWay.b.y36 = 0;
+    outWay.b.y37 = 0;
+
     ICSetAxisConfigsCommand command;
     ICCommandProcessor* process = ICCommandProcessor::Instance();
     int sum = 0;
@@ -350,7 +635,20 @@ void ICStructDefineFrame::on_saveButton_clicked()
 //    data.split.a6 = ui->portA->currentIndex() == 0 ? 0 : ui->portA->currentIndex() + 7;
 //    data.split.a7 = ui->portB->currentIndex() == 0 ? 0 : ui->portB->currentIndex() + 7;
 //    data.split.a8 = ui->portC->currentIndex() == 0 ? 0 : ui->portC->currentIndex() + 7;
-    dataBuffer[4] = ui->servoFlex->currentIndex();
+//    dataBuffer[4] = data.resv.resv1;
+//    dataBuffer[5] = data.resv.resv2;
+    AxisMode axisMode;
+    axisMode.mode.a1 = ui->os1->currentIndex();
+    axisMode.mode.a2 = ui->os2->currentIndex();
+    axisMode.mode.a3 = ui->os3->currentIndex();
+    axisMode.mode.a4 = ui->os4->currentIndex();
+    axisMode.mode.a5 = ui->os5->currentIndex();
+    axisMode.mode.resv = ui->osGroupBox->isChecked();
+    dataBuffer[4] = axisMode.allMode;
+
+//    RecycleMode recycleMode;
+//    recycleMode.split.mode = ui->recycleMode->currentIndex();
+//    recycleMode.split.time = ui->waitTime->TransThisTextToThisInt();
     dataBuffer[5] = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Resv2).toUInt();
     for(int i = 0; i != 6; ++i)
     {
@@ -373,6 +671,9 @@ void ICStructDefineFrame::on_saveButton_clicked()
         host->SetSystemParameter(ICVirtualHost::SYS_Config_Resv1, dataBuffer.at(4));
         host->SetSystemParameter(ICVirtualHost::SYS_Config_Resv2, dataBuffer.at(5));
         host->SetSystemParameter(ICVirtualHost::SYS_Config_Xorsum, dataBuffer.at(6));
+
+        host->SetSystemParameter(ICVirtualHost::ACT_C_Sec3, outWay.combine16[0]);
+        host->SetSystemParameter(ICVirtualHost::ACT_C_Sec4, outWay.combine16[1]);
 //        host->SystemParameter(ICVirtualHost::SYS_Function);
         host->SaveSystemConfig();
         QMessageBox::information(this, tr("Tips"), tr("Save Sucessfully!"));
@@ -456,6 +757,9 @@ void ICStructDefineFrame::escapeBoxChange()
 
 void ICStructDefineFrame::InitEscapeBox()
 {
+    ui->useCheckBox->hide();
+    ui->noUseCheckBox->hide();
+    ui->label_18->hide();
     buttongroup_->addButton(ui->useCheckBox,0);
     buttongroup_->addButton(ui->noUseCheckBox,1);
     QList<QAbstractButton*> buttons = buttongroup_->buttons();
@@ -473,4 +777,52 @@ void ICStructDefineFrame::InitEscapeBox()
 void ICStructDefineFrame::on_adjUse_toggled(bool checked)
 {
     ICParametersSave::Instance()->SetAdjustFunction(checked);
+}
+
+void ICStructDefineFrame::on_oStartBtn_clicked()
+{
+    icMainFrame->BlockOrignShow(true);
+    ICCommandProcessor::Instance()->ExecuteHCCommand(IC::CMD_TurnZero, 0);
+}
+
+void ICStructDefineFrame::on_oX1Btn_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_ORIGIN_X1);
+}
+
+void ICStructDefineFrame::on_oY1Btn_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_ORIGIN_Y1);
+}
+
+void ICStructDefineFrame::on_oZBtn_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_ORIGIN_Z);
+}
+
+void ICStructDefineFrame::on_oX2Btn_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_ORIGIN_X2);
+}
+
+void ICStructDefineFrame::on_oY2Btn_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_ORIGIN_Y2);
+}
+
+void ICStructDefineFrame::on_setOrigin_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_SET_ORIGIN);
+}
+
+void ICStructDefineFrame::on_tabWidget_currentChanged(int index)
+{
+    if(index == 4)
+    {
+        timerID_ = startTimer(50);
+    }
+    else
+    {
+        killTimer(timerID_);
+    }
 }

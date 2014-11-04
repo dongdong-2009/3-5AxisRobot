@@ -41,6 +41,8 @@ public:
 
     bool NoInStop();
 
+    void BlockOrignShow(bool isBlock) { isBlockOrigin_ = isBlock;}
+
 public Q_SLOTS:
     void StatusRefreshed();
     void ShowManualPage();
@@ -158,6 +160,7 @@ private:
     bool isCPosChanged_;
     int axisDefine_;
     QTimer timer_;
+    bool isBlockOrigin_;
 
     bool isFlag;
     QList<QList<QWidget*> > axisWidgets_;

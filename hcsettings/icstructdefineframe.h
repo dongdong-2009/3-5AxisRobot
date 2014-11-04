@@ -21,6 +21,8 @@ public:
 
 protected:
     void changeEvent(QEvent *e);
+    void hideEvent(QHideEvent *);
+    void timerEvent(QTimerEvent *);
 signals:
     void StructChanged();
 
@@ -49,6 +51,22 @@ private slots:
 
     void on_adjUse_toggled(bool checked);
 
+    void on_oStartBtn_clicked();
+
+    void on_oX1Btn_clicked();
+
+    void on_oY1Btn_clicked();
+
+    void on_oZBtn_clicked();
+
+    void on_oX2Btn_clicked();
+
+    void on_oY2Btn_clicked();
+
+    void on_setOrigin_clicked();
+
+    void on_tabWidget_currentChanged(int index);
+
 private:
     Ui::ICStructDefineFrame *ui;
     uint armStruct_;
@@ -63,8 +81,10 @@ private:
 
     QList<QList<QAbstractButton*> >buttonslist_ ;
     void InitEscapeBox() ;
+    QString oldStyle;
+    QString newStyle;
 
-
+    int timerID_;
 };
 
 #endif // ICSTRUCTDEFINEFRAME_H
