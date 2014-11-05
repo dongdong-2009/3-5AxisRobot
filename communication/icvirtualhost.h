@@ -608,8 +608,13 @@ public:
     bool HasTuneSpeed() const { return hasTuneSpeed_;}
     void SetTuneSpeed(bool tune){ hasTuneSpeed_ = tune;}
 
-    int FinishProductCount() const { return productCount_;}
-    void SetFinishProductCount(int product) { productCount_ = product;}
+    int FinishProductCount() const { return systemParamMap_.value(SYS_RsvReadMold).toUInt() |
+                (systemParamMap_.value(SYS_RsvWorkmold).toUInt() << 16);}
+    void SetFinishProductCount(int product)
+    {
+        systemParamMap_.insert(SYS_RsvReadMold, product & 0xFFFF);
+        systemParamMap_.insert(SYS_RsvWorkmold, product >> 16);
+    }
 
 //    bool IsSingleArm() const { return (systemParamMap_.value(SYS_ARM_CONFIG).toInt() & 0x0100) > 0;}
 //    void SetSingleArm(bool isSingle);

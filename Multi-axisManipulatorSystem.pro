@@ -7,18 +7,20 @@ QMAKE_CFLAGS += -std=c99
 
 QT += sql
 
-OBJECTS_DIR = temp_8
-UI_DIR = temp_8
-MOC_DIR = temp_8
-RCC_DIR = temp_8
+SK_SIZE = 8
+
+OBJECTS_DIR = temp_$${SK_SIZE}
+UI_DIR = temp_$${SK_SIZE}
+MOC_DIR = temp_$${SK_SIZE}
+RCC_DIR = temp_$${SK_SIZE}
 DESTDIR = bin
 CONFIG(debug, debug|release) {
 #    LIBS += -lprofiler
 DESTDIR = bin_debug
-OBJECTS_DIR = temp_8_d
-UI_DIR = temp_8_d
-MOC_DIR = temp_8_d
-RCC_DIR = temp_8_d
+OBJECTS_DIR = temp_$${SK_SIZE}_d
+UI_DIR = temp_$${SK_SIZE}_d
+MOC_DIR = temp_$${SK_SIZE}_d
+RCC_DIR = temp_$${SK_SIZE}_d
 #LIBS += -L/vendor/icframework/libs_debug -liccore
 }
 #INCLUDEPATH += vendor/ICCustomWidgets/include
@@ -81,8 +83,6 @@ FORMS    +=  \
     icrecaldialog.ui \
     icbackupdialog.ui
 
-
-SK_SIZE = 8
 equals(SK_SIZE, 8){
 message("Define 8")
 DEFINES += HC_SK_8
@@ -93,6 +93,7 @@ message("Define 5")
 DEFINES += HC_SK_5
 FORMS    += mainframe_5.ui
 }
+
 
 #其他页面有修改则在pri文件中添加以下（分HC_SK_5和HC_SK_8）
 #contains(DEFINES, HC_SK_8){
@@ -132,9 +133,9 @@ OTHER_FILES += \
 
 QMAKE_POST_LINK += "cp *.qm $$DESTDIR"
 CONFIG(debug, debug|release){
-system("python rename_ui.py temp_8_d")
+system("python rename_ui.py temp_$${SK_SIZE}_d")
 #QMAKE_POST_LINK += "cp *.qm bin_debug"
 }else{
-system("python rename_ui.py temp_8")
+system("python rename_ui.py temp_$${SK_SIZE}")
 QMAKE_POST_LINK += "&& arm-linux-strip $$DESTDIR/$$TARGET && HCbcrypt.sh -r $$DESTDIR/$$TARGET"
 }

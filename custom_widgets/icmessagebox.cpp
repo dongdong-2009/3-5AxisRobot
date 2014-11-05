@@ -21,6 +21,7 @@ void ICMessageBox::keyPressEvent(QKeyEvent *e)
 int ICMessageBox::ICWarning(QWidget *parent, const QString &title, const QString &text, StandardButtons buttons, StandardButton defaultButton)
 {
     ICMessageBox *box = new ICMessageBox(parent);
+    box->setWindowFlags(box->windowFlags()  | Qt::WindowStaysOnTopHint);
     box->setStandardButtons(buttons);
     box->setDefaultButton(defaultButton);
     box->setWindowTitle(title);

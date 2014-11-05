@@ -14,6 +14,8 @@
 #include "icprogramheadframe.h"
 #include "icparameterssave.h"
 
+QMessageBox* checkMessageBox;
+
 ICHCProgramMonitorFrame::ICHCProgramMonitorFrame(QWidget *parent) :
     QFrame(parent),
     ui(new Ui::ICHCProgramMonitorFrame),
@@ -63,11 +65,13 @@ ICHCProgramMonitorFrame::ICHCProgramMonitorFrame(QWidget *parent) :
             this,
             SLOT(LevelChanged(int)));
     LevelChanged(ICProgramHeadFrame::Instance()->CurrentLevel());
+    checkMessageBox = new QMessageBox(this);
 }
 
 ICHCProgramMonitorFrame::~ICHCProgramMonitorFrame()
 {
     delete autoRunRevise_;
+    delete checkMessageBox;
     delete ui;
 }
 
@@ -172,9 +176,12 @@ void ICHCProgramMonitorFrame::showEvent(QShowEvent *e)
     }
     if(!checkResult.isEmpty())
     {
-        ICMessageBox::ICWarning(this,
-                             tr("Warning"),
-                             checkResult);
+//        ICMessageBox::ICWarning(this,
+//                             tr("Warning"),
+//                             checkResult);
+        checkMessageBox->setWindowTitle(tr("Warning"));
+        checkMessageBox->setText(checkResult);
+        checkMessageBox->show();
     }
     //    if(needWarn)
     //    {
@@ -225,7 +232,7 @@ void ICHCProgramMonitorFrame::hideEvent(QHideEvent *e)
     ICVirtualHost::GlobalVirtualHost()->SetSpeedEnable(false);
     ui->speedEnableButton->setIcon(switchOff_);
     ui->speedEnableButton->setText(tr("Speed Disable"));
-
+    checkMessageBox->reject();
 
     //    ICCommandProcessor::Instance()->ExecuteHCCommand(IC::CMD_TurnStop,0);
 }

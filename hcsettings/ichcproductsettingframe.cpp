@@ -5,6 +5,7 @@
 #include "icmold.h"
 #include "icvirtualhost.h"
 #include "icvirtualkey.h"
+#include "icparameterssave.h"
 
 ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
     QFrame(parent),
@@ -80,6 +81,7 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
             this,
             SLOT(OnMoldNumberParamChanged()));
     ui->countUnitBox->setCurrentIndex(ICMold::CurrentMold()->MoldParam(ICMold::CountUnit));
+    ui->productSave->setChecked(ICParametersSave::Instance()->IsProductSave());
 }
 
 ICHCProductSettingFrame::~ICHCProductSettingFrame()
@@ -235,4 +237,9 @@ void ICHCProductSettingFrame::on_fixtureComboBox_currentIndexChanged(int index)
     v &= 0x7FFF;
     v |= (index << 15);
     host->SetSystemParameter(ICVirtualHost::SYS_Config_Fixture, v);
+}
+
+void ICHCProductSettingFrame::on_productSave_toggled(bool checked)
+{
+    ICParametersSave::Instance()->SetProductSave(checked);
 }

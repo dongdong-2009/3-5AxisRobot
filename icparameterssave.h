@@ -99,6 +99,9 @@ public:
     QString ShipmentDate() { return GetParameter(SystemMachine, "ShipmentDate", "").toString();}
     void SetShipmentDate(const QString &date)  { SaveParameter(SystemMachine, "ShipmentDate", date);}
 
+    bool IsProductSave() { return GetParameter(SystemMachine, "IsProductSave", false).toBool();}
+    void SetProductSave(bool isSave) { SaveParameter(SystemMachine, "IsProductSave", isSave);}
+
 signals:
     void CurrentLanguageChanged();
 

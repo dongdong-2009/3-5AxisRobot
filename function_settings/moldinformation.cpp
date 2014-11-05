@@ -877,23 +877,23 @@ void MoldInformation::RefreshFileList()
     {
         fncs.removeOne("Base.fnc");
     }
-    if(acts.size() != fncs.size())
-    {
-        QMessageBox::warning(this, tr("Warnning"), tr("Backup files is incomplete!"));
-        return;
-    }
+//    if(acts.size() != fncs.size())
+//    {
+//        QMessageBox::warning(this, tr("Warnning"), tr("Backup files is incomplete!"));
+//        return;
+//    }
     for(int i = 0; i != fncs.size(); ++i)
     {
         fncs[i] = fncs.at(i).left(fncs.at(i).size() - 4);
     }
-    for(int i = 0; i != acts.size(); ++i)
-    {
-        if(!fncs.contains(acts.at(i).left(acts.at(i).size() - 4)))
-        {
-            QMessageBox::warning(this, tr("Warnning"), tr("Backup files is incomplete!"));
-            return;
-        }
-    }
+//    for(int i = 0; i != acts.size(); ++i)
+//    {
+//        if(!fncs.contains(acts.at(i).left(acts.at(i).size() - 4)))
+//        {
+//            QMessageBox::warning(this, tr("Warnning"), tr("Backup files is incomplete!"));
+//            return;
+//        }
+//    }
 
     fileInfoList_ = recordDir.entryInfoList(QStringList()<<"*.act", QDir::Files);
 

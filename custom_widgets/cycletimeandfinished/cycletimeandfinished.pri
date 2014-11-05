@@ -2,10 +2,13 @@ INCLUDEPATH += $$PWD
 DEPENDPATH += $$PWD
 
 HEADERS += \
-    custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.h
+    $$PWD/iccycletimeandfinishedframe.h \
+    $$PWD/icalarmdetailsdialog.h
 
 SOURCES += \
-    custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.cpp
+    $$PWD/iccycletimeandfinishedframe.cpp \
+    $$PWD/icalarmdetailsdialog.cpp
 
 FORMS += \
-    custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.ui
+    $$PWD/iccycletimeandfinishedframe.ui \
+    $$PWD/icalarmdetailsdialog.ui

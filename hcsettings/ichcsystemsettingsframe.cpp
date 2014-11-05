@@ -2,6 +2,7 @@
 #include <QDir>
 #include <QFile>
 #include <QMessageBox>
+#include <QFileDialog>
 
 #include "ichcsystemsettingsframe.h"
 #include "ui_ichcsystemsettingsframe.h"
@@ -379,27 +380,35 @@ void ICHCSystemSettingsFrame::Information(bool isSuccess, const QString &msg)
 
 void ICHCSystemSettingsFrame::on_backupAllButton_clicked()
 {
+#if defined(Q_WS_WIN32) || defined(Q_WS_X11)
+    QString getFileDir = QFileDialog::getExistingDirectory();
+//    QDir dir(getFileDir + "/HC5ABackup/records");
+//    QString path = getFileDir;
+#else
     if(!CheckIsUsbAttached())
     {
         QMessageBox::warning(this, tr("Warning"), tr("USB is not connected!"));
         return;
     }
+//    QDir dir("/mnt/udisk/HC5ABackup/records");
+    QString getFileDir = "/mnt/udisk";
+#endif
     ICTipsWidget tipsWidget(tr("Backuping, please wait..."));
     tipsWidget.show();qApp->processEvents();
     ICBackupUtility backupUtility;
     bool ret = backupUtility.BackupDir("./sysconfig",
-                                       "/mnt/udisk/HC5ABackup/sysconfig",
+                                       getFileDir + "/HC5ABackup/sysconfig",
                                        QStringList()<<"param*.txt"<<"DistanceRotation");
     ret = ret && backupUtility.BackupDir("./sysconfig",
-                                         "/mnt/udisk/HC5ABackup/sysconfig",
+                                         getFileDir + "/HC5ABackup/sysconfig",
                                          QStringList()<<"system.txt");
 
     ret = ret && backupUtility.BackupDir("./records/",
-                                         "/mnt/udisk/HC5ABackup/records/",
+                                         getFileDir + "/HC5ABackup/records/",
                                          QStringList()<<"*.act"<<"*.fnc");
 
     ret = ret && backupUtility.BackupDir("./subs",
-                                         "/mnt/udisk/HC5ABackup/subs",
+                                         getFileDir + "/HC5ABackup/subs",
                                          QStringList()<<"sub[0-7].prg");
     Information(ret);
 
@@ -599,16 +608,21 @@ void ICHCSystemSettingsFrame::on_restoreSystemButton_clicked()
 
 void ICHCSystemSettingsFrame::on_restoreAllButton_clicked()
 {
+#if defined(Q_WS_WIN32) || defined(Q_WS_X11)
+    QString getFileDir = QFileDialog::getExistingDirectory();
+#else
     if(!CheckIsUsbAttached())
     {
         QMessageBox::warning(this, tr("Warning"), tr("USB is not connected!"));
         return;
     }
+    QString getFileDir = "/mnt/udisk";
+#endif
     ICTipsWidget tipsWidget(tr("Restoring, please wait..."));
     tipsWidget.show();qApp->processEvents();
     bool ret = CheckRestoreSystemFiles_();
     ret = ret && CheckRestoreMachineFiles_();
-    QDir dir("/mnt/udisk/HC5ABackup/records");
+    QDir dir(getFileDir + "/HC5ABackup/records");
     if(!dir.exists())
     {
         ret = false;
@@ -616,67 +630,64 @@ void ICHCSystemSettingsFrame::on_restoreAllButton_clicked()
     }
     QStringList acts = dir.entryList(QStringList()<<"*.act");
     QStringList fncs = dir.entryList(QStringList()<<"*.fnc");
-    if(fncs.contains("Base.fnc"))
+    QStringList workReocrds;
+    QString temp;
+    int count = qMin(acts.size(), fncs.size());
+    for(int i = 0; i != count; ++i)
     {
-        fncs.removeOne("Base.fnc");
+        temp = acts.at(i);
+        temp.chop(4);
+        if(fncs.contains(temp + ".fnc"))
+            workReocrds.append(temp);
     }
-    if(acts.size() != fncs.size())
-    {
-        ret = false;
-        return;
-    }
-    for(int i = 0; i != fncs.size(); ++i)
-    {
-        fncs[i] = fncs.at(i).left(fncs.at(i).size() - 4);
-    }
-    for(int i = 0; i != acts.size(); ++i)
-    {
-        if(!fncs.contains(acts.at(i).left(acts.at(i).size() - 4)))
-        {
-            ret = false;
-            return;
-        }
-    }
+
+    QStringList skipRecords;
     QFile file;
     QString actContent;
     ICProgramFormatChecker programChecker;
-    for(int i = 0; i != acts.size(); ++i)
+    ICConfigFormatChecker configFormatChecker;
+
+    for(int i = 0; i != workReocrds.size(); ++i)
     {
-        file.setFileName(dir.absoluteFilePath(acts.at(i)));
+        file.setFileName(dir.absoluteFilePath(workReocrds.at(i) + ".act"));
         actContent.clear();
         file.open(QFile::ReadOnly | QFile::Text);
         actContent = file.readAll();
         file.close();
         if(!programChecker.Check(actContent))
         {
-            QMessageBox::warning(this, tr("Warnning"), tr("Wrong program format!"));
-            ret = false;
-            return;
+            QMessageBox::warning(this, tr("Warnning"), QString(tr("%1 wrong program format! Will skip this record!").arg(workReocrds.at(i))));
+//            ret = false;
+            skipRecords.append(workReocrds.at(i));
+            continue;
         }
-    }
-    ICConfigFormatChecker configFormatChecker;
-    for(int i = 0; i != fncs.size(); ++i)
-    {
-        file.setFileName(dir.absoluteFilePath(fncs.at(i) + ".fnc"));
+
+        file.setFileName(dir.absoluteFilePath(workReocrds.at(i) + ".fnc"));
         actContent.clear();
         file.open(QFile::ReadOnly | QFile::Text);
         actContent = file.readAll();
         file.close();
         if(!configFormatChecker.CheckRowCount(actContent, 58,ICDataFormatChecker::kCompareEqual))
         {
-            QMessageBox::warning(this, tr("Warnning"), tr("Wrong config format!"));
-            ret = false;
-            return;
+            QMessageBox::warning(this, tr("Warnning"), QString(tr("%1 wrong config format! Will skip this record!").arg(workReocrds.at(i))));
+//            ret = false;
+            skipRecords.append(workReocrds.at(i));
+            continue;
         }
         if(!configFormatChecker.Check(actContent))
         {
-            QMessageBox::warning(this, tr("Warnning"), tr("Wrong config format!"));
-            ret = false;
-            return;
+            QMessageBox::warning(this, tr("Warnning"), QString(tr("%1 wrong config format! Will skip this record!").arg(workReocrds.at(i))));
+//            ret = false;
+            skipRecords.append(workReocrds.at(i));
         }
+    }
+    for(int i = 0; i != skipRecords.size(); ++i)
+    {
+        workReocrds.removeOne(skipRecords.at(i));
     }
     dir.cdUp();
     dir.cd("subs");
+    skipRecords.clear();
     QStringList subs = dir.entryList(QStringList()<<"sub[0-7]");
     for(int i = 0; i != subs.size(); ++i)
     {
@@ -687,40 +698,44 @@ void ICHCSystemSettingsFrame::on_restoreAllButton_clicked()
         file.close();
         if(!programChecker.Check(actContent))
         {
-            QMessageBox::warning(this, tr("Warnning"), tr("Wrong program format!"));
-            ret = false;
-            return;
+            QMessageBox::warning(this, tr("Warnning"), QString(tr("%1 wrong program format! Will skip this sub!").arg(subs.at(i))));
+            skipRecords.append(subs.at(i));
+//            ret = false;
+//            return;
         }
     }
+    for(int i = 0; i != skipRecords.size(); ++i)
+    {
+        subs.removeOne(skipRecords.at(i));
+    }
+
+    for(int i = 0; i != workReocrds.size(); ++i)
+    {
+        workReocrds[i] += ".*";
+    }
+
+    ICBackupUtility backupUtility;
+    ret = backupUtility.RestoreDir(getFileDir + "/HC5ABackup/sysconfig",
+                                   "./sysconfig",
+                                   QStringList()<<"param*.txt"<<"DistanceRotation");
+    ret = ret && backupUtility.RestoreDir(getFileDir + "/HC5ABackup/sysconfig",
+                                          "./sysconfig",
+                                          QStringList()<<"system.txt");
+
+    ret = ret && backupUtility.RestoreDir(getFileDir +  "/HC5ABackup/records",
+                                          "./records",
+                                          workReocrds);
+
+    ret = ret && backupUtility.RestoreDir(getFileDir + "/HC5ABackup/subs",
+                                          "./subs",
+                                          subs);
+
+    Information(ret);
     if(ret)
     {
-        ICBackupUtility backupUtility;
-        ret = backupUtility.RestoreDir("/mnt/udisk/HC5ABackup/sysconfig",
-                                       "./sysconfig",
-                                       QStringList()<<"param*.txt"<<"DistanceRotation");
-        ret = ret && backupUtility.RestoreDir("/mnt/udisk/HC5ABackup/sysconfig",
-                                              "./sysconfig",
-                                              QStringList()<<"system.txt");
-
-        ret = ret && backupUtility.RestoreDir("/mnt/udisk/HC5ABackup/records",
-                                            "./records",
-                                            QStringList()<<"*.act"<<"*.fnc");
-
-        ret = ret && backupUtility.RestoreDir("/mnt/udisk/HC5ABackup/subs",
-                                                  "./subs",
-                                                  QStringList()<<"sub[0-7].prg");
-
-        Information(ret);
-        if(ret)
-        {
-            system("reboot");
-        }
-
+        system("reboot");
     }
-    else
-    {
-        Information(false, tr("Backup files is broken!"));
-    }
+
 
 }
 
@@ -1207,7 +1222,7 @@ void ICHCSystemSettingsFrame::on_calibrationBtn_clicked()
                             tr("The system will be reboot to calibrate! Do you want to continue?"),
                             QMessageBox::Ok | QMessageBox::Cancel) == QMessageBox::Ok)
     {
-        ::system("cd /home/root && echo recal >>recal && reboot");
+        ::system("cd /home/root && echo recal >>recal && sync && reboot");
     }
 
 }

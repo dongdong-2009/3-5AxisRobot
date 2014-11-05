@@ -36,6 +36,8 @@ private slots:
 
     void on_fixtureComboBox_currentIndexChanged(int index);
 
+    void on_productSave_toggled(bool checked);
+
 private:
     Ui::ICHCProductSettingFrame *ui;
     QList<ICLineEditWrapper*> wrappers_;

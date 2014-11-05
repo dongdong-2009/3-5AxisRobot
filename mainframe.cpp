@@ -467,8 +467,12 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
     }
     else if(knobMap.contains(e->key()))
     {
-        ICKeyboard::Instace()->SetSwitchValue(knobMap.value(e->key()));
-        currentKeySeq.clear();
+        int k = knobMap.value(e->key());
+        if(ICKeyboard::Instace()->CurrentSwitchStatus() != k)
+        {
+            ICKeyboard::Instace()->SetSwitchValue(k);
+            currentKeySeq.clear();
+        }
 //        ICKeyboardHandler::Instance()->Keypressed(key);
     }
     else if(pulleyMap.contains(e->key()))
@@ -773,6 +777,7 @@ void MainFrame::StatusRefreshed()
     newLedFlags_ |= (virtualHost->IsInputOn(32)? 4 : 0);
     newLedFlags_ |= (virtualHost->IsOutputOn(32)? 2 : 0);
     newLedFlags_ |= (virtualHost->IsOutputOn(33)? 1 : 0);
+    newLedFlags_ |= (virtualHost->IsOutputOn(47) ? 16 : 0);
 
     if(newLedFlags_ != ledFlags_)
     {
@@ -866,13 +871,7 @@ void MainFrame::StatusRefreshed()
         {
             actionDialog_->hide();
         }
-        finishCount_ = virtualHost->HostStatus(ICVirtualHost::DbgX1).toUInt();
-        if(finishCount_ != oldFinishCount_)
-        {
-            ui->cycleTimeAndFinistWidget->SetFinished(finishCount_);
-            virtualHost->SetFinishProductCount(finishCount_);
-            oldFinishCount_ = finishCount_;
-        }
+
         int speedVal =  virtualHost->GlobalSpeed();
         speed_ = QString::number(speedVal);
         if(virtualHost->HostStatus(ICVirtualHost::DbgX0) == ICVirtualHost::AutoReady)
@@ -934,6 +933,17 @@ void MainFrame::StatusRefreshed()
         else if(runningStatus_ == ICVirtualHost::AutoRunning)
         {
             ui->systemStatusFrame->SetAutoStatus(ICSystemStatusFrame::Running);
+            finishCount_ = virtualHost->HostStatus(ICVirtualHost::DbgX1).toUInt();
+            if(finishCount_ != oldFinishCount_)
+            {
+                ui->cycleTimeAndFinistWidget->SetFinished(finishCount_);
+                virtualHost->SetFinishProductCount(finishCount_);
+                oldFinishCount_ = finishCount_;
+                if(ICParametersSave::Instance()->IsProductSave())
+                {
+                    virtualHost->SaveSystemConfig();
+                }
+            }
             //            ui->functionPageButton->setEnabled(false);
             //            ui->recordPageButton->setEnabled(false);
         }

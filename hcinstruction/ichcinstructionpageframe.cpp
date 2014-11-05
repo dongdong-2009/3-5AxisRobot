@@ -1074,5 +1074,44 @@ void  ICHCInstructionPageFrame::OnGuideFinished()
 
 void ICHCInstructionPageFrame::on_tryButton_clicked()
 {
+    //    if(!ICVirtualHost::GlobalVirtualHost()->IsOrigined())
+    //    {
+    //        QMessageBox::warning(this,
+    //                             tr("Warning"),
+    //                             tr("Has not been origin!"));
+    //        return;
+    //    }
+        ICManualRun cmd;
+        int currentStep = ui->moldContentListWidget->currentRow();
+        int g,t,s;
+        FindIndex_(currentStep, g, t, s);
+        if(g >= programList_.size()) return;
+    //    QList<ICMoldItem> moldItems = ICMold::UIItemToMoldItem(QList<ICGroupMoldUIItem>()<<programList_.at(g));
+    //    if(moldItems.empty()) return;
+    //    if(currentStep >= moldItems.size()) return;
+        ICMoldItem item;
+        if(s < 0)
+        {
+            item = programList_.at(g).at(t).ToMoldItems().at(0);
+        }
+        else
+        {
+            item = programList_.at(g).at(t).at(s).ToMoldItem();
+        }
+        cmd.SetSlave(1);
+        cmd.SetGM(item.GMVal());
+        cmd.SetNumber(currentStep);
+        cmd.SetPoint(item.SubNum());
+        cmd.SetPos(item.Pos());
+        cmd.SetIFVal(item.IFVal());
+        //    cmd.SetIFVal(1);
+        if(ICCommandProcessor::Instance()->ExecuteCommand(cmd).toBool())
+        {
+    //        //        ++currentStep;
+    //        //        currentStep %= mold->MoldContent().size();
+    //        ICVirtualHost::GlobalVirtualHost()->SetHostStatus(ICVirtualHost::ActL, 1);
+    //        ICVirtualHost::GlobalVirtualHost()->SetSingleRun(true);
+    //        ui->singleButton->setEnabled(false);
+        }
 
 }
