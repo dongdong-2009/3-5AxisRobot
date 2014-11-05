@@ -5924,7 +5924,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="71"/>
         <source>B Origin</source>
-        <translation>B轴原点</translation>
+        <translation>辅助原点1</translation>
     </message>
     <message>
         <source>Go Out/EX-6</source>
