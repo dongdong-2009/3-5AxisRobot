@@ -66,6 +66,7 @@ ICHCProgramMonitorFrame::ICHCProgramMonitorFrame(QWidget *parent) :
             SLOT(LevelChanged(int)));
     LevelChanged(ICProgramHeadFrame::Instance()->CurrentLevel());
     checkMessageBox = new QMessageBox(this);
+    ui->pauseButton->hide();
 }
 
 ICHCProgramMonitorFrame::~ICHCProgramMonitorFrame()

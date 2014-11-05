@@ -42,6 +42,13 @@ SOURCES += \
     $$PWD/icplaintextedit.cpp \
     $$PWD/icinputmethodkeyboard.cpp
 
+
+contains(DEFINES, HC_SK_8){
+FORMS += $$PWD/icinputmethodkeyboard.ui
+}
+contains(DEFINES, HC_SK_5){
+FORMS += $$PWD/icinputmethodkeyboard_5.ui
+}
+
 FORMS += \
-    $$PWD/icinputmethodkeyboard.ui \
     $$PWD/icpasswordmodifydialog.ui
