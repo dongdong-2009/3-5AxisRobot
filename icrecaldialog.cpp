@@ -34,7 +34,7 @@ void ICRecalDialog::keyPressEvent(QKeyEvent *e)
         this->reject();
         break;
     case Qt::Key_H://Yes
-        ::system("touch /home/root/recal && sync && reboot");
+        ::system("touch /home/szhc/recal && sync && reboot");
         this->accept();
         break;
     default:
