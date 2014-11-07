@@ -72,7 +72,7 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
     v &= 0xFFFF;
     v >>= 15;
 //    ui->fixtureComboBox->setCurrentIndex((ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt() >> 15) & 1);
-    ui->fixtureComboBox->setCurrentIndex(v);
+//    ui->fixtureComboBox->setCurrentIndex(v);
     ui->getFailWay->setCurrentIndex(ICVirtualHost::GlobalVirtualHost()->GetFailAlarmWay());
 
     connect(ICMold::CurrentMold(),
@@ -228,11 +228,11 @@ void ICHCProductSettingFrame::on_getFailWay_activated(int index)
     ICVirtualHost::GlobalVirtualHost()->SetGetFailAlarmWay(index);
 }
 
-void ICHCProductSettingFrame::on_fixtureComboBox_currentIndexChanged(int index)
-{
-    ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
-    int v = host->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt();
-    v &= 0x7FFF;
-    v |= (index << 15);
-    host->SetSystemParameter(ICVirtualHost::SYS_Config_Fixture, v);
-}
+//void ICHCProductSettingFrame::on_fixtureComboBox_currentIndexChanged(int index)
+//{
+//    ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
+//    int v = host->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt();
+//    v &= 0x7FFF;
+//    v |= (index << 15);
+//    host->SetSystemParameter(ICVirtualHost::SYS_Config_Fixture, v);
+//}

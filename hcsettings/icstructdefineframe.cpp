@@ -177,17 +177,12 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
     }
 
     ui->servoFlex->setCurrentIndex(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Resv1).toInt());
-//    AXIS_MODIFY_DATA data;
-//    data.port = (host->SystemParameter(ICVirtualHost::SYS_Config_Resv1).toInt() << 16) |
-//            (host->SystemParameter(ICVirtualHost::SYS_Config_Resv2).toInt());
-//    ui->portX1->setCurrentIndex(data.split.a1 == 0 ? 0 : data.split.a1 - 7);
-//    ui->portY1->setCurrentIndex(data.split.a2 == 0 ? 0 : data.split.a2 - 7);
-//    ui->portZ->setCurrentIndex(data.split.a3 == 0 ? 0 : data.split.a3 - 7);
-//    ui->portX2->setCurrentIndex(data.split.a4 == 0 ? 0 : data.split.a4 - 7);
-//    ui->portY2->setCurrentIndex(data.split.a5 == 0 ? 0 : data.split.a5 - 7);
-//    ui->portA->setCurrentIndex(data.split.a6 == 0 ? 0 : data.split.a6 - 7);
-//    ui->portB->setCurrentIndex(data.split.a7 == 0 ? 0 : data.split.a7 - 7);
-//    ui->portC->setCurrentIndex(data.split.a8 == 0 ? 0 : data.split.a8 - 7);
+
+    int v = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt();
+    v &= 0xFFFF;
+    v >>= 15;
+//    ui->fixtureComboBox->setCurrentIndex((ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt() >> 15) & 1);
+    ui->fixtureComboBox->setCurrentIndex(v);
 
 }
 
@@ -473,4 +468,13 @@ void ICStructDefineFrame::InitEscapeBox()
 void ICStructDefineFrame::on_adjUse_toggled(bool checked)
 {
     ICParametersSave::Instance()->SetAdjustFunction(checked);
+}
+
+void ICStructDefineFrame::on_fixtureComboBox_currentIndexChanged(int index)
+{
+    ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
+    int v = host->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt();
+    v &= 0x7FFF;
+    v |= (index << 15);
+    host->SetSystemParameter(ICVirtualHost::SYS_Config_Fixture, v);
 }

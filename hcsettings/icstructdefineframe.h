@@ -48,6 +48,7 @@ private slots:
     void retranslateUi_();
 
     void on_adjUse_toggled(bool checked);
+    void on_fixtureComboBox_currentIndexChanged(int index);
 
 private:
     Ui::ICStructDefineFrame *ui;
