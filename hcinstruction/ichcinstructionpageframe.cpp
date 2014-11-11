@@ -569,6 +569,10 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
         {
             return;
         }
+        if(isComment)
+        {
+            return;
+        }
         QList<ICSubMoldUIItem> insertedSubItems;
         ICSubMoldUIItem item;
         const int stepNum = programList_.at(gIndex).StepNum();

@@ -4,7 +4,7 @@
 #include <QSplashScreen>
 #include <QProgressBar>
 #include <QLabel>
-#include <QKeyEvent>
+#include <QMouseEvent>
 
 class ICSplashScreen : public QSplashScreen
 {
@@ -14,7 +14,8 @@ public:
     void SetRange(int minum, int maxum) { progressBar_->setRange(minum, maxum);}
 
 protected:
-    void keyPressEvent(QKeyEvent* e) {e->ignore();}
+    void mousePressEvent(QMouseEvent* e) {e->ignore();}
+    void mouseDoubleClickEvent(QMouseEvent * event ){event->ignore();}
 
 signals:
 

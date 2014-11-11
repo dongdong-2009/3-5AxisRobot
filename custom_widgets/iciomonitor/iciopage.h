@@ -42,6 +42,8 @@ private:
     QList<QLabel*> recsLabels_;
     QList<QLabel*> ioLabels_;
     QList<QLabel*> adjustLabels_;
+    QList<QLabel*> servoOutLabels_;
+    QList<QLabel*> servoInLabels_;
 
     const QPixmap offPixmap_;
     const QPixmap inputOnPixmap_;

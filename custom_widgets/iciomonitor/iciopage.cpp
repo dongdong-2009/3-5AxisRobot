@@ -31,6 +31,12 @@ ICIOPage::ICIOPage(QWidget *parent) :
         ioLabels_.append(NULL);
         adjustLabels_.append(NULL);
     }
+    servoOutLabels_.append(NULL);
+    servoOutLabels_.append(NULL);
+    servoInLabels_.append(NULL);
+    servoInLabels_.append(NULL);
+    servoInLabels_.append(NULL);
+    servoInLabels_.append(NULL);
 }
 ICIOPage::~ICIOPage()
 {
@@ -73,6 +79,30 @@ void ICIOPage::BindingIOPoints(const QList<ICIOPoint> &points)
             else if(points.at(i).PointNum() == tr("Y036"))
             {
                 backupDescrMap_.insert(5, points.at(i));
+            }
+            else if(points.at(i).PointNum() == tr("Y023"))
+            {
+                backupDescrMap_.insert(6, points.at(i));
+            }
+            else if(points.at(i).PointNum() == tr("Y026"))
+            {
+                backupDescrMap_.insert(7, points.at(i));
+            }
+            else if(points.at(i).PointNum() == tr("X017"))
+            {
+                backupDescrMap_.insert(8, points.at(i));
+            }
+            else if(points.at(i).PointNum() == tr("X020"))
+            {
+                backupDescrMap_.insert(9, points.at(i));
+            }
+            else if(points.at(i).PointNum() == tr("X022"))
+            {
+                backupDescrMap_.insert(10, points.at(i));
+            }
+            else if(points.at(i).PointNum() == tr("X035"))
+            {
+                backupDescrMap_.insert(11, points.at(i));
             }
 
             descrLabels_.at(i)->setText(points.at(i).PointDescription());
@@ -154,6 +184,30 @@ void ICIOPage::BindingIOPoints(const QList<ICIOPoint> &points)
             else if(point.PointNum() == tr("X033"))
             {
                 adjustLabels_[2] = descr;
+            }
+            else if(point.PointNum() == tr("Y023"))
+            {
+                servoOutLabels_[0] =descr;
+            }
+            else if(point.PointNum() == tr("Y026"))
+            {
+                servoOutLabels_[1] =descr;
+            }
+            else if(point.PointNum() == tr("X017"))
+            {
+                servoInLabels_[0] =descr;
+            }
+            else if(point.PointNum() == tr("X020"))
+            {
+                servoInLabels_[1] =descr;
+            }
+            else if(point.PointNum() == tr("X022"))
+            {
+                servoInLabels_[2] =descr;
+            }
+            else if(point.PointNum() == tr("X035"))
+            {
+                servoInLabels_[3] =descr;
             }
             nums->setFixedWidth(50);
             descr->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
@@ -374,6 +428,45 @@ void ICIOPage::showEvent(QShowEvent *e)
             {
                 adjustLabels_[2]->setText(tr("Y2 In Limit"));
             }
+        }
+
+        if(host->AxisDefine(ICVirtualHost::ICAxis_AxisY1) == ICVirtualHost::ICAxisDefine_Pneumatic)
+        {
+            if(servoOutLabels_[0] != NULL)
+                servoOutLabels_[0]->setText(tr("Main Arm down valve"));
+            if(servoInLabels_[2] != NULL)
+                servoInLabels_[2]->setText(tr("Main Arm Down Limit"));
+            if(servoInLabels_[3] != NULL)
+                servoInLabels_[3]->setText(tr("Main Arm Up Limit"));
+        }
+        else
+        {
+            if(servoOutLabels_[0] != NULL)
+                servoOutLabels_[0]->setText(tr("Aid Pneumatic"));
+            if(servoInLabels_[2] != NULL)
+                servoInLabels_[2]->setText(backupDescrMap_.value(10).PointDescription());
+            if(servoInLabels_[3] != NULL)
+                servoInLabels_[3]->setText(backupDescrMap_.value(11).PointDescription());
+        }
+
+
+        if(host->AxisDefine(ICVirtualHost::ICAxis_AxisX1) == ICVirtualHost::ICAxisDefine_Pneumatic)
+        {
+            if(servoOutLabels_[1] != NULL)
+                servoOutLabels_[1]->setText(tr("Main Arm Foward valve"));
+            if(servoInLabels_[0] != NULL)
+                servoInLabels_[0]->setText(tr("Main Arm Forward Limit"));
+            if(servoInLabels_[1] != NULL)
+                servoInLabels_[1]->setText(tr("Main Arm Backward Limit"));
+        }
+        else
+        {
+            if(servoOutLabels_[1] != NULL)
+                servoOutLabels_[1]->setText(backupDescrMap_.value(7).PointDescription());
+            if(servoInLabels_[0] != NULL)
+                servoInLabels_[0]->setText(backupDescrMap_.value(8).PointDescription());
+            if(servoInLabels_[1] != NULL)
+                servoInLabels_[1]->setText(backupDescrMap_.value(9).PointDescription());
         }
 
     QWidget::showEvent(e);

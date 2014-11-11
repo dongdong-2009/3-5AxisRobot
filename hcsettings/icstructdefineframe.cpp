@@ -267,6 +267,9 @@ void ICStructDefineFrame::retranslateUi_()
     ui->servoFlex->setItemText(5, "5");
     ui->servoFlex->setItemText(6, "6");
     ui->servoFlex->setItemText(7, tr("7-hard"));
+    ui->label_28->setText(tr("In Mold Limit"));
+    ui->fixtureComboBox->setItemText(0, tr("Limit"));
+    ui->fixtureComboBox->setItemText(1, tr("NoLimit"));
 
 
 

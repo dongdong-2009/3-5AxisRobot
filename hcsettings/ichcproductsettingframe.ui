@@ -40,20 +40,6 @@
      </property>
     </widget>
    </item>
-   <item row="4" column="5">
-    <widget class="ICComboBox" name="fixtureComboBox">
-     <item>
-      <property name="text">
-       <string>Limit</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>NoLimit</string>
-      </property>
-     </item>
-    </widget>
-   </item>
    <item row="1" column="6">
     <widget class="QLabel" name="label_6">
      <property name="text">
@@ -91,16 +77,6 @@
      </property>
      <property name="text">
       <string>Fixture</string>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="3">
-    <widget class="QLabel" name="label_18">
-     <property name="styleSheet">
-      <string notr="true">height:27px ;</string>
-     </property>
-     <property name="text">
-      <string>Count Ways</string>
      </property>
     </widget>
    </item>
@@ -255,40 +231,6 @@ QRadioButton::indicator:unchecked:disabled
      </property>
     </widget>
    </item>
-   <item row="5" column="5">
-    <widget class="ICComboBox" name="countUnitBox">
-     <item>
-      <property name="text">
-       <string>All</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Good</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Stack-1</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Stack-2</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Stack-3</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Stack-4</string>
-      </property>
-     </item>
-    </widget>
-   </item>
    <item row="1" column="0">
     <widget class="QLabel" name="label_7">
      <property name="text">
@@ -421,16 +363,6 @@ QRadioButton::indicator:unchecked:disabled
      </item>
     </widget>
    </item>
-   <item row="4" column="3">
-    <widget class="QLabel" name="label_20">
-     <property name="styleSheet">
-      <string notr="true">height:27px ;</string>
-     </property>
-     <property name="text">
-      <string>In Mold Limit</string>
-     </property>
-    </widget>
-   </item>
    <item row="8" column="3">
     <widget class="QCheckBox" name="productSave">
      <property name="styleSheet">
@@ -464,6 +396,50 @@ QRadioButton::indicator:unchecked:disabled
      <property name="checked">
       <bool>true</bool>
      </property>
+    </widget>
+   </item>
+   <item row="4" column="3">
+    <widget class="QLabel" name="label_18">
+     <property name="styleSheet">
+      <string notr="true">height:27px ;</string>
+     </property>
+     <property name="text">
+      <string>Count Ways</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="5">
+    <widget class="ICComboBox" name="countUnitBox">
+     <item>
+      <property name="text">
+       <string>All</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Good</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Stack-1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Stack-2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Stack-3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Stack-4</string>
+      </property>
+     </item>
     </widget>
    </item>
   </layout>
