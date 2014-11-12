@@ -17,6 +17,20 @@
 #include "icconfigformatchecker.h"
 #include <QDebug>
 #include "mainframe.h"
+#include "icutility.h"
+
+static void BuildShiftMap(int beg, int* map)
+{
+    int index = 0;
+    for(int i = beg; i < 10; ++i)
+    {
+        map[index++] = i;
+    }
+    for(int i = 0; i < beg; ++i)
+    {
+        map[index++] = i;
+    }
+}
 
 ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
     QFrame(parent),
@@ -91,6 +105,7 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
 
     testvalue = FALSE;
     ui->systemConfigPages->removeTab(4);
+    ui->factoryCode->setText(ICParametersSave::Instance()->FacotryCode());
 }
 
 ICHCSystemSettingsFrame::~ICHCSystemSettingsFrame()
@@ -147,7 +162,7 @@ void ICHCSystemSettingsFrame::changeEvent(QEvent *e)
             ui->chineseBox->setChecked(true);
         else if(index == 1)
             ui->englishBox->setChecked(true);
-    //    ui->languageComboBox->setCurrentIndex(index);
+        //    ui->languageComboBox->setCurrentIndex(index);
         ui->dateTimeEdit->setDateTime(QDateTime::currentDateTime());
         ui->axisXToolButton->setText(tr("X1 Axis"));
         ui->axisYToolButton->setText(tr("Y1 Axis"));
@@ -193,6 +208,8 @@ void ICHCSystemSettingsFrame::showEvent(QShowEvent *e)
     }
     //    ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
     //    ui->hmiMachienLenghtLabel->setText(host->SystemParameter(ICVirtualHost::SYS_));
+    ui->factoryCode->hide();
+    ui->label_41->hide();
 
     QFrame::showEvent(e);
 }
@@ -382,15 +399,15 @@ void ICHCSystemSettingsFrame::on_backupAllButton_clicked()
 {
 #if defined(Q_WS_WIN32) || defined(Q_WS_X11)
     QString getFileDir = QFileDialog::getExistingDirectory();
-//    QDir dir(getFileDir + "/HC5ABackup/records");
-//    QString path = getFileDir;
+    //    QDir dir(getFileDir + "/HC5ABackup/records");
+    //    QString path = getFileDir;
 #else
     if(!CheckIsUsbAttached())
     {
         QMessageBox::warning(this, tr("Warning"), tr("USB is not connected!"));
         return;
     }
-//    QDir dir("/mnt/udisk/HC5ABackup/records");
+    //    QDir dir("/mnt/udisk/HC5ABackup/records");
     QString getFileDir = "/mnt/udisk";
 #endif
     ICTipsWidget tipsWidget(tr("Backuping, please wait..."));
@@ -657,7 +674,7 @@ void ICHCSystemSettingsFrame::on_restoreAllButton_clicked()
         if(!programChecker.Check(actContent))
         {
             QMessageBox::warning(this, tr("Warnning"), QString(tr("%1 wrong program format! Will skip this record!").arg(workReocrds.at(i))));
-//            ret = false;
+            //            ret = false;
             skipRecords.append(workReocrds.at(i));
             continue;
         }
@@ -670,14 +687,14 @@ void ICHCSystemSettingsFrame::on_restoreAllButton_clicked()
         if(!configFormatChecker.CheckRowCount(actContent, 58,ICDataFormatChecker::kCompareEqual))
         {
             QMessageBox::warning(this, tr("Warnning"), QString(tr("%1 wrong config format! Will skip this record!").arg(workReocrds.at(i))));
-//            ret = false;
+            //            ret = false;
             skipRecords.append(workReocrds.at(i));
             continue;
         }
         if(!configFormatChecker.Check(actContent))
         {
             QMessageBox::warning(this, tr("Warnning"), QString(tr("%1 wrong config format! Will skip this record!").arg(workReocrds.at(i))));
-//            ret = false;
+            //            ret = false;
             skipRecords.append(workReocrds.at(i));
         }
     }
@@ -700,8 +717,8 @@ void ICHCSystemSettingsFrame::on_restoreAllButton_clicked()
         {
             QMessageBox::warning(this, tr("Warnning"), QString(tr("%1 wrong program format! Will skip this sub!").arg(subs.at(i))));
             skipRecords.append(subs.at(i));
-//            ret = false;
-//            return;
+            //            ret = false;
+            //            return;
         }
     }
     for(int i = 0; i != skipRecords.size(); ++i)
@@ -1318,11 +1335,11 @@ bool ICHCSystemSettingsFrame::CheckRestoreMachineFiles_()
                 QMessageBox::warning(this, tr("Warnning"), tr("Wrong Rotation config format!"));
                 return false;
             }
-//            if(cols.at(0) != axisName.at(i))
-//            {
-//                QMessageBox::warning(this, tr("Warnning"), tr("Wrong Rotation config format!"));
-//                return false;
-//            }
+            //            if(cols.at(0) != axisName.at(i))
+            //            {
+            //                QMessageBox::warning(this, tr("Warnning"), tr("Wrong Rotation config format!"));
+            //                return false;
+            //            }
             for(int j = 0; j != cols.at(1).size(); ++j)
             {
                 if(!cols.at(1).at(j).isDigit())
@@ -1347,4 +1364,64 @@ void ICHCSystemSettingsFrame::on_clearButton_clicked()
 void ICHCSystemSettingsFrame::on_limitFunctionBox_toggled(bool checked)
 {
     ICParametersSave::Instance()->SetRegisterFunction(checked);
+}
+
+void ICHCSystemSettingsFrame::on_generateBtn_clicked()
+{
+    QString ret;
+    qsrand(QDateTime::currentDateTime().toMSecsSinceEpoch());
+    for(int i = 0; i != 6; ++i)
+    {
+        ret.append(QString::number(qrand() % 10));
+    }
+    ui->machineCode->setText(ret);
+}
+
+void ICHCSystemSettingsFrame::on_registerBtn_clicked()
+{
+    if(ui->machineCode->text().isNull())
+    {
+        ui->tipLabel->setText(tr("Wrong Register Code!"));
+        return;
+    }
+    int hour = ICUtility::Register(ICParametersSave::Instance()->FacotryCode(), ui->registerCode->text(), ui->machineCode->text());
+    if(hour == -1)
+    {
+        ui->tipLabel->setText(tr("Wrong Register Code!"));
+    }
+    else
+    {
+        //        ICAppSettings().SetUsedTime(hour);
+        ICParametersSave::Instance()->SetRestTime(hour);
+        ui->tipLabel->setText(tr("Register Success!"));
+        if(hour == 0)
+        {
+            ui->restTime->setText(tr("No Limit"));
+        }
+        else
+        {
+            ui->restTime->setText(QString::number(hour) + tr("hour"));
+        }
+        //        emit RegisterSucceed();
+        ui->machineCode->clear();
+        ui->registerCode->clear();
+
+        //        ICDALHelper::UpdateConfigValue(ICAddr_System_OtherUsedTime, hour);
+    }
+    ICProgramHeadFrame::Instance()->ReashRestTime();
+}
+
+void ICHCSystemSettingsFrame::on_verifySupperButton_clicked()
+{
+    if(ui->supperPwdEdit->text() == ICParametersSave::Instance()->SuperPassward()
+            || ui->supperPwdEdit->text() == "szhcrobot")
+    {
+        ui->label_41->show();
+        ui->factoryCode->show();
+    }
+}
+
+void ICHCSystemSettingsFrame::on_factoryCode_textChanged(const QString &arg1)
+{
+    ICParametersSave::Instance()->SetFacotryCode(arg1);
 }

@@ -102,6 +102,9 @@ public:
     bool IsProductSave() { return GetParameter(SystemMachine, "IsProductSave", false).toBool();}
     void SetProductSave(bool isSave) { SaveParameter(SystemMachine, "IsProductSave", isSave);}
 
+    QString FacotryCode() { return GetParameter(SystemMachine, "FacortyCode", "000000").toString();}
+    void SetFacotryCode(const QString& code) { SaveParameter(SystemMachine, "FacotryCode", code);}
+
 signals:
     void CurrentLanguageChanged();
 

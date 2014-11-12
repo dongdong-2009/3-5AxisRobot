@@ -159,10 +159,10 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
 
 
     InitSpareTime();
-    connect(ICUpdateSystemPage::Instance(),
-            SIGNAL(RegisterSucceed()),
-            this,
-            SLOT(InitSpareTime()));
+//    connect(ICUpdateSystemPage::Instance(),
+//            SIGNAL(RegisterSucceed()),
+//            this,
+//            SLOT(InitSpareTime()));
 
     connect(registe_timer,SIGNAL(timeout()),this,SLOT(CountRestTime()));
     connect(reboot_timer,SIGNAL(timeout()),this,SLOT(Register()));

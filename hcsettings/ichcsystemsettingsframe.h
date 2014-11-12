@@ -98,6 +98,13 @@ private slots:
 
     void on_limitFunctionBox_toggled(bool checked);
 
+    void on_generateBtn_clicked();
+    void on_registerBtn_clicked();
+
+    void on_verifySupperButton_clicked();
+
+    void on_factoryCode_textChanged(const QString &arg1);
+
 private:
     bool CheckRestoreSystemFiles_();
     bool CheckRestoreMachineFiles_();
