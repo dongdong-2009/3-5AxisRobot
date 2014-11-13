@@ -113,7 +113,7 @@ const QList<int> backupKeySeq = QList<int>()<<ICKeyboard::FB_F5
 
 MainFrame *icMainFrame = NULL;
 MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
-    QWidget(parent),
+    ICMainFrame(parent),
     ui(new Ui::MainFrame),
     monitorPage_(NULL),
     centerStackedLayout_(new QStackedLayout),
@@ -268,7 +268,14 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     hostCompareDialog_ = new ICHostComparePage(this);
     UpdateAxisDefine_();
     ICKeyboard::Instace()->Receive();
-    QTimer::singleShot(ICParametersSave::Instance()->BackLightTime() * 60000, this, SLOT(CheckedInput()));
+    // QTimer::singleShot(ICParametersSave::Instance()->BackLightTime() * 60000, this, SLOT(CheckedInput()));
+
+#ifdef Q_WS_QWS
+    SetScreenSaverInterval(ICParametersSave::Instance()->BackLightTime() * 60000);  //背光时间
+    connect(this,SIGNAL(ScreenSave()),this,SLOT(CloseBackLight()));
+    connect(this,SIGNAL(ScreenRestore()),this,SLOT(OpenBackLight()));
+#endif
+
     QTimer::singleShot(1000, this, SLOT(ClearPosColor()));
 
     keyMap.insert(Qt::Key_F11, ICKeyboard::VFB_Run);
@@ -1414,6 +1421,24 @@ void MainFrame::ClearPosColor()
     }
     QTimer::singleShot(1000, this, SLOT(ClearPosColor()));
 }
+
+void MainFrame::OpenBackLight()
+{
+#ifdef Q_WS_QWS
+    ICParametersSave::Instance()->SetBrightness(ICParametersSave::Instance()->Brightness());
+#endif
+}
+
+void MainFrame::CloseBackLight()
+{
+#ifdef Q_WS_QWS
+    ShowScreenSaver();
+    system("BackLight.sh 0");
+    SetBackLightOff(true);
+#endif
+}
+
+
 
 void MainFrame::Register()
 {
