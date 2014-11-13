@@ -115,6 +115,7 @@ include (ickeyboard/ickeyboard.pri)
 include (hcmaintains/hcmaintains.pri)
 
 include (vendor/IndustrialSystemFramework/ICUtility/ICUtility.pri)
+include (vendor/IndustrialSystemFramework/ICGUI/ICGUI.pri)
 include (vendor/ICCustomWidgets/icupdatepackmodel/icupdatepackmodel.pri)
 
 RESOURCES += \

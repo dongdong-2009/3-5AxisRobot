@@ -40,7 +40,7 @@
       <enum>QTabWidget::Rounded</enum>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>2</number>
      </property>
      <widget class="QWidget" name="systemSettingPage">
       <attribute name="title">
@@ -2861,7 +2861,7 @@ height:30px;</string>
  <connections/>
  <buttongroups>
   <buttongroup name="buttonGroup_2"/>
-  <buttongroup name="languageButtonGroup"/>
   <buttongroup name="buttonGroup"/>
+  <buttongroup name="languageButtonGroup"/>
  </buttongroups>
 </ui>

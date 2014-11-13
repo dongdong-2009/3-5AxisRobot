@@ -9,6 +9,7 @@
 #include "icfunctionpagebackframe.h"
 #include "ichcmanualoperationpageframe.h"
 #include "ichcprogrammonitorframe.h"
+#include "icmainframe.h"
 
 class QStackedLayout;
 class QDialog;
@@ -23,7 +24,7 @@ namespace Ui {
     class MainFrame;
 }
 
-class MainFrame : public QWidget {
+class MainFrame : public ICMainFrame {
     Q_OBJECT
 public:
     MainFrame(QSplashScreen *splashScreen, QWidget *parent = 0);
@@ -56,7 +57,8 @@ public Q_SLOTS:
     void UpdateAxisDefine_();
     void KeyToInstructEditor(int key);
     void ClearPosColor();
-
+    void OpenBackLight();
+    void CloseBackLight();
 //    void SetBackLightOff();
 //    void SetBackLightOn();
 
