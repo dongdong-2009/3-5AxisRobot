@@ -37,8 +37,8 @@ void ICAlarmDetailsDialog::ShowDetails(int alarmID)
         ui->alarmText->setText(query.value(1).toString());
         ui->alarmReason->setText(query.value(2).toString());
         ui->alarmSolution->setText(query.value(3).toString());
+        this->show();
     }
-    this->show();
 }
 
 void ICAlarmDetailsDialog::on_closeButton_clicked()

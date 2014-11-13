@@ -94,6 +94,7 @@ ICVirtualHost::ICVirtualHost(QObject *parent) :
     if(!isInitSuccess_)
     {
         QMessageBox::critical(NULL, tr("Error"), "Init host fail!");
+//        ICKeyboardHandler::Instance()->SwitchChanged(ICKeyboard::Instace()->TakeSwitchValue());
         return;
     }
     timer_ = new QTimer();

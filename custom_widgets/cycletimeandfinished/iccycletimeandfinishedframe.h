@@ -43,6 +43,7 @@ private:
 private:
     Ui::ICCycleTimeAndFinishedFrame *ui;
     ICAlarmDetailsDialog *alarmDetailsDialog_;
+    QString alarmInfo_;
 //    static ICCycleTimeAndFinishedFrame * instance_;
 };
 
