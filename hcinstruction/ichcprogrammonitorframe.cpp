@@ -102,7 +102,7 @@ void ICHCProgramMonitorFrame::showEvent(QShowEvent *e)
     ui->speedEnableButton->setIcon(switchOff_);
     ui->speedEnableButton->setText(tr("Speed Disable"));
     SetProduct(ICMold::CurrentMold()->MoldParam(ICMold::Product));
-    currentMoldNum_ = host->HostStatus(ICVirtualHost::S).toInt();
+    currentMoldNum_ = 8;
     UpdateHostParam();
 //    programListBackup_ = ICMold::CurrentMold()->ToUIItems();
     if(!isModify_)
@@ -274,6 +274,11 @@ void ICHCProgramMonitorFrame::StatusRefreshed()
 
     ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
     newTime_ = host->HostStatus(ICVirtualHost::DbgZ0).toUInt();
+    if(host->CurrentStatus() != ICVirtualHost::Auto) return;
+    if(host->currentMoldNum() != currentMoldNum_)
+    {
+        MoldNumChanged(host->currentMoldNum());
+    }
 
     if(newTime_ != oldTime_)
     {

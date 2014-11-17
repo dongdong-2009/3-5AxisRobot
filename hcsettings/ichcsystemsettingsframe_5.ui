@@ -46,7 +46,7 @@
       <enum>QTabWidget::Rounded</enum>
      </property>
      <property name="currentIndex">
-      <number>2</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="systemSettingPage">
       <attribute name="title">
@@ -2838,14 +2838,14 @@ height:30px;</string>
  </widget>
  <customwidgets>
   <customwidget>
-   <class>ICLineEditWithVirtualKeyboard</class>
-   <extends>QLineEdit</extends>
-   <header>iclineeditwithvirtualkeyboard.h</header>
-  </customwidget>
-  <customwidget>
    <class>ICLineEditWithVirtualNumericKeypad</class>
    <extends>QLineEdit</extends>
    <header>iclineeditwithvirtualnumerickeypad.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ICLineEditWithVirtualKeyboard</class>
+   <extends>QLineEdit</extends>
+   <header>iclineeditwithvirtualkeyboard.h</header>
   </customwidget>
  </customwidgets>
  <resources>

@@ -689,7 +689,7 @@ void ICHCInstructionPageFrame::on_deleteToolButton_clicked()
     }
     if(sIndex == -1)
     {
-        if(programList_.at(gIndex).TopItemCount() == 1) //delete Group Item
+        if(programList_[gIndex].TopItemCount() == 1) //delete Group Item
         {
             programList_.removeAt(gIndex);
             for(int i = gIndex; i != programList_.size(); ++i)
@@ -700,12 +700,15 @@ void ICHCInstructionPageFrame::on_deleteToolButton_clicked()
         else
         {
             programList_[gIndex].RemoveTopItem(tIndex);
-            if(programList_.at(gIndex).TopItemCount() == 1 &&
-                    programList_[gIndex].MoldItemAt(0)->Action() == ICMold::ACTCOMMENT)
+            if(programList_[gIndex].RunableTopItemCount() == 0)
             {
-                ICTopMoldUIItem topItem;
-                topItem.SetBaseItem(*(programList_[gIndex].MoldItemAt(0)));
-                programList_[gIndex - 1].AddToMoldUIItem(topItem);
+                programList_[gIndex].SetStepNum(gIndex - 1);
+                for(int i = 0 ; i != programList_[gIndex].TopItemCount(); ++i)
+                {
+                    ICTopMoldUIItem topItem;
+                    topItem.SetBaseItem(*(programList_[gIndex].MoldItemAt(i)));
+                    programList_[gIndex - 1].AddToMoldUIItem(topItem);
+                }
                 programList_.removeAt(gIndex);
                 for(int i = gIndex; i != programList_.size(); ++i)
                 {
@@ -851,10 +854,29 @@ void ICHCInstructionPageFrame::on_upButton_clicked()
         }
         ICGroupMoldUIItem *item = &programList_[gIndex];
 //        if(item->MoldItemAt(0)->Action() == ICMold::ACTCOMMENT) return;
-        if(item->TopItemCount() == 1) //group up
+        int runableCount = 0;
+        for(int i = 0; i != item->TopItemCount(); ++i)
         {
-            item->SetStepNum(gIndex - 1);
-            programList_[gIndex - 1].AddToMoldUIItem(item->at(0));
+            if(item->MoldItemAt(i)->Action() != ICMold::ACTCOMMENT)
+                ++runableCount;
+        }
+//        if(item->TopItemCount() == 1) //group up
+//        {
+//            item->SetStepNum(gIndex - 1);
+//            programList_[gIndex - 1].AddToMoldUIItem(item->at(0));
+//            programList_.removeAt(gIndex);
+//            for(int i = gIndex; i != programList_.size(); ++i)
+//            {
+//                programList_[i].SetStepNum(i);
+//            }
+//        }
+        if(runableCount < 2 || item->TopItemCount() == 1)
+        {
+            item->SetStepNum( gIndex - 1);
+            for(int i = 0 ; i != item->TopItemCount(); ++i)
+            {
+                programList_[gIndex  -1].AddToMoldUIItem(item->at(i));
+            }
             programList_.removeAt(gIndex);
             for(int i = gIndex; i != programList_.size(); ++i)
             {

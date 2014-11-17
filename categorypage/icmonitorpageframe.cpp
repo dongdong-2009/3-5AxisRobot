@@ -78,13 +78,13 @@ void ICMonitorPageFrame::Init_()
     points.append(ICIOPoint("X047", tr("Mold Close App"), 31));
 
     points.append(ICIOPoint("X050", tr("X1 Servo Alarm"), 48));
-    points.append(ICIOPoint("X051", tr("Y1 Servo Alarm"), 49));
-    points.append(ICIOPoint("X052", tr("Z Servo Alarm"), 50));
-    points.append(ICIOPoint("X053", tr("X2 Servo Alarm"), 51));
-    points.append(ICIOPoint("X054", tr("Y2 Servo Alarm"), 52));
-    points.append(ICIOPoint("X055", tr("A Servo Alarm"), 53));
-    points.append(ICIOPoint("X056", tr("B Servo Alarm"), 54));
-    points.append(ICIOPoint("X057", tr("C Servo Alarm"), 55));
+    points.append(ICIOPoint("X051", tr("Y1 Servo Alarm"), 50));
+    points.append(ICIOPoint("X052", tr("Z Servo Alarm"), 52));
+    points.append(ICIOPoint("X053", tr("X2 Servo Alarm"), 54));
+    points.append(ICIOPoint("X054", tr("Y2 Servo Alarm"), 56));
+    points.append(ICIOPoint("X055", tr("A Servo Alarm"), 58));
+    points.append(ICIOPoint("X056", tr("B Servo Alarm"), 60));
+    points.append(ICIOPoint("X057", tr("C Servo Alarm"), 62));
     ui->icMonitorFrameleft->AddPage(otherPageLeft_, tr("Other"));
     ui->icMonitorFrameRight->AddPage(otherPageRight_, tr("Other"));
     otherPageLeft_->BindingPointsToInputPage(points);
@@ -117,6 +117,15 @@ void ICMonitorPageFrame::Init_()
     points.append(ICIOPoint("Y035", tr("Machine Reversal"), 21));//4
     points.append(ICIOPoint("Y036", tr("Run Led"), 22));//3
     points.append(ICIOPoint("Y037", tr(" Transport"), 23));
+
+    points.append(ICIOPoint("Y040", tr("Y040"), 24));
+    points.append(ICIOPoint("Y041", tr("Y041"), 25));
+    points.append(ICIOPoint("Y042", tr("Y042"), 26));
+    points.append(ICIOPoint("Y043", tr("Y043"), 27));
+    points.append(ICIOPoint("Y044", tr("Y044"), 28));
+    points.append(ICIOPoint("Y045", tr("Y045"), 29));//4
+    points.append(ICIOPoint("Y046", tr("Y046"), 30));//3
+    points.append(ICIOPoint("Y047", tr("Y047"), 31));
 //#ifdef HC_8AXIS
 //    points.append(ICIOPoint("Y022", tr("Reserve 1"), 10));//1
 //    points.append(ICIOPoint("Y023", tr("Reserve 2"), 11));//2

@@ -343,7 +343,7 @@ void ICVirtualHost::RefreshStatus()
         actionHBits_ = statusMap_.value(ActH).toUInt();
         if(freshCount_)
         {
-            int moldNum = HostStatus(S).toInt();
+            int moldNum = currentMoldNum();
             if(moldNum != oldMoldNum_)
             {
                 oldMoldNum_ = moldNum;
@@ -365,7 +365,7 @@ void ICVirtualHost::RefreshStatus()
 
             if(tmpStep != oldStep_)
             {
-                statusMap_.insert(Step, tmpStep);
+                statusMap_.insert(Step, tmpStep | (moldNum << 12));
                 oldStep_ = tmpStep;
                 emit StepChanged(tmpStep);
             }

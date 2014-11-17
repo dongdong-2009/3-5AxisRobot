@@ -589,7 +589,8 @@ public:
     bool IsCloseMoldEn() const { return (SystemParameter((SYS_Function)).toInt() & 0x80 ) != 0;}
     void SetCloseMoldEn(bool isEn);
 
-    int CurrentStep() const { return (statusMap_.value(Step).toInt() & 0x00FF);}
+    int CurrentStep() const { return (statusMap_.value(Step).toInt() & 0x03FF);}
+    int currentMoldNum() const { return (statusMap_.value(Step).toUInt() >> 12) & 0xF;}
     int CurrentStatus() const { return (statusMap_.value(Status).toUInt() & 0x0FFF);}
     int AlarmNum() const { return (statusMap_.value(ErrCode).toUInt() & 0x0FFF);}
     int HintNum() const { return (statusMap_.value(ErrCode).toUInt() >> 12);}
@@ -648,6 +649,9 @@ public:
 
     int GetActualPos(ICAxis axis) const;
     int GetActualPos(ICAxis axis, uint axisLastPos) const;
+
+    bool IsReadProductCount() const { return currentAddr_ > 9;}
+
 public Q_SLOTS:
     void SetMoldParam(int param, int value);
 Q_SIGNALS:
@@ -798,8 +802,8 @@ inline bool ICVirtualHost::IsInputOn(int pos) const
     }
     else if(pos < 64)
     {
-        uint temp = 1 << (pos - 40);
-        return output1Bits_ & temp;
+        uint temp = 1 << (pos - 48);
+        return statusMap_.value(S).toUInt() & temp;
     }
     return false;
 }

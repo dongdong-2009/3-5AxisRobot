@@ -845,25 +845,6 @@ void MainFrame::StatusRefreshed()
     }
     runningStatus_ = virtualHost->CurrentStatus();
 
-
-    if(runningStatus_ == ICVirtualHost::Auto &&
-            virtualHost->HostStatus(ICVirtualHost::DbgX0) == ICVirtualHost::AutoRunning)
-    {
-
-        finishCount_ = virtualHost->HostStatus(ICVirtualHost::DbgA0).toUInt() |
-                (virtualHost->HostStatus(ICVirtualHost::DbgA1).toUInt() << 16);
-        if(finishCount_ != oldFinishCount_)
-        {
-            ui->cycleTimeAndFinistWidget->SetFinished(finishCount_);
-            virtualHost->SetFinishProductCount(finishCount_);
-            oldFinishCount_ = finishCount_;
-            if(ICParametersSave::Instance()->IsProductSave())
-            {
-                virtualHost->SaveSystemConfig();
-            }
-        }
-    }
-
     if(runningStatus_ == ICVirtualHost::Manual)
     {
         speed_ = virtualHost->HostStatus(ICVirtualHost::DbgX0).toString();
@@ -875,17 +856,36 @@ void MainFrame::StatusRefreshed()
         speed_ = "0";
         //        statusStr_ = tr("Stop");
 #ifdef Q_WS_X11
-        finishCount_ = virtualHost->FinishProductCount();
-        if(finishCount_ != oldFinishCount_)
-        {
-            ui->cycleTimeAndFinistWidget->SetFinished(finishCount_);
-            oldFinishCount_ = finishCount_;
-        }
+//        finishCount_ = virtualHost->FinishProductCount();
+//        if(finishCount_ != oldFinishCount_)
+//        {
+//            ui->cycleTimeAndFinistWidget->SetFinished(finishCount_);
+//            oldFinishCount_ = finishCount_;
+//        }
 #endif
         ui->systemStatusFrame->SetProgramStatus(StatusLabel::ONSTATUS);
     }
     else if(runningStatus_ == ICVirtualHost::Auto)
     {
+        if((runningStatus_ == ICVirtualHost::Auto) &&
+                (virtualHost->HostStatus(ICVirtualHost::DbgX0) == ICVirtualHost::AutoRunning) &&
+                (virtualHost->IsReadProductCount()))
+        {
+
+            finishCount_ = virtualHost->HostStatus(ICVirtualHost::DbgA0).toUInt() |
+                    (virtualHost->HostStatus(ICVirtualHost::DbgA1).toUInt() << 16);
+            if(finishCount_ != oldFinishCount_)
+            {
+                ui->cycleTimeAndFinistWidget->SetFinished(finishCount_);
+                virtualHost->SetFinishProductCount(finishCount_);
+                oldFinishCount_ = finishCount_;
+                if(ICParametersSave::Instance()->IsProductSave())
+                {
+                    virtualHost->SaveSystemConfig();
+                }
+            }
+        }
+
         if(hintCode == 15)
         {
             if(actionDialog_->isHidden())
