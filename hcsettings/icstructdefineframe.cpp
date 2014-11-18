@@ -177,7 +177,8 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
     }
 
     ui->servoFlex->setCurrentIndex(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Resv1).toInt());
-//    AXIS_MODIFY_DATA data;
+    ui->canType->setCurrentIndex(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Resv2).toInt());
+    //    AXIS_MODIFY_DATA data;
 //    data.port = (host->SystemParameter(ICVirtualHost::SYS_Config_Resv1).toInt() << 16) |
 //            (host->SystemParameter(ICVirtualHost::SYS_Config_Resv2).toInt());
 //    ui->portX1->setCurrentIndex(data.split.a1 == 0 ? 0 : data.split.a1 - 7);
@@ -351,7 +352,8 @@ void ICStructDefineFrame::on_saveButton_clicked()
 //    data.split.a7 = ui->portB->currentIndex() == 0 ? 0 : ui->portB->currentIndex() + 7;
 //    data.split.a8 = ui->portC->currentIndex() == 0 ? 0 : ui->portC->currentIndex() + 7;
     dataBuffer[4] = ui->servoFlex->currentIndex();
-    dataBuffer[5] = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Resv2).toUInt();
+//    dataBuffer[5] = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Resv2).toUInt();
+    dataBuffer[5] = ui->canType->currentIndex();
     for(int i = 0; i != 6; ++i)
     {
         sum += dataBuffer.at(i);
