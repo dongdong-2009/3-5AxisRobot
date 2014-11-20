@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
         file.close();
     }
 #endif
-    system("BackLight initrobot");
+//    system("BackLight initrobot");
 //    qApp->setStyleSheet("./stylesheet/global.qss");
     ICParametersSave* paraSave = ICParametersSave::Instance();
     paraSave->SetCountry(paraSave->Country());

@@ -38,7 +38,8 @@ ICParametersSave::ICParametersSave(const QString fileName)
 #else
     beepFD_ = 0;
 #endif
-    SetKeyTone(KeyTone());
+//    SetKeyTone(KeyTone());
+    ioctl(beepFD_, 0, KeyTone() ? 20 : 10);
 }
 
 ICParametersSave::~ICParametersSave()

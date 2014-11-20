@@ -14,7 +14,8 @@ ICMachineStructPage::ICMachineStructPage(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::ICMachineStructPage),
     structPage_(NULL),
-    timePage_(NULL)
+    timePage_(NULL),
+    axisDefine_(-1)
 {
     ui->setupUi(this);
     InitInterface();
