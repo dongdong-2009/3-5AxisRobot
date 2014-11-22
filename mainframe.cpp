@@ -56,7 +56,9 @@
 #if defined(Q_WS_WIN32) || defined(Q_WS_X11)
 #include "simulateknob.h"
 #endif
-
+#ifndef Q_WS_WIN32
+#include <linux/input.h>
+#endif
 #include <QDebug>
 
 //class ICScreenSaverMonitor: public QRunnable
@@ -242,8 +244,10 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     emit LoadMessage("Signals is ready");
 #ifndef Q_WS_WIN32
     ledFD_ = open("/dev/szhc_leds", O_WRONLY);
+    keyFD_ = open("/dev/input/event1", O_RDWR);
 #else
     ledFD_ = 0;
+    keyFD_ = 0;
 #endif
 
     //    QThreadPool::globalInstance()->start(new ICScreenSaverMonitor(this));
@@ -480,6 +484,13 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
             ICKeyboard::Instace()->SetSwitchValue(k);
             currentKeySeq.clear();
         }
+#ifndef Q_WS_WIN32
+            struct input_event inputEvent;
+            inputEvent.type = EV_SYN; //__set_bit
+            inputEvent.code = SYN_CONFIG;  //__set_bit
+            inputEvent.value = 1;
+            write(keyFD_,&inputEvent,sizeof(inputEvent));
+#endif
 //        ICKeyboardHandler::Instance()->Keypressed(key);
     }
     else if(pulleyMap.contains(e->key()))

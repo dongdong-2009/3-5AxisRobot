@@ -63,7 +63,7 @@ public:
 #ifndef Q_WS_WIN32
     void SetKeyTone(bool isOn, bool isSave = true)  {SaveParameter(ProductConfig, "KeyTone", isOn, isSave);ioctl(beepFD_, 0, isOn ? 1 : 0);}
 #else
-    void SetKeyTone(bool isOn)  {SaveParameter(ProductConfig, "KeyTone", isOn);}
+    void SetKeyTone(bool isOn, bool isSave = true)  {SaveParameter(ProductConfig, "KeyTone", isOn,isSave);}
 #endif
 
     bool VerifyPassword(OperationLevel level, const QString& password);

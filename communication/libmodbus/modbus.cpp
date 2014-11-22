@@ -3376,6 +3376,20 @@ static int modbus_connect_tcp(modbus_param_t *mb_param)
 }
 #endif /* NATIVE_WIN32 */
 
+int hc_manual_run(modbus_param_t *mb_param,
+                                   int slave,
+                                   int num,
+                                   int gm,
+                                   int sub,
+                                   int pos,
+                                   int ifval)
+{
+
+
+
+}
+
+
 /* Establishes a modbus connexion.
    Returns -1 if an error occured. */
 int modbus_connect(modbus_param_t *mb_param)

@@ -12,6 +12,7 @@ ICFile::ICFile(const QString& filename):
 
 bool ICFile::ICWrite(const QByteArray &toWrite)
 {
+#ifndef Q_WS_WIN32
     int fd = open(QString(fileName_ + ".bak").toUtf8(),
                   O_WRONLY | O_CREAT | O_TRUNC,
                   S_IWUSR | S_IRUSR | S_IRGRP | S_IROTH);
@@ -32,5 +33,23 @@ bool ICFile::ICWrite(const QByteArray &toWrite)
     fsync(fd);
     close(fd);
     rename(QString(fileName_ + ".bak").toUtf8(), fileName_.toUtf8());
+#else
+    FILE *pfile=fopen(QString(fileName_).toUtf8(),"w");
+    int ret = 0;
+    int writeSize = toWrite.size();
+    while( writeSize > 0)
+    {
+        ret = fwrite(toWrite.constData() + ret, 1,writeSize,pfile);
+        writeSize -= ret;
+    }
+    if(ret < 0)
+    {
+        fclose(pfile);
+        return false;
+    }
+    fclose(pfile);
+    //rename(QString(fileName_ + ".bak").toUtf8(), fileName_.toUtf8());
+
+#endif
     return true;
 }
