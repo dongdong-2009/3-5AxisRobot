@@ -266,7 +266,7 @@ void ICVirtualHost::RefreshStatus()
         }
         else
         {
-#ifdef Q_WS_X11
+#ifndef Q_WS_QWS
             statusMap_.insert(XPos, 0);
             statusMap_.insert(YPos, 0);
             statusMap_.insert(ZPos, 0);

@@ -187,26 +187,32 @@ void ICIOPage::BindingIOPoints(const QList<ICIOPoint> &points)
             }
             else if(point.PointNum() == tr("Y023"))
             {
+                backupDescrMap_.insert(6, points.at(i));
                 servoOutLabels_[0] =descr;
             }
             else if(point.PointNum() == tr("Y026"))
             {
+                backupDescrMap_.insert(7, points.at(i));
                 servoOutLabels_[1] =descr;
             }
             else if(point.PointNum() == tr("X017"))
             {
+                backupDescrMap_.insert(8, points.at(i));
                 servoInLabels_[0] =descr;
             }
             else if(point.PointNum() == tr("X020"))
             {
+                backupDescrMap_.insert(9, points.at(i));
                 servoInLabels_[1] =descr;
             }
             else if(point.PointNum() == tr("X022"))
             {
+                backupDescrMap_.insert(10, points.at(i));
                 servoInLabels_[2] =descr;
             }
             else if(point.PointNum() == tr("X035"))
             {
+                backupDescrMap_.insert(11, points.at(i));
                 servoInLabels_[3] =descr;
             }
             nums->setFixedWidth(50);
