@@ -7,6 +7,8 @@ namespace Ui {
 class ICMSSettingsPage;
 }
 
+class ICLineEditWrapper;
+
 class ICMSSettingsPage : public QWidget
 {
     Q_OBJECT
@@ -17,9 +19,11 @@ public:
 
 protected:
     void changeEvent(QEvent *e);
+    void hideEvent(QHideEvent* e);
 
 private:
     Ui::ICMSSettingsPage *ui;
+    QList<ICLineEditWrapper*> wrappers_;
 };
 
 #endif // ICMSSETTINGSPAGE_H

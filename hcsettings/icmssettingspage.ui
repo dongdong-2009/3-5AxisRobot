@@ -65,7 +65,7 @@
     <string>MS Distance</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="ICLineEditWithVirtualNumericKeypad" name="msDistance">
    <property name="geometry">
     <rect>
      <x>160</x>
@@ -89,6 +89,13 @@
    </property>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ICLineEditWithVirtualNumericKeypad</class>
+   <extends>QLineEdit</extends>
+   <header>iclineeditwithvirtualnumerickeypad.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

@@ -306,7 +306,8 @@ void ICHCProductSettingFrame::on_saveButton_clicked()
     for(int i = 0; i != mboxs_.size(); ++i)
     {
         cb = qobject_cast<QComboBox*>(mboxs_.at(i));
-        ret.append(cb->currentText());
+        if(cb->currentIndex() > 0)
+            ret.append(cb->currentText());
     }
 //    ret.append(ui->mBox_1->currentText());
 //    ret.append(ui->mBox_2->currentText());

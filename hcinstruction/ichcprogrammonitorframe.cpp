@@ -355,6 +355,7 @@ void ICHCProgramMonitorFrame::StatusRefreshed()
             {
                 --runningMold_;
 //                ui->runningMold->setText(tr("Finished"));
+                QMessageBox::information(this, tr("info"),tr("All Done!"));
                 return;
             }
             for(int i = 0; i != pls_.size(); ++i)
