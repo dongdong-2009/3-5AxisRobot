@@ -170,15 +170,23 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
         ui->noUseCheckBox->setChecked(true);
     if(ICParametersSave::Instance()->IsAdjustFunctionOn())
     {
+        ui->adjUse->blockSignals(true);
         ui->adjUse->setChecked(true);
+        ui->adjUse->blockSignals(false);
     }
     else
     {
+        ui->adjNoUse->blockSignals(true);
         ui->adjNoUse->setChecked(true);
+        ui->adjNoUse->blockSignals(false);
     }
 
     ui->servoFlex->setCurrentIndex(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Resv1).toInt());
-//    AXIS_MODIFY_DATA data;
+    int v = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt();
+    v &= 0xFFFF;
+    v >>= 15;
+    ui->fixtureComboBox->setCurrentIndex(v);
+    //    AXIS_MODIFY_DATA data;
 //    data.port = (host->SystemParameter(ICVirtualHost::SYS_Config_Resv1).toInt() << 16) |
 //            (host->SystemParameter(ICVirtualHost::SYS_Config_Resv2).toInt());
 //    ui->portX1->setCurrentIndex(data.split.a1 == 0 ? 0 : data.split.a1 - 7);
@@ -344,6 +352,8 @@ void ICStructDefineFrame::on_saveButton_clicked()
     dataBuffer[2] = outDefine_;
 //    dataBuffer[3] = ICVirtualHost::GlobalVirtualHost()->FixtureDefineSwitch(ui->fixtureSelectBox->currentIndex());
     dataBuffer[3] = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toUInt();
+//    int v = host->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt();
+
 //    dataBuffer[4]
 //    AXIS_MODIFY_DATA data;
 //    data.split.a1 = ui->portX1->currentIndex() == 0 ? 0 : ui->portX1->currentIndex() + 7;
@@ -365,7 +375,7 @@ void ICStructDefineFrame::on_saveButton_clicked()
     command.SetSlave(process->SlaveID());
     command.SetDataBuffer(dataBuffer);
     command.SetAxis(8);
-#ifndef Q_WS_X11
+#ifdef Q_WS_QWS
     if(process->ExecuteCommand(command).toBool())
 #endif
     {
@@ -481,4 +491,13 @@ void ICStructDefineFrame::InitEscapeBox()
 void ICStructDefineFrame::on_adjUse_toggled(bool checked)
 {
     ICParametersSave::Instance()->SetAdjustFunction(checked);
+}
+
+void ICStructDefineFrame::on_fixtureComboBox_currentIndexChanged(int index)
+{
+    ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
+    int v = host->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt();
+    v &= 0x7FFF;
+    v |= (index << 15);
+    host->SetSystemParameter(ICVirtualHost::SYS_Config_Fixture, v);
 }

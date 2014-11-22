@@ -81,7 +81,9 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
             this,
             SLOT(OnMoldNumberParamChanged()));
     ui->countUnitBox->setCurrentIndex(ICMold::CurrentMold()->MoldParam(ICMold::CountUnit));
+    ui->productSave->blockSignals(true);
     ui->productSave->setChecked(ICParametersSave::Instance()->IsProductSave());
+    ui->productSave->blockSignals(false);
 }
 
 ICHCProductSettingFrame::~ICHCProductSettingFrame()
@@ -177,6 +179,7 @@ void ICHCProductSettingFrame::retranslateUi_()
     ui->label_18->setText(tr("Count Ways"));
     ui->label_10->setText(tr("Get Fail"));
     ui->label_19->setText(tr("Recycle Time"));
+    ui->productSave->setText(tr("Product Save"));
 }
 
 void ICHCProductSettingFrame::OnMoldNumberParamChanged()

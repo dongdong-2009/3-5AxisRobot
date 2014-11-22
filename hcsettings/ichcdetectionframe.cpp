@@ -200,7 +200,7 @@ void ICHCDetectionFrame::RetranslateUi_()
     ui->detectPositionBox->setItemText(0, tr("Vertical"));
     ui->detectPositionBox->setItemText(1, tr("Horizontal"));
     ui->detectPositionBox->setItemText(2, tr("Don't Limit"));
-    ui->label_15->setText(tr("Orgin Position"));
+    ui->label_15->setText(tr("U/D Position"));
     ui->originPositionBox->setItemText(0, tr("Vertical"));
     ui->originPositionBox->setItemText(1, tr("Horizontal"));
     ui->originPositionBox->setItemText(2, tr("No Limit"));

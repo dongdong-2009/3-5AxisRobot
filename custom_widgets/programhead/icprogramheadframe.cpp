@@ -82,7 +82,7 @@ void ICProgramHeadFrame::UpdateDateTime()
 
 void ICProgramHeadFrame::UpdateAutoTime()
 {
-    ui->autoTimeLabel->setText(QString(tr("%1 h")).arg(autoMin_ / qreal(60), 0, 'g', 1));
+    ui->autoTimeLabel->setText(QString(tr("%1 h")).arg(autoMin_ / qreal(60), 0, 'f', 1));
     ++autoMin_;
 }
 

@@ -37,15 +37,15 @@ int main(int argc, char *argv[])
     system("BackLight initrobot");
 //    qApp->setStyleSheet("./stylesheet/global.qss");
     ICParametersSave* paraSave = ICParametersSave::Instance();
-    paraSave->SetCountry(paraSave->Country());
     QPixmap splashPixmap("resource/startup_page.png");
     ICSplashScreen *splash= new ICSplashScreen(splashPixmap);
     splash->SetRange(0, 20);
     splash->show();
-    paraSave->SetBrightness(ICParametersSave::Instance()->Brightness());
+    paraSave->SetBrightness(ICParametersSave::Instance()->Brightness(), false);
 
     a.setGlobalStrut(QSize(32, 32));
-    paraSave->LoadInitLocale();
+    paraSave->SetCountry(paraSave->Country(), false);
+//    paraSave->LoadInitLocale();
     ICVirtualHost host;
     MainFrame w(splash);
     w.show();

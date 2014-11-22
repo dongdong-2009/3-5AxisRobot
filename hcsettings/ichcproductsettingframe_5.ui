@@ -264,7 +264,7 @@ QRadioButton::indicator:unchecked:disabled
     </widget>
    </item>
    <item row="2" column="3">
-    <widget class="QLabel" name="label_11">
+    <widget class="QLabel" name="label_19">
      <property name="text">
       <string>Recycle Time</string>
      </property>

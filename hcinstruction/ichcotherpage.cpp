@@ -34,6 +34,8 @@ QList<ICMoldItem> ICHCOtherPage::CreateCommandImpl() const
     {
         item.SetIFVal(1);
     }
+    else
+        return ret;
     ret.append(item);
     return ret;
 }

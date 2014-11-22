@@ -89,6 +89,9 @@ void ICUpdateSystemPage::changeEvent(QEvent *e)
     switch (e->type()) {
     case QEvent::LanguageChange:
         ui->retranslateUi(this);
+        model_->setHeaderData(0, Qt::Horizontal, tr("Name"));
+        model_->setHeaderData(1, Qt::Horizontal, tr("Create Time"));
+        ui->packetTable->setModel(model_);
         break;
     default:
         break;
