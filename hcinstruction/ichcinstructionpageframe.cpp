@@ -510,6 +510,7 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
                 if(programList_[gIndex].MoldItemAt(0)->Action() == ICMold::ACTEND &&
                         gIndex != 0)
                 {
+                    topItem.SetStepNum(gIndex - 1);
                     programList_[gIndex - 1].AddToMoldUIItem(topItem);
                 }
                 else
