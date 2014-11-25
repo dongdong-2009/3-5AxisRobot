@@ -106,6 +106,8 @@ void ICHCProductSettingFrame::hideEvent(QHideEvent *e)
         dataBuffer[1] = host->SystemParameter(ICVirtualHost::SYS_Config_Arm).toUInt();
         dataBuffer[2] = host->SystemParameter(ICVirtualHost::SYS_Config_Out).toUInt();
         dataBuffer[3] = host->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toUInt();
+        dataBuffer[4] = host->SystemParameter(ICVirtualHost::SYS_Config_Resv1).toUInt();
+        dataBuffer[5] = host->SystemParameter(ICVirtualHost::SYS_Config_Resv1).toUInt();
     //    dataBuffer[3] = ICVirtualHost::GlobalVirtualHost()->FixtureDefine();
         for(int i = 0; i != 6; ++i)
         {

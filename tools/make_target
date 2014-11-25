@@ -1,0 +1,54 @@
+#! /bin/sh
+
+
+if [ $# -ge 1 ]
+	workDir=$1
+then
+	workDir=`pwd`
+fi
+
+reinstallDir=${workDir}/bin/Reinstall/Reinstall
+
+rm -r ${workDir}/bin/Reinstall
+mkdir ${workDir}/bin/Reinstall
+cp -r ${workDir}/tools/Reinstall/ ${workDir}/bin/Reinstall
+cp ${workDir}/bin/Multi-axisManipulatorSystem ${reinstallDir} -f
+cp ${workDir}/Multi-axisManipulatorSystem_ch.qm ${reinstallDir} -f
+cp ${workDir}/Multi-axisManipulatorSystem_en.qm ${reinstallDir} -f
+
+inch=`cat ${workDir}/Multi-axisManipulatorSystem.pro | grep "SK_SIZE =" | awk '{print $3}'`
+swVersion=`cat ${workDir}/config.h | grep "SW_VERSION" | awk '{print $3}' | sed 's/\"//g' | tr -d ['\r']`
+cp ${reinstallDir}/${inch}-inch-qmap/3a8.qmap ${reinstallDir}
+echo "
+#! /bin/sh
+cd Reinstall
+cd ${inch}inch-drivers
+chmod +x ./UpdateSystem.sh
+./UpdateSystem.sh
+cd ..
+./UpdateGUI update_cmd -qws
+
+reboot
+" > ${workDir}/bin/Reinstall/SelectSystemBootWay
+
+chmod +x ${workDir}/bin/Reinstall/SelectSystemBootWay
+
+echo "Create reinstall done!"
+
+####### 创建更新包
+
+echo ${swVersion}
+updateDir=${workDir}/bin/Update/HCRobotPanel${swVersion}
+rm -r ${workDir}/bin/Update
+mkdir ${workDir}/bin/Update
+mkdir ${workDir}/bin/Update/HCRobotPanel${swVersion}
+cp -r ${workDir}/tools/Update/* ${workDir}/bin/Update/HCRobotPanel${swVersion}
+cp ${workDir}/bin/Multi-axisManipulatorSystem ${updateDir} -f
+cp ${workDir}/Multi-axisManipulatorSystem_ch.qm ${updateDir} -f
+cp ${workDir}/Multi-axisManipulatorSystem_en.qm ${updateDir} -f
+
+echo ${updateDir}.tar ${updateDir}
+tar -cf ${updateDir}.tar ${updateDir}
+HCbcrypt.sh ${updateDir}.tar
+
+echo "Create update done!"
