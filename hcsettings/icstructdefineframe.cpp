@@ -34,7 +34,9 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
     ui(new Ui::ICStructDefineFrame)
 {
     ui->setupUi(this);
+//#ifndef HC_SK_5
     ui->protDefineContainer->hide();
+//#endif
     buttongroup_ = new QButtonGroup ;
 
     ui->buttonGroupA->setId(ui->normalABox,0);
@@ -176,6 +178,7 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
         ui->adjNoUse->setChecked(true);
     }
 
+//#ifndef HC_SK_5
     ui->servoFlex->setCurrentIndex(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Resv1).toInt());
 
     int v = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt();
@@ -183,6 +186,7 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
     v >>= 15;
 //    ui->fixtureComboBox->setCurrentIndex((ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt() >> 15) & 1);
     ui->fixtureComboBox->setCurrentIndex(v);
+//#endif
 
 }
 

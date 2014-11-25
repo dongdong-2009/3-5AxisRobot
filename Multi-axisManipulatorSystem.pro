@@ -71,7 +71,7 @@ FORMS    +=  \
     simulateknob.ui \
 
 
-SK_SIZE = 8
+SK_SIZE = 5
 equals(SK_SIZE, 8){
 message("Define 8")
 DEFINES += HC_SK_8
