@@ -165,6 +165,10 @@ ICMachineConfigPage::ICMachineConfigPage(QWidget *parent) :
                                     ICLineEditWrapper::OneFraction);
     wrappers_.append(wrapper);
 
+    ui->pullPushDistance->hide();
+    ui->label_4->hide();
+    ui->label_18->hide();
+
 //    ui->servoFlex->blockSignals(true);
 //    ui->servoFlex->setCurrentIndex(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Language).toInt());
 //    ui->servoFlex->blockSignals(false);

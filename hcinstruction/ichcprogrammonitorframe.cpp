@@ -343,7 +343,7 @@ void ICHCProgramMonitorFrame::StatusRefreshed()
     }
     total += product;
     ui->total->setText(QString::number(total));
-    if(product == ICMold::CurrentMold()->MoldParam(ICMold::Product))
+    if(product >= ICMold::CurrentMold()->MoldParam(ICMold::Product))
     {
         pls_.at(runningMold_)->setText(QString(tr("%1:Finished")).arg(runningMold_ + 1));
         pls_.at(runningMold_)->setStyleSheet("background:blue");
@@ -355,7 +355,7 @@ void ICHCProgramMonitorFrame::StatusRefreshed()
             {
                 --runningMold_;
 //                ui->runningMold->setText(tr("Finished"));
-                QMessageBox::information(this, tr("info"),tr("All Done!"));
+//                QMessageBox::information(this, tr("info"),tr("All Done!"));
                 return;
             }
             for(int i = 0; i != pls_.size(); ++i)

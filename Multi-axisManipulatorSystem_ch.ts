@@ -3312,19 +3312,19 @@ Reason</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="76"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="908"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="909"/>
         <source>%1:Wating</source>
         <translation>%1:等待中</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="78"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="368"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="911"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="369"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="912"/>
         <source>%1:Running</source>
         <translation>%1:运行中</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="565"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="566"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
@@ -3344,7 +3344,7 @@ Reason</source>
         <translation>%1:完成</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="362"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="363"/>
         <source>%1:Waiting</source>
         <translation>%1:等待中</translation>
     </message>
@@ -3353,22 +3353,22 @@ Reason</source>
         <translation type="obsolete">完</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="566"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="567"/>
         <source>Can not edit standby position program</source>
         <translation>不能修改待机点位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="878"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="879"/>
         <source>critical</source>
         <translation>错误</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="878"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="879"/>
         <source>Read mold or mold para fail! Please change other mold!</source>
         <translation>模组数据已损坏，请更换其它模组!</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="882"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="883"/>
         <source>Loading...</source>
         <translation>载入中...</translation>
     </message>
@@ -3377,7 +3377,7 @@ Reason</source>
         <translation type="obsolete">需要忽略这个警告吗?</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="820"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="821"/>
         <source>Follow</source>
         <translation>跟随</translation>
     </message>
@@ -3386,8 +3386,8 @@ Reason</source>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="427"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="113"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="253"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="835"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="845"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="836"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="846"/>
         <source>Speed Disable</source>
         <translation>调速禁止</translation>
     </message>
@@ -3505,7 +3505,7 @@ Reason</source>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="406"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="331"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="826"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="827"/>
         <source>No Follow</source>
         <translation>不跟随</translation>
     </message>
@@ -3516,7 +3516,7 @@ Reason</source>
         <translation>半自动</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="835"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="836"/>
         <source>Speed Enable</source>
         <translation>调速允许</translation>
     </message>
@@ -6343,7 +6343,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="59"/>
         <source>X026</source>
-        <translation>X026</translation>
+        <translation>产品计数</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="68"/>
@@ -6419,7 +6419,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="76"/>
         <source>X045</source>
-        <translation>产品计数</translation>
+        <translation>X045</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="77"/>
@@ -8243,39 +8243,39 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="2062"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="327"/>
         <source>Servo Flex</source>
-        <translation type="unfinished">伺服刚性</translation>
+        <translation>伺服刚性</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2092"/>
         <source>Canl ID</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2102"/>
         <source>Canl Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Can 类型</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2115"/>
         <source>Master</source>
-        <translation type="unfinished"></translation>
+        <translation>主机</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2120"/>
         <source>Slave</source>
-        <translation type="unfinished"></translation>
+        <translation>从机</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2019"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="262"/>
         <source>0-soft</source>
-        <translation type="unfinished">0-软</translation>
+        <translation>0-软</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2054"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="269"/>
         <source>7-hard</source>
-        <translation type="unfinished">7-硬</translation>
+        <translation>7-硬</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="889"/>
@@ -8407,7 +8407,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.cpp" line="329"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="330"/>
         <source>Reserve</source>
-        <translation type="unfinished">预留</translation>
+        <translation>预留</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.cpp" line="380"/>

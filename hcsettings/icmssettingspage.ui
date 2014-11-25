@@ -57,7 +57,7 @@
     <rect>
      <x>40</x>
      <y>90</y>
-     <width>111</width>
+     <width>141</width>
      <height>16</height>
     </rect>
    </property>
@@ -68,7 +68,7 @@
   <widget class="ICLineEditWithVirtualNumericKeypad" name="msDistance">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>190</x>
      <y>87</y>
      <width>113</width>
      <height>23</height>
