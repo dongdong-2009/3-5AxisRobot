@@ -139,4 +139,5 @@ system("python rename_ui.py temp_$${SK_SIZE}_d")
 }else{
 system("python rename_ui.py temp_$${SK_SIZE}")
 QMAKE_POST_LINK += "&& arm-linux-strip $$DESTDIR/$$TARGET && HCbcrypt.sh -r $$DESTDIR/$$TARGET"
+QMAKE_POST_LINK += " && tools/make_target"
 }

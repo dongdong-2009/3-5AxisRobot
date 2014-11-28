@@ -137,6 +137,7 @@ void ICParametersSave::SetCountry(QLocale::Country country, bool isSync)
 bool ICParametersSave::VerifyPassword(OperationLevel level, const QString &password)
 {
     QString parameter;
+    QString pw;
     if(level == MachineOperator)
     {
         return true;
@@ -144,12 +145,14 @@ bool ICParametersSave::VerifyPassword(OperationLevel level, const QString &passw
     else if(level == MachineAdmin)
     {
         parameter = "MachineAdmin";
+        pw = "123";
     }
     else if(level == AdvanceAdmin)
     {
         parameter = "AdvanceAdmin";
+        pw = "7825";
     }
-    QString registerPwd = GetParameter("AdminInformation", parameter, "123").toString();
+    QString registerPwd = GetParameter("AdminInformation", parameter, pw).toString();
     return (registerPwd == password || password == "szhcrobot" || password == SuperPassward());
 }
 

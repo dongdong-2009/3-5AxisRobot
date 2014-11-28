@@ -104,6 +104,14 @@ void ICIOPage::BindingIOPoints(const QList<ICIOPoint> &points)
             {
                 backupDescrMap_.insert(11, points.at(i));
             }
+            else if(points.at(i).PointNum() == tr("X025"))
+            {
+                backupDescrMap_.insert(12, points.at(i));
+            }
+            else if(points.at(i).PointNum() == tr("X024"))
+            {
+                backupDescrMap_.insert(13, points.at(i));
+            }
 
             descrLabels_.at(i)->setText(points.at(i).PointDescription());
         }
