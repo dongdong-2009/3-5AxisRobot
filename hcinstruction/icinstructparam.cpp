@@ -322,6 +322,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
                 action == ICMold::ACT_AUX5 ||
                 action == ICMold::ACT_AUX6)
         {
+            commandStr.chop(2);
             if(moldItem.IFVal() == 0)
             {
                 commandStr += QObject::tr("Off") + ":";
