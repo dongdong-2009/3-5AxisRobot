@@ -19,7 +19,7 @@
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1385"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1585"/>
         <source>80</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Reserve {80?}</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="60"/>
@@ -39,7 +39,7 @@
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1278"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1475"/>
         <source>0.00</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Reserve {0.00?}</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="1574"/>
@@ -393,7 +393,7 @@
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="377"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="212"/>
         <source>Y035</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y035</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="205"/>
@@ -411,7 +411,7 @@
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="37"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="55"/>
         <source>Y022</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y022</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="505"/>
@@ -447,20 +447,20 @@
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="317"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="152"/>
         <source>Y031</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y031</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="361"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="196"/>
         <source>Y032</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y032</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="586"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="328"/>
         <source>Y017</source>
         <oldsource>Y033</oldsource>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y017</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="630"/>
@@ -1988,7 +1988,7 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="457"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="687"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="692"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1998,17 +1998,17 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="673"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="678"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="674"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="679"/>
         <source>Stand program can not be delete action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="688"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="693"/>
         <source>Can not delete standby position program</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2410,7 +2410,7 @@ Infomation</source>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="125"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="207"/>
         <source>0.00</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Reserve {0.00?}</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="103"/>
@@ -2423,7 +2423,7 @@ Infomation</source>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="157"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="249"/>
         <source>0</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Reserve {0?}</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="395"/>
@@ -2505,32 +2505,32 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="183"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="505"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="510"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="313"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="314"/>
         <source>Single run ready</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="317"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="318"/>
         <source>Single cycle ready</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="506"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="511"/>
         <source>Can not edit standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="775"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="780"/>
         <source>Speed Enable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="760"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="765"/>
         <source>Follow</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2538,9 +2538,9 @@ Infomation</source>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="427"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="427"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="103"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="235"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="775"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="785"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="236"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="780"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="790"/>
         <source>Speed Disable</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2554,7 +2554,7 @@ Infomation</source>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="331"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="331"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="766"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="771"/>
         <source>No Follow</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3442,218 +3442,251 @@ Infomation</source>
 <context>
     <name>ICIOPage</name>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="63"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="130"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="67"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="146"/>
         <source>Y022</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y022</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="59"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="125"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="63"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="141"/>
         <source>Y017</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="71"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="140"/>
-        <source>Y032</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y017</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="75"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="145"/>
-        <source>Y035</source>
-        <translation type="unfinished"></translation>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="156"/>
+        <source>Y032</source>
+        <translation type="unfinished">Y032</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="79"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="150"/>
-        <source>Y036</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="67"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="135"/>
-        <source>Y031</source>
-        <translation type="unfinished"></translation>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="161"/>
+        <source>Y035</source>
+        <translation type="unfinished">Y035</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="83"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="188"/>
-        <source>Y023</source>
-        <translation type="unfinished"></translation>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="166"/>
+        <source>Y036</source>
+        <translation type="unfinished">Y036</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="71"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="151"/>
+        <source>Y031</source>
+        <translation type="unfinished">Y031</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="87"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="193"/>
-        <source>Y026</source>
-        <translation type="unfinished"></translation>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="204"/>
+        <source>Y023</source>
+        <translation type="unfinished">Y023</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="91"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="198"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="209"/>
+        <source>Y026</source>
+        <translation type="unfinished">Y026</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="95"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="214"/>
         <source>X017</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="95"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="203"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="99"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="219"/>
         <source>X020</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="99"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="208"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="103"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="224"/>
         <source>X022</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="103"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="213"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="107"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="229"/>
         <source>X035</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="155"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="115"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="239"/>
+        <source>X025</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="111"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="234"/>
+        <source>X024</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="119"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="244"/>
+        <source>X041</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="171"/>
         <source>Y010</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y010</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="159"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="175"/>
         <source>Y011</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y011</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="163"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="179"/>
         <source>X010</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="167"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="183"/>
         <source>X011</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="172"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="188"/>
         <source>X023</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="180"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="196"/>
         <source>X030</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="184"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="200"/>
         <source>X033</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="297"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="328"/>
         <source>Sucker</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="297"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="328"/>
         <source>Valve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="299"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="330"/>
         <source>Reserve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="323"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="333"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="378"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="388"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="354"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="364"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="409"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="419"/>
         <source>Horizon-1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="329"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="348"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="360"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="379"/>
         <source>C Origin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="342"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="352"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="360"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="370"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="373"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="383"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="391"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="401"/>
         <source>Vertical-1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="366"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="384"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="397"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="415"/>
         <source>C Origin Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="398"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="429"/>
         <source>Adjust Sub Forward</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="409"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="440"/>
         <source>A Origin/Horizon-2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="420"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="451"/>
         <source>Adjust Sub Backward</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="424"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="455"/>
         <source>Adjust Sub Up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="431"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="462"/>
         <source>X2 In Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="435"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="466"/>
         <source>Y2 In Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="442"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="473"/>
         <source>Main Arm down valve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="444"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="475"/>
         <source>Main Arm Down Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="446"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="477"/>
         <source>Main Arm Up Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="451"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="482"/>
         <source>Aid Pneumatic</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="462"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="493"/>
         <source>Main Arm Foward valve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="464"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="495"/>
         <source>Main Arm Forward Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="466"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="497"/>
         <source>Main Arm Backward Limit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="512"/>
+        <source>Go out Limit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="514"/>
+        <source>Come in Limit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="516"/>
+        <source>Release Mid</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4801,47 +4834,47 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="121"/>
         <source>Y040</source>
-        <translation type="unfinished"></translation>
+        <translation>Come in Limit</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="122"/>
         <source>Y041</source>
-        <translation type="unfinished"></translation>
+        <translation>Go Out Limit</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="123"/>
         <source>Y042</source>
-        <translation type="unfinished"></translation>
+        <translation>Z slow down</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="124"/>
         <source>Y043</source>
-        <translation type="unfinished"></translation>
+        <translation>Motor Hold</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="125"/>
         <source>Y044</source>
-        <translation type="unfinished"></translation>
+        <translation>Y044</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="126"/>
         <source>Y045</source>
-        <translation type="unfinished"></translation>
+        <translation>Y045</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="127"/>
         <source>Y046</source>
-        <translation type="unfinished"></translation>
+        <translation>Y046</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="128"/>
         <source>Y047</source>
-        <translation type="unfinished"></translation>
+        <translation>Y047</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="185"/>
         <source>Recycle</source>
-        <translation type="unfinished"></translation>
+        <translation>Recycle</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="98"/>
@@ -5289,7 +5322,7 @@ Please enter an digit between </source>
     <message>
         <location filename="hcinstruction/icperipheryparametereditor_5.ui" line="41"/>
         <source>0.0</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Reserve {0.0?}</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipheryparametereditor.ui" line="39"/>
@@ -5300,7 +5333,7 @@ Please enter an digit between </source>
     <message>
         <location filename="hcinstruction/icperipheryparametereditor_5.ui" line="73"/>
         <source>0</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Reserve {0?}</translation>
     </message>
 </context>
 <context>
@@ -5553,7 +5586,7 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage.ui" line="845"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1421"/>
         <source>1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y017</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="284"/>
@@ -5601,7 +5634,7 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="980"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1064"/>
         <source>0.0</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Reserve {0.0?}</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="513"/>
@@ -6264,7 +6297,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="744"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="256"/>
         <source>Y1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="281"/>
@@ -6282,7 +6315,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="403"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="264"/>
         <source>Y2</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y2</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="360"/>
@@ -7045,7 +7078,7 @@ Please enter an digit between </source>
         <location filename="mainframe.ui" line="282"/>
         <location filename="mainframe_5.ui" line="306"/>
         <source>Y1:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1:</translation>
     </message>
     <message>
         <location filename="mainframe.ui" line="327"/>
@@ -7057,7 +7090,7 @@ Please enter an digit between </source>
         <location filename="mainframe.ui" line="372"/>
         <location filename="mainframe_5.ui" line="396"/>
         <source>Y2:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y2:</translation>
     </message>
     <message>
         <location filename="mainframe.ui" line="489"/>
@@ -7963,7 +7996,7 @@ Admin</source>
         <location filename="hcinstruction/icinstructparam.cpp" line="393"/>
         <source>Y1</source>
         <oldsource>Y</oldsource>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="394"/>
@@ -7978,7 +8011,7 @@ Admin</source>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="396"/>
         <source>Y2</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="397"/>
@@ -8084,126 +8117,29 @@ Admin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="73"/>
-        <source>V</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="107"/>
-        <source>H</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="141"/>
-        <source>O</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="175"/>
-        <source>B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="209"/>
-        <source>E</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="243"/>
-        <source>P</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="277"/>
-        <source>R</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="311"/>
-        <source>W</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="345"/>
-        <source>I</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="379"/>
         <source>7</source>
         <oldsource>/</oldsource>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Reserve</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="413"/>
-        <source>A</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="447"/>
-        <source>F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="481"/>
-        <source>J</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="515"/>
-        <source>Y</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="549"/>
         <source>2</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Y022</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="583"/>
         <source>0</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Reserve {0?}</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="617"/>
-        <source>N</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="651"/>
         <source>5</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Y035</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="685"/>
-        <source>C</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="719"/>
-        <source>L</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="753"/>
-        <source>S</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="787"/>
         <source>8</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Reserve</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="821"/>
         <source>6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="889"/>
-        <source>Z</source>
-        <oldsource>;</oldsource>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Y036</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1405"/>
@@ -8216,66 +8152,21 @@ Admin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="855"/>
         <source>3</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Y031</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="923"/>
-        <source>M</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="957"/>
-        <source>T</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="991"/>
         <source>1</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Y017</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1025"/>
-        <source>Q</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1059"/>
         <source>9</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Reserve {9?}</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1161"/>
         <source>4</source>
         <oldsource>.</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1195"/>
-        <source>U</source>
-        <oldsource>,</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1093"/>
-        <source>G</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1127"/>
-        <source>K</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1229"/>
-        <source>X</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1263"/>
-        <source>D</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Y032</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1335"/>
@@ -8312,9 +8203,8 @@ Admin</source>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog.ui" line="45"/>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="45"/>
-        <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="390"/>
         <source>0</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Reserve {0?}</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog.ui" line="458"/>
@@ -8329,49 +8219,40 @@ Admin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="83"/>
         <source>7</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Reserve</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="114"/>
         <source>8</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Reserve</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="145"/>
         <source>9</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Reserve {9?}</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="176"/>
         <source>4</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Y032</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="207"/>
         <source>5</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Y035</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="238"/>
         <source>6</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Y036</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="269"/>
         <source>1</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Y017</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="300"/>
         <source>2</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Y022</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="331"/>
         <source>3</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Y031</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="362"/>

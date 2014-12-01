@@ -31,7 +31,7 @@
     </widget>
    </item>
    <item>
-    <widget class="QListWidget" name="programList">
+    <widget class="ICListWidget" name="programList">
      <property name="focusPolicy">
       <enum>Qt::NoFocus</enum>
      </property>
@@ -120,6 +120,13 @@
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ICListWidget</class>
+   <extends>QListWidget</extends>
+   <header>iclistwidget.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

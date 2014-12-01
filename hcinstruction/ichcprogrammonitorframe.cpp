@@ -182,6 +182,7 @@ void ICHCProgramMonitorFrame::showEvent(QShowEvent *e)
 //                             checkResult);
         checkMessageBox->setWindowTitle(tr("Warning"));
         checkMessageBox->setText(checkResult);
+        checkMessageBox->setWindowFlags(checkMessageBox->windowFlags() | Qt::WindowStaysOnTopHint);
         checkMessageBox->show();
     }
     //    if(needWarn)
@@ -489,6 +490,10 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
     }
     const int selectedRow = ui->moldContentListWidget->currentRow();
     if(selectedRow < 0)
+    {
+        return;
+    }
+    if(ICVirtualHost::GlobalVirtualHost()->CurrentStatus() != ICVirtualHost::Auto)
     {
         return;
     }

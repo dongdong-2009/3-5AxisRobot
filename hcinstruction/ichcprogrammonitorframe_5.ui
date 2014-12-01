@@ -31,7 +31,7 @@
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QListWidget" name="moldContentListWidget">
+      <widget class="ICListWidget" name="moldContentListWidget">
        <property name="minimumSize">
         <size>
          <width>300</width>
@@ -477,6 +477,13 @@ color: rgb(255, 255, 0);</string>
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ICListWidget</class>
+   <extends>QListWidget</extends>
+   <header>iclistwidget.h</header>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="../resource.qrc"/>
   <include location="../resource.qrc"/>

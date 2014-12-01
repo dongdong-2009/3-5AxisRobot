@@ -513,6 +513,11 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
                     topItem.SetStepNum(gIndex - 1);
                     programList_[gIndex - 1].AddToMoldUIItem(topItem);
                 }
+                else if(programList_[gIndex].MoldItemAt(0)->Action() == ICMold::ACTEND &&
+                        gIndex == 0)
+                {
+                    return;
+                }
                 else
                     programList_[gIndex].PrependTopMoldUIItem(topItem);
             }
@@ -704,11 +709,14 @@ void ICHCInstructionPageFrame::on_deleteToolButton_clicked()
             if(programList_[gIndex].RunableTopItemCount() == 0)
             {
                 programList_[gIndex].SetStepNum(gIndex - 1);
-                for(int i = 0 ; i != programList_[gIndex].TopItemCount(); ++i)
+                if(gIndex > 0 )
                 {
-                    ICTopMoldUIItem topItem;
-                    topItem.SetBaseItem(*(programList_[gIndex].MoldItemAt(i)));
-                    programList_[gIndex - 1].AddToMoldUIItem(topItem);
+                    for(int i = 0 ; i != programList_[gIndex].TopItemCount(); ++i)
+                    {
+                        ICTopMoldUIItem topItem;
+                        topItem.SetBaseItem(*(programList_[gIndex].MoldItemAt(i)));
+                        programList_[gIndex - 1].AddToMoldUIItem(topItem);
+                    }
                 }
                 programList_.removeAt(gIndex);
                 for(int i = gIndex; i != programList_.size(); ++i)

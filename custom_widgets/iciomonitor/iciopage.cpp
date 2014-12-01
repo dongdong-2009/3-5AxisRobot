@@ -37,6 +37,10 @@ ICIOPage::ICIOPage(QWidget *parent) :
     servoInLabels_.append(NULL);
     servoInLabels_.append(NULL);
     servoInLabels_.append(NULL);
+
+    servoInLabels_.append(NULL);
+    servoInLabels_.append(NULL);
+    servoInLabels_.append(NULL);
 }
 ICIOPage::~ICIOPage()
 {
@@ -104,13 +108,17 @@ void ICIOPage::BindingIOPoints(const QList<ICIOPoint> &points)
             {
                 backupDescrMap_.insert(11, points.at(i));
             }
-            else if(points.at(i).PointNum() == tr("X025"))
+            else if(points.at(i).PointNum() == tr("X024"))
             {
                 backupDescrMap_.insert(12, points.at(i));
             }
-            else if(points.at(i).PointNum() == tr("X024"))
+            else if(points.at(i).PointNum() == tr("X025"))
             {
                 backupDescrMap_.insert(13, points.at(i));
+            }
+            else if(points.at(i).PointNum() == tr("X041"))
+            {
+                backupDescrMap_.insert(14, points.at(i));
             }
 
             descrLabels_.at(i)->setText(points.at(i).PointDescription());
@@ -222,6 +230,21 @@ void ICIOPage::BindingIOPoints(const QList<ICIOPoint> &points)
             {
                 backupDescrMap_.insert(11, points.at(i));
                 servoInLabels_[3] =descr;
+            }
+            else if(point.PointNum() == tr("X024"))
+            {
+                backupDescrMap_.insert(12, points.at(i));
+                servoInLabels_[4] =descr;
+            }
+            else if(point.PointNum() == tr("X025"))
+            {
+                backupDescrMap_.insert(13, points.at(i));
+                servoInLabels_[5] =descr;
+            }
+            else if(point.PointNum() == tr("X041"))
+            {
+                backupDescrMap_.insert(14, points.at(i));
+                servoInLabels_[6] =descr;
             }
             nums->setFixedWidth(50);
             descr->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
@@ -482,6 +505,26 @@ void ICIOPage::showEvent(QShowEvent *e)
             if(servoInLabels_[1] != NULL)
                 servoInLabels_[1]->setText(backupDescrMap_.value(9).PointDescription());
         }
+
+        if(host->AxisDefine(ICVirtualHost::ICAxis_AxisZ) == ICVirtualHost::ICAxisDefine_Pneumatic)
+        {
+            if(servoInLabels_[4] != NULL)
+                servoInLabels_[4]->setText(tr("Go out Limit"));
+            if(servoInLabels_[5] != NULL)
+                servoInLabels_[5]->setText(tr("Come in Limit"));
+            if(servoInLabels_[6] != NULL)
+                servoInLabels_[6]->setText(tr("Release Mid"));
+        }
+        else
+        {
+            if(servoInLabels_[4] != NULL)
+                servoInLabels_[4]->setText(backupDescrMap_.value(12).PointDescription());
+            if(servoInLabels_[5] != NULL)
+                servoInLabels_[5]->setText(backupDescrMap_.value(13).PointDescription());
+            if(servoInLabels_[6] != NULL)
+                servoInLabels_[6]->setText(backupDescrMap_.value(14).PointDescription());
+        }
+
 
     QWidget::showEvent(e);
     connect(ICVirtualHost::GlobalVirtualHost(),
