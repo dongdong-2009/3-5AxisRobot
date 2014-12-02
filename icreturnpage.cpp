@@ -71,7 +71,7 @@ void ICReturnPage::keyPressEvent(QKeyEvent *e)
 void ICReturnPage::StatusRefresh()
 {
     int isReturn = ICVirtualHost::GlobalVirtualHost()->HostStatus(ICVirtualHost::DbgX0).toInt();
-    if(isReturn > 0)
+    if(isReturn > 0 && ICVirtualHost::GlobalVirtualHost()->CurrentStatus() == ICVirtualHost::Return)
     {
         ui->label->setText(tr("Returnning"));
         isRan_ = true;
