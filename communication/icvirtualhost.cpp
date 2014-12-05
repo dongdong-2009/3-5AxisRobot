@@ -45,7 +45,13 @@ ICVirtualHost::ICVirtualHost(QObject *parent) :
     oldMoldNum_(8),
     productCount_(0),
     isParamChanged_(false),
-    isFixtureCheck_(true)
+    isFixtureCheck_(true),
+    input0Bits_(0),
+    input1Bits_(0),
+    output0Bits_(0),
+    output1Bits_(0),
+    euInputBits_(0),
+    euOutputBits_(0)
 {
     memset(oldSubStep, -1, 8);
     if(GlobalVirtualHost() == NULL)
@@ -1103,4 +1109,8 @@ int ICVirtualHost::GetActualPos(ICAxis axis, uint axisLastPos) const
 }
 
 
-ICVirtualHost::~ICVirtualHost(){}
+ICVirtualHost::~ICVirtualHost()
+{
+    timer_->stop();
+    delete timer_;
+}

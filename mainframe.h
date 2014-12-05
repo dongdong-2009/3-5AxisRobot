@@ -124,7 +124,6 @@ private:
     int resetTime;
 
     int ledFD_;
-    int keyFD_;
 
     int ledFlags_;
     int newLedFlags_;

@@ -61,6 +61,7 @@ ICHCSettingsFrame::ICHCSettingsFrame(QWidget *parent) :
 ICHCSettingsFrame::~ICHCSettingsFrame()
 {
     delete ui;
+    delete buttonGroup_;
 }
 
 void ICHCSettingsFrame::changeEvent(QEvent *e)

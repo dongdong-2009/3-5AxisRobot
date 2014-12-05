@@ -46,6 +46,7 @@ ICMachineFigure::ICMachineFigure(QWidget *parent) :
 
 ICMachineFigure::~ICMachineFigure()
 {
+    qDeleteAll(wrappers_);
     delete ui;
 }
 

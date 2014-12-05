@@ -244,10 +244,8 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     emit LoadMessage("Signals is ready");
 #ifndef Q_WS_WIN32
     ledFD_ = open("/dev/szhc_leds", O_WRONLY);
-    keyFD_ = open("/dev/input/event1", O_RDWR);
 #else
     ledFD_ = 0;
-    keyFD_ = 0;
 #endif
 
     //    QThreadPool::globalInstance()->start(new ICScreenSaverMonitor(this));
@@ -356,13 +354,15 @@ MainFrame::~MainFrame()
     delete nullButton_;
     delete buttonGroup_;
     delete ui;
+    delete reboot_timer;
+    delete registe_timer;
 
 }
 
 
 void MainFrame::closeEvent(QCloseEvent *e)
 {
-#ifdef Q_WS_WIN32
+#ifndef Q_WS_QWS
     simulateKnob_->close();
     delete simulateKnob_;
 #endif
@@ -485,11 +485,18 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
             currentKeySeq.clear();
         }
 #ifndef Q_WS_WIN32
+        static bool isExeced = false;
+        if(!isExeced)
+        {
+            int keyFD_ = open("/dev/input/event1", O_RDWR);
             struct input_event inputEvent;
             inputEvent.type = EV_SYN; //__set_bit
             inputEvent.code = SYN_CONFIG;  //__set_bit
             inputEvent.value = 1;
             write(keyFD_,&inputEvent,sizeof(inputEvent));
+            isExeced = true;
+            ::close(keyFD_);
+        }
 #endif
 //        ICKeyboardHandler::Instance()->Keypressed(key);
     }

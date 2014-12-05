@@ -442,6 +442,9 @@ QRadioButton::indicator:unchecked:disabled
            <property name="text">
             <string/>
            </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
           </widget>
          </item>
          <item>
@@ -1207,7 +1210,6 @@ QRadioButton::indicator:unchecked:disabled
  <connections/>
  <buttongroups>
   <buttongroup name="buttonGroup_2"/>
-  <buttongroup name="buttonGroup"/>
   <buttongroup name="languageButtonGroup"/>
  </buttongroups>
 </ui>

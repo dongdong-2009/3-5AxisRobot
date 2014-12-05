@@ -9,6 +9,11 @@ ICSystemConfig::ICSystemConfig(QObject *parent) :
     sysSetting_ = new QSettings("SZHC", "Multi-axisManipulatorSystem");
 }
 
+ICSystemConfig::~ICSystemConfig()
+{
+    delete sysSetting_;
+}
+
 ICSerialPortConfig ICSystemConfig::SerialPortConfig() const
 {
     ICSerialPortConfig config;

@@ -16,6 +16,7 @@ PasswordDialog::PasswordDialog(QWidget *parent) :
 PasswordDialog::~PasswordDialog()
 {
     delete ui;
+    delete buttonGroup_;
 }
 
 void PasswordDialog::on_buttonBox_accepted()

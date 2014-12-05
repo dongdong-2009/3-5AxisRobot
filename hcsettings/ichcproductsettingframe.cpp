@@ -90,6 +90,7 @@ ICHCProductSettingFrame::~ICHCProductSettingFrame()
 {
     delete ui;
     qDeleteAll(wrappers_);
+    delete buttongroup_;
 }
 
 void ICHCProductSettingFrame::hideEvent(QHideEvent *e)

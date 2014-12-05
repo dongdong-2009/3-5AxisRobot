@@ -174,7 +174,10 @@ QRadioButton::indicator:unchecked:disabled
      </item>
      <item row="0" column="1">
       <property name="text">
-       <string/>
+       <string notr="true"/>
+      </property>
+      <property name="toolTip">
+       <string notr="true"/>
       </property>
      </item>
      <item row="1" column="0">
@@ -187,7 +190,7 @@ QRadioButton::indicator:unchecked:disabled
      </item>
      <item row="1" column="1">
       <property name="text">
-       <string/>
+       <string notr="true"/>
       </property>
      </item>
      <item row="2" column="0">
@@ -200,7 +203,7 @@ QRadioButton::indicator:unchecked:disabled
      </item>
      <item row="2" column="1">
       <property name="text">
-       <string/>
+       <string notr="true"/>
       </property>
      </item>
      <item row="3" column="0">
@@ -213,7 +216,7 @@ QRadioButton::indicator:unchecked:disabled
      </item>
      <item row="3" column="1">
       <property name="text">
-       <string/>
+       <string notr="true"/>
       </property>
      </item>
      <item row="4" column="0">
@@ -226,7 +229,7 @@ QRadioButton::indicator:unchecked:disabled
      </item>
      <item row="4" column="1">
       <property name="text">
-       <string/>
+       <string notr="true"/>
       </property>
      </item>
      <item row="5" column="0">
@@ -239,7 +242,7 @@ QRadioButton::indicator:unchecked:disabled
      </item>
      <item row="5" column="1">
       <property name="text">
-       <string/>
+       <string notr="true"/>
       </property>
      </item>
      <item row="6" column="0">
@@ -250,12 +253,22 @@ QRadioButton::indicator:unchecked:disabled
        <enum>Unchecked</enum>
       </property>
      </item>
+     <item row="6" column="1">
+      <property name="text">
+       <string notr="true"/>
+      </property>
+     </item>
      <item row="7" column="0">
       <property name="text">
        <string/>
       </property>
       <property name="checkState">
        <enum>Unchecked</enum>
+      </property>
+     </item>
+     <item row="7" column="1">
+      <property name="text">
+       <string notr="true"/>
       </property>
      </item>
     </widget>

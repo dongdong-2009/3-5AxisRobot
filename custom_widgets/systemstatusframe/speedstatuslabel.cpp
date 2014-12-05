@@ -9,6 +9,12 @@ SpeedStatusLabel::SpeedStatusLabel(QWidget *parent) :
 //    this->setStyleSheet("border-radius: 20px;");
 }
 
+SpeedStatusLabel::~SpeedStatusLabel()
+{
+    if(timer_ != NULL)
+        delete timer_;
+}
+
 void SpeedStatusLabel::mousePressEvent(QMouseEvent *ev)
 {
     if(count_ % 2 == 0)

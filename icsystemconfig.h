@@ -31,6 +31,7 @@ class ICSystemConfig : public QObject
     Q_OBJECT
 public:
     explicit ICSystemConfig(QObject *parent = 0);
+    ~ICSystemConfig();
 
     ICSerialPortConfig SerialPortConfig() const;
     void SetSerialPortConfig(ICSerialPortConfig config);
