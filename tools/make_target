@@ -19,6 +19,14 @@ cp ${workDir}/Multi-axisManipulatorSystem_en.qm ${reinstallDir} -f
 inch=`cat ${workDir}/Multi-axisManipulatorSystem.pro | grep "SK_SIZE =" | awk '{print $3}'`
 swVersion=`cat ${workDir}/config.h | grep "SW_VERSION" | awk '{print $3}' | sed 's/\"//g' | tr -d ['\r']`
 cp ${reinstallDir}/${inch}-inch-qmap/3a8.qmap ${reinstallDir}
+cp -r ${reinstallDir}/${inch}resource ${reinstallDir}/resource
+rm -r ${reinstallDir}/5resource ${reinstallDir}/8resource
+
+cp -r ${reinstallDir}/${inch}records ${reinstallDir}/records
+rm -r ${reinstallDir}/5records ${reinstallDir}/8records
+
+cp -r ${reinstallDir}/${inch}sysconfig ${reinstallDir}/sysconfig
+rm -r ${reinstallDir}/5sysconfig ${reinstallDir}/8sysconfig
 echo "
 #! /bin/sh
 cd Reinstall
