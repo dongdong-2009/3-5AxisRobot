@@ -146,6 +146,7 @@ void ICHCFixturePage::changeEvent(QEvent *e)
     switch (e->type()) {
     case QEvent::LanguageChange:
         ui->retranslateUi(this);
+        ioNames_.clear();
         ioNames_<<tr("Fixture1  ")<<tr("Fixture2  ")<<tr("Fixture3  ")<<tr("Fixture4  ")
                <<tr("Sucker1   ")<<tr("Sucker2   ")
                  <<tr("Sucker3   ")<<tr("Sucker4   ");

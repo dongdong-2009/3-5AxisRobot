@@ -5750,7 +5750,7 @@ Please enter an digit between </source>
         <location filename="categorypage/icmonitorpageframe.cpp" line="50"/>
         <source>X1 In Limit</source>
         <oldsource>X In Limit</oldsource>
-        <translation>X1轴起点极限</translation>
+        <translation>X1轴终点极限</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="52"/>
