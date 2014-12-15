@@ -156,6 +156,11 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
     {
         ui->adjNoUse->setChecked(true);
     }
+
+    int v = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt();
+    v &= 0xFFFF;
+    v >>= 15;
+    ui->inMoldPos->setCurrentIndex(v);
 }
 
 ICStructDefineFrame::~ICStructDefineFrame()
@@ -405,4 +410,13 @@ void ICStructDefineFrame::InitEscapeBox()
 void ICStructDefineFrame::on_adjUse_toggled(bool checked)
 {
     ICParametersSave::Instance()->SetAdjustFunction(checked);
+}
+
+void ICStructDefineFrame::on_inMoldPos_currentIndexChanged(int index)
+{
+    ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
+    int v = host->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt();
+    v &= 0x7FFF;
+    v |= (index << 15);
+    host->SetSystemParameter(ICVirtualHost::SYS_Config_Fixture, v);
 }

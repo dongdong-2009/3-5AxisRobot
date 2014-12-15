@@ -49,6 +49,8 @@ private slots:
 
     void on_adjUse_toggled(bool checked);
 
+    void on_inMoldPos_currentIndexChanged(int index);
+
 private:
     Ui::ICStructDefineFrame *ui;
     uint armStruct_;

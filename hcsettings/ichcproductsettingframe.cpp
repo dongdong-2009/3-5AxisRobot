@@ -180,7 +180,10 @@ void ICHCProductSettingFrame::on_productClearButton_clicked()
 void ICHCProductSettingFrame::FixtureBoxChange()
 {
     ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
-    host->SetSystemParameter(ICVirtualHost::SYS_Config_Fixture, host->FixtureDefineSwitch(buttongroup_->checkedId()));
+    int v = host->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt();
+    v &= 0x8000;
+    v |= host->FixtureDefineSwitch(buttongroup_->checkedId());
+    host->SetSystemParameter(ICVirtualHost::SYS_Config_Fixture, v);
 }
 
 void ICHCProductSettingFrame::InitCheckBox()
