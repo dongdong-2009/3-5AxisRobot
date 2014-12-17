@@ -2112,49 +2112,49 @@ Reason</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="149"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
         <source>Fixture1  </source>
         <translation>夹具1</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="149"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
         <source>Fixture2  </source>
         <translation>夹具2</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="149"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
         <source>Fixture3  </source>
         <translation>夹具3</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="149"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
         <source>Fixture4  </source>
         <translation>夹具4</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="25"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="151"/>
         <source>Sucker1   </source>
         <translation>吸1</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="25"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="151"/>
         <source>Sucker2   </source>
         <translation>吸2</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="26"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="151"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="152"/>
         <source>Sucker3   </source>
         <translation>吸3</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="26"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="151"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="152"/>
         <source>Sucker4   </source>
         <translation>吸4</translation>
     </message>
@@ -8888,51 +8888,51 @@ Would you want to restart now?</source>
         <translation>步序</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1060"/>
-        <location filename="mainframe.cpp" line="1064"/>
-        <location filename="mainframe.cpp" line="1467"/>
-        <location filename="mainframe.cpp" line="1508"/>
-        <location filename="mainframe.cpp" line="1515"/>
+        <location filename="mainframe.cpp" line="1074"/>
+        <location filename="mainframe.cpp" line="1078"/>
+        <location filename="mainframe.cpp" line="1481"/>
+        <location filename="mainframe.cpp" line="1522"/>
+        <location filename="mainframe.cpp" line="1529"/>
         <source>tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1508"/>
+        <location filename="mainframe.cpp" line="1522"/>
         <source>Spare Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1064"/>
+        <location filename="mainframe.cpp" line="1078"/>
         <source>No Register</source>
         <translation>没有注册</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="645"/>
+        <location filename="mainframe.cpp" line="659"/>
         <source>Function</source>
         <translation>功能</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1515"/>
+        <location filename="mainframe.cpp" line="1529"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation>没有注册，系统将在十分钟后重启</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="646"/>
+        <location filename="mainframe.cpp" line="660"/>
         <source>Monitor</source>
         <translation>监视</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1060"/>
+        <location filename="mainframe.cpp" line="1074"/>
         <source>Spear Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1096"/>
+        <location filename="mainframe.cpp" line="1110"/>
         <source>Records</source>
         <translation>档案</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1467"/>
+        <location filename="mainframe.cpp" line="1481"/>
         <source>No Register. System Restart Now...</source>
         <translation>没有注册，系统现在重启...</translation>
     </message>
@@ -8949,12 +8949,12 @@ Would you want to restart now?</source>
         <translation type="obsolete">欢迎</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="648"/>
+        <location filename="mainframe.cpp" line="662"/>
         <source>Record</source>
         <translation>档案</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="647"/>
+        <location filename="mainframe.cpp" line="661"/>
         <source>Alarm</source>
         <translation>报警</translation>
     </message>
@@ -8971,12 +8971,12 @@ Would you want to restart now?</source>
         <translation type="obsolete">巨集参数从异常中恢复，请先检查巨集参数！</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="649"/>
+        <location filename="mainframe.cpp" line="663"/>
         <source>Return</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="837"/>
+        <location filename="mainframe.cpp" line="851"/>
         <source>Hint</source>
         <translation>提示</translation>
     </message>
@@ -8993,7 +8993,7 @@ Would you want to restart now?</source>
         <translation type="obsolete">还没进行原点!</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1048"/>
+        <location filename="mainframe.cpp" line="1062"/>
         <source>Instruct</source>
         <translation>教导</translation>
     </message>

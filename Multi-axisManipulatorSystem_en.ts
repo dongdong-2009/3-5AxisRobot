@@ -1672,49 +1672,49 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="149"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
         <source>Fixture1  </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="149"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
         <source>Fixture2  </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="149"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
         <source>Fixture3  </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="149"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
         <source>Fixture4  </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="25"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="151"/>
         <source>Sucker1   </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="25"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="151"/>
         <source>Sucker2   </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="26"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="151"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="152"/>
         <source>Sucker3   </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="26"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="151"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="152"/>
         <source>Sucker4   </source>
         <translation type="unfinished"></translation>
     </message>
@@ -7117,76 +7117,76 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1508"/>
+        <location filename="mainframe.cpp" line="1522"/>
         <source>Spare Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1064"/>
+        <location filename="mainframe.cpp" line="1078"/>
         <source>No Register</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="645"/>
+        <location filename="mainframe.cpp" line="659"/>
         <source>Function</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="646"/>
+        <location filename="mainframe.cpp" line="660"/>
         <source>Monitor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="648"/>
+        <location filename="mainframe.cpp" line="662"/>
         <source>Record</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="647"/>
+        <location filename="mainframe.cpp" line="661"/>
         <source>Alarm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1060"/>
-        <location filename="mainframe.cpp" line="1064"/>
-        <location filename="mainframe.cpp" line="1467"/>
-        <location filename="mainframe.cpp" line="1508"/>
-        <location filename="mainframe.cpp" line="1515"/>
+        <location filename="mainframe.cpp" line="1074"/>
+        <location filename="mainframe.cpp" line="1078"/>
+        <location filename="mainframe.cpp" line="1481"/>
+        <location filename="mainframe.cpp" line="1522"/>
+        <location filename="mainframe.cpp" line="1529"/>
         <source>tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1515"/>
+        <location filename="mainframe.cpp" line="1529"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="649"/>
+        <location filename="mainframe.cpp" line="663"/>
         <source>Return</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="837"/>
+        <location filename="mainframe.cpp" line="851"/>
         <source>Hint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1060"/>
+        <location filename="mainframe.cpp" line="1074"/>
         <source>Spear Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1096"/>
+        <location filename="mainframe.cpp" line="1110"/>
         <source>Records</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1467"/>
+        <location filename="mainframe.cpp" line="1481"/>
         <source>No Register. System Restart Now...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1048"/>
+        <location filename="mainframe.cpp" line="1062"/>
         <source>Instruct</source>
         <translation type="unfinished"></translation>
     </message>

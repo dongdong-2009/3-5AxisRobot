@@ -112,6 +112,15 @@ const QList<int> backupKeySeq = QList<int>()<<ICKeyboard::FB_F5
                                       <<ICKeyboard::FB_F1
                                      <<ICKeyboard::FB_F5;
 
+const QList<int> testKeySeq = QList<int>()<<ICKeyboard::FB_F5
+                                           <<ICKeyboard::FB_F3
+                                          <<ICKeyboard::FB_F4
+                                         <<ICKeyboard::FB_F3
+                                        <<ICKeyboard::FB_F2
+                                       <<ICKeyboard::FB_F3
+                                      <<ICKeyboard::FB_F1
+                                     <<ICKeyboard::FB_F5;
+
 
 MainFrame *icMainFrame = NULL;
 MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
@@ -410,6 +419,11 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
             {
                 ICBackupDialog backupDialog;
                 backupDialog.exec();
+            }
+            else if(currentKeySeq == testKeySeq)
+            {
+                ::system("chmod +x ./test_robot.sh && ./test_robot.sh");
+//                exit(0);
             }
             currentKeySeq.clear();
         }
