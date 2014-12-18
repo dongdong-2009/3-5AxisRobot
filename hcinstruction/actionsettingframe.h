@@ -57,6 +57,7 @@ private:
     QIntValidator posValidator[3];
     int posMaxs_[8];
     int posLength_[3];
+    int posMins_[3];
     int axisDefine_;
     QList<QList<QWidget*> > axisWidgets_;
 //    QList<ICLabelWrapper*> wrappers_;
