@@ -21,6 +21,7 @@ public:
 
 protected:
     void changeEvent(QEvent *e);
+    void showEvent(QShowEvent *);
 signals:
     void StructChanged();
 

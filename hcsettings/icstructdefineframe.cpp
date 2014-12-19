@@ -181,6 +181,13 @@ void ICStructDefineFrame::changeEvent(QEvent *e)
     }
 }
 
+void ICStructDefineFrame::showEvent(QShowEvent *e)
+{
+    ui->inMoldPos->setVisible(ICParametersSave::Instance()->IsExtentFunctionUsed());
+    ui->label_20->setVisible(ICParametersSave::Instance()->IsExtentFunctionUsed());
+    QWidget::showEvent(e);
+}
+
 void ICStructDefineFrame::retranslateUi_()
 {
     this->setWindowTitle(tr("Form"));
