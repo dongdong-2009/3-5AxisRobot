@@ -228,10 +228,10 @@ void ICKeyboardHandler::Keypressed(int keyValue)
     {
         if(!ICParametersSave::Instance()->IsSingleArm())
         {
-            if(status == ICVirtualHost::Stop)
-            {
-                return;
-            }
+//            if(status == ICVirtualHost::Stop)
+//            {
+//                return;
+//            }
             commandProcessor->ExecuteVirtualKeyCommand(virtualKeyMap_.value(keyValue));
         }
     }

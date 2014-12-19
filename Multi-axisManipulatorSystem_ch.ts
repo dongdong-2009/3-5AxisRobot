@@ -5919,12 +5919,12 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="67"/>
         <source>Y1 Origin</source>
-        <translation>Y1轴原点</translation>
+        <translation>Y1轴上位安全</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="71"/>
         <source>B Origin</source>
-        <translation>辅助原点1</translation>
+        <translation>Y轴原点</translation>
     </message>
     <message>
         <source>Go Out/EX-6</source>
