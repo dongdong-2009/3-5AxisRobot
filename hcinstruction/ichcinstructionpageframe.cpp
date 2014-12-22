@@ -63,7 +63,8 @@ ICHCInstructionPageFrame::ICHCInstructionPageFrame(QWidget *parent) :
     recordPath_("./records/"),
     currentAction_(None),
     currentEdit_(0),
-    isProgramChanged_(false)
+    isProgramChanged_(false),
+    isModifyProgram_(false)
 {
     ui->setupUi(this);
 //    ui->otherButton->hide();
@@ -143,11 +144,12 @@ void ICHCInstructionPageFrame::hideEvent(QHideEvent *e)
 //               SLOT(GetTeachContent()));
 //    ICMold::CurrentMold()->SetMoldContent(ICMold::UIItemToMoldItem(programList_));
 //    ICMold::CurrentMold()->SaveMoldFile();
-    if(SaveCurrentEdit() == true || isProgramChanged_)
-            ICVirtualHost::GlobalVirtualHost()->ReConfigure();
+    if(isModifyProgram_ || isProgramChanged_)
     {
+        SaveCurrentEdit();
         ICVirtualHost::GlobalVirtualHost()->ReConfigure();
         isProgramChanged_ = false;
+        isModifyProgram_ = false;
     }
     if(ICKeyboard::Instace()->CurrentSwitchStatus() == ICKeyboard::KS_ManualStatu)
     {
@@ -624,6 +626,7 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
         index = ui->moldContentListWidget->count() - 1;
     }
     ui->moldContentListWidget->setCurrentRow(index);
+    isModifyProgram_ = true;
 }
 
 void ICHCInstructionPageFrame::on_modifyToolButton_clicked()
@@ -658,6 +661,7 @@ void ICHCInstructionPageFrame::on_modifyToolButton_clicked()
         }
 
     }
+    isModifyProgram_ = true;
 //    if(isModify)
 
 }
@@ -751,6 +755,11 @@ void ICHCInstructionPageFrame::on_deleteToolButton_clicked()
         if(topItem->ItemCount() == 1)
         {
             programList_[gIndex].RemoveTopItem(tIndex);
+            programList_.removeAt(gIndex);
+            for(int i = gIndex; i != programList_.size(); ++i)
+            {
+                programList_[i].SetStepNum(i);
+            }
         }
         else
         {
@@ -770,6 +779,7 @@ void ICHCInstructionPageFrame::on_deleteToolButton_clicked()
         currentRow = ui->moldContentListWidget->count() - 1;
     }
     ui->moldContentListWidget->setCurrentRow(currentRow);
+    isModifyProgram_ = true;
 }
 
 //void ICHCInstructionPageFrame::LoadFileInfoButtonClicked(const QString &moldName)
@@ -926,6 +936,7 @@ void ICHCInstructionPageFrame::on_upButton_clicked()
     }
 //    isEdit_ = true;
     UpdateUIProgramList_();
+    isModifyProgram_ = true;
 }
 
 void ICHCInstructionPageFrame::on_downButton_clicked()
@@ -1023,6 +1034,7 @@ void ICHCInstructionPageFrame::on_downButton_clicked()
     }
 //    isEdit_ = true;
     UpdateUIProgramList_();
+    isModifyProgram_ = true;
 }
 
 void ICHCInstructionPageFrame::OnProgramChanged(int index, QString name)
@@ -1105,6 +1117,7 @@ void  ICHCInstructionPageFrame::OnGuideFinished()
 {
     ICMold::CurrentMold()->SetMoldContent(guidePage_->CreateCommand());
     UpdateHostParam();
+    isModifyProgram_ = true;
 }
 
 void ICHCInstructionPageFrame::on_tryButton_clicked()

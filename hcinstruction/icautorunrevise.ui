@@ -161,8 +161,17 @@
      </item>
      <item>
       <widget class="QDialogButtonBox" name="buttonBox">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>0</height>
+        </size>
+       </property>
        <property name="styleSheet">
-        <string notr="true">height:30px ;</string>
+        <string notr="true">height:30px ;
+
+margin-top:40px;
+</string>
        </property>
        <property name="orientation">
         <enum>Qt::Vertical</enum>

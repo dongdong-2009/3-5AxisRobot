@@ -3,18 +3,18 @@
 #include <QDebug>
 
 #include "ickeyboard.h"
-#include "ickeyboardreceiver.h"
-#include "icknobreceiver.h"
-#include "icpulleyreceiver.h"
+//#include "ickeyboardreceiver.h"
+//#include "icknobreceiver.h"
+//#include "icpulleyreceiver.h"
 #include "iccommandprocessor.h"
 
 class ICKeyboard::ICKeyboardPrivate
 {
 public:
     ~ICKeyboardPrivate();
-    ICKnobReceiver knobReceiver_;
-    ICKeyboardReceiver keyboardReceiver_;
-    ICPulleyReceiver pulleyReceiver_;
+//    ICKnobReceiver knobReceiver_;
+//    ICKeyboardReceiver keyboardReceiver_;
+//    ICPulleyReceiver pulleyReceiver_;
 };
 
 ICKeyboard::ICKeyboardPrivate::~ICKeyboardPrivate()

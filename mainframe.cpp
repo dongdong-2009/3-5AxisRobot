@@ -396,7 +396,7 @@ void MainFrame::changeEvent(QEvent *e)
 void MainFrame::keyPressEvent(QKeyEvent *e)
 {
     qDebug()<<"KeyEvent:"<<e->key();
-    SetHasInput(true);
+//    SetHasInput(true);
     if(keyMap.contains(e->key()))
     {
         int key = keyMap.value(e->key());
@@ -1041,11 +1041,11 @@ void MainFrame::StatusRefreshed()
         }
     }
     LevelChanged(ICProgramHeadFrame::Instance()->CurrentLevel());
-    if(mousePoint_ != QCursor::pos())
-    {
-        mousePoint_ = QCursor::pos();
-        SetHasInput(true);
-    }
+//    if(mousePoint_ != QCursor::pos())
+//    {
+//        mousePoint_ = QCursor::pos();
+////        SetHasInput(true);
+//    }
 }
 
 void MainFrame::ShowManualPage()
@@ -1261,44 +1261,44 @@ void MainFrame::ShowScreenSaver()
     ICProgramHeadFrame::Instance()->SetCurrentLevel(ICParametersSave::MachineOperator);
 }
 
-bool MainFrame::IsInput() const
-{
-    return isDoAction_;
-}
+//bool MainFrame::IsInput() const
+//{
+//    return isDoAction_;
+//}
 
-void MainFrame::SetHasInput(bool isInput)
-{
-    isDoAction_ = isInput;
-    if(isInput && IsBackLightOff())
-    {
-        //        system("BackLight on");
-        ICParametersSave::Instance()->SetBrightness(ICParametersSave::Instance()->Brightness());
-        SetBackLightOff(false);
-    }
-}
+//void MainFrame::SetHasInput(bool isInput)
+//{
+//    isDoAction_ = isInput;
+//    if(isInput && IsBackLightOff())
+//    {
+//        //        system("BackLight on");
+//        ICParametersSave::Instance()->SetBrightness(ICParametersSave::Instance()->Brightness());
+//        SetBackLightOff(false);
+//    }
+//}
 
-bool MainFrame::IsBackLightOff() const
-{
-    return isBackLightOff_;
-}
+//bool MainFrame::IsBackLightOff() const
+//{
+//    return isBackLightOff_;
+//}
 
-void MainFrame::SetBackLightOff(bool isOff)
-{
-    isBackLightOff_ = isOff;
-}
+//void MainFrame::SetBackLightOff(bool isOff)
+//{
+//    isBackLightOff_ = isOff;
+//}
 
-void MainFrame::CheckedInput()
-{
-    if(!IsInput())
-    {
-        ShowScreenSaver();
-//        system("BackLight off");
-        system("BackLight.sh 0");
-        SetBackLightOff(true);
-    }
-    SetHasInput(false);
-    QTimer::singleShot(ICParametersSave::Instance()->BackLightTime() * 60000, this, SLOT(CheckedInput()));
-}
+//void MainFrame::CheckedInput()
+//{
+//    if(!IsInput())
+//    {
+//        ShowScreenSaver();
+////        system("BackLight off");
+//        system("BackLight.sh 0");
+//        SetBackLightOff(true);
+//    }
+//    SetHasInput(false);
+//    QTimer::singleShot(ICParametersSave::Instance()->BackLightTime() * 60000, this, SLOT(CheckedInput()));
+//}
 
 void MainFrame::ShowWidgets_(QList<QWidget *> &widgets)
 {
@@ -1466,7 +1466,7 @@ void MainFrame::CloseBackLight()
 #ifdef Q_WS_QWS
     ShowScreenSaver();
     system("BackLight.sh 0");
-    SetBackLightOff(true);
+//    SetBackLightOff(true);
 #endif
 }
 

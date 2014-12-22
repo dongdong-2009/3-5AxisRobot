@@ -608,7 +608,7 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
         {
             if(isModify_)
             {
-               currentBackup = programListBackup_[gIndex].at(tIndex).BaseItem();
+               currentBackup = programListBackup_[gIndex].at(tIndex).at(sIndex).BaseItem();
                item->SetDVal(ret.DVal());
                item->SetSVal(ret.SVal());
 //               item->SetPos(currentBackup->Pos() + ret.Pos());
@@ -626,7 +626,7 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
             }
             else
             {
-               currentBackup = programList_[gIndex].at(tIndex).BaseItem();
+               currentBackup = programList_[gIndex].at(tIndex).at(sIndex).BaseItem();
                currentBackup->SetDVal(ret.DVal());
                currentBackup->SetSVal(ret.SVal());
 //               currentBackup->SetPos(currentBackup->Pos() + ret.Pos());

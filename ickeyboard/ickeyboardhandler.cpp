@@ -104,12 +104,12 @@ void ICKeyboardHandler::Keypressed(int keyValue)
         return;
     }
 //    qDebug()<<"handle key press"<<keyValue;
-    bool isBackLight = icMainFrame->IsBackLightOff();
-    icMainFrame->SetHasInput(true);
-    if(isBackLight)
-    {
-        return;
-    }
+//    bool isBackLight = icMainFrame->IsBackLightOff();
+//    icMainFrame->SetHasInput(true);
+//    if(isBackLight)
+//    {
+//        return;
+//    }
     Q_ASSERT_X(virtualKeyMap_.contains(keyValue),
                "ICKeyboardHandle::Keypressed",
                (QString::number(keyValue) + " is not define").toAscii());

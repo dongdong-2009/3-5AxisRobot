@@ -33,10 +33,10 @@ public:
     bool IsOrigin() const { return isOriginShown_;}
     bool IsOrigined() const;
 
-    bool IsInput() const;
-    void SetHasInput(bool isInput);
-    bool IsBackLightOff() const;
-    void SetBackLightOff(bool isOff);
+//    bool IsInput() const;
+//    void SetHasInput(bool isInput);
+//    bool IsBackLightOff() const;
+//    void SetBackLightOff(bool isOff);
     void ShowScreenSaver();
     bool IsAutoPageShown() const {if(autoPage_ == NULL) return false; return !autoPage_->isHidden();}
 
@@ -78,7 +78,7 @@ private slots:
     void LevelChanged(int level);
     void StepChanged(int step);
     void RecordButtonClicked();
-    void CheckedInput();
+//    void CheckedInput();
     void Register();
     void CountRestTime();
     void checkAlarmModify();
