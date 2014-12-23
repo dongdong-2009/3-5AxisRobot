@@ -9,7 +9,7 @@ QMAKE_CXX = ccache $${QMAKE_CXX}
 
 QT += sql
 
-SK_SIZE = 8
+SK_SIZE = 5
 
 OBJECTS_DIR = temp_$${SK_SIZE}
 UI_DIR = temp_$${SK_SIZE}

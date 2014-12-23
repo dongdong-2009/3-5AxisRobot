@@ -352,6 +352,7 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     //         ShowAutoPage();
 //    ShowOrigin();
 #endif
+           SetScreenSaverInterval(ICParametersSave::Instance()->BackLightTime() * 60000);
 
            qDebug("Mainframe Init finished");
 }
