@@ -498,7 +498,6 @@
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="474"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="469"/>
         <source>SubArm Advance +</source>
         <translation>副臂前进+</translation>
     </message>
@@ -510,7 +509,6 @@
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="152"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="500"/>
         <source>SubArm Advance -</source>
         <translation>副臂向前-</translation>
     </message>
@@ -534,7 +532,6 @@
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="536"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="562"/>
         <source>SubArm Back -</source>
         <translation>副臂后退-</translation>
     </message>
@@ -546,31 +543,26 @@
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="505"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="531"/>
         <source>SubArm Back + </source>
         <translation>副臂后退+</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="90"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="655"/>
         <source>SubArm Up + </source>
         <translation>副臂上升+</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="121"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="593"/>
         <source>SubArm Down + </source>
         <translation>副臂下降+</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="264"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="686"/>
         <source>SubArm Up -</source>
         <translation>副臂上升-</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="295"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="624"/>
         <source>SubArm Down -</source>
         <translation>副臂下降-</translation>
     </message>
@@ -605,6 +597,46 @@
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="284"/>
         <source>X033</source>
         <translation></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="469"/>
+        <source>M1 +</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="500"/>
+        <source>M1 -</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="531"/>
+        <source>M0 + </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="562"/>
+        <source>M0 -</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="593"/>
+        <source>M3 + </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="624"/>
+        <source>M3 -</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="655"/>
+        <source>M2 + </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="686"/>
+        <source>M2 -</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2508,8 +2540,8 @@ Reason</source>
         <translation>主菜单</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="457"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="692"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="459"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="696"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
@@ -2526,22 +2558,22 @@ Reason</source>
         <translation type="obsolete">该模号是当前模号!</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="458"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="460"/>
         <source>Can not add standby position program</source>
         <translation>不能添加待机点步骤</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="678"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="682"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="679"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="683"/>
         <source>Stand program can not be delete action</source>
         <translation>标准程序不能删除动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="693"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="697"/>
         <source>Can not delete standby position program</source>
         <translation>不能删除待机点步骤</translation>
     </message>
@@ -5941,7 +5973,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="101"/>
         <source>Adjust Sub Back</source>
-        <translation>副臂后退调位</translation>
+        <translation>主臂后退阀</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="105"/>
@@ -6049,7 +6081,7 @@ Please enter an digit between </source>
         <location filename="categorypage/icmonitorpageframe.cpp" line="100"/>
         <source>Main Forward Valve</source>
         <oldsource>Main Forward</oldsource>
-        <translation>备用输出6</translation>
+        <translation>主臂前进阀</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="103"/>
@@ -8888,51 +8920,51 @@ Would you want to restart now?</source>
         <translation>步序</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1074"/>
-        <location filename="mainframe.cpp" line="1078"/>
-        <location filename="mainframe.cpp" line="1481"/>
-        <location filename="mainframe.cpp" line="1522"/>
-        <location filename="mainframe.cpp" line="1529"/>
+        <location filename="mainframe.cpp" line="1075"/>
+        <location filename="mainframe.cpp" line="1079"/>
+        <location filename="mainframe.cpp" line="1482"/>
+        <location filename="mainframe.cpp" line="1523"/>
+        <location filename="mainframe.cpp" line="1530"/>
         <source>tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1522"/>
+        <location filename="mainframe.cpp" line="1523"/>
         <source>Spare Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1078"/>
+        <location filename="mainframe.cpp" line="1079"/>
         <source>No Register</source>
         <translation>没有注册</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="659"/>
+        <location filename="mainframe.cpp" line="660"/>
         <source>Function</source>
         <translation>功能</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1529"/>
+        <location filename="mainframe.cpp" line="1530"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation>没有注册，系统将在十分钟后重启</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="660"/>
+        <location filename="mainframe.cpp" line="661"/>
         <source>Monitor</source>
         <translation>监视</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1074"/>
+        <location filename="mainframe.cpp" line="1075"/>
         <source>Spear Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1110"/>
+        <location filename="mainframe.cpp" line="1111"/>
         <source>Records</source>
         <translation>档案</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1481"/>
+        <location filename="mainframe.cpp" line="1482"/>
         <source>No Register. System Restart Now...</source>
         <translation>没有注册，系统现在重启...</translation>
     </message>
@@ -8949,12 +8981,12 @@ Would you want to restart now?</source>
         <translation type="obsolete">欢迎</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="662"/>
+        <location filename="mainframe.cpp" line="663"/>
         <source>Record</source>
         <translation>档案</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="661"/>
+        <location filename="mainframe.cpp" line="662"/>
         <source>Alarm</source>
         <translation>报警</translation>
     </message>
@@ -8971,12 +9003,12 @@ Would you want to restart now?</source>
         <translation type="obsolete">巨集参数从异常中恢复，请先检查巨集参数！</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="663"/>
+        <location filename="mainframe.cpp" line="664"/>
         <source>Return</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="851"/>
+        <location filename="mainframe.cpp" line="852"/>
         <source>Hint</source>
         <translation>提示</translation>
     </message>
@@ -8993,7 +9025,7 @@ Would you want to restart now?</source>
         <translation type="obsolete">还没进行原点!</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1062"/>
+        <location filename="mainframe.cpp" line="1063"/>
         <source>Instruct</source>
         <translation>教导</translation>
     </message>

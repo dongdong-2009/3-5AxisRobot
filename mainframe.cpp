@@ -902,7 +902,7 @@ void MainFrame::StatusRefreshed()
     {
         if((runningStatus_ == ICVirtualHost::Auto) &&
                 (virtualHost->HostStatus(ICVirtualHost::DbgX0) == ICVirtualHost::AutoRunning) &&
-                (virtualHost->IsReadProductCount()))
+                (virtualHost->IsReadProductCount()) && ICKeyboard::Instace()->CurrentSwitchStatus() == ICKeyboard::KS_AutoStatu)
         {
 
             finishCount_ = virtualHost->HostStatus(ICVirtualHost::DbgA0).toUInt() |
@@ -1258,7 +1258,7 @@ bool MainFrame::IsOrigined() const
 
 void MainFrame::ShowScreenSaver()
 {
-    //    screenSaver_->show();
+        screenSaver_->show();
     ICProgramHeadFrame::Instance()->SetCurrentLevel(ICParametersSave::MachineOperator);
 }
 
@@ -1465,7 +1465,7 @@ void MainFrame::OpenBackLight()
 void MainFrame::CloseBackLight()
 {
 #ifdef Q_WS_QWS
-    ShowScreenSaver();
+//    ShowScreenSaver();
     system("BackLight.sh 0");
 //    SetBackLightOff(true);
 #endif

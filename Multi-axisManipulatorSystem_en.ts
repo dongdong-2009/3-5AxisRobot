@@ -343,7 +343,6 @@
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="474"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="469"/>
         <source>SubArm Advance +</source>
         <translation type="unfinished"></translation>
     </message>
@@ -355,7 +354,6 @@
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="152"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="500"/>
         <source>SubArm Advance -</source>
         <translation type="unfinished"></translation>
     </message>
@@ -379,7 +377,6 @@
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="536"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="562"/>
         <source>SubArm Back -</source>
         <translation type="unfinished"></translation>
     </message>
@@ -391,31 +388,26 @@
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="505"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="531"/>
         <source>SubArm Back + </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="90"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="655"/>
         <source>SubArm Up + </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="121"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="593"/>
         <source>SubArm Down + </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="264"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="686"/>
         <source>SubArm Up -</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="295"/>
-        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="624"/>
         <source>SubArm Down -</source>
         <translation type="unfinished"></translation>
     </message>
@@ -449,6 +441,46 @@
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="449"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="284"/>
         <source>X033</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="469"/>
+        <source>M1 +</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="500"/>
+        <source>M1 -</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="531"/>
+        <source>M0 + </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="562"/>
+        <source>M0 -</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="593"/>
+        <source>M3 + </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="624"/>
+        <source>M3 -</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="655"/>
+        <source>M2 + </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="686"/>
+        <source>M2 -</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1963,28 +1995,28 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="457"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="692"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="459"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="696"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="458"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="460"/>
         <source>Can not add standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="678"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="682"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="679"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="683"/>
         <source>Stand program can not be delete action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="693"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="697"/>
         <source>Can not delete standby position program</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7117,76 +7149,76 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1522"/>
+        <location filename="mainframe.cpp" line="1523"/>
         <source>Spare Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1078"/>
+        <location filename="mainframe.cpp" line="1079"/>
         <source>No Register</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="659"/>
+        <location filename="mainframe.cpp" line="660"/>
         <source>Function</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="660"/>
+        <location filename="mainframe.cpp" line="661"/>
         <source>Monitor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="662"/>
+        <location filename="mainframe.cpp" line="663"/>
         <source>Record</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="661"/>
+        <location filename="mainframe.cpp" line="662"/>
         <source>Alarm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1074"/>
-        <location filename="mainframe.cpp" line="1078"/>
-        <location filename="mainframe.cpp" line="1481"/>
-        <location filename="mainframe.cpp" line="1522"/>
-        <location filename="mainframe.cpp" line="1529"/>
+        <location filename="mainframe.cpp" line="1075"/>
+        <location filename="mainframe.cpp" line="1079"/>
+        <location filename="mainframe.cpp" line="1482"/>
+        <location filename="mainframe.cpp" line="1523"/>
+        <location filename="mainframe.cpp" line="1530"/>
         <source>tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1529"/>
+        <location filename="mainframe.cpp" line="1530"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="663"/>
+        <location filename="mainframe.cpp" line="664"/>
         <source>Return</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="851"/>
+        <location filename="mainframe.cpp" line="852"/>
         <source>Hint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1074"/>
+        <location filename="mainframe.cpp" line="1075"/>
         <source>Spear Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1110"/>
+        <location filename="mainframe.cpp" line="1111"/>
         <source>Records</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1481"/>
+        <location filename="mainframe.cpp" line="1482"/>
         <source>No Register. System Restart Now...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1062"/>
+        <location filename="mainframe.cpp" line="1063"/>
         <source>Instruct</source>
         <translation type="unfinished"></translation>
     </message>

@@ -140,6 +140,6 @@ system("python rename_ui.py temp_$${SK_SIZE}_d")
 #QMAKE_POST_LINK += "cp *.qm bin_debug"
 }else{
 system("python rename_ui.py temp_$${SK_SIZE}")
-QMAKE_POST_LINK += "&& arm-linux-strip $$DESTDIR/$$TARGET && HCbcrypt.sh -r $$DESTDIR/$$TARGET"
+QMAKE_POST_LINK += "&& $$QMAKE_STRIP $$DESTDIR/$$TARGET && HCbcrypt.sh -r $$DESTDIR/$$TARGET"
 QMAKE_POST_LINK += "chmod +x tools/make_target && tools/make_target"
 }
