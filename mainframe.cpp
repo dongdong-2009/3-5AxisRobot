@@ -121,7 +121,8 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     isCPosChanged_(false),
     axisDefine_(-1),
     registe_timer(new QTimer),
-    reboot_timer(new QTimer)
+    reboot_timer(new QTimer),
+    isBlockOrigin_(false)
 {
     connect(this,
             SIGNAL(LoadMessage(QString)),
@@ -919,6 +920,10 @@ void MainFrame::ShowFunctionPage()
 
 void MainFrame::ShowOrigin()
 {
+    if(isBlockOrigin_)
+    {
+        return;
+    }
     if(!originExecutingPage_->isVisible())
     {
         //        ui->systemStatusFrame->SetOriginStatus(StatusLabel::ONSTATUS);
