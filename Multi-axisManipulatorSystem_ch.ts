@@ -5786,12 +5786,12 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="101"/>
         <source>Adjust Sub Back</source>
-        <translation>副臂后退调位</translation>
+        <translation>M0</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="105"/>
         <source>Adjust Sub Forward</source>
-        <translation>副臂前进调位</translation>
+        <translation>M1</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="106"/>
@@ -5849,7 +5849,7 @@ Please enter an digit between </source>
         <location filename="categorypage/icmonitorpageframe.cpp" line="100"/>
         <source>Main Forward Valve</source>
         <oldsource>Main Forward</oldsource>
-        <translation>备用输出6</translation>
+        <translation>主臂前进阀</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="103"/>
@@ -6121,12 +6121,12 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="113"/>
         <source>Adjust Sub Up</source>
-        <translation>副臂上升调位</translation>
+        <translation>M2</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="114"/>
         <source>Adjust Sub Down</source>
-        <translation>副臂下降调位</translation>
+        <translation>M3</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="115"/>
@@ -7709,162 +7709,162 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1580"/>
         <source>Y41 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y041自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1615"/>
         <source>Y42 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y042自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1650"/>
         <source>Y43 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y043自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1685"/>
         <source>Y44 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y044自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1720"/>
         <source>Y45 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y045自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1755"/>
         <source>Y46 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y046自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1790"/>
         <source>Y47 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y047自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1825"/>
         <source>Y10 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y010自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1860"/>
         <source>Y12 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y012自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1895"/>
         <source>Y11 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y011自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1930"/>
         <source>Y13 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y013自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1965"/>
         <source>Y34 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y034自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2000"/>
         <source>Y20 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y020自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2035"/>
         <source>Y16 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y016自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2070"/>
         <source>Y21 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y021自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2105"/>
         <source>Y15 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y015自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2140"/>
         <source>Y14 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y014自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2175"/>
         <source>Y23 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y023自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2210"/>
         <source>Y35 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y035自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2245"/>
         <source>Y36 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y036自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2280"/>
         <source>Y17 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y017自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2315"/>
         <source>Y30 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y030自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2350"/>
         <source>Y22 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y022自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2385"/>
         <source>Y33 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y033自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2420"/>
         <source>Y32 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y032自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2455"/>
         <source>Y24 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y024自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2490"/>
         <source>Y26 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y026自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2525"/>
         <source>Y40 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y040自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2560"/>
         <source>Y25Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y025自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2595"/>
         <source>Y37Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y037自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2630"/>
         <source>Y31 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y031自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2665"/>
         <source>Y27 Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Y027自动复位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2789"/>
@@ -8692,14 +8692,14 @@ Would you want to restart now?</source>
     <message>
         <location filename="mainframe.cpp" line="875"/>
         <location filename="mainframe.cpp" line="879"/>
-        <location filename="mainframe.cpp" line="1263"/>
-        <location filename="mainframe.cpp" line="1304"/>
-        <location filename="mainframe.cpp" line="1311"/>
+        <location filename="mainframe.cpp" line="1267"/>
+        <location filename="mainframe.cpp" line="1308"/>
+        <location filename="mainframe.cpp" line="1315"/>
         <source>tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1304"/>
+        <location filename="mainframe.cpp" line="1308"/>
         <source>Spare Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
@@ -8714,7 +8714,7 @@ Would you want to restart now?</source>
         <translation>功能</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1311"/>
+        <location filename="mainframe.cpp" line="1315"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation>没有注册，系统将在十分钟后重启</translation>
     </message>
@@ -8734,7 +8734,7 @@ Would you want to restart now?</source>
         <translation>档案</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1263"/>
+        <location filename="mainframe.cpp" line="1267"/>
         <source>No Register. System Restart Now...</source>
         <translation>没有注册，系统现在重启...</translation>
     </message>

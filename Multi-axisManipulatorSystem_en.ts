@@ -7220,7 +7220,7 @@ Would you want to restart now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1304"/>
+        <location filename="mainframe.cpp" line="1308"/>
         <source>Spare Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7252,14 +7252,14 @@ Would you want to restart now?</source>
     <message>
         <location filename="mainframe.cpp" line="875"/>
         <location filename="mainframe.cpp" line="879"/>
-        <location filename="mainframe.cpp" line="1263"/>
-        <location filename="mainframe.cpp" line="1304"/>
-        <location filename="mainframe.cpp" line="1311"/>
+        <location filename="mainframe.cpp" line="1267"/>
+        <location filename="mainframe.cpp" line="1308"/>
+        <location filename="mainframe.cpp" line="1315"/>
         <source>tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1311"/>
+        <location filename="mainframe.cpp" line="1315"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7284,7 +7284,7 @@ Would you want to restart now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1263"/>
+        <location filename="mainframe.cpp" line="1267"/>
         <source>No Register. System Restart Now...</source>
         <translation type="unfinished"></translation>
     </message>
