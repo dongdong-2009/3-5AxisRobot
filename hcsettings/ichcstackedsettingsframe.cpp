@@ -22,6 +22,12 @@ ICHCStackedSettingsFrame::ICHCStackedSettingsFrame(QWidget *parent) :
             SIGNAL(MoldNumberParamChanged()),
             this,
             SLOT(OnMoldNumberParamChanged()));
+    ui->xUnit->hide();
+    ui->xUnit_2->hide();
+    ui->yUnit->hide();
+    ui->yUnit_2->hide();
+    ui->zUnit->hide();
+    ui->zUnit_2->hide();
 }
 
 ICHCStackedSettingsFrame::~ICHCStackedSettingsFrame()
@@ -76,17 +82,17 @@ void ICHCStackedSettingsFrame::InitInterface()
     ui->xRPLatticeLineEdit->SetDecimalPlaces(0);
     ui->xRPLatticeLineEdit->setValidator(validator);
     ui->xRPStepLineEdit->SetDecimalPlaces(STACK_DECIMAL);
-    ui->xRPStepLineEdit->setValidator(validator_);
+//    ui->xRPStepLineEdit->setValidator(validator_);
 
     ui->xRPLatticeLineEdit->SetDecimalPlaces(0);
     ui->yRPLatticeLineEdit->setValidator(validator);
     ui->yRPStepLineEdit->SetDecimalPlaces(STACK_DECIMAL);
-    ui->yRPStepLineEdit->setValidator(validator_);
+//    ui->yRPStepLineEdit->setValidator(validator_);
 
     ui->xRPLatticeLineEdit->SetDecimalPlaces(0);
     ui->zRPLatticeLineEdit->setValidator(validator);
     ui->zRPStepLineEdit->SetDecimalPlaces(STACK_DECIMAL);
-    ui->zRPStepLineEdit->setValidator(validator_);
+//    ui->zRPStepLineEdit->setValidator(validator_);
 
 //    ui->stackCount->setValidator(validator);
 
@@ -118,20 +124,21 @@ void ICHCStackedSettingsFrame::RefreshStackParams_(int group)
     }
     ui->xRPLatticeLineEdit->SetThisIntToThisText(stackParams.at(ICMold::X_Array) & 0x7FFF);
     seqH & 32 ? ui->xRPCheckBox->click() : ui->xPPCheckBox->click();
-    ui->xUnit->setChecked(stackParams.at(ICMold::X_Array) >> 15);
+    stackParams.at(ICMold::X_Array) >> 15 ? ui->xUnit->setChecked(true) : ui->xUnit_2->setChecked(true);
     ui->xRPStepLineEdit->SetThisIntToThisText(stackParams.at(ICMold::X_Gap));
     ui->yRPLatticeLineEdit->SetThisIntToThisText(stackParams.at(ICMold::Y_Array) & 0x7FFF);
     seqH & 64 ? ui->yRPCheckBox->click() : ui->yPPCheckBox->click();
     ui->yPPCheckBox->setChecked(!ui->yRPCheckBox->isChecked());
-    ui->yUnit->setChecked(stackParams.at(ICMold::Y_Array) >> 15);
+    stackParams.at(ICMold::Y_Array) >> 15 ? ui->yUnit->setChecked(true) : ui->yUnit_2->setChecked(true);
     ui->yRPStepLineEdit->SetThisIntToThisText(stackParams.at(ICMold::Y_Gap));
     ui->zRPLatticeLineEdit->SetThisIntToThisText(stackParams.at(ICMold::Z_Array) & 0x7FFF);
     seqH & 128 ? ui->zRPCheckBox->click() : ui->zPPCheckBox->click();
     ui->zPPCheckBox->setChecked(!ui->zRPCheckBox->isChecked());
-    ui->zUnit->setChecked(stackParams.at(ICMold::Z_Array) >> 15);
+    stackParams.at(ICMold::Z_Array) >> 15 ? ui->zUnit->setChecked(true) : ui->zUnit_2->setChecked(true);
     ui->zRPStepLineEdit->SetThisIntToThisText(stackParams.at(ICMold::Z_Gap));
     ui->countWayBox->setCurrentIndex(ICMold::CurrentMold()->MoldParam(static_cast<ICMold::ICMoldParam>(currentPage_)));
-//    switch(stackParams.at(ICMold::Seq))
+    ui->subArm->setChecked(stackParams.at(ICMold::Seq) >> 15);
+    //    switch(stackParams.at(ICMold::Seq))
 //    {
 //    case 64:
 //        ui->xzyCheckBox->setChecked(true);
@@ -181,6 +188,14 @@ QList<int> ICHCStackedSettingsFrame::GetCurrentStatus_() const
     {
         seqH |= 128;
     }
+    if(ui->subArm->isChecked())
+    {
+        seqH |= (1 << 15);
+    }
+    else
+    {
+        seqH &= 0x7FFF;
+    }
 
     status.append(seqH + seqL);
     status.append(ui->xRPLatticeLineEdit->TransThisTextToThisInt() | (ui->xUnit->isChecked() << 15));
@@ -190,6 +205,7 @@ QList<int> ICHCStackedSettingsFrame::GetCurrentStatus_() const
     status.append(ui->yRPStepLineEdit->TransThisTextToThisInt() );
     status.append(ui->zRPStepLineEdit->TransThisTextToThisInt());
     status.append(ui->countWayBox->currentIndex());
+    qDebug()<<status;
 //    status.append(ui->xRPCheckBox->isChecked() ? 1 : 0);
 //    status.append(ui->yRPCheckBox->isChecked() ? 1 : 0);
 //    status.append(ui->zRPCheckBox->isChecked() ? 1 : 0);
@@ -244,24 +260,69 @@ void ICHCStackedSettingsFrame::OnMoldNumberParamChanged()
 
 void ICHCStackedSettingsFrame::on_xUnit_toggled(bool checked)
 {
-    if(checked)
-        ui->xRPStepLineEdit->SetDecimalPlaces(1);
-    else
-        ui->xRPStepLineEdit->SetDecimalPlaces(2);
+//    if(checked)
+//        ui->xRPStepLineEdit->SetDecimalPlaces(1);
+//    else
+//        ui->xRPStepLineEdit->SetDecimalPlaces(2);
 }
 
 void ICHCStackedSettingsFrame::on_yUnit_toggled(bool checked)
 {
-    if(checked)
-        ui->yRPStepLineEdit->SetDecimalPlaces(1);
-    else
-        ui->yRPStepLineEdit->SetDecimalPlaces(2);
+//    if(checked)
+//        ui->yRPStepLineEdit->SetDecimalPlaces(1);
+//    else
+//        ui->yRPStepLineEdit->SetDecimalPlaces(2);
 }
 
 void ICHCStackedSettingsFrame::on_zUnit_toggled(bool checked)
 {
-    if(checked)
-        ui->zRPStepLineEdit->SetDecimalPlaces(1);
+//    if(checked)
+//        ui->zRPStepLineEdit->SetDecimalPlaces(1);
+//    else
+//        ui->zRPStepLineEdit->SetDecimalPlaces(2);
+}
+
+void ICHCStackedSettingsFrame::on_xRPStepLineEdit_textChanged(const QString &arg1)
+{
+    double v = arg1.toDouble();
+    if(v > 600)
+    {
+        ui->xUnit->setChecked(true);
+        ui->xRPStepLineEdit->setText(QString::number(v, 'f', 1));
+    }
     else
-        ui->zRPStepLineEdit->SetDecimalPlaces(2);
+    {
+        ui->xUnit_2->setChecked(true);
+        ui->xRPStepLineEdit->setText(QString::number(v, 'f', 2));
+    }
+}
+
+void ICHCStackedSettingsFrame::on_yRPStepLineEdit_textChanged(const QString &arg1)
+{
+    double v = arg1.toDouble();
+    if(v > 600)
+    {
+        ui->yUnit->setChecked(true);
+        ui->yRPStepLineEdit->setText(QString::number(v, 'f', 1));
+    }
+    else
+    {
+        ui->yUnit_2->setChecked(true);
+        ui->yRPStepLineEdit->setText(QString::number(v, 'f', 2));
+    }
+}
+
+void ICHCStackedSettingsFrame::on_zRPStepLineEdit_textChanged(const QString &arg1)
+{
+    double v = arg1.toDouble();
+    if(v > 600)
+    {
+        ui->zUnit->setChecked(true);
+        ui->zRPStepLineEdit->setText(QString::number(v, 'f', 1));
+    }
+    else
+    {
+        ui->zUnit_2->setChecked(true);
+        ui->yRPStepLineEdit->setText(QString::number(v, 'f', 2));
+    }
 }
