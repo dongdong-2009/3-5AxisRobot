@@ -108,14 +108,18 @@ RESOURCES += \
 
 TRANSLATIONS += Multi-axisManipulatorSystem_ch.ts \
     Multi-axisManipulatorSystem_en.ts \
-    Multi-axisManipulatorSystem_pt.ts
+    Multi-axisManipulatorSystem_pt.ts \
+    Multi-axisManipulatorSystem_ru.ts
 
 OTHER_FILES += \
     sysconfig/alarminfomation-en \
     sysconfig/alarminfomation-ch \
+    sysconfig/alarminfomation-pt \
+    sysconfig/alarminfomation-ru \
     sysconfig/hintinfomation-ch \
     sysconfig/hintinfomation-en \
-    sysconfig/alarminfomation-pt
+    sysconfig/hintinfomation-pt \
+    sysconfig/hintinfomation-ru
 
 QMAKE_POST_LINK += "cp *.qm $$DESTDIR"
 CONFIG(debug, debug|release){

@@ -27,6 +27,7 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
     ui->languageButtonGroup->setId(ui->chineseBox,0);
     ui->languageButtonGroup->setId(ui->englishBox,1);
     ui->languageButtonGroup->setId(ui->ptBox, 2);
+    ui->languageButtonGroup->setId(ui->ruBox, 3);
     InitParameter();
     ui->extentFunctionCheckBox->setChecked(ICParametersSave::Instance()->IsExtentFunctionUsed());
     ui->limitFunctionBox->setChecked(ICParametersSave::Instance()->IsRegisterFunctinOn());
@@ -107,6 +108,10 @@ void ICHCSystemSettingsFrame::InitParameter()
         ui->chineseBox->setChecked(true);
     else if(index == 1)
         ui->englishBox->setChecked(true);
+    else if(index == 2)
+        ui->ptBox->setChecked(true);
+    else if(index == 3)
+        ui->ruBox->setChecked(true);
     // ui->languageComboBox->setCurrentIndex(index);
     if(paraSave->KeyTone())
     {
@@ -135,6 +140,10 @@ void ICHCSystemSettingsFrame::languageBoxChange()
     {
         paraSave->SetCountry(QLocale::Portugal);
     }
+    else if(ui->languageButtonGroup->checkedId() == 3)
+    {
+        paraSave->SetCountry(QLocale::RussianFederation);
+    }
 }
 
 void ICHCSystemSettingsFrame::changeEvent(QEvent *e)
@@ -153,6 +162,8 @@ void ICHCSystemSettingsFrame::changeEvent(QEvent *e)
             ui->englishBox->setChecked(true);
         else if(paraSave->Country() == QLocale::Portugal)
             ui->ptBox->setChecked(true);
+        else if(paraSave->Country() == QLocale::Russian)
+            ui->ruBox->setChecked(true);
     //    ui->languageComboBox->setCurrentIndex(index);
         ui->dateTimeEdit->setDateTime(QDateTime::currentDateTime());
         ui->axisXToolButton->setText(tr("X1 Axis"));
