@@ -162,7 +162,7 @@ void ICHCSystemSettingsFrame::changeEvent(QEvent *e)
             ui->englishBox->setChecked(true);
         else if(paraSave->Country() == QLocale::Portugal)
             ui->ptBox->setChecked(true);
-        else if(paraSave->Country() == QLocale::Russian)
+        else if(paraSave->Country() == QLocale::RussianFederation)
             ui->ruBox->setChecked(true);
     //    ui->languageComboBox->setCurrentIndex(index);
         ui->dateTimeEdit->setDateTime(QDateTime::currentDateTime());
