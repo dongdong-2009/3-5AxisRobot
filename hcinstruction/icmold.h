@@ -309,6 +309,13 @@ public:
         StackParamCount
     };
 
+    enum ICDefinePos
+    {
+        DefinePosStart,
+        DefinePosEnd = 23,
+        DefinePosCount,
+    };
+
     enum ACTGROUP
     {
         GC          =0,		//0
@@ -421,6 +428,7 @@ public:
 
     QList<int> MoldParams() const { return moldParams_;}
     QList<QList<int> > StackParams() const { return stackParams_;}
+    QList<int> DefinePoses() const { return definePoses_;}
     QList<int> StackParams(int group) const;
     QList<int> AllParams() const;
 
@@ -431,6 +439,9 @@ public:
     int StackParam(int group, ICStatckParam param) const;
     void SetStackParam(int group, ICStatckParam param, int value);
 
+    int DefinePos(ICDefinePos pos) const { return definePoses_.at(pos);}
+    void SetDefinePos(ICDefinePos pos, int value) {definePoses_[pos] = value;}
+
     int LastStep() const;
 signals:
     void MoldPramChanged(int, int);
@@ -440,6 +451,7 @@ private:
     QList<ICMoldItem> moldContent_;
     QList<int> moldParams_;
     QList<QList<int> > stackParams_;
+    QList<int> definePoses_;
     int checkSum_;
     QString moldName_;
     QString moldParamName_;
@@ -490,6 +502,7 @@ inline QList<int> ICMold::AllParams() const
     {
         ret += stackParams_.at(i);
     }
+    ret += definePoses_;
     ret += checkSum_;
     return ret;
 }

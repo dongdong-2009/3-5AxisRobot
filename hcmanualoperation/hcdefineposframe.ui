@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HCDefinePosFrame</class>
+ <widget class="QFrame" name="HCDefinePosFrame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>745</width>
+    <height>329</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Raised</enum>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Pos1</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1Y1"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Z</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1C"/>
+      </item>
+      <item row="5" column="2">
+       <widget class="QLabel" name="label_14">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>X1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QLabel" name="label_15">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>B</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1B"/>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>C</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>A</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1A"/>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="2">
+       <widget class="QLabel" name="label_16">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1X1"/>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1Z"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>X2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1Y2"/>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_10">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Y1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1X2"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Y2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Pos2</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="1" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2Y1"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_33">
+        <property name="text">
+         <string>Z</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="label_34">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2C"/>
+      </item>
+      <item row="5" column="2">
+       <widget class="QLabel" name="label_35">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_36">
+        <property name="text">
+         <string>X1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QLabel" name="label_37">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_38">
+        <property name="text">
+         <string>B</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2B"/>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_39">
+        <property name="text">
+         <string>C</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_40">
+        <property name="text">
+         <string>A</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2A"/>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLabel" name="label_41">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="2">
+       <widget class="QLabel" name="label_42">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2X1"/>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLabel" name="label_43">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2Z"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_44">
+        <property name="text">
+         <string>X2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2Y2"/>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_45">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_46">
+        <property name="text">
+         <string>Y1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2X2"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_47">
+        <property name="text">
+         <string>Y2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_48">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>Pos3</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="1" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3Y1"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_49">
+        <property name="text">
+         <string>Z</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="label_50">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3C"/>
+      </item>
+      <item row="5" column="2">
+       <widget class="QLabel" name="label_51">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_52">
+        <property name="text">
+         <string>X1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QLabel" name="label_53">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_54">
+        <property name="text">
+         <string>B</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3B"/>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_55">
+        <property name="text">
+         <string>C</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_56">
+        <property name="text">
+         <string>A</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3A"/>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLabel" name="label_57">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="2">
+       <widget class="QLabel" name="label_58">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3X1"/>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLabel" name="label_59">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3Z"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_60">
+        <property name="text">
+         <string>X2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3Y2"/>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_61">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_62">
+        <property name="text">
+         <string>Y1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3X2"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_63">
+        <property name="text">
+         <string>Y2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_64">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ICLineEditWithVirtualNumericKeypad</class>
+   <extends>QLineEdit</extends>
+   <header>iclineeditwithvirtualnumerickeypad.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
