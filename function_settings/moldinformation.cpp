@@ -563,11 +563,11 @@ void MoldInformation::on_importToolButton_clicked()
         file.open(QFile::ReadOnly | QFile::Text);
         actContent = file.readAll();
         file.close();
-        if(!configFormatChecker.CheckRowCount(actContent, 58,ICDataFormatChecker::kCompareEqual))
-        {
-            QMessageBox::warning(this, tr("Warnning"), tr("Wrong config format!!!"));
-            return;
-        }
+//        if(!configFormatChecker.CheckRowCount(actContent, 58,ICDataFormatChecker::kCompareEqual))
+//        {
+//            QMessageBox::warning(this, tr("Warnning"), tr("Wrong config format!!!"));
+//            return;
+//        }
         if(!configFormatChecker.Check(actContent))
         {
             QMessageBox::warning(this, tr("Warnning"), tr("Wrong config format!"));

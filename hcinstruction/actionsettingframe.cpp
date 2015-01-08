@@ -195,6 +195,7 @@ void ActionSettingFrame::hideEvent(QHideEvent *e)
 
 void ActionSettingFrame::showEvent(QShowEvent *e)
 {
+    ui->relButton->setChecked(false);
     UpdateAxisDefine_();
     ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
     posMaxs_[0] = host->SystemParameter(ICVirtualHost::SYS_X_Maxium).toInt();
@@ -890,4 +891,9 @@ void ActionSettingFrame::KeyToActionCheck(int key)
         break;
 
     }
+}
+
+void ActionSettingFrame::on_relButton_toggled(bool checked)
+{
+    ui->relBox->setEnabled(checked);
 }

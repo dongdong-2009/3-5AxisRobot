@@ -1,6 +1,7 @@
 #include "hcdefineposframe.h"
 #include "ui_hcdefineposframe.h"
 #include "icmold.h"
+#include "icvirtualhost.h"
 
 QList<QList<QWidget*> > widgets;
 HCDefinePosFrame::HCDefinePosFrame(QWidget *parent) :
@@ -83,5 +84,6 @@ void HCDefinePosFrame::hideEvent(QHideEvent *e)
     }
     mold->UpdateSyncSum();
     mold->SaveMoldParamsFile();
+    ICVirtualHost::GlobalVirtualHost()->ReConfigure();
     QFrame::hideEvent(e);
 }
