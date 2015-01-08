@@ -358,6 +358,113 @@
     </message>
 </context>
 <context>
+    <name>HCDefinePosFrame</name>
+    <message>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="14"/>
+        <source>Frame</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="26"/>
+        <source>Pos1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="35"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="180"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="325"/>
+        <source>Z</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="42"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="52"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="66"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="100"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="107"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="117"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="137"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="161"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="187"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="197"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="211"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="245"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="252"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="262"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="282"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="306"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="332"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="342"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="356"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="390"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="397"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="407"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="427"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="451"/>
+        <source>mm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="59"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="204"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="349"/>
+        <source>X1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="73"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="218"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="363"/>
+        <source>B</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="83"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="228"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="373"/>
+        <source>C</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="90"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="235"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="380"/>
+        <source>A</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="127"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="272"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="417"/>
+        <source>X2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="144"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="289"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="434"/>
+        <source>Y1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="154"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="299"/>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="444"/>
+        <source>Y2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="171"/>
+        <source>Pos2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcdefineposframe.ui" line="316"/>
+        <source>Pos3</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>HCManualAdjustFrame</name>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="14"/>
@@ -1923,77 +2030,83 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="113"/>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="130"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="115"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="133"/>
         <source>Other</source>
         <translation>Other</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="114"/>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="131"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="116"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="134"/>
         <source>Adjust</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="115"/>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="132"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="117"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="135"/>
         <source>Reserve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="296"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="118"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="136"/>
+        <source>Def Pos</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="307"/>
         <source>Horizontal-1 Limit On</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="300"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="311"/>
         <source>Vertical-1 Limit On</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="309"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="320"/>
         <source>/Horizontal-2 Limit On</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="313"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="324"/>
         <source>/Vertical-2 Limit On</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="327"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="338"/>
         <source>Horizontal-1</source>
         <translation>Hor-1</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="335"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="346"/>
         <source>Vertical-1</source>
         <translation>Ver-1</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="343"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="354"/>
         <source>Horizontal-2</source>
         <translation>Hor-2</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="351"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="362"/>
         <source>Vertical-2</source>
         <translation>Ver-2</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="355"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="366"/>
         <source>Vertical-1/Vertical-2</source>
         <translation>Ver-1/Ver-2</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="111"/>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="128"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="113"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="131"/>
         <source>Fixture</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="112"/>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="129"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="114"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="132"/>
         <source>Sucker</source>
         <translation type="unfinished"></translation>
     </message>

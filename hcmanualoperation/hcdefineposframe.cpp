@@ -82,5 +82,6 @@ void HCDefinePosFrame::hideEvent(QHideEvent *e)
         }
     }
     mold->UpdateSyncSum();
+    mold->SaveMoldParamsFile();
     QFrame::hideEvent(e);
 }
