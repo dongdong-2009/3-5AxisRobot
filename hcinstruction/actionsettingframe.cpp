@@ -290,6 +290,7 @@ QList<ICMoldItem> ActionSettingFrame::CreateCommandImpl() const
 {
     QList<ICMoldItem> ret;
     ICMoldItem item;
+    int isRel = ui->relButton->isChecked();
     if(ui->gxButton->isChecked() && (!ui->gxButton->isHidden()))
     {
         //        if(ui->gxComboBox->currentIndex() == 0)
@@ -311,7 +312,15 @@ QList<ICMoldItem> ActionSettingFrame::CreateCommandImpl() const
             item.SetAction(ui->x1BoxbuttonGroup->checkedId() == 0 ? ICMold::ACTMAINFORWARD : ICMold::ACTMAINBACKWARD);
         }
         item.SetDVal(ui->x1DelayLineEdit->TransThisTextToThisInt());
-        item.SetIFVal(0);
+        if(isRel)
+        {
+            item.SetBadProduct(isRel);
+            item.SetIFOtherVal(ui->relBox->currentIndex() + 1);
+        }
+        else
+        {
+            item.SetIFVal(0);
+        }
         item.SetActualIfPos(0);
         ret.append(item);
     }
@@ -328,7 +337,15 @@ QList<ICMoldItem> ActionSettingFrame::CreateCommandImpl() const
             item.SetAction(ui->y1BoxbuttonGroup->checkedId() == 0 ? ICMold::ACTMAINUP : ICMold::ACTMAINDOWN);
         }
         item.SetDVal(ui->y1DelayLineEdit->TransThisTextToThisInt());
-        item.SetIFVal(0);
+        if(isRel)
+        {
+            item.SetBadProduct(isRel);
+            item.SetIFOtherVal(ui->relBox->currentIndex() + 1);
+        }
+        else
+        {
+            item.SetIFVal(0);
+        }
         item.SetActualIfPos(0);
         ret.append(item);
     }
@@ -345,7 +362,15 @@ QList<ICMoldItem> ActionSettingFrame::CreateCommandImpl() const
             item.SetAction(ui->zBoxbuttonGroup->checkedId() == 0 ? ICMold::ACTCOMEIN : ICMold::ACTGOOUT);
         }
         item.SetDVal(ui->zDelayLineEdit->TransThisTextToThisInt());
-        item.SetIFVal(0);
+        if(isRel)
+        {
+            item.SetBadProduct(isRel);
+            item.SetIFOtherVal(ui->relBox->currentIndex() + 1);
+        }
+        else
+        {
+            item.SetIFVal(0);
+        }
         item.SetActualIfPos(0);
         ret.append(item);
     }
@@ -364,7 +389,15 @@ QList<ICMoldItem> ActionSettingFrame::CreateCommandImpl() const
             item.SetAction(ui->x2BoxbuttonGroup->checkedId() == 0 ? ICMold::ACTVICEFORWARD : ICMold::ACTVICEBACKWARD);
         }
         item.SetDVal(ui->x2DelayLineEdit->TransThisTextToThisInt());
-        item.SetIFVal(0);
+        if(isRel)
+        {
+            item.SetBadProduct(isRel);
+            item.SetIFOtherVal(ui->relBox->currentIndex() + 1);
+        }
+        else
+        {
+            item.SetIFVal(0);
+        }
         item.SetActualIfPos(0);
         ret.append(item);
     }
@@ -381,7 +414,15 @@ QList<ICMoldItem> ActionSettingFrame::CreateCommandImpl() const
             item.SetAction(ui->y2BoxbuttonGroup->checkedId() == 0 ? ICMold::ACTVICEUP : ICMold::ACTVICEDOWN);
         }
         item.SetDVal(ui->y2DelayLineEdit->TransThisTextToThisInt());
-        item.SetIFVal(0);
+        if(isRel)
+        {
+            item.SetBadProduct(isRel);
+            item.SetIFOtherVal(ui->relBox->currentIndex() + 1);
+        }
+        else
+        {
+            item.SetIFVal(0);
+        }
         item.SetActualIfPos(0);
         ret.append(item);
     }
@@ -399,7 +440,15 @@ QList<ICMoldItem> ActionSettingFrame::CreateCommandImpl() const
             item.SetAction(ui->aBoxbuttonGroup->checkedId() == 1 ? ICMold::ACT_PoseVert2 : ICMold::ACT_PoseHori2);
         }
         item.SetDVal(ui->aDelayLineEdit->TransThisTextToThisInt());
-        item.SetIFVal(0);
+        if(isRel)
+        {
+            item.SetBadProduct(isRel);
+            item.SetIFOtherVal(ui->relBox->currentIndex() + 1);
+        }
+        else
+        {
+            item.SetIFVal(0);
+        }
         item.SetActualIfPos(0);
         ret.append(item);
     }
@@ -410,7 +459,15 @@ QList<ICMoldItem> ActionSettingFrame::CreateCommandImpl() const
         item.SetActualPos(ui->bPosLineEdit->TransThisTextToThisInt());
         item.SetDVal(ui->bDelayLineEdit->TransThisTextToThisInt());
         item.SetSVal(ui->bSpeedLineEdit->TransThisTextToThisInt());
-        item.SetIFVal(0);
+        if(isRel)
+        {
+            item.SetBadProduct(isRel);
+            item.SetIFOtherVal(ui->relBox->currentIndex() + 1);
+        }
+        else
+        {
+            item.SetIFVal(0);
+        }
         item.SetActualIfPos(0);
         ret.append(item);
     }
@@ -428,7 +485,15 @@ QList<ICMoldItem> ActionSettingFrame::CreateCommandImpl() const
             item.SetAction(ui->cBoxbuttonGroup->checkedId() == 1 ? ICMold::ACTPOSEVERT : ICMold::ACTPOSEHORI);
         }
         item.SetDVal(ui->cDelayLineEdit->TransThisTextToThisInt());
-        item.SetIFVal(0);
+        if(isRel)
+        {
+            item.SetBadProduct(isRel);
+            item.SetIFOtherVal(ui->relBox->currentIndex() + 1);
+        }
+        else
+        {
+            item.SetIFVal(0);
+        }
         item.SetActualIfPos(0);
         ret.append(item);
     }

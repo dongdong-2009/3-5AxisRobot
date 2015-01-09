@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>470</width>
-    <height>688</height>
+    <height>703</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -1670,7 +1670,7 @@
     </widget>
    </item>
    <item row="12" column="0">
-    <widget class="QCheckBox" name="gCButton_2">
+    <widget class="QCheckBox" name="relButton">
      <property name="styleSheet">
       <string notr="true">::indicator {
      width: 32px;
@@ -1705,7 +1705,7 @@
     </widget>
    </item>
    <item row="12" column="1">
-    <widget class="QComboBox" name="comboBox">
+    <widget class="QComboBox" name="relBox">
      <item>
       <property name="text">
        <string>Pos1</string>
