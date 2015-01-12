@@ -87,7 +87,7 @@
       </size>
      </property>
      <property name="text">
-      <string>SubArm Up + </string>
+      <string>M2 + </string>
      </property>
      <property name="autoRepeat">
       <bool>true</bool>
@@ -118,7 +118,7 @@
       </size>
      </property>
      <property name="text">
-      <string>SubArm Down + </string>
+      <string>M3 + </string>
      </property>
      <property name="autoRepeat">
       <bool>true</bool>
@@ -149,7 +149,7 @@
       </size>
      </property>
      <property name="text">
-      <string>SubArm Advance -</string>
+      <string>M1 -</string>
      </property>
      <property name="autoRepeat">
       <bool>true</bool>
@@ -261,7 +261,7 @@
       </size>
      </property>
      <property name="text">
-      <string>SubArm Up -</string>
+      <string>M2 -</string>
      </property>
      <property name="autoRepeat">
       <bool>true</bool>
@@ -292,7 +292,7 @@
       </size>
      </property>
      <property name="text">
-      <string>SubArm Down -</string>
+      <string>M3 -</string>
      </property>
      <property name="autoRepeat">
       <bool>true</bool>
@@ -471,7 +471,7 @@
       </size>
      </property>
      <property name="text">
-      <string>SubArm Advance +</string>
+      <string>M1 +</string>
      </property>
      <property name="autoRepeat">
       <bool>true</bool>
@@ -502,7 +502,7 @@
       </size>
      </property>
      <property name="text">
-      <string>SubArm Back + </string>
+      <string>M0 + </string>
      </property>
      <property name="autoRepeat">
       <bool>true</bool>
@@ -533,7 +533,7 @@
       </size>
      </property>
      <property name="text">
-      <string>SubArm Back -</string>
+      <string>M0 -</string>
      </property>
      <property name="autoRepeat">
       <bool>true</bool>

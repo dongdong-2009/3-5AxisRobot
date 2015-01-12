@@ -5,6 +5,34 @@
 #include "icvirtualhost.h"
 #include "icvirtualhost.h"
 
+
+QLabel* labelNull;
+const QString X010 = "X010";
+const QString X011 = "X011";
+const QString X017 = "X017";
+const QString X020 = "X020";
+const QString X022 = "X022";
+const QString X035 = "X035";
+const QString X024 = "X024";
+const QString X025 = "X025";
+const QString X030 = "X030";
+const QString X031 = "X031";
+const QString X032 = "X032";
+const QString X033 = "X033";
+const QString X023 = "X023";
+const QString X037 = "X037";
+const QString X026 = "X026";
+const QString Y017 = "Y017";
+const QString Y022 = "Y022";
+const QString Y031 = "Y031";
+const QString Y032 = "Y032";
+const QString Y010 = "Y010";
+const QString Y011 = "Y011";
+const QString Y024 = "Y024";
+const QString Y046 = "Y046";
+const QString Y023 = "Y023";
+const QString Y035 = "Y035";
+//const QString Y023 = "Y036";
 ICIOPage::ICIOPage(QWidget *parent) :
     QWidget(parent),
     inputs_(64, false),
@@ -22,30 +50,41 @@ ICIOPage::ICIOPage(QWidget *parent) :
     frameLayout_->setSpacing(15);
 #endif
     this->setLayout(frameLayout_);
-    for(int i = 0; i != 6; ++i)
-    {
-        recsLabels_.append(NULL);
-    }
-    for(int i = 0; i != 4; ++i)
-    {
-        ioLabels_.append(NULL);
-        adjustLabels_.append(NULL);
-    }
-    servoOutLabels_.append(NULL);
-    servoOutLabels_.append(NULL);
-    servoInLabels_.append(NULL);
-    servoInLabels_.append(NULL);
-    servoInLabels_.append(NULL);
-    servoInLabels_.append(NULL);
 
-    servoInLabels_.append(NULL);
-    servoInLabels_.append(NULL);
-    servoInLabels_.append(NULL);
+    labelNull = new QLabel();
+    labelNull->hide();
+    multiLabels.insert(X010, labelNull);
+    multiLabels.insert(X011, labelNull);
+    multiLabels.insert(X017, labelNull);
+    multiLabels.insert(X020, labelNull);
+    multiLabels.insert(X022, labelNull);
+    multiLabels.insert(X035, labelNull);
+    multiLabels.insert(X024, labelNull);
+    multiLabels.insert(X025, labelNull);
+    multiLabels.insert(X030, labelNull);
+    multiLabels.insert(X031, labelNull);
+    multiLabels.insert(X032, labelNull);
+    multiLabels.insert(X033, labelNull);
+    multiLabels.insert(X023, labelNull);
+    multiLabels.insert(X037, labelNull);
+    multiLabels.insert(X026, labelNull);
+    multiLabels.insert(Y017, labelNull);
+    multiLabels.insert(Y022, labelNull);
+    multiLabels.insert(Y031, labelNull);
+    multiLabels.insert(Y032, labelNull);
+    multiLabels.insert(Y010, labelNull);
+    multiLabels.insert(Y011, labelNull);
+    multiLabels.insert(Y024, labelNull);
+    multiLabels.insert(Y046, labelNull);
+    multiLabels.insert(Y023, labelNull);
+    multiLabels.insert(Y035, labelNull);
+//    multiLabels.insert(Y036, labelNull);
 }
 ICIOPage::~ICIOPage()
 {
     delete frameLayout_;
 }
+
 
 void ICIOPage::BindingIOPoints(const QList<ICIOPoint> &points)
 {
@@ -60,68 +99,9 @@ void ICIOPage::BindingIOPoints(const QList<ICIOPoint> &points)
     {
         for(int i = 0; i != size; ++i)
         {
-            if(points.at(i).PointNum() == tr("Y017"))
-            {
-                backupDescrMap_.insert(0, points.at(i));
-            }
-            else if(points.at(i).PointNum() == tr("Y022"))
-            {
-                backupDescrMap_.insert(1, points.at(i));
-            }
-            else if(points.at(i).PointNum() == tr("Y031"))
-            {
-                backupDescrMap_.insert(2, points.at(i));
-            }
-            else if(points.at(i).PointNum() == tr("Y032"))
-            {
-                backupDescrMap_.insert(3, points.at(i));
-            }
-            else if(points.at(i).PointNum() == tr("Y035"))
-            {
-                backupDescrMap_.insert(4, points.at(i));
-            }
-            else if(points.at(i).PointNum() == tr("Y036"))
-            {
-                backupDescrMap_.insert(5, points.at(i));
-            }
-            else if(points.at(i).PointNum() == tr("Y023"))
-            {
-                backupDescrMap_.insert(6, points.at(i));
-            }
-            else if(points.at(i).PointNum() == tr("Y026"))
-            {
-                backupDescrMap_.insert(7, points.at(i));
-            }
-            else if(points.at(i).PointNum() == tr("X017"))
-            {
-                backupDescrMap_.insert(8, points.at(i));
-            }
-            else if(points.at(i).PointNum() == tr("X020"))
-            {
-                backupDescrMap_.insert(9, points.at(i));
-            }
-            else if(points.at(i).PointNum() == tr("X022"))
-            {
-                backupDescrMap_.insert(10, points.at(i));
-            }
-            else if(points.at(i).PointNum() == tr("X035"))
-            {
-                backupDescrMap_.insert(11, points.at(i));
-            }
-            else if(points.at(i).PointNum() == tr("X024"))
-            {
-                backupDescrMap_.insert(12, points.at(i));
-            }
-            else if(points.at(i).PointNum() == tr("X025"))
-            {
-                backupDescrMap_.insert(13, points.at(i));
-            }
-            else if(points.at(i).PointNum() == tr("X041"))
-            {
-                backupDescrMap_.insert(14, points.at(i));
-            }
-
             descrLabels_.at(i)->setText(points.at(i).PointDescription());
+//            if(multiLabels.contains(point.PointNum()))
+//                multiLabels.insert(point.PointNum(), descr);
         }
     }
     else
@@ -138,114 +118,7 @@ void ICIOPage::BindingIOPoints(const QList<ICIOPoint> &points)
             leds->setPixmap(offPixmap_);
             ledToPoint_.insert(leds, point);
             descrLabels_.append(descr);
-            if(point.PointNum() == tr("Y017"))
-            {
-                recsLabels_[0] = (descr);
-                backupDescrMap_.insert(0, point);
-            }
-            else if(point.PointNum() == tr("Y022"))
-            {
-                recsLabels_[1] = descr;
-                backupDescrMap_.insert(1, point);
-            }
-            else if(point.PointNum() == tr("Y031"))
-            {
-                recsLabels_[2] = descr;
-                backupDescrMap_.insert(2, point);
-            }
-            else if(point.PointNum() == tr("Y032"))
-            {
-                recsLabels_[3] = descr;
-                backupDescrMap_.insert(3, point);
-            }
-            else if(point.PointNum() == tr("Y035"))
-            {
-                recsLabels_[4] = descr;
-                backupDescrMap_.insert(4, point);
-            }
-            else if(point.PointNum() == tr("Y036"))
-            {
-                recsLabels_[5] = descr;
-                backupDescrMap_.insert(5, point);
-            }
-            else if(point.PointNum() == tr("Y010"))
-            {
-                ioLabels_[0] = descr ;
-            }
-            else if(point.PointNum() == tr("Y011"))
-            {
-                ioLabels_[1] = descr ;
-            }
-            else if(point.PointNum() == tr("X010"))
-            {
-                ioLabels_[2] = descr ;
-            }
-            else if(point.PointNum() == tr("X011"))
-            {
-                ioLabels_[3] = descr ;
-            }
 
-            else if(point.PointNum() == tr("X023"))
-            {
-                adjustLabels_[0] = descr;
-            }
-//            else if(point.PointNum() == tr("X026"))
-//            {
-//                adjustLabels_[1] = descr;
-//            }
-            else if(point.PointNum() == tr("X030"))
-            {
-                adjustLabels_[1] = descr;
-            }
-            else if(point.PointNum() == tr("X033"))
-            {
-                adjustLabels_[2] = descr;
-            }
-            else if(point.PointNum() == tr("Y023"))
-            {
-                backupDescrMap_.insert(6, points.at(i));
-                servoOutLabels_[0] =descr;
-            }
-            else if(point.PointNum() == tr("Y026"))
-            {
-                backupDescrMap_.insert(7, points.at(i));
-                servoOutLabels_[1] =descr;
-            }
-            else if(point.PointNum() == tr("X017"))
-            {
-                backupDescrMap_.insert(8, points.at(i));
-                servoInLabels_[0] =descr;
-            }
-            else if(point.PointNum() == tr("X020"))
-            {
-                backupDescrMap_.insert(9, points.at(i));
-                servoInLabels_[1] =descr;
-            }
-            else if(point.PointNum() == tr("X022"))
-            {
-                backupDescrMap_.insert(10, points.at(i));
-                servoInLabels_[2] =descr;
-            }
-            else if(point.PointNum() == tr("X035"))
-            {
-                backupDescrMap_.insert(11, points.at(i));
-                servoInLabels_[3] =descr;
-            }
-            else if(point.PointNum() == tr("X024"))
-            {
-                backupDescrMap_.insert(12, points.at(i));
-                servoInLabels_[4] =descr;
-            }
-            else if(point.PointNum() == tr("X025"))
-            {
-                backupDescrMap_.insert(13, points.at(i));
-                servoInLabels_[5] =descr;
-            }
-            else if(point.PointNum() == tr("X041"))
-            {
-                backupDescrMap_.insert(14, points.at(i));
-                servoInLabels_[6] =descr;
-            }
             nums->setFixedWidth(50);
             descr->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
             descr->setFixedWidth(243);
@@ -255,6 +128,12 @@ void ICIOPage::BindingIOPoints(const QList<ICIOPoint> &points)
             itemLayout_->addWidget(leds);
             itemLayout_->addStretch();
             frameLayout_->addLayout(itemLayout_);
+
+            if(multiLabels.contains(point.PointNum()))
+            {
+                multiLabels.insert(point.PointNum(), descr);
+//                qDebug()<<point.PointNum()<<descr;
+            }
         }
         frameLayout_->addStretch();
     }
@@ -318,212 +197,202 @@ void ICIOPage::UpdateIO()
 void ICIOPage::showEvent(QShowEvent *e)
 {
     ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
-    for(int i = 0; i != recsLabels_.size(); ++i)
+    if(host->PeripheryOutput(0))
     {
-        if(recsLabels_.at(i) != NULL)
-        {
-            if(host->PeripheryOutput(i) == 1)
-            {
-                if(i > 3)
-                    recsLabels_[i]->setText(tr("Sucker") + QString::number(i - 1) + tr("Valve"));
-                else
-                    recsLabels_[i]->setText(tr("Reserve") + QString::number(i+1));
-            }
-            else
-            {
-                recsLabels_[i]->setText(backupDescrMap_.value(i).PointDescription());
-            }
-        }
+        multiLabels.value(Y017)->setText(tr("Reserve-1"));
     }
-//    if(recsLabels_.at(0) != NULL)
-//    {
-//        if(host->PeripheryOutput(0) == 1)
-//        {
-//            recsLabels_[0]->setText(tr("Thimble 2") + QString::number(0));
-//        }
-//        else
-//        {
-//            recsLabels_[0]->setText(backupDescrMap_.value(0).PointDescription());
-//        }
-//    }
+    else
+    {
+        multiLabels.value(Y017)->setText(tr("M0"));
+    }
+    if(host->PeripheryOutput(1))
+    {
+        multiLabels.value(Y022)->setText(tr("Reserve-2"));
+    }
+    else
+    {
+        multiLabels.value(Y022)->setText(tr("M1"));
+    }
+    if(host->PeripheryOutput(2))
+    {
+        multiLabels.value(Y031)->setText(tr("Reserve-3"));
+    }
+    else
+    {
+        multiLabels.value(Y031)->setText(tr("M2"));
+    }
+    if(host->PeripheryOutput(3))
+    {
+        multiLabels.value(Y032)->setText(tr("Reserve-4"));
+    }
+    else
+    {
+        multiLabels.value(Y032)->setText(tr("M3"));
+    }
+    if(host->PeripheryOutput(4))
+    {
+        multiLabels.value(Y035)->setText(tr("Sucker-3 Valve"));
+    }
+    else
+    {
+        multiLabels.value(Y035)->setText(tr("Motor Invert"));
+    }
 
-        if(ICVirtualHost::GlobalVirtualHost()->FixtureDefine() == 1)
-        {
-            if(ioLabels_.at(0) != NULL)
-            {
-                ioLabels_[0]->setText(tr("Horizon-1"));
-            }
-            if(ioLabels_.at(2) != NULL)
-            {
-                if(host->AxisDefine(ICVirtualHost::ICAxis_AxisC) == ICVirtualHost::ICAxisDefine_Servo)
-                {
-                    ioLabels_[2]->setText(tr("C Origin"));
-                }
-                else
-                {
-                    ioLabels_[2]->setText(tr("Horizon-1"));
-                }
-            }
 
-        }
+    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisC) == ICVirtualHost::ICAxisDefine_Servo)
+    {
+        multiLabels.value(X010)->setText(tr("C Origin"));
+        multiLabels.value(X011)->setText(tr("C end limit"));
+    }
+    else if(ICVirtualHost::GlobalVirtualHost()->FixtureDefine() == 0)
+    {
+        multiLabels.value(X010)->setText(tr("Horizon-1 Limit"));
+        multiLabels.value(X011)->setText(tr("Vertical-1 Limit "));
+
+        multiLabels.value(Y010)->setText(tr("Horizon-1 Valve"));
+        multiLabels.value(Y011)->setText(tr("Vertical-1 Valve "));
+    }
+    else
+    {
+        multiLabels.value(X011)->setText(tr("Horizon-1 Limit"));
+        multiLabels.value(X010)->setText(tr("Vertical-1 Limit"));
+        multiLabels.value(Y011)->setText(tr("Horizon-1 Valve"));
+        multiLabels.value(Y010)->setText(tr("Vertical-1 Valve"));
+    }
+
+    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisX1) == ICVirtualHost::ICAxisDefine_Servo)
+    {
+        multiLabels.value(X020)->setText(tr("X1 Origin"));
+        multiLabels.value(X017)->setText(tr("X1 end Limit"));
+    }
+    else if(host->AxisDefine(ICVirtualHost::ICAxis_AxisX1) == ICVirtualHost::ICAxisDefine_Pneumatic)
+    {
+        multiLabels.value(X020)->setText(tr("X1 BW Limit"));
+        multiLabels.value(X017)->setText(tr("X1 FW Limit"));
+    }
+    else
+    {
+        multiLabels.value(X020)->setText(tr("X020"));
+        multiLabels.value(X017)->setText(tr("X017"));
+    }
+
+    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisY1) == ICVirtualHost::ICAxisDefine_Servo)
+    {
+        multiLabels.value(X022)->setText(tr("Y1 Origin"));
+        multiLabels.value(X035)->setText(tr("Y1 end Limit"));
+        multiLabels.value(Y023)->setText(tr("Aid Pneu"));
+    }
+    else if(host->AxisDefine(ICVirtualHost::ICAxis_AxisY1) == ICVirtualHost::ICAxisDefine_Pneumatic)
+    {
+        multiLabels.value(X022)->setText(tr("Y1 UP Limit"));
+        multiLabels.value(X035)->setText(tr("Y1 DW Limit"));
+        multiLabels.value(Y023)->setText(tr("Y1 DW Valve"));
+    }
+    else
+    {
+        multiLabels.value(X022)->setText(tr("X022"));
+        multiLabels.value(X035)->setText(tr("X035"));
+        multiLabels.value(Y023)->setText(tr("Y023"));
+    }
+
+    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisZ) == ICVirtualHost::ICAxisDefine_Servo)
+    {
+        multiLabels.value(X024)->setText(tr("Z Origin"));
+        multiLabels.value(X025)->setText(tr("Z end Limit"));
+    }
+    else if(host->AxisDefine(ICVirtualHost::ICAxis_AxisZ) == ICVirtualHost::ICAxisDefine_Pneumatic)
+    {
+        multiLabels.value(X024)->setText(tr("Z BW Limit"));
+        multiLabels.value(X025)->setText(tr("Z FW Limit"));
+    }
+    else
+    {
+        multiLabels.value(X024)->setText(tr("X024"));
+        multiLabels.value(X025)->setText(tr("X025"));
+    }
+
+    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisX2) == ICVirtualHost::ICAxisDefine_Servo)
+    {
+        multiLabels.value(X031)->setText(tr("X2 Origin"));
+        multiLabels.value(X030)->setText(tr("X2 end Limit"));
+    }
+    else if(host->AxisDefine(ICVirtualHost::ICAxis_AxisX2) == ICVirtualHost::ICAxisDefine_Pneumatic)
+    {
+        multiLabels.value(X031)->setText(tr("X2 BW Limit"));
+        if(host->HasSubArmForwardLimit())
+            multiLabels.value(X030)->setText(tr("X2 FW Limit"));
         else
-        {
-            if(ioLabels_.at(0) != NULL)
-            {
-                ioLabels_[0]->setText(tr("Vertical-1"));
-            }
-            if(ioLabels_.at(2) != NULL)
-            {
-                if(host->AxisDefine(ICVirtualHost::ICAxis_AxisC) == ICVirtualHost::ICAxisDefine_Servo)
-                {
-                    ioLabels_[2]->setText(tr("C Origin"));
-                }
-                else
-                {
-                    ioLabels_[2]->setText(tr("Vertical-1"));
-                }
-            }
-        }
-        if(ICVirtualHost::GlobalVirtualHost()->FixtureDefine() == 1)
-        {
-            if(ioLabels_.at(1) != NULL)
-            {
-                ioLabels_[1]->setText(tr("Vertical-1"));
-            }
-            if(ioLabels_.at(3) != NULL)
-            {
-                if(host->AxisDefine(ICVirtualHost::ICAxis_AxisC) == ICVirtualHost::ICAxisDefine_Servo)
-                {
-                    ioLabels_[3]->setText(tr("C Origin Limit"));
-                }
-                else
-                {
-                    ioLabels_[3]->setText(tr("Vertical-1"));
-                }
-            }
-        }
+            multiLabels.value(X030)->setText(tr("M1"));
+    }
+    else
+    {
+        multiLabels.value(X030)->setText(tr("X030"));
+        multiLabels.value(X031)->setText(tr("X031"));
+    }
+
+    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisY2) == ICVirtualHost::ICAxisDefine_Servo)
+    {
+        multiLabels.value(X032)->setText(tr("Y2 Origin"));
+        multiLabels.value(X033)->setText(tr("Y2 end Limit"));
+    }
+    else if(host->AxisDefine(ICVirtualHost::ICAxis_AxisY2) == ICVirtualHost::ICAxisDefine_Pneumatic)
+    {
+        multiLabels.value(X032)->setText(tr("Y2 UP Limit"));
+        if(host->HasSubArmForwardLimit())
+            multiLabels.value(X033)->setText(tr("Y2 DW Limit"));
         else
-        {
-            if(ioLabels_.at(1) != NULL)
-            {
-                ioLabels_[1]->setText(tr("Horizon-1"));
-            }
-            if(ioLabels_.at(3) != NULL)
-            {
-                if(host->AxisDefine(ICVirtualHost::ICAxis_AxisC) == ICVirtualHost::ICAxisDefine_Servo)
-                {
-                    ioLabels_[3]->setText(tr("C Origin Limit"));
-                }
-                else
-                {
-                    ioLabels_[3]->setText(tr("Horizon-1"));
-                }
-            }
-        }
+            multiLabels.value(X033)->setText(tr("M2"));
+    }
+    else
+    {
+        multiLabels.value(X032)->setText(tr("X032"));
+        multiLabels.value(X033)->setText(tr("X033"));
+    }
+
+    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisA) == ICVirtualHost::ICAxisDefine_Servo)
+    {
+        multiLabels.value(X023)->setText(tr("A Origin"));
+        multiLabels.value(X037)->setText(tr("A end limit"));
+    }
+    else if(host->AxisDefine(ICVirtualHost::ICAxis_AxisA) == ICVirtualHost::ICAxisDefine_None)
+    {
+        multiLabels.value(X023)->setText(tr("M0"));
+        multiLabels.value(X037)->setText(tr("X037"));
+        multiLabels.value(Y024)->setText(tr("Y024"));
+        multiLabels.value(Y046)->setText(tr("Y046"));
+    }
+    else if(ICVirtualHost::GlobalVirtualHost()->FixtureDefine() == 0)
+    {
+        multiLabels.value(X023)->setText(tr("Horizon-2 Limit"));
+        multiLabels.value(X037)->setText(tr("Vertical-2 Limit "));
+
+        multiLabels.value(Y024)->setText(tr("Horizon-2 Valve"));
+        multiLabels.value(Y046)->setText(tr("Vertical-2 Valve "));
+    }
+    else
+    {
+        multiLabels.value(X023)->setText(tr("Horizon-2 Limit"));
+        multiLabels.value(X037)->setText(tr("Vertical-2 Limit"));
+        multiLabels.value(Y024)->setText(tr("Horizon-2 Valve"));
+        multiLabels.value(Y046)->setText(tr("Vertical-2 Valve"));
+    }
+
+    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisB) == ICVirtualHost::ICAxisDefine_Servo)
+    {
+        multiLabels.value(X026)->setText(tr("B Origin"));
+//        multiLabels.value(X037)->setText(tr("A end limit"));
+    }
+    else
+    {
+        multiLabels.value(X026)->setText(tr("X026"));
+//        multiLabels.value(X037)->setText(tr("X037"));
+//        multiLabels.value(Y024)->setText(tr("Y024"));
+//        multiLabels.value(Y046)->setText(tr("Y046"));
+    }
 
 
-        if(host->AxisDefine(ICVirtualHost::ICAxis_AxisX2) == ICVirtualHost::ICAxisDefine_Pneumatic)
-        {
-            if(adjustLabels_.at(0) != NULL)
-            {
-                adjustLabels_[0]->setText(tr("Adjust Sub Forward"));
-            }
-//            if(adjustLabels_.at(1) != NULL)
-//            {
-//                adjustLabels_[1]->setText(tr("Adjust Sub Down"));
-//            }
-        }
-        else
-        {
-            if(adjustLabels_.at(0) != NULL)
-            {
-                adjustLabels_[0]->setText(tr("A Origin/Horizon-2"));
-            }
-//            if(adjustLabels_.at(1) != NULL)
-//            {
-//                adjustLabels_[1]->setText(tr("Reserve"));
-//            }
-        }
-        if(host->AxisDefine(ICVirtualHost::ICAxis_AxisY2) == ICVirtualHost::ICAxisDefine_Pneumatic)
-        {
-            if(adjustLabels_.at(1) != NULL)
-            {
-                adjustLabels_[1]->setText(tr("Adjust Sub Backward"));
-            }
-            if(adjustLabels_.at(2) != NULL)
-            {
-                adjustLabels_[2]->setText(tr("Adjust Sub Up"));
-            }
-        }
-        else
-        {
-            if(adjustLabels_.at(1) != NULL)
-            {
-                adjustLabels_[1]->setText(tr("X2 In Limit"));
-            }
-            if(adjustLabels_.at(2) != NULL)
-            {
-                adjustLabels_[2]->setText(tr("Y2 In Limit"));
-            }
-        }
-
-        if(host->AxisDefine(ICVirtualHost::ICAxis_AxisY1) == ICVirtualHost::ICAxisDefine_Pneumatic)
-        {
-            if(servoOutLabels_[0] != NULL)
-                servoOutLabels_[0]->setText(tr("Main Arm down valve"));
-            if(servoInLabels_[2] != NULL)
-                servoInLabels_[2]->setText(tr("Main Arm Down Limit"));
-            if(servoInLabels_[3] != NULL)
-                servoInLabels_[3]->setText(tr("Main Arm Up Limit"));
-        }
-        else
-        {
-            if(servoOutLabels_[0] != NULL)
-                servoOutLabels_[0]->setText(tr("Aid Pneumatic"));
-            if(servoInLabels_[2] != NULL)
-                servoInLabels_[2]->setText(backupDescrMap_.value(10).PointDescription());
-            if(servoInLabels_[3] != NULL)
-                servoInLabels_[3]->setText(backupDescrMap_.value(11).PointDescription());
-        }
 
 
-        if(host->AxisDefine(ICVirtualHost::ICAxis_AxisX1) == ICVirtualHost::ICAxisDefine_Pneumatic)
-        {
-            if(servoOutLabels_[1] != NULL)
-                servoOutLabels_[1]->setText(tr("Main Arm Foward valve"));
-            if(servoInLabels_[0] != NULL)
-                servoInLabels_[0]->setText(tr("Main Arm Forward Limit"));
-            if(servoInLabels_[1] != NULL)
-                servoInLabels_[1]->setText(tr("Main Arm Backward Limit"));
-        }
-        else
-        {
-            if(servoOutLabels_[1] != NULL)
-                servoOutLabels_[1]->setText(backupDescrMap_.value(7).PointDescription());
-            if(servoInLabels_[0] != NULL)
-                servoInLabels_[0]->setText(backupDescrMap_.value(8).PointDescription());
-            if(servoInLabels_[1] != NULL)
-                servoInLabels_[1]->setText(backupDescrMap_.value(9).PointDescription());
-        }
-
-        if(host->AxisDefine(ICVirtualHost::ICAxis_AxisZ) == ICVirtualHost::ICAxisDefine_Pneumatic)
-        {
-            if(servoInLabels_[4] != NULL)
-                servoInLabels_[4]->setText(tr("Go out Limit"));
-            if(servoInLabels_[5] != NULL)
-                servoInLabels_[5]->setText(tr("Come in Limit"));
-            if(servoInLabels_[6] != NULL)
-                servoInLabels_[6]->setText(tr("Release Mid"));
-        }
-        else
-        {
-            if(servoInLabels_[4] != NULL)
-                servoInLabels_[4]->setText(backupDescrMap_.value(12).PointDescription());
-            if(servoInLabels_[5] != NULL)
-                servoInLabels_[5]->setText(backupDescrMap_.value(13).PointDescription());
-            if(servoInLabels_[6] != NULL)
-                servoInLabels_[6]->setText(backupDescrMap_.value(14).PointDescription());
-        }
 
 
     QWidget::showEvent(e);

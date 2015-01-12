@@ -579,10 +579,24 @@ void ICVirtualHost::InitSystem_()
     QStringList items = fileContent.split("\n", QString::SkipEmptyParts);
     QVector<uint8_t> dataSection;
     QVector<uint> tempItemValues;
+    static bool isSystemInited = false;
+    uint fl, fh;
+    if(isSystemInited)
+    {
+        fl = systemParamMap_.value(SYS_RsvReadMold).toUInt();
+        fh = systemParamMap_.value(SYS_RsvWorkmold).toUInt();
+    }
     for(int i = 0; i != items.size(); ++i)
     {
         tempItemValues.append(items.at(i).toUInt());
         systemParamMap_.insert(static_cast<ICSystemParameter>(i), tempItemValues.last());
+    }
+    if(isSystemInited)
+    {
+        tempItemValues[SYS_RsvReadMold] = fl;
+        tempItemValues[SYS_RsvWorkmold] = fh;
+        systemParamMap_.insert(SYS_RsvReadMold, fl);
+        systemParamMap_.insert(SYS_RsvWorkmold, fh);
     }
 
     if(tempItemValues.size() < systemParamMap_.size())
@@ -639,6 +653,7 @@ void ICVirtualHost::InitSystem_()
         }
     }
 
+
     ICCommandProcessor* commandProcessor = ICCommandProcessor::Instance();
     ICWriteParameters writeParamtersCommand;
     writeParamtersCommand.SetSlave(1);
@@ -660,6 +675,7 @@ void ICVirtualHost::InitSystem_()
         }
         ++startAddr;
     }
+    isSystemInited = true;
     qDebug("Init sys finish");
 }
 

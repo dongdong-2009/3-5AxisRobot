@@ -375,6 +375,12 @@ int hc_query_status(modbus_param_t *mb_param,
                     int nb,
                     uint16_t* dest);
 
+int hc_query_status_ex(modbus_param_t *mb_param,
+                    int slave,
+                    int start_addr,
+                    int nb,
+                    uint16_t* dest);
+
 int hc_teach_step(modbus_param_t *mb_param,
                   int slave,
                   int step,

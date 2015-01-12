@@ -39,15 +39,17 @@ private:
     QBitArray inputs_;
     QBitArray outputs_;
     QList<QLabel*> descrLabels_;
-    QList<QLabel*> recsLabels_;
-    QList<QLabel*> ioLabels_;
-    QList<QLabel*> adjustLabels_;
-    QList<QLabel*> servoOutLabels_;
-    QList<QLabel*> servoInLabels_;
+//    QList<QLabel*> recsLabels_;
+//    QList<QLabel*> ioLabels_;
+//    QList<QLabel*> adjustLabels_;
+//    QList<QLabel*> servoOutLabels_;
+//    QList<QLabel*> servoInLabels_;
 
     const QPixmap offPixmap_;
     const QPixmap inputOnPixmap_;
     const QPixmap outputOnPixmap_;
+
+    QMap<QString, QLabel*> multiLabels;
 
 };
 
