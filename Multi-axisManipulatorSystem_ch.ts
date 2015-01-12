@@ -2647,7 +2647,7 @@ Reason</source>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="118"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="136"/>
         <source>Def Pos</source>
-        <translation>预定义点</translation>
+        <translation>位置点</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="307"/>
