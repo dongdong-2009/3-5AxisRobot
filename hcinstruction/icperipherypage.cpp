@@ -55,7 +55,7 @@ ICPeripheryPage::ICPeripheryPage(QWidget *parent) :
     ui->actionWidget->setColumnWidth(1, 97);
 #else
     ui->actionWidget->setColumnWidth(0, 50);
-    ui->actionWidget->setColumnWidth(1, 140);
+    ui->actionWidget->setColumnWidth(1, 100);
 #endif
 
 

@@ -121,7 +121,7 @@
         <location filename="hcinstruction/actionsettingframe.ui" line="1275"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1758"/>
         <source>Delay(s)</source>
-        <translation>задержка(s)</translation>
+        <translation>заде(s)</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="1338"/>
@@ -151,7 +151,7 @@
         <location filename="hcinstruction/actionsettingframe.ui" line="1650"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="609"/>
         <source>Speed(%)</source>
-        <translation>скорость(%)</translation>
+        <translation>скоро(%)</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="51"/>
@@ -464,7 +464,7 @@
     <message>
         <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="29"/>
         <source>Fixture 1</source>
-        <translation>приспособление-1</translation>
+        <translation>приспосо-1</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="70"/>
@@ -485,17 +485,17 @@
     <message>
         <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="131"/>
         <source>Fixture 3</source>
-        <translation>приспособление-3</translation>
+        <translation>приспосо-3</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="204"/>
         <source>Fixture 2</source>
-        <translation>приспособление-2</translation>
+        <translation>приспосо-2</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="293"/>
         <source>Fixture 4</source>
-        <translation>приспособление-4</translation>
+        <translation>приспосо-4</translation>
     </message>
 </context>
 <context>
@@ -912,7 +912,7 @@ ModifyTime</source>
         <location filename="hcinstruction/iccutpage.ui" line="150"/>
         <location filename="hcinstruction/iccutpage_5.ui" line="156"/>
         <source>En</source>
-        <translation>включить</translation>
+        <translation>En</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="158"/>
@@ -1084,7 +1084,7 @@ ModifyTime</source>
         <location filename="hcinstruction/ichcconditionpage.ui" line="89"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="173"/>
         <source>Fixture-1</source>
-        <translation>приспособление-1</translation>
+        <translation>приспо-1</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="121"/>
@@ -1104,37 +1104,37 @@ ModifyTime</source>
         <location filename="hcinstruction/ichcconditionpage.ui" line="166"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="284"/>
         <source>Fixture-4</source>
-        <translation>приспособление-4</translation>
+        <translation>приспо-4</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="198"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="316"/>
         <source>Fixture-2</source>
-        <translation>приспособление-2</translation>
+        <translation>приспо-2</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="230"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="205"/>
         <source>Fixture-3</source>
-        <translation>приспособление-3</translation>
+        <translation>приспо-3</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="262"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="380"/>
         <source>Sucker-1</source>
-        <translation>присоска-1</translation>
+        <translation>присо-1</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="294"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="348"/>
         <source>Sucker-2</source>
-        <translation>присоска-2</translation>
+        <translation>присо-2</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="338"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="249"/>
         <source>Defective Products</source>
-        <translation>дефектный</translation>
+        <translation>дефек</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="373"/>
@@ -1298,14 +1298,14 @@ ModifyTime</source>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="90"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="210"/>
         <source>Hor Standby</source>
-        <translation>Горизонт ожидания</translation>
+        <translation>Горизо ожид</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="97"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="97"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="166"/>
         <source>Detect fixture 1</source>
-        <translation>приспособление-1</translation>
+        <translation>приспособле-1</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="104"/>
@@ -1319,28 +1319,28 @@ ModifyTime</source>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="143"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="181"/>
         <source>Detect fixture 4</source>
-        <translation>приспособление-4</translation>
+        <translation>приспособле-4</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="182"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="182"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="178"/>
         <source>Detect fixture 3</source>
-        <translation>приспособление-3</translation>
+        <translation>приспособле-3</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="247"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="247"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="172"/>
         <source>Detect fixture 2</source>
-        <translation>приспособление-2</translation>
+        <translation>приспособле-2</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="254"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="254"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="193"/>
         <source>Ejection Link Lock</source>
-        <translation>Инъекции синхронизации</translation>
+        <translation>Инъекц синхрони</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="280"/>
@@ -1443,26 +1443,26 @@ ModifyTime</source>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="556"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="188"/>
         <source>Detect Pressure</source>
-        <translation>обратной связи по давлению</translation>
+        <translation>обр свя по дав</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="563"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="563"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="184"/>
         <source>Detect Mid Mold</source>
-        <translation>в середине формы</translation>
+        <translation>в серед фор</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="634"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="634"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="199"/>
         <source>Detect Origin</source>
-        <translation>сброс происхождения</translation>
+        <translation>сброс происхож</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="203"/>
         <source>Orgin Position</source>
-        <translation>стартовое положение</translation>
+        <translation>старт поло</translation>
     </message>
 </context>
 <context>
@@ -1483,49 +1483,49 @@ ModifyTime</source>
         <location filename="hcinstruction/ichcfixturepage.ui" line="116"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="116"/>
         <source>Fixture1</source>
-        <translation>приспо-1 проверять</translation>
+        <translation>приспо-1 про</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.ui" line="121"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="121"/>
         <source>Fixture2</source>
-        <translation>приспо-2 проверять</translation>
+        <translation>приспо-2 про</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.ui" line="126"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="126"/>
         <source>Fixture3</source>
-        <translation>приспо-3 проверять</translation>
+        <translation>приспо-3 про</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.ui" line="131"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="131"/>
         <source>Fixture4</source>
-        <translation>приспо-4 проверять</translation>
+        <translation>приспо-4 про</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.ui" line="136"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="136"/>
         <source>Sucker1</source>
-        <translation>присо-1 проверять</translation>
+        <translation>присо-1 про</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.ui" line="141"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="141"/>
         <source>Sucker2</source>
-        <translation>присо-2 проверять</translation>
+        <translation>присо-2 про</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.ui" line="146"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="146"/>
         <source>En</source>
-        <translation>включить</translation>
+        <translation>En</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.ui" line="154"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="154"/>
         <source>Current/Setting</source>
-        <translation>Текущие настройки</translation>
+        <translation>Тек настр</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.ui" line="159"/>
@@ -1537,37 +1537,37 @@ ModifyTime</source>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="142"/>
         <source>Fixture1  </source>
-        <translation>приспо-1 проверять</translation>
+        <translation>приспо-1 про</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="142"/>
         <source>Fixture2  </source>
-        <translation>приспо-2 проверять</translation>
+        <translation>приспо-2 про</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="142"/>
         <source>Fixture3  </source>
-        <translation>приспо-3 проверять</translation>
+        <translation>приспо-3 про</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="142"/>
         <source>Fixture4  </source>
-        <translation>приспо-4 проверять</translation>
+        <translation>приспо-4 про</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="25"/>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="143"/>
         <source>Sucker1   </source>
-        <translation>присо-1 проверять</translation>
+        <translation>присо-1 про</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="25"/>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="143"/>
         <source>Sucker2   </source>
-        <translation>присо-2 проверять</translation>
+        <translation>присо-2 про</translation>
     </message>
 </context>
 <context>
@@ -1612,13 +1612,13 @@ ModifyTime</source>
         <location filename="hcinstruction/ichcinjectionpage.ui" line="148"/>
         <location filename="hcinstruction/ichcinjectionpage_5.ui" line="154"/>
         <source>En</source>
-        <translation>включить</translation>
+        <translation>En</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.ui" line="153"/>
         <location filename="hcinstruction/ichcinjectionpage_5.ui" line="159"/>
         <source>Current/Setting</source>
-        <translation>Текущие настройки</translation>
+        <translation>Тек настр</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.ui" line="158"/>
@@ -1753,7 +1753,7 @@ ModifyTime</source>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="708"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="716"/>
         <source>Modify</source>
-        <translation>изменять</translation>
+        <translation>изме</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="746"/>
@@ -1786,40 +1786,50 @@ ModifyTime</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="980"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="953"/>
+        <source>B+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="990"/>
+        <source>B-</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1054"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="988"/>
         <source>Menu</source>
         <translation>меню</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1005"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1079"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="1013"/>
         <source>Insert</source>
         <translation>вставить</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="442"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="650"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="453"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="661"/>
         <source>Warning</source>
         <translation>предупреждать</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="443"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="454"/>
         <source>Can not add standby position program</source>
         <translation>Не можете добавить резервный шаг</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="636"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="647"/>
         <source>warning</source>
         <translation>предупреждать</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="637"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="648"/>
         <source>Stand program can not be delete action</source>
         <translation>Не удается удалить шаг в программе по умолчанию</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="651"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="662"/>
         <source>Can not delete standby position program</source>
         <translation>Не удается удалить шаг в программе по умолчанию</translation>
     </message>
@@ -1855,13 +1865,13 @@ ModifyTime</source>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="111"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="128"/>
         <source>Fixture</source>
-        <translation>приспо проверять</translation>
+        <translation>приспо п</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="112"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="129"/>
         <source>Sucker</source>
-        <translation>присо проверять</translation>
+        <translation>присо п</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="113"/>
@@ -1873,7 +1883,7 @@ ModifyTime</source>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="114"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="131"/>
         <source>Adjust</source>
-        <translation>регулировать</translation>
+        <translation>регул</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="115"/>
@@ -2115,6 +2125,7 @@ ModifyTime</source>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="244"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="313"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="177"/>
         <source>Recycle Time</source>
         <translation>петля</translation>
     </message>
@@ -2201,19 +2212,22 @@ ModifyTime</source>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="93"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="93"/>
         <source>Good products</source>
-        <translation>хорошей считать продукт</translation>
+        <translation>хорошей 
+счит про</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="103"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="103"/>
         <source>Setted products</source>
-        <translation>Количество целевого продукта</translation>
+        <translation>Количество 
+целево про</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="164"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="164"/>
         <source>Stacked products</source>
-        <translation>расположение количество продукта</translation>
+        <translation>расположение 
+количес проду</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="178"/>
@@ -2423,25 +2437,25 @@ ModifyTime</source>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="51"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="70"/>
         <source>Group-1</source>
-        <translation>Группа-1</translation>
+        <translation>Груп-1</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="85"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="104"/>
         <source>Group-2</source>
-        <translation>Группа-2</translation>
+        <translation>Груп-2</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="116"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="135"/>
         <source>Group-3</source>
-        <translation>Группа-3</translation>
+        <translation>Груп-3</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="147"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="166"/>
         <source>Group-4</source>
-        <translation>Группа-4</translation>
+        <translation>Груп-4</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="181"/>
@@ -2743,7 +2757,7 @@ ModifyTime</source>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="713"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="674"/>
         <source>Change</source>
-        <translation>изменение</translation>
+        <translation>изме</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="738"/>
@@ -4971,39 +4985,39 @@ Please enter an digit between </source>
     <message>
         <location filename="hcinstruction/icperipherypage.ui" line="110"/>
         <source>Injector</source>
-        <translation>впрыск</translation>
+        <translation>впры</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.ui" line="115"/>
         <source>Conveyor</source>
-        <translation>конвейер</translation>
+        <translation>конв</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.ui" line="120"/>
         <source>En</source>
-        <translation>включить</translation>
+        <translation>En</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.ui" line="128"/>
         <source>Current/Setting</source>
-        <translation>Текущие настройки</translation>
+        <translation>Тек настр</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.ui" line="133"/>
         <source>Action Time/Times</source>
-        <translation>Текущие настройки</translation>
+        <translation>Тек настр</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.cpp" line="25"/>
         <location filename="hcinstruction/icperipherypage.cpp" line="83"/>
         <source>Injector   </source>
-        <translation>впрыск</translation>
+        <translation>впры</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.cpp" line="25"/>
         <location filename="hcinstruction/icperipherypage.cpp" line="83"/>
         <source>conveyor  </source>
-        <translation>конвейер</translation>
+        <translation>конве</translation>
     </message>
 </context>
 <context>
@@ -5067,91 +5081,91 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="110"/>
         <location filename="hcinstruction/icpneumaticactionpage_5.ui" line="116"/>
         <source>Reserve1</source>
-        <translation>резерв-1</translation>
+        <translation>резе-1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="115"/>
         <location filename="hcinstruction/icpneumaticactionpage_5.ui" line="121"/>
         <source>Reserve2</source>
-        <translation>резерв-2</translation>
+        <translation>резе-2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="120"/>
         <location filename="hcinstruction/icpneumaticactionpage_5.ui" line="126"/>
         <source>Reserve3</source>
-        <translation>резерв-3</translation>
+        <translation>резе-3</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="125"/>
         <location filename="hcinstruction/icpneumaticactionpage_5.ui" line="131"/>
         <source>Reserve4</source>
-        <translation>резерв-4</translation>
+        <translation>резе-4</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="130"/>
         <location filename="hcinstruction/icpneumaticactionpage_5.ui" line="136"/>
         <source>Reserve5</source>
-        <translation>резерв-5</translation>
+        <translation>резе-5</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="135"/>
         <location filename="hcinstruction/icpneumaticactionpage_5.ui" line="141"/>
         <source>Reserve6</source>
-        <translation>резерв-6</translation>
+        <translation>резе-6</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="140"/>
         <location filename="hcinstruction/icpneumaticactionpage_5.ui" line="146"/>
         <source>En</source>
-        <translation>включить</translation>
+        <translation>En</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="148"/>
         <location filename="hcinstruction/icpneumaticactionpage_5.ui" line="154"/>
         <source>Current/Setting</source>
-        <translation>Текущие настройки</translation>
+        <translation>Тек настр</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="153"/>
         <location filename="hcinstruction/icpneumaticactionpage_5.ui" line="159"/>
         <source>Delay/Times</source>
-        <translation>задержка:</translation>
+        <translation>задер</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="23"/>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="101"/>
         <source>Reserve1  </source>
-        <translation>резерв-1</translation>
+        <translation>резе-1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="23"/>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="101"/>
         <source>Reserve2  </source>
-        <translation>резерв-2</translation>
+        <translation>резе-2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="24"/>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="102"/>
         <source>Reserve3  </source>
-        <translation>резерв-3</translation>
+        <translation>резе-3</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="24"/>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="102"/>
         <source>Reserve4  </source>
-        <translation>резерв-4</translation>
+        <translation>резе-4</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="24"/>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="102"/>
         <source>Reserve5  </source>
-        <translation>резерв-5</translation>
+        <translation>резе-5</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="24"/>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="102"/>
         <source>Reserve6  </source>
-        <translation>резерв-6</translation>
+        <translation>резе-6</translation>
     </message>
 </context>
 <context>
@@ -6567,7 +6581,7 @@ Please enter an digit between </source>
         <location filename="hcmaintains/icupdatesystem.ui" line="299"/>
         <location filename="hcmaintains/icupdatesystem_5.ui" line="299"/>
         <source>Refresh</source>
-        <translation>обновление</translation>
+        <translation>обнов</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystem.ui" line="319"/>
@@ -7059,13 +7073,13 @@ Would you want to restart now?</source>
         <location filename="function_settings/moldinformation.ui" line="171"/>
         <location filename="function_settings/moldinformation_5.ui" line="177"/>
         <source>USB Export</source>
-        <translation>экспорт</translation>
+        <translation>USB вывоз</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="199"/>
         <location filename="function_settings/moldinformation_5.ui" line="205"/>
         <source>USB Import</source>
-        <translation>импорт</translation>
+        <translation>USB ввози</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="241"/>
@@ -7095,7 +7109,7 @@ Would you want to restart now?</source>
         <location filename="function_settings/moldinformation.ui" line="324"/>
         <location filename="function_settings/moldinformation_5.ui" line="336"/>
         <source>Load</source>
-        <translation>нагрузка</translation>
+        <translation>нагруз</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="349"/>
@@ -7107,13 +7121,13 @@ Would you want to restart now?</source>
         <location filename="function_settings/moldinformation.ui" line="374"/>
         <location filename="function_settings/moldinformation_5.ui" line="386"/>
         <source>Export</source>
-        <translation>экспорт</translation>
+        <translation>вывоз</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="402"/>
         <location filename="function_settings/moldinformation_5.ui" line="414"/>
         <source>Import</source>
-        <translation>экспорт</translation>
+        <translation>ввози</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="433"/>

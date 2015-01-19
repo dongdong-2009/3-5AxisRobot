@@ -12,8 +12,12 @@ ICAlarmString * ICAlarmString::instance_ = NULL;
 ICAlarmString::ICAlarmString()
     : AlarmChineseInfoPathName(":/sysconfig/alarminfomation-ch"),
       AlarmEnglishInfoPathName(":/sysconfig/alarminfomation-en"),
+      AlarmPortugueseInfoPathName(":/sysconfig/alarminfomation-pt"),
+      AlarmRussianInfoPathName(":/sysconfig/alarminfomation-ru"),
       HintChInfoPathName(":/sysconfig/hintinfomation-ch"),
       HintEnInfoPathName(":/sysconfig/hintinfomation-en"),
+      HintPortugueseInfoPathName(":/sysconfig/hintinfomation-pt"),
+      HintRussianInfoPathName(":/sysconfig/hintinfomation-ru"),
       priorAlarmNum_(-1)
 {
     //    OnCurrentLanguageChanged(ICParameterSaves::Instance()->Language());
@@ -37,6 +41,14 @@ void ICAlarmString::OnCurrentLanguageChanged()
     case QLocale::English:
         alarmChInfoFile.setFileName(AlarmEnglishInfoPathName);
         hintFile.setFileName(HintEnInfoPathName);
+        break;
+    case QLocale::Portuguese:
+        alarmChInfoFile.setFileName(AlarmPortugueseInfoPathName);
+        hintFile.setFileName(HintPortugueseInfoPathName);
+        break;
+    case QLocale::Russian:
+        alarmChInfoFile.setFileName(AlarmRussianInfoPathName);
+        hintFile.setFileName(HintRussianInfoPathName);
         break;
     default:
         return;

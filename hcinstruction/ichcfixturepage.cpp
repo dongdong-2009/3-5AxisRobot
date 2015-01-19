@@ -68,7 +68,7 @@ ICHCFixturePage::ICHCFixturePage(QWidget *parent) :
     ui->tableWidget->setColumnWidth(1, 100);
 #else
     ui->tableWidget->setColumnWidth(0, 50);
-    ui->tableWidget->setColumnWidth(1, 180);
+    ui->tableWidget->setColumnWidth(1, 160);
 #endif
 //    currentPosMap_.insert(ui->fixture1CurrentLabel, 0);
 //    currentPosMap_.insert(ui->fixture2CurrentLabel, 1);

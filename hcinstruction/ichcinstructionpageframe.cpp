@@ -95,6 +95,17 @@ void ICHCInstructionPageFrame::showEvent(QShowEvent *e)
         ui->aMinusBtn->show();
         ui->aPlusBtn->show();
     }
+    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisB) == ICVirtualHost::ICAxisDefine_None)
+    {
+        ui->bMinusBtn->hide();
+        ui->bPlusBtn->hide();
+    }
+    else
+    {
+        ui->bMinusBtn->show();
+        ui->bPlusBtn->show();
+    }
+
     if(ICParametersSave::Instance()->IsExtentFunctionUsed())
     {
         ui->flagsButton->show();
@@ -1000,4 +1011,18 @@ void  ICHCInstructionPageFrame::OnGuideFinished()
 {
     ICMold::CurrentMold()->SetMoldContent(guidePage_->CreateCommand());
     UpdateHostParam();
+}
+
+void ICHCInstructionPageFrame::on_bPlusBtn_clicked()
+{
+    ICKeyboard::Instace()->SetKeyValue(ICKeyboard::VFB_BAdd);
+    ICKeyboard::Instace()->SetPressed(true);
+    ShowServoAction(ICKeyboard::VFB_BAdd);
+}
+
+void ICHCInstructionPageFrame::on_bMinusBtn_clicked()
+{
+    ICKeyboard::Instace()->SetKeyValue(ICKeyboard::VFB_BSub);
+    ICKeyboard::Instace()->SetPressed(true);
+    ShowServoAction(ICKeyboard::VFB_BSub);
 }

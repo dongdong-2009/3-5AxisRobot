@@ -174,6 +174,8 @@ void ICHCProductSettingFrame::retranslateUi_()
     ui->countUnitBox->setItemText(5, tr("Stack-4"));
     ui->label_18->setText(tr("Count Ways"));
     ui->label_10->setText(tr("Get Fail"));
+    ui->label_3->setText(tr("Recycle Time"));
+
 }
 
 void ICHCProductSettingFrame::OnMoldNumberParamChanged()
