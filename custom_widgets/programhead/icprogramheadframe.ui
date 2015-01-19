@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
+    <width>412</width>
     <height>70</height>
    </rect>
   </property>
@@ -233,7 +233,7 @@ color: rgb(255, 255, 0);
         </size>
        </property>
        <property name="text">
-        <string>TextLabel</string>
+        <string>LOGO</string>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
