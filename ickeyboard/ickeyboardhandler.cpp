@@ -28,8 +28,8 @@ ICKeyboardHandler::ICKeyboardHandler(QObject *parent) :
     virtualKeyMap_.insert(ICKeyboard::FB_Origin, IC::VKEY_ORIGIN);
     virtualKeyMap_.insert(ICKeyboard::VFB_Pose_Horizontal, IC::VKEY_HORI);
     virtualKeyMap_.insert(ICKeyboard::VFB_Pose_Vertical, IC::VKEY_VERT);
-//    virtualKeyMap_.insert(ICKeyboard::VFB_Pose_Horizontal, IC::VKEY_CADD);
-//    virtualKeyMap_.insert(ICKeyboard::VFB_Pose_Vertical, IC::VKEY_CSUB);
+    //    virtualKeyMap_.insert(ICKeyboard::VFB_Pose_Horizontal, IC::VKEY_CADD);
+    //    virtualKeyMap_.insert(ICKeyboard::VFB_Pose_Vertical, IC::VKEY_CSUB);
     virtualKeyMap_.insert(ICKeyboard::FB_Reset, IC::VKEY_RETURN);
     virtualKeyMap_.insert(ICKeyboard::VFB_Run, IC::VKEY_START);
     virtualKeyMap_.insert(ICKeyboard::FB_Stop, IC::VKEY_STOP);
@@ -74,16 +74,16 @@ void ICKeyboardHandler::SwitchChanged(int value)
     //                                           ICMold::CurrentMold()->SyncAct() + ICMacroSubroutine::Instance()->SyncAct(),
     //                                           ICMold::CurrentMold()->SyncSum() + ICMacroSubroutine::Instance()->SyncSum());
     //    }
-//    qDebug()<<"swkey:"<<value;
+    //    qDebug()<<"swkey:"<<value;
     if(value == ICKeyboard::KS_AutoStatu)
     {
-//        if(icInstructionPage != NULL)
-//        {
+        //        if(icInstructionPage != NULL)
+        //        {
         ICCommandProcessor::Instance()->ExecuteHCCommand(IC::CMD_TurnStop, 0);
-//        ICProgramHeadFrame::Instance()->StartAutoTime();
-            icMainFrame->ShowAutoPage();
-//            icInstructionPage->ShowProgramMonitor();
-//        }
+        //        ICProgramHeadFrame::Instance()->StartAutoTime();
+        icMainFrame->ShowAutoPage();
+        //            icInstructionPage->ShowProgramMonitor();
+        //        }
     }
     else if(value == ICKeyboard::KS_ManualStatu)
     {
@@ -235,7 +235,7 @@ void ICKeyboardHandler::Keypressed(int keyValue)
             commandProcessor->ExecuteVirtualKeyCommand(virtualKeyMap_.value(keyValue));
         }
     }
-    break;
+        break;
     case ICKeyboard::VFB_Pose_Horizontal:
     case ICKeyboard::VFB_Pose_Vertical:
     {
@@ -245,7 +245,7 @@ void ICKeyboardHandler::Keypressed(int keyValue)
         }
         commandProcessor->ExecuteVirtualKeyCommand(virtualKeyMap_.value(keyValue));
     }
-    break;
+        break;
     default:
     {
         if(status == ICVirtualHost::Stop)
@@ -254,10 +254,10 @@ void ICKeyboardHandler::Keypressed(int keyValue)
         }
         else if(status == ICVirtualHost::Manual)
         {
-//            if(!ICVirtualHost::GlobalVirtualHost()->IsOrigined())
-//            {
-//                QMessageBox::warning(NULL, tr("Warning"), tr("Need to origin!"));
-//            }
+            //            if(!ICVirtualHost::GlobalVirtualHost()->IsOrigined())
+            //            {
+            //                QMessageBox::warning(NULL, tr("Warning"), tr("Need to origin!"));
+            //            }
         }
         commandProcessor->ExecuteVirtualKeyCommand(virtualKeyMap_.value(keyValue));
     }
@@ -266,7 +266,7 @@ void ICKeyboardHandler::Keypressed(int keyValue)
 
 void ICKeyboardHandler::PulleyChanged(int value)
 {
-//    qDebug("in pullye changed");
+    //    qDebug("in pullye changed");
     if(value == 0)
     {
         return;
@@ -282,20 +282,20 @@ void ICKeyboardHandler::PulleyChanged(int value)
     int cmd;
     if(pulleyTurn_ == 0)
     {
-//        for(int i = 0; i != currentPulleySpeed; ++i)
+        for(int i = 0; i != currentPulleySpeed; ++i)
         {
-//            qDebug("pulseA");
-            cmd = IC::CMD_PulseA;
-            ICCommandProcessor::Instance()->ExecuteHCCommand(cmd, currentPulleySpeed);
+            //            qDebug("pulseA");
+            cmd = IC::CMD_PulseA + i % 2;
+            ICCommandProcessor::Instance()->ExecuteHCCommand(cmd, value);
         }
     }
     else
     {
-//        for(int i = 0; i != currentPulleySpeed; ++i)
+        for(int i = 0; i != currentPulleySpeed; ++i)
         {
-//            qDebug("pulseB");
-            cmd = IC::CMD_PulseB;
-            ICCommandProcessor::Instance()->ExecuteHCCommand(cmd, currentPulleySpeed);
+            //            qDebug("pulseB");
+            cmd = IC::CMD_PulseB - i % 2;
+            ICCommandProcessor::Instance()->ExecuteHCCommand(cmd, value);
         }
 
     }
