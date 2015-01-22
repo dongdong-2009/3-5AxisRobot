@@ -1028,3 +1028,18 @@ void  ICHCInstructionPageFrame::OnGuideFinished()
     ICMold::CurrentMold()->SetMoldContent(guidePage_->CreateCommand());
     UpdateHostParam();
 }
+
+
+void ICHCInstructionPageFrame::on_bPlusBtn_pressed()
+{
+    ICKeyboard::Instace()->SetKeyValue(ICKeyboard::VFB_BAdd);
+    ICKeyboard::Instace()->SetPressed(true);
+    ShowServoAction(ICKeyboard::VFB_BAdd);
+}
+
+void ICHCInstructionPageFrame::on_bMinusBtn_pressed()
+{
+    ICKeyboard::Instace()->SetKeyValue(ICKeyboard::VFB_BSub);
+    ICKeyboard::Instace()->SetPressed(true);
+    ShowServoAction(ICKeyboard::VFB_BSub);
+}

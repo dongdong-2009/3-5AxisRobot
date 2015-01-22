@@ -67,6 +67,10 @@ private slots:
     void OnActionButtonReleased();
     void OnGuideFinished();
 
+    void on_bPlusBtn_pressed();
+
+    void on_bMinusBtn_pressed();
+
 signals:
 //    void JumpToProgramEditorPage();
 

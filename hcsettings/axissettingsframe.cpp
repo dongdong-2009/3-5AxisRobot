@@ -184,14 +184,14 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
         oSafe = ICVirtualHost::SYS_B_OutSafe;
         total = ICParametersSave::Instance()->DistanceRotation("B");
 //        minText = tr("Internal security zone");
-//        maxText = tr("External security zone");
-        minText = tr("Transeve security zone(Less)");
-        maxText = tr("Transeve security zone(Lagger)");
-        ui->minUnitLabel->setText(tr("degree"));
-        ui->maxUnitLabel->setText(tr("degree"));
-        ui->label_2->hide();
-        ui->label_4->hide();
-        ui->maximumDisplacementLineEdit->hide();
+        //f2_LR特殊机型，A轴为伺服时改为和x轴一样
+        minText = tr("Min pos inside mold");
+        maxText = tr("Max pos inside mold");
+//        ui->minUnitLabel->setText(tr("degree"));
+//        ui->maxUnitLabel->setText(tr("degree"));
+        ui->label_2->show();
+        ui->label_4->show();
+        ui->maximumDisplacementLineEdit->show();
     }
     else if(currentAxis_ == ICVirtualHost::ICAxis_AxisC)
     {
