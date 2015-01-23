@@ -75,6 +75,8 @@ ICHCInstructionPageFrame::ICHCInstructionPageFrame(QWidget *parent) :
     InitParameter();
     ui->stackButton->hide();
     ui->guideButton->hide();
+    ui->injectionButton->hide();
+    ui->peripheryButton->hide();
 //    ui->conditionsToolButton->hide();
 }
 
