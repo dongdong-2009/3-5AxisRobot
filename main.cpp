@@ -6,6 +6,7 @@
 #include "icparameterssave.h"
 #include <QSqlDatabase>
 #include <QMessageBox>
+#include <QTextCodec>
 
 #ifdef Q_WS_WIN
 #include <QFile>
@@ -14,6 +15,8 @@
 int main(int argc, char *argv[])
 {    
     QApplication a(argc, argv);
+    QTextCodec *textc = QTextCodec::codecForName("UTF-8");
+    QTextCodec::setCodecForLocale(textc);
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("3-5AxisRobotDatabase");
     if(!db.isValid())

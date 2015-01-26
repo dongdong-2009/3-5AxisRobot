@@ -4,9 +4,6 @@ DATABASE_PATH="/opt/Qt/UpdateApps"
 # Set the QWS_MOUSE_PROTO for touchscreen if it exists
 if [ -e /dev/input/touchscreen0 ]
 then
-    #load modules
-    InstallModules.sh /home/root
-    ln -s /dev/ttyO1 /dev/ttySZHC0
     #export environment 
     export QWS_MOUSE_PROTO=Tslib:/dev/input/touchscreen0
     export set QWS_KEYBOARD="linuxinput:/dev/input/event1:repeat-rate=200:repeat-delay=500:keymap=/home/root/3a8.qmap"

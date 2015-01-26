@@ -294,24 +294,24 @@ void ICKeyboardHandler::PulleyChanged(int value)
     }
     qDebug("status is right");
     pulleyTurn_ = (pulleyTurn_ + 1) % 2;
-    int currentPulleySpeed = OperatingRatioSetDialog::Instance()->CurrentPulleySpeed();
+    int currentPulleySpeed = OperatingRatioSetDialog::Instance()->CurrentPulleySpeed() * value;
     int cmd;
     if(pulleyTurn_ == 0)
     {
-        for(int i = 0; i != currentPulleySpeed; ++i)
+//        for(int i = 0; i != currentPulleySpeed; ++i)
         {
 //            qDebug("pulseA");
-            cmd = IC::CMD_PulseA + i % 2;
-            ICCommandProcessor::Instance()->ExecuteHCCommand(cmd, value);
+            cmd = IC::CMD_PulseA /*+ i % 2*/;
+            ICCommandProcessor::Instance()->ExecuteHCCommand(cmd, currentPulleySpeed);
         }
     }
     else
     {
-        for(int i = 0; i != currentPulleySpeed; ++i)
+//        for(int i = 0; i != currentPulleySpeed; ++i)
         {
 //            qDebug("pulseB");
-            cmd = IC::CMD_PulseB - i % 2;
-            ICCommandProcessor::Instance()->ExecuteHCCommand(cmd, value);
+            cmd = IC::CMD_PulseB /*- i % 2*/;
+            ICCommandProcessor::Instance()->ExecuteHCCommand(cmd, currentPulleySpeed);
         }
 
     }

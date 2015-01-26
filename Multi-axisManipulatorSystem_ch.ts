@@ -2540,8 +2540,8 @@ Reason</source>
         <translation>主菜单</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="459"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="696"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="465"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="702"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
@@ -2558,24 +2558,42 @@ Reason</source>
         <translation type="obsolete">该模号是当前模号!</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="460"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="466"/>
         <source>Can not add standby position program</source>
         <translation>不能添加待机点步骤</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="682"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="439"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="688"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="863"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="966"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="683"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="440"/>
+        <source>Stand program can not be insert action</source>
+        <translation>标准程序不能插入动作</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="689"/>
         <source>Stand program can not be delete action</source>
         <translation>标准程序不能删除动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="697"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="703"/>
         <source>Can not delete standby position program</source>
         <translation>不能删除待机点步骤</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="864"/>
+        <source>Stand program can not do Up action</source>
+        <translation>标准程序不能组合动作</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="967"/>
+        <source>Stand program can not do Down action</source>
+        <translation>标准程序不能分解动作</translation>
     </message>
     <message>
         <source>Can not group up to standby position program</source>
@@ -4403,320 +4421,372 @@ App %1; Host:</source>
 <context>
     <name>ICIOPage</name>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="295"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="303"/>
         <source>Y023</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="202"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="208"/>
         <source>Reserve-1</source>
         <translation>预留1</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="206"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="359"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="212"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="377"/>
         <source>M0</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="210"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="216"/>
         <source>Reserve-2</source>
         <translation>预留2</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="214"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="325"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="220"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="341"/>
         <source>M1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="218"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="224"/>
         <source>Reserve-3</source>
         <translation>预留3</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="222"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="344"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="228"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="360"/>
         <source>M2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="226"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="232"/>
         <source>Reserve-4</source>
         <translation>预留4</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="230"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="236"/>
         <source>M3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="234"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="240"/>
         <source>Sucker-3 Valve</source>
         <oldsource>Sucker-3</oldsource>
         <translation>吸3阀</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="238"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="244"/>
         <source>Motor Invert</source>
         <translation>电机反转</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="245"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="251"/>
         <source>C end limit</source>
         <translation>C 轴终点极限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="249"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="257"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="265"/>
         <source>Horizon-1 Limit</source>
         <translation>水平1限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="250"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="258"/>
         <source>Vertical-1 Limit </source>
         <translation>垂直1限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="252"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="259"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="260"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="267"/>
         <source>Horizon-1 Valve</source>
         <translation>水平1阀</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="253"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="261"/>
         <source>Vertical-1 Valve </source>
         <translation>垂直1阀</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="258"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="266"/>
         <source>Vertical-1 Limit</source>
         <translation>垂直1限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="260"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="268"/>
         <source>Vertical-1 Valve</source>
         <translation>垂直1阀</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="265"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="273"/>
         <source>X1 Origin</source>
         <translation>X1轴原点</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="266"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="274"/>
         <source>X1 end Limit</source>
         <translation>X1轴终点极限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="270"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="278"/>
         <source>X1 BW Limit</source>
         <translation>主臂后退限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="271"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="279"/>
         <source>X1 FW Limit</source>
         <translation>主臂前进限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="275"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="283"/>
         <source>X020</source>
         <oldsource>X016</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="276"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="284"/>
         <source>X017</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="281"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="289"/>
+        <source>Y1 Begin Limit</source>
+        <translation>Y1轴起点极限</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="290"/>
         <source>Y1 Origin</source>
         <translation>Y1轴原点</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="282"/>
-        <source>Y1 end Limit</source>
-        <translation>Y1轴终点极限</translation>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="309"/>
+        <source>Z begin Limit</source>
+        <translation>Z轴起点极限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="283"/>
-        <source>Aid Pneu</source>
-        <translation>辅助气缸</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="287"/>
-        <source>Y1 UP Limit</source>
-        <translation>主臂上升限</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="288"/>
-        <source>Y1 DW Limit</source>
-        <translation>主臂下降限</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="289"/>
-        <source>Y1 DW Valve</source>
-        <translation>主臂下降阀</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="293"/>
-        <source>X022</source>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="319"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="327"/>
+        <source>X042</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="294"/>
-        <source>X035</source>
-        <translation type="unfinished"></translation>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="371"/>
+        <source>A begin limit</source>
+        <translation>A轴起点极限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="300"/>
-        <source>Z Origin</source>
-        <translation>Z轴原点</translation>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="401"/>
+        <source>B Begin limit</source>
+        <translation>B轴起点极限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="301"/>
-        <source>Z end Limit</source>
-        <translation>Z轴终点极限</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="305"/>
-        <source>Z BW Limit</source>
-        <translation>横入限</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="306"/>
-        <source>Z FW Limit</source>
-        <translation>横出限</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="311"/>
-        <source>X025</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="316"/>
-        <source>X2 Origin</source>
-        <translation>X2轴原点</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="317"/>
-        <source>X2 end Limit</source>
-        <translation>X2轴终点极限</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="321"/>
-        <source>X2 BW Limit</source>
-        <translation>副臂后退限</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="323"/>
-        <source>X2 FW Limit</source>
-        <translation>副臂前进限</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="354"/>
-        <source>A Origin</source>
-        <translation>A轴原点</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="355"/>
-        <source>A end limit</source>
-        <translation>A轴终点极限</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="360"/>
-        <source>X037</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="361"/>
-        <source>Y024</source>
-        <translation type="unfinished">Y024</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="362"/>
-        <source>Y046</source>
-        <translation type="unfinished">Y046</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="366"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="374"/>
-        <source>Horizon-2 Limit</source>
-        <translation>水平2限</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="367"/>
-        <source>Vertical-2 Limit </source>
-        <translation>垂直2限</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="370"/>
-        <source>Vertical-2 Valve </source>
-        <translation>垂直2阀</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="375"/>
-        <source>Vertical-2 Limit</source>
-        <translation>垂直2限</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="377"/>
-        <source>Vertical-2 Valve</source>
-        <translation>垂直2阀</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="382"/>
-        <source>B Origin</source>
-        <translation>B轴原点</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="387"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="407"/>
         <source>X026</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="408"/>
+        <source>X040</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Y1 end Limit</source>
+        <translation type="obsolete">Y1轴终点极限</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="291"/>
+        <source>Aid Pneu</source>
+        <translation>辅助气缸</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="296"/>
+        <source>Y1 UP Limit</source>
+        <translation>主臂上升限</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="295"/>
+        <source>Y1 DW Limit</source>
+        <translation>主臂下降限</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="297"/>
+        <source>Y1 DW Valve</source>
+        <translation>主臂下降阀</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="301"/>
+        <source>X022</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="302"/>
+        <source>X035</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="308"/>
+        <source>Z Origin</source>
+        <translation>Z轴原点</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="311"/>
+        <source>Z end Limit</source>
+        <translation type="unfinished">Z轴终点极限</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="316"/>
+        <source>Z BW Limit</source>
+        <translation>横入限</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="317"/>
+        <source>Z FW Limit</source>
+        <translation>横出限</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="325"/>
+        <source>X025</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="332"/>
+        <source>X2 Origin</source>
+        <translation>X2轴原点</translation>
+    </message>
+    <message>
+        <source>X2 end Limit</source>
+        <translation type="obsolete">X2轴终点极限</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="337"/>
+        <source>X2 BW Limit</source>
+        <translation>副臂后退限</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="339"/>
+        <source>X2 FW Limit</source>
+        <translation>副臂前进限</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="370"/>
+        <source>A Origin</source>
+        <translation>A轴原点</translation>
+    </message>
+    <message>
+        <source>A end limit</source>
+        <translation type="obsolete">A轴终点极限</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="378"/>
+        <source>X037</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="379"/>
+        <source>Y024</source>
+        <translation type="unfinished">Y024</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="380"/>
+        <source>Y046</source>
+        <translation type="unfinished">Y046</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="384"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="392"/>
+        <source>Horizon-2 Limit</source>
+        <translation>水平2限</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="385"/>
+        <source>Vertical-2 Limit </source>
+        <translation>垂直2限</translation>
+    </message>
+    <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="310"/>
+        <source>Sec zone outside</source>
+        <translation>型外安全区</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="318"/>
+        <source>Middle Release</source>
+        <translation>中位置物</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="324"/>
+        <source>X041</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="333"/>
+        <source>X2 Begin Limit</source>
+        <translation>X2轴起点极限</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="352"/>
+        <source>Y2 Begin Limit</source>
+        <translation>Y2轴起点极限</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="388"/>
+        <source>Vertical-2 Valve </source>
+        <translation>垂直2阀</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="393"/>
+        <source>Vertical-2 Limit</source>
+        <translation>垂直2限</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="395"/>
+        <source>Vertical-2 Valve</source>
+        <translation>垂直2阀</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="402"/>
+        <source>B Origin</source>
+        <translation>B轴原点</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="326"/>
         <source>X024</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="329"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="345"/>
         <source>X030</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="330"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="346"/>
         <source>X031</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="335"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="351"/>
         <source>Y2 Origin</source>
         <translation>Y2轴原点</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="336"/>
         <source>Y2 end Limit</source>
-        <translation>Y2轴终点极限</translation>
+        <translation type="obsolete">Y2轴终点极限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="340"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="356"/>
         <source>Y2 UP Limit</source>
         <translation>副臂上升限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="342"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="358"/>
         <source>Y2 DW Limit</source>
         <translation>副臂下降限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="348"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="364"/>
         <source>X032</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="349"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="365"/>
         <source>X033</source>
         <translation></translation>
     </message>
@@ -4733,14 +4803,14 @@ App %1; Host:</source>
         <translation type="obsolete">预留</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="369"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="376"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="387"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="394"/>
         <source>Horizon-2 Valve</source>
         <oldsource>Horizon-1</oldsource>
         <translation>水平2阀</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="244"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="250"/>
         <source>C Origin</source>
         <translation>C轴原点</translation>
     </message>
@@ -6154,7 +6224,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="107"/>
         <source>Horizontal-2 Valve</source>
-        <translation>水平2阀</translation>
+        <translation>钳紧阀</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="121"/>
@@ -6220,7 +6290,7 @@ Please enter an digit between </source>
         <location filename="categorypage/icmonitorpageframe.cpp" line="55"/>
         <source>A Origin/Horizontal-2</source>
         <oldsource>A Origin/Vertical-2</oldsource>
-        <translation>A轴原点/水平2限</translation>
+        <translation>钳紧限</translation>
     </message>
     <message>
         <source>Horizontal-2</source>
@@ -6514,7 +6584,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="69"/>
         <source>Vertical-2</source>
-        <translation>垂直2限</translation>
+        <translation>钳放限</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="113"/>

@@ -40,7 +40,7 @@
       <enum>QTabWidget::Rounded</enum>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>2</number>
      </property>
      <widget class="QWidget" name="systemSettingPage">
       <attribute name="title">
@@ -878,18 +878,6 @@ QRadioButton::indicator:unchecked:disabled
         </item>
         <item row="1" column="1">
          <widget class="QPushButton" name="generateBtn">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>84</width>
-            <height>16777215</height>
-           </size>
-          </property>
           <property name="text">
            <string>Generate</string>
           </property>
@@ -1207,7 +1195,6 @@ QRadioButton::indicator:unchecked:disabled
  <connections/>
  <buttongroups>
   <buttongroup name="buttonGroup_2"/>
-  <buttongroup name="buttonGroup"/>
   <buttongroup name="languageButtonGroup"/>
  </buttongroups>
 </ui>

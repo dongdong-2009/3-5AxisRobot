@@ -434,6 +434,12 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
             return;  //教导页面点插入无任何动作
         }
     }
+    if(MoldInformation::Instance()->IsStandProgram(ICParametersSave::Instance()->MoldName("")))
+    {
+        QMessageBox::warning(this, tr("warning"),
+                             tr("Stand program can not be insert action"));
+        return;
+   }
     ICInstructionEditorBase* editor = qobject_cast<ICInstructionEditorBase*>(ui->settingStackedWidget->currentWidget());
     ICFlagsEditor *flagsEditor = qobject_cast<ICFlagsEditor*> (editor);
     ActionSettingFrame *servoEditor = qobject_cast<ActionSettingFrame*>(editor);
@@ -852,6 +858,12 @@ void ICHCInstructionPageFrame::on_upButton_clicked()
     {
         return;
     }
+    if(MoldInformation::Instance()->IsStandProgram(ICParametersSave::Instance()->MoldName("")))
+    {
+        QMessageBox::warning(this, tr("warning"),
+                             tr("Stand program can not do Up action"));
+        return;
+   }
     FindIndex_(currentRow, gIndex, tIndex, sIndex);
     //子程序也可以分解和组合，所以无需判断
 //    if(programList_.at(gIndex).StepNum() == 1)
@@ -949,6 +961,12 @@ void ICHCInstructionPageFrame::on_downButton_clicked()
     {
         return;
     }
+    if(MoldInformation::Instance()->IsStandProgram(ICParametersSave::Instance()->MoldName("")))
+    {
+        QMessageBox::warning(this, tr("warning"),
+                             tr("Stand program can not do Down action"));
+        return;
+   }
     FindIndex_(currentRow, gIndex, tIndex, sIndex);
     //子程序也可以分解和组合，所以无需判断
 //    if(programList_.at(gIndex).StepNum() == 0)

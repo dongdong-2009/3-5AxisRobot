@@ -1963,29 +1963,47 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="459"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="696"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="465"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="702"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="460"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="466"/>
         <source>Can not add standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="682"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="439"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="688"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="863"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="966"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="683"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="440"/>
+        <source>Stand program can not be insert action</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="689"/>
         <source>Stand program can not be delete action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="697"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="703"/>
         <source>Can not delete standby position program</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="864"/>
+        <source>Stand program can not do Up action</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="967"/>
+        <source>Stand program can not do Down action</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3444,7 +3462,7 @@ App %1; Host:</source>
         <translation type="obsolete">Y031</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="295"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="303"/>
         <source>Y023</source>
         <translation type="unfinished">Y023</translation>
     </message>
@@ -3453,275 +3471,316 @@ App %1; Host:</source>
         <translation type="obsolete">Y026</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="202"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="208"/>
         <source>Reserve-1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="206"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="359"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="212"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="377"/>
         <source>M0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="210"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="216"/>
         <source>Reserve-2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="214"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="325"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="220"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="341"/>
         <source>M1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="218"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="224"/>
         <source>Reserve-3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="222"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="344"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="228"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="360"/>
         <source>M2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="226"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="232"/>
         <source>Reserve-4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="230"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="236"/>
         <source>M3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="234"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="240"/>
         <source>Sucker-3 Valve</source>
         <oldsource>Sucker-3</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="238"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="244"/>
         <source>Motor Invert</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="245"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="251"/>
         <source>C end limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="249"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="257"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="265"/>
         <source>Horizon-1 Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="250"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="258"/>
         <source>Vertical-1 Limit </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="252"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="259"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="260"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="267"/>
         <source>Horizon-1 Valve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="253"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="261"/>
         <source>Vertical-1 Valve </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="258"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="266"/>
         <source>Vertical-1 Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="260"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="268"/>
         <source>Vertical-1 Valve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="265"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="273"/>
         <source>X1 Origin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="266"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="274"/>
         <source>X1 end Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="270"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="278"/>
         <source>X1 BW Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="271"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="279"/>
         <source>X1 FW Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="275"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="283"/>
         <source>X020</source>
         <oldsource>X016</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="276"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="284"/>
         <source>X017</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="281"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="289"/>
+        <source>Y1 Begin Limit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="290"/>
         <source>Y1 Origin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="282"/>
-        <source>Y1 end Limit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="283"/>
-        <source>Aid Pneu</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="287"/>
-        <source>Y1 UP Limit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="288"/>
-        <source>Y1 DW Limit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="289"/>
-        <source>Y1 DW Valve</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="293"/>
-        <source>X022</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="294"/>
-        <source>X035</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="300"/>
-        <source>Z Origin</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="301"/>
-        <source>Z end Limit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="305"/>
-        <source>Z BW Limit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="306"/>
-        <source>Z FW Limit</source>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="309"/>
+        <source>Z begin Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="311"/>
-        <source>X025</source>
+        <source>Z end Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="316"/>
-        <source>X2 Origin</source>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="319"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="327"/>
+        <source>X042</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="317"/>
-        <source>X2 end Limit</source>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="371"/>
+        <source>A begin limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="321"/>
-        <source>X2 BW Limit</source>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="401"/>
+        <source>B Begin limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="323"/>
-        <source>X2 FW Limit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="354"/>
-        <source>A Origin</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="355"/>
-        <source>A end limit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="360"/>
-        <source>X037</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="361"/>
-        <source>Y024</source>
-        <translation type="unfinished">Y024</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="362"/>
-        <source>Y046</source>
-        <translation type="unfinished">Y046</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="366"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="374"/>
-        <source>Horizon-2 Limit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="367"/>
-        <source>Vertical-2 Limit </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="370"/>
-        <source>Vertical-2 Valve </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="375"/>
-        <source>Vertical-2 Limit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="377"/>
-        <source>Vertical-2 Valve</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="382"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="402"/>
         <source>B Origin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="387"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="407"/>
         <source>X026</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="408"/>
+        <source>X040</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="291"/>
+        <source>Aid Pneu</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="296"/>
+        <source>Y1 UP Limit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="295"/>
+        <source>Y1 DW Limit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="297"/>
+        <source>Y1 DW Valve</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="301"/>
+        <source>X022</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="302"/>
+        <source>X035</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="308"/>
+        <source>Z Origin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="316"/>
+        <source>Z BW Limit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="317"/>
+        <source>Z FW Limit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="325"/>
+        <source>X025</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="332"/>
+        <source>X2 Origin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="337"/>
+        <source>X2 BW Limit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="339"/>
+        <source>X2 FW Limit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="370"/>
+        <source>A Origin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="378"/>
+        <source>X037</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="379"/>
+        <source>Y024</source>
+        <translation type="unfinished">Y024</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="380"/>
+        <source>Y046</source>
+        <translation type="unfinished">Y046</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="384"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="392"/>
+        <source>Horizon-2 Limit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="385"/>
+        <source>Vertical-2 Limit </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="310"/>
+        <source>Sec zone outside</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="318"/>
+        <source>Middle Release</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="324"/>
+        <source>X041</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="333"/>
+        <source>X2 Begin Limit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="352"/>
+        <source>Y2 Begin Limit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="388"/>
+        <source>Vertical-2 Valve </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="393"/>
+        <source>Vertical-2 Limit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="395"/>
+        <source>Vertical-2 Valve</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="326"/>
         <source>X024</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3734,54 +3793,49 @@ App %1; Host:</source>
         <translation type="obsolete">Y011</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="329"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="345"/>
         <source>X030</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="330"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="346"/>
         <source>X031</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="335"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="351"/>
         <source>Y2 Origin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="336"/>
-        <source>Y2 end Limit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="340"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="356"/>
         <source>Y2 UP Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="342"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="358"/>
         <source>Y2 DW Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="348"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="364"/>
         <source>X032</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="349"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="365"/>
         <source>X033</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="369"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="376"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="387"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="394"/>
         <source>Horizon-2 Valve</source>
         <oldsource>Horizon-1</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="244"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="250"/>
         <source>C Origin</source>
         <translation type="unfinished"></translation>
     </message>

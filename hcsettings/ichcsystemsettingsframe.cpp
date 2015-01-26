@@ -956,6 +956,7 @@ void ICHCSystemSettingsFrame::on_verifySupperButton_clicked()
         ui->label_41->show();
         ui->factoryCode->show();
     }
+    ui->supperPwdEdit->clear();
 }
 
 void ICHCSystemSettingsFrame::on_factoryCode_textChanged(const QString &arg1)

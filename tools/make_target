@@ -8,25 +8,36 @@ then
 fi
 
 reinstallDir=${workDir}/bin/Reinstall/Reinstall
+contentDir=${workDir}/tools/Reinstall
 
 rm -r ${workDir}/bin/Reinstall
-mkdir ${workDir}/bin/Reinstall
-cp -r ${workDir}/tools/Reinstall/ ${workDir}/bin/Reinstall
+mkdir -p ${workDir}/bin/Reinstall/Reinstall
+#cp -r ${workDir}/tools/Reinstall/ ${workDir}/bin/Reinstall
 cp ${workDir}/bin/Multi-axisManipulatorSystem ${reinstallDir} -f
 cp ${workDir}/Multi-axisManipulatorSystem_ch.qm ${reinstallDir} -f
 cp ${workDir}/Multi-axisManipulatorSystem_en.qm ${reinstallDir} -f
 
 inch=`cat ${workDir}/Multi-axisManipulatorSystem.pro | grep "SK_SIZE =" | awk '{print $3}'`
 swVersion=`cat ${workDir}/config.h | grep "SW_VERSION" | awk '{print $3}' | sed 's/\"//g' | tr -d ['\r']`
-cp ${reinstallDir}/${inch}-inch-qmap/3a8.qmap ${reinstallDir}
-cp -r ${reinstallDir}/${inch}resource ${reinstallDir}/resource
-rm -r ${reinstallDir}/5resource ${reinstallDir}/8resource
+cp ${contentDir}/${inch}-inch-qmap/3a8.qmap ${reinstallDir}
+cp -r ${contentDir}/${inch}resource ${reinstallDir}/resourcee
 
-cp -r ${reinstallDir}/${inch}records ${reinstallDir}/records
-rm -r ${reinstallDir}/5records ${reinstallDir}/8records
+cp -r ${contentDir}/${inch}records ${reinstallDir}/records
 
-cp -r ${reinstallDir}/${inch}sysconfig ${reinstallDir}/sysconfig
-rm -r ${reinstallDir}/5sysconfig ${reinstallDir}/8sysconfig
+cp -r ${contentDir}/${inch}sysconfig ${reinstallDir}/sysconfig
+
+cp -r ${contentDir}/${inch}inch-drivers ${reinstallDir}/drivers
+cp -r ${contentDir}/stylesheet ${reinstallDir}/
+cp -r ${contentDir}/subs ${reinstallDir}/
+cp -f ${contentDir}/3-5AxisRobotDatabase ${reinstallDir}/
+cp -f ${contentDir}/3a8HardwareTest-${inch}-inch ${reinstallDir}/3a8HardwareTest
+cp -f ${contentDir}/*.qm ${reinstallDir}/
+cp -f ${contentDir}/bcrypt ${reinstallDir}/
+cp -f ${contentDir}/decrypt.sh ${reinstallDir}/
+cp -f ${contentDir}/RunApp.sh ${reinstallDir}/
+cp -f ${contentDir}/SelectSystemBootWay ${reinstallDir}/
+cp -f ${contentDir}/update_cmd ${reinstallDir}/
+cp -f ${contentDir}/UpdateGUI ${reinstallDir}/
 echo "
 #! /bin/sh
 cd Reinstall
@@ -39,7 +50,7 @@ chmod +x ${workDir}/bin/Reinstall/SelectSystemBootWay
 echo "
 #! /bin/sh
 
-cd ${inch}inch-drivers
+cd drivers
 chmod +x ./UpdateSystem.sh
 ./UpdateSystem.sh
 cd ..
@@ -53,7 +64,7 @@ chmod +x ${workDir}/bin/Reinstall/Reinstall/RobotFactorySettings.sh
 echo "
 #! /bin/sh
 
-./3a8HardwareTest-${inch}-inch -qws 
+./3a8HardwareTest -qws 
 " > ${workDir}/bin/Reinstall/Reinstall/test_robot.sh
 
 chmod +x ${workDir}/bin/Reinstall/Reinstall/test_robot.sh
