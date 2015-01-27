@@ -144,6 +144,8 @@ QMAKE_POST_LINK += "&& $$QMAKE_STRIP $$DESTDIR/$$TARGET && HCbcrypt.sh -r $$DEST
 QMAKE_POST_LINK += "chmod +x tools/make_target && tools/make_target"
 target.path = /opt/Qt/apps
 configsPathBase = tools/Reinstall
+translations.path = $${target.path}
+translations.files = *.qm
 records.path = /opt/Qt/apps/records
 records.files += $${configsPathBase}/$${SK_SIZE}records/*
 subs.path = /opt/Qt/apps/subs
@@ -156,5 +158,5 @@ stylesheet.path = /opt/Qt/apps/stylesheet
 stylesheet.files += $${configsPathBase}/stylesheet/*
 others.path = /opt/Qt/apps
 others.files += $${configsPathBase}/3-5AxisRobotDatabase
-INSTALLS += target records subs sysconfig resource stylesheet others
+INSTALLS += target translations records subs sysconfig resource stylesheet others
 }
