@@ -140,10 +140,10 @@ void ICIOPage::BindingIOPoints(const QList<ICIOPoint> &points)
 //            {
 //                adjustLabels_[1] = descr;
 //            }
-            else if(point.PointNum() == tr("X030"))
-            {
-                adjustLabels_[1] = descr;
-            }
+//            else if(point.PointNum() == tr("X030"))
+//            {
+//                adjustLabels_[1] = descr;
+//            }
             else if(point.PointNum() == tr("X033"))
             {
                 adjustLabels_[2] = descr;

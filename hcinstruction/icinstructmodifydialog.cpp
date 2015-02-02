@@ -140,14 +140,14 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
                 ifposValidator_->setBottom(0);
                 break;
             case ICMold::GA:
-                addr = ICVirtualHost::SYS_C_Length;
-                posValidator_->setBottom(-50);
-                ifposValidator_->setBottom(-50);
+                addr = ICVirtualHost::SYS_A_Length;
+                posValidator_->setBottom(0);
+                ifposValidator_->setBottom(0);
                 break;
             case ICMold::GB:
-                addr = ICVirtualHost::SYS_C_Length;
-                posValidator_->setBottom(-50);
-                ifposValidator_->setBottom(-50);
+                addr = ICVirtualHost::SYS_B_Length;
+                posValidator_->setBottom(0);
+                ifposValidator_->setBottom(0);
                 break;
             case ICMold::GC:
                 addr = ICVirtualHost::SYS_C_Length;

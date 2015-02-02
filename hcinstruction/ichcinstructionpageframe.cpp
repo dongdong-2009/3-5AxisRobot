@@ -338,6 +338,12 @@ void ICHCInstructionPageFrame::InitSignal()
     connect(ui->aPlusBtn,
             SIGNAL(released()),
             SLOT(OnActionButtonReleased()));
+    connect(ui->bMinusBtn,
+            SIGNAL(released()),
+            SLOT(OnActionButtonReleased()));
+    connect(ui->bPlusBtn,
+            SIGNAL(released()),
+            SLOT(OnActionButtonReleased()));
     connect(ui->guideButton,
             SIGNAL(clicked()),
             SLOT(OptionButtonClicked()));

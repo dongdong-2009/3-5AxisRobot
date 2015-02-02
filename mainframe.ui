@@ -31,7 +31,16 @@
    <property name="spacing">
     <number>0</number>
    </property>
-   <property name="margin">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
     <number>0</number>
    </property>
    <item>
@@ -554,7 +563,7 @@ border-right: 3px solid green;
       <item>
        <widget class="QLabel" name="bmmLabel">
         <property name="text">
-         <string>Degree</string>
+         <string>mm</string>
         </property>
        </widget>
       </item>

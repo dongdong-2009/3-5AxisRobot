@@ -5682,7 +5682,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="57"/>
         <source>B Origin Limit</source>
-        <translation>X026</translation>
+        <translation>B轴起点极限</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="67"/>
