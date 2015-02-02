@@ -32,6 +32,7 @@ private slots:
     void retranslateUi_();
 
     void on_countUnitBox_currentIndexChanged(int index);
+    void on_getFailWay_activated(int index);
 
 private:
     Ui::ICHCProductSettingFrame *ui;

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>750</width>
-    <height>198</height>
+    <width>826</width>
+    <height>234</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,20 +20,13 @@
    <enum>QFrame::Plain</enum>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="4" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="samplingEdit_3"/>
+   <item row="1" column="5">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="alarmTimesEdit"/>
    </item>
-   <item row="4" column="0">
-    <widget class="QLabel" name="label_9">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
      <property name="text">
-      <string>Bad Product</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="6">
-    <widget class="QLabel" name="label_6">
-     <property name="text">
-      <string>Times</string>
+      <string>Product</string>
      </property>
     </widget>
    </item>
@@ -50,13 +43,6 @@
    <item row="0" column="5">
     <widget class="ICLineEditWithVirtualNumericKeypad" name="waitTimeEdit"/>
    </item>
-   <item row="0" column="6">
-    <widget class="QLabel" name="label_4">
-     <property name="text">
-      <string>s</string>
-     </property>
-    </widget>
-   </item>
    <item row="0" column="2">
     <spacer name="horizontalSpacer">
      <property name="orientation">
@@ -70,28 +56,54 @@
      </property>
     </spacer>
    </item>
-   <item row="5" column="5">
-    <widget class="QPushButton" name="productClearButton">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>35</height>
-      </size>
+   <item row="4" column="5">
+    <widget class="QComboBox" name="countUnitBox">
+     <item>
+      <property name="text">
+       <string>All</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Good</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Stack-1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Stack-2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Stack-3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Stack-4</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="6">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>s</string>
      </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>30</height>
-      </size>
+    </widget>
+   </item>
+   <item row="4" column="3">
+    <widget class="QLabel" name="label_18">
+     <property name="styleSheet">
+      <string notr="true">height:27px ;</string>
      </property>
      <property name="text">
-      <string>Product Clear</string>
-     </property>
-     <property name="autoRepeat">
-      <bool>true</bool>
-     </property>
-     <property name="autoRepeatDelay">
-      <number>50</number>
+      <string>Count Ways</string>
      </property>
     </widget>
    </item>
@@ -101,46 +113,6 @@
       <string>TryProduct</string>
      </property>
     </widget>
-   </item>
-   <item row="0" column="3" colspan="2">
-    <widget class="QLabel" name="label_2">
-     <property name="text">
-      <string>Wait Mold Opened Limit Time</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="3">
-    <widget class="QLabel" name="label_5">
-     <property name="text">
-      <string>Alarm Times</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="5">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="alarmTimesEdit"/>
-   </item>
-   <item row="1" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="tryProductEdit"/>
-   </item>
-   <item row="2" column="0">
-    <widget class="QLabel" name="label_8">
-     <property name="text">
-      <string>Sampling Interval</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="samplingEdit"/>
-   </item>
-   <item row="0" column="0">
-    <widget class="QLabel" name="label">
-     <property name="text">
-      <string>Product</string>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="productLineEdit"/>
    </item>
    <item row="2" column="5">
     <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -231,51 +203,24 @@ QRadioButton::indicator:unchecked:disabled
      </item>
     </layout>
    </item>
-   <item row="4" column="5">
-    <widget class="QComboBox" name="countUnitBox">
-     <item>
-      <property name="text">
-       <string>All</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Good</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Stack-1</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Stack-2</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Stack-3</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Stack-4</string>
-      </property>
-     </item>
-    </widget>
-   </item>
-   <item row="4" column="3">
-    <widget class="QLabel" name="label_18">
-     <property name="styleSheet">
-      <string notr="true">height:27px ;</string>
-     </property>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_9">
      <property name="text">
-      <string>Count Ways</string>
+      <string>Bad Product</string>
      </property>
     </widget>
    </item>
-   <item row="5" column="0">
+   <item row="4" column="1">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="samplingEdit_3"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>Sampling Interval</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
     <widget class="QLabel" name="label_19">
      <property name="styleSheet">
       <string notr="true">height:27px ;</string>
@@ -285,7 +230,62 @@ QRadioButton::indicator:unchecked:disabled
      </property>
     </widget>
    </item>
-   <item row="5" column="1">
+   <item row="6" column="5">
+    <widget class="QPushButton" name="productClearButton">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Product Clear</string>
+     </property>
+     <property name="autoRepeat">
+      <bool>true</bool>
+     </property>
+     <property name="autoRepeatDelay">
+      <number>50</number>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3" colspan="2">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Wait Mold Opened Limit Time</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="productLineEdit"/>
+   </item>
+   <item row="1" column="6">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>Times</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Alarm Times</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="tryProductEdit"/>
+   </item>
+   <item row="2" column="1">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="samplingEdit"/>
+   </item>
+   <item row="6" column="1">
     <layout class="QHBoxLayout" name="horizontalLayout_3">
      <item>
       <widget class="QCheckBox" name="posInside">
@@ -373,6 +373,30 @@ QRadioButton::indicator:unchecked:disabled
       </widget>
      </item>
     </layout>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_20">
+     <property name="styleSheet">
+      <string notr="true">height:27px ;</string>
+     </property>
+     <property name="text">
+      <string>Get Fail</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QComboBox" name="getFailWay">
+     <item>
+      <property name="text">
+       <string>Alarm When Up</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Alarm Once</string>
+      </property>
+     </item>
+    </widget>
    </item>
   </layout>
  </widget>

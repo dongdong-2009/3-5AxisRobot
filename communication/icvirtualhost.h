@@ -621,7 +621,7 @@ public:
     int PeripheryOutput(int number) const;
     void CalPeripheryOutput(int & config, int number, int val);
     void SetPeripheryOutput(int config) { systemParamMap_.insert(SYS_Config_Out, config);}
-    int FixtureDefine() const { return (systemParamMap_.value(SYS_Config_Fixture).toInt()) == 0x0555 ? 1 : 0;}
+    int FixtureDefine() const { return (systemParamMap_.value(SYS_Config_Fixture).toInt() & 0x7FFF ) == 0x0555 ? 1 : 0;}
     void SetFixtureDefine(int val) { systemParamMap_.insert(SYS_Config_Fixture, val == 0 ? 0x0AAA : 0x0555);}
     int FixtureDefineSwitch(int index) const {return index == 0 ? 0x0AAA : 0x0555;}
 
@@ -633,6 +633,10 @@ public:
 
     bool IsFixtureCheck() const { return isFixtureCheck_;}
     void SetFixtureCheck(bool isCheck) { isFixtureCheck_ = isCheck;}
+
+    int GetFailAlarmWay() const { return (SystemParameter(SYS_Function).toInt() & 0x20) >> 5;}
+    void SetGetFailAlarmWay(int way);
+
 public Q_SLOTS:
     void SetMoldParam(int param, int value);
 Q_SIGNALS:
@@ -1000,6 +1004,15 @@ inline void ICVirtualHost::CalPeripheryOutput(int &config, int number, int val)
     config &= ~(3 << (number << 1));
     config |= (val << (number << 1));
 //    systemParamMap_.insert(SYS_Config_Out, current);
+}
+
+inline void ICVirtualHost::SetGetFailAlarmWay(int way)
+{
+    int val = SystemParameter(SYS_Function).toInt();
+    val &= 0xFFFFFFDF;
+    val |= way << 5;
+    systemParamMap_.insert(SYS_Function, val);
+    isParamChanged_ = true;
 }
 
 #endif // ICVIRTUALHOST_H

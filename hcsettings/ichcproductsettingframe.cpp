@@ -56,10 +56,15 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
 //        currentPos = 1;
 //    }
 //    buttongroup_->setId(ICVirtualHost::GlobalVirtualHost()->FixtureDefine());
+    ui->reversedCheckBox->blockSignals(true);
+    ui->positiveCheckBox->blockSignals(true);
     if(ICVirtualHost::GlobalVirtualHost()->FixtureDefine() == 0)
         ui->reversedCheckBox->click();
     if(ICVirtualHost::GlobalVirtualHost()->FixtureDefine() == 1)
         ui->positiveCheckBox->click();
+
+    ui->reversedCheckBox->blockSignals(false);
+    ui->positiveCheckBox->blockSignals(false);
 
 
     if(ICVirtualHost::GlobalVirtualHost()->StandbyPos() == 0)
@@ -76,6 +81,7 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
             this,
             SLOT(OnMoldNumberParamChanged()));
     ui->countUnitBox->setCurrentIndex(ICMold::CurrentMold()->MoldParam(ICMold::CountUnit));
+    ui->getFailWay->setCurrentIndex(ICVirtualHost::GlobalVirtualHost()->GetFailAlarmWay());
 }
 
 ICHCProductSettingFrame::~ICHCProductSettingFrame()
@@ -160,6 +166,9 @@ void ICHCProductSettingFrame::retranslateUi_()
 //    ui->fixtureSelectBox->setItemText(1,tr("Positive Phase"));
     ui->reversedCheckBox->setText(tr("Reversed Phase"));
     ui->positiveCheckBox->setText(tr("Positive Phase"));
+    ui->getFailWay->setItemText(0, tr("Alarm When Up"));
+    ui->getFailWay->setItemText(1, tr("Alarm Once"));
+
 }
 
 void ICHCProductSettingFrame::OnMoldNumberParamChanged()
@@ -221,3 +230,7 @@ void ICHCProductSettingFrame::StandbyPosChanged(int id)
 }
 
 
+void ICHCProductSettingFrame::on_getFailWay_activated(int index)
+{
+    ICVirtualHost::GlobalVirtualHost()->SetGetFailAlarmWay(index);
+}
