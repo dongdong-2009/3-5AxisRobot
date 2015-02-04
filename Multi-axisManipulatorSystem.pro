@@ -9,7 +9,7 @@ QMAKE_CXX = ccache $${QMAKE_CXX}
 
 QT += sql
 
-SK_SIZE = 5
+SK_SIZE = 8
 
 OBJECTS_DIR = temp_$${SK_SIZE}
 UI_DIR = temp_$${SK_SIZE}
@@ -135,11 +135,11 @@ OTHER_FILES += \
     sysconfig/hintinfomation-en
 
 QMAKE_POST_LINK += "cp *.qm $$DESTDIR"
+system("python rename_ui.py $${UI_DIR}")
 CONFIG(debug, debug|release){
-system("python rename_ui.py temp_$${SK_SIZE}_d")
 #QMAKE_POST_LINK += "cp *.qm bin_debug"
 }else{
-system("python rename_ui.py temp_$${SK_SIZE}")
+#system("python rename_ui.py temp_$${SK_SIZE}")
 QMAKE_POST_LINK += "&& $$QMAKE_STRIP $$DESTDIR/$$TARGET && HCbcrypt.sh -r $$DESTDIR/$$TARGET"
 QMAKE_POST_LINK += "chmod +x tools/make_target && tools/make_target"
 target.path = /opt/Qt/apps

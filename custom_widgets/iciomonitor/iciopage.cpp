@@ -252,7 +252,7 @@ void ICIOPage::showEvent(QShowEvent *e)
         //        multiLabels.value(X010)->setText(tr("Horizon-1 Limit"));
         //        multiLabels.value(X011)->setText(tr("Vertical-1 Limit "));
     }
-    else if(ICVirtualHost::GlobalVirtualHost()->FixtureDefine() == 0)
+    else if(ICVirtualHost::GlobalVirtualHost()->FixtureDefine() == 1)
     {
         multiLabels.value(X010)->setText(tr("Horizon-1 Limit"));
         multiLabels.value(X011)->setText(tr("Vertical-1 Limit "));
@@ -379,7 +379,7 @@ void ICIOPage::showEvent(QShowEvent *e)
         multiLabels.value(Y024)->setText(tr("Y024"));
         multiLabels.value(Y046)->setText(tr("Y046"));
     }
-    else if(ICVirtualHost::GlobalVirtualHost()->FixtureDefine() == 0)
+    else if(ICVirtualHost::GlobalVirtualHost()->FixtureDefine() == 1)
     {
         multiLabels.value(X023)->setText(tr("Horizon-2 Limit"));
         multiLabels.value(X037)->setText(tr("Vertical-2 Limit "));
