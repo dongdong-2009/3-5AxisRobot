@@ -28,6 +28,8 @@ public:
 
 protected:
     void changeEvent(QEvent *e);
+    bool eventFilter(QObject *o, QEvent *e);
+
 
 private:
     Ui::VirtualKeyboardDialog *ui;
