@@ -1,5 +1,5 @@
 INCLUDEPATH += $$PWD
 DEPENDPATH += $$PWD
-HEADERS += icpagetab.h
-SOURCES += icpagetab.cpp
-RESOURCES += icpagetabImages.qrc
+HEADERS += $$PWD/icpagetab.h
+SOURCES += $$PWD/icpagetab.cpp
+RESOURCES += $$PWD/icpagetabImages.qrc

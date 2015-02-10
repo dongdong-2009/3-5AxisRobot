@@ -619,91 +619,12 @@
 <context>
     <name>HCServoArmControlFrame</name>
     <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="20"/>
-        <source>Frame</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="47"/>
-        <source>Current Servo Arm</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="67"/>
-        <source>Total Speed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="74"/>
-        <source>TextLabel</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="81"/>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="208"/>
-        <source>%</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="124"/>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="275"/>
-        <source>High-speed backward</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="150"/>
-        <source>Medium speed backward</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="176"/>
-        <source>Low speed backward</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="198"/>
         <source>Speed</source>
-        <translation type="unfinished">скорость:</translation>
+        <translation type="obsolete">скорость:</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="223"/>
-        <source>Low speed forward</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="249"/>
-        <source>Medium speed forward</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="318"/>
-        <source>-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="344"/>
-        <source>+</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="388"/>
-        <source>Traverse in fine-tuning</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="418"/>
         <source>Position</source>
-        <translation type="unfinished">позиция</translation>
-    </message>
-    <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="428"/>
-        <source>mm</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="448"/>
-        <source>Traverse out fine-tuning</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">позиция</translation>
     </message>
 </context>
 <context>
@@ -1393,6 +1314,7 @@ ModifyTime</source>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="337"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="337"/>
+        <location filename="hcsettings/ichcdetectionframe.cpp" line="203"/>
         <source>U/D Position</source>
         <translation>Y Должность</translation>
     </message>
@@ -1460,9 +1382,12 @@ ModifyTime</source>
         <translation>сброс происхож</translation>
     </message>
     <message>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="337"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="337"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="203"/>
-        <source>Orgin Position</source>
-        <translation>старт поло</translation>
+        <source>U/D Position</source>
+        <oldsource>Orgin Position</oldsource>
+        <translation type="unfinished">старт поло</translation>
     </message>
 </context>
 <context>
@@ -1940,73 +1865,20 @@ ModifyTime</source>
 <context>
     <name>ICHCMovementFrame</name>
     <message>
-        <location filename="hcsettings/ichcmovementframe.ui" line="14"/>
-        <source>Frame</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcmovementframe.ui" line="32"/>
         <source>Main arm down</source>
-        <translation type="unfinished">MA.DW</translation>
+        <translation type="obsolete">MA.DW</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcmovementframe.ui" line="46"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="79"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="112"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="145"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="178"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="211"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="244"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="277"/>
-        <source>Main forward</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcmovementframe.ui" line="51"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="84"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="117"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="150"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="183"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="216"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="249"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="282"/>
-        <source>Main backward</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcmovementframe.ui" line="65"/>
         <source>Main arm up</source>
-        <translation type="unfinished">MA.UP</translation>
+        <translation type="obsolete">MA.UP</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcmovementframe.ui" line="98"/>
         <source>Secondary arm down</source>
-        <translation type="unfinished">SA.DW</translation>
+        <translation type="obsolete">SA.DW</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcmovementframe.ui" line="131"/>
         <source>Secondary arm up</source>
-        <translation type="unfinished">SA.UP</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcmovementframe.ui" line="164"/>
-        <source>Main arm traverse out</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcmovementframe.ui" line="197"/>
-        <source>Main arm traverse in</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcmovementframe.ui" line="230"/>
-        <source>Secondary arm traverse out</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcmovementframe.ui" line="263"/>
-        <source>Secondary arm traverse in</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">SA.UP</translation>
     </message>
 </context>
 <context>

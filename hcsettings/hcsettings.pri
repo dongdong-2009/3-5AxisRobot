@@ -7,7 +7,6 @@ HEADERS += \
     hcsettings/ichcsettingsframe.h \
     hcsettings/ichcstackedsettingsframe.h \
     hcsettings/ichctimeframe.h \
-    hcsettings/ichcmovementframe.h \
     hcsettings/ichcdetectionframe.h \
     hcsettings/ichcproductsettingframe.h \
     hcsettings/ichcsystemsettingsframe.h \
@@ -23,7 +22,6 @@ SOURCES += \
     hcsettings/ichcsettingsframe.cpp \
     hcsettings/ichcstackedsettingsframe.cpp \
     hcsettings/ichctimeframe.cpp \
-    hcsettings/ichcmovementframe.cpp \
     hcsettings/ichcdetectionframe.cpp \
     hcsettings/ichcproductsettingframe.cpp \
     hcsettings/ichcsystemsettingsframe.cpp \
@@ -39,7 +37,6 @@ FORMS += \
     hcsettings/ichcsettingsframe.ui \
 #    hcsettings/ichcstackedsettingsframe.ui \
     hcsettings/ichctimeframe.ui \
-    hcsettings/ichcmovementframe.ui \
 #    hcsettings/ichcdetectionframe.ui \
 #    hcsettings/ichcproductsettingframe.ui \
 #    hcsettings/ichcsystemsettingsframe.ui \

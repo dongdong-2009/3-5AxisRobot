@@ -257,10 +257,10 @@ void ICHCManualOperationPageFrame::ShowOptionPage()
         buttonToPage_.insert(ui->reserveToolButton, reservePage_);
         centralStackedLayout_->addWidget(reservePage_);
     }
-    else if(serveAxisPage_ == NULL)
-    {
-        serveAxisPage_ = new HCServoArmControlFrame();
-        centralStackedLayout_->addWidget(serveAxisPage_);
+//    else if(serveAxisPage_ == NULL)
+//    {
+//        serveAxisPage_ = new HCServoArmControlFrame();
+//        centralStackedLayout_->addWidget(serveAxisPage_);
 //        buttonToPage_.insert(ui->x1AxisButton, serveAxisPage_);
 //        buttonToPage_.insert(ui->y1AxisButton, serveAxisPage_);
 //        buttonToPage_.insert(ui->zAxisButton, serveAxisPage_);
@@ -277,11 +277,11 @@ void ICHCManualOperationPageFrame::ShowOptionPage()
 //        buttonToAxis_.insert(ui->aAxisButton, ICVirtualHost::ICAxis_AxisA);
 //        buttonToAxis_.insert(ui->bAxisButton, ICVirtualHost::ICAxis_AxisB);
 //        buttonToAxis_.insert(ui->cAxisButton, ICVirtualHost::ICAxis_AxisC);
-    }
-    if(buttonToAxis_.contains(clickedButton))
-    {
-        serveAxisPage_->SetCurrentAxis(static_cast<ICVirtualHost::ICAxis>(buttonToAxis_.value(clickedButton)));
-    }
+//    }
+//    if(buttonToAxis_.contains(clickedButton))
+//    {
+////        serveAxisPage_->SetCurrentAxis(static_cast<ICVirtualHost::ICAxis>(buttonToAxis_.value(clickedButton)));
+//    }
 
     centralStackedLayout_->setCurrentWidget(buttonToPage_.value(clickedButton));
 }

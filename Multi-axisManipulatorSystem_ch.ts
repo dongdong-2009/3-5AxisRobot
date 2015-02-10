@@ -807,71 +807,36 @@
 <context>
     <name>HCServoArmControlFrame</name>
     <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="20"/>
-        <source>Frame</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="47"/>
         <source>Current Servo Arm</source>
-        <translation>当前伺服轴</translation>
+        <translation type="obsolete">当前伺服轴</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="67"/>
         <source>Total Speed</source>
-        <translation>总速度</translation>
+        <translation type="obsolete">总速度</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="74"/>
-        <source>TextLabel</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="81"/>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="208"/>
-        <source>%</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="124"/>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="275"/>
         <source>High-speed backward</source>
-        <translation>高速后退</translation>
+        <translation type="obsolete">高速后退</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="150"/>
         <source>Medium speed backward</source>
-        <translation>中速后退</translation>
+        <translation type="obsolete">中速后退</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="176"/>
         <source>Low speed backward</source>
-        <translation>低速后退</translation>
+        <translation type="obsolete">低速后退</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="198"/>
         <source>Speed</source>
-        <translation>速度</translation>
+        <translation type="obsolete">速度</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="223"/>
         <source>Low speed forward</source>
-        <translation>低速前进</translation>
+        <translation type="obsolete">低速前进</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="249"/>
         <source>Medium speed forward</source>
-        <translation>中速前进</translation>
-    </message>
-    <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="318"/>
-        <source>-</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="344"/>
-        <source>+</source>
-        <translation></translation>
+        <translation type="obsolete">中速前进</translation>
     </message>
     <message>
         <source>Traverse in</source>
@@ -882,24 +847,16 @@
         <translation type="obsolete">横出</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="388"/>
         <source>Traverse in fine-tuning</source>
-        <translation>横入微调</translation>
+        <translation type="obsolete">横入微调</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="418"/>
         <source>Position</source>
-        <translation>位置</translation>
+        <translation type="obsolete">位置</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="428"/>
-        <source>mm</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="448"/>
         <source>Traverse out fine-tuning</source>
-        <translation>横出微调</translation>
+        <translation type="obsolete">横出微调</translation>
     </message>
 </context>
 <context>
@@ -1707,6 +1664,7 @@ Reason</source>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="337"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="337"/>
+        <location filename="hcsettings/ichcdetectionframe.cpp" line="203"/>
         <source>U/D Position</source>
         <translation>上下复归姿势</translation>
     </message>
@@ -1758,9 +1716,12 @@ Reason</source>
         <translation type="obsolete">须同自动一致</translation>
     </message>
     <message>
+        <location filename="hcsettings/ichcdetectionframe.ui" line="337"/>
+        <location filename="hcsettings/ichcdetectionframe_5.ui" line="337"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="203"/>
-        <source>Orgin Position</source>
-        <translation>启动姿势</translation>
+        <source>U/D Position</source>
+        <oldsource>Orgin Position</oldsource>
+        <translation type="unfinished">启动姿势</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="285"/>
@@ -2570,73 +2531,44 @@ Reason</source>
 <context>
     <name>ICHCMovementFrame</name>
     <message>
-        <location filename="hcsettings/ichcmovementframe.ui" line="14"/>
-        <source>Frame</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcmovementframe.ui" line="32"/>
         <source>Main arm down</source>
-        <translation>主臂下降</translation>
+        <translation type="obsolete">主臂下降</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcmovementframe.ui" line="46"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="79"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="112"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="145"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="178"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="211"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="244"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="277"/>
         <source>Main forward</source>
-        <translation>主臂前进</translation>
+        <translation type="obsolete">主臂前进</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcmovementframe.ui" line="51"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="84"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="117"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="150"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="183"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="216"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="249"/>
-        <location filename="hcsettings/ichcmovementframe.ui" line="282"/>
         <source>Main backward</source>
-        <translation>主臂后退</translation>
+        <translation type="obsolete">主臂后退</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcmovementframe.ui" line="65"/>
         <source>Main arm up</source>
-        <translation>主臂上升</translation>
+        <translation type="obsolete">主臂上升</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcmovementframe.ui" line="98"/>
         <source>Secondary arm down</source>
-        <translation>副臂下降</translation>
+        <translation type="obsolete">副臂下降</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcmovementframe.ui" line="131"/>
         <source>Secondary arm up</source>
-        <translation>副臂上升</translation>
+        <translation type="obsolete">副臂上升</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcmovementframe.ui" line="164"/>
         <source>Main arm traverse out</source>
-        <translation>主臂横出</translation>
+        <translation type="obsolete">主臂横出</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcmovementframe.ui" line="197"/>
         <source>Main arm traverse in</source>
-        <translation>主臂横入</translation>
+        <translation type="obsolete">主臂横入</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcmovementframe.ui" line="230"/>
         <source>Secondary arm traverse out</source>
-        <translation>副臂横出</translation>
+        <translation type="obsolete">副臂横出</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcmovementframe.ui" line="263"/>
         <source>Secondary arm traverse in</source>
-        <translation>副臂横入</translation>
+        <translation type="obsolete">副臂横入</translation>
     </message>
 </context>
 <context>
