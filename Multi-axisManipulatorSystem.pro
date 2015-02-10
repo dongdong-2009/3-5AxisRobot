@@ -90,7 +90,7 @@ FORMS    += mainframe_5.ui
 #FORMS += mainframe.ui
 #}
 
-include (./categorypage/categorypage.pri)
+include (categorypage/categorypage.pri)
 include (custom_widgets/custom_widgets.pri)
 include (function_settings/function_settings.pri)
 #include (manual_operation/manual_operation.pri)

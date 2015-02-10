@@ -390,6 +390,7 @@ void ICVirtualHost::RefreshStatus()
 
 void ICVirtualHost::SaveSystemConfig()
 {
+    QFile::copy("./sysconfig/system.txt", "./sysconfig/system.txt~");
     QFile file("./sysconfig/system.txt");
     if(!file.open(QFile::WriteOnly | QFile::Text))
     {
@@ -409,7 +410,6 @@ void ICVirtualHost::SaveSystemConfig()
     {
         toWrite += systemParamMap_.value(i).toByteArray() + "\n";
     }
-    QFile::copy("./sysconfig/system.txt", "./sysconfig/system.txt~");
     file.write(toWrite);
     file.close();
     //    system("rm ./sysconfig/system.txt~");
@@ -1032,6 +1032,7 @@ void ICVirtualHost::GetAxisParam_(const QString &file, int start, int end, QVect
 
 void ICVirtualHost::SaveAxisParamHelper_(const QString &fileName, int start, int end)
 {
+    QFile::copy("./sysconfig/" + fileName, "./sysconfig/" + fileName + "~");
     QFile file("./sysconfig/" + fileName);
     if(file.open(QFile::WriteOnly | QFile::Text))
     {
@@ -1040,7 +1041,6 @@ void ICVirtualHost::SaveAxisParamHelper_(const QString &fileName, int start, int
         {
             toWrite += systemParamMap_.value(i).toByteArray() + "\n";
         }
-        QFile::copy("./sysconfig/" + fileName, "./sysconfig/" + fileName + "~");
         file.write(toWrite);
         file.close();
         //        system(QString("rm ./sysconfig/%1~").arg(fileName).toAscii());

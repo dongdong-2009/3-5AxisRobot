@@ -698,10 +698,19 @@ void ICHCInstructionPageFrame::on_deleteToolButton_clicked()
 //            isSyncItem = (topItem->at(sIndex + 1).SubNum() == topItem->at(sIndex).SubNum()) ||
 //                    topItem->at(sIndex - 1).SubNum() == topItem->at(sIndex).SubNum();
 //        }
+
         topItem->RemoveSubItem(sIndex);
         if(topItem->ItemCount() == 1)
         {
             programList_[gIndex].RemoveTopItem(tIndex);
+            if(programList_.at(gIndex).TopItemCount() <= 1) //delete Group Item
+            {
+                programList_.removeAt(gIndex);
+                for(int i = gIndex; i != programList_.size(); ++i)
+                {
+                    programList_[i].SetStepNum(i);
+                }
+            }
         }
         else
         {
@@ -713,6 +722,7 @@ void ICHCInstructionPageFrame::on_deleteToolButton_clicked()
                 }
             }
         }
+
     }
     UpdateUIProgramList_();
 
