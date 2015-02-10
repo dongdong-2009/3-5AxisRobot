@@ -68,7 +68,7 @@ FORMS    +=  \
     icactiondialog.ui \
     ichostcomparepage.ui \
     ictipswidget.ui \
-    simulateknob.ui \
+    simulateknob.ui
 
 
 SK_SIZE = 8
