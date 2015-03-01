@@ -33,7 +33,7 @@ QList<ICMoldItem> ICHCOtherPage::CreateCommandImpl() const
     if(ui->clearButton->isChecked())
     {
         item.SetIFVal(1);
+        ret.append(item);
     }
-    ret.append(item);
     return ret;
 }

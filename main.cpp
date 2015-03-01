@@ -4,6 +4,7 @@
 #include "ickeyboard.h"
 #include "icsplashscreen.h"
 #include "icparameterssave.h"
+#include "ICHacker.h"
 
 #ifdef Q_WS_WIN
 #include <QFile>
@@ -34,6 +35,9 @@ int main(int argc, char *argv[])
     paraSave->LoadInitLocale();
     ICVirtualHost host;
     MainFrame w(splash);
+#ifndef Q_WS_QWS
+    DeepSetWidgetToolStatus(&w);
+#endif
     w.show();
     splash->finish(&w);
     delete splash;

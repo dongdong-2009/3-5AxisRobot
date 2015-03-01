@@ -58,7 +58,8 @@ HEADERS += icaxispositionlabel.h \
     icdataformatchecker.h \
     icprogramformatchecker.h \
     icconfigformatchecker.h \
-    simulateknob.h
+    simulateknob.h \
+    ICHacker.h
 
 FORMS    +=  \
     #icalarmdescriptiondialog.ui \

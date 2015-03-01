@@ -72,6 +72,3 @@ FORMS += hcsettings/icstructdefineframe_5.ui \
     hcsettings/axissettingsframe_5.ui \
 hcsettings/ichcproductsettingframe_5.ui
 }
-
-RESOURCES += \
-    resource.qrc

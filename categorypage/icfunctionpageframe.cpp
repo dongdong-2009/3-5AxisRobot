@@ -19,6 +19,7 @@
 
 #include "icprogramheadframe.h"
 #include "icparameterssave.h"
+#include "ICHacker.h"
 
 #include <QDebug>
 
@@ -28,42 +29,47 @@ public:
     static QWidget * CreatePage(
             const QWidget * clickedButton = NULL, ICFunctionPageFrame * functionPage = NULL, QWidget *parent = NULL)
     {
+        QWidget* ret;
         if(clickedButton == functionPage->ui->signalSettingWidget)
         {
 //            return new ICSignalSettingFrame(parent);
-            return new ICHCDetectionFrame(parent);
+            ret =  new ICHCDetectionFrame(parent);
         }
         else if(clickedButton == functionPage->ui->productSettingWidget)
         {
 //            return new ICProductSettingFrame(parent);
-            return new ICHCProductSettingFrame(parent);
+            ret =  new ICHCProductSettingFrame(parent);
         }
         else if(clickedButton == functionPage->ui->maintainWidget)
         {
 //            return new ICUpdateSystem(parent);
-            return ICUpdateSystem::Instance();
+            ret =  ICUpdateSystem::Instance();
         }
         else if(clickedButton == functionPage->ui->securityPointSettingWidget)
         {
-            return new ICHCSettingsFrame(parent);
+            ret =  new ICHCSettingsFrame(parent);
         }
         else if(clickedButton == functionPage->ui->stackSettingWidget)
         {
 //            return new ICStackSettingPageFrame(parent);
-            return new ICHCStackedSettingsFrame(parent);
+            ret =  new ICHCStackedSettingsFrame(parent);
         }
         else if(clickedButton == functionPage->ui->machineStructConfig)
         {
-            return new ICMachineStructPage(parent);
+            ret =  new ICMachineStructPage(parent);
         }
         else if(clickedButton == functionPage->ui->machineConfigSettingWidget)
         {
-            return new ICMachineConfigPage(parent);
+            ret =  new ICMachineConfigPage(parent);
         }
         else
         {
             return NULL;
         }
+#ifndef Q_WS_QWS
+        DeepSetWidgetToolStatus(ret);
+#endif
+        return ret;
     }
 };
 

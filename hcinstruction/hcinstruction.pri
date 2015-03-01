@@ -85,8 +85,6 @@ FORMS += \
 
 #    hcinstruction/ichcinstructionpageframe_5.ui
 
-RESOURCES += \
-    resource.qrc
 
 contains(DEFINES, HC_SK_8){
 FORMS += hcinstruction/ichcinstructionpageframe.ui \

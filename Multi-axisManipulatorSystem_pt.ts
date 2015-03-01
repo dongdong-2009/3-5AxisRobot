@@ -1386,14 +1386,6 @@ ModifyTime</source>
         <source>Detect Origin</source>
         <translation>Retornar à origem</translation>
     </message>
-    <message>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="337"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="337"/>
-        <location filename="hcsettings/ichcdetectionframe.cpp" line="203"/>
-        <source>U/D Position</source>
-        <oldsource>Orgin Position</oldsource>
-        <translation type="unfinished">Retornar posição Y</translation>
-    </message>
 </context>
 <context>
     <name>ICHCFixturePage</name>

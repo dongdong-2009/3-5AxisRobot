@@ -326,6 +326,10 @@ void ICStructDefineFrame::retranslateUi_()
     ui->label_19->setText(tr("Adjust"));
     ui->label_10->setText(tr("Reserve"));
     ui->label_11->setText(tr("Reserve"));
+    ui->label_28->setText(tr("In Mold Pos"));
+    ui->fixtureComboBox->setItemText(0, tr("Limit"));
+    ui->fixtureComboBox->setItemText(1, tr("No Limit"));
+
 }
 
 void ICStructDefineFrame::on_saveButton_clicked()

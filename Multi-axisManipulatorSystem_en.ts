@@ -1336,14 +1336,6 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcdetectionframe.ui" line="337"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="337"/>
-        <location filename="hcsettings/ichcdetectionframe.cpp" line="203"/>
-        <source>U/D Position</source>
-        <oldsource>Orgin Position</oldsource>
-        <translation type="unfinished">Orgin Pos</translation>
-    </message>
-    <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="285"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="536"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="285"/>
