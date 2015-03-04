@@ -1211,22 +1211,22 @@ Reason</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="208"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="214"/>
         <source>Signal Settings</source>
         <translation>信号设定</translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="209"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="215"/>
         <source>Product Settings</source>
         <translation>产品设定</translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="210"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="216"/>
         <source>Machine Configure</source>
         <translation>运行参数</translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="207"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="213"/>
         <source>Maintains</source>
         <translation>维护</translation>
     </message>
@@ -1235,22 +1235,22 @@ Reason</source>
         <translation type="obsolete">教导</translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="203"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="209"/>
         <source>Security Point Settings</source>
         <translation>安全点设定</translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="205"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="211"/>
         <source>Struct Settings</source>
         <translation>机器参数</translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="206"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="212"/>
         <source>Stack Settings</source>
         <translation>堆叠设定</translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="204"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="210"/>
         <source>System Settings</source>
         <translation>系统设定</translation>
     </message>
@@ -1294,95 +1294,95 @@ Reason</source>
         <translation type="obsolete">使用</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="134"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="140"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="141"/>
         <source>Check Point</source>
         <translation>检查输入点</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="338"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="359"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="249"/>
         <source>Defective Products</source>
         <translation>不良品</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="373"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="397"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="412"/>
         <source>X043</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="405"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="432"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="476"/>
         <source>X044</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="121"/>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="545"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="124"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="581"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="96"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="609"/>
         <source>Try Product</source>
         <translation>试产</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="437"/>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="540"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="467"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="576"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="444"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="604"/>
         <source>Sampling</source>
         <translation>取样</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="553"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="589"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="617"/>
         <source>Use Macro</source>
         <translation>使用子程序</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="198"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="207"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="316"/>
         <source>Fixture-2</source>
         <translation>夹2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="510"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="546"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="574"/>
         <source>Sub-1</source>
         <translation>子程序1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="515"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="551"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="579"/>
         <source>Sub-2</source>
         <translation>子程序2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="520"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="556"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="584"/>
         <source>Sub-3</source>
         <translation>子程序3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="525"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="561"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="589"/>
         <source>Sub-4</source>
         <translation>子程序4</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="530"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="566"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="594"/>
         <source>Sub-5</source>
         <translation>子程序5</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="535"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="571"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="599"/>
         <source>Bad Product</source>
         <translation>不良品</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="230"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="242"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="205"/>
         <source>Fixture-3</source>
         <translation>夹3</translation>
@@ -1394,7 +1394,7 @@ Reason</source>
         <translation>夹1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="476"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="509"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="128"/>
         <source>Product Count</source>
         <translation>间隔模数</translation>
@@ -1424,19 +1424,19 @@ Reason</source>
         <translation type="obsolete">堆叠4组</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="166"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="172"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="284"/>
         <source>Fixture-4</source>
         <translation>夹4</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="262"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="277"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="380"/>
         <source>Sucker-1</source>
         <translation>吸1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="294"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="312"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="348"/>
         <source>Sucker-2</source>
         <translation>吸2</translation>
@@ -1490,7 +1490,7 @@ Reason</source>
         <translation type="obsolete">巨集7</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="585"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="621"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="649"/>
         <source>Return Step</source>
         <translation>返回步号</translation>
@@ -7655,12 +7655,14 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2039"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2039"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="330"/>
         <source>Limit</source>
         <translation>限制</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2044"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2044"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="331"/>
         <source>No Limit</source>
         <translation>无限制</translation>
     </message>
@@ -7674,6 +7676,7 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2106"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2106"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="329"/>
         <source>In Mold Pos</source>
         <translation>模内侧姿</translation>
     </message>
@@ -7825,12 +7828,12 @@ Please enter an digit between </source>
         <translation>预留</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="377"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="381"/>
         <source>Tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="377"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="381"/>
         <source>Save Sucessfully!</source>
         <translation>保存成功!</translation>
     </message>

@@ -947,42 +947,42 @@ ModifyTime</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="203"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="209"/>
         <source>Security Point Settings</source>
         <translation>настройки безопасности</translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="204"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="210"/>
         <source>System Settings</source>
         <translation>настройки системы</translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="205"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="211"/>
         <source>Struct Settings</source>
         <translation>настройки машины</translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="206"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="212"/>
         <source>Stack Settings</source>
         <translation>параметры макета</translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="207"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="213"/>
         <source>Maintains</source>
         <translation>поддерживать</translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="208"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="214"/>
         <source>Signal Settings</source>
         <translation>настройки сигналов</translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="209"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="215"/>
         <source>Product Settings</source>
         <translation>настройки продукта</translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="210"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="216"/>
         <source>Machine Configure</source>
         <translation>настройки работает</translation>
     </message>
@@ -1008,125 +1008,125 @@ ModifyTime</source>
         <translation>приспо-1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="121"/>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="545"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="124"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="581"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="96"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="609"/>
         <source>Try Product</source>
         <translation>пытаться</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="134"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="140"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="141"/>
         <source>Check Point</source>
         <translation>КПП</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="166"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="172"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="284"/>
         <source>Fixture-4</source>
         <translation>приспо-4</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="198"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="207"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="316"/>
         <source>Fixture-2</source>
         <translation>приспо-2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="230"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="242"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="205"/>
         <source>Fixture-3</source>
         <translation>приспо-3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="262"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="277"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="380"/>
         <source>Sucker-1</source>
         <translation>присо-1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="294"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="312"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="348"/>
         <source>Sucker-2</source>
         <translation>присо-2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="338"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="359"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="249"/>
         <source>Defective Products</source>
         <translation>дефек</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="373"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="397"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="412"/>
         <source>X043</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="405"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="432"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="476"/>
         <source>X044</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="437"/>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="540"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="467"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="576"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="444"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="604"/>
         <source>Sampling</source>
         <translation>выборка</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="476"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="509"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="128"/>
         <source>Product Count</source>
         <translation>интервал</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="510"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="546"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="574"/>
         <source>Sub-1</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="515"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="551"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="579"/>
         <source>Sub-2</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="520"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="556"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="584"/>
         <source>Sub-3</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="525"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="561"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="589"/>
         <source>Sub-4</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="530"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="566"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="594"/>
         <source>Sub-5</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="535"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="571"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="599"/>
         <source>Bad Product</source>
         <translation>дефектный</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="553"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="589"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="617"/>
         <source>Use Macro</source>
         <translation>использование</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="585"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="621"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="649"/>
         <source>Return Step</source>
         <translation>возвращение</translation>
@@ -6218,12 +6218,14 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2039"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2039"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="330"/>
         <source>Limit</source>
         <translation>предела</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2044"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2044"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="331"/>
         <source>No Limit</source>
         <translation>нет предела</translation>
     </message>
@@ -6251,6 +6253,7 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2106"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2106"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="329"/>
         <source>In Mold Pos</source>
         <translation>вывернуть форму</translation>
     </message>
@@ -6268,12 +6271,12 @@ Please enter an digit between </source>
         <translation>резерв</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="377"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="381"/>
         <source>Tips</source>
         <translation>чаевые</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="377"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="381"/>
         <source>Save Sucessfully!</source>
         <translation>успешно сохранены!</translation>
     </message>
