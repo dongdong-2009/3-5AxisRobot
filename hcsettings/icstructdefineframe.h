@@ -50,6 +50,28 @@ private slots:
     void on_adjUse_toggled(bool checked);
     void on_fixtureComboBox_currentIndexChanged(int index);
 
+    void on_oStartBtn_clicked();
+
+    void on_oX1Btn_clicked();
+
+    void on_oY1Btn_clicked();
+
+    void on_oZBtn_clicked();
+
+    void on_oX2Btn_clicked();
+
+    void on_oY2Btn_clicked();
+
+    void on_setOrigin_clicked();
+
+    void on_tabWidget_currentChanged(int index);
+
+    void on_oABtn_clicked();
+
+    void on_oBBtn_clicked();
+
+    void on_oCBtn_clicked();
+
 private:
     Ui::ICStructDefineFrame *ui;
     uint armStruct_;
@@ -64,6 +86,11 @@ private:
 
     QList<QList<QAbstractButton*> >buttonslist_ ;
     void InitEscapeBox() ;
+
+    QString oldStyle;
+    QString newStyle;
+
+    int timerID_;
 
 private slots:
     void OnConfigChanged(QObject* w, const QString& newV, const QString& oldV);

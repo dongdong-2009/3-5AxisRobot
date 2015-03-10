@@ -41,6 +41,7 @@ public:
     bool IsAutoPageShown() const {if(autoPage_ == NULL) return false; return !autoPage_->isHidden();}
 
     bool NoInStop();
+    void BlockOrignShow(bool isBlock) { isBlockOriginShow_ = isBlock;}
 
     int CurrentLevel() const;
 
@@ -170,6 +171,7 @@ private:
     bool isFlag;
     QList<QList<QWidget*> > axisWidgets_;
     QList<uint> compareAlarmNums_;
+    bool isBlockOriginShow_;
 #if defined(Q_WS_WIN32) || defined(Q_WS_X11)
     SimulateKnob* simulateKnob_;
 #endif

@@ -160,7 +160,7 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     axisDefine_(-1),
     registe_timer(new QTimer),
     reboot_timer(new QTimer),
-    isBlockOrigin_(false)
+    isBlockOriginShow_(false)
 {
     connect(this,
             SIGNAL(LoadMessage(QString)),
@@ -1088,6 +1088,7 @@ void MainFrame::ShowAutoPage()
         else if(resetTime < 0)
         {
             QMessageBox::information(this,tr("tips"),tr("No Register"));
+            return;
         }
     }
     functionPage_->ShowFunctionSelectPage();
@@ -1131,7 +1132,7 @@ void MainFrame::ShowFunctionPage()
 
 void MainFrame::ShowOrigin()
 {
-    if(isBlockOrigin_)
+    if(isBlockOriginShow_)
     {
         return;
     }

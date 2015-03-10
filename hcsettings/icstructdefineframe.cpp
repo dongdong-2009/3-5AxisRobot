@@ -12,6 +12,9 @@
 #include <QDebug>
 #include "mainframe.h"
 #include "icmessagebox.h"
+#include "icvirtualkey.h"
+#include "icactioncommand.h"
+
 
 typedef union{
 struct {
@@ -30,6 +33,76 @@ struct {
 }resv;
 uint port;
 }AXIS_MODIFY_DATA;
+
+typedef union{
+    struct {
+        u_int16_t a1 : 3;
+        u_int16_t a2 : 3;
+        u_int16_t a3 : 3;
+        u_int16_t a4 : 3;
+        u_int16_t a5 : 3;
+        u_int16_t resv : 1;
+    }mode;
+    u_int16_t allMode;
+}AxisMode;
+
+
+
+typedef union{
+    struct {
+        u_int16_t x : 2;
+        u_int16_t y : 2;
+        u_int16_t z : 2;
+        u_int16_t p : 2;
+        u_int16_t q : 2;
+        u_int16_t a : 2;
+        u_int16_t b : 2;
+        u_int16_t c : 2;
+    }b;
+    u_int16_t combine;
+}OriginStatus;
+
+typedef union{
+    struct {
+        u_int32_t y0 : 1;
+        u_int32_t y1 : 1;
+        u_int32_t y2 : 1;
+        u_int32_t y3 : 1;
+        u_int32_t y4 : 1;
+        u_int32_t y5 : 1;
+        u_int32_t y6 : 1;
+        u_int32_t y7 : 1;
+
+        u_int32_t y10 : 1;
+        u_int32_t y11 : 1;
+        u_int32_t y12 : 1;
+        u_int32_t y13 : 1;
+        u_int32_t y14 : 1;
+        u_int32_t y15 : 1;
+        u_int32_t y16 : 1;
+        u_int32_t y17 : 1;
+
+        u_int32_t y20 : 1;
+        u_int32_t y21 : 1;
+        u_int32_t y22 : 1;
+        u_int32_t y23 : 1;
+        u_int32_t y24 : 1;
+        u_int32_t y25 : 1;
+        u_int32_t y26 : 1;
+        u_int32_t y27 : 1;
+
+        u_int32_t y30 : 1;
+        u_int32_t y31 : 1;
+        u_int32_t y32 : 1;
+        u_int32_t y33 : 1;
+        u_int32_t y34 : 1;
+        u_int32_t y35 : 1;
+        u_int32_t y36 : 1;
+        u_int32_t y37 : 1;
+    }b;
+    u_int16_t combine16[2];
+    u_int32_t combine32;
+}OutputWay;
 
 ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
     QWidget(parent),
@@ -182,11 +255,101 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
         ui->adjNoUse->blockSignals(false);
     }
 
-    ui->servoFlex->setCurrentIndex(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Resv1).toInt());
+    ui->servoFlex->setCurrentIndex(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Resv2).toInt());
     int v = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt();
     v &= 0xFFFF;
     v >>= 15;
     ui->fixtureComboBox->setCurrentIndex(v);
+
+    AxisMode axisMode;
+    axisMode.allMode = host->SystemParameter(ICVirtualHost::SYS_Config_Resv1).toInt();
+//    ui->waitTime->SetThisIntToThisText(recycleMode.split.time);
+//    ui->waitTime->SetDecimalPlaces(1);
+//    ui->waitTime->setValidator(new QIntValidator(0, 100, this));
+    ui->os1->setCurrentIndex(axisMode.mode.a1);
+    ui->os2->setCurrentIndex(axisMode.mode.a2);
+    ui->os3->setCurrentIndex(axisMode.mode.a3);
+    ui->os4->setCurrentIndex(axisMode.mode.a4);
+    ui->os5->setCurrentIndex(axisMode.mode.a5);
+
+    OutputWay outWay;
+    outWay.combine16[0] = host->SystemParameter(ICVirtualHost::ACT_C_Sec3).toUInt();
+    outWay.combine16[1] = host->SystemParameter(ICVirtualHost::ACT_C_Sec4).toUInt();
+    ui->y10Reset->setChecked(outWay.b.y0);
+    ui->y11Reset->setChecked(outWay.b.y1);
+    ui->y12Reset->setChecked(outWay.b.y2);
+    ui->y13Reset->setChecked(outWay.b.y3);
+    ui->y14Reset->setChecked(outWay.b.y4);
+    ui->y15Reset->setChecked(outWay.b.y5);
+    ui->y16Reset->setChecked(outWay.b.y6);
+    ui->y17Reset->setChecked(outWay.b.y7);
+
+    ui->y20Reset->setChecked(outWay.b.y10);
+    ui->y21Reset->setChecked(outWay.b.y11);
+    ui->y22Reset->setChecked(outWay.b.y12);
+    ui->y23Reset->setChecked(outWay.b.y13);
+    ui->y24Reset->setChecked(outWay.b.y14);
+    ui->y25Reset->setChecked(outWay.b.y15);
+    ui->y26Reset->setChecked(outWay.b.y16);
+    ui->y27Reset->setChecked(outWay.b.y17);
+
+    ui->y30Reset->setChecked(outWay.b.y20);
+    ui->y31Reset->setChecked(outWay.b.y21);
+    ui->y32Reset->setChecked(outWay.b.y22);
+    ui->y33Reset->setChecked(outWay.b.y23);
+    ui->y34Reset->setChecked(outWay.b.y24);
+    ui->y35Reset->setChecked(outWay.b.y25);
+    ui->y36Reset->setChecked(outWay.b.y26);
+    ui->y37Reset->setChecked(outWay.b.y27);
+
+    ui->y40Reset->setChecked(outWay.b.y30);
+    ui->y41Reset->setChecked(outWay.b.y31);
+    ui->y42Reset->setChecked(outWay.b.y32);
+    ui->y43Reset->setChecked(outWay.b.y33);
+    ui->y44Reset->setChecked(outWay.b.y34);
+    ui->y45Reset->setChecked(outWay.b.y35);
+    ui->y46Reset->setChecked(outWay.b.y36);
+    ui->y47Reset->setChecked(outWay.b.y37);
+
+    ui->y10Reset->hide();
+    ui->y11Reset->hide();
+    //    ui->y12Reset->hide();
+    //    ui->y13Reset->hide();
+    //    ui->y14Reset->hide();
+    //    ui->y15Reset->hide();
+    ui->y16Reset->hide();
+    //    ui->y17Reset->hide();
+
+    //    ui->y20Reset->hide();
+    ui->y21Reset->hide();
+    //    ui->y22Reset->hide();
+    ui->y23Reset->hide();
+    ui->y24Reset->hide();
+    //    ui->y25Reset->hide();
+    ui->y26Reset->hide();
+    ui->y27Reset->hide();
+
+    ui->y30Reset->hide();
+    //    ui->y31Reset->hide();
+    //    ui->y32Reset->hide();
+    ui->y33Reset->hide();
+    //    ui->y34Reset->hide();
+    //    ui->y35Reset->hide();
+    //    ui->y36Reset->hide();
+    //    ui->y37Reset->hide();
+
+    ui->y40Reset->hide();
+    ui->y41Reset->hide();
+    ui->y42Reset->hide();
+    ui->y43Reset->hide();
+    ui->y44Reset->hide();
+    ui->y45Reset->hide();
+    ui->y46Reset->hide();
+    ui->y47Reset->hide();
+
+
+    oldStyle = ui->oStartBtn->styleSheet();
+    newStyle = "border-style: outset;border-width: 2px;border-radius: 6px;border-color: gray;background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(0, 255, 0, 255), stop:1 rgba(255, 255, 255, 255));padding-right: 6px;padding-left:6px;";
 
     editorToConfigIDs_.insert(ui->x1Box, ICConfigString::kCS_STRUCT_Axis_Define_X1);
     editorToConfigIDs_.insert(ui->y1Box, ICConfigString::kCS_STRUCT_Axis_Define_Y1);
@@ -215,6 +378,39 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
     editorToConfigIDs_.insert(ui->servoFlex, ICConfigString::kCS_STRUCT_Other_Define_Servo_Flex);
     editorToConfigIDs_.insert(ui->fixtureComboBox, ICConfigString::kCS_STRUCT_Other_Define_Inside_Position);
     editorToConfigIDs_.insert(buttongroup_, ICConfigString::kCS_STRUCT_Other_Define_Escape);
+    editorToConfigIDs_.insert(ui->y10Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y0);
+    editorToConfigIDs_.insert(ui->y11Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y1);
+    editorToConfigIDs_.insert(ui->y12Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y2);
+    editorToConfigIDs_.insert(ui->y13Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y3);
+    editorToConfigIDs_.insert(ui->y14Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y4);
+    editorToConfigIDs_.insert(ui->y15Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y5);
+    editorToConfigIDs_.insert(ui->y16Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y6);
+    editorToConfigIDs_.insert(ui->y17Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y7);
+    editorToConfigIDs_.insert(ui->y20Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y8);
+    editorToConfigIDs_.insert(ui->y21Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y9);
+    editorToConfigIDs_.insert(ui->y22Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y10);
+    editorToConfigIDs_.insert(ui->y23Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y11);
+    editorToConfigIDs_.insert(ui->y24Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y12);
+    editorToConfigIDs_.insert(ui->y25Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y13);
+    editorToConfigIDs_.insert(ui->y26Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y14);
+    editorToConfigIDs_.insert(ui->y27Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y15);
+    editorToConfigIDs_.insert(ui->y30Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y16);
+    editorToConfigIDs_.insert(ui->y31Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y17);
+    editorToConfigIDs_.insert(ui->y32Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y18);
+    editorToConfigIDs_.insert(ui->y33Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y19);
+    editorToConfigIDs_.insert(ui->y34Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y20);
+    editorToConfigIDs_.insert(ui->y35Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y21);
+    editorToConfigIDs_.insert(ui->y36Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y22);
+    editorToConfigIDs_.insert(ui->y37Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y23);
+    editorToConfigIDs_.insert(ui->y40Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y24);
+    editorToConfigIDs_.insert(ui->y41Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y25);
+    editorToConfigIDs_.insert(ui->y42Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y26);
+    editorToConfigIDs_.insert(ui->y43Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y27);
+    editorToConfigIDs_.insert(ui->y44Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y28);
+    editorToConfigIDs_.insert(ui->y45Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y29);
+    editorToConfigIDs_.insert(ui->y46Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y30);
+    editorToConfigIDs_.insert(ui->y47Reset, ICConfigString::kCS_STRUCT_OUTWAY_Y31);
+
     ICLogInit
 }
 
@@ -357,13 +553,56 @@ void ICStructDefineFrame::retranslateUi_()
     ui->label_19->setText(tr("Adjust"));
     ui->label_10->setText(tr("Reserve"));
     ui->label_11->setText(tr("Reserve"));
+
+    ui->os1->setItemText(0, tr("None"));
+    ui->os2->setItemText(0, tr("None"));
+    ui->os3->setItemText(0, tr("None"));
+    ui->os4->setItemText(0, tr("None"));
+    ui->os5->setItemText(0, tr("None"));
 }
 
 void ICStructDefineFrame::on_saveButton_clicked()
 {
+    OutputWay outWay;
+    outWay.b.y0 = 0;
+    outWay.b.y1 = 0;
+    outWay.b.y2 = ui->y12Reset->isChecked();
+    outWay.b.y3 = ui->y13Reset->isChecked();
+    outWay.b.y4 = ui->y14Reset->isChecked();
+    outWay.b.y5 = ui->y15Reset->isChecked();
+    outWay.b.y6 = 0;
+    outWay.b.y7 = ui->y17Reset->isChecked();
+
+    outWay.b.y10 = ui->y20Reset->isChecked();
+    outWay.b.y11 = 0;
+    outWay.b.y12 = ui->y22Reset->isChecked();
+    outWay.b.y13 = 0;
+    outWay.b.y14 = 0;
+    outWay.b.y15 = ui->y25Reset->isChecked();
+    outWay.b.y16 = 0;
+    outWay.b.y17 = 0;
+
+    outWay.b.y20 = 0;
+    outWay.b.y21 = ui->y31Reset->isChecked();
+    outWay.b.y22 = ui->y32Reset->isChecked();
+    outWay.b.y23 = 0;
+    outWay.b.y24 = ui->y34Reset->isChecked();
+    outWay.b.y25 = ui->y35Reset->isChecked();
+    outWay.b.y26 = ui->y36Reset->isChecked();
+    outWay.b.y27 = ui->y37Reset->isChecked();
+
+    outWay.b.y30 = 0;
+    outWay.b.y31 = 0;
+    outWay.b.y32 = 0;
+    outWay.b.y33 = 0;
+    outWay.b.y34 = 0;
+    outWay.b.y35 = 0;
+    outWay.b.y36 = 0;
+    outWay.b.y37 = 0;
     ICSetAxisConfigsCommand command;
     ICCommandProcessor* process = ICCommandProcessor::Instance();
     int sum = 0;
+
     QVector<uint> dataBuffer(7, 0);
     dataBuffer[0] = armStruct_;
     dataBuffer[1] = axisDefine_;
@@ -382,8 +621,15 @@ void ICStructDefineFrame::on_saveButton_clicked()
 //    data.split.a6 = ui->portA->currentIndex() == 0 ? 0 : ui->portA->currentIndex() + 7;
 //    data.split.a7 = ui->portB->currentIndex() == 0 ? 0 : ui->portB->currentIndex() + 7;
 //    data.split.a8 = ui->portC->currentIndex() == 0 ? 0 : ui->portC->currentIndex() + 7;
-    dataBuffer[4] = ui->servoFlex->currentIndex();
-    dataBuffer[5] = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Resv2).toUInt();
+    dataBuffer[5] = ui->servoFlex->currentIndex();
+    AxisMode axisMode;
+    axisMode.mode.a1 = ui->os1->currentIndex();
+    axisMode.mode.a2 = ui->os2->currentIndex();
+    axisMode.mode.a3 = ui->os3->currentIndex();
+    axisMode.mode.a4 = ui->os4->currentIndex();
+    axisMode.mode.a5 = ui->os5->currentIndex();
+    dataBuffer[4] = axisMode.allMode;
+//    dataBuffer[5] = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Resv2).toUInt();
     for(int i = 0; i != 6; ++i)
     {
         sum += dataBuffer.at(i);
@@ -405,6 +651,9 @@ void ICStructDefineFrame::on_saveButton_clicked()
         host->SetSystemParameter(ICVirtualHost::SYS_Config_Resv1, dataBuffer.at(4));
         host->SetSystemParameter(ICVirtualHost::SYS_Config_Resv2, dataBuffer.at(5));
         host->SetSystemParameter(ICVirtualHost::SYS_Config_Xorsum, dataBuffer.at(6));
+
+        host->SetSystemParameter(ICVirtualHost::ACT_C_Sec3, outWay.combine16[0]);
+        host->SetSystemParameter(ICVirtualHost::ACT_C_Sec4, outWay.combine16[1]);
 //        host->SystemParameter(ICVirtualHost::SYS_Function);
         host->SaveSystemConfig();
 //        QMessageBox::information(this, tr("Tips"), tr("Save Sucessfully!"));
@@ -519,6 +768,69 @@ void ICStructDefineFrame::on_fixtureComboBox_currentIndexChanged(int index)
     v &= 0x7FFF;
     v |= (index << 15);
     host->SetSystemParameter(ICVirtualHost::SYS_Config_Fixture, v);
+}
+
+void ICStructDefineFrame::on_oStartBtn_clicked()
+{
+    icMainFrame->BlockOrignShow(true);
+    ICCommandProcessor::Instance()->ExecuteHCCommand(IC::CMD_TurnZero, 0);
+}
+
+void ICStructDefineFrame::on_oX1Btn_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_ORIGIN_X1);
+}
+
+void ICStructDefineFrame::on_oY1Btn_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_ORIGIN_Y1);
+}
+
+void ICStructDefineFrame::on_oZBtn_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_ORIGIN_Z);
+}
+
+void ICStructDefineFrame::on_oX2Btn_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_ORIGIN_X2);
+}
+
+void ICStructDefineFrame::on_oY2Btn_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_ORIGIN_Y2);
+}
+
+void ICStructDefineFrame::on_setOrigin_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_SET_ORIGIN);
+}
+
+void ICStructDefineFrame::on_tabWidget_currentChanged(int index)
+{
+    if(index == 4)
+    {
+        timerID_ = startTimer(50);
+    }
+    else
+    {
+        killTimer(timerID_);
+    }
+}
+
+void ICStructDefineFrame::on_oABtn_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_ORIGIN_A);
+}
+
+void ICStructDefineFrame::on_oBBtn_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_ORIGIN_B);
+}
+
+void ICStructDefineFrame::on_oCBtn_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_ORIGIN_C);
 }
 
 ICLogFunctions(ICStructDefineFrame)

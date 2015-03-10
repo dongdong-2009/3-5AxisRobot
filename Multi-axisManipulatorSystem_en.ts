@@ -1478,621 +1478,781 @@ Infomation</source>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="93"/>
-        <source>kCS_TIME_Ver1</source>
+        <source>kCS_STRUCT_OUTWAY_Y0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="94"/>
-        <source>kCS_TIME_Hor1</source>
+        <source>kCS_STRUCT_OUTWAY_Y1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="95"/>
-        <source>kCS_TIME_Ver2</source>
+        <source>kCS_STRUCT_OUTWAY_Y2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="96"/>
-        <source>kCS_TIME_Hor2</source>
+        <source>kCS_STRUCT_OUTWAY_Y3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="97"/>
-        <source>kCS_TIME_MArm_UP</source>
+        <source>kCS_STRUCT_OUTWAY_Y4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="98"/>
-        <source>kCS_TIME_MArm_Dw</source>
+        <source>kCS_STRUCT_OUTWAY_Y5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="99"/>
-        <source>kCS_TIME_MArm_FW</source>
+        <source>kCS_STRUCT_OUTWAY_Y6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="100"/>
-        <source>kCS_TIME_MArm_BW</source>
+        <source>kCS_STRUCT_OUTWAY_Y7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="101"/>
-        <source>kCS_TIME_Z_FW</source>
+        <source>kCS_STRUCT_OUTWAY_Y8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="102"/>
-        <source>kCS_TIME_Z_BW</source>
+        <source>kCS_STRUCT_OUTWAY_Y9</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="103"/>
-        <source>kCS_TIME_SArm_UP</source>
+        <source>kCS_STRUCT_OUTWAY_Y10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="104"/>
-        <source>kCS_TIME_SArm_DW</source>
+        <source>kCS_STRUCT_OUTWAY_Y11</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="105"/>
-        <source>kCS_TIME_SArm_FW</source>
+        <source>kCS_STRUCT_OUTWAY_Y12</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="106"/>
-        <source>kCS_TIME_SArm_BW</source>
+        <source>kCS_STRUCT_OUTWAY_Y13</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="107"/>
-        <source>kCS_STACK_Group1_Seq</source>
+        <source>kCS_STRUCT_OUTWAY_Y14</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="108"/>
-        <source>kCS_STACK_Group2_Seq</source>
+        <source>kCS_STRUCT_OUTWAY_Y15</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="109"/>
-        <source>kCS_STACK_Group3_Seq</source>
+        <source>kCS_STRUCT_OUTWAY_Y16</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="110"/>
-        <source>kCS_STACK_Group4_Seq</source>
+        <source>kCS_STRUCT_OUTWAY_Y17</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="111"/>
-        <source>kCS_STACK_Group1_X_Dir</source>
+        <source>kCS_STRUCT_OUTWAY_Y18</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="112"/>
-        <source>kCS_STACK_Group2_X_Dir</source>
+        <source>kCS_STRUCT_OUTWAY_Y19</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="113"/>
-        <source>kCS_STACK_Group3_X_Dir</source>
+        <source>kCS_STRUCT_OUTWAY_Y20</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="114"/>
-        <source>kCS_STACK_Group4_X_Dir</source>
+        <source>kCS_STRUCT_OUTWAY_Y21</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="115"/>
-        <source>kCS_STACK_Group1_Y_Dir</source>
+        <source>kCS_STRUCT_OUTWAY_Y22</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="116"/>
-        <source>kCS_STACK_Group2_Y_Dir</source>
+        <source>kCS_STRUCT_OUTWAY_Y23</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="117"/>
-        <source>kCS_STACK_Group3_Y_Dir</source>
+        <source>kCS_STRUCT_OUTWAY_Y24</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="118"/>
-        <source>kCS_STACK_Group4_Y_Dir</source>
+        <source>kCS_STRUCT_OUTWAY_Y25</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="119"/>
-        <source>kCS_STACK_Group1_Z_Dir</source>
+        <source>kCS_STRUCT_OUTWAY_Y26</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="120"/>
-        <source>kCS_STACK_Group2_Z_Dir</source>
+        <source>kCS_STRUCT_OUTWAY_Y27</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="121"/>
-        <source>kCS_STACK_Group3_Z_Dir</source>
+        <source>kCS_STRUCT_OUTWAY_Y28</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="122"/>
-        <source>kCS_STACK_Group4_Z_Dir</source>
+        <source>kCS_STRUCT_OUTWAY_Y29</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="123"/>
-        <source>kCS_STACK_Group1_X_Number</source>
+        <source>kCS_STRUCT_OUTWAY_Y30</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="124"/>
-        <source>kCS_STACK_Group2_X_Number</source>
+        <source>kCS_STRUCT_OUTWAY_Y31</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="125"/>
-        <source>kCS_STACK_Group3_X_Number</source>
+        <source>kCS_TIME_Ver1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="126"/>
-        <source>kCS_STACK_Group4_X_Number</source>
+        <source>kCS_TIME_Hor1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="127"/>
-        <source>kCS_STACK_Group1_Y_Number</source>
+        <source>kCS_TIME_Ver2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="128"/>
-        <source>kCS_STACK_Group2_Y_Number</source>
+        <source>kCS_TIME_Hor2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="129"/>
-        <source>kCS_STACK_Group3_Y_Number</source>
+        <source>kCS_TIME_MArm_UP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="130"/>
-        <source>kCS_STACK_Group4_Y_Number</source>
+        <source>kCS_TIME_MArm_Dw</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="131"/>
-        <source>kCS_STACK_Group1_Z_Number</source>
+        <source>kCS_TIME_MArm_FW</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="132"/>
-        <source>kCS_STACK_Group2_Z_Number</source>
+        <source>kCS_TIME_MArm_BW</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="133"/>
-        <source>kCS_STACK_Group3_Z_Number</source>
+        <source>kCS_TIME_Z_FW</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="134"/>
-        <source>kCS_STACK_Group4_Z_Number</source>
+        <source>kCS_TIME_Z_BW</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="135"/>
-        <source>kCS_STACK_Group1_X_Space</source>
+        <source>kCS_TIME_SArm_UP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="136"/>
-        <source>kCS_STACK_Group2_X_Space</source>
+        <source>kCS_TIME_SArm_DW</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="137"/>
-        <source>kCS_STACK_Group3_X_Space</source>
+        <source>kCS_TIME_SArm_FW</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="138"/>
-        <source>kCS_STACK_Group4_X_Space</source>
+        <source>kCS_TIME_SArm_BW</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="139"/>
-        <source>kCS_STACK_Group1_Y_Space</source>
+        <source>kCS_STACK_Group1_Seq</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="140"/>
-        <source>kCS_STACK_Group2_Y_Space</source>
+        <source>kCS_STACK_Group2_Seq</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="141"/>
-        <source>kCS_STACK_Group3_Y_Space</source>
+        <source>kCS_STACK_Group3_Seq</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="142"/>
-        <source>kCS_STACK_Group4_Y_Space</source>
+        <source>kCS_STACK_Group4_Seq</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="143"/>
-        <source>kCS_STACK_Group1_Z_Space</source>
+        <source>kCS_STACK_Group1_X_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="144"/>
-        <source>kCS_STACK_Group2_Z_Space</source>
+        <source>kCS_STACK_Group2_X_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="145"/>
-        <source>kCS_STACK_Group3_Z_Space</source>
+        <source>kCS_STACK_Group3_X_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="146"/>
-        <source>kCS_STACK_Group4_Z_Space</source>
+        <source>kCS_STACK_Group4_X_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="147"/>
-        <source>kCS_STACK_Group1_Is_SArm</source>
+        <source>kCS_STACK_Group1_Y_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="148"/>
-        <source>kCS_STACK_Group2_Is_SArm</source>
+        <source>kCS_STACK_Group2_Y_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="149"/>
-        <source>kCS_STACK_Group3_Is_SArm</source>
+        <source>kCS_STACK_Group3_Y_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="150"/>
-        <source>kCS_STACK_Group4_Is_SArm</source>
+        <source>kCS_STACK_Group4_Y_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="151"/>
-        <source>kCS_STACK_Group1_Count_Way</source>
+        <source>kCS_STACK_Group1_Z_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="152"/>
-        <source>kCS_STACK_Group2_Count_Way</source>
+        <source>kCS_STACK_Group2_Z_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="153"/>
-        <source>kCS_STACK_Group3_Count_Way</source>
+        <source>kCS_STACK_Group3_Z_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="154"/>
-        <source>kCS_STACK_Group4_Count_Way</source>
+        <source>kCS_STACK_Group4_Z_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="155"/>
-        <source>kCS_AXIS_Length_X1</source>
+        <source>kCS_STACK_Group1_X_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="156"/>
-        <source>kCS_AXIS_Length_Y1</source>
+        <source>kCS_STACK_Group2_X_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="157"/>
-        <source>kCS_AXIS_Length_Z</source>
+        <source>kCS_STACK_Group3_X_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="158"/>
-        <source>kCS_AXIS_Length_X2</source>
+        <source>kCS_STACK_Group4_X_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="159"/>
-        <source>kCS_AXIS_Length_Y2</source>
+        <source>kCS_STACK_Group1_Y_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="160"/>
-        <source>kCS_AXIS_Length_A</source>
+        <source>kCS_STACK_Group2_Y_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="161"/>
-        <source>kCS_AXIS_Length_B</source>
+        <source>kCS_STACK_Group3_Y_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="162"/>
-        <source>kCS_AXIS_Length_C</source>
+        <source>kCS_STACK_Group4_Y_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="163"/>
-        <source>kCS_AXIS_Move_Limit_X1</source>
+        <source>kCS_STACK_Group1_Z_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="164"/>
-        <source>kCS_AXIS_Move_Limit_Y1</source>
+        <source>kCS_STACK_Group2_Z_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="165"/>
-        <source>kCS_AXIS_Move_Limit_Z</source>
+        <source>kCS_STACK_Group3_Z_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="166"/>
-        <source>kCS_AXIS_Move_Limit_X2</source>
+        <source>kCS_STACK_Group4_Z_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="167"/>
-        <source>kCS_AXIS_Move_Limit_Y2</source>
+        <source>kCS_STACK_Group1_X_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="168"/>
-        <source>kCS_AXIS_Move_Limit_A</source>
+        <source>kCS_STACK_Group2_X_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="169"/>
-        <source>kCS_AXIS_Move_Limit_B</source>
+        <source>kCS_STACK_Group3_X_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="170"/>
-        <source>kCS_AXIS_Move_Limit_C</source>
+        <source>kCS_STACK_Group4_X_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="171"/>
-        <source>kCS_AXIS_Min_X1</source>
+        <source>kCS_STACK_Group1_Y_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="172"/>
-        <source>kCS_AXIS_Min_Y1</source>
+        <source>kCS_STACK_Group2_Y_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="173"/>
-        <source>kCS_AXIS_Min_Z</source>
+        <source>kCS_STACK_Group3_Y_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="174"/>
-        <source>kCS_AXIS_Min_X2</source>
+        <source>kCS_STACK_Group4_Y_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="175"/>
-        <source>kCS_AXIS_Min_Y2</source>
+        <source>kCS_STACK_Group1_Z_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="176"/>
-        <source>kCS_AXIS_Min_A</source>
+        <source>kCS_STACK_Group2_Z_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="177"/>
-        <source>kCS_AXIS_Min_B</source>
+        <source>kCS_STACK_Group3_Z_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="178"/>
-        <source>kCS_AXIS_Min_C</source>
+        <source>kCS_STACK_Group4_Z_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="179"/>
-        <source>kCS_AXIS_Max_X1</source>
+        <source>kCS_STACK_Group1_Is_SArm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="180"/>
-        <source>kCS_AXIS_Max_Y1</source>
+        <source>kCS_STACK_Group2_Is_SArm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="181"/>
-        <source>kCS_AXIS_Max_Z</source>
+        <source>kCS_STACK_Group3_Is_SArm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="182"/>
-        <source>kCS_AXIS_Max_X2</source>
+        <source>kCS_STACK_Group4_Is_SArm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="183"/>
-        <source>kCS_AXIS_Max_Y2</source>
+        <source>kCS_STACK_Group1_Count_Way</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="184"/>
-        <source>kCS_AXIS_Max_A</source>
+        <source>kCS_STACK_Group2_Count_Way</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="185"/>
-        <source>kCS_AXIS_Max_B</source>
+        <source>kCS_STACK_Group3_Count_Way</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="186"/>
-        <source>kCS_AXIS_Max_C</source>
+        <source>kCS_STACK_Group4_Count_Way</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="187"/>
-        <source>kCS_AXIS_Rotate_X1</source>
+        <source>kCS_AXIS_Length_X1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="188"/>
-        <source>kCS_AXIS_Rotate_Y1</source>
+        <source>kCS_AXIS_Length_Y1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="189"/>
-        <source>kCS_AXIS_Rotate_Z</source>
+        <source>kCS_AXIS_Length_Z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="190"/>
-        <source>kCS_AXIS_Rotate_X2</source>
+        <source>kCS_AXIS_Length_X2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="191"/>
-        <source>kCS_AXIS_Rotate_Y2</source>
+        <source>kCS_AXIS_Length_Y2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="192"/>
-        <source>kCS_AXIS_Rotate_A</source>
+        <source>kCS_AXIS_Length_A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="193"/>
-        <source>kCS_AXIS_Rotate_B</source>
+        <source>kCS_AXIS_Length_B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="194"/>
-        <source>kCS_AXIS_Rotate_C</source>
+        <source>kCS_AXIS_Length_C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="195"/>
-        <source>kCS_AXIS_Config_Save</source>
+        <source>kCS_AXIS_Move_Limit_X1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="196"/>
-        <source>kCS_PANEL_Key_Tone</source>
+        <source>kCS_AXIS_Move_Limit_Y1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="197"/>
-        <source>kCS_PANEL_Touch_Recal</source>
+        <source>kCS_AXIS_Move_Limit_Z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="198"/>
-        <source>kCS_PANEL_Language</source>
+        <source>kCS_AXIS_Move_Limit_X2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="199"/>
-        <source>kCS_PANEL_Datetime</source>
+        <source>kCS_AXIS_Move_Limit_Y2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="200"/>
-        <source>kCS_PANEL_Backlight</source>
+        <source>kCS_AXIS_Move_Limit_A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="201"/>
-        <source>kCS_PANEL_Bright</source>
+        <source>kCS_AXIS_Move_Limit_B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="202"/>
-        <source>kCS_PANEL_Admin_Password</source>
+        <source>kCS_AXIS_Move_Limit_C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="203"/>
-        <source>kCS_PANEL_Root_Password</source>
+        <source>kCS_AXIS_Min_X1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="204"/>
-        <source>kCS_PANEL_Super_Password</source>
+        <source>kCS_AXIS_Min_Y1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="205"/>
-        <source>kCS_PANEL_Function_Extent</source>
+        <source>kCS_AXIS_Min_Z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="206"/>
-        <source>kCS_PANEL_Register_Extent</source>
+        <source>kCS_AXIS_Min_X2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="207"/>
-        <source>kCS_PANEL_Config_Save</source>
+        <source>kCS_AXIS_Min_Y2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="208"/>
-        <source>kCS_CARE_Item1_Cycle</source>
+        <source>kCS_AXIS_Min_A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="209"/>
-        <source>kCS_CARE_Item2_Cycle</source>
+        <source>kCS_AXIS_Min_B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="210"/>
-        <source>kCS_CARE_Item3_Cycle</source>
+        <source>kCS_AXIS_Min_C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="211"/>
-        <source>kCS_CARE_Item4_Cycle</source>
+        <source>kCS_AXIS_Max_X1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="212"/>
-        <source>kCS_CARE_Item5_Cycle</source>
+        <source>kCS_AXIS_Max_Y1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="213"/>
-        <source>kCS_CARE_Item6_Cycle</source>
+        <source>kCS_AXIS_Max_Z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="214"/>
-        <source>kCS_CARE_Item7_Cycle</source>
+        <source>kCS_AXIS_Max_X2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="215"/>
-        <source>kCS_Err</source>
+        <source>kCS_AXIS_Max_Y2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="216"/>
+        <source>kCS_AXIS_Max_A</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="217"/>
+        <source>kCS_AXIS_Max_B</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="218"/>
+        <source>kCS_AXIS_Max_C</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="219"/>
+        <source>kCS_AXIS_Rotate_X1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="220"/>
+        <source>kCS_AXIS_Rotate_Y1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="221"/>
+        <source>kCS_AXIS_Rotate_Z</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="222"/>
+        <source>kCS_AXIS_Rotate_X2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="223"/>
+        <source>kCS_AXIS_Rotate_Y2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="224"/>
+        <source>kCS_AXIS_Rotate_A</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="225"/>
+        <source>kCS_AXIS_Rotate_B</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="226"/>
+        <source>kCS_AXIS_Rotate_C</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="227"/>
+        <source>kCS_AXIS_Config_Save</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="228"/>
+        <source>kCS_PANEL_Key_Tone</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="229"/>
+        <source>kCS_PANEL_Touch_Recal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="230"/>
+        <source>kCS_PANEL_Language</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="231"/>
+        <source>kCS_PANEL_Datetime</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="232"/>
+        <source>kCS_PANEL_Backlight</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="233"/>
+        <source>kCS_PANEL_Bright</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="234"/>
+        <source>kCS_PANEL_Admin_Password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="235"/>
+        <source>kCS_PANEL_Root_Password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="236"/>
+        <source>kCS_PANEL_Super_Password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="237"/>
+        <source>kCS_PANEL_Function_Extent</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="238"/>
+        <source>kCS_PANEL_Register_Extent</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="239"/>
+        <source>kCS_PANEL_Config_Save</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="240"/>
+        <source>kCS_CARE_Item1_Cycle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="241"/>
+        <source>kCS_CARE_Item2_Cycle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="242"/>
+        <source>kCS_CARE_Item3_Cycle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="243"/>
+        <source>kCS_CARE_Item4_Cycle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="244"/>
+        <source>kCS_CARE_Item5_Cycle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="245"/>
+        <source>kCS_CARE_Item6_Cycle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="246"/>
+        <source>kCS_CARE_Item7_Cycle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="247"/>
+        <source>kCS_Err</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="248"/>
         <source>No IMPL</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2812,49 +2972,49 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="149"/>
         <source>Fixture1  </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="149"/>
         <source>Fixture2  </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="149"/>
         <source>Fixture3  </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="149"/>
         <source>Fixture4  </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="25"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="151"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
         <source>Sucker1   </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="25"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="151"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
         <source>Sucker2   </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="26"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="152"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="151"/>
         <source>Sucker3   </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="26"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="152"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="151"/>
         <source>Sucker4   </source>
         <translation type="unfinished"></translation>
     </message>
@@ -3122,11 +3282,6 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1251"/>
-        <source>Flag[%1]:%2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="445"/>
         <source>Stand program can not be insert action</source>
         <translation type="unfinished"></translation>
@@ -3149,6 +3304,11 @@ Infomation</source>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="977"/>
         <source>Stand program can not do Down action</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1251"/>
+        <source>Flag[%1]:%2</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4792,8 +4952,8 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="284"/>
-        <source>X016</source>
-        <oldsource>X017</oldsource>
+        <source>X017</source>
+        <oldsource>X016</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7449,7 +7609,7 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="14"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="14"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="241"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="437"/>
         <source>Form</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7458,8 +7618,8 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="1540"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1564"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1570"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="242"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="352"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="438"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="548"/>
         <source>Signal Define</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7480,8 +7640,8 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="38"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="44"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="50"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="253"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="350"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="449"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="546"/>
         <source>Arm Define</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7502,6 +7662,11 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="662"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="741"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="792"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2152"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2209"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2266"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2323"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2380"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="84"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="143"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="174"/>
@@ -7518,14 +7683,19 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="692"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="771"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="822"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="255"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="259"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="263"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="267"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="271"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="275"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="279"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="283"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="451"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="455"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="459"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="463"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="467"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="471"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="475"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="479"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="557"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="558"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="559"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="560"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="561"/>
         <source>None</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7546,14 +7716,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="286"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="324"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="362"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="256"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="260"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="264"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="268"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="272"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="276"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="280"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="284"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="452"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="456"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="460"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="464"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="468"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="472"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="476"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="480"/>
         <source>Pneumatic</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7574,41 +7744,59 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="291"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="329"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="367"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="257"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="261"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="265"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="269"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="273"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="277"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="281"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="285"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="453"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="457"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="461"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="465"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="469"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="473"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="477"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="481"/>
         <source>Servo</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="84"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="700"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2157"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2214"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2271"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2328"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2385"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2444"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="102"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="730"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="254"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="450"/>
         <source>X1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="91"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="721"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2187"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2244"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2301"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2358"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2415"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2522"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="109"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="751"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="258"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="454"/>
         <source>C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="98"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="366"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2167"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2224"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2281"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2338"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2395"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2457"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="116"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="396"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="262"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="458"/>
         <source>Z</source>
         <oldsource>C</oldsource>
         <translation type="unfinished"></translation>
@@ -7616,45 +7804,70 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="105"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="380"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2470"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="123"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="410"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="266"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="462"/>
         <source>A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="205"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="642"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2182"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2239"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2296"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2353"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2410"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2509"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="223"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="672"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="270"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="466"/>
         <source>B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="243"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="714"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2162"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2219"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2276"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2333"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2390"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2535"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="261"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="744"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="274"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="470"/>
         <source>Y1</source>
         <translation type="unfinished">Y1</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="281"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="707"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2172"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2229"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2286"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2343"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2400"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2483"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="299"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="737"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="278"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="474"/>
         <source>X2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="319"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="373"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2177"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2234"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2291"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2348"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2405"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2496"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="337"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="403"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="282"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="478"/>
         <source>Y2</source>
         <translation type="unfinished">Y2</translation>
     </message>
@@ -7789,14 +8002,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="840"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="864"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="870"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="286"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="351"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="482"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="547"/>
         <source>Out Define</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="999"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="287"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="483"/>
         <source>1</source>
         <translation>Y017</translation>
     </message>
@@ -7817,14 +8030,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1366"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1404"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1442"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="326"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="328"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="330"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="332"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="334"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="336"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="338"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="340"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="522"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="524"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="526"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="528"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="530"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="532"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="534"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="536"/>
         <source>Normal</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7845,14 +8058,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1480"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1515"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1550"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="327"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="329"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="331"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="333"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="335"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="337"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="339"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="341"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="523"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="525"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="527"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="529"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="531"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="533"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="535"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="537"/>
         <source>Extent</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7896,15 +8109,15 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="1862"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1904"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1910"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="342"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="353"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="538"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="549"/>
         <source>Other Define</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1868"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2079"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="343"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="539"/>
         <source>Escape</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7913,8 +8126,8 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="1987"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1993"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2069"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="346"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="354"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="542"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="550"/>
         <source>Use</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7923,51 +8136,241 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="2025"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1954"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2031"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="347"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="355"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="543"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="551"/>
         <source>No Use</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1955"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2086"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="357"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="553"/>
         <source>Adjust</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2062"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1961"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="356"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="552"/>
         <source>Servo Flex</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2070"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2094"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="288"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="484"/>
         <source>0-soft</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2105"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2129"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="295"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="491"/>
         <source>7-hard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2147"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2117"/>
+        <source>Origin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2129"/>
+        <source>Origin Sequence</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2432"/>
+        <source>Manual Origin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2548"/>
+        <source>Start</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2561"/>
+        <source>Set Origined</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2570"/>
+        <source>Out Way</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2601"/>
+        <source>Y12 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2636"/>
+        <source>Y15 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2671"/>
+        <source>Y17 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2706"/>
+        <source>Y10 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2741"/>
+        <source>Y13 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2776"/>
+        <source>Y14 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2811"/>
+        <source>Y22 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2846"/>
+        <source>Y11 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2881"/>
+        <source>Y34 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2916"/>
+        <source>Y35 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2951"/>
+        <source>Y31 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2986"/>
+        <source>Y33 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="3021"/>
+        <source>Y20 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="3056"/>
+        <source>Y36 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="3091"/>
+        <source>Y32 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="3126"/>
+        <source>Y23 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="3161"/>
+        <source>Y25Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="3196"/>
+        <source>Y37Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="3231"/>
+        <source>Y16 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="3266"/>
+        <source>Y40 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="3301"/>
+        <source>Y27 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="3336"/>
+        <source>Y30 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="3371"/>
+        <source>Y21 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="3406"/>
+        <source>Y26 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="3441"/>
+        <source>Y41 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="3476"/>
+        <source>Y42 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="3511"/>
+        <source>Y43 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="3546"/>
+        <source>Y44 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="3581"/>
+        <source>Y45 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="3616"/>
+        <source>Y46 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="3651"/>
+        <source>Y47 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="3686"/>
+        <source>Y24 Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="3727"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2195"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="348"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="417"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="544"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="666"/>
         <source>Save</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1593"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1629"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="243"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="439"/>
         <source>Single Arm</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7980,14 +8383,14 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1641"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1677"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="244"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="440"/>
         <source>Double Arm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1678"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1711"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="245"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="441"/>
         <source>Main Arm</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7996,68 +8399,68 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="1804"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1742"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1849"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="246"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="250"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="442"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="446"/>
         <source>Down Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1814"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1859"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="247"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="251"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="443"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="447"/>
         <source>Backword Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1824"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1869"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="248"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="252"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="444"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="448"/>
         <source>Forward Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1798"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1837"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="249"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="445"/>
         <source>Sub Arm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="358"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="359"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="554"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="555"/>
         <source>Reserve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="411"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="660"/>
         <source>Tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="411"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="660"/>
         <source>Save Sucessfully!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2049"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2148"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="297"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="493"/>
         <source>Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2054"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2153"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="298"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="494"/>
         <source>NoLimit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2041"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2140"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="296"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="492"/>
         <source>In Mold Limit</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8241,34 +8644,6 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>1</source>
-        <translation type="obsolete">Y017</translation>
-    </message>
-    <message>
-        <source>2</source>
-        <translation type="obsolete">Y022</translation>
-    </message>
-    <message>
-        <source>3</source>
-        <translation type="obsolete">Y031</translation>
-    </message>
-    <message>
-        <source>4</source>
-        <translation type="obsolete">Y032</translation>
-    </message>
-    <message>
-        <source>5</source>
-        <translation type="obsolete">Y035</translation>
-    </message>
-    <message>
-        <source>6</source>
-        <translation type="obsolete">Y036</translation>
-    </message>
-    <message>
-        <source>7</source>
-        <translation type="obsolete">Reserve</translation>
-    </message>
-    <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="318"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="318"/>
         <source>Item</source>
@@ -8298,6 +8673,18 @@ Please enter an digit between </source>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="89"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="151"/>
         <source>Restart</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="72"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="140"/>
+        <source>Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="73"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="141"/>
+        <source>Create Time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8340,18 +8727,6 @@ Please enter an digit between </source>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="85"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="147"/>
         <source>Item-7</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="72"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="140"/>
-        <source>Name</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="73"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="141"/>
-        <source>Create Time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8639,92 +9014,92 @@ Please input the root password to confirm.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1533"/>
+        <location filename="mainframe.cpp" line="1539"/>
         <source>Spare Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1089"/>
+        <location filename="mainframe.cpp" line="1090"/>
         <source>No Register</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="670"/>
+        <location filename="mainframe.cpp" line="671"/>
         <source>Function</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="671"/>
+        <location filename="mainframe.cpp" line="672"/>
         <source>Monitor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="673"/>
+        <location filename="mainframe.cpp" line="674"/>
         <source>Record</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="672"/>
+        <location filename="mainframe.cpp" line="673"/>
         <source>Alarm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1085"/>
-        <location filename="mainframe.cpp" line="1089"/>
-        <location filename="mainframe.cpp" line="1492"/>
-        <location filename="mainframe.cpp" line="1533"/>
-        <location filename="mainframe.cpp" line="1540"/>
+        <location filename="mainframe.cpp" line="1086"/>
+        <location filename="mainframe.cpp" line="1090"/>
+        <location filename="mainframe.cpp" line="1498"/>
+        <location filename="mainframe.cpp" line="1539"/>
+        <location filename="mainframe.cpp" line="1546"/>
         <source>tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1540"/>
+        <location filename="mainframe.cpp" line="1546"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="674"/>
+        <location filename="mainframe.cpp" line="675"/>
         <source>Return</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="862"/>
+        <location filename="mainframe.cpp" line="863"/>
         <source>Hint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1085"/>
+        <location filename="mainframe.cpp" line="1086"/>
         <source>Spear Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1121"/>
+        <location filename="mainframe.cpp" line="1123"/>
         <source>Records</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1492"/>
+        <location filename="mainframe.cpp" line="1498"/>
         <source>No Register. System Restart Now...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1575"/>
-        <location filename="mainframe.cpp" line="1591"/>
+        <location filename="mainframe.cpp" line="1581"/>
+        <location filename="mainframe.cpp" line="1597"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1576"/>
+        <location filename="mainframe.cpp" line="1582"/>
         <source>%1 fnc is broken. Please remove this mold!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1592"/>
+        <location filename="mainframe.cpp" line="1598"/>
         <source>%1 mold fixed. Please check the sub program!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1073"/>
+        <location filename="mainframe.cpp" line="1074"/>
         <source>Instruct</source>
         <translation type="unfinished"></translation>
     </message>
