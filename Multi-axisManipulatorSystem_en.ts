@@ -6901,12 +6901,12 @@ Would you want to restart now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1303"/>
+        <location filename="mainframe.cpp" line="1304"/>
         <source>Spare Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="878"/>
+        <location filename="mainframe.cpp" line="879"/>
         <source>No Register</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6931,16 +6931,16 @@ Would you want to restart now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="874"/>
-        <location filename="mainframe.cpp" line="878"/>
-        <location filename="mainframe.cpp" line="1262"/>
-        <location filename="mainframe.cpp" line="1303"/>
-        <location filename="mainframe.cpp" line="1310"/>
+        <location filename="mainframe.cpp" line="875"/>
+        <location filename="mainframe.cpp" line="879"/>
+        <location filename="mainframe.cpp" line="1263"/>
+        <location filename="mainframe.cpp" line="1304"/>
+        <location filename="mainframe.cpp" line="1311"/>
         <source>tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1310"/>
+        <location filename="mainframe.cpp" line="1311"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6950,27 +6950,27 @@ Would you want to restart now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="664"/>
+        <location filename="mainframe.cpp" line="665"/>
         <source>Hint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="874"/>
+        <location filename="mainframe.cpp" line="875"/>
         <source>Spear Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="910"/>
+        <location filename="mainframe.cpp" line="911"/>
         <source>Records</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1262"/>
+        <location filename="mainframe.cpp" line="1263"/>
         <source>No Register. System Restart Now...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="862"/>
+        <location filename="mainframe.cpp" line="863"/>
         <source>Instruct</source>
         <translation type="unfinished"></translation>
     </message>

@@ -40,7 +40,7 @@ public:
                                 int dataBit,
                                 int stopBit);
     QString Device(){ return GetParameter(CommunicationConfig, "Device", "/dev/ttyS0").toString();}
-    int BaudRate(){ return GetParameter(CommunicationConfig, "BaudRate", 57600).toInt();}
+    int BaudRate(){ return GetParameter(CommunicationConfig, "BaudRate", 115200).toInt();}
     QString Parity() { return GetParameter(CommunicationConfig, "Parity", "none").toString();}
     int DataBit() { return GetParameter(CommunicationConfig, "DataBit", 8).toInt();}
     int StopBit(){ return GetParameter(CommunicationConfig, "StopBit", 1).toInt();}
