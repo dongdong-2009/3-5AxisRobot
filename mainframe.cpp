@@ -159,7 +159,8 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     isCPosChanged_(false),
     axisDefine_(-1),
     registe_timer(new QTimer),
-    reboot_timer(new QTimer)
+    reboot_timer(new QTimer),
+    isBlockOriginShow_(false)
 {
     connect(this,
             SIGNAL(LoadMessage(QString)),
