@@ -13,6 +13,7 @@ ICInitialFrame::ICInitialFrame(QWidget *parent) :
     ui->setupUi(this);
     ui->standbyPic->setPixmap(QPixmap("resource/Standby.png"));
 
+    ui->alarmClear->hide();
 //    SetVisibleStatus(false);
 }
 

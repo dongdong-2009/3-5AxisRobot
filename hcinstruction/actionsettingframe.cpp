@@ -191,6 +191,7 @@ void ActionSettingFrame::hideEvent(QHideEvent *e)
                SIGNAL(StatusRefreshed()),
                this,
                SLOT(StatusRefresh()));
+    ui->servoEn->setChecked(true);
 }
 
 void ActionSettingFrame::showEvent(QShowEvent *e)
@@ -892,5 +893,19 @@ void ActionSettingFrame::KeyToActionCheck(int key)
         ui->gCButton->setChecked(true);
         break;
 
+    }
+}
+
+void ActionSettingFrame::on_servoEn_toggled(bool checked)
+{
+    if(checked)
+    {
+        ui->servoEn->setText(tr("Servo On"));
+        ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_ON_ALARM);
+    }
+    else
+    {
+        ui->servoEn->setText(tr("Servo Off"));
+        ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_OFF_ALARM);
     }
 }

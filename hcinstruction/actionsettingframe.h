@@ -75,6 +75,7 @@ private slots:
     void on_gBButton_toggled(bool checked);
     void on_gCButton_toggled(bool checked);
 #endif
+    void on_servoEn_toggled(bool checked);
 };
 
 #endif // ACTIONSETTINGFRAME_H
