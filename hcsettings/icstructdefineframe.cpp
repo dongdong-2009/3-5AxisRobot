@@ -186,6 +186,8 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
     v >>= 15;
 //    ui->fixtureComboBox->setCurrentIndex((ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt() >> 15) & 1);
     ui->fixtureComboBox->setCurrentIndex(v);
+    ui->label_27->hide();
+    ui->servoFlex->hide();
 //#endif
 
 }
