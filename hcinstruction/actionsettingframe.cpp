@@ -901,11 +901,11 @@ void ActionSettingFrame::on_servoEn_toggled(bool checked)
     if(checked)
     {
         ui->servoEn->setText(tr("Servo On"));
-        ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_ON_ALARM);
+        ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_OFF_ALARM);
     }
     else
     {
         ui->servoEn->setText(tr("Servo Off"));
-        ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_OFF_ALARM);
+        ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_ON_ALARM);
     }
 }
