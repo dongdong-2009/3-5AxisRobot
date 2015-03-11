@@ -185,6 +185,12 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
         if( item->Action() == ICMold::GZ)
         {
             ui->badProductBox->show();
+            ui->badProductBox->setText(tr("Bad Product En"));
+        }
+        if( item->Action() == ICMold::GY)
+        {
+            ui->badProductBox->show();
+            ui->badProductBox->setText(tr("Get Page En"));
         }
         /************任务：待机点姿势可以修改*******/
         if(item->Action() == ICMold::ACTPOSEHORI || item->Action() == ICMold::ACT_PoseHori2)

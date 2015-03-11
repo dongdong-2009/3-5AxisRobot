@@ -67,9 +67,9 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
     armYStructValueToName_.insert(3, tr("Up and Donw Limit"));
     armValueToName_.insert(0, tr("Single Arm"));
     armValueToName_.insert(1, tr("Double Arm"));
-    ui->backLightTimeEdit->setValidator(new QIntValidator(0, 120, this));
+    ui->backLightTimeEdit->setValidator(new QIntValidator(1, 120, this));
     ui->backLightTimeEdit->SetThisIntToThisText(ICParametersSave::Instance()->BackLightTime());
-    ui->brightnessBar->setValue((ICParametersSave::Instance()->Brightness()));
+    ui->brightnessBar->setValue((9 - ICParametersSave::Instance()->Brightness()));
 
     QList<QAbstractButton*> buttons_ = ui->languageButtonGroup->buttons();
     for(int i = 0; i != buttons_.size(); ++i)
@@ -783,24 +783,40 @@ void ICHCSystemSettingsFrame::on_calibrationBtn_clicked()
 
 void ICHCSystemSettingsFrame::on_brightMinus_clicked()
 {
+//    uint brightness = ui->brightnessBar->value();
+//    if(brightness == 1)
+//    {
+//        return;
+//    }
+//    ui->brightnessBar->setValue((--brightness));
+//    ICParametersSave::Instance()->SetBrightness(brightness);
+
     uint brightness = ui->brightnessBar->value();
-    if(brightness == 1)
+    if(brightness == 0)
     {
         return;
     }
     ui->brightnessBar->setValue((--brightness));
-    ICParametersSave::Instance()->SetBrightness(brightness);
+    ICParametersSave::Instance()->SetBrightness(9 - brightness);
 }
 
 void ICHCSystemSettingsFrame::on_brightPlus_clicked()
 {
+//    uint brightness = ui->brightnessBar->value();
+//    if(brightness == (uint)ui->brightnessBar->maximum())
+//    {
+//        return;
+//    }
+//    ui->brightnessBar->setValue((++brightness));
+//    ICParametersSave::Instance()->SetBrightness(brightness);
+
     uint brightness = ui->brightnessBar->value();
     if(brightness == (uint)ui->brightnessBar->maximum())
     {
         return;
     }
     ui->brightnessBar->setValue((++brightness));
-    ICParametersSave::Instance()->SetBrightness(brightness);
+    ICParametersSave::Instance()->SetBrightness(9 -brightness);
 }
 
 bool ICHCSystemSettingsFrame::CheckRestoreSystemFiles_()

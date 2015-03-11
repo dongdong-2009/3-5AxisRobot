@@ -144,6 +144,10 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             {
                 commandStr += QObject::tr("Bad Product En") + " ";
             }
+            if(moldItem.IsBadProduct() && moldItem.Action() == GY)
+            {
+                commandStr += QObject::tr("Get Page En") + " ";
+            }
 //            commandStr += tr("Delay")
         }
         else if(action == ACTCHECKINPUT)

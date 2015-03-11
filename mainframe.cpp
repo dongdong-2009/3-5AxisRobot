@@ -283,11 +283,12 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     // QTimer::singleShot(ICParametersSave::Instance()->BackLightTime() * 60000, this, SLOT(CheckedInput()));
 
 #ifdef Q_WS_QWS
-    SetScreenSaverInterval(ICParametersSave::Instance()->BackLightTime() * 60000);  //背光时间
-    connect(this,SIGNAL(ScreenSave()),this,SLOT(CloseBackLight()));
-    connect(this,SIGNAL(ScreenRestore()),this,SLOT(OpenBackLight()));
+//    SetScreenSaverInterval(ICParametersSave::Instance()->BackLightTime() * 60000);  //背光时间
+//    connect(this,SIGNAL(ScreenSave()),this,SLOT(CloseBackLight()));
+//    connect(this,SIGNAL(ScreenRestore()),this,SLOT(OpenBackLight()));
 #endif
 
+    QTimer::singleShot(ICParametersSave::Instance()->BackLightTime() * 60000, this, SLOT(CheckedInput()));
     QTimer::singleShot(1000, this, SLOT(ClearPosColor()));
 
     keyMap.insert(Qt::Key_F11, ICKeyboard::VFB_Run);
@@ -397,6 +398,40 @@ void MainFrame::changeEvent(QEvent *e)
 
 void MainFrame::keyPressEvent(QKeyEvent *e)
 {
+    switch(e->key())
+    {
+    case ICKeyboard::FB_F1:
+    {
+        ui->functionPageButton->click();
+    }
+        break;
+    case ICKeyboard::FB_F2:
+    {
+        ui->monitorPageButton->click();
+    }
+        break;
+    case ICKeyboard::FB_F3:
+    {
+        ui->recordPageButton->click();
+    }
+        break;
+    case ICKeyboard::FB_F4:
+    {
+        ui->alarmPageButton->click();
+    }
+        break;
+    case ICKeyboard::FB_F5:
+    {
+        ui->returnPageButton->click();
+    }
+        break;
+    default:
+    {
+        QWidget::keyPressEvent(e);
+    }
+    }
+    return;
+
     qDebug()<<"KeyEvent:"<<e->key();
 //    SetHasInput(true);
     if(keyMap.contains(e->key()))
@@ -814,23 +849,21 @@ void MainFrame::StatusRefreshed()
     }
 
     newLedFlags_ = 0;
-    newLedFlags_ |= (virtualHost->IsInputOn(35)? 8 : 0);
-    newLedFlags_ |= (virtualHost->IsInputOn(32)? 4 : 0);
-    newLedFlags_ |= (virtualHost->IsOutputOn(32)? 2 : 0);
-    newLedFlags_ |= (virtualHost->IsOutputOn(33)? 1 : 0);
-    newLedFlags_ |= (virtualHost->IsOutputOn(47) ? 16 : 0);
+       newLedFlags_ |= (virtualHost->IsInputOn(35)? 8 : 0);
+       newLedFlags_ |= (virtualHost->IsInputOn(32)? 4 : 0);
+       newLedFlags_ |= (virtualHost->IsOutputOn(32)? 2 : 0);
+       newLedFlags_ |= (virtualHost->IsOutputOn(33)? 1 : 0);
+       if(newLedFlags_ != ledFlags_)
+       {
+           ledFlags_ = newLedFlags_;
 
-    if(newLedFlags_ != ledFlags_)
-    {
-        ledFlags_ = newLedFlags_;
-
-#ifndef Q_WS_WIN32
-#ifdef HC_ARMV6
-        ioctl(ledFD_, 0, ledFlags_);
-#else
-        ioctl(ledFD_, 0, ledFlags_);
-#endif
-#endif
+   #ifndef Q_WS_WIN32
+   #ifdef HC_ARMV6
+           ioctl(ledFD_, 0, ledFlags_);
+   #else
+           ioctl(ledFD_, 2, ledFlags_);
+   #endif
+   #endif
     }
     errCode_ = virtualHost->AlarmNum();
     if(compareAlarmNums_.indexOf(errCode_) != -1)
@@ -1043,11 +1076,11 @@ void MainFrame::StatusRefreshed()
         }
     }
     LevelChanged(ICProgramHeadFrame::Instance()->CurrentLevel());
-//    if(mousePoint_ != QCursor::pos())
-//    {
-//        mousePoint_ = QCursor::pos();
-////        SetHasInput(true);
-//    }
+    if(mousePoint_ != QCursor::pos())
+    {
+        mousePoint_ = QCursor::pos();
+        SetHasInput(true);
+    }
 }
 
 void MainFrame::ShowManualPage()
@@ -1547,4 +1580,42 @@ void MainFrame::InitSpareTime()
 int MainFrame::CurrentLevel() const
 {
     return ICProgramHeadFrame::Instance()->CurrentLevel();
+}
+
+bool MainFrame::IsInput() const
+{
+    return isDoAction_;
+}
+
+void MainFrame::SetHasInput(bool isInput)
+{
+    isDoAction_ = isInput;
+    if(isInput && IsBackLightOff())
+    {
+        //        system("BackLight on");
+        ICParametersSave::Instance()->SetBrightness(ICParametersSave::Instance()->Brightness());
+        SetBackLightOff(false);
+    }
+}
+
+bool MainFrame::IsBackLightOff() const
+{
+    return isBackLightOff_;
+}
+
+void MainFrame::SetBackLightOff(bool isOff)
+{
+    isBackLightOff_ = isOff;
+}
+
+void MainFrame::CheckedInput()
+{
+    if(!IsInput())
+    {
+        ShowScreenSaver();
+        system("BackLight off");
+        SetBackLightOff(true);
+    }
+    SetHasInput(false);
+    QTimer::singleShot(ICParametersSave::Instance()->BackLightTime() * 60000, this, SLOT(CheckedInput()));
 }

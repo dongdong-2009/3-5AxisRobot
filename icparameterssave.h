@@ -61,7 +61,7 @@ public:
 
     bool KeyTone() { return GetParameter(ProductConfig, "KeyTone", true).toBool();}
 #ifndef Q_WS_WIN32
-    void SetKeyTone(bool isOn, bool isSave = true)  {SaveParameter(ProductConfig, "KeyTone", isOn, isSave);ioctl(beepFD_, 0, isOn ? 1 : 0);}
+    void SetKeyTone(bool isOn, bool isSave = true)  {SaveParameter(ProductConfig, "KeyTone", isOn, isSave);ioctl(beepFD_, 0, isOn ? 20 : 10);}
 #else
     void SetKeyTone(bool isOn, bool isSave = true)  {SaveParameter(ProductConfig, "KeyTone", isOn,isSave);}
 #endif
@@ -78,7 +78,7 @@ public:
     uint BackLightTime() { return GetParameter(ProductConfig, "BackLight", 5).toUInt();}
     void SetBackLightTime(uint time) { SaveParameter(ProductConfig, "BackLight", time);}
 
-    uint Brightness() { return GetParameter(ProductConfig, "Brightness", 8).toUInt();}
+    uint Brightness() { return GetParameter(ProductConfig, "Brightness", 0).toUInt();}
     void SetBrightness(uint brightness, bool isSync = true);
 
     bool IsSingleArm() { return GetParameter(SystemMachine, "ArmNum", false).toBool();}

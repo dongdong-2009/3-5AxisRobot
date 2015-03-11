@@ -33,10 +33,10 @@ public:
     bool IsOrigin() const { return isOriginShown_;}
     bool IsOrigined() const;
 
-//    bool IsInput() const;
-//    void SetHasInput(bool isInput);
-//    bool IsBackLightOff() const;
-//    void SetBackLightOff(bool isOff);
+    bool IsInput() const;
+    void SetHasInput(bool isInput);
+    bool IsBackLightOff() const;
+    void SetBackLightOff(bool isOff);
     void ShowScreenSaver();
     bool IsAutoPageShown() const {if(autoPage_ == NULL) return false; return !autoPage_->isHidden();}
 
@@ -60,6 +60,7 @@ public Q_SLOTS:
     void ClearPosColor();
     void OpenBackLight();
     void CloseBackLight();
+    void CheckedInput();
 //    void SetBackLightOff();
 //    void SetBackLightOn();
 

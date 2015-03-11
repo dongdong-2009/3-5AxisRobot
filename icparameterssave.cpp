@@ -205,8 +205,8 @@ void ICParametersSave::SetDistanceRotation(const QString &axisName, double value
 }
 
 void ICParametersSave::SetBrightness(uint brightness, bool isSync)
-{
-    QString cmd("BackLight.sh  ");
+{    
+    QString cmd("BackLight on ");
     cmd += QString::number(brightness);
     ::system(cmd.toAscii());
     SaveParameter(ProductConfig, "Brightness", brightness, isSync);
