@@ -93,6 +93,7 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
                 SIGNAL(clicked()),
                 SLOT(OnProductClearClicked()));
     }
+    ui->noUse->hide();
 
 }
 
