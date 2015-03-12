@@ -1154,7 +1154,7 @@ void MainFrame::ShowFunctionPage()
 
 void MainFrame::ShowOrigin()
 {
-    if(!originExecutingPage_->isVisible())
+    if(!originExecutingPage_->isVisible() && !isBlockOriginShow_)
     {
         //        ui->systemStatusFrame->SetOriginStatus(StatusLabel::ONSTATUS);
         //        isOriginShown_ = true;
@@ -1292,7 +1292,7 @@ bool MainFrame::IsOrigined() const
 
 void MainFrame::ShowScreenSaver()
 {
-        screenSaver_->show();
+//        screenSaver_->show();
     ICProgramHeadFrame::Instance()->SetCurrentLevel(ICParametersSave::MachineOperator);
 }
 

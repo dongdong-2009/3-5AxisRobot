@@ -112,12 +112,18 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
 
     if(item->IsAction())
     {
-        if( item->Action() <= ICMold::GB)
+        if( item->Action() <= ICMold::GB || item->Action() == ICMold::ACT_ARC)
         {
 //            ui->earlySpeedLabel->show();
             ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
             ICVirtualHost::ICSystemParameter addr;
-            switch(item->Action())
+            int realAct = item->Action();
+            if(realAct == ICMold::ACT_ARC)
+            {
+                realAct = item->ActualIfPos();
+            }
+
+            switch(realAct)
             {
             case ICMold::GX:
                 addr = ICVirtualHost::SYS_X_Maxium;

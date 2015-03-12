@@ -53,6 +53,9 @@ ActionSettingFrame::ActionSettingFrame(QWidget *parent) :
     ui->cBoxbuttonGroup->setId(ui->cHorizonBox,0);
     ui->cBoxbuttonGroup->setId(ui->cVerticalBox,1);
 
+    ui->arcBox->hide();
+    ui->earlyEndBox->hide();
+
 #ifdef Q_WS_X11
     UpdateAxisDefine_();
 #endif
@@ -219,11 +222,14 @@ void ActionSettingFrame::showEvent(QShowEvent *e)
         posValidator[i].setTop(posLength_[i] * mutil);
     }
 
+    ui->freeBox->setChecked(true);
+
     QFrame::showEvent(e);
     connect(ICVirtualHost::GlobalVirtualHost(),
             SIGNAL(StatusRefreshed()),
             this,
             SLOT(StatusRefresh()));
+
 }
 
 void ActionSettingFrame::SyncStatusImpl(const QList<ICMoldItem> &items)
@@ -432,6 +438,19 @@ QList<ICMoldItem> ActionSettingFrame::CreateCommandImpl() const
         ret.append(item);
     }
 #endif
+
+    if(currentAction_ != 0)
+    {
+        for(int i = 0; i != ret.size(); ++i)
+        {
+            ret[i].SetIFVal(currentAction_);
+            ret[i].SetEarlyEnd(ui->earlyEndBox->isChecked());
+            ret[i].SetActualIfPos(ret[i].Action());
+            ret[i].SetAction(ICMold::ACT_ARC);
+            ret[i].SetDVal(0);
+            ret[i].SetSVal(ret[0].SVal());
+        }
+    }
 
     return ret;
 }
@@ -890,4 +909,102 @@ void ActionSettingFrame::KeyToActionCheck(int key)
         break;
 
     }
+}
+
+void ActionSettingFrame::SetForNormal()
+{
+    ui->arcBox->hide();
+    ui->slashBox->hide();
+    ui->earlyEndBox->hide();
+//    UpdateAxisDefine_();
+    ui->gxButton->setEnabled(true);
+    ui->gyButton->setEnabled(true);
+    ui->gzButton->setEnabled(true);
+    ui->gPButton->setEnabled(true);
+    ui->gQButton->setEnabled(true);
+    ui->gAButton->setEnabled(true);
+    ui->gBButton->setEnabled(true);
+    ui->gCButton->setEnabled(true);
+    currentAction_ = 0;
+}
+
+void ActionSettingFrame::SetForCurve()
+{
+    ui->arcBox->show();
+    ui->slashBox->show();
+//    ui->earlyEndBox->show();
+    ui->gxButton->setEnabled(false);
+    ui->gyButton->setEnabled(false);
+    ui->gzButton->setEnabled(false);
+    ui->gPButton->setEnabled(false);
+    ui->gQButton->setEnabled(false);
+    ui->gAButton->setEnabled(false);
+    ui->gBButton->setEnabled(false);
+    ui->gCButton->setEnabled(false);
+//    ui->x1DelayLineEdit->hide();
+//    ui->y1DelayLineEdit->hide();
+//    ui->zDelayLineEdit->hide();
+//    ui->x2DelayLineEdit->hide();
+//    ui->y2DelayLineEdit->hide();
+//    ui->aDelayLineEdit->hide();
+//    ui->bDelayLineEdit->hide();
+//    ui->cDelayLineEdit->hide();
+}
+
+void ActionSettingFrame::OnSlashActionTriggered()
+{
+    ui->gxButton->setChecked(true);
+    ui->gyButton->setChecked(true);
+    ui->gzButton->setChecked(true);
+    ui->gPButton->setChecked(true);
+    ui->gQButton->setChecked(true);
+//    ui->gAButton->setChecked(true);
+//    ui->gBButton->setChecked(true);
+//    ui->gCButton->setChecked(true);
+//    on_inputButton_clicked();
+    ui->x1DelayLineEdit->setEnabled(false);
+    ui->y1DelayLineEdit->setEnabled(false);
+    ui->zDelayLineEdit->setEnabled(false);
+    ui->x2DelayLineEdit->setEnabled(false);
+    ui->y2DelayLineEdit->setEnabled(false);
+//    ui->aDelayLineEdit->setEnabled(false);
+//    ui->bDelayLineEdit->setEnabled(false);
+//    ui->cDelayLineEdit->setEnabled(false);
+//    ui->x1SpeedLineEdit->setEnabled(false);
+    ui->y1SpeedLineEdit->setEnabled(false);
+    ui->zSpeedLineEdit->setEnabled(false);
+    ui->x2SpeedLineEdit->setEnabled(false);
+    ui->y2SpeedLineEdit->setEnabled(false);
+//    ui->aSpeedLineEdit->setEnabled(false);
+//    ui->bSpeedLineEdit->setEnabled(false);
+//    ui->cSpeedLineEdit->setEnabled(false);
+    currentAction_ = 1;
+//    ui->earlyEndBox->show();
+}
+
+void ActionSettingFrame::OnArcActionTriggered()
+{
+    OnSlashActionTriggered();
+    currentAction_ = 2;
+}
+void ActionSettingFrame::on_arcBox_toggled(bool checked)
+{
+    if(checked)
+    {
+        OnArcActionTriggered();
+    }
+}
+
+void ActionSettingFrame::on_slashBox_toggled(bool checked)
+{
+    if(checked)
+    {
+        OnSlashActionTriggered();
+    }
+}
+
+void ActionSettingFrame::on_freeBox_toggled(bool checked)
+{
+    if(checked)
+        currentAction_ = 0;
 }

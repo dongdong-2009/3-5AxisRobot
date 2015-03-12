@@ -298,6 +298,26 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             commandStr += QObject::tr("Limit time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 2) + "      ";
             return commandStr;
         }
+        else if(action == ICMold::ACT_ARC)
+        {
+            int ifv = moldItem.IFVal() & 0xf;
+            if(ifv == 1)
+            {
+                commandStr += "-" + tr("Slash") + " ";
+            }
+            else if(ifv == 2)
+            {
+                commandStr += "-" + tr("Arc") + " ";
+            }
+            commandStr += actionGroupMap_.value(moldItem.ActualIfPos()) + ":" + " ";
+            commandStr += ICParameterConversion::TransThisIntToThisText(moldItem.ActualPos(), POS_DECIMAL) + " ";
+            commandStr += tr("Speed:") + QString::number(moldItem.SVal()) + " ";
+            if(moldItem.IsEarlyEnd())
+            {
+                commandStr += tr("Early End");
+            }
+            return commandStr;
+        }
         else if(moldItem.Action() == ICMold::ACT_OTHER)
         {
             if(moldItem.IFVal() == 1)
@@ -423,6 +443,7 @@ void ICInstructParam::InstallMoldInfo()
     actionGroupMap_.insert(ACT_WaitMoldOpened, QObject::tr("Wait"));
     actionGroupMap_.insert(ACT_Cut, QObject::tr("Cut"));
     actionGroupMap_.insert(ACT_OTHER, QObject::tr("Other"));
+    actionGroupMap_.insert(ICMold::ACT_ARC, QObject::tr("3D"));
 
     clipGroupMap_[ACTCLIP1ON] = QObject::tr("Clip1 ON");
     clipGroupMap_[ACTCLIP2ON] = QObject::tr("Clip2 ON");

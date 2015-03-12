@@ -22,6 +22,8 @@ public:
     explicit ActionSettingFrame(QWidget *parent = 0);
     ~ActionSettingFrame();
 
+    void SetForCurve();
+    void SetForNormal();
 public slots:
     void KeyToActionCheck(int key);
 
@@ -59,6 +61,7 @@ private:
     int posLength_[3];
     int axisDefine_;
     QList<QList<QWidget*> > axisWidgets_;
+    int currentAction_;
 //    QList<ICLabelWrapper*> wrappers_;
 
 private slots:
@@ -74,6 +77,11 @@ private slots:
     void on_gBButton_toggled(bool checked);
     void on_gCButton_toggled(bool checked);
 #endif
+    void OnSlashActionTriggered();
+    void OnArcActionTriggered();
+    void on_arcBox_toggled(bool checked);
+    void on_slashBox_toggled(bool checked);
+    void on_freeBox_toggled(bool checked);
 };
 
 #endif // ACTIONSETTINGFRAME_H

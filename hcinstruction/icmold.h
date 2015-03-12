@@ -355,7 +355,7 @@ public:
         ACT_PoseHori2,		//20  水平2
         ACT_PoseVert2,   //21  垂直2
 
-        ACT_GASUB,
+        ACT_ARC,
         ACT_GAADD,
         ACT_GBSUB,
         ACT_GBADD,

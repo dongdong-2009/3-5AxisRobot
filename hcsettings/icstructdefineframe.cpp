@@ -270,7 +270,7 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
     ui->os3->setCurrentIndex(axisMode.mode.a3);
     ui->os4->setCurrentIndex(axisMode.mode.a4);
     ui->os5->setCurrentIndex(axisMode.mode.a5);
-
+    ui->osGroupBox->setChecked(axisMode.mode.resv);
 
     oldStyle = ui->oStartBtn->styleSheet();
     newStyle = "border-style: outset;border-width: 2px;border-radius: 6px;border-color: gray;background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(0, 255, 0, 255), stop:1 rgba(255, 255, 255, 255));padding-right: 6px;padding-left:6px;";
@@ -293,6 +293,114 @@ void ICStructDefineFrame::changeEvent(QEvent *e)
     default:
         break;
     }
+}
+
+void ICStructDefineFrame::hideEvent(QHideEvent *e)
+{
+    icMainFrame->BlockOrignShow(false);
+    ICCommandProcessor::Instance()->ExecuteHCCommand(IC::CMD_TurnStop, 0);
+    ui->tabWidget->setCurrentIndex(0);
+    QWidget::hideEvent(e);
+}
+
+void ICStructDefineFrame::timerEvent(QTimerEvent *)
+{
+    if(ui->tabWidget->currentIndex() != 4) return;
+    ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
+    if(host->CurrentStatus() == ICVirtualHost::Origin)
+    {
+        ui->oStartBtn->setStyleSheet(newStyle);
+        ui->oStartBtn->setText(tr("Origining"));
+    }
+    else
+    {
+        ui->oStartBtn->setStyleSheet(oldStyle);
+        ui->oX1Btn->setStyleSheet(oldStyle);
+        ui->oX2Btn->setStyleSheet(oldStyle);
+        ui->oY1Btn->setStyleSheet(oldStyle);
+        ui->oY2Btn->setStyleSheet(oldStyle);
+        ui->oZBtn->setStyleSheet(oldStyle);
+        ui->oABtn->setStyleSheet(oldStyle);
+        ui->oBBtn->setStyleSheet(oldStyle);
+        ui->oCBtn->setStyleSheet(oldStyle);
+        ui->oStartBtn->setText(tr("Start"));
+        return;
+    }
+
+    OriginStatus os;
+    os.combine = host->HostStatus(ICVirtualHost::DbgX1).toUInt();
+    if(os.b.x)
+    {
+        ui->oX1Btn->setStyleSheet(newStyle);
+    }
+    else
+    {
+        ui->oX1Btn->setStyleSheet(oldStyle);
+    }
+
+    if(os.b.y)
+    {
+        ui->oY1Btn->setStyleSheet(newStyle);
+    }
+    else
+    {
+        ui->oY1Btn->setStyleSheet(oldStyle);
+    }
+
+    if(os.b.z)
+    {
+        ui->oZBtn->setStyleSheet(newStyle);
+    }
+    else
+    {
+        ui->oZBtn->setStyleSheet(oldStyle);
+    }
+
+    if(os.b.p)
+    {
+        ui->oX2Btn->setStyleSheet(newStyle);
+    }
+    else
+    {
+        ui->oX2Btn->setStyleSheet(oldStyle);
+    }
+
+    if(os.b.q)
+    {
+        ui->oY2Btn->setStyleSheet(newStyle);
+    }
+    else
+    {
+        ui->oY2Btn->setStyleSheet(oldStyle);
+    }
+
+    if(os.b.a)
+    {
+        ui->oABtn->setStyleSheet(newStyle);
+    }
+    else
+    {
+        ui->oABtn->setStyleSheet(oldStyle);
+    }
+
+    if(os.b.b)
+    {
+        ui->oBBtn->setStyleSheet(newStyle);
+    }
+    else
+    {
+        ui->oBBtn->setStyleSheet(oldStyle);
+    }
+
+    if(os.b.c)
+    {
+        ui->oCBtn->setStyleSheet(newStyle);
+    }
+    else
+    {
+        ui->oCBtn->setStyleSheet(oldStyle);
+    }
+
 }
 
 void ICStructDefineFrame::retranslateUi_()
@@ -455,6 +563,7 @@ void ICStructDefineFrame::on_saveButton_clicked()
     axisMode.mode.a3 = ui->os3->currentIndex();
     axisMode.mode.a4 = ui->os4->currentIndex();
     axisMode.mode.a5 = ui->os5->currentIndex();
+    axisMode.mode.resv = ui->osGroupBox->isChecked();
     dataBuffer[4] = axisMode.allMode;
 //    dataBuffer[5] = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Resv2).toUInt();
     for(int i = 0; i != 6; ++i)
