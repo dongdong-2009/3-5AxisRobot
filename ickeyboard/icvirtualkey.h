@@ -111,6 +111,13 @@ enum ICVirtualKey
     VKEY_CLIP10OFF,
     VKEY_CLIP11OFF,
     VKEY_CLIP12OFF,
+
+VKEY_GEARNULL = 0xA8, //空挡
+VKEY_GEAR1  = 0xA9,
+VKEY_GEAR2  = 0xAA,
+VKEY_GEAR3  = 0xAB,
+VKEY_GEAR4  = 0xAC,
+VKEY_GEAR5  = 0xAD,
 };
 
 }//namespace IC{

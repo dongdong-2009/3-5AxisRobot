@@ -369,7 +369,7 @@ color: rgb(255, 255, 0);</string>
           </widget>
          </item>
          <item>
-          <widget class="QToolButton" name="ecOff">
+          <widget class="QPushButton" name="ecOff">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
              <horstretch>0</horstretch>
@@ -385,13 +385,16 @@ color: rgb(255, 255, 0);</string>
            <property name="text">
             <string>OFF</string>
            </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
           </widget>
          </item>
          <item>
-          <widget class="QToolButton" name="ec_1">
+          <widget class="QPushButton" name="ec_1">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
              <horstretch>0</horstretch>
@@ -405,15 +408,15 @@ color: rgb(255, 255, 0);</string>
             </size>
            </property>
            <property name="text">
-            <string>1</string>
+            <string notr="true">1</string>
            </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
           </widget>
          </item>
          <item>
-          <widget class="QToolButton" name="ec_2">
+          <widget class="QPushButton" name="ec_2">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
              <horstretch>0</horstretch>
@@ -427,15 +430,15 @@ color: rgb(255, 255, 0);</string>
             </size>
            </property>
            <property name="text">
-            <string>2</string>
+            <string notr="true">2</string>
            </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
           </widget>
          </item>
          <item>
-          <widget class="QToolButton" name="ec_3">
+          <widget class="QPushButton" name="ec_3">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
              <horstretch>0</horstretch>
@@ -449,15 +452,15 @@ color: rgb(255, 255, 0);</string>
             </size>
            </property>
            <property name="text">
-            <string>3</string>
+            <string notr="true">3</string>
            </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
           </widget>
          </item>
          <item>
-          <widget class="QToolButton" name="ec_4">
+          <widget class="QPushButton" name="ec_4">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
              <horstretch>0</horstretch>
@@ -471,15 +474,15 @@ color: rgb(255, 255, 0);</string>
             </size>
            </property>
            <property name="text">
-            <string>4</string>
+            <string notr="true">4</string>
            </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
           </widget>
          </item>
          <item>
-          <widget class="QToolButton" name="ec_5">
+          <widget class="QPushButton" name="ec_5">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
              <horstretch>0</horstretch>
@@ -493,11 +496,11 @@ color: rgb(255, 255, 0);</string>
             </size>
            </property>
            <property name="text">
-            <string>5</string>
+            <string notr="true">5</string>
            </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
           </widget>
          </item>
          <item>

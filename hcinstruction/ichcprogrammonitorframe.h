@@ -59,6 +59,14 @@ private slots:
 
     void LoadRunningMold(int index);
 
+    void on_ecOff_toggled(bool checked);
+
+    void on_ec_1_toggled(bool checked);
+    void on_ec_2_toggled(bool checked);
+    void on_ec_3_toggled(bool checked);
+    void on_ec_4_toggled(bool checked);
+    void on_ec_5_toggled(bool checked);
+
 private:
     void InitSignal();
     void UpdateUIProgramList_();

@@ -331,24 +331,24 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
         total = ICParametersSave::Instance()->DistanceRotation("A");
 //        minText = tr("Internal security zone");
 //        maxText = tr("External security zone");
-        minText = tr("Transever security zone(Less)");
-        maxText = tr("Transever security zone(Lagger)");
-        ui->minUnitLabel->setText(tr("degree"));
-        ui->maxUnitLabel->setText(tr("degree"));
-        ui->label_3->setText(tr("degree"));
-        ui->label_4->setText(tr("degree"));
-        ui->label_11->setText(tr("degree"));
-        ui->label->setText(tr("Max Rotate"));
-        ui->label_8->setText(tr("Machine Per"));
-        ui->distanceRotationEdit->SetDecimalPlaces(1);
-        rotateValidator_->setTop(3600);
-        intValidator->setTop(3600);
-        ui->mechanicalLengthLineEdit->setValidator(new QIntValidator(0,3600,this));
-//        maximumValidator_->setTop(900);
-//        maximumValidator_->setBottom(-900);
-        ui->maximumDisplacementLineEdit->setValidator(originValidator_);
-        ui->label_2->setText(tr("Origin Offset"));
-    }
+        minText = tr("Min pos inside mold");
+        maxText = tr("Max pos inside mold");
+//        ui->minUnitLabel->setText(tr("degree"));
+//        ui->maxUnitLabel->setText(tr("degree"));
+//        ui->label_3->setText(tr("degree"));
+//        ui->label_4->setText(tr("degree"));
+//        ui->label_11->setText(tr("degree"));
+//        ui->label->setText(tr("Max Rotate"));
+//        ui->label_8->setText(tr("Machine Per"));
+        ui->distanceRotationEdit->SetDecimalPlaces(2);
+//        rotateValidator_->setTop(3600);
+//        intValidator->setTop(3600);
+//        ui->mechanicalLengthLineEdit->setValidator(new QIntValidator(0,3600,this));
+////        maximumValidator_->setTop(900);
+////        maximumValidator_->setBottom(-900);
+//        ui->maximumDisplacementLineEdit->setValidator(originValidator_);
+//        ui->label_2->setText(tr("Origin Offset"));
+//    }
     else if(currentAxis_ == ICVirtualHost::ICAxis_AxisB)
     {
         machineLangth = ICVirtualHost::SYS_B_Length;

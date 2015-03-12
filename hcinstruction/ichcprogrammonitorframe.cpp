@@ -913,3 +913,39 @@ void ICHCProgramMonitorFrame::on_productReset_clicked()
     pls_.at(runningMold_)->setStyleSheet("background:green");
 //    cp->ExecuteVirtualKeyCommand(IC::VKEY_START);
 }
+
+void ICHCProgramMonitorFrame::on_ecOff_toggled(bool checked)
+{
+    if(checked)
+        ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_GEARNULL);
+}
+
+void ICHCProgramMonitorFrame::on_ec_1_toggled(bool checked)
+{
+    if(checked)
+        ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_GEAR1);
+}
+
+void ICHCProgramMonitorFrame::on_ec_2_toggled(bool checked)
+{
+    if(checked)
+        ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_GEAR2);
+}
+
+void ICHCProgramMonitorFrame::on_ec_3_toggled(bool checked)
+{
+    if(checked)
+        ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_GEAR3);
+}
+
+void ICHCProgramMonitorFrame::on_ec_4_toggled(bool checked)
+{
+    if(checked)
+        ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_GEAR4);
+}
+
+void ICHCProgramMonitorFrame::on_ec_5_toggled(bool checked)
+{
+    if(checked)
+        ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_GEAR5);
+}
