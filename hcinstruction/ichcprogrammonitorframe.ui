@@ -28,8 +28,26 @@
    <enum>QFrame::Plain</enum>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <property name="spacing">
+      <number>2</number>
+     </property>
      <item>
       <widget class="QListWidget" name="moldContentListWidget">
        <property name="minimumSize">
@@ -68,10 +86,78 @@ padding:5px;
      </item>
      <item>
       <layout class="QGridLayout" name="gridLayout">
+       <item row="5" column="1">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="pc_6">
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="pc_7">
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="pc_3">
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="pc_10">
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="pl_9">
+         <property name="text">
+          <string notr="true">9</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLabel" name="pl_10">
+         <property name="text">
+          <string notr="true">10</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="pl_5">
+         <property name="text">
+          <string notr="true">5</string>
+         </property>
+        </widget>
+       </item>
        <item row="0" column="3">
         <widget class="QPushButton" name="productReset">
          <property name="text">
           <string>Restart</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="pl_2">
+         <property name="text">
+          <string notr="true">2</string>
          </property>
         </widget>
        </item>
@@ -85,8 +171,8 @@ padding:5px;
          </property>
         </widget>
        </item>
-       <item row="3" column="3">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="pc_4">
+       <item row="7" column="0">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="pc_9">
          <property name="maximumSize">
           <size>
            <width>80</width>
@@ -95,10 +181,99 @@ padding:5px;
          </property>
         </widget>
        </item>
-       <item row="2" column="1">
-        <widget class="QLabel" name="pl_2">
+       <item row="3" column="1">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="pc_2">
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="pc_8">
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="3">
+        <widget class="QLabel" name="pl_12">
          <property name="text">
-          <string notr="true">2</string>
+          <string notr="true">12</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="3">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="pc_12">
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="pl_6">
+         <property name="text">
+          <string notr="true">6</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="2">
+        <widget class="QLabel" name="curNF">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="pl_3">
+         <property name="text">
+          <string notr="true">3</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="pc_5">
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="3">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Product Catalog:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <widget class="QLabel" name="infoLabel">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(125, 125, 125);
+color: rgb(255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="pc_4">
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>16777215</height>
+          </size>
          </property>
         </widget>
        </item>
@@ -122,55 +297,17 @@ padding:5px;
          </property>
         </spacer>
        </item>
-       <item row="6" column="2">
-        <widget class="QLabel" name="pl_11">
+       <item row="8" column="0" colspan="2">
+        <widget class="QLabel" name="label_2">
          <property name="text">
-          <string notr="true">11</string>
+          <string>Cur.not finished:</string>
          </property>
         </widget>
        </item>
-       <item row="5" column="1">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="pc_6">
-         <property name="maximumSize">
-          <size>
-           <width>80</width>
-           <height>16777215</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="0">
-        <widget class="QLabel" name="pl_5">
-         <property name="text">
-          <string notr="true">5</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="0" colspan="2">
-        <widget class="QLabel" name="infoLabel">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(125, 125, 125);
-color: rgb(255, 255, 0);</string>
-         </property>
+       <item row="9" column="2">
+        <widget class="QLabel" name="total">
          <property name="text">
           <string>TextLabel</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="3">
-        <widget class="QLabel" name="pl_4">
-         <property name="text">
-          <string notr="true">4</string>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="0">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="pc_5">
-         <property name="maximumSize">
-          <size>
-           <width>80</width>
-           <height>16777215</height>
-          </size>
          </property>
         </widget>
        </item>
@@ -181,16 +318,6 @@ color: rgb(255, 255, 0);</string>
          </property>
         </widget>
        </item>
-       <item row="5" column="2">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="pc_7">
-         <property name="maximumSize">
-          <size>
-           <width>80</width>
-           <height>16777215</height>
-          </size>
-         </property>
-        </widget>
-       </item>
        <item row="2" column="0">
         <widget class="QLabel" name="pl_1">
          <property name="text">
@@ -198,57 +325,10 @@ color: rgb(255, 255, 0);</string>
          </property>
         </widget>
        </item>
-       <item row="3" column="1">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="pc_2">
-         <property name="maximumSize">
-          <size>
-           <width>80</width>
-           <height>16777215</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0" colspan="3">
-        <widget class="QLabel" name="label">
+       <item row="6" column="2">
+        <widget class="QLabel" name="pl_11">
          <property name="text">
-          <string>Product Catalog:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="0">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="pc_9">
-         <property name="maximumSize">
-          <size>
-           <width>80</width>
-           <height>16777215</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="1">
-        <widget class="QLabel" name="pl_6">
-         <property name="text">
-          <string notr="true">6</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="2">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="pc_3">
-         <property name="maximumSize">
-          <size>
-           <width>80</width>
-           <height>16777215</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="3">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="pc_12">
-         <property name="maximumSize">
-          <size>
-           <width>80</width>
-           <height>16777215</height>
-          </size>
+          <string notr="true">11</string>
          </property>
         </widget>
        </item>
@@ -262,72 +342,10 @@ color: rgb(255, 255, 0);</string>
          </property>
         </widget>
        </item>
-       <item row="6" column="0">
-        <widget class="QLabel" name="pl_9">
+       <item row="2" column="3">
+        <widget class="QLabel" name="pl_4">
          <property name="text">
-          <string notr="true">9</string>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="3">
-        <widget class="QLabel" name="pl_12">
-         <property name="text">
-          <string notr="true">12</string>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="1">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="pc_10">
-         <property name="maximumSize">
-          <size>
-           <width>80</width>
-           <height>16777215</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="1">
-        <widget class="QLabel" name="pl_10">
-         <property name="text">
-          <string notr="true">10</string>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="3">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="pc_8">
-         <property name="maximumSize">
-          <size>
-           <width>80</width>
-           <height>16777215</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="2">
-        <widget class="QLabel" name="pl_3">
-         <property name="text">
-          <string notr="true">3</string>
-         </property>
-        </widget>
-       </item>
-       <item row="8" column="2">
-        <widget class="QLabel" name="curNF">
-         <property name="text">
-          <string>TextLabel</string>
-         </property>
-        </widget>
-       </item>
-       <item row="9" column="2">
-        <widget class="QLabel" name="total">
-         <property name="text">
-          <string>TextLabel</string>
-         </property>
-        </widget>
-       </item>
-       <item row="8" column="0" colspan="2">
-        <widget class="QLabel" name="label_2">
-         <property name="text">
-          <string>Cur.not finished:</string>
+          <string notr="true">4</string>
          </property>
         </widget>
        </item>
@@ -337,6 +355,186 @@ color: rgb(255, 255, 0);</string>
           <string>Total:</string>
          </property>
         </widget>
+       </item>
+       <item row="11" column="0" colspan="4">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>EG</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="ecOff">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>32</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>OFF</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_2</string>
+           </attribute>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="ec_1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>32</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string notr="true">1</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_2</string>
+           </attribute>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="ec_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>32</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string notr="true">2</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_2</string>
+           </attribute>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="ec_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>32</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string notr="true">3</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_2</string>
+           </attribute>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="ec_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>32</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string notr="true">4</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_2</string>
+           </attribute>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="ec_5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>32</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string notr="true">5</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_2</string>
+           </attribute>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
        </item>
       </layout>
      </item>
@@ -535,4 +733,8 @@ color: rgb(255, 255, 0);</string>
   <include location="../resource.qrc"/>
  </resources>
  <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
+ </buttongroups>
 </ui>

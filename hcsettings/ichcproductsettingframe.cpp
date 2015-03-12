@@ -93,14 +93,8 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
                 SIGNAL(clicked()),
                 SLOT(OnProductClearClicked()));
     }
-    ui->productLineEdit->hide();
-    ui->label->hide();
-    ui->label_7->hide();
-    ui->tryProductEdit->hide();
-    ui->samplingEdit->hide();
-    ui->label_8->hide();
-    ui->label_9->hide();
-    ui->samplingEdit_3->hide();
+    ui->noUse->hide();
+
 }
 
 ICHCProductSettingFrame::~ICHCProductSettingFrame()
