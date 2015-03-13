@@ -348,7 +348,7 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
 ////        maximumValidator_->setBottom(-900);
 //        ui->maximumDisplacementLineEdit->setValidator(originValidator_);
 //        ui->label_2->setText(tr("Origin Offset"));
-//    }
+    }
     else if(currentAxis_ == ICVirtualHost::ICAxis_AxisB)
     {
         machineLangth = ICVirtualHost::SYS_B_Length;

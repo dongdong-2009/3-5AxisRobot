@@ -115,8 +115,8 @@ void ActionSettingFrame::InitInterface()
     ui->aDelayLineEdit->SetDecimalPlaces(2);
     ui->aDelayLineEdit->setValidator(validator);
     ui->aPosLineEdit->SetDecimalPlaces(POS_DECIMAL);
-    ui->aPosLineEdit->setValidator(posValidator + 0);
-//    ui->aPosLineEdit->setValidator(posValidators_ + 5);
+//    ui->aPosLineEdit->setValidator(posValidator + 0);
+    ui->aPosLineEdit->setValidator(posValidators_ + 5);
 
     ui->bDelayLineEdit->SetDecimalPlaces(2);
     ui->bDelayLineEdit->setValidator(validator);

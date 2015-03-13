@@ -518,7 +518,7 @@ border-right: 3px solid green;
       <item>
        <widget class="QLabel" name="ammLabel">
         <property name="text">
-         <string>Degree</string>
+         <string>mm</string>
         </property>
        </widget>
       </item>

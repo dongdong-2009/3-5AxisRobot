@@ -2570,7 +2570,7 @@ Infomation</source>
         <translation type="unfinished">Reserve {0?}</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="668"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="650"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="395"/>
         <source>Cycle</source>
         <translation type="unfinished"></translation>
@@ -2649,7 +2649,7 @@ Infomation</source>
         <translation type="obsolete">Y035</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="566"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="548"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="293"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
@@ -2759,7 +2759,7 @@ Infomation</source>
         <translation>trace</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="700"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="682"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="427"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="113"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="253"/>
@@ -2769,14 +2769,14 @@ Infomation</source>
         <translation>SPD Un</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="636"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="618"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="363"/>
         <source>Single Step</source>
         <oldsource>Single Cycle</oldsource>
         <translation>Step Run</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="604"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="586"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="331"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="827"/>
         <source>No Follow</source>
@@ -4680,12 +4680,14 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="263"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="305"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="334"/>
         <source>Min pos inside mold</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="264"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="306"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="335"/>
         <source>Max pos inside mold</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4702,25 +4704,18 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="334"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="361"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="386"/>
         <source>Transever security zone(Less)</source>
         <translation>Z security zone(Less)</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="335"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="362"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="387"/>
         <source>Transever security zone(Lagger)</source>
         <translation>Z security zone(Larger)</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="336"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="337"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="338"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="339"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="340"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="363"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="364"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="365"/>
@@ -4735,21 +4730,18 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="341"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="368"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="401"/>
         <source>Max Rotate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="342"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="369"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="402"/>
         <source>Machine Per</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="350"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="377"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="395"/>
         <source>Origin Offset</source>

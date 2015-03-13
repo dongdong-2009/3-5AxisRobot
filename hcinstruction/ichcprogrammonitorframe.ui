@@ -391,6 +391,9 @@ color: rgb(255, 255, 0);</string>
            <property name="checked">
             <bool>true</bool>
            </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
           </widget>
          </item>
          <item>
@@ -413,6 +416,9 @@ color: rgb(255, 255, 0);</string>
            <property name="checkable">
             <bool>true</bool>
            </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
           </widget>
          </item>
          <item>
@@ -435,6 +441,9 @@ color: rgb(255, 255, 0);</string>
            <property name="checkable">
             <bool>true</bool>
            </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
           </widget>
          </item>
          <item>
@@ -457,6 +466,9 @@ color: rgb(255, 255, 0);</string>
            <property name="checkable">
             <bool>true</bool>
            </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
           </widget>
          </item>
          <item>
@@ -479,6 +491,9 @@ color: rgb(255, 255, 0);</string>
            <property name="checkable">
             <bool>true</bool>
            </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
           </widget>
          </item>
          <item>
@@ -501,6 +516,9 @@ color: rgb(255, 255, 0);</string>
            <property name="checkable">
             <bool>true</bool>
            </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
           </widget>
          </item>
          <item>
