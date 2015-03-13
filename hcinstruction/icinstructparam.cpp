@@ -289,11 +289,13 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             }
             else if(moldItem.IFVal() == 2)
             {
-                commandStr += tr("X On");
+
+                commandStr += tr("X Servo Off");
             }
             else if(moldItem.IFVal() == 3)
             {
-                commandStr += tr("X Off");
+
+                commandStr += tr("X Servo On");
             }
             return commandStr;
         }
