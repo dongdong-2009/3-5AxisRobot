@@ -766,7 +766,27 @@ void ICHCSystemSettingsFrame::StatusRefresh()
     QString os(osInfo_.release);
 #endif
     os += "; ";
-    ui->versionLabel->setText("Version: OS:" + os + QString(tr("\nApp %1; Host:")).arg(SW_VERSION) + ICVirtualHost::GlobalVirtualHost()->HostStatus(ICVirtualHost::Time).toString());
+    ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
+    uint16_t time = host->HostStatus(ICVirtualHost::Time).toUInt();
+//     time = 55555;
+    QString hostVersion;
+    if(time == 55555)
+    {
+        uint16_t v1 = host->HostStatus(ICVirtualHost::Sub0).toUInt();
+        uint16_t v2 = host->HostStatus(ICVirtualHost::Sub1).toUInt();
+        uint16_t v3 = host->HostStatus(ICVirtualHost::Sub2).toUInt();
+        hostVersion = QString("%1.%2.%3.%4.%5")
+                .arg(v1 >> 8)
+                .arg(v1 && 0xFF)
+                .arg(v2 >> 6)
+                .arg(v2 && 0x3F)
+                .arg(v3);
+    }
+    else
+        hostVersion = QString::number(time);
+    ui->versionLabel->setText("Version: OS:" + os + QString(tr("\nApp %1; Host:%2"))
+                              .arg(SW_VERSION)
+                              .arg(hostVersion));
 }
 
 void ICHCSystemSettingsFrame::on_calibrationBtn_clicked()
