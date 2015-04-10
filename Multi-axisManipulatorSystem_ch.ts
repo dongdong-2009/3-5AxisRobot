@@ -943,8 +943,11 @@ Reason</source>
         <translation type="obsolete">解决办法</translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.cpp" line="130"/>
-        <location filename="categorypage/icalarmframe.cpp" line="246"/>
+        <location filename="categorypage/icalarmframe.cpp" line="86"/>
+        <location filename="categorypage/icalarmframe.cpp" line="91"/>
+        <location filename="categorypage/icalarmframe.cpp" line="188"/>
+        <location filename="categorypage/icalarmframe.cpp" line="190"/>
+        <location filename="categorypage/icalarmframe.cpp" line="228"/>
         <source>no-solve</source>
         <translation>未解决</translation>
     </message>
