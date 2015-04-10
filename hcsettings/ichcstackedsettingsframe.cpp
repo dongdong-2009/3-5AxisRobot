@@ -125,16 +125,19 @@ void ICHCStackedSettingsFrame::RefreshStackParams_(int group)
     ui->xRPLatticeLineEdit->SetThisIntToThisText(stackParams.at(ICMold::X_Array) & 0x7FFF);
     seqH & 32 ? ui->xRPCheckBox->click() : ui->xPPCheckBox->click();
     stackParams.at(ICMold::X_Array) >> 15 ? ui->xUnit->setChecked(true) : ui->xUnit_2->setChecked(true);
+    ui->xUnit->isChecked() ? ui->xRPStepLineEdit->SetDecimalPlaces(1) : ui->xRPStepLineEdit->SetDecimalPlaces(2);
     ui->xRPStepLineEdit->SetThisIntToThisText(stackParams.at(ICMold::X_Gap));
     ui->yRPLatticeLineEdit->SetThisIntToThisText(stackParams.at(ICMold::Y_Array) & 0x7FFF);
     seqH & 64 ? ui->yRPCheckBox->click() : ui->yPPCheckBox->click();
     ui->yPPCheckBox->setChecked(!ui->yRPCheckBox->isChecked());
     stackParams.at(ICMold::Y_Array) >> 15 ? ui->yUnit->setChecked(true) : ui->yUnit_2->setChecked(true);
+    ui->yUnit->isChecked() ? ui->yRPStepLineEdit->SetDecimalPlaces(1) : ui->yRPStepLineEdit->SetDecimalPlaces(2);
     ui->yRPStepLineEdit->SetThisIntToThisText(stackParams.at(ICMold::Y_Gap));
     ui->zRPLatticeLineEdit->SetThisIntToThisText(stackParams.at(ICMold::Z_Array) & 0x7FFF);
     seqH & 128 ? ui->zRPCheckBox->click() : ui->zPPCheckBox->click();
     ui->zPPCheckBox->setChecked(!ui->zRPCheckBox->isChecked());
     stackParams.at(ICMold::Z_Array) >> 15 ? ui->zUnit->setChecked(true) : ui->zUnit_2->setChecked(true);
+    ui->zUnit->isChecked() ? ui->zRPStepLineEdit->SetDecimalPlaces(1) : ui->zRPStepLineEdit->SetDecimalPlaces(2);
     ui->zRPStepLineEdit->SetThisIntToThisText(stackParams.at(ICMold::Z_Gap));
     ui->countWayBox->setCurrentIndex(ICMold::CurrentMold()->MoldParam(static_cast<ICMold::ICMoldParam>(currentPage_)));
     ui->subArm->setChecked(stackParams.at(ICMold::Seq) >> 15);
@@ -289,11 +292,14 @@ void ICHCStackedSettingsFrame::on_xRPStepLineEdit_textChanged(const QString &arg
     {
         ui->xUnit->setChecked(true);
         ui->xRPStepLineEdit->setText(QString::number(v, 'f', 1));
+        ui->xRPStepLineEdit->SetDecimalPlaces(1);
     }
     else
     {
         ui->xUnit_2->setChecked(true);
         ui->xRPStepLineEdit->setText(QString::number(v, 'f', 2));
+        ui->xRPStepLineEdit->SetDecimalPlaces(2);
+
     }
 }
 
@@ -304,11 +310,13 @@ void ICHCStackedSettingsFrame::on_yRPStepLineEdit_textChanged(const QString &arg
     {
         ui->yUnit->setChecked(true);
         ui->yRPStepLineEdit->setText(QString::number(v, 'f', 1));
+        ui->yRPStepLineEdit->SetDecimalPlaces(1);
     }
     else
     {
         ui->yUnit_2->setChecked(true);
         ui->yRPStepLineEdit->setText(QString::number(v, 'f', 2));
+        ui->yRPStepLineEdit->SetDecimalPlaces(2);
     }
 }
 
@@ -319,10 +327,12 @@ void ICHCStackedSettingsFrame::on_zRPStepLineEdit_textChanged(const QString &arg
     {
         ui->zUnit->setChecked(true);
         ui->zRPStepLineEdit->setText(QString::number(v, 'f', 1));
+        ui->zRPStepLineEdit->SetDecimalPlaces(1);
     }
     else
     {
         ui->zUnit_2->setChecked(true);
-        ui->yRPStepLineEdit->setText(QString::number(v, 'f', 2));
+        ui->zRPStepLineEdit->setText(QString::number(v, 'f', 2));
+        ui->zRPStepLineEdit->SetDecimalPlaces(2);
     }
 }

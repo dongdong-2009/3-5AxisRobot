@@ -129,7 +129,7 @@ void ICStackEditor::showEvent(QShowEvent *e)
             group.seq->setText(tr("Y->Z->X"));
         }
         //        ui->xRPLatticeLineEdit->SetThisIntToThisText(stackParams.at(ICMold::X_Array));
-        int decimal = (stackParams.at(ICMold::X_Array) >> 15) + 1;
+        int decimal = 2 - (stackParams.at(ICMold::X_Array) >> 15);
         qreal multi = qPow(10, decimal);
         group.xNum->setText(QString::number(stackParams.at(ICMold::X_Array) & 0x7FFF));
         //        ui->xRPCheckBox->setChecked(seqH & 32);
@@ -138,7 +138,7 @@ void ICStackEditor::showEvent(QShowEvent *e)
         group.xStep->setText(QString::number(stackParams.at(ICMold::X_Gap)/ multi, 'f', decimal));
         //        ui->yRPLatticeLineEdit->SetThisIntToThisText(stackParams.at(ICMold::Y_Array));
 
-        decimal = (stackParams.at(ICMold::Y_Array) >> 15) + 1;
+        decimal = 2 - (stackParams.at(ICMold::Y_Array) >> 15);
         multi = qPow(10, decimal);
         group.yNum->setText(QString::number(stackParams.at(ICMold::Y_Array)& 0x7FFF));
         //                ui->yRPCheckBox->setChecked(seqH & 64);
@@ -147,7 +147,7 @@ void ICStackEditor::showEvent(QShowEvent *e)
         group.yStep->setText(QString::number(stackParams.at(ICMold::Y_Gap) / multi, 'f', decimal));
         //        ui->zRPLatticeLineEdit->SetThisIntToThisText(stackParams.at(ICMold::Z_Array));
 
-        decimal = (stackParams.at(ICMold::Z_Array) >> 15) + 1;
+        decimal = 2 - (stackParams.at(ICMold::Z_Array) >> 15);
         multi = qPow(10, decimal);
         group.zNum->setText(QString::number(stackParams.at(ICMold::Z_Array)& 0x7FFF));
         //        ui->zRPCheckBox->setChecked(seqH & 128);
