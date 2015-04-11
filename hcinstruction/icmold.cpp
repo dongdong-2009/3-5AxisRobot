@@ -230,9 +230,13 @@ bool ICMold::ReadMoldFile(const QString &fileName, bool isLoadParams)
                           items.at(7).toUInt(),
                           items.at(8).toUInt(),
                           items.at(9).toUInt());
-        if(items.size() == 11)
+        if(items.size() > 10)
         {
-            moldItem.SetComment(items.at(10));
+            moldItem.SetFlag(items.at(10).toUInt());
+        }
+        if(items.size() > 11)
+        {
+            moldItem.SetComment(items.at(11));
         }
         tempmoldContent.append(moldItem);
     }

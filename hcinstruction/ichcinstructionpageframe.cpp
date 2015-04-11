@@ -486,6 +486,10 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
     {
         return;
     }
+    if(isComment)
+    {
+        items[0].SetFlag(ValidFlag());
+    }
     if(sIndex == -1)
     {
         if(tIndex == 0) //insert GroupItem
@@ -1179,5 +1183,41 @@ void ICHCInstructionPageFrame::on_tryButton_clicked()
     //        ICVirtualHost::GlobalVirtualHost()->SetSingleRun(true);
     //        ui->singleButton->setEnabled(false);
         }
+
+}
+
+int ICHCInstructionPageFrame::ValidFlag()
+{
+    QVector<int> flags;
+    ICMoldItem* item;
+    int count;
+    for(int i = 0; i != programList_.size(); ++i)
+    {
+        count = programList_.at(i).ItemCount();
+        for(int j = 0; j != count; ++j)
+        {
+            item = programList_[i].MoldItemAt(j);
+            if(item->Action() == ICMold::ACTCOMMENT)
+            {
+                flags.append(item->Flag());
+            }
+        }
+    }
+    qSort(flags);
+    if(flags.isEmpty())
+    {
+        return 0;
+    }
+    if(flags.size() - 1 == flags.last())
+    {
+        return flags.size();
+    }
+    for(int i = 1 ; i != flags.size(); ++i)
+    {
+        if(flags.at(i) - flags.at(i - 1) > 1)
+        {
+            return flags.at(i - 1) + 1;
+        }
+    }
 
 }

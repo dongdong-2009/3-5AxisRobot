@@ -29,6 +29,8 @@ public:
 
     explicit ICHCInstructionPageFrame(QWidget *parent = 0);
     ~ICHCInstructionPageFrame();
+
+    int ValidFlag();
 //    void LoadFileInfoButtonClicked(const QString & moldName);
 
 protected:
