@@ -264,6 +264,27 @@ void ICHCInstructionPageFrame::OptionButtonClicked()
         optionButtonToPage_.insert(ui->commentButton, commentPage_);
         ui->settingStackedWidget->addWidget(commentPage_);
     }
+    if(optionButton == ui->conditionsToolButton)
+    {
+        QStringList selList;
+        int count;
+        ICMoldItem* item;
+        for(int i = 0; i != programList_.size(); ++i)
+        {
+            count = programList_.at(i).ItemCount();
+            for(int j = 0; j != count; ++j)
+            {
+                item = programList_[i].MoldItemAt(j);
+                if(item->Action() == ICMold::ACTCOMMENT)
+                {
+                    selList.append(QString(tr("Flag[%1]:%2")
+                                           .arg(item->Flag())
+                                           .arg(item->Comment())));
+                }
+            }
+        }
+        conditionPage_->ResetFlagSel(selList);
+    }
     ui->settingStackedWidget->setCurrentWidget(optionButtonToPage_.value(optionButton));
 }
 

@@ -8,11 +8,11 @@ ICHCConditionPage::ICHCConditionPage(QWidget *parent) :
     ui(new Ui::ICHCConditionPage)
 {
     ui->setupUi(this);
-    ui->returnLineEdit->setValidator(new QIntValidator(-32767, 32767, this));
+//    ui->returnLineEdit->setValidator(new QIntValidator(-32767, 32767, this));
     buttonGroup = new QButtonGroup ;
     ui->subComboBox->setCurrentIndex(5);
     ui->subComboBox->setEnabled(false);
-    ui->returnLineEdit->setText("1");
+//    ui->returnLineEdit->setText("1");
     InitCheckPointBox();
     ui->moldCountEdit->setEnabled(false);
     ui->moldCountEdit->setValidator(new QIntValidator(0, 65530, this));
@@ -65,7 +65,11 @@ QList<ICMoldItem> ICHCConditionPage::CreateCommandImpl() const
     {
         item.SetSVal(ui->subComboBox->currentIndex());
     }
-    item.SetDVal(ui->returnLineEdit->TransThisTextToThisInt());
+    QString flag = ui->flagSel->currentText();
+    int l = flag.indexOf('[') + 1;
+    int r = flag.indexOf(']');
+    flag = flag.mid(l, r - l);
+    item.SetFlag(flag.toInt());
     ret.append(item);
     return ret;
 }
@@ -126,4 +130,10 @@ void ICHCConditionPage::BoxClicked()
 void ICHCConditionPage::on_productCountBox_toggled(bool checked)
 {
     ui->moldCountEdit->setEnabled(checked);
+}
+
+void ICHCConditionPage::ResetFlagSel(const QStringList &selList)
+{
+    ui->flagSel->clear();
+    ui->flagSel->addItems(selList);
 }

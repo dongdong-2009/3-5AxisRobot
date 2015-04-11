@@ -618,8 +618,18 @@ QRadioButton::indicator:unchecked:disabled
         </property>
        </widget>
       </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Go to flag</string>
+        </property>
+       </widget>
+      </item>
       <item row="2" column="2">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="returnLineEdit">
+       <widget class="ICComboBox" name="flagSel">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
         <property name="sizePolicy">
          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
           <horstretch>0</horstretch>
@@ -629,24 +639,17 @@ QRadioButton::indicator:unchecked:disabled
         <property name="minimumSize">
          <size>
           <width>123</width>
-          <height>0</height>
+          <height>38</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
           <width>123</width>
-          <height>16777215</height>
+          <height>48</height>
          </size>
         </property>
-        <property name="text">
-         <string notr="true">0</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0" colspan="2">
-       <widget class="QLabel" name="label_3">
-        <property name="text">
-         <string>Return Step</string>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
         </property>
        </widget>
       </item>

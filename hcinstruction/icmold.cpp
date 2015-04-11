@@ -215,7 +215,8 @@ bool ICMold::ReadMoldFile(const QString &fileName, bool isLoadParams)
         qDebug()<<"in"<<i;
         items = records.at(i).split(' ', QString::SkipEmptyParts);
         if(items.size() != 10 &&
-                items.size() != 11)
+                items.size() != 11 &&
+                items.size() != 12)
         {
             qDebug()<<i<<"th line size wrong";
             return false;
@@ -308,6 +309,24 @@ bool ICMold::ReadMoldParamsFile(const QString &fileName)
 bool ICMold::SaveMoldFile(bool isSaveParams)
 {
     bool ret = false;
+    QMap<int, int> flagToSetp;
+    QList<int> conditionPos;
+    for(int i = 0; i != moldContent_.size(); ++i)
+    {
+        if(moldContent_.at(i).Action() == ACTCOMMENT)
+        {
+            flagToSetp.insert(moldContent_.at(i).Flag(), moldContent_.at(i).Num());
+        }
+        else if(moldContent_.at(i).Action() == ACTCHECKINPUT)
+        {
+            conditionPos.append(i);
+        }
+    }
+    for(int i = 0; i != conditionPos.size(); ++i)
+    {
+        moldContent_[conditionPos.at(i)].SetDVal(
+                    flagToSetp.value(moldContent_.at(conditionPos.at(i)).Flag(), 0));
+    }
     MoldReSum();
     QByteArray toWrite;
     if(moldContent_.size() < 1)

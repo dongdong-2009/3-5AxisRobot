@@ -17,6 +17,8 @@ public:
     explicit ICHCConditionPage(QWidget *parent = 0);
     ~ICHCConditionPage();
 
+    void ResetFlagSel(const QStringList& selList);
+
 protected:
     void changeEvent(QEvent *);
     void SyncStatusImpl(const QList<ICMoldItem> &items);
