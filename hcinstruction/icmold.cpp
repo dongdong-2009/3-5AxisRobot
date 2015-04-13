@@ -325,7 +325,8 @@ bool ICMold::SaveMoldFile(bool isSaveParams)
     for(int i = 0; i != conditionPos.size(); ++i)
     {
         moldContent_[conditionPos.at(i)].SetDVal(
-                    flagToSetp.value(moldContent_.at(conditionPos.at(i)).Flag(), 0));
+                    flagToSetp.value(moldContent_.at(conditionPos.at(i)).Flag(), 0) -
+                    moldContent_.at(conditionPos.at(i)).Num());
     }
     MoldReSum();
     QByteArray toWrite;
