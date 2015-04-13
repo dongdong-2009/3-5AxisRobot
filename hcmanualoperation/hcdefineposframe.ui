@@ -26,80 +26,20 @@
       <string>Pos1</string>
      </property>
      <layout class="QGridLayout" name="gridLayout">
-      <item row="7" column="0">
-       <widget class="QLabel" name="p1BLabel">
+      <item row="5" column="0">
+       <widget class="QLabel" name="p1Y2Label">
         <property name="text">
-         <string>B</string>
+         <string>Y2</string>
         </property>
        </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1Y1"/>
       </item>
       <item row="2" column="0">
        <widget class="QLabel" name="p1Y1Label">
         <property name="text">
          <string>Y1</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1X1"/>
-      </item>
-      <item row="2" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1Y1"/>
-      </item>
-      <item row="1" column="2">
-       <widget class="QLabel" name="p1X1mm">
-        <property name="text">
-         <string>mm</string>
-        </property>
-       </widget>
-      </item>
-      <item row="7" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1B"/>
-      </item>
-      <item row="6" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1A"/>
-      </item>
-      <item row="8" column="0">
-       <widget class="QLabel" name="p1CLabel">
-        <property name="text">
-         <string>C</string>
-        </property>
-       </widget>
-      </item>
-      <item row="6" column="0">
-       <widget class="QLabel" name="p1ALabel">
-        <property name="text">
-         <string>A</string>
-        </property>
-       </widget>
-      </item>
-      <item row="4" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1X2"/>
-      </item>
-      <item row="3" column="0">
-       <widget class="QLabel" name="p1ZLabel">
-        <property name="text">
-         <string>Z</string>
-        </property>
-       </widget>
-      </item>
-      <item row="5" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1Y2"/>
-      </item>
-      <item row="7" column="2">
-       <widget class="QLabel" name="p1Bmm">
-        <property name="text">
-         <string>mm</string>
-        </property>
-       </widget>
-      </item>
-      <item row="8" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1C"/>
-      </item>
-      <item row="4" column="0">
-       <widget class="QLabel" name="p1X2Label">
-        <property name="text">
-         <string>X2</string>
         </property>
        </widget>
       </item>
@@ -110,18 +50,18 @@
         </property>
        </widget>
       </item>
-      <item row="3" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1Z"/>
-      </item>
-      <item row="4" column="2">
-       <widget class="QLabel" name="p1X2mm">
+      <item row="8" column="0">
+       <widget class="QLabel" name="p1CLabel">
         <property name="text">
-         <string>mm</string>
+         <string>C</string>
         </property>
        </widget>
       </item>
-      <item row="8" column="2">
-       <widget class="QLabel" name="p1Cmm">
+      <item row="8" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1C"/>
+      </item>
+      <item row="6" column="2">
+       <widget class="QLabel" name="p1Amm">
         <property name="text">
          <string>mm</string>
         </property>
@@ -134,12 +74,15 @@
         </property>
        </widget>
       </item>
-      <item row="6" column="2">
-       <widget class="QLabel" name="p1Amm">
+      <item row="4" column="2">
+       <widget class="QLabel" name="p1X2mm">
         <property name="text">
          <string>mm</string>
         </property>
        </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1A"/>
       </item>
       <item row="1" column="0">
        <widget class="QLabel" name="p1X1Label">
@@ -148,10 +91,43 @@
         </property>
        </widget>
       </item>
-      <item row="5" column="0">
-       <widget class="QLabel" name="p1Y2Label">
+      <item row="5" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1Y2"/>
+      </item>
+      <item row="8" column="2">
+       <widget class="QLabel" name="p1Cmm">
         <property name="text">
-         <string>Y2</string>
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1B"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1X1"/>
+      </item>
+      <item row="3" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1Z"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="p1X2Label">
+        <property name="text">
+         <string>X2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="2">
+       <widget class="QLabel" name="p1Bmm">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="p1ZLabel">
+        <property name="text">
+         <string>Z</string>
         </property>
        </widget>
       </item>
@@ -162,8 +138,81 @@
         </property>
        </widget>
       </item>
-      <item row="0" column="1">
-       <widget class="QPushButton" name="setInPos1">
+      <item row="7" column="0">
+       <widget class="QLabel" name="p1BLabel">
+        <property name="text">
+         <string>B</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="p1ALabel">
+        <property name="text">
+         <string>A</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="p1X1mm">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p1X2"/>
+      </item>
+      <item row="8" column="3">
+       <widget class="QPushButton" name="setInPos1_8">
+        <property name="text">
+         <string>Set in</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="3">
+       <widget class="QPushButton" name="setInPos1_7">
+        <property name="text">
+         <string>Set in</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="3">
+       <widget class="QPushButton" name="setInPos1_6">
+        <property name="text">
+         <string>Set in</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="3">
+       <widget class="QPushButton" name="setInPos1_5">
+        <property name="text">
+         <string>Set in</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QPushButton" name="setInPos1_4">
+        <property name="text">
+         <string>Set in</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QPushButton" name="setInPos1_3">
+        <property name="text">
+         <string>Set in</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QPushButton" name="setInPos1_2">
+        <property name="text">
+         <string>Set in</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QPushButton" name="setInPos1_1">
         <property name="text">
          <string>Set in</string>
         </property>
@@ -178,98 +227,10 @@
       <string>Pos2</string>
      </property>
      <layout class="QGridLayout" name="gridLayout_3">
-      <item row="3" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2Z"/>
-      </item>
-      <item row="8" column="0">
-       <widget class="QLabel" name="p2CLabel">
-        <property name="text">
-         <string>C</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2X1"/>
-      </item>
-      <item row="6" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2A"/>
-      </item>
-      <item row="3" column="0">
-       <widget class="QLabel" name="p2ZLabel">
-        <property name="text">
-         <string>Z</string>
-        </property>
-       </widget>
-      </item>
-      <item row="8" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2C"/>
-      </item>
-      <item row="2" column="2">
-       <widget class="QLabel" name="p2Y1mm">
+      <item row="7" column="2">
+       <widget class="QLabel" name="p2Bmm">
         <property name="text">
          <string>mm</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="p2X1Label">
-        <property name="text">
-         <string>X1</string>
-        </property>
-       </widget>
-      </item>
-      <item row="5" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2Y2"/>
-      </item>
-      <item row="2" column="0">
-       <widget class="QLabel" name="p2Y1Label">
-        <property name="text">
-         <string>Y1</string>
-        </property>
-       </widget>
-      </item>
-      <item row="8" column="2">
-       <widget class="QLabel" name="p2Cmm">
-        <property name="text">
-         <string>mm</string>
-        </property>
-       </widget>
-      </item>
-      <item row="6" column="2">
-       <widget class="QLabel" name="p2Amm">
-        <property name="text">
-         <string>mm</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="2">
-       <widget class="QLabel" name="p2X1mm">
-        <property name="text">
-         <string>mm</string>
-        </property>
-       </widget>
-      </item>
-      <item row="7" column="0">
-       <widget class="QLabel" name="p2BLabel">
-        <property name="text">
-         <string>B</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2Y1"/>
-      </item>
-      <item row="3" column="2">
-       <widget class="QLabel" name="p2Zmm">
-        <property name="text">
-         <string>mm</string>
-        </property>
-       </widget>
-      </item>
-      <item row="6" column="0">
-       <widget class="QLabel" name="p2ALabel">
-        <property name="text">
-         <string>A</string>
         </property>
        </widget>
       </item>
@@ -280,25 +241,25 @@
         </property>
        </widget>
       </item>
-      <item row="4" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2X2"/>
-      </item>
-      <item row="4" column="2">
-       <widget class="QLabel" name="p2X2mm">
+      <item row="2" column="0">
+       <widget class="QLabel" name="p2Y1Label">
         <property name="text">
-         <string>mm</string>
+         <string>Y1</string>
         </property>
        </widget>
       </item>
-      <item row="7" column="2">
-       <widget class="QLabel" name="p2Bmm">
-        <property name="text">
-         <string>mm</string>
-        </property>
-       </widget>
+      <item row="7" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2B"/>
       </item>
       <item row="5" column="2">
        <widget class="QLabel" name="p2Y2mm">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLabel" name="p2Zmm">
         <property name="text">
          <string>mm</string>
         </property>
@@ -311,11 +272,148 @@
         </property>
        </widget>
       </item>
-      <item row="7" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2B"/>
+      <item row="4" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2X2"/>
       </item>
-      <item row="0" column="1">
-       <widget class="QPushButton" name="setInPos2">
+      <item row="6" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2A"/>
+      </item>
+      <item row="2" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2Y1"/>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="p2X1mm">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2X1"/>
+      </item>
+      <item row="8" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2C"/>
+      </item>
+      <item row="6" column="2">
+       <widget class="QLabel" name="p2Amm">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="p2ALabel">
+        <property name="text">
+         <string>A</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="2">
+       <widget class="QLabel" name="p2Cmm">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="p2CLabel">
+        <property name="text">
+         <string>C</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="p2X1Label">
+        <property name="text">
+         <string>X1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="p2BLabel">
+        <property name="text">
+         <string>B</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2Z"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="p2ZLabel">
+        <property name="text">
+         <string>Z</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLabel" name="p2X2mm">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="p2Y1mm">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p2Y2"/>
+      </item>
+      <item row="8" column="3">
+       <widget class="QPushButton" name="setInPos2_8">
+        <property name="text">
+         <string>Set in</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="3">
+       <widget class="QPushButton" name="setInPos2_7">
+        <property name="text">
+         <string>Set in</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="3">
+       <widget class="QPushButton" name="setInPos2_6">
+        <property name="text">
+         <string>Set in</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="3">
+       <widget class="QPushButton" name="setInPos2_5">
+        <property name="text">
+         <string>Set in</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QPushButton" name="setInPos2_4">
+        <property name="text">
+         <string>Set in</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QPushButton" name="setInPos2_3">
+        <property name="text">
+         <string>Set in</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QPushButton" name="setInPos2_2">
+        <property name="text">
+         <string>Set in</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QPushButton" name="setInPos2_1">
         <property name="text">
          <string>Set in</string>
         </property>
@@ -330,53 +428,6 @@
       <string>Pos3</string>
      </property>
      <layout class="QGridLayout" name="gridLayout_4">
-      <item row="1" column="2">
-       <widget class="QLabel" name="p3X1mm">
-        <property name="text">
-         <string>mm</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3Y1"/>
-      </item>
-      <item row="5" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3Y2"/>
-      </item>
-      <item row="7" column="0">
-       <widget class="QLabel" name="p3BLabel">
-        <property name="text">
-         <string>B</string>
-        </property>
-       </widget>
-      </item>
-      <item row="8" column="0">
-       <widget class="QLabel" name="p3CLabel">
-        <property name="text">
-         <string>C</string>
-        </property>
-       </widget>
-      </item>
-      <item row="7" column="2">
-       <widget class="QLabel" name="p3Bmm">
-        <property name="text">
-         <string>mm</string>
-        </property>
-       </widget>
-      </item>
-      <item row="7" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3B"/>
-      </item>
-      <item row="4" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3X2"/>
-      </item>
-      <item row="3" column="2">
-       <widget class="QLabel" name="p3Zmm">
-        <property name="text">
-         <string>mm</string>
-        </property>
-       </widget>
-      </item>
       <item row="2" column="2">
        <widget class="QLabel" name="p3Y1mm">
         <property name="text">
@@ -384,78 +435,13 @@
         </property>
        </widget>
       </item>
+      <item row="6" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3A"/>
+      </item>
       <item row="6" column="0">
        <widget class="QLabel" name="p3ALabel">
         <property name="text">
          <string>A</string>
-        </property>
-       </widget>
-      </item>
-      <item row="6" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3A"/>
-      </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="p3X1Label">
-        <property name="text">
-         <string>X1</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QLabel" name="p3Y1Label">
-        <property name="text">
-         <string>Y1</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3X1"/>
-      </item>
-      <item row="3" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3Z"/>
-      </item>
-      <item row="4" column="0">
-       <widget class="QLabel" name="p3X2Label">
-        <property name="text">
-         <string>X2</string>
-        </property>
-       </widget>
-      </item>
-      <item row="6" column="2">
-       <widget class="QLabel" name="p3Amm">
-        <property name="text">
-         <string>mm</string>
-        </property>
-       </widget>
-      </item>
-      <item row="8" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3C"/>
-      </item>
-      <item row="5" column="2">
-       <widget class="QLabel" name="p3Y2mm">
-        <property name="text">
-         <string>mm</string>
-        </property>
-       </widget>
-      </item>
-      <item row="4" column="2">
-       <widget class="QLabel" name="p3X2mm">
-        <property name="text">
-         <string>mm</string>
-        </property>
-       </widget>
-      </item>
-      <item row="8" column="2">
-       <widget class="QLabel" name="p3Cmm">
-        <property name="text">
-         <string>mm</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="0">
-       <widget class="QLabel" name="p3ZLabel">
-        <property name="text">
-         <string>Z</string>
         </property>
        </widget>
       </item>
@@ -466,8 +452,169 @@
         </property>
        </widget>
       </item>
-      <item row="0" column="1">
-       <widget class="QPushButton" name="setInPos3">
+      <item row="3" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3Z"/>
+      </item>
+      <item row="8" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3C"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="p3X2Label">
+        <property name="text">
+         <string>X2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="2">
+       <widget class="QLabel" name="p3Cmm">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="2">
+       <widget class="QLabel" name="p3Bmm">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QLabel" name="p3Amm">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="p3X1mm">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3Y2"/>
+      </item>
+      <item row="5" column="2">
+       <widget class="QLabel" name="p3Y2mm">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="p3BLabel">
+        <property name="text">
+         <string>B</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="p3ZLabel">
+        <property name="text">
+         <string>Z</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3B"/>
+      </item>
+      <item row="2" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3Y1"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="p3Y1Label">
+        <property name="text">
+         <string>Y1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3X2"/>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLabel" name="p3X2mm">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLabel" name="p3Zmm">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="p3X1"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="p3X1Label">
+        <property name="text">
+         <string>X1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="p3CLabel">
+        <property name="text">
+         <string>C</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QPushButton" name="setInPos3_2">
+        <property name="text">
+         <string>Set in</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QPushButton" name="setInPos3_1">
+        <property name="text">
+         <string>Set in</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QPushButton" name="setInPos3_3">
+        <property name="text">
+         <string>Set in</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QPushButton" name="setInPos3_4">
+        <property name="text">
+         <string>Set in</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="3">
+       <widget class="QPushButton" name="setInPos3_5">
+        <property name="text">
+         <string>Set in</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="3">
+       <widget class="QPushButton" name="setInPos3_6">
+        <property name="text">
+         <string>Set in</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="3">
+       <widget class="QPushButton" name="setInPos3_7">
+        <property name="text">
+         <string>Set in</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="3">
+       <widget class="QPushButton" name="setInPos3_8">
         <property name="text">
          <string>Set in</string>
         </property>

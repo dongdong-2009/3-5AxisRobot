@@ -2003,17 +2003,6 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="442"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="650"/>
-        <source>Warning</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="443"/>
-        <source>Can not add standby position program</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="636"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
@@ -2021,11 +2010,6 @@ Infomation</source>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="637"/>
         <source>Stand program can not be delete action</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="651"/>
-        <source>Can not delete standby position program</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -2544,10 +2544,8 @@ Reason</source>
         <translation>主菜单</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="442"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="650"/>
         <source>Warning</source>
-        <translation>警告</translation>
+        <translation type="obsolete">警告</translation>
     </message>
     <message>
         <source>Need to origin!</source>
@@ -2562,9 +2560,8 @@ Reason</source>
         <translation type="obsolete">该模号是当前模号!</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="443"/>
         <source>Can not add standby position program</source>
-        <translation>不能添加待机点步骤</translation>
+        <translation type="obsolete">不能添加待机点步骤</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="636"/>
@@ -2577,9 +2574,8 @@ Reason</source>
         <translation>标准程序不能删除动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="651"/>
         <source>Can not delete standby position program</source>
-        <translation>不能删除待机点步骤</translation>
+        <translation type="obsolete">不能删除待机点步骤</translation>
     </message>
     <message>
         <source>Can not group up to standby position program</source>
