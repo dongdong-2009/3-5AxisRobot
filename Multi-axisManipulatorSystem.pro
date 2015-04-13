@@ -49,7 +49,8 @@ SOURCES += main.cpp \
     simulateknob.cpp \
     icrecaldialog.cpp \
     icfile.cpp \
-    icbackupdialog.cpp
+    icbackupdialog.cpp \
+    icconfigstring.cpp
 HEADERS += icaxispositionlabel.h \
     mainframe.h \
     #icalarmdescriptiondialog.h \
@@ -71,7 +72,8 @@ HEADERS += icaxispositionlabel.h \
     simulateknob.h \
     icrecaldialog.h \
     icfile.h \
-    icbackupdialog.h
+    icbackupdialog.h \
+    icconfigstring.h
 
 FORMS    +=  \
     #icalarmdescriptiondialog.ui \
