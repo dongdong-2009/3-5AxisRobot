@@ -29,7 +29,7 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
-    <widget class="ICTableWidget" name="alarmHistoryTableWidget">
+    <widget class="QTableWidget" name="alarmHistoryTableWidget">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
        <horstretch>0</horstretch>
@@ -83,13 +83,6 @@ ModifyTime</string>
    </item>
   </layout>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>ICTableWidget</class>
-   <extends>QTableWidget</extends>
-   <header>ictablewidget.h</header>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>
