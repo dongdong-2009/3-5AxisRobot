@@ -12,6 +12,7 @@ namespace Ui {
 }
 
 class QSettings;
+class QPushButton;
 
 class ICUpdateSystemPage : public QFrame {
     Q_OBJECT
@@ -45,6 +46,9 @@ private:
     QString updateHostPath_;
     QSettings *updateSettings_;
     QSettings *updateHostSettings_;
+    QList<QPushButton*> restartBtns_;
+    QMap<QWidget*, int> cycleEditorToItemIndex;
+    QMap<QWidget*, int> restartBtnToItemIndex;
 
     QTimer timer_;
 //    QTimer *refresh_restTimer;
@@ -77,6 +81,9 @@ private slots:
     void on_updatePasswardButton_clicked();
     void on_scanPanel_clicked();
     void on_scanHost_clicked();
+
+    void OnCycleEditorChanged(const QString& text);
+    void OnRestartBtnClicked();
 };
 
 //TODEBUG

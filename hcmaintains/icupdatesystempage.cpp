@@ -1,27 +1,30 @@
 #include "icupdatesystempage.h"
 #include "ui_icupdatesystempage.h"
 
-#include <QSettings>
-#include <QDir>
-#include <QMessageBox>
-#include <QCloseEvent>
-#include <QProcess>
-#include <QKeyEvent>
 
-#include <QDebug>
-#include "ickeyboard.h"
 #include "iccommandprocessor.h"
 #include "iccommands.h"
-#include "icvirtualhost.h"
-#include "icupdatelogodialog.h"
-#include <QDateTime>
+#include "ickeyboard.h"
+#include "iclineeditwithvirtualnumerickeypad.h"
 #include "icparameterssave.h"
-#include <QFile>
-#include <QTextStream>
 #include "icparameterssave.h"
-#include <QRegExp>
-#include "ictipswidget.h"
 #include "icpasswordmodifydialog.h"
+#include "ictipswidget.h"
+#include "icupdatelogodialog.h"
+#include "icvirtualhost.h"
+#include <QCloseEvent>
+#include <QDateTime>
+#include <QDebug>
+#include <QDir>
+#include <QFile>
+#include <QKeyEvent>
+#include <QMessageBox>
+#include <QProcess>
+#include <QPushButton>
+#include <QRegExp>
+#include <QSettings>
+#include <QTextStream>
+
 //ICUpdateSystemPage *ICUpdateSystemPage = NULL;
 
 
@@ -67,6 +70,33 @@ ICUpdateSystemPage::ICUpdateSystemPage(QWidget *parent) :
     model_->setHeaderData(0, Qt::Horizontal, tr("Name"));
     model_->setHeaderData(1, Qt::Horizontal, tr("Create Time"));
     ui->packetTable->setModel(model_);
+
+    ui->careTable->horizontalHeader()->setResizeMode(0, QHeaderView::Stretch);
+
+    const int rowCount = ui->careTable->rowCount();
+    QIntValidator* vd = new QIntValidator(0, 65530, this);
+
+
+    ICParametersSave* ps = ICParametersSave::Instance();
+    for(int i = 0; i !=rowCount; ++i)
+    {
+        QPushButton* btn = new QPushButton(tr("Restart"));
+        ICLineEditWithVirtualNumericKeypad* cycleEditor = new ICLineEditWithVirtualNumericKeypad();
+        cycleEditor->setValidator(vd);
+        cycleEditor->SetThisIntToThisText(ps->CareCycle(i));
+        restartBtns_.append(btn);
+        ui->careTable->setCellWidget(i, 3, cycleEditor);
+        ui->careTable->setCellWidget(i, 4, btn);
+        cycleEditorToItemIndex.insert(cycleEditor, i);
+        restartBtnToItemIndex.insert(btn, i);
+        connect(cycleEditor,
+                SIGNAL(textChanged(QString)),
+                SLOT(OnCycleEditorChanged(QString)));
+        connect(btn,
+                SIGNAL(clicked()),
+                SLOT(OnRestartBtnClicked()));
+    }
+
 }
 
 ICUpdateSystemPage::~ICUpdateSystemPage()
@@ -93,10 +123,18 @@ void ICUpdateSystemPage::changeEvent(QEvent *e)
     QFrame::changeEvent(e);
     switch (e->type()) {
     case QEvent::LanguageChange:
+    {
         ui->retranslateUi(this);
         model_->setHeaderData(0, Qt::Horizontal, tr("Name"));
         model_->setHeaderData(1, Qt::Horizontal, tr("Create Time"));
         ui->packetTable->setModel(model_);
+
+        const int rowCount = ui->careTable->rowCount();
+        for(int i = 0; i != rowCount; ++i)
+        {
+            restartBtns_[i]->setText(tr("Restart"));
+        }
+    }
         break;
     default:
         break;
@@ -114,6 +152,14 @@ void ICUpdateSystemPage::showEvent(QShowEvent *e)
 //    {
 //        ui->registerContainer->hide();
 //    }
+    QDate currentDate = QDate::currentDate();
+    const int rowCount = ui->careTable->rowCount();
+    ICParametersSave* ps = ICParametersSave::Instance();
+    for(int i = 0; i != rowCount; ++i)
+    {
+        ui->careTable->item(i, 1)->setText(QString::number(currentDate.daysTo(ps->NextCycle(i))));
+        ui->careTable->item(i, 2)->setText(ps->NextCycle(i).toString("yyyy/MM/dd"));
+    }
     ICVirtualHost::GlobalVirtualHost()->StopRefreshStatus();
     QFrame::showEvent(e);
 }
@@ -433,4 +479,30 @@ void ICUpdateSystemPage::on_scanHost_clicked()
     model_->fetchMore(model_->index(0, 0));
     ui->packetTable->resizeColumnsToContents();
     ui->packetTable->setCurrentIndex(QModelIndex());
+}
+
+void ICUpdateSystemPage::OnCycleEditorChanged(const QString &text)
+{
+    ICLineEditWithVirtualNumericKeypad* edit = qobject_cast<ICLineEditWithVirtualNumericKeypad*>(sender());
+    int itemIndex = cycleEditorToItemIndex.value(edit, 0);
+    ICParametersSave* ps = ICParametersSave::Instance();
+    int currentCycle = ps->CareCycle(itemIndex);
+    int diff = edit->TransThisTextToThisInt() - currentCycle;
+    ps->SetCareCycle(itemIndex, edit->TransThisTextToThisInt());
+    ps->SetNextCycle(itemIndex, ps->NextCycle(itemIndex).addDays(diff));
+
+
+    ui->careTable->item(itemIndex, 1)->setText(QString::number(QDate::currentDate().daysTo(ps->NextCycle(itemIndex))));
+    ui->careTable->item(itemIndex, 2)->setText(ps->NextCycle(itemIndex).toString("yyyy/MM/dd"));
+}
+
+void ICUpdateSystemPage::OnRestartBtnClicked()
+{
+    QPushButton* btn = qobject_cast<QPushButton*>(sender());
+    int itemIndex = restartBtnToItemIndex.value(btn, 0);
+    ICParametersSave* ps = ICParametersSave::Instance();
+    ps->SetNextCycle(itemIndex, QDate::currentDate().addDays(ps->CareCycle(itemIndex)));
+
+    ui->careTable->item(itemIndex, 1)->setText(QString::number(QDate::currentDate().daysTo(ps->NextCycle(itemIndex))));
+    ui->careTable->item(itemIndex, 2)->setText(ps->NextCycle(itemIndex).toString("yyyy/MM/dd"));
 }
