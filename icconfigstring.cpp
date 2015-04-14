@@ -10,9 +10,11 @@ QString ICConfigString::ConfigString(int configID)
 {
     switch (configID) {
     case kCS_Global_Speed:
-        return QObject::tr("Global Speed");
+        return QT_TR_NOOP("Global Speed");
     case KCS_User_Changed:
-        return QObject::tr("User Changed");
+        return QT_TR_NOOP("User Changed");
+    case kCS_Mold_Changed:
+        return QT_TR_NOOP("Mold Changed");
     default:
         return QObject::tr("No IMPL");
     }

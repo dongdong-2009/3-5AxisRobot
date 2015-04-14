@@ -10,6 +10,7 @@ public:
     enum {
         kCS_Global_Speed,
         KCS_User_Changed,
+        kCS_Mold_Changed,
     };
 
 
