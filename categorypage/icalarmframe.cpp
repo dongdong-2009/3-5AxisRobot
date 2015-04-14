@@ -133,7 +133,7 @@ void ICAlarmFrame::RestoreAlarmInfoInLog(int currentAlarmNum, QString alarmDateT
         alarmPair_.first = currentAlarmNum ;
         alarmPair_.second=  alarms_.count() - 1 ;
         alarmsNoSolve_.append(alarmPair_);
-        if(alarmsNoSolve_.size() > 500)
+        if(alarmsNoSolve_.size() > 200)
         {
             alarmsNoSolve_.pop_front();
         }
@@ -151,7 +151,7 @@ void ICAlarmFrame::OnCurrentAlarmChanged(int currentAlarmNum)
             }
         }
     }
-    if(ui->alarmHistoryTableWidget->rowCount() > 499)
+    if(ui->alarmHistoryTableWidget->rowCount() > 199)
     {
         ui->alarmHistoryTableWidget->removeRow(ui->alarmHistoryTableWidget->rowCount() - 1);
 
