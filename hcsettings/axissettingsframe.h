@@ -49,6 +49,8 @@ private slots:
     void on_testPushButton_clicked();
     void StatusRefresh();
     void LevelChanged(int level);
+
+
 };
 
 #endif // AXISSETTINGSFRAME_H

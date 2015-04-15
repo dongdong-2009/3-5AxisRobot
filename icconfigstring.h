@@ -7,6 +7,7 @@
 #include "icalarmframe.h"
 #include "icbuttongroup.h"
 #include "iccombobox.h"
+#include "iclineeditwithvirtualnumerickeypad.h"
 #include <QCheckBox>
 
 
@@ -136,6 +137,56 @@ public:
         kCS_RUN_Speed_Limit_A,
         kCS_RUN_Speed_Limit_B,
         kCS_RUN_Speed_Limit_C,
+
+        kCS_SECP_Inside_X_Min,
+        kCS_SECP_Inside_X_Max,
+        kCS_SECP_Outside_X_Min,
+        kCS_SECP_Outside_X_Max,
+
+        kCS_STRUCT_Axis_Define_X1,
+        kCS_STRUCT_Axis_Define_Y1,
+        kCS_STRUCT_Axis_Define_Z,
+        kCS_STRUCT_Axis_Define_X2,
+        kCS_STRUCT_Axis_Define_Y2,
+        kCS_STRUCT_Axis_Define_A,
+        kCS_STRUCT_Axis_Define_B,
+        kCS_STRUCT_Axis_Define_C,
+
+        kCS_STRUCT_Reserve_Define_Y017,
+        kCS_STRUCT_Reserve_Define_Y022,
+        kCS_STRUCT_Reserve_Define_Y031,
+        kCS_STRUCT_Reserve_Define_Y032,
+        kCS_STRUCT_Reserve_Define_Y035,
+        kCS_STRUCT_Reserve_Define_Y036,
+        kCS_STRUCT_Reserve_Define_R1,
+        kCS_STRUCT_Reserve_Define_R2,
+        kCS_STRUCT_Limit_Define_Arm_Num,
+        kCS_STRUCT_Limit_Define_MArm_DW_Limit,
+        kCS_STRUCT_Limit_Define_MArm_FW_Limit,
+        kCS_STRUCT_Limit_Define_MArm_BW_Limit,
+        kCS_STRUCT_Limit_Define_SArm_DW_Limit,
+        kCS_STRUCT_Limit_Define_SArm_FW_Limit,
+        kCS_STRUCT_Limit_Define_SArm_BW_Limit,
+        kCS_STRUCT_Other_Define_Escape,
+        kCS_STRUCT_Other_Define_Tune_bit,
+        kCS_STRUCT_Other_Define_Inside_Position,
+        kCS_STRUCT_Other_Define_Servo_Flex,
+
+        kCS_Time_Ver1,
+        kCS_Time_Hor1,
+        kCS_Time_Ver2,
+        kCS_Time_Hor2,
+        kCS_Time_MArm_UP,
+        kCS_Time_MArm_Dw,
+        kCS_Time_MArm_FW,
+        kCS_Time_MArm_BW,
+        kCS_Time_Z_FW,
+        kCS_Time_Z_BW,
+        kCS_Time_SArm_UP,
+        kCS_Time_SArm_DW,
+        kCS_Time_SArm_FW,
+        kCS_Time_SArm_BW,
+
         kCS_Err,
 
     };

@@ -3,6 +3,7 @@
 #include "icvirtualhost.h"
 #include "iclineeditwrapper.h"
 #include <QMessageBox>
+#include "icconfigstring.h"
 
 ICMachineFigure::ICMachineFigure(QWidget *parent) :
     QWidget(parent),
@@ -42,6 +43,13 @@ ICMachineFigure::ICMachineFigure(QWidget *parent) :
                                     ICLineEditWrapper::System,
                                     ICLineEditWrapper::OneFraction);
     wrappers_.append(wrapper);
+
+    editorToConfigIDs_.insert(ui->xsec3, ICConfigString::kCS_SECP_Inside_X_Min);
+    editorToConfigIDs_.insert(ui->xsec4, ICConfigString::kCS_SECP_Inside_X_Max);
+    editorToConfigIDs_.insert(ui->xsec1, ICConfigString::kCS_SECP_Outside_X_Min);
+    editorToConfigIDs_.insert(ui->xsec2, ICConfigString::kCS_SECP_Outside_X_Max);
+
+    ICLogInit;
 }
 
 ICMachineFigure::~ICMachineFigure()
@@ -80,3 +88,5 @@ void ICMachineFigure::hideEvent(QHideEvent *e)
 //    ICVirtualHost::GlobalVirtualHost()->SaveSystemConfig();
 //    QMessageBox::information(this, tr("Tips"), tr("Save successfully!"));
 //}
+
+ICLogFunctions(ICMachineFigure)

@@ -2064,7 +2064,7 @@ QRadioButton::indicator:unchecked:disabled
            </widget>
           </item>
           <item row="1" column="6">
-           <widget class="QComboBox" name="servoFlex">
+           <widget class="ICComboBox" name="servoFlex">
             <item>
              <property name="text">
               <string>0-soft</string>
@@ -2165,8 +2165,8 @@ QRadioButton::indicator:unchecked:disabled
   <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroupA"/>
   <buttongroup name="buttonGroupB"/>
-  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroupC"/>
+  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroupD"/>
   <buttongroup name="buttonGroupE"/>
   <buttongroup name="buttonGroupF"/>

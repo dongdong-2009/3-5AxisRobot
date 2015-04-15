@@ -3,6 +3,7 @@
 #include "iclineeditwrapper.h"
 #include "icvirtualhost.h"
 #include "icmold.h"
+#include "icconfigstring.h"
 
 #include <QDebug>
 
@@ -13,6 +14,21 @@ ICHCTimeFrame::ICHCTimeFrame(QWidget *parent) :
     ui->setupUi(this);
 
     InitInterFace();
+    editorToConfigIDs_.insert(ui->verticalineEdit, ICConfigString::kCS_Time_Ver1);
+    editorToConfigIDs_.insert(ui->horizontalLineEdit, ICConfigString::kCS_Time_Hor1);
+    editorToConfigIDs_.insert(ui->vertical2LineEdit, ICConfigString::kCS_Time_Ver2);
+    editorToConfigIDs_.insert(ui->horizontal2LineEdit, ICConfigString::kCS_Time_Hor2);
+    editorToConfigIDs_.insert(ui->mainArmUpEdit, ICConfigString::kCS_Time_MArm_UP);
+    editorToConfigIDs_.insert(ui->mainArmDownEdit, ICConfigString::kCS_Time_MArm_Dw);
+    editorToConfigIDs_.insert(ui->mainArmForwardEdit, ICConfigString::kCS_Time_MArm_FW);
+    editorToConfigIDs_.insert(ui->mainArmBackwardEdit, ICConfigString::kCS_Time_MArm_BW);
+    editorToConfigIDs_.insert(ui->secondaryArmUpLineEdit, ICConfigString::kCS_Time_SArm_UP);
+    editorToConfigIDs_.insert(ui->secondaryArmDownLineEdit, ICConfigString::kCS_Time_SArm_DW);
+    editorToConfigIDs_.insert(ui->secondayGoForwardLineEdit, ICConfigString::kCS_Time_SArm_FW);
+    editorToConfigIDs_.insert(ui->secondayGoBackwardLineEdit, ICConfigString::kCS_Time_SArm_BW);
+    editorToConfigIDs_.insert(ui->comeInEdit, ICConfigString::kCS_Time_Z_BW);
+    editorToConfigIDs_.insert(ui->goOutEdit, ICConfigString::kCS_Time_Z_FW);
+    ICLogInit
 }
 
 ICHCTimeFrame::~ICHCTimeFrame()
@@ -85,3 +101,5 @@ void ICHCTimeFrame::changeEvent(QEvent *e)
         break;
     }
 }
+
+ICLogFunctions(ICHCTimeFrame)
