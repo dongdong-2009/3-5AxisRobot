@@ -649,31 +649,43 @@
      </item>
      <item>
       <layout class="QGridLayout" name="gridLayout">
-       <item row="2" column="4">
-        <widget class="QLabel" name="label_4">
-         <property name="text">
-          <string>mm</string>
+       <item row="1" column="2">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="xRPLatticeLineEdit">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>27</height>
+          </size>
          </property>
         </widget>
        </item>
-       <item row="3" column="4">
-        <widget class="QLabel" name="label_5">
-         <property name="text">
-          <string>mm</string>
+       <item row="2" column="3">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="yRPStepLineEdit">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>27</height>
+          </size>
          </property>
         </widget>
        </item>
-       <item row="1" column="0">
-        <widget class="QLabel" name="label_6">
-         <property name="text">
-          <string>X</string>
+       <item row="1" column="3">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="xRPStepLineEdit">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>27</height>
+          </size>
          </property>
         </widget>
        </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="label_7">
-         <property name="text">
-          <string>Y</string>
+       <item row="3" column="3">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="zRPStepLineEdit">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>27</height>
+          </size>
          </property>
         </widget>
        </item>
@@ -687,7 +699,7 @@
           </widget>
          </item>
          <item>
-          <widget class="ICComboBox" name="countWayBox">
+          <widget class="QComboBox" name="countWayBox">
            <item>
             <property name="text">
              <string>All</string>
@@ -722,42 +734,29 @@
          </item>
         </layout>
        </item>
-       <item row="0" column="2">
-        <widget class="QLabel" name="label_2">
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_6">
          <property name="text">
-          <string>Lattice</string>
+          <string>X</string>
          </property>
         </widget>
        </item>
-       <item row="0" column="3">
-        <widget class="QLabel" name="label_3">
+       <item row="3" column="4">
+        <widget class="QLabel" name="label_5">
          <property name="text">
-          <string>Step</string>
+          <string>mm</string>
          </property>
         </widget>
        </item>
-       <item row="2" column="3">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="yRPStepLineEdit">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>27</height>
-          </size>
+       <item row="1" column="4">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>mm</string>
          </property>
         </widget>
        </item>
-       <item row="1" column="2">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="xRPLatticeLineEdit">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>27</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="3">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="xRPStepLineEdit">
+       <item row="3" column="2">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="zRPLatticeLineEdit">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -776,30 +775,10 @@
          </property>
         </widget>
        </item>
-       <item row="3" column="2">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="zRPLatticeLineEdit">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>27</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="3">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="zRPStepLineEdit">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>27</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="4">
-        <widget class="QLabel" name="label">
+       <item row="0" column="3">
+        <widget class="QLabel" name="label_3">
          <property name="text">
-          <string>mm</string>
+          <string>Step</string>
          </property>
         </widget>
        </item>
@@ -807,6 +786,27 @@
         <widget class="QLabel" name="label_8">
          <property name="text">
           <string>Z</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Lattice</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="4">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>mm</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>Y</string>
          </property>
         </widget>
        </item>
@@ -855,11 +855,6 @@
    <class>ICLineEditWithVirtualNumericKeypad</class>
    <extends>QLineEdit</extends>
    <header>iclineeditwithvirtualnumerickeypad.h</header>
-  </customwidget>
-  <customwidget>
-   <class>ICComboBox</class>
-   <extends>QComboBox</extends>
-   <header>iccombobox.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

@@ -35,6 +35,12 @@ private slots:
 
     void on_zUnit_toggled(bool checked);
 
+    void on_xRPStepLineEdit_textChanged(const QString &arg1);
+
+    void on_yRPStepLineEdit_textChanged(const QString &arg1);
+
+    void on_zRPStepLineEdit_textChanged(const QString &arg1);
+
 private:
     void InitInterface();
     QList<int> GetCurrentStatus_() const;

@@ -129,24 +129,31 @@ void ICStackEditor::showEvent(QShowEvent *e)
             group.seq->setText(tr("Y->Z->X"));
         }
         //        ui->xRPLatticeLineEdit->SetThisIntToThisText(stackParams.at(ICMold::X_Array));
-        qreal multi = qPow(10, STACK_DECIMAL);
-        group.xNum->setText(QString::number(stackParams.at(ICMold::X_Array)));
+        int decimal = 2 - (stackParams.at(ICMold::X_Array) >> 15);
+        qreal multi = qPow(10, decimal);
+        group.xNum->setText(QString::number(stackParams.at(ICMold::X_Array) & 0x7FFF));
         //        ui->xRPCheckBox->setChecked(seqH & 32);
         group.xPosition->setText(seqH & 32 ? tr("RP") : tr("P"));
         //        ui->xRPStepLineEdit->SetThisIntToThisText(stackParams.at(ICMold::X_Gap));
-        group.xStep->setText(QString::number(stackParams.at(ICMold::X_Gap)/ multi, 'f', STACK_DECIMAL));
+        group.xStep->setText(QString::number(stackParams.at(ICMold::X_Gap)/ multi, 'f', decimal));
         //        ui->yRPLatticeLineEdit->SetThisIntToThisText(stackParams.at(ICMold::Y_Array));
-        group.yNum->setText(QString::number(stackParams.at(ICMold::Y_Array)));
+
+        decimal = 2 - (stackParams.at(ICMold::Y_Array) >> 15);
+        multi = qPow(10, decimal);
+        group.yNum->setText(QString::number(stackParams.at(ICMold::Y_Array)& 0x7FFF));
         //                ui->yRPCheckBox->setChecked(seqH & 64);
         group.yPosition->setText(seqH & 64 ? tr("RP") : tr("P"));
         //        ui->yRPStepLineEdit->SetThisIntToThisText(stackParams.at(ICMold::Y_Gap));
-        group.yStep->setText(QString::number(stackParams.at(ICMold::Y_Gap) / multi, 'f', STACK_DECIMAL));
+        group.yStep->setText(QString::number(stackParams.at(ICMold::Y_Gap) / multi, 'f', decimal));
         //        ui->zRPLatticeLineEdit->SetThisIntToThisText(stackParams.at(ICMold::Z_Array));
-        group.zNum->setText(QString::number(stackParams.at(ICMold::Z_Array)));
+
+        decimal = 2 - (stackParams.at(ICMold::Z_Array) >> 15);
+        multi = qPow(10, decimal);
+        group.zNum->setText(QString::number(stackParams.at(ICMold::Z_Array)& 0x7FFF));
         //        ui->zRPCheckBox->setChecked(seqH & 128);
         group.zPosition->setText(seqH & 128 ? tr("RP") : tr("P"));
         //        ui->zRPStepLineEdit->SetThisIntToThisText(stackParams.at(ICMold::Z_Gap));
-        group.zStep->setText(QString::number(stackParams.at(ICMold::Z_Gap) / multi, 'f', STACK_DECIMAL));
+        group.zStep->setText(QString::number(stackParams.at(ICMold::Z_Gap) / multi, 'f', decimal));
     }
     ICInstructionEditorBase::showEvent(e);
 }
