@@ -38,6 +38,8 @@ private slots:
 
     void on_productSave_toggled(bool checked);
 
+//    void OnConfigChange()
+
 private:
     Ui::ICHCProductSettingFrame *ui;
     QList<ICLineEditWrapper*> wrappers_;

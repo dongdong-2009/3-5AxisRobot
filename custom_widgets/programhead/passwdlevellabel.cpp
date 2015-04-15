@@ -74,7 +74,7 @@ void PasswdLevelLabel::PasswdLevelChenged(int level)
     }
 
     setText(newLevel);
-    ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::KCS_User_Changed,
+    ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_User_Changed,
                                     newLevel,
                                     oldLevel);
     emit Levelchenged(currentLevel_);
