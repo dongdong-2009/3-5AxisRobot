@@ -23,6 +23,8 @@ protected:
 
 private:
     Ui::ICStackEditor *ui;
+
+
 };
 
 #endif // ICSTACKEDITOR_H

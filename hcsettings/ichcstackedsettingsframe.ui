@@ -668,7 +668,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QComboBox" name="countWayBox">
+          <widget class="ICComboBox" name="countWayBox">
            <item>
             <property name="text">
              <string>All</string>
@@ -878,17 +878,22 @@
    <extends>QLineEdit</extends>
    <header>iclineeditwithvirtualnumerickeypad.h</header>
   </customwidget>
+  <customwidget>
+   <class>ICComboBox</class>
+   <extends>QComboBox</extends>
+   <header>iccombobox.h</header>
+  </customwidget>
  </customwidgets>
  <resources/>
  <connections/>
  <buttongroups>
+  <buttongroup name="buttonGroup_8"/>
+  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroup_3"/>
   <buttongroup name="buttonGroup_4"/>
   <buttongroup name="buttonGroup_5"/>
   <buttongroup name="buttonGroup_6"/>
   <buttongroup name="buttonGroup_7"/>
-  <buttongroup name="buttonGroup_8"/>
-  <buttongroup name="buttonGroup"/>
  </buttongroups>
 </ui>

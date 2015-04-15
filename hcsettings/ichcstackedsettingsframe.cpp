@@ -5,6 +5,7 @@
 #include "icvirtualhost.h"
 #include "config.h"
 #include <QTimer>
+#include "icconfigstring.h"
 
 #include <QDebug>
 
@@ -28,6 +29,24 @@ ICHCStackedSettingsFrame::ICHCStackedSettingsFrame(QWidget *parent) :
     ui->yUnit_2->hide();
     ui->zUnit->hide();
     ui->zUnit_2->hide();
+
+    editorToConfigIDs_.insert(ui->buttonGroup, ICConfigString::kCS_STACK_Group1_Seq);
+    editorToConfigIDs_.insert(ui->buttonGroup_3, ICConfigString::kCS_STACK_Group1_X_Dir);
+    editorToConfigIDs_.insert(ui->buttonGroup_4, ICConfigString::kCS_STACK_Group1_Y_Dir);
+    editorToConfigIDs_.insert(ui->buttonGroup_5, ICConfigString::kCS_STACK_Group1_Z_Dir);
+    editorToConfigIDs_.insert(ui->xRPLatticeLineEdit, ICConfigString::kCS_STACK_Group1_X_Number);
+    editorToConfigIDs_.insert(ui->yRPLatticeLineEdit, ICConfigString::kCS_STACK_Group1_Y_Number);
+    editorToConfigIDs_.insert(ui->zRPLatticeLineEdit, ICConfigString::kCS_STACK_Group1_Z_Number);
+    editorToConfigIDs_.insert(ui->xRPStepLineEdit, ICConfigString::kCS_STACK_Group1_X_Space);
+    editorToConfigIDs_.insert(ui->yRPStepLineEdit, ICConfigString::kCS_STACK_Group1_Y_Space);
+    editorToConfigIDs_.insert(ui->zRPStepLineEdit, ICConfigString::kCS_STACK_Group1_Z_Space);
+    editorToConfigIDs_.insert(ui->subArm, ICConfigString::kCS_STACK_Group1_Is_SArm);
+    editorToConfigIDs_.insert(ui->countWayBox, ICConfigString::kCS_STACK_Group1_Count_Way);
+    ICLogInit
+
+
+
+
 }
 
 ICHCStackedSettingsFrame::~ICHCStackedSettingsFrame()
@@ -100,6 +119,12 @@ void ICHCStackedSettingsFrame::InitInterface()
 
 void ICHCStackedSettingsFrame::RefreshStackParams_(int group)
 {
+    QMap<QObject*, int>::iterator p = editorToConfigIDs_.begin();
+    while(p != editorToConfigIDs_.end())
+    {
+        p.key()->blockSignals(true);
+        ++p;
+    }
     QList<int> stackParams = ICMold::CurrentMold()->StackParams(group);
     int seq = stackParams.at(ICMold::Seq);
     int seqH;
@@ -141,20 +166,13 @@ void ICHCStackedSettingsFrame::RefreshStackParams_(int group)
     ui->zRPStepLineEdit->SetThisIntToThisText(stackParams.at(ICMold::Z_Gap));
     ui->countWayBox->setCurrentIndex(ICMold::CurrentMold()->MoldParam(static_cast<ICMold::ICMoldParam>(currentPage_)));
     ui->subArm->setChecked(stackParams.at(ICMold::Seq) >> 15);
-    //    switch(stackParams.at(ICMold::Seq))
-//    {
-//    case 64:
-//        ui->xzyCheckBox->setChecked(true);
-//        break;
-//    case 128:
-//        break;
-//    case 2:
-//        ui->zxyCheckBox->setChecked(true);
-//        break;
-//    case 3:
-//        ui->yzxCheckBox->setChecked(true);
-    //        ui->yxzCheckBox->setChecked(true);
-//    }
+
+    p = editorToConfigIDs_.begin();
+    while(p != editorToConfigIDs_.end())
+    {
+        p.key()->blockSignals(false);
+        ++p;
+    }
 }
 
 QList<int> ICHCStackedSettingsFrame::GetCurrentStatus_() const
@@ -335,4 +353,36 @@ void ICHCStackedSettingsFrame::on_zRPStepLineEdit_textChanged(const QString &arg
         ui->zRPStepLineEdit->setText(QString::number(v, 'f', 2));
         ui->zRPStepLineEdit->SetDecimalPlaces(2);
     }
+}
+
+void ICHCStackedSettingsFrame::OnConfigChanged(QObject *w, const QString& newV, const QString& oldV)
+{
+    ICAlarmFrame::Instance()->OnActionTriggered(editorToConfigIDs_.value(w, ICConfigString::kCS_Err) + currentPage_,
+                                                newV,
+                                                oldV);
+}
+
+void ICHCStackedSettingsFrame::OnConfigChanged(const QString &text)
+{
+    ICLineEditWithVirtualNumericKeypad* edit = qobject_cast<ICLineEditWithVirtualNumericKeypad*>(sender());
+    OnConfigChanged(edit, text, edit->LastValue());
+}
+
+void ICHCStackedSettingsFrame::OnConfigChanged(int v, int ov)
+{
+    ICButtonGroup* icbg = qobject_cast<ICButtonGroup*>(sender());
+    QButtonGroup* bg = icbg->ButtongGroup();
+    OnConfigChanged(bg, bg->button(v)->text(), bg->button(ov)->text());
+}
+
+void ICHCStackedSettingsFrame::OnConfigChanged(int v)
+{
+    ICComboBox* edit = qobject_cast<ICComboBox*>(sender());
+    OnConfigChanged(edit, edit->currentText(), edit->itemText(edit->LastValue()));
+}
+
+void ICHCStackedSettingsFrame::OnConfigChanged(bool b)
+{
+    QCheckBox* edit = qobject_cast<QCheckBox*>(sender());
+    OnConfigChanged(edit, QString::number(b), QString::number(!b));
 }
