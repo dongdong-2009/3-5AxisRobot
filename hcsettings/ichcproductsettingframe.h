@@ -6,7 +6,7 @@
 #include <QButtonGroup>
 #include <QSignalMapper>
 #include <QMap>
-#include "icconfigstring.h"
+
 class ICLineEditWrapper;
 
 namespace Ui {

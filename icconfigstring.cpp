@@ -37,6 +37,25 @@ QString ICConfigString::ConfigString(int configID)
         case kCS_PRD_Alarm_Occasion_When_Get_Fail: return QT_TR_NOOP("kCS_PRD_Alarm_Occasion_When_Get_Fail");
         case kCS_PRD_Transport_Count_Way: return QT_TR_NOOP("kCS_PRD_Transport_Count_Way");
         case kCS_PRD_Save_Count: return QT_TR_NOOP("kCS_PRD_Save_Count");
+        case kCS_RUN_Tolerance: return QT_TR_NOOP("kCS_RUN_Tolerance");
+        case kCS_RUN_Distance_X1_X2: return QT_TR_NOOP("kCS_RUN_Distance_X1_X2");
+        case kCS_RUN_Acc_Time_X1: return QT_TR_NOOP("kCS_RUN_Acc_Time_X1");
+        case kCS_RUN_Acc_Time_Y1: return QT_TR_NOOP("kCS_RUN_Acc_Time_Y1");
+        case kCS_RUN_Acc_Time_Z: return QT_TR_NOOP("kCS_RUN_Acc_Time_Z");
+        case kCS_RUN_Acc_Time_X2: return QT_TR_NOOP("kCS_RUN_Acc_Time_X2");
+        case kCS_RUN_Acc_Time_Y2: return QT_TR_NOOP("kCS_RUN_Acc_Time_Y2");
+        case kCS_RUN_Acc_Time_A: return QT_TR_NOOP("kCS_RUN_Acc_Time_A");
+        case kCS_RUN_Acc_Time_B: return QT_TR_NOOP("kCS_RUN_Acc_Time_B");
+        case kCS_RUN_Acc_Time_C: return QT_TR_NOOP("kCS_RUN_Acc_Time_C");
+        case kCS_RUN_Speed_Limit_X1: return QT_TR_NOOP("kCS_RUN_Speed_Limit_X1");
+        case kCS_RUN_Speed_Limit_Y1: return QT_TR_NOOP("kCS_RUN_Speed_Limit_Y1");
+        case kCS_RUN_Speed_Limit_Z: return QT_TR_NOOP("kCS_RUN_Speed_Limit_Z");
+        case kCS_RUN_Speed_Limit_X2: return QT_TR_NOOP("kCS_RUN_Speed_Limit_X2");
+        case kCS_RUN_Speed_Limit_Y2: return QT_TR_NOOP("kCS_RUN_Speed_Limit_Y2");
+        case kCS_RUN_Speed_Limit_A: return QT_TR_NOOP("kCS_RUN_Speed_Limit_A");
+        case kCS_RUN_Speed_Limit_B: return QT_TR_NOOP("kCS_RUN_Speed_Limit_B");
+        case kCS_RUN_Speed_Limit_C: return QT_TR_NOOP("kCS_RUN_Speed_Limit_C");
+        case kCS_Err: return QT_TR_NOOP("kCS_Err");
         default: return QT_TR_NOOP("No IMPL");
     }
 }

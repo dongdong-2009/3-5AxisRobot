@@ -6,6 +6,7 @@
 #include "icvirtualhost.h"
 #include "icvirtualkey.h"
 #include "icparameterssave.h"
+#include "icconfigstring.h"
 
 
 ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :

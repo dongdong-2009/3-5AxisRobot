@@ -6,7 +6,8 @@
 
 #include "icalarmframe.h"
 #include "icbuttongroup.h"
-
+#include "iccombobox.h"
+#include <QCheckBox>
 
 
 #define ICLogInit \
@@ -117,6 +118,24 @@ public:
         kCS_PRD_Transport_Count_Way,
         kCS_PRD_Save_Count,
 
+        kCS_RUN_Tolerance,
+        kCS_RUN_Distance_X1_X2,
+        kCS_RUN_Acc_Time_X1,
+        kCS_RUN_Acc_Time_Y1,
+        kCS_RUN_Acc_Time_Z,
+        kCS_RUN_Acc_Time_X2,
+        kCS_RUN_Acc_Time_Y2,
+        kCS_RUN_Acc_Time_A,
+        kCS_RUN_Acc_Time_B,
+        kCS_RUN_Acc_Time_C,
+        kCS_RUN_Speed_Limit_X1,
+        kCS_RUN_Speed_Limit_Y1,
+        kCS_RUN_Speed_Limit_Z,
+        kCS_RUN_Speed_Limit_X2,
+        kCS_RUN_Speed_Limit_Y2,
+        kCS_RUN_Speed_Limit_A,
+        kCS_RUN_Speed_Limit_B,
+        kCS_RUN_Speed_Limit_C,
         kCS_Err,
 
     };
