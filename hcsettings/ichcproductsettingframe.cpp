@@ -7,12 +7,13 @@
 #include "icvirtualkey.h"
 #include "icparameterssave.h"
 
+
 ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
     QFrame(parent),
     ui(new Ui::ICHCProductSettingFrame)
 {
     ui->setupUi(this);
-    buttongroup_ = new QButtonGroup ;
+    buttongroup_ = ui->buttonGroup ;
     InitCheckBox();
     ui->productLineEdit->setValidator(new QIntValidator(0, 65535, ui->productLineEdit));
     ui->alarmTimesEdit->setValidator(new QIntValidator(0, 65535, ui->alarmTimesEdit));
@@ -84,6 +85,18 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
     ui->productSave->blockSignals(true);
     ui->productSave->setChecked(ICParametersSave::Instance()->IsProductSave());
     ui->productSave->blockSignals(false);
+
+    editorToConfigIDs_.insert(ui->productLineEdit, ICConfigString::kCS_PRD_Number);
+    editorToConfigIDs_.insert(ui->waitTimeEdit, ICConfigString::kCS_PRD_Wait_OM_Limit);
+    editorToConfigIDs_.insert(ui->alarmTimesEdit, ICConfigString::kCS_PRD_Alarm_Time);
+    editorToConfigIDs_.insert(ui->recycleTimeEdit, ICConfigString::kCS_PRD_Cycle_Time);
+    editorToConfigIDs_.insert(ui->buttonGroup, ICConfigString::kCS_PRD_Fixture_Define);
+    editorToConfigIDs_.insert(ui->countUnitBox, ICConfigString::kCS_PRD_Transport_Count_Way);
+    editorToConfigIDs_.insert(ui->productSave, ICConfigString::kCS_PRD_Save_Count);
+    editorToConfigIDs_.insert(ui->getFailWay, ICConfigString::kCS_PRD_Alarm_Occasion_When_Get_Fail);
+
+    ICLogInit;
+
 }
 
 ICHCProductSettingFrame::~ICHCProductSettingFrame()
@@ -250,3 +263,5 @@ void ICHCProductSettingFrame::on_productSave_toggled(bool checked)
 {
     ICParametersSave::Instance()->SetProductSave(checked);
 }
+
+ICLogFunctions(ICHCProductSettingFrame)

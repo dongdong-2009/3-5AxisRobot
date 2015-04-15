@@ -2,6 +2,86 @@
 #define ICCONFIGSTRING_H
 
 #include <QString>
+#include <QMap>
+
+#include "icalarmframe.h"
+#include "icbuttongroup.h"
+
+
+
+#define ICLogInit \
+    QMap<QObject*, int>::iterator p = editorToConfigIDs_.begin();\
+    ICLineEditWithVirtualNumericKeypad* le;\
+    ICComboBox* cb;\
+    QButtonGroup* bg;\
+    QCheckBox* cbox;\
+    while(p != editorToConfigIDs_.end())\
+    {\
+        le = qobject_cast<ICLineEditWithVirtualNumericKeypad*>(p.key());\
+        if(le != NULL)\
+        {\
+            connect(le, SIGNAL(textChanged(QString)), SLOT(OnConfigChanged(QString)));\
+            ++p;\
+            continue;\
+        }\
+        cb = qobject_cast<ICComboBox*>(p.key());\
+        if(cb != NULL)\
+        {\
+            connect(cb, SIGNAL(currentIndexChanged(int)), SLOT(OnConfigChanged(int)));\
+            ++p;\
+            continue;\
+        }\
+        bg = qobject_cast<QButtonGroup*>(p.key());\
+        if(bg != NULL)\
+        {\
+            ICButtonGroup* icbg = new ICButtonGroup(bg, bg->parent());\
+            connect(icbg, SIGNAL(buttonClicked(int, int)), SLOT(OnConfigChanged(int, int)));\
+            ++p;\
+            continue;\
+        }\
+        cbox = qobject_cast<QCheckBox*>(p.key());\
+        if(cbox != NULL)\
+        {\
+            connect(cbox, SIGNAL(toggled(bool)), SLOT(OnConfigChanged(bool)));\
+            ++p;\
+            continue;\
+        }\
+    }
+
+
+#define ICLogFunctions(cl) \
+    void cl::OnConfigChanged(QObject *w, const QString& newV, const QString& oldV)\
+    {\
+        ICAlarmFrame::Instance()->OnActionTriggered(editorToConfigIDs_.value(w, ICConfigString::kCS_Err),\
+                                                    newV,\
+                                                    oldV);\
+    }\
+    \
+    void cl::OnConfigChanged(const QString &text)\
+    {\
+        ICLineEditWithVirtualNumericKeypad* edit = qobject_cast<ICLineEditWithVirtualNumericKeypad*>(sender());\
+        OnConfigChanged(edit, text, edit->LastValue());\
+    }\
+    \
+    void cl::OnConfigChanged(int v, int ov)\
+    {\
+        ICButtonGroup* icbg = qobject_cast<ICButtonGroup*>(sender());\
+        QButtonGroup* bg = icbg->ButtongGroup();\
+        OnConfigChanged(bg, bg->button(v)->text(), bg->button(ov)->text());\
+    }\
+    \
+    void cl::OnConfigChanged(int v)\
+    {\
+        ICComboBox* edit = qobject_cast<ICComboBox*>(sender());\
+        OnConfigChanged(edit, edit->currentText(), edit->itemText(edit->LastValue()));\
+    }\
+\
+    void cl::OnConfigChanged(bool b)\
+    {\
+        QCheckBox* edit = qobject_cast<QCheckBox*>(sender());\
+        OnConfigChanged(edit, QString::number(b), QString::number(!b));\
+    }
+
 
 class ICConfigString
 {
@@ -27,6 +107,17 @@ public:
         kCS_SIG_Mid_Mold,
         kCS_SIG_EJE_Linked,
         kCS_SIG_Auto,
+
+        kCS_PRD_Number,
+        kCS_PRD_Wait_OM_Limit,
+        kCS_PRD_Alarm_Time,
+        kCS_PRD_Cycle_Time,
+        kCS_PRD_Fixture_Define,
+        kCS_PRD_Alarm_Occasion_When_Get_Fail,
+        kCS_PRD_Transport_Count_Way,
+        kCS_PRD_Save_Count,
+
+        kCS_Err,
 
     };
 

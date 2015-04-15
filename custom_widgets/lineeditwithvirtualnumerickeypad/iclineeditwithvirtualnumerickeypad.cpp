@@ -39,6 +39,7 @@ int ICLineEditWithVirtualNumericKeypad::TransThisTextToThisInt() const
 
 void ICLineEditWithVirtualNumericKeypad::SetThisIntToThisText(int inputNum)
 {
+    oldVal_ = this->text();
     this->setText(ICParameterConversion::TransThisIntToThisText(inputNum, this->DecimalPlaces()));
 }
 
@@ -112,6 +113,7 @@ bool ICLineEditWithVirtualNumericKeypad::SetCurrentText(const QString &currentTe
     {
         return true;
     }
+    oldVal_ = this->text();
     QIntValidator * intValidator = (QIntValidator *)this->validator();
     if(intValidator != NULL)
     {

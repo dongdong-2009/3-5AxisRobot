@@ -60,17 +60,17 @@ ICHCDetectionFrame::ICHCDetectionFrame(QWidget *parent) :
     editorToLogID_.insert(ui->detectFixture2ComboBox, ICConfigString::kCS_SIG_Fixture2);
     editorToLogID_.insert(ui->detectFixture3ComboBox, ICConfigString::kCS_SIG_Fixture3);
     editorToLogID_.insert(ui->detectFixture4ComboBox, ICConfigString::kCS_SIG_Fixture4);
-    editorToLogID_.insert(ui->detectIMMComboBox, ICConfigString::KCS_SIG_IMM_Stop);
-    editorToLogID_.insert(ui->detectMidMoldComboBox, ICConfigString::KCS_SIG_Mid_Mold);
-    editorToLogID_.insert(ui->detectOriginBox, ICConfigString::KCS_SIG_Origin);
-    editorToLogID_.insert(ui->detectPositionBox, ICConfigString::KCS_SIG_Z_Move_Pos);
-    editorToLogID_.insert(ui->detectPressureComboBox, ICConfigString::KCS_SIG_Press);
-    editorToLogID_.insert(ui->detectSecurityComboBox, ICConfigString::KCS_SIG_SEDoor);
-    editorToLogID_.insert(ui->detectSucker1ComboBox, ICConfigString::KCS_SIG_CM_Limit);
-    editorToLogID_.insert(ui->detectSucker2ComboBox, ICConfigString::KCS_SIG_Auto);
-    editorToLogID_.insert(ui->ejectionLinkLockBox, ICConfigString::KCS_SIG_EJE_Linked);
-    editorToLogID_.insert(ui->originPositionBox, ICConfigString::KCS_SIG_Y_Origin_Pos);
-    editorToLogID_.insert(ui->standbyPositionBox, ICConfigString::KCS_SIG_Hor_Standby);
+    editorToLogID_.insert(ui->detectIMMComboBox, ICConfigString::kCS_SIG_IMM_Stop);
+    editorToLogID_.insert(ui->detectMidMoldComboBox, ICConfigString::kCS_SIG_Mid_Mold);
+    editorToLogID_.insert(ui->detectOriginBox, ICConfigString::kCS_SIG_Origin);
+    editorToLogID_.insert(ui->detectPositionBox, ICConfigString::kCS_SIG_Z_Move_Pos);
+    editorToLogID_.insert(ui->detectPressureComboBox, ICConfigString::kCS_SIG_Press);
+    editorToLogID_.insert(ui->detectSecurityComboBox, ICConfigString::kCS_SIG_SEDoor);
+    editorToLogID_.insert(ui->detectSucker1ComboBox, ICConfigString::kCS_SIG_CM_Limit);
+    editorToLogID_.insert(ui->detectSucker2ComboBox, ICConfigString::kCS_SIG_Auto);
+    editorToLogID_.insert(ui->ejectionLinkLockBox, ICConfigString::kCS_SIG_EJE_Linked);
+    editorToLogID_.insert(ui->originPositionBox, ICConfigString::kCS_SIG_Y_Origin_Pos);
+    editorToLogID_.insert(ui->standbyPositionBox, ICConfigString::kCS_SIG_Hor_Standby);
 
     QMap<QWidget*, int>::iterator p = editorToLogID_.begin();
     while(p != editorToLogID_.end())
