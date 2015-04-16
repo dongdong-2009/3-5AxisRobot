@@ -3,6 +3,7 @@
 
 #include <QString>
 #include <QMap>
+#include <QObject>
 
 #include "icalarmframe.h"
 #include "icbuttongroup.h"
@@ -85,10 +86,10 @@
     }
 
 
-class ICConfigString
+class ICConfigString:public QObject
 {
+    Q_OBJECT
 public:
-
     enum {
         kCS_Global_Speed,
         kCS_User_Changed,

@@ -13,8 +13,8 @@ print(configIDs)
 toGen = "//#AUTO GEN BEGIN \nQString ICConfigString::ConfigString(int configID)\n{\n"
 toGen += "    switch (configID) \n    {\n"
 for id in configIDs:
-  toGen += '        case {0}: return QT_TR_NOOP(\"{0}\");\n'.format(id[:-1])
-toGen += '        default: return QT_TR_NOOP(\"No IMPL\");\n    }\n}\n'
+  toGen += '        case {0}: return tr(\"{0}\");\n'.format(id[:-1])
+toGen += '        default: return tr(\"No IMPL\");\n    }\n}\n'
 toGen += "//#AUTO GEN END"
 
 cppFileContent = open(fileName + ".cpp").read()
