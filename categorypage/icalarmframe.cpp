@@ -106,6 +106,7 @@ void ICAlarmFrame::ReadAlarmInfoInFile()
     for(int i = 0; i != alarms_.size(); ++i)
     {
         optionList = alarms_.at(i).split(' ');
+        if(optionList.size() < 2) continue;
         if(optionList.size() == 2)
         {
             optionList.append(tr("no-solve"));
