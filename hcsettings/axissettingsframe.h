@@ -3,6 +3,7 @@
 
 #include <QFrame>
 #include <QTimer>
+#include <QMap>
 
 class QIntValidator;
 
@@ -49,7 +50,14 @@ private slots:
     void on_testPushButton_clicked();
     void StatusRefresh();
     void LevelChanged(int level);
-
+private slots:
+    void OnConfigChanged(QObject* w, const QString& newV, const QString& oldV);
+    void OnConfigChanged(const QString& text);
+    void OnConfigChanged(int v);
+    void OnConfigChanged(int v, int ov);
+    void OnConfigChanged(bool b);
+private:
+    QMap<QObject*, int> editorToConfigIDs_;
 
 };
 

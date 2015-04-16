@@ -300,6 +300,15 @@ public:
         kCS_PANEL_Register_Extent,
         kCS_PANEL_Config_Save,
 
+        kCS_CARE_START = 1000,
+        kCS_CARE_Item1_Cycle,
+        kCS_CARE_Item2_Cycle,
+        kCS_CARE_Item3_Cycle,
+        kCS_CARE_Item4_Cycle,
+        kCS_CARE_Item5_Cycle,
+        kCS_CARE_Item6_Cycle,
+        kCS_CARE_Item7_Cycle,
+
 
         kCS_ERR_START = 10000,
         kCS_Err,

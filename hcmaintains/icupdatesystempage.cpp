@@ -24,6 +24,7 @@
 #include <QRegExp>
 #include <QSettings>
 #include <QTextStream>
+#include "icconfigstring.h"
 
 //ICUpdateSystemPage *ICUpdateSystemPage = NULL;
 
@@ -82,6 +83,7 @@ ICUpdateSystemPage::ICUpdateSystemPage(QWidget *parent) :
     {
         QPushButton* btn = new QPushButton(tr("Restart"));
         ICLineEditWithVirtualNumericKeypad* cycleEditor = new ICLineEditWithVirtualNumericKeypad();
+        editorToConfigIDs_.insert(cycleEditor, ICConfigString::kCS_CARE_Item1_Cycle + i);
         cycleEditor->setValidator(vd);
         cycleEditor->SetThisIntToThisText(ps->CareCycle(i));
         restartBtns_.append(btn);
@@ -96,6 +98,8 @@ ICUpdateSystemPage::ICUpdateSystemPage(QWidget *parent) :
                 SIGNAL(clicked()),
                 SLOT(OnRestartBtnClicked()));
     }
+
+    ICLogInit
 
 }
 
@@ -506,3 +510,5 @@ void ICUpdateSystemPage::OnRestartBtnClicked()
     ui->careTable->item(itemIndex, 1)->setText(QString::number(QDate::currentDate().daysTo(ps->NextCycle(itemIndex))));
     ui->careTable->item(itemIndex, 2)->setText(ps->NextCycle(itemIndex).toString("yyyy/MM/dd"));
 }
+
+ICLogFunctions(ICUpdateSystemPage)

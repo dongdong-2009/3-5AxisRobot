@@ -7,6 +7,7 @@
 #include "icvirtualhost.h"
 #include "icparameterssave.h"
 #include "icprogramheadframe.h"
+#include "icconfigstring.h"
 
 AxisSettingsFrame::AxisSettingsFrame(QWidget *parent) :
     QFrame(parent),
@@ -34,6 +35,14 @@ AxisSettingsFrame::AxisSettingsFrame(QWidget *parent) :
     connect(&refreshTimer_,
             SIGNAL(timeout()),
             SLOT(StatusRefresh()));
+
+    editorToConfigIDs_.insert(ui->mechanicalLengthLineEdit, ICConfigString::kCS_AXIS_Length_X1);
+    editorToConfigIDs_.insert(ui->maximumDisplacementLineEdit, ICConfigString::kCS_AXIS_Move_Limit_X1);
+    editorToConfigIDs_.insert(ui->internalSecurityZoneLineEdit, ICConfigString::kCS_AXIS_Min_X1);
+    editorToConfigIDs_.insert(ui->externalSecurityZoneLineEdit, ICConfigString::kCS_AXIS_Max_X1);
+    editorToConfigIDs_.insert(ui->distanceRotationEdit, ICConfigString::kCS_AXIS_Rotate_X1);
+
+    ICLogInit
 }
 
 AxisSettingsFrame::~AxisSettingsFrame()
@@ -207,6 +216,12 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
     {
         return;
     }
+    QMap<QObject*, int>::iterator p = editorToConfigIDs_.begin();
+    while(p != editorToConfigIDs_.end())
+    {
+        p.key()->blockSignals(true);
+        ++p;
+    }
     ui->mechanicalLengthLineEdit->SetThisIntToThisText(host->SystemParameter(machineLangth).toInt());
     ui->maximumDisplacementLineEdit->SetThisIntToThisText(host->SystemParameter(maxLangth).toInt());
     ui->internalSecurityZoneLineEdit->SetThisIntToThisText(host->SystemParameter(iSafe).toInt());
@@ -218,6 +233,12 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
     maxMoveValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
     maxSecValidator_->setTop(maxMoveValidator_->top());
     minSecValidator_->setTop(maxMoveValidator_->top());
+    p = editorToConfigIDs_.begin();
+    while(p != editorToConfigIDs_.end())
+    {
+        p.key()->blockSignals(false);
+        ++p;
+    }
 //    ui->maximumDisplacementLineEdit->setValidator();
 }
 
@@ -409,6 +430,7 @@ void AxisSettingsFrame::on_saveToolButton_clicked()
         host->SaveAxisParam(currentAxis_);
 //        host->ReConfigure();
         QMessageBox::information(this, tr("Information"), tr("Save Successfully!"));
+        ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_AXIS_Config_Save, tr("Save"), tr(""));
     }
 }
 
@@ -582,3 +604,36 @@ void AxisSettingsFrame::LevelChanged(int level)
         ui->saveToolButton->setEnabled(false);
     }
 }
+
+void AxisSettingsFrame::OnConfigChanged(QObject *w, const QString& newV, const QString& oldV)
+{
+    ICAlarmFrame::Instance()->OnActionTriggered(editorToConfigIDs_.value(w, ICConfigString::kCS_Err) + currentAxis_,
+                                                newV,
+                                                oldV);
+}
+
+void AxisSettingsFrame::OnConfigChanged(const QString &text)
+{
+    ICLineEditWithVirtualNumericKeypad* edit = qobject_cast<ICLineEditWithVirtualNumericKeypad*>(sender());
+    OnConfigChanged(edit, text, edit->LastValue());
+}
+
+void AxisSettingsFrame::OnConfigChanged(int v, int ov)
+{
+    ICButtonGroup* icbg = qobject_cast<ICButtonGroup*>(sender());
+    QButtonGroup* bg = icbg->ButtongGroup();
+    OnConfigChanged(bg, bg->button(v)->text(), bg->button(ov)->text());
+}
+
+void AxisSettingsFrame::OnConfigChanged(int v)
+{
+    ICComboBox* edit = qobject_cast<ICComboBox*>(sender());
+    OnConfigChanged(edit, edit->currentText(), edit->itemText(edit->LastValue()));
+}
+
+void AxisSettingsFrame::OnConfigChanged(bool b)
+{
+    QCheckBox* edit = qobject_cast<QCheckBox*>(sender());
+    OnConfigChanged(edit, QString::number(b), QString::number(!b));
+}
+

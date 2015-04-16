@@ -193,14 +193,14 @@
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="107"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="116"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="123"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="132"/>
         <source>Internal security zone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="133"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="151"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="124"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="133"/>
         <source>External security zone</source>
         <translation type="unfinished"></translation>
     </message>
@@ -233,8 +233,8 @@
         <location filename="hcsettings/axissettingsframe_5.ui" line="224"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="243"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="316"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="83"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="84"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="92"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="93"/>
         <source>mm</source>
         <translation type="unfinished"></translation>
     </message>
@@ -275,61 +275,66 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="94"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="136"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="103"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="145"/>
         <source>Min pos inside mold</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="95"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="137"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="104"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="146"/>
         <source>Max pos inside mold</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="108"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="149"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="117"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="158"/>
         <source>Max standby pos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="109"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="150"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="118"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="159"/>
         <source>Leave origin pos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="166"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="183"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="198"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="175"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="192"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="207"/>
         <source>Transeve security zone(Less)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="167"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="184"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="199"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="176"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="193"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="208"/>
         <source>Transeve security zone(Lagger)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="168"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="169"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="185"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="186"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="200"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="201"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="177"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="178"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="194"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="195"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="209"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="210"/>
         <source>degree</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="411"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="432"/>
         <source>Information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="411"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="432"/>
         <source>Save Successfully!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/axissettingsframe.cpp" line="433"/>
+        <source>Save</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -838,17 +843,17 @@ Infomation</source>
         <location filename="categorypage/icalarmframe.cpp" line="116"/>
         <location filename="categorypage/icalarmframe.cpp" line="213"/>
         <location filename="categorypage/icalarmframe.cpp" line="215"/>
-        <location filename="categorypage/icalarmframe.cpp" line="286"/>
+        <location filename="categorypage/icalarmframe.cpp" line="309"/>
         <source>no-solve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.cpp" line="345"/>
+        <location filename="categorypage/icalarmframe.cpp" line="368"/>
         <source>%1    %2[%3]    from    %4 to %5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.cpp" line="354"/>
+        <location filename="categorypage/icalarmframe.cpp" line="377"/>
         <source>%1    %2[%3]    %4</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1939,11 +1944,46 @@ Infomation</source>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="204"/>
-        <source>kCS_Err</source>
+        <source>kCS_CARE_Item1_Cycle</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="205"/>
+        <source>kCS_CARE_Item2_Cycle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="206"/>
+        <source>kCS_CARE_Item3_Cycle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="207"/>
+        <source>kCS_CARE_Item4_Cycle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="208"/>
+        <source>kCS_CARE_Item5_Cycle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="209"/>
+        <source>kCS_CARE_Item6_Cycle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="210"/>
+        <source>kCS_CARE_Item7_Cycle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="211"/>
+        <source>kCS_Err</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="212"/>
         <source>No IMPL</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3561,56 +3601,56 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="24"/>
-        <location filename="hcsettings/ichcsettingsframe.cpp" line="75"/>
+        <location filename="hcsettings/ichcsettingsframe.cpp" line="67"/>
         <source>X1 Axis</source>
         <oldsource>Y Axis</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="25"/>
-        <location filename="hcsettings/ichcsettingsframe.cpp" line="76"/>
+        <location filename="hcsettings/ichcsettingsframe.cpp" line="68"/>
         <source>Y1 Axis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="26"/>
-        <location filename="hcsettings/ichcsettingsframe.cpp" line="77"/>
+        <location filename="hcsettings/ichcsettingsframe.cpp" line="69"/>
         <source>Z Axis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="27"/>
-        <location filename="hcsettings/ichcsettingsframe.cpp" line="78"/>
+        <location filename="hcsettings/ichcsettingsframe.cpp" line="70"/>
         <source>X2 Axis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="28"/>
-        <location filename="hcsettings/ichcsettingsframe.cpp" line="79"/>
+        <location filename="hcsettings/ichcsettingsframe.cpp" line="71"/>
         <source>Y2 Axis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="29"/>
-        <location filename="hcsettings/ichcsettingsframe.cpp" line="80"/>
+        <location filename="hcsettings/ichcsettingsframe.cpp" line="72"/>
         <source>A Axis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="30"/>
-        <location filename="hcsettings/ichcsettingsframe.cpp" line="81"/>
+        <location filename="hcsettings/ichcsettingsframe.cpp" line="73"/>
         <source>B Axis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="31"/>
-        <location filename="hcsettings/ichcsettingsframe.cpp" line="82"/>
+        <location filename="hcsettings/ichcsettingsframe.cpp" line="74"/>
         <source>C Axis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="32"/>
-        <location filename="hcsettings/ichcsettingsframe.cpp" line="83"/>
+        <location filename="hcsettings/ichcsettingsframe.cpp" line="75"/>
         <source>Figure</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8127,8 +8167,8 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="313"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="83"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="135"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="84"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="139"/>
         <source>Restart</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8168,66 +8208,66 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="70"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="128"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="71"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="132"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="71"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="129"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="72"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="133"/>
         <source>Create Time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="188"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="365"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="192"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="369"/>
         <source>System Updating...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="218"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="222"/>
         <source>No available New SuperPassward</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="220"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="224"/>
         <source>New SuperPassward</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="456"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="460"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="327"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="331"/>
         <source>tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="327"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="331"/>
         <source>Update Host Successful!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="394"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="398"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="394"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="398"/>
         <source>USB is not exist!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="457"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="461"/>
         <source>Old password is wrong</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="464"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="475"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="468"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="479"/>
         <source>Scanning...</source>
         <translation type="unfinished"></translation>
     </message>

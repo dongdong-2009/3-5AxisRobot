@@ -255,6 +255,29 @@ void ICAlarmFrame::OnCurrentLanguageChanged()
     ui->alarmHistoryTableWidget->clearContents();
     ui->alarmHistoryTableWidget->setRowCount(0);
     ReadAlarmInfoInFile();
+    ui->logTable->clearContents();
+    ui->logTable->setRowCount(0);
+    QFile modifyLogFile(ModifyLogFileName);
+    QTextStream ts(&modifyLogFile);
+    if(modifyLogFile.open(QFile::ReadOnly | QFile::Text))
+    {
+        QString log = ts.readAll();
+        modifyLogFile.close();
+        QStringList logs = log.split('\n', QString::SkipEmptyParts);
+        QStringList logItems;
+        for(int i = 0; i != logs.size(); ++i)
+        {
+            logItems = logs.at(i).split(',');
+            if(logItems.size() != 4)
+                continue;
+
+            AppendNewLogInTable(logItems.at(0),
+                                logItems.at(1).toUInt(),
+                                logItems.at(2),
+                                logItems.at(3));
+        }
+    }
+
 }
 
 void ICAlarmFrame::on_alarmHistoryTableWidget_clicked(QModelIndex index)

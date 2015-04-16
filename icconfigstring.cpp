@@ -201,6 +201,13 @@ QString ICConfigString::ConfigString(int configID)
         case kCS_PANEL_Function_Extent: return tr("kCS_PANEL_Function_Extent");
         case kCS_PANEL_Register_Extent: return tr("kCS_PANEL_Register_Extent");
         case kCS_PANEL_Config_Save: return tr("kCS_PANEL_Config_Save");
+        case kCS_CARE_Item1_Cycle: return tr("kCS_CARE_Item1_Cycle");
+        case kCS_CARE_Item2_Cycle: return tr("kCS_CARE_Item2_Cycle");
+        case kCS_CARE_Item3_Cycle: return tr("kCS_CARE_Item3_Cycle");
+        case kCS_CARE_Item4_Cycle: return tr("kCS_CARE_Item4_Cycle");
+        case kCS_CARE_Item5_Cycle: return tr("kCS_CARE_Item5_Cycle");
+        case kCS_CARE_Item6_Cycle: return tr("kCS_CARE_Item6_Cycle");
+        case kCS_CARE_Item7_Cycle: return tr("kCS_CARE_Item7_Cycle");
         case kCS_Err: return tr("kCS_Err");
         default: return tr("No IMPL");
     }
