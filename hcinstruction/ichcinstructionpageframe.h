@@ -81,6 +81,7 @@ private:
     void InitParameter();
     void FindIndex_(int currentIndex, int& groupItemIndex, int& topItemIndex, int& subItemIndex);
     void UpdateUIProgramList_();
+    QStringList Flags();
 
 //    void LoadProgram(const QString & moldName);
 //    void LoadMacro(const QString & macroName);

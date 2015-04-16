@@ -44,6 +44,8 @@ void ICHCConditionPage::SyncStatusImpl(const QList<ICMoldItem> &items)
 QList<ICMoldItem> ICHCConditionPage::CreateCommandImpl() const
 {
     QList<ICMoldItem> ret;
+    if(ui->flagSel->currentIndex() < 0)
+        return ret;
     ICMoldItem item;
     item.SetAction(ICMold::ACTCHECKINPUT);
     item.SetPos(0);

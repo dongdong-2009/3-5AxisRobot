@@ -266,24 +266,8 @@ void ICHCInstructionPageFrame::OptionButtonClicked()
     }
     if(optionButton == ui->conditionsToolButton)
     {
-        QStringList selList;
-        int count;
-        ICMoldItem* item;
-        for(int i = 0; i != programList_.size(); ++i)
-        {
-            count = programList_.at(i).ItemCount();
-            for(int j = 0; j != count; ++j)
-            {
-                item = programList_[i].MoldItemAt(j);
-                if(item->Action() == ICMold::ACTCOMMENT)
-                {
-                    selList.append(QString(tr("Flag[%1]:%2")
-                                           .arg(item->Flag())
-                                           .arg(item->Comment())));
-                }
-            }
-        }
-        conditionPage_->ResetFlagSel(selList);
+
+        conditionPage_->ResetFlagSel(Flags());
     }
     ui->settingStackedWidget->setCurrentWidget(optionButtonToPage_.value(optionButton));
 }
@@ -667,6 +651,7 @@ void ICHCInstructionPageFrame::on_modifyToolButton_clicked()
     {
         return;
     }
+    modifyDialog_->ResetFlagSel(Flags());
     const int selectedRow = ui->moldContentListWidget->row(items.at(0));
     int gIndex;
     int tIndex;
@@ -1241,4 +1226,26 @@ int ICHCInstructionPageFrame::ValidFlag()
         }
     }
 
+}
+
+QStringList ICHCInstructionPageFrame::Flags()
+{
+    QStringList selList;
+    int count;
+    ICMoldItem* item;
+    for(int i = 0; i != programList_.size(); ++i)
+    {
+        count = programList_.at(i).ItemCount();
+        for(int j = 0; j != count; ++j)
+        {
+            item = programList_[i].MoldItemAt(j);
+            if(item->Action() == ICMold::ACTCOMMENT)
+            {
+                selList.append(QString(tr("Flag[%1]:%2")
+                                       .arg(item->Flag())
+                                       .arg(item->Comment())));
+            }
+        }
+    }
+    return selList;
 }

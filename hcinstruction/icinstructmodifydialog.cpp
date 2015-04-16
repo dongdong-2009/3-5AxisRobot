@@ -97,6 +97,10 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
     ui->horizontalBox->hide();
     ui->verticalBox->hide();
     
+    ui->delayLabel->show();
+    ui->delayTimeEdit->show();
+    ui->delayTimeEdit->show();
+    ui->delayUnitLabel->show();
     ui->delayLabel->setText(tr("Delay Time"));
     ui->delayTimeEdit->SetDecimalPlaces(2);
     ui->delayUnitLabel->show();
@@ -106,6 +110,8 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
     ui->limitUnitLabel->hide();
     ui->forwardBox->hide();
     ui->backwardBox->hide();
+    ui->flagBox->hide();
+    ui->returnStepLabel->hide();
 //    ui->earlySpeedLabel->hide();
     bool isMoldCount = false;
 
@@ -214,14 +220,26 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
         //子程序编辑，可以修改返回步号
         else if(item->Action() == ICMold::ACTCHECKINPUT)
         {
-            ui->delayLabel->setText(tr("Return Step"));
-            ui->delayTimeEdit->SetDecimalPlaces(0);
-            ui->delayTimeEdit->setValidator(returnStepValidator);
+            ui->delayLabel->hide();
+            ui->delayTimeEdit->hide();
+            ui->delayTimeEdit->hide();
             ui->delayUnitLabel->hide();
             ui->limitLabel->show();
             ui->limitTimeEdit->show();
             ui->limitUnitLabel->show();
             ui->limitTimeEdit->SetThisIntToThisText(item->Pos());
+            ui->flagBox->show();
+            ui->returnStepLabel->show();
+            int flag = item->Flag();
+            ui->flagBox->setCurrentIndex(-1);
+            for(int i = 0; i != ui->flagBox->count(); ++i)
+            {
+                if(ui->flagBox->itemText(i).contains(QString("[%1]").arg(flag)))
+                {
+                    ui->flagBox->setCurrentIndex(i);
+                    break;
+                }
+            }
         }
         else if(item->Action() == ICMold::ACT_WaitMoldOpened && item->SVal() != 1)
         {
@@ -308,6 +326,14 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
         if(item->Action() == ICMold::ACTCHECKINPUT)
         {
             item->SetPos(ui->limitTimeEdit->TransThisTextToThisInt());
+            if(ui->flagBox->currentIndex() != -1)
+            {
+                QString flag = ui->flagBox->currentText();
+                int l = flag.indexOf('[') + 1;
+                int r = flag.indexOf(']');
+                flag = flag.mid(l, r - l);
+                item->SetFlag(flag.toInt());
+            }
         }
         else
         {
@@ -326,7 +352,7 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
         {
             item->SetSVal(ui->speedEdit->TransThisTextToThisInt());
         }
-        
+
         item->SetDVal(ui->delayTimeEdit->TransThisTextToThisInt());
         item->SetEarlyEnd(ui->earlyEndCheckBox->isChecked());
         item->SetEarlySpeedDown(ui->earlySpeedDownCheckBox->isChecked());
@@ -473,4 +499,10 @@ void ICInstructModifyDialog::on_earlySpeedDownCheckBox_clicked(bool checked)
     {
         ui->earlyEndTimeEdit->setEnabled(false);
     }
+}
+
+void ICInstructModifyDialog::ResetFlagSel(const QStringList &selList)
+{
+    ui->flagBox->clear();
+    ui->flagBox->addItems(selList);
 }
