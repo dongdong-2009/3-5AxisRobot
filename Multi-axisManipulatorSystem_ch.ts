@@ -6036,6 +6036,11 @@ App %1; Host:</source>
         <translation>提前减速</translation>
     </message>
     <message>
+        <location filename="hcinstruction/icinstructmodifydialog.ui" line="715"/>
+        <source>Go to flag</source>
+        <translation>跳转到标签</translation>
+    </message>
+    <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="157"/>
         <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="215"/>
         <location filename="hcinstruction/icinstructmodifydialog.cpp" line="246"/>
@@ -6078,7 +6083,6 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="55"/>
-        <location filename="hcinstruction/icinstructmodifydialog.ui" line="715"/>
         <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="148"/>
         <location filename="hcinstruction/icinstructmodifydialog.cpp" line="104"/>
         <source>Delay Time</source>
