@@ -190,6 +190,17 @@ QString ICConfigString::ConfigString(int configID)
         case kCS_AXIS_Rotate_B: return QT_TR_NOOP("kCS_AXIS_Rotate_B");
         case kCS_AXIS_Rotate_C: return QT_TR_NOOP("kCS_AXIS_Rotate_C");
         case kCS_AXIS_Config_Save: return QT_TR_NOOP("kCS_AXIS_Config_Save");
+        case kCS_PANEL_Key_Tone: return QT_TR_NOOP("kCS_PANEL_Key_Tone");
+        case kCS_PANEL_Touch_Recal: return QT_TR_NOOP("kCS_PANEL_Touch_Recal");
+        case kCS_PANEL_Language: return QT_TR_NOOP("kCS_PANEL_Language");
+        case kCS_PANEL_Datetime: return QT_TR_NOOP("kCS_PANEL_Datetime");
+        case kCS_PANEL_Backlight: return QT_TR_NOOP("kCS_PANEL_Backlight");
+        case kCS_PANEL_Bright: return QT_TR_NOOP("kCS_PANEL_Bright");
+        case kCS_PANEL_Admin_Password: return QT_TR_NOOP("kCS_PANEL_Admin_Password");
+        case kCS_PANEL_Root_Password: return QT_TR_NOOP("kCS_PANEL_Root_Password");
+        case kCS_PANEL_Function_Extent: return QT_TR_NOOP("kCS_PANEL_Function_Extent");
+        case kCS_PANEL_Register_Extent: return QT_TR_NOOP("kCS_PANEL_Register_Extent");
+        case kCS_PANEL_Config_Save: return QT_TR_NOOP("kCS_PANEL_Config_Save");
         case kCS_Err: return QT_TR_NOOP("kCS_Err");
         default: return QT_TR_NOOP("No IMPL");
     }

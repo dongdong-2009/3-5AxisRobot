@@ -41,7 +41,24 @@ void PasswdLevelLabel::changeEvent(QEvent *e)
     QFrame::changeEvent(e);
     switch (e->type()) {
     case QEvent::LanguageChange:
-        PasswdLevelChenged(currentLevel_);
+    {
+        QString newLevel;
+        if(currentLevel_ == ICParametersSave::MachineOperator)
+        {
+            newLevel = tr("Machine Operator");
+        }
+        else if(currentLevel_ == ICParametersSave::MachineAdmin)
+        {
+            newLevel = (tr("Machine Admin"));
+        }
+        else if(currentLevel_ == ICParametersSave::AdvanceAdmin)
+        {
+            newLevel = (tr("Advance Admin"));
+        }
+
+        setText(newLevel);
+//        PasswdLevelChenged(currentLevel_);
+    }
         break;
     default:
         break;

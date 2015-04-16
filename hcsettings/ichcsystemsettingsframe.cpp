@@ -18,6 +18,7 @@
 #include <QDebug>
 #include "mainframe.h"
 #include "icutility.h"
+#include "icconfigstring.h"
 
 static void BuildShiftMap(int beg, int* map)
 {
@@ -89,6 +90,12 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
     ui->factoryCode->blockSignals(true);
     ui->factoryCode->setText(ICParametersSave::Instance()->FacotryCode());
     ui->factoryCode->blockSignals(false);
+
+    editorToConfigIDs_.insert(ui->languageButtonGroup, ICConfigString::kCS_PANEL_Language);
+    editorToConfigIDs_.insert(ui->backLightTimeEdit, ICConfigString::kCS_PANEL_Backlight);
+    editorToConfigIDs_.insert(ui->extentFunctionCheckBox, ICConfigString::kCS_PANEL_Function_Extent);
+    editorToConfigIDs_.insert(ui->limitFunctionBox, ICConfigString::kCS_PANEL_Register_Extent);
+    ICLogInit
 }
 
 ICHCSystemSettingsFrame::~ICHCSystemSettingsFrame()
@@ -153,7 +160,16 @@ void ICHCSystemSettingsFrame::changeEvent(QEvent *e)
         //    ui->languageComboBox->setCurrentIndex(index);
         ui->dateTimeEdit->setDateTime(QDateTime::currentDateTime());
 
-        on_keyToneButton_toggled(ui->keyToneButton->isChecked());
+//        on_keyToneButton_toggled();
+        if(ui->keyToneButton->isChecked())
+        {
+            ui->keyToneButton->setText(tr("Key Tone(ON)"));
+
+        }
+        else
+        {
+            ui->keyToneButton->setText(tr("Key Tone(OFF)"));
+        }
     }
         break;
     default:
@@ -198,6 +214,12 @@ void ICHCSystemSettingsFrame::on_saveButton_clicked()
     ::system(dateTimeCmd.toAscii());
     ICParametersSave::Instance()->SetBackLightTime(ui->backLightTimeEdit->TransThisTextToThisInt());
     ICMainFrame::SetScreenSaverInterval(ui->backLightTimeEdit->TransThisTextToThisInt() * 60000);
+    ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_PANEL_Datetime,
+                                                QString(tr("Set to %1")).arg(ui->dateTimeEdit->dateTime().toString("yyyy/MM/dd hh:mm:ss")),
+                                                "");
+    ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_PANEL_Config_Save,
+                                                tr("Save"),
+                                                "");
 }
 
 void ICHCSystemSettingsFrame::on_keyToneButton_toggled(bool checked)
@@ -205,10 +227,16 @@ void ICHCSystemSettingsFrame::on_keyToneButton_toggled(bool checked)
     if(checked)
     {
         ui->keyToneButton->setText(tr("Key Tone(ON)"));
+        ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_PANEL_Key_Tone,
+                                                    tr("ON"),
+                                                    "");
     }
     else
     {
         ui->keyToneButton->setText(tr("Key Tone(OFF)"));
+        ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_PANEL_Key_Tone,
+                                                    tr("OFF"),
+                                                    "");
     }
     ICParametersSave::Instance()->SetKeyTone(checked);
 }
@@ -248,6 +276,9 @@ void ICHCSystemSettingsFrame::on_changeButton_clicked()
     QMessageBox::information(this,
                              tr("Information"),
                              tr("Change password successfully!"));
+    ICAlarmFrame::Instance()->OnActionTriggered(ui->advanceAdminBox->isChecked() ? ICConfigString::kCS_PANEL_Root_Password : ICConfigString::kCS_PANEL_Admin_Password,
+                                                QString("Changed"),
+                                                "");
 }
 
 void ICHCSystemSettingsFrame::on_extentFunctionCheckBox_toggled(bool checked)
@@ -776,6 +807,9 @@ void ICHCSystemSettingsFrame::on_calibrationBtn_clicked()
                             tr("The system will be reboot to calibrate! Do you want to continue?"),
                             QMessageBox::Ok | QMessageBox::Cancel) == QMessageBox::Ok)
     {
+        ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_PANEL_Touch_Recal,
+                                                    tr("Recal"),
+                                                    "");
         ::system("cd /home/szhc && echo recal >>recal && sync && reboot");
     }
 
@@ -790,6 +824,9 @@ void ICHCSystemSettingsFrame::on_brightMinus_clicked()
     }
     ui->brightnessBar->setValue((--brightness));
     ICParametersSave::Instance()->SetBrightness(brightness);
+    ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_PANEL_Bright,
+                                                QString(tr("Tune down to %1")).arg(brightness),
+                                                "");
 }
 
 void ICHCSystemSettingsFrame::on_brightPlus_clicked()
@@ -801,6 +838,9 @@ void ICHCSystemSettingsFrame::on_brightPlus_clicked()
     }
     ui->brightnessBar->setValue((++brightness));
     ICParametersSave::Instance()->SetBrightness(brightness);
+    ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_PANEL_Bright,
+                                                QString(tr("Tune up to %1")).arg(brightness),
+                                                "");
 }
 
 bool ICHCSystemSettingsFrame::CheckRestoreSystemFiles_()
@@ -963,3 +1003,5 @@ void ICHCSystemSettingsFrame::on_factoryCode_textChanged(const QString &arg1)
 {
     ICParametersSave::Instance()->SetFacotryCode(arg1);
 }
+
+ICLogFunctions(ICHCSystemSettingsFrame)

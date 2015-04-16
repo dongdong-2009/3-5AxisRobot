@@ -286,6 +286,19 @@ public:
         kCS_AXIS_Rotate_C,
         kCS_AXIS_Config_Save,
 
+        kCS_PANEL_START = 900,
+        kCS_PANEL_Key_Tone,
+        kCS_PANEL_Touch_Recal,
+        kCS_PANEL_Language,
+        kCS_PANEL_Datetime,
+        kCS_PANEL_Backlight,
+        kCS_PANEL_Bright,
+        kCS_PANEL_Admin_Password,
+        kCS_PANEL_Root_Password,
+        kCS_PANEL_Function_Extent,
+        kCS_PANEL_Register_Extent,
+        kCS_PANEL_Config_Save,
+
 
         kCS_ERR_START = 10000,
         kCS_Err,
