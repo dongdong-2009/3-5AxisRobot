@@ -17,6 +17,7 @@ public:
 
     QString Comment();
 
+
 protected:
     void changeEvent(QEvent *e);
     void SyncStatusImpl(const QList<ICMoldItem> &items) {}

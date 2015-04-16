@@ -21,7 +21,8 @@ public:
         ifPos_(0),
         sVal_(0),
         dVal_(0),
-        sum_(0){}
+        sum_(0),
+    flag_(0){}
 
     uint Seq() const { return seq_;}    //序号
     void SetSeq(uint seq) { seq_ = seq; }
@@ -153,6 +154,9 @@ public:
     QString Comment() const { return comment_;}
     void SetComment(const QString& comment) { comment_ = comment;}
 
+    int Flag() const { return flag_;}
+    void SetFlag(int flag) { flag_ = flag;}
+
 private:
     uint seq_;
     uint num_;
@@ -164,6 +168,7 @@ private:
     uint sVal_;
     uint dVal_;
     QString comment_;
+    int flag_;
     mutable uint sum_;
 };
 
@@ -265,6 +270,9 @@ inline QByteArray ICMoldItem::ToString() const
 
     QString tmp = (QString().sprintf("%u %u %u %u %u %u %u %u %u %u ",
                                      seq_, num_, subNum_, gmVal_, pos_, ifVal_, ifPos_, sVal_, dVal_, sum_));
+
+    tmp += QString::number(flag_);
+    tmp += " ";
     tmp += comment_;
     ret = tmp.toUtf8();
 //    qDebug()<<"tmp:"<<tmp;

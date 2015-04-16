@@ -14,6 +14,7 @@ namespace Ui {
 }
 class ActionSettingFrame;
 class ICProgramGuidePage;
+class ICHCConditionPage;
 
 class ICHCInstructionPageFrame : public QFrame
 {
@@ -29,6 +30,8 @@ public:
 
     explicit ICHCInstructionPageFrame(QWidget *parent = 0);
     ~ICHCInstructionPageFrame();
+
+    int ValidFlag();
 //    void LoadFileInfoButtonClicked(const QString & moldName);
 
 protected:
@@ -94,7 +97,7 @@ private:
     ActionSettingFrame * actionPage_;
     QWidget * injectionPage_;
     QWidget * fixturePage_;
-    QWidget * conditionPage_;
+    ICHCConditionPage * conditionPage_;
     QWidget * flagsPage_;
     QWidget * pneumaticPage_;
     QWidget * waitConditionPage_;
