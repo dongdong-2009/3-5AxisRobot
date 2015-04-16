@@ -55,7 +55,7 @@ ICAlarmFrame::ICAlarmFrame(QWidget *parent) :
         QStringList logItems;
         for(int i = 0; i != logs.size(); ++i)
         {
-            logItems = logs.at(i).split(',', QString::SkipEmptyParts);
+            logItems = logs.at(i).split(',');
             if(logItems.size() != 4)
                 continue;
 
@@ -339,12 +339,24 @@ void ICAlarmFrame::AlarmTimeSort(int cloumn)
 
 void ICAlarmFrame::AppendNewLogInTable(const QString &dt, int configID, const QString &newVal, const QString &oldVa)
 {
-    QTableWidgetItem* item = new QTableWidgetItem(QString(tr("%1    %2[%3]    from    %4 to %5"))
+    QTableWidgetItem* item;
+    if(!oldVa.isEmpty())
+    {
+        item = new QTableWidgetItem(QString(tr("%1    %2[%3]    from    %4 to %5"))
                                                   .arg(dt)
                                                   .arg(ICConfigString::ConfigString(configID))
                                                   .arg(configID)
                                                   .arg(oldVa)
                                                   .arg(newVal));
+    }
+    else
+    {
+        item = new QTableWidgetItem(QString(tr("%1    %2[%3]    %4"))
+                                                  .arg(dt)
+                                                  .arg(ICConfigString::ConfigString(configID))
+                                                  .arg(configID)
+                                                  .arg(newVal));
+    }
 
     ui->logTable->insertRow(0);
     ui->logTable->setItem(0, 0, item);

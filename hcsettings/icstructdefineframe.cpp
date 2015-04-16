@@ -414,6 +414,7 @@ void ICStructDefineFrame::on_saveButton_clicked()
 
         emit StructChanged();
         icMainFrame->UpdateAxisDefine_();
+        ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_STRUCT_Config_Save, tr("Save"), "");
     }
     ICParametersSave::Instance()->SetSingleArm(ui->singleArmButton->isChecked());
     qDebug()<<"Struct = "<<armStruct_;
