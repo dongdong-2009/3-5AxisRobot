@@ -1563,7 +1563,7 @@ void MainFrame::MoldsCheck()
         {
             QMessageBox::warning(this,
                                  tr("warning"),
-                                 QString("%1 fnc is broken. Please remove this mold!").arg(name));
+                                 QString(tr("%1 fnc is broken. Please remove this mold!")).arg(name));
             continue;
         }
         tmp = dir.entryList(QStringList()<<QString("%1sub*").arg(name));
@@ -1579,7 +1579,7 @@ void MainFrame::MoldsCheck()
             }
             QMessageBox::warning(this,
                                  tr("warning"),
-                                 QString("%1 mold fixed. Please check the sub program!").arg(name));
+                                 QString(tr("%1 mold fixed. Please check the sub program!")).arg(name));
             continue;
         }
     }

@@ -212,6 +212,9 @@ void ICHCProductSettingFrame::on_productClearButton_clicked()
 {
     ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_PRODUCT_CLEAR);
     ICVirtualHost::GlobalVirtualHost()->SetFinishProductCount(0);
+    ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_PRD_Product_Clear,
+                                                tr("Product clear"),
+                                                "");
 }
 
 void ICHCProductSettingFrame::FixtureBoxChange()

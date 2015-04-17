@@ -24,6 +24,7 @@
 #include <QRegExp>
 #include <QSettings>
 #include <QTextStream>
+#include <QInputDialog>
 #include "icconfigstring.h"
 
 //ICUpdateSystemPage *ICUpdateSystemPage = NULL;
@@ -453,6 +454,9 @@ void ICUpdateSystemPage::on_updatePasswardButton_clicked()
                 pmD.OldPassword() == "szhcrobot")
         {
             ICParametersSave::Instance()->SetSuperPassward(pmD.NewPassword());
+            ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_PANEL_Super_Password,
+                                                        QString("Supper password changed"),
+                                                        "");
         }
         else
         {
@@ -513,10 +517,63 @@ void ICUpdateSystemPage::OnRestartBtnClicked()
 
 void ICUpdateSystemPage::on_backToFactory_clicked()
 {
-    // clear Alarm.log
-    system("rm Alarm.log");
-    //clear Modify.log
-    system("rm Modify.log");
+    QString pwd = QInputDialog::getText(this, tr("Back to Factory"), tr("Back to factory will lost all the sysconfig and panel settings.\nPlease input the root password to confirm."));
+    if(ICParametersSave::Instance()->VerifyPassword(ICParametersSave::AdvanceAdmin, pwd))
+    {
+        // clear Alarm.log
+        system("rm Alarm.log");
+        //clear Modify.log
+        system("rm Modify.log");
+        //clear panel settings
+        system("rm -r /Settings/sysconfig");
+        //reset sysconfig
+        system("rm -r sysconfigbackup");
+        system("mkdir sysconfigbackup");
+#ifdef HC_SK_8
+        QFile::copy(":/backupfor8inch/DistanceRotation", "./sysconfigbackup/DistanceRotation");
+        QFile::copy(":/backupfor8inch/Multi-axisManipulatorSystem.ini", "./sysconfigbackup/Multi-axisManipulatorSystem.ini");
+        QFile::copy(":/backupfor8inch/systemParameter.ini", "./sysconfigbackup/systemParameter.ini");
+        QFile::copy(":/backupfor8inch/passwdfile", "./sysconfigbackup/passwdfile");
+        QFile::copy(":/backupfor8inch/StandPrograms", "./sysconfigbackup/StandPrograms");
+        QFile::copy(":/backupfor8inch/paramx.txt", "./sysconfigbackup/paramx.txt");
+        QFile::copy(":/backupfor8inch/paramy.txt", "./sysconfigbackup/paramy.txt");
+        QFile::copy(":/backupfor8inch/paramz.txt", "./sysconfigbackup/paramz.txt");
+        QFile::copy(":/backupfor8inch/paramp.txt", "./sysconfigbackup/paramp.txt");
+        QFile::copy(":/backupfor8inch/paramq.txt", "./sysconfigbackup/paramq.txt");
+        QFile::copy(":/backupfor8inch/parama.txt", "./sysconfigbackup/parama.txt");
+        QFile::copy(":/backupfor8inch/paramb.txt", "./sysconfigbackup/paramb.txt");
+        QFile::copy(":/backupfor8inch/paramc.txt", "./sysconfigbackup/paramc.txt");
+        QFile::copy(":/backupfor8inch/system.txt", "./sysconfigbackup/system.txt");
+
+#else
+        QFile::copy(":/backupfor5inch/DistanceRotation", "./sysconfigbackup/DistanceRotation");
+        QFile::copy(":/backupfor5inch/Multi-axisManipulatorSystem.ini", "./sysconfigbackup/Multi-axisManipulatorSystem.ini");
+        QFile::copy(":/backupfor5inch/systemParameter.ini", "./sysconfigbackup/systemParameter.ini");
+        QFile::copy(":/backupfor5inch/passwdfile", "./sysconfigbackup/passwdfile");
+        QFile::copy(":/backupfor5inch/StandPrograms", "./sysconfigbackup/StandPrograms");
+        QFile::copy(":/backupfor5inch/paramx.txt", "./sysconfigbackup/paramx.txt");
+        QFile::copy(":/backupfor5inch/paramy.txt", "./sysconfigbackup/paramy.txt");
+        QFile::copy(":/backupfor5inch/paramz.txt", "./sysconfigbackup/paramz.txt");
+        QFile::copy(":/backupfor5inch/paramp.txt", "./sysconfigbackup/paramp.txt");
+        QFile::copy(":/backupfor5inch/paramq.txt", "./sysconfigbackup/paramq.txt");
+        QFile::copy(":/backupfor5inch/parama.txt", "./sysconfigbackup/parama.txt");
+        QFile::copy(":/backupfor5inch/paramb.txt", "./sysconfigbackup/paramb.txt");
+        QFile::copy(":/backupfor5inch/paramc.txt", "./sysconfigbackup/paramc.txt");
+        QFile::copy(":/backupfor5inch/system.txt", "./sysconfigbackup/system.txt");
+#endif
+        system("chmod 666 sysconfigbackup/*");
+        system("mv sysconfigbackup/* sysconfig -f");
+        system("sync");
+        QMessageBox::information(this, tr("Tips"), tr("Back to factory successfully! Now reboot!"));
+#ifdef Q_WS_QWS
+        system("reboot");
+#endif
+    }
+    else
+    {
+        QMessageBox::information(this, tr("Tips"), tr("Wrong password!"));
+    }
+
 }
 
 

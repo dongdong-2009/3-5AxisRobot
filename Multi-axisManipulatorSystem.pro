@@ -91,11 +91,14 @@ equals(SK_SIZE, 8){
 message("Define 8")
 DEFINES += HC_SK_8
 FORMS    += mainframe.ui
+RESOURCES += backupfor8.qrc
 }
 equals(SK_SIZE ,5){
 message("Define 5")
 DEFINES += HC_SK_5
 FORMS    += mainframe_5.ui
+RESOURCES += backupfor5.qrc
+
 }
 
 
@@ -125,6 +128,7 @@ include (vendor/ICCustomWidgets/icupdatepackmodel/icupdatepackmodel.pri)
 RESOURCES += \
     resource.qrc \
     initconfig.qrc
+
 
 TRANSLATIONS += Multi-axisManipulatorSystem_ch.ts \
     Multi-axisManipulatorSystem_en.ts \

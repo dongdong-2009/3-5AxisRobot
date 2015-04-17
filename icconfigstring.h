@@ -121,6 +121,7 @@ public:
         kCS_PRD_Alarm_Occasion_When_Get_Fail,
         kCS_PRD_Transport_Count_Way,
         kCS_PRD_Save_Count,
+        kCS_PRD_Product_Clear,
 
         kCS_RUN_START = 300,
         kCS_RUN_Tolerance,
@@ -296,6 +297,7 @@ public:
         kCS_PANEL_Bright,
         kCS_PANEL_Admin_Password,
         kCS_PANEL_Root_Password,
+        kCS_PANEL_Super_Password,
         kCS_PANEL_Function_Extent,
         kCS_PANEL_Register_Extent,
         kCS_PANEL_Config_Save,

@@ -839,21 +839,21 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.cpp" line="111"/>
-        <location filename="categorypage/icalarmframe.cpp" line="116"/>
-        <location filename="categorypage/icalarmframe.cpp" line="213"/>
-        <location filename="categorypage/icalarmframe.cpp" line="215"/>
-        <location filename="categorypage/icalarmframe.cpp" line="309"/>
+        <location filename="categorypage/icalarmframe.cpp" line="112"/>
+        <location filename="categorypage/icalarmframe.cpp" line="117"/>
+        <location filename="categorypage/icalarmframe.cpp" line="214"/>
+        <location filename="categorypage/icalarmframe.cpp" line="216"/>
+        <location filename="categorypage/icalarmframe.cpp" line="310"/>
         <source>no-solve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.cpp" line="368"/>
+        <location filename="categorypage/icalarmframe.cpp" line="369"/>
         <source>%1    %2[%3]    from    %4 to %5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.cpp" line="377"/>
+        <location filename="categorypage/icalarmframe.cpp" line="378"/>
         <source>%1    %2[%3]    %4</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1124,866 +1124,876 @@ Infomation</source>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="40"/>
-        <source>kCS_RUN_Tolerance</source>
+        <source>kCS_PRD_Product_Clear</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="41"/>
-        <source>kCS_RUN_Distance_X1_X2</source>
+        <source>kCS_RUN_Tolerance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="42"/>
-        <source>kCS_RUN_Acc_Time_X1</source>
+        <source>kCS_RUN_Distance_X1_X2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="43"/>
-        <source>kCS_RUN_Acc_Time_Y1</source>
+        <source>kCS_RUN_Acc_Time_X1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="44"/>
-        <source>kCS_RUN_Acc_Time_Z</source>
+        <source>kCS_RUN_Acc_Time_Y1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="45"/>
-        <source>kCS_RUN_Acc_Time_X2</source>
+        <source>kCS_RUN_Acc_Time_Z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="46"/>
-        <source>kCS_RUN_Acc_Time_Y2</source>
+        <source>kCS_RUN_Acc_Time_X2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="47"/>
-        <source>kCS_RUN_Acc_Time_A</source>
+        <source>kCS_RUN_Acc_Time_Y2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="48"/>
-        <source>kCS_RUN_Acc_Time_B</source>
+        <source>kCS_RUN_Acc_Time_A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="49"/>
-        <source>kCS_RUN_Acc_Time_C</source>
+        <source>kCS_RUN_Acc_Time_B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="50"/>
-        <source>kCS_RUN_Speed_Limit_X1</source>
+        <source>kCS_RUN_Acc_Time_C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="51"/>
-        <source>kCS_RUN_Speed_Limit_Y1</source>
+        <source>kCS_RUN_Speed_Limit_X1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="52"/>
-        <source>kCS_RUN_Speed_Limit_Z</source>
+        <source>kCS_RUN_Speed_Limit_Y1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="53"/>
-        <source>kCS_RUN_Speed_Limit_X2</source>
+        <source>kCS_RUN_Speed_Limit_Z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="54"/>
-        <source>kCS_RUN_Speed_Limit_Y2</source>
+        <source>kCS_RUN_Speed_Limit_X2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="55"/>
-        <source>kCS_RUN_Speed_Limit_A</source>
+        <source>kCS_RUN_Speed_Limit_Y2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="56"/>
-        <source>kCS_RUN_Speed_Limit_B</source>
+        <source>kCS_RUN_Speed_Limit_A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="57"/>
-        <source>kCS_RUN_Speed_Limit_C</source>
+        <source>kCS_RUN_Speed_Limit_B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="58"/>
-        <source>kCS_SECP_Inside_X_Min</source>
+        <source>kCS_RUN_Speed_Limit_C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="59"/>
-        <source>kCS_SECP_Inside_X_Max</source>
+        <source>kCS_SECP_Inside_X_Min</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="60"/>
-        <source>kCS_SECP_Outside_X_Min</source>
+        <source>kCS_SECP_Inside_X_Max</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="61"/>
-        <source>kCS_SECP_Outside_X_Max</source>
+        <source>kCS_SECP_Outside_X_Min</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="62"/>
-        <source>kCS_STRUCT_Axis_Define_X1</source>
+        <source>kCS_SECP_Outside_X_Max</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="63"/>
-        <source>kCS_STRUCT_Axis_Define_Y1</source>
+        <source>kCS_STRUCT_Axis_Define_X1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="64"/>
-        <source>kCS_STRUCT_Axis_Define_Z</source>
+        <source>kCS_STRUCT_Axis_Define_Y1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="65"/>
-        <source>kCS_STRUCT_Axis_Define_X2</source>
+        <source>kCS_STRUCT_Axis_Define_Z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="66"/>
-        <source>kCS_STRUCT_Axis_Define_Y2</source>
+        <source>kCS_STRUCT_Axis_Define_X2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="67"/>
-        <source>kCS_STRUCT_Axis_Define_A</source>
+        <source>kCS_STRUCT_Axis_Define_Y2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="68"/>
-        <source>kCS_STRUCT_Axis_Define_B</source>
+        <source>kCS_STRUCT_Axis_Define_A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="69"/>
-        <source>kCS_STRUCT_Axis_Define_C</source>
+        <source>kCS_STRUCT_Axis_Define_B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="70"/>
-        <source>kCS_STRUCT_Reserve_Define_Y017</source>
+        <source>kCS_STRUCT_Axis_Define_C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="71"/>
-        <source>kCS_STRUCT_Reserve_Define_Y022</source>
+        <source>kCS_STRUCT_Reserve_Define_Y017</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="72"/>
-        <source>kCS_STRUCT_Reserve_Define_Y031</source>
+        <source>kCS_STRUCT_Reserve_Define_Y022</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="73"/>
-        <source>kCS_STRUCT_Reserve_Define_Y032</source>
+        <source>kCS_STRUCT_Reserve_Define_Y031</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="74"/>
-        <source>kCS_STRUCT_Reserve_Define_Y035</source>
+        <source>kCS_STRUCT_Reserve_Define_Y032</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="75"/>
-        <source>kCS_STRUCT_Reserve_Define_Y036</source>
+        <source>kCS_STRUCT_Reserve_Define_Y035</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="76"/>
-        <source>kCS_STRUCT_Reserve_Define_R1</source>
+        <source>kCS_STRUCT_Reserve_Define_Y036</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="77"/>
-        <source>kCS_STRUCT_Reserve_Define_R2</source>
+        <source>kCS_STRUCT_Reserve_Define_R1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="78"/>
-        <source>kCS_STRUCT_Limit_Define_Arm_Num</source>
+        <source>kCS_STRUCT_Reserve_Define_R2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="79"/>
-        <source>kCS_STRUCT_Limit_Define_MArm_DW_Limit</source>
+        <source>kCS_STRUCT_Limit_Define_Arm_Num</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="80"/>
-        <source>kCS_STRUCT_Limit_Define_MArm_FW_Limit</source>
+        <source>kCS_STRUCT_Limit_Define_MArm_DW_Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="81"/>
-        <source>kCS_STRUCT_Limit_Define_MArm_BW_Limit</source>
+        <source>kCS_STRUCT_Limit_Define_MArm_FW_Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="82"/>
-        <source>kCS_STRUCT_Limit_Define_SArm_DW_Limit</source>
+        <source>kCS_STRUCT_Limit_Define_MArm_BW_Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="83"/>
-        <source>kCS_STRUCT_Limit_Define_SArm_FW_Limit</source>
+        <source>kCS_STRUCT_Limit_Define_SArm_DW_Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="84"/>
-        <source>kCS_STRUCT_Limit_Define_SArm_BW_Limit</source>
+        <source>kCS_STRUCT_Limit_Define_SArm_FW_Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="85"/>
-        <source>kCS_STRUCT_Other_Define_Escape</source>
+        <source>kCS_STRUCT_Limit_Define_SArm_BW_Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="86"/>
-        <source>kCS_STRUCT_Other_Define_Tune_bit</source>
+        <source>kCS_STRUCT_Other_Define_Escape</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="87"/>
-        <source>kCS_STRUCT_Other_Define_Inside_Position</source>
+        <source>kCS_STRUCT_Other_Define_Tune_bit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="88"/>
-        <source>kCS_STRUCT_Other_Define_Servo_Flex</source>
+        <source>kCS_STRUCT_Other_Define_Inside_Position</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="89"/>
-        <source>kCS_STRUCT_Config_Save</source>
+        <source>kCS_STRUCT_Other_Define_Servo_Flex</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="90"/>
-        <source>kCS_TIME_Ver1</source>
+        <source>kCS_STRUCT_Config_Save</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="91"/>
-        <source>kCS_TIME_Hor1</source>
+        <source>kCS_TIME_Ver1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="92"/>
-        <source>kCS_TIME_Ver2</source>
+        <source>kCS_TIME_Hor1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="93"/>
-        <source>kCS_TIME_Hor2</source>
+        <source>kCS_TIME_Ver2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="94"/>
-        <source>kCS_TIME_MArm_UP</source>
+        <source>kCS_TIME_Hor2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="95"/>
-        <source>kCS_TIME_MArm_Dw</source>
+        <source>kCS_TIME_MArm_UP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="96"/>
-        <source>kCS_TIME_MArm_FW</source>
+        <source>kCS_TIME_MArm_Dw</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="97"/>
-        <source>kCS_TIME_MArm_BW</source>
+        <source>kCS_TIME_MArm_FW</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="98"/>
-        <source>kCS_TIME_Z_FW</source>
+        <source>kCS_TIME_MArm_BW</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="99"/>
-        <source>kCS_TIME_Z_BW</source>
+        <source>kCS_TIME_Z_FW</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="100"/>
-        <source>kCS_TIME_SArm_UP</source>
+        <source>kCS_TIME_Z_BW</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="101"/>
-        <source>kCS_TIME_SArm_DW</source>
+        <source>kCS_TIME_SArm_UP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="102"/>
-        <source>kCS_TIME_SArm_FW</source>
+        <source>kCS_TIME_SArm_DW</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="103"/>
-        <source>kCS_TIME_SArm_BW</source>
+        <source>kCS_TIME_SArm_FW</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="104"/>
-        <source>kCS_STACK_Group1_Seq</source>
+        <source>kCS_TIME_SArm_BW</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="105"/>
-        <source>kCS_STACK_Group2_Seq</source>
+        <source>kCS_STACK_Group1_Seq</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="106"/>
-        <source>kCS_STACK_Group3_Seq</source>
+        <source>kCS_STACK_Group2_Seq</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="107"/>
-        <source>kCS_STACK_Group4_Seq</source>
+        <source>kCS_STACK_Group3_Seq</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="108"/>
-        <source>kCS_STACK_Group1_X_Dir</source>
+        <source>kCS_STACK_Group4_Seq</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="109"/>
-        <source>kCS_STACK_Group2_X_Dir</source>
+        <source>kCS_STACK_Group1_X_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="110"/>
-        <source>kCS_STACK_Group3_X_Dir</source>
+        <source>kCS_STACK_Group2_X_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="111"/>
-        <source>kCS_STACK_Group4_X_Dir</source>
+        <source>kCS_STACK_Group3_X_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="112"/>
-        <source>kCS_STACK_Group1_Y_Dir</source>
+        <source>kCS_STACK_Group4_X_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="113"/>
-        <source>kCS_STACK_Group2_Y_Dir</source>
+        <source>kCS_STACK_Group1_Y_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="114"/>
-        <source>kCS_STACK_Group3_Y_Dir</source>
+        <source>kCS_STACK_Group2_Y_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="115"/>
-        <source>kCS_STACK_Group4_Y_Dir</source>
+        <source>kCS_STACK_Group3_Y_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="116"/>
-        <source>kCS_STACK_Group1_Z_Dir</source>
+        <source>kCS_STACK_Group4_Y_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="117"/>
-        <source>kCS_STACK_Group2_Z_Dir</source>
+        <source>kCS_STACK_Group1_Z_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="118"/>
-        <source>kCS_STACK_Group3_Z_Dir</source>
+        <source>kCS_STACK_Group2_Z_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="119"/>
-        <source>kCS_STACK_Group4_Z_Dir</source>
+        <source>kCS_STACK_Group3_Z_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="120"/>
-        <source>kCS_STACK_Group1_X_Number</source>
+        <source>kCS_STACK_Group4_Z_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="121"/>
-        <source>kCS_STACK_Group2_X_Number</source>
+        <source>kCS_STACK_Group1_X_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="122"/>
-        <source>kCS_STACK_Group3_X_Number</source>
+        <source>kCS_STACK_Group2_X_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="123"/>
-        <source>kCS_STACK_Group4_X_Number</source>
+        <source>kCS_STACK_Group3_X_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="124"/>
-        <source>kCS_STACK_Group1_Y_Number</source>
+        <source>kCS_STACK_Group4_X_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="125"/>
-        <source>kCS_STACK_Group2_Y_Number</source>
+        <source>kCS_STACK_Group1_Y_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="126"/>
-        <source>kCS_STACK_Group3_Y_Number</source>
+        <source>kCS_STACK_Group2_Y_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="127"/>
-        <source>kCS_STACK_Group4_Y_Number</source>
+        <source>kCS_STACK_Group3_Y_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="128"/>
-        <source>kCS_STACK_Group1_Z_Number</source>
+        <source>kCS_STACK_Group4_Y_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="129"/>
-        <source>kCS_STACK_Group2_Z_Number</source>
+        <source>kCS_STACK_Group1_Z_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="130"/>
-        <source>kCS_STACK_Group3_Z_Number</source>
+        <source>kCS_STACK_Group2_Z_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="131"/>
-        <source>kCS_STACK_Group4_Z_Number</source>
+        <source>kCS_STACK_Group3_Z_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="132"/>
-        <source>kCS_STACK_Group1_X_Space</source>
+        <source>kCS_STACK_Group4_Z_Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="133"/>
-        <source>kCS_STACK_Group2_X_Space</source>
+        <source>kCS_STACK_Group1_X_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="134"/>
-        <source>kCS_STACK_Group3_X_Space</source>
+        <source>kCS_STACK_Group2_X_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="135"/>
-        <source>kCS_STACK_Group4_X_Space</source>
+        <source>kCS_STACK_Group3_X_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="136"/>
-        <source>kCS_STACK_Group1_Y_Space</source>
+        <source>kCS_STACK_Group4_X_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="137"/>
-        <source>kCS_STACK_Group2_Y_Space</source>
+        <source>kCS_STACK_Group1_Y_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="138"/>
-        <source>kCS_STACK_Group3_Y_Space</source>
+        <source>kCS_STACK_Group2_Y_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="139"/>
-        <source>kCS_STACK_Group4_Y_Space</source>
+        <source>kCS_STACK_Group3_Y_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="140"/>
-        <source>kCS_STACK_Group1_Z_Space</source>
+        <source>kCS_STACK_Group4_Y_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="141"/>
-        <source>kCS_STACK_Group2_Z_Space</source>
+        <source>kCS_STACK_Group1_Z_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="142"/>
-        <source>kCS_STACK_Group3_Z_Space</source>
+        <source>kCS_STACK_Group2_Z_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="143"/>
-        <source>kCS_STACK_Group4_Z_Space</source>
+        <source>kCS_STACK_Group3_Z_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="144"/>
-        <source>kCS_STACK_Group1_Is_SArm</source>
+        <source>kCS_STACK_Group4_Z_Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="145"/>
-        <source>kCS_STACK_Group2_Is_SArm</source>
+        <source>kCS_STACK_Group1_Is_SArm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="146"/>
-        <source>kCS_STACK_Group3_Is_SArm</source>
+        <source>kCS_STACK_Group2_Is_SArm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="147"/>
-        <source>kCS_STACK_Group4_Is_SArm</source>
+        <source>kCS_STACK_Group3_Is_SArm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="148"/>
-        <source>kCS_STACK_Group1_Count_Way</source>
+        <source>kCS_STACK_Group4_Is_SArm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="149"/>
-        <source>kCS_STACK_Group2_Count_Way</source>
+        <source>kCS_STACK_Group1_Count_Way</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="150"/>
-        <source>kCS_STACK_Group3_Count_Way</source>
+        <source>kCS_STACK_Group2_Count_Way</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="151"/>
-        <source>kCS_STACK_Group4_Count_Way</source>
+        <source>kCS_STACK_Group3_Count_Way</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="152"/>
-        <source>kCS_AXIS_Length_X1</source>
+        <source>kCS_STACK_Group4_Count_Way</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="153"/>
-        <source>kCS_AXIS_Length_Y1</source>
+        <source>kCS_AXIS_Length_X1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="154"/>
-        <source>kCS_AXIS_Length_Z</source>
+        <source>kCS_AXIS_Length_Y1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="155"/>
-        <source>kCS_AXIS_Length_X2</source>
+        <source>kCS_AXIS_Length_Z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="156"/>
-        <source>kCS_AXIS_Length_Y2</source>
+        <source>kCS_AXIS_Length_X2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="157"/>
-        <source>kCS_AXIS_Length_A</source>
+        <source>kCS_AXIS_Length_Y2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="158"/>
-        <source>kCS_AXIS_Length_B</source>
+        <source>kCS_AXIS_Length_A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="159"/>
-        <source>kCS_AXIS_Length_C</source>
+        <source>kCS_AXIS_Length_B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="160"/>
-        <source>kCS_AXIS_Move_Limit_X1</source>
+        <source>kCS_AXIS_Length_C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="161"/>
-        <source>kCS_AXIS_Move_Limit_Y1</source>
+        <source>kCS_AXIS_Move_Limit_X1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="162"/>
-        <source>kCS_AXIS_Move_Limit_Z</source>
+        <source>kCS_AXIS_Move_Limit_Y1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="163"/>
-        <source>kCS_AXIS_Move_Limit_X2</source>
+        <source>kCS_AXIS_Move_Limit_Z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="164"/>
-        <source>kCS_AXIS_Move_Limit_Y2</source>
+        <source>kCS_AXIS_Move_Limit_X2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="165"/>
-        <source>kCS_AXIS_Move_Limit_A</source>
+        <source>kCS_AXIS_Move_Limit_Y2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="166"/>
-        <source>kCS_AXIS_Move_Limit_B</source>
+        <source>kCS_AXIS_Move_Limit_A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="167"/>
-        <source>kCS_AXIS_Move_Limit_C</source>
+        <source>kCS_AXIS_Move_Limit_B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="168"/>
-        <source>kCS_AXIS_Min_X1</source>
+        <source>kCS_AXIS_Move_Limit_C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="169"/>
-        <source>kCS_AXIS_Min_Y1</source>
+        <source>kCS_AXIS_Min_X1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="170"/>
-        <source>kCS_AXIS_Min_Z</source>
+        <source>kCS_AXIS_Min_Y1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="171"/>
-        <source>kCS_AXIS_Min_X2</source>
+        <source>kCS_AXIS_Min_Z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="172"/>
-        <source>kCS_AXIS_Min_Y2</source>
+        <source>kCS_AXIS_Min_X2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="173"/>
-        <source>kCS_AXIS_Min_A</source>
+        <source>kCS_AXIS_Min_Y2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="174"/>
-        <source>kCS_AXIS_Min_B</source>
+        <source>kCS_AXIS_Min_A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="175"/>
-        <source>kCS_AXIS_Min_C</source>
+        <source>kCS_AXIS_Min_B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="176"/>
-        <source>kCS_AXIS_Max_X1</source>
+        <source>kCS_AXIS_Min_C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="177"/>
-        <source>kCS_AXIS_Max_Y1</source>
+        <source>kCS_AXIS_Max_X1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="178"/>
-        <source>kCS_AXIS_Max_Z</source>
+        <source>kCS_AXIS_Max_Y1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="179"/>
-        <source>kCS_AXIS_Max_X2</source>
+        <source>kCS_AXIS_Max_Z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="180"/>
-        <source>kCS_AXIS_Max_Y2</source>
+        <source>kCS_AXIS_Max_X2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="181"/>
-        <source>kCS_AXIS_Max_A</source>
+        <source>kCS_AXIS_Max_Y2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="182"/>
-        <source>kCS_AXIS_Max_B</source>
+        <source>kCS_AXIS_Max_A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="183"/>
-        <source>kCS_AXIS_Max_C</source>
+        <source>kCS_AXIS_Max_B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="184"/>
-        <source>kCS_AXIS_Rotate_X1</source>
+        <source>kCS_AXIS_Max_C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="185"/>
-        <source>kCS_AXIS_Rotate_Y1</source>
+        <source>kCS_AXIS_Rotate_X1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="186"/>
-        <source>kCS_AXIS_Rotate_Z</source>
+        <source>kCS_AXIS_Rotate_Y1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="187"/>
-        <source>kCS_AXIS_Rotate_X2</source>
+        <source>kCS_AXIS_Rotate_Z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="188"/>
-        <source>kCS_AXIS_Rotate_Y2</source>
+        <source>kCS_AXIS_Rotate_X2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="189"/>
-        <source>kCS_AXIS_Rotate_A</source>
+        <source>kCS_AXIS_Rotate_Y2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="190"/>
-        <source>kCS_AXIS_Rotate_B</source>
+        <source>kCS_AXIS_Rotate_A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="191"/>
-        <source>kCS_AXIS_Rotate_C</source>
+        <source>kCS_AXIS_Rotate_B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="192"/>
-        <source>kCS_AXIS_Config_Save</source>
+        <source>kCS_AXIS_Rotate_C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="193"/>
-        <source>kCS_PANEL_Key_Tone</source>
+        <source>kCS_AXIS_Config_Save</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="194"/>
-        <source>kCS_PANEL_Touch_Recal</source>
+        <source>kCS_PANEL_Key_Tone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="195"/>
-        <source>kCS_PANEL_Language</source>
+        <source>kCS_PANEL_Touch_Recal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="196"/>
-        <source>kCS_PANEL_Datetime</source>
+        <source>kCS_PANEL_Language</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="197"/>
-        <source>kCS_PANEL_Backlight</source>
+        <source>kCS_PANEL_Datetime</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="198"/>
-        <source>kCS_PANEL_Bright</source>
+        <source>kCS_PANEL_Backlight</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="199"/>
-        <source>kCS_PANEL_Admin_Password</source>
+        <source>kCS_PANEL_Bright</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="200"/>
-        <source>kCS_PANEL_Root_Password</source>
+        <source>kCS_PANEL_Admin_Password</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="201"/>
-        <source>kCS_PANEL_Function_Extent</source>
+        <source>kCS_PANEL_Root_Password</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="202"/>
-        <source>kCS_PANEL_Register_Extent</source>
+        <source>kCS_PANEL_Super_Password</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="203"/>
-        <source>kCS_PANEL_Config_Save</source>
+        <source>kCS_PANEL_Function_Extent</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="204"/>
-        <source>kCS_CARE_Item1_Cycle</source>
+        <source>kCS_PANEL_Register_Extent</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="205"/>
-        <source>kCS_CARE_Item2_Cycle</source>
+        <source>kCS_PANEL_Config_Save</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="206"/>
-        <source>kCS_CARE_Item3_Cycle</source>
+        <source>kCS_CARE_Item1_Cycle</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="207"/>
-        <source>kCS_CARE_Item4_Cycle</source>
+        <source>kCS_CARE_Item2_Cycle</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="208"/>
-        <source>kCS_CARE_Item5_Cycle</source>
+        <source>kCS_CARE_Item3_Cycle</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="209"/>
-        <source>kCS_CARE_Item6_Cycle</source>
+        <source>kCS_CARE_Item4_Cycle</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="210"/>
-        <source>kCS_CARE_Item7_Cycle</source>
+        <source>kCS_CARE_Item5_Cycle</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="211"/>
-        <source>kCS_Err</source>
+        <source>kCS_CARE_Item6_Cycle</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="212"/>
+        <source>kCS_CARE_Item7_Cycle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="213"/>
+        <source>kCS_Err</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="214"/>
         <source>No IMPL</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3017,7 +3027,7 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1244"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1251"/>
         <source>Flag[%1]:%2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3427,6 +3437,11 @@ Infomation</source>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="233"/>
         <location filename="hcsettings/ichcproductsettingframe.cpp" line="177"/>
         <source>Product Clear</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="216"/>
+        <source>Product clear</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -8111,13 +8126,18 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="229"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="219"/>
+        <source>Back To Factory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="248"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="194"/>
         <source>Update Host Process:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="248"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="267"/>
         <source>Care</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8150,128 +8170,155 @@ Please enter an digit between </source>
         <translation type="obsolete">Reserve</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="293"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="312"/>
         <source>Item</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="298"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="317"/>
         <source>Left Day</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="303"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="322"/>
         <source>Next Date</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="308"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="327"/>
         <source>Cycle</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="313"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="84"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="139"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="332"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="85"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="140"/>
         <source>Restart</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="318"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="337"/>
         <source>Item-1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="333"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="352"/>
         <source>Item-2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="348"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="367"/>
         <source>Item-3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="363"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="382"/>
         <source>Item-4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="378"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="397"/>
         <source>Item-5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="393"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="412"/>
         <source>Item-6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="408"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="427"/>
         <source>Item-7</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="71"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="132"/>
-        <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="72"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="133"/>
+        <source>Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="73"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="134"/>
         <source>Create Time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="192"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="369"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="193"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="370"/>
         <source>System Updating...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="222"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="223"/>
         <source>No available New SuperPassward</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="224"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="225"/>
         <source>New SuperPassward</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="460"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="464"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="331"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="520"/>
+        <source>Back to Factory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="520"/>
+        <source>Back to factory will lost all the sysconfig and panel settings.
+Please input the root password to confirm.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="567"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="574"/>
+        <source>Tips</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="567"/>
+        <source>Back to factory successfully! Now reboot!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="574"/>
+        <source>Wrong password!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="332"/>
         <source>tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="331"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="332"/>
         <source>Update Host Successful!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="398"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="399"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="398"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="399"/>
         <source>USB is not exist!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="461"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="465"/>
         <source>Old password is wrong</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="468"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="479"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="472"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="483"/>
         <source>Scanning...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8550,6 +8597,22 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="mainframe.cpp" line="1565"/>
+        <location filename="mainframe.cpp" line="1581"/>
+        <source>warning</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainframe.cpp" line="1566"/>
+        <source>%1 fnc is broken. Please remove this mold!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainframe.cpp" line="1582"/>
+        <source>%1 mold fixed. Please check the sub program!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="mainframe.cpp" line="1063"/>
         <source>Instruct</source>
         <translation type="unfinished"></translation>
@@ -8654,235 +8717,229 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="85"/>
-        <location filename="function_settings/moldinformation.cpp" line="179"/>
-        <location filename="function_settings/moldinformation.cpp" line="187"/>
-        <location filename="function_settings/moldinformation.cpp" line="217"/>
-        <location filename="function_settings/moldinformation.cpp" line="228"/>
-        <location filename="function_settings/moldinformation.cpp" line="252"/>
-        <location filename="function_settings/moldinformation.cpp" line="392"/>
-        <location filename="function_settings/moldinformation.cpp" line="405"/>
-        <location filename="function_settings/moldinformation.cpp" line="424"/>
-        <location filename="function_settings/moldinformation.cpp" line="434"/>
-        <location filename="function_settings/moldinformation.cpp" line="444"/>
-        <location filename="function_settings/moldinformation.cpp" line="572"/>
+        <location filename="function_settings/moldinformation.cpp" line="86"/>
+        <location filename="function_settings/moldinformation.cpp" line="189"/>
+        <location filename="function_settings/moldinformation.cpp" line="197"/>
+        <location filename="function_settings/moldinformation.cpp" line="242"/>
+        <location filename="function_settings/moldinformation.cpp" line="253"/>
+        <location filename="function_settings/moldinformation.cpp" line="279"/>
+        <location filename="function_settings/moldinformation.cpp" line="430"/>
+        <location filename="function_settings/moldinformation.cpp" line="443"/>
+        <location filename="function_settings/moldinformation.cpp" line="462"/>
+        <location filename="function_settings/moldinformation.cpp" line="472"/>
+        <location filename="function_settings/moldinformation.cpp" line="482"/>
         <location filename="function_settings/moldinformation.cpp" line="610"/>
+        <location filename="function_settings/moldinformation.cpp" line="656"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="86"/>
+        <location filename="function_settings/moldinformation.cpp" line="87"/>
         <source>New file name is empty,
 Please input the file name.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="107"/>
-        <location filename="function_settings/moldinformation.cpp" line="526"/>
-        <location filename="function_settings/moldinformation.cpp" line="639"/>
-        <location filename="function_settings/moldinformation.cpp" line="647"/>
-        <location filename="function_settings/moldinformation.cpp" line="652"/>
-        <location filename="function_settings/moldinformation.cpp" line="691"/>
-        <location filename="function_settings/moldinformation.cpp" line="876"/>
+        <location filename="function_settings/moldinformation.cpp" line="108"/>
+        <location filename="function_settings/moldinformation.cpp" line="564"/>
+        <location filename="function_settings/moldinformation.cpp" line="694"/>
+        <location filename="function_settings/moldinformation.cpp" line="702"/>
+        <location filename="function_settings/moldinformation.cpp" line="707"/>
+        <location filename="function_settings/moldinformation.cpp" line="746"/>
+        <location filename="function_settings/moldinformation.cpp" line="947"/>
         <source>Warnning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="107"/>
+        <location filename="function_settings/moldinformation.cpp" line="108"/>
         <source>This name can&apos;t not be accept!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="150"/>
-        <location filename="function_settings/moldinformation.cpp" line="208"/>
+        <location filename="function_settings/moldinformation.cpp" line="160"/>
         <source>Success</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="151"/>
+        <location filename="function_settings/moldinformation.cpp" line="161"/>
         <source>New file success.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="158"/>
+        <location filename="function_settings/moldinformation.cpp" line="168"/>
         <source>The file has been existing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="159"/>
+        <location filename="function_settings/moldinformation.cpp" line="169"/>
         <source>File already exists,
 Please change a new name.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="180"/>
-        <location filename="function_settings/moldinformation.cpp" line="229"/>
+        <location filename="function_settings/moldinformation.cpp" line="190"/>
+        <location filename="function_settings/moldinformation.cpp" line="254"/>
         <source>Source file name is empty,
 Please choose an existing file.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="188"/>
+        <location filename="function_settings/moldinformation.cpp" line="198"/>
         <source>New file name is empty,
 Please write the destination file name.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="209"/>
-        <source>Copy file success!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="function_settings/moldinformation.cpp" line="218"/>
+        <location filename="function_settings/moldinformation.cpp" line="243"/>
         <source>Destination file already exists!
 Please try a new name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="253"/>
+        <location filename="function_settings/moldinformation.cpp" line="280"/>
         <source>File does not exist!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="296"/>
-        <location filename="function_settings/moldinformation.cpp" line="313"/>
-        <location filename="function_settings/moldinformation.cpp" line="728"/>
-        <location filename="function_settings/moldinformation.cpp" line="852"/>
+        <location filename="function_settings/moldinformation.cpp" line="323"/>
+        <location filename="function_settings/moldinformation.cpp" line="340"/>
+        <location filename="function_settings/moldinformation.cpp" line="783"/>
+        <location filename="function_settings/moldinformation.cpp" line="923"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="296"/>
-        <location filename="function_settings/moldinformation.cpp" line="313"/>
+        <location filename="function_settings/moldinformation.cpp" line="323"/>
+        <location filename="function_settings/moldinformation.cpp" line="340"/>
         <source>file name is empty</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="335"/>
+        <location filename="function_settings/moldinformation.cpp" line="364"/>
         <source>On the Current mold already!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="344"/>
+        <location filename="function_settings/moldinformation.cpp" line="373"/>
         <source>critical</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="344"/>
+        <location filename="function_settings/moldinformation.cpp" line="373"/>
         <source>Read mold or mold para fail! Please change other mold!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="348"/>
+        <location filename="function_settings/moldinformation.cpp" line="386"/>
         <source>Loading...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="335"/>
+        <location filename="function_settings/moldinformation.cpp" line="364"/>
         <source>Tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="393"/>
-        <location filename="function_settings/moldinformation.cpp" line="425"/>
-        <location filename="function_settings/moldinformation.cpp" line="573"/>
+        <location filename="function_settings/moldinformation.cpp" line="431"/>
+        <location filename="function_settings/moldinformation.cpp" line="463"/>
         <location filename="function_settings/moldinformation.cpp" line="611"/>
+        <location filename="function_settings/moldinformation.cpp" line="657"/>
         <source>The mold file </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="395"/>
-        <location filename="function_settings/moldinformation.cpp" line="427"/>
-        <location filename="function_settings/moldinformation.cpp" line="575"/>
+        <location filename="function_settings/moldinformation.cpp" line="433"/>
+        <location filename="function_settings/moldinformation.cpp" line="465"/>
         <location filename="function_settings/moldinformation.cpp" line="613"/>
+        <location filename="function_settings/moldinformation.cpp" line="659"/>
         <source> is being used</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="406"/>
-        <location filename="function_settings/moldinformation.cpp" line="435"/>
+        <location filename="function_settings/moldinformation.cpp" line="444"/>
+        <location filename="function_settings/moldinformation.cpp" line="473"/>
         <source>Stand programs can not be delete!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="658"/>
+        <location filename="function_settings/moldinformation.cpp" line="713"/>
         <source>Restoring, please wait...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="639"/>
+        <location filename="function_settings/moldinformation.cpp" line="694"/>
         <source>Wrong program format!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="445"/>
+        <location filename="function_settings/moldinformation.cpp" line="483"/>
         <source>Are you sure to delete the selected files?</source>
         <oldsource>Are you sure to delete the selected files </oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="647"/>
+        <location filename="function_settings/moldinformation.cpp" line="702"/>
         <source>Wrong config format!!!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="652"/>
+        <location filename="function_settings/moldinformation.cpp" line="707"/>
         <source>Wrong config format!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="582"/>
-        <location filename="function_settings/moldinformation.cpp" line="603"/>
-        <location filename="function_settings/moldinformation.cpp" line="750"/>
-        <location filename="function_settings/moldinformation.cpp" line="771"/>
+        <location filename="function_settings/moldinformation.cpp" line="620"/>
+        <location filename="function_settings/moldinformation.cpp" line="649"/>
+        <location filename="function_settings/moldinformation.cpp" line="805"/>
+        <location filename="function_settings/moldinformation.cpp" line="834"/>
         <source>tips</source>
         <oldsource>t1ips</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="582"/>
-        <location filename="function_settings/moldinformation.cpp" line="603"/>
-        <location filename="function_settings/moldinformation.cpp" line="750"/>
-        <location filename="function_settings/moldinformation.cpp" line="771"/>
+        <location filename="function_settings/moldinformation.cpp" line="620"/>
+        <location filename="function_settings/moldinformation.cpp" line="649"/>
+        <location filename="function_settings/moldinformation.cpp" line="805"/>
+        <location filename="function_settings/moldinformation.cpp" line="834"/>
         <source>%1 is exist,replace it?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="691"/>
+        <location filename="function_settings/moldinformation.cpp" line="746"/>
         <source>Wrong program format!!!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="713"/>
-        <location filename="function_settings/moldinformation.cpp" line="813"/>
+        <location filename="function_settings/moldinformation.cpp" line="768"/>
+        <location filename="function_settings/moldinformation.cpp" line="884"/>
         <source>Information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="713"/>
-        <location filename="function_settings/moldinformation.cpp" line="813"/>
+        <location filename="function_settings/moldinformation.cpp" line="768"/>
+        <location filename="function_settings/moldinformation.cpp" line="884"/>
         <source>Operation finished!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="728"/>
-        <location filename="function_settings/moldinformation.cpp" line="852"/>
+        <location filename="function_settings/moldinformation.cpp" line="783"/>
+        <location filename="function_settings/moldinformation.cpp" line="923"/>
         <source>USB is not connected!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="786"/>
+        <location filename="function_settings/moldinformation.cpp" line="857"/>
         <source>Backuping, please wait...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="879"/>
+        <location filename="function_settings/moldinformation.cpp" line="950"/>
         <source>Refresh File List, please wait...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="526"/>
-        <location filename="function_settings/moldinformation.cpp" line="876"/>
+        <location filename="function_settings/moldinformation.cpp" line="564"/>
+        <location filename="function_settings/moldinformation.cpp" line="947"/>
         <source>Backup files is not exists!</source>
         <translation type="unfinished"></translation>
     </message>

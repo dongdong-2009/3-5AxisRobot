@@ -37,6 +37,7 @@ QString ICConfigString::ConfigString(int configID)
         case kCS_PRD_Alarm_Occasion_When_Get_Fail: return tr("kCS_PRD_Alarm_Occasion_When_Get_Fail");
         case kCS_PRD_Transport_Count_Way: return tr("kCS_PRD_Transport_Count_Way");
         case kCS_PRD_Save_Count: return tr("kCS_PRD_Save_Count");
+        case kCS_PRD_Product_Clear: return tr("kCS_PRD_Product_Clear");
         case kCS_RUN_Tolerance: return tr("kCS_RUN_Tolerance");
         case kCS_RUN_Distance_X1_X2: return tr("kCS_RUN_Distance_X1_X2");
         case kCS_RUN_Acc_Time_X1: return tr("kCS_RUN_Acc_Time_X1");
@@ -198,6 +199,7 @@ QString ICConfigString::ConfigString(int configID)
         case kCS_PANEL_Bright: return tr("kCS_PANEL_Bright");
         case kCS_PANEL_Admin_Password: return tr("kCS_PANEL_Admin_Password");
         case kCS_PANEL_Root_Password: return tr("kCS_PANEL_Root_Password");
+        case kCS_PANEL_Super_Password: return tr("kCS_PANEL_Super_Password");
         case kCS_PANEL_Function_Extent: return tr("kCS_PANEL_Function_Extent");
         case kCS_PANEL_Register_Extent: return tr("kCS_PANEL_Register_Extent");
         case kCS_PANEL_Config_Save: return tr("kCS_PANEL_Config_Save");

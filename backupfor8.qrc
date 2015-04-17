@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>backupfor8inch/DistanceRotation</file>
+        <file>backupfor8inch/Multi-axisManipulatorSystem.ini</file>
+        <file>backupfor8inch/parama.txt</file>
+        <file>backupfor8inch/paramb.txt</file>
+        <file>backupfor8inch/paramc.txt</file>
+        <file>backupfor8inch/paramp.txt</file>
+        <file>backupfor8inch/paramq.txt</file>
+        <file>backupfor8inch/paramx.txt</file>
+        <file>backupfor8inch/paramy.txt</file>
+        <file>backupfor8inch/paramz.txt</file>
+        <file>backupfor8inch/passwdfile</file>
+        <file>backupfor8inch/StandPrograms</file>
+        <file>backupfor8inch/system.txt</file>
+        <file>backupfor8inch/systemParameter.ini</file>
+    </qresource>
+</RCC>
