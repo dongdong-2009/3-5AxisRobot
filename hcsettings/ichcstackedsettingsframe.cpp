@@ -306,6 +306,8 @@ void ICHCStackedSettingsFrame::on_zUnit_toggled(bool checked)
 void ICHCStackedSettingsFrame::on_xRPStepLineEdit_textChanged(const QString &arg1)
 {
     double v = arg1.toDouble();
+    ui->xRPStepLineEdit->blockSignals(true);
+
     if(v > 600)
     {
         ui->xUnit->setChecked(true);
@@ -319,11 +321,15 @@ void ICHCStackedSettingsFrame::on_xRPStepLineEdit_textChanged(const QString &arg
         ui->xRPStepLineEdit->SetDecimalPlaces(2);
 
     }
+    ui->xRPStepLineEdit->blockSignals(true);
+
 }
 
 void ICHCStackedSettingsFrame::on_yRPStepLineEdit_textChanged(const QString &arg1)
 {
     double v = arg1.toDouble();
+    ui->yRPStepLineEdit->blockSignals(true);
+
     if(v > 600)
     {
         ui->yUnit->setChecked(true);
@@ -336,11 +342,14 @@ void ICHCStackedSettingsFrame::on_yRPStepLineEdit_textChanged(const QString &arg
         ui->yRPStepLineEdit->setText(QString::number(v, 'f', 2));
         ui->yRPStepLineEdit->SetDecimalPlaces(2);
     }
+    ui->yRPStepLineEdit->blockSignals(false);
+
 }
 
 void ICHCStackedSettingsFrame::on_zRPStepLineEdit_textChanged(const QString &arg1)
 {
     double v = arg1.toDouble();
+    ui->zRPStepLineEdit->blockSignals(true);
     if(v > 600)
     {
         ui->zUnit->setChecked(true);
@@ -353,6 +362,8 @@ void ICHCStackedSettingsFrame::on_zRPStepLineEdit_textChanged(const QString &arg
         ui->zRPStepLineEdit->setText(QString::number(v, 'f', 2));
         ui->zRPStepLineEdit->SetDecimalPlaces(2);
     }
+    ui->zRPStepLineEdit->blockSignals(false);
+
 }
 
 void ICHCStackedSettingsFrame::OnConfigChanged(QObject *w, const QString& newV, const QString& oldV)
