@@ -511,4 +511,14 @@ void ICUpdateSystemPage::OnRestartBtnClicked()
     ui->careTable->item(itemIndex, 2)->setText(ps->NextCycle(itemIndex).toString("yyyy/MM/dd"));
 }
 
+void ICUpdateSystemPage::on_backToFactory_clicked()
+{
+    // clear Alarm.log
+    system("rm Alarm.log");
+    //clear Modify.log
+    system("rm Modify.log");
+}
+
+
 ICLogFunctions(ICUpdateSystemPage)
+

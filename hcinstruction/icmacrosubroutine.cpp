@@ -29,6 +29,7 @@ bool ICMacroSubroutine::ReadMacroSubroutieFiles(const QString &dir)
     QString fileName;
     QList<ICMoldItem> sub;
     ICMoldItem subItem;
+    subroutines_.clear();
     foreach(fileName, fileList)
     {
         file.setFileName(fileDir.filePath(fileName));
@@ -46,7 +47,7 @@ bool ICMacroSubroutine::ReadMacroSubroutieFiles(const QString &dir)
         {
             items = records.at(i).split(' ', QString::SkipEmptyParts);
 //            items.removeAt(2);
-            if(items.size() != 10 && items.size() != 11)
+            if(items.size() != 10 && items.size() != 11 && items.size() != 12)
             {
                 break;
             }

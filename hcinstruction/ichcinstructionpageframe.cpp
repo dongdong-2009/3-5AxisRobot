@@ -1093,7 +1093,14 @@ bool ICHCInstructionPageFrame::SaveCurrentEdit()
     {
         ICMacroSubroutine::Instance()->SetSubRoutine(ICMold::UIItemToMoldItem(programList_), currentEdit_ - 1);
         ICMacroSubroutine::Instance()->SubRoutineResum(currentEdit_ - 1);
-        return ICMacroSubroutine::Instance()->SaveMacroSubroutieFile(currentEdit_ - 1);
+        bool ret = ICMacroSubroutine::Instance()->SaveMacroSubroutieFile(currentEdit_ - 1);
+        QString moldName = ICParametersSave::Instance()->MoldName("Base.act");
+        moldName.chop(3);
+        moldName += "sub";
+        moldName = QString("records/%1%2").arg(moldName).arg(currentEdit_ - 1);
+        QFile::remove(moldName);
+        ret =  ret && QFile::copy(QString("subs/sub%1.prg").arg(currentEdit_ - 1), moldName);
+        return ret;
     }
 }
 

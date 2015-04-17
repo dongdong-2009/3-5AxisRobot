@@ -353,7 +353,7 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
 //    ShowOrigin();
 #endif
            SetScreenSaverInterval(ICParametersSave::Instance()->BackLightTime() * 60000);
-
+           MoldsCheck();
            qDebug("Mainframe Init finished");
 }
 
@@ -1546,4 +1546,41 @@ void MainFrame::InitSpareTime()
 int MainFrame::CurrentLevel() const
 {
     return ICProgramHeadFrame::Instance()->CurrentLevel();
+}
+
+void MainFrame::MoldsCheck()
+{
+    QDir dir("./records");
+    QStringList acts = dir.entryList(QStringList()<<"*.act");
+    QString name;
+    QStringList tmp;
+    for(int i = 0; i < acts.size(); ++i)
+    {
+        name = acts.at(i);
+        name.chop(3);
+        tmp = dir.entryList(QStringList()<<QString("%1fnc").arg(name));
+        if(tmp.isEmpty())
+        {
+            QMessageBox::warning(this,
+                                 tr("warning"),
+                                 QString("%1 fnc is broken. Please remove this mold!").arg(name));
+            continue;
+        }
+        tmp = dir.entryList(QStringList()<<QString("%1sub*").arg(name));
+        if(tmp.size() != 8)
+        {
+            for(int j = 0; j != 8; ++j)
+            {
+                system(QString("cp %1/sub%4.prg %2/%3sub%4")
+                       .arg("./subs")
+                       .arg("./records")
+                       .arg(name)
+                       .arg(j).toUtf8());
+            }
+            QMessageBox::warning(this,
+                                 tr("warning"),
+                                 QString("%1 mold fixed. Please check the sub program!").arg(name));
+            continue;
+        }
+    }
 }
