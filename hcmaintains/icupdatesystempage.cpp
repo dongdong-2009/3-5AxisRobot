@@ -24,7 +24,7 @@
 #include <QRegExp>
 #include <QSettings>
 #include <QTextStream>
-#include <QInputDialog>
+#include "icinputdialog.h"
 #include "icconfigstring.h"
 
 //ICUpdateSystemPage *ICUpdateSystemPage = NULL;
@@ -74,11 +74,15 @@ ICUpdateSystemPage::ICUpdateSystemPage(QWidget *parent) :
     ui->packetTable->setModel(model_);
 
     ui->careTable->horizontalHeader()->setResizeMode(0, QHeaderView::Stretch);
+    ui->careTable->setColumnWidth(2, 150);
 
     const int rowCount = ui->careTable->rowCount();
     QIntValidator* vd = new QIntValidator(0, 65530, this);
 
 
+    QStringList items;
+    items<<tr("Item-1")<<tr("Item-2")<<tr("Item-3")
+           <<tr("Item-4")<<tr("Item-5")<<tr("Item-6")<<tr("Item-7");
     ICParametersSave* ps = ICParametersSave::Instance();
     for(int i = 0; i !=rowCount; ++i)
     {
@@ -92,6 +96,9 @@ ICUpdateSystemPage::ICUpdateSystemPage(QWidget *parent) :
         ui->careTable->setCellWidget(i, 4, btn);
         cycleEditorToItemIndex.insert(cycleEditor, i);
         restartBtnToItemIndex.insert(btn, i);
+        QLabel* label = new QLabel(items.at(i));
+        label->setWordWrap(true);
+        ui->careTable->setCellWidget(i, 0, label);
         connect(cycleEditor,
                 SIGNAL(textChanged(QString)),
                 SLOT(OnCycleEditorChanged(QString)));
@@ -517,7 +524,7 @@ void ICUpdateSystemPage::OnRestartBtnClicked()
 
 void ICUpdateSystemPage::on_backToFactory_clicked()
 {
-    QString pwd = QInputDialog::getText(this, tr("Back to Factory"), tr("Back to factory will lost all the sysconfig and panel settings.\nPlease input the root password to confirm."));
+    QString pwd = ICInputDialog::getText(this, tr("Back to Factory"), tr("Back to factory will lost all the sysconfig and panel settings.\nPlease input the root password to confirm."));
     if(ICParametersSave::Instance()->VerifyPassword(ICParametersSave::AdvanceAdmin, pwd))
     {
         // clear Alarm.log

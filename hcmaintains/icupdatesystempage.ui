@@ -272,6 +272,12 @@
          <property name="editTriggers">
           <set>QAbstractItemView::NoEditTriggers</set>
          </property>
+         <attribute name="verticalHeaderDefaultSectionSize">
+          <number>50</number>
+         </attribute>
+         <attribute name="verticalHeaderMinimumSectionSize">
+          <number>50</number>
+         </attribute>
          <row>
           <property name="text">
            <string notr="true">1</string>
@@ -334,7 +340,7 @@
          </column>
          <item row="0" column="0">
           <property name="text">
-           <string>Item-1</string>
+           <string/>
           </property>
          </item>
          <item row="0" column="1">
@@ -349,7 +355,7 @@
          </item>
          <item row="1" column="0">
           <property name="text">
-           <string>Item-2</string>
+           <string/>
           </property>
          </item>
          <item row="1" column="1">
@@ -364,7 +370,7 @@
          </item>
          <item row="2" column="0">
           <property name="text">
-           <string>Item-3</string>
+           <string/>
           </property>
          </item>
          <item row="2" column="1">
@@ -379,7 +385,7 @@
          </item>
          <item row="3" column="0">
           <property name="text">
-           <string>Item-4</string>
+           <string/>
           </property>
          </item>
          <item row="3" column="1">
@@ -394,7 +400,7 @@
          </item>
          <item row="4" column="0">
           <property name="text">
-           <string>Item-5</string>
+           <string/>
           </property>
          </item>
          <item row="4" column="1">
@@ -409,7 +415,7 @@
          </item>
          <item row="5" column="0">
           <property name="text">
-           <string>Item-6</string>
+           <string/>
           </property>
          </item>
          <item row="5" column="1">
@@ -424,7 +430,7 @@
          </item>
          <item row="6" column="0">
           <property name="text">
-           <string>Item-7</string>
+           <string/>
           </property>
          </item>
          <item row="6" column="1">
