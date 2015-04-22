@@ -687,11 +687,11 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.cpp" line="86"/>
-        <location filename="categorypage/icalarmframe.cpp" line="91"/>
-        <location filename="categorypage/icalarmframe.cpp" line="188"/>
-        <location filename="categorypage/icalarmframe.cpp" line="190"/>
-        <location filename="categorypage/icalarmframe.cpp" line="228"/>
+        <location filename="categorypage/icalarmframe.cpp" line="87"/>
+        <location filename="categorypage/icalarmframe.cpp" line="92"/>
+        <location filename="categorypage/icalarmframe.cpp" line="189"/>
+        <location filename="categorypage/icalarmframe.cpp" line="191"/>
+        <location filename="categorypage/icalarmframe.cpp" line="229"/>
         <source>no-solve</source>
         <translation type="unfinished"></translation>
     </message>
