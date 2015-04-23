@@ -28,7 +28,8 @@ ICHCManualOperationPageFrame::ICHCManualOperationPageFrame(QWidget *parent) :
     reservePage_(NULL),
     serveAxisPage_(NULL),
     centralStackedLayout_(new QStackedLayout),
-    currentAction_(-1)
+    currentAction_(-1),
+    timerID_(-1)
 {
     ui->setupUi(this);
 //    ui->adjustToolButton->hide();
@@ -94,6 +95,7 @@ void ICHCManualOperationPageFrame::showEvent(QShowEvent *e)
 void ICHCManualOperationPageFrame::hideEvent(QHideEvent *e)
 {
     QFrame::hideEvent(e);
+    if(timerID_ < 0) return;
     ICTimerPool::Instance()->Stop(timerID_, this, SLOT(StatusRefreshed()));
 //    disconnect(ICVirtualHost::GlobalVirtualHost(),
 //               SIGNAL(StatusRefreshed()),

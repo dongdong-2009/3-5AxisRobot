@@ -16,7 +16,8 @@ UI_DIR = temp_$${SK_SIZE}
 MOC_DIR = temp_$${SK_SIZE}
 RCC_DIR = temp_$${SK_SIZE}
 DESTDIR = bin
-CONFIG(debug, debug|release) {
+contains(QMAKE_CXX, g++){
+message("destop")
 #    LIBS += -lprofiler
 DESTDIR = bin_debug
 OBJECTS_DIR = temp_$${SK_SIZE}_d
@@ -142,7 +143,7 @@ OTHER_FILES += \
 
 QMAKE_POST_LINK += "cp *.qm $$DESTDIR"
 system("python rename_ui.py $${UI_DIR}")
-CONFIG(debug, debug|release){
+contains(QMAKE_CXX, g++){
 #QMAKE_POST_LINK += "cp *.qm bin_debug"
 }else{
 #system("python rename_ui.py temp_$${SK_SIZE}")

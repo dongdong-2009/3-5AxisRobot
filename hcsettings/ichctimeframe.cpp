@@ -29,6 +29,8 @@ ICHCTimeFrame::ICHCTimeFrame(QWidget *parent) :
     editorToConfigIDs_.insert(ui->comeInEdit, ICConfigString::kCS_TIME_Z_BW);
     editorToConfigIDs_.insert(ui->goOutEdit, ICConfigString::kCS_TIME_Z_FW);
     ICLogInit
+
+            this->hide();
 }
 
 ICHCTimeFrame::~ICHCTimeFrame()

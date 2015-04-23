@@ -67,10 +67,14 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
 //        currentPos = 1;
 //    }
 //    buttongroup_->setId(ICVirtualHost::GlobalVirtualHost()->FixtureDefine());
+    ui->reversedCheckBox->blockSignals(true);
+    ui->positiveCheckBox->blockSignals(true);
     if(ICVirtualHost::GlobalVirtualHost()->FixtureDefine() == 0)
         ui->reversedCheckBox->click();
     if(ICVirtualHost::GlobalVirtualHost()->FixtureDefine() == 1)
         ui->positiveCheckBox->click();
+    ui->reversedCheckBox->blockSignals(false);
+    ui->positiveCheckBox->blockSignals(false);
 //    int v = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt();
 //    v &= 0xFFFF;
 //    v >>= 15;
@@ -97,6 +101,8 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
     editorToConfigIDs_.insert(ui->getFailWay, ICConfigString::kCS_PRD_Alarm_Occasion_When_Get_Fail);
 
     ICLogInit;
+
+    this->hide();
 
 }
 
@@ -130,7 +136,7 @@ void ICHCProductSettingFrame::hideEvent(QHideEvent *e)
         }
         sum = (-sum & 0XFFFF);
         dataBuffer[6] = sum;
-        qDebug()<<sum;
+//        qDebug()<<sum;
         command.SetSlave(process->SlaveID());
         command.SetDataBuffer(dataBuffer);
         command.SetAxis(8);

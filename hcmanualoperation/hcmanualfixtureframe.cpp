@@ -8,7 +8,8 @@
 HCManualFixtureFrame::HCManualFixtureFrame(QWidget *parent) :
     QFrame(parent),
     ui(new Ui::HCManualFixtureFrame),
-    clips_(8, false)
+    clips_(8, false),
+    timerID_(-1)
 {
     ui->setupUi(this);
     ICCommandKeyWrapper *wrapper;
@@ -54,6 +55,7 @@ void HCManualFixtureFrame::hideEvent(QHideEvent *e)
     //               SIGNAL(StatusRefreshed()),
     //               this,
     //               SLOT(StatusRefreshed()));
+    if(timerID_ < 0) return;
     ICTimerPool::Instance()->Stop(timerID_, this, SLOT(StatusRefreshed()));
 }
 

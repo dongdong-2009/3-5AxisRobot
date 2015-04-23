@@ -44,7 +44,7 @@ ICHCStackedSettingsFrame::ICHCStackedSettingsFrame(QWidget *parent) :
     editorToConfigIDs_.insert(ui->countWayBox, ICConfigString::kCS_STACK_Group1_Count_Way);
     ICLogInit
 
-
+            this->hide();
 
 
 }
@@ -246,6 +246,7 @@ void ICHCStackedSettingsFrame::SetStackStatus_(const QList<int> &status)
 
 void ICHCStackedSettingsFrame::hideEvent(QHideEvent *e)
 {
+    if(this->isVisible()) return;
     QFrame::hideEvent(e);
     qDebug("stack hide");
     QList<int> status = GetCurrentStatus_();

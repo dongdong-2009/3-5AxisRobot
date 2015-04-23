@@ -13,9 +13,13 @@
 #include "iccommands.h"
 #include "iccommandprocessor.h"
 #include "icmold.h"
+#include <QRunnable>
+#include <QThreadPool>
+
 
 class QTimer;
 class ICMacroSubroutine;
+class ReconfigureRunable;
 //class ICMold;
 
 class ICQueryStatus;
@@ -24,6 +28,7 @@ class ICVirtualHost : public QObject
 {
     Q_OBJECT
 public:
+    friend class ReconfigureRunable;
     enum ICSystemParameter
     {
         SYS_Global_Speed,
@@ -720,16 +725,35 @@ private:
 };
 #define icGlobalVirtuallHost ICVirtualHost::GlobalVirtualHost()
 
+class ReconfigureRunable:public QRunnable
+{
+public:
+    void run()
+    {
+        ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
+        qDebug("Reconfig");
+        host->WriteSubTohost_();
+        host->WriteMoldTohost_();
+        host->currentMold_->UpdateSyncSum();
+        host->InitMoldParam_();
+        host->InitSystem_();
+        host->isParamChanged_ = false;
+    }
+};
+
 inline void ICVirtualHost::ReConfigure()
 {
 //    qApp->processEvents();
-    qDebug("Reconfig");
-    WriteSubTohost_();
-    WriteMoldTohost_();
-    currentMold_->UpdateSyncSum();
-    InitMoldParam_();
-    InitSystem_();
-    isParamChanged_ = false;
+//    qDebug("Reconfig");
+//    WriteSubTohost_();
+//    WriteMoldTohost_();
+//    currentMold_->UpdateSyncSum();
+//    InitMoldParam_();
+//    InitSystem_();
+//    isParamChanged_ = false;
+    ReconfigureRunable *r = new ReconfigureRunable();
+    r->setAutoDelete(true);
+    QThreadPool::globalInstance()->start(r);
 //    WriteSystemTohost_();
 }
 
