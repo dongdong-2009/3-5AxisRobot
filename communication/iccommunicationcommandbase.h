@@ -18,7 +18,9 @@ public:
     ICCommunicationCommandBase();
     virtual ~ICCommunicationCommandBase(){}
 
-    QVariant SendCommand(modbus_param_t *modbusParam) { return Send(modbusParam);}
+    QVariant SendCommand(modbus_param_t *modbusParam) {
+        return Send(modbusParam);
+    }
 
     QString CommandArgs() const { return args_;}
     void SetCommandArgs(const QString &args);

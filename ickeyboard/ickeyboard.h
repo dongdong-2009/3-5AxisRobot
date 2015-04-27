@@ -54,6 +54,7 @@ public:
         FB_F4       = 32,
         FB_F6       = 33,
         FB_F5       = 34,
+
 //        VFB_ARM_UP,//13
 //        VFB_ARM_DOWN,
 //        VFB_ARM_BACKWARD,

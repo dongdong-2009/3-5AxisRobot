@@ -472,7 +472,8 @@ public:
 #endif
         SM_StandBy,  //待机姿势
         SM_TryProduct, //试产
-        SM_Sampling //取样
+        SM_Sampling, //取样
+        SM_LANGUAGE
     };
 
     enum ICTeachParamAddr
@@ -627,7 +628,7 @@ public:
     int PeripheryOutput(int number) const;
     void CalPeripheryOutput(int & config, int number, int val);
     void SetPeripheryOutput(int config) { systemParamMap_.insert(SYS_Config_Out, config);}
-    int FixtureDefine() const { return (systemParamMap_.value(SYS_Config_Fixture).toInt()) == 0x0555 ? 1 : 0;}
+    int FixtureDefine() const { return (systemParamMap_.value(SYS_Config_Fixture).toInt() & 0x7FFF) == 0x0555 ? 1 : 0;}
     void SetFixtureDefine(int val) { systemParamMap_.insert(SYS_Config_Fixture, val == 0 ? 0x0AAA : 0x0555);}
     int FixtureDefineSwitch(int index) const {return index == 0 ? 0x0AAA : 0x0555;}
 
@@ -1034,11 +1035,6 @@ inline int ICVirtualHost::GetActualPos(ICAxis axis) const
     uint axisLastPos = HostStatus(AxisLastPos1).toUInt() | (HostStatus(AxisLastPos2).toUInt() << 16);
     return GetActualPos(axis, axisLastPos);
 
-}
-
-inline int ICVirtualHost::GetActualPos(ICAxis axis, uint axisLastPos) const
-{
-    return HostStatus(static_cast<ICStatus>(XPos + axis)).toInt() * 10 + ((axisLastPos >> (axis * 4)) & 0xF);
 }
 
 #endif // ICVIRTUALHOST_H

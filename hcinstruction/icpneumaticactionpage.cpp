@@ -146,7 +146,8 @@ QList<ICMoldItem> ICPneumaticActionPage::CreateCommandImpl() const
 {
     QList<ICMoldItem> ret;
     ICMoldItem item;
-    for(int i = 0; i != ui->tableWidget->rowCount(); ++i)
+
+    for(int i=0; i != ui->tableWidget->rowCount(); ++i)
     {
         if(ui->tableWidget->item(i, 0)->checkState() == Qt::Checked)
         {
@@ -158,6 +159,14 @@ QList<ICMoldItem> ICPneumaticActionPage::CreateCommandImpl() const
             ret.append(item);
         }
     }
+//    if(ui->tableWidget->item(i, 0)->checkState() == Qt::Checked)
+//    {
+//        item.SetAction(ICMold::ACT_PoseHori2);
+//        item.SetIFVal(0);
+//        item.SetDVal(editorVector_.at(i)->Delay());
+//        item.SetActualIfPos(0);
+//        ret.append(item);
+//    }
     return ret;
 }
 

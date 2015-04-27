@@ -4,6 +4,11 @@
 namespace IC{
 enum ICVirtualKey
 {
+    VKEY_BXSUB = 0xB0,
+    VKEY_BXADD = 0xB1,
+    VKEY_ZXSUB = 0xB2,
+    VKEY_ZXADD = 0xB3,
+
     VKEY_NULL   = 0xC0,
     VKEY_START,
     VKEY_STOP,
@@ -20,6 +25,7 @@ enum ICVirtualKey
     VKEY_Y1SUB,
     VKEY_Y1ADD,
     VKEY_ZSUB,
+    // d0
     VKEY_ZADD,
     VKEY_HORI,
     VKEY_VERT,

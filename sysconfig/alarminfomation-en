@@ -339,3 +339,10 @@
 1400:Not all up signal on.
 1401:Currnt point and waiting point are not both inside
 1402:Currnt point and waiting point are not both outside
+1403:Vice up signal not on.
+1150:Ax BOTH forward and backward
+1151:Ax back limit is off after Ax backwarded
+1152:Ax forward limit is off after Ax forwarded
+1150:B BOTH forward and backward
+1151:B back limit is off after B backwarded
+1152:B forward limit is off after B forwarded

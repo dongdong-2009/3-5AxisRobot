@@ -29,6 +29,7 @@ public:
     void SetFinished(int finishedCount);
     void SetAlarmInfo(const QString & alarmInfo);
     void SetHintInfo(const QString & hintInfo);
+    void SetGZAlarmInfo(const QString & alarmInfo);
 
 protected:
     void changeEvent(QEvent *);

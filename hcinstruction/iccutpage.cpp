@@ -18,7 +18,8 @@ ICCutPage::ICCutPage(QWidget *parent) :
 //    ICLineEditWithVirtualNumericKeypad* delays = new ICLineEditWithVirtualNumericKeypad[ui->tableWidget->rowCount()];
 //    ICLineEditWithVirtualNumericKeypad *delayEdit;
     ioNames_<<tr("Fixture1  ")<<tr("Fixture2  ")<<tr("Fixture3  ")<<tr("Fixture4  ")
-           <<tr("Sucker1   ")<<tr("Sucker2   ")<<tr("X037  ")<<tr("X023  ")<<tr("X016  ")<<tr("X017  ");
+           <<tr("Sucker1   ")<<tr("Sucker2   ")
+          <<tr("Reserve6  ")<<tr("X023  ")<<tr("X016  ")<<tr("X017  ");
     onClipToOffClip_.insert(ICMold::ACTCLIP1ON, ICMold::ACTCLIP1OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP2ON, ICMold::ACTCLIP2OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP3ON, ICMold::ACTCLIP3OFF);
@@ -39,6 +40,7 @@ ICCutPage::ICCutPage(QWidget *parent) :
     offClipToOnClip_.insert(ICMold::ACTCLIP8OFF, ICMold::ACTCLIP8ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP8OFF + 100, ICMold::ACTCLIP8ON + 100);
     offClipToOnClip_.insert(ICMold::ACTCLIP8OFF + 101, ICMold::ACTCLIP8ON + 101);
+
     QList<uint> initStatus = onClipToOffClip_.values();
 //    QIntValidator *validator = new QIntValidator(0, 2000, this);
     for(int i = 0; i != ui->tableWidget->rowCount(); ++i)
@@ -113,7 +115,8 @@ void ICCutPage::changeEvent(QEvent *e)
         ui->retranslateUi(this);
         ioNames_.clear();
         ioNames_<<tr("Fixture1  ")<<tr("Fixture2  ")<<tr("Fixture3  ")<<tr("Fixture4  ")
-               <<tr("Sucker1   ")<<tr("Sucker2   ")<<tr("X037  ")<<tr("X023  ")<<tr("X016  ")<<tr("X017  ");
+               <<tr("Sucker1   ")<<tr("Sucker2   ")
+              <<tr("Reserve6  ")<<tr("X023  ")<<tr("X016  ")<<tr("X017  ");
         for(int i = 0; i != settingButtons_.size(); ++i)
         {
             settingButtons_[i]->setText(ioNames_.at(i));

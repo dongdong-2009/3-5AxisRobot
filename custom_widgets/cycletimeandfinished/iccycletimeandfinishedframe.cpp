@@ -45,6 +45,12 @@ void ICCycleTimeAndFinishedFrame::SetAlarmInfo(const QString & alarmInfo)
     ui->alarmLabel->setText(alarmInfo);
 }
 
+void ICCycleTimeAndFinishedFrame::SetGZAlarmInfo(const QString &alarmInfo)
+{
+    ui->alarmLabel->setStyleSheet("background-color: rgb(192,192,192); border-radius: 6px; border: 3px solid gray; font-size: 15px; color: yellow;");
+    ui->alarmLabel->setText(alarmInfo);
+}
+
 void ICCycleTimeAndFinishedFrame::SetHintInfo(const QString &hintInfo)
 {
     ui->alarmLabel->setStyleSheet("background-color: rgb(192,192,192); border-radius: 6px; border: 3px solid gray; font-size: 15px; color: green;");

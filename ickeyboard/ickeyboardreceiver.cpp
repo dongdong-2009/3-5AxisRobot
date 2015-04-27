@@ -99,6 +99,8 @@ void ICKeyboardReceiver::run()
                     key == ICKeyboard::VFB_BAdd ||
                     key == ICKeyboard::VFB_CSub ||
                     key == ICKeyboard::VFB_CAdd ||
+                    key == ICKeyboard::VFB_SP1||
+                    key == ICKeyboard::VFB_SP2||
                     key == ICKeyboard::VFB_Pose_Horizontal ||
                     key == ICKeyboard::VFB_Pose_Vertical ||
                     key == ICKeyboard::VFB_SingleStep)

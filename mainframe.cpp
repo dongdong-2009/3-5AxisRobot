@@ -634,6 +634,7 @@ void MainFrame::StatusRefreshed()
 #endif
 #endif
     }
+    static int oldGZErr = 0;
     errCode_ = virtualHost->AlarmNum();
     if(compareAlarmNums_.indexOf(errCode_) != -1)
     {
@@ -654,11 +655,12 @@ void MainFrame::StatusRefreshed()
         {
             ui->cycleTimeAndFinistWidget->SetHintInfo(tr("Hint") + QString::number(hintCode) + ":" + alarmString->HintInfo(hintCode));
         }
-        else
+        else if(oldGZErr == 0)
         {
             ui->cycleTimeAndFinistWidget->SetAlarmInfo("");
         }
     }
+
     finishCount_ = virtualHost->HostStatus(ICVirtualHost::DbgX1).toUInt();
     if(finishCount_ != oldFinishCount_)
     {
@@ -680,6 +682,26 @@ void MainFrame::StatusRefreshed()
                         ui->systemStatusFrame->SetOriginStatus(StatusLabel::OFFSTATUS);
     }
     runningStatus_ = virtualHost->CurrentStatus();
+
+    if(errCode_ == 0 && (runningStatus_ == ICVirtualHost::Manual ||
+            runningStatus_ == ICVirtualHost::Auto))
+    {
+        int gzErr = virtualHost->HostStatus(ICVirtualHost::DbgP1).toInt();
+        if(gzErr != oldGZErr)
+        {
+            oldGZErr = gzErr;
+            if(gzErr !=0 )
+            {
+                alarmString->SetPriorAlarmNum(gzErr);
+                ui->cycleTimeAndFinistWidget->SetGZAlarmInfo("Err" + QString::number(gzErr) + ":" + alarmString->AlarmInfo(gzErr));
+                QTimer::singleShot(5000, this, SLOT(checkAlarmModify()));
+            }
+            else
+            {
+                ui->cycleTimeAndFinistWidget->SetAlarmInfo("");
+            }
+        }
+    }
 
     if(runningStatus_ == ICVirtualHost::Manual)
     {
@@ -703,6 +725,7 @@ void MainFrame::StatusRefreshed()
     }
     else if(runningStatus_ == ICVirtualHost::Auto)
     {
+//        errCode_ = virtualHost->AlarmNum();
         if(hintCode == 15)
         {
             if(actionDialog_->isHidden())

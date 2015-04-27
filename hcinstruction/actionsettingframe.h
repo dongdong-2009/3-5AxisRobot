@@ -73,7 +73,10 @@ private slots:
     void on_gAButton_toggled(bool checked);
     void on_gBButton_toggled(bool checked);
     void on_gCButton_toggled(bool checked);
+    void on_gAButton_2_toggled(bool checked);
 #endif
+    void on_bxBox_toggled(bool checked);
+    void on_zxBox_toggled(bool checked);
 };
 
 #endif // ACTIONSETTINGFRAME_H

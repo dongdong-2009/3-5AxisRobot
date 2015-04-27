@@ -144,10 +144,10 @@ void ICIOPage::BindingIOPoints(const QList<ICIOPoint> &points)
 //            {
 //                adjustLabels_[1] = descr;
 //            }
-            else if(point.PointNum() == tr("X033"))
-            {
-                adjustLabels_[2] = descr;
-            }
+//            else if(point.PointNum() == tr("X033"))
+//            {
+//                adjustLabels_[2] = descr;
+//            }
             nums->setFixedWidth(50);
             descr->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
             descr->setFixedWidth(243);
@@ -226,7 +226,12 @@ void ICIOPage::showEvent(QShowEvent *e)
         {
             if(host->PeripheryOutput(i) == 1)
             {
-                recsLabels_[i]->setText(tr("Reserve") + QString::number(i+1));
+                if(i < 4)
+                    recsLabels_[i]->setText(tr("Reserve") + QString::number(i+1));
+                else if(i == 4)
+                    recsLabels_[i]->setText(tr("Reserve 5"));
+                else if(i == 5)
+                    recsLabels_[i]->setText(tr("Reserve 6"));
             }
             else
             {

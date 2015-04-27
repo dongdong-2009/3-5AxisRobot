@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1045</width>
+    <width>800</width>
     <height>395</height>
    </rect>
   </property>
@@ -24,9 +24,12 @@
     <number>2</number>
    </property>
    <property name="leftMargin">
-    <number>9</number>
+    <number>2</number>
    </property>
    <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
     <number>2</number>
    </property>
    <property name="bottomMargin">
@@ -123,21 +126,15 @@ color: rgb(255, 255, 0);</string>
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <property name="spacing">
-      <number>20</number>
+      <number>4</number>
      </property>
      <item>
-      <widget class="QToolButton" name="aAddButton">
+      <widget class="QPushButton" name="aAddButton">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>64</width>
-         <height>48</height>
-        </size>
        </property>
        <property name="text">
         <string>A+</string>
@@ -145,18 +142,12 @@ color: rgb(255, 255, 0);</string>
       </widget>
      </item>
      <item>
-      <widget class="QToolButton" name="aSubButton">
+      <widget class="QPushButton" name="aSubButton">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>64</width>
-         <height>48</height>
-        </size>
        </property>
        <property name="text">
         <string>A-</string>
@@ -164,18 +155,12 @@ color: rgb(255, 255, 0);</string>
       </widget>
      </item>
      <item>
-      <widget class="QToolButton" name="bAddButton">
+      <widget class="QPushButton" name="bAddButton">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>64</width>
-         <height>48</height>
-        </size>
        </property>
        <property name="text">
         <string>B+</string>
@@ -183,21 +168,93 @@ color: rgb(255, 255, 0);</string>
       </widget>
      </item>
      <item>
-      <widget class="QToolButton" name="bSubButton">
+      <widget class="QPushButton" name="bSubButton">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
-       <property name="minimumSize">
-        <size>
-         <width>64</width>
-         <height>48</height>
-        </size>
-       </property>
        <property name="text">
         <string>B-</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="axAddButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Ax+</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="axSubButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Ax-</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="bxAddButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Bx+</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="bxSubButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Bx-</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="zxAddButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Zx+</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="zxSubButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Zx-</string>
        </property>
       </widget>
      </item>
@@ -236,9 +293,6 @@ color: rgb(255, 255, 0);</string>
        </property>
        <property name="acceptDrops">
         <bool>false</bool>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">height:48px;</string>
        </property>
        <property name="text">
         <string/>
@@ -280,9 +334,6 @@ color: rgb(255, 255, 0);</string>
        <property name="acceptDrops">
         <bool>false</bool>
        </property>
-       <property name="styleSheet">
-        <string notr="true">height:48px</string>
-       </property>
        <property name="text">
         <string/>
        </property>
@@ -320,9 +371,6 @@ color: rgb(255, 255, 0);</string>
        <property name="acceptDrops">
         <bool>false</bool>
        </property>
-       <property name="styleSheet">
-        <string notr="true">height:48px</string>
-       </property>
        <property name="text">
         <string/>
        </property>
@@ -357,9 +405,6 @@ color: rgb(255, 255, 0);</string>
          <height>0</height>
         </size>
        </property>
-       <property name="styleSheet">
-        <string notr="true">height:48px</string>
-       </property>
        <property name="text">
         <string/>
        </property>
@@ -390,9 +435,6 @@ color: rgb(255, 255, 0);</string>
          <width>64</width>
          <height>0</height>
         </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">height:48px</string>
        </property>
        <property name="text">
         <string/>
