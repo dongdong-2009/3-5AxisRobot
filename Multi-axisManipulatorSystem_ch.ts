@@ -594,49 +594,54 @@
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="474"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="469"/>
         <source>M1 +</source>
-        <translation>主臂后退位置+</translation>
+        <translation>主臂后退调位+</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="152"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="500"/>
         <source>M1 -</source>
-        <translation>主臂后退位置-</translation>
+        <translation>主臂后退调位-</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="505"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="531"/>
         <source>M0 + </source>
-        <translation>主臂前进位置+</translation>
+        <translation>主臂前进调位+</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="536"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="562"/>
         <source>M0 -</source>
-        <translation>主臂前进位置-</translation>
+        <translation>主臂前进调位-</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="121"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="593"/>
         <source>M3 + </source>
-        <translation>M3 +</translation>
+        <translation>副臂前进调位+</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="295"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="624"/>
         <source>M3 -</source>
-        <translation>M3 -</translation>
+        <translation>副臂前进调位-</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="90"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="655"/>
         <source>M2 + </source>
-        <translation>M2 +</translation>
+        <translation>副臂后退调位+</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="264"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="686"/>
         <source>M2 -</source>
-        <translation>M2 -</translation>
+        <translation>副臂后退调位-</translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="708"/>
+        <source>X040</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -4070,7 +4075,7 @@ Reason</source>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="428"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="462"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="611"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="775"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="795"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
@@ -4129,13 +4134,13 @@ Reason</source>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="667"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="674"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="696"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="817"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="822"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="844"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="849"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="861"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="872"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="884"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="837"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="842"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="864"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="869"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="881"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="892"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="904"/>
         <source>Warnning</source>
         <translation>警告</translation>
     </message>
@@ -4156,31 +4161,36 @@ Reason</source>
         <translation>%1 错误的程序格式！将会跳过这个子程序！</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="769"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="787"/>
+        <source>
+App %1; Host:%2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>
 App %1; Host:</source>
         <oldsource>App %1; Host:</oldsource>
-        <translation>
+        <translation type="obsolete">
 手控版本:%1;主控版本:</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="921"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="927"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="941"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="947"/>
         <source>Wrong Register Code!</source>
         <translation>注册码错误！</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="933"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="953"/>
         <source>Register Success!</source>
         <translation>注册成功！</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="936"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="956"/>
         <source>No Limit</source>
         <translation>无限制</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="940"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="960"/>
         <source>hour</source>
         <translation>小时</translation>
     </message>
@@ -4217,26 +4227,26 @@ App %1; Host:</source>
         <translation type="obsolete">离开原点位置</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="776"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="796"/>
         <source>The system will be reboot to calibrate! Do you want to continue?</source>
         <translation>系统需要重启来校准屏幕!要继续吗?</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="817"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="822"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="837"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="842"/>
         <source>Wrong system config format!</source>
         <translation>错误的系统参数格式！</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="844"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="849"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="864"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="869"/>
         <source>Wrong Axis config format!</source>
         <translation>错误的轴参数格式！</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="861"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="872"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="884"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="881"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="892"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="904"/>
         <source>Wrong Rotation config format!</source>
         <translation>错误的每转距离参数格式！</translation>
     </message>
@@ -4438,7 +4448,7 @@ App %1; Host:</source>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="212"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="377"/>
         <source>M0</source>
-        <translation>主臂前进位置</translation>
+        <translation>主臂前进调位</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="216"/>
@@ -4449,7 +4459,7 @@ App %1; Host:</source>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="220"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="341"/>
         <source>M1</source>
-        <translation>主臂后退位置</translation>
+        <translation>主臂后退调位</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="224"/>
@@ -4460,7 +4470,7 @@ App %1; Host:</source>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="228"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="360"/>
         <source>M2</source>
-        <translation>M2</translation>
+        <translation>副臂后退调位</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="232"/>
@@ -4469,8 +4479,9 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="236"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="408"/>
         <source>M3</source>
-        <translation>M3</translation>
+        <translation>副臂前进调位</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="240"/>
@@ -4588,11 +4599,6 @@ App %1; Host:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="408"/>
-        <source>X040</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Y1 end Limit</source>
         <translation type="obsolete">Y1轴终点极限</translation>
     </message>
@@ -4634,7 +4640,7 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="311"/>
         <source>Z end Limit</source>
-        <translation type="unfinished">Z轴终点极限</translation>
+        <translation>Z轴终点极限</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="316"/>

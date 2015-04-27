@@ -405,7 +405,7 @@ void ICIOPage::showEvent(QShowEvent *e)
     else
     {
         multiLabels.value(X026)->setText(tr("X026"));
-        multiLabels.value(X040)->setText(tr("X040"));
+        multiLabels.value(X040)->setText(tr("M3"));
         //        multiLabels.value(X037)->setText(tr("X037"));
         //        multiLabels.value(Y024)->setText(tr("Y024"));
         //        multiLabels.value(Y046)->setText(tr("Y046"));

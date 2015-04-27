@@ -15,7 +15,7 @@ HCManualAdjustFrame::HCManualAdjustFrame(QWidget *parent) :
     offPixmap_(":/resource/ledgray(16).png"),
     inputOnPixmap_(":/resource/ledred(16).png"),
     outputOnPixmap_(":/resource/ledgreen(16).png"),
-    currentStatus_(9, false)
+    currentStatus_(16, false)
 {
     ui->setupUi(this);
     ICCommandKeyWrapper *wrapper;
@@ -141,6 +141,23 @@ void HCManualAdjustFrame::StatusRefreshed()
         {
             currentStatus_.clearBit(3);
             ui->x033Status->setPixmap(offPixmap_);
+        }
+    }
+
+    if(host->IsInputOn(24))   //x040
+    {
+        if(!currentStatus_.at(9))
+        {
+            currentStatus_.setBit(9);
+            ui->x040Status->setPixmap(inputOnPixmap_);
+        }
+    }
+    else
+    {
+        if(currentStatus_.at(9))
+        {
+            currentStatus_.clearBit(9);
+            ui->x040Status->setPixmap(offPixmap_);
         }
     }
 

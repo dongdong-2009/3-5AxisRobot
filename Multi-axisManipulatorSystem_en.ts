@@ -451,6 +451,11 @@
         <source>M2 -</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="708"/>
+        <source>X040</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>HCManualFixtureFrame</name>
@@ -3152,7 +3157,7 @@ Infomation</source>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="428"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="462"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="611"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="775"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="795"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3211,13 +3216,13 @@ Infomation</source>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="667"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="674"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="696"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="817"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="822"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="844"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="849"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="861"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="872"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="884"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="837"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="842"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="864"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="869"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="881"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="892"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="904"/>
         <source>Warnning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3238,54 +3243,53 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="769"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="787"/>
         <source>
-App %1; Host:</source>
-        <oldsource>App %1; Host:</oldsource>
+App %1; Host:%2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="776"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="796"/>
         <source>The system will be reboot to calibrate! Do you want to continue?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="817"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="822"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="837"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="842"/>
         <source>Wrong system config format!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="844"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="849"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="864"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="869"/>
         <source>Wrong Axis config format!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="861"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="872"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="884"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="881"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="892"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="904"/>
         <source>Wrong Rotation config format!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="921"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="927"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="941"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="947"/>
         <source>Wrong Register Code!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="933"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="953"/>
         <source>Register Success!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="936"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="956"/>
         <source>No Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="940"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="960"/>
         <source>hour</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3514,6 +3518,7 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="236"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="408"/>
         <source>M3</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3643,8 +3648,10 @@ App %1; Host:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="236"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="408"/>
-        <source>X040</source>
+        <source>M3</source>
+        <oldsource>M4</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
