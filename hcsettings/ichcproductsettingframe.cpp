@@ -86,6 +86,8 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
             SIGNAL(MoldNumberParamChanged()),
             this,
             SLOT(OnMoldNumberParamChanged()));
+
+    connect(ui->productClearButton,SIGNAL(clicked()), SLOT(OnProductClearButtonClicked()), Qt::UniqueConnection);
     ui->countUnitBox->setCurrentIndex(ICMold::CurrentMold()->MoldParam(ICMold::CountUnit));
     ui->productSave->blockSignals(true);
     ui->productSave->setChecked(ICParametersSave::Instance()->IsProductSave());
@@ -214,13 +216,14 @@ void ICHCProductSettingFrame::OnMoldNumberParamChanged()
     ui->countUnitBox->setCurrentIndex(ICMold::CurrentMold()->MoldParam(ICMold::CountUnit));
 }
 
-void ICHCProductSettingFrame::on_productClearButton_clicked()
+void ICHCProductSettingFrame::OnProductClearButtonClicked()
 {
     ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_PRODUCT_CLEAR);
     ICVirtualHost::GlobalVirtualHost()->SetFinishProductCount(0);
     ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_PRD_Product_Clear,
                                                 tr("Product clear"),
                                                 "");
+
 }
 
 void ICHCProductSettingFrame::FixtureBoxChange()

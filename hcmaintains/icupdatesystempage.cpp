@@ -142,9 +142,15 @@ void ICUpdateSystemPage::changeEvent(QEvent *e)
         ui->packetTable->setModel(model_);
 
         const int rowCount = ui->careTable->rowCount();
+        QStringList items;
+        items<<tr("Item-1")<<tr("Item-2")<<tr("Item-3")
+               <<tr("Item-4")<<tr("Item-5")<<tr("Item-6")<<tr("Item-7");
+        QLabel* l;
         for(int i = 0; i != rowCount; ++i)
         {
             restartBtns_[i]->setText(tr("Restart"));
+            l = qobject_cast<QLabel*>(ui->careTable->cellWidget(i, 0));
+            l->setText(items.at(i));
         }
     }
         break;

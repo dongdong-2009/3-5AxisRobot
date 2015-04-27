@@ -28,7 +28,7 @@ protected:
 private slots:
     void OnMoldNumberParamChanged();
 
-    void on_productClearButton_clicked();
+    void OnProductClearButtonClicked();
 
     void FixtureBoxChange();
     void retranslateUi_();
