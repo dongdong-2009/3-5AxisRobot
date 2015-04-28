@@ -165,5 +165,7 @@ stylesheet.path = /opt/Qt/apps/stylesheet
 stylesheet.files += $${configsPathBase}/stylesheet/*
 others.path = /opt/Qt/apps
 others.files += $${configsPathBase}/3-5AxisRobotDatabase
-INSTALLS += target translations records subs sysconfig resource stylesheet others
+scripts.path = /usr/bin
+scripts.files += $${configsPathBase}/*.sh
+INSTALLS += target translations records subs sysconfig resource stylesheet others scripts
 }

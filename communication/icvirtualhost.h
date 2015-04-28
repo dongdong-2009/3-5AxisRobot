@@ -744,17 +744,17 @@ public:
 inline void ICVirtualHost::ReConfigure()
 {
 //    qApp->processEvents();
-//    qDebug("Reconfig");
-//    WriteSubTohost_();
-//    WriteMoldTohost_();
-//    currentMold_->UpdateSyncSum();
-//    InitMoldParam_();
-//    InitSystem_();
-//    isParamChanged_ = false;
-    ReconfigureRunable *r = new ReconfigureRunable();
-    r->setAutoDelete(true);
-    QThreadPool::globalInstance()->start(r);
+    qDebug("Reconfig");
+    WriteSubTohost_();
+    WriteMoldTohost_();
+    currentMold_->UpdateSyncSum();
+    InitMoldParam_();
+    InitSystem_();
+    isParamChanged_ = false;
 //    WriteSystemTohost_();
+//    ReconfigureRunable *r = new ReconfigureRunable();
+//    r->setAutoDelete(true);
+//    QThreadPool::globalInstance()->start(r);
 }
 
 inline void ICVirtualHost::SetGlobalSpeed(int speed)
