@@ -122,6 +122,8 @@ public:
         kCS_PRD_Transport_Count_Way,
         kCS_PRD_Save_Count,
         kCS_PRD_Product_Clear,
+        kCS_PRD_Try_number,
+        kCS_PRD_Sample_cycle,
 
         kCS_RUN_START = 300,
         kCS_RUN_Tolerance,

@@ -1076,17 +1076,17 @@ Reason</source>
         <location filename="categorypage/icalarmframe.cpp" line="117"/>
         <location filename="categorypage/icalarmframe.cpp" line="214"/>
         <location filename="categorypage/icalarmframe.cpp" line="216"/>
-        <location filename="categorypage/icalarmframe.cpp" line="310"/>
+        <location filename="categorypage/icalarmframe.cpp" line="311"/>
         <source>no-solve</source>
         <translation>未解决</translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.cpp" line="369"/>
+        <location filename="categorypage/icalarmframe.cpp" line="370"/>
         <source>%1    %2[%3]    from    %4 to %5</source>
         <translation>%1    %2[%3]    从    %4 到 %5  </translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.cpp" line="378"/>
+        <location filename="categorypage/icalarmframe.cpp" line="379"/>
         <source>%1    %2[%3]    %4</source>
         <translation></translation>
     </message>
@@ -1112,7 +1112,7 @@ Reason</source>
     <message>
         <location filename="hcinstruction/icautorunrevise.ui" line="163"/>
         <source>Go to flag</source>
-        <translation type="unfinished">跳转到标签</translation>
+        <translation>跳转到标签</translation>
     </message>
     <message>
         <location filename="hcinstruction/icautorunrevise.ui" line="107"/>
@@ -1370,871 +1370,881 @@ Reason</source>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="41"/>
+        <source>kCS_PRD_Try_number</source>
+        <translation>试产模数</translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="42"/>
+        <source>kCS_PRD_Sample_cycle</source>
+        <translation>取样间隔</translation>
+    </message>
+    <message>
+        <location filename="icconfigstring.cpp" line="43"/>
         <source>kCS_RUN_Tolerance</source>
         <translation>容差</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="42"/>
+        <location filename="icconfigstring.cpp" line="44"/>
         <source>kCS_RUN_Distance_X1_X2</source>
         <translation>引拔距离</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="43"/>
+        <location filename="icconfigstring.cpp" line="45"/>
         <source>kCS_RUN_Acc_Time_X1</source>
         <translation>X1轴加减速时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="44"/>
+        <location filename="icconfigstring.cpp" line="46"/>
         <source>kCS_RUN_Acc_Time_Y1</source>
         <translation>Y1轴加减速时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="45"/>
+        <location filename="icconfigstring.cpp" line="47"/>
         <source>kCS_RUN_Acc_Time_Z</source>
         <translation>Z轴加减速时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="46"/>
+        <location filename="icconfigstring.cpp" line="48"/>
         <source>kCS_RUN_Acc_Time_X2</source>
         <translation>X2轴加减速时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="47"/>
+        <location filename="icconfigstring.cpp" line="49"/>
         <source>kCS_RUN_Acc_Time_Y2</source>
         <translation>Y2轴加减速时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="48"/>
+        <location filename="icconfigstring.cpp" line="50"/>
         <source>kCS_RUN_Acc_Time_A</source>
         <translation>A轴加减速时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="49"/>
+        <location filename="icconfigstring.cpp" line="51"/>
         <source>kCS_RUN_Acc_Time_B</source>
         <translation>B轴加减速时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="50"/>
+        <location filename="icconfigstring.cpp" line="52"/>
         <source>kCS_RUN_Acc_Time_C</source>
         <translation>C轴加减速时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="51"/>
+        <location filename="icconfigstring.cpp" line="53"/>
         <source>kCS_RUN_Speed_Limit_X1</source>
         <translation>X1最高速度</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="52"/>
+        <location filename="icconfigstring.cpp" line="54"/>
         <source>kCS_RUN_Speed_Limit_Y1</source>
         <translation>Y1最高速度</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="53"/>
+        <location filename="icconfigstring.cpp" line="55"/>
         <source>kCS_RUN_Speed_Limit_Z</source>
         <translation>Z最高速度</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="54"/>
+        <location filename="icconfigstring.cpp" line="56"/>
         <source>kCS_RUN_Speed_Limit_X2</source>
         <translation>X2最高速度</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="55"/>
+        <location filename="icconfigstring.cpp" line="57"/>
         <source>kCS_RUN_Speed_Limit_Y2</source>
         <translation>Y2最高速度</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="56"/>
+        <location filename="icconfigstring.cpp" line="58"/>
         <source>kCS_RUN_Speed_Limit_A</source>
         <translation>A最高速度</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="57"/>
+        <location filename="icconfigstring.cpp" line="59"/>
         <source>kCS_RUN_Speed_Limit_B</source>
         <translation>B最高速度</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="58"/>
+        <location filename="icconfigstring.cpp" line="60"/>
         <source>kCS_RUN_Speed_Limit_C</source>
         <translation>C最高速度</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="59"/>
+        <location filename="icconfigstring.cpp" line="61"/>
         <source>kCS_SECP_Inside_X_Min</source>
         <translation>模内上升X轴最小位置</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="60"/>
+        <location filename="icconfigstring.cpp" line="62"/>
         <source>kCS_SECP_Inside_X_Max</source>
         <translation>模内上升X轴最大位置</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="61"/>
+        <location filename="icconfigstring.cpp" line="63"/>
         <source>kCS_SECP_Outside_X_Min</source>
         <translation>模外上升X轴最小位置</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="62"/>
+        <location filename="icconfigstring.cpp" line="64"/>
         <source>kCS_SECP_Outside_X_Max</source>
         <translation>模外上升X轴最大位置</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="63"/>
+        <location filename="icconfigstring.cpp" line="65"/>
         <source>kCS_STRUCT_Axis_Define_X1</source>
         <translation>X1轴定义</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="64"/>
+        <location filename="icconfigstring.cpp" line="66"/>
         <source>kCS_STRUCT_Axis_Define_Y1</source>
         <translation>Y1轴定义</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="65"/>
+        <location filename="icconfigstring.cpp" line="67"/>
         <source>kCS_STRUCT_Axis_Define_Z</source>
         <translation>Z轴定义</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="66"/>
+        <location filename="icconfigstring.cpp" line="68"/>
         <source>kCS_STRUCT_Axis_Define_X2</source>
         <translation>X2轴定义</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="67"/>
+        <location filename="icconfigstring.cpp" line="69"/>
         <source>kCS_STRUCT_Axis_Define_Y2</source>
         <translation>Y2轴定义</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="68"/>
+        <location filename="icconfigstring.cpp" line="70"/>
         <source>kCS_STRUCT_Axis_Define_A</source>
         <translation>A轴定义</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="69"/>
+        <location filename="icconfigstring.cpp" line="71"/>
         <source>kCS_STRUCT_Axis_Define_B</source>
         <translation>B轴定义</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="70"/>
+        <location filename="icconfigstring.cpp" line="72"/>
         <source>kCS_STRUCT_Axis_Define_C</source>
         <translation>C轴定义</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="71"/>
+        <location filename="icconfigstring.cpp" line="73"/>
         <source>kCS_STRUCT_Reserve_Define_Y017</source>
         <translation>Y017定义</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="72"/>
+        <location filename="icconfigstring.cpp" line="74"/>
         <source>kCS_STRUCT_Reserve_Define_Y022</source>
         <translation>Y022定义</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="73"/>
+        <location filename="icconfigstring.cpp" line="75"/>
         <source>kCS_STRUCT_Reserve_Define_Y031</source>
         <translation>Y031定义</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="74"/>
+        <location filename="icconfigstring.cpp" line="76"/>
         <source>kCS_STRUCT_Reserve_Define_Y032</source>
         <translation>Y032定义</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="75"/>
+        <location filename="icconfigstring.cpp" line="77"/>
         <source>kCS_STRUCT_Reserve_Define_Y035</source>
         <translation>Y035定义</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="76"/>
+        <location filename="icconfigstring.cpp" line="78"/>
         <source>kCS_STRUCT_Reserve_Define_Y036</source>
         <translation>Y036定义</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="77"/>
+        <location filename="icconfigstring.cpp" line="79"/>
         <source>kCS_STRUCT_Reserve_Define_R1</source>
         <translation>备用定义</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="78"/>
+        <location filename="icconfigstring.cpp" line="80"/>
         <source>kCS_STRUCT_Reserve_Define_R2</source>
         <translation>备用定义</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="79"/>
+        <location filename="icconfigstring.cpp" line="81"/>
         <source>kCS_STRUCT_Limit_Define_Arm_Num</source>
         <translation>手臂数</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="80"/>
+        <location filename="icconfigstring.cpp" line="82"/>
         <source>kCS_STRUCT_Limit_Define_MArm_DW_Limit</source>
         <translation>主臂下降限</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="81"/>
+        <location filename="icconfigstring.cpp" line="83"/>
         <source>kCS_STRUCT_Limit_Define_MArm_FW_Limit</source>
         <translation>主臂前进限</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="82"/>
+        <location filename="icconfigstring.cpp" line="84"/>
         <source>kCS_STRUCT_Limit_Define_MArm_BW_Limit</source>
         <translation>主臂后退限</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="83"/>
+        <location filename="icconfigstring.cpp" line="85"/>
         <source>kCS_STRUCT_Limit_Define_SArm_DW_Limit</source>
         <translation>副臂下降限</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="84"/>
+        <location filename="icconfigstring.cpp" line="86"/>
         <source>kCS_STRUCT_Limit_Define_SArm_FW_Limit</source>
         <translation>副臂前进限</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="85"/>
+        <location filename="icconfigstring.cpp" line="87"/>
         <source>kCS_STRUCT_Limit_Define_SArm_BW_Limit</source>
         <translation>副臂后退限</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="86"/>
+        <location filename="icconfigstring.cpp" line="88"/>
         <source>kCS_STRUCT_Other_Define_Escape</source>
         <translation>型内逃跑</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="87"/>
+        <location filename="icconfigstring.cpp" line="89"/>
         <source>kCS_STRUCT_Other_Define_Tune_bit</source>
         <translation>调位</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="88"/>
+        <location filename="icconfigstring.cpp" line="90"/>
         <source>kCS_STRUCT_Other_Define_Inside_Position</source>
         <translation>模内侧姿</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="89"/>
+        <location filename="icconfigstring.cpp" line="91"/>
         <source>kCS_STRUCT_Other_Define_Servo_Flex</source>
         <translation>运动刚性</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="90"/>
+        <location filename="icconfigstring.cpp" line="92"/>
         <source>kCS_STRUCT_Config_Save</source>
         <translation>结果参数</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="91"/>
+        <location filename="icconfigstring.cpp" line="93"/>
         <source>kCS_TIME_Ver1</source>
         <translation>垂直1限制时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="92"/>
+        <location filename="icconfigstring.cpp" line="94"/>
         <source>kCS_TIME_Hor1</source>
         <translation>水平1限制时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="93"/>
+        <location filename="icconfigstring.cpp" line="95"/>
         <source>kCS_TIME_Ver2</source>
         <translation>垂直2限制时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="94"/>
+        <location filename="icconfigstring.cpp" line="96"/>
         <source>kCS_TIME_Hor2</source>
         <translation>水平2限制时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="95"/>
+        <location filename="icconfigstring.cpp" line="97"/>
         <source>kCS_TIME_MArm_UP</source>
         <translation>主臂上升限制时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="96"/>
+        <location filename="icconfigstring.cpp" line="98"/>
         <source>kCS_TIME_MArm_Dw</source>
         <translation>主臂下降限制时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="97"/>
+        <location filename="icconfigstring.cpp" line="99"/>
         <source>kCS_TIME_MArm_FW</source>
         <translation>主臂前进限制时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="98"/>
+        <location filename="icconfigstring.cpp" line="100"/>
         <source>kCS_TIME_MArm_BW</source>
         <translation>主臂后退限制时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="99"/>
+        <location filename="icconfigstring.cpp" line="101"/>
         <source>kCS_TIME_Z_FW</source>
         <translation>横出限制时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="100"/>
+        <location filename="icconfigstring.cpp" line="102"/>
         <source>kCS_TIME_Z_BW</source>
         <translation>横入限制时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="101"/>
+        <location filename="icconfigstring.cpp" line="103"/>
         <source>kCS_TIME_SArm_UP</source>
         <translation>副臂上升限制时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="102"/>
+        <location filename="icconfigstring.cpp" line="104"/>
         <source>kCS_TIME_SArm_DW</source>
         <translation>副臂下降限制时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="103"/>
+        <location filename="icconfigstring.cpp" line="105"/>
         <source>kCS_TIME_SArm_FW</source>
         <translation>副臂前进限制时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="104"/>
+        <location filename="icconfigstring.cpp" line="106"/>
         <source>kCS_TIME_SArm_BW</source>
         <translation>副臂后退限制时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="105"/>
+        <location filename="icconfigstring.cpp" line="107"/>
         <source>kCS_STACK_Group1_Seq</source>
         <translation>堆叠1组顺序</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="106"/>
+        <location filename="icconfigstring.cpp" line="108"/>
         <source>kCS_STACK_Group2_Seq</source>
         <translation>堆叠2组顺序</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="107"/>
+        <location filename="icconfigstring.cpp" line="109"/>
         <source>kCS_STACK_Group3_Seq</source>
         <translation>堆叠3组顺序</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="108"/>
+        <location filename="icconfigstring.cpp" line="110"/>
         <source>kCS_STACK_Group4_Seq</source>
         <translation>堆叠4组顺序</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="109"/>
+        <location filename="icconfigstring.cpp" line="111"/>
         <source>kCS_STACK_Group1_X_Dir</source>
         <translation>堆叠1组X轴方向</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="110"/>
+        <location filename="icconfigstring.cpp" line="112"/>
         <source>kCS_STACK_Group2_X_Dir</source>
         <translation>堆叠2组X轴方向</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="111"/>
+        <location filename="icconfigstring.cpp" line="113"/>
         <source>kCS_STACK_Group3_X_Dir</source>
         <translation>堆叠3组X轴方向</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="112"/>
+        <location filename="icconfigstring.cpp" line="114"/>
         <source>kCS_STACK_Group4_X_Dir</source>
         <translation>堆叠4组X轴方向</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="113"/>
+        <location filename="icconfigstring.cpp" line="115"/>
         <source>kCS_STACK_Group1_Y_Dir</source>
         <translation>堆叠1组Y轴方向</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="114"/>
+        <location filename="icconfigstring.cpp" line="116"/>
         <source>kCS_STACK_Group2_Y_Dir</source>
         <translation>堆叠2组Y轴方向</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="115"/>
+        <location filename="icconfigstring.cpp" line="117"/>
         <source>kCS_STACK_Group3_Y_Dir</source>
         <translation>堆叠3组Y轴方向</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="116"/>
+        <location filename="icconfigstring.cpp" line="118"/>
         <source>kCS_STACK_Group4_Y_Dir</source>
         <translation>堆叠4组Y轴方向</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="117"/>
+        <location filename="icconfigstring.cpp" line="119"/>
         <source>kCS_STACK_Group1_Z_Dir</source>
         <translation>堆叠1组Z轴方向</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="118"/>
+        <location filename="icconfigstring.cpp" line="120"/>
         <source>kCS_STACK_Group2_Z_Dir</source>
         <translation>堆叠2组Z轴方向</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="119"/>
+        <location filename="icconfigstring.cpp" line="121"/>
         <source>kCS_STACK_Group3_Z_Dir</source>
         <translation>堆叠3组Z轴方向</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="120"/>
+        <location filename="icconfigstring.cpp" line="122"/>
         <source>kCS_STACK_Group4_Z_Dir</source>
         <translation>堆叠4组Z轴方向</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="121"/>
+        <location filename="icconfigstring.cpp" line="123"/>
         <source>kCS_STACK_Group1_X_Number</source>
         <translation>堆叠1组X轴个数</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="122"/>
+        <location filename="icconfigstring.cpp" line="124"/>
         <source>kCS_STACK_Group2_X_Number</source>
         <translation>堆叠2组X轴个数</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="123"/>
+        <location filename="icconfigstring.cpp" line="125"/>
         <source>kCS_STACK_Group3_X_Number</source>
         <translation>堆叠3组X轴个数</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="124"/>
+        <location filename="icconfigstring.cpp" line="126"/>
         <source>kCS_STACK_Group4_X_Number</source>
         <translation>堆叠4组X轴个数</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="125"/>
+        <location filename="icconfigstring.cpp" line="127"/>
         <source>kCS_STACK_Group1_Y_Number</source>
         <translation>堆叠1组Y轴个数</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="126"/>
+        <location filename="icconfigstring.cpp" line="128"/>
         <source>kCS_STACK_Group2_Y_Number</source>
         <translation>堆叠2组Y轴个数</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="127"/>
+        <location filename="icconfigstring.cpp" line="129"/>
         <source>kCS_STACK_Group3_Y_Number</source>
         <translation>堆叠3组Y轴个数</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="128"/>
+        <location filename="icconfigstring.cpp" line="130"/>
         <source>kCS_STACK_Group4_Y_Number</source>
         <translation>堆叠4组Y轴个数</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="129"/>
+        <location filename="icconfigstring.cpp" line="131"/>
         <source>kCS_STACK_Group1_Z_Number</source>
         <translation>堆叠1组Z轴个数</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="130"/>
+        <location filename="icconfigstring.cpp" line="132"/>
         <source>kCS_STACK_Group2_Z_Number</source>
         <translation>堆叠2组Z轴个数</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="131"/>
+        <location filename="icconfigstring.cpp" line="133"/>
         <source>kCS_STACK_Group3_Z_Number</source>
         <translation>堆叠3组Z轴个数</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="132"/>
+        <location filename="icconfigstring.cpp" line="134"/>
         <source>kCS_STACK_Group4_Z_Number</source>
         <translation>堆叠4组Z轴个数</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="133"/>
+        <location filename="icconfigstring.cpp" line="135"/>
         <source>kCS_STACK_Group1_X_Space</source>
         <translation>堆叠1组X轴间距</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="134"/>
+        <location filename="icconfigstring.cpp" line="136"/>
         <source>kCS_STACK_Group2_X_Space</source>
         <translation>堆叠2组X轴间距</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="135"/>
+        <location filename="icconfigstring.cpp" line="137"/>
         <source>kCS_STACK_Group3_X_Space</source>
         <translation>堆叠3组X轴间距</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="136"/>
+        <location filename="icconfigstring.cpp" line="138"/>
         <source>kCS_STACK_Group4_X_Space</source>
         <translation>堆叠4组X轴间距</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="137"/>
+        <location filename="icconfigstring.cpp" line="139"/>
         <source>kCS_STACK_Group1_Y_Space</source>
         <translation>堆叠1组Y轴间距</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="138"/>
+        <location filename="icconfigstring.cpp" line="140"/>
         <source>kCS_STACK_Group2_Y_Space</source>
         <translation>堆叠2组Y轴间距</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="139"/>
+        <location filename="icconfigstring.cpp" line="141"/>
         <source>kCS_STACK_Group3_Y_Space</source>
         <translation>堆叠3组Y轴间距</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="140"/>
+        <location filename="icconfigstring.cpp" line="142"/>
         <source>kCS_STACK_Group4_Y_Space</source>
         <translation>堆叠4组Y轴间距</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="141"/>
+        <location filename="icconfigstring.cpp" line="143"/>
         <source>kCS_STACK_Group1_Z_Space</source>
         <translation>堆叠1组Z轴间距</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="142"/>
+        <location filename="icconfigstring.cpp" line="144"/>
         <source>kCS_STACK_Group2_Z_Space</source>
         <translation>堆叠2组Z轴间距</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="143"/>
+        <location filename="icconfigstring.cpp" line="145"/>
         <source>kCS_STACK_Group3_Z_Space</source>
         <translation>堆叠3组Z轴间距</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="144"/>
+        <location filename="icconfigstring.cpp" line="146"/>
         <source>kCS_STACK_Group4_Z_Space</source>
         <translation>堆叠4组Z轴间距</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="145"/>
+        <location filename="icconfigstring.cpp" line="147"/>
         <source>kCS_STACK_Group1_Is_SArm</source>
         <translation>堆叠1组是否副臂堆叠</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="146"/>
+        <location filename="icconfigstring.cpp" line="148"/>
         <source>kCS_STACK_Group2_Is_SArm</source>
         <translation>堆叠2组是否副臂堆叠</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="147"/>
+        <location filename="icconfigstring.cpp" line="149"/>
         <source>kCS_STACK_Group3_Is_SArm</source>
         <translation>堆叠3组是否副臂堆叠</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="148"/>
+        <location filename="icconfigstring.cpp" line="150"/>
         <source>kCS_STACK_Group4_Is_SArm</source>
         <translation>堆叠4组是否副臂堆叠</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="149"/>
+        <location filename="icconfigstring.cpp" line="151"/>
         <source>kCS_STACK_Group1_Count_Way</source>
         <translation>堆叠1组堆叠计数器</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="150"/>
+        <location filename="icconfigstring.cpp" line="152"/>
         <source>kCS_STACK_Group2_Count_Way</source>
         <translation>堆叠2组堆叠计数器</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="151"/>
+        <location filename="icconfigstring.cpp" line="153"/>
         <source>kCS_STACK_Group3_Count_Way</source>
         <translation>堆叠3组堆叠计数器</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="152"/>
+        <location filename="icconfigstring.cpp" line="154"/>
         <source>kCS_STACK_Group4_Count_Way</source>
         <translation>堆叠4组堆叠计数器</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="153"/>
+        <location filename="icconfigstring.cpp" line="155"/>
         <source>kCS_AXIS_Length_X1</source>
         <translation>X1轴机器长度</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="154"/>
+        <location filename="icconfigstring.cpp" line="156"/>
         <source>kCS_AXIS_Length_Y1</source>
         <translation>Y1轴机器长度</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="155"/>
+        <location filename="icconfigstring.cpp" line="157"/>
         <source>kCS_AXIS_Length_Z</source>
         <translation>Z轴机器长度</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="156"/>
+        <location filename="icconfigstring.cpp" line="158"/>
         <source>kCS_AXIS_Length_X2</source>
         <translation>X2轴机器长度</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="157"/>
+        <location filename="icconfigstring.cpp" line="159"/>
         <source>kCS_AXIS_Length_Y2</source>
         <translation>Y2轴机器长度</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="158"/>
+        <location filename="icconfigstring.cpp" line="160"/>
         <source>kCS_AXIS_Length_A</source>
         <translation>A轴最大旋转</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="159"/>
+        <location filename="icconfigstring.cpp" line="161"/>
         <source>kCS_AXIS_Length_B</source>
         <translation>B轴最大旋转</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="160"/>
+        <location filename="icconfigstring.cpp" line="162"/>
         <source>kCS_AXIS_Length_C</source>
         <translation>C轴最大旋转</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="161"/>
+        <location filename="icconfigstring.cpp" line="163"/>
         <source>kCS_AXIS_Move_Limit_X1</source>
         <translation>X1轴最大移动</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="162"/>
+        <location filename="icconfigstring.cpp" line="164"/>
         <source>kCS_AXIS_Move_Limit_Y1</source>
         <translation>Y1轴最大移动</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="163"/>
+        <location filename="icconfigstring.cpp" line="165"/>
         <source>kCS_AXIS_Move_Limit_Z</source>
         <translation>Z轴最大移动</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="164"/>
+        <location filename="icconfigstring.cpp" line="166"/>
         <source>kCS_AXIS_Move_Limit_X2</source>
         <translation>X2轴最大移动</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="165"/>
+        <location filename="icconfigstring.cpp" line="167"/>
         <source>kCS_AXIS_Move_Limit_Y2</source>
         <translation>Y2轴最大移动</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="166"/>
+        <location filename="icconfigstring.cpp" line="168"/>
         <source>kCS_AXIS_Move_Limit_A</source>
         <translation>A轴原点偏置</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="167"/>
+        <location filename="icconfigstring.cpp" line="169"/>
         <source>kCS_AXIS_Move_Limit_B</source>
         <translation>B轴原点偏置</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="168"/>
+        <location filename="icconfigstring.cpp" line="170"/>
         <source>kCS_AXIS_Move_Limit_C</source>
         <translation>C轴原点偏置</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="169"/>
+        <location filename="icconfigstring.cpp" line="171"/>
         <source>kCS_AXIS_Min_X1</source>
         <translation>X1轴模内最小位置</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="170"/>
+        <location filename="icconfigstring.cpp" line="172"/>
         <source>kCS_AXIS_Min_Y1</source>
         <translation>Y1轴最大待机位置</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="171"/>
+        <location filename="icconfigstring.cpp" line="173"/>
         <source>kCS_AXIS_Min_Z</source>
         <translation>Z轴型内安全区</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="172"/>
+        <location filename="icconfigstring.cpp" line="174"/>
         <source>kCS_AXIS_Min_X2</source>
         <translation>X2轴模内最小位置</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="173"/>
+        <location filename="icconfigstring.cpp" line="175"/>
         <source>kCS_AXIS_Min_Y2</source>
         <translation>Y2轴最大待机位置</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="174"/>
+        <location filename="icconfigstring.cpp" line="176"/>
         <source>kCS_AXIS_Min_A</source>
         <translation>A轴横行安全范围(小于)</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="175"/>
+        <location filename="icconfigstring.cpp" line="177"/>
         <source>kCS_AXIS_Min_B</source>
         <translation>B轴横行安全范围(小于)</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="176"/>
+        <location filename="icconfigstring.cpp" line="178"/>
         <source>kCS_AXIS_Min_C</source>
         <translation>C轴横行安全范围(小于)</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="177"/>
+        <location filename="icconfigstring.cpp" line="179"/>
         <source>kCS_AXIS_Max_X1</source>
         <translation>X1轴模内最大位置</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="178"/>
+        <location filename="icconfigstring.cpp" line="180"/>
         <source>kCS_AXIS_Max_Y1</source>
         <translation>Y1轴离开原点位置</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="179"/>
+        <location filename="icconfigstring.cpp" line="181"/>
         <source>kCS_AXIS_Max_Z</source>
         <translation>Z轴型外安全区</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="180"/>
+        <location filename="icconfigstring.cpp" line="182"/>
         <source>kCS_AXIS_Max_X2</source>
         <translation>21轴模内最大位置</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="181"/>
+        <location filename="icconfigstring.cpp" line="183"/>
         <source>kCS_AXIS_Max_Y2</source>
         <translation>Y2轴离开原点位置</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="182"/>
+        <location filename="icconfigstring.cpp" line="184"/>
         <source>kCS_AXIS_Max_A</source>
         <translation>A轴横行安全范围(大于)</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="183"/>
+        <location filename="icconfigstring.cpp" line="185"/>
         <source>kCS_AXIS_Max_B</source>
         <translation>B轴横行安全范围(大于)</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="184"/>
+        <location filename="icconfigstring.cpp" line="186"/>
         <source>kCS_AXIS_Max_C</source>
         <translation>C轴横行安全范围(大于)</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="185"/>
+        <location filename="icconfigstring.cpp" line="187"/>
         <source>kCS_AXIS_Rotate_X1</source>
         <translation>X1轴每转距离</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="186"/>
+        <location filename="icconfigstring.cpp" line="188"/>
         <source>kCS_AXIS_Rotate_Y1</source>
         <translation>Y1轴每转距离</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="187"/>
+        <location filename="icconfigstring.cpp" line="189"/>
         <source>kCS_AXIS_Rotate_Z</source>
         <translation>Z轴每转距离</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="188"/>
+        <location filename="icconfigstring.cpp" line="190"/>
         <source>kCS_AXIS_Rotate_X2</source>
         <translation>X2轴每转距离</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="189"/>
+        <location filename="icconfigstring.cpp" line="191"/>
         <source>kCS_AXIS_Rotate_Y2</source>
         <translation>Y2轴每转距离</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="190"/>
+        <location filename="icconfigstring.cpp" line="192"/>
         <source>kCS_AXIS_Rotate_A</source>
         <translation>A轴电机每圈</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="191"/>
+        <location filename="icconfigstring.cpp" line="193"/>
         <source>kCS_AXIS_Rotate_B</source>
         <translation>B轴电机每圈</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="192"/>
+        <location filename="icconfigstring.cpp" line="194"/>
         <source>kCS_AXIS_Rotate_C</source>
         <translation>C轴电机每圈</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="193"/>
+        <location filename="icconfigstring.cpp" line="195"/>
         <source>kCS_AXIS_Config_Save</source>
         <translation>轴参数</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="194"/>
+        <location filename="icconfigstring.cpp" line="196"/>
         <source>kCS_PANEL_Key_Tone</source>
         <translation>按键音</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="195"/>
+        <location filename="icconfigstring.cpp" line="197"/>
         <source>kCS_PANEL_Touch_Recal</source>
         <translation>触摸屏</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="196"/>
+        <location filename="icconfigstring.cpp" line="198"/>
         <source>kCS_PANEL_Language</source>
         <translation>面板语言</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="197"/>
+        <location filename="icconfigstring.cpp" line="199"/>
         <source>kCS_PANEL_Datetime</source>
         <translation>面板日期</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="198"/>
+        <location filename="icconfigstring.cpp" line="200"/>
         <source>kCS_PANEL_Backlight</source>
         <translation>屏幕背光时间</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="199"/>
+        <location filename="icconfigstring.cpp" line="201"/>
         <source>kCS_PANEL_Bright</source>
         <translation>屏幕亮度</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="200"/>
+        <location filename="icconfigstring.cpp" line="202"/>
         <source>kCS_PANEL_Admin_Password</source>
         <translation>管理员密码</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="201"/>
+        <location filename="icconfigstring.cpp" line="203"/>
         <source>kCS_PANEL_Root_Password</source>
         <translation>高级管理员密码</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="202"/>
+        <location filename="icconfigstring.cpp" line="204"/>
         <source>kCS_PANEL_Super_Password</source>
         <translation>超级密码</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="203"/>
+        <location filename="icconfigstring.cpp" line="205"/>
         <source>kCS_PANEL_Function_Extent</source>
         <translation>功能扩展</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="204"/>
+        <location filename="icconfigstring.cpp" line="206"/>
         <source>kCS_PANEL_Register_Extent</source>
         <translation>注册功能</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="205"/>
+        <location filename="icconfigstring.cpp" line="207"/>
         <source>kCS_PANEL_Config_Save</source>
         <translation>面板参数</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="206"/>
+        <location filename="icconfigstring.cpp" line="208"/>
         <source>kCS_CARE_Item1_Cycle</source>
         <translation>保养项目1周期</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="207"/>
+        <location filename="icconfigstring.cpp" line="209"/>
         <source>kCS_CARE_Item2_Cycle</source>
         <translation>保养项目2周期</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="208"/>
+        <location filename="icconfigstring.cpp" line="210"/>
         <source>kCS_CARE_Item3_Cycle</source>
         <translation>保养项目3周期</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="209"/>
+        <location filename="icconfigstring.cpp" line="211"/>
         <source>kCS_CARE_Item4_Cycle</source>
         <translation>保养项目4周期</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="210"/>
+        <location filename="icconfigstring.cpp" line="212"/>
         <source>kCS_CARE_Item5_Cycle</source>
         <translation>保养项目5周期</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="211"/>
+        <location filename="icconfigstring.cpp" line="213"/>
         <source>kCS_CARE_Item6_Cycle</source>
         <translation>保养项目6周期</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="212"/>
+        <location filename="icconfigstring.cpp" line="214"/>
         <source>kCS_CARE_Item7_Cycle</source>
         <translation>保养项目7周期</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="213"/>
+        <location filename="icconfigstring.cpp" line="215"/>
         <source>kCS_Err</source>
         <translation>非内部参数</translation>
     </message>
     <message>
-        <location filename="icconfigstring.cpp" line="214"/>
+        <location filename="icconfigstring.cpp" line="216"/>
         <source>No IMPL</source>
         <translation>没有实现</translation>
     </message>
@@ -3964,14 +3974,14 @@ Reason</source>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="14"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="14"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="179"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="182"/>
         <source>Frame</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="39"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="207"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="180"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="183"/>
         <source>Product</source>
         <translation>产品数</translation>
     </message>
@@ -3980,72 +3990,72 @@ Reason</source>
         <translation type="obsolete">取样模数</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="302"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="296"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="299"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="185"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="188"/>
         <source>Sampling Interval</source>
         <translation>取样间隔</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="325"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="319"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="322"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="186"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="189"/>
         <source>Bad Product</source>
         <translation>不良品数</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="79"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="98"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="189"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="192"/>
         <source>Fixture</source>
         <translation>治具定义</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="237"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="214"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="184"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="187"/>
         <source>TryProduct</source>
         <translation>试产模数</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="180"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="176"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="192"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="195"/>
         <source>Reversed Phase</source>
         <translation>反相</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="272"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="266"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="269"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="204"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="207"/>
         <source>Recycle Time</source>
         <translation>成型周期</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="348"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="342"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="345"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="203"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="206"/>
         <source>Get Fail</source>
         <translation>取物失败</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="356"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="350"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="353"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="194"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="197"/>
         <source>Alarm When Up</source>
         <translation>模内上升报警</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="361"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="355"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="358"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="195"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="198"/>
         <source>Alarm Once</source>
         <translation>即时报警</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="415"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="409"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="412"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="196"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="199"/>
         <source>All</source>
         <translation>全部</translation>
     </message>
@@ -4058,37 +4068,37 @@ Reason</source>
         <translation type="obsolete">无限制</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="420"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="414"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="417"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="197"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="200"/>
         <source>Good</source>
         <translation>良品</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="425"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="419"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="422"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="198"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="201"/>
         <source>Stack-1</source>
         <translation>堆叠1组</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="430"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="424"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="427"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="199"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="202"/>
         <source>Stack-2</source>
         <translation>堆叠2组</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="435"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="429"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="432"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="200"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="203"/>
         <source>Stack-3</source>
         <translation>堆叠3组</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="440"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="434"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="437"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="201"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="204"/>
         <source>Stack-4</source>
         <translation>堆叠4组</translation>
     </message>
@@ -4097,9 +4107,9 @@ Reason</source>
         <translation type="obsolete">模内侧姿</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="394"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="388"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="391"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="205"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="208"/>
         <source>Product Save</source>
         <translation>产量记忆</translation>
     </message>
@@ -4108,9 +4118,9 @@ Reason</source>
         <translation type="obsolete">输送带计数器</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="407"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="401"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="404"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="202"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="205"/>
         <source>Count Ways</source>
         <oldsource>Count Unit</oldsource>
         <translation>输送带计数器</translation>
@@ -4118,14 +4128,14 @@ Reason</source>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="136"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="132"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="193"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="196"/>
         <source>Positive Phase</source>
         <translation>正相</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="214"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="246"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="181"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="184"/>
         <source>Wait Mold Opened Limit Time</source>
         <translation>等待开模时间</translation>
     </message>
@@ -4143,36 +4153,36 @@ Reason</source>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="86"/>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="295"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="289"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="65"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="292"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="182"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="185"/>
         <source>s</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="69"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="88"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="187"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="190"/>
         <source>Alarm Times</source>
         <translation>报警时间</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="46"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="26"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="188"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="191"/>
         <source>Times</source>
         <translation>s</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="256"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="233"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="183"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="186"/>
         <source>Product Clear</source>
         <translation>产品清零</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="222"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="225"/>
         <source>Product clear</source>
         <translation>产品清零</translation>
     </message>
@@ -4245,7 +4255,7 @@ Reason</source>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="875"/>
         <source>Flag[%1]:%2</source>
-        <translation type="unfinished">标签[%1]:%2</translation>
+        <translation>标签[%1]:%2</translation>
     </message>
     <message>
         <source>Do you want to ignor this warning?</source>
@@ -5743,7 +5753,7 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="311"/>
         <source>Z end Limit</source>
-        <translation type="unfinished">Z轴终点极限</translation>
+        <translation>Z轴终点极限</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="316"/>
@@ -6013,7 +6023,7 @@ App %1; Host:</source>
     <message>
         <location filename="hcmaintains/icinputdialog.ui" line="14"/>
         <source>Dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>输入</translation>
     </message>
 </context>
 <context>

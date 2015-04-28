@@ -101,7 +101,8 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
     editorToConfigIDs_.insert(ui->countUnitBox, ICConfigString::kCS_PRD_Transport_Count_Way);
     editorToConfigIDs_.insert(ui->productSave, ICConfigString::kCS_PRD_Save_Count);
     editorToConfigIDs_.insert(ui->getFailWay, ICConfigString::kCS_PRD_Alarm_Occasion_When_Get_Fail);
-
+    editorToConfigIDs_.insert(ui->tryProductEdit, ICConfigString::kCS_PRD_Try_number);
+    editorToConfigIDs_.insert(ui->samplingEdit, ICConfigString::kCS_PRD_Sample_cycle);
     ICLogInit;
 
     this->hide();
