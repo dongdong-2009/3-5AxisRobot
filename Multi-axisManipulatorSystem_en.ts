@@ -910,7 +910,7 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcinstruction/icautorunrevise.ui" line="146"/>
-        <location filename="hcinstruction/icautorunrevise.cpp" line="86"/>
+        <location filename="hcinstruction/icautorunrevise.cpp" line="91"/>
         <source>Limit Time:</source>
         <translation type="unfinished"></translation>
     </message>

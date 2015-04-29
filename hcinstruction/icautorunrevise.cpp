@@ -93,6 +93,7 @@ bool ICAutoRunRevise::ShowModifyItem(const ICMoldItem *item, ICMoldItem* ret, co
         else if(item->Action() == ICMold::ACTCHECKINPUT)
         {
 //            ui->label->setText(tr("Limit Time:"));
+            return false;
             ui->delayEdit->SetDecimalPlaces(0);
             ui->delayEdit->setValidator(returnStepValidator);
             ui->sLabel->hide();
