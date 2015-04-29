@@ -69,6 +69,11 @@ bool ICAutoRunRevise::ShowModifyItem(const ICMoldItem *item, ICMoldItem* ret, co
     ui->limitEdit->hide();
     ui->limitTimeLabel->hide();
     ui->limitUnitLabel->hide();
+    ui->flagSel->hide();
+    ui->label_2->hide();
+    ui->delayEdit->show();
+    ui->label->show();
+
 
     if(item->IsAction())
     {
@@ -150,7 +155,7 @@ bool ICAutoRunRevise::ShowModifyItem(const ICMoldItem *item, ICMoldItem* ret, co
         }
         if(item->Action() == ICMold::ACTCHECKINPUT)
         {
-            ret->SetFlag(ui->flagSel->currentIndex());
+//            ret->SetFlag(ui->flagSel->currentIndex());
         }
 
 //        ICMoldItem tempItem = *item;

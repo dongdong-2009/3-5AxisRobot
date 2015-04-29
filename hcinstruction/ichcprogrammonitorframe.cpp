@@ -560,10 +560,10 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
 
         /*****/
         bool isM = autoRunRevise_->ShowModifyItem(item, &ret, str);
-        if(item->Action() == ICMold::ACTCHECKINPUT)
-        {
-            ret.SetDVal(flagToSetp.value(ret.Flag(), 0) - ret.Num());
-        }
+//        if(item->Action() == ICMold::ACTCHECKINPUT)
+//        {
+//            ret.SetDVal(flagToSetp.value(ret.Flag(), 0) - ret.Num());
+//        }
 //        bool isM = autoRunRevise_->ShowModifyItem(item, &ret, topItem->ToStringList().join("\n"));
         if(isM)
         {          
@@ -574,8 +574,8 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
                 item->SetSVal(ret.SVal());
 //                item->SetPos(currentBackup->Pos() + ret.Pos());
                 item->SetActualPos(currentBackup->ActualPos() + ret.Pos() * 10);
-                if(item->Action() == ICMold::ACTCHECKINPUT)
-                    item->SetFlag(ret.Flag());
+//                if(item->Action() == ICMold::ACTCHECKINPUT)
+//                    item->SetFlag(ret.Flag());
                 item->ReSum();
                 UpdateUIProgramList_();
                 processor = ICCommandProcessor::Instance();
@@ -594,8 +594,8 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
                 currentBackup->SetSVal(ret.SVal());
 //                currentBackup->SetPos(currentBackup->Pos() + ret.Pos());
                 currentBackup->SetActualPos(currentBackup->ActualPos() + ret.Pos() * 10);
-                if(currentBackup->Action() == ICMold::ACTCHECKINPUT)
-                    currentBackup->SetFlag(ret.Flag());
+//                if(currentBackup->Action() == ICMold::ACTCHECKINPUT)
+//                    currentBackup->SetFlag(ret.Flag());
                 currentBackup->ReSum();
                 UpdateUIProgramList_();
                 processor = ICCommandProcessor::Instance();
@@ -631,10 +631,10 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
         ICAutoAdjustCommand command;
         ICCommandProcessor* processor;
         bool isM = autoRunRevise_->ShowModifyItem(subItem->BaseItem(), &ret, subItem->ToString());
-        if(item->Action() == ICMold::ACTCHECKINPUT)
-        {
-            ret.SetDVal(flagToSetp.value(ret.Flag(), 0) - ret.Num());
-        }
+//        if(item->Action() == ICMold::ACTCHECKINPUT)
+//        {
+//            ret.SetDVal(flagToSetp.value(ret.Flag(), 0) - ret.Num());
+//        }
         if(isM)
         {
             if(isModify_)
@@ -644,8 +644,8 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
                item->SetSVal(ret.SVal());
 //               item->SetPos(currentBackup->Pos() + ret.Pos());
                item->SetActualPos(currentBackup->ActualPos() + ret.Pos() * 10);
-               if(item->Action() == ICMold::ACTCHECKINPUT)
-                   item->SetFlag(ret.Flag());
+//               if(item->Action() == ICMold::ACTCHECKINPUT)
+//                   item->SetFlag(ret.Flag());
                item->ReSum();
                UpdateUIProgramList_();
                processor = ICCommandProcessor::Instance();
@@ -664,8 +664,8 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
                currentBackup->SetSVal(ret.SVal());
 //               currentBackup->SetPos(currentBackup->Pos() + ret.Pos());
                currentBackup->SetActualPos(currentBackup->ActualPos() + ret.Pos() * 10);
-               if(currentBackup->Action() == ICMold::ACTCHECKINPUT)
-                   currentBackup->SetFlag(ret.Flag());
+//               if(currentBackup->Action() == ICMold::ACTCHECKINPUT)
+//                   currentBackup->SetFlag(ret.Flag());
                currentBackup->ReSum();
                UpdateUIProgramList_();
                processor = ICCommandProcessor::Instance();
