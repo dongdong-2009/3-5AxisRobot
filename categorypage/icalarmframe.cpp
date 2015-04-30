@@ -248,7 +248,7 @@ void ICAlarmFrame::OnActionTriggered(int configNum, const QString &newVal, const
                         configNum,
                         newVal,
                         oldVal);
-//    system("sync");
+    system("sync");
 
 }
 
