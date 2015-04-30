@@ -313,16 +313,19 @@ void ICHCStackedSettingsFrame::on_xRPStepLineEdit_textChanged(const QString &arg
     {
         ui->xUnit->setChecked(true);
         ui->xRPStepLineEdit->setText(QString::number(v, 'f', 1));
+//        ui->xRPStepLineEdit->setText(QString("%1").arg(v, 0 , 'f', 1, "0"));
         ui->xRPStepLineEdit->SetDecimalPlaces(1);
     }
     else
     {
         ui->xUnit_2->setChecked(true);
         ui->xRPStepLineEdit->setText(QString::number(v, 'f', 2));
+//        ui->xRPStepLineEdit->setText(QString("%1").arg(v, 0 , 'f', 2), "0");
+
         ui->xRPStepLineEdit->SetDecimalPlaces(2);
 
     }
-    ui->xRPStepLineEdit->blockSignals(true);
+    ui->xRPStepLineEdit->blockSignals(false);
 
 }
 
