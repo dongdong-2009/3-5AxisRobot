@@ -5,19 +5,29 @@ TARGET = Multi-axisManipulatorSystem
 TEMPLATE = app
 QMAKE_CFLAGS += -std=c99
 
-OBJECTS_DIR = temp_8
-UI_DIR = temp_8
-MOC_DIR = temp_8
-RCC_DIR = temp_8
-DESTDIR = bin
+QMAKE_CXX = ccache $${QMAKE_CXX}
+
+suffix = $${member(QMAKE_CXX, 1)}
 CONFIG(debug, debug|release) {
-#    LIBS += -lprofiler
-DESTDIR = bin_debug
-OBJECTS_DIR = temp_8_d
-UI_DIR = temp_8_d
-MOC_DIR = temp_8_d
-RCC_DIR = temp_8_d
+suffix = $${suffix}_debug
 }
+else{
+suffix = $${suffix}_release
+}
+DESTDIR = bin_$${suffix}
+OBJECTS_DIR = temp_$${suffix}
+UI_DIR = temp_$${suffix}
+MOC_DIR = temp_$${suffix}
+RCC_DIR = temp_$${suffix}
+
+#CONFIG(debug, debug|release) {
+##    LIBS += -lprofiler
+#DESTDIR = bin_debug
+#OBJECTS_DIR = temp_8_d
+#UI_DIR = temp_8_d
+#MOC_DIR = temp_8_d
+#RCC_DIR = temp_8_d
+#}
 win32{INCLUDEPATH += ./}
 SOURCES += main.cpp \
      mainframe.cpp \
@@ -123,10 +133,10 @@ OTHER_FILES += \
     sysconfig/hintinfomation-ru
 
 QMAKE_POST_LINK += "cp *.qm $$DESTDIR"
-CONFIG(debug, debug|release){
-system("python rename_ui.py temp_8_d")
+system("python rename_ui.py temp_$${suffix}")
 #QMAKE_POST_LINK += "cp *.qm bin_debug"
+CONFIG(debug, debug|release){
 }else{
-system("python rename_ui.py temp_8")
-QMAKE_POST_LINK += "&& arm-linux-strip $$DESTDIR/$$TARGET && HCbcrypt.sh -r $$DESTDIR/$$TARGET"
+#system("python rename_ui.py temp_8")
+unix:QMAKE_POST_LINK += "&& arm-linux-strip $$DESTDIR/$$TARGET && HCbcrypt.sh -r $$DESTDIR/$$TARGET"
 }

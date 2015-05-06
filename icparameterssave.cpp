@@ -35,11 +35,11 @@ ICParametersSave::ICParametersSave(const QString fileName)
     file.close();
 #ifndef Q_WS_WIN32
     beepFD_ = open("/dev/szhc_beep", O_WRONLY);
+    QMAKE_IDC		= $$[QT_INSTALL_BINS]$${DIR_SEPARATOR}idcioctl(beepFD_, 0, KeyTone() ? 20 : 10);
 #else
     beepFD_ = 0;
 #endif
 //    SetKeyTone(KeyTone());
-    ioctl(beepFD_, 0, KeyTone() ? 20 : 10);
 }
 
 ICParametersSave::~ICParametersSave()
