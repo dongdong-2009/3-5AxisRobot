@@ -94,6 +94,8 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
         total = ICParametersSave::Instance()->DistanceRotation("X");
         minText = tr("Min pos inside mold");
         maxText = tr("Max pos inside mold");
+        ui->label_2->setText(tr("Offset"));
+
         ui->label_2->show();
         ui->label_4->show();
         ui->maximumDisplacementLineEdit->show();
@@ -108,6 +110,7 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
         total = ICParametersSave::Instance()->DistanceRotation("Y");
         minText = tr("Max standby pos");
         maxText = tr("Leave origin pos");
+        ui->label_2->setText(tr("Maximum displacement"));
         ui->label_2->show();
         ui->label_4->show();
         ui->maximumDisplacementLineEdit->show();
@@ -123,6 +126,8 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
         total = ICParametersSave::Instance()->DistanceRotation("Z");
         minText = tr("Internal security zone");
         maxText = tr("External security zone");
+        ui->label_2->setText(tr("Offset"));
+
         ui->label_2->show();
         ui->label_4->show();
         ui->maximumDisplacementLineEdit->show();
@@ -134,6 +139,7 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
         iSafe = ICVirtualHost::SYS_P_InSafe;
         oSafe = ICVirtualHost::SYS_P_OutSafe;
         total = ICParametersSave::Instance()->DistanceRotation("P");
+        ui->label_2->setText(tr("Maximum displacement"));
         minText = tr("Min pos inside mold");
         maxText = tr("Max pos inside mold");
         ui->label_2->show();
@@ -149,6 +155,7 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
         total = ICParametersSave::Instance()->DistanceRotation("Q");
         minText = tr("Max standby pos");
         maxText = tr("Leave origin pos");
+        ui->label_2->setText(tr("Maximum displacement"));
         ui->label_2->show();
         ui->label_4->show();
         ui->maximumDisplacementLineEdit->show();
@@ -165,6 +172,8 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
         //f2_LR特殊机型，A轴为伺服时改为和x轴一样
         minText = tr("Min pos inside mold");
         maxText = tr("Max pos inside mold");
+        ui->label_2->setText(tr("Maximum displacement"));
+
         ui->label_2->show();
         ui->label_4->show();
         ui->maximumDisplacementLineEdit->show();
@@ -189,6 +198,8 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
         maxText = tr("Max pos inside mold");
 //        ui->minUnitLabel->setText(tr("degree"));
 //        ui->maxUnitLabel->setText(tr("degree"));
+        ui->label_2->setText(tr("Maximum displacement"));
+
         ui->label_2->show();
         ui->label_4->show();
         ui->maximumDisplacementLineEdit->show();
