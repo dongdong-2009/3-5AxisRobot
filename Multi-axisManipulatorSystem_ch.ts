@@ -2539,124 +2539,125 @@ Reason</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="141"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="68"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="144"/>
         <source>Check Point</source>
         <translation>检查输入点</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="249"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="624"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="252"/>
         <source>Defective Products</source>
         <translation>不良品</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="412"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="324"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="415"/>
         <source>X043</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="476"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="420"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="479"/>
         <source>X044</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="96"/>
         <location filename="hcinstruction/ichcconditionpage.ui" line="609"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="292"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="559"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="99"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="609"/>
         <source>Try Product</source>
         <translation>试产</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="444"/>
         <location filename="hcinstruction/ichcconditionpage.ui" line="604"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="388"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="554"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="447"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="604"/>
         <source>Sampling</source>
         <translation>取样</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="617"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="498"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="554"/>
         <source>Use Macro</source>
         <translation>使用</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="316"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="196"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="319"/>
         <source>Fixture-2</source>
         <translation>夹2</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="508"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="356"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="511"/>
         <source>Sucker-3</source>
         <translation>吸3</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="540"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="452"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="543"/>
         <source>Sucker-4</source>
         <translation>吸4</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="574"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="524"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="574"/>
         <source>Sub-1</source>
         <translation>子程序1</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="579"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="529"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="579"/>
         <source>Sub-2</source>
         <translation>子程序2</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="584"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="534"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="584"/>
         <source>Sub-3</source>
         <translation>子程序3</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="589"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="539"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="589"/>
         <source>Sub-4</source>
         <translation>子程序4</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="594"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="544"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="594"/>
         <source>Sub-5</source>
         <translation>子程序5</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="599"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="549"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="599"/>
         <source>Bad Product</source>
         <translation>不良品</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="624"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="617"/>
         <source>Go to flag</source>
         <translation>跳转到标签</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="205"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="132"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="208"/>
         <source>Fixture-3</source>
         <translation>夹3</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="173"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="100"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="176"/>
         <source>Fixture-1</source>
         <translation>夹1</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="128"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="484"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="131"/>
         <source>Product Count</source>
         <translation>间隔模数</translation>
     </message>
@@ -2686,19 +2687,19 @@ Reason</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="284"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="228"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="287"/>
         <source>Fixture-4</source>
         <translation>夹4</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="380"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="164"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="383"/>
         <source>Sucker-1</source>
         <translation>吸1</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="348"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="260"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="351"/>
         <source>Sucker-2</source>
         <translation>吸2</translation>
     </message>
@@ -2751,9 +2752,8 @@ Reason</source>
         <translation type="obsolete">巨集7</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="567"/>
         <source>Return Step</source>
-        <translation>返回步号</translation>
+        <translation type="obsolete">返回步号</translation>
     </message>
     <message>
         <source>OFF:</source>
@@ -4477,97 +4477,96 @@ Reason</source>
     <name>ICHCStackedSettingsFrame</name>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="14"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="26"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="14"/>
         <source>Frame</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="40"/>
         <source>Current page</source>
-        <translation>当前组</translation>
+        <translation type="obsolete">当前组</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="51"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="70"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="66"/>
         <source>Group-1</source>
         <translation>第1组</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="85"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="104"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="100"/>
         <source>Group-2</source>
         <translation>第2组</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="116"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="135"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="131"/>
         <source>Group-3</source>
         <translation>第3组</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="147"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="166"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="162"/>
         <source>Group-4</source>
         <translation>第4组</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="644"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="740"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="683"/>
         <source>X</source>
         <translation>X轴</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="778"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="809"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="817"/>
         <source>Y</source>
         <translation>Y轴</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="630"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="788"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="669"/>
         <source>Z</source>
         <translation>Z轴</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="666"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="697"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="705"/>
         <source>Stack Counter</source>
         <oldsource>Count Way</oldsource>
         <translation>堆叠计数器</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="674"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="705"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="713"/>
         <source>All</source>
         <translation>全部</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="679"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="710"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="718"/>
         <source>Good</source>
         <translation>良品</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="684"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="715"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="723"/>
         <source>Stack-1</source>
         <translation>堆叠1组</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="689"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="720"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="728"/>
         <source>Stack-2</source>
         <translation>堆叠2组</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="694"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="725"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="733"/>
         <source>Stack-3</source>
         <translation>堆叠3组</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="699"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="730"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="738"/>
         <source>Stack-4</source>
         <translation>堆叠4组</translation>
     </message>
@@ -4575,11 +4574,15 @@ Reason</source>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="785"/>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="798"/>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="811"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="824"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="837"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="850"/>
         <source>0.01mm</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="852"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="891"/>
         <source>Is Sub Arm</source>
         <translation>副臂堆叠</translation>
     </message>
@@ -4587,9 +4590,9 @@ Reason</source>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="583"/>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="606"/>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="709"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="816"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="823"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="830"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="622"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="645"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="748"/>
         <source>0.1mm</source>
         <translation></translation>
     </message>
@@ -4611,79 +4614,79 @@ Reason</source>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="181"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="200"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="196"/>
         <source>Sequence</source>
         <translation>顺序</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="230"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="249"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="257"/>
         <source>X-Z-Y</source>
         <translation>X-&gt;Z-&gt;Y</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="326"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="369"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="353"/>
         <source>Y-X-Z</source>
         <translation>Y-&gt;X-&gt;Z</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="268"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="287"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="295"/>
         <source>Z-X-Y</source>
         <translation>Z-&gt;X-&gt;Y</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="294"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="325"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="321"/>
         <source>Y-Z-X</source>
         <translation>Y-&gt;Z-&gt;X</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="339"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="382"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="366"/>
         <source>Direction</source>
         <translation>方向</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="388"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="431"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="427"/>
         <source>X PP</source>
         <translation>X轴正向</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="455"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="510"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="494"/>
         <source>Y PP</source>
         <translation>Y轴正向</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="519"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="586"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="558"/>
         <source>Z PP</source>
         <translation>Z轴正向</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="576"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="781"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="615"/>
         <source>Step</source>
         <translation>间距</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="417"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="472"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="456"/>
         <source>X RP</source>
         <translation>X轴反向</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="481"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="548"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="520"/>
         <source>Y RP</source>
         <translation>Y轴反向</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="545"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="624"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="584"/>
         <source>Z RP</source>
         <translation>Z轴反向</translation>
     </message>
@@ -4691,15 +4694,15 @@ Reason</source>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="623"/>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="637"/>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="745"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="747"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="754"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="802"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="662"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="676"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="784"/>
         <source>mm</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="616"/>
-        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="795"/>
+        <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="655"/>
         <source>Lattice</source>
         <translation>个数</translation>
     </message>
@@ -6061,19 +6064,16 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="14"/>
-        <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="14"/>
         <source>Edit</source>
         <translation>编辑</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="373"/>
-        <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="58"/>
         <source>Position</source>
         <translation>位置</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="677"/>
-        <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="378"/>
         <source>Early Speed-Down</source>
         <translation>提前减速</translation>
     </message>
@@ -6084,48 +6084,39 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="157"/>
-        <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="215"/>
         <location filename="hcinstruction/icinstructmodifydialog.cpp" line="246"/>
         <source>Limit Time</source>
         <translation>限制时间</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="617"/>
-        <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="572"/>
         <source>vertical</source>
         <translation>垂直</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="421"/>
-        <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="635"/>
         <source>Horizontal</source>
         <translation>水平</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="206"/>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="302"/>
-        <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="87"/>
-        <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="467"/>
         <source>mm</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="199"/>
-        <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="94"/>
         <source>Speed</source>
         <translation>速度</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="235"/>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="347"/>
-        <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="123"/>
-        <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="416"/>
         <source>%</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="55"/>
-        <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="148"/>
         <location filename="hcinstruction/icinstructmodifydialog.cpp" line="104"/>
         <source>Delay Time</source>
         <translation>延迟时间</translation>
@@ -6133,51 +6124,42 @@ App %1; Host:</source>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="192"/>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="687"/>
-        <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="177"/>
-        <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="244"/>
         <source>s</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="566"/>
-        <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="432"/>
         <source>           End Position</source>
         <oldsource>End Position</oldsource>
         <translation>            提前位置</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="528"/>
-        <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="321"/>
         <source>Early End</source>
         <translation>提前结束位置</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="492"/>
-        <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="51"/>
         <source>Set</source>
         <translation>设入</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="286"/>
-        <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="695"/>
         <source>Forward</source>
         <translation>前进</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="129"/>
-        <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="758"/>
         <source>Backward</source>
         <translation>后退</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="81"/>
-        <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="251"/>
         <source>Select</source>
         <translation>选择</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="479"/>
-        <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="515"/>
         <source>Bad Product</source>
         <translation>不良品使能</translation>
     </message>
@@ -9955,58 +9937,61 @@ Would you want to restart now?</source>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="56"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="56"/>
         <source>Maintain</source>
         <translation>维护</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="99"/>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="77"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="99"/>
         <source>Update Logo</source>
         <translation>更新图片</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="118"/>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="96"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="118"/>
         <source>Scan Panel</source>
         <translation>扫描手控更新包</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="140"/>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="118"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="140"/>
         <source>Update HMI</source>
         <translation>更新手控</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="159"/>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="137"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="159"/>
         <source>Scan Host</source>
         <translation>扫描主机更新包</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="181"/>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="159"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="181"/>
         <source>Update Host</source>
         <translation>更新主机</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="200"/>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="178"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="200"/>
         <source>Update Super Password</source>
         <translation>更新超级密码</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="219"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="219"/>
         <source>Back To Factory</source>
         <translation>恢复出厂</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="248"/>
-        <location filename="hcmaintains/icupdatesystempage_5.ui" line="194"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="248"/>
         <source>Update Host Process:</source>
         <translation>更新进度:</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="267"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="267"/>
         <source>Care</source>
         <translation>保养</translation>
     </message>
@@ -10036,26 +10021,31 @@ Would you want to restart now?</source>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="318"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="318"/>
         <source>Item</source>
         <translation>项目</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="323"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="323"/>
         <source>Left Day</source>
         <translation>剩余天数</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="328"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="328"/>
         <source>Next Date</source>
         <translation>下次保养日期</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="333"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="333"/>
         <source>Cycle</source>
         <translation>周期</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="338"/>
+        <location filename="hcmaintains/icupdatesystempage_5.ui" line="338"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="89"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="151"/>
         <source>Restart</source>
@@ -10434,67 +10424,67 @@ Please input the root password to confirm.</source>
         <translation>步序</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1075"/>
-        <location filename="mainframe.cpp" line="1079"/>
-        <location filename="mainframe.cpp" line="1482"/>
-        <location filename="mainframe.cpp" line="1523"/>
-        <location filename="mainframe.cpp" line="1530"/>
+        <location filename="mainframe.cpp" line="1083"/>
+        <location filename="mainframe.cpp" line="1087"/>
+        <location filename="mainframe.cpp" line="1490"/>
+        <location filename="mainframe.cpp" line="1531"/>
+        <location filename="mainframe.cpp" line="1538"/>
         <source>tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1523"/>
+        <location filename="mainframe.cpp" line="1531"/>
         <source>Spare Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1079"/>
+        <location filename="mainframe.cpp" line="1087"/>
         <source>No Register</source>
         <translation>没有注册</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="660"/>
+        <location filename="mainframe.cpp" line="668"/>
         <source>Function</source>
         <translation>功能</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1530"/>
+        <location filename="mainframe.cpp" line="1538"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation>没有注册，系统将在十分钟后重启</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="661"/>
+        <location filename="mainframe.cpp" line="669"/>
         <source>Monitor</source>
         <translation>监视</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1075"/>
+        <location filename="mainframe.cpp" line="1083"/>
         <source>Spear Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1111"/>
+        <location filename="mainframe.cpp" line="1119"/>
         <source>Records</source>
         <translation>档案</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1482"/>
+        <location filename="mainframe.cpp" line="1490"/>
         <source>No Register. System Restart Now...</source>
         <translation>没有注册，系统现在重启...</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1565"/>
-        <location filename="mainframe.cpp" line="1581"/>
+        <location filename="mainframe.cpp" line="1573"/>
+        <location filename="mainframe.cpp" line="1589"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1566"/>
+        <location filename="mainframe.cpp" line="1574"/>
         <source>%1 fnc is broken. Please remove this mold!</source>
         <translation>%1 模组参数丢失.请删除这个模号!</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1582"/>
+        <location filename="mainframe.cpp" line="1590"/>
         <source>%1 mold fixed. Please check the sub program!</source>
         <translation>%1模号格式更新.请检查该模号使用的子程序是否正确!</translation>
     </message>
@@ -10511,12 +10501,12 @@ Please input the root password to confirm.</source>
         <translation type="obsolete">欢迎</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="663"/>
+        <location filename="mainframe.cpp" line="671"/>
         <source>Record</source>
         <translation>档案</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="662"/>
+        <location filename="mainframe.cpp" line="670"/>
         <source>Alarm</source>
         <translation>报警/修改</translation>
     </message>
@@ -10533,12 +10523,12 @@ Please input the root password to confirm.</source>
         <translation type="obsolete">巨集参数从异常中恢复，请先检查巨集参数！</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="664"/>
+        <location filename="mainframe.cpp" line="672"/>
         <source>Return</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="852"/>
+        <location filename="mainframe.cpp" line="860"/>
         <source>Hint</source>
         <translation>提示</translation>
     </message>
@@ -10555,7 +10545,7 @@ Please input the root password to confirm.</source>
         <translation type="obsolete">还没进行原点!</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1063"/>
+        <location filename="mainframe.cpp" line="1071"/>
         <source>Instruct</source>
         <translation>教导</translation>
     </message>

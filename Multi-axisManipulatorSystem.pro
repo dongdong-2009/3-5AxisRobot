@@ -9,23 +9,21 @@ QMAKE_CXX = ccache $${QMAKE_CXX}
 
 QT += sql
 
-SK_SIZE = 5
+SK_SIZE = 8
 
-OBJECTS_DIR = temp_$${SK_SIZE}
-UI_DIR = temp_$${SK_SIZE}
-MOC_DIR = temp_$${SK_SIZE}
-RCC_DIR = temp_$${SK_SIZE}
-DESTDIR = bin
-contains(QMAKE_CXX, g++){
-message("destop")
-#    LIBS += -lprofiler
-DESTDIR = bin_debug
-OBJECTS_DIR = temp_$${SK_SIZE}_d
-UI_DIR = temp_$${SK_SIZE}_d
-MOC_DIR = temp_$${SK_SIZE}_d
-RCC_DIR = temp_$${SK_SIZE}_d
-#LIBS += -L/vendor/icframework/libs_debug -liccore
+suffix = $${member(QMAKE_CXX, 1)}_Size$${SK_SIZE}
+CONFIG(debug, debug|release) {
+suffix = $${suffix}_debug
 }
+else{
+suffix = $${suffix}_release
+}
+DESTDIR = bin_$${suffix}
+OBJECTS_DIR = temp_$${suffix}
+UI_DIR = temp_$${suffix}
+MOC_DIR = temp_$${suffix}
+RCC_DIR = temp_$${suffix}
+
 #INCLUDEPATH += vendor/ICCustomWidgets/include
 #INCLUDEPATH += vendor/IndustrialSystemFramework/include
 win32{INCLUDEPATH += ./}
@@ -142,6 +140,7 @@ OTHER_FILES += \
     sysconfig/hintinfomation-en
 
 QMAKE_POST_LINK += "cp *.qm $$DESTDIR"
+#message($${UI_DIR})
 system("python rename_ui.py $${UI_DIR}")
 contains(QMAKE_CXX, g++){
 #QMAKE_POST_LINK += "cp *.qm bin_debug"
@@ -167,5 +166,9 @@ others.path = /opt/Qt/apps
 others.files += $${configsPathBase}/3-5AxisRobotDatabase
 scripts.path = /usr/bin
 scripts.files += $${configsPathBase}/*.sh
-INSTALLS += target translations records subs sysconfig resource stylesheet others scripts
+runScripts.path =/usr/bin
+runScripts.files += $${configsPathBase}/$${SK_SIZE}RunApp/*
+keymap.path = /home/root/
+keymap.files +=$${configsPathBase}/$${SK_SIZE}/-inch-qmap/*
+INSTALLS += target translations records subs sysconfig resource stylesheet others scripts runScripts keymap
 }

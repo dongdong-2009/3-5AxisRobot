@@ -181,7 +181,7 @@ bool ICLineEditWithVirtualNumericKeypad::SetCurrentText(const QString &currentTe
         }
 
         this->setText(ICParameterConversion::TransThisIntToThisText(currentValue, DecimalPlaces()));
-        this->setText(valueStr);
+//        this->setText(valueStr);
     }
     else
     {

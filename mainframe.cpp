@@ -354,6 +354,14 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
 #endif
            SetScreenSaverInterval(ICParametersSave::Instance()->BackLightTime() * 60000);
            MoldsCheck();
+           int keyFD_ = open("/dev/input/event1", O_RDWR);
+           struct input_event inputEvent;
+           inputEvent.type = EV_SYN; //__set_bit
+           inputEvent.code = SYN_CONFIG;  //__set_bit
+           inputEvent.value = 1;
+           write(keyFD_,&inputEvent,sizeof(inputEvent));
+           ::close(keyFD_);
+
            qDebug("Mainframe Init finished");
 }
 
@@ -500,18 +508,18 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
             currentKeySeq.clear();
         }
 #ifndef Q_WS_WIN32
-        static bool isExeced = false;
-        if(!isExeced)
-        {
-            int keyFD_ = open("/dev/input/event1", O_RDWR);
-            struct input_event inputEvent;
-            inputEvent.type = EV_SYN; //__set_bit
-            inputEvent.code = SYN_CONFIG;  //__set_bit
-            inputEvent.value = 1;
-            write(keyFD_,&inputEvent,sizeof(inputEvent));
-            isExeced = true;
-            ::close(keyFD_);
-        }
+//        static bool isExeced = false;
+//        if(!isExeced)
+//        {
+//            int keyFD_ = open("/dev/input/event1", O_RDWR);
+//            struct input_event inputEvent;
+//            inputEvent.type = EV_SYN; //__set_bit
+//            inputEvent.code = SYN_CONFIG;  //__set_bit
+//            inputEvent.value = 1;
+//            write(keyFD_,&inputEvent,sizeof(inputEvent));
+//            isExeced = true;
+//            ::close(keyFD_);
+//        }
 #endif
 //        ICKeyboardHandler::Instance()->Keypressed(key);
     }
