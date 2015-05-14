@@ -2393,17 +2393,17 @@ Reason</source>
         <translation type="obsolete">报警信息</translation>
     </message>
     <message>
-        <location filename="custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.ui" line="95"/>
+        <location filename="custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.ui" line="101"/>
         <source>Detail</source>
         <translation>帮助</translation>
     </message>
     <message>
-        <location filename="custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.ui" line="110"/>
+        <location filename="custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.ui" line="116"/>
         <source>Loop Time</source>
-        <translation>循环时间</translation>
+        <translation>机械手周期</translation>
     </message>
     <message>
-        <location filename="custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.ui" line="136"/>
+        <location filename="custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.ui" line="142"/>
         <source>Finished Products</source>
         <translation>完成产品数</translation>
     </message>
