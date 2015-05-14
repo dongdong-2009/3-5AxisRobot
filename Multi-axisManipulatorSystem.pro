@@ -169,6 +169,6 @@ scripts.files += $${configsPathBase}/*.sh
 runScripts.path =/usr/bin
 runScripts.files += $${configsPathBase}/$${SK_SIZE}RunApp/*
 keymap.path = /home/root/
-keymap.files +=$${configsPathBase}/$${SK_SIZE}/-inch-qmap/*
+keymap.files =$${configsPathBase}/$${SK_SIZE}-inch-qmap/*
 INSTALLS += target translations records subs sysconfig resource stylesheet others scripts runScripts keymap
 }
