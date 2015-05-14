@@ -108,3 +108,26 @@ void ICUpdateLogoDialog::on_cancelButton_clicked()
 {
     this->reject();
 }
+
+void ICUpdateLogoDialog::on_setToAppIcon_clicked()
+{
+    if(ui->picView->CurrentSelectedPicture().isEmpty())
+    {
+        QMessageBox::warning(this,tr("warning"),tr("No select picture!"));
+        return;
+    }
+    appIconPage_ = ui->picView->CurrentSelectedPicture();
+    ui->appIconPage->setText(appIconPage_);
+
+    ::system("rm ./resource/logo_icon.png");
+    if(!appIconPage_.isEmpty())
+    {
+#ifdef Q_WS_X11
+        QFile::copy(appIconPage_, "/home/gausscheng/logo_icon.png");
+#else
+        QFile::copy(appIconPage_, "./resource/logo_icon.png");
+#endif
+    }
+    ::system("sync");
+    QMessageBox::information(this,tr("Tips"),tr("Setting success,In operation after reboot!"));
+}

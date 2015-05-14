@@ -8039,36 +8039,45 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatelogodialog.ui" line="117"/>
+        <location filename="hcmaintains/icupdatelogodialog.ui" line="104"/>
+        <source>Set to App ICON</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmaintains/icupdatelogodialog.ui" line="147"/>
         <source>Scan Pictures</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatelogodialog.ui" line="149"/>
+        <location filename="hcmaintains/icupdatelogodialog.ui" line="179"/>
         <source>Exit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="43"/>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="66"/>
+        <location filename="hcmaintains/icupdatelogodialog.cpp" line="116"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="43"/>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="66"/>
+        <location filename="hcmaintains/icupdatelogodialog.cpp" line="116"/>
         <source>No select picture!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="59"/>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="82"/>
+        <location filename="hcmaintains/icupdatelogodialog.cpp" line="132"/>
         <source>Tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="59"/>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="82"/>
+        <location filename="hcmaintains/icupdatelogodialog.cpp" line="132"/>
         <source>Setting success,In operation after reboot!</source>
         <translation type="unfinished"></translation>
     </message>

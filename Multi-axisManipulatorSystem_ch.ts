@@ -9654,12 +9654,17 @@ Please enter an digit between </source>
         <translation>选为待机页面</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatelogodialog.ui" line="117"/>
+        <location filename="hcmaintains/icupdatelogodialog.ui" line="104"/>
+        <source>Set to App ICON</source>
+        <translation>选为程序图标</translation>
+    </message>
+    <message>
+        <location filename="hcmaintains/icupdatelogodialog.ui" line="147"/>
         <source>Scan Pictures</source>
         <translation>扫描图片</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatelogodialog.ui" line="149"/>
+        <location filename="hcmaintains/icupdatelogodialog.ui" line="179"/>
         <source>Exit</source>
         <translation>退出</translation>
     </message>
@@ -9674,24 +9679,28 @@ Please enter an digit between </source>
     <message>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="43"/>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="66"/>
+        <location filename="hcmaintains/icupdatelogodialog.cpp" line="116"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="43"/>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="66"/>
+        <location filename="hcmaintains/icupdatelogodialog.cpp" line="116"/>
         <source>No select picture!</source>
         <translation>没有选择图片！</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="59"/>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="82"/>
+        <location filename="hcmaintains/icupdatelogodialog.cpp" line="132"/>
         <source>Tips</source>
         <translation>提示</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="59"/>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="82"/>
+        <location filename="hcmaintains/icupdatelogodialog.cpp" line="132"/>
         <source>Setting success,In operation after reboot!</source>
         <translation>设置成功，重启后生效！</translation>
     </message>
