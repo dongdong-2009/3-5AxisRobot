@@ -6,6 +6,11 @@ TEMPLATE = app
 QMAKE_CFLAGS += -std=c99
 
 QMAKE_CXX = ccache $${QMAKE_CXX}
+#QMAKE_STRIP = $${member(QMAKE_CXX, 1)}
+#message($$QMAKE_STRIP)
+#QMAKE_STRIP = $${replace(QMAKE_STRIP, -g++, -strip)}
+#message($$QMAKE_STRIP)
+
 
 QT += sql
 
@@ -146,8 +151,8 @@ contains(QMAKE_CXX, g++){
 #QMAKE_POST_LINK += "cp *.qm bin_debug"
 }else{
 #system("python rename_ui.py temp_$${SK_SIZE}")
-QMAKE_POST_LINK += "&& $$QMAKE_STRIP $$DESTDIR/$$TARGET && HCbcrypt.sh -r $$DESTDIR/$$TARGET"
-QMAKE_POST_LINK += "chmod +x tools/make_target && tools/make_target"
+QMAKE_POST_LINK += " && HCbcrypt.sh -r $$DESTDIR/$$TARGET"
+QMAKE_POST_LINK += "&& chmod +x tools/make_target && tools/make_target"
 target.path = /opt/Qt/apps
 configsPathBase = tools/Reinstall
 translations.path = $${target.path}
