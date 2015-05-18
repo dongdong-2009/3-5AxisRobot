@@ -166,6 +166,7 @@ others.path = /opt/Qt/apps
 others.files += $${configsPathBase}/3-5AxisRobotDatabase
 scripts.path = /usr/bin
 scripts.files += $${configsPathBase}/*.sh
+scripts.files += $${configsPathBase}/LedTest_335x
 runScripts.path =/usr/bin
 runScripts.files += $${configsPathBase}/$${SK_SIZE}RunApp/*
 keymap.path = /home/root
