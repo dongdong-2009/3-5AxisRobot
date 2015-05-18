@@ -167,9 +167,12 @@ others.files += $${configsPathBase}/3-5AxisRobotDatabase
 scripts.path = /usr/bin
 scripts.files += $${configsPathBase}/*.sh
 scripts.files += $${configsPathBase}/LedTest_335x
-runScripts.path =/usr/bin
-runScripts.files += $${configsPathBase}/$${SK_SIZE}RunApp/*
+scripts.files += $${configsPathBase}/$${SK_SIZE}RunApp/*
 keymap.path = /home/root
 keymap.files =$${configsPathBase}/$${SK_SIZE}-inch-qmap/*
-INSTALLS += target translations records subs sysconfig resource stylesheet others scripts runScripts keymap
+INSTALLS += target translations records subs sysconfig resource stylesheet others scripts keymap
+for(sh, scripts.files){
+QMAKE_POST_LINK += " && chmod +x $${sh}"
+}
+message($$QMAKE_POST_LINK)
 }
