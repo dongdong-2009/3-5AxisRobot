@@ -151,8 +151,8 @@ contains(QMAKE_CXX, g++){
 #QMAKE_POST_LINK += "cp *.qm bin_debug"
 }else{
 #system("python rename_ui.py temp_$${SK_SIZE}")
-QMAKE_POST_LINK += " && HCbcrypt.sh -r $$DESTDIR/$$TARGET"
-QMAKE_POST_LINK += "&& chmod +x tools/make_target && tools/make_target"
+unix:QMAKE_POST_LINK += " && HCbcrypt.sh -r $$DESTDIR/$$TARGET"
+unix:QMAKE_POST_LINK += "&& chmod +x tools/make_target && tools/make_target"
 target.path = /opt/Qt/apps
 configsPathBase = tools/Reinstall
 translations.path = $${target.path}

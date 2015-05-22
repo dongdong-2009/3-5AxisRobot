@@ -354,6 +354,7 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
 #endif
            SetScreenSaverInterval(ICParametersSave::Instance()->BackLightTime() * 60000);
            MoldsCheck();
+#ifndef Q_WS_WIN32
            int keyFD_ = open("/dev/input/event1", O_RDWR);
            struct input_event inputEvent;
            inputEvent.type = EV_SYN; //__set_bit
@@ -361,6 +362,7 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
            inputEvent.value = 1;
            write(keyFD_,&inputEvent,sizeof(inputEvent));
            ::close(keyFD_);
+#endif
 
            qDebug("Mainframe Init finished");
 }
