@@ -1207,6 +1207,95 @@ Reason</source>
     </message>
 </context>
 <context>
+    <name>ICCareTipUI</name>
+    <message>
+        <location filename="iccaretipui.ui" line="14"/>
+        <source>Dialog</source>
+        <translation>保养提示</translation>
+    </message>
+    <message>
+        <location filename="iccaretipui.ui" line="20"/>
+        <source>Please Care on time!</source>
+        <translation>请及时保养!</translation>
+    </message>
+    <message>
+        <location filename="iccaretipui.ui" line="72"/>
+        <source>Item</source>
+        <translation>项目</translation>
+    </message>
+    <message>
+        <location filename="iccaretipui.ui" line="77"/>
+        <source>Left Day</source>
+        <translation>剩余天数</translation>
+    </message>
+    <message>
+        <location filename="iccaretipui.ui" line="82"/>
+        <source>Next Date</source>
+        <translation>下次保养日期</translation>
+    </message>
+    <message>
+        <location filename="iccaretipui.ui" line="87"/>
+        <source>Cycle</source>
+        <translation>周期</translation>
+    </message>
+    <message>
+        <location filename="iccaretipui.ui" line="92"/>
+        <source>Action</source>
+        <translation>动作</translation>
+    </message>
+    <message>
+        <location filename="iccaretipui.ui" line="112"/>
+        <location filename="iccaretipui.ui" line="132"/>
+        <location filename="iccaretipui.ui" line="152"/>
+        <location filename="iccaretipui.ui" line="172"/>
+        <location filename="iccaretipui.ui" line="192"/>
+        <location filename="iccaretipui.ui" line="212"/>
+        <location filename="iccaretipui.ui" line="232"/>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <location filename="iccaretipui.cpp" line="13"/>
+        <source>Item-1</source>
+        <translation>加油润滑(要求：机器各运动部件加注油脂润滑)</translation>
+    </message>
+    <message>
+        <location filename="iccaretipui.cpp" line="13"/>
+        <source>Item-2</source>
+        <translation>双点组合排水</translation>
+    </message>
+    <message>
+        <location filename="iccaretipui.cpp" line="13"/>
+        <source>Item-3</source>
+        <translation>吸盘、夹具、抱具功能是否正常</translation>
+    </message>
+    <message>
+        <location filename="iccaretipui.cpp" line="14"/>
+        <source>Item-4</source>
+        <translation>检查机台固定螺丝是否松开</translation>
+    </message>
+    <message>
+        <location filename="iccaretipui.cpp" line="14"/>
+        <source>Item-5</source>
+        <translation>射出机连线、操作手柄连线接头是否松动</translation>
+    </message>
+    <message>
+        <location filename="iccaretipui.cpp" line="14"/>
+        <source>Item-6</source>
+        <translation>真空产生器的清洗</translation>
+    </message>
+    <message>
+        <location filename="iccaretipui.cpp" line="14"/>
+        <source>Item-7</source>
+        <translation>电控箱内除尘</translation>
+    </message>
+    <message>
+        <location filename="iccaretipui.cpp" line="19"/>
+        <source>Has Care</source>
+        <translation>已保养</translation>
+    </message>
+</context>
+<context>
     <name>ICCategoryPageBaseFrame</name>
     <message>
         <location filename="categorypage/iccategorypagebaseframe.ui" line="14"/>
@@ -4196,64 +4285,64 @@ Reason</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="57"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="86"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="58"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="87"/>
         <source>Has not teach check Fixture-1!</source>
         <translation>没有教导夹1检测！</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="58"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="87"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="59"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="88"/>
         <source>Has not teach check Fixture-2!</source>
         <translation>没有教导夹2检测！</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="59"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="88"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="60"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="89"/>
         <source>Has not teach check Fixture-3!</source>
         <translation>没有教导夹3检测！</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="60"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="89"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="61"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="90"/>
         <source>Has not teach check Fixture-4!</source>
         <translation>没有教导夹4检测！</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="61"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="90"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="62"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="91"/>
         <source>Has not teach check Sucker-1!</source>
         <translation>没有教导吸1检测！</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="62"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="91"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="63"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="92"/>
         <source>Has not teach check Sucker-2!</source>
         <translation>没有教导吸2检测！</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="184"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="529"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="185"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="532"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="331"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="334"/>
         <source>Single run ready</source>
         <translation>单步准备状态</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="335"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="338"/>
         <source>Single cycle ready</source>
         <translation>单循环准备状态</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="530"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="533"/>
         <source>Can not edit standby position program</source>
         <translation>不能修改待机点位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="875"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="878"/>
         <source>Flag[%1]:%2</source>
         <translation>标签[%1]:%2</translation>
     </message>
@@ -4262,17 +4351,17 @@ Reason</source>
         <translation type="obsolete">需要忽略这个警告吗?</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="800"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="803"/>
         <source>Follow</source>
         <translation>跟随</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="427"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="427"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="104"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="253"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="815"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="825"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="105"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="256"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="818"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="828"/>
         <source>Speed Disable</source>
         <translation>调速禁止</translation>
     </message>
@@ -4360,7 +4449,7 @@ Reason</source>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="331"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="331"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="806"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="809"/>
         <source>No Follow</source>
         <translation>不跟随</translation>
     </message>
@@ -4377,7 +4466,7 @@ Reason</source>
         <translation>暂停</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="815"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="818"/>
         <source>Speed Enable</source>
         <translation>调速允许</translation>
     </message>

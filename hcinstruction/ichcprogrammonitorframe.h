@@ -56,6 +56,8 @@ private slots:
     void on_pauseButton_toggled(bool checked);
 
     QStringList Flags();
+    
+    void CareCheck();
 
 private:
     void InitSignal();

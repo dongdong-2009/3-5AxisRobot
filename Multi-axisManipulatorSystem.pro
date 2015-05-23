@@ -54,7 +54,8 @@ SOURCES += main.cpp \
     icrecaldialog.cpp \
     icfile.cpp \
     icbackupdialog.cpp \
-    icconfigstring.cpp
+    icconfigstring.cpp \
+    iccaretipui.cpp
 HEADERS += icaxispositionlabel.h \
     mainframe.h \
     #icalarmdescriptiondialog.h \
@@ -77,7 +78,8 @@ HEADERS += icaxispositionlabel.h \
     icrecaldialog.h \
     icfile.h \
     icbackupdialog.h \
-    icconfigstring.h
+    icconfigstring.h \
+    iccaretipui.h
 
 FORMS    +=  \
     #icalarmdescriptiondialog.ui \
@@ -89,7 +91,8 @@ FORMS    +=  \
     ictipswidget.ui \
     simulateknob.ui \
     icrecaldialog.ui \
-    icbackupdialog.ui
+    icbackupdialog.ui \
+    iccaretipui.ui
 
 equals(SK_SIZE, 8){
 message("Define 8")

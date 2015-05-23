@@ -14,6 +14,7 @@
 #include "icprogramheadframe.h"
 #include "icparameterssave.h"
 #include "icmold.h"
+#include "iccaretipui.h"
 
 QMessageBox* checkMessageBox;
 
@@ -202,6 +203,8 @@ void ICHCProgramMonitorFrame::showEvent(QShowEvent *e)
             }
         }
     }
+
+    CareCheck();
     //    if(needWarn)
     //    {
     //        if(QMessageBox::warning(this,
@@ -879,4 +882,25 @@ QStringList ICHCProgramMonitorFrame::Flags()
         }
     }
     return selList;
+}
+
+void ICHCProgramMonitorFrame::CareCheck()
+{
+    QDate now = QDate::currentDate();
+    ICParametersSave *ps = ICParametersSave::Instance();
+    bool needToCare = false;
+    for(int i = 0;  i != 7; ++i)
+    {
+        if(now >= ps->NextCycle(i))
+        {
+            needToCare = true;
+            break;
+        }
+    }
+
+    ICCareTipUI careTip;
+    careTip.exec();
+    if(needToCare)
+    {
+    }
 }
