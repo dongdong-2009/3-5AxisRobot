@@ -897,10 +897,9 @@ void ICHCProgramMonitorFrame::CareCheck()
             break;
         }
     }
-
-    ICCareTipUI careTip;
-    careTip.exec();
     if(needToCare)
     {
+        ICCareTipUI careTip;
+        careTip.exec();
     }
 }
