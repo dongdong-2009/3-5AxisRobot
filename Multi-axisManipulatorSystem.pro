@@ -16,7 +16,7 @@ QT += sql
 
 SK_SIZE = 8
 
-suffix = $${member(QMAKE_CXX, 1)}_Size$${SK_SIZE}
+suffix = Size$${SK_SIZE}
 CONFIG(debug, debug|release) {
 suffix = $${suffix}_debug
 }
@@ -152,7 +152,7 @@ contains(QMAKE_CXX, g++){
 }else{
 #system("python rename_ui.py temp_$${SK_SIZE}")
 unix:QMAKE_POST_LINK += " && HCbcrypt.sh -r $$DESTDIR/$$TARGET"
-unix:QMAKE_POST_LINK += "&& chmod +x tools/make_target && tools/make_target"
+unix:QMAKE_POST_LINK += "&& chmod +x tools/make_target && tools/make_target $$PWD $$DESTDIR"
 target.path = /opt/Qt/apps
 configsPathBase = tools/Reinstall
 translations.path = $${target.path}

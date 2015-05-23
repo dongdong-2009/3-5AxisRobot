@@ -1228,7 +1228,7 @@ Reason</source>
     <message>
         <location filename="hcinstruction/iccommenteditor.ui" line="20"/>
         <source>Comment</source>
-        <translation>注释</translation>
+        <translation>注释/标签</translation>
     </message>
 </context>
 <context>
@@ -3444,7 +3444,7 @@ Reason</source>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="670"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="703"/>
         <source>Comment</source>
-        <translation>注释</translation>
+        <translation>注释/标签</translation>
     </message>
     <message>
         <source>pneumatic</source>
@@ -5666,12 +5666,13 @@ App %1; Host:</source>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="283"/>
         <source>X020</source>
         <oldsource>X016</oldsource>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X020</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="284"/>
-        <source>X017</source>
-        <translation type="unfinished"></translation>
+        <source>X016</source>
+        <oldsource>X017</oldsource>
+        <translation>X016</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="289"/>
@@ -5692,7 +5693,7 @@ App %1; Host:</source>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="319"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="327"/>
         <source>X042</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X042</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="371"/>
@@ -5707,12 +5708,12 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="407"/>
         <source>X026</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X026</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="408"/>
         <source>X040</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X040</translation>
     </message>
     <message>
         <source>Y1 end Limit</source>
@@ -5741,12 +5742,12 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="301"/>
         <source>X022</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X022</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="302"/>
         <source>X035</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X035</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="308"/>
@@ -5771,7 +5772,7 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="325"/>
         <source>X025</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X025</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="332"/>
@@ -5804,17 +5805,17 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="378"/>
         <source>X037</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X037</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="379"/>
         <source>Y024</source>
-        <translation type="unfinished">Y024</translation>
+        <translation>Y024</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="380"/>
         <source>Y046</source>
-        <translation type="unfinished">Y046</translation>
+        <translation>Y046</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="384"/>
@@ -5840,7 +5841,7 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="324"/>
         <source>X041</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X041</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="333"/>
@@ -5875,7 +5876,7 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="326"/>
         <source>X024</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X024</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="345"/>
@@ -5885,7 +5886,7 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="346"/>
         <source>X031</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X031</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="351"/>
@@ -5909,7 +5910,7 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="364"/>
         <source>X032</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X032</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="365"/>
@@ -6310,12 +6311,12 @@ App %1; Host:</source>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="80"/>
         <source>X037</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X037</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="84"/>
         <source>X023</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X023</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="91"/>
@@ -6816,7 +6817,7 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="489"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="637"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="609"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="610"/>
         <source>Save</source>
         <translation>保存</translation>
     </message>
@@ -7003,12 +7004,12 @@ Please enter an digit between </source>
         <translation>原点偏置</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="607"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="608"/>
         <source>Information</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="607"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="608"/>
         <source>Save Successfully!</source>
         <translation>保存成功!</translation>
     </message>
@@ -7135,13 +7136,13 @@ Please enter an digit between </source>
         <location filename="categorypage/icmonitorpageframe.cpp" line="49"/>
         <source>X1 Out Limit</source>
         <oldsource>X Out Limit</oldsource>
-        <translation>吸3确认限</translation>
+        <translation>X1轴终点极限</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="50"/>
         <source>X1 In Limit</source>
         <oldsource>X In Limit</oldsource>
-        <translation>X1轴终点极限</translation>
+        <translation>吸3确认限</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="52"/>
@@ -10433,67 +10434,67 @@ Please input the root password to confirm.</source>
         <translation>步序</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1083"/>
-        <location filename="mainframe.cpp" line="1087"/>
-        <location filename="mainframe.cpp" line="1490"/>
-        <location filename="mainframe.cpp" line="1531"/>
-        <location filename="mainframe.cpp" line="1538"/>
+        <location filename="mainframe.cpp" line="1085"/>
+        <location filename="mainframe.cpp" line="1089"/>
+        <location filename="mainframe.cpp" line="1492"/>
+        <location filename="mainframe.cpp" line="1533"/>
+        <location filename="mainframe.cpp" line="1540"/>
         <source>tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1531"/>
+        <location filename="mainframe.cpp" line="1533"/>
         <source>Spare Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1087"/>
+        <location filename="mainframe.cpp" line="1089"/>
         <source>No Register</source>
         <translation>没有注册</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="668"/>
+        <location filename="mainframe.cpp" line="670"/>
         <source>Function</source>
         <translation>功能</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1538"/>
+        <location filename="mainframe.cpp" line="1540"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation>没有注册，系统将在十分钟后重启</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="669"/>
+        <location filename="mainframe.cpp" line="671"/>
         <source>Monitor</source>
         <translation>监视</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1083"/>
+        <location filename="mainframe.cpp" line="1085"/>
         <source>Spear Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1119"/>
+        <location filename="mainframe.cpp" line="1121"/>
         <source>Records</source>
         <translation>档案</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1490"/>
+        <location filename="mainframe.cpp" line="1492"/>
         <source>No Register. System Restart Now...</source>
         <translation>没有注册，系统现在重启...</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1573"/>
-        <location filename="mainframe.cpp" line="1589"/>
+        <location filename="mainframe.cpp" line="1575"/>
+        <location filename="mainframe.cpp" line="1591"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1574"/>
+        <location filename="mainframe.cpp" line="1576"/>
         <source>%1 fnc is broken. Please remove this mold!</source>
         <translation>%1 模组参数丢失.请删除这个模号!</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1590"/>
+        <location filename="mainframe.cpp" line="1592"/>
         <source>%1 mold fixed. Please check the sub program!</source>
         <translation>%1模号格式更新.请检查该模号使用的子程序是否正确!</translation>
     </message>
@@ -10510,12 +10511,12 @@ Please input the root password to confirm.</source>
         <translation type="obsolete">欢迎</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="671"/>
+        <location filename="mainframe.cpp" line="673"/>
         <source>Record</source>
         <translation>档案</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="670"/>
+        <location filename="mainframe.cpp" line="672"/>
         <source>Alarm</source>
         <translation>报警/修改</translation>
     </message>
@@ -10532,12 +10533,12 @@ Please input the root password to confirm.</source>
         <translation type="obsolete">巨集参数从异常中恢复，请先检查巨集参数！</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="672"/>
+        <location filename="mainframe.cpp" line="674"/>
         <source>Return</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="860"/>
+        <location filename="mainframe.cpp" line="862"/>
         <source>Hint</source>
         <translation>提示</translation>
     </message>
@@ -10554,7 +10555,7 @@ Please input the root password to confirm.</source>
         <translation type="obsolete">还没进行原点!</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1071"/>
+        <location filename="mainframe.cpp" line="1073"/>
         <source>Instruct</source>
         <translation>教导</translation>
     </message>

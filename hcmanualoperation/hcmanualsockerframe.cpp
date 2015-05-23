@@ -112,7 +112,7 @@ void HCManualSockerFrame::StatusRefreshed()
         ui->sucker2Label->setPixmap(off);
     }
 
-    if(host->IsInputOn(6))
+    if(host->IsInputOn(7))
     {
         ui->sucker3Label->setPixmap(inOn);
     }

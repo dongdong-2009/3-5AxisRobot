@@ -8,7 +8,7 @@
 ICParametersSave * ICParametersSave::instance_ = NULL;
 
 ICParametersSave::ICParametersSave(const QString fileName)
-    : QSettings(fileName, QSettings::NativeFormat),
+    : QSettings(fileName, QSettings::IniFormat),
     ProductOperationer("ProductOperationer"),
     ProductAdministrator("ProductAdministrator"),
     ProductAlarmHistory("ProductAlarmHistory"),

@@ -423,6 +423,7 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
     /*********BUG#186.同791行一起**************/
     intValidator->setBottom(ui->maximumDisplacementLineEdit->TransThisTextToThisInt());
     maxMoveValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
+    maximumValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
     p = editorToConfigIDs_.begin();
     while(p != editorToConfigIDs_.end())
     {
