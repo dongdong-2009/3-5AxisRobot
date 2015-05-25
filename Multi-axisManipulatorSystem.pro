@@ -6,10 +6,10 @@ TEMPLATE = app
 QMAKE_CFLAGS += -std=c99
 
 QMAKE_CXX = ccache $${QMAKE_CXX}
-#QMAKE_STRIP = $${member(QMAKE_CXX, 1)}
-#message($$QMAKE_STRIP)
-#QMAKE_STRIP = $${replace(QMAKE_STRIP, -g++, -strip)}
-#message($$QMAKE_STRIP)
+QMAKE_STRIP = $${member(QMAKE_CXX, 1)}
+message($$QMAKE_STRIP)
+QMAKE_STRIP = $${replace(QMAKE_STRIP, -g++, -strip)}
+message($$QMAKE_STRIP)
 
 
 QT += sql
@@ -148,6 +148,7 @@ OTHER_FILES += \
     sysconfig/hintinfomation-en
 
 QMAKE_POST_LINK += "cp *.qm $$DESTDIR"
+QMAKE_PRE_LINK += "lrelease $${TARGET}.pro"
 #message($${UI_DIR})
 system("python rename_ui.py $${UI_DIR}")
 contains(QMAKE_CXX, g++){
