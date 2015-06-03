@@ -192,6 +192,18 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             {
                 commandStr += tr("Mold Count") + ":" + QString::number(moldItem.IFPos());
             }
+            else if(moldItem.IFVal() == 14)
+            {
+                commandStr += tr("X045");
+            }
+            else if(moldItem.IFVal() == 15)
+            {
+                commandStr += tr("X046");
+            }
+            else if(moldItem.IFVal() == 16)
+            {
+                commandStr += tr("X047");
+            }
             commandStr += " ";
 //            commandStr += " " + tr("ON:Macro") + QString::number(moldItem.RVal()) + " ";
             if(moldItem.SVal() == 5)
@@ -276,6 +288,18 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             else if(moldItem.SVal() == 14)
             {
                 commandStr += tr("EUCOREOUT");
+            }
+            else if(moldItem.SVal() == 17)
+            {
+                commandStr += tr("X045");
+            }
+            else if(moldItem.SVal() == 18)
+            {
+                commandStr += tr("X046");
+            }
+            else if(moldItem.SVal() == 19)
+            {
+                commandStr += tr("X047");
             }
             commandStr += " ";
             commandStr += QObject::tr("Limit time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 2) + "      ";

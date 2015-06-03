@@ -6,6 +6,9 @@ ICWaitConditionEditor::ICWaitConditionEditor(QWidget *parent) :
     ui(new Ui::ICWaitConditionEditor)
 {
     ui->setupUi(this);
+//    ui->eucoreinCheckBox->hide();
+//    ui->euejbCheckBox->hide();
+//    ui->euejfCheckBox->hide();
 }
 
 ICWaitConditionEditor::~ICWaitConditionEditor()
@@ -87,8 +90,19 @@ QList<ICMoldItem> ICWaitConditionEditor::CreateCommandImpl() const
     {
         item.SetSVal(14);
     }
-    else
-        return ret;
+    else if(ui->x045CheckBox->isChecked())
+    {
+        item.SetSVal(17);
+    }
+    else if(ui->x046CheckBox->isChecked())
+    {
+        item.SetSVal(18);
+    }
+    else if(ui->x047CheckBox->isChecked())
+    {
+        item.SetSVal(19);
+    }
+    else return ret;
     ret.append(item);
     return ret;
 }

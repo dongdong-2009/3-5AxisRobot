@@ -84,6 +84,10 @@ void ICHCConditionPage::InitCheckPointBox()
     buttonGroup->addButton(ui->sucker1Box, 9);
     buttonGroup->addButton(ui->sucker2Box, 10);
     buttonGroup->addButton(ui->productCountBox, 11);
+    buttonGroup->addButton(ui->x045checkBox, 14);
+    buttonGroup->addButton(ui->x046checkBox, 15);
+    buttonGroup->addButton(ui->x047checkBox, 16);
+
 
     QList<QAbstractButton*> buttons = buttonGroup->buttons();
     for(int i = 0; i != buttons.size(); ++i)
