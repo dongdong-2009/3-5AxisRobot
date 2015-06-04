@@ -285,6 +285,22 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             {
                 commandStr += tr("EUCOREOUT");
             }
+            else if(moldItem.SVal() == 17)
+            {
+                commandStr += tr("X016");
+            }
+            else if(moldItem.SVal() == 18)
+            {
+                commandStr += tr("X026");
+            }
+            else if(moldItem.SVal() == 19)
+            {
+                commandStr += tr("X036");
+            }
+            else if(moldItem.SVal() == 20)
+            {
+                commandStr += tr("X037");
+            }
             commandStr += " ";
             commandStr += QObject::tr("Limit time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 2) + "      ";
             return commandStr;

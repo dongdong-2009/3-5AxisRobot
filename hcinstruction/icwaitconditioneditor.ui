@@ -15,15 +15,48 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="leftMargin">
-    <number>2</number>
-   </property>
-   <property name="rightMargin">
-    <number>2</number>
+    <number>1</number>
    </property>
    <item>
-    <widget class="QGroupBox" name="groupBox">
-     <property name="styleSheet">
-      <string notr="true">::indicator {
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>480</width>
+        <height>397</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>1</number>
+       </property>
+       <property name="topMargin">
+        <number>1</number>
+       </property>
+       <property name="rightMargin">
+        <number>1</number>
+       </property>
+       <property name="bottomMargin">
+        <number>1</number>
+       </property>
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="styleSheet">
+          <string notr="true">::indicator {
      width: 32px;
      height: 32px;
  }
@@ -50,158 +83,196 @@ QCheckBox::indicator:unchecked:disabled
 
 
 </string>
-     </property>
-     <property name="title">
-      <string>Wait Condition</string>
-     </property>
-     <layout class="QGridLayout" name="gridLayout">
-      <property name="leftMargin">
-       <number>2</number>
-      </property>
-      <property name="rightMargin">
-       <number>2</number>
-      </property>
-      <item row="0" column="0">
-       <widget class="QCheckBox" name="moldOpenedCheckBox">
-        <property name="text">
-         <string>Wait Mold Opened</string>
-        </property>
-        <attribute name="buttonGroup">
-         <string notr="true">buttonGroup</string>
-        </attribute>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QCheckBox" name="xclip1CheckBox">
-        <property name="text">
-         <string>Wait XCLIP1</string>
-        </property>
-        <attribute name="buttonGroup">
-         <string notr="true">buttonGroup</string>
-        </attribute>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QCheckBox" name="securityDoorCheckBox">
-        <property name="text">
-         <string>Wait Security Door Closed</string>
-        </property>
-        <attribute name="buttonGroup">
-         <string notr="true">buttonGroup</string>
-        </attribute>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QCheckBox" name="xclip2CheckBox">
-        <property name="text">
-         <string>Wait XCLIP2</string>
-        </property>
-        <attribute name="buttonGroup">
-         <string notr="true">buttonGroup</string>
-        </attribute>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QCheckBox" name="x043CheckBox">
-        <property name="text">
-         <string>Wait X043</string>
-        </property>
-        <attribute name="buttonGroup">
-         <string notr="true">buttonGroup</string>
-        </attribute>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="QCheckBox" name="xclip3CheckBox">
-        <property name="text">
-         <string>Wait XCLIP3</string>
-        </property>
-        <attribute name="buttonGroup">
-         <string notr="true">buttonGroup</string>
-        </attribute>
-       </widget>
-      </item>
-      <item row="3" column="0">
-       <widget class="QCheckBox" name="x044CheckBox">
-        <property name="text">
-         <string>Wait X044</string>
-        </property>
-        <attribute name="buttonGroup">
-         <string notr="true">buttonGroup</string>
-        </attribute>
-       </widget>
-      </item>
-      <item row="3" column="1">
-       <widget class="QCheckBox" name="xclip4CheckBox">
-        <property name="text">
-         <string>Wait XCLIP4</string>
-        </property>
-        <attribute name="buttonGroup">
-         <string notr="true">buttonGroup</string>
-        </attribute>
-       </widget>
-      </item>
-      <item row="4" column="0">
-       <widget class="QCheckBox" name="euejfCheckBox">
-        <property name="text">
-         <string>Wait EUEJF</string>
-        </property>
-        <attribute name="buttonGroup">
-         <string notr="true">buttonGroup</string>
-        </attribute>
-       </widget>
-      </item>
-      <item row="4" column="1">
-       <widget class="QCheckBox" name="xclip5CheckBox">
-        <property name="text">
-         <string>Wait XCLIP5</string>
-        </property>
-        <attribute name="buttonGroup">
-         <string notr="true">buttonGroup</string>
-        </attribute>
-       </widget>
-      </item>
-      <item row="5" column="0">
-       <widget class="QCheckBox" name="euejbCheckBox">
-        <property name="text">
-         <string>Wait EUEJB</string>
-        </property>
-        <attribute name="buttonGroup">
-         <string notr="true">buttonGroup</string>
-        </attribute>
-       </widget>
-      </item>
-      <item row="5" column="1">
-       <widget class="QCheckBox" name="xclip6CheckBox">
-        <property name="text">
-         <string>Wait XCLIP6</string>
-        </property>
-        <attribute name="buttonGroup">
-         <string notr="true">buttonGroup</string>
-        </attribute>
-       </widget>
-      </item>
-      <item row="6" column="0">
-       <widget class="QCheckBox" name="eucoreinCheckBox">
-        <property name="text">
-         <string>Wait EUCOREIN</string>
-        </property>
-        <attribute name="buttonGroup">
-         <string notr="true">buttonGroup</string>
-        </attribute>
-       </widget>
-      </item>
-      <item row="6" column="1">
-       <widget class="QCheckBox" name="eucoreoutCheckBox">
-        <property name="text">
-         <string>Wait EUCOREOUT</string>
-        </property>
-        <attribute name="buttonGroup">
-         <string notr="true">buttonGroup</string>
-        </attribute>
-       </widget>
-      </item>
-     </layout>
+         </property>
+         <property name="title">
+          <string>Wait Condition</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="1" column="0">
+           <widget class="QCheckBox" name="securityDoorCheckBox">
+            <property name="text">
+             <string>Wait Security Door Closed</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QCheckBox" name="xclip2CheckBox">
+            <property name="text">
+             <string>Wait XCLIP2</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QCheckBox" name="moldOpenedCheckBox">
+            <property name="text">
+             <string>Wait Mold Opened</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QCheckBox" name="xclip4CheckBox">
+            <property name="text">
+             <string>Wait XCLIP4</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QCheckBox" name="xclip6CheckBox">
+            <property name="text">
+             <string>Wait XCLIP6</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QCheckBox" name="xclip3CheckBox">
+            <property name="text">
+             <string>Wait XCLIP3</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QCheckBox" name="x044CheckBox">
+            <property name="text">
+             <string>Wait X044</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QCheckBox" name="euejbCheckBox">
+            <property name="text">
+             <string>Wait EUEJB</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QCheckBox" name="euejfCheckBox">
+            <property name="text">
+             <string>Wait EUEJF</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QCheckBox" name="xclip1CheckBox">
+            <property name="text">
+             <string>Wait XCLIP1</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QCheckBox" name="eucoreinCheckBox">
+            <property name="text">
+             <string>Wait EUCOREIN</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QCheckBox" name="x043CheckBox">
+            <property name="text">
+             <string>Wait X043</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QCheckBox" name="xclip5CheckBox">
+            <property name="text">
+             <string>Wait XCLIP5</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QCheckBox" name="eucoreoutCheckBox">
+            <property name="text">
+             <string>Wait EUCOREOUT</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QCheckBox" name="x016Box">
+            <property name="text">
+             <string>Wait X016</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QCheckBox" name="x026Box">
+            <property name="text">
+             <string>Wait X026</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QCheckBox" name="x036Box">
+            <property name="text">
+             <string>Wait X036</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QCheckBox" name="x037Box">
+            <property name="text">
+             <string>Wait X037</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </widget>
    </item>
   </layout>
