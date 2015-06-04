@@ -4321,28 +4321,28 @@ Reason</source>
         <translation>没有教导吸2检测！</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="185"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="532"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="203"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="534"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="334"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="336"/>
         <source>Single run ready</source>
         <translation>单步准备状态</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="338"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="340"/>
         <source>Single cycle ready</source>
         <translation>单循环准备状态</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="533"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="535"/>
         <source>Can not edit standby position program</source>
         <translation>不能修改待机点位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="878"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="880"/>
         <source>Flag[%1]:%2</source>
         <translation>标签[%1]:%2</translation>
     </message>
@@ -4351,7 +4351,7 @@ Reason</source>
         <translation type="obsolete">需要忽略这个警告吗?</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="803"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="805"/>
         <source>Follow</source>
         <translation>跟随</translation>
     </message>
@@ -4359,9 +4359,9 @@ Reason</source>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="427"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="427"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="105"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="256"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="818"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="828"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="258"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="820"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="830"/>
         <source>Speed Disable</source>
         <translation>调速禁止</translation>
     </message>
@@ -4449,7 +4449,7 @@ Reason</source>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="331"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="331"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="809"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="811"/>
         <source>No Follow</source>
         <translation>不跟随</translation>
     </message>
@@ -4466,7 +4466,7 @@ Reason</source>
         <translation>暂停</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="818"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="820"/>
         <source>Speed Enable</source>
         <translation>调速允许</translation>
     </message>

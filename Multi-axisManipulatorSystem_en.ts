@@ -3647,38 +3647,38 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="185"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="532"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="203"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="534"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="334"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="336"/>
         <source>Single run ready</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="338"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="340"/>
         <source>Single cycle ready</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="533"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="535"/>
         <source>Can not edit standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="818"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="820"/>
         <source>Speed Enable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="878"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="880"/>
         <source>Flag[%1]:%2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="803"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="805"/>
         <source>Follow</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3686,9 +3686,9 @@ Infomation</source>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="427"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="427"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="105"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="256"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="818"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="828"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="258"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="820"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="830"/>
         <source>Speed Disable</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3702,7 +3702,7 @@ Infomation</source>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="331"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="331"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="809"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="811"/>
         <source>No Follow</source>
         <translation type="unfinished"></translation>
     </message>

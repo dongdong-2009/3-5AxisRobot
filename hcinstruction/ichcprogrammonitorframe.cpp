@@ -134,6 +134,24 @@ void ICHCProgramMonitorFrame::showEvent(QShowEvent *e)
 //                                                         ICMold::CurrentMold()->SyncAct() + ICMacroSubroutine::Instance()->SyncAct(),
 //                                                         ICMold::CurrentMold()->SyncSum() + ICMacroSubroutine::Instance()->SyncSum());
 //    }
+
+    autoRunRevise_->SetFlagSel(Flags());
+    int pSize;
+    ICMoldItem* item;
+    for(int i =0; i != programList_.size(); ++i)
+    {
+        pSize = programList_.at(i).ItemCount();
+        for(int j = 0; j != pSize; ++j)
+        {
+            item = programList_[i].MoldItemAt(j);
+            if(item->Action() == ICMold::ACTCOMMENT)
+            {
+                flagToSetp.insert(item->Flag(), item->Num());
+            }
+        }
+    }
+
+    CareCheck();
     if(!ICVirtualHost::GlobalVirtualHost()->IsFixtureCheck())
     {
         return;
@@ -188,23 +206,7 @@ void ICHCProgramMonitorFrame::showEvent(QShowEvent *e)
         checkMessageBox->show();
     }
 
-    autoRunRevise_->SetFlagSel(Flags());
-    int pSize;
-    ICMoldItem* item;
-    for(int i =0; i != programList_.size(); ++i)
-    {
-        pSize = programList_.at(i).ItemCount();
-        for(int j = 0; j != pSize; ++j)
-        {
-            item = programList_[i].MoldItemAt(j);
-            if(item->Action() == ICMold::ACTCOMMENT)
-            {
-                flagToSetp.insert(item->Flag(), item->Num());
-            }
-        }
-    }
 
-    CareCheck();
     //    if(needWarn)
     //    {
     //        if(QMessageBox::warning(this,
