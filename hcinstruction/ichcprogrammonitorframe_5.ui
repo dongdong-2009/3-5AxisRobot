@@ -31,7 +31,7 @@
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QListWidget" name="moldContentListWidget">
+      <widget class="ICListWidget" name="moldContentListWidget">
        <property name="minimumSize">
         <size>
          <width>300</width>
@@ -83,7 +83,7 @@ padding:5px;
           <enum>QFrame::Sunken</enum>
          </property>
          <property name="text">
-          <string>0</string>
+          <string notr="true">0</string>
          </property>
         </widget>
        </item>
@@ -122,7 +122,7 @@ padding:5px;
           <enum>QFrame::Sunken</enum>
          </property>
          <property name="text">
-          <string>0.00</string>
+          <string notr="true">0.00</string>
          </property>
         </widget>
        </item>
@@ -154,7 +154,7 @@ padding:5px;
           <enum>QFrame::Sunken</enum>
          </property>
          <property name="text">
-          <string>0</string>
+          <string notr="true">0</string>
          </property>
         </widget>
        </item>
@@ -204,7 +204,7 @@ color: rgb(255, 255, 0);</string>
           <enum>QFrame::Sunken</enum>
          </property>
          <property name="text">
-          <string>0.00</string>
+          <string notr="true">0.00</string>
          </property>
         </widget>
        </item>
@@ -246,7 +246,7 @@ color: rgb(255, 255, 0);</string>
           <enum>QFrame::Sunken</enum>
          </property>
          <property name="text">
-          <string>0</string>
+          <string notr="true">0</string>
          </property>
         </widget>
        </item>
@@ -279,7 +279,7 @@ color: rgb(255, 255, 0);</string>
        </property>
        <property name="minimumSize">
         <size>
-         <width>120</width>
+         <width>100</width>
          <height>41</height>
         </size>
        </property>
@@ -317,7 +317,7 @@ color: rgb(255, 255, 0);</string>
        </property>
        <property name="minimumSize">
         <size>
-         <width>120</width>
+         <width>100</width>
          <height>41</height>
         </size>
        </property>
@@ -349,7 +349,7 @@ color: rgb(255, 255, 0);</string>
       <widget class="QToolButton" name="singleStepButton">
        <property name="minimumSize">
         <size>
-         <width>120</width>
+         <width>100</width>
          <height>41</height>
         </size>
        </property>
@@ -381,7 +381,7 @@ color: rgb(255, 255, 0);</string>
       <widget class="QToolButton" name="cycle">
        <property name="minimumSize">
         <size>
-         <width>120</width>
+         <width>100</width>
          <height>41</height>
         </size>
        </property>
@@ -413,7 +413,7 @@ color: rgb(255, 255, 0);</string>
       <widget class="QToolButton" name="speedEnableButton">
        <property name="minimumSize">
         <size>
-         <width>120</width>
+         <width>100</width>
          <height>41</height>
         </size>
        </property>
@@ -441,10 +441,49 @@ color: rgb(255, 255, 0);</string>
        </property>
       </widget>
      </item>
+     <item>
+      <widget class="QToolButton" name="pauseButton">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Pause</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resource.qrc">
+         <normaloff>:/resource/wait(32).png</normaloff>:/resource/wait(32).png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+     </item>
     </layout>
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ICListWidget</class>
+   <extends>QListWidget</extends>
+   <header>iclistwidget.h</header>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="../resource.qrc"/>
   <include location="../resource.qrc"/>

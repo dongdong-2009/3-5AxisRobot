@@ -3,6 +3,7 @@
 #include <QDateTime>
 #include <QMessageBox>
 
+#include "icmacrosubroutine.h"
 #include "moldinformation.h"
 #include "ui_moldinformation.h"
 #include "icparameterssave.h"
@@ -14,6 +15,8 @@
 #include "icprogramformatchecker.h"
 #include "icconfigformatchecker.h"
 #include <QFileDialog>
+#include "icalarmframe.h"
+#include "icconfigstring.h"
 
 
 #include <QDebug>
@@ -117,7 +120,7 @@ bool MoldInformation::CreateNewSourceFile(const QString & fileName)
         }
         CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisX1, ICMold::GX, ICMold::ACTMAINBACKWARD);
         CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisY1, ICMold::GY, ICMold::ACTMAINUP);
-        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisZ, ICMold::GZ, -1);
+        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisZ, ICMold::GZ, ICMold::ACTCOMEIN);
         CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisX2, ICMold::GP, ICMold::ACTVICEBACKWARD);
         CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisY2, ICMold::GQ, ICMold::ACTVICEUP);
         CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisA, ICMold::GA, ICMold::ACT_PoseVert2);
@@ -143,11 +146,21 @@ bool MoldInformation::CreateNewSourceFile(const QString & fileName)
 #else
         newFile.write("0 0 255 1 0 0 0 80 0 81\n1 0 255 2 0 0 0 80 0 83\n2 0 255 3 0 0 0 80 0 85\n3 0 255 17 0 0 0 0 0 20\n4 0 255 14 0 0 0 0 0 18\n5 0 255 13 0 0 0 0 0 18\n6 1 255 29 0 0 0 1 0 37\n7 2 255 32 0 0 0 0 5 46");
 #endif
-        QFile::copy(recordFilePath_ + "/Base.fnc", recordFilePath_ + "/" + fileNameNoExtent + "fnc");
+        QFile::copy(":/sysconfig/Base.fnc", recordFilePath_ + "/" + fileNameNoExtent + "fnc");
+        QFile::copy(":/sysconfig/Base.sub", recordFilePath_ + "/" + fileNameNoExtent + "sub0");
+        QFile::copy(":/sysconfig/Base.sub", recordFilePath_ + "/" + fileNameNoExtent + "sub1");
+        QFile::copy(":/sysconfig/Base.sub", recordFilePath_ + "/" + fileNameNoExtent + "sub2");
+        QFile::copy(":/sysconfig/Base.sub", recordFilePath_ + "/" + fileNameNoExtent + "sub3");
+        QFile::copy(":/sysconfig/Base.sub", recordFilePath_ + "/" + fileNameNoExtent + "sub4");
+        QFile::copy(":/sysconfig/Base.sub", recordFilePath_ + "/" + fileNameNoExtent + "sub5");
+        QFile::copy(":/sysconfig/Base.sub", recordFilePath_ + "/" + fileNameNoExtent + "sub6");
+        QFile::copy(":/sysconfig/Base.sub", recordFilePath_ + "/" + fileNameNoExtent + "sub7");
         newFile.close();
+        system(QString("chmod 666 %1/%2*").arg(recordFilePath_).arg(fileNameNoExtent).toLatin1());
         QMessageBox::warning(this, tr("Success"),
                              tr("New file success."),
                              QMessageBox::Ok);
+        system("sync");
         return true;
     }
     else
@@ -197,17 +210,34 @@ bool MoldInformation::CopySourceFile(const QString & originFileName, const QStri
     QString targetConfigFilePath = targetFilePathName;
     targetConfigFilePath.chop(3);
     targetConfigFilePath += "fnc";
+
+    QString originSubFilePath = originFilePathName;
+    originSubFilePath.chop(3);
+    originSubFilePath += "sub";
+    QString targetSubFilePath = targetFilePathName;
+    targetSubFilePath.chop(3);
+    targetSubFilePath += "sub";
     //    QFile::copy(originConfigFilePath, targetConfigFilePath);
     if(QFile::copy(originFilePathName, targetFilePathName))
     {
         if(QFile::copy(originConfigFilePath, targetConfigFilePath))
         {
-            QMessageBox::information(this, tr("Success"),
-                                     tr("Copy file success!"),
-                                     QMessageBox::Ok);
-            return true;
+            bool isOk = true;
+            for(int i = 0; i != 8; ++i)
+            {
+                isOk = isOk && QFile::copy(originSubFilePath+ QString::number(i), targetSubFilePath + QString::number(i));
+            }
+            system("sync");
+            if(isOk) return true;
+            system(QString("rm %1*").arg(targetSubFilePath).toLatin1());
+//            QMessageBox::information(this, tr("Success"),
+//                                     tr("Copy file success!"),
+//                                     QMessageBox::Ok);
+
+            QFile::remove(targetConfigFilePath);
         }
         QFile::remove(targetFilePathName);
+        system("sync");
     }
     QMessageBox::information(this, tr("warning"),
                              tr("Destination file already exists!\n"
@@ -235,10 +265,13 @@ bool MoldInformation::DeleteSourceFile(const QString & fileName)
     {
         QFile::remove(filePathName);
         QFile::remove(configFile);
+        configFile.chop(3);
+        system(QString("rm %1sub*").arg(configFile).toLatin1());
         //        QFile::remove(ICSettingConfig::ConfigPath() + fileName);
         //        QMessageBox::information(this, tr("Success"),
         //                                 tr("File deleted success!"),
         //                                 QMessageBox::Ok);
+        system("sync");
         return true;
     }
     else
@@ -323,7 +356,9 @@ void MoldInformation::on_loadToolButton_clicked()
     if(currentRow != -1)
     {
         qDebug("before Load");
-        QString moldName = ui->informationTableWidget->item(currentRow, 0)->text() + ".act";
+        QString moldName = ui->informationTableWidget->item(currentRow, 0)->text();
+        QString subName = moldName + ".sub";
+        moldName += ".act";
         if(ICParametersSave::Instance()->MoldName(QString()) == moldName)
         {
             QMessageBox::information(this, tr("Tips"), tr("On the Current mold already!"));
@@ -339,14 +374,32 @@ void MoldInformation::on_loadToolButton_clicked()
                 //                ICMold::CurrentMold()->ReadMoldFile(
                 return;
             }
+            system(QString("cp ./records/%1%2 ./subs/sub%2.prg -f").arg(subName).arg(0).toUtf8());
+            system(QString("cp ./records/%1%2 ./subs/sub%2.prg -f").arg(subName).arg(1).toUtf8());
+            system(QString("cp ./records/%1%2 ./subs/sub%2.prg -f").arg(subName).arg(2).toUtf8());
+            system(QString("cp ./records/%1%2 ./subs/sub%2.prg -f").arg(subName).arg(3).toUtf8());
+            system(QString("cp ./records/%1%2 ./subs/sub%2.prg -f").arg(subName).arg(4).toUtf8());
+            system(QString("cp ./records/%1%2 ./subs/sub%2.prg -f").arg(subName).arg(5).toUtf8());
+            system(QString("cp ./records/%1%2 ./subs/sub%2.prg -f").arg(subName).arg(6).toUtf8());
+            system(QString("cp ./records/%1%2 ./subs/sub%2.prg -f").arg(subName).arg(7).toUtf8());
+            ICMacroSubroutine::Instance()->ReadMacroSubroutieFiles("./subs");
             ICTipsWidget tipsWidget(tr("Loading..."));
             tipsWidget.show();qApp->processEvents();
             ICVirtualHost::GlobalVirtualHost()->ReConfigure();
             qDebug("after emit updatehostparam");
             //        UpdateHostParam();
 
+            QString newMoldName = moldName;
+            newMoldName.chop(4);
+            QString oldMoldName = ICParametersSave::Instance()->MoldName("");
+            oldMoldName.chop(4);
             ICParametersSave::Instance()->SetMoldName(moldName);
             ICProgramHeadFrame::Instance()->SetCurrentMoldName(moldName);
+            ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_Mold_Changed,
+                                                        newMoldName,
+                                                        oldMoldName);
+
+
 //            QMessageBox::information(this, tr("Tips"), tr("Load Mold Successful!"));
         }
         ICVirtualHost::GlobalVirtualHost()->SetFixtureCheck(true);
@@ -539,41 +592,7 @@ void MoldInformation::on_importToolButton_clicked()
     //            return;
     //        }
     //    }
-    QFile file;
-    QString actContent;
-    ICProgramFormatChecker programChecker;
-    for(int i = 0; i != acts.size(); ++i)
-    {
-        file.setFileName(dir.absoluteFilePath(acts.at(i)));
-        actContent.clear();
-        file.open(QFile::ReadOnly | QFile::Text);
-        actContent = file.readAll();
-        file.close();
-        if(!programChecker.Check(actContent))
-        {
-            QMessageBox::warning(this, tr("Warnning"), tr("Wrong program format!"));
-            return;
-        }
-    }
-    ICConfigFormatChecker configFormatChecker;
-    for(int i = 0; i != fncs.size(); ++i)
-    {
-        file.setFileName(dir.absoluteFilePath(fncs.at(i)));
-        actContent.clear();
-        file.open(QFile::ReadOnly | QFile::Text);
-        actContent = file.readAll();
-        file.close();
-        if(!configFormatChecker.CheckRowCount(actContent, 58,ICDataFormatChecker::kCompareEqual))
-        {
-            QMessageBox::warning(this, tr("Warnning"), tr("Wrong config format!!!"));
-            return;
-        }
-        if(!configFormatChecker.Check(actContent))
-        {
-            QMessageBox::warning(this, tr("Warnning"), tr("Wrong config format!"));
-            return;
-        }
-    }
+
     int rows_ = ui->informationTableWidget->rowCount();
     bool flagItem = TRUE ;
     bool flagItem_ = TRUE ;
@@ -607,6 +626,14 @@ void MoldInformation::on_importToolButton_clicked()
             }
             selectedImportItemName_.append(item_text + ".act");
             selectedImportItemName_.append(item_text + ".fnc");
+            selectedImportItemName_.append(item_text + ".sub0");
+            selectedImportItemName_.append(item_text + ".sub1");
+            selectedImportItemName_.append(item_text + ".sub2");
+            selectedImportItemName_.append(item_text + ".sub3");
+            selectedImportItemName_.append(item_text + ".sub4");
+            selectedImportItemName_.append(item_text + ".sub5");
+            selectedImportItemName_.append(item_text + ".sub6");
+            selectedImportItemName_.append(item_text + ".sub7");
             flagItem = FALSE ;
         }
     }
@@ -637,8 +664,52 @@ void MoldInformation::on_importToolButton_clicked()
         }
         selectedImportItemName_.append(str + ".act");
         selectedImportItemName_.append(str + ".fnc");
+        selectedImportItemName_.append(str + ".sub0");
+        selectedImportItemName_.append(str + ".sub1");
+        selectedImportItemName_.append(str + ".sub2");
+        selectedImportItemName_.append(str + ".sub3");
+        selectedImportItemName_.append(str + ".sub4");
+        selectedImportItemName_.append(str + ".sub5");
+        selectedImportItemName_.append(str + ".sub6");
+        selectedImportItemName_.append(str + ".sub7");
+
         flagItem_ = FALSE;
     }
+
+    QFile file;
+    QString actContent;
+    ICProgramFormatChecker programChecker;
+    ICConfigFormatChecker configFormatChecker;
+    for(int i = 0; i != selectedImportItemName_.size(); ++i)
+    {
+        file.setFileName(dir.absoluteFilePath(selectedImportItemName_.at(i)));
+        actContent.clear();
+        file.open(QFile::ReadOnly | QFile::Text);
+        actContent = file.readAll();
+        file.close();
+        if(selectedImportItemName_.at(i).endsWith(".act"))
+        {
+            if(!programChecker.Check(actContent))
+            {
+                QMessageBox::warning(this, tr("Warnning"), tr("Wrong program format!"));
+                return;
+            }
+        }
+        else if(selectedImportItemName_.at(i).endsWith(".fnc"))
+        {
+            if(!configFormatChecker.CheckRowCount(actContent, 58,ICDataFormatChecker::kCompareEqual))
+            {
+                QMessageBox::warning(this, tr("Warnning"), tr("Wrong config format!!!"));
+                return;
+            }
+            if(!configFormatChecker.Check(actContent))
+            {
+                QMessageBox::warning(this, tr("Warnning"), tr("Wrong config format!"));
+                return;
+            }
+        }
+    }
+
     ICTipsWidget tipsWidget(tr("Restoring, please wait..."));
     if(!flagItem || !flagItem_)
     {
@@ -657,7 +728,7 @@ void MoldInformation::on_importToolButton_clicked()
                                         selectedImportItemName_);
 #else
     bool ret = backupUtility.RestoreDir("/mnt/udisk/HC5ABackup/records",
-                                        "/opt/Qt/bin/records",
+                                        "./records",
                                         selectedImportItemName_);
 #endif
     dir.cdUp();
@@ -688,13 +759,14 @@ void MoldInformation::on_importToolButton_clicked()
     if(ret)
     {
         ret = ret && backupUtility.RestoreDir("/mnt/udisk/HC5ABackup/subs",
-                                              "/opt/Qt/bin/subs",
+                                              "./subs",
                                               selectedImportItemName_<<"sub[0-7].prg");
     }
 #endif
     if(!flagItem || !flagItem_)
     {
         QMessageBox::information(this,tr("Information"), tr("Operation finished!"));
+        system("sync");
     }
 }
 
@@ -739,6 +811,14 @@ void MoldInformation::on_exportToolButton_clicked()
             }
             selectedExportItemName_.append(item_text + ".act");
             selectedExportItemName_.append(item_text + ".fnc");
+            selectedExportItemName_.append(item_text + ".sub0");
+            selectedExportItemName_.append(item_text + ".sub1");
+            selectedExportItemName_.append(item_text + ".sub2");
+            selectedExportItemName_.append(item_text + ".sub3");
+            selectedExportItemName_.append(item_text + ".sub4");
+            selectedExportItemName_.append(item_text + ".sub5");
+            selectedExportItemName_.append(item_text + ".sub6");
+            selectedExportItemName_.append(item_text + ".sub7");
             flagItem = FALSE ;
         }
     }
@@ -759,6 +839,14 @@ void MoldInformation::on_exportToolButton_clicked()
         }
         selectedExportItemName_.append(str + ".act");
         selectedExportItemName_.append(str + ".fnc");
+        selectedExportItemName_.append(str + ".sub0");
+        selectedExportItemName_.append(str + ".sub1");
+        selectedExportItemName_.append(str + ".sub2");
+        selectedExportItemName_.append(str + ".sub3");
+        selectedExportItemName_.append(str + ".sub4");
+        selectedExportItemName_.append(str + ".sub5");
+        selectedExportItemName_.append(str + ".sub6");
+        selectedExportItemName_.append(str + ".sub7");
         flagItem_ = FALSE;
     }
     if(selectedExportItemName_.size() == 0)
@@ -784,16 +872,17 @@ void MoldInformation::on_exportToolButton_clicked()
 
 #else
 
-    bool ret = backupUtility.BackupDir("/opt/Qt/bin/records",
+    bool ret = backupUtility.BackupDir("./records",
                                        "/mnt/udisk/HC5ABackup/records",
                                        selectedExportItemName_);
-    ret = ret && backupUtility.BackupDir("/opt/Qt/bin/subs",
+    ret = ret && backupUtility.BackupDir("./subs",
                                          "/mnt/udisk/HC5ABackup/subs",
                                          selectedExportItemName_<<"sub[0-7].prg");
 #endif
     if(!flagItem || !flagItem_)
     {
         QMessageBox::information(this,tr("Information"), tr("Operation finished!"));
+        system("sync");
     }
 
 }
@@ -870,23 +959,23 @@ void MoldInformation::RefreshFileList()
     {
         fncs.removeOne("Base.fnc");
     }
-    if(acts.size() != fncs.size())
-    {
-        QMessageBox::warning(this, tr("Warnning"), tr("Backup files is incomplete!"));
-        return;
-    }
+//    if(acts.size() != fncs.size())
+//    {
+//        QMessageBox::warning(this, tr("Warnning"), tr("Backup files is incomplete!"));
+//        return;
+//    }
     for(int i = 0; i != fncs.size(); ++i)
     {
         fncs[i] = fncs.at(i).left(fncs.at(i).size() - 4);
     }
-    for(int i = 0; i != acts.size(); ++i)
-    {
-        if(!fncs.contains(acts.at(i).left(acts.at(i).size() - 4)))
-        {
-            QMessageBox::warning(this, tr("Warnning"), tr("Backup files is incomplete!"));
-            return;
-        }
-    }
+//    for(int i = 0; i != acts.size(); ++i)
+//    {
+//        if(!fncs.contains(acts.at(i).left(acts.at(i).size() - 4)))
+//        {
+//            QMessageBox::warning(this, tr("Warnning"), tr("Backup files is incomplete!"));
+//            return;
+//        }
+//    }
 
     fileInfoList_ = recordDir.entryInfoList(QStringList()<<"*.act", QDir::Files);
 

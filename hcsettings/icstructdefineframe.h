@@ -21,8 +21,6 @@ public:
 
 protected:
     void changeEvent(QEvent *e);
-    void hideEvent(QHideEvent *);
-    void timerEvent(QTimerEvent *);
 signals:
     void StructChanged();
 
@@ -50,22 +48,7 @@ private slots:
     void retranslateUi_();
 
     void on_adjUse_toggled(bool checked);
-
-    void on_oStartBtn_clicked();
-
-    void on_oX1Btn_clicked();
-
-    void on_oY1Btn_clicked();
-
-    void on_oZBtn_clicked();
-
-    void on_oX2Btn_clicked();
-
-    void on_oY2Btn_clicked();
-
-    void on_setOrigin_clicked();
-
-    void on_tabWidget_currentChanged(int index);
+    void on_fixtureComboBox_currentIndexChanged(int index);
 
 private:
     Ui::ICStructDefineFrame *ui;
@@ -81,10 +64,16 @@ private:
 
     QList<QList<QAbstractButton*> >buttonslist_ ;
     void InitEscapeBox() ;
-    QString oldStyle;
-    QString newStyle;
 
-    int timerID_;
+private slots:
+    void OnConfigChanged(QObject* w, const QString& newV, const QString& oldV);
+    void OnConfigChanged(const QString& text);
+    void OnConfigChanged(int v);
+    void OnConfigChanged(int v, int ov);
+    void OnConfigChanged(bool b);
+private:
+    QMap<QObject*, int> editorToConfigIDs_;
+
 };
 
 #endif // ICSTRUCTDEFINEFRAME_H

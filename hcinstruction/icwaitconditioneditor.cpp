@@ -87,6 +87,7 @@ QList<ICMoldItem> ICWaitConditionEditor::CreateCommandImpl() const
     {
         item.SetSVal(14);
     }
+    else return ret;
     ret.append(item);
     return ret;
 }

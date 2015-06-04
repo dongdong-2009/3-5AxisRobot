@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>635</width>
+    <width>648</width>
     <height>446</height>
    </rect>
   </property>
@@ -34,8 +34,20 @@
    <enum>QFrame::Plain</enum>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
    <property name="bottomMargin">
-    <number>4</number>
+    <number>0</number>
    </property>
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -104,10 +116,6 @@ border-radius: 0px;</string>
            <property name="text">
             <string>Guide</string>
            </property>
-           <property name="icon">
-            <iconset resource="../resource.qrc">
-             <normaloff>:/resource/parameter.png</normaloff>:/resource/parameter.png</iconset>
-           </property>
            <property name="iconSize">
             <size>
              <width>32</width>
@@ -150,10 +158,6 @@ border-radius: 0px;</string>
            <property name="text">
             <string>Program</string>
            </property>
-           <property name="icon">
-            <iconset resource="../resource.qrc">
-             <normaloff>:/resource/editor.png</normaloff>:/resource/editor.png</iconset>
-           </property>
            <property name="iconSize">
             <size>
              <width>32</width>
@@ -168,7 +172,7 @@ border-radius: 0px;</string>
         </layout>
        </item>
        <item>
-        <widget class="QListWidget" name="moldContentListWidget">
+        <widget class="ICListWidget" name="moldContentListWidget">
          <property name="minimumSize">
           <size>
            <width>62</width>
@@ -221,14 +225,8 @@ padding:5px;
        </property>
        <property name="minimumSize">
         <size>
-         <width>293</width>
+         <width>320</width>
          <height>0</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>266</width>
-         <height>16777215</height>
         </size>
        </property>
        <property name="frameShape">
@@ -681,6 +679,44 @@ padding:5px;
            </property>
           </widget>
          </item>
+         <item row="6" column="1">
+          <widget class="QToolButton" name="commentButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>114</width>
+             <height>38</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>113</width>
+             <height>38</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Comment</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../resource.qrc">
+             <normaloff>:/resource/modify.png</normaloff>:/resource/modify.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="toolButtonStyle">
+            <enum>Qt::ToolButtonTextBesideIcon</enum>
+           </property>
+          </widget>
+         </item>
         </layout>
        </widget>
       </widget>
@@ -938,6 +974,52 @@ padding:5px;
       </widget>
      </item>
      <item>
+      <widget class="QToolButton" name="tryButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>54</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Try</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
+       <property name="autoRepeatDelay">
+        <number>50</number>
+       </property>
+       <property name="autoRepeatInterval">
+        <number>50</number>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+       <property name="arrowType">
+        <enum>Qt::NoArrow</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
       <spacer name="horizontalSpacer_5">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
@@ -1031,6 +1113,13 @@ padding:5px;
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ICListWidget</class>
+   <extends>QListWidget</extends>
+   <header>iclistwidget.h</header>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="../resource.qrc"/>
   <include location="../resource.qrc"/>

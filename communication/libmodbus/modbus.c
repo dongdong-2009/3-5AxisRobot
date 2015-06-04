@@ -213,6 +213,9 @@ static unsigned int compute_response_length(modbus_param_t *mb_param,
             length = 5;
         }
         break;
+    case FC_HC_MANUAL_RUN:
+        length = 8;
+        break;
 #else
 	case FC_READ_COIL_STATUS:
 	case FC_READ_INPUT_STATUS: {
@@ -831,6 +834,9 @@ static int modbus_receive(modbus_param_t *mb_param,
         {
             query_nb_value = response_nb_value = 7;
         }
+        case FC_HC_MANUAL_RUN:
+            query_nb_value = response_nb_value = 10;
+            break;
 #else
 		case FC_READ_COIL_STATUS:
 		case FC_READ_INPUT_STATUS:
@@ -1444,6 +1450,62 @@ static int hc_runtime_modify_query(modbus_param_t *mb_param,
     return ret;
 }
 
+int hc_manual_run(modbus_param_t *mb_param,
+                                   int slave,
+                                   int num,
+                                   int gm,
+                                   int sub,
+                                   int pos,
+                                   int ifval)
+{
+    int ret;
+    int query_length;
+    uint8_t query[16];
+    uint8_t response[MAX_MESSAGE_LENGTH];
+
+    query[0]  = slave;
+    query[1]  = FC_HC_MANUAL_RUN;
+    query[2]  = num;
+    query[3]  = gm;
+    query[4]  = sub;
+    query[5]  = pos >> 8;
+    query[6]  = pos & 0x00ff;
+    query[7] = ifval;
+
+    query_length = 8;
+
+    ret = modbus_send(mb_param, query, query_length);
+    if (ret > 0)
+    {
+        int i;
+
+        ret = modbus_receive(mb_param, query, response);
+//        qDebug()<<"ret"
+        printf("ret: %d\n", ret);
+        if(ret < 0) return -1;
+        for(int i = 0; i != ret; ++i)
+        {
+            printf("i:%d ", response[i]);
+        }
+        printf("\n");
+
+//        if(ret != query_length) return -1;
+
+        /* If ret is negative, the loop is jumped ! */
+        for (i = 0; i < ret; i++)
+        {
+            if(response[i] != query[i])
+            {
+                return -1;
+            }
+        }
+        return ret;
+    }
+
+    return -1;
+}
+
+
 /* Reads the holding registers in a slave and put the data into an
    array */
 int read_holding_registers(modbus_param_t *mb_param, int slave,
@@ -1503,6 +1565,8 @@ static int set_single(modbus_param_t *mb_param, int slave, int function,
 
 	return ret;
 }
+
+
 
 /* Turns ON or OFF a single coil in the slave device */
 int force_single_coil(modbus_param_t *mb_param, int slave,
@@ -1860,166 +1924,92 @@ int hc_query_status(modbus_param_t *mb_param, int slave, int start_addr, int nb,
     query[4] = nb & 0x00FF;
     query[5] = nb >> 8;
     modbus_send(mb_param, query, 6);
-//    for(int i = 0; i != 8; ++i)
-//    {
-//        printf("query send[%d]:%d\n", i, query[i]);
-//    }
-//    printf("Send End *******************\n");
     return ret;
-
-//    while ((ret = select(mb_param->fd+1, &readFD, NULL, NULL, &tv)) == -1)
-//    {
-//        if (errno == EINTR)
-//        {
-//            printf("A non blocked signal was caught\n");
-//            /* Necessary after an error */
-//            FD_ZERO(&readFD);
-//            FD_SET(mb_param->fd, &readFD);
-//        }
-//        else
-//        {
-//            error_treat(mb_param, SELECT_FAILURE, "Select failure");
-//            return SELECT_FAILURE;
-//        }
-//    }
-//#ifndef NATIVE_WIN32
-//    tcflush(mb_param->fd, TCIOFLUSH);
-//#endif
-//    int ret;
-//    int query_length;
-
-//    uint8_t query[8];
-
-//    if (nb > 4) {
-//        printf("ERROR Trying to write to too many registers (%d > %d)\n",
-//               nb, 4);
-//        return TOO_MANY_DATA;
-//    }
-
-//    query_length = 6;
-////	byte_count = nb * 2;
-////	query[query_length++] = byte_count;
-//    query[0] = slave;
-//    query[1] = FC_HC_QUERY_STATUS;
-//    query[2] = start_addr & 0x00FF;
-//    query[3] = start_addr >> 8;
-//    query[4] = nb & 0x00FF;
-//    query[5] = nb >> 8;
-////    mb_param->debug = 1;
-
-
-//    ret = modbus_send(mb_param, query, query_length);
-////    if (mb_param->debug)
-////    {
-
-////        printf("Waiting for a message (%d bytes)...\n",
-////               16);
-////    }
-//    if (ret > 0) {
-//        uint8_t response[MAX_MESSAGE_LENGTH];
-//        fd_set readFD;
-//        FD_ZERO(&readFD);
-//        FD_SET(mb_param->fd, &readFD);
-
-//        struct timeval tv;
-//        tv.tv_sec = 0;
-//        tv.tv_usec = 10000;
-//        while ((ret = select(mb_param->fd+1, &readFD, NULL, NULL, &tv)) == -1)
-//        {
-//            if (errno == EINTR)
-//            {
-//                printf("A non blocked signal was caught\n");
-//                /* Necessary after an error */
-//                FD_ZERO(&readFD);
-//                FD_SET(mb_param->fd, &readFD);
-//            }
-//            else
-//            {
-//                error_treat(mb_param, SELECT_FAILURE, "Select failure");
-//                return SELECT_FAILURE;
-//            }
-//        }
-//        if(ret == 0)
-//        {
-//            return -1;
-//        }
-////        do
-////        {
-////            ret = select(mb_param->fd + 1,
-////                         &readFD,
-////                         NULL,
-////                         NULL,
-////                         &tv);
-////        }while(ret < 0 && (errno == EINTR));
-////        if(ret <= 0)
-////        {
-////            return ret;
-////        }
-//        ret = read(mb_param->fd, response, 16);
-//        if(ret <= 0)
-//        {
-//            return -1;
-//        }
-////        if (mb_param->debug) {
-////            int i;
-////            for (i=0; i < ret; i++)
-////                printf("<%.2X>", response[i]);
-////        }
-//        uint16_t crcCal;
-//        int length;
-//        if(response[2] == 0x17)
-//        {
-//            crcCal = crc16(response, 3);
-//            length = 3;
-//        }
-//        else
-//        {
-//            if(ret != 16)
-//            {
-//                return -1;
-//            }
-//            crcCal = crc16(response, 14);
-//            length = 14;
-//        }
-//        uint16_t crcRec = (response[length] << 8) | response[length + 1];
-//        if(crcCal != crcRec)
-//        {
-//            return -1;
-//        }
-//        if(length == 14)
-//        {
-//            int index = 0;
-//            for(int i = 0; i != 8; ++i)
-//            {
-//                dest[index++] = (response[query_length + i + 1] << 8) | response[query_length + i++];
-//            }
-//            ret = nb;
-//        }
-//        else
-//        {
-//            ret = 0x17;
-//        }
-//    }
-//    return ret;
-
-
-//        ret = modbus_receive(mb_param, query, response);
-
-//        printf("ret = %d \n", ret);
-//        exit(-1);
-//        if(ret == (nb << 1))
-//        {
-//            int i;
-//            int index = 0;
-//            for(i = 0; i != ret; ++i)
-//            {
-//                dest[index++] = (response[query_length + i + 1] << 8) | response[query_length + i++];
-//            }
-//            ret = nb;
-//        }
-//    }
-//    return ret;
 }
+
+int hc_query_status_ex(modbus_param_t *mb_param, int slave, int start_addr, int nb, uint16_t *dest)
+{
+    uint8_t response[MAX_MESSAGE_LENGTH];
+    uint8_t query[8];
+    fd_set readFD;
+    FD_ZERO(&readFD);
+    FD_SET(mb_param->fd, &readFD);
+
+    struct timeval tv;
+    tv.tv_sec = 0;
+    tv.tv_usec = 0;
+    int ret = select(mb_param->fd + 1, &readFD, NULL, NULL, &tv);
+    if(ret == 0)
+    {
+//        printf("Query Timeout!!\n");
+        ret = -1;
+        goto Send;
+    }
+    ret = read(mb_param->fd, response, MAX_MESSAGE_LENGTH);
+    if(ret <= 0)
+    {
+        ret = -1;
+        goto Send;
+    }
+    uint16_t crcCal;
+    int length;
+    if(response[2] == 0x16)
+    {
+        crcCal = crc16(response, 3);
+        length = 3;
+    }
+    else
+    {
+        if(ret != 16)
+        {
+            ret = -1;
+            goto Send;
+        }
+        crcCal = crc16(response, 14);
+        length = 14;
+    }
+    uint16_t crcRec = (response[length] << 8) | response[length + 1];
+    if(crcCal != crcRec)
+    {
+        ret = -1;
+        goto Send;
+    }
+    if(length == 14)
+    {
+        int index = 0;
+        for(int i = 0; i != 8; ++i)
+        {
+            dest[index++] = (response[6 + i + 1] << 8) | response[6 + i++];
+        }
+        ret = nb;
+    }
+    else
+    {
+        ret = response[2];
+    }
+
+#ifdef HC_5AXIS
+    start_addr = (++start_addr) % 10;
+#elif defined HC_8AXIS
+    start_addr = (++start_addr) % 12;
+#else
+    start_addr = (++start_addr) % 7;
+#endif
+
+#ifndef NATIVE_WIN32
+    tcflush(mb_param->fd, TCIOFLUSH);
+#endif
+    Send:
+    query[0] = slave;
+    query[1] = FC_HC_QUERY_STATUS;
+    query[2] = start_addr & 0x00FF;
+    query[3] = start_addr >> 8;
+    query[4] = nb & 0x00FF;
+    query[5] = nb >> 8;
+    modbus_send(mb_param, query, 6);
+    return ret;
+}
+
 
 int hc_teach_step(modbus_param_t *mb_param, int slave, int step, uint8_t *dest)
 {
@@ -2827,6 +2817,8 @@ int hc_update_host_start(modbus_param_t *mb_param, int slave)
     ret = modbus_send(mb_param, query, query_length);
     return ret;
 }
+
+
 
 
 /* Initializes the modbus_param_t structure for RTU

@@ -46,21 +46,14 @@ ICHCSettingsFrame::ICHCSettingsFrame(QWidget *parent) :
     {
         button->setCheckable(true);
     }
-//    connect(ICProgramHeadFrame::Instance(),
-//            SIGNAL(LevelChanged(int)),
-//            this,
-//            SLOT(LevelChanged(int)));
-//    if(ICProgramHeadFrame::Instance()->CurrentLevel() == ICParametersSave::AdvanceAdmin)
-//    {
-//        LevelChanged(ICParametersSave::AdvanceAdmin);
-//    }
-//    ui->axisXToolButton->click();
-//    ui->basicSettingsToolButton->click();
+
+
 }
 
 ICHCSettingsFrame::~ICHCSettingsFrame()
 {
     delete ui;
+    delete buttonGroup_;
 }
 
 void ICHCSettingsFrame::changeEvent(QEvent *e)

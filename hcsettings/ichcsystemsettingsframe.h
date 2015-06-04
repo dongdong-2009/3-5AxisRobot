@@ -30,14 +30,6 @@ protected:
 
 private:
     void InitParameter();
-    void SetConfig(int machineLenght,
-                   int maxLength,
-                   int iSafe,
-                   int outsafe,
-                   QString minText,
-                   QString maxText,
-                   QString axisName);
-
 private:
     void Information(bool isSuccess, const QString &msg = QString());
     bool CheckIsUsbAttached() const;
@@ -76,20 +68,7 @@ private slots:
     void on_restoreAllButton_clicked();
     void on_umountButton_clicked();
     void OnLevelChanged(int level);
-    void on_axisZToolButton_clicked();
-    void on_axisYToolButton_clicked();
-    void on_axisXToolButton_clicked();
-    void on_axisX2ToolButton_clicked();
-    void on_axisY2ToolButton_clicked();
-    void on_axisAToolButton_clicked();
-    void on_axisBToolButton_clicked();
-    void on_axisCToolButton_clicked();
-    void on_structDefButton_clicked();
-//    void on_seletHmiButton_clicked();
-    void on_selectHostButton_clicked();
-//    void on_saveParaButton_clicked();
     void StatusRefresh();
-    void on_structSelectHostButton_clicked();
     void on_calibrationBtn_clicked();
     void on_brightMinus_clicked();
     void on_brightPlus_clicked();
@@ -98,10 +77,25 @@ private slots:
 
     void on_limitFunctionBox_toggled(bool checked);
 
+    void on_generateBtn_clicked();
+    void on_registerBtn_clicked();
+
+    void on_verifySupperButton_clicked();
+
+    void on_factoryCode_textChanged(const QString &arg1);
+
 private:
     bool CheckRestoreSystemFiles_();
     bool CheckRestoreMachineFiles_();
-//    void InitLanguageBox();
+
+private slots:
+    void OnConfigChanged(QObject* w, const QString& newV, const QString& oldV);
+    void OnConfigChanged(const QString& text);
+    void OnConfigChanged(int v);
+    void OnConfigChanged(int v, int ov);
+    void OnConfigChanged(bool b);
+private:
+    QMap<QObject*, int> editorToConfigIDs_;
 };
 
 #endif // ICHCSYSTEMSETTINGSFRAME_H

@@ -11,6 +11,7 @@ class SpeedStatusLabel : public QLabel
     Q_OBJECT
 public:
     explicit SpeedStatusLabel(QWidget *parent = 0);
+    ~SpeedStatusLabel();
 
 signals:
 

@@ -20,15 +20,15 @@ bool ICProgramFormatChecker::CheckImpl(const QString &dataStream)
         return false;
     }
 
-    QString temp = dataStream;
-    temp.remove(" ");
-    temp = temp.remove("\n");
-    for(int i = 0; i != temp.length(); ++i)
-    {
-        if(!temp.at(i).isDigit())
-        {
-            return false;
-        }
-    }
+//    QString temp = dataStream;
+//    temp.remove(" ");
+//    temp = temp.remove("\n");
+//    for(int i = 0; i != temp.length(); ++i)
+//    {
+//        if(!temp.at(i).isDigit())
+//        {
+//            return false;
+//        }
+//    }
     return true;
 }

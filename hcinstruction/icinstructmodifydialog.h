@@ -19,6 +19,7 @@ public:
     ~ICInstructModifyDialog();
 
     bool ShowModifyItem(ICMoldItem* item);
+    void ResetFlagSel(const QStringList& selList);
 
 protected:
     void changeEvent(QEvent *e);

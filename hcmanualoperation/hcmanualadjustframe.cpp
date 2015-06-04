@@ -15,7 +15,8 @@ HCManualAdjustFrame::HCManualAdjustFrame(QWidget *parent) :
     offPixmap_(":/resource/ledgray(16).png"),
     inputOnPixmap_(":/resource/ledred(16).png"),
     outputOnPixmap_(":/resource/ledgreen(16).png"),
-    currentStatus_(9, false)
+    currentStatus_(9, false),
+    timerID_(-1)
 {
     ui->setupUi(this);
     ICCommandKeyWrapper *wrapper;
@@ -54,6 +55,7 @@ void HCManualAdjustFrame::showEvent(QShowEvent *e)
 void HCManualAdjustFrame::hideEvent(QHideEvent *e)
 {
     QWidget::hideEvent(e);
+    if(timerID_ < 0) return;
     ICTimerPool::Instance()->Stop(timerID_, this, SLOT(StatusRefreshed()));
 }
 void HCManualAdjustFrame::changeEvent(QEvent *e)

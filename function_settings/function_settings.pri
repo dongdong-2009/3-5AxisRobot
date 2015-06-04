@@ -69,8 +69,8 @@ FORMS += \
 #    function_settings/placementotherframe.ui
 
 contains(DEFINES, HC_SK_8){
-FORMS += moldinformation.ui
+FORMS += $$PWD/moldinformation.ui
 }
 contains(DEFINES, HC_SK_5){
-FORMS += moldinformation_5.ui
+FORMS += $$PWD/moldinformation_5.ui
 }

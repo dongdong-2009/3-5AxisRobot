@@ -21,7 +21,7 @@
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="5" column="7">
-    <widget class="QComboBox" name="detectSucker2ComboBox">
+    <widget class="ICComboBox" name="detectSucker2ComboBox">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -53,7 +53,7 @@
     </widget>
    </item>
    <item row="1" column="1">
-    <widget class="QComboBox" name="detectFixture1ComboBox">
+    <widget class="ICComboBox" name="detectFixture1ComboBox">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -106,7 +106,7 @@
     </widget>
    </item>
    <item row="3" column="1">
-    <widget class="QComboBox" name="detectFixture3ComboBox">
+    <widget class="ICComboBox" name="detectFixture3ComboBox">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -145,7 +145,7 @@
     </widget>
    </item>
    <item row="4" column="1">
-    <widget class="QComboBox" name="detectFixture4ComboBox">
+    <widget class="ICComboBox" name="detectFixture4ComboBox">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -184,7 +184,7 @@
     </widget>
    </item>
    <item row="1" column="7">
-    <widget class="QComboBox" name="detectSecurityComboBox">
+    <widget class="ICComboBox" name="detectSecurityComboBox">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -256,7 +256,7 @@
     </widget>
    </item>
    <item row="3" column="4">
-    <widget class="QComboBox" name="originPositionBox">
+    <widget class="ICComboBox" name="originPositionBox">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -300,7 +300,7 @@
     </widget>
    </item>
    <item row="4" column="4">
-    <widget class="QComboBox" name="standbyPositionBox">
+    <widget class="ICComboBox" name="standbyPositionBox">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -339,7 +339,7 @@
     </widget>
    </item>
    <item row="5" column="1">
-    <widget class="QComboBox" name="detectIMMComboBox">
+    <widget class="ICComboBox" name="detectIMMComboBox">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -378,7 +378,7 @@
     </widget>
    </item>
    <item row="3" column="7">
-    <widget class="QComboBox" name="detectMidMoldComboBox">
+    <widget class="ICComboBox" name="detectMidMoldComboBox">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -410,7 +410,7 @@
     </widget>
    </item>
    <item row="2" column="7">
-    <widget class="QComboBox" name="detectPressureComboBox">
+    <widget class="ICComboBox" name="detectPressureComboBox">
      <property name="minimumSize">
       <size>
        <width>120</width>
@@ -436,7 +436,7 @@
     </widget>
    </item>
    <item row="2" column="1">
-    <widget class="QComboBox" name="detectFixture2ComboBox">
+    <widget class="ICComboBox" name="detectFixture2ComboBox">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -475,7 +475,7 @@
     </widget>
    </item>
    <item row="2" column="4">
-    <widget class="QComboBox" name="detectOriginBox">
+    <widget class="ICComboBox" name="detectOriginBox">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -507,7 +507,7 @@
     </widget>
    </item>
    <item row="1" column="4">
-    <widget class="QComboBox" name="detectPositionBox">
+    <widget class="ICComboBox" name="detectPositionBox">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -565,7 +565,7 @@
     </widget>
    </item>
    <item row="5" column="4">
-    <widget class="QComboBox" name="detectSucker1ComboBox">
+    <widget class="ICComboBox" name="detectSucker1ComboBox">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -597,7 +597,7 @@
     </widget>
    </item>
    <item row="4" column="7">
-    <widget class="QComboBox" name="ejectionLinkLockBox">
+    <widget class="ICComboBox" name="ejectionLinkLockBox">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -637,6 +637,13 @@
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ICComboBox</class>
+   <extends>QComboBox</extends>
+   <header>iccombobox.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

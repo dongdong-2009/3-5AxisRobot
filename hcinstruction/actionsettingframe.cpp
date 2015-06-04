@@ -206,8 +206,8 @@ void ActionSettingFrame::showEvent(QShowEvent *e)
     posMaxs_[6] = host->SystemParameter(ICVirtualHost::SYS_B_Maxium).toInt();
     posMaxs_[7] = host->SystemParameter(ICVirtualHost::SYS_C_Maxium).toInt();
     posLength_[0] = host->SystemParameter(ICVirtualHost::SYS_A_Length).toInt();
-    posLength_[1] = host->SystemParameter(ICVirtualHost::SYS_A_Length).toInt();
-    posLength_[2] = host->SystemParameter(ICVirtualHost::SYS_A_Length).toInt();
+    posLength_[1] = host->SystemParameter(ICVirtualHost::SYS_B_Length).toInt();
+    posLength_[2] = host->SystemParameter(ICVirtualHost::SYS_C_Length).toInt();
 
     int mutil = qPow(10, SECTION_DECIMAL);
     for(int i = 0; i != 8; ++i)

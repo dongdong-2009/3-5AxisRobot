@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ICCareTipUI</class>
+ <widget class="QDialog" name="ICCareTipUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>626</width>
+    <height>377</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Please Care on time!</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="careTable">
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>50</number>
+     </attribute>
+     <attribute name="verticalHeaderMinimumSectionSize">
+      <number>50</number>
+     </attribute>
+     <row>
+      <property name="text">
+       <string notr="true">1</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string notr="true">2</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string notr="true">3</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string notr="true">4</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string notr="true">5</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string notr="true">6</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string notr="true">7</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>Item</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Left Day</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Next Date</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Cycle</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Action</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string notr="true">0</string>
+      </property>
+     </item>
+     <item row="0" column="2">
+      <property name="text">
+       <string notr="true">0</string>
+      </property>
+     </item>
+     <item row="0" column="3">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string notr="true">0</string>
+      </property>
+     </item>
+     <item row="1" column="2">
+      <property name="text">
+       <string notr="true">0</string>
+      </property>
+     </item>
+     <item row="1" column="3">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string notr="true">0</string>
+      </property>
+     </item>
+     <item row="2" column="2">
+      <property name="text">
+       <string notr="true">0</string>
+      </property>
+     </item>
+     <item row="2" column="3">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string notr="true">0</string>
+      </property>
+     </item>
+     <item row="3" column="2">
+      <property name="text">
+       <string notr="true">0</string>
+      </property>
+     </item>
+     <item row="3" column="3">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string notr="true">0</string>
+      </property>
+     </item>
+     <item row="4" column="2">
+      <property name="text">
+       <string notr="true">0</string>
+      </property>
+     </item>
+     <item row="4" column="3">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="5" column="0">
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item row="5" column="1">
+      <property name="text">
+       <string notr="true">0</string>
+      </property>
+     </item>
+     <item row="5" column="2">
+      <property name="text">
+       <string notr="true">0</string>
+      </property>
+     </item>
+     <item row="5" column="3">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="6" column="0">
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item row="6" column="1">
+      <property name="text">
+       <string notr="true">0</string>
+      </property>
+     </item>
+     <item row="6" column="2">
+      <property name="text">
+       <string notr="true">0</string>
+      </property>
+     </item>
+     <item row="6" column="3">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>ICCareTipUI</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>ICCareTipUI</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

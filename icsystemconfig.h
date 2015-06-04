@@ -2,6 +2,7 @@
 #define ICSYSTEMCONFIG_H
 
 #include <QObject>
+#include <QSharedPointer>
 
 class QSettings;
 
@@ -31,6 +32,7 @@ class ICSystemConfig : public QObject
     Q_OBJECT
 public:
     explicit ICSystemConfig(QObject *parent = 0);
+    ~ICSystemConfig();
 
     ICSerialPortConfig SerialPortConfig() const;
     void SetSerialPortConfig(ICSerialPortConfig config);
@@ -47,6 +49,22 @@ private:
     const QString MoldNameConfigGroup;
     mutable QSettings *sysSetting_;
 
+};
+
+class ICIONameConfig;
+typedef  QSharedPointer<ICIONameConfig> ICIONameConfigPTR;
+class ICIONameConfig
+{
+public:
+    static ICIONameConfigPTR Instance()
+    {
+        if(instance_.isNull())
+            instance_ = ICIONameConfigPTR(new ICIONameConfig());
+        return instance_;
+    }
+
+private:
+    static ICIONameConfigPTR instance_;
 };
 
 #endif // ICSYSTEMCONFIG_H

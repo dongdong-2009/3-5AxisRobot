@@ -47,11 +47,18 @@
 #include "icactiondialog.h"
 #include "ictimerpool.h"
 #include "ichostcomparepage.h"
-#include "icupdatesystem.h"
+#include "icupdatesystempage.h"
+#include "icvirtualkey.h"
+#include "ickeyboard.h"
+#include "icrecaldialog.h"
+#include "icbackupdialog.h"
+//#include "ickeyboardhandler.h"
 #if defined(Q_WS_WIN32) || defined(Q_WS_X11)
 #include "simulateknob.h"
 #endif
-
+#ifndef Q_WS_WIN32
+#include <linux/input.h>
+#endif
 #include <QDebug>
 
 //class ICScreenSaverMonitor: public QRunnable
@@ -83,10 +90,41 @@
 //    MainFrame* mainFrame_;
 //};
 
+QMap<int, int> keyMap;
+QMap<int, int> knobMap;
+QMap<int, int> pulleyMap;
+QList<int> currentKeySeq;
+const QList<int> recalKeySeq = QList<int>()<<ICKeyboard::FB_F5
+                                          <<ICKeyboard::FB_F1
+                                         <<ICKeyboard::FB_F4
+                                        <<ICKeyboard::FB_F1
+                                       <<ICKeyboard::FB_F3
+                                      <<ICKeyboard::FB_F1
+                                     <<ICKeyboard::FB_F2
+                                    <<ICKeyboard::FB_F5;
+
+const QList<int> backupKeySeq = QList<int>()<<ICKeyboard::FB_F5
+                                           <<ICKeyboard::FB_F2
+                                          <<ICKeyboard::FB_F4
+                                         <<ICKeyboard::FB_F2
+                                        <<ICKeyboard::FB_F3
+                                       <<ICKeyboard::FB_F2
+                                      <<ICKeyboard::FB_F1
+                                     <<ICKeyboard::FB_F5;
+
+const QList<int> testKeySeq = QList<int>()<<ICKeyboard::FB_F5
+                                           <<ICKeyboard::FB_F3
+                                          <<ICKeyboard::FB_F4
+                                         <<ICKeyboard::FB_F3
+                                        <<ICKeyboard::FB_F2
+                                       <<ICKeyboard::FB_F3
+                                      <<ICKeyboard::FB_F1
+                                     <<ICKeyboard::FB_F5;
+
 
 MainFrame *icMainFrame = NULL;
 MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
-    QWidget(parent),
+    ICMainFrame(parent),
     ui(new Ui::MainFrame),
     monitorPage_(NULL),
     centerStackedLayout_(new QStackedLayout),
@@ -133,10 +171,10 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
 
 
     InitSpareTime();
-    connect(ICUpdateSystem::Instance(),
-            SIGNAL(RegisterSucceed()),
-            this,
-            SLOT(InitSpareTime()));
+//    connect(ICUpdateSystemPage::Instance(),
+//            SIGNAL(RegisterSucceed()),
+//            this,
+//            SLOT(InitSpareTime()));
 
     connect(registe_timer,SIGNAL(timeout()),this,SLOT(CountRestTime()));
     connect(reboot_timer,SIGNAL(timeout()),this,SLOT(Register()));
@@ -202,7 +240,7 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     //            SIGNAL(StatusRefreshed()),
     //            this,
     //            SLOT(StatusRefreshed()));
-//    timerID_ = ICTimerPool::Instance()->Start(ICTimerPool::RefreshTime, this, SLOT(StatusRefreshed()));
+    //    timerID_ = ICTimerPool::Instance()->Start(ICTimerPool::RefreshTime, this, SLOT(StatusRefreshed()));
     connect(&timer_,
             SIGNAL(timeout()),
             SLOT(StatusRefreshed()));
@@ -242,8 +280,50 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     hostCompareDialog_ = new ICHostComparePage(this);
     UpdateAxisDefine_();
     ICKeyboard::Instace()->Receive();
-    QTimer::singleShot(ICParametersSave::Instance()->BackLightTime() * 60000, this, SLOT(CheckedInput()));
+    // QTimer::singleShot(ICParametersSave::Instance()->BackLightTime() * 60000, this, SLOT(CheckedInput()));
+
+#ifdef Q_WS_QWS
+    SetScreenSaverInterval(ICParametersSave::Instance()->BackLightTime() * 60000);  //背光时间
+    connect(this,SIGNAL(ScreenSave()),this,SLOT(CloseBackLight()));
+    connect(this,SIGNAL(ScreenRestore()),this,SLOT(OpenBackLight()));
+#endif
+
     QTimer::singleShot(1000, this, SLOT(ClearPosColor()));
+
+    keyMap.insert(Qt::Key_F11, ICKeyboard::VFB_Run);
+    keyMap.insert(Qt::Key_X, ICKeyboard::FB_Stop);
+    keyMap.insert(Qt::Key_S, ICKeyboard::FB_Origin);
+    keyMap.insert(Qt::Key_D, ICKeyboard::FB_Reset);
+    keyMap.insert(Qt::Key_I, ICKeyboard::FB_Up);
+    keyMap.insert(Qt::Key_N, ICKeyboard::FB_Down);
+
+    keyMap.insert(Qt::Key_F9, ICKeyboard::VFB_X1Sub);
+    keyMap.insert(Qt::Key_U, ICKeyboard::VFB_X1Add);
+    keyMap.insert(Qt::Key_Z, ICKeyboard::VFB_Y1Sub);
+    keyMap.insert(Qt::Key_V, ICKeyboard::VFB_Y1Add);
+
+    keyMap.insert(Qt::Key_B, ICKeyboard::VFB_ZSub);
+    keyMap.insert(Qt::Key_A, ICKeyboard::VFB_ZAdd);
+    keyMap.insert(Qt::Key_G, ICKeyboard::VFB_Pose_Horizontal);
+    keyMap.insert(Qt::Key_F, ICKeyboard::VFB_Pose_Vertical);
+
+    keyMap.insert(Qt::Key_Q, ICKeyboard::VFB_X2Sub);
+    keyMap.insert(Qt::Key_K, ICKeyboard::VFB_X2Add);
+    keyMap.insert(Qt::Key_P, ICKeyboard::VFB_Y2Sub);
+    keyMap.insert(Qt::Key_L, ICKeyboard::VFB_Y2Add);
+
+    keyMap.insert(Qt::Key_C, ICKeyboard::FB_F1);
+    keyMap.insert(Qt::Key_W, ICKeyboard::FB_F2);
+    keyMap.insert(Qt::Key_R, ICKeyboard::FB_F3);
+    keyMap.insert(Qt::Key_M, ICKeyboard::FB_F4);
+    keyMap.insert(Qt::Key_H, ICKeyboard::FB_F5);
+
+    knobMap.insert(Qt::Key_F4, ICKeyboard::KS_ManualStatu);
+    knobMap.insert(Qt::Key_F7, ICKeyboard::KS_StopStatu);
+    knobMap.insert(Qt::Key_F5, ICKeyboard::KS_AutoStatu);
+
+    pulleyMap.insert(Qt::Key_F13, 1);
+    pulleyMap.insert(Qt::Key_F14, -1);
 
     //    QTimer::singleShot(100, this, SLOT(InitHeavyPage()));
 #if defined(Q_WS_WIN32) || defined(Q_WS_X11)
@@ -264,29 +344,46 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     this->setFixedSize(800, 600);
 #endif
 
+
+
 #endif
 #ifdef Q_WS_X11
-            ShowInstructPage();
-    //       ShowManualPage();
-//         ShowAutoPage();
+//    ShowInstructPage();
+           ShowManualPage();
+    //         ShowAutoPage();
+//    ShowOrigin();
+#endif
+           SetScreenSaverInterval(ICParametersSave::Instance()->BackLightTime() * 60000);
+           MoldsCheck();
+#ifndef Q_WS_WIN32
+           int keyFD_ = open("/dev/input/event1", O_RDWR);
+           struct input_event inputEvent;
+           inputEvent.type = EV_SYN; //__set_bit
+           inputEvent.code = SYN_CONFIG;  //__set_bit
+           inputEvent.value = 1;
+           write(keyFD_,&inputEvent,sizeof(inputEvent));
+           ::close(keyFD_);
 #endif
 
+           qDebug("Mainframe Init finished");
 }
 
 
 MainFrame::~MainFrame()
 {
-//    ICTimerPool::Instance()->Stop(timerID_, this, SLOT(StatusRefreshed()));
+    //    ICTimerPool::Instance()->Stop(timerID_, this, SLOT(StatusRefreshed()));
     delete nullButton_;
     delete buttonGroup_;
     delete ui;
+    delete reboot_timer;
+    delete registe_timer;
 
 }
 
 
 void MainFrame::closeEvent(QCloseEvent *e)
 {
-#ifdef Q_WS_WIN32
+#ifndef Q_WS_QWS
     simulateKnob_->close();
     delete simulateKnob_;
 #endif
@@ -310,37 +407,136 @@ void MainFrame::changeEvent(QEvent *e)
 
 void MainFrame::keyPressEvent(QKeyEvent *e)
 {
-    switch(e->key())
+    qDebug()<<"KeyEvent:"<<e->key();
+//    SetHasInput(true);
+    if(keyMap.contains(e->key()))
     {
-    case ICKeyboard::FB_F1:
-    {
-        ui->functionPageButton->click();
+        int key = keyMap.value(e->key());
+        currentKeySeq.append(key);
+        if(currentKeySeq.size() == recalKeySeq.size())
+        {
+            if(currentKeySeq == recalKeySeq)
+            {
+                ICRecalDialog recalDialog;
+                recalDialog.exec();
+//                ::system("touch /mnt/config_data/recal");
+//                int ret = QMessageBox::warning(this,
+//                                     tr("Recal"),
+//                                     tr("You have press the recal sequence, recal after reboot"),
+//                                     QMessageBox::Yes | QMessageBox::No);
+//                if(ret == QMessageBox::Yes) ::system("reboot");
+
+            }
+            else if(currentKeySeq == backupKeySeq)
+            {
+                ICBackupDialog backupDialog;
+                backupDialog.exec();
+            }
+            else if(currentKeySeq == testKeySeq)
+            {
+                ::system("chmod +x ./test_robot.sh && ./test_robot.sh");
+//                exit(0);
+            }
+            currentKeySeq.clear();
+        }
+
+        qDebug()<<"Key:"<<key;
+        switch(key)
+        {
+        case ICKeyboard::FB_F1:
+        {
+            ui->functionPageButton->click();
+        }
+            break;
+        case ICKeyboard::FB_F2:
+        {
+            ui->monitorPageButton->click();
+        }
+            break;
+        case ICKeyboard::FB_F3:
+        {
+            ui->recordPageButton->click();
+        }
+            break;
+        case ICKeyboard::FB_F4:
+        {
+            ui->alarmPageButton->click();
+        }
+            break;
+        case ICKeyboard::FB_F5:
+        {
+            ui->returnPageButton->click();
+        }
+            break;
+        default:
+        {
+            ICKeyboard *keyboard = ICKeyboard::Instace();
+            keyboard->SetKeyValue(key);
+            if(key == ICKeyboard::VFB_X1Add ||
+                    key == ICKeyboard::VFB_Y1Add ||
+                    key == ICKeyboard::VFB_ZAdd ||
+                    key == ICKeyboard::VFB_X2Add ||
+                    key == ICKeyboard::VFB_Y2Add ||
+                    key == ICKeyboard::VFB_AAdd ||
+                    key == ICKeyboard::VFB_BAdd ||
+                    key == ICKeyboard::VFB_CAdd ||
+                    key == ICKeyboard::VFB_X1Sub ||
+                    key == ICKeyboard::VFB_Y1Sub ||
+                    key == ICKeyboard::VFB_ZSub ||
+                    key == ICKeyboard::VFB_X2Sub ||
+                    key == ICKeyboard::VFB_Y2Sub ||
+                    key == ICKeyboard::VFB_ASub ||
+                    key == ICKeyboard::VFB_BSub ||
+                    key == ICKeyboard::VFB_CSub ||
+                    key == ICKeyboard::VFB_Pose_Horizontal ||
+                    key == ICKeyboard::VFB_Pose_Vertical)
+            {
+                keyboard->SetPressed(true);
+                if(instructPage_->isVisible())
+                {
+                    KeyToInstructEditor(key);
+                }
+            }
+//            ICKeyboardHandler::Instance()->Keypressed(key);
+            //        QWidget::keyPressEvent(e);
+        }
+        }
     }
-        break;
-    case ICKeyboard::FB_F2:
+    else if(knobMap.contains(e->key()))
     {
-        ui->monitorPageButton->click();
+        int k = knobMap.value(e->key());
+        if(ICKeyboard::Instace()->CurrentSwitchStatus() != k)
+        {
+            ICKeyboard::Instace()->SetSwitchValue(k);
+            currentKeySeq.clear();
+        }
+#ifndef Q_WS_WIN32
+//        static bool isExeced = false;
+//        if(!isExeced)
+//        {
+//            int keyFD_ = open("/dev/input/event1", O_RDWR);
+//            struct input_event inputEvent;
+//            inputEvent.type = EV_SYN; //__set_bit
+//            inputEvent.code = SYN_CONFIG;  //__set_bit
+//            inputEvent.value = 1;
+//            write(keyFD_,&inputEvent,sizeof(inputEvent));
+//            isExeced = true;
+//            ::close(keyFD_);
+//        }
+#endif
+//        ICKeyboardHandler::Instance()->Keypressed(key);
     }
-        break;
-    case ICKeyboard::FB_F3:
+    else if(pulleyMap.contains(e->key()))
     {
-        ui->recordPageButton->click();
+        ICKeyboard::Instace()->SetPulleyValue(pulleyMap.value(e->key()));
     }
-        break;
-    case ICKeyboard::FB_F4:
+}
+
+void MainFrame::keyReleaseEvent(QKeyEvent *e)
+{
+    if(keyMap.contains(e->key()))
     {
-        ui->alarmPageButton->click();
-    }
-        break;
-    case ICKeyboard::FB_F5:
-    {
-        ui->returnPageButton->click();
-    }
-        break;
-    default:
-    {
-        QWidget::keyPressEvent(e);
-    }
+        ICKeyboard::Instace()->SetPressed(false);
     }
 }
 
@@ -386,8 +582,8 @@ void MainFrame::InitCategoryPage()
     centerStackedLayout_->addWidget(monitorPage_);
     emit LoadMessage("Monitor page has been loaded");
 
-    originExecutingPage_ = new ICOriginDialog();
-    returnExecutingPage_ = new ICReturnPage();
+    originExecutingPage_ = new ICOriginDialog(this);
+    returnExecutingPage_ = new ICReturnPage(this);
     //    centerStackedLayout_->addWidget(originExecutingPage_);
     emit LoadMessage("Origin page has been loaded");
 
@@ -555,7 +751,7 @@ void MainFrame::StatusRefreshed()
     //    }
     uint axisLast = virtualHost->HostStatus(ICVirtualHost::AxisLastPos1).toUInt() |
             (virtualHost->HostStatus(ICVirtualHost::AxisLastPos2).toUInt() << 16);
-//    int pos = virtualHost->HostStatus(ICVirtualHost::XPos).toInt() * 10 + (axisLast1 & 0xF);
+    //    int pos = virtualHost->HostStatus(ICVirtualHost::XPos).toInt() * 10 + (axisLast1 & 0xF);
     int pos = virtualHost->GetActualPos(ICVirtualHost::ICAxis_AxisX1, axisLast);
     if(pos != oldXPos_)
     {
@@ -632,6 +828,8 @@ void MainFrame::StatusRefreshed()
     newLedFlags_ |= (virtualHost->IsInputOn(32)? 4 : 0);
     newLedFlags_ |= (virtualHost->IsOutputOn(32)? 2 : 0);
     newLedFlags_ |= (virtualHost->IsOutputOn(33)? 1 : 0);
+    newLedFlags_ |= (virtualHost->IsOutputOn(47) ? 16 : 0);
+
     if(newLedFlags_ != ledFlags_)
     {
         ledFlags_ = newLedFlags_;
@@ -640,7 +838,7 @@ void MainFrame::StatusRefreshed()
 #ifdef HC_ARMV6
         ioctl(ledFD_, 0, ledFlags_);
 #else
-        ioctl(ledFD_, 2, ledFlags_);
+        ioctl(ledFD_, 0, ledFlags_);
 #endif
 #endif
     }
@@ -669,12 +867,12 @@ void MainFrame::StatusRefreshed()
             ui->cycleTimeAndFinistWidget->SetAlarmInfo("");
         }
     }
-    finishCount_ = virtualHost->HostStatus(ICVirtualHost::DbgX1).toUInt();
-    if(finishCount_ != oldFinishCount_)
-    {
-        ui->cycleTimeAndFinistWidget->SetFinished(virtualHost->HostStatus(ICVirtualHost::DbgX1).toUInt());
-        oldFinishCount_ = finishCount_;
-    }
+//    finishCount_ = virtualHost->HostStatus(ICVirtualHost::DbgX1).toUInt();
+//    if(finishCount_ != oldFinishCount_)
+//    {
+//        ui->cycleTimeAndFinistWidget->SetFinished(virtualHost->HostStatus(ICVirtualHost::DbgX1).toUInt());
+//        oldFinishCount_ = finishCount_;
+//    }
     cycleTime_ = virtualHost->HostStatus(ICVirtualHost::Time).toUInt();
     if(cycleTime_ != oldCycleTime_)
     {
@@ -702,17 +900,36 @@ void MainFrame::StatusRefreshed()
         speed_ = "0";
         //        statusStr_ = tr("Stop");
 #ifdef Q_WS_X11
-        finishCount_ = virtualHost->FinishProductCount();
-        if(finishCount_ != oldFinishCount_)
-        {
-            ui->cycleTimeAndFinistWidget->SetFinished(finishCount_);
-            oldFinishCount_ = finishCount_;
-        }
+//        finishCount_ = virtualHost->FinishProductCount();
+//        if(finishCount_ != oldFinishCount_)
+//        {
+//            ui->cycleTimeAndFinistWidget->SetFinished(finishCount_);
+//            oldFinishCount_ = finishCount_;
+//        }
 #endif
         ui->systemStatusFrame->SetProgramStatus(StatusLabel::ONSTATUS);
     }
     else if(runningStatus_ == ICVirtualHost::Auto)
     {
+        if((runningStatus_ == ICVirtualHost::Auto) &&
+                (virtualHost->HostStatus(ICVirtualHost::DbgX0) == ICVirtualHost::AutoRunning) &&
+                (virtualHost->IsReadProductCount()) && ICKeyboard::Instace()->CurrentSwitchStatus() == ICKeyboard::KS_AutoStatu)
+        {
+
+            finishCount_ = virtualHost->HostStatus(ICVirtualHost::DbgA0).toUInt() |
+                    (virtualHost->HostStatus(ICVirtualHost::DbgA1).toUInt() << 16);
+            if(finishCount_ != oldFinishCount_)
+            {
+                ui->cycleTimeAndFinistWidget->SetFinished(finishCount_);
+                virtualHost->SetFinishProductCount(finishCount_);
+                oldFinishCount_ = finishCount_;
+                if(ICParametersSave::Instance()->IsProductSave())
+                {
+                    virtualHost->SaveSystemConfig();
+                }
+            }
+        }
+
         if(hintCode == 15)
         {
             if(actionDialog_->isHidden())
@@ -724,13 +941,7 @@ void MainFrame::StatusRefreshed()
         {
             actionDialog_->hide();
         }
-        finishCount_ = virtualHost->HostStatus(ICVirtualHost::DbgX1).toUInt();
-        if(finishCount_ != oldFinishCount_)
-        {
-            ui->cycleTimeAndFinistWidget->SetFinished(finishCount_);
-            virtualHost->SetFinishProductCount(finishCount_);
-            oldFinishCount_ = finishCount_;
-        }
+
         int speedVal =  virtualHost->GlobalSpeed();
         speed_ = QString::number(speedVal);
         if(virtualHost->HostStatus(ICVirtualHost::DbgX0) == ICVirtualHost::AutoReady)
@@ -842,11 +1053,11 @@ void MainFrame::StatusRefreshed()
         }
     }
     LevelChanged(ICProgramHeadFrame::Instance()->CurrentLevel());
-    if(mousePoint_ != QCursor::pos())
-    {
-        mousePoint_ = QCursor::pos();
-        SetHasInput(true);
-    }
+//    if(mousePoint_ != QCursor::pos())
+//    {
+//        mousePoint_ = QCursor::pos();
+////        SetHasInput(true);
+//    }
 }
 
 void MainFrame::ShowManualPage()
@@ -928,7 +1139,7 @@ void MainFrame::ShowOrigin()
     {
         //        ui->systemStatusFrame->SetOriginStatus(StatusLabel::ONSTATUS);
         //        isOriginShown_ = true;
-        originExecutingPage_->open();
+        originExecutingPage_->show();
     }
 }
 
@@ -950,7 +1161,7 @@ void MainFrame::ShowReturn()
     if(!isReturnShown_)
     {
         isReturnShown_ = true;
-        returnExecutingPage_->open();
+        returnExecutingPage_->show();
     }
 }
 
@@ -1062,47 +1273,48 @@ bool MainFrame::IsOrigined() const
 
 void MainFrame::ShowScreenSaver()
 {
-    //    screenSaver_->show();
+        screenSaver_->show();
     ICProgramHeadFrame::Instance()->SetCurrentLevel(ICParametersSave::MachineOperator);
 }
 
-bool MainFrame::IsInput() const
-{
-    return isDoAction_;
-}
+//bool MainFrame::IsInput() const
+//{
+//    return isDoAction_;
+//}
 
-void MainFrame::SetHasInput(bool isInput)
-{
-    isDoAction_ = isInput;
-    if(isInput && IsBackLightOff())
-    {
-        //        system("BackLight on");
-        ICParametersSave::Instance()->SetBrightness(ICParametersSave::Instance()->Brightness());
-        SetBackLightOff(false);
-    }
-}
+//void MainFrame::SetHasInput(bool isInput)
+//{
+//    isDoAction_ = isInput;
+//    if(isInput && IsBackLightOff())
+//    {
+//        //        system("BackLight on");
+//        ICParametersSave::Instance()->SetBrightness(ICParametersSave::Instance()->Brightness());
+//        SetBackLightOff(false);
+//    }
+//}
 
-bool MainFrame::IsBackLightOff() const
-{
-    return isBackLightOff_;
-}
+//bool MainFrame::IsBackLightOff() const
+//{
+//    return isBackLightOff_;
+//}
 
-void MainFrame::SetBackLightOff(bool isOff)
-{
-    isBackLightOff_ = isOff;
-}
+//void MainFrame::SetBackLightOff(bool isOff)
+//{
+//    isBackLightOff_ = isOff;
+//}
 
-void MainFrame::CheckedInput()
-{
-    if(!IsInput())
-    {
-        ShowScreenSaver();
-        system("BackLight off");
-        SetBackLightOff(true);
-    }
-    SetHasInput(false);
-    QTimer::singleShot(ICParametersSave::Instance()->BackLightTime() * 60000, this, SLOT(CheckedInput()));
-}
+//void MainFrame::CheckedInput()
+//{
+//    if(!IsInput())
+//    {
+//        ShowScreenSaver();
+////        system("BackLight off");
+//        system("BackLight.sh 0");
+//        SetBackLightOff(true);
+//    }
+//    SetHasInput(false);
+//    QTimer::singleShot(ICParametersSave::Instance()->BackLightTime() * 60000, this, SLOT(CheckedInput()));
+//}
 
 void MainFrame::ShowWidgets_(QList<QWidget *> &widgets)
 {
@@ -1258,6 +1470,24 @@ void MainFrame::ClearPosColor()
     QTimer::singleShot(1000, this, SLOT(ClearPosColor()));
 }
 
+void MainFrame::OpenBackLight()
+{
+#ifdef Q_WS_QWS
+    ICParametersSave::Instance()->SetBrightness(ICParametersSave::Instance()->Brightness());
+#endif
+}
+
+void MainFrame::CloseBackLight()
+{
+#ifdef Q_WS_QWS
+//    ShowScreenSaver();
+    system("BackLight.sh 0");
+//    SetBackLightOff(true);
+#endif
+}
+
+
+
 void MainFrame::Register()
 {
     resetTime = ICParametersSave::Instance()->RestTime(0);
@@ -1265,7 +1495,7 @@ void MainFrame::Register()
     {
 #ifndef Q_WS_X11
         QMessageBox::information(NULL,tr("tips"),tr("No Register. System Restart Now..."));
-//        system("reboot");
+        //        system("reboot");
 #endif
     }
 }
@@ -1306,14 +1536,14 @@ void MainFrame::InitSpareTime()
         if(resetTime > 0)
         {
             QMessageBox::information(NULL,tr("tips"),tr("Spare Time %1 Hour").arg(resetTime));
-//            connect(registe_timer,SIGNAL(timeout()),this,SLOT(CountRestTime()));
-//            registe_timer->start(1000*15);
+            //            connect(registe_timer,SIGNAL(timeout()),this,SLOT(CountRestTime()));
+            //            registe_timer->start(1000*15);
             registe_timer->start(1000*3600);
         }
         else if(resetTime < 0)
         {
             QMessageBox::information(NULL,tr("tips"),tr("No Register,The System Will Reboot after 10 minutes"));
-//            connect(reboot_timer,SIGNAL(timeout()),this,SLOT(Register()));
+            //            connect(reboot_timer,SIGNAL(timeout()),this,SLOT(Register()));
             //            registe_timer->start(1000*60*10);
             reboot_timer->start(1000*60*10);
 
@@ -1321,9 +1551,51 @@ void MainFrame::InitSpareTime()
     }
     else
     {
-//        connect(registe_timer,SIGNAL(timeout()),this,SLOT(CountRestTime()));
-//        registe_timer->start(1000*15); //15秒减一次（方便测试）
+        //        connect(registe_timer,SIGNAL(timeout()),this,SLOT(CountRestTime()));
+        //        registe_timer->start(1000*15); //15秒减一次（方便测试）
         registe_timer->start(1000*3600);
     }
 
+}
+
+int MainFrame::CurrentLevel() const
+{
+    return ICProgramHeadFrame::Instance()->CurrentLevel();
+}
+
+void MainFrame::MoldsCheck()
+{
+    QDir dir("./records");
+    QStringList acts = dir.entryList(QStringList()<<"*.act");
+    QString name;
+    QStringList tmp;
+    for(int i = 0; i < acts.size(); ++i)
+    {
+        name = acts.at(i);
+        name.chop(3);
+        tmp = dir.entryList(QStringList()<<QString("%1fnc").arg(name));
+        if(tmp.isEmpty())
+        {
+            QMessageBox::warning(this,
+                                 tr("warning"),
+                                 QString(tr("%1 fnc is broken. Please remove this mold!")).arg(name));
+            continue;
+        }
+        tmp = dir.entryList(QStringList()<<QString("%1sub*").arg(name));
+        if(tmp.size() != 8)
+        {
+            for(int j = 0; j != 8; ++j)
+            {
+                system(QString("cp %1/sub%4.prg %2/%3sub%4")
+                       .arg("./subs")
+                       .arg("./records")
+                       .arg(name)
+                       .arg(j).toUtf8());
+            }
+            QMessageBox::warning(this,
+                                 tr("warning"),
+                                 QString(tr("%1 mold fixed. Please check the sub program!")).arg(name));
+            continue;
+        }
+    }
 }

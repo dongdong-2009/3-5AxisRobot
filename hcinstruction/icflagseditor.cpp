@@ -94,6 +94,8 @@ ICFlagsEditor::ICFlagsEditor(QWidget *parent) :
     subArmInsideGet_.AddSubMoldUIItem(subItem);
     subArmOUtsideGet_.AddSubMoldUIItem(subItem);
 
+    ui->flagListWidget->setCurrentRow(0);
+
 }
 
 ICFlagsEditor::~ICFlagsEditor()

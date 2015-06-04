@@ -21,3 +21,36 @@ include (iclineeditwrapper/iclineeditwrapper.pri)
 include (iccommandkeywrapper/iccommandkeywrapper.pri)
 include (iciopointwrapper/iciopointwrapper.pri)
 include (icpictureview/icpictureview.pri)
+
+HEADERS += \
+    $$PWD/iclistwidget.h \
+    $$PWD/ictablewidget.h \
+    $$PWD/ictableview.h \
+    $$PWD/icmessagebox.h \
+    $$PWD/iccombobox.h \
+    $$PWD/icpasswordmodifydialog.h \
+    $$PWD/icplaintextedit.h \
+    $$PWD/icinputmethodkeyboard.h \
+    custom_widgets/icbuttongroup.h
+
+SOURCES += \
+    $$PWD/iclistwidget.cpp \
+    $$PWD/ictablewidget.cpp \
+    $$PWD/ictableview.cpp \
+    $$PWD/icmessagebox.cpp \
+    $$PWD/iccombobox.cpp \
+    $$PWD/icpasswordmodifydialog.cpp \
+    $$PWD/icplaintextedit.cpp \
+    $$PWD/icinputmethodkeyboard.cpp \
+    custom_widgets/icbuttongroup.cpp
+
+
+contains(DEFINES, HC_SK_8){
+FORMS += $$PWD/icinputmethodkeyboard.ui
+}
+contains(DEFINES, HC_SK_5){
+FORMS += $$PWD/icinputmethodkeyboard_5.ui
+}
+
+FORMS += \
+    $$PWD/icpasswordmodifydialog.ui

@@ -25,6 +25,7 @@ HardwareTest::HardwareTest(QWidget *parent) :
     testLedWidget_ = new TestLedPage();
     communicateWidget_ = new TestCommunicatePage();
     reportPage_ = new TestReportPage();
+    AddTestPageHelper_(communicateWidget_);
     AddTestPageHelper_(keyboardWidget_);
     AddTestPageHelper_(colorWidget_);
     AddTestPageHelper_(brightnessWidget_);
@@ -32,7 +33,6 @@ HardwareTest::HardwareTest(QWidget *parent) :
     AddTestPageHelper_(soundWidget_);
     AddTestPageHelper_(touchScreenWidget_);
     AddTestPageHelper_(testLedWidget_);
-    AddTestPageHelper_(communicateWidget_);
     ui->centerWidget->addWidget(reportPage_);
     currentTest_ = 1;
     showFullScreen();

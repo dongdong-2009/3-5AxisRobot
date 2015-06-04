@@ -75,6 +75,7 @@ void ICHostComparePage::on_hostBtn_clicked()
         }
     }
     ICVirtualHost::GlobalVirtualHost()->SaveSystemConfig();
+    ::system("sync");
     accepted();
 }
 

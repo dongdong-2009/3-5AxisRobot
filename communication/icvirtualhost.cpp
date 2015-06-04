@@ -24,6 +24,8 @@
 #include <QDebug>
 #include <QTime>
 #include "icactioncommand.h"
+#include "icfile.h"
+
 
 #define REFRESH_TIME 10
 static QTime testTime;
@@ -44,7 +46,13 @@ ICVirtualHost::ICVirtualHost(QObject *parent) :
     oldMoldNum_(8),
     productCount_(0),
     isParamChanged_(false),
-    isFixtureCheck_(true)
+    isFixtureCheck_(true),
+    input0Bits_(0),
+    input1Bits_(0),
+    output0Bits_(0),
+    output1Bits_(0),
+    euInputBits_(0),
+    euOutputBits_(0)
 {
     memset(oldSubStep, -1, 8);
     if(GlobalVirtualHost() == NULL)
@@ -93,6 +101,7 @@ ICVirtualHost::ICVirtualHost(QObject *parent) :
     if(!isInitSuccess_)
     {
         QMessageBox::critical(NULL, tr("Error"), "Init host fail!");
+//        ICKeyboardHandler::Instance()->SwitchChanged(ICKeyboard::Instace()->TakeSwitchValue());
         return;
     }
     timer_ = new QTimer();
@@ -108,14 +117,14 @@ ICVirtualHost::ICVirtualHost(QObject *parent) :
     //    RefreshStatus();
     //    RefreshStatus();
 #ifndef Q_WS_WIN32
-    watchdogFd_ = open("/dev/watchdog",O_RDONLY );
+//    watchdogFd_ = open("/dev/watchdog",O_RDONLY );
 #else
-    watchdogFd_ = 0;
+//    watchdogFd_ = 0;
 #endif
-    if(watchdogFd_ < 0)
-    {
-        qWarning("open watchdog fail!");
-    }
+//    if(watchdogFd_ < 0)
+//    {
+//        qWarning("open watchdog fail!");
+//    }
     //#ifndef Q_WS_X11
     //#ifdef HC_ARMV6
     //    QTimer::singleShot(REFRESH_TIME, this, SLOT(RefreshStatus()));
@@ -171,6 +180,7 @@ void ICVirtualHost::RefreshStatus()
         if(keyboard->IsPressed())
         {
             (key == -1) ? key = oldKey_ : oldKey_ = key;
+            qDebug()<<"repeat:"<<key;
         }
         if(key == ICKeyboard::VFB_X1Add || key == ICKeyboard::VFB_X1Sub)
         {
@@ -263,7 +273,7 @@ void ICVirtualHost::RefreshStatus()
         }
         else
         {
-#ifdef Q_WS_X11
+#ifndef Q_WS_QWS
             statusMap_.insert(XPos, 0);
             statusMap_.insert(YPos, 0);
             statusMap_.insert(ZPos, 0);
@@ -308,7 +318,7 @@ void ICVirtualHost::RefreshStatus()
                 //                qCritical("Connect to host fail!!");
 #ifdef Q_WS_X11
 //                statusMap_.insert(ErrCode, 0);
-                statusMap_.insert(ErrCode, rand() % 2);
+                statusMap_.insert(ErrCode, rand() % 2000);
 //                statusMap_.insert(XPos, rand());
                 //                statusMap_.insert(DbgP0, (2 << 8));
 #else
@@ -340,7 +350,7 @@ void ICVirtualHost::RefreshStatus()
         actionHBits_ = statusMap_.value(ActH).toUInt();
         if(freshCount_)
         {
-            int moldNum = HostStatus(S).toInt();
+            int moldNum = currentMoldNum();
             if(moldNum != oldMoldNum_)
             {
                 oldMoldNum_ = moldNum;
@@ -362,7 +372,7 @@ void ICVirtualHost::RefreshStatus()
 
             if(tmpStep != oldStep_)
             {
-                statusMap_.insert(Step, tmpStep);
+                statusMap_.insert(Step, tmpStep | (moldNum << 12));
                 oldStep_ = tmpStep;
                 emit StepChanged(tmpStep);
             }
@@ -376,7 +386,7 @@ void ICVirtualHost::RefreshStatus()
 
             emit StatusRefreshed();
 #ifndef Q_WS_WIN32
-            ioctl(watchdogFd_, WDIOC_KEEPALIVE);
+//            ioctl(watchdogFd_, WDIOC_KEEPALIVE);
 #endif
             flag_ = true;
             //            qDebug("Run query");
@@ -390,12 +400,12 @@ void ICVirtualHost::RefreshStatus()
 
 void ICVirtualHost::SaveSystemConfig()
 {
-    QFile file("./sysconfig/system.txt");
-    if(!file.open(QFile::WriteOnly | QFile::Text))
-    {
-        qCritical("open system file fail when save!");
-        return;
-    }
+//    QFile file("./sysconfig/system.txt");
+//    if(!file.open(QFile::WriteOnly | QFile::Text))
+//    {
+//        qCritical("open system file fail when save!");
+//        return;
+//    }
     int sum = 0;
     for(ICSystemParameter i = SYS_Language; i != SYS_CheckSum; i = static_cast<ICSystemParameter>(i + 1))
     {
@@ -409,11 +419,8 @@ void ICVirtualHost::SaveSystemConfig()
     {
         toWrite += systemParamMap_.value(i).toByteArray() + "\n";
     }
-    QFile::copy("./sysconfig/system.txt", "./sysconfig/system.txt~");
-    file.write(toWrite);
-    file.close();
-    //    system("rm ./sysconfig/system.txt~");
-    QFile::remove("./sysconfig/system.txt~");
+    ICFile file("./sysconfig/system.txt");
+    file.ICWrite(toWrite);
 }
 
 void ICVirtualHost::SaveAxisParam(int axis)
@@ -482,6 +489,20 @@ void ICVirtualHost::InitSubs_()
 void ICVirtualHost::WriteSubTohost_()
 {
     ICMacroSubroutine::ICMacroAllSubroutine allSubs = subroutines_->SubRoutines();
+    for(int i = 0; i != allSubs.size(); ++i)
+    {
+        QList<ICMoldItem>::iterator p = allSubs[i].begin();
+        while(p != allSubs[i].end())
+        {
+            if((*p).Action() == ICMold::ACTCOMMENT)
+            {
+                p = allSubs[i].erase(p);
+                continue;
+            }
+            ++p;
+
+        }
+    }
     QList<ICMoldItem> sub;
     ICMoldItem subItem;
     ICCommandProcessor* commandProcessor = ICCommandProcessor::Instance();
@@ -559,10 +580,24 @@ void ICVirtualHost::InitSystem_()
     QStringList items = fileContent.split("\n", QString::SkipEmptyParts);
     QVector<uint8_t> dataSection;
     QVector<uint> tempItemValues;
+    static bool isSystemInited = false;
+    uint fl, fh;
+    if(isSystemInited)
+    {
+        fl = systemParamMap_.value(SYS_RsvReadMold).toUInt();
+        fh = systemParamMap_.value(SYS_RsvWorkmold).toUInt();
+    }
     for(int i = 0; i != items.size(); ++i)
     {
         tempItemValues.append(items.at(i).toUInt());
         systemParamMap_.insert(static_cast<ICSystemParameter>(i), tempItemValues.last());
+    }
+    if(isSystemInited)
+    {
+        tempItemValues[SYS_RsvReadMold] = fl;
+        tempItemValues[SYS_RsvWorkmold] = fh;
+        systemParamMap_.insert(SYS_RsvReadMold, fl);
+        systemParamMap_.insert(SYS_RsvWorkmold, fh);
     }
 
     if(tempItemValues.size() < systemParamMap_.size())
@@ -619,6 +654,7 @@ void ICVirtualHost::InitSystem_()
         }
     }
 
+
     ICCommandProcessor* commandProcessor = ICCommandProcessor::Instance();
     ICWriteParameters writeParamtersCommand;
     writeParamtersCommand.SetSlave(1);
@@ -640,6 +676,7 @@ void ICVirtualHost::InitSystem_()
         }
         ++startAddr;
     }
+    isSystemInited = true;
     qDebug("Init sys finish");
 }
 
@@ -781,6 +818,17 @@ void ICVirtualHost::WriteMoldTohost_()
 {
     QVector<uint8_t> dataSection;
     QList<ICMoldItem> moldContent = currentMold_->MoldContent();
+    QList<ICMoldItem>::iterator p = moldContent.begin();
+    while(p != moldContent.end())
+    {
+        if((*p).Action() == ICMold::ACTCOMMENT)
+        {
+            p = moldContent.erase(p);
+            continue;
+        }
+        ++p;
+
+    }
     ICMoldItem moldItem;
     ICCommandProcessor* commandProcessor = ICCommandProcessor::Instance();
     ICWriteParameters writeParamtersCommand;
@@ -975,6 +1023,8 @@ void ICVirtualHost::InitAddrToSysPosMap_()
     addrToSysPos_.insert(SM_C_SEC2, ACT_C_Sec2);
     addrToSysPos_.insert(SM_C_SEC3, ACT_C_Sec3);
     addrToSysPos_.insert(SM_C_SEC4, ACT_C_Sec4);
+    addrToSysPos_.insert(SM_MAININ, ACT_ComeIn);
+    addrToSysPos_.insert(SM_MAINOUT, ACT_GoOut);
     moldParamToAddrPos_.insert(ICMold::CheckClip1, SM_CHKCLIP1);
     moldParamToAddrPos_.insert(ICMold::CheckClip2, SM_CHKCLIP2);
     moldParamToAddrPos_.insert(ICMold::CheckClip3, SM_CHKCLIP3);
@@ -1032,20 +1082,13 @@ void ICVirtualHost::GetAxisParam_(const QString &file, int start, int end, QVect
 
 void ICVirtualHost::SaveAxisParamHelper_(const QString &fileName, int start, int end)
 {
-    QFile file("./sysconfig/" + fileName);
-    if(file.open(QFile::WriteOnly | QFile::Text))
+    QByteArray toWrite;
+    for(ICSystemParameter i = static_cast<ICSystemParameter>(start); i != static_cast<ICSystemParameter>(end); i = static_cast<ICSystemParameter>(i + 1))
     {
-        QByteArray toWrite;
-        for(ICSystemParameter i = static_cast<ICSystemParameter>(start); i != static_cast<ICSystemParameter>(end); i = static_cast<ICSystemParameter>(i + 1))
-        {
-            toWrite += systemParamMap_.value(i).toByteArray() + "\n";
-        }
-        QFile::copy("./sysconfig/" + fileName, "./sysconfig/" + fileName + "~");
-        file.write(toWrite);
-        file.close();
-        //        system(QString("rm ./sysconfig/%1~").arg(fileName).toAscii());
-        QFile::remove("./sysconfig/" + fileName + "~");
+        toWrite += systemParamMap_.value(i).toByteArray() + "\n";
     }
+    ICFile file("./sysconfig/" + fileName);
+    file.ICWrite(toWrite);
 }
 
 void ICVirtualHost::StopRefreshStatus()
@@ -1083,4 +1126,8 @@ int ICVirtualHost::GetActualPos(ICAxis axis, uint axisLastPos) const
 }
 
 
-ICVirtualHost::~ICVirtualHost(){}
+ICVirtualHost::~ICVirtualHost()
+{
+    timer_->stop();
+    delete timer_;
+}

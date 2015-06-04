@@ -103,12 +103,13 @@ void ICKeyboardHandler::Keypressed(int keyValue)
     {
         return;
     }
-    bool isBackLight = icMainFrame->IsBackLightOff();
-    icMainFrame->SetHasInput(true);
-    if(isBackLight)
-    {
-        return;
-    }
+//    qDebug()<<"handle key press"<<keyValue;
+//    bool isBackLight = icMainFrame->IsBackLightOff();
+//    icMainFrame->SetHasInput(true);
+//    if(isBackLight)
+//    {
+//        return;
+//    }
     Q_ASSERT_X(virtualKeyMap_.contains(keyValue),
                "ICKeyboardHandle::Keypressed",
                (QString::number(keyValue) + " is not define").toAscii());
@@ -228,7 +229,12 @@ void ICKeyboardHandler::Keypressed(int keyValue)
     {
         if(!ICParametersSave::Instance()->IsSingleArm())
         {
-            if(status == ICVirtualHost::Stop)
+            if(status == ICVirtualHost::Stop ||
+                    (
+                    icMainFrame->CurrentLevel() < ICParametersSave::MachineAdmin &&
+                    ! ICVirtualHost::GlobalVirtualHost()->IsOrigined()
+                        )
+               )
             {
                 return;
             }
@@ -239,7 +245,12 @@ void ICKeyboardHandler::Keypressed(int keyValue)
     case ICKeyboard::VFB_Pose_Horizontal:
     case ICKeyboard::VFB_Pose_Vertical:
     {
-        if(status == ICVirtualHost::Stop)
+        if(status == ICVirtualHost::Stop ||
+                (
+                icMainFrame->CurrentLevel() < ICParametersSave::MachineAdmin &&
+                ! ICVirtualHost::GlobalVirtualHost()->IsOrigined()
+                    )
+           )
         {
             return;
         }
@@ -248,7 +259,12 @@ void ICKeyboardHandler::Keypressed(int keyValue)
     break;
     default:
     {
-        if(status == ICVirtualHost::Stop)
+        if(status == ICVirtualHost::Stop ||
+                (
+                icMainFrame->CurrentLevel() < ICParametersSave::MachineAdmin &&
+                ! ICVirtualHost::GlobalVirtualHost()->IsOrigined()
+                    )
+           )
         {
             return;
         }
@@ -278,24 +294,24 @@ void ICKeyboardHandler::PulleyChanged(int value)
     }
     qDebug("status is right");
     pulleyTurn_ = (pulleyTurn_ + 1) % 2;
-    int currentPulleySpeed = OperatingRatioSetDialog::Instance()->CurrentPulleySpeed();
+    int currentPulleySpeed = OperatingRatioSetDialog::Instance()->CurrentPulleySpeed() * value;
     int cmd;
     if(pulleyTurn_ == 0)
     {
-        for(int i = 0; i != currentPulleySpeed; ++i)
+//        for(int i = 0; i != currentPulleySpeed; ++i)
         {
 //            qDebug("pulseA");
-            cmd = IC::CMD_PulseA + i % 2;
-            ICCommandProcessor::Instance()->ExecuteHCCommand(cmd, value);
+            cmd = IC::CMD_PulseA /*+ i % 2*/;
+            ICCommandProcessor::Instance()->ExecuteHCCommand(cmd, currentPulleySpeed);
         }
     }
     else
     {
-        for(int i = 0; i != currentPulleySpeed; ++i)
+//        for(int i = 0; i != currentPulleySpeed; ++i)
         {
 //            qDebug("pulseB");
-            cmd = IC::CMD_PulseB - i % 2;
-            ICCommandProcessor::Instance()->ExecuteHCCommand(cmd, value);
+            cmd = IC::CMD_PulseB /*- i % 2*/;
+            ICCommandProcessor::Instance()->ExecuteHCCommand(cmd, currentPulleySpeed);
         }
 
     }

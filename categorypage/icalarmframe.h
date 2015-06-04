@@ -27,6 +27,9 @@ public:
     }
     ~ICAlarmFrame();
 
+public slots:
+    void OnActionTriggered(int configNum, const QString& newVal, const QString& oldVal);
+
 protected:
     void showEvent(QShowEvent *e);
     void changeEvent(QEvent *);
@@ -43,13 +46,13 @@ private:
     void ReadAlarmInfoInFile();
     void AppendNewLineInTable(int currentAlarmNum, const QString & alarmDateTime, const QString & alarmInfo ,const QString & alarmModifyTime);
     void RestoreAlarmInfoInLog(int currentAlarmNum, QString alarmDateTime,QString alarmModifyTime);
-
+    void AppendNewLogInTable(const QString& dt, int  configID, const QString& newVal, const QString& oldVa);
 private:
     Ui::ICAlarmFrame *ui;
     ICAlarmString *alarmString_;
     static ICAlarmFrame * instance_;
     const QString AlarmLogFileName;
-    const QString TemporyFileName;
+    const QString ModifyLogFileName;
     QStringList alarms_;
     QList<QPair<int, int> > alarmsNoSolve_;
     QPair<int,int>alarmPair_ ;

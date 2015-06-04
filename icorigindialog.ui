@@ -34,6 +34,9 @@
          <height>48</height>
         </size>
        </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
        <property name="text">
         <string>Stop</string>
        </property>
@@ -60,6 +63,9 @@
          <height>48</height>
         </size>
        </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
        <property name="text">
         <string>No</string>
        </property>
@@ -72,6 +78,9 @@
          <width>64</width>
          <height>48</height>
         </size>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
        </property>
        <property name="text">
         <string>Yes</string>

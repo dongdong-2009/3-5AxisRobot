@@ -29,10 +29,13 @@ private slots:
 
     void on_cancelButton_clicked();
 
+    void on_setToAppIcon_clicked();
+
 private:
     Ui::ICUpdateLogoDialog *ui;
     QString startupPage_;
     QString standbyPage_;
+    QString appIconPage_;
 };
 
 #endif // ICUPDATELOGODIALOG_H

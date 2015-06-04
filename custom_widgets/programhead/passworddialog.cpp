@@ -2,6 +2,7 @@
 #include "passworddialog.h"
 #include "ui_passworddialog.h"
 #include "icparameterssave.h"
+#include <QKeyEvent>
 
 PasswordDialog::PasswordDialog(QWidget *parent) :
     QDialog(parent),
@@ -15,6 +16,7 @@ PasswordDialog::PasswordDialog(QWidget *parent) :
 PasswordDialog::~PasswordDialog()
 {
     delete ui;
+    delete buttonGroup_;
 }
 
 void PasswordDialog::on_buttonBox_accepted()
@@ -60,6 +62,21 @@ void PasswordDialog::changeEvent(QEvent *e)
     default:
         break;
     }
+}
+
+void PasswordDialog::keyPressEvent(QKeyEvent *e)
+{
+//    if(e->key() == Qt::Key_F11)
+//    {
+//        ICKeyboardHandler::Instance()->Keypressed(ICKeyboard::VFB_Run);
+//    }
+//    else
+//    {
+    QKeyEvent* ke = new QKeyEvent(*e);
+    qApp->postEvent(this->parentWidget(), ke);
+//    this->accept();
+//        this->accept();
+//    }
 }
 
 void PasswordDialog::InitButton()

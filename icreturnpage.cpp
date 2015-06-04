@@ -3,6 +3,9 @@
 #include "icvirtualhost.h"
 #include "iccommandprocessor.h"
 #include "icactioncommand.h"
+#include "ickeyboardhandler.h"
+#include "ickeyboard.h"
+#include <QKeyEvent>
 
 ICReturnPage::ICReturnPage(QWidget *parent) :
     QDialog(parent),
@@ -51,15 +54,29 @@ void ICReturnPage::changeEvent(QEvent *e)
     }
 }
 
+void ICReturnPage::keyPressEvent(QKeyEvent *e)
+{
+    if(e->key() == Qt::Key_F11)
+    {
+        ICKeyboardHandler::Instance()->Keypressed(ICKeyboard::VFB_Run);
+    }
+    else
+    {
+        QKeyEvent* ke = new QKeyEvent(*e);
+        qApp->postEvent(this->parentWidget(), ke);
+//        this->accept();
+    }
+}
+
 void ICReturnPage::StatusRefresh()
 {
     int isReturn = ICVirtualHost::GlobalVirtualHost()->HostStatus(ICVirtualHost::DbgX0).toInt();
-    if(isReturn > 0)
+    if(isReturn > 0 && ICVirtualHost::GlobalVirtualHost()->CurrentStatus() == ICVirtualHost::Return)
     {
         ui->label->setText(tr("Returnning"));
         isRan_ = true;
     }
-    else if(isReturn == 0 || ICVirtualHost::GlobalVirtualHost()->CurrentStatus() != ICVirtualHost::Return)
+    else if(ICVirtualHost::GlobalVirtualHost()->CurrentStatus() != ICVirtualHost::Return)
     {
         if(isRan_)
         {

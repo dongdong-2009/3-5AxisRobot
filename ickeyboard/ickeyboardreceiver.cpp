@@ -111,6 +111,7 @@ void ICKeyboardReceiver::run()
                 //                continue;
                 if(key != oldKeyValue_)
                 {
+                    specialKeyCount_ = 0;
                     keyboard->SetPressed(true);
                     oldKeyValue_ = key;
                     keyboard->SetKeyValue(key);
@@ -134,6 +135,7 @@ void ICKeyboardReceiver::run()
 //            }
             if(key != oldKeyValue_)
             {
+                specialKeyCount_ = 0;
                 oldKeyValue_ = key;
                 if(key == ICKeyboard::FB_NULL)
                 {
@@ -143,6 +145,7 @@ void ICKeyboardReceiver::run()
                 }
                 if(key >= ICKeyboard::FB_F1 && key <= ICKeyboard::FB_F5)
                 {
+                    specialKeyCount_ = 0;
                     bool isBackLight = icMainFrame->IsBackLightOff();
                     icMainFrame->SetHasInput(true);
                     if(!isBackLight)
@@ -165,15 +168,15 @@ void ICKeyboardReceiver::run()
             }
             else
             {
-                if(key == ICKeyboard::FB_F5)
-                {
-                    ++specialKeyCount_;
-                    if(specialKeyCount_ == 500)
-                    {
-                        ::system("cd /home/szhc && echo recal >>recal");
-                        specialKeyCount_ = 0;
-                    }
-                }
+//                if(key == ICKeyboard::FB_F5)
+//                {
+//                    ++specialKeyCount_;
+//                    if(specialKeyCount_ == 500)
+//                    {
+//                        ::system("cd /home/root && echo recal >>recal");
+//                        specialKeyCount_ = 0;
+//                    }
+//                }
             }
 //            ::system("echo end readkey >> keylog");
 //            msleep(100);

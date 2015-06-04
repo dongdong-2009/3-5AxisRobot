@@ -52,9 +52,7 @@ void ICAutoRunRevise::changeEvent(QEvent *e)
 
 bool ICAutoRunRevise::ShowModifyItem(const ICMoldItem *item, ICMoldItem* ret, const QString &text)
 {
-    qDebug("In show editor");
-    qDebug()<<(item == NULL);
-    qDebug()<<(ret == NULL);
+    if(item->Action() == ICMold::ACTCOMMENT) return false;
 
     ui->currentMoldItemLabel->setText(text);
     ui->positionLabel->hide();
@@ -71,6 +69,11 @@ bool ICAutoRunRevise::ShowModifyItem(const ICMoldItem *item, ICMoldItem* ret, co
     ui->limitEdit->hide();
     ui->limitTimeLabel->hide();
     ui->limitUnitLabel->hide();
+    ui->flagSel->hide();
+    ui->label_2->hide();
+    ui->delayEdit->show();
+    ui->label->show();
+
 
     if(item->IsAction())
     {
@@ -89,14 +92,19 @@ bool ICAutoRunRevise::ShowModifyItem(const ICMoldItem *item, ICMoldItem* ret, co
         }
         else if(item->Action() == ICMold::ACTCHECKINPUT)
         {
-            ui->label->setText(tr("Return Step:"));
+//            ui->label->setText(tr("Limit Time:"));
+            return false;
             ui->delayEdit->SetDecimalPlaces(0);
             ui->delayEdit->setValidator(returnStepValidator);
             ui->sLabel->hide();
+            ui->flagSel->setCurrentIndex(item->Flag());
             ui->limitEdit->show();
             ui->limitTimeLabel->show();
             ui->limitUnitLabel->show();
             ui->limitEdit->SetThisIntToThisText(item->Pos());
+            ui->delayEdit->hide();
+            ui->label->hide();
+//            ui->mmLabel->hide();
         }
     }
     ui->posEdit->SetThisIntToThisText(0);
@@ -128,6 +136,10 @@ bool ICAutoRunRevise::ShowModifyItem(const ICMoldItem *item, ICMoldItem* ret, co
         {
             ret->SetPos(ui->limitEdit->TransThisTextToThisInt());
         }
+        else if(item->Action() == ICMold::ACTCHECKINPUT)
+        {
+            ret->SetPos(ui->limitEdit->TransThisTextToThisInt());
+        }
         else
         {
             ret->SetPos(ui->posEdit->TransThisTextToThisInt());
@@ -142,6 +154,11 @@ bool ICAutoRunRevise::ShowModifyItem(const ICMoldItem *item, ICMoldItem* ret, co
         {
             ret->SetSVal(ui->speedEdit->TransThisTextToThisInt());
         }
+        if(item->Action() == ICMold::ACTCHECKINPUT)
+        {
+//            ret->SetFlag(ui->flagSel->currentIndex());
+        }
+
 //        ICMoldItem tempItem = *item;
 
 //        tempItem.SetPos(tempItem.Pos() + ui->posEdit->TransThisTextToThisInt());
@@ -206,3 +223,9 @@ bool ICAutoRunRevise::ShowModifyItem(const ICMoldItem *item, ICMoldItem* ret, co
 //    processor->ExecuteCommand(command);
 //    emit MoldItemChanged();
 //}
+
+void ICAutoRunRevise::SetFlagSel(const QStringList &flags)
+{
+    ui->flagSel->clear();
+    ui->flagSel->addItems(flags);
+}

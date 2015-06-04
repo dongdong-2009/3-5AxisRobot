@@ -28,7 +28,8 @@ ICHCManualOperationPageFrame::ICHCManualOperationPageFrame(QWidget *parent) :
     reservePage_(NULL),
     serveAxisPage_(NULL),
     centralStackedLayout_(new QStackedLayout),
-    currentAction_(-1)
+    currentAction_(-1),
+    timerID_(-1)
 {
     ui->setupUi(this);
 //    ui->adjustToolButton->hide();
@@ -94,6 +95,7 @@ void ICHCManualOperationPageFrame::showEvent(QShowEvent *e)
 void ICHCManualOperationPageFrame::hideEvent(QHideEvent *e)
 {
     QFrame::hideEvent(e);
+    if(timerID_ < 0) return;
     ICTimerPool::Instance()->Stop(timerID_, this, SLOT(StatusRefreshed()));
 //    disconnect(ICVirtualHost::GlobalVirtualHost(),
 //               SIGNAL(StatusRefreshed()),
@@ -291,26 +293,53 @@ void ICHCManualOperationPageFrame::StatusRefreshed()
     bool isAxisOn = !ui->aAddButton->isHidden();
     ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
     QString temp;
-    if(host->IsInputOn(0))
+    if(host->FixtureDefine() == 1)
     {
-        temp = tr("Horizontal-1 Limit On");
-    }
-    else if(host->IsInputOn(1))
-    {
-        temp = tr("Vertical-1 Limit On");
+        if(host->IsInputOn(0))
+        {
+            temp = tr("Horizontal-1 Limit On");
+        }
+        else if(host->IsInputOn(1))
+        {
+            temp = tr("Vertical-1 Limit On");
+        }
+        else
+        {
+            temp.clear();
+        }
+
+        if(host->IsInputOn(23) && isAxisOn)
+        {
+            temp += tr("/Horizontal-2 Limit On");
+        }
+        else if(host->IsInputOn(11) && isAxisOn)
+        {
+            temp += tr("/Vertical-2 Limit On");
+        }
     }
     else
     {
-        temp.clear();
-    }
+        if(host->IsInputOn(0))
+        {
+            temp = tr("Vertical-1 Limit On");
+        }
+        else if(host->IsInputOn(1))
+        {
+            temp = tr("Horizontal-1 Limit On");
+        }
+        else
+        {
+            temp.clear();
+        }
 
-    if(host->IsInputOn(23) && isAxisOn)
-    {
-        temp += tr("/Horizontal-2 Limit On");
-    }
-    else if(host->IsInputOn(11) && isAxisOn)
-    {
-        temp += tr("/Vertical-2 Limit On");
+        if(host->IsInputOn(23) && isAxisOn)
+        {
+            temp += tr("/Vertical-2 Limit On");
+        }
+        else if(host->IsInputOn(11) && isAxisOn)
+        {
+            temp += tr("/Horizontal-2 Limit On");
+        }
     }
 
     if(ui->currentPose->text() != temp)

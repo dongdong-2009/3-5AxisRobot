@@ -53,6 +53,7 @@ private:
     QStackedLayout * centralStackedLayout_;
     QButtonGroup* buttonGroup_;
     int axisDefine_;
+
 };
 
 #endif // ICHCSETTINGSFRAME_H

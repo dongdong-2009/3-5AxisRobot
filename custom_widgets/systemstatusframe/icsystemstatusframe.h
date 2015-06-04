@@ -51,7 +51,9 @@ public:
 protected:
     void changeEvent(QEvent *e);
 private slots:
-    void on_immButton_clicked();
+//    void on_immButton_clicked();
+
+    void on_immButton_pressed();
 
 private:
     Ui::ICSystemStatusFrame *ui;

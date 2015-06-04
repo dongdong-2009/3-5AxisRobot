@@ -33,6 +33,7 @@ bool ICBackupUtility::BackupDir(const QStringList &nameFilter) const
     }
     end.write("CopyEnd");
     end.close();
+    system("sync");
     return ret;
 }
 
@@ -57,6 +58,7 @@ bool ICBackupUtility::RestoreDir(const QStringList& nameFilter) const
         return false;
     }
     bool ret = _CopyFiles_(nameFilter);
+    system("sync");
     return ret;
 }
 

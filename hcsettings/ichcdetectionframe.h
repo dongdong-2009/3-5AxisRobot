@@ -3,6 +3,7 @@
 
 #include <QFrame>
 #include <QList>
+#include <QMap>
 
 class ICTwoSelectionComboBoxWrapper;
 
@@ -48,6 +49,11 @@ private:
     void RetranslateUi_();
     Ui::ICHCDetectionFrame *ui;
     QList<ICTwoSelectionComboBoxWrapper*> wrappers_;
+
+private slots:
+    void OnConfigChanged(int index);
+private:
+    QMap<QWidget*, int> editorToLogID_;
 };
 
 #endif // ICHCDETECTIONFRAME_H

@@ -13,9 +13,13 @@
 #include "iccommands.h"
 #include "iccommandprocessor.h"
 #include "icmold.h"
+#include <QRunnable>
+#include <QThreadPool>
+
 
 class QTimer;
 class ICMacroSubroutine;
+class ReconfigureRunable;
 //class ICMold;
 
 class ICQueryStatus;
@@ -24,6 +28,7 @@ class ICVirtualHost : public QObject
 {
     Q_OBJECT
 public:
+    friend class ReconfigureRunable;
     enum ICSystemParameter
     {
         SYS_Global_Speed,
@@ -572,7 +577,7 @@ public:
     void SetMidMoldCheck(bool isCheck);
     bool IsEjectionLink() const { return (SystemParameter(SYS_Function).toInt() & 0x00000040) != 0;}
     void SetEjectionLink(bool permit);
-    bool IsAlarmWhenOrigin() const { return (SystemParameter(SYS_Function).toInt() & 0x00000300) != 0;}
+    bool IsAlarmWhenOrigin() const { return (SystemParameter(SYS_Function).toInt() & 0x00000100) != 0;}
     void SetAlarmWhenOrigin(bool isAlarm);
     bool IsPositionDetect() const { return (SystemParameter(SYS_Function).toInt() & 0x00000C00) != 0;}
     void SetPositionDetect(bool detect);
@@ -589,7 +594,8 @@ public:
     bool IsCloseMoldEn() const { return (SystemParameter((SYS_Function)).toInt() & 0x80 ) != 0;}
     void SetCloseMoldEn(bool isEn);
 
-    int CurrentStep() const { return (statusMap_.value(Step).toInt() & 0x00FF);}
+    int CurrentStep() const { return (statusMap_.value(Step).toInt() & 0x03FF);}
+    int currentMoldNum() const { return (statusMap_.value(Step).toUInt() >> 12) & 0xF;}
     int CurrentStatus() const { return (statusMap_.value(Status).toUInt() & 0x0FFF);}
     int AlarmNum() const { return (statusMap_.value(ErrCode).toUInt() & 0x0FFF);}
     int HintNum() const { return (statusMap_.value(ErrCode).toUInt() >> 12);}
@@ -608,8 +614,13 @@ public:
     bool HasTuneSpeed() const { return hasTuneSpeed_;}
     void SetTuneSpeed(bool tune){ hasTuneSpeed_ = tune;}
 
-    int FinishProductCount() const { return productCount_;}
-    void SetFinishProductCount(int product) { productCount_ = product;}
+    int FinishProductCount() const { return systemParamMap_.value(SYS_RsvReadMold).toUInt() |
+                (systemParamMap_.value(SYS_RsvWorkmold).toUInt() << 16);}
+    void SetFinishProductCount(int product)
+    {
+        systemParamMap_.insert(SYS_RsvReadMold, product & 0xFFFF);
+        systemParamMap_.insert(SYS_RsvWorkmold, product >> 16);
+    }
 
 //    bool IsSingleArm() const { return (systemParamMap_.value(SYS_ARM_CONFIG).toInt() & 0x0100) > 0;}
 //    void SetSingleArm(bool isSingle);
@@ -643,6 +654,9 @@ public:
 
     int GetActualPos(ICAxis axis) const;
     int GetActualPos(ICAxis axis, uint axisLastPos) const;
+
+    bool IsReadProductCount() const { return currentAddr_ > 9;}
+
 public Q_SLOTS:
     void SetMoldParam(int param, int value);
 Q_SIGNALS:
@@ -711,6 +725,22 @@ private:
 };
 #define icGlobalVirtuallHost ICVirtualHost::GlobalVirtualHost()
 
+class ReconfigureRunable:public QRunnable
+{
+public:
+    void run()
+    {
+        ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
+        qDebug("Reconfig");
+        host->WriteSubTohost_();
+        host->WriteMoldTohost_();
+        host->currentMold_->UpdateSyncSum();
+        host->InitMoldParam_();
+        host->InitSystem_();
+        host->isParamChanged_ = false;
+    }
+};
+
 inline void ICVirtualHost::ReConfigure()
 {
 //    qApp->processEvents();
@@ -722,6 +752,9 @@ inline void ICVirtualHost::ReConfigure()
     InitSystem_();
     isParamChanged_ = false;
 //    WriteSystemTohost_();
+//    ReconfigureRunable *r = new ReconfigureRunable();
+//    r->setAutoDelete(true);
+//    QThreadPool::globalInstance()->start(r);
 }
 
 inline void ICVirtualHost::SetGlobalSpeed(int speed)
@@ -793,8 +826,8 @@ inline bool ICVirtualHost::IsInputOn(int pos) const
     }
     else if(pos < 64)
     {
-        uint temp = 1 << (pos - 40);
-        return output1Bits_ & temp;
+        uint temp = 1 << (pos - 48);
+        return statusMap_.value(S).toUInt() & temp;
     }
     return false;
 }
@@ -888,7 +921,7 @@ inline void ICVirtualHost::SetEjectionLink(bool permit)
 inline void ICVirtualHost::SetAlarmWhenOrigin(bool isAlarm)
 {
     int val = SystemParameter(SYS_Function).toInt();
-    val &= 0xFFFFFDFF;
+    val &= 0xFFFFFEFF;
     (isAlarm ? val |= 0x00000100 : val &= 0xFFFFFEFF);
     systemParamMap_.insert(SYS_Function, val);
     isParamChanged_ = true;

@@ -18,6 +18,7 @@ public:
     ~ICAutoRunRevise();
 
     bool ShowModifyItem(const ICMoldItem* item, ICMoldItem* ret,const QString &text);
+    void SetFlagSel(const QStringList& flags);
 
 protected:
     void changeEvent(QEvent *e);

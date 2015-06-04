@@ -107,7 +107,7 @@ QCheckBox::indicator:unchecked:disabled
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="productFixtureBox">
+           <widget class="ICComboBox" name="productFixtureBox">
             <item>
              <property name="text">
               <string>Fixture-1</string>
@@ -173,7 +173,7 @@ QCheckBox::indicator:unchecked:disabled
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="outletFixtureBox">
+           <widget class="ICComboBox" name="outletFixtureBox">
             <property name="currentIndex">
              <number>1</number>
             </property>
@@ -893,6 +893,11 @@ QCheckBox::indicator:unchecked:disabled
    <extends>QWidget</extends>
    <header>icinstructioneditorbase.h</header>
    <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ICComboBox</class>
+   <extends>QComboBox</extends>
+   <header>iccombobox.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

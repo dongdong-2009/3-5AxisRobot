@@ -22,7 +22,7 @@
     </widget>
    </item>
    <item>
-    <widget class="QTableWidget" name="actionWidget">
+    <widget class="ICTableWidget" name="actionWidget">
      <property name="styleSheet">
       <string notr="true">::item{
 height: 33px;
@@ -163,6 +163,13 @@ QRadioButton::indicator:unchecked:disabled
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ICTableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>ictablewidget.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

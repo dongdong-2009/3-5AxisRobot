@@ -3,6 +3,7 @@
 #include <QDebug>
 #include "icmold.h"
 #include "icinstructparam.h"
+#include "icfile.h"
 
 struct MoldStepData
 {
@@ -187,8 +188,9 @@ bool ICMold::ReadMoldFile(const QString &fileName, bool isLoadParams)
     {
         return false;
     }
+//    QTextStream fs(&file);
 //    moldName_ = fileName;
-    QString content = file.readAll();
+    QString content = QString::fromUtf8(file.readAll());
     file.close();
     //    content = content.remove('\r');
 
@@ -212,7 +214,9 @@ bool ICMold::ReadMoldFile(const QString &fileName, bool isLoadParams)
     {
         qDebug()<<"in"<<i;
         items = records.at(i).split(' ', QString::SkipEmptyParts);
-        if(items.size() != 10)
+        if(items.size() != 10 &&
+                items.size() != 11 &&
+                items.size() != 12)
         {
             qDebug()<<i<<"th line size wrong";
             return false;
@@ -227,6 +231,14 @@ bool ICMold::ReadMoldFile(const QString &fileName, bool isLoadParams)
                           items.at(7).toUInt(),
                           items.at(8).toUInt(),
                           items.at(9).toUInt());
+        if(items.size() > 10)
+        {
+            moldItem.SetFlag(items.at(10).toUInt());
+        }
+        if(items.size() > 11)
+        {
+            moldItem.SetComment(items.at(11));
+        }
         tempmoldContent.append(moldItem);
     }
     qDebug("read ok");
@@ -297,6 +309,25 @@ bool ICMold::ReadMoldParamsFile(const QString &fileName)
 bool ICMold::SaveMoldFile(bool isSaveParams)
 {
     bool ret = false;
+    QMap<int, int> flagToSetp;
+    QList<int> conditionPos;
+    for(int i = 0; i != moldContent_.size(); ++i)
+    {
+        if(moldContent_.at(i).Action() == ACTCOMMENT)
+        {
+            flagToSetp.insert(moldContent_.at(i).Flag(), moldContent_.at(i).Num());
+        }
+        else if(moldContent_.at(i).Action() == ACTCHECKINPUT)
+        {
+            conditionPos.append(i);
+        }
+    }
+    for(int i = 0; i != conditionPos.size(); ++i)
+    {
+        moldContent_[conditionPos.at(i)].SetDVal(
+                    flagToSetp.value(moldContent_.at(conditionPos.at(i)).Flag(), 0) -
+                    moldContent_.at(conditionPos.at(i)).Num());
+    }
     MoldReSum();
     QByteArray toWrite;
     if(moldContent_.size() < 1)
@@ -308,22 +339,25 @@ bool ICMold::SaveMoldFile(bool isSaveParams)
     {
         toWrite += moldContent_.at(i).ToString() + "\n";
     }
-    QFile file(moldName_);
-    if(!file.open(QFile::ReadWrite | QFile::Text))
-    {
-        return false;
-    }
-    if(file.readAll() != toWrite)
-    {
-        QFile::copy(moldName_, moldName_ + "~");
-        file.resize(0);
-        file.write(toWrite);
-        file.close();
-        //    QDir dir(file.parent())
-        //    system(QString("rm %1~").arg(moldName_).toAscii());
-        QFile::remove(moldName_ + "~");
-        ret = true;
-    }
+    ICFile file(moldName_);
+    ret = file.ICWrite(toWrite);
+//    QFile file(moldName_ + ".bak");
+//    if(!file.open(QFile::Write | QFile::Text))
+//    {
+//        return false;
+//    }
+////    if(file.readAll() != toWrite)
+////    {
+//    //        QFile::copy(moldName_, moldName_ + "~");
+////    file.resize(0);
+//    file.write(toWrite);
+//    file.close();
+//    //    QDir dir(file.parent())
+//    //    system(QString("rm %1~").arg(moldName_).toAscii());
+//    //        QFile::remove(moldName_ + "~");
+//    QFile::copy(moldName_ + ".bak", moldName_);
+//    ret = true;
+////    }
     if(isSaveParams)
     {
         SaveMoldParamsFile();
@@ -343,21 +377,24 @@ bool ICMold::SaveMoldParamsFile()
     {
         toWrite += QByteArray::number(allParams.at(i)) + "\n";
     }
-    QFile file(moldParamName_);
-    if(!file.open(QFile::ReadWrite | QFile::Text))
-    {
-        return false;
-    }
-    if(file.readAll() != toWrite)
-    {
-        QFile::copy(moldParamName_, moldParamName_ + "~");
-        file.resize(0);
-        file.write(toWrite);
-        file.close();
-        //    system(QString("rm %1~").arg(moldParamName_).toAscii());
-        QFile::remove(moldParamName_ + "~");
-        ret = true;
-    }
+    ICFile file(moldParamName_);
+    ret = file.ICWrite(toWrite);
+//    QFile file(moldParamName_ + ".bak");
+//    if(!file.open(QFile::ReadWrite | QFile::Text))
+//    {
+//        return false;
+//    }
+////    if(file.readAll() != toWrite)
+////    {
+////    QFile::copy(moldParamName_, moldParamName_ + "~");
+////    file.resize(0);
+//    file.write(toWrite);
+//    file.close();
+//    //    system(QString("rm %1~").arg(moldParamName_).toAscii());
+////    QFile::remove(moldParamName_ + "~");
+//    QFile::copy(moldParamName_ + ".bak", moldParamName_);
+//    ret = true;
+////    }
     return ret;
 }
 
@@ -366,7 +403,8 @@ uint ICMold::SyncAct() const
     uint ret = 0;
     for(int i = 0; i != moldContent_.size(); ++i)
     {
-        ret += moldContent_.at(i).GMVal();
+        if(moldContent_.at(i).Action() != ACTCOMMENT)
+            ret += moldContent_.at(i).GMVal();
     }
     return ret;
 }
@@ -376,7 +414,8 @@ uint ICMold::SyncSum() const
     uint ret = 0;
     for(int i = 0; i != moldContent_.size(); ++i)
     {
-        ret += moldContent_.at(i).Sum();
+        if(moldContent_.at(i).Action() != ACTCOMMENT)
+            ret += moldContent_.at(i).Sum();
     }
     return ret;
 }
@@ -402,10 +441,13 @@ void ICMold::Delete(int step, QList<ICMoldItem> &sourceItems)
 
 void ICMold::MoldReSum(QList<ICMoldItem> &items)
 {
+    int seq = 0;
     for(int i = 0; i != items.size(); ++i)
     {
-        items[i].SetSeq(i);
+        items[i].SetSeq(seq);
         items[i].ReSum();
+        if(items.at(i).Action() != ACTCOMMENT)
+            ++seq;
     }
 }
 
@@ -498,6 +540,20 @@ QStringList ICMold::UIItemsToStringList(const QList<ICGroupMoldUIItem> &items)
     {
         item = items.at(i);
         ret.append(item.ToStringList());
+    }
+    return ret;
+}
+
+
+int ICGroupMoldUIItem::RunableTopItemCount()
+{
+    int ret = 0;
+    for(int i = 0 ; i != topItems_.size(); ++i)
+    {
+        if(topItems_[i].BaseItem()->Action() != ICMold::ACTCOMMENT)
+        {
+            ++ret;
+        }
     }
     return ret;
 }

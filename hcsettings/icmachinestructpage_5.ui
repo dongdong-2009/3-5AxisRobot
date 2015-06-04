@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>836</width>
+    <width>736</width>
     <height>319</height>
    </rect>
   </property>
@@ -22,7 +22,16 @@
 </string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
-   <property name="margin">
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
     <number>2</number>
    </property>
    <item>
@@ -403,7 +412,7 @@ height:30px;</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>26</width>
+              <width>30</width>
               <height>0</height>
              </size>
             </property>
@@ -451,7 +460,7 @@ height:30px;</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>26</width>
+              <width>30</width>
               <height>0</height>
              </size>
             </property>
@@ -499,7 +508,7 @@ height:30px;</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>26</width>
+              <width>30</width>
               <height>0</height>
              </size>
             </property>
@@ -547,7 +556,7 @@ height:30px;</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>26</width>
+              <width>30</width>
               <height>0</height>
              </size>
             </property>
@@ -595,7 +604,7 @@ height:30px;</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>26</width>
+              <width>30</width>
               <height>0</height>
              </size>
             </property>
@@ -640,6 +649,12 @@ height:30px;</string>
          <layout class="QFormLayout" name="formLayout_2">
           <property name="fieldGrowthPolicy">
            <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+          </property>
+          <property name="leftMargin">
+           <number>2</number>
+          </property>
+          <property name="rightMargin">
+           <number>2</number>
           </property>
           <property name="bottomMargin">
            <number>0</number>
@@ -715,6 +730,9 @@ height:30px;</string>
           </item>
           <item row="4" column="0" colspan="2">
            <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <property name="spacing">
+             <number>4</number>
+            </property>
             <item>
              <widget class="QPushButton" name="testPushButton">
               <property name="sizePolicy">
@@ -725,7 +743,7 @@ height:30px;</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>80</width>
+                <width>90</width>
                 <height>38</height>
                </size>
               </property>
@@ -744,7 +762,7 @@ height:30px;</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>80</width>
+                <width>90</width>
                 <height>38</height>
                </size>
               </property>
@@ -763,7 +781,7 @@ height:30px;</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>80</width>
+                <width>90</width>
                 <height>38</height>
                </size>
               </property>

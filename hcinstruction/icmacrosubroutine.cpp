@@ -3,6 +3,7 @@
 #include <QDebug>
 #include <QStringList>
 #include "icmacrosubroutine.h"
+#include "icfile.h"
 
 QScopedPointer<ICMacroSubroutine> ICMacroSubroutine::instance_;
 ICMacroSubroutine::ICMacroSubroutine(QObject *parent) :
@@ -28,6 +29,7 @@ bool ICMacroSubroutine::ReadMacroSubroutieFiles(const QString &dir)
     QString fileName;
     QList<ICMoldItem> sub;
     ICMoldItem subItem;
+    subroutines_.clear();
     foreach(fileName, fileList)
     {
         file.setFileName(fileDir.filePath(fileName));
@@ -36,7 +38,7 @@ bool ICMacroSubroutine::ReadMacroSubroutieFiles(const QString &dir)
             qCritical()<<fileName<<" can't open";
             return false;
         }
-        fileContent = file.readAll();
+        fileContent = QString::fromUtf8(file.readAll());
         file.close();
 
         records = fileContent.split('\n', QString::SkipEmptyParts);
@@ -45,7 +47,7 @@ bool ICMacroSubroutine::ReadMacroSubroutieFiles(const QString &dir)
         {
             items = records.at(i).split(' ', QString::SkipEmptyParts);
 //            items.removeAt(2);
-            if(items.size() != 10)
+            if(items.size() != 10 && items.size() != 11 && items.size() != 12)
             {
                 break;
             }
@@ -59,6 +61,8 @@ bool ICMacroSubroutine::ReadMacroSubroutieFiles(const QString &dir)
                              items.at(7).toUInt(),
                              items.at(8).toUInt(),
                              items.at(9).toUInt());
+            if(items.size() > 10)
+                subItem.SetComment(items.at(10));
 
             sub.append(subItem);
         }//foreach(record, records)
@@ -82,20 +86,22 @@ bool ICMacroSubroutine::SaveMacroSubroutieFile(int group)
     {
         toWrite += items.at(i).ToString() + "\n";
     }
-    QFile file(subsDir_ + "/sub" + QString::number(group) + ".prg");
-    if(!file.open(QFile::ReadWrite | QFile::Text))
-    {
-        return false;
-    }
-    if(file.readAll() != toWrite)
-    {
-        QFile::copy(file.fileName(), file.fileName() + "~");
-        file.resize(0);
-        file.write(toWrite);
-        file.close();
-        QFile::remove(file.fileName() + "~");
-        ret = true;
-    }
+    ICFile file(subsDir_ + "/sub" + QString::number(group) + ".prg");
+    ret = file.ICWrite(toWrite);
+//    QFile file(subsDir_ + "/sub" + QString::number(group) + ".prg");
+//    if(!file.open(QFile::ReadWrite | QFile::Text))
+//    {
+//        return false;
+//    }
+//    if(file.readAll() != toWrite)
+//    {
+//        QFile::copy(file.fileName(), file.fileName() + "~");
+//        file.resize(0);
+//        file.write(toWrite);
+//        file.close();
+//        QFile::remove(file.fileName() + "~");
+//        ret = true;
+//    }
     return ret;
 }
 
@@ -106,7 +112,8 @@ uint ICMacroSubroutine::SyncAct() const
     {
         for(int j = 0; j != subroutines_.at(i).size(); ++j)
         {
-            ret += subroutines_.at(i).at(j).GMVal();
+            if(subroutines_.at(i).at(j).Action() != ICMold::ACTCOMMENT)
+                ret += subroutines_.at(i).at(j).GMVal();
         }
     }
     return ret;
@@ -119,7 +126,8 @@ uint ICMacroSubroutine::SyncSum() const
     {
         for(int j = 0; j != subroutines_.at(i).size(); ++j)
         {
-            ret += subroutines_.at(i).at(j).Sum();
+            if(subroutines_.at(i).at(j).Action() != ICMold::ACTCOMMENT)
+                ret += subroutines_.at(i).at(j).Sum();
         }
     }
     return ret;

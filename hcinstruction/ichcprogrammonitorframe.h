@@ -53,6 +53,12 @@ private slots:
 
     void on_cycle_clicked();
 
+    void on_pauseButton_toggled(bool checked);
+
+    QStringList Flags();
+    
+    void CareCheck();
+
 private:
     void InitSignal();
     void UpdateUIProgramList_();
@@ -92,6 +98,8 @@ private:
     QMap<int, QString> checkResultMap_;
     int fixtureCount_[6];
     QTimer refreshTimer_;
+    QMap<int, int> flagToSetp;
+
 //    QMap<ICMoldItem*, ICMoldItem> modifyMap_;
 };
 #endif // ICHCPROGRAMMONITORFRAME_H

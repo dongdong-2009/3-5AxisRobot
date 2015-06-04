@@ -1,118 +1,103 @@
 INCLUDEPATH += $$PWD
 
 HEADERS += \
-    hcinstruction/ichcinstructionpageframe.h \
-    hcinstruction/actionsettingframe.h \
-    #hcinstruction/ichcparametersframe.h \
-    #hcinstruction/routesettingdialog.h \
-    hcinstruction/ichcinjectionpage.h \
-    hcinstruction/ichcfixturepage.h \
-    hcinstruction/ichcconditionpage.h \
-    hcinstruction/icmold.h \
-    hcinstruction/icmacrosubroutine.h \
-    hcinstruction/icinstructparam.h \
-    hcinstruction/ichcprogrammonitorframe.h \
-    #hcinstruction/ichceditordialog.h \
-    #hcinstruction/icmacroparameditorframe.h \
-    hcinstruction/icautorunrevise.h \
-    hcinstruction/icinstructioneditorbase.h \
-    hcinstruction/icflagseditor.h \
-    hcinstruction/icpneumaticactionpage.h \
-    hcinstruction/icinstructmodifydialog.h \
-    hcinstruction/icwaitconditioneditor.h \
-    hcinstruction/icperipherypage.h \
-    hcinstruction/icperipheryparametereditor.h \
-    hcinstruction/iccutpage.h \
-    hcinstruction/icprogramselector.h \
-    hcinstruction/icstackeditor.h \
-    hcinstruction/icprogramguidepage.h \
-    hcinstruction/ichcotherpage.h
+    $$PWD/ichcinstructionpageframe.h \
+    $$PWD/actionsettingframe.h \
+    #$$PWD/ichcparametersframe.h \
+    #$$PWD/routesettingdialog.h \
+    $$PWD/ichcinjectionpage.h \
+    $$PWD/ichcfixturepage.h \
+    $$PWD/ichcconditionpage.h \
+    $$PWD/icmold.h \
+    $$PWD/icmacrosubroutine.h \
+    $$PWD/icinstructparam.h \
+    $$PWD/ichcprogrammonitorframe.h \
+    #$$PWD/ichceditordialog.h \
+    #$$PWD/icmacroparameditorframe.h \
+    $$PWD/icautorunrevise.h \
+    $$PWD/icinstructioneditorbase.h \
+    $$PWD/icflagseditor.h \
+    $$PWD/icpneumaticactionpage.h \
+    $$PWD/icinstructmodifydialog.h \
+    $$PWD/icwaitconditioneditor.h \
+    $$PWD/icperipherypage.h \
+    $$PWD/icperipheryparametereditor.h \
+    $$PWD/iccutpage.h \
+    $$PWD/icprogramselector.h \
+    $$PWD/icstackeditor.h \
+    $$PWD/icprogramguidepage.h \
+    $$PWD/ichcotherpage.h \
+    $$PWD/iccommenteditor.h
 
 SOURCES += \
-    hcinstruction/ichcinstructionpageframe.cpp \
-    hcinstruction/actionsettingframe.cpp \
-    #hcinstruction/ichcparametersframe.cpp \
-    #hcinstruction/routesettingdialog.cpp \
-    hcinstruction/ichcinjectionpage.cpp \
-    hcinstruction/ichcfixturepage.cpp \
-    hcinstruction/ichcconditionpage.cpp \
-    hcinstruction/icmold.cpp \
-    hcinstruction/icmacrosubroutine.cpp \
-    hcinstruction/icinstructparam.cpp \
-    hcinstruction/ichcprogrammonitorframe.cpp \
-    #hcinstruction/ichceditordialog.cpp \
-    #hcinstruction/icmacroparameditorframe.cpp \
-    hcinstruction/icautorunrevise.cpp \
-    hcinstruction/icinstructioneditorbase.cpp \
-    hcinstruction/icflagseditor.cpp \
-    hcinstruction/icpneumaticactionpage.cpp \
-    hcinstruction/icinstructmodifydialog.cpp \
-    hcinstruction/icwaitconditioneditor.cpp \
-    hcinstruction/icperipherypage.cpp \
-    hcinstruction/icperipheryparametereditor.cpp \
-    hcinstruction/iccutpage.cpp \
-    hcinstruction/icprogramselector.cpp \
-    hcinstruction/icstackeditor.cpp \
-    hcinstruction/icprogramguidepage.cpp \
-    hcinstruction/ichcotherpage.cpp
+    $$PWD/ichcinstructionpageframe.cpp \
+    $$PWD/actionsettingframe.cpp \
+    #$$PWD/ichcparametersframe.cpp \
+    #$$PWD/routesettingdialog.cpp \
+    $$PWD/ichcinjectionpage.cpp \
+    $$PWD/ichcfixturepage.cpp \
+    $$PWD/ichcconditionpage.cpp \
+    $$PWD/icmold.cpp \
+    $$PWD/icmacrosubroutine.cpp \
+    $$PWD/icinstructparam.cpp \
+    $$PWD/ichcprogrammonitorframe.cpp \
+    #$$PWD/ichceditordialog.cpp \
+    #$$PWD/icmacroparameditorframe.cpp \
+    $$PWD/icautorunrevise.cpp \
+    $$PWD/icinstructioneditorbase.cpp \
+    $$PWD/icflagseditor.cpp \
+    $$PWD/icpneumaticactionpage.cpp \
+    $$PWD/icinstructmodifydialog.cpp \
+    $$PWD/icwaitconditioneditor.cpp \
+    $$PWD/icperipherypage.cpp \
+    $$PWD/icperipheryparametereditor.cpp \
+    $$PWD/iccutpage.cpp \
+    $$PWD/icprogramselector.cpp \
+    $$PWD/icstackeditor.cpp \
+    $$PWD/icprogramguidepage.cpp \
+    $$PWD/ichcotherpage.cpp \
+    $$PWD/iccommenteditor.cpp
 
 FORMS += \
-#    hcinstruction/ichcinstructionpageframe.ui \
-    #hcinstruction/ichcparametersframe.ui \
-    #hcinstruction/routesettingdialog.ui \
-#    hcinstruction/ichcinjectionpage.ui \
-#    hcinstruction/actionsettingframe.ui \
-#    hcinstruction/ichcfixturepage.ui \
-#    hcinstruction/ichcconditionpage.ui \
-#    hcinstruction/ichcprogrammonitorframe.ui \
-    #hcinstruction/ichceditordialog.ui \
-    #hcinstruction/icmacroparameditorframe.ui \
-    hcinstruction/icautorunrevise.ui \
-    hcinstruction/icinstructioneditorbase.ui \
-    hcinstruction/icflagseditor.ui \
-#    hcinstruction/icpneumaticactionpage.ui \
-#    hcinstruction/icinstructmodifydialog.ui \
-#    hcinstruction/icwaitconditioneditor.ui \
-    hcinstruction/icperipherypage.ui \
-#    hcinstruction/icperipheryparametereditor.ui \
-#    hcinstruction/iccutpage.ui \
-    hcinstruction/icprogramselector.ui \
-    hcinstruction/icstackeditor.ui \
-#    hcinstruction/icprogramguidepage.ui \
-    hcinstruction/ichcotherpage.ui
+    $$PWD/icautorunrevise.ui \
+    $$PWD/icinstructioneditorbase.ui \
+    $$PWD/icflagseditor.ui \
+    $$PWD/icperipherypage.ui \
+    $$PWD/icprogramselector.ui \
+    $$PWD/icstackeditor.ui \
+    $$PWD/ichcotherpage.ui \
+    $$PWD/iccommenteditor.ui \
+    $$PWD/icinstructmodifydialog.ui
 
 
 
-#    hcinstruction/ichcinstructionpageframe_5.ui
 
 RESOURCES += \
     resource.qrc
 
 contains(DEFINES, HC_SK_8){
-FORMS += hcinstruction/ichcinstructionpageframe.ui \
-    hcinstruction/icwaitconditioneditor.ui \
-    hcinstruction/icprogramguidepage.ui \
-    hcinstruction/icpneumaticactionpage.ui \
-    hcinstruction/icperipheryparametereditor.ui \
-    hcinstruction/ichcinjectionpage.ui \
-    hcinstruction/ichcfixturepage.ui \
-    hcinstruction/ichcconditionpage.ui \
-    hcinstruction/iccutpage.ui \
-    hcinstruction/actionsettingframe.ui \
-    hcinstruction/ichcprogrammonitorframe.ui \
-    hcinstruction/icinstructmodifydialog.ui
+FORMS += $$PWD/ichcinstructionpageframe.ui \
+    $$PWD/icwaitconditioneditor.ui \
+    $$PWD/icprogramguidepage.ui \
+    $$PWD/icpneumaticactionpage.ui \
+    $$PWD/icperipheryparametereditor.ui \
+    $$PWD/ichcinjectionpage.ui \
+    $$PWD/ichcfixturepage.ui \
+    $$PWD/ichcconditionpage.ui \
+    $$PWD/iccutpage.ui \
+    $$PWD/actionsettingframe.ui \
+    $$PWD/ichcprogrammonitorframe.ui
 }
 contains(DEFINES, HC_SK_5){
-FORMS += hcinstruction/ichcinstructionpageframe_5.ui \
-    hcinstruction/icwaitconditioneditor_5.ui \
-    hcinstruction/icprogramguidepage_5.ui \
-    hcinstruction/icpneumaticactionpage_5.ui \
-    hcinstruction/icperipheryparametereditor_5.ui \
-    hcinstruction/ichcinjectionpage_5.ui \
-    hcinstruction/ichcfixturepage_5.ui \
-    hcinstruction/ichcconditionpage_5.ui \
-    hcinstruction/iccutpage_5.ui \
-    hcinstruction/actionsettingframe_5.ui \
-    hcinstruction/ichcprogrammonitorframe_5.ui \
-    hcinstruction/icinstructmodifydialog_5.ui
+FORMS += $$PWD/ichcinstructionpageframe_5.ui \
+    $$PWD/icwaitconditioneditor_5.ui \
+    $$PWD/icprogramguidepage_5.ui \
+    $$PWD/icpneumaticactionpage_5.ui \
+    $$PWD/icperipheryparametereditor_5.ui \
+    $$PWD/ichcinjectionpage_5.ui \
+    $$PWD/ichcfixturepage_5.ui \
+    $$PWD/ichcconditionpage_5.ui \
+    $$PWD/iccutpage_5.ui \
+    $$PWD/actionsettingframe_5.ui \
+    $$PWD/ichcprogrammonitorframe_5.ui
 }

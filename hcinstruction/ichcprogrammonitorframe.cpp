@@ -10,9 +10,13 @@
 #include "icmacrosubroutine.h"
 #include "icvirtualkey.h"
 #include "ickeyboard.h"
-#include <QMessageBox>
+#include "icmessagebox.h"
 #include "icprogramheadframe.h"
 #include "icparameterssave.h"
+#include "icmold.h"
+#include "iccaretipui.h"
+
+QMessageBox* checkMessageBox;
 
 ICHCProgramMonitorFrame::ICHCProgramMonitorFrame(QWidget *parent) :
     QFrame(parent),
@@ -63,11 +67,14 @@ ICHCProgramMonitorFrame::ICHCProgramMonitorFrame(QWidget *parent) :
             this,
             SLOT(LevelChanged(int)));
     LevelChanged(ICProgramHeadFrame::Instance()->CurrentLevel());
+    checkMessageBox = new ICMessageBox(this);
+    ui->pauseButton->hide();
 }
 
 ICHCProgramMonitorFrame::~ICHCProgramMonitorFrame()
 {
     delete autoRunRevise_;
+    delete checkMessageBox;
     delete ui;
 }
 
@@ -97,7 +104,7 @@ void ICHCProgramMonitorFrame::showEvent(QShowEvent *e)
     ui->speedEnableButton->setIcon(switchOff_);
     ui->speedEnableButton->setText(tr("Speed Disable"));
     SetProduct(ICMold::CurrentMold()->MoldParam(ICMold::Product));
-    currentMoldNum_ = host->HostStatus(ICVirtualHost::S).toInt();
+    currentMoldNum_ = 8;
     UpdateHostParam();
 //    programListBackup_ = ICMold::CurrentMold()->ToUIItems();
     if(!isModify_)
@@ -127,6 +134,24 @@ void ICHCProgramMonitorFrame::showEvent(QShowEvent *e)
 //                                                         ICMold::CurrentMold()->SyncAct() + ICMacroSubroutine::Instance()->SyncAct(),
 //                                                         ICMold::CurrentMold()->SyncSum() + ICMacroSubroutine::Instance()->SyncSum());
 //    }
+
+    autoRunRevise_->SetFlagSel(Flags());
+    int pSize;
+    ICMoldItem* item;
+    for(int i =0; i != programList_.size(); ++i)
+    {
+        pSize = programList_.at(i).ItemCount();
+        for(int j = 0; j != pSize; ++j)
+        {
+            item = programList_[i].MoldItemAt(j);
+            if(item->Action() == ICMold::ACTCOMMENT)
+            {
+                flagToSetp.insert(item->Flag(), item->Num());
+            }
+        }
+    }
+
+    CareCheck();
     if(!ICVirtualHost::GlobalVirtualHost()->IsFixtureCheck())
     {
         return;
@@ -172,10 +197,16 @@ void ICHCProgramMonitorFrame::showEvent(QShowEvent *e)
     }
     if(!checkResult.isEmpty())
     {
-        QMessageBox::warning(this,
-                             tr("Warning"),
-                             checkResult);
+//        ICMessageBox::ICWarning(this,
+//                             tr("Warning"),
+//                             checkResult);
+        checkMessageBox->setWindowTitle(tr("Warning"));
+        checkMessageBox->setText(checkResult);
+        checkMessageBox->setWindowFlags(checkMessageBox->windowFlags() | Qt::WindowStaysOnTopHint);
+        checkMessageBox->show();
     }
+
+
     //    if(needWarn)
     //    {
     //        if(QMessageBox::warning(this,
@@ -183,7 +214,7 @@ void ICHCProgramMonitorFrame::showEvent(QShowEvent *e)
     //                             checkResult + tr("Do you want to ignor this warning?"),
     //                             QMessageBox::Yes | QMessageBox::No) == QMessageBox::Yes)
     //        {
-    //            ICVirtualHost::GlobalVirtualHost()->SetFixtureCheck(false);
+//                ICVirtualHost::GlobalVirtualHost()->SetFixtureCheck(false);
     //        }
     //    }
 }
@@ -225,7 +256,7 @@ void ICHCProgramMonitorFrame::hideEvent(QHideEvent *e)
     ICVirtualHost::GlobalVirtualHost()->SetSpeedEnable(false);
     ui->speedEnableButton->setIcon(switchOff_);
     ui->speedEnableButton->setText(tr("Speed Disable"));
-
+    checkMessageBox->reject();
 
     //    ICCommandProcessor::Instance()->ExecuteHCCommand(IC::CMD_TurnStop,0);
 }
@@ -266,6 +297,11 @@ void ICHCProgramMonitorFrame::StatusRefreshed()
 
     ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
     newTime_ = host->HostStatus(ICVirtualHost::DbgZ0).toUInt();
+    if(host->CurrentStatus() != ICVirtualHost::Auto) return;
+    if(host->currentMoldNum() != currentMoldNum_)
+    {
+        MoldNumChanged(host->currentMoldNum());
+    }
 
     if(newTime_ != oldTime_)
     {
@@ -479,6 +515,12 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
     {
         return;
     }
+#ifdef Q_WS_QWS
+    if(ICVirtualHost::GlobalVirtualHost()->CurrentStatus() != ICVirtualHost::Auto)
+    {
+        return;
+    }
+#endif
     int gIndex;
     int tIndex;
     int sIndex;
@@ -523,6 +565,10 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
 
         /*****/
         bool isM = autoRunRevise_->ShowModifyItem(item, &ret, str);
+//        if(item->Action() == ICMold::ACTCHECKINPUT)
+//        {
+//            ret.SetDVal(flagToSetp.value(ret.Flag(), 0) - ret.Num());
+//        }
 //        bool isM = autoRunRevise_->ShowModifyItem(item, &ret, topItem->ToStringList().join("\n"));
         if(isM)
         {          
@@ -533,6 +579,8 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
                 item->SetSVal(ret.SVal());
 //                item->SetPos(currentBackup->Pos() + ret.Pos());
                 item->SetActualPos(currentBackup->ActualPos() + ret.Pos() * 10);
+//                if(item->Action() == ICMold::ACTCHECKINPUT)
+//                    item->SetFlag(ret.Flag());
                 item->ReSum();
                 UpdateUIProgramList_();
                 processor = ICCommandProcessor::Instance();
@@ -551,6 +599,8 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
                 currentBackup->SetSVal(ret.SVal());
 //                currentBackup->SetPos(currentBackup->Pos() + ret.Pos());
                 currentBackup->SetActualPos(currentBackup->ActualPos() + ret.Pos() * 10);
+//                if(currentBackup->Action() == ICMold::ACTCHECKINPUT)
+//                    currentBackup->SetFlag(ret.Flag());
                 currentBackup->ReSum();
                 UpdateUIProgramList_();
                 processor = ICCommandProcessor::Instance();
@@ -586,15 +636,21 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
         ICAutoAdjustCommand command;
         ICCommandProcessor* processor;
         bool isM = autoRunRevise_->ShowModifyItem(subItem->BaseItem(), &ret, subItem->ToString());
+//        if(item->Action() == ICMold::ACTCHECKINPUT)
+//        {
+//            ret.SetDVal(flagToSetp.value(ret.Flag(), 0) - ret.Num());
+//        }
         if(isM)
         {
             if(isModify_)
             {
-               currentBackup = programListBackup_[gIndex].at(tIndex).BaseItem();
+               currentBackup = programListBackup_[gIndex].at(tIndex).at(sIndex).BaseItem();
                item->SetDVal(ret.DVal());
                item->SetSVal(ret.SVal());
 //               item->SetPos(currentBackup->Pos() + ret.Pos());
                item->SetActualPos(currentBackup->ActualPos() + ret.Pos() * 10);
+//               if(item->Action() == ICMold::ACTCHECKINPUT)
+//                   item->SetFlag(ret.Flag());
                item->ReSum();
                UpdateUIProgramList_();
                processor = ICCommandProcessor::Instance();
@@ -608,11 +664,13 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
             }
             else
             {
-               currentBackup = programList_[gIndex].at(tIndex).BaseItem();
+               currentBackup = programList_[gIndex].at(tIndex).at(sIndex).BaseItem();
                currentBackup->SetDVal(ret.DVal());
                currentBackup->SetSVal(ret.SVal());
 //               currentBackup->SetPos(currentBackup->Pos() + ret.Pos());
                currentBackup->SetActualPos(currentBackup->ActualPos() + ret.Pos() * 10);
+//               if(currentBackup->Action() == ICMold::ACTCHECKINPUT)
+//                   currentBackup->SetFlag(ret.Flag());
                currentBackup->ReSum();
                UpdateUIProgramList_();
                processor = ICCommandProcessor::Instance();
@@ -788,4 +846,62 @@ void ICHCProgramMonitorFrame::on_singleStepButton_released()
 void ICHCProgramMonitorFrame::on_cycle_clicked()
 {
     ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_CYCLE);
+}
+
+
+void ICHCProgramMonitorFrame::on_pauseButton_toggled(bool checked)
+{
+    if(checked)
+    {
+//        ui->pauseButton->setText(tr("Run"));
+        ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_PAUSE);
+    }
+    else
+    {
+//        ui->pauseButton->setText(tr("Pause"));
+        ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_RESTART);
+
+    }
+}
+
+QStringList ICHCProgramMonitorFrame::Flags()
+{
+    QStringList selList;
+    int count;
+    ICMoldItem* item;
+    for(int i = 0; i != programList_.size(); ++i)
+    {
+        count = programList_.at(i).ItemCount();
+        for(int j = 0; j != count; ++j)
+        {
+            item = programList_[i].MoldItemAt(j);
+            if(item->Action() == ICMold::ACTCOMMENT)
+            {
+                selList.append(QString(tr("Flag[%1]:%2")
+                                       .arg(item->Flag())
+                                       .arg(item->Comment())));
+            }
+        }
+    }
+    return selList;
+}
+
+void ICHCProgramMonitorFrame::CareCheck()
+{
+    QDate now = QDate::currentDate();
+    ICParametersSave *ps = ICParametersSave::Instance();
+    bool needToCare = false;
+    for(int i = 0;  i != 7; ++i)
+    {
+        if(now >= ps->NextCycle(i))
+        {
+            needToCare = true;
+            break;
+        }
+    }
+    if(needToCare)
+    {
+        ICCareTipUI careTip;
+        careTip.exec();
+    }
 }

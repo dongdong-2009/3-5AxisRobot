@@ -570,60 +570,24 @@
      </item>
      <item>
       <layout class="QGridLayout" name="gridLayout">
-       <item row="1" column="2">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="xRPLatticeLineEdit">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>32</height>
-          </size>
-         </property>
-         <property name="text">
-          <string notr="true"/>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="2">
-        <widget class="QLabel" name="label_2">
-         <property name="text">
-          <string>Lattice</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="3">
+       <item row="0" column="4">
         <widget class="QLabel" name="label_3">
          <property name="text">
           <string>Step</string>
          </property>
         </widget>
        </item>
+       <item row="1" column="1">
+        <widget class="QCheckBox" name="xUnit">
+         <property name="text">
+          <string>0.1mm</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_6</string>
+         </attribute>
+        </widget>
+       </item>
        <item row="2" column="3">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="yRPStepLineEdit">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>32</height>
-          </size>
-         </property>
-         <property name="text">
-          <string notr="true"/>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="3">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="xRPStepLineEdit">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>32</height>
-          </size>
-         </property>
-         <property name="text">
-          <string notr="true"/>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="2">
         <widget class="ICLineEditWithVirtualNumericKeypad" name="yRPLatticeLineEdit">
          <property name="minimumSize">
           <size>
@@ -636,48 +600,39 @@
          </property>
         </widget>
        </item>
-       <item row="3" column="2">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="zRPLatticeLineEdit">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>32</height>
-          </size>
-         </property>
+       <item row="2" column="1">
+        <widget class="QCheckBox" name="yUnit">
          <property name="text">
-          <string notr="true"/>
+          <string>0.1mm</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_7</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Lattice</string>
          </property>
         </widget>
        </item>
-       <item row="3" column="3">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="zRPStepLineEdit">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>32</height>
-          </size>
-         </property>
-         <property name="text">
-          <string notr="true"/>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="4">
+       <item row="1" column="5">
         <widget class="QLabel" name="label">
          <property name="text">
           <string>mm</string>
          </property>
         </widget>
        </item>
-       <item row="2" column="4">
-        <widget class="QLabel" name="label_4">
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_8">
          <property name="text">
-          <string>mm</string>
+          <string>Z</string>
          </property>
         </widget>
        </item>
-       <item row="3" column="4">
-        <widget class="QLabel" name="label_5">
+       <item row="2" column="5">
+        <widget class="QLabel" name="label_4">
          <property name="text">
           <string>mm</string>
          </property>
@@ -690,21 +645,20 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="label_7">
+       <item row="1" column="4">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="xRPStepLineEdit">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
          <property name="text">
-          <string>Y</string>
+          <string notr="true"/>
          </property>
         </widget>
        </item>
-       <item row="3" column="0">
-        <widget class="QLabel" name="label_8">
-         <property name="text">
-          <string>Z</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="3">
+       <item row="4" column="4">
         <layout class="QHBoxLayout" name="horizontalLayout_2">
          <item>
           <widget class="QLabel" name="label_9">
@@ -714,7 +668,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QComboBox" name="countWayBox">
+          <widget class="ICComboBox" name="countWayBox">
            <item>
             <property name="text">
              <string>All</string>
@@ -749,24 +703,153 @@
          </item>
         </layout>
        </item>
-       <item row="1" column="1">
-        <widget class="QCheckBox" name="xUnit">
-         <property name="text">
-          <string>0.1mm</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QCheckBox" name="yUnit">
-         <property name="text">
-          <string>0.1mm</string>
-         </property>
-        </widget>
-       </item>
        <item row="3" column="1">
         <widget class="QCheckBox" name="zUnit">
          <property name="text">
           <string>0.1mm</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_8</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="xRPLatticeLineEdit">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true"/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="4">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="yRPStepLineEdit">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true"/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="5">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>mm</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="zRPLatticeLineEdit">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true"/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="4">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="zRPStepLineEdit">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true"/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>Y</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QCheckBox" name="xUnit_2">
+         <property name="text">
+          <string>0.01mm</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_6</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QCheckBox" name="yUnit_2">
+         <property name="text">
+          <string>0.01mm</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_7</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QCheckBox" name="zUnit_2">
+         <property name="text">
+          <string>0.01mm</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_8</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QCheckBox" name="subArm">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>125</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+</string>
+         </property>
+         <property name="text">
+          <string>Is Sub Arm</string>
          </property>
         </widget>
        </item>
@@ -795,14 +878,22 @@
    <extends>QLineEdit</extends>
    <header>iclineeditwithvirtualnumerickeypad.h</header>
   </customwidget>
+  <customwidget>
+   <class>ICComboBox</class>
+   <extends>QComboBox</extends>
+   <header>iccombobox.h</header>
+  </customwidget>
  </customwidgets>
  <resources/>
  <connections/>
  <buttongroups>
+  <buttongroup name="buttonGroup_8"/>
+  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroup_3"/>
   <buttongroup name="buttonGroup_4"/>
   <buttongroup name="buttonGroup_5"/>
-  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_6"/>
+  <buttongroup name="buttonGroup_7"/>
  </buttongroups>
 </ui>

@@ -34,6 +34,11 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
 {
     QString commandStr;
 //    commandStr += QString::number(moldItem.Seq()) + " ";
+    if(moldItem.Action() == ICMold::ACTCOMMENT)
+    {
+        commandStr += QString(tr("#Flag[%2]:Comment:%1").arg(moldItem.Comment()).arg(moldItem.Flag()));
+        return commandStr;
+    }
     if(moldItem.Num() == 0)
     {
         commandStr += tr("Home") + "    " + "*" + "    ";
@@ -121,16 +126,16 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             {
                 if(!moldItem.IsEarlyEnd())
                 {
-                    commandStr += tr("Early Speed-Down:") + QString::number(moldItem.GetEarlyDownSpeed()) + " ";
+                    commandStr += tr("Early Speed-Down:") + tr("SPeed:") + QString::number(moldItem.GetEarlyDownSpeed()) + " ";
 //                    commandStr += tr("Early Position:") + QString().sprintf("%.1f", moldItem.IFPos() / (qreal)10) + " ";
-                    commandStr += tr("Early Position:") + QString::number(moldItem.ActualIfPos()) + " ";
+                    commandStr += tr("End Position:") + QString::number(moldItem.ActualIfPos()) + " ";
                 }
                 else
                 {
                     commandStr += tr("Early End,");
-                    commandStr += tr("Early Speed-Down:") + QString::number(moldItem.GetEarlyDownSpeed()) + " ";
+                    commandStr += tr("Early Speed-Down:") + tr("SPeed:") + QString::number(moldItem.GetEarlyDownSpeed()) + " ";
 //                    commandStr += tr("Early Position:") + QString().sprintf("%.1f", moldItem.IFPos() / (qreal)10) + " ";
-                    commandStr += tr("Early Position:") + QString::number(moldItem.ActualIfPos()) + " ";
+                    commandStr += tr("End Position:") + QString::number(moldItem.ActualIfPos()) + " ";
                 }
             }
 
@@ -219,7 +224,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
                 commandStr += tr("Sub-") + QString::number(moldItem.SVal() + 1) + " ";
             }
 
-            commandStr += tr("Return Line") + QString::number((int)moldItem.DVal());
+            commandStr += QString(tr("Go to Flag[%1]").arg(moldItem.Flag()));
             commandStr += QObject::tr("Limit time:") + ICParameterConversion::TransThisIntToThisText(moldItem.Pos(), 2) + "      ";
             return commandStr;
         }
@@ -317,13 +322,14 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
                 action == ICMold::ACT_AUX5 ||
                 action == ICMold::ACT_AUX6)
         {
+            commandStr.chop(2);
             if(moldItem.IFVal() == 0)
             {
-                commandStr += QObject::tr("Off");
+                commandStr += QObject::tr("Off") + ":";
             }
             else
             {
-                commandStr += QObject::tr("On");
+                commandStr += QObject::tr("On") + ":";
             }
             if(action != ICMold::ACT_AUX5 && action != ICMold::ACT_AUX6)
             {
@@ -418,8 +424,8 @@ void ICInstructParam::InstallMoldInfo()
     clipGroupMap_[ACTCLIP2ON] = QObject::tr("Clip2 ON");
     clipGroupMap_[ACTCLIP3ON] = QObject::tr("Clip3 ON");
     clipGroupMap_[ACTCLIP4ON] = QObject::tr("Clip4 ON");
-    clipGroupMap_[ACTCLIP5ON] = QObject::tr("Sucker1 ON");
-    clipGroupMap_[ACTCLIP6ON] = QObject::tr("Sucker2 ON");
+    clipGroupMap_[ACTCLIP5ON] = QObject::tr("Sucker1: ON");
+    clipGroupMap_[ACTCLIP6ON] = QObject::tr("Sucker2: ON");
     clipGroupMap_[ACTCLIP7ON] = QObject::tr("Injection ON");
     clipGroupMap_[ACTCLIP8ON] = QObject::tr("Conveyor ON");
     clipGroupMap_[ACTCLSMDON] = QObject::tr("Lock Mold ON");
@@ -436,8 +442,8 @@ void ICInstructParam::InstallMoldInfo()
     clipGroupMap_[ACTCLIP2OFF] = QObject::tr("Clip2 OFF");
     clipGroupMap_[ACTCLIP3OFF] = QObject::tr("Clip3 OFF");
     clipGroupMap_[ACTCLIP4OFF] = QObject::tr("Clip4 OFF");
-    clipGroupMap_[ACTCLIP5OFF] = QObject::tr("Sucker1 OFF");
-    clipGroupMap_[ACTCLIP6OFF] = QObject::tr("Sucker2 OFF");
+    clipGroupMap_[ACTCLIP5OFF] = QObject::tr("Sucker1: OFF");
+    clipGroupMap_[ACTCLIP6OFF] = QObject::tr("Sucker2: OFF");
     clipGroupMap_[ACTCLIP7OFF] = QObject::tr("Injection OFF");
     clipGroupMap_[ACTCLIP8OFF] = QObject::tr("Conveyor OFF");
     clipGroupMap_[ACTCLSMDOFF] = QObject::tr("Lock Mold OFF");

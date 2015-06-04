@@ -2,6 +2,7 @@
 #define ICHCSTACKEDSETTINGSFRAME_H
 
 #include <QFrame>
+#include <QMap>
 
 namespace Ui {
     class ICHCStackedSettingsFrame;
@@ -35,12 +36,26 @@ private slots:
 
     void on_zUnit_toggled(bool checked);
 
+    void on_xRPStepLineEdit_textChanged(const QString &arg1);
+
+    void on_yRPStepLineEdit_textChanged(const QString &arg1);
+
+    void on_zRPStepLineEdit_textChanged(const QString &arg1);
+
 private:
     void InitInterface();
     QList<int> GetCurrentStatus_() const;
     void SetStackStatus_(const QList<int> & status);
     void RefreshStackParams_(int group);
     int currentPage_;
+private slots:
+    void OnConfigChanged(QObject* w, const QString& newV, const QString& oldV);
+    void OnConfigChanged(const QString& text);
+    void OnConfigChanged(int v);
+    void OnConfigChanged(int v, int ov);
+    void OnConfigChanged(bool b);
+private:
+    QMap<QObject*, int> editorToConfigIDs_;
 };
 
 #endif // ICHCSTACKEDSETTINGSFRAME_H

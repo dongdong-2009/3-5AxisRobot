@@ -2,6 +2,7 @@
 #define ICMACHINECONFIGPAGE_H
 
 #include <QWidget>
+#include <QMap>
 
 class ICLineEditWrapper;
 
@@ -22,9 +23,6 @@ protected:
     void hideEvent(QHideEvent *e);
     void showEvent(QShowEvent *e);
 
-private slots:
-    void on_servoFlex_currentIndexChanged(int index);
-
 private:
     void UpdateAxisDefine_();
     void ShowWidgets_(QList<QWidget*>& widgets);
@@ -34,6 +32,15 @@ private:
 
     int axisDefine_;
     QList<QList<QWidget*> > axisWidgets_;
+
+private slots:
+    void OnConfigChanged(QObject* w, const QString& newV, const QString& oldV);
+    void OnConfigChanged(const QString& text);
+    void OnConfigChanged(int v);
+    void OnConfigChanged(int v, int ov);
+    void OnConfigChanged(bool b);
+private:
+    QMap<QObject*, int> editorToConfigIDs_;
 };
 
 #endif // ICMACHINECONFIGPAGE_H
