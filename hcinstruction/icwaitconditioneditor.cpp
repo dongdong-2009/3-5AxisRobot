@@ -87,7 +87,22 @@ QList<ICMoldItem> ICWaitConditionEditor::CreateCommandImpl() const
     {
         item.SetSVal(14);
     }
-    else return ret;
+    else if(ui->x016Box->isChecked())
+    {
+        item.SetSVal(17);
+    }
+    else if(ui->x026Box->isChecked())
+    {
+        item.SetSVal(18);
+    }
+    else if(ui->x036Box->isChecked())
+    {
+        item.SetSVal(19);
+    }
+    else if(ui->x037Box->isChecked())
+    {
+        item.SetSVal(20);
+    }
     ret.append(item);
     return ret;
 }
