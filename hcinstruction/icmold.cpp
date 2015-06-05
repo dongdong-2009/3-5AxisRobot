@@ -211,10 +211,18 @@ bool ICMold::ReadMoldFile(const QString &fileName, bool isLoadParams)
     qDebug("before read");
     qDebug()<<"size"<<records.size();
     QList<ICMoldItem> tempmoldContent;
+    QString itemsContent;
     for(int i = 0; i != records.size(); ++i)
     {
-        qDebug()<<"in"<<i;
-        items = records.at(i).split(' ', QString::SkipEmptyParts);
+        itemsContent = records.at(i);
+        items = itemsContent.split(' ', QString::SkipEmptyParts);
+        if(items.size() > 12)
+        {
+            QStringList commentItem = items.mid(11);
+            while(items.size() > 11)
+                items.removeAt(11);
+            items.append(commentItem.join(" "));
+        }
         if(items.size() != 10 &&
                 items.size() != 11 &&
                 items.size() != 12)

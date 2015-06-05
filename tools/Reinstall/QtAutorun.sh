@@ -3,6 +3,7 @@ DATABASE_PATH="/opt/Qt/UpdateApps"
 
 # Set the QWS_MOUSE_PROTO for touchscreen if it exists
 LedTest_335x on
+BootChecker 4 &
 if [ -e /dev/input/touchscreen0 ]
 then
     #export environment 
