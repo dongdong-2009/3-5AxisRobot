@@ -112,27 +112,48 @@ bool MoldInformation::CreateNewSourceFile(const QString & fileName)
         QList<ICMoldItem> items;
         ICMoldItem item;
 
-        if(ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisC) != ICVirtualHost::ICAxisDefine_Servo)
-        {
-            item.SetAction(ICMold::ACTPOSEVERT);
-            item.SetNum(0);
-            items.append(item);
-        }
-        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisX1, ICMold::GX, ICMold::ACTMAINBACKWARD);
+//        if(ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisC) != ICVirtualHost::ICAxisDefine_Servo)
+//        {
+//            item.SetAction(ICMold::ACTPOSEVERT);
+//            item.SetNum(0);
+//            items.append(item);
+//        }
         CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisY1, ICMold::GY, ICMold::ACTMAINUP);
+        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisY2, ICMold::GQ, ICMold::ACTVICEUP);
+        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisX1, ICMold::GX, ICMold::ACTMAINBACKWARD);
         CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisZ, ICMold::GZ, ICMold::ACTCOMEIN);
         CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisX2, ICMold::GP, ICMold::ACTVICEBACKWARD);
-        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisY2, ICMold::GQ, ICMold::ACTVICEUP);
         CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisA, ICMold::GA, ICMold::ACT_PoseVert2);
         CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisB, ICMold::GB, -1);
-        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisC, ICMold::GC, -1);
+        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisC, ICMold::GC, ICMold::ACTPOSEVERT);
+
+        int sI = 1;
+        int index = 0;
+        if(items.at(1).Action() == ICMold::GQ ||
+                items.at(1).Action() == ICMold::ACTVICEUP)
+        {
+            sI = 2;
+            index = 1;
+        }
+        for(int i = sI; i != items.size(); ++i)
+        {
+            items[i].SetNum(i - index);
+        }
+
+        ICMoldItem cItem;
+        cItem.SetAction(ICMold::ACTCOMMENT);
+        cItem.SetFlag(0);
+        cItem.SetComment(tr("Home End"));
+        cItem.SetNum(items.last().Num());
+        items.append(cItem);
         item.SetAction(ICMold::ACT_WaitMoldOpened);
         item.SetSVal(1);
-        item.SetNum(1);
+        item.SetNum(cItem.Num() + 1);
         items.append(item);
         item.SetAction(ICMold::ACTEND);
-        item.SetNum(2);
+        item.SetNum(cItem.Num() + 2);
         items.append(item);
+
         ICMold::MoldReSum(items);
         QByteArray toWrite;
         for(int i = 0; i != items.size(); ++i)

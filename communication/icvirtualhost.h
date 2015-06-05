@@ -657,6 +657,8 @@ public:
 
     bool IsReadProductCount() const { return currentAddr_ > 9;}
 
+    int AxisCount() const;
+
 public Q_SLOTS:
     void SetMoldParam(int param, int value);
 Q_SIGNALS:

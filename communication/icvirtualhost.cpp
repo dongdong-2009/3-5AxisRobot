@@ -1131,3 +1131,26 @@ ICVirtualHost::~ICVirtualHost()
     timer_->stop();
     delete timer_;
 }
+
+int ICVirtualHost::AxisCount() const
+{
+    int axisCount = 0;
+    const ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
+    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisX1) != ICVirtualHost::ICAxisDefine_None)
+        ++axisCount;
+    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisY1) != ICVirtualHost::ICAxisDefine_None)
+        ++axisCount;
+    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisZ) != ICVirtualHost::ICAxisDefine_None)
+        ++axisCount;
+    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisX2) != ICVirtualHost::ICAxisDefine_None)
+        ++axisCount;
+    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisY2) != ICVirtualHost::ICAxisDefine_None)
+        ++axisCount;
+    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisA) != ICVirtualHost::ICAxisDefine_None)
+        ++axisCount;
+    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisB) != ICVirtualHost::ICAxisDefine_None)
+        ++axisCount;
+    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisC) != ICVirtualHost::ICAxisDefine_None)
+        ++axisCount;
+    return axisCount;
+}

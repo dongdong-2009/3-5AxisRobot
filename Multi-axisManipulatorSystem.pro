@@ -89,7 +89,6 @@ FORMS    +=  \
     icactiondialog.ui \
     ichostcomparepage.ui \
     ictipswidget.ui \
-    simulateknob.ui \
     icrecaldialog.ui \
     icbackupdialog.ui \
     iccaretipui.ui

@@ -100,6 +100,8 @@ public:
 
     static QString ConvertCommandStr(const ICMoldItem & moldItem);
 
+    static void UpdateAxisCount(int count) { axisCount_ = count;}
+
     QStringList CommandStrList() { return commandStrList_; }
     void AppendCommandStrList(const QString & commandStr);
 
@@ -137,6 +139,7 @@ private:
 
 
     static ICInstructParam * instance_;
+    static int axisCount_;
     ICInstructParam();
 };
 

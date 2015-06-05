@@ -7,7 +7,6 @@
 #include "moldinformation.h"
 #include "icmacrosubroutine.h"
 #include "config.h"
-
 #include <QDebug>
 
 ICInstructParam * ICInstructParam::instance_ = NULL;
@@ -16,6 +15,9 @@ QMap<int, QString> ICInstructParam::clipGroupMap_;
 QList<int> ICInstructParam::xyzStatusList_;
 QList<int> ICInstructParam::clipStatusList_;
 QMap<int, QString> ICInstructParam::countWayMap_;
+int ICInstructParam::axisCount_ = 0;
+
+QStringList posName = QStringList()<<QObject::tr("pos1")<<QObject::tr("pos2")<<QObject::tr("pos3");
 
 ICInstructParam::ICInstructParam()
 {
@@ -103,7 +105,14 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
         if(xyzStatusList_.contains(action))
         {
 //            commandStr += ICParameterConversion::TransThisIntToThisText(moldItem.Pos(), 1) + " ";
-            commandStr += ICParameterConversion::TransThisIntToThisText(moldItem.ActualPos(), POS_DECIMAL) + " ";
+            if(moldItem.IsBadProduct() && moldItem.IFOtherVal() != 0)
+            {
+                commandStr += QString(tr("Rel:%1")).arg(posName.at(moldItem.IFOtherVal() -1));
+            }
+            else
+            {
+                commandStr += ICParameterConversion::TransThisIntToThisText(moldItem.ActualPos(), POS_DECIMAL) + " ";
+            }
 //            commandStr += "X" + ICParameterConversion::TransThisIntToThisText(moldItem.X(), 1) + " ";
 //            commandStr += "Y" + ICParameterConversion::TransThisIntToThisText(moldItem.Y(), 1) + " ";
 //            commandStr += "Z" + ICParameterConversion::TransThisIntToThisText(moldItem.Z(), 1) + " ";
@@ -142,7 +151,8 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
 
             if(moldItem.IsBadProduct() && moldItem.Action() == GZ)
             {
-                commandStr += QObject::tr("Bad Product En") + " ";
+                if(moldItem.IFOtherVal() == 0)
+                    commandStr += QObject::tr("Bad Product En") + " ";
             }
 //            commandStr += tr("Delay")
         }

@@ -4,6 +4,7 @@
 #include "icmold.h"
 #include "icinstructparam.h"
 #include "icfile.h"
+#include "icvirtualhost.h"
 
 struct MoldStepData
 {
@@ -272,12 +273,18 @@ bool ICMold::ReadMoldParamsFile(const QString &fileName)
     //    fileContent = fileContent.remove('\r');
 
     QStringList items = fileContent.split('\n', QString::SkipEmptyParts);
-    if(items.size() != MoldParamCount + StackParamCount * 4 + 1)
+    int paraSize = MoldParamCount + StackParamCount * 4 + 1 + DefinePosCount;
+    for(int i = items.size(); i < paraSize; ++i)
     {
-        return false;
+        items.append("0");
     }
+//    if(items.size() != MoldParamCount + StackParamCount * 4 + 1)
+//    {
+//        return false;
+//    }
     moldParams_.clear();
     stackParams_.clear();
+    definePoses_.clear();
     for(int i = 0; i != MoldParamCount; ++i)
     {
         moldParams_.append(items.at(i).toUInt());
@@ -297,6 +304,11 @@ bool ICMold::ReadMoldParamsFile(const QString &fileName)
             stackParam.append(items.at(j).toUInt());
         }
         stackParams_.append(stackParam);
+    }
+    for(int i = 0; i != DefinePosCount; ++i)
+    {
+        base = MoldParamCount + StackParamCount * 4;
+        definePoses_.append(items.at(base + i).toUInt());
     }
 //    moldParams_[CheckClip5] = 0;
 //    moldParams_[CheckClip6] = 0;
@@ -465,6 +477,10 @@ void ICMold::UpdateSyncSum()
             sum += stackParams_.at(i).at(j);
         }
     }
+    for(int i = 0; i != definePoses_.size(); ++i)
+    {
+        sum += definePoses_.at(i);
+    }
     //    sum += checkSum_;
     checkSum_ = (-sum) & 0xFFFF;
 }
@@ -534,6 +550,7 @@ QList<ICGroupMoldUIItem> ICMold::MoldItemToUIItem(const QList<ICMoldItem> &items
 
 QStringList ICMold::UIItemsToStringList(const QList<ICGroupMoldUIItem> &items)
 {
+    ICInstructParam::Instance()->UpdateAxisCount(ICVirtualHost::GlobalVirtualHost()->AxisCount());
     QStringList ret;
     ICGroupMoldUIItem item;
     for(int i = 0; i != items.size(); ++i)

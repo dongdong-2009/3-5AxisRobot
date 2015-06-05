@@ -188,7 +188,7 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
             ui->earlySpeedDownCheckBox->show();
             ui->earlyDownSpeedTimeEdit->show();
         }
-        if( item->Action() == ICMold::GZ)
+        if( item->Action() == ICMold::GZ && item->IFOtherVal() == 0)
         {
             ui->badProductBox->show();
         }
