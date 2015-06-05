@@ -436,13 +436,13 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
     FindIndex_(index, gIndex, tIndex, sIndex);
     QString currentmoldname  = ICParametersSave::Instance()->MoldName("");
     /******currentEdit_标记为0表示为主程序（主程序时不能删除待机点）*****/
-    if(programList_.at(gIndex).StepNum() == 0 && currentEdit_ == 0 && currentmoldname.left(4) != "szhc")
-    {
-        QMessageBox::warning(this,
-                             tr("Warning"),
-                             tr("Can not add standby position program"));
-        return;
-    }
+//    if(programList_.at(gIndex).StepNum() == 0 && currentEdit_ == 0 && currentmoldname.left(4) != "szhc")
+//    {
+//        QMessageBox::warning(this,
+//                             tr("Warning"),
+//                             tr("Can not add standby position program"));
+//        return;
+//    }
     bool isParallel = false;
     bool isServo = false;
     if(flagsEditor != NULL)
@@ -644,13 +644,13 @@ void ICHCInstructionPageFrame::on_deleteToolButton_clicked()
     /************BUG181:子程序位置插入后不能删除******************/
 
     QString currentmoldname  = ICParametersSave::Instance()->MoldName("");
-    if(programList_.at(gIndex).StepNum() == 0 && currentEdit_ == 0 && currentmoldname.left(4) != "szhc")
-    {
-        QMessageBox::warning(this,
-                             tr("Warning"),
-                             tr("Can not delete standby position program"));
-        return;
-    }
+//    if(programList_.at(gIndex).StepNum() == 0 && currentEdit_ == 0 && currentmoldname.left(4) != "szhc")
+//    {
+//        QMessageBox::warning(this,
+//                             tr("Warning"),
+//                             tr("Can not delete standby position program"));
+//        return;
+//    }
     if(sIndex == -1)
     {
         if(programList_.at(gIndex).TopItemCount() == 1) //delete Group Item

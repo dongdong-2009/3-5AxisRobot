@@ -10,7 +10,8 @@ HEADERS += \
     #hcmanualoperation/hcmanualfunctionframe.h \
     hcmanualoperation/hcmanualotherioframe.h \
     hcmanualoperation/hcmanualadjustframe.h \
-    hcmanualoperation/hcmanualreservepage.h
+    hcmanualoperation/hcmanualreservepage.h \
+    hcmanualoperation/hcdefineposframe.h
 
 SOURCES += \
     hcmanualoperation/ichcmanualoperationpageframe.cpp \
@@ -22,7 +23,8 @@ SOURCES += \
     #hcmanualoperation/hcmanualfunctionframe.cpp \
     hcmanualoperation/hcmanualotherioframe.cpp \
     hcmanualoperation/hcmanualadjustframe.cpp \
-    hcmanualoperation/hcmanualreservepage.cpp
+    hcmanualoperation/hcmanualreservepage.cpp \
+    hcmanualoperation/hcdefineposframe.cpp
 
 FORMS += \
     hcmanualoperation/ichcmanualoperationpageframe.ui \
@@ -34,4 +36,5 @@ FORMS += \
     #hcmanualoperation/hcmanualfunctionframe.ui \
     hcmanualoperation/hcmanualotherioframe.ui \
     hcmanualoperation/hcmanualadjustframe.ui \
-    hcmanualoperation/hcmanualreservepage.ui
+    hcmanualoperation/hcmanualreservepage.ui \
+    hcmanualoperation/hcdefineposframe.ui

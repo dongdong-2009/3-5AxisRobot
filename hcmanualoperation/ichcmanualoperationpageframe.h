@@ -56,6 +56,7 @@ private:
     QWidget *manualOtherIOPage_;
     QWidget *manualFixturePage_;
     QWidget *manualSuckerPage_;
+    QWidget *definePosPage_;
     HCManualAdjustFrame * manualAdjustPage_;
     QWidget *reservePage_;
     HCServoArmControlFrame *serveAxisPage_;

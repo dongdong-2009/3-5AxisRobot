@@ -17,6 +17,7 @@
 #include "ickeyboard.h"
 #include "ictimerpool.h"
 #include "icparameterssave.h"
+#include "hcdefineposframe.h"
 
 ICHCManualOperationPageFrame::ICHCManualOperationPageFrame(QWidget *parent) :
     QFrame(parent),
@@ -25,6 +26,7 @@ ICHCManualOperationPageFrame::ICHCManualOperationPageFrame(QWidget *parent) :
     manualFixturePage_(NULL),
     manualSuckerPage_(NULL),
     manualAdjustPage_(NULL),
+    definePosPage_(NULL),
     reservePage_(NULL),
     serveAxisPage_(NULL),
     centralStackedLayout_(new QStackedLayout),
@@ -113,6 +115,7 @@ void ICHCManualOperationPageFrame::changeEvent(QEvent *e)
         ui->otherToolButton->setText(tr("Other"));
         ui->adjustToolButton->setText(tr("Adjust"));
         ui->reserveToolButton->setText(tr("Reserve"));
+        ui->definePosToolButton->setText(tr("Def Pos"));
     }
         break;
     default:
@@ -130,6 +133,7 @@ void ICHCManualOperationPageFrame::InitInterface()
     ui->otherToolButton->setText(tr("Other"));
     ui->adjustToolButton->setText(tr("Adjust"));
     ui->reserveToolButton->setText(tr("Reserve"));
+    ui->definePosToolButton->setText(tr("Def Pos"));
 //    ui->fixtureToolButton->setCheckable(true);
 //    ui->suckerToolButton->setCheckable(true);
 //    ui->otherToolButton->setCheckable(true);
@@ -139,6 +143,7 @@ void ICHCManualOperationPageFrame::InitInterface()
     buttonGroup_->addButton(ui->otherToolButton);
     buttonGroup_->addButton(ui->adjustToolButton);
     buttonGroup_->addButton(ui->reserveToolButton);
+    buttonGroup_->addButton(ui->definePosToolButton);
 #ifdef HC_8AXIS
 //    ui->x1AxisButton->hide();
 //    ui->y1AxisButton->hide();
@@ -256,6 +261,12 @@ void ICHCManualOperationPageFrame::ShowOptionPage()
         reservePage_ = new HCManualReservePage();
         buttonToPage_.insert(ui->reserveToolButton, reservePage_);
         centralStackedLayout_->addWidget(reservePage_);
+    }
+    else if(definePosPage_ == NULL && clickedButton == ui->definePosToolButton)
+    {
+        definePosPage_ = new HCDefinePosFrame();
+        buttonToPage_.insert(ui->definePosToolButton, definePosPage_);
+        centralStackedLayout_->addWidget(definePosPage_);
     }
     else if(serveAxisPage_ == NULL)
     {
