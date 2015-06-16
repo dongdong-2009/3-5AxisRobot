@@ -725,6 +725,17 @@ void ICHCInstructionPageFrame::on_deleteToolButton_clicked()
         }
         else
         {
+            ICMoldItem* bItem = programList_[gIndex].at(tIndex).BaseItem();
+            if(bItem->Action() == ICMold::ACTCOMMENT)
+            {
+                if(bItem->Flag() == 0)
+                {
+                    QMessageBox::warning(this,
+                                         tr("warning"),
+                                         tr("This step can't be delete!"));
+                    return;
+                }
+            }
             programList_[gIndex].RemoveTopItem(tIndex);
             if(programList_[gIndex].RunableTopItemCount() == 0)
             {

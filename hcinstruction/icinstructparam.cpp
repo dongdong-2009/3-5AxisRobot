@@ -41,9 +41,10 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
         commandStr += QString(tr("#Flag[%2]:Comment:%1").arg(moldItem.Comment()).arg(moldItem.Flag()));
         return commandStr;
     }
-    if(moldItem.Num() == 0)
+    if(moldItem.Num() <= axisCount_)
     {
-        commandStr += tr("Home") + "    " + "*" + "    ";
+//        commandStr += tr("Home") + "    " + "*" + "    ";
+        commandStr += tr("Home") + QString::number(moldItem.Num()) + "    " + "*" + "    ";
     }
     else if(moldItem.SubNum() == 255)
     {

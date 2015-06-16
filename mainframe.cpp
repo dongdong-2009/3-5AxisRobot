@@ -709,6 +709,9 @@ void MainFrame::StatusRefreshed()
 
     static ICAlarmString* alarmString = ICAlarmString::Instance();
     static ICVirtualHost* virtualHost = ICVirtualHost::GlobalVirtualHost();
+    static QPixmap offPixmap(":/resource/ledgray(16).png");
+    static QPixmap inputOnPixmap(":/resource/ledred(16).png");
+    static QPixmap outputOnPixmap(":/resource/ledgreen(16).png");
     //    if(isXPosChanged_)
     //    {
     //        ui->xPosLabel->setStyleSheet("color: rgb(0, 0, 127);");
@@ -833,6 +836,10 @@ void MainFrame::StatusRefreshed()
     if(newLedFlags_ != ledFlags_)
     {
         ledFlags_ = newLedFlags_;
+        ui->led1->setPixmap(((ledFlags_ & 8) > 0) ? inputOnPixmap : offPixmap);
+        ui->led2->setPixmap(((ledFlags_ & 4) > 0) ? inputOnPixmap : offPixmap);
+        ui->led3->setPixmap(((ledFlags_ & 2) > 0) ? outputOnPixmap : offPixmap);
+        ui->led4->setPixmap(((ledFlags_ & 1) > 0) ? outputOnPixmap : offPixmap);
 
 #ifndef Q_WS_WIN32
 #ifdef HC_ARMV6

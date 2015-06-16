@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>819</width>
-    <height>380</height>
+    <height>383</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -3742,7 +3742,6 @@ QRadioButton::indicator:unchecked:disabled
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroupA"/>
   <buttongroup name="buttonGroupB"/>
   <buttongroup name="buttonGroupC"/>
@@ -3750,7 +3749,8 @@ QRadioButton::indicator:unchecked:disabled
   <buttongroup name="buttonGroupE"/>
   <buttongroup name="buttonGroupF"/>
   <buttongroup name="buttonGroupG"/>
-  <buttongroup name="buttonGroupH"/>
   <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroupH"/>
+  <buttongroup name="buttonGroup"/>
  </buttongroups>
 </ui>

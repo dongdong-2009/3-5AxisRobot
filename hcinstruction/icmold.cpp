@@ -558,7 +558,23 @@ QList<ICGroupMoldUIItem> ICMold::MoldItemToUIItem(const QList<ICMoldItem> &items
 
 QStringList ICMold::UIItemsToStringList(const QList<ICGroupMoldUIItem> &items)
 {
-    ICInstructParam::Instance()->UpdateAxisCount(ICVirtualHost::GlobalVirtualHost()->AxisCount());
+//    ICInstructParam::Instance()->UpdateAxisCount(ICVirtualHost::GlobalVirtualHost()->AxisCount());
+    int gis = 0;
+    ICGroupMoldUIItem gItem;
+    for(int i = 0; i < items.size(); ++i)
+    {
+        gItem = items.at(i);
+        gis = gItem.ItemCount();
+        for(int j = 0 ; j < gis; ++j)
+        {
+            if(gItem.MoldItemAt(j)->Action() == ACTCOMMENT)
+            {
+                ICInstructParam::Instance()->UpdateAxisCount(gItem.StepNum());
+                i = items.size();
+                break;
+            }
+        }
+    }
     QStringList ret;
     ICGroupMoldUIItem item;
     for(int i = 0; i != items.size(); ++i)
