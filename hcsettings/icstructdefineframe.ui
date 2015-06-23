@@ -397,7 +397,7 @@ QCheckBox::indicator:unchecked:disabled
          <number>3</number>
         </property>
         <item row="0" column="1">
-         <widget class="QComboBox" name="x1Box">
+         <widget class="ICComboBox" name="x1Box">
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -450,7 +450,7 @@ QCheckBox::indicator:unchecked:disabled
          </widget>
         </item>
         <item row="1" column="1">
-         <widget class="QComboBox" name="y1Box">
+         <widget class="ICComboBox" name="y1Box">
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -475,7 +475,7 @@ QCheckBox::indicator:unchecked:disabled
          </widget>
         </item>
         <item row="2" column="5">
-         <widget class="QComboBox" name="cBox">
+         <widget class="ICComboBox" name="cBox">
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -500,7 +500,7 @@ QCheckBox::indicator:unchecked:disabled
          </widget>
         </item>
         <item row="0" column="5">
-         <widget class="QComboBox" name="aBox">
+         <widget class="ICComboBox" name="aBox">
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -532,7 +532,7 @@ QCheckBox::indicator:unchecked:disabled
          </widget>
         </item>
         <item row="2" column="1">
-         <widget class="QComboBox" name="zBox">
+         <widget class="ICComboBox" name="zBox">
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -564,7 +564,7 @@ QCheckBox::indicator:unchecked:disabled
          </widget>
         </item>
         <item row="1" column="5">
-         <widget class="QComboBox" name="bBox">
+         <widget class="ICComboBox" name="bBox">
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -596,7 +596,7 @@ QCheckBox::indicator:unchecked:disabled
          </widget>
         </item>
         <item row="0" column="3">
-         <widget class="QComboBox" name="x2Box">
+         <widget class="ICComboBox" name="x2Box">
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -628,7 +628,7 @@ QCheckBox::indicator:unchecked:disabled
          </widget>
         </item>
         <item row="1" column="3">
-         <widget class="QComboBox" name="y2Box">
+         <widget class="ICComboBox" name="y2Box">
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -1551,7 +1551,7 @@ QRadioButton::indicator:unchecked:disabled
          </widget>
         </item>
         <item row="2" column="2">
-         <widget class="QComboBox" name="inMoldPos">
+         <widget class="ICComboBox" name="inMoldPos">
           <item>
            <property name="text">
             <string>Limit</string>
@@ -1607,18 +1607,25 @@ QRadioButton::indicator:unchecked:disabled
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ICComboBox</class>
+   <extends>QComboBox</extends>
+   <header>iccombobox.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
  <buttongroups>
+  <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroupC"/>
   <buttongroup name="buttonGroupD"/>
   <buttongroup name="buttonGroupE"/>
   <buttongroup name="buttonGroupF"/>
   <buttongroup name="buttonGroupG"/>
   <buttongroup name="buttonGroupH"/>
-  <buttongroup name="buttonGroup_2"/>
-  <buttongroup name="buttonGroupA"/>
   <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroupA"/>
   <buttongroup name="buttonGroupB"/>
-  <buttongroup name="buttonGroupC"/>
  </buttongroups>
 </ui>

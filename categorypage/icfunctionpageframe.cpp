@@ -14,7 +14,7 @@
 #include "ichcdetectionframe.h"
 #include "ichcproductsettingframe.h"
 #include "ichcstackedsettingsframe.h"
-#include "icupdatesystem.h"
+#include "icupdatesystempage.h"
 #include "icmachineconfigpage.h"
 
 #include "icprogramheadframe.h"
@@ -41,7 +41,7 @@ public:
         else if(clickedButton == functionPage->ui->maintainWidget)
         {
 //            return new ICUpdateSystem(parent);
-            return ICUpdateSystem::Instance();
+            return ICUpdateSystemPage::Instance();
         }
         else if(clickedButton == functionPage->ui->securityPointSettingWidget)
         {
