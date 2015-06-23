@@ -5,19 +5,30 @@ TARGET = Multi-axisManipulatorSystem
 TEMPLATE = app
 QMAKE_CFLAGS += -std=c99
 
-OBJECTS_DIR = temp_8
-UI_DIR = temp_8
-MOC_DIR = temp_8
-RCC_DIR = temp_8
-DESTDIR = bin
+QMAKE_CXX = ccache $${QMAKE_CXX}
+QMAKE_STRIP = $${member(QMAKE_CXX, 1)}
+message($$QMAKE_STRIP)
+QMAKE_STRIP = $${replace(QMAKE_STRIP, -g++, -strip)}
+message($$QMAKE_STRIP)
+
+
+QT += sql
+
+SK_SIZE = 8
+
+suffix = Size$${SK_SIZE}
 CONFIG(debug, debug|release) {
-#    LIBS += -lprofiler
-DESTDIR = bin_debug
-OBJECTS_DIR = temp_8_d
-UI_DIR = temp_8_d
-MOC_DIR = temp_8_d
-RCC_DIR = temp_8_d
+suffix = $${suffix}_debug
 }
+else{
+suffix = $${suffix}_release
+}
+DESTDIR = bin_$${suffix}
+OBJECTS_DIR = temp_$${suffix}
+UI_DIR = temp_$${suffix}
+MOC_DIR = temp_$${suffix}
+RCC_DIR = temp_$${suffix}
+
 win32{INCLUDEPATH += ./}
 SOURCES += main.cpp \
     mainframe.cpp \
@@ -31,14 +42,16 @@ SOURCES += main.cpp \
     icreturnpage.cpp \
     icscreensaver.cpp \
     icactiondialog.cpp \
-    ictimerpool.cpp \
     ichostcomparepage.cpp \
     icbackuputility.cpp \
     ictipswidget.cpp \
     icdataformatchecker.cpp \
     icprogramformatchecker.cpp \
     icconfigformatchecker.cpp \
-    simulateknob.cpp
+    simulateknob.cpp \
+    icrecaldialog.cpp \
+    icbackupdialog.cpp \
+    icfile.cpp
 HEADERS += mainframe.h \
     icaxispositionlabel.h \
     #icalarmdescriptiondialog.h \
@@ -51,14 +64,16 @@ HEADERS += mainframe.h \
     icscreensaver.h \
     config.h \
     icactiondialog.h \
-    ictimerpool.h \
     ichostcomparepage.h \
     icbackuputility.h \
     ictipswidget.h \
     icdataformatchecker.h \
     icprogramformatchecker.h \
     icconfigformatchecker.h \
-    simulateknob.h
+    simulateknob.h \
+    icrecaldialog.h \
+    icbackupdialog.h \
+    icfile.h
 
 FORMS    += mainframe.ui \
     #icalarmdescriptiondialog.ui \
@@ -68,7 +83,9 @@ FORMS    += mainframe.ui \
     icactiondialog.ui \
     ichostcomparepage.ui \
     ictipswidget.ui \
-    simulateknob.ui
+    simulateknob.ui \
+    icrecaldialog.ui \
+    icbackupdialog.ui
 
 include (./categorypage/categorypage.pri)
 include (custom_widgets/custom_widgets.pri)
@@ -81,6 +98,10 @@ include (hcsettings/hcsettings.pri)
 include (hcinstruction/hcinstruction.pri)
 include (ickeyboard/ickeyboard.pri)
 include (hcmaintains/hcmaintains.pri)
+
+include (vendor/IndustrialSystemFramework/ICUtility/ICUtility.pri)
+include (vendor/IndustrialSystemFramework/ICGUI/ICGUI.pri)
+include (vendor/ICCustomWidgets/icupdatepackmodel/icupdatepackmodel.pri)
 
 RESOURCES += \
     resource.qrc \

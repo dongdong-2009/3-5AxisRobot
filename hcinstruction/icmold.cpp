@@ -3,6 +3,7 @@
 #include <QDebug>
 #include "icmold.h"
 #include "icinstructparam.h"
+#include "icfile.h"
 
 struct MoldStepData
 {
@@ -308,22 +309,8 @@ bool ICMold::SaveMoldFile(bool isSaveParams)
     {
         toWrite += moldContent_.at(i).ToString() + "\n";
     }
-    QFile file(moldName_);
-    if(!file.open(QFile::ReadWrite | QFile::Text))
-    {
-        return false;
-    }
-    if(file.readAll() != toWrite)
-    {
-        QFile::copy(moldName_, moldName_ + "~");
-        file.resize(0);
-        file.write(toWrite);
-        file.close();
-        //    QDir dir(file.parent())
-        //    system(QString("rm %1~").arg(moldName_).toAscii());
-        QFile::remove(moldName_ + "~");
-        ret = true;
-    }
+    ICFile file(moldName_);
+    ret = file.ICWrite(toWrite);
     if(isSaveParams)
     {
         SaveMoldParamsFile();
@@ -343,21 +330,8 @@ bool ICMold::SaveMoldParamsFile()
     {
         toWrite += QByteArray::number(allParams.at(i)) + "\n";
     }
-    QFile file(moldParamName_);
-    if(!file.open(QFile::ReadWrite | QFile::Text))
-    {
-        return false;
-    }
-    if(file.readAll() != toWrite)
-    {
-        QFile::copy(moldParamName_, moldParamName_ + "~");
-        file.resize(0);
-        file.write(toWrite);
-        file.close();
-        //    system(QString("rm %1~").arg(moldParamName_).toAscii());
-        QFile::remove(moldParamName_ + "~");
-        ret = true;
-    }
+    ICFile file(moldParamName_);
+    ret = file.ICWrite(toWrite);
     return ret;
 }
 

@@ -21,3 +21,18 @@ include (iclineeditwrapper/iclineeditwrapper.pri)
 include (iccommandkeywrapper/iccommandkeywrapper.pri)
 include (iciopointwrapper/iciopointwrapper.pri)
 include (icpictureview/icpictureview.pri)
+
+HEADERS += \
+    custom_widgets/ictableview.h \
+    custom_widgets/ictablewidget.h \
+    custom_widgets/icpasswordmodifydialog.h \
+    custom_widgets/iccombobox.h
+
+SOURCES += \
+    custom_widgets/ictableview.cpp \
+    custom_widgets/ictablewidget.cpp \
+    custom_widgets/icpasswordmodifydialog.cpp \
+    custom_widgets/iccombobox.cpp
+
+FORMS += \
+    custom_widgets/icpasswordmodifydialog.ui

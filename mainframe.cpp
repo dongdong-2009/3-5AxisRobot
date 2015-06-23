@@ -48,45 +48,52 @@
 #include "ictimerpool.h"
 #include "ichostcomparepage.h"
 #include "icupdatesystem.h"
+#include "icrecaldialog.h"
+#include "icbackupdialog.h"
+#ifndef Q_WS_WIN32
+#include <linux/input.h>
+#endif
 #if defined(Q_WS_WIN32) || defined(Q_WS_X11)
 #include "simulateknob.h"
 #endif
 
 #include <QDebug>
 
-//class ICScreenSaverMonitor: public QRunnable
-//{
-//public:
-//    ICScreenSaverMonitor(MainFrame* mainFrame) { mainFrame_ = mainFrame;}
-//    void run()
-//    {
-//        int fd = open("/dev/screensaver", O_RDONLY);
-//        if(fd < 0)
-//        {
-//            perror("Open screensaver fail \n");
-//            return;
-//        }
-//        char readStr[30];
-//        while(1)
-//        {
-//            memset(readStr, '\0', 30);
-//            read(fd, readStr, 30);
-//            qDebug(readStr);
-//            if(strcmp(readStr, "BackLight Off") == 0)
-//            {
-//                mainFrame_->SetBackLightOff();
-//                qDebug("set backLightOFF");
-//            }
-//        }
-//    }
-//private:
-//    MainFrame* mainFrame_;
-//};
+QMap<int, int> keyMap;
+QMap<int, int> knobMap;
+QMap<int, int> pulleyMap;
+QList<int> currentKeySeq;
+const QList<int> recalKeySeq = QList<int>()<<ICKeyboard::FB_F5
+                                          <<ICKeyboard::FB_F1
+                                         <<ICKeyboard::FB_F4
+                                        <<ICKeyboard::FB_F1
+                                       <<ICKeyboard::FB_F3
+                                      <<ICKeyboard::FB_F1
+                                     <<ICKeyboard::FB_F2
+                                    <<ICKeyboard::FB_F5;
+
+const QList<int> backupKeySeq = QList<int>()<<ICKeyboard::FB_F5
+                                           <<ICKeyboard::FB_F2
+                                          <<ICKeyboard::FB_F4
+                                         <<ICKeyboard::FB_F2
+                                        <<ICKeyboard::FB_F3
+                                       <<ICKeyboard::FB_F2
+                                      <<ICKeyboard::FB_F1
+                                     <<ICKeyboard::FB_F5;
+
+const QList<int> testKeySeq = QList<int>()<<ICKeyboard::FB_F5
+                                           <<ICKeyboard::FB_F3
+                                          <<ICKeyboard::FB_F4
+                                         <<ICKeyboard::FB_F3
+                                        <<ICKeyboard::FB_F2
+                                       <<ICKeyboard::FB_F3
+                                      <<ICKeyboard::FB_F1
+                                     <<ICKeyboard::FB_F5;
 
 
 MainFrame *icMainFrame = NULL;
 MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
-    QWidget(parent),
+    ICMainFrame(parent),
     ui(new Ui::MainFrame),
     monitorPage_(NULL),
     centerStackedLayout_(new QStackedLayout),
@@ -132,10 +139,10 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
 
 
     InitSpareTime();
-    connect(ICUpdateSystem::Instance(),
-            SIGNAL(RegisterSucceed()),
-            this,
-            SLOT(InitSpareTime()));
+//    connect(ICUpdateSystem::Instance(),
+//            SIGNAL(RegisterSucceed()),
+//            this,
+//            SLOT(InitSpareTime()));
 
     connect(registe_timer,SIGNAL(timeout()),this,SLOT(CountRestTime()));
     connect(reboot_timer,SIGNAL(timeout()),this,SLOT(Register()));
@@ -237,8 +244,48 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     hostCompareDialog_ = new ICHostComparePage(this);
     UpdateAxisDefine_();
     ICKeyboard::Instace()->Receive();
-    QTimer::singleShot(ICParametersSave::Instance()->BackLightTime() * 60000, this, SLOT(CheckedInput()));
+#ifdef Q_WS_QWS
+    SetScreenSaverInterval(ICParametersSave::Instance()->BackLightTime() * 60000);  //背光时间
+    connect(this,SIGNAL(ScreenSave()),this,SLOT(CloseBackLight()));
+    connect(this,SIGNAL(ScreenRestore()),this,SLOT(OpenBackLight()));
+#endif
+
     QTimer::singleShot(1000, this, SLOT(ClearPosColor()));
+
+    keyMap.insert(Qt::Key_F11, ICKeyboard::VFB_Run);
+    keyMap.insert(Qt::Key_X, ICKeyboard::FB_Stop);
+    keyMap.insert(Qt::Key_S, ICKeyboard::FB_Origin);
+    keyMap.insert(Qt::Key_D, ICKeyboard::FB_Reset);
+    keyMap.insert(Qt::Key_I, ICKeyboard::FB_Up);
+    keyMap.insert(Qt::Key_N, ICKeyboard::FB_Down);
+
+    keyMap.insert(Qt::Key_F9, ICKeyboard::VFB_X1Sub);
+    keyMap.insert(Qt::Key_U, ICKeyboard::VFB_X1Add);
+    keyMap.insert(Qt::Key_Z, ICKeyboard::VFB_Y1Sub);
+    keyMap.insert(Qt::Key_V, ICKeyboard::VFB_Y1Add);
+
+    keyMap.insert(Qt::Key_B, ICKeyboard::VFB_ZSub);
+    keyMap.insert(Qt::Key_A, ICKeyboard::VFB_ZAdd);
+    keyMap.insert(Qt::Key_G, ICKeyboard::VFB_Pose_Horizontal);
+    keyMap.insert(Qt::Key_F, ICKeyboard::VFB_Pose_Vertical);
+
+    keyMap.insert(Qt::Key_Q, ICKeyboard::VFB_X2Sub);
+    keyMap.insert(Qt::Key_K, ICKeyboard::VFB_X2Add);
+    keyMap.insert(Qt::Key_P, ICKeyboard::VFB_Y2Sub);
+    keyMap.insert(Qt::Key_L, ICKeyboard::VFB_Y2Add);
+
+    keyMap.insert(Qt::Key_C, ICKeyboard::FB_F1);
+    keyMap.insert(Qt::Key_W, ICKeyboard::FB_F2);
+    keyMap.insert(Qt::Key_R, ICKeyboard::FB_F3);
+    keyMap.insert(Qt::Key_M, ICKeyboard::FB_F4);
+    keyMap.insert(Qt::Key_H, ICKeyboard::FB_F5);
+
+    knobMap.insert(Qt::Key_F4, ICKeyboard::KS_ManualStatu);
+    knobMap.insert(Qt::Key_F7, ICKeyboard::KS_StopStatu);
+    knobMap.insert(Qt::Key_F5, ICKeyboard::KS_AutoStatu);
+
+    pulleyMap.insert(Qt::Key_F13, 1);
+    pulleyMap.insert(Qt::Key_F14, -1);
 
     //    QTimer::singleShot(100, this, SLOT(InitHeavyPage()));
 #if defined(Q_WS_WIN32) || defined(Q_WS_X11)
@@ -253,13 +300,33 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     connect(simulateKnob_,
             SIGNAL(autoButtonClicked()),
             SLOT(ShowAutoPage()));
+#ifdef HC_SK_5
+    this->setFixedSize(640, 480);
+#else
     this->setFixedSize(800, 600);
 #endif
-#ifdef Q_WS_X11
-            ShowInstructPage();
-    //       ShowManualPage();
-//         ShowAutoPage();
+
+
+
 #endif
+#ifdef Q_WS_X11
+//    ShowInstructPage();
+           ShowManualPage();
+    //         ShowAutoPage();
+//    ShowOrigin();
+#endif
+           SetScreenSaverInterval(ICParametersSave::Instance()->BackLightTime() * 60000);
+#ifndef Q_WS_WIN32
+           int keyFD_ = open("/dev/input/event1", O_RDWR);
+           struct input_event inputEvent;
+           inputEvent.type = EV_SYN; //__set_bit
+           inputEvent.code = SYN_CONFIG;  //__set_bit
+           inputEvent.value = 1;
+           write(keyFD_,&inputEvent,sizeof(inputEvent));
+           ::close(keyFD_);
+#endif
+
+           qDebug("Mainframe Init finished");
 
 }
 
@@ -300,37 +367,136 @@ void MainFrame::changeEvent(QEvent *e)
 
 void MainFrame::keyPressEvent(QKeyEvent *e)
 {
-    switch(e->key())
+    qDebug()<<"KeyEvent:"<<e->key();
+   //    SetHasInput(true);
+       if(keyMap.contains(e->key()))
+       {
+           int key = keyMap.value(e->key());
+           currentKeySeq.append(key);
+           if(currentKeySeq.size() == recalKeySeq.size())
+           {
+               if(currentKeySeq == recalKeySeq)
+               {
+                   ICRecalDialog recalDialog;
+                   recalDialog.exec();
+   //                ::system("touch /mnt/config_data/recal");
+   //                int ret = QMessageBox::warning(this,
+   //                                     tr("Recal"),
+   //                                     tr("You have press the recal sequence, recal after reboot"),
+   //                                     QMessageBox::Yes | QMessageBox::No);
+   //                if(ret == QMessageBox::Yes) ::system("reboot");
+
+               }
+               else if(currentKeySeq == backupKeySeq)
+               {
+                   ICBackupDialog backupDialog;
+                   backupDialog.exec();
+               }
+               else if(currentKeySeq == testKeySeq)
+               {
+                   ::system("chmod +x ./test_robot.sh && ./test_robot.sh");
+   //                exit(0);
+               }
+               currentKeySeq.clear();
+           }
+
+           qDebug()<<"Key:"<<key;
+           switch(key)
+           {
+           case ICKeyboard::FB_F1:
+           {
+               ui->functionPageButton->click();
+           }
+               break;
+           case ICKeyboard::FB_F2:
+           {
+               ui->monitorPageButton->click();
+           }
+               break;
+           case ICKeyboard::FB_F3:
+           {
+               ui->recordPageButton->click();
+           }
+               break;
+           case ICKeyboard::FB_F4:
+           {
+               ui->alarmPageButton->click();
+           }
+               break;
+           case ICKeyboard::FB_F5:
+           {
+               ui->returnPageButton->click();
+           }
+               break;
+           default:
+           {
+               ICKeyboard *keyboard = ICKeyboard::Instace();
+               keyboard->SetKeyValue(key);
+               if(key == ICKeyboard::VFB_X1Add ||
+                       key == ICKeyboard::VFB_Y1Add ||
+                       key == ICKeyboard::VFB_ZAdd ||
+                       key == ICKeyboard::VFB_X2Add ||
+                       key == ICKeyboard::VFB_Y2Add ||
+                       key == ICKeyboard::VFB_AAdd ||
+                       key == ICKeyboard::VFB_BAdd ||
+                       key == ICKeyboard::VFB_CAdd ||
+                       key == ICKeyboard::VFB_X1Sub ||
+                       key == ICKeyboard::VFB_Y1Sub ||
+                       key == ICKeyboard::VFB_ZSub ||
+                       key == ICKeyboard::VFB_X2Sub ||
+                       key == ICKeyboard::VFB_Y2Sub ||
+                       key == ICKeyboard::VFB_ASub ||
+                       key == ICKeyboard::VFB_BSub ||
+                       key == ICKeyboard::VFB_CSub ||
+                       key == ICKeyboard::VFB_Pose_Horizontal ||
+                       key == ICKeyboard::VFB_Pose_Vertical)
+               {
+                   keyboard->SetPressed(true);
+                   if(instructPage_->isVisible())
+                   {
+                       KeyToInstructEditor(key);
+                   }
+               }
+   //            ICKeyboardHandler::Instance()->Keypressed(key);
+               //        QWidget::keyPressEvent(e);
+           }
+           }
+       }
+       else if(knobMap.contains(e->key()))
+       {
+           int k = knobMap.value(e->key());
+           if(ICKeyboard::Instace()->CurrentSwitchStatus() != k)
+           {
+               ICKeyboard::Instace()->SetSwitchValue(k);
+               currentKeySeq.clear();
+           }
+   #ifndef Q_WS_WIN32
+   //        static bool isExeced = false;
+   //        if(!isExeced)
+   //        {
+   //            int keyFD_ = open("/dev/input/event1", O_RDWR);
+   //            struct input_event inputEvent;
+   //            inputEvent.type = EV_SYN; //__set_bit
+   //            inputEvent.code = SYN_CONFIG;  //__set_bit
+   //            inputEvent.value = 1;
+   //            write(keyFD_,&inputEvent,sizeof(inputEvent));
+   //            isExeced = true;
+   //            ::close(keyFD_);
+   //        }
+   #endif
+   //        ICKeyboardHandler::Instance()->Keypressed(key);
+       }
+       else if(pulleyMap.contains(e->key()))
+       {
+           ICKeyboard::Instace()->SetPulleyValue(pulleyMap.value(e->key()));
+       }
+   }
+
+void MainFrame::keyReleaseEvent(QKeyEvent *e)
+{
+    if(keyMap.contains(e->key()))
     {
-    case ICKeyboard::FB_F1:
-    {
-        ui->functionPageButton->click();
-    }
-        break;
-    case ICKeyboard::FB_F2:
-    {
-        ui->monitorPageButton->click();
-    }
-        break;
-    case ICKeyboard::FB_F3:
-    {
-        ui->recordPageButton->click();
-    }
-        break;
-    case ICKeyboard::FB_F4:
-    {
-        ui->alarmPageButton->click();
-    }
-        break;
-    case ICKeyboard::FB_F5:
-    {
-        ui->returnPageButton->click();
-    }
-        break;
-    default:
-    {
-        QWidget::keyPressEvent(e);
-    }
+        ICKeyboard::Instace()->SetPressed(false);
     }
 }
 
@@ -1335,4 +1501,20 @@ void MainFrame::InitSpareTime()
         registe_timer->start(1000*3600);
     }
 
+}
+
+void MainFrame::OpenBackLight()
+{
+#ifdef Q_WS_QWS
+    ICParametersSave::Instance()->SetBrightness(ICParametersSave::Instance()->Brightness());
+#endif
+}
+
+void MainFrame::CloseBackLight()
+{
+#ifdef Q_WS_QWS
+//    ShowScreenSaver();
+    system("BackLight.sh 0");
+//    SetBackLightOff(true);
+#endif
 }

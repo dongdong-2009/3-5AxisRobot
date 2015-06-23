@@ -703,7 +703,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QComboBox" name="countWayBox">
+          <widget class="ICComboBox" name="countWayBox">
            <item>
             <property name="text">
              <string>All</string>
@@ -762,6 +762,11 @@
    <class>ICLineEditWithVirtualNumericKeypad</class>
    <extends>QLineEdit</extends>
    <header>iclineeditwithvirtualnumerickeypad.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ICComboBox</class>
+   <extends>QComboBox</extends>
+   <header>iccombobox.h</header>
   </customwidget>
  </customwidgets>
  <resources/>
