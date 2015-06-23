@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/arrow.png</file>
+        <file>image/delArrow.png</file>
+        <file>image/bs2.png</file>
+        <file>image/checkbox_empty_focus.png</file>
+        <file>image/checkbox_empty_normal.png</file>
+        <file>image/checkbox_full_focus.png</file>
+        <file>image/checkbox_full_normal.png</file>
+        <file>image/checkbox_tristate_focus.png</file>
+        <file>image/checkbox_tristate_normal.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ICVirtualKeyboard</class>
+ <widget class="QWidget" name="ICVirtualKeyboard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>805</width>
+    <height>54</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>801</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="ICKeyboardButton" name="n1">
+      <property name="minimumSize">
+       <size>
+        <width>64</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>64</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="ICKeyboardButton" name="n2">
+      <property name="minimumSize">
+       <size>
+        <width>64</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>64</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>2
+abc </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="ICKeyboardButton" name="n3">
+      <property name="minimumSize">
+       <size>
+        <width>64</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>64</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>3
+def</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="ICKeyboardButton" name="n4">
+      <property name="minimumSize">
+       <size>
+        <width>64</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>64</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>4
+ghi</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="ICKeyboardButton" name="n5">
+      <property name="minimumSize">
+       <size>
+        <width>64</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>64</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>5
+jkl</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="ICKeyboardButton" name="n6">
+      <property name="minimumSize">
+       <size>
+        <width>64</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>64</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>6
+mno</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="ICKeyboardButton" name="n7">
+      <property name="minimumSize">
+       <size>
+        <width>64</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>64</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>7
+pqrs</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="ICKeyboardButton" name="n8">
+      <property name="minimumSize">
+       <size>
+        <width>64</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>64</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>8
+tuv</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="ICKeyboardButton" name="n9">
+      <property name="minimumSize">
+       <size>
+        <width>64</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>64</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>9
+wxyz</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="ICKeyboardButton" name="n0">
+      <property name="minimumSize">
+       <size>
+        <width>64</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>64</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="ICKeyboardButton" name="abc">
+      <property name="minimumSize">
+       <size>
+        <width>65</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>65</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>123</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="ICKeyboardButton" name="bs">
+      <property name="minimumSize">
+       <size>
+        <width>68</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>68</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="image.qrc">
+        <normaloff>:/image/bs2.png</normaloff>:/image/bs2.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="ICKeyboardButton" name="enter">
+      <property name="minimumSize">
+       <size>
+        <width>70</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>70</width>
+        <height>48</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>ENTER</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>ICKeyboardButton</class>
+   <extends>QPushButton</extends>
+   <header>ickeyboardbutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
