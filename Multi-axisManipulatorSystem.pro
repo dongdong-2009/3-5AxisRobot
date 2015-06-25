@@ -117,11 +117,40 @@ OTHER_FILES += \
     sysconfig/hintinfomation-en
 
 QMAKE_POST_LINK += "cp *.qm $$DESTDIR"
-CONFIG(debug, debug|release){
-#system("python rename_ui.py temp_8_d")
+QMAKE_PRE_LINK += "lrelease $${TARGET}.pro"
+#message($${UI_DIR})
+system("python rename_ui.py $${UI_DIR}")
+contains(QMAKE_CXX, g++){
 #QMAKE_POST_LINK += "cp *.qm bin_debug"
 }else{
-#system("python rename_ui.py temp_8")
-QMAKE_POST_LINK += "&& arm-linux-strip $$DESTDIR/$$TARGET && HCbcrypt.sh -r $$DESTDIR/$$TARGET"
+#system("python rename_ui.py temp_$${SK_SIZE}")
+unix:QMAKE_POST_LINK += " && HCbcrypt.sh -r $$DESTDIR/$$TARGET"
+unix:QMAKE_POST_LINK += "&& chmod +x tools/make_target && tools/make_target $$PWD $$DESTDIR"
+target.path = /opt/Qt/apps
+configsPathBase = tools/Reinstall
+translations.path = $${target.path}
+translations.files = *.qm
+records.path = /opt/Qt/apps/records
+records.files += $${configsPathBase}/$${SK_SIZE}records/*
+subs.path = /opt/Qt/apps/subs
+subs.files += $${configsPathBase}/subs/*
+sysconfig.path = /opt/Qt/apps/sysconfig
+sysconfig.files += $${configsPathBase}/$${SK_SIZE}sysconfig/*
+resource.path = /opt/Qt/apps/resource
+resource.files += $${configsPathBase}/$${SK_SIZE}resource/*
+stylesheet.path = /opt/Qt/apps/stylesheet
+stylesheet.files += $${configsPathBase}/stylesheet/*
+others.path = /opt/Qt/apps
+others.files += $${configsPathBase}/3-5AxisRobotDatabase
+scripts.path = /usr/bin
+scripts.files += $${configsPathBase}/*.sh
+scripts.files += $${configsPathBase}/LedTest_335x
+scripts.files += $${configsPathBase}/$${SK_SIZE}RunApp/*
+keymap.path = /home/root
+keymap.files =$${configsPathBase}/$${SK_SIZE}-inch-qmap/*
+INSTALLS += target translations records subs sysconfig resource stylesheet others scripts keymap
+for(sh, scripts.files){
+QMAKE_POST_LINK += " && chmod +x $${sh}"
 }
-
+message($$QMAKE_POST_LINK)
+}

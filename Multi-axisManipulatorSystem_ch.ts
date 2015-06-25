@@ -7712,7 +7712,7 @@ Would you want to restart now?</source>
 <context>
     <name>ICVirtualHost</name>
     <message>
-        <location filename="communication/icvirtualhost.cpp" line="95"/>
+        <location filename="communication/icvirtualhost.cpp" line="96"/>
         <source>Error</source>
         <translation>错误</translation>
     </message>
