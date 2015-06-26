@@ -7380,7 +7380,7 @@ Would you want to restart now?</source>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="159"/>
         <source>Scan Host</source>
-        <translation>扫描手主机更新包</translation>
+        <translation>扫描主机更新包</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="181"/>
