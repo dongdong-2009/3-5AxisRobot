@@ -1225,6 +1225,10 @@ int ICHCInstructionPageFrame::ValidFlag()
     {
         return flags.size();
     }
+    if(flags[0] != 0)
+    {
+        return 0;
+    }
     for(int i = 1 ; i != flags.size(); ++i)
     {
         if(flags.at(i) - flags.at(i - 1) > 1)
@@ -1232,7 +1236,7 @@ int ICHCInstructionPageFrame::ValidFlag()
             return flags.at(i - 1) + 1;
         }
     }
-
+    return 0;
 }
 
 QStringList ICHCInstructionPageFrame::Flags()
