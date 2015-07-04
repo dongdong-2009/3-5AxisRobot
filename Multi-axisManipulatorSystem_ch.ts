@@ -3719,7 +3719,7 @@ Reason</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1251"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1255"/>
         <source>Flag[%1]:%2</source>
         <translation>标签[%1]:%2</translation>
     </message>

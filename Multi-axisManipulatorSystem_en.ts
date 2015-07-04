@@ -3122,7 +3122,7 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1251"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1255"/>
         <source>Flag[%1]:%2</source>
         <translation type="unfinished"></translation>
     </message>
