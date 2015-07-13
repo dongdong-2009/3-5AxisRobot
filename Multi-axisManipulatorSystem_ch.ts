@@ -5600,24 +5600,24 @@ Please enter an digit between </source>
 <context>
     <name>ICOriginDialog</name>
     <message>
-        <location filename="icorigindialog.cpp" line="35"/>
-        <location filename="icorigindialog.cpp" line="77"/>
+        <location filename="icorigindialog.cpp" line="39"/>
+        <location filename="icorigindialog.cpp" line="95"/>
         <source>Please press the start button to start execute origin action</source>
         <translation>请按启动键执行原点复归</translation>
     </message>
     <message>
-        <location filename="icorigindialog.cpp" line="73"/>
+        <location filename="icorigindialog.cpp" line="91"/>
         <source>Originning...</source>
         <translation>原点复归中...</translation>
     </message>
     <message>
-        <location filename="icorigindialog.cpp" line="106"/>
+        <location filename="icorigindialog.cpp" line="124"/>
         <source>Do you need to auto position?</source>
         <translation>需要自动侧姿吗?</translation>
     </message>
     <message>
-        <location filename="icorigindialog.cpp" line="143"/>
-        <location filename="icorigindialog.cpp" line="149"/>
+        <location filename="icorigindialog.cpp" line="161"/>
+        <location filename="icorigindialog.cpp" line="167"/>
         <source>Originning</source>
         <translation>原点执行中</translation>
     </message>
@@ -5627,17 +5627,17 @@ Please enter an digit between </source>
         <translation>执行原点复归</translation>
     </message>
     <message>
-        <location filename="icorigindialog.ui" line="38"/>
+        <location filename="icorigindialog.ui" line="41"/>
         <source>Stop</source>
         <translation>停止</translation>
     </message>
     <message>
-        <location filename="icorigindialog.ui" line="77"/>
+        <location filename="icorigindialog.ui" line="86"/>
         <source>Yes</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="icorigindialog.ui" line="64"/>
+        <location filename="icorigindialog.ui" line="70"/>
         <source>No</source>
         <translation></translation>
     </message>
@@ -6466,12 +6466,12 @@ Please enter an digit between </source>
         <translation>停止</translation>
     </message>
     <message>
-        <location filename="icreturnpage.cpp" line="22"/>
+        <location filename="icreturnpage.cpp" line="25"/>
         <source>Please press the start button to execute return</source>
         <translation>请按启动键执行复归</translation>
     </message>
     <message>
-        <location filename="icreturnpage.cpp" line="59"/>
+        <location filename="icreturnpage.cpp" line="76"/>
         <source>Returnning</source>
         <translation>复归中</translation>
     </message>

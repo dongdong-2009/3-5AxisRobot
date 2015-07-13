@@ -4425,24 +4425,24 @@ Please enter an digit between </source>
 <context>
     <name>ICOriginDialog</name>
     <message>
-        <location filename="icorigindialog.cpp" line="35"/>
-        <location filename="icorigindialog.cpp" line="77"/>
+        <location filename="icorigindialog.cpp" line="39"/>
+        <location filename="icorigindialog.cpp" line="95"/>
         <source>Please press the start button to start execute origin action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="icorigindialog.cpp" line="73"/>
+        <location filename="icorigindialog.cpp" line="91"/>
         <source>Originning...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="icorigindialog.cpp" line="106"/>
+        <location filename="icorigindialog.cpp" line="124"/>
         <source>Do you need to auto position?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="icorigindialog.cpp" line="143"/>
-        <location filename="icorigindialog.cpp" line="149"/>
+        <location filename="icorigindialog.cpp" line="161"/>
+        <location filename="icorigindialog.cpp" line="167"/>
         <source>Originning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4452,17 +4452,17 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="icorigindialog.ui" line="38"/>
+        <location filename="icorigindialog.ui" line="41"/>
         <source>Stop</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="icorigindialog.ui" line="77"/>
+        <location filename="icorigindialog.ui" line="86"/>
         <source>Yes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="icorigindialog.ui" line="64"/>
+        <location filename="icorigindialog.ui" line="70"/>
         <source>No</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5130,12 +5130,12 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="icreturnpage.cpp" line="22"/>
+        <location filename="icreturnpage.cpp" line="25"/>
         <source>Please press the start button to execute return</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="icreturnpage.cpp" line="59"/>
+        <location filename="icreturnpage.cpp" line="76"/>
         <source>Returnning</source>
         <translation type="unfinished"></translation>
     </message>
