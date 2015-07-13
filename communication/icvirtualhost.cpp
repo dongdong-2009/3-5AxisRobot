@@ -794,6 +794,7 @@ void ICVirtualHost::InitMold_()
         path += config->MoldName("");
     }
     QString configPath = path;
+//    qDebug()<<"mold"<<configPath;
     configPath.chop(3);
     configPath += "fnc";
     //    Q_ASSERT_X(QFile::exists(path), "ICVirtualHost::InitMold_", "act is not exits");
@@ -818,6 +819,10 @@ void ICVirtualHost::WriteMoldTohost_()
 {
     QVector<uint8_t> dataSection;
     QList<ICMoldItem> moldContent = currentMold_->ToSentMoldContent();
+//    for(int i = 0; i < moldContent.size(); ++i)
+//    {
+//        qDebug()<<moldContent.at(i).ToString();
+//    }
 //    QList<ICMoldItem>::iterator p = moldContent.begin();
 //    while(p != moldContent.end())
 //    {

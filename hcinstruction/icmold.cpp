@@ -586,15 +586,17 @@ void ICMold::Compile()
                 tmpContent.at(conditionPos.at(i)).Num();
         moldContent_[conditionPos.at(i)].SetDVal(
                     returnStep);
+        tmpContent[conditionPos.at(i)].SetDVal(
+                    returnStep);
     }
+    toSentContent_.clear();
     for(int i = 0; i < moldContent_.size(); ++i)
     {
-        toSentItem = moldContent_.at(i);
+        toSentItem = tmpContent.at(i);
         if(toSentItem.Action() == ACTCOMMENT)
             continue;
         toSentItem.SetSeq(toSentContent_.size());
         toSentItem.ReSum();
         toSentContent_.append(toSentItem);
-        qDebug()<<toSentItem.ToString();
     }
 }
