@@ -458,6 +458,11 @@ public:
     void SetStackParam(int group, ICStatckParam param, int value);
 
     int LastStep() const;
+
+    void Compile();
+    QList<ICMoldItem> ToSentMoldContent() const { return toSentContent_;}
+    int DisplayStep(int hostStep) const { return stepMap_.value(hostStep, -1);}
+
 signals:
     void MoldPramChanged(int, int);
     void MoldNumberParamChanged();

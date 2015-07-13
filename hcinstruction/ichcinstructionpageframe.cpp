@@ -1078,6 +1078,19 @@ void ICHCInstructionPageFrame::OnProgramChanged(int index, QString name)
 //    ui->moldComboBox->setCurrentIndex(index);
     ui->programLabel->setText(name);
     UpdateHostParam();
+    if(ICParametersSave::Instance()->IsExtentFunctionUsed() && index == 0)
+    {
+        ui->flagsButton->show();
+        ui->conditionsToolButton->show();
+        ui->commentButton->show();
+    }
+    else
+    {
+        ui->flagsButton->hide();
+        ui->conditionsToolButton->hide();
+        ui->commentButton->hide();
+    }
+//    ui->conditionsToolButton
 
 }
 

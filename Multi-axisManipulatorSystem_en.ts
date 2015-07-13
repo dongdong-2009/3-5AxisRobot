@@ -872,7 +872,7 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcinstruction/icautorunrevise.ui" line="130"/>
-        <location filename="hcinstruction/icautorunrevise.cpp" line="67"/>
+        <location filename="hcinstruction/icautorunrevise.cpp" line="74"/>
         <source>Delay Time:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -910,7 +910,7 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcinstruction/icautorunrevise.ui" line="146"/>
-        <location filename="hcinstruction/icautorunrevise.cpp" line="91"/>
+        <location filename="hcinstruction/icautorunrevise.cpp" line="98"/>
         <source>Limit Time:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3122,7 +3122,7 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1255"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1268"/>
         <source>Flag[%1]:%2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3648,7 +3648,7 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="203"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="534"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="535"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3663,22 +3663,22 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="535"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="536"/>
         <source>Can not edit standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="820"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="821"/>
         <source>Speed Enable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="880"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="881"/>
         <source>Flag[%1]:%2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="805"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="806"/>
         <source>Follow</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3687,8 +3687,8 @@ Infomation</source>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="427"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="105"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="258"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="820"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="830"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="821"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="831"/>
         <source>Speed Disable</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3702,7 +3702,7 @@ Infomation</source>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="331"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="331"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="811"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="812"/>
         <source>No Follow</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5111,7 +5111,7 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="157"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="246"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="253"/>
         <source>Limit Time</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5144,7 +5144,7 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="55"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="104"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="111"/>
         <source>Delay Time</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5191,13 +5191,13 @@ App %1; Host:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="181"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="188"/>
         <source>speed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="255"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="271"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="262"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="278"/>
         <source>Times</source>
         <translation type="unfinished"></translation>
     </message>

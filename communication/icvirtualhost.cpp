@@ -817,19 +817,19 @@ void ICVirtualHost::InitMold_()
 void ICVirtualHost::WriteMoldTohost_()
 {
     QVector<uint8_t> dataSection;
-    QList<ICMoldItem> moldContent = currentMold_->MoldContent();
-    QList<ICMoldItem>::iterator p = moldContent.begin();
-    while(p != moldContent.end())
-    {
-        if((*p).Action() == ICMold::ACTCOMMENT)
-        {
-            p = moldContent.erase(p);
-            continue;
-        }
-        ++p;
+    QList<ICMoldItem> moldContent = currentMold_->ToSentMoldContent();
+//    QList<ICMoldItem>::iterator p = moldContent.begin();
+//    while(p != moldContent.end())
+//    {
+//        if((*p).Action() == ICMold::ACTCOMMENT)
+//        {
+//            p = moldContent.erase(p);
+//            continue;
+//        }
+//        ++p;
 
-    }
-    ICMold::MoldReSum(moldContent);
+//    }
+//    ICMold::MoldReSum(moldContent);
     ICMoldItem moldItem;
     ICCommandProcessor* commandProcessor = ICCommandProcessor::Instance();
     ICWriteParameters writeParamtersCommand;

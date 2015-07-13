@@ -264,6 +264,7 @@ bool ICMold::ReadMoldFile(const QString &fileName, bool isLoadParams)
         moldContent_ = tempmoldContent;
         moldName_ = fileName;
     }
+    Compile();
     return ret;
 }
 
@@ -317,40 +318,7 @@ bool ICMold::ReadMoldParamsFile(const QString &fileName)
 bool ICMold::SaveMoldFile(bool isSaveParams)
 {
     bool ret = false;
-    QMap<int, int> flagToSetp;
-    QList<int> conditionPos;
-    int stepOffset = 0;
-    ICMoldItem item;
-    QList<ICMoldItem> tmpContent = moldContent_;
-    for(int i = 0; i != tmpContent.size(); ++i)
-    {
-        item = tmpContent.at(i);
-        tmpContent[i].SetNum(item.Num() - 1);
-        if(item.Action() == ACTCOMMENT)
-        {
-            flagToSetp.insert(item.Flag(), item.Num());
-//            if(i == 0 && tmpContent.at(i + 1).Num() == item.Num())
-//                continue;
-//            else if(tmpContent.at(i + 1).Num() == item.Num() ||
-//                    tmpContent.at(i - 1).Num() == item.Num())
-//                continue;
-//            else
-                ++stepOffset;
-        }
-        else if(tmpContent.at(i).Action() == ACTCHECKINPUT)
-        {
-            conditionPos.append(i);
-        }
-    }
-    qDebug()<<flagToSetp;
-    int returnStep;
-    for(int i = 0; i != conditionPos.size(); ++i)
-    {
-        returnStep = flagToSetp.value(moldContent_.at(conditionPos.at(i)).Flag(), 0) -
-                tmpContent.at(conditionPos.at(i)).Num();
-        moldContent_[conditionPos.at(i)].SetDVal(
-                    returnStep);
-    }
+    Compile();
 //    MoldReSum();
     QByteArray toWrite;
     if(moldContent_.size() < 1)
@@ -579,4 +547,54 @@ int ICGroupMoldUIItem::RunableTopItemCount()
         }
     }
     return ret;
+}
+
+void ICMold::Compile()
+{
+    QMap<int, int> flagToSetp;
+    QList<int> conditionPos;
+    int stepOffset = 0;
+    ICMoldItem item;
+    ICMoldItem toSentItem;
+    QList<ICMoldItem> tmpContent = moldContent_;
+    for(int i = 0; i != tmpContent.size(); ++i)
+    {
+        item = tmpContent.at(i);
+        tmpContent[i].SetNum(item.Num() - stepOffset);
+        stepMap_.insert(tmpContent.at(i).Num(), moldContent_.at(i).Num());
+        if(item.Action() == ACTCOMMENT)
+        {
+            flagToSetp.insert(item.Flag(), item.Num());
+//            if(i == 0 && tmpContent.at(i + 1).Num() == item.Num())
+//                continue;
+//            else if(tmpContent.at(i + 1).Num() == item.Num() ||
+//                    tmpContent.at(i - 1).Num() == item.Num())
+//                continue;
+//            else
+                ++stepOffset;
+            continue;
+        }
+        else if(tmpContent.at(i).Action() == ACTCHECKINPUT)
+        {
+            conditionPos.append(i);
+        }
+    }
+    int returnStep;
+    for(int i = 0; i != conditionPos.size(); ++i)
+    {
+        returnStep = flagToSetp.value(moldContent_.at(conditionPos.at(i)).Flag(), 0) -
+                tmpContent.at(conditionPos.at(i)).Num();
+        moldContent_[conditionPos.at(i)].SetDVal(
+                    returnStep);
+    }
+    for(int i = 0; i < moldContent_.size(); ++i)
+    {
+        toSentItem = moldContent_.at(i);
+        if(toSentItem.Action() == ACTCOMMENT)
+            continue;
+        toSentItem.SetSeq(toSentContent_.size());
+        toSentItem.ReSum();
+        toSentContent_.append(toSentItem);
+        qDebug()<<toSentItem.ToString();
+    }
 }
