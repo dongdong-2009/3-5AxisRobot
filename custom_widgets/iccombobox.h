@@ -19,6 +19,7 @@ protected:
     void keyPressEvent(QKeyEvent* e);
     void keyReleaseEvent(QKeyEvent* e);
     void focusInEvent(QFocusEvent *e);
+    bool eventFilter(QObject *o, QEvent *e);
 
 
     int oldValue_;

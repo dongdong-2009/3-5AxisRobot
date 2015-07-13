@@ -829,6 +829,7 @@ void ICVirtualHost::WriteMoldTohost_()
         ++p;
 
     }
+    ICMold::MoldReSum(moldContent);
     ICMoldItem moldItem;
     ICCommandProcessor* commandProcessor = ICCommandProcessor::Instance();
     ICWriteParameters writeParamtersCommand;

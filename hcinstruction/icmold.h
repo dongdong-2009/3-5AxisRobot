@@ -469,6 +469,8 @@ private:
     int checkSum_;
     QString moldName_;
     QString moldParamName_;
+    QMap<int, int> stepMap_;
+    QList<ICMoldItem> toSentContent_;
 //    QList<ACTGROUP> axisActions_;
     static ICMold* currentMold_;
 

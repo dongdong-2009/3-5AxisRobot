@@ -319,24 +319,39 @@ bool ICMold::SaveMoldFile(bool isSaveParams)
     bool ret = false;
     QMap<int, int> flagToSetp;
     QList<int> conditionPos;
-    for(int i = 0; i != moldContent_.size(); ++i)
+    int stepOffset = 0;
+    ICMoldItem item;
+    QList<ICMoldItem> tmpContent = moldContent_;
+    for(int i = 0; i != tmpContent.size(); ++i)
     {
-        if(moldContent_.at(i).Action() == ACTCOMMENT)
+        item = tmpContent.at(i);
+        tmpContent[i].SetNum(item.Num() - 1);
+        if(item.Action() == ACTCOMMENT)
         {
-            flagToSetp.insert(moldContent_.at(i).Flag(), moldContent_.at(i).Num());
+            flagToSetp.insert(item.Flag(), item.Num());
+//            if(i == 0 && tmpContent.at(i + 1).Num() == item.Num())
+//                continue;
+//            else if(tmpContent.at(i + 1).Num() == item.Num() ||
+//                    tmpContent.at(i - 1).Num() == item.Num())
+//                continue;
+//            else
+                ++stepOffset;
         }
-        else if(moldContent_.at(i).Action() == ACTCHECKINPUT)
+        else if(tmpContent.at(i).Action() == ACTCHECKINPUT)
         {
             conditionPos.append(i);
         }
     }
+    qDebug()<<flagToSetp;
+    int returnStep;
     for(int i = 0; i != conditionPos.size(); ++i)
     {
+        returnStep = flagToSetp.value(moldContent_.at(conditionPos.at(i)).Flag(), 0) -
+                tmpContent.at(conditionPos.at(i)).Num();
         moldContent_[conditionPos.at(i)].SetDVal(
-                    flagToSetp.value(moldContent_.at(conditionPos.at(i)).Flag(), 0) -
-                    moldContent_.at(conditionPos.at(i)).Num());
+                    returnStep);
     }
-    MoldReSum();
+//    MoldReSum();
     QByteArray toWrite;
     if(moldContent_.size() < 1)
     {

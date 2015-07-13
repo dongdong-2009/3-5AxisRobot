@@ -520,24 +520,24 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
                 groupItem.SetStepNum(gIndex);
                 insertedGroupItems.append(groupItem);
             }
-            else if(isComment)
-            {
-                ICTopMoldUIItem topItem;
-                topItem.SetBaseItem(items.at(0));
-                if(programList_[gIndex].MoldItemAt(0)->Action() == ICMold::ACTEND &&
-                        gIndex != 0)
-                {
-                    topItem.SetStepNum(gIndex - 1);
-                    programList_[gIndex - 1].AddToMoldUIItem(topItem);
-                }
-                else if(programList_[gIndex].MoldItemAt(0)->Action() == ICMold::ACTEND &&
-                        gIndex == 0)
-                {
-                    return;
-                }
-                else
-                    programList_[gIndex].PrependTopMoldUIItem(topItem);
-            }
+//            else if(isComment)
+//            {
+//                ICTopMoldUIItem topItem;
+//                topItem.SetBaseItem(items.at(0));
+//                if(programList_[gIndex].MoldItemAt(0)->Action() == ICMold::ACTEND &&
+//                        gIndex != 0)
+//                {
+//                    topItem.SetStepNum(gIndex - 1);
+//                    programList_[gIndex - 1].AddToMoldUIItem(topItem);
+//                }
+//                else if(programList_[gIndex].MoldItemAt(0)->Action() == ICMold::ACTEND &&
+//                        gIndex == 0)
+//                {
+//                    return;
+//                }
+//                else
+//                    programList_[gIndex].PrependTopMoldUIItem(topItem);
+//            }
             else
             {
                 ICTopMoldUIItem topItem;

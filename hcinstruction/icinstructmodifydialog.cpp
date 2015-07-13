@@ -4,6 +4,7 @@
 #include "icvirtualhost.h"
 #include "config.h"
 #include <qmath.h>
+#include <QKeyEvent>
 
 ICInstructModifyDialog::ICInstructModifyDialog(QWidget *parent) :
     QDialog(parent),
@@ -56,6 +57,12 @@ void ICInstructModifyDialog::changeEvent(QEvent *e)
     default:
         break;
     }
+}
+
+void ICInstructModifyDialog::keyPressEvent(QKeyEvent *e)
+{
+    QKeyEvent* ke = new QKeyEvent(*e);
+    qApp->postEvent(this->parentWidget(), ke);
 }
 
 bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
