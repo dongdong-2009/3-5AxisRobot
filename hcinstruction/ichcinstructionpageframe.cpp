@@ -895,10 +895,12 @@ void ICHCInstructionPageFrame::on_upButton_clicked()
         }
         ICGroupMoldUIItem *item = &programList_[gIndex];
 //        if(item->MoldItemAt(0)->Action() == ICMold::ACTCOMMENT) return;
+//        if(programList_[gIndex - 1].MoldItemAt(0)->Action() == ICMold::ACTCOMMENT) return;
+//        if(item->MoldItemAt(0)->Action() == ICMold::ACTCOMMENT) return;
         int runableCount = 0;
         for(int i = 0; i != item->TopItemCount(); ++i)
         {
-            if(item->MoldItemAt(i)->Action() != ICMold::ACTCOMMENT)
+//            if(item->MoldItemAt(i)->Action() != ICMold::ACTCOMMENT)
                 ++runableCount;
         }
 //        if(item->TopItemCount() == 1) //group up
@@ -1013,20 +1015,20 @@ void ICHCInstructionPageFrame::on_downButton_clicked()
         }
         else //split group item
         {
-            if(groupItem->MoldItemAt(tIndex)->Action() == ICMold::ACTCOMMENT) return;
-            bool up = false;
-            bool dw = false;
+//            if(groupItem->MoldItemAt(tIndex)->Action() == ICMold::ACTCOMMENT) return;
+//            bool up = false;
+//            bool dw = false;
             int runableCount = 0;
             for(int i = 0; i != tIndex; ++i)
             {
-                if(groupItem->MoldItemAt(i)->Action() != ICMold::ACTCOMMENT)
+//                if(groupItem->MoldItemAt(i)->Action() != ICMold::ACTCOMMENT)
                     ++runableCount;
             }
             if(runableCount == 0) return;
             runableCount = 0;
             for(int i = tIndex; i != groupItem->ItemCount(); ++i)
             {
-                if(groupItem->MoldItemAt(i)->Action() != ICMold::ACTCOMMENT)
+//                if(groupItem->MoldItemAt(i)->Action() != ICMold::ACTCOMMENT)
                     ++runableCount;
             }
             if(runableCount == 0 ) return;

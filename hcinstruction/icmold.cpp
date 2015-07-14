@@ -392,10 +392,10 @@ bool ICMold::SaveMoldParamsFile()
 uint ICMold::SyncAct() const
 {
     uint ret = 0;
-    for(int i = 0; i != moldContent_.size(); ++i)
+    for(int i = 0; i != toSentContent_.size(); ++i)
     {
-        if(moldContent_.at(i).Action() != ACTCOMMENT)
-            ret += moldContent_.at(i).GMVal();
+//        if(toSentContent_.at(i).Action() != ACTCOMMENT)
+            ret += toSentContent_.at(i).GMVal();
     }
     return ret;
 }
@@ -403,10 +403,10 @@ uint ICMold::SyncAct() const
 uint ICMold::SyncSum() const
 {
     uint ret = 0;
-    for(int i = 0; i != moldContent_.size(); ++i)
+    for(int i = 0; i != toSentContent_.size(); ++i)
     {
-        if(moldContent_.at(i).Action() != ACTCOMMENT)
-            ret += moldContent_.at(i).Sum();
+//        if(toSentContent_.at(i).Action() != ACTCOMMENT)
+            ret += toSentContent_.at(i).Sum();
     }
     return ret;
 }
@@ -559,18 +559,24 @@ void ICMold::Compile()
     QList<ICMoldItem> tmpContent = moldContent_;
     for(int i = 0; i != tmpContent.size(); ++i)
     {
+        moldContent_[i].SetSeq(i);
         item = tmpContent.at(i);
         tmpContent[i].SetNum(item.Num() - stepOffset);
+//        qDebug()<<tmpContent[i].ToString();
         stepMap_.insert(tmpContent.at(i).Num(), moldContent_.at(i).Num());
         if(item.Action() == ACTCOMMENT)
         {
             flagToSetp.insert(item.Flag(), item.Num());
-//            if(i == 0 && tmpContent.at(i + 1).Num() == item.Num())
-//                continue;
-//            else if(tmpContent.at(i + 1).Num() == item.Num() ||
-//                    tmpContent.at(i - 1).Num() == item.Num())
-//                continue;
-//            else
+            if(i == 0 && moldContent_.at(i + 1).Num() == item.Num())
+            {
+                continue;
+            }
+            else if(moldContent_.at(i + 1).Num() == item.Num() ||
+                    moldContent_.at(i - 1).Num() == item.Num())
+            {
+                continue;
+            }
+            else
                 ++stepOffset;
             continue;
         }

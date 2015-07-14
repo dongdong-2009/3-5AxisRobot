@@ -2,6 +2,7 @@
 
 #include <QKeyEvent>
 #include <QAbstractItemView>
+#include <QApplication>
 
 ICComboBox::ICComboBox(QWidget *parent) :
     QComboBox(parent)
@@ -31,8 +32,12 @@ bool ICComboBox::eventFilter(QObject *o, QEvent *e)
         return QComboBox::eventFilter(o, e);
     if(e->type() == QEvent::KeyPress)
     {
+        QKeyEvent* k = static_cast<QKeyEvent*>(e);
+        QKeyEvent* ke = new QKeyEvent(*k);
+        qApp->postEvent(this->parentWidget(), ke);
         e->ignore();
-        return false;
+        this->hidePopup();
+        return true;
     }
     return QComboBox::eventFilter(o, e);
 

@@ -1,6 +1,8 @@
 #include "icalarmdetailsdialog.h"
 #include "ui_icalarmdetailsdialog.h"
 #include <QSqlQuery>
+#include <QKeyEvent>
+#include <QApplication>
 
 ICAlarmDetailsDialog::ICAlarmDetailsDialog(QWidget *parent) :
     QDialog(parent),
@@ -24,6 +26,12 @@ void ICAlarmDetailsDialog::changeEvent(QEvent *e)
     default:
         break;
     }
+}
+
+void ICAlarmDetailsDialog::keyPressEvent(QKeyEvent *e)
+{
+    QKeyEvent* ke = new QKeyEvent(*e);
+    qApp->postEvent(this->parentWidget(), ke);
 }
 
 void ICAlarmDetailsDialog::ShowDetails(int alarmID)
