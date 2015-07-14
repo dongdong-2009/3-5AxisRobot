@@ -49,8 +49,12 @@ public:
 
     const QString AlarmChineseInfoPathName;
     const QString AlarmEnglishInfoPathName;
+    const QString AlarmPortugueseInfoPathName;
+
     const QString HintChInfoPathName;
     const QString HintEnInfoPathName;
+    const QString HintPtInfoPathName;
+
 
 signals:
     void CurrentAlarmNumChanged(int currentAlarmNum);

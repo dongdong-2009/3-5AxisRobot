@@ -1,0 +1,356 @@
+1:虚拟故障
+2:出现奇怪字符
+3:程序无结束符
+4:忽略字符
+5:坐标系混乱
+6:无终点位置
+7:圆弧定义
+8:顺序
+9:半径不匹配
+10:运动过速
+11:双重IO定义
+12:无IO定义
+13:组合动作出错
+14:待机点组合错误
+15:取下一步指令错
+16:查指动作结束超界
+17:注册表上下文链接错误
+18:主动作结束检查
+19:注册表NUM链接错误
+20:注册表SUB链接错误
+21:注册表动作已完成
+22:生成动作时X还在运行
+23:生成动作时Y还在运行
+24:生成动作时Z还在运行
+25:G有延时但计时器已清零
+26:X1 Excesso de Velocidade
+27:Y1 Excesso de Velocidade
+28:Z Excesso de Velocidade
+29:Terminou tempo de escrita
+30:Falha na compilação
+60:A Excesso de Velocidade
+61:B Excesso de Velocidade
+62:C Excesso de Velocidade
+63:生成动作时A还在运行
+64:生成动作时B还在运行
+65:生成动作时C还在运行
+70:X2 Excesso de Velocidade
+71:Y2 Excesso de Velocidade
+72:生成动作时X2还在运行
+73:生成动作时Y2还在运行
+100:Feedback do servo X1 é superior à tolerância
+101:Feedback do servo Y1 é superior à tolerância
+102:Feedback do servo Z é superior à tolerância
+103:X1 servo Z sinal errado
+104:Y1 servo Z sinal errado
+105:Z servo Z sinal errado
+106:X1 Alarm do Servo
+107:Y1 Alarm do Servo
+108:Z Alarm do Servo
+109:X1 Não está na sua posição
+110:Y1 Não está na sua posição
+111:Z Não está na sua posição
+112:X1 Passou no final do limite
+113:X1 Passou no início do limite
+114:Y1 Passou no final do limite
+115:Y1 Passou no início do limite
+116:Z Passou no final do limite
+117:Z Passou no início do limite
+118:X1 Demasiado Grande
+119:X1 Demasiado Pequeno
+120:Y1 Demasiado Grande
+121:Y1 Demasiado Pequeno
+122:Z Demasiado Grande
+123:Z Demasiado Pequeno
+124:Posição de X1 demasiado grande quando executa
+125:Posição de X1 demasiado pequena quando executa
+126:Posição de Y1 demasiado grande quando executa
+127:Posição de Y1 demasiado pequena quando executa
+128:Posição de Z demasiado grande quando executa
+129:Posição de Z demasiado pequena quando executa
+130:Erro a guardar configurações de X1
+131:Erro a guardar configurações de Y1
+132:Erro a guardar configurações de Z
+133:Erro a guardar a estrutura
+134:Configurações de X1 não são iguais com o painel
+135:Configurações de Y1 não são iguais com o painel
+136:Configurações de Z não são iguais com o painel
+137:Configurações da estrutura são iguais com o painel
+138:X1 não está definido como eixo servo 
+139:Y1 não está definido como eixo servo 
+140:Z não está definido como eixo servo 
+160:Feedback do servo X2 é superior à tolerância
+161:Feedback do servo Y2 é superior à tolerância
+162:X2 servo Z sinal errado
+163:Y2 servo Z sinal errado
+164:X2 servo alarme
+165:Y2 servo alarme
+166:X2 não está na sua posição
+167:Y2 não está na sua posição
+168:X2 move-se sobre os limites finais
+169:X2 move-se sobre os limites iniciais
+170:Y2 move-se sobre os limites finais
+171:Y2 move-se sobre os limites iniciais
+172:Posição de X2 demasiado grande
+173:Posição de X2 demasiado pequena
+174:Posição de Y2 demasiado grande
+175:Posição de Y2 demasiado pequena
+176:Posição de X2 demasiado grande ao executar
+177:Posição de X2 demasiado pequena ao executar
+178:Posição de Y2 demasiado grande ao executar
+179:Posição de Y2 demasiado pequena ao executar
+180:Configurações para guardar X2 incorrectas
+181:Configurações para guardar Y2 incorrectas
+182:Configurações de X2 não estão iguais no painel
+183:Configurações de Y2 não estão iguais no painel
+184:X2 não está definido eixo servo
+185:Y2 não está definido eixo servo
+200:Feedback servo A superior à tolerância
+201:Feedback servo B superior à tolerância
+202:Feedback servo C superior à tolerância
+203:A servo Z  sinal errado
+204:B servo Z  sinal errado
+205:C servo Z  sinal errado
+206:A servo alarme
+207:B servo alarme
+208:C servo alarme
+209:A não está na sua posição
+210:B não está na sua posição
+211:C não está na sua posição
+212:A move-se sobre os limites finais
+213:A move-se sobre os limites iniciais
+214:B move-se sobre os limites finais
+215:B move-se sobre os limites iniciais
+216:C move-se sobre os limites finais
+217:C move-se sobre os limites iniciais
+218:Posição de A demasiado grande
+219:Posição de A demasiado pequena
+220:Posição de B demasiado grande
+221:Posição de B demasiado pequena
+222:Posição de C demasiado grande
+223:Posição de C demasiado pequena
+224:Posição de A demasiado grande ao executar
+225:Posição de A demasiado pequena ao executar
+226:Posição de B demasiado grande ao executar
+227:Posição de B demasiado pequena ao executar
+228:Posição de C demasiado grande ao executar
+229:Posição de C demasiado pequena ao executar
+230:Configurações para guardar A incorrectas
+231:Configurações para guardar B incorrectas
+232:Configurações para guardar C incorrectas
+233:SPI nulo
+234:Configurações de A não estão iguais no painel
+235:Configurações de B não estão iguais no painel
+236:Configurações de C não estão iguais no painel
+237:COMARE nulo
+238:A não está definido eixo servo
+239:B não está definido eixo servo
+240:C não está definido eixo servo
+300:Configurações X1 incorrectas
+301:Configurações Y1 incorrectas
+302:Configurações Z incorrectas
+303:Programa crc incorrecto
+304:Emergência
+305:Ciclo principal incorrecto
+306:Posição de Standby incorrecta
+307:Falha na obtenção do programa
+308:Tolerância demasido grande
+309:Configurações do programa incorrectas
+310:Indice da Macro demasiado grande
+311:Macro com animação??
+312:Empilhamento incorrecto
+313:Empilhamento duplicado
+314:Acção de sequência incorrecta
+315:Configuração do sistema crc incorrecta
+316:动作顺序错
+317:动作顺序错
+318:Instrução individual ligada??
+319:Deve estar em modo automático
+320:Linha de programa incorrecta
+321:Programa crc incorrecta ao executar
+322:Acção do programa incorrecta ao executar
+323:Aguarde até terminar O.M.
+324:Falha na alteração do programa em modo automático
+325:Fixação duplicada
+326:Acção duplicada
+327:Deve ser chamada no primeiro nível
+328:Verifique a condição quando executar uma acção
+329:Verifique fixação
+330:Configuração da estrutura alterada, por favor reinicie
+331:Configuração da estrutura incorrecta
+332:Configuração da estrutura alterada, por favor reinicie
+333:Configuração da estrutura alterada, por favor reinicie
+334:Macro programa crc incorrecta
+360:Configurações de X2 não estão iguais no painel
+361:Configurações de Y2 não estão iguais no painel
+362:Configurações de A não estão iguais no painel
+363:Configurações de B não estão iguais no painel
+364:Configurações de C não estão iguais no painel
+365:Configurações da estrutura não estão iguais no painel
+400:Falha na obtenção das configurações X1
+401:Falha na obtenção das configurações Y1
+402:Falha na obtenção das configurações Z
+403:Falha na iniciação
+404:Falha na iniciação do programa
+405:Falha na iniciação da Macro
+406:Falha na iniciação das configurações do programa
+500:Falha na ligação ao host
+501:Falha na ligação ao quandro I/O
+502:Target do produto atingido
+503:Pressão baixa
+504:Time out de comunicação
+505:Programa crc incorrecto
+506:Aguarde time out do sinal
+507:Modificar configurações em modo non-stop
+550:X1轴, X2轴位置设定超界
+600:Sinal de segurança in-mold está activo quando Z se move para out-mold
+601:Sinal de segurança in-mold está inactivo quando Z se move para out-mold
+602:Sinal de segurança out-mold está activo quando Z se move para in-mold
+603:Sinal de segurança out-mold está inactivo quando Z se move para in-mold
+604:Origem em Y está activa quando está dentro de secção não-segura
+605:Origem em Y está inactiva quando está dentro de secção segura
+606:Origem em B está activa quando está dentro de secção não-segura
+607:Origem em B está inactiva quando está dentro de secção segura
+700:Aguarde time out de X043
+701:Aguarde time out de X044
+702:Aguarde time out de fixação-1
+703:Aguarde time out de fixação-2
+704:Aguarde time out de fixação-3
+705:Aguarde time out de fixação-4
+706:Aguarde time out do respirardor-1
+707:Aguarde time out do respirardor-2
+708:Aguarde time out de injecção FW
+709:Aguarde sinal de time out de injecção BW
+710:Aguarde time out no núcleo
+711:Aguarde time out fora do núcleo
+1000:Sinal do Molde Mid está inactivo quando Y desce
+1001:Sinal de Molde Aberto está inactivo quando Y desce
+1002:Porta de segurança aberta quando Y desce
+1003:Sinais de posição estão ambos activos
+1004:Sinal de segurança de origem Z e out-mold estão ambos activos
+1005:Sinal O.M. está inactivo quando Y desce in-mold
+1006:Posição-1 incorrecta quando Y desce in-mold
+1007:Y desce in-mold mas Z não está na secção de segurança
+1008:Y desce out-mold mas Z não está na secção de segurança
+1009:Não é possível verificar o sinal de segurança quando Y desce
+1010:Y1 desce mas Z não está na secção de segurança
+1011:Y1 desce mas X1 não está na secção de segurança
+1012:Ambas as posições são horizontais
+1013:Limite X2 FW e BW estão ambos activos
+1014:Limite Y2 UP e DW estão ambos activos
+1015:Limite X1 FW e BW estão ambos activos
+1016:LimiteY1 UP e DW estão ambos activos
+1017:Porta de segurança aberta durante a execussão
+1018:X2 não está no percurso do programa
+1019:Sinal O.M. está inactivo quando está na origem
+1020:Sinal de Mid mold inactivo quando está na origem
+1021:Posição vertical está inactiva quando está na origem
+1022:Posição horizontal está inactiva quando está na origem
+1023:Posição vertical está inactiva quando Z move
+1024:Posição horizontal está inactiva quando Z move
+1025:Posição-2 incorrecta quando Y2 desce in-mold
+1027:
+1038:Z não está na posição out-mold quando o sinal de defeito está activo
+1039:Z não está configurado em out-mold quando o sinal de defeito está activo
+1040:O último passo não é uma acção em Z
+1052:Limite Z e Y1 UP estão ambos inactivos
+1053:Indefinido
+1054:Indique acção em X1 mas não definir eixo X1
+1055:Indique acção em Y1 mas não definir eixo Y1
+1056:Indique acção em Z mas não definir eixo Z
+1057:Indique acção em X2 mas não definir eixo X2
+1058:Indique acção em Y2 mas não definir eixo Y2
+1059:Indique acção em A mas não definir eixo A
+1060:Indique acção em B mas não definir eixo B
+1061:Indique acção em C mas não definir eixo C
+1100:Y1 desce mas Z não está na secção de segurança
+1101:Y2 desce mas Z não está na secção de segurança
+1102:Sinal O.M inactivo quando Y1 desce
+1103:Sinal O.M inactivo quando Y2 desce
+1104:Limite Y1 UP está activo quando Y1 desce
+1105:Limite Y2 UP está activo quando Y2 desce
+1106:Limite Y1 DW está inactivo quando Y1 desce
+1107:Limite Y2 DW está inactivo quando Y2 desce
+1108:Sinal Mid mold está inactivo quando Y1 desce
+1109:Sinal Mid mold está inactivo quando Y2 desce
+1120:Sinal de segurança In-mold está inactivo quando Y1 sobe
+1121:Sinal de segurança In-mold está inactivo quando Y2 sobe
+1122:Y1 em excesso de velocidade
+1123:Y2 em excesso de velocidade
+1124:Sinal O.M inactivo quando Y1 sobe
+1125:Sinal O.M inactivo quando Y2 sobe
+1126:Limite Y1 UP está inactivo quando Y1 sobe
+1127:Limite Y2 UP está inactivo quando Y2 sobe
+1140:Limite X1 BW está inactivo quando X1 avança
+1141:Limite X2 BW está inactivo quando X2 avança
+1142:Limite X1 BW está inactivo quando X1 recua
+1143:Limite X2 BW está inactivo quando X2 recua
+1144:Limite X1 FW está inactivo quando X1 avança
+1145:Limite X2 FW está inactivo quando X2 avança
+1146:Limite X1 FW está activo quando X1 recua
+1147:Limite X2 FW está activo quando X2 recua
+1160:Limite Y1 UP está inactivo quando Posição-1 altera
+1161:Limite Y2 UP está inactivo quando Posição-1 altera
+1162:O.M está inactivo quando Posição-1 altera
+1163:Limite horizontal-1 está inactivo quando Posição-1 volta para horizontal
+1164:Limite vertical-1 está inactivo quando Vertical-1 volta para horizontal
+1165:Z não está na secção de segurança quando a posição altera
+1170:Limite Y1 UP está inactiva quando Posição-2 altera
+1171:Limite Y2 UP está inactiva quando Posição-2 altera
+1172:O.M está inactivo quando Posição-2 altera
+1173:Limite Horizontal-2 está inactivo quando Posição-2 volta para horizontal
+1174:Limite Vertical-2 está inactivo quando Vertical-2 volta para horizontal
+1180:Limite Y1 UP está inactivo quando Z move
+1181:Limite Y2 UP está inactivo quando Z move
+1182:Início do limite em Z está inactivo quando Z move in-mold
+1183:Início do limite em Z está inactivo quando Z move para fora
+1184:Posição não está no percurso quando Z move para fora
+1185:O.M. está inactivo quando Z move para dentro
+1186:Limite Y1 está inactivo quando Z se move para secções não seguras
+1187:Limite Y2 está inactivo quando Z se move para secções não seguras
+1188:Y1 não está na secção de segurança quando Z se move na secção não segura
+1189:Limite Y1 UP está inactivo quando Z se move de fora para dentro
+1190:Limite Y1 UP está inactivo quando Z se move de dentro para fora
+1191:Y1 não está na secção de segurança quando Z se move na secção não segura
+1192:Posição actual é menor que a posição de segurança móvel
+1193:Posição actual é maior que a posição de segurança móvel
+1194:Y2 não está na posição UP
+1200:Válvula de Fixação-1 está activa, mas o limite de Fixação-1 está inactivo
+1201:Válvula de Fixação-1 está inactiva, mas o limite de Fixação-1 está activa
+1202:Válvula de Fixação-2 está activa, mas o limite de Fixação-2 está inactivo
+1203:Válvula de Fixação-2 está inactiva, mas o limite de Fixação-2 está activo
+1204:Válvula de Fixação-3 está activa, mas o limite de Fixação-3 está inactivo
+1205:Válvula de Fixação-3 está inactiva, mas o limite de Fixação-3 está activo
+1206:Válvula de Fixação-4 está activa, mas o limite de Fixação-4 está inactivo
+1207:Válvula de Fixação-4 está inactiva, mas o limite de Fixação-4 está activo
+1208:Válvula do Respirador-1 está activa, mas o limite de Respirador-1 está inactivo
+1209:Válvula de Respirador-1 está inactiva, mas o limite de Respirador-1 está activo
+1210:Válvula de Respirador-2 está activa, mas o limite de Respirador-2 está inactivo
+1211:Válvula de Respirador-2 está inactiva, mas o limite de Respirador-2 está activo
+1212:Válvula de Fixação-7 está activa, mas o limite de Fixação-7 está inactivo
+1213:Válvula de Fixação-7 está inactiva, mas o limite de Fixação-7 está activo
+1214:Válvula de Fixação-8 está activa, mas o limite de Fixação-8 está inactivo
+1215:Válvula de Fixação-8 está inactiva, mas o limite de Fixação-8 está activo
+1250:Não consegue verificar o sinal X037
+1251:Não consegue verificar o sinal X023
+1300:Por favor verifique a posição do passo inicial
+1301:Por favor verifique o limite Y1 UP no passo inicial
+1302:Por favor verifique o limite Y2 UP no passo inicial
+1303:Por favor verifique a posição X1 no passo inicial
+1304:Por favor verifique a posição Y1 no passo inicial
+1305:Por favor verifique a posição Z no passo inicial
+1306:Por favor verifique a Fixação-1 no passo inicial
+1307:Por favor verifique a Fixação-2 no passo inicial
+1308:Por favor verifique a Fixação-3 no passo inicial
+1309:Por favor verifique a Fixação-4 no passo inicial
+1310:Por favor verifique o Respirador-1 no passo inicial
+1311:Por favor verifique o Respirador-2 no passo inicial
+1312:Por favor verifique a posição A no passo inicial
+1313:Por favor verifique a posição B no passo inicial
+1314:Por favor verifique a posição C no passo inicial
+1315:Por favor verifique a posição X2 no passo inicial
+1316:Por favor verifique a posição Y2 no passo inicial
+1400:Limite Y2 UP está inactivo
+1401:Y1 e Y2 não estão no in-mold
+1402:Y1 e Y2 não estão no out-mold
+1403:Limite Y2 UP está inactivo

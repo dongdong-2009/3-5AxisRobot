@@ -5,5 +5,7 @@
         <file>sysconfig/alarminfomation-en</file>
         <file>sysconfig/hintinfomation-en</file>
         <file>sysconfig/hintinfomation-ch</file>
+        <file>sysconfig/alarminfomation-pt</file>
+        <file>sysconfig/hintinfomation-pt</file>
     </qresource>
 </RCC>

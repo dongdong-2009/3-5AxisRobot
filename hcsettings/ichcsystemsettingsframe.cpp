@@ -41,6 +41,7 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
 
     ui->languageButtonGroup->setId(ui->chineseBox,0);
     ui->languageButtonGroup->setId(ui->englishBox,1);
+    ui->languageButtonGroup->setId(ui->portuguesBox,2);
     InitParameter();
     ui->extentFunctionCheckBox->blockSignals(true);
     ui->extentFunctionCheckBox->setChecked(ICParametersSave::Instance()->IsExtentFunctionUsed());
@@ -135,6 +136,11 @@ void ICHCSystemSettingsFrame::languageBoxChange()
     {
         paraSave->SetCountry(QLocale::UnitedStates);
     }
+    else if(ui->languageButtonGroup->checkedId() == 2)
+    {
+        paraSave->SetCountry(QLocale::Portugal);
+    }
+
 }
 
 void ICHCSystemSettingsFrame::changeEvent(QEvent *e)
@@ -146,11 +152,12 @@ void ICHCSystemSettingsFrame::changeEvent(QEvent *e)
         ui->retranslateUi(this);
         ICParametersSave* paraSave = ICParametersSave::Instance();
 
-        int index = (paraSave->Country() == QLocale::China) ? 0 : 1;
-        if(index == 0)
+        if(paraSave->Country() == QLocale::China)
             ui->chineseBox->setChecked(true);
-        else if(index == 1)
+        else if(paraSave->Country() == QLocale::UnitedStates)
             ui->englishBox->setChecked(true);
+        else if(paraSave->Country() == QLocale::Portugal)
+            ui->portuguesBox->setChecked(true);
         //    ui->languageComboBox->setCurrentIndex(index);
         ui->dateTimeEdit->setDateTime(QDateTime::currentDateTime());
 

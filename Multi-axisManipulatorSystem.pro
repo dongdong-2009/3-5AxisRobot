@@ -108,13 +108,17 @@ RESOURCES += \
     initconfig.qrc
 
 TRANSLATIONS += Multi-axisManipulatorSystem_ch.ts \
-    Multi-axisManipulatorSystem_en.ts
+    Multi-axisManipulatorSystem_en.ts \
+Multi-axisManipulatorSystem_pt.ts
 
 OTHER_FILES += \
     sysconfig/alarminfomation-en \
     sysconfig/alarminfomation-ch \
+    sysconfig/alarminfomation-pt \
     sysconfig/hintinfomation-ch \
-    sysconfig/hintinfomation-en
+    sysconfig/hintinfomation-en \
+    sysconfig/hintinfomation-pt \
+
 
 QMAKE_POST_LINK += "cp *.qm $$DESTDIR"
 QMAKE_PRE_LINK += "lrelease $${TARGET}.pro"
