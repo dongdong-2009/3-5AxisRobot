@@ -112,15 +112,6 @@ public:
     QDate NextCycle(int item) { return GetParameter(SystemMachine, QString("NextCycleItem-%1").arg(item), QDate::currentDate().addDays(30)).toDate();}
     void SetNextCycle(int item, QDate th) { SaveParameter(SystemMachine, QString("NextCycleItem-%1").arg(item), th);}
 
-    QString SuperPassward() { return GetParameter(SystemMachine, "SuperPassward","123456").toString();}
-    void SetSuperPassward(const QString &passward) { SaveParameter(SystemMachine, "SuperPassward", passward);}
-
-    QString Client() { return GetParameter(SystemMachine, "Client", "").toString();}
-    void SetClient(const QString &client) { SaveParameter(SystemMachine, "Client", client);}
-
-    QString ShipmentDate() { return GetParameter(SystemMachine, "ShipmentDate", "").toString();}
-    void SetShipmentDate(const QString &date)  { SaveParameter(SystemMachine, "ShipmentDate", date);}
-
 signals:
     void CurrentLanguageChanged();
 

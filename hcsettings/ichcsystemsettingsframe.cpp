@@ -782,16 +782,16 @@ void ICHCSystemSettingsFrame::StatusRefresh()
     ui->versionLabel->setText("Version: OS:" + os + QString("App %1;Libs:4.7.3; Host:").arg(SW_VERSION) + ICVirtualHost::GlobalVirtualHost()->HostStatus(ICVirtualHost::Time).toString());
 }
 
-void ICHCSystemSettingsFrame::on_structSelectHostButton_clicked()
-{
-    ICVirtualHost::GlobalVirtualHost()->SetSystemParameter(ICVirtualHost::SYS_ARM_CONFIG, armStruct_);
-    ICVirtualHost::GlobalVirtualHost()->SaveSystemConfig();
-    ui->hmiX1->setText(armXStructValueToName_.value(armStruct_ & 0x0003));
-    ui->hmiY1->setText(armYStructValueToName_.value((armStruct_ & 0x000C) >> 2));
-    ui->hmiX2->setText(armXStructValueToName_.value((armStruct_ & 0x0030) >> 4));
-    ui->hmiY2->setText(armYStructValueToName_.value((armStruct_ & 0x00C0) >> 6));
-    ui->hmiArm->setText(armValueToName_.value((armStruct_ & 0x0300) >> 8));
-}
+//void ICHCSystemSettingsFrame::on_structSelectHostButton_clicked()
+//{
+//    ICVirtualHost::GlobalVirtualHost()->SetSystemParameter(ICVirtualHost::SYS_ARM_CONFIG, armStruct_);
+//    ICVirtualHost::GlobalVirtualHost()->SaveSystemConfig();
+//    ui->hmiX1->setText(armXStructValueToName_.value(armStruct_ & 0x0003));
+//    ui->hmiY1->setText(armYStructValueToName_.value((armStruct_ & 0x000C) >> 2));
+//    ui->hmiX2->setText(armXStructValueToName_.value((armStruct_ & 0x0030) >> 4));
+//    ui->hmiY2->setText(armYStructValueToName_.value((armStruct_ & 0x00C0) >> 6));
+//    ui->hmiArm->setText(armValueToName_.value((armStruct_ & 0x0300) >> 8));
+//}
 
 void ICHCSystemSettingsFrame::on_calibrationBtn_clicked()
 {
