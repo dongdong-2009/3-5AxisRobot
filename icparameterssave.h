@@ -62,7 +62,13 @@ public:
 
     bool KeyTone() { return GetParameter(ProductConfig, "KeyTone", true).toBool();}
 #ifndef Q_WS_WIN32
-    void SetKeyTone(bool isOn, bool isSave = true)  {SaveParameter(ProductConfig, "KeyTone", isOn, isSave);ioctl(beepFD_, 0, isOn ? 1 : 0);}
+    void SetKeyTone(bool isOn, bool isSave = true)
+    {
+        if(isSave)
+            SaveParameter(ProductConfig, "KeyTone", isOn, isSave);
+        ioctl(beepFD_, 0, isOn ? 1 : 0);
+
+    }
 #else
     void SetKeyTone(bool isOn, bool isSave = true)  {SaveParameter(ProductConfig, "KeyTone", isOn,isSave);}
 #endif

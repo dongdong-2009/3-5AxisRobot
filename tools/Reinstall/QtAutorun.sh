@@ -10,7 +10,7 @@ then
     export QWS_MOUSE_PROTO=Tslib:/dev/input/touchscreen0
     export set QWS_KEYBOARD="linuxinput:/dev/input/event1:repeat-rate=200:repeat-delay=500:keymap=/home/root/3a8.qmap"
     export set QWS_DISPLAY="LinuxFB:/dev/fb0"
-    export set QWS_DISPLAY="LinuxFB:mmWidth640:mmHeight480:0"
+    export set QWS_DISPLAY="LinuxFB:mmWidth=192:mmHeight=144:0"
     export set QWS_SIZE=="640x480"
     export set QT_QWS_FONTDIR=/opt/Qt/fonts
 fi

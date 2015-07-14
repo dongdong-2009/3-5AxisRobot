@@ -12,6 +12,7 @@ mkdir -p ${workDir}/${binDir}/Reinstall/Reinstall
 cp ${workDir}/${binDir}/Multi-axisManipulatorSystem ${reinstallDir} -f
 cp ${workDir}/Multi-axisManipulatorSystem_ch.qm ${reinstallDir} -f
 cp ${workDir}/Multi-axisManipulatorSystem_en.qm ${reinstallDir} -f
+cp ${workDir}/Multi-axisManipulatorSystem_pt.qm ${reinstallDir} -f
 
 inch=`cat ${workDir}/Multi-axisManipulatorSystem.pro | grep "SK_SIZE =" | awk '{print $3}'`
 swVersion=`cat ${workDir}/config.h | grep "SW_VERSION" | awk '{print $3}' | sed 's/\"//g' | tr -d ['\r']`
@@ -77,6 +78,7 @@ cp -r ${workDir}/tools/Update/* ${workDir}/${binDir}/Update/HCRobotPanel${swVers
 cp ${workDir}/${binDir}/Multi-axisManipulatorSystem ${updateDir} -f
 cp ${workDir}/Multi-axisManipulatorSystem_ch.qm ${updateDir} -f
 cp ${workDir}/Multi-axisManipulatorSystem_en.qm ${updateDir} -f
+cp ${workDir}/Multi-axisManipulatorSystem_pt.qm ${updateDir} -f
 
 echo ${updateDir}.tar ${updateDir}
 cd ${workDir}/${binDir}/Update/ && tar -cf HCRobotPanel${swVersion}.tar HCRobotPanel${swVersion}
