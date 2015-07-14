@@ -226,8 +226,10 @@ void ICIOPage::showEvent(QShowEvent *e)
         {
             if(host->PeripheryOutput(i) == 1)
             {
-                if(i < 4)
+                if(i < 3)
                     recsLabels_[i]->setText(tr("Reserve") + QString::number(i+1));
+                else if( i == 3)
+                    recsLabels_[i]->setText(tr("Reserve 4"));
                 else if(i == 4)
                     recsLabels_[i]->setText(tr("Reserve 5"));
                 else if(i == 5)
