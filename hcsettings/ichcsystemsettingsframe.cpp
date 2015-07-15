@@ -103,11 +103,13 @@ void ICHCSystemSettingsFrame::InitParameter()
 {
     ui->dateTimeEdit->setDateTime(QDateTime::currentDateTime());
     ICParametersSave* paraSave = ICParametersSave::Instance();
-    int index = (paraSave->Country() == QLocale::China) ? 0 : 1;
-    if(index == 0)
+//    int index = (paraSave->Country() == QLocale::China) ? 0 : 1;
+    if(paraSave->Country() == QLocale::China)
         ui->chineseBox->setChecked(true);
-    else if(index == 1)
+    else if(paraSave->Country() == QLocale::UnitedStates)
         ui->englishBox->setChecked(true);
+    else if(paraSave->Country() == QLocale::Portugal)
+        ui->portuguesBox->setChecked(true);
     // ui->languageComboBox->setCurrentIndex(index);
     if(paraSave->KeyTone())
     {
