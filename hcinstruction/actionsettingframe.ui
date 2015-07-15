@@ -129,7 +129,7 @@
           </size>
          </property>
          <property name="text">
-          <string>0.0</string>
+          <string notr="true">0.0</string>
          </property>
         </widget>
        </item>
@@ -239,7 +239,7 @@
         </size>
        </property>
        <property name="text">
-        <string>80</string>
+        <string notr="true">80</string>
        </property>
       </widget>
      </item>
@@ -263,7 +263,7 @@
       </size>
      </property>
      <property name="text">
-      <string>0.00</string>
+      <string notr="true">0.00</string>
      </property>
     </widget>
    </item>
@@ -324,7 +324,7 @@
           </size>
          </property>
          <property name="text">
-          <string>0.0</string>
+          <string notr="true">0.0</string>
          </property>
         </widget>
        </item>
@@ -431,7 +431,7 @@
         </size>
        </property>
        <property name="text">
-        <string>80</string>
+        <string notr="true">80</string>
        </property>
       </widget>
      </item>
@@ -455,7 +455,7 @@
       </size>
      </property>
      <property name="text">
-      <string>0.00</string>
+      <string notr="true">0.00</string>
      </property>
     </widget>
    </item>
@@ -516,7 +516,7 @@
           </size>
          </property>
          <property name="text">
-          <string>0.0</string>
+          <string notr="true">0.0</string>
          </property>
         </widget>
        </item>
@@ -623,7 +623,7 @@
         </size>
        </property>
        <property name="text">
-        <string>80</string>
+        <string notr="true">80</string>
        </property>
       </widget>
      </item>
@@ -647,7 +647,7 @@
       </size>
      </property>
      <property name="text">
-      <string>0.00</string>
+      <string notr="true">0.00</string>
      </property>
     </widget>
    </item>
@@ -708,7 +708,7 @@
           </size>
          </property>
          <property name="text">
-          <string>0.0</string>
+          <string notr="true">0.0</string>
          </property>
         </widget>
        </item>
@@ -818,7 +818,7 @@
         </size>
        </property>
        <property name="text">
-        <string>80</string>
+        <string notr="true">80</string>
        </property>
       </widget>
      </item>
@@ -842,7 +842,7 @@
       </size>
      </property>
      <property name="text">
-      <string>0.00</string>
+      <string notr="true">0.00</string>
      </property>
     </widget>
    </item>
@@ -903,7 +903,7 @@
           </size>
          </property>
          <property name="text">
-          <string>0.0</string>
+          <string notr="true">0.0</string>
          </property>
         </widget>
        </item>
@@ -1010,7 +1010,7 @@
         </size>
        </property>
        <property name="text">
-        <string>80</string>
+        <string notr="true">80</string>
        </property>
       </widget>
      </item>
@@ -1034,7 +1034,7 @@
       </size>
      </property>
      <property name="text">
-      <string>0.00</string>
+      <string notr="true">0.00</string>
      </property>
     </widget>
    </item>
@@ -1075,7 +1075,7 @@
           </size>
          </property>
          <property name="text">
-          <string>0.0</string>
+          <string notr="true">0.0</string>
          </property>
         </widget>
        </item>
@@ -1182,7 +1182,7 @@
         </size>
        </property>
        <property name="text">
-        <string>80</string>
+        <string notr="true">80</string>
        </property>
       </widget>
      </item>
@@ -1241,7 +1241,7 @@
       </size>
      </property>
      <property name="text">
-      <string>0.00</string>
+      <string notr="true">0.00</string>
      </property>
     </widget>
    </item>
@@ -1302,7 +1302,7 @@
           </size>
          </property>
          <property name="text">
-          <string>0.0</string>
+          <string notr="true">0.0</string>
          </property>
         </widget>
        </item>
@@ -1409,7 +1409,7 @@
         </size>
        </property>
        <property name="text">
-        <string>80</string>
+        <string notr="true">80</string>
        </property>
       </widget>
      </item>
@@ -1433,7 +1433,7 @@
       </size>
      </property>
      <property name="text">
-      <string>0.00</string>
+      <string notr="true">0.00</string>
      </property>
     </widget>
    </item>
@@ -1494,7 +1494,7 @@
           </size>
          </property>
          <property name="text">
-          <string>0.0</string>
+          <string notr="true">0.0</string>
          </property>
         </widget>
        </item>
@@ -1601,7 +1601,7 @@
         </size>
        </property>
        <property name="text">
-        <string>80</string>
+        <string notr="true">80</string>
        </property>
       </widget>
      </item>
@@ -1625,7 +1625,7 @@
       </size>
      </property>
      <property name="text">
-      <string>0.00</string>
+      <string notr="true">0.00</string>
      </property>
     </widget>
    </item>
@@ -1654,13 +1654,13 @@
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="cBoxbuttonGroup"/>
-  <buttongroup name="x2BoxbuttonGroup"/>
   <buttongroup name="zBoxbuttonGroup"/>
   <buttongroup name="y1BoxbuttonGroup"/>
   <buttongroup name="aBoxbuttonGroup"/>
   <buttongroup name="y2BoxbuttonGroup"/>
-  <buttongroup name="bBoxbuttonGroup"/>
   <buttongroup name="x1BoxbuttonGroup"/>
+  <buttongroup name="bBoxbuttonGroup"/>
+  <buttongroup name="x2BoxbuttonGroup"/>
+  <buttongroup name="cBoxbuttonGroup"/>
  </buttongroups>
 </ui>

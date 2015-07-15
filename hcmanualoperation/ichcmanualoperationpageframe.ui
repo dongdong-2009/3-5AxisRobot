@@ -227,7 +227,7 @@ color: rgb(255, 255, 0);</string>
        </property>
        <property name="minimumSize">
         <size>
-         <width>64</width>
+         <width>90</width>
          <height>0</height>
         </size>
        </property>
@@ -270,7 +270,7 @@ color: rgb(255, 255, 0);</string>
        </property>
        <property name="minimumSize">
         <size>
-         <width>64</width>
+         <width>90</width>
          <height>0</height>
         </size>
        </property>
@@ -313,7 +313,7 @@ color: rgb(255, 255, 0);</string>
        </property>
        <property name="minimumSize">
         <size>
-         <width>64</width>
+         <width>90</width>
          <height>0</height>
         </size>
        </property>
@@ -353,7 +353,7 @@ color: rgb(255, 255, 0);</string>
        </property>
        <property name="minimumSize">
         <size>
-         <width>64</width>
+         <width>90</width>
          <height>0</height>
         </size>
        </property>
@@ -387,7 +387,7 @@ color: rgb(255, 255, 0);</string>
        </property>
        <property name="minimumSize">
         <size>
-         <width>64</width>
+         <width>90</width>
          <height>0</height>
         </size>
        </property>
