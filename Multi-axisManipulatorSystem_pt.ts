@@ -2607,7 +2607,7 @@ ModifyTime</source>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1201"/>
         <source>umount</source>
-        <translation>Ejetar disco de U</translation>
+        <translation>umount</translation>
     </message>
     <message>
         <source>Machine Config</source>
@@ -3719,42 +3719,42 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="38"/>
         <source>Z Oil Pos Max</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="55"/>
         <source>X Up Inside Max</source>
-        <translation type="unfinished"></translation>
+        <translation>X interior acima Max</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="82"/>
         <source>X Up Outside Max</source>
-        <translation type="unfinished"></translation>
+        <translation>X interior Fora Max</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="99"/>
         <source>X Down Inside Max</source>
-        <translation type="unfinished"></translation>
+        <translation>X Baixa acima Max</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="132"/>
         <source>X Down Inside Min</source>
-        <translation type="unfinished"></translation>
+        <translation>X Baixa Fora Max</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="139"/>
         <source>X Up Outside Min</source>
-        <translation type="unfinished"></translation>
+        <translation>X interior Fora Min</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="172"/>
         <source>X Up Inside Min</source>
-        <translation type="unfinished"></translation>
+        <translation>X interior acima Min</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="179"/>
         <source>Z Oil Pos Min</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="112"/>
