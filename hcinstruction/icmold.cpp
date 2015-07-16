@@ -562,12 +562,12 @@ void ICMold::Compile()
         moldContent_[i].SetSeq(i);
         item = tmpContent.at(i);
         tmpContent[i].SetNum(item.Num() - stepOffset);
-//        qDebug()<<tmpContent[i].ToString();
+        qDebug()<<tmpContent[i].ToString();
         stepMap_.insert(tmpContent.at(i).Num(), moldContent_.at(i).Num());
         if(item.Action() == ACTCOMMENT)
         {
             qDebug()<<item.Flag()<<item.Num();
-            flagToSetp.insert(item.Flag(), item.Num());
+            flagToSetp.insert(item.Flag(), tmpContent[i].Num());
             if(i == 0 && moldContent_.at(i + 1).Num() == item.Num())
             {
                 continue;
