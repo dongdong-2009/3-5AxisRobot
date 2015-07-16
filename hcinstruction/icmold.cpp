@@ -566,6 +566,7 @@ void ICMold::Compile()
         stepMap_.insert(tmpContent.at(i).Num(), moldContent_.at(i).Num());
         if(item.Action() == ACTCOMMENT)
         {
+            qDebug()<<item.Flag()<<item.Num();
             flagToSetp.insert(item.Flag(), item.Num());
             if(i == 0 && moldContent_.at(i + 1).Num() == item.Num())
             {
@@ -588,6 +589,7 @@ void ICMold::Compile()
     int returnStep;
     for(int i = 0; i != conditionPos.size(); ++i)
     {
+        qDebug()<<moldContent_.at(conditionPos.at(i)).Flag()<<tmpContent.at(conditionPos.at(i)).Num();
         returnStep = flagToSetp.value(moldContent_.at(conditionPos.at(i)).Flag(), 0) -
                 tmpContent.at(conditionPos.at(i)).Num();
         moldContent_[conditionPos.at(i)].SetDVal(

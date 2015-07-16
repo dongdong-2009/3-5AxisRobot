@@ -3117,12 +3117,12 @@ Infomation</source>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="444"/>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="698"/>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="873"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="976"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="978"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1268"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1270"/>
         <source>Flag[%1]:%2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3147,7 +3147,7 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="977"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="979"/>
         <source>Stand program can not do Down action</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5764,7 +5764,7 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="489"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="637"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="610"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="621"/>
         <source>Save</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5951,12 +5951,12 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="608"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="619"/>
         <source>Information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="608"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="619"/>
         <source>Save Successfully!</source>
         <translation type="unfinished"></translation>
     </message>

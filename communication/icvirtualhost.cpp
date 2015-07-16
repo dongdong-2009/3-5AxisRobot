@@ -819,10 +819,10 @@ void ICVirtualHost::WriteMoldTohost_()
 {
     QVector<uint8_t> dataSection;
     QList<ICMoldItem> moldContent = currentMold_->ToSentMoldContent();
-//    for(int i = 0; i < moldContent.size(); ++i)
-//    {
-//        qDebug()<<moldContent.at(i).ToString();
-//    }
+    for(int i = 0; i < moldContent.size(); ++i)
+    {
+        qDebug()<<moldContent.at(i).ToString();
+    }
 //    QList<ICMoldItem>::iterator p = moldContent.begin();
 //    while(p != moldContent.end())
 //    {
