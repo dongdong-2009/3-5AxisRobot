@@ -872,25 +872,40 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.ui" line="72"/>
+        <location filename="categorypage/icalarmframe.ui" line="50"/>
+        <source>Alarm History</source>
+        <translation>报警记录</translation>
+    </message>
+    <message>
+        <location filename="categorypage/icalarmframe.ui" line="106"/>
         <source>Alarm 
 DateTime</source>
         <translation>报警时间</translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.ui" line="78"/>
+        <location filename="categorypage/icalarmframe.ui" line="112"/>
         <source>Alarm 
 ModifyTime</source>
         <translation>报警解除时间</translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.ui" line="60"/>
+        <location filename="categorypage/icalarmframe.ui" line="122"/>
+        <source>Modify Log</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="categorypage/icalarmframe.ui" line="147"/>
+        <source>Log</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="categorypage/icalarmframe.ui" line="94"/>
         <source>Alarm 
 Number</source>
         <translation>报警编号</translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.ui" line="66"/>
+        <location filename="categorypage/icalarmframe.ui" line="100"/>
         <source>Alarm 
 Infomation</source>
         <translation>报警信息</translation>
@@ -905,11 +920,11 @@ Reason</source>
         <translation type="obsolete">解决办法</translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.cpp" line="86"/>
-        <location filename="categorypage/icalarmframe.cpp" line="91"/>
-        <location filename="categorypage/icalarmframe.cpp" line="188"/>
-        <location filename="categorypage/icalarmframe.cpp" line="190"/>
-        <location filename="categorypage/icalarmframe.cpp" line="228"/>
+        <location filename="categorypage/icalarmframe.cpp" line="112"/>
+        <location filename="categorypage/icalarmframe.cpp" line="117"/>
+        <location filename="categorypage/icalarmframe.cpp" line="214"/>
+        <location filename="categorypage/icalarmframe.cpp" line="216"/>
+        <location filename="categorypage/icalarmframe.cpp" line="311"/>
         <source>no-solve</source>
         <translation>未解决</translation>
     </message>
@@ -3789,7 +3804,7 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="ichostcomparepage.cpp" line="35"/>
-        <location filename="ichostcomparepage.cpp" line="84"/>
+        <location filename="ichostcomparepage.cpp" line="85"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
@@ -3800,18 +3815,18 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="ichostcomparepage.cpp" line="72"/>
-        <location filename="ichostcomparepage.cpp" line="114"/>
+        <location filename="ichostcomparepage.cpp" line="115"/>
         <source>Critical</source>
         <translation>错误</translation>
     </message>
     <message>
         <location filename="ichostcomparepage.cpp" line="73"/>
-        <location filename="ichostcomparepage.cpp" line="115"/>
+        <location filename="ichostcomparepage.cpp" line="116"/>
         <source>Operator fail! Please reboot system</source>
         <translation>操作失败!请重启系统</translation>
     </message>
     <message>
-        <location filename="ichostcomparepage.cpp" line="85"/>
+        <location filename="ichostcomparepage.cpp" line="86"/>
         <source>Do you really want to rewrite all the machine configures to host?</source>
         <translation>确定全部选择手控参数吗?</translation>
     </message>

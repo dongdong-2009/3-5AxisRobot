@@ -8,6 +8,10 @@
 #include <QMessageBox>
 #include <QStringList>
 #include <QPair>
+//#include "icconfigstring.h"
+
+
+#define LOG_MAX 500
 
 ICAlarmFrame * ICAlarmFrame::instance_ = NULL;
 
@@ -16,8 +20,8 @@ ICAlarmFrame::ICAlarmFrame(QWidget *parent) :
     ui(new Ui::ICAlarmFrame),
     alarmString_(ICAlarmString::Instance()),
     AlarmLogFileName("Alarm.log"),
-    clickFlag(true),
-    TemporyFileName("temporaryfile.log")
+    ModifyLogFileName("Modify.log"),
+    clickFlag(true)
 {
     ui->setupUi(this);
     ui->alarmHistoryTableWidget->setColumnWidth(2, 150);
@@ -41,6 +45,27 @@ ICAlarmFrame::ICAlarmFrame(QWidget *parent) :
 
     ReadAlarmInfoInFile();
 
+    QFile modifyLogFile(ModifyLogFileName);
+    QTextStream ts(&modifyLogFile);
+    if(modifyLogFile.open(QFile::ReadOnly | QFile::Text))
+    {
+        QString log = ts.readAll();
+        modifyLogFile.close();
+        QStringList logs = log.split('\n', QString::SkipEmptyParts);
+        QStringList logItems;
+        for(int i = 0; i != logs.size(); ++i)
+        {
+            logItems = logs.at(i).split(',');
+            if(logItems.size() != 4)
+                continue;
+
+            AppendNewLogInTable(logItems.at(0),
+                                logItems.at(1).toUInt(),
+                                logItems.at(2),
+                                logItems.at(3));
+        }
+    }
+    ui->tabWidget->removeTab(1);
 }
 
 ICAlarmFrame::~ICAlarmFrame()
@@ -81,6 +106,7 @@ void ICAlarmFrame::ReadAlarmInfoInFile()
     for(int i = 0; i != alarms_.size(); ++i)
     {
         optionList = alarms_.at(i).split(' ');
+        if(optionList.size() < 2) continue;
         if(optionList.size() == 2)
         {
             optionList.append(tr("no-solve"));
@@ -133,7 +159,7 @@ void ICAlarmFrame::RestoreAlarmInfoInLog(int currentAlarmNum, QString alarmDateT
         alarmPair_.first = currentAlarmNum ;
         alarmPair_.second=  alarms_.count() - 1 ;
         alarmsNoSolve_.append(alarmPair_);
-        if(alarmsNoSolve_.size() > 50)
+        if(alarmsNoSolve_.size() > LOG_MAX)
         {
             alarmsNoSolve_.pop_front();
         }
@@ -151,7 +177,7 @@ void ICAlarmFrame::OnCurrentAlarmChanged(int currentAlarmNum)
             }
         }
     }
-    if(ui->alarmHistoryTableWidget->rowCount() > 49)
+    if(ui->alarmHistoryTableWidget->rowCount() > LOG_MAX - 1)
     {
         ui->alarmHistoryTableWidget->removeRow(ui->alarmHistoryTableWidget->rowCount() - 1);
 
@@ -192,11 +218,68 @@ void ICAlarmFrame::OnCurrentAlarmChanged(int currentAlarmNum)
     ICAlarmString::Instance()->SetPriorAlarmNum(currentAlarmNum);
 }
 
+void ICAlarmFrame::OnActionTriggered(int configNum, const QString &newVal, const QString &oldVal)
+{
+    QFile modifyLogFile(ModifyLogFileName);
+    QTextStream ts(&modifyLogFile);
+    QString logs;
+    if(modifyLogFile.open(QIODevice::ReadWrite | QIODevice::Text))
+    {
+        logs = ts.readAll();
+    }
+    if(ui->logTable->rowCount() > LOG_MAX - 1)
+    {
+        ui->logTable->removeRow(ui->logTable->rowCount() - 1);
+
+        if(!logs.isEmpty())
+        {
+            int firstAlarmIndex = logs.indexOf("\n");
+            logs.remove(0, firstAlarmIndex + 1);
+        }
+    }
+    logs.append(QString("%1,%2,%3,%4\n").arg(QDateTime::currentDateTime().toString("yy-MM-dd hh:mm:ss"))
+                .arg(configNum)
+                .arg(newVal)
+                .arg(oldVal));
+    modifyLogFile.reset();
+    ts<<logs;
+    modifyLogFile.close();
+    AppendNewLogInTable(QDateTime::currentDateTime().toString("yy-MM-dd hh:mm:ss"),
+                        configNum,
+                        newVal,
+                        oldVal);
+    system("sync");
+
+}
+
 void ICAlarmFrame::OnCurrentLanguageChanged()
 {
     ui->alarmHistoryTableWidget->clearContents();
     ui->alarmHistoryTableWidget->setRowCount(0);
     ReadAlarmInfoInFile();
+    ui->logTable->clearContents();
+    ui->logTable->setRowCount(0);
+    QFile modifyLogFile(ModifyLogFileName);
+    QTextStream ts(&modifyLogFile);
+    if(modifyLogFile.open(QFile::ReadOnly | QFile::Text))
+    {
+        QString log = ts.readAll();
+        modifyLogFile.close();
+        QStringList logs = log.split('\n', QString::SkipEmptyParts);
+        QStringList logItems;
+        for(int i = 0; i != logs.size(); ++i)
+        {
+            logItems = logs.at(i).split(',');
+            if(logItems.size() != 4)
+                continue;
+
+            AppendNewLogInTable(logItems.at(0),
+                                logItems.at(1).toUInt(),
+                                logItems.at(2),
+                                logItems.at(3));
+        }
+    }
+
 }
 
 void ICAlarmFrame::on_alarmHistoryTableWidget_clicked(QModelIndex index)
@@ -277,4 +360,29 @@ void ICAlarmFrame::AlarmTimeSort(int cloumn)
             clickFlag = TRUE ;
         }
     }
+}
+
+void ICAlarmFrame::AppendNewLogInTable(const QString &dt, int configID, const QString &newVal, const QString &oldVa)
+{
+//    QTableWidgetItem* item;
+//    if(!oldVa.isEmpty())
+//    {
+//        item = new QTableWidgetItem(QString(tr("%1    %2[%3]    from    %4 to %5"))
+//                                                  .arg(dt)
+//                                                  .arg(ICConfigString::ConfigString(configID))
+//                                                  .arg(configID)
+//                                                  .arg(oldVa)
+//                                                  .arg(newVal));
+//    }
+//    else
+//    {
+//        item = new QTableWidgetItem(QString(tr("%1    %2[%3]    %4"))
+//                                                  .arg(dt)
+//                                                  .arg(ICConfigString::ConfigString(configID))
+//                                                  .arg(configID)
+//                                                  .arg(newVal));
+//    }
+
+//    ui->logTable->insertRow(0);
+//    ui->logTable->setItem(0, 0, item);
 }

@@ -4,6 +4,7 @@ cp Multi-axisManipulatorSystem* /opt/Qt/apps -f
 cp Base.fnc /opt/Qt/apps/records -f
 cp ./WenQuanYi.ttf /opt/Qt/fonts
 cp QtAutorun.sh /usr/bin -f
+rm /opt/Qt/apps/Alarm.log
 #cd 3a8
 #cp -rf records subs sysconfig /mnt/database
 #reboot

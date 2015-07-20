@@ -680,35 +680,50 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.ui" line="60"/>
+        <location filename="categorypage/icalarmframe.ui" line="50"/>
+        <source>Alarm History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="categorypage/icalarmframe.ui" line="94"/>
         <source>Alarm 
 Number</source>
         <translation>Número do Alarme</translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.ui" line="66"/>
+        <location filename="categorypage/icalarmframe.ui" line="100"/>
         <source>Alarm 
 Infomation</source>
         <translation>Número do Alarme</translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.ui" line="72"/>
+        <location filename="categorypage/icalarmframe.ui" line="106"/>
         <source>Alarm 
 DateTime</source>
         <translation>Hora do Alarme</translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.ui" line="78"/>
+        <location filename="categorypage/icalarmframe.ui" line="112"/>
         <source>Alarm 
 ModifyTime</source>
         <translation>Tempo de Resolução</translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.cpp" line="86"/>
-        <location filename="categorypage/icalarmframe.cpp" line="91"/>
-        <location filename="categorypage/icalarmframe.cpp" line="188"/>
-        <location filename="categorypage/icalarmframe.cpp" line="190"/>
-        <location filename="categorypage/icalarmframe.cpp" line="228"/>
+        <location filename="categorypage/icalarmframe.ui" line="122"/>
+        <source>Modify Log</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="categorypage/icalarmframe.ui" line="147"/>
+        <source>Log</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="categorypage/icalarmframe.cpp" line="112"/>
+        <location filename="categorypage/icalarmframe.cpp" line="117"/>
+        <location filename="categorypage/icalarmframe.cpp" line="214"/>
+        <location filename="categorypage/icalarmframe.cpp" line="216"/>
+        <location filename="categorypage/icalarmframe.cpp" line="311"/>
         <source>no-solve</source>
         <translation>Sem Resolução</translation>
     </message>
@@ -3005,7 +3020,7 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="ichostcomparepage.cpp" line="35"/>
-        <location filename="ichostcomparepage.cpp" line="84"/>
+        <location filename="ichostcomparepage.cpp" line="85"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3016,18 +3031,18 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="ichostcomparepage.cpp" line="72"/>
-        <location filename="ichostcomparepage.cpp" line="114"/>
+        <location filename="ichostcomparepage.cpp" line="115"/>
         <source>Critical</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="ichostcomparepage.cpp" line="73"/>
-        <location filename="ichostcomparepage.cpp" line="115"/>
+        <location filename="ichostcomparepage.cpp" line="116"/>
         <source>Operator fail! Please reboot system</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ichostcomparepage.cpp" line="85"/>
+        <location filename="ichostcomparepage.cpp" line="86"/>
         <source>Do you really want to rewrite all the machine configures to host?</source>
         <translation type="unfinished"></translation>
     </message>
