@@ -26,13 +26,15 @@ HEADERS += \
     custom_widgets/ictableview.h \
     custom_widgets/ictablewidget.h \
     custom_widgets/icpasswordmodifydialog.h \
-    custom_widgets/iccombobox.h
+    custom_widgets/iccombobox.h \
+    custom_widgets/icmessagebox.h
 
 SOURCES += \
     custom_widgets/ictableview.cpp \
     custom_widgets/ictablewidget.cpp \
     custom_widgets/icpasswordmodifydialog.cpp \
-    custom_widgets/iccombobox.cpp
+    custom_widgets/iccombobox.cpp \
+    custom_widgets/icmessagebox.cpp
 
 FORMS += \
     custom_widgets/icpasswordmodifydialog.ui

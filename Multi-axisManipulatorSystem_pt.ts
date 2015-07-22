@@ -2101,7 +2101,7 @@ ModifyTime</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="331"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="749"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="755"/>
         <source>No Follow</source>
         <translation>Não Prosseguir</translation>
     </message>
@@ -2117,77 +2117,77 @@ ModifyTime</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="427"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="98"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="227"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="758"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="768"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="102"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="232"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="764"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="774"/>
         <source>Speed Disable</source>
         <translation>Ajuste de Velocidade Desligado</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="54"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="80"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="56"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="84"/>
         <source>Has not teach check Fixture-1!</source>
         <translation>Sem Instrução. Verifique passo Fixação -1!</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="55"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="81"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="57"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="85"/>
         <source>Has not teach check Fixture-2!</source>
         <translation>Sem Instrução. Verifique passo Fixação -2!</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="56"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="82"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="58"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="86"/>
         <source>Has not teach check Fixture-3!</source>
         <translation>Sem Instrução. Verifique passo Fixação -3!</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="57"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="83"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="59"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="87"/>
         <source>Has not teach check Fixture-4!</source>
         <translation>Sem Instrução. Verifique passo Fixação -4!</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="58"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="84"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="60"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="88"/>
         <source>Has not teach check Sucker-1!</source>
         <translation>Sem Instrução. Verifique passo Respirador -1!</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="59"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="85"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="61"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="89"/>
         <source>Has not teach check Sucker-2!</source>
         <translation>Sem Instrução. Verifique passo Respirador -2!</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="176"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="492"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="179"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="498"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="300"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="306"/>
         <source>Single run ready</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="304"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="310"/>
         <source>Single cycle ready</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="493"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="499"/>
         <source>Can not edit standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="743"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="749"/>
         <source>Follow</source>
         <translation>Prosseguir</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="758"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="764"/>
         <source>Speed Enable</source>
         <translation>Ajuste de Velocidade permitir</translation>
     </message>
@@ -3020,7 +3020,7 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="ichostcomparepage.cpp" line="35"/>
-        <location filename="ichostcomparepage.cpp" line="85"/>
+        <location filename="ichostcomparepage.cpp" line="86"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3031,18 +3031,18 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="ichostcomparepage.cpp" line="72"/>
-        <location filename="ichostcomparepage.cpp" line="115"/>
+        <location filename="ichostcomparepage.cpp" line="116"/>
         <source>Critical</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="ichostcomparepage.cpp" line="73"/>
-        <location filename="ichostcomparepage.cpp" line="116"/>
+        <location filename="ichostcomparepage.cpp" line="117"/>
         <source>Operator fail! Please reboot system</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ichostcomparepage.cpp" line="86"/>
+        <location filename="ichostcomparepage.cpp" line="87"/>
         <source>Do you really want to rewrite all the machine configures to host?</source>
         <translation type="unfinished"></translation>
     </message>

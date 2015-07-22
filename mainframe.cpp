@@ -1484,7 +1484,7 @@ void MainFrame::OpenBackLight()
 void MainFrame::CloseBackLight()
 {
 #ifdef Q_WS_QWS
-//    ShowScreenSaver();
+    ShowScreenSaver();
     system("BackLight.sh 0");
 //    SetBackLightOff(true);
 #endif
