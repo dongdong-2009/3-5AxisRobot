@@ -586,7 +586,7 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
                 UpdateUIProgramList_();
                 processor = ICCommandProcessor::Instance();
                 command.SetSlave(processor->SlaveID());
-                command.SetSequence(item->Seq());
+                command.SetSequence(ICMold::CurrentMold()->ToHostSeq(item->Seq()));
                 command.SetDelayTime(item->DVal());
                 command.SetSpeed(item->SVal());
                 command.SetDPos(ret.Pos());
@@ -606,7 +606,7 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
                 UpdateUIProgramList_();
                 processor = ICCommandProcessor::Instance();
                 command.SetSlave(processor->SlaveID());
-                command.SetSequence(currentBackup->Seq());
+                command.SetSequence(ICMold::CurrentMold()->ToHostSeq(currentBackup->Seq()));
                 command.SetDelayTime(currentBackup->DVal());
                 command.SetSpeed(currentBackup->SVal());
                 command.SetDPos(ret.Pos());
@@ -656,7 +656,7 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
                UpdateUIProgramList_();
                processor = ICCommandProcessor::Instance();
                command.SetSlave(processor->SlaveID());
-               command.SetSequence(item->Seq());
+               command.SetSequence(ICMold::CurrentMold()->ToHostSeq(item->Seq()));
                command.SetDelayTime(item->DVal());
                command.SetSpeed(item->SVal());
                command.SetDPos(ret.Pos());
@@ -676,7 +676,7 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
                UpdateUIProgramList_();
                processor = ICCommandProcessor::Instance();
                command.SetSlave(processor->SlaveID());
-               command.SetSequence(currentBackup->Seq());
+               command.SetSequence(ICMold::CurrentMold()->ToHostSeq(currentBackup->Seq()));
                command.SetDelayTime(currentBackup->DVal());
                command.SetSpeed(currentBackup->SVal());
                command.SetDPos(ret.Pos());

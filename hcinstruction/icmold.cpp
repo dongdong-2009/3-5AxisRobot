@@ -608,3 +608,14 @@ void ICMold::Compile()
         toSentContent_.append(toSentItem);
     }
 }
+
+int ICMold::ToHostSeq(int seq) const
+{
+    int countComment = 0;
+    for(int i = 0; i < seq; ++i)
+    {
+        if(moldContent_.at(i).Action() == ACTCOMMENT)
+            ++countComment;
+    }
+    return seq - countComment;
+}
