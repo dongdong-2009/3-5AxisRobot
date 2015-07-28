@@ -619,3 +619,8 @@ int ICMold::ToHostSeq(int seq) const
     }
     return seq - countComment;
 }
+
+int ICMold::ToHostNum(int seq) const
+{
+    return toSentContent_.at(seq).Num();
+}

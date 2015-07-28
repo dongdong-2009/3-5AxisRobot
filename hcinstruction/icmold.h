@@ -463,6 +463,7 @@ public:
     QList<ICMoldItem> ToSentMoldContent() const { return toSentContent_;}
     int DisplayStep(int hostStep) const { return stepMap_.value(hostStep, -1);}
     int ToHostSeq(int seq) const;
+    int ToHostNum(int seq) const;
 
 signals:
     void MoldPramChanged(int, int);
