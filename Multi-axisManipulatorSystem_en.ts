@@ -3498,7 +3498,7 @@ Infomation</source>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="557"/>
         <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="215"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="225"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="227"/>
         <source>Limit Time</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3539,7 +3539,7 @@ Infomation</source>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="188"/>
         <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="148"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="99"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="101"/>
         <source>Delay Time</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3595,18 +3595,18 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="172"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="174"/>
         <source>speed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="214"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="216"/>
         <source>Return Step</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="234"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="250"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="236"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="252"/>
         <source>Times</source>
         <translation type="unfinished"></translation>
     </message>

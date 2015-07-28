@@ -4409,7 +4409,7 @@ Reason</source>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="557"/>
         <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="215"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="225"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="227"/>
         <source>Limit Time</source>
         <translation>限制时间</translation>
     </message>
@@ -4450,7 +4450,7 @@ Reason</source>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="188"/>
         <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="148"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="99"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="101"/>
         <source>Delay Time</source>
         <translation>延迟时间</translation>
     </message>
@@ -4506,18 +4506,18 @@ Reason</source>
         <translation>不良品使能</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="172"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="174"/>
         <source>speed</source>
         <translation>速度</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="214"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="216"/>
         <source>Return Step</source>
         <translation>返回步号</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="234"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="250"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="236"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="252"/>
         <source>Times</source>
         <translation>间隔模数</translation>
     </message>

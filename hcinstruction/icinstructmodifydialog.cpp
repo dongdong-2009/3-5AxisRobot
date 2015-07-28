@@ -73,12 +73,14 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
     ui->precentLabel->hide();
     
     ui->earlyEndCheckBox->hide();
+    ui->earlyEndCheckBox->setChecked(false);
     
     ui->earlyEndTimeEdit->hide();
     
     ui->mmLabel_2->hide();
     ui->label->hide();
     ui->earlySpeedDownCheckBox->hide();
+    ui->earlySpeedDownCheckBox->setChecked(false);
     
     
     

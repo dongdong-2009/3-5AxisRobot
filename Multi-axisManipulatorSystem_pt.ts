@@ -3525,7 +3525,7 @@ ModifyTime</source>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="188"/>
         <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="148"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="99"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="101"/>
         <source>Delay Time</source>
         <translation>Atraso</translation>
     </message>
@@ -3580,7 +3580,7 @@ ModifyTime</source>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="557"/>
         <location filename="hcinstruction/icinstructmodifydialog_5.ui" line="215"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="225"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="227"/>
         <source>Limit Time</source>
         <translation>Limite</translation>
     </message>
@@ -3597,18 +3597,18 @@ ModifyTime</source>
         <translation>Recuar</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="172"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="174"/>
         <source>speed</source>
         <translation>Velocidade</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="214"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="216"/>
         <source>Return Step</source>
         <translation>Retornar Linha</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="234"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="250"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="236"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="252"/>
         <source>Times</source>
         <translation>Intervalo Ciclo</translation>
     </message>
