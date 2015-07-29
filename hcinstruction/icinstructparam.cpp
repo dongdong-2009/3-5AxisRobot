@@ -317,7 +317,24 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
     else
     {
         action = moldItem.Clip();
-        commandStr += clipGroupMap_.value(action) + ": ";
+        if(action == ICMold::ACTEJECTON)
+        {
+            if(moldItem.IFVal() == 0)
+                commandStr += clipGroupMap_.value(action) + ": ";
+
+            else
+                commandStr += tr("Eje BW Permit On") + ": ";
+        }
+        else if(action == ICMold::ACTEJECTOFF)
+        {
+            if(moldItem.IFVal() == 0)
+                commandStr += clipGroupMap_.value(action) + ": ";
+
+            else
+                commandStr += tr("Eje BW Permit Off") + ": ";
+        }
+        else
+            commandStr += clipGroupMap_.value(action) + ": ";
         if(clipStatusList_.contains(action))
         {
             commandStr += QObject::tr("Times:") + QString::number(moldItem.ActualMoldCount()) + " ";

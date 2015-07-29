@@ -1548,45 +1548,56 @@ ModifyTime</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.ui" line="148"/>
+        <source>Ejection BW Permit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcinjectionpage.ui" line="153"/>
         <location filename="hcinstruction/ichcinjectionpage_5.ui" line="154"/>
         <source>En</source>
         <translation>En</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinjectionpage.ui" line="153"/>
+        <location filename="hcinstruction/ichcinjectionpage.ui" line="158"/>
         <location filename="hcinstruction/ichcinjectionpage_5.ui" line="159"/>
         <source>Current/Setting</source>
         <translation>Тек настр</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinjectionpage.ui" line="158"/>
+        <location filename="hcinstruction/ichcinjectionpage.ui" line="163"/>
         <location filename="hcinstruction/ichcinjectionpage_5.ui" line="164"/>
         <source>Delay</source>
         <translation>задержка</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="21"/>
-        <location filename="hcinstruction/ichcinjectionpage.cpp" line="95"/>
+        <location filename="hcinstruction/ichcinjectionpage.cpp" line="103"/>
         <source>Close Mold Permit  </source>
         <translation>Закрыть разре</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="21"/>
-        <location filename="hcinstruction/ichcinjectionpage.cpp" line="95"/>
+        <location filename="hcinstruction/ichcinjectionpage.cpp" line="103"/>
         <source>Ejection Permit  </source>
         <translation>извлечь разре</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="22"/>
-        <location filename="hcinstruction/ichcinjectionpage.cpp" line="96"/>
+        <location filename="hcinstruction/ichcinjectionpage.cpp" line="104"/>
         <source>Core1 Permit  </source>
         <translation>Core-1 разрешение</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="23"/>
-        <location filename="hcinstruction/ichcinjectionpage.cpp" line="97"/>
+        <location filename="hcinstruction/ichcinjectionpage.cpp" line="105"/>
         <source>Core2 Permit  </source>
         <translation>Core-2 разрешение</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcinjectionpage.cpp" line="24"/>
+        <location filename="hcinstruction/ichcinjectionpage.cpp" line="106"/>
+        <source>Ejection BW Permit  </source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3820,37 +3831,47 @@ ModifyTime</source>
         <translation>продукт ясно</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="327"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="326"/>
+        <source>Eje BW Permit On</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="334"/>
+        <source>Eje BW Permit Off</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="344"/>
         <source>Group</source>
         <translation>Группа</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="495"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="512"/>
         <source>All</source>
         <translation>все</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="496"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="513"/>
         <source>Good</source>
         <translation>хорошо</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="497"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="514"/>
         <source>Stacked-1</source>
         <translation>располо-1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="498"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="515"/>
         <source>Stacked-2</source>
         <translation>располо-2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="499"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="516"/>
         <source>Stacked-3</source>
         <translation>располо-3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="500"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="517"/>
         <source>Stacked-4</source>
         <translation>располо-4</translation>
     </message>
@@ -7490,7 +7511,7 @@ Admin</source>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="93"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="236"/>
-        <location filename="hcinstruction/icinstructparam.cpp" line="382"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="399"/>
         <source>Delay time:</source>
         <translation>задержка:</translation>
     </message>
@@ -7506,333 +7527,333 @@ Admin</source>
         <translation>Ограничить время:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="323"/>
-        <location filename="hcinstruction/icinstructparam.cpp" line="344"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="340"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="361"/>
         <source>Times:</source>
         <translation>петля</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="327"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="344"/>
         <source>Selected:</source>
         <translation>выберите:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="338"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="355"/>
         <source>Off</source>
         <translation>от</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="342"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="359"/>
         <source>On</source>
         <translation>на</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="378"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="395"/>
         <source>Action time:</source>
         <translation>Текущие настройки:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="397"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="414"/>
         <source>C</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="398"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="415"/>
         <source>X1</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="399"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="416"/>
         <source>Y1</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="400"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="417"/>
         <source>Z</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="401"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="418"/>
         <source>X2</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="402"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="419"/>
         <source>Y2</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="403"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="420"/>
         <source>A</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="404"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="421"/>
         <source>B</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="405"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="422"/>
         <source>Main arm up</source>
         <translation>MA.UP</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="406"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="423"/>
         <source>Main arm down</source>
         <translation>MA.DW</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="407"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="424"/>
         <source>Main arm forward</source>
         <translation>MA.FW</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="408"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="425"/>
         <source>Main arm backward</source>
         <translation>MA.BW</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="409"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="426"/>
         <source>Horizontal posture 1</source>
         <translation>rоризонт-1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="410"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="427"/>
         <source>Vertical posture 1</source>
         <translation>Bертикальный-1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="411"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="428"/>
         <source>Horizontal posture 2</source>
         <translation>rоризонт-2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="412"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="429"/>
         <source>Vertical posture 2</source>
         <translation>Bертикальный-2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="413"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="430"/>
         <source>Vice arm up</source>
         <translation>SA.UP</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="414"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="431"/>
         <source>Vice arm down</source>
         <translation>SA.DW</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="415"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="432"/>
         <source>Vice arm forward</source>
         <translation>SA.FW</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="416"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="433"/>
         <source>Vice arm backward</source>
         <translation>SA.BW</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="417"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="434"/>
         <source>Traverse out</source>
         <translation>Z+</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="418"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="435"/>
         <source>Traverse in</source>
         <translation>Z-</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="421"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="438"/>
         <source>Check</source>
         <translation>проверять</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="422"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="439"/>
         <source>Mold end</source>
         <translation>конец программы</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="423"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="440"/>
         <source>Parallel</source>
         <translation>параллельно</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="424"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="441"/>
         <source>Wait</source>
         <translation>ждать</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="425"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="442"/>
         <source>Cut</source>
         <translation>проверять</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="426"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="443"/>
         <source>Other</source>
         <translation>другой</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="428"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="445"/>
         <source>Clip1 ON</source>
         <translation>креплением-1 на</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="429"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="446"/>
         <source>Clip2 ON</source>
         <translation>креплением-2 на</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="430"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="447"/>
         <source>Clip3 ON</source>
         <translation>креплением-3 на</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="431"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="448"/>
         <source>Clip4 ON</source>
         <translation>креплением-4 на</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="432"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="449"/>
         <source>Sucker1 ON</source>
         <translation>присоска-1 на</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="433"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="450"/>
         <source>Sucker2 ON</source>
         <translation>присоска-2 на</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="434"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="451"/>
         <source>Injection ON</source>
         <translation>впрыск на</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="435"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="452"/>
         <source>Conveyor ON</source>
         <translation>конвейер на</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="436"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="453"/>
         <source>Lock Mold ON</source>
         <translation>CM. на</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="438"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="455"/>
         <source>Eject ON</source>
         <translation>EJE. на</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="439"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="456"/>
         <source>Layout ON</source>
         <translation>расположение на</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="441"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="458"/>
         <source>Core1 Permit</source>
         <translation>Core-1 разрешение</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="442"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="459"/>
         <source>Core2 Permit</source>
         <translation>Core-2 разрешение</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="446"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="463"/>
         <source>Clip1 OFF</source>
         <translation>креплением-1 от</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="447"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="464"/>
         <source>Clip2 OFF</source>
         <translation>креплением-2 от</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="448"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="465"/>
         <source>Clip3 OFF</source>
         <translation>креплением-3 от</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="449"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="466"/>
         <source>Clip4 OFF</source>
         <translation>креплением-4 от</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="450"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="467"/>
         <source>Sucker1 OFF</source>
         <translation>присоска-1 от</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="451"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="468"/>
         <source>Sucker2 OFF</source>
         <translation>присоска-2 от</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="452"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="469"/>
         <source>Injection OFF</source>
         <translation>впрыск от</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="453"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="470"/>
         <source>Conveyor OFF</source>
         <translation>конвейер от</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="454"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="471"/>
         <source>Lock Mold OFF</source>
         <translation>CM.от</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="456"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="473"/>
         <source>Eject OFF</source>
         <translation>EJE.от</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="457"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="474"/>
         <source>Layout OFF</source>
         <translation>расположение от</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="459"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="476"/>
         <source>Core1 OFF</source>
         <translation>Ядро-1 FW конец от</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="460"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="477"/>
         <source>Core2 OFF</source>
         <translation>Ядро-2 FW конец от</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="461"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="478"/>
         <source>Reserve 1</source>
         <translation>резерв-1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="463"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="480"/>
         <source>Reserve 2</source>
         <translation>резерв-2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="464"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="481"/>
         <source>Reserve 3</source>
         <translation>резерв-3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="465"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="482"/>
         <source>Reserve 4</source>
         <translation>резерв-4</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="466"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="483"/>
         <source>Reserve 5</source>
         <translation>резерв-5</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="467"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="484"/>
         <source>Reserve 6</source>
         <translation>резерв-6</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="471"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="488"/>
         <source>Clip End</source>
         <translation>креплением-1 от</translation>
     </message>
