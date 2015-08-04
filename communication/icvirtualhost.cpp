@@ -95,6 +95,7 @@ ICVirtualHost::ICVirtualHost(QObject *parent) :
         QMessageBox::critical(NULL, tr("Error"), "Init host fail!");
         return;
     }
+    isInitSuccess_ = false;
     timer_ = new QTimer();
     connect(currentMold_.data(),
             SIGNAL(MoldPramChanged(int,int)),
@@ -164,6 +165,7 @@ void ICVirtualHost::RefreshStatus()
     static ICCommandProcessor* commandProcess = ICCommandProcessor::Instance();
     static ICKeyboardHandler* keyboardHandler = ICKeyboardHandler::Instance();
     static ICKeyboard* keyboard = ICKeyboard::Instace();
+//    isInitSuccess_ = true;
     //    emit StepChanged(rand() % 10);
     if(flag_)
     {
@@ -390,8 +392,9 @@ void ICVirtualHost::RefreshStatus()
 
 void ICVirtualHost::SaveSystemConfig()
 {
-    QFile::copy("./sysconfig/system.txt", "./sysconfig/system.txt~");
-    QFile file("./sysconfig/system.txt");
+    if(!isInitSuccess_) return;
+//    QFile::copy("./sysconfig/system.txt", "./sysconfig/#system.txt#");
+    QFile file("./sysconfig/#system.txt#");
     if(!file.open(QFile::WriteOnly | QFile::Text))
     {
         qCritical("open system file fail when save!");
@@ -413,7 +416,8 @@ void ICVirtualHost::SaveSystemConfig()
     file.write(toWrite);
     file.close();
     //    system("rm ./sysconfig/system.txt~");
-    QFile::remove("./sysconfig/system.txt~");
+//    QFile::remove("./sysconfig/system.txt~");
+    system("mv ./sysconfig/#system.txt# ./sysconfig/system.txt");
 }
 
 void ICVirtualHost::SaveAxisParam(int axis)
@@ -1032,8 +1036,9 @@ void ICVirtualHost::GetAxisParam_(const QString &file, int start, int end, QVect
 
 void ICVirtualHost::SaveAxisParamHelper_(const QString &fileName, int start, int end)
 {
-    QFile::copy("./sysconfig/" + fileName, "./sysconfig/" + fileName + "~");
-    QFile file("./sysconfig/" + fileName);
+    if(!isInitSuccess_) return;
+//    QFile::copy("./sysconfig/" + fileName, "./sysconfig/" + fileName + "~");
+    QFile file("./sysconfig/#" + fileName);
     if(file.open(QFile::WriteOnly | QFile::Text))
     {
         QByteArray toWrite;
@@ -1044,7 +1049,8 @@ void ICVirtualHost::SaveAxisParamHelper_(const QString &fileName, int start, int
         file.write(toWrite);
         file.close();
         //        system(QString("rm ./sysconfig/%1~").arg(fileName).toAscii());
-        QFile::remove("./sysconfig/" + fileName + "~");
+//        QFile::remove("./sysconfig/" + fileName + "~");
+        system(QString("mv ./sysconfig/#%1 ./sysconfig/%1").arg(fileName).toLatin1());
     }
 }
 

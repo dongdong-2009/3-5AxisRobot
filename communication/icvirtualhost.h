@@ -643,6 +643,8 @@ public:
 
     int GetActualPos(ICAxis axis) const;
     int GetActualPos(ICAxis axis, uint axisLastPos) const;
+
+    void SetInitFinished() { isInitSuccess_ = true;}
 public Q_SLOTS:
     void SetMoldParam(int param, int value);
 Q_SIGNALS:

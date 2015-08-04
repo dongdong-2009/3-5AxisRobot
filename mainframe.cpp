@@ -257,6 +257,7 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     connect(simulateKnob_,
             SIGNAL(autoButtonClicked()),
             SLOT(ShowAutoPage()));
+    ICVirtualHost::GlobalVirtualHost()->SetInitFinished();
 #ifdef HC_SK_5
     this->setFixedSize(640, 480);
 #else
