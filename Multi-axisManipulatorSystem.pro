@@ -176,6 +176,7 @@ others.files += $${configsPathBase}/3-5AxisRobotDatabase
 scripts.path = /usr/bin
 scripts.files += $${configsPathBase}/*.sh
 scripts.files += $${configsPathBase}/LedTest_335x
+scripts.files += $${configsPathBase}/BootChecker
 scripts.files += $${configsPathBase}/$${SK_SIZE}RunApp/*
 keymap.path = /home/root
 keymap.files =$${configsPathBase}/$${SK_SIZE}-inch-qmap/*
