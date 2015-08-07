@@ -245,6 +245,8 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     QTimer::singleShot(1000, this, SLOT(ClearPosColor()));
 
     //    QTimer::singleShot(100, this, SLOT(InitHeavyPage()));
+    ICVirtualHost::GlobalVirtualHost()->SetInitFinished();
+
 #if defined(Q_WS_WIN32) || defined(Q_WS_X11)
     simulateKnob_ = new SimulateKnob();
     simulateKnob_->show();

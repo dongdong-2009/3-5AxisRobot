@@ -6911,76 +6911,76 @@ Would you want to restart now?</source>
         <translation>расстояние</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="475"/>
+        <location filename="mainframe.cpp" line="477"/>
         <source>Function</source>
         <translation>функция</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="476"/>
+        <location filename="mainframe.cpp" line="478"/>
         <source>Monitor</source>
         <translation>монитор</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="477"/>
+        <location filename="mainframe.cpp" line="479"/>
         <source>Alarm</source>
         <translation>тревога</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="478"/>
+        <location filename="mainframe.cpp" line="480"/>
         <source>Record</source>
         <translation>программы</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="479"/>
+        <location filename="mainframe.cpp" line="481"/>
         <source>Return</source>
         <translation>возвращение</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="666"/>
+        <location filename="mainframe.cpp" line="668"/>
         <source>Hint</source>
         <translation>намек</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="864"/>
+        <location filename="mainframe.cpp" line="866"/>
         <source>Instruct</source>
         <translation>учить</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="876"/>
-        <location filename="mainframe.cpp" line="880"/>
-        <location filename="mainframe.cpp" line="1264"/>
-        <location filename="mainframe.cpp" line="1305"/>
-        <location filename="mainframe.cpp" line="1312"/>
+        <location filename="mainframe.cpp" line="878"/>
+        <location filename="mainframe.cpp" line="882"/>
+        <location filename="mainframe.cpp" line="1266"/>
+        <location filename="mainframe.cpp" line="1307"/>
+        <location filename="mainframe.cpp" line="1314"/>
         <source>tips</source>
         <translation>чаевые</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="876"/>
+        <location filename="mainframe.cpp" line="878"/>
         <source>Spear Time %1 Hour</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="880"/>
+        <location filename="mainframe.cpp" line="882"/>
         <source>No Register</source>
         <translation>не были зарегистрированы!</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="912"/>
+        <location filename="mainframe.cpp" line="914"/>
         <source>Records</source>
         <translation>программы</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1264"/>
+        <location filename="mainframe.cpp" line="1266"/>
         <source>No Register. System Restart Now...</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1305"/>
+        <location filename="mainframe.cpp" line="1307"/>
         <source>Spare Time %1 Hour</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1312"/>
+        <location filename="mainframe.cpp" line="1314"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation></translation>
     </message>
