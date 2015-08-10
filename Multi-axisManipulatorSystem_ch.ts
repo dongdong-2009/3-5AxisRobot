@@ -3376,6 +3376,28 @@ Reason</source>
         <source>Lattice</source>
         <translation>个数</translation>
     </message>
+    <message>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="358"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="366"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="373"/>
+        <source>Tips</source>
+        <translation>提示</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="358"/>
+        <source>Must be a positive value!</source>
+        <translation>必须为一个正数!</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="366"/>
+        <source>Can be a 1 or 2 decimal value!</source>
+        <translation>只能是1位或者2位小数!</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="373"/>
+        <source>Value is too large!</source>
+        <translation>值太大,必须小于6500!</translation>
+    </message>
 </context>
 <context>
     <name>ICHCSystemSettingsFrame</name>

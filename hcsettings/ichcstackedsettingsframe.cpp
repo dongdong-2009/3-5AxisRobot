@@ -7,6 +7,7 @@
 #include <QTimer>
 
 #include <QDebug>
+#include <QMessageBox>
 
 ICHCStackedSettingsFrame::ICHCStackedSettingsFrame(QWidget *parent) :
     QFrame(parent),
@@ -288,6 +289,10 @@ void ICHCStackedSettingsFrame::on_zUnit_toggled(bool checked)
 void ICHCStackedSettingsFrame::on_xRPStepLineEdit_textChanged(const QString &arg1)
 {
     double v = arg1.toDouble();
+    if(!StackSpacingCheck(arg1))
+    {
+        v = 0;
+    }
     if(v > 600)
     {
         ui->xUnit->setChecked(true);
@@ -306,6 +311,10 @@ void ICHCStackedSettingsFrame::on_xRPStepLineEdit_textChanged(const QString &arg
 void ICHCStackedSettingsFrame::on_yRPStepLineEdit_textChanged(const QString &arg1)
 {
     double v = arg1.toDouble();
+    if(!StackSpacingCheck(arg1))
+    {
+        v = 0;
+    }
     if(v > 600)
     {
         ui->yUnit->setChecked(true);
@@ -323,6 +332,10 @@ void ICHCStackedSettingsFrame::on_yRPStepLineEdit_textChanged(const QString &arg
 void ICHCStackedSettingsFrame::on_zRPStepLineEdit_textChanged(const QString &arg1)
 {
     double v = arg1.toDouble();
+    if(!StackSpacingCheck(arg1))
+    {
+        v = 0;
+    }
     if(v > 600)
     {
         ui->zUnit->setChecked(true);
@@ -335,4 +348,31 @@ void ICHCStackedSettingsFrame::on_zRPStepLineEdit_textChanged(const QString &arg
         ui->zRPStepLineEdit->setText(QString::number(v, 'f', 2));
         ui->zRPStepLineEdit->SetDecimalPlaces(2);
     }
+}
+
+bool ICHCStackedSettingsFrame::StackSpacingCheck(const QString &v)
+{
+    if(v.isEmpty()) return true;
+    if(v.contains("-"))
+    {
+        QMessageBox::information(this, tr("Tips"), tr("Must be a positive value!"));
+        return false;
+    }
+    QStringList vs = v.split(".");
+    if(vs.size() == 2)
+    {
+        if(vs.at(1).size() > 2)
+        {
+            QMessageBox::information(this, tr("Tips"), tr("Can be a 1 or 2 decimal value!"));
+            return false;
+        }
+    }
+
+    if(vs.at(0).toInt() > 6500)
+    {
+        QMessageBox::information(this, tr("Tips"), tr("Value is too large!"));
+        return false;
+    }
+    return true;
+
 }

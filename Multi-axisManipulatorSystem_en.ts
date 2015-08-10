@@ -2541,6 +2541,28 @@ Infomation</source>
         <source>Lattice</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="358"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="366"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="373"/>
+        <source>Tips</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="358"/>
+        <source>Must be a positive value!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="366"/>
+        <source>Can be a 1 or 2 decimal value!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="373"/>
+        <source>Value is too large!</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ICHCSystemSettingsFrame</name>

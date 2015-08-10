@@ -43,6 +43,7 @@ private slots:
 
 private:
     void InitInterface();
+    bool StackSpacingCheck(const QString& v);
     QList<int> GetCurrentStatus_() const;
     void SetStackStatus_(const QList<int> & status);
     void RefreshStackParams_(int group);
