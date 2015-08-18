@@ -97,6 +97,8 @@ private:
     void ShowWidgets_(QList<QWidget*>& widgets);
     void HideWidgets_(QList<QWidget*> & widgets);
 
+    void MoldsCheck();
+
 private:
 
     Ui::MainFrame *ui;

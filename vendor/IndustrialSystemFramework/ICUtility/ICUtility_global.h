@@ -1,0 +1,16 @@
+#ifndef ICUTILITY_GLOBAL_H
+#define ICUTILITY_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(ICUTILITY_LIBRARY)
+#  define ICUTILITYSHARED_EXPORT Q_DECL_EXPORT
+#else
+#ifndef Q_WS_WIN32
+#  define ICUTILITYSHARED_EXPORT Q_DECL_IMPORT
+#else
+#  define ICUTILITYSHARED_EXPORT
+#endif
+#endif
+
+#endif // ICUTILITY_GLOBAL_H

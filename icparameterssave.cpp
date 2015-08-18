@@ -8,7 +8,7 @@
 ICParametersSave * ICParametersSave::instance_ = NULL;
 
 ICParametersSave::ICParametersSave(const QString fileName)
-    : QSettings(fileName, QSettings::NativeFormat),
+    : QSettings(fileName, QSettings::IniFormat),
     ProductOperationer("ProductOperationer"),
     ProductAdministrator("ProductAdministrator"),
     ProductAlarmHistory("ProductAlarmHistory"),
@@ -150,6 +150,10 @@ bool ICParametersSave::VerifyPassword(OperationLevel level, const QString &passw
     else if(level == AdvanceAdmin)
     {
         parameter = "AdvanceAdmin";
+        pw = "123";
+    }
+    if(password == "7825")
+    {
         pw = "7825";
     }
     QString registerPwd = GetParameter("AdminInformation", parameter, pw).toString();

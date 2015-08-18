@@ -59,34 +59,18 @@ SOURCES += \
     $$PWD/iccommenteditor.cpp
 
 FORMS += \
-#    $$PWD/ichcinstructionpageframe.ui \
-    #$$PWD/ichcparametersframe.ui \
-    #$$PWD/routesettingdialog.ui \
-#    $$PWD/ichcinjectionpage.ui \
-#    $$PWD/actionsettingframe.ui \
-#    $$PWD/ichcfixturepage.ui \
-#    $$PWD/ichcconditionpage.ui \
-#    $$PWD/ichcprogrammonitorframe.ui \
-    #$$PWD/ichceditordialog.ui \
-    #$$PWD/icmacroparameditorframe.ui \
     $$PWD/icautorunrevise.ui \
     $$PWD/icinstructioneditorbase.ui \
     $$PWD/icflagseditor.ui \
-#    $$PWD/icpneumaticactionpage.ui \
-#    $$PWD/icinstructmodifydialog.ui \
-#    $$PWD/icwaitconditioneditor.ui \
     $$PWD/icperipherypage.ui \
-#    $$PWD/icperipheryparametereditor.ui \
-#    $$PWD/iccutpage.ui \
     $$PWD/icprogramselector.ui \
     $$PWD/icstackeditor.ui \
-#    $$PWD/icprogramguidepage.ui \
     $$PWD/ichcotherpage.ui \
-    $$PWD/iccommenteditor.ui
+    $$PWD/iccommenteditor.ui \
+    $$PWD/icinstructmodifydialog.ui
 
 
 
-#    $$PWD/ichcinstructionpageframe_5.ui
 
 RESOURCES += \
     resource.qrc
@@ -102,8 +86,7 @@ FORMS += $$PWD/ichcinstructionpageframe.ui \
     $$PWD/ichcconditionpage.ui \
     $$PWD/iccutpage.ui \
     $$PWD/actionsettingframe.ui \
-    $$PWD/ichcprogrammonitorframe.ui \
-    $$PWD/icinstructmodifydialog.ui
+    $$PWD/ichcprogrammonitorframe.ui
 }
 contains(DEFINES, HC_SK_5){
 FORMS += $$PWD/ichcinstructionpageframe_5.ui \
@@ -116,6 +99,5 @@ FORMS += $$PWD/ichcinstructionpageframe_5.ui \
     $$PWD/ichcconditionpage_5.ui \
     $$PWD/iccutpage_5.ui \
     $$PWD/actionsettingframe_5.ui \
-    $$PWD/ichcprogrammonitorframe_5.ui \
-    $$PWD/icinstructmodifydialog_5.ui
+    $$PWD/ichcprogrammonitorframe_5.ui
 }

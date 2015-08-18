@@ -353,6 +353,16 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
 //    ShowOrigin();
 #endif
            SetScreenSaverInterval(ICParametersSave::Instance()->BackLightTime() * 60000);
+           MoldsCheck();
+#ifndef Q_WS_WIN32
+           int keyFD_ = open("/dev/input/event1", O_RDWR);
+           struct input_event inputEvent;
+           inputEvent.type = EV_SYN; //__set_bit
+           inputEvent.code = SYN_CONFIG;  //__set_bit
+           inputEvent.value = 1;
+           write(keyFD_,&inputEvent,sizeof(inputEvent));
+           ::close(keyFD_);
+#endif
 
            qDebug("Mainframe Init finished");
 }
@@ -500,18 +510,18 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
             currentKeySeq.clear();
         }
 #ifndef Q_WS_WIN32
-        static bool isExeced = false;
-        if(!isExeced)
-        {
-            int keyFD_ = open("/dev/input/event1", O_RDWR);
-            struct input_event inputEvent;
-            inputEvent.type = EV_SYN; //__set_bit
-            inputEvent.code = SYN_CONFIG;  //__set_bit
-            inputEvent.value = 1;
-            write(keyFD_,&inputEvent,sizeof(inputEvent));
-            isExeced = true;
-            ::close(keyFD_);
-        }
+//        static bool isExeced = false;
+//        if(!isExeced)
+//        {
+//            int keyFD_ = open("/dev/input/event1", O_RDWR);
+//            struct input_event inputEvent;
+//            inputEvent.type = EV_SYN; //__set_bit
+//            inputEvent.code = SYN_CONFIG;  //__set_bit
+//            inputEvent.value = 1;
+//            write(keyFD_,&inputEvent,sizeof(inputEvent));
+//            isExeced = true;
+//            ::close(keyFD_);
+//        }
 #endif
 //        ICKeyboardHandler::Instance()->Keypressed(key);
     }
@@ -1546,4 +1556,41 @@ void MainFrame::InitSpareTime()
 int MainFrame::CurrentLevel() const
 {
     return ICProgramHeadFrame::Instance()->CurrentLevel();
+}
+
+void MainFrame::MoldsCheck()
+{
+    QDir dir("./records");
+    QStringList acts = dir.entryList(QStringList()<<"*.act");
+    QString name;
+    QStringList tmp;
+    for(int i = 0; i < acts.size(); ++i)
+    {
+        name = acts.at(i);
+        name.chop(3);
+        tmp = dir.entryList(QStringList()<<QString("%1fnc").arg(name));
+        if(tmp.isEmpty())
+        {
+            QMessageBox::warning(this,
+                                 tr("warning"),
+                                 QString(tr("%1 fnc is broken. Please remove this mold!")).arg(name));
+            continue;
+        }
+        tmp = dir.entryList(QStringList()<<QString("%1sub*").arg(name));
+        if(tmp.size() != 8)
+        {
+            for(int j = 0; j != 8; ++j)
+            {
+                system(QString("cp %1/sub%4.prg %2/%3sub%4")
+                       .arg("./subs")
+                       .arg("./records")
+                       .arg(name)
+                       .arg(j).toUtf8());
+            }
+            QMessageBox::warning(this,
+                                 tr("warning"),
+                                 QString(tr("%1 mold fixed. Please check the sub program!")).arg(name));
+            continue;
+        }
+    }
 }

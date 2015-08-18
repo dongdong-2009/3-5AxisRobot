@@ -255,12 +255,6 @@ QRadioButton::indicator:unchecked:disabled
      <property name="text">
       <string>Product Clear</string>
      </property>
-     <property name="autoRepeat">
-      <bool>true</bool>
-     </property>
-     <property name="autoRepeatDelay">
-      <number>50</number>
-     </property>
     </widget>
    </item>
    <item row="2" column="3">

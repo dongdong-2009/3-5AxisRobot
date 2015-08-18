@@ -4,6 +4,8 @@
 #include "ictwoselectioncomboboxwrapper.h"
 #include "icmold.h"
 #include "icvirtualhost.h"
+#include "icconfigstring.h"
+#include "icalarmframe.h"
 //#include "icactioncommand.h"
 
 ICHCDetectionFrame::ICHCDetectionFrame(QWidget *parent) :
@@ -53,6 +55,31 @@ ICHCDetectionFrame::ICHCDetectionFrame(QWidget *parent) :
             SIGNAL(MoldNumberParamChanged()),
             this,
             SLOT(OnMoldNumberParamChanged()));
+
+    editorToLogID_.insert(ui->detectFixture1ComboBox, ICConfigString::kCS_SIG_Fixture1);
+    editorToLogID_.insert(ui->detectFixture2ComboBox, ICConfigString::kCS_SIG_Fixture2);
+    editorToLogID_.insert(ui->detectFixture3ComboBox, ICConfigString::kCS_SIG_Fixture3);
+    editorToLogID_.insert(ui->detectFixture4ComboBox, ICConfigString::kCS_SIG_Fixture4);
+    editorToLogID_.insert(ui->detectIMMComboBox, ICConfigString::kCS_SIG_IMM_Stop);
+    editorToLogID_.insert(ui->detectMidMoldComboBox, ICConfigString::kCS_SIG_Mid_Mold);
+    editorToLogID_.insert(ui->detectOriginBox, ICConfigString::kCS_SIG_Origin);
+    editorToLogID_.insert(ui->detectPositionBox, ICConfigString::kCS_SIG_Z_Move_Pos);
+    editorToLogID_.insert(ui->detectPressureComboBox, ICConfigString::kCS_SIG_Press);
+    editorToLogID_.insert(ui->detectSecurityComboBox, ICConfigString::kCS_SIG_SEDoor);
+    editorToLogID_.insert(ui->detectSucker1ComboBox, ICConfigString::kCS_SIG_CM_Limit);
+    editorToLogID_.insert(ui->detectSucker2ComboBox, ICConfigString::kCS_SIG_Auto);
+    editorToLogID_.insert(ui->ejectionLinkLockBox, ICConfigString::kCS_SIG_EJE_Linked);
+    editorToLogID_.insert(ui->originPositionBox, ICConfigString::kCS_SIG_Y_Origin_Pos);
+    editorToLogID_.insert(ui->standbyPositionBox, ICConfigString::kCS_SIG_Hor_Standby);
+
+    QMap<QWidget*, int>::iterator p = editorToLogID_.begin();
+    while(p != editorToLogID_.end())
+    {
+        connect(p.key(),
+                SIGNAL(currentIndexChanged ( int)),
+                SLOT(OnConfigChanged(int)));
+        ++p;
+    }
 
 //    ui->downPositionBox->hide();
 //    ui->label_16->hide();
@@ -211,4 +238,12 @@ void ICHCDetectionFrame::RetranslateUi_()
     ui->standbyPositionBox->setItemText(1, tr("Limit Lock Mold"));//限制锁模
     ui->standbyPositionBox->setItemText(0, tr("No Limit Lock Mold"));//不限制锁模
 
+}
+
+void ICHCDetectionFrame::OnConfigChanged(int index)
+{
+    ICComboBox* edit = qobject_cast<ICComboBox*>(sender());
+    ICAlarmFrame::Instance()->OnActionTriggered(editorToLogID_.value(edit),
+                                                edit->currentText(),
+                                                edit->itemText(edit->LastValue()));
 }

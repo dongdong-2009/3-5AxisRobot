@@ -30,7 +30,8 @@ HEADERS += \
     $$PWD/iccombobox.h \
     $$PWD/icpasswordmodifydialog.h \
     $$PWD/icplaintextedit.h \
-    $$PWD/icinputmethodkeyboard.h
+    $$PWD/icinputmethodkeyboard.h \
+    custom_widgets/icbuttongroup.h
 
 SOURCES += \
     $$PWD/iclistwidget.cpp \
@@ -40,7 +41,8 @@ SOURCES += \
     $$PWD/iccombobox.cpp \
     $$PWD/icpasswordmodifydialog.cpp \
     $$PWD/icplaintextedit.cpp \
-    $$PWD/icinputmethodkeyboard.cpp
+    $$PWD/icinputmethodkeyboard.cpp \
+    custom_widgets/icbuttongroup.cpp
 
 
 contains(DEFINES, HC_SK_8){

@@ -19,9 +19,11 @@ public:
     ~ICInstructModifyDialog();
 
     bool ShowModifyItem(ICMoldItem* item);
+    void ResetFlagSel(const QStringList& selList);
 
 protected:
     void changeEvent(QEvent *e);
+    void keyPressEvent(QKeyEvent* e);
 
 private slots:
 

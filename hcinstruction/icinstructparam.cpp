@@ -36,7 +36,8 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
 //    commandStr += QString::number(moldItem.Seq()) + " ";
     if(moldItem.Action() == ICMold::ACTCOMMENT)
     {
-        commandStr += QString(tr("#Comment:%1").arg(moldItem.Comment()));
+        commandStr += QString::number(moldItem.Num()) + "    " + "*" + "    ";
+        commandStr += QString(tr("#Flag[%2]:Comment:%1").arg(moldItem.Comment()).arg(moldItem.Flag()));
         return commandStr;
     }
     if(moldItem.Num() == 0)
@@ -224,7 +225,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
                 commandStr += tr("Sub-") + QString::number(moldItem.SVal() + 1) + " ";
             }
 
-            commandStr += tr("Return Line") + QString::number((int)moldItem.DVal());
+            commandStr += QString(tr("Go to Flag[%1]").arg(moldItem.Flag()));
             commandStr += QObject::tr("Limit time:") + ICParameterConversion::TransThisIntToThisText(moldItem.Pos(), 2) + "      ";
             return commandStr;
         }

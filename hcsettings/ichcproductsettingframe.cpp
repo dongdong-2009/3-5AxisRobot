@@ -6,13 +6,15 @@
 #include "icvirtualhost.h"
 #include "icvirtualkey.h"
 #include "icparameterssave.h"
+#include "icconfigstring.h"
+
 
 ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
     QFrame(parent),
     ui(new Ui::ICHCProductSettingFrame)
 {
     ui->setupUi(this);
-    buttongroup_ = new QButtonGroup ;
+    buttongroup_ = ui->buttonGroup ;
     InitCheckBox();
     ui->productLineEdit->setValidator(new QIntValidator(0, 65535, ui->productLineEdit));
     ui->alarmTimesEdit->setValidator(new QIntValidator(0, 65535, ui->alarmTimesEdit));
@@ -65,10 +67,14 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
 //        currentPos = 1;
 //    }
 //    buttongroup_->setId(ICVirtualHost::GlobalVirtualHost()->FixtureDefine());
+    ui->reversedCheckBox->blockSignals(true);
+    ui->positiveCheckBox->blockSignals(true);
     if(ICVirtualHost::GlobalVirtualHost()->FixtureDefine() == 0)
         ui->reversedCheckBox->click();
     if(ICVirtualHost::GlobalVirtualHost()->FixtureDefine() == 1)
         ui->positiveCheckBox->click();
+    ui->reversedCheckBox->blockSignals(false);
+    ui->positiveCheckBox->blockSignals(false);
 //    int v = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt();
 //    v &= 0xFFFF;
 //    v >>= 15;
@@ -80,10 +86,27 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
             SIGNAL(MoldNumberParamChanged()),
             this,
             SLOT(OnMoldNumberParamChanged()));
+
+    connect(ui->productClearButton,SIGNAL(clicked()), SLOT(OnProductClearButtonClicked()), Qt::UniqueConnection);
     ui->countUnitBox->setCurrentIndex(ICMold::CurrentMold()->MoldParam(ICMold::CountUnit));
     ui->productSave->blockSignals(true);
     ui->productSave->setChecked(ICParametersSave::Instance()->IsProductSave());
     ui->productSave->blockSignals(false);
+
+    editorToConfigIDs_.insert(ui->productLineEdit, ICConfigString::kCS_PRD_Number);
+    editorToConfigIDs_.insert(ui->waitTimeEdit, ICConfigString::kCS_PRD_Wait_OM_Limit);
+    editorToConfigIDs_.insert(ui->alarmTimesEdit, ICConfigString::kCS_PRD_Alarm_Time);
+    editorToConfigIDs_.insert(ui->recycleTimeEdit, ICConfigString::kCS_PRD_Cycle_Time);
+    editorToConfigIDs_.insert(ui->buttonGroup, ICConfigString::kCS_PRD_Fixture_Define);
+    editorToConfigIDs_.insert(ui->countUnitBox, ICConfigString::kCS_PRD_Transport_Count_Way);
+    editorToConfigIDs_.insert(ui->productSave, ICConfigString::kCS_PRD_Save_Count);
+    editorToConfigIDs_.insert(ui->getFailWay, ICConfigString::kCS_PRD_Alarm_Occasion_When_Get_Fail);
+    editorToConfigIDs_.insert(ui->tryProductEdit, ICConfigString::kCS_PRD_Try_number);
+    editorToConfigIDs_.insert(ui->samplingEdit, ICConfigString::kCS_PRD_Sample_cycle);
+    ICLogInit;
+
+    this->hide();
+
 }
 
 ICHCProductSettingFrame::~ICHCProductSettingFrame()
@@ -116,7 +139,7 @@ void ICHCProductSettingFrame::hideEvent(QHideEvent *e)
         }
         sum = (-sum & 0XFFFF);
         dataBuffer[6] = sum;
-        qDebug()<<sum;
+//        qDebug()<<sum;
         command.SetSlave(process->SlaveID());
         command.SetDataBuffer(dataBuffer);
         command.SetAxis(8);
@@ -194,10 +217,14 @@ void ICHCProductSettingFrame::OnMoldNumberParamChanged()
     ui->countUnitBox->setCurrentIndex(ICMold::CurrentMold()->MoldParam(ICMold::CountUnit));
 }
 
-void ICHCProductSettingFrame::on_productClearButton_clicked()
+void ICHCProductSettingFrame::OnProductClearButtonClicked()
 {
     ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_PRODUCT_CLEAR);
     ICVirtualHost::GlobalVirtualHost()->SetFinishProductCount(0);
+    ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_PRD_Product_Clear,
+                                                tr("Product clear"),
+                                                "");
+
 }
 
 void ICHCProductSettingFrame::FixtureBoxChange()
@@ -250,3 +277,5 @@ void ICHCProductSettingFrame::on_productSave_toggled(bool checked)
 {
     ICParametersSave::Instance()->SetProductSave(checked);
 }
+
+ICLogFunctions(ICHCProductSettingFrame)

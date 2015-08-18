@@ -9,7 +9,7 @@
 QLabel* labelNull;
 const QString X010 = "X010";
 const QString X011 = "X011";
-const QString X017 = "X017";
+const QString X016 = "X016";
 const QString X020 = "X020";
 const QString X022 = "X022";
 const QString X035 = "X035";
@@ -58,7 +58,7 @@ ICIOPage::ICIOPage(QWidget *parent) :
     labelNull->hide();
     multiLabels.insert(X010, labelNull);
     multiLabels.insert(X011, labelNull);
-    multiLabels.insert(X017, labelNull);
+    multiLabels.insert(X016, labelNull);
     multiLabels.insert(X020, labelNull);
     multiLabels.insert(X022, labelNull);
     multiLabels.insert(X035, labelNull);
@@ -271,17 +271,17 @@ void ICIOPage::showEvent(QShowEvent *e)
     if(host->AxisDefine(ICVirtualHost::ICAxis_AxisX1) == ICVirtualHost::ICAxisDefine_Servo)
     {
         multiLabels.value(X020)->setText(tr("X1 Origin"));
-        multiLabels.value(X017)->setText(tr("X1 end Limit"));
+        multiLabels.value(X016)->setText(tr("X1 end Limit"));
     }
     else if(host->AxisDefine(ICVirtualHost::ICAxis_AxisX1) == ICVirtualHost::ICAxisDefine_Pneumatic)
     {
         multiLabels.value(X020)->setText(tr("X1 BW Limit"));
-        multiLabels.value(X017)->setText(tr("X1 FW Limit"));
+        multiLabels.value(X016)->setText(tr("X1 FW Limit"));
     }
     else
     {
         multiLabels.value(X020)->setText(tr("X020"));
-        multiLabels.value(X017)->setText(tr("X017"));
+        multiLabels.value(X016)->setText(tr("X016"));
     }
 
     if(host->AxisDefine(ICVirtualHost::ICAxis_AxisY1) == ICVirtualHost::ICAxisDefine_Servo)

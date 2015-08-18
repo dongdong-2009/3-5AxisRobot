@@ -1,6 +1,8 @@
 #include <QEvent>
 #include "passwdlevellabel.h"
 #include "icparameterssave.h"
+#include "icalarmframe.h"
+#include "icconfigstring.h"
 
 
 PasswdLevelLabel::PasswdLevelLabel(QWidget * parent)
@@ -11,6 +13,7 @@ PasswdLevelLabel::PasswdLevelLabel(QWidget * parent)
             SIGNAL(LevelChanged(int)),
             this,
             SLOT(PasswdLevelChenged(int)));
+    currentLevel_ = -1;
     PasswdLevelChenged(ICParametersSave::MachineOperator);
 }
 
@@ -38,7 +41,24 @@ void PasswdLevelLabel::changeEvent(QEvent *e)
     QFrame::changeEvent(e);
     switch (e->type()) {
     case QEvent::LanguageChange:
-        PasswdLevelChenged(currentLevel_);
+    {
+        QString newLevel;
+        if(currentLevel_ == ICParametersSave::MachineOperator)
+        {
+            newLevel = tr("Machine Operator");
+        }
+        else if(currentLevel_ == ICParametersSave::MachineAdmin)
+        {
+            newLevel = (tr("Machine Admin"));
+        }
+        else if(currentLevel_ == ICParametersSave::AdvanceAdmin)
+        {
+            newLevel = (tr("Advance Admin"));
+        }
+
+        setText(newLevel);
+//        PasswdLevelChenged(currentLevel_);
+    }
         break;
     default:
         break;
@@ -47,18 +67,32 @@ void PasswdLevelLabel::changeEvent(QEvent *e)
 
 void PasswdLevelLabel::PasswdLevelChenged(int level)
 {
+    QString oldLevel, newLevel;
+    if(currentLevel_ == ICParametersSave::MachineOperator)
+        oldLevel = tr("Machine Operator");
+    else if(currentLevel_ == ICParametersSave::MachineAdmin)
+        oldLevel = tr("Machine Admin");
+    else if(currentLevel_ == ICParametersSave::AdvanceAdmin)
+        oldLevel = tr("Advance Admin");
+    else
+        oldLevel = tr("None Level");
     currentLevel_ = level;
     if(level == ICParametersSave::MachineOperator)
     {
-        setText(tr("Machine Operator"));
+        newLevel = tr("Machine Operator");
     }
     else if(level == ICParametersSave::MachineAdmin)
     {
-        setText(tr("Machine Admin"));
+        newLevel = (tr("Machine Admin"));
     }
     else if(level == ICParametersSave::AdvanceAdmin)
     {
-        setText(tr("Advance Admin"));
+        newLevel = (tr("Advance Admin"));
     }
+
+    setText(newLevel);
+    ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_User_Changed,
+                                    newLevel,
+                                    oldLevel);
     emit Levelchenged(currentLevel_);
 }

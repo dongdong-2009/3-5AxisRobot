@@ -15,6 +15,7 @@
 int main(int argc, char *argv[])
 {    
     QApplication a(argc, argv);
+    QApplication::setWindowIcon(QIcon("./resource/logo_icon.png"));
     QTextCodec *textc = QTextCodec::codecForName("UTF-8");
     QTextCodec::setCodecForLocale(textc);
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");

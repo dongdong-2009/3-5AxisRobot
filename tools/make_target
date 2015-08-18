@@ -1,19 +1,15 @@
 #! /bin/sh
 
+workDir=$1
+binDir=$2
 
-if [ $# -ge 1 ]
-	workDir=$1
-then
-	workDir=`pwd`
-fi
-
-reinstallDir=${workDir}/bin/Reinstall/Reinstall
+reinstallDir=${workDir}/${binDir}/Reinstall/Reinstall
 contentDir=${workDir}/tools/Reinstall
 
-rm -r ${workDir}/bin/Reinstall
-mkdir -p ${workDir}/bin/Reinstall/Reinstall
-#cp -r ${workDir}/tools/Reinstall/ ${workDir}/bin/Reinstall
-cp ${workDir}/bin/Multi-axisManipulatorSystem ${reinstallDir} -f
+rm -r ${workDir}/${binDir}/Reinstall
+mkdir -p ${workDir}/${binDir}/Reinstall/Reinstall
+#cp -r ${workDir}/tools/Reinstall/ ${workDir}/${binDir}/Reinstall
+cp ${workDir}/${binDir}/Multi-axisManipulatorSystem ${reinstallDir} -f
 cp ${workDir}/Multi-axisManipulatorSystem_ch.qm ${reinstallDir} -f
 cp ${workDir}/Multi-axisManipulatorSystem_en.qm ${reinstallDir} -f
 
@@ -43,9 +39,9 @@ echo "
 cd Reinstall
 chmod +x ./SelectSystemBootWay
 ./SelectSystemBootWay -qws
-" > ${workDir}/bin/Reinstall/SelectSystemBootWay
+" > ${workDir}/${binDir}/Reinstall/SelectSystemBootWay
 
-chmod +x ${workDir}/bin/Reinstall/SelectSystemBootWay
+chmod +x ${workDir}/${binDir}/Reinstall/SelectSystemBootWay
 
 echo "
 #! /bin/sh
@@ -57,7 +53,7 @@ cd ..
 ./UpdateGUI update_cmd -qws
 
 reboot
-" > ${workDir}/bin/Reinstall/Reinstall/RobotFactorySettings.sh
+" > ${workDir}/${binDir}/Reinstall/Reinstall/RobotFactorySettings.sh
 
 chmod +x ${workDir}/bin/Reinstall/Reinstall/RobotFactorySettings.sh
 
@@ -65,7 +61,7 @@ echo "
 #! /bin/sh
 
 ./3a8HardwareTest -qws 
-" > ${workDir}/bin/Reinstall/Reinstall/test_robot.sh
+" > ${workDir}/${binDir}/Reinstall/Reinstall/test_robot.sh
 
 chmod +x ${workDir}/bin/Reinstall/Reinstall/test_robot.sh
 echo "Create reinstall done!"
@@ -73,17 +69,17 @@ echo "Create reinstall done!"
 ####### 创建更新包
 
 echo ${swVersion}
-updateDir=${workDir}/bin/Update/HCRobotPanel${swVersion}
-rm -r ${workDir}/bin/Update
-mkdir ${workDir}/bin/Update
-mkdir ${workDir}/bin/Update/HCRobotPanel${swVersion}
-cp -r ${workDir}/tools/Update/* ${workDir}/bin/Update/HCRobotPanel${swVersion}
-cp ${workDir}/bin/Multi-axisManipulatorSystem ${updateDir} -f
+updateDir=${workDir}/${binDir}/Update/HCRobotPanel${swVersion}
+rm -r ${workDir}/${binDir}/Update
+mkdir ${workDir}/${binDir}/Update
+mkdir ${workDir}/${binDir}/Update/HCRobotPanel${swVersion}
+cp -r ${workDir}/tools/Update/* ${workDir}/${binDir}/Update/HCRobotPanel${swVersion}
+cp ${workDir}/${binDir}/Multi-axisManipulatorSystem ${updateDir} -f
 cp ${workDir}/Multi-axisManipulatorSystem_ch.qm ${updateDir} -f
 cp ${workDir}/Multi-axisManipulatorSystem_en.qm ${updateDir} -f
 
 echo ${updateDir}.tar ${updateDir}
-cd ${workDir}/bin/Update/ && tar -cf HCRobotPanel${swVersion}.tar HCRobotPanel${swVersion}
+cd ${workDir}/${binDir}/Update/ && tar -cf HCRobotPanel${swVersion}.tar HCRobotPanel${swVersion}
 HCbcrypt.sh ${updateDir}.tar
 
 echo "Create update done!"

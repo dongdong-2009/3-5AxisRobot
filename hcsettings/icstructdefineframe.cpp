@@ -5,6 +5,7 @@
 #include "iccommands.h"
 #include "icvirtualhost.h"
 #include "icparameterssave.h"
+#include "icconfigstring.h"
 
 #include <QVector>
 //#include <QMessageBox>
@@ -186,18 +187,35 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
     v &= 0xFFFF;
     v >>= 15;
     ui->fixtureComboBox->setCurrentIndex(v);
-    //    AXIS_MODIFY_DATA data;
-//    data.port = (host->SystemParameter(ICVirtualHost::SYS_Config_Resv1).toInt() << 16) |
-//            (host->SystemParameter(ICVirtualHost::SYS_Config_Resv2).toInt());
-//    ui->portX1->setCurrentIndex(data.split.a1 == 0 ? 0 : data.split.a1 - 7);
-//    ui->portY1->setCurrentIndex(data.split.a2 == 0 ? 0 : data.split.a2 - 7);
-//    ui->portZ->setCurrentIndex(data.split.a3 == 0 ? 0 : data.split.a3 - 7);
-//    ui->portX2->setCurrentIndex(data.split.a4 == 0 ? 0 : data.split.a4 - 7);
-//    ui->portY2->setCurrentIndex(data.split.a5 == 0 ? 0 : data.split.a5 - 7);
-//    ui->portA->setCurrentIndex(data.split.a6 == 0 ? 0 : data.split.a6 - 7);
-//    ui->portB->setCurrentIndex(data.split.a7 == 0 ? 0 : data.split.a7 - 7);
-//    ui->portC->setCurrentIndex(data.split.a8 == 0 ? 0 : data.split.a8 - 7);
 
+    editorToConfigIDs_.insert(ui->x1Box, ICConfigString::kCS_STRUCT_Axis_Define_X1);
+    editorToConfigIDs_.insert(ui->y1Box, ICConfigString::kCS_STRUCT_Axis_Define_Y1);
+    editorToConfigIDs_.insert(ui->zBox, ICConfigString::kCS_STRUCT_Axis_Define_Z);
+    editorToConfigIDs_.insert(ui->x2Box, ICConfigString::kCS_STRUCT_Axis_Define_X2);
+    editorToConfigIDs_.insert(ui->y2Box, ICConfigString::kCS_STRUCT_Axis_Define_Y2);
+    editorToConfigIDs_.insert(ui->aBox, ICConfigString::kCS_STRUCT_Axis_Define_A);
+    editorToConfigIDs_.insert(ui->bBox, ICConfigString::kCS_STRUCT_Axis_Define_B);
+    editorToConfigIDs_.insert(ui->cBox, ICConfigString::kCS_STRUCT_Axis_Define_C);
+    editorToConfigIDs_.insert(ui->buttonGroupA, ICConfigString::kCS_STRUCT_Reserve_Define_Y017);
+    editorToConfigIDs_.insert(ui->buttonGroupB, ICConfigString::kCS_STRUCT_Reserve_Define_Y022);
+    editorToConfigIDs_.insert(ui->buttonGroupC, ICConfigString::kCS_STRUCT_Reserve_Define_Y031);
+    editorToConfigIDs_.insert(ui->buttonGroupD, ICConfigString::kCS_STRUCT_Reserve_Define_Y032);
+    editorToConfigIDs_.insert(ui->buttonGroupE, ICConfigString::kCS_STRUCT_Reserve_Define_Y035);
+    editorToConfigIDs_.insert(ui->buttonGroupF, ICConfigString::kCS_STRUCT_Reserve_Define_Y036);
+    editorToConfigIDs_.insert(ui->buttonGroupG, ICConfigString::kCS_STRUCT_Reserve_Define_R1);
+    editorToConfigIDs_.insert(ui->buttonGroupH, ICConfigString::kCS_STRUCT_Reserve_Define_R2);
+    editorToConfigIDs_.insert(ui->buttonGroup, ICConfigString::kCS_STRUCT_Limit_Define_Arm_Num);
+    editorToConfigIDs_.insert(ui->mainArmDownLimitButton, ICConfigString::kCS_STRUCT_Limit_Define_MArm_DW_Limit);
+    editorToConfigIDs_.insert(ui->mainArmBackwardLimitButton, ICConfigString::kCS_STRUCT_Limit_Define_MArm_BW_Limit);
+    editorToConfigIDs_.insert(ui->mainArmForwardLimitButton, ICConfigString::kCS_STRUCT_Limit_Define_MArm_FW_Limit);
+    editorToConfigIDs_.insert(ui->subArmDownLimitButton, ICConfigString::kCS_STRUCT_Limit_Define_SArm_DW_Limit);
+    editorToConfigIDs_.insert(ui->subArmBackwardLimitButton, ICConfigString::kCS_STRUCT_Limit_Define_SArm_BW_Limit);
+    editorToConfigIDs_.insert(ui->subArmForwardLimitButton, ICConfigString::kCS_STRUCT_Limit_Define_SArm_FW_Limit);
+    editorToConfigIDs_.insert(ui->buttonGroup_2, ICConfigString::kCS_STRUCT_Other_Define_Tune_bit);
+    editorToConfigIDs_.insert(ui->servoFlex, ICConfigString::kCS_STRUCT_Other_Define_Servo_Flex);
+    editorToConfigIDs_.insert(ui->fixtureComboBox, ICConfigString::kCS_STRUCT_Other_Define_Inside_Position);
+    editorToConfigIDs_.insert(buttongroup_, ICConfigString::kCS_STRUCT_Other_Define_Escape);
+    ICLogInit
 }
 
 ICStructDefineFrame::~ICStructDefineFrame()
@@ -396,6 +414,7 @@ void ICStructDefineFrame::on_saveButton_clicked()
 
         emit StructChanged();
         icMainFrame->UpdateAxisDefine_();
+        ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_STRUCT_Config_Save, tr("Save"), "");
     }
     ICParametersSave::Instance()->SetSingleArm(ui->singleArmButton->isChecked());
     qDebug()<<"Struct = "<<armStruct_;
@@ -501,3 +520,5 @@ void ICStructDefineFrame::on_fixtureComboBox_currentIndexChanged(int index)
     v |= (index << 15);
     host->SetSystemParameter(ICVirtualHost::SYS_Config_Fixture, v);
 }
+
+ICLogFunctions(ICStructDefineFrame)

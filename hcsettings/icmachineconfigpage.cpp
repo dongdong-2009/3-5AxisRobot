@@ -3,6 +3,7 @@
 #include "iclineeditwrapper.h"
 #include "icvirtualhost.h"
 #include "icparameterssave.h"
+#include "icconfigstring.h"
 
 ICMachineConfigPage::ICMachineConfigPage(QWidget *parent) :
     QWidget(parent),
@@ -165,6 +166,26 @@ ICMachineConfigPage::ICMachineConfigPage(QWidget *parent) :
                                     ICLineEditWrapper::OneFraction);
     wrappers_.append(wrapper);
 
+    editorToConfigIDs_.insert(ui->toleranceLineEdit, ICConfigString::kCS_RUN_Tolerance);
+    editorToConfigIDs_.insert(ui->pullPushDistance, ICConfigString::kCS_RUN_Distance_X1_X2);
+    editorToConfigIDs_.insert(ui->xADEdit, ICConfigString::kCS_RUN_Acc_Time_X1);
+    editorToConfigIDs_.insert(ui->yADEdit, ICConfigString::kCS_RUN_Acc_Time_Y1);
+    editorToConfigIDs_.insert(ui->zADEdit, ICConfigString::kCS_RUN_Acc_Time_Z);
+    editorToConfigIDs_.insert(ui->x2ADEdit, ICConfigString::kCS_RUN_Acc_Time_X2);
+    editorToConfigIDs_.insert(ui->y2ADEdit, ICConfigString::kCS_RUN_Acc_Time_Y2);
+    editorToConfigIDs_.insert(ui->aADEdit, ICConfigString::kCS_RUN_Acc_Time_A);
+    editorToConfigIDs_.insert(ui->bADEdit, ICConfigString::kCS_RUN_Acc_Time_B);
+    editorToConfigIDs_.insert(ui->cADEdit, ICConfigString::kCS_RUN_Acc_Time_C);
+    editorToConfigIDs_.insert(ui->xMaxSpeedEdit, ICConfigString::kCS_RUN_Speed_Limit_X1);
+    editorToConfigIDs_.insert(ui->yMaxSpeedEdit, ICConfigString::kCS_RUN_Speed_Limit_Y1);
+    editorToConfigIDs_.insert(ui->zMaxSpeedEdit, ICConfigString::kCS_RUN_Speed_Limit_Z);
+    editorToConfigIDs_.insert(ui->x2MaxSpeedEdit, ICConfigString::kCS_RUN_Speed_Limit_X2);
+    editorToConfigIDs_.insert(ui->y2MaxSpeedEdit, ICConfigString::kCS_RUN_Speed_Limit_Y2);
+    editorToConfigIDs_.insert(ui->aMaxSpeedEdit, ICConfigString::kCS_RUN_Speed_Limit_A);
+    editorToConfigIDs_.insert(ui->bMaxSpeedEdit, ICConfigString::kCS_RUN_Speed_Limit_B);
+    editorToConfigIDs_.insert(ui->cMaxSpeedEdit, ICConfigString::kCS_RUN_Speed_Limit_C);
+
+    ICLogInit;
 //    ui->servoFlex->blockSignals(true);
 //    ui->servoFlex->setCurrentIndex(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Language).toInt());
 //    ui->servoFlex->blockSignals(false);
@@ -316,7 +337,4 @@ void ICMachineConfigPage::HideWidgets_(QList<QWidget *> &widgets)
     }
 }
 
-void ICMachineConfigPage::on_servoFlex_currentIndexChanged(int index)
-{
-    ICVirtualHost::GlobalVirtualHost()->SetSystemParameter(ICVirtualHost::SYS_Language, index);
-}
+ICLogFunctions(ICMachineConfigPage)

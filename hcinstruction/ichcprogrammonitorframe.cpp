@@ -13,6 +13,8 @@
 #include "icmessagebox.h"
 #include "icprogramheadframe.h"
 #include "icparameterssave.h"
+#include "icmold.h"
+#include "iccaretipui.h"
 
 QMessageBox* checkMessageBox;
 
@@ -132,6 +134,24 @@ void ICHCProgramMonitorFrame::showEvent(QShowEvent *e)
 //                                                         ICMold::CurrentMold()->SyncAct() + ICMacroSubroutine::Instance()->SyncAct(),
 //                                                         ICMold::CurrentMold()->SyncSum() + ICMacroSubroutine::Instance()->SyncSum());
 //    }
+
+    autoRunRevise_->SetFlagSel(Flags());
+    int pSize;
+    ICMoldItem* item;
+    for(int i =0; i != programList_.size(); ++i)
+    {
+        pSize = programList_.at(i).ItemCount();
+        for(int j = 0; j != pSize; ++j)
+        {
+            item = programList_[i].MoldItemAt(j);
+            if(item->Action() == ICMold::ACTCOMMENT)
+            {
+                flagToSetp.insert(item->Flag(), item->Num());
+            }
+        }
+    }
+
+    CareCheck();
     if(!ICVirtualHost::GlobalVirtualHost()->IsFixtureCheck())
     {
         return;
@@ -185,6 +205,8 @@ void ICHCProgramMonitorFrame::showEvent(QShowEvent *e)
         checkMessageBox->setWindowFlags(checkMessageBox->windowFlags() | Qt::WindowStaysOnTopHint);
         checkMessageBox->show();
     }
+
+
     //    if(needWarn)
     //    {
     //        if(QMessageBox::warning(this,
@@ -340,6 +362,7 @@ void ICHCProgramMonitorFrame::StatusRefreshed()
 
 void ICHCProgramMonitorFrame::SelectCurrentStep(int currentStep)
 {
+    currentStep = ICMold::CurrentMold()->DisplayStep(currentStep);
     if((currentStep != 0  && currentStep < oldStep_ && isModify_) ||
             (oldStep_ == 0 && currentStep > oldStep_ && isModify_))
     {
@@ -493,10 +516,12 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
     {
         return;
     }
+#ifdef Q_WS_QWS
     if(ICVirtualHost::GlobalVirtualHost()->CurrentStatus() != ICVirtualHost::Auto)
     {
         return;
     }
+#endif
     int gIndex;
     int tIndex;
     int sIndex;
@@ -541,6 +566,10 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
 
         /*****/
         bool isM = autoRunRevise_->ShowModifyItem(item, &ret, str);
+//        if(item->Action() == ICMold::ACTCHECKINPUT)
+//        {
+//            ret.SetDVal(flagToSetp.value(ret.Flag(), 0) - ret.Num());
+//        }
 //        bool isM = autoRunRevise_->ShowModifyItem(item, &ret, topItem->ToStringList().join("\n"));
         if(isM)
         {          
@@ -551,16 +580,22 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
                 item->SetSVal(ret.SVal());
 //                item->SetPos(currentBackup->Pos() + ret.Pos());
                 item->SetActualPos(currentBackup->ActualPos() + ret.Pos() * 10);
+//                if(item->Action() == ICMold::ACTCHECKINPUT)
+//                    item->SetFlag(ret.Flag());
                 item->ReSum();
+                ICMoldItem toSendItem = *item;
+                toSendItem.SetSeq(ICMold::CurrentMold()->ToHostSeq(item->Seq()));
+                toSendItem.SetNum(ICMold::CurrentMold()->ToHostNum(toSendItem.Seq()));
+                toSendItem.ReSum();
                 UpdateUIProgramList_();
                 processor = ICCommandProcessor::Instance();
                 command.SetSlave(processor->SlaveID());
-                command.SetSequence(item->Seq());
-                command.SetDelayTime(item->DVal());
-                command.SetSpeed(item->SVal());
+                command.SetSequence(toSendItem.Seq());
+                command.SetDelayTime(toSendItem.DVal());
+                command.SetSpeed(toSendItem.SVal());
                 command.SetDPos(ret.Pos());
-                command.SetGMValue(item->GMVal());
-                command.SetCheckSum(item->Sum());
+                command.SetGMValue(toSendItem.GMVal());
+                command.SetCheckSum(toSendItem.Sum());
             }
             else
             {
@@ -569,16 +604,22 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
                 currentBackup->SetSVal(ret.SVal());
 //                currentBackup->SetPos(currentBackup->Pos() + ret.Pos());
                 currentBackup->SetActualPos(currentBackup->ActualPos() + ret.Pos() * 10);
+//                if(currentBackup->Action() == ICMold::ACTCHECKINPUT)
+//                    currentBackup->SetFlag(ret.Flag());
                 currentBackup->ReSum();
+                ICMoldItem toSendItem = *currentBackup;
+                toSendItem.SetSeq(ICMold::CurrentMold()->ToHostSeq(currentBackup->Seq()));
+                toSendItem.SetNum(ICMold::CurrentMold()->ToHostNum(toSendItem.Seq()));
+                toSendItem.ReSum();
                 UpdateUIProgramList_();
                 processor = ICCommandProcessor::Instance();
                 command.SetSlave(processor->SlaveID());
-                command.SetSequence(currentBackup->Seq());
-                command.SetDelayTime(currentBackup->DVal());
-                command.SetSpeed(currentBackup->SVal());
+                command.SetSequence(toSendItem.Seq());
+                command.SetDelayTime(toSendItem.DVal());
+                command.SetSpeed(toSendItem.SVal());
                 command.SetDPos(ret.Pos());
-                command.SetGMValue(currentBackup->GMVal());
-                command.SetCheckSum(currentBackup->Sum());
+                command.SetGMValue(toSendItem.GMVal());
+                command.SetCheckSum(toSendItem.Sum());
             }
 #ifdef Q_WS_X11
           isM = true ;
@@ -604,6 +645,10 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
         ICAutoAdjustCommand command;
         ICCommandProcessor* processor;
         bool isM = autoRunRevise_->ShowModifyItem(subItem->BaseItem(), &ret, subItem->ToString());
+//        if(item->Action() == ICMold::ACTCHECKINPUT)
+//        {
+//            ret.SetDVal(flagToSetp.value(ret.Flag(), 0) - ret.Num());
+//        }
         if(isM)
         {
             if(isModify_)
@@ -613,16 +658,22 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
                item->SetSVal(ret.SVal());
 //               item->SetPos(currentBackup->Pos() + ret.Pos());
                item->SetActualPos(currentBackup->ActualPos() + ret.Pos() * 10);
+//               if(item->Action() == ICMold::ACTCHECKINPUT)
+//                   item->SetFlag(ret.Flag());
                item->ReSum();
+               ICMoldItem toSendItem = *item;
+               toSendItem.SetSeq(ICMold::CurrentMold()->ToHostSeq(item->Seq()));
+               toSendItem.SetNum(ICMold::CurrentMold()->ToHostNum(toSendItem.Seq()));
+               toSendItem.ReSum();
                UpdateUIProgramList_();
                processor = ICCommandProcessor::Instance();
                command.SetSlave(processor->SlaveID());
-               command.SetSequence(item->Seq());
-               command.SetDelayTime(item->DVal());
-               command.SetSpeed(item->SVal());
+               command.SetSequence(toSendItem.Seq());
+               command.SetDelayTime(toSendItem.DVal());
+               command.SetSpeed(toSendItem.SVal());
                command.SetDPos(ret.Pos());
-               command.SetGMValue(item->GMVal());
-               command.SetCheckSum(item->Sum());
+               command.SetGMValue(toSendItem.GMVal());
+               command.SetCheckSum(toSendItem.Sum());
             }
             else
             {
@@ -631,16 +682,22 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
                currentBackup->SetSVal(ret.SVal());
 //               currentBackup->SetPos(currentBackup->Pos() + ret.Pos());
                currentBackup->SetActualPos(currentBackup->ActualPos() + ret.Pos() * 10);
+//               if(currentBackup->Action() == ICMold::ACTCHECKINPUT)
+//                   currentBackup->SetFlag(ret.Flag());
                currentBackup->ReSum();
+               ICMoldItem toSendItem = *currentBackup;
+               toSendItem.SetSeq(ICMold::CurrentMold()->ToHostSeq(currentBackup->Seq()));
+               toSendItem.SetNum(ICMold::CurrentMold()->ToHostNum(toSendItem.Seq()));
+               toSendItem.ReSum();
                UpdateUIProgramList_();
                processor = ICCommandProcessor::Instance();
                command.SetSlave(processor->SlaveID());
-               command.SetSequence(currentBackup->Seq());
-               command.SetDelayTime(currentBackup->DVal());
-               command.SetSpeed(currentBackup->SVal());
+               command.SetSequence(toSendItem.Seq());
+               command.SetDelayTime(toSendItem.DVal());
+               command.SetSpeed(toSendItem.SVal());
                command.SetDPos(ret.Pos());
-               command.SetGMValue(currentBackup->GMVal());
-               command.SetCheckSum(currentBackup->Sum());
+               command.SetGMValue(toSendItem.GMVal());
+               command.SetCheckSum(toSendItem.Sum());
             }
             isM = processor->ExecuteCommand(command).toBool();
             qDebug()<<"after show"<<isM;
@@ -821,5 +878,47 @@ void ICHCProgramMonitorFrame::on_pauseButton_toggled(bool checked)
 //        ui->pauseButton->setText(tr("Pause"));
         ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_RESTART);
 
+    }
+}
+
+QStringList ICHCProgramMonitorFrame::Flags()
+{
+    QStringList selList;
+    int count;
+    ICMoldItem* item;
+    for(int i = 0; i != programList_.size(); ++i)
+    {
+        count = programList_.at(i).ItemCount();
+        for(int j = 0; j != count; ++j)
+        {
+            item = programList_[i].MoldItemAt(j);
+            if(item->Action() == ICMold::ACTCOMMENT)
+            {
+                selList.append(QString(tr("Flag[%1]:%2")
+                                       .arg(item->Flag())
+                                       .arg(item->Comment())));
+            }
+        }
+    }
+    return selList;
+}
+
+void ICHCProgramMonitorFrame::CareCheck()
+{
+    QDate now = QDate::currentDate();
+    ICParametersSave *ps = ICParametersSave::Instance();
+    bool needToCare = false;
+    for(int i = 0;  i != 7; ++i)
+    {
+        if(now >= ps->NextCycle(i))
+        {
+            needToCare = true;
+            break;
+        }
+    }
+    if(needToCare)
+    {
+        ICCareTipUI careTip;
+        careTip.exec();
     }
 }

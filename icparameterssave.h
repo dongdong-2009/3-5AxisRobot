@@ -5,6 +5,7 @@
 #include <QString>
 #include <QLocale>
 #include <QTranslator>
+#include <QDate>
 #ifndef Q_WS_WIN32
 #include <fcntl.h>
 #include <sys/ioctl.h>
@@ -104,6 +105,12 @@ public:
 
     QString FacotryCode() { return GetParameter(SystemMachine, "FacortyCode", "000000").toString();}
     void SetFacotryCode(const QString& code) { SaveParameter(SystemMachine, "FacotryCode", code);}
+
+    int CareCycle(int item) { return GetParameter(SystemMachine, QString("CareCycleItem-%1").arg(item), 30).toInt();}
+    void SetCareCycle(int item, int cycle) { SaveParameter(SystemMachine, QString("CareCycleItem-%1").arg(item), cycle);}
+
+    QDate NextCycle(int item) { return GetParameter(SystemMachine, QString("NextCycleItem-%1").arg(item), QDate::currentDate().addDays(30)).toDate();}
+    void SetNextCycle(int item, QDate th) { SaveParameter(SystemMachine, QString("NextCycleItem-%1").arg(item), th);}
 
 signals:
     void CurrentLanguageChanged();

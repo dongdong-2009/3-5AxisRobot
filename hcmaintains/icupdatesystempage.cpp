@@ -1,27 +1,32 @@
 #include "icupdatesystempage.h"
 #include "ui_icupdatesystempage.h"
 
-#include <QSettings>
-#include <QDir>
-#include <QMessageBox>
-#include <QCloseEvent>
-#include <QProcess>
-#include <QKeyEvent>
 
-#include <QDebug>
-#include "ickeyboard.h"
 #include "iccommandprocessor.h"
 #include "iccommands.h"
-#include "icvirtualhost.h"
-#include "icupdatelogodialog.h"
-#include <QDateTime>
+#include "ickeyboard.h"
+#include "iclineeditwithvirtualnumerickeypad.h"
 #include "icparameterssave.h"
-#include <QFile>
-#include <QTextStream>
 #include "icparameterssave.h"
-#include <QRegExp>
-#include "ictipswidget.h"
 #include "icpasswordmodifydialog.h"
+#include "ictipswidget.h"
+#include "icupdatelogodialog.h"
+#include "icvirtualhost.h"
+#include <QCloseEvent>
+#include <QDateTime>
+#include <QDebug>
+#include <QDir>
+#include <QFile>
+#include <QKeyEvent>
+#include <QMessageBox>
+#include <QProcess>
+#include <QPushButton>
+#include <QRegExp>
+#include <QSettings>
+#include <QTextStream>
+#include "icinputdialog.h"
+#include "icconfigstring.h"
+
 //ICUpdateSystemPage *ICUpdateSystemPage = NULL;
 
 
@@ -67,6 +72,43 @@ ICUpdateSystemPage::ICUpdateSystemPage(QWidget *parent) :
     model_->setHeaderData(0, Qt::Horizontal, tr("Name"));
     model_->setHeaderData(1, Qt::Horizontal, tr("Create Time"));
     ui->packetTable->setModel(model_);
+
+    ui->careTable->horizontalHeader()->setResizeMode(0, QHeaderView::Stretch);
+    ui->careTable->setColumnWidth(2, 150);
+
+    const int rowCount = ui->careTable->rowCount();
+    QIntValidator* vd = new QIntValidator(0, 65530, this);
+
+
+    QStringList items;
+    items<<tr("Item-1")<<tr("Item-2")<<tr("Item-3")
+           <<tr("Item-4")<<tr("Item-5")<<tr("Item-6")<<tr("Item-7");
+    ICParametersSave* ps = ICParametersSave::Instance();
+    for(int i = 0; i !=rowCount; ++i)
+    {
+        QPushButton* btn = new QPushButton(tr("Restart"));
+        ICLineEditWithVirtualNumericKeypad* cycleEditor = new ICLineEditWithVirtualNumericKeypad();
+        editorToConfigIDs_.insert(cycleEditor, ICConfigString::kCS_CARE_Item1_Cycle + i);
+        cycleEditor->setValidator(vd);
+        cycleEditor->SetThisIntToThisText(ps->CareCycle(i));
+        restartBtns_.append(btn);
+        ui->careTable->setCellWidget(i, 3, cycleEditor);
+        ui->careTable->setCellWidget(i, 4, btn);
+        cycleEditorToItemIndex.insert(cycleEditor, i);
+        restartBtnToItemIndex.insert(btn, i);
+        QLabel* label = new QLabel(items.at(i));
+        label->setWordWrap(true);
+        ui->careTable->setCellWidget(i, 0, label);
+        connect(cycleEditor,
+                SIGNAL(textChanged(QString)),
+                SLOT(OnCycleEditorChanged(QString)));
+        connect(btn,
+                SIGNAL(clicked()),
+                SLOT(OnRestartBtnClicked()));
+    }
+
+    ICLogInit
+
 }
 
 ICUpdateSystemPage::~ICUpdateSystemPage()
@@ -93,10 +135,24 @@ void ICUpdateSystemPage::changeEvent(QEvent *e)
     QFrame::changeEvent(e);
     switch (e->type()) {
     case QEvent::LanguageChange:
+    {
         ui->retranslateUi(this);
         model_->setHeaderData(0, Qt::Horizontal, tr("Name"));
         model_->setHeaderData(1, Qt::Horizontal, tr("Create Time"));
         ui->packetTable->setModel(model_);
+
+        const int rowCount = ui->careTable->rowCount();
+        QStringList items;
+        items<<tr("Item-1")<<tr("Item-2")<<tr("Item-3")
+               <<tr("Item-4")<<tr("Item-5")<<tr("Item-6")<<tr("Item-7");
+        QLabel* l;
+        for(int i = 0; i != rowCount; ++i)
+        {
+            restartBtns_[i]->setText(tr("Restart"));
+            l = qobject_cast<QLabel*>(ui->careTable->cellWidget(i, 0));
+            l->setText(items.at(i));
+        }
+    }
         break;
     default:
         break;
@@ -114,6 +170,14 @@ void ICUpdateSystemPage::showEvent(QShowEvent *e)
 //    {
 //        ui->registerContainer->hide();
 //    }
+    QDate currentDate = QDate::currentDate();
+    const int rowCount = ui->careTable->rowCount();
+    ICParametersSave* ps = ICParametersSave::Instance();
+    for(int i = 0; i != rowCount; ++i)
+    {
+        ui->careTable->item(i, 1)->setText(QString::number(currentDate.daysTo(ps->NextCycle(i))));
+        ui->careTable->item(i, 2)->setText(ps->NextCycle(i).toString("yyyy/MM/dd"));
+    }
     ICVirtualHost::GlobalVirtualHost()->StopRefreshStatus();
     QFrame::showEvent(e);
 }
@@ -403,6 +467,9 @@ void ICUpdateSystemPage::on_updatePasswardButton_clicked()
                 pmD.OldPassword() == "szhcrobot")
         {
             ICParametersSave::Instance()->SetSuperPassward(pmD.NewPassword());
+            ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_PANEL_Super_Password,
+                                                        QString("Supper password changed"),
+                                                        "");
         }
         else
         {
@@ -434,3 +501,94 @@ void ICUpdateSystemPage::on_scanHost_clicked()
     ui->packetTable->resizeColumnsToContents();
     ui->packetTable->setCurrentIndex(QModelIndex());
 }
+
+void ICUpdateSystemPage::OnCycleEditorChanged(const QString &text)
+{
+    ICLineEditWithVirtualNumericKeypad* edit = qobject_cast<ICLineEditWithVirtualNumericKeypad*>(sender());
+    int itemIndex = cycleEditorToItemIndex.value(edit, 0);
+    ICParametersSave* ps = ICParametersSave::Instance();
+    int currentCycle = ps->CareCycle(itemIndex);
+    int diff = edit->TransThisTextToThisInt() - currentCycle;
+    ps->SetCareCycle(itemIndex, edit->TransThisTextToThisInt());
+    ps->SetNextCycle(itemIndex, ps->NextCycle(itemIndex).addDays(diff));
+
+
+    ui->careTable->item(itemIndex, 1)->setText(QString::number(QDate::currentDate().daysTo(ps->NextCycle(itemIndex))));
+    ui->careTable->item(itemIndex, 2)->setText(ps->NextCycle(itemIndex).toString("yyyy/MM/dd"));
+}
+
+void ICUpdateSystemPage::OnRestartBtnClicked()
+{
+    QPushButton* btn = qobject_cast<QPushButton*>(sender());
+    int itemIndex = restartBtnToItemIndex.value(btn, 0);
+    ICParametersSave* ps = ICParametersSave::Instance();
+    ps->SetNextCycle(itemIndex, QDate::currentDate().addDays(ps->CareCycle(itemIndex)));
+
+    ui->careTable->item(itemIndex, 1)->setText(QString::number(QDate::currentDate().daysTo(ps->NextCycle(itemIndex))));
+    ui->careTable->item(itemIndex, 2)->setText(ps->NextCycle(itemIndex).toString("yyyy/MM/dd"));
+}
+
+void ICUpdateSystemPage::on_backToFactory_clicked()
+{
+    QString pwd = ICInputDialog::getText(this, tr("Back to Factory"), tr("Back to factory will lost all the sysconfig and panel settings.\nPlease input the root password to confirm."));
+    if(ICParametersSave::Instance()->VerifyPassword(ICParametersSave::AdvanceAdmin, pwd))
+    {
+        // clear Alarm.log
+        system("rm Alarm.log");
+        //clear Modify.log
+        system("rm Modify.log");
+        //clear panel settings
+        system("rm -r /Settings/sysconfig");
+        //reset sysconfig
+        system("rm -r sysconfigbackup");
+        system("mkdir sysconfigbackup");
+#ifdef HC_SK_8
+        QFile::copy(":/backupfor8inch/DistanceRotation", "./sysconfigbackup/DistanceRotation");
+        QFile::copy(":/backupfor8inch/Multi-axisManipulatorSystem.ini", "./sysconfigbackup/Multi-axisManipulatorSystem.ini");
+        QFile::copy(":/backupfor8inch/systemParameter.ini", "./sysconfigbackup/systemParameter.ini");
+        QFile::copy(":/backupfor8inch/passwdfile", "./sysconfigbackup/passwdfile");
+        QFile::copy(":/backupfor8inch/StandPrograms", "./sysconfigbackup/StandPrograms");
+        QFile::copy(":/backupfor8inch/paramx.txt", "./sysconfigbackup/paramx.txt");
+        QFile::copy(":/backupfor8inch/paramy.txt", "./sysconfigbackup/paramy.txt");
+        QFile::copy(":/backupfor8inch/paramz.txt", "./sysconfigbackup/paramz.txt");
+        QFile::copy(":/backupfor8inch/paramp.txt", "./sysconfigbackup/paramp.txt");
+        QFile::copy(":/backupfor8inch/paramq.txt", "./sysconfigbackup/paramq.txt");
+        QFile::copy(":/backupfor8inch/parama.txt", "./sysconfigbackup/parama.txt");
+        QFile::copy(":/backupfor8inch/paramb.txt", "./sysconfigbackup/paramb.txt");
+        QFile::copy(":/backupfor8inch/paramc.txt", "./sysconfigbackup/paramc.txt");
+        QFile::copy(":/backupfor8inch/system.txt", "./sysconfigbackup/system.txt");
+
+#else
+        QFile::copy(":/backupfor5inch/DistanceRotation", "./sysconfigbackup/DistanceRotation");
+        QFile::copy(":/backupfor5inch/Multi-axisManipulatorSystem.ini", "./sysconfigbackup/Multi-axisManipulatorSystem.ini");
+        QFile::copy(":/backupfor5inch/systemParameter.ini", "./sysconfigbackup/systemParameter.ini");
+        QFile::copy(":/backupfor5inch/passwdfile", "./sysconfigbackup/passwdfile");
+        QFile::copy(":/backupfor5inch/StandPrograms", "./sysconfigbackup/StandPrograms");
+        QFile::copy(":/backupfor5inch/paramx.txt", "./sysconfigbackup/paramx.txt");
+        QFile::copy(":/backupfor5inch/paramy.txt", "./sysconfigbackup/paramy.txt");
+        QFile::copy(":/backupfor5inch/paramz.txt", "./sysconfigbackup/paramz.txt");
+        QFile::copy(":/backupfor5inch/paramp.txt", "./sysconfigbackup/paramp.txt");
+        QFile::copy(":/backupfor5inch/paramq.txt", "./sysconfigbackup/paramq.txt");
+        QFile::copy(":/backupfor5inch/parama.txt", "./sysconfigbackup/parama.txt");
+        QFile::copy(":/backupfor5inch/paramb.txt", "./sysconfigbackup/paramb.txt");
+        QFile::copy(":/backupfor5inch/paramc.txt", "./sysconfigbackup/paramc.txt");
+        QFile::copy(":/backupfor5inch/system.txt", "./sysconfigbackup/system.txt");
+#endif
+        system("chmod 666 sysconfigbackup/*");
+        system("mv sysconfigbackup/* sysconfig -f");
+        system("sync");
+        QMessageBox::information(this, tr("Tips"), tr("Back to factory successfully! Now reboot!"));
+#ifdef Q_WS_QWS
+        system("reboot");
+#endif
+    }
+    else
+    {
+        QMessageBox::information(this, tr("Tips"), tr("Wrong password!"));
+    }
+
+}
+
+
+ICLogFunctions(ICUpdateSystemPage)
+

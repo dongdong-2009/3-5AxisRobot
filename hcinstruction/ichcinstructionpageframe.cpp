@@ -264,6 +264,11 @@ void ICHCInstructionPageFrame::OptionButtonClicked()
         optionButtonToPage_.insert(ui->commentButton, commentPage_);
         ui->settingStackedWidget->addWidget(commentPage_);
     }
+    if(optionButton == ui->conditionsToolButton)
+    {
+
+        conditionPage_->ResetFlagSel(Flags());
+    }
     ui->settingStackedWidget->setCurrentWidget(optionButtonToPage_.value(optionButton));
 }
 
@@ -486,6 +491,10 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
     {
         return;
     }
+    if(isComment)
+    {
+        items[0].SetFlag(ValidFlag());
+    }
     if(sIndex == -1)
     {
         if(tIndex == 0) //insert GroupItem
@@ -511,24 +520,24 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
                 groupItem.SetStepNum(gIndex);
                 insertedGroupItems.append(groupItem);
             }
-            else if(isComment)
-            {
-                ICTopMoldUIItem topItem;
-                topItem.SetBaseItem(items.at(0));
-                if(programList_[gIndex].MoldItemAt(0)->Action() == ICMold::ACTEND &&
-                        gIndex != 0)
-                {
-                    topItem.SetStepNum(gIndex - 1);
-                    programList_[gIndex - 1].AddToMoldUIItem(topItem);
-                }
-                else if(programList_[gIndex].MoldItemAt(0)->Action() == ICMold::ACTEND &&
-                        gIndex == 0)
-                {
-                    return;
-                }
-                else
-                    programList_[gIndex].PrependTopMoldUIItem(topItem);
-            }
+//            else if(isComment)
+//            {
+//                ICTopMoldUIItem topItem;
+//                topItem.SetBaseItem(items.at(0));
+//                if(programList_[gIndex].MoldItemAt(0)->Action() == ICMold::ACTEND &&
+//                        gIndex != 0)
+//                {
+//                    topItem.SetStepNum(gIndex - 1);
+//                    programList_[gIndex - 1].AddToMoldUIItem(topItem);
+//                }
+//                else if(programList_[gIndex].MoldItemAt(0)->Action() == ICMold::ACTEND &&
+//                        gIndex == 0)
+//                {
+//                    return;
+//                }
+//                else
+//                    programList_[gIndex].PrependTopMoldUIItem(topItem);
+//            }
             else
             {
                 ICTopMoldUIItem topItem;
@@ -642,6 +651,7 @@ void ICHCInstructionPageFrame::on_modifyToolButton_clicked()
     {
         return;
     }
+    modifyDialog_->ResetFlagSel(Flags());
     const int selectedRow = ui->moldContentListWidget->row(items.at(0));
     int gIndex;
     int tIndex;
@@ -885,10 +895,12 @@ void ICHCInstructionPageFrame::on_upButton_clicked()
         }
         ICGroupMoldUIItem *item = &programList_[gIndex];
 //        if(item->MoldItemAt(0)->Action() == ICMold::ACTCOMMENT) return;
+//        if(programList_[gIndex - 1].MoldItemAt(0)->Action() == ICMold::ACTCOMMENT) return;
+//        if(item->MoldItemAt(0)->Action() == ICMold::ACTCOMMENT) return;
         int runableCount = 0;
         for(int i = 0; i != item->TopItemCount(); ++i)
         {
-            if(item->MoldItemAt(i)->Action() != ICMold::ACTCOMMENT)
+//            if(item->MoldItemAt(i)->Action() != ICMold::ACTCOMMENT)
                 ++runableCount;
         }
 //        if(item->TopItemCount() == 1) //group up
@@ -1003,20 +1015,20 @@ void ICHCInstructionPageFrame::on_downButton_clicked()
         }
         else //split group item
         {
-            if(groupItem->MoldItemAt(tIndex)->Action() == ICMold::ACTCOMMENT) return;
-            bool up = false;
-            bool dw = false;
+//            if(groupItem->MoldItemAt(tIndex)->Action() == ICMold::ACTCOMMENT) return;
+//            bool up = false;
+//            bool dw = false;
             int runableCount = 0;
             for(int i = 0; i != tIndex; ++i)
             {
-                if(groupItem->MoldItemAt(i)->Action() != ICMold::ACTCOMMENT)
+//                if(groupItem->MoldItemAt(i)->Action() != ICMold::ACTCOMMENT)
                     ++runableCount;
             }
             if(runableCount == 0) return;
             runableCount = 0;
             for(int i = tIndex; i != groupItem->ItemCount(); ++i)
             {
-                if(groupItem->MoldItemAt(i)->Action() != ICMold::ACTCOMMENT)
+//                if(groupItem->MoldItemAt(i)->Action() != ICMold::ACTCOMMENT)
                     ++runableCount;
             }
             if(runableCount == 0 ) return;
@@ -1068,6 +1080,19 @@ void ICHCInstructionPageFrame::OnProgramChanged(int index, QString name)
 //    ui->moldComboBox->setCurrentIndex(index);
     ui->programLabel->setText(name);
     UpdateHostParam();
+    if(ICParametersSave::Instance()->IsExtentFunctionUsed() && index == 0)
+    {
+        ui->flagsButton->show();
+        ui->conditionsToolButton->show();
+        ui->commentButton->show();
+    }
+    else
+    {
+        ui->flagsButton->hide();
+        ui->conditionsToolButton->hide();
+        ui->commentButton->hide();
+    }
+//    ui->conditionsToolButton
 
 }
 
@@ -1083,7 +1108,14 @@ bool ICHCInstructionPageFrame::SaveCurrentEdit()
     {
         ICMacroSubroutine::Instance()->SetSubRoutine(ICMold::UIItemToMoldItem(programList_), currentEdit_ - 1);
         ICMacroSubroutine::Instance()->SubRoutineResum(currentEdit_ - 1);
-        return ICMacroSubroutine::Instance()->SaveMacroSubroutieFile(currentEdit_ - 1);
+        bool ret = ICMacroSubroutine::Instance()->SaveMacroSubroutieFile(currentEdit_ - 1);
+        QString moldName = ICParametersSave::Instance()->MoldName("Base.act");
+        moldName.chop(3);
+        moldName += "sub";
+        moldName = QString("records/%1%2").arg(moldName).arg(currentEdit_ - 1);
+        QFile::remove(moldName);
+        ret =  ret && QFile::copy(QString("subs/sub%1.prg").arg(currentEdit_ - 1), moldName);
+        return ret;
     }
 }
 
@@ -1180,4 +1212,66 @@ void ICHCInstructionPageFrame::on_tryButton_clicked()
     //        ui->singleButton->setEnabled(false);
         }
 
+}
+
+int ICHCInstructionPageFrame::ValidFlag()
+{
+    QVector<int> flags;
+    ICMoldItem* item;
+    int count;
+    for(int i = 0; i != programList_.size(); ++i)
+    {
+        count = programList_.at(i).ItemCount();
+        for(int j = 0; j != count; ++j)
+        {
+            item = programList_[i].MoldItemAt(j);
+            if(item->Action() == ICMold::ACTCOMMENT)
+            {
+                flags.append(item->Flag());
+            }
+        }
+    }
+    qSort(flags);
+    if(flags.isEmpty())
+    {
+        return 0;
+    }
+    if(flags.size() - 1 == flags.last())
+    {
+        return flags.size();
+    }
+    if(flags[0] != 0)
+    {
+        return 0;
+    }
+    for(int i = 1 ; i != flags.size(); ++i)
+    {
+        if(flags.at(i) - flags.at(i - 1) > 1)
+        {
+            return flags.at(i - 1) + 1;
+        }
+    }
+    return 0;
+}
+
+QStringList ICHCInstructionPageFrame::Flags()
+{
+    QStringList selList;
+    int count;
+    ICMoldItem* item;
+    for(int i = 0; i != programList_.size(); ++i)
+    {
+        count = programList_.at(i).ItemCount();
+        for(int j = 0; j != count; ++j)
+        {
+            item = programList_[i].MoldItemAt(j);
+            if(item->Action() == ICMold::ACTCOMMENT)
+            {
+                selList.append(QString(tr("Flag[%1]:%2")
+                                       .arg(item->Flag())
+                                       .arg(item->Comment())));
+            }
+        }
+    }
+    return selList;
 }

@@ -3,6 +3,7 @@
 
 #include <QFrame>
 #include <QTimer>
+#include <QMap>
 #include "icupdatepackmodel.h"
 #include "icprogramheadframe.h"
 #include "icupdatesystem.h"
@@ -12,6 +13,7 @@ namespace Ui {
 }
 
 class QSettings;
+class QPushButton;
 
 class ICUpdateSystemPage : public QFrame {
     Q_OBJECT
@@ -45,6 +47,9 @@ private:
     QString updateHostPath_;
     QSettings *updateSettings_;
     QSettings *updateHostSettings_;
+    QList<QPushButton*> restartBtns_;
+    QMap<QWidget*, int> cycleEditorToItemIndex;
+    QMap<QWidget*, int> restartBtnToItemIndex;
 
     QTimer timer_;
 //    QTimer *refresh_restTimer;
@@ -77,6 +82,20 @@ private slots:
     void on_updatePasswardButton_clicked();
     void on_scanPanel_clicked();
     void on_scanHost_clicked();
+
+    void OnCycleEditorChanged(const QString& text);
+    void OnRestartBtnClicked();
+
+private slots:
+    void OnConfigChanged(QObject* w, const QString& newV, const QString& oldV);
+    void OnConfigChanged(const QString& text);
+    void OnConfigChanged(int v);
+    void OnConfigChanged(int v, int ov);
+    void OnConfigChanged(bool b);
+    void on_backToFactory_clicked();
+    
+private:
+    QMap<QObject*, int> editorToConfigIDs_;
 };
 
 //TODEBUG

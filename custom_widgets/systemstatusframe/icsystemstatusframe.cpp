@@ -122,8 +122,13 @@ void ICSystemStatusFrame::InitInterface()
     ui->originStatusLabel->SetStatus(StatusLabel::CLEAR);
 }
 
-void ICSystemStatusFrame::on_immButton_clicked()
+//void ICSystemStatusFrame::on_immButton_clicked()
+//{
+//    tuneMoldDialog_->show();
+//}
+
+
+void ICSystemStatusFrame::on_immButton_pressed()
 {
     tuneMoldDialog_->show();
 }
-

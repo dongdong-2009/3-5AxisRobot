@@ -26,6 +26,7 @@
 #include "icactioncommand.h"
 #include "icfile.h"
 
+
 #define REFRESH_TIME 10
 static QTime testTime;
 
@@ -793,6 +794,7 @@ void ICVirtualHost::InitMold_()
         path += config->MoldName("");
     }
     QString configPath = path;
+//    qDebug()<<"mold"<<configPath;
     configPath.chop(3);
     configPath += "fnc";
     //    Q_ASSERT_X(QFile::exists(path), "ICVirtualHost::InitMold_", "act is not exits");
@@ -816,18 +818,23 @@ void ICVirtualHost::InitMold_()
 void ICVirtualHost::WriteMoldTohost_()
 {
     QVector<uint8_t> dataSection;
-    QList<ICMoldItem> moldContent = currentMold_->MoldContent();
-    QList<ICMoldItem>::iterator p = moldContent.begin();
-    while(p != moldContent.end())
+    QList<ICMoldItem> moldContent = currentMold_->ToSentMoldContent();
+    for(int i = 0; i < moldContent.size(); ++i)
     {
-        if((*p).Action() == ICMold::ACTCOMMENT)
-        {
-            p = moldContent.erase(p);
-            continue;
-        }
-        ++p;
-
+        qDebug()<<moldContent.at(i).ToString();
     }
+//    QList<ICMoldItem>::iterator p = moldContent.begin();
+//    while(p != moldContent.end())
+//    {
+//        if((*p).Action() == ICMold::ACTCOMMENT)
+//        {
+//            p = moldContent.erase(p);
+//            continue;
+//        }
+//        ++p;
+
+//    }
+//    ICMold::MoldReSum(moldContent);
     ICMoldItem moldItem;
     ICCommandProcessor* commandProcessor = ICCommandProcessor::Instance();
     ICWriteParameters writeParamtersCommand;
