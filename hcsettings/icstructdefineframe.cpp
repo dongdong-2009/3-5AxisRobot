@@ -237,6 +237,12 @@ void ICStructDefineFrame::retranslateUi_()
     ui->y2Box->setItemText(2,tr("Servo"));
     ui->outDefineBox->setTitle(tr("Out Define"));
     ui->label->setText(tr("1"));
+    ui->inMoldPos->setItemText(0, tr("Limit"));
+    ui->inMoldPos->setItemText(1, tr("No Limit"));
+    ui->label_20->setText(tr(" In Mold Pos"));
+    ui->label_19->setText(tr("Adjust"));
+    ui->adjUse->setText(tr("Use"));
+    ui->adjNoUse->setText(tr("No Use"));
 //    ui->outABox->setItemText(0,tr("Normal"));
 //    ui->outABox->setItemText(1,tr("Extent"));
 //    ui->label_8->setText(tr("5"));
