@@ -7,7 +7,6 @@
 #include "config.h"
 
 #include <QIntValidator>
- #include <QMessageBox>
 class ICLabelWrapper;
 
 namespace Ui {

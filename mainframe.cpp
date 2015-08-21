@@ -1447,6 +1447,7 @@ void MainFrame::InitSpareTime()
     registe_timer->stop();
     reboot_timer->stop();
     resetTime = ICParametersSave::Instance()->RestTime(0);
+
     if(resetTime <= 7*24 )
     {
         if(resetTime > 0)

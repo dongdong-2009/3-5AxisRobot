@@ -3,7 +3,7 @@
 
 #include <QDir>
 #include <QScrollBar>
-#include <QMessageBox>
+#include "icmessagebox.h"
 #include <QFileInfoList>
 
 #include "icmold.h"
@@ -34,7 +34,6 @@
 #include "icprogramguidepage.h"
 
 #include <QDebug>
-#include <QMessageBox>
 
 //struct MoldItem
 //{
@@ -118,7 +117,7 @@ void ICHCInstructionPageFrame::showEvent(QShowEvent *e)
     UpdateHostParam();
 //    if(!icMainFrame->IsOrigined())
 //    {
-//        QMessageBox::warning(this, tr("Warning"), tr("Need to origin!"));
+//       ICMessageBox::ICWarning(this, tr("Warning"), tr("Need to origin!"));
 //    }
 }
 
@@ -426,7 +425,7 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
     /******currentEdit_标记为0表示为主程序（主程序时不能删除待机点）*****/
     if(programList_.at(gIndex).StepNum() == 0 && currentEdit_ == 0 && currentmoldname.left(4) != "szhc")
     {
-        QMessageBox::warning(this,
+        ICMessageBox::ICWarning(this,
                              tr("Warning"),
                              tr("Can not add standby position program"));
         return;
@@ -621,7 +620,7 @@ void ICHCInstructionPageFrame::on_deleteToolButton_clicked()
     }
     if(MoldInformation::Instance()->IsStandProgram(ICParametersSave::Instance()->MoldName("")))
     {
-        QMessageBox::warning(this, tr("warning"),
+       ICMessageBox::ICWarning(this, tr("warning"),
                              tr("Stand program can not be delete action"));
         return;
    }
@@ -634,7 +633,7 @@ void ICHCInstructionPageFrame::on_deleteToolButton_clicked()
     QString currentmoldname  = ICParametersSave::Instance()->MoldName("");
     if(programList_.at(gIndex).StepNum() == 0 && currentEdit_ == 0 && currentmoldname.left(4) != "szhc")
     {
-        QMessageBox::warning(this,
+       ICMessageBox::ICWarning(this,
                              tr("Warning"),
                              tr("Can not delete standby position program"));
         return;
@@ -774,7 +773,7 @@ void ICHCInstructionPageFrame::on_upButton_clicked()
     //子程序也可以分解和组合，所以无需判断
 //    if(programList_.at(gIndex).StepNum() == 1)
 //    {
-//        QMessageBox::warning(this,
+//       ICMessageBox::ICWarning(this,
 //                             tr("Warning"),
 //                             tr("Can not group up to standby position program"));
 //        return;
@@ -849,7 +848,7 @@ void ICHCInstructionPageFrame::on_downButton_clicked()
     //子程序也可以分解和组合，所以无需判断
 //    if(programList_.at(gIndex).StepNum() == 0)
 //    {
-//        QMessageBox::warning(this,
+//       ICMessageBox::ICWarning(this,
 //                             tr("Warning"),
 //                             tr("Can not decompose standby position program"));
 //        return;

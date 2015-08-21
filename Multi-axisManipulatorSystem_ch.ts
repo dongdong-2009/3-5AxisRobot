@@ -920,11 +920,11 @@ Reason</source>
         <translation type="obsolete">解决办法</translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.cpp" line="112"/>
-        <location filename="categorypage/icalarmframe.cpp" line="117"/>
-        <location filename="categorypage/icalarmframe.cpp" line="214"/>
-        <location filename="categorypage/icalarmframe.cpp" line="216"/>
-        <location filename="categorypage/icalarmframe.cpp" line="311"/>
+        <location filename="categorypage/icalarmframe.cpp" line="111"/>
+        <location filename="categorypage/icalarmframe.cpp" line="116"/>
+        <location filename="categorypage/icalarmframe.cpp" line="213"/>
+        <location filename="categorypage/icalarmframe.cpp" line="215"/>
+        <location filename="categorypage/icalarmframe.cpp" line="310"/>
         <source>no-solve</source>
         <translation>未解决</translation>
     </message>
@@ -2165,8 +2165,8 @@ Reason</source>
         <translation>主菜单</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="430"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="638"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="429"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="637"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
@@ -2183,22 +2183,22 @@ Reason</source>
         <translation type="obsolete">该模号是当前模号!</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="431"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="430"/>
         <source>Can not add standby position program</source>
         <translation>不能添加待机点步骤</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="624"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="623"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="625"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="624"/>
         <source>Stand program can not be delete action</source>
         <translation>标准程序不能删除动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="639"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="638"/>
         <source>Can not delete standby position program</source>
         <translation>不能删除待机点步骤</translation>
     </message>
@@ -3582,7 +3582,8 @@ Reason</source>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="791"/>
         <source>
 App %1; Host:</source>
-        <translation>上位机程序%1;主机程序:</translation>
+        <translation>
+上位机程序%1;主机程序:</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="945"/>
@@ -6662,7 +6663,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1600"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="285"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="291"/>
         <source>Save</source>
         <translation>保存</translation>
     </message>
@@ -6835,34 +6836,38 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="1164"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1202"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1240"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="263"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="265"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="267"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="269"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="271"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="273"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="275"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="277"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="279"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="281"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="283"/>
         <source>Normal</source>
         <translation>调位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1424"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="243"/>
         <source>Adjust</source>
         <translation>调位</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1549"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="242"/>
         <source> In Mold Pos</source>
         <translation>模内侧姿</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1557"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="240"/>
         <source>Limit</source>
         <translation>限制</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1562"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="241"/>
         <source>No Limit</source>
         <translation>无限制</translation>
     </message>
@@ -6875,14 +6880,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="1278"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1313"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1348"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="264"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="266"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="268"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="270"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="272"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="274"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="276"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="278"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="280"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="282"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="284"/>
         <source>Extent</source>
         <translation>预留</translation>
     </message>
@@ -6932,20 +6937,21 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1361"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="279"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="285"/>
         <source>Other Define</source>
         <translation>其他定义</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1417"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="280"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="286"/>
         <source>Escape</source>
         <translation>型内逃跑</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1404"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1539"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="283"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="244"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="289"/>
         <source>Use</source>
         <translation>使用</translation>
     </message>
@@ -6962,7 +6968,8 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1456"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1507"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="284"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="245"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="290"/>
         <source>No Use</source>
         <translation>不使用</translation>
     </message>
@@ -6971,12 +6978,12 @@ Please enter an digit between </source>
         <translation type="obsolete">手臂结构选择</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="322"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="328"/>
         <source>Tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="322"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="328"/>
         <source>Save Sucessfully!</source>
         <translation>保存成功!</translation>
     </message>
@@ -7621,13 +7628,13 @@ Please input the root password to confirm.</source>
         <location filename="mainframe.cpp" line="1027"/>
         <location filename="mainframe.cpp" line="1031"/>
         <location filename="mainframe.cpp" line="1414"/>
-        <location filename="mainframe.cpp" line="1454"/>
-        <location filename="mainframe.cpp" line="1461"/>
+        <location filename="mainframe.cpp" line="1455"/>
+        <location filename="mainframe.cpp" line="1462"/>
         <source>tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1454"/>
+        <location filename="mainframe.cpp" line="1455"/>
         <source>Spare Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
@@ -7642,7 +7649,7 @@ Please input the root password to confirm.</source>
         <translation>功能</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1461"/>
+        <location filename="mainframe.cpp" line="1462"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation>没有注册，系统将在十分钟后重启</translation>
     </message>

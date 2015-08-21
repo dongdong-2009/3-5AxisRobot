@@ -719,11 +719,11 @@ ModifyTime</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="categorypage/icalarmframe.cpp" line="112"/>
-        <location filename="categorypage/icalarmframe.cpp" line="117"/>
-        <location filename="categorypage/icalarmframe.cpp" line="214"/>
-        <location filename="categorypage/icalarmframe.cpp" line="216"/>
-        <location filename="categorypage/icalarmframe.cpp" line="311"/>
+        <location filename="categorypage/icalarmframe.cpp" line="111"/>
+        <location filename="categorypage/icalarmframe.cpp" line="116"/>
+        <location filename="categorypage/icalarmframe.cpp" line="213"/>
+        <location filename="categorypage/icalarmframe.cpp" line="215"/>
+        <location filename="categorypage/icalarmframe.cpp" line="310"/>
         <source>no-solve</source>
         <translation>Sem Resolução</translation>
     </message>
@@ -1689,28 +1689,28 @@ ModifyTime</source>
         <translation>Inserir</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="430"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="638"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="429"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="637"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="431"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="430"/>
         <source>Can not add standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="624"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="623"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="625"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="624"/>
         <source>Stand program can not be delete action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="639"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="638"/>
         <source>Can not delete standby position program</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5489,14 +5489,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="1278"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1313"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1348"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="264"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="266"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="268"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="270"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="272"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="274"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="276"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="278"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="280"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="282"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="284"/>
         <source>Extent</source>
         <translation>Reserve</translation>
     </message>
@@ -5542,14 +5542,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="1164"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1202"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1240"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="263"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="265"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="267"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="269"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="271"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="273"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="275"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="277"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="279"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="281"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="283"/>
         <source>Normal</source>
         <translation>Ajuste da Posição</translation>
     </message>
@@ -5627,53 +5627,59 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1361"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="279"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="285"/>
         <source>Other Define</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1404"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1539"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="283"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="244"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="289"/>
         <source>Use</source>
         <translation>Activar</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1417"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="280"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="286"/>
         <source>Escape</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1456"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1507"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="284"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="245"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="290"/>
         <source>No Use</source>
         <translation>Desativar</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1424"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="243"/>
         <source>Adjust</source>
         <translation>Ajuste da Posição</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1549"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="242"/>
         <source> In Mold Pos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1557"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="240"/>
         <source>Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1562"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="241"/>
         <source>No Limit</source>
         <translation type="unfinished">Sem limites</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1600"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="285"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="291"/>
         <source>Save</source>
         <translation>Guardar</translation>
     </message>
@@ -5682,12 +5688,12 @@ Please enter an digit between </source>
         <translation type="obsolete">Reservado</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="322"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="328"/>
         <source>Tips</source>
         <translation>Imediato</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="322"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="328"/>
         <source>Save Sucessfully!</source>
         <translation type="unfinished">Guardar com sucesso!</translation>
     </message>
@@ -6219,8 +6225,8 @@ Please input the root password to confirm.</source>
         <location filename="mainframe.cpp" line="1027"/>
         <location filename="mainframe.cpp" line="1031"/>
         <location filename="mainframe.cpp" line="1414"/>
-        <location filename="mainframe.cpp" line="1454"/>
-        <location filename="mainframe.cpp" line="1461"/>
+        <location filename="mainframe.cpp" line="1455"/>
+        <location filename="mainframe.cpp" line="1462"/>
         <source>tips</source>
         <translation>Imediato</translation>
     </message>
@@ -6245,12 +6251,12 @@ Please input the root password to confirm.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1454"/>
+        <location filename="mainframe.cpp" line="1455"/>
         <source>Spare Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1461"/>
+        <location filename="mainframe.cpp" line="1462"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation type="unfinished"></translation>
     </message>
