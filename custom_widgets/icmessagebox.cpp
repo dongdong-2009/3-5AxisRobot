@@ -4,6 +4,7 @@
 #include <QList>
 #include <QApplication>
 #include <QDebug>
+#include "mainframe.h"
 
 ICMessageBox::ICMessageBox(QWidget *parent) :
     QMessageBox(parent)
@@ -14,7 +15,7 @@ void ICMessageBox::keyPressEvent(QKeyEvent *e)
 {
 //    e->ignore();
     QKeyEvent* ke = new QKeyEvent(*e);
-    qApp->postEvent(this->parentWidget(), ke);
+    qApp->postEvent(icMainFrame, ke);
     this->close();
 }
 
