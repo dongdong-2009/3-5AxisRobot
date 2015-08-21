@@ -166,9 +166,11 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
 //    ui->fixtureSelectBox->setCurrentIndex(host->FixtureDefine());
   //  ui->escapeComboBox->setCurrentIndex(host->EscapeWay());
     if(host->EscapeWay() == 0)
-        ui->useCheckBox->setChecked(true);
+        ui->sedM1->setChecked(true);
     if(host->EscapeWay() == 1)
-        ui->noUseCheckBox->setChecked(true);
+        ui->sedM2->setChecked(true);
+    if(host->EscapeWay() == 2)
+        ui->sedM3->setChecked(true);
     if(ICParametersSave::Instance()->IsAdjustFunctionOn())
     {
         ui->adjUse->blockSignals(true);
@@ -340,11 +342,12 @@ void ICStructDefineFrame::retranslateUi_()
     ui->normalHBox->setText(tr("Normal"));
     ui->extentHBox->setText(tr("Extent"));
     ui->fixtureDefineBox_2->setTitle(tr("Other Define"));
-    ui->label_18->setText(tr("Escape"));
+    ui->label_18->setText(tr("SE Door Mode"));
 //    ui->escapeComboBox->setItemText(0,tr("Use"));
 //    ui->escapeComboBox->setItemText(1,tr("No Use"));
-    ui->useCheckBox->setText(tr("Use"));
-    ui->noUseCheckBox->setText(tr("No Use"));
+    ui->sedM1->setText(tr("Run On Close"));
+    ui->sedM2->setText(tr("Ret On Close"));
+    ui->sedM3->setText(tr("Stop On Close"));
     ui->saveButton->setText(tr("Save"));
 
     ui->tabWidget->setTabText(0,tr("Arm Define"));
@@ -486,6 +489,7 @@ void ICStructDefineFrame::OnOutputDefineChanged(int index)
 }
 
 
+
 void ICStructDefineFrame::escapeBoxChange()
 {
     ICVirtualHost::GlobalVirtualHost()->SetEscapeWay(buttongroup_->checkedId());
@@ -493,8 +497,9 @@ void ICStructDefineFrame::escapeBoxChange()
 
 void ICStructDefineFrame::InitEscapeBox()
 {
-    buttongroup_->addButton(ui->useCheckBox,0);
-    buttongroup_->addButton(ui->noUseCheckBox,1);
+    buttongroup_->addButton(ui->sedM1, 0);
+    buttongroup_->addButton(ui->sedM2, 1);
+    buttongroup_->addButton(ui->sedM3, 2);
     QList<QAbstractButton*> buttons = buttongroup_->buttons();
     for(int i = 0; i != buttons.size(); ++i)
     {
