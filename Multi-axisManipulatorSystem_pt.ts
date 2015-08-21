@@ -7183,6 +7183,11 @@ admin</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1371"/>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.cpp" line="18"/>
         <source>VirtualKeyboard</source>
         <translation type="unfinished"></translation>

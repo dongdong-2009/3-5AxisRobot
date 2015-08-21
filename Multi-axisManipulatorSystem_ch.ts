@@ -8909,8 +8909,9 @@ Admin</source>
         <translation type="obsolete">删除</translation>
     </message>
     <message>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1371"/>
         <source>OK</source>
-        <translation type="obsolete">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.cpp" line="18"/>
