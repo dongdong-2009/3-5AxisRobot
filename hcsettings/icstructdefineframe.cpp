@@ -166,9 +166,11 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
 //    ui->fixtureSelectBox->setCurrentIndex(host->FixtureDefine());
   //  ui->escapeComboBox->setCurrentIndex(host->EscapeWay());
     if(host->EscapeWay() == 0)
-        ui->useCheckBox->setChecked(true);
+        ui->seM1->setChecked(true);
     if(host->EscapeWay() == 1)
-        ui->noUseCheckBox->setChecked(true);
+        ui->seM2->setChecked(true);
+    if(host->EscapeWay() == 2)
+        ui->seM3->setChecked(true);
     if(ICParametersSave::Instance()->IsAdjustFunctionOn())
     {
         ui->adjUse->setChecked(true);
@@ -311,11 +313,12 @@ void ICStructDefineFrame::retranslateUi_()
     ui->normalHBox->setText(tr("Normal"));
     ui->extentHBox->setText(tr("Extent"));
     ui->fixtureDefineBox_2->setTitle(tr("Other Define"));
-    ui->label_18->setText(tr("Escape"));
+    ui->label_18->setText(tr("SE Door Mode"));
 //    ui->escapeComboBox->setItemText(0,tr("Use"));
 //    ui->escapeComboBox->setItemText(1,tr("No Use"));
-    ui->useCheckBox->setText(tr("Use"));
-    ui->noUseCheckBox->setText(tr("No Use"));
+    ui->seM1->setText(tr("Run On Close"));
+    ui->seM2->setText(tr("Ret On Close"));
+    ui->seM3->setText(tr("Stop On Close"));
     ui->saveButton->setText(tr("Save"));
 
     ui->tabWidget->setTabText(0,tr("Arm Define"));
@@ -437,6 +440,7 @@ void ICStructDefineFrame::on_subArmForwardLimitButton_toggled(bool checked)
    checked ? armStruct_ |= 0x0080 : armStruct_ &= 0xFF7F;
 }
 
+
 void ICStructDefineFrame::OnAxisDefineChanged(int index)
 {
     QComboBox* box = qobject_cast<QComboBox*>(sender());
@@ -461,8 +465,10 @@ void ICStructDefineFrame::escapeBoxChange()
 
 void ICStructDefineFrame::InitEscapeBox()
 {
-    buttongroup_->addButton(ui->useCheckBox,0);
-    buttongroup_->addButton(ui->noUseCheckBox,1);
+    buttongroup_->addButton(ui->seM1,0);
+    buttongroup_->addButton(ui->seM2,1);
+    buttongroup_->addButton(ui->seM3,2);
+
     QList<QAbstractButton*> buttons = buttongroup_->buttons();
     for(int i = 0; i != buttons.size(); ++i)
     {
