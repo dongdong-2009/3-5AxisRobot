@@ -5348,7 +5348,6 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="797"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="239"/>
         <source>1</source>
         <translation type="unfinished"></translation>
@@ -5394,41 +5393,6 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="804"/>
-        <source>5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="811"/>
-        <source>2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="851"/>
-        <source>6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="858"/>
-        <source>3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="865"/>
-        <source>7</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="872"/>
-        <source>4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="818"/>
-        <source>8</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1361"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="279"/>
         <source>Other Define</source>
@@ -5457,6 +5421,16 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1424"/>
         <source>Adjust</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="818"/>
+        <source>Rev-2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="865"/>
+        <source>Rev-1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -5501,45 +5501,37 @@ Please enter an digit between </source>
         <translation>Reserve</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="797"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="239"/>
         <source>1</source>
         <translation>Y017</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="804"/>
         <source>5</source>
-        <translation>Y035</translation>
+        <translation type="obsolete">Y035</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="811"/>
         <source>2</source>
-        <translation>Y022</translation>
+        <translation type="obsolete">Y022</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="818"/>
         <source>8</source>
-        <translation>Reserve</translation>
+        <translation type="obsolete">Reserve</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="851"/>
         <source>6</source>
-        <translation>Y036</translation>
+        <translation type="obsolete">Y036</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="858"/>
         <source>3</source>
-        <translation>Y031</translation>
+        <translation type="obsolete">Y031</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="865"/>
         <source>7</source>
-        <translation>Reserve</translation>
+        <translation type="obsolete">Reserve</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="872"/>
         <source>4</source>
-        <translation>Y032</translation>
+        <translation type="obsolete">Y032</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="904"/>
@@ -5621,6 +5613,16 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.cpp" line="200"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="204"/>
         <source>Forward Limit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="818"/>
+        <source>Rev-2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="865"/>
+        <source>Rev-1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

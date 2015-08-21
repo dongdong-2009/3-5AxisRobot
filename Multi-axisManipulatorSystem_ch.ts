@@ -6822,7 +6822,6 @@ Please enter an digit between </source>
         <translation>预留定义</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="797"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="239"/>
         <source>1</source>
         <translation>Y017</translation>
@@ -6888,39 +6887,32 @@ Please enter an digit between </source>
         <translation>预留</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="804"/>
         <source>5</source>
-        <translation>Y035</translation>
+        <translation type="obsolete">Y035</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="811"/>
         <source>2</source>
-        <translation>Y022</translation>
+        <translation type="obsolete">Y022</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="851"/>
         <source>6</source>
-        <translation>Y036</translation>
+        <translation type="obsolete">Y036</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="858"/>
         <source>3</source>
-        <translation>Y031</translation>
+        <translation type="obsolete">Y031</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="865"/>
         <source>7</source>
-        <translation>备用</translation>
+        <translation type="obsolete">备用</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="872"/>
         <source>4</source>
-        <translation>Y032</translation>
+        <translation type="obsolete">Y032</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="818"/>
         <source>8</source>
-        <translation>备用</translation>
+        <translation type="obsolete">备用</translation>
     </message>
     <message>
         <source>Fixture Define</source>
@@ -6956,6 +6948,16 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.cpp" line="283"/>
         <source>Use</source>
         <translation>使用</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="818"/>
+        <source>Rev-2</source>
+        <translation>备用</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="865"/>
+        <source>Rev-1</source>
+        <translation>备用</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1456"/>

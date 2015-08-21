@@ -794,28 +794,28 @@ QRadioButton::indicator:unchecked:disabled
         <item row="0" column="0">
          <widget class="QLabel" name="label">
           <property name="text">
-           <string>1</string>
+           <string notr="true">Y017</string>
           </property>
          </widget>
         </item>
         <item row="0" column="4">
          <widget class="QLabel" name="label_8">
           <property name="text">
-           <string>5</string>
+           <string notr="true">Y035</string>
           </property>
          </widget>
         </item>
         <item row="1" column="0">
          <widget class="QLabel" name="label_2">
           <property name="text">
-           <string>2</string>
+           <string notr="true">Y022</string>
           </property>
          </widget>
         </item>
         <item row="3" column="4">
          <widget class="QLabel" name="label_10">
           <property name="text">
-           <string>8</string>
+           <string>Rev-2</string>
           </property>
          </widget>
         </item>
@@ -848,28 +848,28 @@ QRadioButton::indicator:unchecked:disabled
         <item row="1" column="4">
          <widget class="QLabel" name="label_9">
           <property name="text">
-           <string>6</string>
+           <string notr="true">Y036</string>
           </property>
          </widget>
         </item>
         <item row="2" column="0">
          <widget class="QLabel" name="label_3">
           <property name="text">
-           <string>3</string>
+           <string notr="true">Y031</string>
           </property>
          </widget>
         </item>
         <item row="2" column="4">
          <widget class="QLabel" name="label_11">
           <property name="text">
-           <string>7</string>
+           <string>Rev-1</string>
           </property>
          </widget>
         </item>
         <item row="3" column="0">
          <widget class="QLabel" name="label_4">
           <property name="text">
-           <string>4</string>
+           <string notr="true">Y032</string>
           </property>
          </widget>
         </item>
@@ -1618,14 +1618,14 @@ QRadioButton::indicator:unchecked:disabled
  <connections/>
  <buttongroups>
   <buttongroup name="buttonGroup_2"/>
-  <buttongroup name="buttonGroupC"/>
-  <buttongroup name="buttonGroupD"/>
-  <buttongroup name="buttonGroupE"/>
   <buttongroup name="buttonGroupF"/>
   <buttongroup name="buttonGroupG"/>
   <buttongroup name="buttonGroupH"/>
   <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroupA"/>
   <buttongroup name="buttonGroupB"/>
+  <buttongroup name="buttonGroupC"/>
+  <buttongroup name="buttonGroupD"/>
+  <buttongroup name="buttonGroupE"/>
  </buttongroups>
 </ui>
