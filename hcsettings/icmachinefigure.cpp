@@ -30,6 +30,11 @@ ICMachineFigure::ICMachineFigure(QWidget *parent) :
 
     ui->zsec1->SetDecimalPlaces(1);
     ui->zsec2->SetDecimalPlaces(1);
+
+    ui->zsec1->hide();
+    ui->zsec2->hide();
+    ui->label_7->hide();
+    ui->label_8->hide();
 //    ui->zsec3->SetDecimalPlaces(1);
 //    ui->zsec4->SetDecimalPlaces(1);
 

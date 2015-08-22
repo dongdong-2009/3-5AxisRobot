@@ -14,7 +14,7 @@
 #define SECTION_DECIMAL 1
 #define STACK_DECIMAL 1
 
-#define SW_VERSION "BORUNTE-03-1.1-X4.1.4"
+#define SW_VERSION "OneFraction-1.0-4.1.4"
 #define HW_VERSION "1.3"
 
 #endif // CONFIG_H
