@@ -4,7 +4,7 @@
 ICCloseMoldLabel::ICCloseMoldLabel(QWidget *parent) :
     StatusLabel(parent)
 {
-    dialog_ = new ICTuneMoldDialog();
+    dialog_ = new ICTuneMoldDialog(this);
 }
 
 ICCloseMoldLabel::~ICCloseMoldLabel()

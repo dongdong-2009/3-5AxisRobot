@@ -60,6 +60,7 @@ void ICInstructModifyDialog::keyPressEvent(QKeyEvent *e)
 {
     QKeyEvent* ke = new QKeyEvent(*e);
     qApp->postEvent(this->parentWidget(), ke);
+    this->reject();
 }
 
 

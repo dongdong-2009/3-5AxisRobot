@@ -2,20 +2,20 @@ INCLUDEPATH += $$PWD
 DEPENDPATH += $$PWD
 
 HEADERS += \
-    statuslabel.h \
-    icsystemstatusframe.h \
-    speedstatuslabel.h \
-    operatingratiosetdialog.h \
-    custom_widgets/systemstatusframe/icclosemoldlabel.h \
-    custom_widgets/systemstatusframe/ictunemolddialog.h
+    $$PWD/statuslabel.h \
+    $$PWD/icsystemstatusframe.h \
+    $$PWD/speedstatuslabel.h \
+    $$PWD/operatingratiosetdialog.h \
+    $$PWD/icclosemoldlabel.h \
+    $$PWD/ictunemolddialog.h
 
 SOURCES += \
-    statuslabel.cpp \
-    icsystemstatusframe.cpp \
-    speedstatuslabel.cpp \
-    operatingratiosetdialog.cpp \
-    custom_widgets/systemstatusframe/icclosemoldlabel.cpp \
-    custom_widgets/systemstatusframe/ictunemolddialog.cpp
+    $$PWD/statuslabel.cpp \
+    $$PWD/icsystemstatusframe.cpp \
+    $$PWD/speedstatuslabel.cpp \
+    $$PWD/operatingratiosetdialog.cpp \
+    $$PWD/icclosemoldlabel.cpp \
+    $$PWD/ictunemolddialog.cpp
 
 FORMS += \
     icsystemstatusframe.ui \
