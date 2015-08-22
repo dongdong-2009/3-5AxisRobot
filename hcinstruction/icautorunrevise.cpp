@@ -4,6 +4,7 @@
 #include "icinstructparam.h"
 #include "iccommands.h"
 #include "iccommandprocessor.h"
+#include <QKeyEvent>
 
 ICAutoRunRevise::ICAutoRunRevise(QWidget *parent) :
     QDialog(parent),
@@ -49,6 +50,13 @@ void ICAutoRunRevise::changeEvent(QEvent *e)
         break;
     }
 }
+
+void ICAutoRunRevise::keyPressEvent(QKeyEvent *e)
+{
+    QKeyEvent* ke = new QKeyEvent(*e);
+    qApp->postEvent(this->parentWidget(), ke);
+}
+
 
 bool ICAutoRunRevise::ShowModifyItem(const ICMoldItem *item, ICMoldItem* ret, const QString &text)
 {
