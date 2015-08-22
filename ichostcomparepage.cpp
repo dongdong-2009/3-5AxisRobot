@@ -62,7 +62,7 @@ void ICHostComparePage::on_hostBtn_clicked()
             host->SetSystemParameter(static_cast<ICVirtualHost::ICSystemParameter>(addr++), ret.at(6));
             if( i < 8)
             {
-                pS->SetDistanceRotation(axis[i], (ret.at(0) * 1000) / (uint)((ret.at(5) << 16) | ret.at(4)));
+                pS->SetDistanceRotation(axis[i], (ret.at(0) * 1000) / (qreal)((ret.at(5) << 16) | ret.at(4)));
                 ICVirtualHost::GlobalVirtualHost()->SaveAxisParam(i);
             }
         }

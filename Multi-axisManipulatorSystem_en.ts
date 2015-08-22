@@ -872,7 +872,7 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcinstruction/icautorunrevise.ui" line="130"/>
-        <location filename="hcinstruction/icautorunrevise.cpp" line="74"/>
+        <location filename="hcinstruction/icautorunrevise.cpp" line="75"/>
         <source>Delay Time:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -910,7 +910,7 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcinstruction/icautorunrevise.ui" line="146"/>
-        <location filename="hcinstruction/icautorunrevise.cpp" line="98"/>
+        <location filename="hcinstruction/icautorunrevise.cpp" line="99"/>
         <source>Limit Time:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5111,7 +5111,7 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="157"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="253"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="254"/>
         <source>Limit Time</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5144,7 +5144,7 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="55"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="111"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="112"/>
         <source>Delay Time</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5191,13 +5191,13 @@ App %1; Host:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="188"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="189"/>
         <source>speed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="262"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="278"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="263"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="279"/>
         <source>Times</source>
         <translation type="unfinished"></translation>
     </message>
