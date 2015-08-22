@@ -55,6 +55,7 @@ void ICAutoRunRevise::keyPressEvent(QKeyEvent *e)
 {
     QKeyEvent* ke = new QKeyEvent(*e);
     qApp->postEvent(this->parentWidget(), ke);
+    this->reject();
 }
 
 bool ICAutoRunRevise::ShowModifyItem(const ICMoldItem *item, ICMoldItem* ret, const QString &text)

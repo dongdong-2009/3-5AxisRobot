@@ -3,6 +3,7 @@
 
 #include "iccommandprocessor.h"
 #include "icvirtualkey.h"
+#include <QKeyEvent>
 
 OperatingRatioSetDialog * OperatingRatioSetDialog::instance_ = NULL;
 
@@ -30,6 +31,13 @@ void OperatingRatioSetDialog::changeEvent(QEvent *e)
     default:
         break;
     }
+}
+
+void OperatingRatioSetDialog::keyPressEvent(QKeyEvent *e)
+{
+    QKeyEvent* ke = new QKeyEvent(*e);
+    qApp->postEvent(this->parentWidget(), ke);
+    this->reject();
 }
 
 void OperatingRatioSetDialog::on_okToolButton_clicked()
