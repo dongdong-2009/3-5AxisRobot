@@ -145,7 +145,8 @@ OTHER_FILES += \
     sysconfig/alarminfomation-en \
     sysconfig/alarminfomation-ch \
     sysconfig/hintinfomation-ch \
-    sysconfig/hintinfomation-en
+    sysconfig/hintinfomation-en \
+    tools/autots.py
 
 QMAKE_POST_LINK += "cp *.qm $$DESTDIR"
 QMAKE_PRE_LINK += "lrelease $${TARGET}.pro"
