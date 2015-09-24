@@ -28,10 +28,14 @@ ICPeripheryPage::ICPeripheryPage(QWidget *parent) :
     offClipToOnClip_.insert(ICMold::ACTCLIP7OFF, ICMold::ACTCLIP7ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP8OFF, ICMold::ACTCLIP8ON);
 
-    QList<uint> initStatus = onClipToOffClip_.values();
+//    QList<uint> initStatus = onClipToOffClip_.values();
+    QList<uint> initStatus;
+    initStatus<<ICMold::ACTCLIP7OFF<<ICMold::ACTCLIP8OFF;
     //    QIntValidator *validator = new QIntValidator(0, 2000, this);
     for(int i = 0; i != ui->actionWidget->rowCount(); ++i)
     {
+        clipToRow_.insert(initStatus.at(i), i);
+        clipToRow_.insert(offClipToOnClip_.value(initStatus.at(i)), i);
         button = buttons + i;
         button->setIcon(offPixmap_);
         button->setText(ioNames_.at(i));
@@ -111,7 +115,36 @@ void ICPeripheryPage::hideEvent(QHideEvent *e)
 
 void ICPeripheryPage::SyncStatusImpl(const QList<ICMoldItem> &items)
 {
-    Q_UNUSED(items)
+    ICMoldItem mI;
+    int row;
+//    QCheckBox* en;
+    QPushButton* button;
+    ICPeripheryParameterEditor* dAndT;
+    for(int i = 0; i < ui->actionWidget->rowCount(); ++i)
+    {
+        ui->actionWidget->item(i, 0)->setCheckState(Qt::Unchecked);
+    }
+    for(int i = 0; i < items.size(); ++i)
+    {
+        mI = items.at(i);
+        row = clipToRow_.value(mI.Clip(), 0);
+//        en = qobject_cast<QCheckBox*>(ui->tableWidget->cellWidget(row, 0));
+//        en->setCheckable(true);
+        ui->actionWidget->item(row, 0)->setCheckState(Qt::Checked);
+        button = qobject_cast<QPushButton*>(ui->actionWidget->cellWidget(row, 1));
+//        button->setChecked(onClipToOffClip_.contains(mI.Clip()));
+//        qDebug()<<buttonToClip_.value(button);
+        if(buttonToClip_.value(button) != mI.Clip())
+        {
+            button->click();
+        }
+//        if(onClipToOffClip_.contains(mI.Clip())) button->click();
+        dAndT = qobject_cast<ICPeripheryParameterEditor*>(ui->actionWidget->cellWidget(row, 2));
+//        dAndT->SetThisIntToThisText(mI.DVal());
+        dAndT->SetDelay(mI.DVal());
+        dAndT->SetTimes(mI.ActualMoldCount());
+
+    }
 }
 
 void ICPeripheryPage::StatusRefreshed(){}

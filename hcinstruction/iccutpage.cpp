@@ -154,7 +154,37 @@ void ICCutPage::changeEvent(QEvent *e)
 
 void ICCutPage::SyncStatusImpl(const QList<ICMoldItem> &items)
 {
-    Q_UNUSED(items)
+//    Q_UNUSED(items)
+    for(int i = 0; i < ui->tableWidget->rowCount(); ++i)
+    {
+        ui->tableWidget->item(i, 0)->setCheckState(Qt::Unchecked);
+    }
+    ICMoldItem item;
+//    ICLineEditWithVirtualNumericKeypad* time;
+    QPushButton* button;
+    int row;
+    for(int i = 0; i < items.size(); ++i)
+    {
+        item = items.at(i);
+        row = item.SVal();
+        if(row >= ui->tableWidget->rowCount()) continue;
+        ui->tableWidget->item(row, 0)->setCheckState(Qt::Checked);
+        button = qobject_cast<QPushButton*>(ui->tableWidget->cellWidget(row, 1));
+//        button->setChecked(item.IFVal());
+        int currentClip = buttonToClip_.value(button);
+        if(item.IFVal())
+        {
+            if(!onClipToOffClip_.contains(currentClip))
+                button->click();
+        }
+        else
+        {
+            if(!offClipToOnClip_.contains(currentClip))
+                button->click();
+        }
+//        time = qobject_cast<ICLineEditWithVirtualNumericKeypad*>(ui->tableWidget->cellWidget(row, 2));
+//        time->SetThisIntToThisText(item.DVal());
+    }
 }
 
 

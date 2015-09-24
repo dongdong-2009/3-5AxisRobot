@@ -16,6 +16,8 @@ public:
     ~ICPeripheryParameterEditor();
     int Delay() const;
     int Times() const;
+    void SetDelay(int delay);
+    void SetTimes(int times);
 
 private:
     Ui::ICPeripheryParameterEditor *ui;

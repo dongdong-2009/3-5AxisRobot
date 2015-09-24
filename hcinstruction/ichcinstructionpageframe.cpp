@@ -78,6 +78,7 @@ ICHCInstructionPageFrame::ICHCInstructionPageFrame(QWidget *parent) :
     InitParameter();
 
 //    ui->conditionsToolButton->hide();
+    ui->pneumaticButton->hide();
 }
 
 ICHCInstructionPageFrame::~ICHCInstructionPageFrame()
@@ -406,6 +407,7 @@ void ICHCInstructionPageFrame::UpdateUIProgramList_()
     int index = 0;
     QColor color;
     ICMoldItem* tmp = NULL;
+    viewItemToMoldItemMap_.clear();
     for(int i = 0; i != programList_.size(); ++i)
     {
         (i % 2 == 0 ? color.setRgb(255,255,154): color.setRgb(154,255,255));
@@ -418,6 +420,7 @@ void ICHCInstructionPageFrame::UpdateUIProgramList_()
             tmp = groupItem.MoldItemAt(j);
             if(tmp != NULL)
             {
+                viewItemToMoldItemMap_.insert(ui->moldContentListWidget->item(j + index), *tmp);
                 if(tmp->Num() == 0)
                 {
                     ui->moldContentListWidget->item(j + index)->setBackgroundColor(QColor(239, 235, 231));
@@ -1282,4 +1285,59 @@ QStringList ICHCInstructionPageFrame::Flags()
         }
     }
     return selList;
+}
+
+void ICHCInstructionPageFrame::on_moldContentListWidget_itemPressed(QListWidgetItem *item)
+{
+    if(viewItemToMoldItemMap_.contains(item))
+    {
+//        qDebug()<<viewItemToMoldItemMap_.value(item)->Action();
+        ICMoldItem mI = viewItemToMoldItemMap_.value(item);
+        QList<ICMoldItem> pressedItem;
+        pressedItem<<mI;
+        if(mI.IsClip())
+        {
+            if(mI.Clip() == ICMold::ACTCLSMDON ||
+                    mI.Clip() == ICMold::ACTCLSMDOFF ||
+                    mI.Clip() == ICMold::ACTEJECTON ||
+                    mI.Clip() == ICMold::ACTEJECTOFF ||
+                    mI.Clip() == ICMold::ACT_CORE1_ON ||
+                    mI.Clip() == ICMold::ACT_CORE1_OFF ||
+                    mI.Clip() == ICMold::ACT_CORE2_ON ||
+                    mI.Clip() == ICMold::ACT_CORE2_OFF )
+            {
+                ui->injectionButton->click();
+                injectionPage_->SyncStatus(pressedItem);
+            }
+            else if(mI.Clip() == ICMold::ACTCLIP7ON ||
+                    mI.Clip() == ICMold::ACTCLIP8ON ||
+                    mI.Clip() == ICMold::ACTCLIP7OFF ||
+                    mI.Clip() == ICMold::ACTCLIP8OFF)
+            {
+                ui->peripheryButton->click();
+                peripheryPage_->SyncStatus(pressedItem);
+            }
+            else if(mI.Clip() == ICMold::ACTLAYOUTON ||
+                    mI.Clip() == ICMold::ACTLAYOUTOFF)
+            {
+                ui->stackButton->click();
+            }
+            else
+            {
+                ui->fixtureButton->click();
+                fixturePage_->SyncStatus(pressedItem);
+            }
+        }
+        else if(mI.Action() <= ICMold::ACT_PoseVert2)
+        {
+            ui->lineButton->click();
+            actionPage_->SyncStatus(pressedItem);
+        }
+        else if(mI.Action() == ICMold::ACT_Cut)
+        {
+            ui->cutButton->click();
+            cutPage_->SyncStatus(pressedItem);
+        }
+//        else if(mI.Action() == ICMold::ACT_)
+    }
 }

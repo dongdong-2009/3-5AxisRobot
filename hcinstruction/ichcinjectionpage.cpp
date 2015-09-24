@@ -32,10 +32,15 @@ ICHCInjectionPage::ICHCInjectionPage(QWidget *parent) :
 //    offClipToOnClip_.insert(ICMold::ACTLAYOUTOFF, ICMold::ACTLAYOUTON);
     offClipToOnClip_.insert(ICMold::ACT_CORE1_OFF, ICMold::ACT_CORE1_ON);
     offClipToOnClip_.insert(ICMold::ACT_CORE2_OFF, ICMold::ACT_CORE2_ON);
-    QList<uint> initStatus = onClipToOffClip_.values();
+//    QList<uint> initStatus = onClipToOffClip_.values();
+    QList<uint> initStatus;
+    initStatus<<ICMold::ACTCLSMDOFF<<ICMold::ACTEJECTOFF
+                <<ICMold::ACT_CORE1_OFF<<ICMold::ACT_CORE2_OFF;
     QIntValidator *validator = new QIntValidator(0, 30000, this);
     for(int i = 0; i != ui->tableWidget->rowCount(); ++i)
     {
+        clipToRow_.insert(initStatus.at(i), i);
+        clipToRow_.insert(offClipToOnClip_.value(initStatus.at(i)), i);
         button = buttons + i;
         button->setIcon(offPixmap_);
         button->setText(ioNames_.at(i));
@@ -125,7 +130,33 @@ void ICHCInjectionPage::hideEvent(QHideEvent *e)
 
 void ICHCInjectionPage::SyncStatusImpl(const QList<ICMoldItem> &items)
 {
-    Q_UNUSED(items)
+    ICMoldItem mI;
+    int row;
+//    QCheckBox* en;
+    QPushButton* button;
+    ICLineEditWithVirtualNumericKeypad* delay;
+    for(int i = 0; i < ui->tableWidget->rowCount(); ++i)
+    {
+        ui->tableWidget->item(i, 0)->setCheckState(Qt::Unchecked);
+    }
+    for(int i = 0; i < items.size(); ++i)
+    {
+        mI = items.at(i);
+        row = clipToRow_.value(mI.Clip(), 0);
+//        en = qobject_cast<QCheckBox*>(ui->tableWidget->cellWidget(row, 0));
+//        en->setCheckable(true);
+        ui->tableWidget->item(row, 0)->setCheckState(Qt::Checked);
+        button = qobject_cast<QPushButton*>(ui->tableWidget->cellWidget(row, 1));
+//        button->setChecked(onClipToOffClip_.contains(mI.Clip()));
+//        qDebug()<<buttonToClip_.value(button);
+        if(buttonToClip_.value(button) != mI.Clip())
+        {
+            button->click();
+        }
+//        if(onClipToOffClip_.contains(mI.Clip())) button->click();
+        delay = qobject_cast<ICLineEditWithVirtualNumericKeypad*>(ui->tableWidget->cellWidget(row, 2));
+        delay->SetThisIntToThisText(mI.DVal());
+    }
 }
 
 void ICHCInjectionPage::StatusRefreshed()

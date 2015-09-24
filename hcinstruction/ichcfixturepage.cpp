@@ -7,6 +7,7 @@
 #include "icvirtualhost.h"
 #include "icvirtualkey.h"
 #include "iccommandprocessor.h"
+#include <QCheckBox>
 
 
 ICHCFixturePage::ICHCFixturePage(QWidget *parent) :
@@ -50,10 +51,17 @@ ICHCFixturePage::ICHCFixturePage(QWidget *parent) :
     offClipToOnClip_.insert(ICMold::ACT_AUX4 + 1000, ICMold::ACT_AUX4);
     offClipToOnClip_.insert(ICMold::ACT_AUX5 + 1000, ICMold::ACT_AUX5);
     offClipToOnClip_.insert(ICMold::ACT_AUX6 + 1000, ICMold::ACT_AUX6);
-    QList<uint> initStatus = onClipToOffClip_.values();
+//    QList<uint> initStatus = onClipToOffClip_.values();
+    QList<uint> initStatus;
+    initStatus<<ICMold::ACTCLIP1OFF<<ICMold::ACTCLIP2OFF<<ICMold::ACTCLIP3OFF
+                <<ICMold::ACTCLIP4OFF<<ICMold::ACTCLIP5OFF<<ICMold::ACTCLIP6OFF
+                  <<(ICMold::ACT_AUX1 + 1000)<<(ICMold::ACT_AUX2 + 1000)<<(ICMold::ACT_AUX3 + 1000)
+                    <<(ICMold::ACT_AUX4 + 1000)<<(ICMold::ACT_AUX5 + 1000)<<(ICMold::ACT_AUX6 + 1000);
     QIntValidator *validator = new QIntValidator(0, 30000, this);
     for(int i = 0; i != ui->tableWidget->rowCount(); ++i)
     {
+        clipToRow_.insert(initStatus.at(i), i);
+        clipToRow_.insert(offClipToOnClip_.value(initStatus.at(i)), i);
         button = buttons + i;
 //        button->setMinimumWidth(100);
         button->setIcon(offPixmap_);
@@ -197,7 +205,34 @@ void ICHCFixturePage::hideEvent(QHideEvent *e)
 
 void ICHCFixturePage::SyncStatusImpl(const QList<ICMoldItem> &items)
 {
-    Q_UNUSED(items)
+//    Q_UNUSED(items)
+    ICMoldItem mI;
+    int row;
+//    QCheckBox* en;
+    QPushButton* button;
+    ICLineEditWithVirtualNumericKeypad* delay;
+    for(int i = 0; i < ui->tableWidget->rowCount(); ++i)
+    {
+        ui->tableWidget->item(i, 0)->setCheckState(Qt::Unchecked);
+    }
+    for(int i = 0; i < items.size(); ++i)
+    {
+        mI = items.at(i);
+        row = clipToRow_.value(mI.Clip(), 0);
+//        en = qobject_cast<QCheckBox*>(ui->tableWidget->cellWidget(row, 0));
+//        en->setCheckable(true);
+        ui->tableWidget->item(row, 0)->setCheckState(Qt::Checked);
+        button = qobject_cast<QPushButton*>(ui->tableWidget->cellWidget(row, 1));
+//        button->setChecked(onClipToOffClip_.contains(mI.Clip()));
+//        qDebug()<<buttonToClip_.value(button);
+        if(buttonToClip_.value(button) != mI.Clip())
+        {
+            button->click();
+        }
+//        if(onClipToOffClip_.contains(mI.Clip())) button->click();
+        delay = qobject_cast<ICLineEditWithVirtualNumericKeypad*>(ui->tableWidget->cellWidget(row, 2));
+        delay->SetThisIntToThisText(mI.DVal());
+    }
 }
 
 

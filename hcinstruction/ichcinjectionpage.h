@@ -56,6 +56,8 @@ private:
     QSignalMapper buttonSignalMapper_;
     QPixmap onPixmap_;
     QPixmap offPixmap_;
+    QMap<int, int> clipToRow_;
+
 };
 
 #endif // ICHCINJECTIONPAGE_H

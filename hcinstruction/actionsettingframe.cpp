@@ -229,14 +229,159 @@ void ActionSettingFrame::showEvent(QShowEvent *e)
 void ActionSettingFrame::SyncStatusImpl(const QList<ICMoldItem> &items)
 {
 //    Q_UNUSED(items)
+    ui->gxButton->setChecked(false);
+    ui->gyButton->setChecked(false);
+    ui->gzButton->setChecked(false);
+    ui->gPButton->setChecked(false);
+    ui->gQButton->setChecked(false);
+    ui->gAButton->setChecked(false);
+    ui->gBButton->setChecked(false);
+    ui->gCButton->setChecked(false);
+
     ICMoldItem item;
     for(int i = 0; i < items.size(); ++i)
     {
         item = items.at(i);
         if(item.Action() == ICMold::GX)
+        {
             ui->gxButton->setChecked(true);
+            ui->x1PosLineEdit->SetThisIntToThisText(item.Pos());
+            ui->x1SpeedLineEdit->SetThisIntToThisText(item.SVal());
+            ui->x1DelayLineEdit->SetThisIntToThisText(item.DVal());
+        }
         else if(item.Action() == ICMold::GY)
+        {
             ui->gyButton->setChecked(true);
+            ui->y1PosLineEdit->SetThisIntToThisText(item.Pos());
+            ui->y1SpeedLineEdit->SetThisIntToThisText(item.SVal());
+            ui->y1DelayLineEdit->SetThisIntToThisText(item.DVal());
+        }
+        else if(item.Action() == ICMold::GZ)
+        {
+            ui->gzButton->setChecked(true);
+            ui->zPosLineEdit->SetThisIntToThisText(item.Pos());
+            ui->zSpeedLineEdit->SetThisIntToThisText(item.SVal());
+            ui->zDelayLineEdit->SetThisIntToThisText(item.DVal());
+        }
+        else if(item.Action() == ICMold::GP)
+        {
+            ui->gPButton->setChecked(true);
+            ui->x2PosLineEdit->SetThisIntToThisText(item.Pos());
+            ui->x2SpeedLineEdit->SetThisIntToThisText(item.SVal());
+            ui->x2DelayLineEdit->SetThisIntToThisText(item.DVal());
+        }
+        else if(item.Action() == ICMold::GQ)
+        {
+            ui->gQButton->setChecked(true);
+            ui->y2PosLineEdit->SetThisIntToThisText(item.Pos());
+            ui->y2SpeedLineEdit->SetThisIntToThisText(item.SVal());
+            ui->y2DelayLineEdit->SetThisIntToThisText(item.DVal());
+        }
+        else if(item.Action() == ICMold::GA)
+        {
+            ui->gAButton->setChecked(true);
+            ui->aPosLineEdit->SetThisIntToThisText(item.Pos());
+            ui->aSpeedLineEdit->SetThisIntToThisText(item.SVal());
+            ui->aDelayLineEdit->SetThisIntToThisText(item.DVal());
+        }
+        else if(item.Action() == ICMold::GB)
+        {
+            ui->gBButton->setChecked(true);
+            ui->bPosLineEdit->SetThisIntToThisText(item.Pos());
+            ui->bSpeedLineEdit->SetThisIntToThisText(item.SVal());
+            ui->bDelayLineEdit->SetThisIntToThisText(item.DVal());
+        }
+        else if(item.Action() == ICMold::GC)
+        {
+            ui->gCButton->setChecked(true);
+            ui->cPosLineEdit->SetThisIntToThisText(item.Pos());
+            ui->cSpeedLineEdit->SetThisIntToThisText(item.SVal());
+            ui->cDelayLineEdit->SetThisIntToThisText(item.DVal());
+        }
+        else if(item.Action() == ICMold::ACTMAINBACKWARD)
+        {
+            ui->gxButton->setChecked(true);
+            ui->x1BackwardBox->setChecked(true);
+            ui->x1DelayLineEdit->SetThisIntToThisText(item.DVal());
+        }
+        else if(item.Action() == ICMold::ACTMAINFORWARD)
+        {
+            ui->gxButton->setChecked(true);
+            ui->x1ForwardBox->setChecked(true);
+            ui->x1DelayLineEdit->SetThisIntToThisText(item.DVal());
+        }
+        else if(item.Action() == ICMold::ACTMAINUP)
+        {
+            ui->gyButton->setChecked(true);
+            ui->y1UpBox->setChecked(true);
+            ui->y1DelayLineEdit->SetThisIntToThisText(item.DVal());
+        }
+        else if(item.Action() == ICMold::ACTMAINDOWN)
+        {
+            ui->gyButton->setChecked(true);
+            ui->y1DownBox->setChecked(true);
+            ui->y1DelayLineEdit->SetThisIntToThisText(item.DVal());
+        }
+        else if(item.Action() == ICMold::ACTGOOUT)
+        {
+            ui->gzButton->setChecked(true);
+            ui->zComeOutBox->setChecked(true);
+            ui->zDelayLineEdit->SetThisIntToThisText(item.DVal());
+        }
+        else if(item.Action() == ICMold::ACTCOMEIN)
+        {
+            ui->gzButton->setChecked(true);
+            ui->zComeInBox->setChecked(true);
+            ui->zDelayLineEdit->SetThisIntToThisText(item.DVal());
+        }
+        else if(item.Action() == ICMold::ACTVICEBACKWARD)
+        {
+            ui->gPButton->setChecked(true);
+            ui->x2BackwardBox->setChecked(true);
+            ui->x2DelayLineEdit->SetThisIntToThisText(item.DVal());
+        }
+        else if(item.Action() == ICMold::ACTVICEFORWARD)
+        {
+            ui->gPButton->setChecked(true);
+            ui->x2ForwardBox->setChecked(true);
+            ui->x2DelayLineEdit->SetThisIntToThisText(item.DVal());
+        }
+        else if(item.Action() == ICMold::ACTVICEUP)
+        {
+            ui->gQButton->setChecked(true);
+            ui->y2UpBox->setChecked(true);
+            ui->y2DelayLineEdit->SetThisIntToThisText(item.DVal());
+        }
+        else if(item.Action() == ICMold::ACTVICEDOWN)
+        {
+            ui->gQButton->setChecked(true);
+            ui->y2DownBox->setChecked(true);
+            ui->y2DelayLineEdit->SetThisIntToThisText(item.DVal());
+        }
+        else if(item.Action() == ICMold::ACT_PoseHori2)
+        {
+            ui->gAButton->setChecked(true);
+            ui->aHorizonBox->setChecked(true);
+            ui->aDelayLineEdit->SetThisIntToThisText(item.DVal());
+        }
+        else if(item.Action() == ICMold::ACT_PoseVert2)
+        {
+            ui->gAButton->setChecked(true);
+            ui->aVerticalBox->setCheckable(true);
+            ui->aDelayLineEdit->SetThisIntToThisText(item.DVal());
+        }
+        else if(item.Action() == ICMold::ACTPOSEHORI)
+        {
+            ui->gCButton->setChecked(true);
+            ui->cHorizonBox->setChecked(true);
+            ui->cDelayLineEdit->SetThisIntToThisText(item.DVal());
+        }
+        else if(item.Action() == ICMold::ACTPOSEVERT)
+        {
+            ui->gCButton->setChecked(true);
+            ui->cVerticalBox->setChecked(true);
+            ui->cDelayLineEdit->SetThisIntToThisText(item.DVal());
+        }
 
     }
 }

@@ -15,6 +15,8 @@ namespace Ui {
 class ActionSettingFrame;
 class ICProgramGuidePage;
 class ICHCConditionPage;
+class QListWidgetItem;
+class ICInstructionEditorBase;
 
 class ICHCInstructionPageFrame : public QFrame
 {
@@ -72,6 +74,8 @@ private slots:
 
     void on_tryButton_clicked();
 
+    void on_moldContentListWidget_itemPressed(QListWidgetItem *item);
+
 signals:
 //    void JumpToProgramEditorPage();
 
@@ -96,18 +100,18 @@ private:
 private:
     Ui::ICHCInstructionPageFrame *ui;
     ActionSettingFrame * actionPage_;
-    QWidget * injectionPage_;
-    QWidget * fixturePage_;
+    ICInstructionEditorBase* injectionPage_;
+    ICInstructionEditorBase * fixturePage_;
     ICHCConditionPage * conditionPage_;
-    QWidget * flagsPage_;
-    QWidget * pneumaticPage_;
-    QWidget * waitConditionPage_;
-    QWidget * peripheryPage_;
-    QWidget * cutPage_;
-    QWidget * programPage_;
-    QWidget * stackPage_;
-    QWidget * otherPage_;
-    QWidget * commentPage_;
+    ICInstructionEditorBase * flagsPage_;
+    ICInstructionEditorBase * pneumaticPage_;
+    ICInstructionEditorBase * waitConditionPage_;
+    ICInstructionEditorBase * peripheryPage_;
+    ICInstructionEditorBase * cutPage_;
+    ICInstructionEditorBase * programPage_;
+    ICInstructionEditorBase * stackPage_;
+    ICInstructionEditorBase * otherPage_;
+    ICInstructionEditorBase * commentPage_;
     ICProgramGuidePage * guidePage_;
     ICInstructModifyDialog *modifyDialog_;
 
@@ -120,6 +124,7 @@ private:
     int currentEdit_;
     bool isProgramChanged_;
     bool isModifyProgram_;
+    QMap<QListWidgetItem*, ICMoldItem> viewItemToMoldItemMap_;
 };
 
 #endif // ICHCINSTRUCTIONPAGEFRAME_H

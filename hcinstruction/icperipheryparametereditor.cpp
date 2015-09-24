@@ -29,3 +29,13 @@ int ICPeripheryParameterEditor::Times() const
 {
     return ui->timesEdit->TransThisTextToThisInt();
 }
+
+void ICPeripheryParameterEditor::SetDelay(int delay)
+{
+    ui->delayEdit->SetThisIntToThisText(delay);
+}
+
+void ICPeripheryParameterEditor::SetTimes(int times)
+{
+    ui->timesEdit->SetThisIntToThisText(times);
+}
