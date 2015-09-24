@@ -23,6 +23,9 @@ public:
     explicit ICHCInjectionPage(QWidget *parent = 0);
     ~ICHCInjectionPage();
 
+signals:
+    void GotoAxis();
+
 protected:
     void changeEvent(QEvent *);
     void showEvent(QShowEvent *e);
@@ -38,6 +41,8 @@ private Q_SLOTS:
 //    void on_closeMoldlDelayEdit_textChanged(QString );
     void StatusRefreshed();
     void CommandButtonClicked(QWidget *widget);
+
+    void on_goToAxis_clicked();
 
 private:
     Ui::ICHCInjectionPage *ui;

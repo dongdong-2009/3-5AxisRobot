@@ -14,6 +14,15 @@
    <string>Form</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>4</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
+    <number>2</number>
+   </property>
    <item>
     <widget class="QLabel" name="label">
      <property name="text">
@@ -145,6 +154,26 @@ QRadioButton::indicator:unchecked:disabled
        <string>Sucker4</string>
       </property>
      </row>
+     <row>
+      <property name="text">
+       <string>Sucker5</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Sucker6</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Sucker7</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Sucker8</string>
+      </property>
+     </row>
      <column>
       <property name="text">
        <string>En</string>
@@ -174,10 +203,7 @@ QRadioButton::indicator:unchecked:disabled
      </item>
      <item row="0" column="1">
       <property name="text">
-       <string notr="true"/>
-      </property>
-      <property name="toolTip">
-       <string notr="true"/>
+       <string/>
       </property>
      </item>
      <item row="1" column="0">
@@ -190,7 +216,7 @@ QRadioButton::indicator:unchecked:disabled
      </item>
      <item row="1" column="1">
       <property name="text">
-       <string notr="true"/>
+       <string/>
       </property>
      </item>
      <item row="2" column="0">
@@ -203,7 +229,7 @@ QRadioButton::indicator:unchecked:disabled
      </item>
      <item row="2" column="1">
       <property name="text">
-       <string notr="true"/>
+       <string/>
       </property>
      </item>
      <item row="3" column="0">
@@ -216,7 +242,7 @@ QRadioButton::indicator:unchecked:disabled
      </item>
      <item row="3" column="1">
       <property name="text">
-       <string notr="true"/>
+       <string/>
       </property>
      </item>
      <item row="4" column="0">
@@ -229,7 +255,7 @@ QRadioButton::indicator:unchecked:disabled
      </item>
      <item row="4" column="1">
       <property name="text">
-       <string notr="true"/>
+       <string/>
       </property>
      </item>
      <item row="5" column="0">
@@ -242,7 +268,7 @@ QRadioButton::indicator:unchecked:disabled
      </item>
      <item row="5" column="1">
       <property name="text">
-       <string notr="true"/>
+       <string/>
       </property>
      </item>
      <item row="6" column="0">
@@ -253,11 +279,6 @@ QRadioButton::indicator:unchecked:disabled
        <enum>Unchecked</enum>
       </property>
      </item>
-     <item row="6" column="1">
-      <property name="text">
-       <string notr="true"/>
-      </property>
-     </item>
      <item row="7" column="0">
       <property name="text">
        <string/>
@@ -266,12 +287,45 @@ QRadioButton::indicator:unchecked:disabled
        <enum>Unchecked</enum>
       </property>
      </item>
-     <item row="7" column="1">
-      <property name="text">
-       <string notr="true"/>
+     <item row="8" column="0">
+      <property name="checkState">
+       <enum>Unchecked</enum>
+      </property>
+     </item>
+     <item row="9" column="0">
+      <property name="checkState">
+       <enum>Unchecked</enum>
+      </property>
+     </item>
+     <item row="10" column="0">
+      <property name="checkState">
+       <enum>Unchecked</enum>
+      </property>
+     </item>
+     <item row="11" column="0">
+      <property name="checkState">
+       <enum>Unchecked</enum>
       </property>
      </item>
     </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="goToAxis">
+       <property name="text">
+        <string>Axis</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="goToFixture">
+       <property name="text">
+        <string>Fixture</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </item>
   </layout>
  </widget>

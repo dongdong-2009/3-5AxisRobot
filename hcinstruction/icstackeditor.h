@@ -21,8 +21,13 @@ protected:
     void SyncStatusImpl(const QList<ICMoldItem> &items){Q_UNUSED(items)}
     QList<ICMoldItem> CreateCommandImpl() const;
 
+private slots:
+    void on_stackConfig_clicked();
+
 private:
     Ui::ICStackEditor *ui;
+
+    QWidget* stackConfig_;
 
 
 };

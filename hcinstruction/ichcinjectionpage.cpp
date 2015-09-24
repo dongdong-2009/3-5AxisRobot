@@ -223,3 +223,8 @@ QList<ICMoldItem> ICHCInjectionPage::CreateCommandImpl() const
     }
     return ret;
 }
+
+void ICHCInjectionPage::on_goToAxis_clicked()
+{
+    emit GotoAxis();
+}

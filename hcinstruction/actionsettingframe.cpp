@@ -228,7 +228,17 @@ void ActionSettingFrame::showEvent(QShowEvent *e)
 
 void ActionSettingFrame::SyncStatusImpl(const QList<ICMoldItem> &items)
 {
-    Q_UNUSED(items)
+//    Q_UNUSED(items)
+    ICMoldItem item;
+    for(int i = 0; i < items.size(); ++i)
+    {
+        item = items.at(i);
+        if(item.Action() == ICMold::GX)
+            ui->gxButton->setChecked(true);
+        else if(item.Action() == ICMold::GY)
+            ui->gyButton->setChecked(true);
+
+    }
 }
 
 void ActionSettingFrame::StatusRefresh()
@@ -890,4 +900,19 @@ void ActionSettingFrame::KeyToActionCheck(int key)
         break;
 
     }
+}
+
+void ActionSettingFrame::on_goToFixture_clicked()
+{
+    emit GoToFixture();
+}
+
+void ActionSettingFrame::on_goToIMM_clicked()
+{
+    emit GoToIMM();
+}
+
+void ActionSettingFrame::on_goToCheck_clicked()
+{
+    emit GoToFixtureCheck();
 }

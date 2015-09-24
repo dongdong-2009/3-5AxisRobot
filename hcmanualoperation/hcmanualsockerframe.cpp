@@ -21,14 +21,34 @@ HCManualSockerFrame::HCManualSockerFrame(QWidget *parent) :
     wrapper = new ICCommandKeyWrapper(ui->disconnectSucker2ToolButton, IC::VKEY_CLIP6OFF);
     wrappers_.append(wrapper);
 
-    wrapper = new ICCommandKeyWrapper(ui->connectSucker3ToolButton, IC::VKEY_RESERVE5_ON);
+    wrapper = new ICCommandKeyWrapper(ui->connectSucker3ToolButton, IC::VKEY_RESERVE1_ON);
     wrappers_.append(wrapper);
-    wrapper = new ICCommandKeyWrapper(ui->connectSucker4ToolButton, IC::VKEY_RESERVE6_ON);
+    wrapper = new ICCommandKeyWrapper(ui->connectSucker4ToolButton, IC::VKEY_RESERVE2_ON);
     wrappers_.append(wrapper);
 
-    wrapper = new ICCommandKeyWrapper(ui->disconnectSucker3ToolButton, IC::VKEY_RESERVE5_OFF);
+    wrapper = new ICCommandKeyWrapper(ui->disconnectSucker3ToolButton, IC::VKEY_RESERVE1_OFF);
     wrappers_.append(wrapper);
-    wrapper = new ICCommandKeyWrapper(ui->disconnectSucker4ToolButton, IC::VKEY_RESERVE6_OFF);
+    wrapper = new ICCommandKeyWrapper(ui->disconnectSucker4ToolButton, IC::VKEY_RESERVE2_OFF);
+    wrappers_.append(wrapper);
+
+    wrapper = new ICCommandKeyWrapper(ui->connectSucker5ToolButton, IC::VKEY_RESERVE3_ON);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->connectSucker6ToolButton, IC::VKEY_RESERVE4_ON);
+    wrappers_.append(wrapper);
+
+    wrapper = new ICCommandKeyWrapper(ui->disconnectSucker5ToolButton, IC::VKEY_RESERVE3_OFF);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->disconnectSucker6ToolButton, IC::VKEY_RESERVE4_OFF);
+    wrappers_.append(wrapper);
+
+    wrapper = new ICCommandKeyWrapper(ui->connectSucker7ToolButton, IC::VKEY_RESERVE5_ON);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->connectSucker8ToolButton, IC::VKEY_RESERVE6_ON);
+    wrappers_.append(wrapper);
+
+    wrapper = new ICCommandKeyWrapper(ui->disconnectSucker7ToolButton, IC::VKEY_RESERVE5_OFF);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->disconnectSucker8ToolButton, IC::VKEY_RESERVE6_OFF);
     wrappers_.append(wrapper);
 
 }
@@ -112,7 +132,7 @@ void HCManualSockerFrame::StatusRefreshed()
         ui->sucker2Label->setPixmap(off);
     }
 
-    if(host->IsInputOn(7))
+    if(host->IsInputOn(11))
     {
         ui->sucker3Label->setPixmap(inOn);
     }
@@ -121,7 +141,7 @@ void HCManualSockerFrame::StatusRefreshed()
         ui->sucker3Label->setPixmap(off);
     }
 
-    if(host->IsInputOn(22))
+    if(host->IsInputOn(23))
     {
         ui->sucker4Label->setPixmap(inOn);
     }
@@ -130,7 +150,43 @@ void HCManualSockerFrame::StatusRefreshed()
         ui->sucker4Label->setPixmap(off);
     }
 
-    if(host->IsOutputOn(21))
+    if(host->IsInputOn(6))
+    {
+        ui->sucker5Label->setPixmap(inOn);
+    }
+    else
+    {
+        ui->sucker5Label->setPixmap(off);
+    }
+
+    if(host->IsInputOn(22))
+    {
+        ui->sucker6Label->setPixmap(inOn);
+    }
+    else
+    {
+        ui->sucker6Label->setPixmap(off);
+    }
+
+    if(host->IsInputOn(24))
+    {
+        ui->sucker7Label->setPixmap(inOn);
+    }
+    else
+    {
+        ui->sucker7Label->setPixmap(off);
+    }
+
+    if(host->IsInputOn(26))
+    {
+        ui->sucker8Label->setPixmap(inOn);
+    }
+    else
+    {
+        ui->sucker8Label->setPixmap(off);
+    }
+
+    if(host->IsOutputOn(7))
     {
         ui->sucker3StatusLabel->setPixmap(on);
     }
@@ -139,13 +195,49 @@ void HCManualSockerFrame::StatusRefreshed()
         ui->sucker3StatusLabel->setPixmap(off);
     }
 
-    if(host->IsOutputOn(22))
+    if(host->IsOutputOn(10))
     {
         ui->sucker4StatusLabel->setPixmap(on);
     }
     else
     {
         ui->sucker4StatusLabel->setPixmap(off);
+    }
+
+    if(host->IsOutputOn(17))
+    {
+        ui->sucker5StatusLabel->setPixmap(on);
+    }
+    else
+    {
+        ui->sucker5StatusLabel->setPixmap(off);
+    }
+
+    if(host->IsOutputOn(18))
+    {
+        ui->sucker6StatusLabel->setPixmap(on);
+    }
+    else
+    {
+        ui->sucker6StatusLabel->setPixmap(off);
+    }
+
+    if(host->IsOutputOn(21))
+    {
+        ui->sucker7StatusLabel->setPixmap(on);
+    }
+    else
+    {
+        ui->sucker7StatusLabel->setPixmap(off);
+    }
+
+    if(host->IsOutputOn(22))
+    {
+        ui->sucker8StatusLabel->setPixmap(on);
+    }
+    else
+    {
+        ui->sucker8StatusLabel->setPixmap(off);
     }
 
 }

@@ -254,7 +254,7 @@ void ICHCStackedSettingsFrame::hideEvent(QHideEvent *e)
     ICMold::CurrentMold()->SaveMoldParamsFile();
 //    qApp->processEvents(QEventLoop::WaitForMoreEvents);
 //    QTimer::singleShot(5, this, SLOT(TimeOutToReconfig()));
-    ICVirtualHost::GlobalVirtualHost()->ReConfigure();
+//    ICVirtualHost::GlobalVirtualHost()->ReConfigure();
 }
 
 void ICHCStackedSettingsFrame::changeEvent(QEvent *e)

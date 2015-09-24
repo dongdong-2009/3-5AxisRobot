@@ -20,6 +20,10 @@ public:
     explicit ICCutPage(QWidget *parent = 0);
     ~ICCutPage();
 
+signals:
+    void GoToAxis();
+    void GoToFixture();
+
 protected:
     void changeEvent(QEvent *);
     void showEvent(QShowEvent *e);
@@ -30,6 +34,10 @@ protected:
 private Q_SLOTS:
     void StatusRefreshed();
     void CommandButtonClicked(QWidget* widget);
+
+    void on_goToAxis_clicked();
+
+    void on_goToFixture_clicked();
 
 private:
     Ui::ICCutPage *ui;

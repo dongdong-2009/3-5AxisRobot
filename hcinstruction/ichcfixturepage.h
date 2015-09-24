@@ -24,6 +24,10 @@ public:
     explicit ICHCFixturePage(QWidget *parent = 0);
     ~ICHCFixturePage();
 
+signals:
+    void GoToAxis();
+    void GoToFixtureCheck();
+
 protected:
     void changeEvent(QEvent *);
     void showEvent(QShowEvent *e);
@@ -34,6 +38,10 @@ protected:
 private Q_SLOTS:
     void StatusRefreshed();
     void CommandButtonClicked(QWidget* widget);
+
+    void on_goToAxis_clicked();
+
+    void on_goToFCheck_clicked();
 
 private:
     Ui::ICHCFixturePage *ui;

@@ -22,6 +22,11 @@ public:
     explicit ActionSettingFrame(QWidget *parent = 0);
     ~ActionSettingFrame();
 
+signals:
+    void GoToFixture();
+    void GoToIMM();
+    void GoToFixtureCheck();
+
 public slots:
     void KeyToActionCheck(int key);
 
@@ -74,6 +79,9 @@ private slots:
     void on_gBButton_toggled(bool checked);
     void on_gCButton_toggled(bool checked);
 #endif
+    void on_goToFixture_clicked();
+    void on_goToIMM_clicked();
+    void on_goToCheck_clicked();
 };
 
 #endif // ACTIONSETTINGFRAME_H

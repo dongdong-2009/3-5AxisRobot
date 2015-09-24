@@ -57,6 +57,15 @@ QRadioButton::indicator:unchecked:disabled
    <enum>QFrame::Raised</enum>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>4</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
+    <number>2</number>
+   </property>
    <item>
     <widget class="QLabel" name="label">
      <property name="text">
@@ -213,6 +222,19 @@ QRadioButton::indicator:unchecked:disabled
        <string/>
       </property>
      </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="goToAxis">
+     <property name="maximumSize">
+      <size>
+       <width>120</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Axis</string>
+     </property>
     </widget>
    </item>
   </layout>

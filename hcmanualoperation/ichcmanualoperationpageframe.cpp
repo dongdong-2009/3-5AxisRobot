@@ -39,6 +39,7 @@ ICHCManualOperationPageFrame::ICHCManualOperationPageFrame(QWidget *parent) :
     InitInterface();
 //    InitSignal();
     ui->fixtureToolButton->click();
+    ui->reserveToolButton->hide();
 }
 
 ICHCManualOperationPageFrame::~ICHCManualOperationPageFrame()

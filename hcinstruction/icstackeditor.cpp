@@ -4,6 +4,7 @@
 #include "icmold.h"
 #include "config.h"
 #include <qmath.h>
+#include "ichcstackedsettingsframe.h"
 
 struct StackGroup
 {
@@ -77,6 +78,7 @@ ICStackEditor::ICStackEditor(QWidget *parent) :
     group.yStep = ui->g4YStep;
     group.zStep = ui->g4ZStep;
     stackGroups.append(group);
+    stackConfig_ = NULL;
 }
 
 ICStackEditor::~ICStackEditor()
@@ -173,4 +175,11 @@ QList<ICMoldItem> ICStackEditor::CreateCommandImpl() const
         }
     }
     return ret;
+}
+
+void ICStackEditor::on_stackConfig_clicked()
+{
+    if(stackConfig_ == NULL)
+        stackConfig_ = new ICHCStackedSettingsFrame();
+    stackConfig_->show();
 }

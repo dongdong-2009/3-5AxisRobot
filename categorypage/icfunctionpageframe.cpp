@@ -81,6 +81,7 @@ ICFunctionPageFrame::ICFunctionPageFrame(QWidget *parent, QStackedLayout * backF
     InitSignal();
 
 //    backFrameCenterStackedLayout_->setCurrentWidget(this);
+    ui->stackSettingWidget->hide();
 }
 
 ICFunctionPageFrame::~ICFunctionPageFrame()

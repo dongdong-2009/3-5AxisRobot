@@ -103,6 +103,19 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
 
         if(xyzStatusList_.contains(action))
         {
+            if(moldItem.Num() == 0)
+            {
+                if(moldItem.Action() == GX)
+                {
+                    commandStr = tr("1stDown") + "    " + "*" + " ";
+                    commandStr += actionGroupMap_.value(action) + ": ";
+                }
+                else if(moldItem.Action() == GY)
+                {
+                    commandStr = tr("StanbyPos") + "    " + "*" + " ";
+                    commandStr += actionGroupMap_.value(action) + ": ";
+                }
+            }
 //            commandStr += ICParameterConversion::TransThisIntToThisText(moldItem.Pos(), 1) + " ";
             commandStr += ICParameterConversion::TransThisIntToThisText(moldItem.ActualPos(), POS_DECIMAL) + " ";
 //            commandStr += "X" + ICParameterConversion::TransThisIntToThisText(moldItem.X(), 1) + " ";

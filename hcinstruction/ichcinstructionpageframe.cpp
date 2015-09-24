@@ -183,6 +183,7 @@ void ICHCInstructionPageFrame::OptionButtonClicked()
         injectionPage_ = new ICHCInjectionPage;
         optionButtonToPage_.insert(ui->injectionButton, injectionPage_);
         ui->settingStackedWidget->addWidget(injectionPage_);
+        connect(injectionPage_, SIGNAL(GotoAxis()), ui->lineButton, SLOT(click()));
 
     }
     else if(fixturePage_ == NULL && optionButton == ui->fixtureButton)
@@ -190,6 +191,8 @@ void ICHCInstructionPageFrame::OptionButtonClicked()
         fixturePage_ = new ICHCFixturePage;
         optionButtonToPage_.insert(ui->fixtureButton, fixturePage_);
         ui->settingStackedWidget->addWidget(fixturePage_);
+        connect(fixturePage_, SIGNAL(GoToAxis()), ui->lineButton, SLOT(click()));
+        connect(fixturePage_, SIGNAL(GoToFixtureCheck()), ui->cutButton, SLOT(click()));
     }
     else if(conditionPage_ == NULL && optionButton == ui->conditionsToolButton)
     {
@@ -226,6 +229,8 @@ void ICHCInstructionPageFrame::OptionButtonClicked()
         cutPage_ = new ICCutPage();
         optionButtonToPage_.insert(ui->cutButton, cutPage_);
         ui->settingStackedWidget->addWidget(cutPage_);
+        connect(cutPage_, SIGNAL(GoToAxis()), ui->lineButton, SLOT(click()));
+        connect(cutPage_, SIGNAL(GoToFixture()), ui->fixtureButton, SLOT(click()));
     }
     else if(programPage_ == NULL && optionButton == ui->programButton)
     {
@@ -278,6 +283,9 @@ void ICHCInstructionPageFrame::InitInterface()
 
     actionPage_ = new ActionSettingFrame(ui->actionSelectPage);
     optionButtonToPage_.insert(ui->lineButton, actionPage_);
+    connect(actionPage_, SIGNAL(GoToFixture()), ui->fixtureButton, SLOT(click()));
+    connect(actionPage_, SIGNAL(GoToIMM()), ui->injectionButton, SLOT(click()));
+    connect(actionPage_, SIGNAL(GoToFixtureCheck()), ui->cutButton, SLOT(click()));
     ui->settingStackedWidget->addWidget(actionPage_);
     modifyDialog_ = new ICInstructModifyDialog(this);
     //    injectionPage_ = new ICHCInjectionPage;
