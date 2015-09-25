@@ -3868,7 +3868,7 @@ Reason</source>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1060"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="1070"/>
         <source>Menu</source>
-        <translation>主菜单</translation>
+        <translation>动作菜单</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="481"/>
@@ -10785,7 +10785,7 @@ Please input the root password to confirm.</source>
     <message>
         <location filename="mainframe.cpp" line="671"/>
         <source>Monitor</source>
-        <translation>监视</translation>
+        <translation>I/O监视</translation>
     </message>
     <message>
         <location filename="mainframe.cpp" line="1086"/>
@@ -10795,7 +10795,7 @@ Please input the root password to confirm.</source>
     <message>
         <location filename="mainframe.cpp" line="1122"/>
         <source>Records</source>
-        <translation>档案</translation>
+        <translation>模具档案</translation>
     </message>
     <message>
         <location filename="mainframe.cpp" line="1493"/>
@@ -10833,7 +10833,7 @@ Please input the root password to confirm.</source>
     <message>
         <location filename="mainframe.cpp" line="673"/>
         <source>Record</source>
-        <translation>档案</translation>
+        <translation>模具档案</translation>
     </message>
     <message>
         <location filename="mainframe.cpp" line="672"/>
@@ -10877,7 +10877,7 @@ Please input the root password to confirm.</source>
     <message>
         <location filename="mainframe.cpp" line="1074"/>
         <source>Instruct</source>
-        <translation>教导</translation>
+        <translation>动作教导</translation>
     </message>
     <message>
         <source>Auto</source>
