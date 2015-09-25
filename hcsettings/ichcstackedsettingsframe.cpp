@@ -246,12 +246,12 @@ void ICHCStackedSettingsFrame::SetStackStatus_(const QList<int> &status)
 
 void ICHCStackedSettingsFrame::hideEvent(QHideEvent *e)
 {
-    if(this->isVisible()) return;
+//    if(this->isVisible()) return;
     QFrame::hideEvent(e);
-    qDebug("stack hide");
-    QList<int> status = GetCurrentStatus_();
-    SetStackStatus_(status);
-    ICMold::CurrentMold()->SaveMoldParamsFile();
+//    qDebug("stack hide");
+//    QList<int> status = GetCurrentStatus_();
+//    SetStackStatus_(status);
+//    ICMold::CurrentMold()->SaveMoldParamsFile();
 //    qApp->processEvents(QEventLoop::WaitForMoreEvents);
 //    QTimer::singleShot(5, this, SLOT(TimeOutToReconfig()));
 //    ICVirtualHost::GlobalVirtualHost()->ReConfigure();
@@ -401,3 +401,14 @@ void ICHCStackedSettingsFrame::OnConfigChanged(bool b)
     QCheckBox* edit = qobject_cast<QCheckBox*>(sender());
     OnConfigChanged(edit, QString::number(b), QString::number(!b));
 }
+
+void ICHCStackedSettingsFrame::on_okButton_clicked()
+{
+//    if(this->isVisible()) return;
+    QList<int> status = GetCurrentStatus_();
+    SetStackStatus_(status);
+    ICMold::CurrentMold()->SaveMoldParamsFile();
+    emit configChanged();
+    this->hide();
+}
+

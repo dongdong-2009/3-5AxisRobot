@@ -36,6 +36,9 @@ private Q_SLOTS:
 
      void on_stopBtn_clicked();
 
+     void on_startBtn_clicked();
+
+
 private:
     Ui::ICOriginDialog *ui;
 };

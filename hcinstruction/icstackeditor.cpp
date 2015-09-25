@@ -100,6 +100,39 @@ void ICStackEditor::changeEvent(QEvent *e)
 
 void ICStackEditor::showEvent(QShowEvent *e)
 {
+    onStatckConfigFinished();
+    ICInstructionEditorBase::showEvent(e);
+}
+
+QList<ICMoldItem> ICStackEditor::CreateCommandImpl() const
+{
+    QList<ICMoldItem> ret;
+    ICMoldItem item;
+    for(int i = 0; i != stackGroups.size(); ++i)
+    {
+        if(stackGroups.at(i).check->isChecked())
+        {
+            item.SetClip(ICMold::ACTLAYOUTON);
+            item.SetDVal(0);
+            item.SetSVal(i);
+            ret.append(item);
+        }
+    }
+    return ret;
+}
+
+void ICStackEditor::on_stackConfig_clicked()
+{
+    if(stackConfig_ == NULL)
+    {
+        stackConfig_ = new ICHCStackedSettingsFrame();
+        connect(stackConfig_, SIGNAL(configChanged()), this, SLOT(onStatckConfigFinished()));
+    }
+    stackConfig_->show();
+}
+
+void ICStackEditor::onStatckConfigFinished()
+{
     StackGroup group;
     for(int i = 0; i != stackGroups.size(); ++i)
     {
@@ -157,29 +190,4 @@ void ICStackEditor::showEvent(QShowEvent *e)
         //        ui->zRPStepLineEdit->SetThisIntToThisText(stackParams.at(ICMold::Z_Gap));
         group.zStep->setText(QString::number(stackParams.at(ICMold::Z_Gap) / multi, 'f', decimal));
     }
-    ICInstructionEditorBase::showEvent(e);
-}
-
-QList<ICMoldItem> ICStackEditor::CreateCommandImpl() const
-{
-    QList<ICMoldItem> ret;
-    ICMoldItem item;
-    for(int i = 0; i != stackGroups.size(); ++i)
-    {
-        if(stackGroups.at(i).check->isChecked())
-        {
-            item.SetClip(ICMold::ACTLAYOUTON);
-            item.SetDVal(0);
-            item.SetSVal(i);
-            ret.append(item);
-        }
-    }
-    return ret;
-}
-
-void ICStackEditor::on_stackConfig_clicked()
-{
-    if(stackConfig_ == NULL)
-        stackConfig_ = new ICHCStackedSettingsFrame();
-    stackConfig_->show();
 }

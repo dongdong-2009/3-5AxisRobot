@@ -3445,74 +3445,74 @@ Reason</source>
         <translation type="obsolete">传送带</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="165"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="25"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="173"/>
         <source>Fixture1  </source>
         <translation>夹具1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="165"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="25"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="173"/>
         <source>Fixture2  </source>
         <translation>夹具2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="165"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="25"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="173"/>
         <source>Fixture3  </source>
         <translation>夹具3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="165"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="25"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="173"/>
         <source>Fixture4  </source>
         <translation>夹具4</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="25"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="166"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="26"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="174"/>
         <source>Sucker1   </source>
         <translation>吸1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="25"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="166"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="26"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="174"/>
         <source>Sucker2   </source>
         <translation>吸2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="26"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="167"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="27"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="175"/>
         <source>Sucker3   </source>
         <translation>吸3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="26"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="167"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="27"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="175"/>
         <source>Sucker4   </source>
         <translation>吸4</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="27"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="168"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="28"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="176"/>
         <source>Sucker5   </source>
         <translation>吸5</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="27"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="168"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="28"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="176"/>
         <source>Sucker6   </source>
         <translation>吸6</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="28"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="169"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="29"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="177"/>
         <source>Sucker7   </source>
         <translation>吸7</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="28"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="169"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="29"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="177"/>
         <source>Sucker8   </source>
         <translation>吸8</translation>
     </message>
@@ -3633,25 +3633,25 @@ Reason</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="21"/>
-        <location filename="hcinstruction/ichcinjectionpage.cpp" line="95"/>
+        <location filename="hcinstruction/ichcinjectionpage.cpp" line="100"/>
         <source>Close Mold Permit  </source>
         <translation>关模允许</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="21"/>
-        <location filename="hcinstruction/ichcinjectionpage.cpp" line="95"/>
+        <location filename="hcinstruction/ichcinjectionpage.cpp" line="100"/>
         <source>Ejection Permit  </source>
         <translation>顶针允许</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="22"/>
-        <location filename="hcinstruction/ichcinjectionpage.cpp" line="96"/>
+        <location filename="hcinstruction/ichcinjectionpage.cpp" line="101"/>
         <source>Core1 Permit  </source>
         <translation>抽芯1允许</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="23"/>
-        <location filename="hcinstruction/ichcinjectionpage.cpp" line="97"/>
+        <location filename="hcinstruction/ichcinjectionpage.cpp" line="102"/>
         <source>Core2 Permit  </source>
         <translation>抽芯2允许</translation>
     </message>
@@ -3695,25 +3695,25 @@ Reason</source>
         <translation>轴动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="442"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="708"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="437"/>
         <source>Reserve</source>
         <translation>预留</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="518"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="442"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="513"/>
         <source>Stack</source>
         <translation>堆叠</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="708"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="670"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="589"/>
         <source>Flags</source>
         <translation>序列动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="670"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="556"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="703"/>
         <source>Comment</source>
         <translation>注释/标签</translation>
@@ -3723,7 +3723,7 @@ Reason</source>
         <translation type="obsolete">气动动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="404"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="594"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="399"/>
         <source>Wait</source>
         <translation>等待</translation>
@@ -3749,7 +3749,7 @@ Reason</source>
         <translation>治具</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="594"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="518"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="627"/>
         <source>Other</source>
         <translation>其他</translation>
@@ -3781,13 +3781,13 @@ Reason</source>
         <translation>编辑</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="480"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="404"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="475"/>
         <source>Periphery</source>
         <translation>辅助设备</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="556"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="480"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="551"/>
         <source>Cut</source>
         <translation>检测</translation>
@@ -3871,8 +3871,8 @@ Reason</source>
         <translation>主菜单</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="478"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="720"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="481"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="723"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
@@ -3889,45 +3889,45 @@ Reason</source>
         <translation type="obsolete">该模号是当前模号!</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="479"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="482"/>
         <source>Can not add standby position program</source>
         <translation>不能添加待机点步骤</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="452"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="706"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="881"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="986"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="455"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="709"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="884"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="989"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1278"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1281"/>
         <source>Flag[%1]:%2</source>
         <translation>标签[%1]:%2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="453"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="456"/>
         <source>Stand program can not be insert action</source>
         <translation>标准程序不能插入动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="707"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="710"/>
         <source>Stand program can not be delete action</source>
         <translation>标准程序不能删除动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="721"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="724"/>
         <source>Can not delete standby position program</source>
         <translation>不能删除待机点步骤</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="882"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="885"/>
         <source>Stand program can not do Up action</source>
         <translation>标准程序不能组合动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="987"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="990"/>
         <source>Stand program can not do Down action</source>
         <translation>标准程序不能分解动作</translation>
     </message>
@@ -4857,6 +4857,11 @@ Reason</source>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="891"/>
         <source>Is Sub Arm</source>
         <translation>副臂堆叠</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="902"/>
+        <source>OK</source>
+        <translation>确定</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="583"/>
@@ -6292,6 +6297,11 @@ App %1; Host:</source>
         <location filename="categorypage/icinitialframe.ui" line="14"/>
         <source>Frame</source>
         <translation></translation>
+    </message>
+    <message>
+        <location filename="categorypage/icinitialframe.ui" line="45"/>
+        <source>Alarm Clear</source>
+        <translation>伺服使能</translation>
     </message>
 </context>
 <context>
@@ -8084,16 +8094,21 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="icorigindialog.ui" line="41"/>
+        <source>Start</source>
+        <translation>开始</translation>
+    </message>
+    <message>
+        <location filename="icorigindialog.ui" line="57"/>
         <source>Stop</source>
         <translation>停止</translation>
     </message>
     <message>
-        <location filename="icorigindialog.ui" line="86"/>
+        <location filename="icorigindialog.ui" line="102"/>
         <source>Yes</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="icorigindialog.ui" line="70"/>
+        <location filename="icorigindialog.ui" line="86"/>
         <source>No</source>
         <translation></translation>
     </message>
@@ -8233,13 +8248,13 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.cpp" line="25"/>
-        <location filename="hcinstruction/icperipherypage.cpp" line="83"/>
+        <location filename="hcinstruction/icperipherypage.cpp" line="87"/>
         <source>Injector   </source>
         <translation>喷油</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.cpp" line="25"/>
-        <location filename="hcinstruction/icperipherypage.cpp" line="83"/>
+        <location filename="hcinstruction/icperipherypage.cpp" line="87"/>
         <source>conveyor  </source>
         <translation>输送带</translation>
     </message>
@@ -9152,36 +9167,36 @@ Please enter an digit between </source>
         <translation>堆叠设定</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icstackeditor.cpp" line="116"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="149"/>
         <source>X-&gt;Z-&gt;Y</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icstackeditor.cpp" line="121"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="154"/>
         <source>Z-&gt;X-&gt;Y</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icstackeditor.cpp" line="126"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="159"/>
         <source>Y-&gt;X-&gt;Z</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icstackeditor.cpp" line="131"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="164"/>
         <source>Y-&gt;Z-&gt;X</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icstackeditor.cpp" line="138"/>
-        <location filename="hcinstruction/icstackeditor.cpp" line="147"/>
-        <location filename="hcinstruction/icstackeditor.cpp" line="156"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="171"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="180"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="189"/>
         <source>RP</source>
         <translation>反向</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icstackeditor.cpp" line="138"/>
-        <location filename="hcinstruction/icstackeditor.cpp" line="147"/>
-        <location filename="hcinstruction/icstackeditor.cpp" line="156"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="171"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="180"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="189"/>
         <source>P</source>
         <translation>正向</translation>
     </message>

@@ -23,6 +23,7 @@ protected:
 
 private slots:
     void on_stackConfig_clicked();
+    void onStatckConfigFinished();
 
 private:
     Ui::ICStackEditor *ui;

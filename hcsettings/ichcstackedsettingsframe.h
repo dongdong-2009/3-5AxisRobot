@@ -16,6 +16,8 @@ public:
     explicit ICHCStackedSettingsFrame(QWidget *parent = 0);
     ~ICHCStackedSettingsFrame();
 
+signals:
+    void configChanged();
 protected:
     void hideEvent(QHideEvent *e);
     void changeEvent(QEvent *e);
@@ -54,6 +56,8 @@ private slots:
     void OnConfigChanged(int v);
     void OnConfigChanged(int v, int ov);
     void OnConfigChanged(bool b);
+    void on_okButton_clicked();
+
 private:
     QMap<QObject*, int> editorToConfigIDs_;
 };

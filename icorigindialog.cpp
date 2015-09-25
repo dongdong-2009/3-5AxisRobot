@@ -171,3 +171,8 @@ void ICOriginDialog::on_stopBtn_clicked()
 {
     this->reject();
 }
+
+void ICOriginDialog::on_startBtn_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_SET_ORIGIN);
+}

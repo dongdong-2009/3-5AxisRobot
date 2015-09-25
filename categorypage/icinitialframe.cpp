@@ -75,3 +75,15 @@ void ICInitialFrame::hideEvent(QHideEvent *e)
 //{
 //    ICCommandProcessor::Instance()->ExecuteHCCommand(IC::CMD_TurnStop, 0);
 //}
+
+void ICInitialFrame::on_alarmClear_toggled(bool checked)
+{
+    if(checked)
+    {
+        ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_SERVO_EN);
+    }
+    else
+    {
+        ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_SERVO_UN);
+    }
+}
