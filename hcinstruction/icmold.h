@@ -157,6 +157,7 @@ public:
     int Flag() const { return flag_;}
     void SetFlag(int flag) { flag_ = flag;}
 
+
 private:
     uint seq_;
     uint num_;
@@ -464,6 +465,11 @@ public:
     int DisplayStep(int hostStep) const { return stepMap_.value(hostStep, -1);}
     int ToHostSeq(int seq) const;
     int ToHostNum(int seq) const;
+
+    static bool IsAxisAction(int action)
+    {
+        return action >= ICMold::GC && action <= ICMold::GB;
+    }
 
 signals:
     void MoldPramChanged(int, int);

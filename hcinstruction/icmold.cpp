@@ -527,10 +527,23 @@ QStringList ICMold::UIItemsToStringList(const QList<ICGroupMoldUIItem> &items)
 {
     QStringList ret;
     ICGroupMoldUIItem item;
+    int itemCount;
+    QList<int> pos;
+    pos<<0<<0<<0<<0<<0<<0<<0<<0;
+    ICMoldItem baseItem;
     for(int i = 0; i != items.size(); ++i)
     {
         item = items.at(i);
-        ret.append(item.ToStringList());
+        itemCount = item.ItemCount();
+        for(int j = 0; j != itemCount; ++j)
+        {
+            baseItem = *item.MoldItemAt(j);
+            ret.append(ICInstructParam::ConvertCommandStr(baseItem, pos));
+            if(ICMold::IsAxisAction(baseItem.Action()))
+            {
+                pos[baseItem.Action()] = baseItem.Pos();
+            }
+        }
     }
     return ret;
 }

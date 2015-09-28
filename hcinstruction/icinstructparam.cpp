@@ -7,6 +7,7 @@
 #include "moldinformation.h"
 #include "icmacrosubroutine.h"
 #include "config.h"
+#include "icvirtualhost.h"
 
 #include <QDebug>
 
@@ -30,7 +31,7 @@ ICInstructParam::ICInstructParam()
 //    UpdateHostParam();
 }
 
-QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
+QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem, const QList<int>& curPos)
 {
     QString commandStr;
 //    commandStr += QString::number(moldItem.Seq()) + " ";
@@ -114,6 +115,38 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
                 {
                     commandStr = tr("StanbyPos") + "    " + "*" + " ";
                     commandStr += actionGroupMap_.value(action) + ": ";
+                }
+            }
+            else
+            {
+                if(moldItem.Action() == GX ||
+                        moldItem.Action() == GP)
+                {
+                    qDebug()<<curPos;
+                    if(curPos[moldItem.Action()] <= moldItem.Pos())
+                        commandStr += tr("Forward");
+                    else
+                        commandStr += tr("Backward");
+                }
+                else if(moldItem.Action() == GY ||
+                        moldItem.Action() == GQ)
+                {
+                    if(curPos[moldItem.Action()] <= moldItem.Pos())
+                    {
+                        if(curPos[ICMold::GZ] <= ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Z_OutSafe).toInt())
+                            commandStr += tr("Down Inside");
+                        else
+                            commandStr += tr("Down Outside");
+                    }
+                    else
+                        commandStr += tr("Up");
+                }
+                else if(moldItem.Action() == GZ)
+                {
+                    if(curPos[moldItem.Action()] <= moldItem.Pos())
+                        commandStr += tr("Come Out");
+                    else
+                        commandStr += tr("Come In");
                 }
             }
 //            commandStr += ICParameterConversion::TransThisIntToThisText(moldItem.Pos(), 1) + " ";

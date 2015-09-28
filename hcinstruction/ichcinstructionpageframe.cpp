@@ -675,7 +675,8 @@ void ICHCInstructionPageFrame::on_modifyToolButton_clicked()
         bool isModify = modifyDialog_->ShowModifyItem(item);
         if(isModify)
         {
-            ui->moldContentListWidget->item(selectedRow)->setText(topItem->ToStringList().at(0));
+            UpdateUIProgramList_();
+        //            ui->moldContentListWidget->item(selectedRow)->setText(topItem->ToStringList().at(0));
         }
     }
     else
@@ -684,7 +685,8 @@ void ICHCInstructionPageFrame::on_modifyToolButton_clicked()
         bool isModify = modifyDialog_->ShowModifyItem(subItem->BaseItem());
         if(isModify)
         {
-            ui->moldContentListWidget->item(selectedRow)->setText(subItem->ToString());
+            UpdateUIProgramList_();
+//            ui->moldContentListWidget->item(selectedRow)->setText(subItem->ToString());
         }
 
     }

@@ -704,33 +704,33 @@
         <translation>夹1</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="70"/>
-        <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="172"/>
-        <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="245"/>
-        <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="334"/>
+        <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="76"/>
+        <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="190"/>
+        <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="275"/>
+        <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="376"/>
         <source>ON</source>
         <translation>通</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="111"/>
-        <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="197"/>
-        <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="286"/>
-        <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="359"/>
+        <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="123"/>
+        <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="221"/>
+        <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="322"/>
+        <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="407"/>
         <source>OFF</source>
         <translation>断</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="293"/>
+        <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="329"/>
         <source>Fixture 4</source>
         <translation>夹4</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="204"/>
+        <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="228"/>
         <source>Fixture 2</source>
         <translation>夹2</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="131"/>
+        <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="143"/>
         <source>Fixture 3</source>
         <translation>夹3</translation>
     </message>
@@ -755,19 +755,19 @@
         <translation>喷油</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualotherioframe.ui" line="61"/>
-        <location filename="hcmanualoperation/hcmanualotherioframe.ui" line="160"/>
+        <location filename="hcmanualoperation/hcmanualotherioframe.ui" line="67"/>
+        <location filename="hcmanualoperation/hcmanualotherioframe.ui" line="178"/>
         <source>ON</source>
         <translation>通</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualotherioframe.ui" line="99"/>
-        <location filename="hcmanualoperation/hcmanualotherioframe.ui" line="198"/>
+        <location filename="hcmanualoperation/hcmanualotherioframe.ui" line="111"/>
+        <location filename="hcmanualoperation/hcmanualotherioframe.ui" line="222"/>
         <source>OFF</source>
         <translation>断</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualotherioframe.ui" line="119"/>
+        <location filename="hcmanualoperation/hcmanualotherioframe.ui" line="131"/>
         <source>Conveyor</source>
         <translation>输送带</translation>
     </message>
@@ -785,47 +785,47 @@
         <translation>预留1</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="61"/>
-        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="127"/>
-        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="193"/>
-        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="321"/>
-        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="424"/>
-        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="506"/>
+        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="67"/>
+        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="145"/>
+        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="223"/>
+        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="363"/>
+        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="478"/>
+        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="572"/>
         <source>ON</source>
         <translation>通</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="102"/>
-        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="168"/>
-        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="264"/>
-        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="346"/>
-        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="465"/>
-        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="547"/>
+        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="114"/>
+        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="192"/>
+        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="300"/>
+        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="394"/>
+        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="525"/>
+        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="619"/>
         <source>OFF</source>
         <translation>断</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="216"/>
+        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="246"/>
         <source>Reserve3</source>
         <translation>预留3</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="223"/>
+        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="253"/>
         <source>Reserve5</source>
         <translation>预留5</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="369"/>
+        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="417"/>
         <source>Reserve2</source>
         <translation>预留2</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="376"/>
+        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="424"/>
         <source>Reserve4</source>
         <translation>预留4</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="383"/>
+        <location filename="hcmanualoperation/hcmanualreservepage.ui" line="431"/>
         <source>Reserve6</source>
         <translation>预留6</translation>
     </message>
@@ -838,66 +838,66 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="141"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="159"/>
         <source>Sucker 3</source>
         <translation>吸3</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="223"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="247"/>
         <source>Sucker 1</source>
         <translation>吸1</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="290"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="326"/>
         <source>Sucker 4</source>
         <translation>吸4</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="357"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="405"/>
         <source>Sucker 5</source>
         <translation>吸5</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="424"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="484"/>
         <source>Sucker 6</source>
         <translation>吸6</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="501"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="573"/>
         <source>Sucker 7</source>
         <translation>吸7</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="578"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="662"/>
         <source>Sucker 8</source>
         <translation>吸8</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="54"/>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="79"/>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="248"/>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="325"/>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="392"/>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="459"/>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="536"/>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="613"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="60"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="91"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="278"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="367"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="446"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="525"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="614"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="703"/>
         <source>ON</source>
         <translation>通</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="134"/>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="206"/>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="283"/>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="350"/>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="417"/>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="494"/>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="571"/>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="648"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="152"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="230"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="319"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="398"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="477"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="566"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="655"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="744"/>
         <source>OFF</source>
         <translation>断</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="148"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="166"/>
         <source>Sucker 2</source>
         <translation>吸2</translation>
     </message>
@@ -2431,67 +2431,67 @@ Reason</source>
         <location filename="hcinstruction/iccutpage.ui" line="119"/>
         <location filename="hcinstruction/iccutpage_5.ui" line="116"/>
         <source>Fixture1</source>
-        <translation>夹具1检测</translation>
+        <translation>夹具1确认</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="124"/>
         <location filename="hcinstruction/iccutpage_5.ui" line="121"/>
         <source>Fixture2</source>
-        <translation>夹具2检测</translation>
+        <translation>夹具2确认</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="129"/>
         <location filename="hcinstruction/iccutpage_5.ui" line="126"/>
         <source>Fixture3</source>
-        <translation>夹具3检测</translation>
+        <translation>夹具3确认</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="134"/>
         <location filename="hcinstruction/iccutpage_5.ui" line="131"/>
         <source>Fixture4</source>
-        <translation>夹具4检测</translation>
+        <translation>夹具4确认</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="139"/>
         <location filename="hcinstruction/iccutpage_5.ui" line="136"/>
         <source>Sucker1</source>
-        <translation>吸1检测</translation>
+        <translation>吸1确认</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="144"/>
         <location filename="hcinstruction/iccutpage_5.ui" line="141"/>
         <source>Sucker2</source>
-        <translation>吸2检测</translation>
+        <translation>吸2确认</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="149"/>
         <source>Sucker3</source>
-        <translation>吸3检测</translation>
+        <translation>吸3确认</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="154"/>
         <source>Sucker4</source>
-        <translation>吸4检测</translation>
+        <translation>吸4确认</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="159"/>
         <source>Sucker5</source>
-        <translation>吸5检测</translation>
+        <translation>吸5确认</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="164"/>
         <source>Sucker6</source>
-        <translation>吸6检测</translation>
+        <translation>吸6确认</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="169"/>
         <source>Sucker7</source>
-        <translation>吸7检测</translation>
+        <translation>吸7确认</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="174"/>
         <source>Sucker8</source>
-        <translation>吸8检测</translation>
+        <translation>吸8确认</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="317"/>
@@ -2528,70 +2528,76 @@ Reason</source>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="140"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="141"/>
         <source>Fixture1  </source>
-        <translation>夹具1检测</translation>
+        <translation>夹具1确认</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="140"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="141"/>
         <source>Fixture2  </source>
-        <translation>夹具2检测</translation>
+        <translation>夹具2确认</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="140"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="141"/>
         <source>Fixture3  </source>
-        <translation>夹具3检测</translation>
+        <translation>夹具3确认</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="140"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="141"/>
         <source>Fixture4  </source>
-        <translation>夹具4检测</translation>
+        <translation>夹具4确认</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="21"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="141"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="142"/>
         <source>Sucker1   </source>
-        <translation>吸1检测</translation>
+        <translation>吸1确认</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="21"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="141"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="142"/>
         <source>Sucker2   </source>
-        <translation>吸2检测</translation>
+        <translation>吸2确认</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="22"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="142"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="143"/>
         <source>Sucker3   </source>
         <oldsource>Sucker3  </oldsource>
-        <translation>吸3检测</translation>
+        <translation>吸3确认</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="23"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="143"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="144"/>
+        <source>Sucker4   </source>
+        <translation>吸4确认</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/iccutpage.cpp" line="24"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="145"/>
         <source>Sucker-5  </source>
-        <translation>吸5检测</translation>
+        <translation>吸5确认</translation>
     </message>
     <message>
-        <location filename="hcinstruction/iccutpage.cpp" line="23"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="143"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="24"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="145"/>
         <source>Sucker-6  </source>
-        <translation>吸6检测</translation>
+        <translation>吸6确认</translation>
     </message>
     <message>
-        <location filename="hcinstruction/iccutpage.cpp" line="24"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="144"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="25"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="146"/>
         <source>Sucker-7  </source>
-        <translation>吸7检测</translation>
+        <translation>吸7确认</translation>
     </message>
     <message>
-        <location filename="hcinstruction/iccutpage.cpp" line="24"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="144"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="25"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="146"/>
         <source>Sucker-8  </source>
-        <translation>吸8检测</translation>
+        <translation>吸8确认</translation>
     </message>
 </context>
 <context>
@@ -2606,17 +2612,17 @@ Reason</source>
         <translation type="obsolete">报警信息</translation>
     </message>
     <message>
-        <location filename="custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.ui" line="101"/>
+        <location filename="custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.ui" line="106"/>
         <source>Detail</source>
         <translation>帮助</translation>
     </message>
     <message>
-        <location filename="custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.ui" line="116"/>
+        <location filename="custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.ui" line="121"/>
         <source>Loop Time</source>
         <translation>机械手周期</translation>
     </message>
     <message>
-        <location filename="custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.ui" line="142"/>
+        <location filename="custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.ui" line="147"/>
         <source>Finished Products</source>
         <translation>完成产品数</translation>
     </message>
@@ -3790,7 +3796,7 @@ Reason</source>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="480"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="551"/>
         <source>Cut</source>
-        <translation>检测</translation>
+        <translation>治具确认</translation>
     </message>
     <message>
         <source>Current Mold</source>
@@ -3872,7 +3878,7 @@ Reason</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="481"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="723"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="725"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
@@ -3895,14 +3901,14 @@ Reason</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="455"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="709"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="884"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="989"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="711"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="886"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="991"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1281"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1283"/>
         <source>Flag[%1]:%2</source>
         <translation>标签[%1]:%2</translation>
     </message>
@@ -3912,22 +3918,22 @@ Reason</source>
         <translation>标准程序不能插入动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="710"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="712"/>
         <source>Stand program can not be delete action</source>
         <translation>标准程序不能删除动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="724"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="726"/>
         <source>Can not delete standby position program</source>
         <translation>不能删除待机点步骤</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="885"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="887"/>
         <source>Stand program can not do Up action</source>
         <translation>标准程序不能组合动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="990"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="992"/>
         <source>Stand program can not do Down action</source>
         <translation>标准程序不能分解动作</translation>
     </message>
@@ -6469,7 +6475,7 @@ App %1; Host:</source>
 <context>
     <name>ICInstructParam</name>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="128"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="161"/>
         <source>Speed:</source>
         <translation>速度:</translation>
     </message>
@@ -6478,7 +6484,7 @@ App %1; Host:</source>
         <translation type="obsolete">提前结束位置：</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="226"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="259"/>
         <source>Defective Products</source>
         <translation>不良品</translation>
     </message>
@@ -6487,14 +6493,14 @@ App %1; Host:</source>
         <translation type="obsolete">巨集</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="143"/>
-        <location filename="hcinstruction/icinstructparam.cpp" line="150"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="176"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="183"/>
         <source>SPeed:</source>
         <translation>速度:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="145"/>
-        <location filename="hcinstruction/icinstructparam.cpp" line="152"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="178"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="185"/>
         <source>End Position:</source>
         <translation>结束位置:</translation>
     </message>
@@ -6503,135 +6509,170 @@ App %1; Host:</source>
         <translation type="obsolete">返回步号</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="249"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="282"/>
         <source>Mold Opened</source>
         <oldsource>Mold Opened 1</oldsource>
         <translation>开模完</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="256"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="289"/>
         <source>Security Door Closed</source>
         <translation>安全门关</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="268"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="301"/>
         <source>CLIP1</source>
         <translation>夹1确认</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="272"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="305"/>
         <source>CLIP2</source>
         <translation>夹2确认</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="276"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="309"/>
         <source>CLIP3</source>
         <translation>夹3确认</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="280"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="313"/>
         <source>CLIP4</source>
         <translation>夹4确认</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="284"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="317"/>
         <source>CLIP5</source>
         <translation>吸1确认</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="288"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="321"/>
         <source>CLIP6</source>
         <translation>吸2确认</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="292"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="325"/>
         <source>EUEJF</source>
         <translation>顶针进到位</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="296"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="329"/>
         <source>EUEJB</source>
         <translation>顶针退到位</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="301"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="334"/>
         <source>EUCOREIN</source>
         <translation>入芯到位</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="305"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="338"/>
         <source>EUCOREOUT</source>
         <translation>出芯到位</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="315"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="348"/>
         <source>Product Clear</source>
         <translation>产品清零</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="330"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="363"/>
         <source>Group</source>
         <translation>组</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="71"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="72"/>
         <source>Fixture</source>
         <translation>夹具</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="40"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="41"/>
         <source>#Flag[%2]:Comment:%1</source>
         <oldsource>#Comment:%1</oldsource>
         <translation>#标签[%2]:注释:%1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="45"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="46"/>
         <source>Home</source>
         <translation>起点</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="76"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="77"/>
         <source>Sucker</source>
         <translation>吸</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="81"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="82"/>
         <source>X037</source>
         <translation type="unfinished">X037</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="85"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="86"/>
         <source>X023</source>
         <translation type="unfinished">X023</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="92"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="93"/>
         <source>Begin</source>
         <translation>开始</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="96"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="97"/>
         <source>End</source>
         <translation>结束</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="110"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="111"/>
         <source>1stDown</source>
         <translation>第一下降位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="115"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="116"/>
         <source>StanbyPos</source>
         <translation>上下待机位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="133"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="127"/>
+        <source>Forward</source>
+        <translation>前进</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="129"/>
+        <source>Backward</source>
+        <translation>后退</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="137"/>
+        <source>Down Inside</source>
+        <translation>模内下降</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="139"/>
+        <source>Down Outside</source>
+        <translation>模外下降</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="142"/>
+        <source>Up</source>
+        <translation>上升</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="147"/>
+        <source>Come Out</source>
+        <translation>横出</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="149"/>
+        <source>Come In</source>
+        <translation>横入</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="166"/>
         <source>Early End,Early Position:</source>
         <translation>提前结束使能，结束位置:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="143"/>
-        <location filename="hcinstruction/icinstructparam.cpp" line="150"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="176"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="183"/>
         <source>Early Speed-Down:</source>
         <translation>提前减速使能:</translation>
     </message>
@@ -6640,64 +6681,64 @@ App %1; Host:</source>
         <translation type="obsolete">结束位置:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="149"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="182"/>
         <source>Early End,</source>
         <translation>提前结束使能,</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="172"/>
-        <location filename="hcinstruction/icinstructparam.cpp" line="260"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="205"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="293"/>
         <source>X043</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="176"/>
-        <location filename="hcinstruction/icinstructparam.cpp" line="264"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="209"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="297"/>
         <source>X044</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="188"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="221"/>
         <source>X012 OFF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="192"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="225"/>
         <source>X013 OFF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="196"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="229"/>
         <source>X034 OFF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="200"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="233"/>
         <source>X021 OFF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="204"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="237"/>
         <source>X015 OFF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="208"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="241"/>
         <source>X014 OFF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="212"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="245"/>
         <source>Mold Count</source>
         <translation>间隔模数</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="216"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="249"/>
         <source>X016 OFF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="220"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="253"/>
         <source>X036 OFF</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6706,52 +6747,52 @@ App %1; Host:</source>
         <translation type="obsolete">计数方式</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="230"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="263"/>
         <source>Try Product</source>
         <translation>试产</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="234"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="267"/>
         <source>Sampling</source>
         <translation>取样</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="238"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="271"/>
         <source>Sub-</source>
         <translation>子程序</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="241"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="274"/>
         <source>Go to Flag[%1]</source>
         <translation>跳转到标签[%1]</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="504"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="537"/>
         <source>All</source>
         <translation>全部</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="505"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="538"/>
         <source>Good</source>
         <translation>良品</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="506"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="539"/>
         <source>Stacked-1</source>
         <translation>堆叠1组</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="507"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="540"/>
         <source>Stacked-2</source>
         <translation>堆叠2组</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="508"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="541"/>
         <source>Stacked-3</source>
         <translation>堆叠3组</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="509"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="542"/>
         <source>Stacked-4</source>
         <translation>堆叠4组</translation>
     </message>
@@ -11554,20 +11595,20 @@ Admin</source>
         <translation type="obsolete">半径:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="326"/>
-        <location filename="hcinstruction/icinstructparam.cpp" line="351"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="359"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="384"/>
         <source>Times:</source>
         <translation>间隔模数:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="330"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="363"/>
         <source>Selected:</source>
         <translation>选择:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="99"/>
-        <location filename="hcinstruction/icinstructparam.cpp" line="251"/>
-        <location filename="hcinstruction/icinstructparam.cpp" line="391"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="100"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="284"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="424"/>
         <source>Delay time:</source>
         <translation>延时:</translation>
     </message>
@@ -11604,124 +11645,124 @@ Admin</source>
         <translation type="obsolete">X-Z弧</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="415"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="448"/>
         <source>Main arm down</source>
         <translation>主臂下降</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="416"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="449"/>
         <source>Main arm forward</source>
         <translation>主臂前进</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="417"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="450"/>
         <source>Main arm backward</source>
         <translation>主臂后退</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="418"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="451"/>
         <source>Horizontal posture 1</source>
         <oldsource>Horizontal posture</oldsource>
         <translation>姿势水平1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="419"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="452"/>
         <source>Vertical posture 1</source>
         <oldsource>Vertical posture</oldsource>
         <translation>姿势垂直1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="422"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="455"/>
         <source>Vice arm up</source>
         <translation>副臂上升</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="423"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="456"/>
         <source>Vice arm down</source>
         <translation>副臂下降</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="424"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="457"/>
         <source>Vice arm forward</source>
         <translation>副臂前进</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="425"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="458"/>
         <source>Vice arm backward</source>
         <translation>副臂后退</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="426"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="459"/>
         <source>Traverse out</source>
         <translation>横出</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="427"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="460"/>
         <source>Traverse in</source>
         <translation>横入</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="430"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="463"/>
         <source>Check</source>
-        <translation>检测</translation>
+        <translation>确认</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="431"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="464"/>
         <source>Mold end</source>
         <translation>模组结束</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="435"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="468"/>
         <source>Other</source>
         <translation>其他</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="437"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="470"/>
         <source>Clip1 ON</source>
         <translation>夹1通</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="438"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="471"/>
         <source>Clip2 ON</source>
         <translation>夹2通</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="439"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="472"/>
         <source>Clip3 ON</source>
         <translation>夹3通</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="440"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="473"/>
         <source>Clip4 ON</source>
         <translation>夹4通</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="441"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="474"/>
         <source>Sucker1: ON</source>
         <translation>吸1通</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="442"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="475"/>
         <source>Sucker2: ON</source>
         <translation>吸2通</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="459"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="492"/>
         <source>Sucker1: OFF</source>
         <translation>吸1断</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="460"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="493"/>
         <source>Sucker2: OFF</source>
         <translation>吸2断</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="475"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="508"/>
         <source>Sucker 3</source>
         <translation>吸3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="476"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="509"/>
         <source>Sucker 4</source>
         <translation>吸4</translation>
     </message>
@@ -11734,27 +11775,27 @@ Admin</source>
         <translation type="obsolete">夹1通</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="443"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="476"/>
         <source>Injection ON</source>
         <translation>喷油通</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="444"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="477"/>
         <source>Conveyor ON</source>
         <translation>输送带通</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="445"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="478"/>
         <source>Lock Mold ON</source>
         <translation>锁模通</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="447"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="480"/>
         <source>Eject ON</source>
         <translation>可顶针</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="448"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="481"/>
         <source>Layout ON</source>
         <translation>堆叠开始</translation>
     </message>
@@ -11779,22 +11820,22 @@ Admin</source>
         <translation type="obsolete">夹16通</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="455"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="488"/>
         <source>Clip1 OFF</source>
         <translation>夹1断</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="456"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="489"/>
         <source>Clip2 OFF</source>
         <translation>夹2断</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="457"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="490"/>
         <source>Clip3 OFF</source>
         <translation>夹3断</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="458"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="491"/>
         <source>Clip4 OFF</source>
         <translation>夹4断</translation>
     </message>
@@ -11803,23 +11844,23 @@ Admin</source>
         <translation type="obsolete">吸1通</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="159"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="192"/>
         <source>Bad Product En</source>
         <translation>不良品使能</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="242"/>
-        <location filename="hcinstruction/icinstructparam.cpp" line="308"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="275"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="341"/>
         <source>Limit time:</source>
         <translation>限制时间:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="342"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="375"/>
         <source>Off</source>
         <translation>断</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="346"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="379"/>
         <source>On</source>
         <translation>通</translation>
     </message>
@@ -11832,79 +11873,79 @@ Admin</source>
         <translation type="obsolete">可顶针2:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="386"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="419"/>
         <source>Action time:</source>
         <translation>动作时间:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="406"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="439"/>
         <source>C</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="407"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="440"/>
         <source>X1</source>
         <oldsource>X</oldsource>
-        <translation></translation>
+        <translation>主引拔</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="408"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="441"/>
         <source>Y1</source>
         <oldsource>Y</oldsource>
-        <translation></translation>
+        <translation>主臂</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="409"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="442"/>
         <source>Z</source>
-        <translation></translation>
+        <translation>横走</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="410"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="443"/>
         <source>X2</source>
-        <translation></translation>
+        <translation>副引拔</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="411"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="444"/>
         <source>Y2</source>
-        <translation></translation>
+        <translation>副臂</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="412"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="445"/>
         <source>A</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="413"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="446"/>
         <source>B</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="414"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="447"/>
         <source>Main arm up</source>
         <translation>主臂上升</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="420"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="453"/>
         <source>Horizontal posture 2</source>
         <translation>姿势水平2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="421"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="454"/>
         <source>Vertical posture 2</source>
         <translation>姿势垂直2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="432"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="465"/>
         <source>Parallel</source>
         <translation>序列</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="433"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="466"/>
         <source>Wait</source>
         <translation>等待</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="434"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="467"/>
         <source>Cut</source>
         <translation>检测</translation>
     </message>
@@ -11935,71 +11976,71 @@ Admin</source>
         <translation type="obsolete">锁模2关</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="450"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="483"/>
         <source>Core1 Permit</source>
         <oldsource>Core1 Pull Permit</oldsource>
         <translation>抽芯1允许</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="451"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="484"/>
         <source>Core2 Permit</source>
         <oldsource>Core2 Pull Permit</oldsource>
         <translation>抽芯2允许</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="461"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="494"/>
         <source>Injection OFF</source>
         <translation>喷油关</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="462"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="495"/>
         <source>Conveyor OFF</source>
         <translation>输送带关</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="463"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="496"/>
         <source>Lock Mold OFF</source>
         <translation>锁模关</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="465"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="498"/>
         <source>Eject OFF</source>
         <translation>顶针禁止</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="466"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="499"/>
         <source>Layout OFF</source>
         <translation>堆叠结束</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="468"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="501"/>
         <source>Core1 OFF</source>
         <oldsource>Core1 Pull OFF</oldsource>
         <translation>抽芯1禁止</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="469"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="502"/>
         <source>Core2 OFF</source>
         <oldsource>Core2 Pull OFF</oldsource>
         <translation>抽芯2禁止</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="470"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="503"/>
         <source>Reserve 1</source>
         <translation>预留1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="472"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="505"/>
         <source>Reserve 2</source>
         <translation>预留2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="473"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="506"/>
         <source>Reserve 3</source>
         <translation>预留3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="474"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="507"/>
         <source>Reserve 4</source>
         <translation>预留4</translation>
     </message>
@@ -12024,7 +12065,7 @@ Admin</source>
         <translation type="obsolete">夹16断</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="480"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="513"/>
         <source>Clip End</source>
         <translation>夹放</translation>
     </message>

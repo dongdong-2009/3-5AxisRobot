@@ -245,56 +245,56 @@ void ActionSettingFrame::SyncStatusImpl(const QList<ICMoldItem> &items)
         if(item.Action() == ICMold::GX)
         {
             ui->gxButton->setChecked(true);
-            ui->x1PosLineEdit->SetThisIntToThisText(item.Pos());
+            ui->x1PosLineEdit->SetThisIntToThisText(item.ActualPos());
             ui->x1SpeedLineEdit->SetThisIntToThisText(item.SVal());
             ui->x1DelayLineEdit->SetThisIntToThisText(item.DVal());
         }
         else if(item.Action() == ICMold::GY)
         {
             ui->gyButton->setChecked(true);
-            ui->y1PosLineEdit->SetThisIntToThisText(item.Pos());
+            ui->y1PosLineEdit->SetThisIntToThisText(item.ActualPos());
             ui->y1SpeedLineEdit->SetThisIntToThisText(item.SVal());
             ui->y1DelayLineEdit->SetThisIntToThisText(item.DVal());
         }
         else if(item.Action() == ICMold::GZ)
         {
             ui->gzButton->setChecked(true);
-            ui->zPosLineEdit->SetThisIntToThisText(item.Pos());
+            ui->zPosLineEdit->SetThisIntToThisText(item.ActualPos());
             ui->zSpeedLineEdit->SetThisIntToThisText(item.SVal());
             ui->zDelayLineEdit->SetThisIntToThisText(item.DVal());
         }
         else if(item.Action() == ICMold::GP)
         {
             ui->gPButton->setChecked(true);
-            ui->x2PosLineEdit->SetThisIntToThisText(item.Pos());
+            ui->x2PosLineEdit->SetThisIntToThisText(item.ActualPos());
             ui->x2SpeedLineEdit->SetThisIntToThisText(item.SVal());
             ui->x2DelayLineEdit->SetThisIntToThisText(item.DVal());
         }
         else if(item.Action() == ICMold::GQ)
         {
             ui->gQButton->setChecked(true);
-            ui->y2PosLineEdit->SetThisIntToThisText(item.Pos());
+            ui->y2PosLineEdit->SetThisIntToThisText(item.ActualPos());
             ui->y2SpeedLineEdit->SetThisIntToThisText(item.SVal());
             ui->y2DelayLineEdit->SetThisIntToThisText(item.DVal());
         }
         else if(item.Action() == ICMold::GA)
         {
             ui->gAButton->setChecked(true);
-            ui->aPosLineEdit->SetThisIntToThisText(item.Pos());
+            ui->aPosLineEdit->SetThisIntToThisText(item.ActualPos());
             ui->aSpeedLineEdit->SetThisIntToThisText(item.SVal());
             ui->aDelayLineEdit->SetThisIntToThisText(item.DVal());
         }
         else if(item.Action() == ICMold::GB)
         {
             ui->gBButton->setChecked(true);
-            ui->bPosLineEdit->SetThisIntToThisText(item.Pos());
+            ui->bPosLineEdit->SetThisIntToThisText(item.ActualPos());
             ui->bSpeedLineEdit->SetThisIntToThisText(item.SVal());
             ui->bDelayLineEdit->SetThisIntToThisText(item.DVal());
         }
         else if(item.Action() == ICMold::GC)
         {
             ui->gCButton->setChecked(true);
-            ui->cPosLineEdit->SetThisIntToThisText(item.Pos());
+            ui->cPosLineEdit->SetThisIntToThisText(item.ActualPos());
             ui->cSpeedLineEdit->SetThisIntToThisText(item.SVal());
             ui->cDelayLineEdit->SetThisIntToThisText(item.DVal());
         }

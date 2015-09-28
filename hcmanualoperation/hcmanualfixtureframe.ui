@@ -42,7 +42,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../resource.qrc">:/resource/ledgray(16).png</pixmap>
+      <pixmap resource="../custom_widgets/iciomonitor/iciomonitor.qrc">:/resource/ledgray(16).png</pixmap>
      </property>
     </widget>
    </item>
@@ -66,6 +66,12 @@
        <height>48</height>
       </size>
      </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: outset;
+border-width: 2px;
+border-radius: 24px;
+border-color: gray;</string>
+     </property>
      <property name="text">
       <string>ON</string>
      </property>
@@ -83,7 +89,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../resource.qrc">:/resource/ledgray(16).png</pixmap>
+      <pixmap resource="../custom_widgets/iciomonitor/iciomonitor.qrc">:/resource/ledgray(16).png</pixmap>
      </property>
     </widget>
    </item>
@@ -106,6 +112,12 @@
        <width>48</width>
        <height>48</height>
       </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: outset;
+border-width: 2px;
+border-radius: 24px;
+border-color: gray;</string>
      </property>
      <property name="text">
       <string>OFF</string>
@@ -144,7 +156,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../resource.qrc">:/resource/ledgray(16).png</pixmap>
+      <pixmap resource="../custom_widgets/iciomonitor/iciomonitor.qrc">:/resource/ledgray(16).png</pixmap>
      </property>
     </widget>
    </item>
@@ -167,6 +179,12 @@
        <width>48</width>
        <height>48</height>
       </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: outset;
+border-width: 2px;
+border-radius: 24px;
+border-color: gray;</string>
      </property>
      <property name="text">
       <string>ON</string>
@@ -193,6 +211,12 @@
        <height>48</height>
       </size>
      </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: outset;
+border-width: 2px;
+border-radius: 24px;
+border-color: gray;</string>
+     </property>
      <property name="text">
       <string>OFF</string>
      </property>
@@ -217,7 +241,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../resource.qrc">:/resource/ledgray(16).png</pixmap>
+      <pixmap resource="../custom_widgets/iciomonitor/iciomonitor.qrc">:/resource/ledgray(16).png</pixmap>
      </property>
     </widget>
    </item>
@@ -241,6 +265,12 @@
        <height>48</height>
       </size>
      </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: outset;
+border-width: 2px;
+border-radius: 24px;
+border-color: gray;</string>
+     </property>
      <property name="text">
       <string>ON</string>
      </property>
@@ -258,7 +288,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../resource.qrc">:/resource/ledgray(16).png</pixmap>
+      <pixmap resource="../custom_widgets/iciomonitor/iciomonitor.qrc">:/resource/ledgray(16).png</pixmap>
      </property>
     </widget>
    </item>
@@ -281,6 +311,12 @@
        <width>48</width>
        <height>48</height>
       </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: outset;
+border-width: 2px;
+border-radius: 24px;
+border-color: gray;</string>
      </property>
      <property name="text">
       <string>OFF</string>
@@ -306,7 +342,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../resource.qrc">:/resource/ledgray(16).png</pixmap>
+      <pixmap resource="../custom_widgets/iciomonitor/iciomonitor.qrc">:/resource/ledgray(16).png</pixmap>
      </property>
     </widget>
    </item>
@@ -329,6 +365,12 @@
        <width>48</width>
        <height>48</height>
       </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: outset;
+border-width: 2px;
+border-radius: 24px;
+border-color: gray;</string>
      </property>
      <property name="text">
       <string>ON</string>
@@ -355,6 +397,12 @@
        <height>48</height>
       </size>
      </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: outset;
+border-width: 2px;
+border-radius: 24px;
+border-color: gray;</string>
+     </property>
      <property name="text">
       <string>OFF</string>
      </property>
@@ -372,7 +420,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../resource.qrc">:/resource/ledgray(16).png</pixmap>
+      <pixmap resource="../custom_widgets/iciomonitor/iciomonitor.qrc">:/resource/ledgray(16).png</pixmap>
      </property>
     </widget>
    </item>
@@ -388,14 +436,14 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../resource.qrc">:/resource/ledgray(16).png</pixmap>
+      <pixmap resource="../custom_widgets/iciomonitor/iciomonitor.qrc">:/resource/ledgray(16).png</pixmap>
      </property>
     </widget>
    </item>
   </layout>
  </widget>
  <resources>
-  <include location="../resource.qrc"/>
+  <include location="../custom_widgets/iciomonitor/iciomonitor.qrc"/>
  </resources>
  <connections/>
 </ui>

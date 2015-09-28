@@ -131,13 +131,13 @@ void ICPeripheryPage::SyncStatusImpl(const QList<ICMoldItem> &items)
 //        en = qobject_cast<QCheckBox*>(ui->tableWidget->cellWidget(row, 0));
 //        en->setCheckable(true);
         ui->actionWidget->item(row, 0)->setCheckState(Qt::Checked);
-        button = qobject_cast<QPushButton*>(ui->actionWidget->cellWidget(row, 1));
+//        button = qobject_cast<QPushButton*>(ui->actionWidget->cellWidget(row, 1));
 //        button->setChecked(onClipToOffClip_.contains(mI.Clip()));
 //        qDebug()<<buttonToClip_.value(button);
-        if(buttonToClip_.value(button) != mI.Clip())
-        {
-            button->click();
-        }
+//        if(buttonToClip_.value(button) != mI.Clip())
+//        {
+//            button->click();
+//        }
 //        if(onClipToOffClip_.contains(mI.Clip())) button->click();
         dAndT = qobject_cast<ICPeripheryParameterEditor*>(ui->actionWidget->cellWidget(row, 2));
 //        dAndT->SetThisIntToThisText(mI.DVal());

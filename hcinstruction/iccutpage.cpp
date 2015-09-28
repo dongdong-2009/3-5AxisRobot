@@ -19,7 +19,8 @@ ICCutPage::ICCutPage(QWidget *parent) :
 //    ICLineEditWithVirtualNumericKeypad *delayEdit;
     ioNames_<<tr("Fixture1  ")<<tr("Fixture2  ")<<tr("Fixture3  ")<<tr("Fixture4  ")
            <<tr("Sucker1   ")<<tr("Sucker2   ")
-          <<tr("Sucker3   ")<<tr("Sucker4   ")
+          <<tr("Sucker3   ")
+         <<tr("Sucker4   ")
           <<tr("Sucker-5  ")<<tr("Sucker-6  ")
          <<tr("Sucker-7  ")<<tr("Sucker-8  ");
     onClipToOffClip_.insert(ICMold::ACTCLIP1ON, ICMold::ACTCLIP1OFF);
@@ -139,7 +140,8 @@ void ICCutPage::changeEvent(QEvent *e)
         ioNames_.clear();
         ioNames_<<tr("Fixture1  ")<<tr("Fixture2  ")<<tr("Fixture3  ")<<tr("Fixture4  ")
                <<tr("Sucker1   ")<<tr("Sucker2   ")
-              <<tr("Sucker3   ")<<tr("Sucker4   ")
+              <<tr("Sucker3   ")
+             <<tr("Sucker4   ")
               <<tr("Sucker-5  ")<<tr("Sucker-6  ")
              <<tr("Sucker-7  ")<<tr("Sucker-8  ");
         for(int i = 0; i != settingButtons_.size(); ++i)
@@ -172,16 +174,16 @@ void ICCutPage::SyncStatusImpl(const QList<ICMoldItem> &items)
         button = qobject_cast<QPushButton*>(ui->tableWidget->cellWidget(row, 1));
 //        button->setChecked(item.IFVal());
         int currentClip = buttonToClip_.value(button);
-        if(item.IFVal())
-        {
-            if(!onClipToOffClip_.contains(currentClip))
-                button->click();
-        }
-        else
-        {
-            if(!offClipToOnClip_.contains(currentClip))
-                button->click();
-        }
+//        if(item.IFVal())
+//        {
+//            if(!onClipToOffClip_.contains(currentClip))
+//                button->click();
+//        }
+//        else
+//        {
+//            if(!offClipToOnClip_.contains(currentClip))
+//                button->click();
+//        }
 //        time = qobject_cast<ICLineEditWithVirtualNumericKeypad*>(ui->tableWidget->cellWidget(row, 2));
 //        time->SetThisIntToThisText(item.DVal());
     }
