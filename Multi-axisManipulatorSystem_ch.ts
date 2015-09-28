@@ -4559,7 +4559,7 @@ Reason</source>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="363"/>
         <source>Single Step</source>
         <oldsource>Single Cycle</oldsource>
-        <translation>单步</translation>
+        <translation>步进</translation>
     </message>
     <message>
         <source>Command</source>
@@ -4646,7 +4646,7 @@ Reason</source>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="395"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="395"/>
         <source>Cycle</source>
-        <translation>单循环</translation>
+        <translation>单圈</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="459"/>
@@ -11704,7 +11704,7 @@ Admin</source>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="463"/>
         <source>Check</source>
-        <translation>确认</translation>
+        <translation>检测</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="464"/>
