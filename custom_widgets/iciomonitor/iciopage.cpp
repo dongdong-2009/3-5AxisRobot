@@ -271,12 +271,12 @@ void ICIOPage::showEvent(QShowEvent *e)
     if(host->AxisDefine(ICVirtualHost::ICAxis_AxisX1) == ICVirtualHost::ICAxisDefine_Servo)
     {
         multiLabels.value(X020)->setText(tr("X1 Origin"));
-        multiLabels.value(X016)->setText(tr("X1 end Limit"));
+        multiLabels.value(X016)->setText(tr("X016"));
     }
     else if(host->AxisDefine(ICVirtualHost::ICAxis_AxisX1) == ICVirtualHost::ICAxisDefine_Pneumatic)
     {
         multiLabels.value(X020)->setText(tr("X1 BW Limit"));
-        multiLabels.value(X016)->setText(tr("X1 FW Limit"));
+        multiLabels.value(X016)->setText(tr("X016"));
     }
     else
     {
@@ -308,7 +308,7 @@ void ICIOPage::showEvent(QShowEvent *e)
         multiLabels.value(X025)->setText(tr("Z Origin"));
         multiLabels.value(X041)->setText(tr("Z begin Limit"));
         multiLabels.value(X024)->setText(tr("Sec zone outside"));
-        multiLabels.value(X042)->setText(tr("Z end Limit"));
+        multiLabels.value(X042)->setText(tr("X042"));
 
     }
     else if(host->AxisDefine(ICVirtualHost::ICAxis_AxisZ) == ICVirtualHost::ICAxisDefine_Pneumatic)
@@ -374,7 +374,7 @@ void ICIOPage::showEvent(QShowEvent *e)
     }
     else if(host->AxisDefine(ICVirtualHost::ICAxis_AxisA) == ICVirtualHost::ICAxisDefine_None)
     {
-        multiLabels.value(X023)->setText(tr("M0"));
+        multiLabels.value(X023)->setText(tr("X023"));
         multiLabels.value(X037)->setText(tr("X037"));
         multiLabels.value(Y024)->setText(tr("Y024"));
         multiLabels.value(Y046)->setText(tr("Y046"));
@@ -382,14 +382,14 @@ void ICIOPage::showEvent(QShowEvent *e)
     else if(ICVirtualHost::GlobalVirtualHost()->FixtureDefine() == 1)
     {
         multiLabels.value(X023)->setText(tr("Horizon-2 Limit"));
-        multiLabels.value(X037)->setText(tr("Vertical-2 Limit "));
+        multiLabels.value(X037)->setText(tr("X037"));
 
         multiLabels.value(Y024)->setText(tr("Horizon-2 Valve"));
         multiLabels.value(Y046)->setText(tr("Vertical-2 Valve "));
     }
     else
     {
-        multiLabels.value(X037)->setText(tr("Horizon-2 Limit"));
+        multiLabels.value(X037)->setText(tr("X037"));
         multiLabels.value(X023)->setText(tr("Vertical-2 Limit"));
         multiLabels.value(Y046)->setText(tr("Horizon-2 Valve"));
         multiLabels.value(Y024)->setText(tr("Vertical-2 Valve"));
@@ -399,7 +399,7 @@ void ICIOPage::showEvent(QShowEvent *e)
             host->AxisDefine(ICVirtualHost::ICAxis_AxisB) == ICVirtualHost::ICAxisDefine_Pneumatic)
     {
         multiLabels.value(X026)->setText(tr("B Begin limit"));
-        multiLabels.value(X040)->setText(tr("B Origin"));
+        multiLabels.value(X040)->setText(tr("X040"));
         //        multiLabels.value(X037)->setText(tr("A end limit"));
     }
     else

@@ -4860,7 +4860,6 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="212"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="377"/>
         <source>M0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4950,18 +4949,8 @@ App %1; Host:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="274"/>
-        <source>X1 end Limit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="278"/>
         <source>X1 BW Limit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="279"/>
-        <source>X1 FW Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4971,6 +4960,8 @@ App %1; Host:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="274"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="279"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="284"/>
         <source>X016</source>
         <oldsource>X017</oldsource>
@@ -4993,10 +4984,6 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="311"/>
-        <source>Z end Limit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="319"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="327"/>
         <source>X042</source>
@@ -5013,16 +5000,12 @@ App %1; Host:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="402"/>
-        <source>B Origin</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="407"/>
         <source>X026</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="402"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="408"/>
         <source>X040</source>
         <translation type="unfinished"></translation>
@@ -5098,7 +5081,14 @@ App %1; Host:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="377"/>
+        <source>X023</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="378"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="385"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="392"/>
         <source>X037</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5114,13 +5104,7 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="384"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="392"/>
         <source>Horizon-2 Limit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="385"/>
-        <source>Vertical-2 Limit </source>
         <translation type="unfinished"></translation>
     </message>
     <message>

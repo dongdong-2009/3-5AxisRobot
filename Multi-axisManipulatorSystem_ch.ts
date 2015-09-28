@@ -5835,7 +5835,6 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="212"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="377"/>
         <source>M0</source>
         <translation></translation>
     </message>
@@ -5925,9 +5924,8 @@ App %1; Host:</source>
         <translation>X1轴原点</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="274"/>
         <source>X1 end Limit</source>
-        <translation>X1轴终点极限</translation>
+        <translation type="obsolete">X1轴终点极限</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="278"/>
@@ -5935,9 +5933,8 @@ App %1; Host:</source>
         <translation>主臂后退限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="279"/>
         <source>X1 FW Limit</source>
-        <translation>主臂前进限</translation>
+        <translation type="obsolete">主臂前进限</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="283"/>
@@ -5946,10 +5943,12 @@ App %1; Host:</source>
         <translation type="unfinished">X020</translation>
     </message>
     <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="274"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="279"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="284"/>
         <source>X016</source>
         <oldsource>X017</oldsource>
-        <translation>X016</translation>
+        <translation>吸5确认限</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="289"/>
@@ -5967,15 +5966,21 @@ App %1; Host:</source>
         <translation>Z轴起点极限</translation>
     </message>
     <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="311"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="319"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="327"/>
         <source>X042</source>
-        <translation type="unfinished">X042</translation>
+        <translation>吸8确认限</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="371"/>
         <source>A begin limit</source>
         <translation>A轴起点极限</translation>
+    </message>
+    <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="377"/>
+        <source>X023</source>
+        <translation>吸3确认限</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="401"/>
@@ -5988,9 +5993,10 @@ App %1; Host:</source>
         <translation type="unfinished">X026</translation>
     </message>
     <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="402"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="408"/>
         <source>X040</source>
-        <translation type="unfinished">X040</translation>
+        <translation>吸7确认限</translation>
     </message>
     <message>
         <source>Y1 end Limit</source>
@@ -6032,9 +6038,8 @@ App %1; Host:</source>
         <translation>Z轴原点</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="311"/>
         <source>Z end Limit</source>
-        <translation>Z轴终点极限</translation>
+        <translation type="obsolete">Z轴终点极限</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="316"/>
@@ -6081,8 +6086,10 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="378"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="385"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="392"/>
         <source>X037</source>
-        <translation type="unfinished">X037</translation>
+        <translation>吸4确认限</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="379"/>
@@ -6096,14 +6103,12 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="384"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="392"/>
         <source>Horizon-2 Limit</source>
         <translation>水平2限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="385"/>
         <source>Vertical-2 Limit </source>
-        <translation>垂直2限</translation>
+        <translation type="obsolete">垂直2限</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="310"/>
@@ -6146,9 +6151,8 @@ App %1; Host:</source>
         <translation>垂直2阀</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="402"/>
         <source>B Origin</source>
-        <translation>B轴原点</translation>
+        <translation type="obsolete">B轴原点</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="326"/>
