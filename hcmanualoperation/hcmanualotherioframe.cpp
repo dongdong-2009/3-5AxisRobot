@@ -64,7 +64,7 @@ void HCManualOtherIOFrame::StatusRefreshed()
     static QPixmap off(":/resource/ledgray(16).png");
     static QPixmap on(":/resource/ledgreen(16).png");
     static ICVirtualHost *host = ICVirtualHost::GlobalVirtualHost();
-    if(host->IsClipOn(6))
+    if(host->IsOutputOn(13))
     {
         ui->injectionStatusLabel->setPixmap(on);
     }
@@ -73,7 +73,7 @@ void HCManualOtherIOFrame::StatusRefreshed()
         ui->injectionStatusLabel->setPixmap(off);
     }
 
-    if(host->IsClipOn(7))
+    if(host->IsOutputOn(14))
     {
         ui->conveyorStatusLabel->setPixmap(on);
     }

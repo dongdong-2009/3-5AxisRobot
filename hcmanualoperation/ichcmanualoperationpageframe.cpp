@@ -92,6 +92,7 @@ void ICHCManualOperationPageFrame::showEvent(QShowEvent *e)
 //            SIGNAL(StatusRefreshed()),
 //            this,
 //            SLOT(StatusRefreshed()));
+    ui->adjustToolButton->hide();
 }
 
 void ICHCManualOperationPageFrame::hideEvent(QHideEvent *e)

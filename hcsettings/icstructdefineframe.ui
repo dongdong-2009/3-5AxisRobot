@@ -966,21 +966,21 @@ QRadioButton::indicator:unchecked:disabled
           <item row="0" column="0">
            <widget class="QLabel" name="label">
             <property name="text">
-             <string notr="true">Y017</string>
+             <string notr="true">Y040</string>
             </property>
            </widget>
           </item>
           <item row="0" column="4">
            <widget class="QLabel" name="label_8">
             <property name="text">
-             <string notr="true">Y035</string>
+             <string notr="true">Y044</string>
             </property>
            </widget>
           </item>
           <item row="1" column="0">
            <widget class="QLabel" name="label_2">
             <property name="text">
-             <string notr="true">Y022</string>
+             <string notr="true">Y041</string>
             </property>
            </widget>
           </item>
@@ -1020,14 +1020,14 @@ QRadioButton::indicator:unchecked:disabled
           <item row="1" column="4">
            <widget class="QLabel" name="label_9">
             <property name="text">
-             <string notr="true">Y036</string>
+             <string notr="true">Y045</string>
             </property>
            </widget>
           </item>
           <item row="2" column="0">
            <widget class="QLabel" name="label_3">
             <property name="text">
-             <string notr="true">Y031</string>
+             <string notr="true">Y042</string>
             </property>
            </widget>
           </item>
@@ -1041,7 +1041,7 @@ QRadioButton::indicator:unchecked:disabled
           <item row="3" column="0">
            <widget class="QLabel" name="label_4">
             <property name="text">
-             <string notr="true">Y032</string>
+             <string notr="true">Y043</string>
             </property>
            </widget>
           </item>
@@ -3781,9 +3781,8 @@ QRadioButton::indicator:unchecked:disabled
   <buttongroup name="buttonGroupE"/>
   <buttongroup name="buttonGroupF"/>
   <buttongroup name="buttonGroup_2"/>
-  <buttongroup name="buttonGroupG"/>
-  <buttongroup name="buttonGroup_2"/>
-  <buttongroup name="buttonGroupH"/>
   <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroupG"/>
+  <buttongroup name="buttonGroupH"/>
  </buttongroups>
 </ui>

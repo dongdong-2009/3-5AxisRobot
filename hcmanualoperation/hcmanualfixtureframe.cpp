@@ -81,7 +81,7 @@ void HCManualFixtureFrame::StatusRefreshed()
     static QPixmap on(":/resource/ledgreen(16).png");
     static QPixmap inOn(":/resource/ledred(16).png");
     static ICVirtualHost *host = ICVirtualHost::GlobalVirtualHost();
-    if(host->IsClipOn(0))
+    if(host->IsOutputOn(0))
     {
         if(!clips_.at(0))
         {
@@ -97,7 +97,7 @@ void HCManualFixtureFrame::StatusRefreshed()
             ui->fixture1StatusLabel->setPixmap(off);
         }
     }
-    if(host->IsClipOn(1))
+    if(host->IsOutputOn(1))
     {
         if(!clips_.at(1))
         {
@@ -113,7 +113,7 @@ void HCManualFixtureFrame::StatusRefreshed()
             ui->fixture2StatusLabel->setPixmap(off);
         }
     }
-    if(host->IsOutputOn(20))
+    if(host->IsOutputOn(2))
     {
         if(!clips_.at(2))
         {
@@ -129,7 +129,7 @@ void HCManualFixtureFrame::StatusRefreshed()
             ui->fixture3StatusLabel->setPixmap(off);
         }
     }
-    if(host->IsClipOn(3))
+    if(host->IsOutputOn(3))
     {
         if(!clips_.at(3))
         {
@@ -145,7 +145,7 @@ void HCManualFixtureFrame::StatusRefreshed()
             ui->fixture4StatusLabel->setPixmap(off);
         }
     }
-    if(host->IsInputOn(2))
+    if(host->IsInputOn(0))
     {
         if(!clips_.at(4))
         {
@@ -161,7 +161,7 @@ void HCManualFixtureFrame::StatusRefreshed()
             ui->fixture1InLabel->setPixmap(off);
         }
     }
-    if(host->IsInputOn(3))
+    if(host->IsInputOn(1))
     {
         if(!clips_.at(5))
         {
@@ -177,7 +177,7 @@ void HCManualFixtureFrame::StatusRefreshed()
             ui->fixture2InLabel->setPixmap(off);
         }
     }
-    if(host->IsInputOn(20))
+    if(host->IsInputOn(2))
     {
         if(!clips_.at(6))
         {
@@ -193,7 +193,7 @@ void HCManualFixtureFrame::StatusRefreshed()
             ui->fixture3InLabel->setPixmap(off);
         }
     }
-    if(host->IsInputOn(9))
+    if(host->IsInputOn(3))
     {
         if(!clips_.at(7))
         {
