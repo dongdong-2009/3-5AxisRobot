@@ -4122,8 +4122,8 @@ Reason</source>
         <translation type="obsolete">当前姿势:</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="117"/>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="135"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="118"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="136"/>
         <source>Other</source>
         <translation>其他</translation>
     </message>
@@ -4132,54 +4132,54 @@ Reason</source>
         <translation type="obsolete">教导</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="118"/>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="136"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="119"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="137"/>
         <source>Adjust</source>
         <translation>调位</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="119"/>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="137"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="120"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="138"/>
         <source>Reserve</source>
         <translation>预留</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="120"/>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="138"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="121"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="139"/>
         <source>Def Pos</source>
         <translation>点位</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="311"/>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="339"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="312"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="340"/>
         <source>Horizontal-1 Limit On</source>
         <translation>水平1限通</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="315"/>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="335"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="316"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="336"/>
         <source>Vertical-1 Limit On</source>
         <translation>垂直1限通</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="324"/>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="352"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="325"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="353"/>
         <source>/Horizontal-2 Limit On</source>
         <translation>/水平2限通</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="328"/>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="348"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="329"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="349"/>
         <source>/Vertical-2 Limit On</source>
         <translation>垂直2限通</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="367"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="368"/>
         <source>Horizontal-1</source>
         <translation>水平1</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="375"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="376"/>
         <source>Vertical-1</source>
         <translation>垂直1</translation>
     </message>
@@ -4192,17 +4192,17 @@ Reason</source>
         <translation type="obsolete">/垂直2</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="383"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="384"/>
         <source>Horizontal-2</source>
         <translation>水平2</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="391"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="392"/>
         <source>Vertical-2</source>
         <translation>垂直2</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="395"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="396"/>
         <source>Vertical-1/Vertical-2</source>
         <translation>垂直1/垂直2</translation>
     </message>
@@ -4239,14 +4239,14 @@ Reason</source>
         <translation type="obsolete">备用I/O</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="115"/>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="133"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="116"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="134"/>
         <source>Fixture</source>
         <translation>夹具</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="116"/>
-        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="134"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="117"/>
+        <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="135"/>
         <source>Sucker</source>
         <translation>吸</translation>
     </message>
@@ -4397,14 +4397,14 @@ Reason</source>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="14"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="14"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="182"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="189"/>
         <source>Frame</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="39"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="207"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="183"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="190"/>
         <source>Product</source>
         <translation>产品数</translation>
     </message>
@@ -4413,72 +4413,72 @@ Reason</source>
         <translation type="obsolete">取样模数</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="296"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="85"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="299"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="188"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="195"/>
         <source>Sampling Interval</source>
         <translation>取样间隔</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="319"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="108"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="322"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="189"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="196"/>
         <source>Bad Product</source>
         <translation>不良品数</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="79"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="253"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="98"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="192"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="199"/>
         <source>Fixture</source>
         <translation>模内下降</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="237"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="78"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="214"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="187"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="194"/>
         <source>TryProduct</source>
         <translation>试产模数</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="180"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="331"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="176"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="195"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="202"/>
         <source>Reversed Phase</source>
         <translation>水平</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="266"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="352"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="269"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="207"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="214"/>
         <source>Recycle Time</source>
         <translation>再循环延时时间</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="342"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="131"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="345"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="206"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="213"/>
         <source>Get Fail</source>
         <translation>取物失败</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="350"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="139"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="353"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="197"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="204"/>
         <source>Alarm When Up</source>
         <translation>模内上升报警</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="355"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="144"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="358"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="198"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="205"/>
         <source>Alarm Once</source>
         <translation>即时报警</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="409"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="217"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="412"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="199"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="206"/>
         <source>All</source>
         <translation>全部</translation>
     </message>
@@ -4491,48 +4491,58 @@ Reason</source>
         <translation type="obsolete">无限制</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="414"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="222"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="417"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="200"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="207"/>
         <source>Good</source>
         <translation>良品</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="419"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="227"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="422"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="201"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="208"/>
         <source>Stack-1</source>
         <translation>堆叠1组</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="424"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="232"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="427"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="202"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="209"/>
         <source>Stack-2</source>
         <translation>堆叠2组</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="429"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="237"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="432"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="203"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="210"/>
         <source>Stack-3</source>
         <translation>堆叠3组</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="434"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="242"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="437"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="204"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="211"/>
         <source>Stack-4</source>
         <translation>堆叠4组</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="412"/>
+        <source>Wait Mold Max</source>
+        <translation>最长开模时间</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="442"/>
+        <source>Wait Mold Min</source>
+        <translation>最短开模时间</translation>
     </message>
     <message>
         <source>In Mold Limit</source>
         <translation type="obsolete">模内侧姿</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="388"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="177"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="391"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="208"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="215"/>
         <source>Product Save</source>
         <translation>产量记忆</translation>
     </message>
@@ -4541,24 +4551,23 @@ Reason</source>
         <translation type="obsolete">输送带计数器</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="401"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="209"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="404"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="205"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="212"/>
         <source>Count Ways</source>
         <oldsource>Count Unit</oldsource>
         <translation>输送带计数器</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="136"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="287"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="132"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="196"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="203"/>
         <source>Positive Phase</source>
         <translation>垂直</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="214"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="246"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="184"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="191"/>
         <source>Wait Mold Opened Limit Time</source>
         <translation>最长开模时间</translation>
     </message>
@@ -4575,37 +4584,38 @@ Reason</source>
         <translation type="obsolete">水平下降</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="86"/>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="289"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="375"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="435"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="465"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="65"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="292"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="185"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="192"/>
         <source>s</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="69"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="382"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="88"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="190"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="197"/>
         <source>Alarm Times</source>
         <translation>报警时间</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="46"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="405"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="26"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="191"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="198"/>
         <source>Times</source>
         <translation>s</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="256"/>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="199"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="233"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="186"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="193"/>
         <source>Product Clear</source>
         <translation>产品清零</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="225"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="232"/>
         <source>Product clear</source>
         <translation>产品清零</translation>
     </message>
