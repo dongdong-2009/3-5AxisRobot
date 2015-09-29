@@ -469,6 +469,13 @@ public:
     void SetDefinePos(ICDefinePos pos, int value) {definePoses_[pos] = value;}
 
     int LastStep() const;
+
+    void Compile();
+    QList<ICMoldItem> ToSentMoldContent() const { return toSentContent_;}
+    int DisplayStep(int hostStep) const { return stepMap_.value(hostStep, -1);}
+    int ToHostSeq(int seq) const;
+    int ToHostNum(int seq) const;
+
 signals:
     void MoldPramChanged(int, int);
     void MoldNumberParamChanged();
@@ -481,6 +488,8 @@ private:
     int checkSum_;
     QString moldName_;
     QString moldParamName_;
+    QMap<int, int> stepMap_;
+    QList<ICMoldItem> toSentContent_;
 //    QList<ACTGROUP> axisActions_;
     static ICMold* currentMold_;
 

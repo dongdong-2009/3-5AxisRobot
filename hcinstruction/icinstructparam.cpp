@@ -38,6 +38,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
 //    commandStr += QString::number(moldItem.Seq()) + " ";
     if(moldItem.Action() == ICMold::ACTCOMMENT)
     {
+        commandStr += QString::number(moldItem.Num()) + "    " + "*" + "    ";
         commandStr += QString(tr("#Flag[%2]:Comment:%1").arg(moldItem.Comment()).arg(moldItem.Flag()));
         return commandStr;
     }

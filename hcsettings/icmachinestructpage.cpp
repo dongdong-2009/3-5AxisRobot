@@ -343,7 +343,7 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
         ui->distanceRotationEdit->SetDecimalPlaces(1);
         rotateValidator_->setTop(3600);
         intValidator->setTop(3600);
-        ui->mechanicalLengthLineEdit->setValidator(new QIntValidator(0,3600,this));
+//        ui->mechanicalLengthLineEdit->setValidator(new QIntValidator(0,3600,this));
 //        maximumValidator_->setTop(900);
 //        maximumValidator_->setBottom(-900);
         ui->maximumDisplacementLineEdit->setValidator(originValidator_);
@@ -370,7 +370,7 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
         ui->distanceRotationEdit->SetDecimalPlaces(1);
         rotateValidator_->setTop(3600);
         intValidator->setTop(3600);
-        ui->mechanicalLengthLineEdit->setValidator(new QIntValidator(0,3600,this));
+//        ui->mechanicalLengthLineEdit->setValidator(new QIntValidator(0,3600,this));
 //        maximumValidator_->setTop(900);
 //        maximumValidator_->setBottom(-900);
         ui->maximumDisplacementLineEdit->setValidator(originValidator_);
@@ -388,7 +388,7 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
         ui->distanceRotationEdit->SetDecimalPlaces(1);
         rotateValidator_->setTop(3600);
         intValidator->setTop(3600);
-        ui->mechanicalLengthLineEdit->setValidator(new QIntValidator(0,3600,this));
+//        ui->mechanicalLengthLineEdit->setValidator(new QIntValidator(0,3600,this));
 //        maximumValidator_->setTop(900);
 //        maximumValidator_->setBottom(-900);
         ui->maximumDisplacementLineEdit->setValidator(originValidator_);
@@ -424,6 +424,17 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
     intValidator->setBottom(ui->maximumDisplacementLineEdit->TransThisTextToThisInt());
     maxMoveValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
     maximumValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
+    if(currentAxis_ == ICVirtualHost::ICAxis_AxisC ||
+            currentAxis_ == ICVirtualHost::ICAxis_AxisA ||
+            currentAxis_ == ICVirtualHost::ICAxis_AxisB)
+    {
+        minSecValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
+        maxSecValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
+    }
+    else
+    {
+        on_maximumDisplacementLineEdit_textChanged("");
+    }
     p = editorToConfigIDs_.begin();
     while(p != editorToConfigIDs_.end())
     {
@@ -876,8 +887,8 @@ void ICMachineStructPage::on_mechanicalLengthLineEdit_textChanged(const QString 
     Q_UNUSED(arg1);
     maxMoveValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
     maximumValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
-    minSecValidator_->setTop(maximumValidator_->top());
-    maxSecValidator_->setTop(maximumValidator_->top());
+//    minSecValidator_->setTop(maximumValidator_->top());
+//    maxSecValidator_->setTop(maximumValidator_->top());
  //   externalValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
 }
 
@@ -886,6 +897,8 @@ void ICMachineStructPage::on_maximumDisplacementLineEdit_textChanged(const QStri
 {
     Q_UNUSED(arg1);
     intValidator->setBottom(ui->maximumDisplacementLineEdit->TransThisTextToThisInt());
+    minSecValidator_->setTop(ui->maximumDisplacementLineEdit->TransThisTextToThisInt());
+    maxSecValidator_->setTop(ui->maximumDisplacementLineEdit->TransThisTextToThisInt());
 }
 
 void ICMachineStructPage::OnConfigChanged(QObject *w, const QString& newV, const QString& oldV)

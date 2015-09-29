@@ -91,7 +91,8 @@ FORMS    +=  \
     ictipswidget.ui \
     icrecaldialog.ui \
     icbackupdialog.ui \
-    iccaretipui.ui
+    iccaretipui.ui \
+simulateknob.ui
 
 equals(SK_SIZE, 8){
 message("Define 8")
@@ -144,7 +145,8 @@ OTHER_FILES += \
     sysconfig/alarminfomation-en \
     sysconfig/alarminfomation-ch \
     sysconfig/hintinfomation-ch \
-    sysconfig/hintinfomation-en
+    sysconfig/hintinfomation-en \
+    tools/autots.py
 
 QMAKE_POST_LINK += "cp *.qm $$DESTDIR"
 QMAKE_PRE_LINK += "lrelease $${TARGET}.pro"
@@ -175,6 +177,7 @@ others.files += $${configsPathBase}/3-5AxisRobotDatabase
 scripts.path = /usr/bin
 scripts.files += $${configsPathBase}/*.sh
 scripts.files += $${configsPathBase}/LedTest_335x
+scripts.files += $${configsPathBase}/BootChecker
 scripts.files += $${configsPathBase}/$${SK_SIZE}RunApp/*
 keymap.path = /home/root
 keymap.files =$${configsPathBase}/$${SK_SIZE}-inch-qmap/*

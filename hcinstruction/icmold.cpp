@@ -265,6 +265,7 @@ bool ICMold::ReadMoldFile(const QString &fileName, bool isLoadParams)
         moldContent_ = tempmoldContent;
         moldName_ = fileName;
     }
+    Compile();
     return ret;
 }
 
@@ -329,26 +330,8 @@ bool ICMold::ReadMoldParamsFile(const QString &fileName)
 bool ICMold::SaveMoldFile(bool isSaveParams)
 {
     bool ret = false;
-    QMap<int, int> flagToSetp;
-    QList<int> conditionPos;
-    for(int i = 0; i != moldContent_.size(); ++i)
-    {
-        if(moldContent_.at(i).Action() == ACTCOMMENT)
-        {
-            flagToSetp.insert(moldContent_.at(i).Flag(), moldContent_.at(i).Num());
-        }
-        else if(moldContent_.at(i).Action() == ACTCHECKINPUT)
-        {
-            conditionPos.append(i);
-        }
-    }
-    for(int i = 0; i != conditionPos.size(); ++i)
-    {
-        moldContent_[conditionPos.at(i)].SetDVal(
-                    flagToSetp.value(moldContent_.at(conditionPos.at(i)).Flag(), 0) -
-                    moldContent_.at(conditionPos.at(i)).Num());
-    }
-    MoldReSum();
+    Compile();
+//    MoldReSum();
     QByteArray toWrite;
     if(moldContent_.size() < 1)
     {
@@ -421,10 +404,10 @@ bool ICMold::SaveMoldParamsFile()
 uint ICMold::SyncAct() const
 {
     uint ret = 0;
-    for(int i = 0; i != moldContent_.size(); ++i)
+    for(int i = 0; i != toSentContent_.size(); ++i)
     {
-        if(moldContent_.at(i).Action() != ACTCOMMENT)
-            ret += moldContent_.at(i).GMVal();
+//        if(toSentContent_.at(i).Action() != ACTCOMMENT)
+            ret += toSentContent_.at(i).GMVal();
     }
     return ret;
 }
@@ -432,10 +415,10 @@ uint ICMold::SyncAct() const
 uint ICMold::SyncSum() const
 {
     uint ret = 0;
-    for(int i = 0; i != moldContent_.size(); ++i)
+    for(int i = 0; i != toSentContent_.size(); ++i)
     {
-        if(moldContent_.at(i).Action() != ACTCOMMENT)
-            ret += moldContent_.at(i).Sum();
+//        if(toSentContent_.at(i).Action() != ACTCOMMENT)
+            ret += toSentContent_.at(i).Sum();
     }
     return ret;
 }
@@ -597,4 +580,80 @@ int ICGroupMoldUIItem::RunableTopItemCount()
         }
     }
     return ret;
+}
+
+void ICMold::Compile()
+{
+    QMap<int, int> flagToSetp;
+    QList<int> conditionPos;
+    int stepOffset = 0;
+    ICMoldItem item;
+    ICMoldItem toSentItem;
+    QList<ICMoldItem> tmpContent = moldContent_;
+    for(int i = 0; i != tmpContent.size(); ++i)
+    {
+        moldContent_[i].SetSeq(i);
+        item = tmpContent.at(i);
+        tmpContent[i].SetNum(item.Num() - stepOffset);
+        qDebug()<<tmpContent[i].ToString();
+        stepMap_.insert(tmpContent.at(i).Num(), moldContent_.at(i).Num());
+        if(item.Action() == ACTCOMMENT)
+        {
+            qDebug()<<item.Flag()<<item.Num();
+            flagToSetp.insert(item.Flag(), tmpContent[i].Num());
+            if(i == 0 && moldContent_.at(i + 1).Num() == item.Num())
+            {
+                continue;
+            }
+            else if(moldContent_.at(i + 1).Num() == item.Num() ||
+                    moldContent_.at(i - 1).Num() == item.Num())
+            {
+                continue;
+            }
+            else
+                ++stepOffset;
+            continue;
+        }
+        else if(tmpContent.at(i).Action() == ACTCHECKINPUT)
+        {
+            conditionPos.append(i);
+        }
+    }
+    int returnStep;
+    for(int i = 0; i != conditionPos.size(); ++i)
+    {
+        qDebug()<<moldContent_.at(conditionPos.at(i)).Flag()<<tmpContent.at(conditionPos.at(i)).Num();
+        returnStep = flagToSetp.value(moldContent_.at(conditionPos.at(i)).Flag(), 0) -
+                tmpContent.at(conditionPos.at(i)).Num();
+        moldContent_[conditionPos.at(i)].SetDVal(
+                    returnStep);
+        tmpContent[conditionPos.at(i)].SetDVal(
+                    returnStep);
+    }
+    toSentContent_.clear();
+    for(int i = 0; i < moldContent_.size(); ++i)
+    {
+        toSentItem = tmpContent.at(i);
+        if(toSentItem.Action() == ACTCOMMENT)
+            continue;
+        toSentItem.SetSeq(toSentContent_.size());
+        toSentItem.ReSum();
+        toSentContent_.append(toSentItem);
+    }
+}
+
+int ICMold::ToHostSeq(int seq) const
+{
+    int countComment = 0;
+    for(int i = 0; i < seq; ++i)
+    {
+        if(moldContent_.at(i).Action() == ACTCOMMENT)
+            ++countComment;
+    }
+    return seq - countComment;
+}
+
+int ICMold::ToHostNum(int seq) const
+{
+    return toSentContent_.at(seq).Num();
 }

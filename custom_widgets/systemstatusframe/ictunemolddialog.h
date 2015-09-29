@@ -20,6 +20,7 @@ protected:
     void changeEvent(QEvent *e);
     void hideEvent(QHideEvent *e);
     void showEvent(QShowEvent *e);
+    void keyPressEvent(QKeyEvent* e);
 
 private slots:
     void on_cancelButton_clicked();

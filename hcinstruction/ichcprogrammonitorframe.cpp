@@ -362,6 +362,7 @@ void ICHCProgramMonitorFrame::StatusRefreshed()
 
 void ICHCProgramMonitorFrame::SelectCurrentStep(int currentStep)
 {
+    currentStep = ICMold::CurrentMold()->DisplayStep(currentStep);
     if((currentStep != 0  && currentStep < oldStep_ && isModify_) ||
             (oldStep_ == 0 && currentStep > oldStep_ && isModify_))
     {
@@ -582,15 +583,19 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
 //                if(item->Action() == ICMold::ACTCHECKINPUT)
 //                    item->SetFlag(ret.Flag());
                 item->ReSum();
+                ICMoldItem toSendItem = *item;
+                toSendItem.SetSeq(ICMold::CurrentMold()->ToHostSeq(item->Seq()));
+                toSendItem.SetNum(ICMold::CurrentMold()->ToHostNum(toSendItem.Seq()));
+                toSendItem.ReSum();
                 UpdateUIProgramList_();
                 processor = ICCommandProcessor::Instance();
                 command.SetSlave(processor->SlaveID());
-                command.SetSequence(item->Seq());
-                command.SetDelayTime(item->DVal());
-                command.SetSpeed(item->SVal());
+                command.SetSequence(toSendItem.Seq());
+                command.SetDelayTime(toSendItem.DVal());
+                command.SetSpeed(toSendItem.SVal());
                 command.SetDPos(ret.Pos());
-                command.SetGMValue(item->GMVal());
-                command.SetCheckSum(item->Sum());
+                command.SetGMValue(toSendItem.GMVal());
+                command.SetCheckSum(toSendItem.Sum());
             }
             else
             {
@@ -602,15 +607,19 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
 //                if(currentBackup->Action() == ICMold::ACTCHECKINPUT)
 //                    currentBackup->SetFlag(ret.Flag());
                 currentBackup->ReSum();
+                ICMoldItem toSendItem = *currentBackup;
+                toSendItem.SetSeq(ICMold::CurrentMold()->ToHostSeq(currentBackup->Seq()));
+                toSendItem.SetNum(ICMold::CurrentMold()->ToHostNum(toSendItem.Seq()));
+                toSendItem.ReSum();
                 UpdateUIProgramList_();
                 processor = ICCommandProcessor::Instance();
                 command.SetSlave(processor->SlaveID());
-                command.SetSequence(currentBackup->Seq());
-                command.SetDelayTime(currentBackup->DVal());
-                command.SetSpeed(currentBackup->SVal());
+                command.SetSequence(toSendItem.Seq());
+                command.SetDelayTime(toSendItem.DVal());
+                command.SetSpeed(toSendItem.SVal());
                 command.SetDPos(ret.Pos());
-                command.SetGMValue(currentBackup->GMVal());
-                command.SetCheckSum(currentBackup->Sum());
+                command.SetGMValue(toSendItem.GMVal());
+                command.SetCheckSum(toSendItem.Sum());
             }
 #ifdef Q_WS_X11
           isM = true ;
@@ -652,15 +661,19 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
 //               if(item->Action() == ICMold::ACTCHECKINPUT)
 //                   item->SetFlag(ret.Flag());
                item->ReSum();
+               ICMoldItem toSendItem = *item;
+               toSendItem.SetSeq(ICMold::CurrentMold()->ToHostSeq(item->Seq()));
+               toSendItem.SetNum(ICMold::CurrentMold()->ToHostNum(toSendItem.Seq()));
+               toSendItem.ReSum();
                UpdateUIProgramList_();
                processor = ICCommandProcessor::Instance();
                command.SetSlave(processor->SlaveID());
-               command.SetSequence(item->Seq());
-               command.SetDelayTime(item->DVal());
-               command.SetSpeed(item->SVal());
+               command.SetSequence(toSendItem.Seq());
+               command.SetDelayTime(toSendItem.DVal());
+               command.SetSpeed(toSendItem.SVal());
                command.SetDPos(ret.Pos());
-               command.SetGMValue(item->GMVal());
-               command.SetCheckSum(item->Sum());
+               command.SetGMValue(toSendItem.GMVal());
+               command.SetCheckSum(toSendItem.Sum());
             }
             else
             {
@@ -672,15 +685,19 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
 //               if(currentBackup->Action() == ICMold::ACTCHECKINPUT)
 //                   currentBackup->SetFlag(ret.Flag());
                currentBackup->ReSum();
+               ICMoldItem toSendItem = *currentBackup;
+               toSendItem.SetSeq(ICMold::CurrentMold()->ToHostSeq(currentBackup->Seq()));
+               toSendItem.SetNum(ICMold::CurrentMold()->ToHostNum(toSendItem.Seq()));
+               toSendItem.ReSum();
                UpdateUIProgramList_();
                processor = ICCommandProcessor::Instance();
                command.SetSlave(processor->SlaveID());
-               command.SetSequence(currentBackup->Seq());
-               command.SetDelayTime(currentBackup->DVal());
-               command.SetSpeed(currentBackup->SVal());
+               command.SetSequence(toSendItem.Seq());
+               command.SetDelayTime(toSendItem.DVal());
+               command.SetSpeed(toSendItem.SVal());
                command.SetDPos(ret.Pos());
-               command.SetGMValue(currentBackup->GMVal());
-               command.SetCheckSum(currentBackup->Sum());
+               command.SetGMValue(toSendItem.GMVal());
+               command.SetCheckSum(toSendItem.Sum());
             }
             isM = processor->ExecuteCommand(command).toBool();
             qDebug()<<"after show"<<isM;

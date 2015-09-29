@@ -2,6 +2,7 @@
 #define OPERATINGRATIOSETDIALOG_H
 
 #include <QDialog>
+#include "mainframe.h"
 
 namespace Ui {
     class OperatingRatioSetDialog;
@@ -39,7 +40,7 @@ public:
     {
         if(instance_ == NULL)
         {
-            instance_ = new OperatingRatioSetDialog();
+            instance_ = new OperatingRatioSetDialog(icMainFrame);
         }
         return instance_;
     }
@@ -53,6 +54,7 @@ public:
 
 protected:
     void changeEvent(QEvent *e);
+    void keyPressEvent(QKeyEvent* e);
 
 signals:
 

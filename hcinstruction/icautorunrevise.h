@@ -22,6 +22,7 @@ public:
 
 protected:
     void changeEvent(QEvent *e);
+    void keyPressEvent(QKeyEvent* e);
 
 Q_SIGNALS:
     void MoldItemChanged();

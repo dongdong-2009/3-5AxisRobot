@@ -520,24 +520,24 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
                 groupItem.SetStepNum(gIndex);
                 insertedGroupItems.append(groupItem);
             }
-            else if(isComment)
-            {
-                ICTopMoldUIItem topItem;
-                topItem.SetBaseItem(items.at(0));
-                if(programList_[gIndex].MoldItemAt(0)->Action() == ICMold::ACTEND &&
-                        gIndex != 0)
-                {
-                    topItem.SetStepNum(gIndex - 1);
-                    programList_[gIndex - 1].AddToMoldUIItem(topItem);
-                }
-                else if(programList_[gIndex].MoldItemAt(0)->Action() == ICMold::ACTEND &&
-                        gIndex == 0)
-                {
-                    return;
-                }
-                else
-                    programList_[gIndex].PrependTopMoldUIItem(topItem);
-            }
+//            else if(isComment)
+//            {
+//                ICTopMoldUIItem topItem;
+//                topItem.SetBaseItem(items.at(0));
+//                if(programList_[gIndex].MoldItemAt(0)->Action() == ICMold::ACTEND &&
+//                        gIndex != 0)
+//                {
+//                    topItem.SetStepNum(gIndex - 1);
+//                    programList_[gIndex - 1].AddToMoldUIItem(topItem);
+//                }
+//                else if(programList_[gIndex].MoldItemAt(0)->Action() == ICMold::ACTEND &&
+//                        gIndex == 0)
+//                {
+//                    return;
+//                }
+//                else
+//                    programList_[gIndex].PrependTopMoldUIItem(topItem);
+//            }
             else
             {
                 ICTopMoldUIItem topItem;
@@ -906,10 +906,12 @@ void ICHCInstructionPageFrame::on_upButton_clicked()
         }
         ICGroupMoldUIItem *item = &programList_[gIndex];
 //        if(item->MoldItemAt(0)->Action() == ICMold::ACTCOMMENT) return;
+//        if(programList_[gIndex - 1].MoldItemAt(0)->Action() == ICMold::ACTCOMMENT) return;
+//        if(item->MoldItemAt(0)->Action() == ICMold::ACTCOMMENT) return;
         int runableCount = 0;
         for(int i = 0; i != item->TopItemCount(); ++i)
         {
-            if(item->MoldItemAt(i)->Action() != ICMold::ACTCOMMENT)
+//            if(item->MoldItemAt(i)->Action() != ICMold::ACTCOMMENT)
                 ++runableCount;
         }
 //        if(item->TopItemCount() == 1) //group up
@@ -1024,20 +1026,20 @@ void ICHCInstructionPageFrame::on_downButton_clicked()
         }
         else //split group item
         {
-            if(groupItem->MoldItemAt(tIndex)->Action() == ICMold::ACTCOMMENT) return;
-            bool up = false;
-            bool dw = false;
+//            if(groupItem->MoldItemAt(tIndex)->Action() == ICMold::ACTCOMMENT) return;
+//            bool up = false;
+//            bool dw = false;
             int runableCount = 0;
             for(int i = 0; i != tIndex; ++i)
             {
-                if(groupItem->MoldItemAt(i)->Action() != ICMold::ACTCOMMENT)
+//                if(groupItem->MoldItemAt(i)->Action() != ICMold::ACTCOMMENT)
                     ++runableCount;
             }
             if(runableCount == 0) return;
             runableCount = 0;
             for(int i = tIndex; i != groupItem->ItemCount(); ++i)
             {
-                if(groupItem->MoldItemAt(i)->Action() != ICMold::ACTCOMMENT)
+//                if(groupItem->MoldItemAt(i)->Action() != ICMold::ACTCOMMENT)
                     ++runableCount;
             }
             if(runableCount == 0 ) return;
@@ -1089,6 +1091,19 @@ void ICHCInstructionPageFrame::OnProgramChanged(int index, QString name)
 //    ui->moldComboBox->setCurrentIndex(index);
     ui->programLabel->setText(name);
     UpdateHostParam();
+    if(ICParametersSave::Instance()->IsExtentFunctionUsed() && index == 0)
+    {
+        ui->flagsButton->show();
+        ui->conditionsToolButton->show();
+        ui->commentButton->show();
+    }
+    else
+    {
+        ui->flagsButton->hide();
+        ui->conditionsToolButton->hide();
+        ui->commentButton->hide();
+    }
+//    ui->conditionsToolButton
 
 }
 
@@ -1236,6 +1251,10 @@ int ICHCInstructionPageFrame::ValidFlag()
     {
         return flags.size();
     }
+    if(flags[0] != 0)
+    {
+        return 0;
+    }
     for(int i = 1 ; i != flags.size(); ++i)
     {
         if(flags.at(i) - flags.at(i - 1) > 1)
@@ -1243,7 +1262,7 @@ int ICHCInstructionPageFrame::ValidFlag()
             return flags.at(i - 1) + 1;
         }
     }
-
+    return 0;
 }
 
 QStringList ICHCInstructionPageFrame::Flags()

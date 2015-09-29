@@ -3,6 +3,8 @@
 #include "iccommandprocessor.h"
 #include "icactioncommand.h"
 #include "icvirtualhost.h"
+#include <QKeyEvent>
+#include "mainframe.h"
 
 ICTuneMoldDialog::ICTuneMoldDialog(QWidget *parent) :
     QDialog(parent),
@@ -48,6 +50,14 @@ void ICTuneMoldDialog::hideEvent(QHideEvent *e)
                this,
             SLOT(RefreshStatus()));
     QDialog::hideEvent(e);
+}
+
+
+void ICTuneMoldDialog::keyPressEvent(QKeyEvent *e)
+{
+    QKeyEvent* ke = new QKeyEvent(*e);
+    qApp->postEvent(icMainFrame, ke);
+    this->reject();
 }
 
 void ICTuneMoldDialog::on_cancelButton_clicked()

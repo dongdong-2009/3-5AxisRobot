@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>365</width>
-    <height>488</height>
+    <height>517</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -689,7 +689,7 @@ QRadioButton::indicator:unchecked:disabled
     </widget>
    </item>
    <item row="4" column="1">
-    <widget class="QComboBox" name="flagBox"/>
+    <widget class="ICComboBox" name="flagBox"/>
    </item>
    <item row="4" column="0">
     <widget class="QLabel" name="returnStepLabel">
@@ -723,6 +723,11 @@ QRadioButton::indicator:unchecked:disabled
    <class>ICLineEditWithVirtualNumericKeypad</class>
    <extends>QLineEdit</extends>
    <header>iclineeditwithvirtualnumerickeypad.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ICComboBox</class>
+   <extends>QComboBox</extends>
+   <header>iccombobox.h</header>
   </customwidget>
  </customwidgets>
  <resources>
@@ -767,7 +772,7 @@ QRadioButton::indicator:unchecked:disabled
   </connection>
  </connections>
  <buttongroups>
-  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup"/>
  </buttongroups>
 </ui>
