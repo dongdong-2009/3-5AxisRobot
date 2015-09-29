@@ -20,18 +20,23 @@ ICHCInjectionPage::ICHCInjectionPage(QWidget *parent) :
     ICLineEditWithVirtualNumericKeypad *delayEdit;
     ioNames_<<tr("Close Mold Permit  ")<<tr("Ejection Permit  ")
            <<tr("Core1 Permit  ")
-          <<tr("Core2 Permit  ");
+          <<tr("Core2 Permit  ")
+         <<tr("Ejection BW Permit  ");
     onClipToOffClip_.insert(ICMold::ACTCLSMDON, ICMold::ACTCLSMDOFF);
     onClipToOffClip_.insert(ICMold::ACTEJECTON, ICMold::ACTEJECTOFF);
-//    onClipToOffClip_.insert(ICMold::ACTLAYOUTON, ICMold::ACTLAYOUTOFF);
+    //    onClipToOffClip_.insert(ICMold::ACTLAYOUTON, ICMold::ACTLAYOUTOFF);
     onClipToOffClip_.insert(ICMold::ACT_CORE1_ON, ICMold::ACT_CORE1_OFF);
     onClipToOffClip_.insert(ICMold::ACT_CORE2_ON, ICMold::ACT_CORE2_OFF);
+    onClipToOffClip_.insert(ICMold::ACTEJECTON + 100, ICMold::ACTEJECTOFF + 100);
+
 
     offClipToOnClip_.insert(ICMold::ACTCLSMDOFF, ICMold::ACTCLSMDON);
     offClipToOnClip_.insert(ICMold::ACTEJECTOFF, ICMold::ACTEJECTON);
 //    offClipToOnClip_.insert(ICMold::ACTLAYOUTOFF, ICMold::ACTLAYOUTON);
     offClipToOnClip_.insert(ICMold::ACT_CORE1_OFF, ICMold::ACT_CORE1_ON);
     offClipToOnClip_.insert(ICMold::ACT_CORE2_OFF, ICMold::ACT_CORE2_ON);
+    offClipToOnClip_.insert(ICMold::ACTEJECTOFF + 100, ICMold::ACTEJECTON + 100);
+
     QList<uint> initStatus = onClipToOffClip_.values();
     QIntValidator *validator = new QIntValidator(0, 30000, this);
     for(int i = 0; i != ui->tableWidget->rowCount(); ++i)
@@ -58,7 +63,7 @@ ICHCInjectionPage::ICHCInjectionPage(QWidget *parent) :
                 &buttonSignalMapper_,
                 SLOT(map()));
     }
-//    ui->tableWidget->resizeColumnsToContents();
+    //    ui->tableWidget->resizeColumnsToContents();
 #ifdef HC_SK_5
     ui->tableWidget->setColumnWidth(0, 46);
     ui->tableWidget->setColumnWidth(1, 110);
@@ -73,6 +78,8 @@ ICHCInjectionPage::ICHCInjectionPage(QWidget *parent) :
 //    commandKeyMap_.insert(settingButtons_.at(2), qMakePair(static_cast<int>(IC::VKEY_LAYOUTON), static_cast<int>(IC::VKEY_LAYOUTOFF)));
     commandKeyMap_.insert(settingButtons_.at(2), qMakePair(0, 0));
     commandKeyMap_.insert(settingButtons_.at(3), qMakePair(0, 0));
+    commandKeyMap_.insert(settingButtons_.at(4), qMakePair(0, 0));
+
 
     connect(&buttonSignalMapper_,
             SIGNAL(mapped(QWidget*)),
@@ -94,7 +101,9 @@ void ICHCInjectionPage::changeEvent(QEvent *e)
         ioNames_.clear();
         ioNames_<<tr("Close Mold Permit  ")<<tr("Ejection Permit  ")
                <<tr("Core1 Permit  ")
-              <<tr("Core2 Permit  ");
+              <<tr("Core2 Permit  ")
+             <<tr("Ejection BW Permit  ");
+
         for(int i = 0; i != settingButtons_.size(); ++i)
         {
             settingButtons_[i]->setText(ioNames_.at(i));
@@ -212,14 +221,24 @@ QList<ICMoldItem> ICHCInjectionPage::CreateCommandImpl() const
     QList<ICMoldItem> ret;
 
     ICMoldItem item;
+    int clip;
     for(int i = 0; i != ui->tableWidget->rowCount(); ++i)
     {
         if(ui->tableWidget->item(i,0)->checkState() == Qt::Checked)
         {
-            item.SetClip(buttonToClip_.value(qobject_cast<QAbstractButton*>(ui->tableWidget->cellWidget(i, 1))));
+            item.SetIFVal(0);
+            clip = buttonToClip_.value(qobject_cast<QAbstractButton*>(ui->tableWidget->cellWidget(i, 1)));
+            if(clip >= 100)
+            {
+                item.SetClip(clip - 100);
+                item.SetIFVal(1);
+            }
+            else
+                item.SetClip(clip);
             item.SetDVal(delayEdits_.at(i)->TransThisTextToThisInt());
             ret.append(item);
         }
     }
     return ret;
+
 }

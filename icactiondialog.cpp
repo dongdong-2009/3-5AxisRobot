@@ -9,6 +9,7 @@ ICActionDialog::ICActionDialog(QWidget *parent) :
     ui(new Ui::ICActionDialog)
 {
     ui->setupUi(this);
+    ui->giveupButton->hide();
 }
 
 ICActionDialog::~ICActionDialog()
