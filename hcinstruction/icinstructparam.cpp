@@ -378,11 +378,11 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem, const QL
             {
                 commandStr += QObject::tr("On") + ":";
             }
-            if(action != ICMold::ACT_AUX5 && action != ICMold::ACT_AUX6)
-            {
-                commandStr += " ";
-                commandStr += QObject::tr("Times:") + QString::number(moldItem.ActualMoldCount()) + " ";
-            }
+//            if(action != ICMold::ACT_AUX5 && action != ICMold::ACT_AUX6)
+//            {
+//                commandStr += " ";
+//                commandStr += QObject::tr("Times:") + QString::number(moldItem.ActualMoldCount()) + " ";
+//            }
             commandStr += " ";
         }
 //        else if(action == ICMold::ACT_AUX1)
@@ -500,13 +500,13 @@ void ICInstructParam::InstallMoldInfo()
 //    clipGroupMap_[ACTCLIP12OFF] = QObject::tr("Lock 2 Mold OFF");
     clipGroupMap_[ACTCLIP12OFF] = QObject::tr("Core1 OFF");
     clipGroupMap_[ACTCLIP13OFF] = QObject::tr("Core2 OFF");
-    clipGroupMap_[ACT_AUX1] = QObject::tr("Reserve 1");
+    clipGroupMap_[ACT_AUX1] = QObject::tr("Sucker 3");
 //    clipGroupMap_[ACT_AUX1] = QObject::tr("");
-    clipGroupMap_[ACT_AUX2] = QObject::tr("Reserve 2");
-    clipGroupMap_[ACT_AUX3] = QObject::tr("Reserve 3");
-    clipGroupMap_[ACT_AUX4] = QObject::tr("Reserve 4");
-    clipGroupMap_[ACT_AUX5] = QObject::tr("Sucker 3");
-    clipGroupMap_[ACT_AUX6] = QObject::tr("Sucker 4");
+    clipGroupMap_[ACT_AUX2] = QObject::tr("Sucker 4");
+    clipGroupMap_[ACT_AUX3] = QObject::tr("Sucker 5");
+    clipGroupMap_[ACT_AUX4] = QObject::tr("Sucker 6");
+    clipGroupMap_[ACT_AUX5] = QObject::tr("Sucker 7");
+    clipGroupMap_[ACT_AUX6] = QObject::tr("Sucker 8");
 //    clipGroupMap_[ACTCLIP14OFF] = QObject::tr("Clip14 OFF");
 //    clipGroupMap_[ACTCLIP15OFF] = QObject::tr("Clip15 OFF");
 //    clipGroupMap_[ACTCLIP16OFF] = QObject::tr("Clip16 OFF");

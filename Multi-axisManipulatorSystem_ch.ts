@@ -11596,7 +11596,6 @@ Admin</source>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="359"/>
-        <location filename="hcinstruction/icinstructparam.cpp" line="384"/>
         <source>Times:</source>
         <translation>间隔模数:</translation>
     </message>
@@ -11757,14 +11756,34 @@ Admin</source>
         <translation>吸2断</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="508"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="503"/>
         <source>Sucker 3</source>
         <translation>吸3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="509"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="505"/>
         <source>Sucker 4</source>
         <translation>吸4</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="506"/>
+        <source>Sucker 5</source>
+        <translation>吸5</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="507"/>
+        <source>Sucker 6</source>
+        <translation>吸6</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="508"/>
+        <source>Sucker 7</source>
+        <translation>吸7</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="509"/>
+        <source>Sucker 8</source>
+        <translation>吸8</translation>
     </message>
     <message>
         <source>Clip5 ON</source>
@@ -12025,24 +12044,20 @@ Admin</source>
         <translation>抽芯2禁止</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="503"/>
         <source>Reserve 1</source>
-        <translation>预留1</translation>
+        <translation type="obsolete">预留1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="505"/>
         <source>Reserve 2</source>
-        <translation>预留2</translation>
+        <translation type="obsolete">预留2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="506"/>
         <source>Reserve 3</source>
-        <translation>预留3</translation>
+        <translation type="obsolete">预留3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="507"/>
         <source>Reserve 4</source>
-        <translation>预留4</translation>
+        <translation type="obsolete">预留4</translation>
     </message>
     <message>
         <source>Reserve 5</source>

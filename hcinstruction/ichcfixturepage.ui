@@ -13,6 +13,20 @@
   <property name="windowTitle">
    <string>Frame</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#goToAxis, #goToFCheck{
+     border-style: outset;
+     border-width: 1px;
+     border-radius: 4px;
+     border-color: gray;
+	background-color: rgb(0, 255, 0);
+}
+#goToAxis::pressed, #goToFCheck::pressed{
+     border-style: inset;
+	background-color: #0073FF;
+	color:black;
+}</string>
+  </property>
   <property name="frameShape">
    <enum>QFrame::StyledPanel</enum>
   </property>
@@ -324,15 +338,35 @@ QRadioButton::indicator:unchecked:disabled
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <widget class="QPushButton" name="goToAxis">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>24</height>
+        </size>
+       </property>
        <property name="text">
         <string>Axis</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resource.qrc">
+         <normaloff>:/resource/Linear(32).png</normaloff>:/resource/Linear(32).png</iconset>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="goToFCheck">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>24</height>
+        </size>
+       </property>
        <property name="text">
         <string>F.Check</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../categorypage/resources.qrc">
+         <normaloff>:/resources/security-point.png</normaloff>:/resources/security-point.png</iconset>
        </property>
       </widget>
      </item>
@@ -347,6 +381,13 @@ QRadioButton::indicator:unchecked:disabled
    <header>ictablewidget.h</header>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="../categorypage/resources.qrc"/>
+  <include location="../resource.qrc"/>
+  <include location="../resource.qrc"/>
+  <include location="../resource.qrc"/>
+  <include location="../resource.qrc"/>
+  <include location="../resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

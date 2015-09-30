@@ -206,7 +206,8 @@ color: rgb(0, 85, 255);</string>
        </property>
        <property name="styleSheet">
         <string notr="true">#passwdLevelLabel{
-background-color: rgb(125, 125, 125);
+/*background-color: rgb(125, 125, 125);*/
+background-color:#0073FF;
 color: rgb(255, 255, 0);
 }</string>
        </property>

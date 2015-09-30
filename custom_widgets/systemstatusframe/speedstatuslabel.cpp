@@ -21,7 +21,7 @@ void SpeedStatusLabel::mousePressEvent(QMouseEvent *ev)
     {
         oldSytle_ = this->styleSheet();
     }
-    this->setStyleSheet("background-color:blue;color:white;");
+    this->setStyleSheet("background-color:rgb(0, 255, 0);color:white;");
 }
 
 void SpeedStatusLabel::mouseReleaseEvent(QMouseEvent *ev)

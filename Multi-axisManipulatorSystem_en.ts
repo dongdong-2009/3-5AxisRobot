@@ -9498,7 +9498,6 @@ Admin</source>
     <name>QObject</name>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="359"/>
-        <location filename="hcinstruction/icinstructparam.cpp" line="384"/>
         <source>Times:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -9697,13 +9696,23 @@ Admin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="508"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="503"/>
         <source>Sucker 3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="509"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="505"/>
         <source>Sucker 4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="506"/>
+        <source>Sucker 5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="507"/>
+        <source>Sucker 6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9827,23 +9836,13 @@ Admin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="503"/>
-        <source>Reserve 1</source>
+        <location filename="hcinstruction/icinstructparam.cpp" line="508"/>
+        <source>Sucker 7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="505"/>
-        <source>Reserve 2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="506"/>
-        <source>Reserve 3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="507"/>
-        <source>Reserve 4</source>
+        <location filename="hcinstruction/icinstructparam.cpp" line="509"/>
+        <source>Sucker 8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
