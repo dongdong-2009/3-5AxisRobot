@@ -14,7 +14,10 @@
 #define SECTION_DECIMAL 1
 #define STACK_DECIMAL 2
 
-#define SW_VERSION "X-5.0.9_beta1"
+#define TRUNK_VERSION "5.0.9"
+#define APP_VERSION "XS5"
+
+#define SW_VERSION APP_VERSION"_"TRUNK_VERSION
 #define HW_VERSION "1.3"
 
 #endif // CONFIG_H
