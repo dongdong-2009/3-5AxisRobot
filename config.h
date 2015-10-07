@@ -14,7 +14,10 @@
 #define SECTION_DECIMAL 1
 #define STACK_DECIMAL 2
 
-#define SW_VERSION "HAMO-01-1.2-X-5.0.9"
+#define TRUNK_VERSION "5.0.9"
+#define APP_VERSION "HAMO-01-1.2"
+
+#define SW_VERSION APP_VERSION"_"TRUNK_VERSION
 #define HW_VERSION "1.3"
 
 #endif // CONFIG_H

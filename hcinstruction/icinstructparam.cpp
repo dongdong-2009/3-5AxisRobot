@@ -72,7 +72,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem, const QL
                 commandStr += tr("Fixture");
                 commandStr += QString::number(moldItem.SVal() + 1);
             }
-            else if(moldItem.SVal() < 8)
+            else if(moldItem.SVal() < 12)
             {
                 commandStr += tr("Sucker");
                 commandStr += QString::number(moldItem.SVal() - 3);

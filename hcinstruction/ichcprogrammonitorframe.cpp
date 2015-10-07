@@ -103,6 +103,7 @@ void ICHCProgramMonitorFrame::showEvent(QShowEvent *e)
     ICVirtualHost::GlobalVirtualHost()->SetSpeedEnable(false);
     ui->speedEnableButton->setIcon(switchOff_);
     ui->speedEnableButton->setText(tr("Speed Disable"));
+    ui->speedEnableButton->setChecked(false);
     SetProduct(ICMold::CurrentMold()->MoldParam(ICMold::Product));
     currentMoldNum_ = 8;
     UpdateHostParam();

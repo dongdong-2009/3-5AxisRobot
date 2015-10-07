@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>644</width>
-    <height>427</height>
+    <height>436</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -898,6 +898,26 @@
         </item>
         <item>
          <widget class="QPushButton" name="okButton">
+          <property name="minimumSize">
+           <size>
+            <width>80</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#okButton{
+     border-style: outset;
+     border-width: 1px;
+     border-radius: 4px;
+     border-color: gray;
+	background-color: rgb(0, 255, 0);
+}
+#okButton::pressed{
+     border-style: inset;
+	background-color: #0073FF;
+	color:black;
+}</string>
+          </property>
           <property name="text">
            <string>OK</string>
           </property>
@@ -925,14 +945,14 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>ICLineEditWithVirtualNumericKeypad</class>
-   <extends>QLineEdit</extends>
-   <header>iclineeditwithvirtualnumerickeypad.h</header>
-  </customwidget>
-  <customwidget>
    <class>ICComboBox</class>
    <extends>QComboBox</extends>
    <header>iccombobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ICLineEditWithVirtualNumericKeypad</class>
+   <extends>QLineEdit</extends>
+   <header>iclineeditwithvirtualnumerickeypad.h</header>
   </customwidget>
  </customwidgets>
  <resources/>
@@ -941,10 +961,10 @@
   <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroup_3"/>
   <buttongroup name="buttonGroup_4"/>
+  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroup_5"/>
   <buttongroup name="buttonGroup_6"/>
   <buttongroup name="buttonGroup_7"/>
   <buttongroup name="buttonGroup_8"/>
-  <buttongroup name="buttonGroup"/>
  </buttongroups>
 </ui>
