@@ -14,7 +14,9 @@ cp ${workDir}/Multi-axisManipulatorSystem_ch.qm ${reinstallDir} -f
 cp ${workDir}/Multi-axisManipulatorSystem_en.qm ${reinstallDir} -f
 
 inch=`cat ${workDir}/Multi-axisManipulatorSystem.pro | grep "SK_SIZE =" | awk '{print $3}'`
-swVersion=`cat ${workDir}/config.h | grep "SW_VERSION" | awk '{print $3}' | sed 's/\"//g' | tr -d ['\r']`
+swVersion=`cat ${workDir}/config.h | grep "APP_VERSION " | awk '{print $3}' | sed 's/\"//g' | tr -d ['\r']`
+trunkVersion=`cat ${workDir}/config.h | grep "TRUNK_VERSION " | awk '{print $3}' | sed 's/\"//g' | tr -d ['\r']`
+swVersion=${swVersion}_${trunkVersion}
 cp ${contentDir}/${inch}-inch-qmap/3a8.qmap ${reinstallDir}
 cp -r ${contentDir}/${inch}resource ${reinstallDir}/resourcee
 

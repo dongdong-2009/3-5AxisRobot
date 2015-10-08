@@ -917,14 +917,14 @@ bool ICHCSystemSettingsFrame::CheckRestoreMachineFiles_()
             //                QMessageBox::warning(this, tr("Warnning"), tr("Wrong Rotation config format!"));
             //                return false;
             //            }
-            for(int j = 0; j != cols.at(1).size(); ++j)
-            {
-                if(!cols.at(1).at(j).isDigit())
-                {
-                    QMessageBox::warning(this, tr("Warnning"), tr("Wrong Rotation config format!"));
-                    return false;
-                }
-            }
+//            for(int j = 0; j != cols.at(1).size(); ++j)
+//            {
+//                if(!cols.at(1).at(j).isDigit())
+//                {
+//                    QMessageBox::warning(this, tr("Warnning"), tr("Wrong Rotation config format!"));
+//                    return false;
+//                }
+//            }
 
         }
     }

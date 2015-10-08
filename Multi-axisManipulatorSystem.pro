@@ -148,6 +148,7 @@ OTHER_FILES += \
     sysconfig/hintinfomation-en \
     tools/autots.py
 
+
 QMAKE_POST_LINK += "cp *.qm $$DESTDIR"
 QMAKE_PRE_LINK += "lrelease $${TARGET}.pro"
 #message($${UI_DIR})
@@ -175,13 +176,13 @@ stylesheet.files += $${configsPathBase}/stylesheet/*
 others.path = /opt/Qt/apps
 others.files += $${configsPathBase}/3-5AxisRobotDatabase
 scripts.path = /usr/bin
-scripts.files += $${configsPathBase}/*.sh
-scripts.files += $${configsPathBase}/LedTest_335x
-scripts.files += $${configsPathBase}/BootChecker
 scripts.files += $${configsPathBase}/$${SK_SIZE}RunApp/*
 keymap.path = /home/root
 keymap.files =$${configsPathBase}/$${SK_SIZE}-inch-qmap/*
-INSTALLS += target translations records subs sysconfig resource stylesheet others scripts keymap
+testApp.path = /opt/Qt/apps
+testApp.files += $${configsPathBase}/3a8HardwareTest-$${SK_SIZE}-inch
+testApp.files += $${configsPathBase}/3A8HardwareTest.en_CH.qm
+INSTALLS += target translations records subs sysconfig resource stylesheet others scripts keymap testApp
 for(sh, scripts.files){
 QMAKE_POST_LINK += " && chmod +x $${sh}"
 }
