@@ -608,10 +608,11 @@ void MainFrame::InitInterface()
     emit LoadMessage("Child page name section has been shown");
 
     ui->functionPageButton->setIcon(QPixmap(":/resource/settings.png"));
-    ui->monitorPageButton->setIcon(QPixmap(":/resource/monitor.png"));
+    ui->monitorPageButton->setIcon(QPixmap(":/resource/monitor_HM.png"));
     ui->recordPageButton->setIcon(QPixmap(":/resource/records.png"));
     ui->alarmPageButton->setIcon(QPixmap(":/resource/warning.png"));
     ui->returnPageButton->setIcon(QPixmap(":resource/return.png"));
+    ui->monitorPageButton->setIconSize(QSize(64, 48));
     emit LoadMessage("page switchers pixmap has been shown");
 
     //    this->setStyleSheet("QFrame { border: none; }");

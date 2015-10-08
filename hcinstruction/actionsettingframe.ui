@@ -13,20 +13,6 @@
   <property name="windowTitle">
    <string>Frame</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true">QPushButton{
-     border-style: outset;
-     border-width: 1px;
-     border-radius: 4px;
-     border-color: gray;
-	background-color: rgb(0, 255, 0);
-}
-QPushButton:pressed{
-     border-style: inset;
-	background-color: #0073FF;
-	color:black;
-}</string>
-  </property>
   <property name="frameShape">
    <enum>QFrame::StyledPanel</enum>
   </property>
@@ -186,13 +172,13 @@ QPushButton:pressed{
        </property>
        <property name="minimumSize">
         <size>
-         <width>60</width>
+         <width>50</width>
          <height>0</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>60</width>
+         <width>50</width>
          <height>32</height>
         </size>
        </property>
@@ -324,13 +310,13 @@ QPushButton:pressed{
        </property>
        <property name="minimumSize">
         <size>
-         <width>60</width>
+         <width>50</width>
          <height>0</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>60</width>
+         <width>50</width>
          <height>32</height>
         </size>
        </property>
@@ -632,13 +618,13 @@ QPushButton:pressed{
        </property>
        <property name="minimumSize">
         <size>
-         <width>60</width>
+         <width>50</width>
          <height>0</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>60</width>
+         <width>50</width>
          <height>32</height>
         </size>
        </property>
@@ -809,13 +795,13 @@ QPushButton:pressed{
        </property>
        <property name="minimumSize">
         <size>
-         <width>60</width>
+         <width>50</width>
          <height>0</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>60</width>
+         <width>50</width>
          <height>32</height>
         </size>
        </property>
@@ -944,13 +930,13 @@ QPushButton:pressed{
        </property>
        <property name="minimumSize">
         <size>
-         <width>60</width>
+         <width>50</width>
          <height>0</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>60</width>
+         <width>50</width>
          <height>32</height>
         </size>
        </property>
@@ -1101,13 +1087,13 @@ QPushButton:pressed{
        </property>
        <property name="minimumSize">
         <size>
-         <width>60</width>
+         <width>50</width>
          <height>0</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>60</width>
+         <width>50</width>
          <height>32</height>
         </size>
        </property>
@@ -1176,7 +1162,7 @@ QPushButton:pressed{
      </property>
      <property name="minimumSize">
       <size>
-       <width>104</width>
+       <width>90</width>
        <height>0</height>
       </size>
      </property>
@@ -1440,13 +1426,13 @@ QPushButton:pressed{
        </property>
        <property name="minimumSize">
         <size>
-         <width>60</width>
+         <width>50</width>
          <height>0</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>60</width>
+         <width>50</width>
          <height>32</height>
         </size>
        </property>
@@ -1575,13 +1561,13 @@ QPushButton:pressed{
        </property>
        <property name="minimumSize">
         <size>
-         <width>60</width>
+         <width>50</width>
          <height>0</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>60</width>
+         <width>50</width>
          <height>32</height>
         </size>
        </property>
@@ -1659,7 +1645,7 @@ QPushButton:pressed{
      </property>
      <property name="minimumSize">
       <size>
-       <width>64</width>
+       <width>120</width>
        <height>40</height>
       </size>
      </property>
@@ -1675,6 +1661,21 @@ QPushButton:pressed{
        <width>0</width>
        <height>24</height>
       </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#goToIMM{
+     border-style: outset;
+     border-width: 1px;
+     border-radius: 4px;
+     border-color: gray;
+	background-color: rgb(255, 0, 0);
+color:yellow;
+}
+#goToIMM:pressed{
+     border-style: inset;
+	background-color: #0073FF;
+	color:black;
+}</string>
      </property>
      <property name="text">
       <string>IMM</string>
@@ -1693,6 +1694,20 @@ QPushButton:pressed{
        <height>24</height>
       </size>
      </property>
+     <property name="styleSheet">
+      <string notr="true">#goToFixture{
+     border-style: outset;
+     border-width: 1px;
+     border-radius: 4px;
+     border-color: gray;
+	background-color: rgb(0, 255, 0);
+}
+#goToFixture:pressed{
+     border-style: inset;
+	background-color: #0073FF;
+	color:black;
+}</string>
+     </property>
      <property name="text">
       <string>Fixture</string>
      </property>
@@ -1709,6 +1724,21 @@ QPushButton:pressed{
        <width>0</width>
        <height>24</height>
       </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#goToCheck{
+     border-style: outset;
+     border-width: 1px;
+     border-radius: 4px;
+     border-color: gray;
+	background-color: rgb(0, 0, 255);
+color:yellow;
+}
+#goToCheck:pressed{
+     border-style: inset;
+	background-color: #0073FF;
+	color:black;
+}</string>
      </property>
      <property name="text">
       <string>F.Check</string>
@@ -1738,13 +1768,13 @@ QPushButton:pressed{
  </resources>
  <connections/>
  <buttongroups>
+  <buttongroup name="x2BoxbuttonGroup"/>
+  <buttongroup name="cBoxbuttonGroup"/>
+  <buttongroup name="zBoxbuttonGroup"/>
+  <buttongroup name="y1BoxbuttonGroup"/>
+  <buttongroup name="aBoxbuttonGroup"/>
   <buttongroup name="y2BoxbuttonGroup"/>
   <buttongroup name="x1BoxbuttonGroup"/>
-  <buttongroup name="x2BoxbuttonGroup"/>
-  <buttongroup name="zBoxbuttonGroup"/>
-  <buttongroup name="aBoxbuttonGroup"/>
   <buttongroup name="bBoxbuttonGroup"/>
-  <buttongroup name="cBoxbuttonGroup"/>
-  <buttongroup name="y1BoxbuttonGroup"/>
  </buttongroups>
 </ui>

@@ -101,7 +101,7 @@ void ICHCProgramMonitorFrame::showEvent(QShowEvent *e)
     //    ICCommandProcessor::Instance()->ExecuteHCCommand(IC::CMD_TurnStop, 0);
     ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
     ICVirtualHost::GlobalVirtualHost()->SetSpeedEnable(false);
-    ui->speedEnableButton->setIcon(switchOff_);
+//    ui->speedEnableButton->setIcon(switchOff_);
     ui->speedEnableButton->setText(tr("Speed Disable"));
     ui->speedEnableButton->setChecked(false);
     SetProduct(ICMold::CurrentMold()->MoldParam(ICMold::Product));
@@ -255,7 +255,7 @@ void ICHCProgramMonitorFrame::hideEvent(QHideEvent *e)
     timer_.stop();
     refreshTimer_.stop();
     ICVirtualHost::GlobalVirtualHost()->SetSpeedEnable(false);
-    ui->speedEnableButton->setIcon(switchOff_);
+//    ui->speedEnableButton->setIcon(switchOff_);
     ui->speedEnableButton->setText(tr("Speed Disable"));
     checkMessageBox->reject();
 
@@ -834,7 +834,7 @@ void ICHCProgramMonitorFrame::on_speedEnableButton_clicked()
 {
     ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
     host->SetSpeedEnable(!host->IsSpeedEnable());
-    ui->speedEnableButton->setIcon(host->IsSpeedEnable()? switchOn_ : switchOff_);
+//    ui->speedEnableButton->setIcon(host->IsSpeedEnable()? switchOn_ : switchOff_);
     ui->speedEnableButton->setText(host->IsSpeedEnable() ? tr("Speed Enable") : tr("Speed Disable"));
 }
 
@@ -844,7 +844,7 @@ void ICHCProgramMonitorFrame::OnTimeOut()
     if(!host->HasTuneSpeed())
     {
         host->SetSpeedEnable(false);
-        ui->speedEnableButton->setIcon(switchOff_);
+//        ui->speedEnableButton->setIcon(switchOff_);
         ui->speedEnableButton->setText(tr("Speed Disable"));
     }
     host->SetTuneSpeed(false);

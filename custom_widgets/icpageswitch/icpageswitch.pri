@@ -1,8 +1,8 @@
 INCLUDEPATH += $$PWD
 DEPENDPATH += $$PWD
 
-HEADERS += icpageswitch.h
+HEADERS += $$PWD/icpageswitch.h
 
-SOURCES += icpageswitch.cpp
+SOURCES += $$PWD/icpageswitch.cpp
 
-RESOURCES += icpageswitchImages.qrc
+RESOURCES += $$PWD/icpageswitchImages.qrc

@@ -102,7 +102,7 @@ void ICHCInstructionPageFrame::showEvent(QShowEvent *e)
     }
     if(ICParametersSave::Instance()->IsExtentFunctionUsed())
     {
-        ui->flagsButton->show();
+        ui->flagsButton->hide();
         ui->conditionsToolButton->show();
     }
     else
@@ -423,7 +423,12 @@ void ICHCInstructionPageFrame::UpdateUIProgramList_()
                 viewItemToMoldItemMap_.insert(ui->moldContentListWidget->item(j + index), *tmp);
                 if(tmp->Num() == 0)
                 {
-                    ui->moldContentListWidget->item(j + index)->setBackgroundColor(QColor(239, 235, 231));
+                    if(tmp->Action() == ICMold::GY || tmp->Action() == ICMold::GQ)
+                        ui->moldContentListWidget->item(j + index)->setBackgroundColor(QColor(0xF5, 0x8E, 0xB7));
+                    else if(tmp->Action() == ICMold::GX || tmp->Action() == ICMold::GP)
+                        ui->moldContentListWidget->item(j + index)->setBackgroundColor(QColor(0xF7, 0x9F, 0x9C));
+                    else
+                        ui->moldContentListWidget->item(j + index)->setBackgroundColor(QColor(239, 235, 231));
 //                    ui->moldContentListWidget->item(j + index)->setForeground(QColor("white"));
                 }
                 else if(tmp->Action() == ICInstructParam::ACT_WaitMoldOpened)
@@ -1095,7 +1100,7 @@ void ICHCInstructionPageFrame::OnProgramChanged(int index, QString name)
     UpdateHostParam();
     if(ICParametersSave::Instance()->IsExtentFunctionUsed() && index == 0)
     {
-        ui->flagsButton->show();
+        ui->flagsButton->hide();
         ui->conditionsToolButton->show();
         ui->commentButton->show();
     }

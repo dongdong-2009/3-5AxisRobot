@@ -36,16 +36,59 @@
    <property name="geometry">
     <rect>
      <x>627</x>
-     <y>326</y>
-     <width>111</width>
-     <height>41</height>
+     <y>290</y>
+     <width>64</width>
+     <height>64</height>
     </rect>
    </property>
+   <property name="minimumSize">
+    <size>
+     <width>64</width>
+     <height>64</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>64</width>
+     <height>64</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#alarmClear{
+border-style: outset;
+border-width: 2px;
+border-radius: 32px;
+border-color: gray;
+background-color: rgb(144, 255, 26);
+
+}
+
+#alarmClear::checked{
+	background-color: rgb(255, 0, 0);
+}</string>
+   </property>
    <property name="text">
-    <string>Alarm Clear</string>
+    <string>Alarm
+Clear</string>
    </property>
    <property name="checkable">
     <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>360</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>Press When Servo alarm</string>
    </property>
   </widget>
  </widget>

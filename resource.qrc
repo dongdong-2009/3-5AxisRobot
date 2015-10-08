@@ -60,5 +60,7 @@
         <file>resource/fixture_check(32).png</file>
         <file>resource/machine_struct.png</file>
         <file>resource/auto-onecycle.png</file>
+        <file>resource/fixture_teach.png</file>
+        <file>resource/monitor_HM.png</file>
     </qresource>
 </RCC>
