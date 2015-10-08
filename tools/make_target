@@ -83,5 +83,6 @@ cp ${workDir}/Multi-axisManipulatorSystem_en.qm ${updateDir} -f
 echo ${updateDir}.tar ${updateDir}
 cd ${workDir}/${binDir}/Update/ && tar -cf HCRobotPanel${swVersion}.tar HCRobotPanel${swVersion}
 HCbcrypt.sh ${updateDir}.tar
+cp ${workDir}/tools/HCRobotHost* ${workDir}/${binDir}/Update/ -f
 
 echo "Create update done!"
