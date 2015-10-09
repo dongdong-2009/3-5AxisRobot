@@ -743,7 +743,13 @@ void ICHCProgramMonitorFrame::UpdateUIProgramList_()
             {
                 if(tmp->Num() == 0)
                 {
-                    ui->moldContentListWidget->item(j + index)->setBackgroundColor(QColor(239, 235, 231));
+//                    if(tmp->Action() == ICMold::GY || tmp->Action() == ICMold::GQ)
+//                        ui->moldContentListWidget->item(j + index)->setBackgroundColor(QColor(0xF5, 0x8E, 0xB7));
+                    if(tmp->Action() == ICMold::GX || tmp->Action() == ICMold::GP)
+                        ui->moldContentListWidget->item(j + index)->setBackgroundColor(QColor(0xF7, 0x9F, 0x9C));
+                    else
+                        ui->moldContentListWidget->item(j + index)->setBackgroundColor(QColor(239, 235, 231));
+//                    ui->moldContentListWidget->item(j + index)->setBackgroundColor(QColor(239, 235, 231));
                     //                    ui->moldContentListWidget->item(j + index)->setForeground(QColor("white"));
                 }
                 else if(tmp->Action() == ICInstructParam::ACT_WaitMoldOpened)

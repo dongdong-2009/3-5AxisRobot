@@ -30,6 +30,10 @@ void ICInitialFrame::showEvent(QShowEvent *e)
 
 void ICInitialFrame::hideEvent(QHideEvent *e)
 {
+//    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_SERVO_UN);
+//    on_alarmClear_toggled(true);
+    ui->alarmClear->setChecked(false);
+
     ICFrame::hideEvent(e);
 }
 

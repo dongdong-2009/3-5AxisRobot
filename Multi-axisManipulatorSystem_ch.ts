@@ -51,7 +51,7 @@
         <location filename="hcinstruction/actionsettingframe.ui" line="1631"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1697"/>
         <source>GA</source>
-        <translation>反掌水平2</translation>
+        <translation>反 掌2</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="780"/>
@@ -87,7 +87,7 @@
         <location filename="hcinstruction/actionsettingframe.ui" line="452"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="498"/>
         <source>GC</source>
-        <translation>反掌水平1</translation>
+        <translation>反 掌1</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="915"/>
@@ -3752,7 +3752,7 @@ Reason</source>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="328"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="323"/>
         <source>Fixture</source>
-        <translation>真空吸夹选择</translation>
+        <translation>吸夹选择</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="518"/>
@@ -3778,14 +3778,15 @@ Reason</source>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1085"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="1095"/>
         <source>Insert</source>
-        <translation>动作插入
-确  认  键</translation>
+        <translation>插    入
+确认键</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="754"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="752"/>
         <source>Modify</source>
-        <translation>编辑</translation>
+        <translation>编 辑
+修 改</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="404"/>
@@ -4634,14 +4635,14 @@ Reason</source>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="293"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="293"/>
         <source>Edit</source>
-        <translation>编辑</translation>
+        <translation>编辑修改</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="331"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="331"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="829"/>
         <source>No Follow</source>
-        <translation>滚动暂停</translation>
+        <translation>画面暂停</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="395"/>
@@ -10940,7 +10941,7 @@ Please input the root password to confirm.</source>
     <message>
         <location filename="mainframe.cpp" line="1074"/>
         <source>Instruct</source>
-        <translation>动作教导</translation>
+        <translation>动作编辑</translation>
     </message>
     <message>
         <source>Auto</source>

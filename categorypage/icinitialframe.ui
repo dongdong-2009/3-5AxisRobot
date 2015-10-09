@@ -78,9 +78,9 @@ Clear</string>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>560</x>
+     <x>530</x>
      <y>360</y>
-     <width>221</width>
+     <width>261</width>
      <height>31</height>
     </rect>
    </property>
@@ -89,6 +89,9 @@ Clear</string>
    </property>
    <property name="text">
     <string>Press When Servo alarm</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
  </widget>

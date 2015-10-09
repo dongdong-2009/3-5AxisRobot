@@ -423,9 +423,9 @@ void ICHCInstructionPageFrame::UpdateUIProgramList_()
                 viewItemToMoldItemMap_.insert(ui->moldContentListWidget->item(j + index), *tmp);
                 if(tmp->Num() == 0)
                 {
-                    if(tmp->Action() == ICMold::GY || tmp->Action() == ICMold::GQ)
-                        ui->moldContentListWidget->item(j + index)->setBackgroundColor(QColor(0xF5, 0x8E, 0xB7));
-                    else if(tmp->Action() == ICMold::GX || tmp->Action() == ICMold::GP)
+//                    if(tmp->Action() == ICMold::GY || tmp->Action() == ICMold::GQ)
+//                        ui->moldContentListWidget->item(j + index)->setBackgroundColor(QColor(0xF5, 0x8E, 0xB7));
+                    if(tmp->Action() == ICMold::GX || tmp->Action() == ICMold::GP)
                         ui->moldContentListWidget->item(j + index)->setBackgroundColor(QColor(0xF7, 0x9F, 0x9C));
                     else
                         ui->moldContentListWidget->item(j + index)->setBackgroundColor(QColor(239, 235, 231));

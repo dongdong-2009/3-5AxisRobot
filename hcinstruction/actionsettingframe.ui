@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>470</width>
+    <width>476</width>
     <height>688</height>
    </rect>
   </property>
@@ -19,153 +19,135 @@
   <property name="frameShadow">
    <enum>QFrame::Raised</enum>
   </property>
-  <layout class="QGridLayout" name="gridLayout">
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>1</number>
+   </property>
    <property name="leftMargin">
-    <number>2</number>
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
    </property>
    <property name="rightMargin">
-    <number>2</number>
+    <number>0</number>
    </property>
-   <property name="horizontalSpacing">
-    <number>4</number>
+   <property name="bottomMargin">
+    <number>0</number>
    </property>
-   <item row="2" column="3">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="y1DelayLineEdit">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>75</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>75</width>
-       <height>32</height>
-      </size>
-     </property>
-     <property name="text">
-      <string notr="true">0.00</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="1" colspan="2">
-    <layout class="QHBoxLayout" name="horizontalLayout_4">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="x1PosLineEdit">
-         <property name="enabled">
-          <bool>false</bool>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>85</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>85</width>
-           <height>32</height>
-          </size>
-         </property>
-         <property name="text">
-          <string notr="true">0.00</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout">
-         <item>
-          <widget class="QCheckBox" name="x1BackwardBox">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-           </property>
-           <property name="text">
-            <string>Backward</string>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">x1BoxbuttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item>
-          <widget class="QCheckBox" name="x1ForwardBox">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-           </property>
-           <property name="text">
-            <string>Forward</string>
-           </property>
-           <property name="checked">
-            <bool>false</bool>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">x1BoxbuttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
+      <widget class="QToolButton" name="inputButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Set=&gt;</string>
+       </property>
+      </widget>
      </item>
      <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>   Pos                </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Speed(%)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Delay(s)</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0" rowspan="2">
+      <widget class="QCheckBox" name="gxButton">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>GX1</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" colspan="2">
+      <widget class="ICLineEditWithVirtualNumericKeypad" name="x1PosLineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string notr="true">0.00</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3" rowspan="2">
       <widget class="ICLineEditWithVirtualNumericKeypad" name="x1SpeedLineEdit">
        <property name="enabled">
         <bool>false</bool>
@@ -187,666 +169,124 @@
        </property>
       </widget>
      </item>
-    </layout>
-   </item>
-   <item row="4" column="1" colspan="2">
-    <layout class="QHBoxLayout" name="horizontalLayout_14">
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
-       <item>
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="x2PosLineEdit">
-         <property name="enabled">
-          <bool>false</bool>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>85</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>85</width>
-           <height>32</height>
-          </size>
-         </property>
-         <property name="text">
-          <string notr="true">0.00</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
-         <item>
-          <widget class="QCheckBox" name="x2BackwardBox">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-           </property>
-           <property name="text">
-            <string>Backward</string>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">x2BoxbuttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item>
-          <widget class="QCheckBox" name="x2ForwardBox">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-           </property>
-           <property name="text">
-            <string>Forward</string>
-           </property>
-           <property name="checked">
-            <bool>false</bool>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">x2BoxbuttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <widget class="ICLineEditWithVirtualNumericKeypad" name="x2SpeedLineEdit">
+     <item row="0" column="4" rowspan="2">
+      <widget class="ICLineEditWithVirtualNumericKeypad" name="x1DelayLineEdit">
        <property name="enabled">
         <bool>false</bool>
        </property>
        <property name="minimumSize">
         <size>
-         <width>50</width>
+         <width>75</width>
          <height>0</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>50</width>
+         <width>75</width>
          <height>32</height>
         </size>
        </property>
        <property name="text">
-        <string notr="true">80</string>
+        <string notr="true">0.00</string>
        </property>
       </widget>
      </item>
-    </layout>
-   </item>
-   <item row="9" column="3">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="bDelayLineEdit">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>75</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>75</width>
-       <height>32</height>
-      </size>
-     </property>
-     <property name="text">
-      <string notr="true">0.00</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="0">
-    <widget class="QCheckBox" name="gyButton">
-     <property name="styleSheet">
-      <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-     </property>
-     <property name="text">
-      <string>GY1</string>
-     </property>
-     <property name="checkable">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="6" column="0" rowspan="2" colspan="4">
-    <widget class="Line" name="line">
-     <property name="styleSheet">
-      <string notr="true">QMessageBox QAbstractButton
-{
-    min-width: 90px;
-	min-height:30px;
-}
-</string>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="3">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="y2DelayLineEdit">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>75</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>75</width>
-       <height>32</height>
-      </size>
-     </property>
-     <property name="text">
-      <string notr="true">0.00</string>
-     </property>
-    </widget>
-   </item>
-   <item row="10" column="0">
-    <widget class="QCheckBox" name="gCButton">
-     <property name="styleSheet">
-      <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-     </property>
-     <property name="text">
-      <string>GC</string>
-     </property>
-     <property name="checkable">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="3">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="x2DelayLineEdit">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>75</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>75</width>
-       <height>32</height>
-      </size>
-     </property>
-     <property name="text">
-      <string notr="true">0.00</string>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="3">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="zDelayLineEdit">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>75</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>75</width>
-       <height>32</height>
-      </size>
-     </property>
-     <property name="text">
-      <string notr="true">0.00</string>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="1" colspan="2">
-    <layout class="QHBoxLayout" name="horizontalLayout_12">
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_10">
-       <item>
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="zPosLineEdit">
-         <property name="enabled">
-          <bool>false</bool>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>85</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>85</width>
-           <height>32</height>
-          </size>
-         </property>
-         <property name="text">
-          <string notr="true">0.00</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_13">
-         <item>
-          <widget class="QCheckBox" name="zComeInBox">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-           </property>
-           <property name="text">
-            <string>Come In</string>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">zBoxbuttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item>
-          <widget class="QCheckBox" name="zComeOutBox">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-           </property>
-           <property name="text">
-            <string>Come Out</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">zBoxbuttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <widget class="ICLineEditWithVirtualNumericKeypad" name="zSpeedLineEdit">
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="x1BackwardBox">
        <property name="enabled">
         <bool>false</bool>
        </property>
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>50</width>
-         <height>32</height>
-        </size>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
        </property>
        <property name="text">
-        <string notr="true">80</string>
+        <string>Backward</string>
        </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">x1BoxbuttonGroup</string>
+       </attribute>
       </widget>
      </item>
-    </layout>
-   </item>
-   <item row="0" column="3">
-    <widget class="QLabel" name="label_2">
-     <property name="text">
-      <string>Delay(s)</string>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="0">
-    <widget class="QCheckBox" name="gPButton">
-     <property name="styleSheet">
-      <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-     </property>
-     <property name="text">
-      <string>GX2</string>
-     </property>
-     <property name="checkable">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="9" column="1" colspan="2">
-    <layout class="QHBoxLayout" name="horizontalLayout_8">
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_13">
-       <item>
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="bPosLineEdit">
-         <property name="enabled">
-          <bool>false</bool>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>85</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>85</width>
-           <height>32</height>
-          </size>
-         </property>
-         <property name="text">
-          <string notr="true">0.00</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_17">
-         <item>
-          <widget class="QCheckBox" name="bHorizonBox">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-           </property>
-           <property name="text">
-            <string>Horizon-2</string>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">bBoxbuttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item>
-          <widget class="QCheckBox" name="bVerticalBox">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-           </property>
-           <property name="text">
-            <string>Vertical-2</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">bBoxbuttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <widget class="ICLineEditWithVirtualNumericKeypad" name="bSpeedLineEdit">
+     <item row="1" column="2">
+      <widget class="QCheckBox" name="x1ForwardBox">
        <property name="enabled">
         <bool>false</bool>
        </property>
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>50</width>
-         <height>32</height>
-        </size>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
        </property>
        <property name="text">
-        <string notr="true">80</string>
+        <string>Forward</string>
        </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">x1BoxbuttonGroup</string>
+       </attribute>
       </widget>
      </item>
     </layout>
    </item>
-   <item row="10" column="1" colspan="2">
-    <layout class="QHBoxLayout" name="horizontalLayout_9">
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_14">
-       <item>
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="cPosLineEdit">
-         <property name="enabled">
-          <bool>false</bool>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>85</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>85</width>
-           <height>32</height>
-          </size>
-         </property>
-         <property name="text">
-          <string notr="true">0.00</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_18">
-         <item>
-          <widget class="QCheckBox" name="cHorizonBox">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">::indicator {
+   <item>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0" rowspan="2">
+      <widget class="QCheckBox" name="gyButton">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
      width: 32px;
      height: 32px;
  }
@@ -869,692 +309,26 @@
 {
  image: url(:/resource/check_unchecked_disable.png);
 }</string>
-           </property>
-           <property name="text">
-            <string>Horizon-1</string>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">cBoxbuttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item>
-          <widget class="QCheckBox" name="cVerticalBox">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-           </property>
-           <property name="text">
-            <string>Vertical-1</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">cBoxbuttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
+       </property>
+       <property name="text">
+        <string>GY1</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
      </item>
-     <item>
-      <widget class="ICLineEditWithVirtualNumericKeypad" name="cSpeedLineEdit">
+     <item row="0" column="1" colspan="2">
+      <widget class="ICLineEditWithVirtualNumericKeypad" name="y1PosLineEdit">
        <property name="enabled">
         <bool>false</bool>
        </property>
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>50</width>
-         <height>32</height>
-        </size>
-       </property>
        <property name="text">
-        <string notr="true">80</string>
+        <string notr="true">0.00</string>
        </property>
       </widget>
      </item>
-    </layout>
-   </item>
-   <item row="10" column="3">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="cDelayLineEdit">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>75</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>75</width>
-       <height>32</height>
-      </size>
-     </property>
-     <property name="text">
-      <string notr="true">0.00</string>
-     </property>
-    </widget>
-   </item>
-   <item row="7" column="1" rowspan="2" colspan="2">
-    <layout class="QHBoxLayout" name="horizontalLayout_7">
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_12">
-       <item>
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="aPosLineEdit">
-         <property name="enabled">
-          <bool>false</bool>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>85</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>85</width>
-           <height>32</height>
-          </size>
-         </property>
-         <property name="text">
-          <string notr="true">0.00</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_16">
-         <item>
-          <widget class="QCheckBox" name="aHorizonBox">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-           </property>
-           <property name="text">
-            <string>Horizon-2</string>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">aBoxbuttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item>
-          <widget class="QCheckBox" name="aVerticalBox">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-           </property>
-           <property name="text">
-            <string>Vertical-2</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">aBoxbuttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <widget class="ICLineEditWithVirtualNumericKeypad" name="aSpeedLineEdit">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>50</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="text">
-        <string notr="true">80</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </item>
-   <item row="5" column="0">
-    <widget class="QCheckBox" name="gQButton">
-     <property name="styleSheet">
-      <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-     </property>
-     <property name="text">
-      <string>GY2</string>
-     </property>
-     <property name="checkable">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="12" column="1">
-    <spacer name="verticalSpacer">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>40</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="0" column="2">
-    <widget class="QLabel" name="label_6">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>90</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>Speed(%)</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="0">
-    <widget class="QCheckBox" name="gzButton">
-     <property name="styleSheet">
-      <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-     </property>
-     <property name="text">
-      <string>GZ</string>
-     </property>
-     <property name="checkable">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="1">
-    <widget class="QLabel" name="label">
-     <property name="text">
-      <string>   Pos                </string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="3">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="x1DelayLineEdit">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>75</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>75</width>
-       <height>32</height>
-      </size>
-     </property>
-     <property name="text">
-      <string notr="true">0.00</string>
-     </property>
-    </widget>
-   </item>
-   <item row="9" column="0">
-    <widget class="QCheckBox" name="gBButton">
-     <property name="styleSheet">
-      <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-     </property>
-     <property name="text">
-      <string>GB</string>
-     </property>
-     <property name="checkable">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="0">
-    <widget class="QCheckBox" name="gxButton">
-     <property name="styleSheet">
-      <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-     </property>
-     <property name="text">
-      <string>GX1</string>
-     </property>
-     <property name="checkable">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="1" colspan="2">
-    <layout class="QHBoxLayout" name="horizontalLayout_6">
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_11">
-       <item>
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="y2PosLineEdit">
-         <property name="enabled">
-          <bool>false</bool>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>85</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>85</width>
-           <height>32</height>
-          </size>
-         </property>
-         <property name="text">
-          <string notr="true">0.00</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_15">
-         <item>
-          <widget class="QCheckBox" name="y2UpBox">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-           </property>
-           <property name="text">
-            <string>Up</string>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">y2BoxbuttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item>
-          <widget class="QCheckBox" name="y2DownBox">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-           </property>
-           <property name="text">
-            <string>Down</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">y2BoxbuttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <widget class="ICLineEditWithVirtualNumericKeypad" name="y2SpeedLineEdit">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>50</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="text">
-        <string notr="true">80</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </item>
-   <item row="2" column="1" colspan="2">
-    <layout class="QHBoxLayout" name="horizontalLayout_5">
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_9">
-       <item>
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="y1PosLineEdit">
-         <property name="enabled">
-          <bool>false</bool>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>85</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>85</width>
-           <height>32</height>
-          </size>
-         </property>
-         <property name="text">
-          <string notr="true">0.00</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_11">
-         <item>
-          <widget class="QCheckBox" name="y1UpBox">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-           </property>
-           <property name="text">
-            <string>Up</string>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">y1BoxbuttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item>
-          <widget class="QCheckBox" name="y1DownBox">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}</string>
-           </property>
-           <property name="text">
-            <string>Down</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">y1BoxbuttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </item>
-     <item>
+     <item row="0" column="3" rowspan="2">
       <widget class="ICLineEditWithVirtualNumericKeypad" name="y1SpeedLineEdit">
        <property name="enabled">
         <bool>false</bool>
@@ -1576,34 +350,35 @@
        </property>
       </widget>
      </item>
-    </layout>
-   </item>
-   <item row="8" column="3">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="aDelayLineEdit">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>75</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>75</width>
-       <height>32</height>
-      </size>
-     </property>
-     <property name="text">
-      <string notr="true">0.00</string>
-     </property>
-    </widget>
-   </item>
-   <item row="8" column="0">
-    <widget class="QCheckBox" name="gAButton">
-     <property name="styleSheet">
-      <string notr="true">::indicator {
+     <item row="0" column="4" rowspan="2">
+      <widget class="ICLineEditWithVirtualNumericKeypad" name="y1DelayLineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="text">
+        <string notr="true">0.00</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="y1UpBox">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
      width: 32px;
      height: 32px;
  }
@@ -1626,76 +401,1156 @@
 {
  image: url(:/resource/check_unchecked_disable.png);
 }</string>
-     </property>
-     <property name="text">
-      <string>GA</string>
-     </property>
-     <property name="checkable">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="0">
-    <widget class="QToolButton" name="inputButton">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>120</width>
-       <height>40</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>Set=&gt;</string>
-     </property>
-    </widget>
-   </item>
-   <item row="11" column="2" colspan="2">
-    <widget class="QPushButton" name="goToIMM">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>24</height>
-      </size>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">#goToIMM{
-     border-style: outset;
-     border-width: 1px;
-     border-radius: 4px;
-     border-color: gray;
-	background-color: rgb(255, 0, 0);
-color:yellow;
+       </property>
+       <property name="text">
+        <string>Up</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">y1BoxbuttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QCheckBox" name="y1DownBox">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
 }
-#goToIMM:pressed{
-     border-style: inset;
-	background-color: #0073FF;
-	color:black;
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
 }</string>
+       </property>
+       <property name="text">
+        <string>Down</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">y1BoxbuttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0" rowspan="2">
+      <widget class="QCheckBox" name="gzButton">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>GZ</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="ICLineEditWithVirtualNumericKeypad" name="zPosLineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string notr="true">0.00</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3" rowspan="2">
+      <widget class="ICLineEditWithVirtualNumericKeypad" name="zSpeedLineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="text">
+        <string notr="true">80</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4" rowspan="2">
+      <widget class="ICLineEditWithVirtualNumericKeypad" name="zDelayLineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="text">
+        <string notr="true">0.00</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="zComeInBox">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>Come In</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">zBoxbuttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QCheckBox" name="zComeOutBox">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>Come Out</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">zBoxbuttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout_4">
+     <item row="0" column="0" rowspan="2">
+      <widget class="QCheckBox" name="gPButton">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>GX2</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="ICLineEditWithVirtualNumericKeypad" name="x2PosLineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string notr="true">0.00</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3" rowspan="2">
+      <widget class="ICLineEditWithVirtualNumericKeypad" name="x2SpeedLineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="text">
+        <string notr="true">80</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4" rowspan="2">
+      <widget class="ICLineEditWithVirtualNumericKeypad" name="x2DelayLineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="text">
+        <string notr="true">0.00</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="x2BackwardBox">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>Backward</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">x2BoxbuttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QCheckBox" name="x2ForwardBox">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>Forward</string>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">x2BoxbuttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout_5">
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="y2UpBox">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>Up</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">y2BoxbuttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="0" column="0" rowspan="2">
+      <widget class="QCheckBox" name="gQButton">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>GY2</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QCheckBox" name="y2DownBox">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>Down</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">y2BoxbuttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="0" column="1" colspan="2">
+      <widget class="ICLineEditWithVirtualNumericKeypad" name="y2PosLineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string notr="true">0.00</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3" rowspan="2">
+      <widget class="ICLineEditWithVirtualNumericKeypad" name="y2SpeedLineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="text">
+        <string notr="true">80</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4" rowspan="2">
+      <widget class="ICLineEditWithVirtualNumericKeypad" name="y2DelayLineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="text">
+        <string notr="true">0.00</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="line">
+     <property name="styleSheet">
+      <string notr="true">QMessageBox QAbstractButton
+{
+    min-width: 90px;
+	min-height:30px;
+}
+</string>
      </property>
-     <property name="text">
-      <string>IMM</string>
-     </property>
-     <property name="icon">
-      <iconset resource="../resource.qrc">
-       <normaloff>:/resource/forming-machine(32).png</normaloff>:/resource/forming-machine(32).png</iconset>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
      </property>
     </widget>
    </item>
-   <item row="11" column="0">
-    <widget class="QPushButton" name="goToFixture">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>24</height>
-      </size>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">#goToFixture{
+   <item>
+    <layout class="QGridLayout" name="gridLayout_6">
+     <item row="0" column="1">
+      <widget class="ICLineEditWithVirtualNumericKeypad" name="aPosLineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string notr="true">0.00</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3" rowspan="2">
+      <widget class="ICLineEditWithVirtualNumericKeypad" name="aSpeedLineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="text">
+        <string notr="true">80</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4" rowspan="2">
+      <widget class="ICLineEditWithVirtualNumericKeypad" name="aDelayLineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="text">
+        <string notr="true">0.00</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="aHorizonBox">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>Horizon-2</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">aBoxbuttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QCheckBox" name="aVerticalBox">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>Vertical-2</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">aBoxbuttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="0" column="0" rowspan="2">
+      <widget class="QCheckBox" name="gAButton">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>GA</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout_7">
+     <item row="0" column="0" rowspan="2">
+      <widget class="QCheckBox" name="gBButton">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>GB</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="ICLineEditWithVirtualNumericKeypad" name="bPosLineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string notr="true">0.00</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3" rowspan="2">
+      <widget class="ICLineEditWithVirtualNumericKeypad" name="bSpeedLineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="text">
+        <string notr="true">80</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4" rowspan="2">
+      <widget class="ICLineEditWithVirtualNumericKeypad" name="bDelayLineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="text">
+        <string notr="true">0.00</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="bHorizonBox">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>Horizon-2</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">bBoxbuttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QCheckBox" name="bVerticalBox">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>Vertical-2</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">bBoxbuttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout_8">
+     <item row="0" column="0" rowspan="2">
+      <widget class="QCheckBox" name="gCButton">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>GC</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="ICLineEditWithVirtualNumericKeypad" name="cPosLineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string notr="true">0.00</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3" rowspan="2">
+      <widget class="ICLineEditWithVirtualNumericKeypad" name="cSpeedLineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="text">
+        <string notr="true">80</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4" rowspan="2">
+      <widget class="ICLineEditWithVirtualNumericKeypad" name="cDelayLineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="text">
+        <string notr="true">0.00</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="cHorizonBox">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>Horizon-1</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">cBoxbuttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QCheckBox" name="cVerticalBox">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>Vertical-1</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">cBoxbuttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="goToFixture">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#goToFixture{
      border-style: outset;
      border-width: 1px;
      border-radius: 4px;
@@ -1707,26 +1562,26 @@ color:yellow;
 	background-color: #0073FF;
 	color:black;
 }</string>
-     </property>
-     <property name="text">
-      <string>Fixture</string>
-     </property>
-     <property name="icon">
-      <iconset resource="../resource.qrc">
-       <normaloff>:/resource/fixture(32).png</normaloff>:/resource/fixture(32).png</iconset>
-     </property>
-    </widget>
-   </item>
-   <item row="11" column="1">
-    <widget class="QPushButton" name="goToCheck">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>24</height>
-      </size>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">#goToCheck{
+       </property>
+       <property name="text">
+        <string>Fixture</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resource.qrc">
+         <normaloff>:/resource/fixture(32).png</normaloff>:/resource/fixture(32).png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="goToCheck">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#goToCheck{
      border-style: outset;
      border-width: 1px;
      border-radius: 4px;
@@ -1739,15 +1594,62 @@ color:yellow;
 	background-color: #0073FF;
 	color:black;
 }</string>
+       </property>
+       <property name="text">
+        <string>F.Check</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../categorypage/resources.qrc">
+         <normaloff>:/resources/security-point.png</normaloff>:/resources/security-point.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="goToIMM">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#goToIMM{
+     border-style: outset;
+     border-width: 1px;
+     border-radius: 4px;
+     border-color: gray;
+	background-color: rgb(255, 0, 0);
+color:yellow;
+}
+#goToIMM:pressed{
+     border-style: inset;
+	background-color: #0073FF;
+	color:black;
+}</string>
+       </property>
+       <property name="text">
+        <string>IMM</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resource.qrc">
+         <normaloff>:/resource/forming-machine(32).png</normaloff>:/resource/forming-machine(32).png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
      </property>
-     <property name="text">
-      <string>F.Check</string>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
      </property>
-     <property name="icon">
-      <iconset resource="../categorypage/resources.qrc">
-       <normaloff>:/resources/security-point.png</normaloff>:/resources/security-point.png</iconset>
-     </property>
-    </widget>
+    </spacer>
    </item>
   </layout>
  </widget>
@@ -1762,19 +1664,19 @@ color:yellow;
   <include location="../resource.qrc"/>
   <include location="../resource.qrc"/>
   <include location="../resource.qrc"/>
-  <include location="../resource.qrc"/>
   <include location="../categorypage/resources.qrc"/>
+  <include location="../resource.qrc"/>
   <include location="../resource.qrc"/>
  </resources>
  <connections/>
  <buttongroups>
-  <buttongroup name="x2BoxbuttonGroup"/>
-  <buttongroup name="cBoxbuttonGroup"/>
-  <buttongroup name="zBoxbuttonGroup"/>
   <buttongroup name="y1BoxbuttonGroup"/>
-  <buttongroup name="aBoxbuttonGroup"/>
   <buttongroup name="y2BoxbuttonGroup"/>
   <buttongroup name="x1BoxbuttonGroup"/>
+  <buttongroup name="zBoxbuttonGroup"/>
+  <buttongroup name="x2BoxbuttonGroup"/>
+  <buttongroup name="aBoxbuttonGroup"/>
   <buttongroup name="bBoxbuttonGroup"/>
+  <buttongroup name="cBoxbuttonGroup"/>
  </buttongroups>
 </ui>
