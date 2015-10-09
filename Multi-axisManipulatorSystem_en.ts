@@ -2364,12 +2364,12 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.ui" line="121"/>
+        <location filename="custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.ui" line="122"/>
         <source>Loop Time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.ui" line="147"/>
+        <location filename="custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.ui" line="148"/>
         <source>Finished Products</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3730,9 +3730,19 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="482"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="468"/>
+        <source>Cycle Time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="520"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="227"/>
         <source>Time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="562"/>
+        <source>Finished products</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3740,7 +3750,7 @@ Infomation</source>
         <translation type="obsolete">Reserve {0.00?}</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="358"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="458"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="103"/>
         <source>Setted products</source>
         <translation type="unfinished"></translation>
@@ -3750,43 +3760,43 @@ Infomation</source>
         <translation type="obsolete">Reserve {0?}</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="208"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="214"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="395"/>
         <source>Cycle</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="440"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="478"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="185"/>
         <source>Get Time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="348"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="376"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="93"/>
         <source>Good products</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="419"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="437"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="164"/>
         <source>Stacked products</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="433"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="451"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="178"/>
         <source>TextLabel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="246"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="255"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="293"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="176"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="179"/>
         <source>Speed
 Disable</source>
         <translation type="unfinished"></translation>
@@ -3835,7 +3845,7 @@ Disable</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="204"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="536"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="537"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3850,22 +3860,22 @@ Disable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="537"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="538"/>
         <source>Can not edit standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="844"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="845"/>
         <source>Speed Enable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="904"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="905"/>
         <source>Flag[%1]:%2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="829"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="830"/>
         <source>Follow</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3873,13 +3883,13 @@ Disable</source>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="427"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="105"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="259"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="844"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="854"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="845"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="855"/>
         <source>Speed Disable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="128"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="131"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="363"/>
         <source>Single Step</source>
         <oldsource>Single Cycle</oldsource>
@@ -3888,7 +3898,7 @@ Disable</source>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="96"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="331"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="835"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="836"/>
         <source>No Follow</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8818,45 +8828,50 @@ Please input the root password to confirm.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="192"/>
+        <location filename="mainframe.ui" line="395"/>
         <location filename="mainframe_5.ui" line="216"/>
         <source>Z:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="237"/>
+        <location filename="mainframe.ui" line="295"/>
         <location filename="mainframe_5.ui" line="261"/>
         <source>X1:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="282"/>
+        <location filename="mainframe.ui" line="345"/>
         <location filename="mainframe_5.ui" line="306"/>
         <source>Y1:</source>
         <translation type="unfinished">Y1:</translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="327"/>
+        <location filename="mainframe.ui" line="557"/>
         <location filename="mainframe_5.ui" line="351"/>
         <source>X2:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="372"/>
+        <location filename="mainframe.ui" line="607"/>
         <location filename="mainframe_5.ui" line="396"/>
         <source>Y2:</source>
         <translation type="unfinished">Y2:</translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="489"/>
+        <location filename="mainframe.cpp" line="1624"/>
+        <source>L Alarm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainframe.ui" line="507"/>
         <location filename="mainframe_5.ui" line="513"/>
         <source>A:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="521"/>
-        <location filename="mainframe.ui" line="566"/>
-        <location filename="mainframe.ui" line="611"/>
+        <location filename="mainframe.ui" line="282"/>
+        <location filename="mainframe.ui" line="544"/>
+        <location filename="mainframe.ui" line="694"/>
         <location filename="mainframe_5.ui" line="545"/>
         <location filename="mainframe_5.ui" line="590"/>
         <location filename="mainframe_5.ui" line="635"/>
@@ -8864,23 +8879,23 @@ Please input the root password to confirm.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="534"/>
+        <location filename="mainframe.ui" line="657"/>
         <location filename="mainframe_5.ui" line="558"/>
         <source>B:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="579"/>
+        <location filename="mainframe.ui" line="245"/>
         <location filename="mainframe_5.ui" line="603"/>
         <source>C:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="224"/>
-        <location filename="mainframe.ui" line="269"/>
-        <location filename="mainframe.ui" line="314"/>
-        <location filename="mainframe.ui" line="359"/>
-        <location filename="mainframe.ui" line="404"/>
+        <location filename="mainframe.ui" line="332"/>
+        <location filename="mainframe.ui" line="382"/>
+        <location filename="mainframe.ui" line="432"/>
+        <location filename="mainframe.ui" line="594"/>
+        <location filename="mainframe.ui" line="644"/>
         <location filename="mainframe_5.ui" line="248"/>
         <location filename="mainframe_5.ui" line="293"/>
         <location filename="mainframe_5.ui" line="338"/>
@@ -8890,98 +8905,104 @@ Please input the root password to confirm.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="631"/>
+        <location filename="mainframe.ui" line="714"/>
         <location filename="mainframe_5.ui" line="655"/>
         <source>Step</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1535"/>
+        <location filename="mainframe.cpp" line="1556"/>
         <source>Spare Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1091"/>
+        <location filename="mainframe.cpp" line="1112"/>
         <source>No Register</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="671"/>
+        <location filename="mainframe.cpp" line="673"/>
         <source>Function</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="672"/>
+        <location filename="mainframe.cpp" line="674"/>
         <source>Monitor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="674"/>
+        <location filename="mainframe.cpp" line="676"/>
         <source>Record</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="673"/>
+        <location filename="mainframe.cpp" line="675"/>
         <source>Alarm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1087"/>
-        <location filename="mainframe.cpp" line="1091"/>
-        <location filename="mainframe.cpp" line="1494"/>
-        <location filename="mainframe.cpp" line="1535"/>
-        <location filename="mainframe.cpp" line="1542"/>
+        <location filename="mainframe.cpp" line="1108"/>
+        <location filename="mainframe.cpp" line="1112"/>
+        <location filename="mainframe.cpp" line="1515"/>
+        <location filename="mainframe.cpp" line="1556"/>
+        <location filename="mainframe.cpp" line="1563"/>
         <source>tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1542"/>
+        <location filename="mainframe.cpp" line="1563"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="675"/>
+        <location filename="mainframe.cpp" line="677"/>
         <source>Return</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="863"/>
+        <location filename="mainframe.cpp" line="865"/>
         <source>Hint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1087"/>
+        <location filename="mainframe.cpp" line="1108"/>
         <source>Spear Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1123"/>
+        <location filename="mainframe.cpp" line="1144"/>
         <source>Records</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1494"/>
+        <location filename="mainframe.cpp" line="1515"/>
         <source>No Register. System Restart Now...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1577"/>
-        <location filename="mainframe.cpp" line="1593"/>
+        <location filename="mainframe.cpp" line="1598"/>
+        <location filename="mainframe.cpp" line="1614"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1578"/>
+        <location filename="mainframe.cpp" line="1599"/>
         <source>%1 fnc is broken. Please remove this mold!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1594"/>
+        <location filename="mainframe.cpp" line="1615"/>
         <source>%1 mold fixed. Please check the sub program!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1075"/>
+        <location filename="mainframe.ui" line="813"/>
+        <location filename="mainframe.cpp" line="1624"/>
+        <source>L Pos</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainframe.cpp" line="1096"/>
         <source>Instruct</source>
         <translation type="unfinished"></translation>
     </message>

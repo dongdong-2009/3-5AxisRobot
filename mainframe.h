@@ -87,6 +87,8 @@ private slots:
 
 //    void InitHeavyPage();
 
+    void on_alarmDetail_toggled(bool checked);
+
 private:
     void InitCategoryPage();
     void InitInterface();

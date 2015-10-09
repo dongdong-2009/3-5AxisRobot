@@ -613,6 +613,8 @@ void MainFrame::InitInterface()
     ui->alarmPageButton->setIcon(QPixmap(":/resource/warning.png"));
     ui->returnPageButton->setIcon(QPixmap(":resource/return.png"));
     ui->monitorPageButton->setIconSize(QSize(64, 48));
+    ui->monitorPageButton->SetTextColor(QColor("green"));
+    ui->alarmPageButton->SetTextColor(QColor("red"));
     emit LoadMessage("page switchers pixmap has been shown");
 
     //    this->setStyleSheet("QFrame { border: none; }");
@@ -867,6 +869,25 @@ void MainFrame::StatusRefreshed()
             ui->cycleTimeAndFinistWidget->SetAlarmInfo("");
         }
     }
+    if(errCode_ != 0 || hintCode != 0)
+    {
+        ui->alarmDetail->show();
+        if(ui->alarmDetail->isChecked() )
+            ui->statusContainer->setCurrentIndex(1);
+//        else
+//            if(ui->statusContainer->currentIndex() != 1)
+    }
+    else
+    {
+        ui->alarmDetail->hide();
+        if(ui->statusContainer->currentIndex() != 0)
+        {
+            ui->statusContainer->setCurrentIndex(0);
+            ui->alarmDetail->setChecked(true);
+        }
+    }
+
+
 //    finishCount_ = virtualHost->HostStatus(ICVirtualHost::DbgX1).toUInt();
 //    if(finishCount_ != oldFinishCount_)
 //    {
@@ -1595,4 +1616,10 @@ void MainFrame::MoldsCheck()
             continue;
         }
     }
+}
+
+void MainFrame::on_alarmDetail_toggled(bool checked)
+{
+    ui->statusContainer->setCurrentIndex(checked? 1 : 0);
+    ui->alarmDetail->setText(checked ? tr("L Pos") : tr("L Alarm"));
 }

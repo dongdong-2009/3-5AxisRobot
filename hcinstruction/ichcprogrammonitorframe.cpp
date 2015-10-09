@@ -345,20 +345,21 @@ void ICHCProgramMonitorFrame::StatusRefreshed()
         ui->infoLabel->setText("");
     }
 
-//    ui->stackedProducts->setText(QString::number(host->HostStatus(ICVirtualHost::S).toInt()));
-    //    if(host->CurrentStatus() != ICVirtualHost::Auto)
-    //    {
-    //        qDebug("isModify change to false in auto");
-    //        isModify_ = false;
-    //        modifyMap_.clear();
-    //    }
-    //    if(host->HostStatus(ICVirtualHost::DbgX0) != ICVirtualHost::AutoRunning &&
-    //            host->HostStatus(ICVirtualHost::DbgX0) != ICVirtualHost::AutoStopping)
-    //    {
-    //        qDebug("isModify change to false in autoRunning");
-    //        isModify_ = false;
-    //        modifyMap_.clear();
-    //    }
+    static uint oldCycleTime = 0;
+
+    int cycleTime = host->HostStatus(ICVirtualHost::Time).toUInt();
+    if(cycleTime != oldCycleTime)
+    {
+        ui->cycle->setText(QString().sprintf("%.2f", cycleTime / qreal(100)));
+        oldCycleTime = cycleTime;
+    }
+    static int oldFinishCount = -1;
+    int  finishCount = host->FinishProductCount();
+    if(oldFinishCount != finishCount)
+    {
+        ui->finishedProductsLabel->setText(QString::number(finishCount));
+        oldFinishCount = finishCount;
+    }
 }
 
 void ICHCProgramMonitorFrame::SelectCurrentStep(int currentStep)

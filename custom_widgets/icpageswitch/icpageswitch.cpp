@@ -44,6 +44,7 @@ void ICPageSwitch::paintEvent(QPaintEvent *e)
         painter.drawPixmap(((this->width() - iconSize().width()) >> 1), 15, icon().pixmap(iconSize(), QIcon::Disabled));
     }
     int lastHeight = iconSize().height() + 15;
+    painter.setPen(textColor_);
     painter.drawText(QRect(0, lastHeight, this->width(), this->height() - lastHeight), text() , Qt::AlignHCenter | Qt::AlignVCenter);
     painter.end();
     QWidget::paintEvent(e);
