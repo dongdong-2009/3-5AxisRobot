@@ -115,11 +115,11 @@ void ICHCConditionPage::BoxClicked()
         ui->subComboBox->setEnabled(false);
         break;
     case 3:
-        ui->subComboBox->setCurrentIndex(6);
+        ui->subComboBox->setCurrentIndex(7);
         ui->subComboBox->setEnabled(false);
         break;
     case 4:
-        ui->subComboBox->setCurrentIndex(7);
+        ui->subComboBox->setCurrentIndex(6);
         ui->subComboBox->setEnabled(false);
         break;
     default:

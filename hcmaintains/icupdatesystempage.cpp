@@ -109,6 +109,9 @@ ICUpdateSystemPage::ICUpdateSystemPage(QWidget *parent) :
 
     ICLogInit
 
+            ui->scanHost->hide();
+    ui->connectHostButton->hide();
+
 }
 
 ICUpdateSystemPage::~ICUpdateSystemPage()
@@ -485,7 +488,7 @@ void ICUpdateSystemPage::on_scanPanel_clicked()
     ICTipsWidget tipWidget(tr("Scanning..."));
     tipWidget.show();
     qApp->processEvents();
-    model_->SetScanPattern("HCRobotPanel*.bfe");
+    model_->SetScanPattern("HCRobot*.bfe");
     model_->fetchMore(model_->index(0, 0));
     ui->packetTable->resizeColumnsToContents();
     ui->packetTable->setCurrentIndex(QModelIndex());

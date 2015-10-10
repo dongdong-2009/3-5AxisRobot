@@ -10066,13 +10066,13 @@ Would you want to restart now?</source>
         <location filename="hcmaintains/icupdatesystempage.ui" line="118"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="118"/>
         <source>Scan Panel</source>
-        <translation>扫描手控更新包</translation>
+        <translation>扫描更新包</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="140"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="140"/>
         <source>Update HMI</source>
-        <translation>更新手控</translation>
+        <translation>开始更新</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="159"/>
@@ -10162,110 +10162,110 @@ Would you want to restart now?</source>
         <location filename="hcmaintains/icupdatesystempage.ui" line="338"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="338"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="89"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="151"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="154"/>
         <source>Restart</source>
         <translation>重新开始</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="84"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="146"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="149"/>
         <source>Item-1</source>
         <translation>加油润滑(要求：机器各运动部件加注油脂润滑)</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="84"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="146"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="149"/>
         <source>Item-2</source>
         <translation>双点组合排水</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="84"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="146"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="149"/>
         <source>Item-3</source>
         <translation>吸盘、夹具、抱具功能是否正常</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="85"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="147"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="150"/>
         <source>Item-4</source>
         <translation>检查机台固定螺丝是否松开</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="85"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="147"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="150"/>
         <source>Item-5</source>
         <translation>射出机连线、操作手柄连线接头是否松动</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="85"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="147"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="150"/>
         <source>Item-6</source>
         <translation>真空产生器的清洗</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="85"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="147"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="150"/>
         <source>Item-7</source>
         <translation>电控箱内除尘</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="72"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="140"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="143"/>
         <source>Name</source>
         <translation>名称</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="73"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="141"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="144"/>
         <source>Create Time</source>
         <translation>创建日期</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="206"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="383"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="209"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="386"/>
         <source>System Updating...</source>
         <translation>系统更新中...</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="236"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="239"/>
         <source>No available New SuperPassward</source>
         <translation>没有可以用的超级密码</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="238"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="241"/>
         <source>New SuperPassward</source>
         <translation>新超级密码</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="477"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="480"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="533"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="536"/>
         <source>Back to Factory</source>
         <translation>恢复出厂</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="533"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="536"/>
         <source>Back to factory will lost all the sysconfig and panel settings.
 Please input the root password to confirm.</source>
         <translation>恢复出厂会重新设定所有的机器参数和手控参数.模组参数会保留.
 请输入高级管理员密码确认.</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="580"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="587"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="583"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="590"/>
         <source>Tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="580"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="583"/>
         <source>Back to factory successfully! Now reboot!</source>
         <translation>恢复出厂成功!现在将会重启!</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="587"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="590"/>
         <source>Wrong password!</source>
         <translation>密码错误！</translation>
     </message>
@@ -10274,12 +10274,12 @@ Please input the root password to confirm.</source>
         <translation type="obsolete">更新主机失败！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="345"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="348"/>
         <source>tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="345"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="348"/>
         <source>Update Host Successful!</source>
         <translation>主机更新成功！</translation>
     </message>
@@ -10288,12 +10288,12 @@ Please input the root password to confirm.</source>
         <translation type="obsolete">U盘目录不存在...</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="412"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="415"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="412"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="415"/>
         <source>USB is not exist!</source>
         <translation>没有找到U盘！</translation>
     </message>
@@ -10318,13 +10318,13 @@ Please input the root password to confirm.</source>
         <translation type="obsolete">没有注册！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="478"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="481"/>
         <source>Old password is wrong</source>
         <translation>旧密码错误！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="485"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="496"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="488"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="499"/>
         <source>Scanning...</source>
         <translation>扫描中...</translation>
     </message>
