@@ -120,9 +120,13 @@ ICProgramGuidePage::ICProgramGuidePage(QWidget *parent) :
     temp.clear();
 
     fixtureOnAction_<<ICMold::ACTCLIP1ON<<ICMold::ACTCLIP2ON<<ICMold::ACTCLIP3ON
-                   <<ICMold::ACTCLIP4ON<<ICMold::ACTCLIP5ON<<ICMold::ACTCLIP6ON;
+                   <<ICMold::ACTCLIP4ON<<ICMold::ACTCLIP5ON<<ICMold::ACTCLIP6ON
+                     <<ICMold::ACT_AUX1<<ICMold::ACT_AUX2<<ICMold::ACT_AUX3
+                       <<ICMold::ACT_AUX4<<ICMold::ACT_AUX5<<ICMold::ACT_AUX6;
     fixtureOffAction_<<ICMold::ACTCLIP1OFF<<ICMold::ACTCLIP2OFF<<ICMold::ACTCLIP3OFF
-                    <<ICMold::ACTCLIP4OFF<<ICMold::ACTCLIP5OFF<<ICMold::ACTCLIP6OFF;
+                    <<ICMold::ACTCLIP4OFF<<ICMold::ACTCLIP5OFF<<ICMold::ACTCLIP6OFF
+                   <<(ICMold::ACT_AUX1 + 1000)<<(ICMold::ACT_AUX2 + 1000)<<(ICMold::ACT_AUX3 + 1000)
+                     <<(ICMold::ACT_AUX4 + 1000)<<(ICMold::ACT_AUX5 + 1000)<<(ICMold::ACT_AUX6 + 1000);
 
     on_usedMainArmBox_toggled(ui->usedMainArmBox->isChecked());
     on_usedSubArmBox_toggled(ui->usedSubArmBox->isChecked());
@@ -306,11 +310,14 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
     if(isMainArmUsed)
     {
         item.SetClip(fixtureOnAction_.at(ui->productFixtureBox->currentIndex()));
+        item.SetIFVal(true);
+
         ret.append(item);
     }
     if(isSubArmUsed)
     {
         item.SetClip(fixtureOnAction_.at(ui->outletFixtureBox->currentIndex()));
+        item.SetIFVal(true);
         ret.append(item);
     }
 
@@ -698,7 +705,13 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
         item.SetNum(stepNum++);
         item.SetSVal(0);
         item.SetDVal(10);
-        item.SetClip(fixtureOffAction_.at(ui->productFixtureBox->currentIndex()));
+        int clip = fixtureOffAction_.at(ui->productFixtureBox->currentIndex());
+//        item.SetClip();
+        if(clip >= 1000)
+        {
+            item.SetClip(clip - 1000);
+            item.SetIFVal(false);
+        }
         ret.append(item);
 
 
@@ -727,7 +740,13 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
         item.SetNum(stepNum++);
         item.SetSVal(0);
         item.SetDVal(10);
-        item.SetClip(fixtureOffAction_.at(ui->outletFixtureBox->currentIndex()));
+        int clip = fixtureOffAction_.at(ui->productFixtureBox->currentIndex());
+//        item.SetClip(fixtureOffAction_.at(ui->outletFixtureBox->currentIndex()));
+        if(clip >= 1000)
+        {
+            item.SetClip(clip - 1000);
+            item.SetIFVal(false);
+        }
         ret.append(item);
 
         /*X2, Y2, back to standby*/
@@ -1152,6 +1171,7 @@ void ICProgramGuidePage::UpdatePageButton_()
     default:break;
 
     }
+    ui->finishButton->setText(QString(tr("Finish(%1/%2)")).arg(pageIndex_).arg(5));
 
 }
 

@@ -7068,7 +7068,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="105"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="171"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="201"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="150"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="246"/>
         <source>Use Fixture:</source>
@@ -7076,7 +7076,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="113"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="182"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="212"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="164"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="263"/>
         <source>Fixture-1</source>
@@ -7084,7 +7084,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="118"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="187"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="217"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="169"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="268"/>
         <source>Fixture-2</source>
@@ -7092,7 +7092,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="123"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="192"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="222"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="174"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="273"/>
         <source>Fixture-3</source>
@@ -7100,7 +7100,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="128"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="197"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="227"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="179"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="278"/>
         <source>Fixture-4</source>
@@ -7108,7 +7108,7 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="133"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="202"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="232"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="184"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="283"/>
         <source>Sucker-1</source>
@@ -7116,95 +7116,131 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="138"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="207"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="237"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="189"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="288"/>
         <source>Sucker-2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="146"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="215"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="143"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="242"/>
+        <source>Sucker-3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="148"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="247"/>
+        <source>Sucker-4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="153"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="252"/>
+        <source>Sucker-5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="158"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="257"/>
+        <source>Sucker-6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="163"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="262"/>
+        <source>Sucker-7</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="168"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="267"/>
+        <source>Sucker-8</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="176"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="275"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="203"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="302"/>
         <source>Check Fixture</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="159"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="189"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="216"/>
         <source>Get Outlet Fixture</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="256"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="316"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="349"/>
         <source>Standby Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="263"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="323"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="368"/>
         <source>Set In</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="467"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="527"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="737"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="999"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1003"/>
         <source>Product</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="482"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="542"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="761"/>
         <source>GX1:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="530"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="590"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="845"/>
         <source>GY1:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="845"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="905"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1421"/>
         <source>1</source>
         <translation type="unfinished">Y017</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="284"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="344"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="398"/>
         <source>GZ:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="596"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="656"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="956"/>
         <source>GX2:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="641"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="701"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1040"/>
         <source>GY2:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="329"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="389"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="482"/>
         <source>GA:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="374"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="434"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="566"/>
         <source>GB:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="419"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="479"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="650"/>
         <source>GC:</source>
         <translation type="unfinished"></translation>
@@ -7222,51 +7258,51 @@ Please enter an digit between </source>
         <translation type="unfinished">Reserve {0.0?}</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="513"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="624"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="573"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="684"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="828"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1023"/>
         <source>Forward</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="503"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="614"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="563"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="674"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="806"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1001"/>
         <source>Backward</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="551"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="659"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="611"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="719"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="890"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1085"/>
         <source>Up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="561"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="669"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="621"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="729"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="912"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1107"/>
         <source>Down</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="302"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="708"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="362"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="768"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="443"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1170"/>
         <source>Come In</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="347"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="392"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="437"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="752"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="797"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="407"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="452"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="497"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="812"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="857"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="527"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="611"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="695"/>
@@ -7276,11 +7312,11 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="360"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="405"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="450"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="768"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="810"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="420"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="465"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="510"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="828"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="870"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="552"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="636"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="720"/>
@@ -7290,90 +7326,95 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="581"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="641"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="932"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1000"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1004"/>
         <source>Outlet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="686"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="746"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1124"/>
         <source>Release Outlet:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="315"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="695"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="375"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="755"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="468"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1145"/>
         <source>Come Out</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="746"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="806"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1208"/>
         <source>Come Out Position</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="778"/>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="820"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="838"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="880"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1291"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1384"/>
         <source>Running Horizon</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="791"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="851"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1304"/>
         <source>Come In Position</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="835"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="895"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1411"/>
         <source>Stacked En</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="863"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="923"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1451"/>
         <source>Pre</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="870"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="930"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1470"/>
         <source>Next</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="877"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="937"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1489"/>
         <source>Finish</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="985"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1075"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="989"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1079"/>
         <source>Get Position Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1005"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1093"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1009"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1097"/>
         <source>Release Product Position Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1026"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1114"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1030"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1118"/>
         <source>Release Outlet Position Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1160"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1159"/>
+        <source>Finish(%1/%2)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1165"/>
         <source>Stanby Settings</source>
         <translation type="unfinished"></translation>
     </message>

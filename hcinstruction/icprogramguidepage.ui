@@ -138,6 +138,36 @@ QCheckBox::indicator:unchecked:disabled
               <string>Sucker-2</string>
              </property>
             </item>
+            <item>
+             <property name="text">
+              <string>Sucker-3</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Sucker-4</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Sucker-5</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Sucker-6</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Sucker-7</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Sucker-8</string>
+             </property>
+            </item>
            </widget>
           </item>
           <item>
@@ -175,7 +205,7 @@ QCheckBox::indicator:unchecked:disabled
           <item>
            <widget class="ICComboBox" name="outletFixtureBox">
             <property name="currentIndex">
-             <number>1</number>
+             <number>0</number>
             </property>
             <item>
              <property name="text">
@@ -205,6 +235,36 @@ QCheckBox::indicator:unchecked:disabled
             <item>
              <property name="text">
               <string>Sucker-2</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Sucker-3</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Sucker-4</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Sucker-5</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Sucker-6</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Sucker-7</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Sucker-8</string>
              </property>
             </item>
            </widget>
@@ -903,16 +963,16 @@ QCheckBox::indicator:unchecked:disabled
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroupY2"/>
-  <buttongroup name="buttonGroupX1"/>
-  <buttongroup name="buttonGroupX2"/>
-  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroupA"/>
   <buttongroup name="buttonGroupB"/>
+  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroupC"/>
-  <buttongroup name="buttonGroupOutlet"/>
-  <buttongroup name="buttonGroupZ"/>
   <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroupY1"/>
+  <buttongroup name="buttonGroupY2"/>
+  <buttongroup name="buttonGroupX1"/>
+  <buttongroup name="buttonGroupZ"/>
+  <buttongroup name="buttonGroupX2"/>
+  <buttongroup name="buttonGroupOutlet"/>
  </buttongroups>
 </ui>
