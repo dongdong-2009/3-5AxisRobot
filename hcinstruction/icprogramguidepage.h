@@ -67,6 +67,14 @@ private slots:
 
     void on_setInButton_clicked();
 
+    void on_mainArmOUtletBox_toggled(bool checked);
+
+    void on_setIn1_clicked();
+
+    void on_setIn2_clicked();
+
+    void on_setIn3_clicked();
+
 private:
     struct _ICAxis_
     {
