@@ -336,6 +336,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
     if(isMainArmUsed)
     {
         item.SetIFVal(true);
+        item.SetActualMoldCount(0);
         for(int i = 0; i < productfixturesConfigs.size(); ++i)
         {
             item.SetClip(fixtureOnAction_.at(productfixturesConfigs.at(i).first));
@@ -347,6 +348,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
     if(isSubArmUsed || isMOutletUsed)
     {
         item.SetIFVal(true);
+        item.SetActualMoldCount(0);
         for(int i = 0; i < outletfixturesConfigs.size(); ++i)
         {
             item.SetClip(fixtureOnAction_.at(outletfixturesConfigs.at(i).first));
@@ -543,6 +545,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             {
                 clip = fixtureOffAction_.at(productfixturesConfigs.at(i).first);
                 item.SetClip(clip);
+                item.SetActualMoldCount(0);
                 if(clip >= 1000)
                 {
                     item.SetClip(clip - 1000);
@@ -608,6 +611,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             {
                 clip = fixtureOffAction_.at(outletfixturesConfigs.at(i).first);
                 item.SetClip(clip);
+                item.SetActualMoldCount(0);
                 if(clip >= 1000)
                 {
                     item.SetClip(clip - 1000);
@@ -702,6 +706,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             {
                 clip = fixtureOffAction_.at(outletfixturesConfigs.at(i).first);
                 item.SetClip(clip);
+                item.SetActualMoldCount(0);
                 if(clip >= 1000)
                 {
                     item.SetClip(clip - 1000);
@@ -799,6 +804,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             {
                 clip = fixtureOffAction_.at(productfixturesConfigs.at(i).first);
                 item.SetClip(clip);
+                item.SetActualMoldCount(0);
                 if(clip >= 1000)
                 {
                     item.SetClip(clip - 1000);
@@ -885,6 +891,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             {
                 clip = fixtureOffAction_.at(productfixturesConfigs.at(i).first);
                 item.SetClip(clip);
+                item.SetActualMoldCount(0);
                 if(clip >= 1000)
                 {
                     item.SetClip(clip - 1000);
@@ -898,6 +905,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             {
                 clip = fixtureOffAction_.at(outletfixturesConfigs.at(i).first);
                 item.SetClip(clip);
+                item.SetActualMoldCount(0);
                 if(clip >= 1000)
                 {
                     item.SetClip(clip - 1000);
@@ -986,6 +994,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
         {
             clip = fixtureOffAction_.at(productfixturesConfigs.at(i).first);
             item.SetClip(clip);
+            item.SetActualMoldCount(0);
             if(clip >= 1000)
             {
                 item.SetClip(clip - 1000);
@@ -1031,6 +1040,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
         {
             clip = fixtureOffAction_.at(outletfixturesConfigs.at(i).first);
             item.SetClip(clip);
+            item.SetActualMoldCount(0);
             if(clip >= 1000)
             {
                 item.SetClip(clip - 1000);

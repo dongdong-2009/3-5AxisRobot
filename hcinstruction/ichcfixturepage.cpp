@@ -296,6 +296,7 @@ QList<ICMoldItem> ICHCFixturePage::CreateCommandImpl() const
             clip = buttonToClip_.value(qobject_cast<QAbstractButton*>(ui->tableWidget->cellWidget(i, 1)));
             item.SetClip(clip);
             item.SetIFVal(true);
+            item.SetActualMoldCount(0);
             if(clip >= 1000)
             {
                 item.SetClip(clip - 1000);

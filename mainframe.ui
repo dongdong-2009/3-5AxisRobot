@@ -809,6 +809,18 @@ color: rgb(170, 85, 255);</string>
          <height>60</height>
         </size>
        </property>
+       <property name="styleSheet">
+        <string notr="true">#alarmDetail{
+	color: rgb(255, 255, 255);
+	background-color: rgb(255, 0, 0);
+}
+
+#alarmDetail::checked{
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 0);
+
+}</string>
+       </property>
        <property name="text">
         <string>L Pos</string>
        </property>
