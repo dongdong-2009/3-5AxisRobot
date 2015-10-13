@@ -22,6 +22,10 @@ public:
 #endif
     QSize minimumSizeHint() const { return sizeHint();}
 
+    void SetLeftBG(const QPixmap& pic) { leftBackground_ = pic;}
+    void SetRightBG(const QPixmap& pic) { rightBackground_ = pic;}
+    void SetColor(const QColor& color) { textColor_ = color;}
+
 protected:
     void paintEvent(QPaintEvent *e);
 
@@ -33,6 +37,8 @@ private:
     QPixmap rightPressBG_;
     QPixmap leftDisableBG_;
     QPixmap rightDisableBG_;
+//    QPixmap bgPic_;
+    QColor textColor_;
 };
 
 #endif // ICPAGETAG_H

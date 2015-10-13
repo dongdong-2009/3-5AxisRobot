@@ -13,5 +13,9 @@
         <file>resources/stacked.png</file>
         <file>resources/machine.png</file>
         <file>resources/CommonIO.png</file>
+        <file>resources/leftTagBG_green.png</file>
+        <file>resources/leftTagBG_red.png</file>
+        <file>resources/leftTagBG_yellow.png</file>
+        <file>resources/leftTagBG_lightgreen.png</file>
     </qresource>
 </RCC>

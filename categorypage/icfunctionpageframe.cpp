@@ -130,6 +130,17 @@ void ICFunctionPageFrame::InitSettingPage()
     ui->systemSettingWidget->SetDirection(ICPageTag::IconOnRight);
     ui->maintainWidget->SetDirection(ICPageTag::IconOnRight);
     ui->machineStructConfig->SetDirection(ICPageTag::IconOnRight);
+
+    ui->signalSettingWidget->SetLeftBG(QPixmap(":/resources/leftTagBG_green.png"));
+    ui->securityPointSettingWidget->SetLeftBG(QPixmap(":/resources/leftTagBG_red.png"));
+    ui->machineConfigSettingWidget->SetLeftBG(QPixmap(":/resources/leftTagBG_yellow.png"));
+    ui->machineStructConfig->SetRightBG(QPixmap(":/resources/leftTagBG_red.png"));
+    ui->productSettingWidget->SetLeftBG(QPixmap(":/resources/leftTagBG_lightgreen.png"));
+
+//    ui->signalSettingWidget->SetColor(QColor(247, 156, 172));
+//    ui->productSettingWidget->SetColor(QColor(156, 159, 247));
+//    ui->machineConfigSettingWidget->SetColor(QColor(232, 156, 247));
+
 //    ui->machineConfigSettingWidget->SetDirection(ICPageTag::IconOnRight);
 }
 
