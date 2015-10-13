@@ -59,6 +59,9 @@ QRadioButton::indicator:unchecked:disabled
        <height>16777215</height>
       </size>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 0);</string>
+     </property>
      <property name="text">
       <string>Cancel All</string>
      </property>

@@ -88,6 +88,7 @@ ICGuideFixtureEditor::ICGuideFixtureEditor(QWidget *parent) :
             this,
             SLOT(CommandButtonClicked(QWidget*)));
     ui->tableWidget->horizontalHeader()->setResizeMode(1, QHeaderView::Stretch);
+    ui->tableWidget->setColumnWidth(2, 150);
 }
 
 ICGuideFixtureEditor::~ICGuideFixtureEditor()

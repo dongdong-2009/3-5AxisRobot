@@ -11917,13 +11917,13 @@ Admin</source>
         <location filename="hcinstruction/icinstructparam.cpp" line="451"/>
         <source>Horizontal posture 1</source>
         <oldsource>Horizontal posture</oldsource>
-        <translation>反掌水平1</translation>
+        <translation>反掌1水平</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="452"/>
         <source>Vertical posture 1</source>
         <oldsource>Vertical posture</oldsource>
-        <translation>反掌垂直1</translation>
+        <translation>反掌1垂直</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="455"/>
@@ -12201,12 +12201,12 @@ Admin</source>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="453"/>
         <source>Horizontal posture 2</source>
-        <translation>反掌水平2</translation>
+        <translation>反掌2水平</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="454"/>
         <source>Vertical posture 2</source>
-        <translation>反掌垂直2</translation>
+        <translation>反掌2垂直</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="465"/>

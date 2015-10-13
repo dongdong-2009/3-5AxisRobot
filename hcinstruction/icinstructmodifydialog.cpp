@@ -266,22 +266,22 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
         isMoldCount = true;
         
     }
-    else if(item->Clip() == ICMold:: ACT_AUX1
-            || item->Clip() == ICMold:: ACT_AUX2
-            || item->Clip() == ICMold:: ACT_AUX3
-            || item->Clip() == ICMold:: ACT_AUX4
-            || item->Clip() == ICMold:: ACT_AUX5
-            || item->Clip() == ICMold:: ACT_AUX6 )
-    {
-        if(item->IFVal() != 0)
-        {
-            validator->setTop(20000);
-            ui->speedLabel->setText(tr("Times"));
-            ui->speedLabel->show();
-            ui->speedEdit->show();
-            isMoldCount = true;
-        }
-    }
+//    else if(item->Clip() == ICMold:: ACT_AUX1
+//            || item->Clip() == ICMold:: ACT_AUX2
+//            || item->Clip() == ICMold:: ACT_AUX3
+//            || item->Clip() == ICMold:: ACT_AUX4
+//            || item->Clip() == ICMold:: ACT_AUX5
+//            || item->Clip() == ICMold:: ACT_AUX6 )
+//    {
+//        if(item->IFVal() != 0)
+//        {
+//            validator->setTop(20000);
+//            ui->speedLabel->setText(tr("Times"));
+//            ui->speedLabel->show();
+//            ui->speedEdit->show();
+//            isMoldCount = true;
+//        }
+//    }
     else if(item->Clip() == ICMold::ACTLAYOUTON)
     {
         ui->selectEdit->SetThisIntToThisText(item->SVal() + 1);

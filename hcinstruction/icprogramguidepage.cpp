@@ -250,12 +250,12 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
         if(!isMainArmUsed && !isSubArmUsed)
         {
         }
-        else
+        else if(axis_[C_AXIS].standbyLimit == 0)
         {
-//            item.SetNum(stepNum++);
-//            item.SetSVal(0);
-//            item.SetAction(ICMold::ACTPOSEVERT);
-//            ret.append(item);
+            item.SetNum(stepNum++);
+            item.SetSVal(0);
+            item.SetAction(ICMold::ACTPOSEVERT);
+            ret.append(item);
         }
     }
     item.SetSVal(80);
@@ -447,7 +447,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
 
     if(ui->optionalGroup->isChecked())
     {
-        if(isSubArmUsed)
+        if(isSubArmUsed && isMainArmUsed)
         {
             item.SetNum(stepNum++);
             if(SetAxisICMoldItem_(&item, axis_ + X1_AXIS, STANDBY_SETTING))
@@ -485,7 +485,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
     item.SetDVal(10);
     ret.append(item);
 
-    item.SetNum(stepNum++);
+    item.SetNum(stepNum);
     item.SetAction(ICMold::GZ);
     item.SetSVal(80);
     item.SetDVal(0);
@@ -500,7 +500,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             /******************************************/
             if(!ui->cBoxHorizontal->isHidden() && !ui->cBoxVertical->isHidden())
             {
-                item.SetNum(stepNum++);
+                item.SetNum(stepNum);
                 item.SetSVal(0);
                 if(axis_[C_AXIS].releaseProductLimit == 0)
                     item.SetAction(ICMold::ACTPOSEHORI);
@@ -564,8 +564,19 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
 
             /*to release outlet pos*/
             item.SetNum(stepNum++);
-            if(SetAxisICMoldItem_(&item, axis_ + X1_AXIS, STANDBY_SETTING))
-                ret.append(item);
+            if(isMOutletUsed)
+            {
+                if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, RELEASE_OUTLET_SETTING))
+                {
+                    item.SetAction(ICMold::GX);
+                    ret.append(item);
+                }
+            }
+            else
+            {
+                if(SetAxisICMoldItem_(&item, axis_ + X1_AXIS, STANDBY_SETTING))
+                    ret.append(item);
+            }
             if(SetAxisICMoldItem_(&item, axis_ + Z_AXIS, RELEASE_OUTLET_SETTING))
                 ret.append(item);
             if(isSubArmUsed)
@@ -575,13 +586,9 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
                 item.SetNum(stepNum++);
                 if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, RELEASE_OUTLET_SETTING))
                     ret.append(item);
-            }else if(isMOutletUsed)
+            }
+            else if(isMOutletUsed)
             {
-                if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, RELEASE_OUTLET_SETTING))
-                {
-                    item.SetAction(ICMold::GX);
-                    ret.append(item);
-                }
                 item.SetNum(stepNum++);
                 if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, RELEASE_OUTLET_SETTING))
                 {
@@ -659,14 +666,14 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             }
             /******************************************/
 
-//            item.SetNum(stepNum++);
+            item.SetNum(stepNum++);
             item.SetSVal(80);
             item.SetDVal(0);
             if(isSubArmUsed)
             {
                 if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, RELEASE_OUTLET_SETTING))
                     ret.append(item);
-                item.SetNum(stepNum++);
+                item.SetNum(++stepNum);
                 if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, RELEASE_OUTLET_SETTING))
                     ret.append(item);
             }
@@ -677,7 +684,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
                     item.SetAction(ICMold::GX);
                     ret.append(item);
                 }
-                item.SetNum(stepNum++);
+                item.SetNum(++stepNum);
                 if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, RELEASE_OUTLET_SETTING))
                 {
                     item.SetAction(ICMold::GY);
@@ -685,7 +692,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
                 }
             }
             /*release outlet*/
-            item.SetNum(stepNum++);
+            item.SetNum(++stepNum);
             item.SetSVal(0);
             item.SetDVal(10);
 //            item.SetClip(fixtureOffAction_.at(ui->outletFixtureBox->currentIndex()));
@@ -705,7 +712,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
 
 
             /*Y2, back to standby*/
-            item.SetNum(stepNum++);
+            item.SetNum(++stepNum);
             item.SetSVal(80);
             item.SetDVal(0);
             if(isSubArmUsed)
@@ -729,7 +736,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
 
 
             /*to release product pos*/
-            item.SetNum(stepNum++);
+            item.SetNum(++stepNum);
             if(isSubArmUsed)
             {
                 if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, STANDBY_SETTING))
@@ -743,12 +750,13 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
                     ret.append(item);
                 }
             }
+            item.SetNum(++stepNum);
             if(SetAxisICMoldItem_(&item, axis_ + Z_AXIS, RELEASE_PRODUCT_SETTING))
                 ret.append(item);
             /******************************************/
             if(!ui->cBoxHorizontal->isHidden() && !ui->cBoxVertical->isHidden())
             {
-                item.SetNum(stepNum++);
+//                item.SetNum(stepNum++);
                 item.SetSVal(0);
                 if(axis_[C_AXIS].releaseProductLimit == 0)
                     item.SetAction(ICMold::ACTPOSEHORI);
@@ -934,7 +942,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
         /*****************************************/
         if(!ui->cBoxHorizontal->isHidden() && !ui->cBoxVertical->isHidden())
         {
-            item.SetNum(stepNum++);
+//            item.SetNum(stepNum++);
             item.SetSVal(0);
             if(axis_[C_AXIS].releaseProductLimit == 0)
                 item.SetAction(ICMold::ACTPOSEHORI);
@@ -943,13 +951,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             ret.append(item);
         }
         /*****************************************/
-        if(ui->stackedEn->isChecked())
-        {
-            item.SetSVal(ui->stackGroup->TransThisTextToThisInt() - 1);
-            item.SetClip(ICMold::ACTLAYOUTON);
-            ret.append(item);
-            item.SetSVal(80);
-        }
+
         item.SetNum(stepNum++);
         item.SetSVal(80);
         item.SetDVal(0);
@@ -962,6 +964,13 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             item.SetDVal(0);
             if(SetAxisICMoldItem_(&item, axis_ + C_AXIS, RELEASE_PRODUCT_SETTING))
                 ret.append(item);
+        }
+        if(ui->stackedEn->isChecked())
+        {
+            item.SetSVal(ui->stackGroup->TransThisTextToThisInt() - 1);
+            item.SetClip(ICMold::ACTLAYOUTON);
+            ret.append(item);
+            item.SetSVal(80);
         }
         item.SetNum(stepNum++);
         if(SetAxisICMoldItem_(&item, axis_ + Y1_AXIS, RELEASE_PRODUCT_SETTING))
@@ -1002,6 +1011,8 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
     else if(isSubArmUsed)
     {
         /*to release outlet pos*/
+        item.SetNum(stepNum++);
+
         if(SetAxisICMoldItem_(&item, axis_ + Z_AXIS, RELEASE_OUTLET_SETTING))
             ret.append(item);
         if( SetAxisICMoldItem_(&item, axis_ + X2_AXIS, RELEASE_OUTLET_SETTING))
@@ -1307,7 +1318,8 @@ void ICProgramGuidePage::on_nextButton_clicked()
     {
         ui->stackedWidget->setCurrentIndex(3);
         ui->getOutletBack->setVisible(ui->usedSubArmBox->isChecked());
-        ui->x1X2OutGroup->setVisible(ui->usedSubArmBox->isChecked());
+        ui->getProductBack->setVisible(ui->usedMainArmBox->isChecked());
+        ui->x1X2OutGroup->setVisible(ui->usedSubArmBox->isChecked() && ui->usedMainArmBox->isChecked());
     }
     else if(pageIndex_ == 4)
     {
@@ -1467,6 +1479,7 @@ void ICProgramGuidePage::on_preButton_clicked()
 
 void ICProgramGuidePage::UpdatePageButton_()
 {
+    ui->finishButton->setEnabled(false);
     switch(pageIndex_)
     {
     case 0: ui->preButton->setEnabled(false);
@@ -1480,7 +1493,10 @@ void ICProgramGuidePage::UpdatePageButton_()
         ui->preButton->setEnabled(true);
         ui->nextButton->setEnabled(true);
         break;
-    case 6: ui->nextButton->setEnabled(false);break;
+    case 6:
+        ui->nextButton->setEnabled(false);
+        ui->finishButton->setEnabled(true);
+        break;
     default:break;
 
     }

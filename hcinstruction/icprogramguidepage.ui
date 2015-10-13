@@ -51,7 +51,7 @@ QCheckBox::indicator:unchecked:disabled
    <item>
     <widget class="QStackedWidget" name="stackedWidget">
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="page1">
       <layout class="QVBoxLayout" name="verticalLayout_13">
@@ -1031,6 +1031,9 @@ QCheckBox::indicator:unchecked:disabled
      </item>
      <item>
       <widget class="QPushButton" name="nextButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 0);</string>
+       </property>
        <property name="text">
         <string>Next</string>
        </property>
