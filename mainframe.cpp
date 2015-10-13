@@ -1291,7 +1291,7 @@ bool MainFrame::IsOrigined() const
 
 void MainFrame::ShowScreenSaver()
 {
-        screenSaver_->show();
+//        screenSaver_->show();
     ICProgramHeadFrame::Instance()->SetCurrentLevel(ICParametersSave::MachineOperator);
 }
 
@@ -1498,7 +1498,7 @@ void MainFrame::OpenBackLight()
 void MainFrame::CloseBackLight()
 {
 #ifdef Q_WS_QWS
-//    ShowScreenSaver();
+    ShowScreenSaver();
     system("BackLight.sh 0");
 //    SetBackLightOff(true);
 #endif
