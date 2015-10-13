@@ -350,7 +350,7 @@ void ICHCProgramMonitorFrame::StatusRefreshed()
     int cycleTime = host->HostStatus(ICVirtualHost::Time).toUInt();
     if(cycleTime != oldCycleTime)
     {
-        ui->cycle->setText(QString().sprintf("%.2f", cycleTime / qreal(100)));
+        ui->robotCycle->setText(QString().sprintf("%.2f", cycleTime / qreal(100)));
         oldCycleTime = cycleTime;
     }
     static int oldFinishCount = -1;

@@ -114,76 +114,19 @@ QCheckBox::indicator:unchecked:disabled
            </widget>
           </item>
           <item>
-           <widget class="ICComboBox" name="productFixtureBox">
-            <item>
-             <property name="text">
-              <string>Fixture-1</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Fixture-2</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Fixture-3</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Fixture-4</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sucker-1</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sucker-2</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sucker-3</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sucker-4</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sucker-5</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sucker-6</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sucker-7</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sucker-8</string>
-             </property>
-            </item>
+           <widget class="QLabel" name="pFixture">
+            <property name="text">
+             <string>None</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="productCheck">
+           <widget class="QPushButton" name="pFixtureSelect">
             <property name="text">
-             <string>Check Fixture</string>
-            </property>
-            <property name="checked">
-             <bool>true</bool>
+             <string>open Editor</string>
             </property>
            </widget>
           </item>
@@ -210,79 +153,19 @@ QCheckBox::indicator:unchecked:disabled
            </widget>
           </item>
           <item>
-           <widget class="ICComboBox" name="outletFixtureBox">
-            <property name="currentIndex">
-             <number>0</number>
+           <widget class="QLabel" name="oFixtrue">
+            <property name="text">
+             <string>None</string>
             </property>
-            <item>
-             <property name="text">
-              <string>Fixture-1</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Fixture-2</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Fixture-3</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Fixture-4</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sucker-1</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sucker-2</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sucker-3</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sucker-4</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sucker-5</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sucker-6</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sucker-7</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sucker-8</string>
-             </property>
-            </item>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="outletCheck">
+           <widget class="QPushButton" name="oFixtureSelect">
             <property name="text">
-             <string>Check Fixture</string>
-            </property>
-            <property name="checked">
-             <bool>true</bool>
+             <string>open Editor</string>
             </property>
            </widget>
           </item>
@@ -1176,25 +1059,20 @@ QCheckBox::indicator:unchecked:disabled
    <header>icinstructioneditorbase.h</header>
    <container>1</container>
   </customwidget>
-  <customwidget>
-   <class>ICComboBox</class>
-   <extends>QComboBox</extends>
-   <header>iccombobox.h</header>
-  </customwidget>
  </customwidgets>
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroupA"/>
-  <buttongroup name="buttonGroupB"/>
-  <buttongroup name="buttonGroup"/>
-  <buttongroup name="buttonGroupC"/>
   <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroupY1"/>
   <buttongroup name="buttonGroupY2"/>
   <buttongroup name="buttonGroupX1"/>
-  <buttongroup name="buttonGroupZ"/>
+  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroupX2"/>
+  <buttongroup name="buttonGroupA"/>
+  <buttongroup name="buttonGroupB"/>
+  <buttongroup name="buttonGroupC"/>
   <buttongroup name="buttonGroupOutlet"/>
+  <buttongroup name="buttonGroupZ"/>
  </buttongroups>
 </ui>

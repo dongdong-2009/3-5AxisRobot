@@ -148,6 +148,12 @@ ICProgramGuidePage::ICProgramGuidePage(QWidget *parent) :
     validator = new QIntValidator(1, 4, this);
     ui->stackGroup->setValidator(validator);
 
+    fixtrueEditor_ = new ICGuideFixtureEditor(this);
+
+//    ui->productFixtureBox->hide();
+//    ui->productCheck->hide();
+//    ui->outletFixtureBox->hide();
+//    ui->outletCheck->hide();
 
     //#ifdef Q_WS_X11
     //    UpdateAxisDefine_();
@@ -329,16 +335,24 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
     item.SetNum(stepNum++);
     if(isMainArmUsed)
     {
-        item.SetClip(fixtureOnAction_.at(ui->productFixtureBox->currentIndex()));
         item.SetIFVal(true);
+        for(int i = 0; i < productfixturesConfigs.size(); ++i)
+        {
+            item.SetClip(fixtureOnAction_.at(productfixturesConfigs.at(i).first));
+            ret.append(item);
+        }
+//        item.SetClip(fixtureOnAction_.at(ui->productFixtureBox->currentIndex()));
 
-        ret.append(item);
     }
     if(isSubArmUsed || isMOutletUsed)
     {
-        item.SetClip(fixtureOnAction_.at(ui->outletFixtureBox->currentIndex()));
         item.SetIFVal(true);
-        ret.append(item);
+        for(int i = 0; i < outletfixturesConfigs.size(); ++i)
+        {
+            item.SetClip(fixtureOnAction_.at(outletfixturesConfigs.at(i).first));
+            ret.append(item);
+        }
+//        item.SetClip(fixtureOnAction_.at(ui->outletFixtureBox->currentIndex()));
     }
 
     /*X axis backward*/
@@ -385,17 +399,29 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
     /*fixture check*/
     item.SetAction(ICMold::ACT_Cut);
     item.SetIFVal(1);
-    if(isMainArmUsed && ui->productCheck->isChecked())
+    if(isMainArmUsed)
     {
-        item.SetNum(stepNum++);
-        item.SetSVal(ui->productFixtureBox->currentIndex());
-        ret.append(item);
+        for(int i = 0; i < productfixturesConfigs.size(); ++i)
+        {
+            if(productfixturesConfigs.at(i).second)
+            {
+                item.SetNum(stepNum++);
+                item.SetSVal(productfixturesConfigs.at(i).first);
+                ret.append(item);
+            }
+        }
     }
-    if((isSubArmUsed || isMOutletUsed) && ui->outletCheck->isChecked())
+    if((isSubArmUsed || isMOutletUsed))
     {
-        item.SetNum(stepNum++);
-        item.SetSVal(ui->outletFixtureBox->currentIndex());
-        ret.append(item);
+        for(int i = 0; i < outletfixturesConfigs.size(); ++i)
+        {
+            if(outletfixturesConfigs.at(i).second)
+            {
+                item.SetNum(stepNum++);
+                item.SetSVal(outletfixturesConfigs.at(i).first);
+                ret.append(item);
+            }
+        }
     }
 
     /*go up*/
@@ -511,15 +537,30 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             item.SetNum(stepNum++);
             item.SetSVal(0);
             item.SetDVal(10);
-            item.SetClip(fixtureOffAction_.at(ui->productFixtureBox->currentIndex()));
-            ret.append(item);
+//            item.SetClip(fixtureOffAction_.at(ui->productFixtureBox->currentIndex()));
+            int clip;
+            for(int i = 0; i < productfixturesConfigs.size(); ++i)
+            {
+                clip = fixtureOffAction_.at(productfixturesConfigs.at(i).first);
+                item.SetClip(clip);
+                if(clip >= 1000)
+                {
+                    item.SetClip(clip - 1000);
+                    item.SetIFVal(false);
+                }
+                ret.append(item);
+            }
+//            ret.append(item);
 
             /*Y1, back to standby*/
             item.SetNum(stepNum++);
             item.SetSVal(80);
             item.SetDVal(0);
             if(SetAxisICMoldItem_(&item, axis_ + Y1_AXIS, STANDBY_SETTING))
+            {
+                item.SetActualPos(0);
                 ret.append(item);
+            }
 
             /*to release outlet pos*/
             item.SetNum(stepNum++);
@@ -554,8 +595,20 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             item.SetNum(stepNum++);
             item.SetSVal(0);
             item.SetDVal(10);
-            item.SetClip(fixtureOffAction_.at(ui->outletFixtureBox->currentIndex()));
-            ret.append(item);
+//            item.SetClip(fixtureOffAction_.at(ui->outletFixtureBox->currentIndex()));
+//            ret.append(item);
+            for(int i = 0; i < outletfixturesConfigs.size(); ++i)
+            {
+                clip = fixtureOffAction_.at(outletfixturesConfigs.at(i).first);
+                item.SetClip(clip);
+                if(clip >= 1000)
+                {
+                    item.SetClip(clip - 1000);
+                    item.SetIFVal(false);
+                }
+                ret.append(item);
+            }
+
 
             /*X2, Y2, back to standby*/
             item.SetNum(stepNum++);
@@ -564,7 +617,10 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             if(isSubArmUsed)
             {
                 if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, STANDBY_SETTING))
+                {
+                    item.SetActualPos(0);
                     ret.append(item);
+                }
                 item.SetNum(stepNum++);
                 if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, STANDBY_SETTING))
                     ret.append(item);
@@ -574,6 +630,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
                 if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, STANDBY_SETTING))
                 {
                     item.SetAction(ICMold::GY);
+                    item.SetActualPos(0);
                     ret.append(item);
                 }
                 item.SetNum(stepNum++);
@@ -602,6 +659,9 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             }
             /******************************************/
 
+//            item.SetNum(stepNum++);
+            item.SetSVal(80);
+            item.SetDVal(0);
             if(isSubArmUsed)
             {
                 if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, RELEASE_OUTLET_SETTING))
@@ -628,8 +688,21 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             item.SetNum(stepNum++);
             item.SetSVal(0);
             item.SetDVal(10);
-            item.SetClip(fixtureOffAction_.at(ui->outletFixtureBox->currentIndex()));
-            ret.append(item);
+//            item.SetClip(fixtureOffAction_.at(ui->outletFixtureBox->currentIndex()));
+//            ret.append(item);
+            int clip;
+            for(int i = 0; i < outletfixturesConfigs.size(); ++i)
+            {
+                clip = fixtureOffAction_.at(outletfixturesConfigs.at(i).first);
+                item.SetClip(clip);
+                if(clip >= 1000)
+                {
+                    item.SetClip(clip - 1000);
+                    item.SetIFVal(false);
+                }
+                ret.append(item);
+            }
+
 
             /*Y2, back to standby*/
             item.SetNum(stepNum++);
@@ -638,13 +711,17 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             if(isSubArmUsed)
             {
                 if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, STANDBY_SETTING))
+                {
+                    item.SetActualPos(0);
                     ret.append(item);
+                }
             }
             else if(isMOutletUsed)
             {
                 if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, STANDBY_SETTING))
                 {
                     item.SetAction(ICMold::GY);
+                    item.SetActualPos(0);
                     ret.append(item);
                 }
             }
@@ -708,8 +785,19 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             item.SetNum(stepNum++);
             item.SetSVal(0);
             item.SetDVal(10);
-            item.SetClip(fixtureOffAction_.at(ui->productFixtureBox->currentIndex()));
-            ret.append(item);
+//            item.SetClip(fixtureOffAction_.at(ui->productFixtureBox->currentIndex()));
+//            ret.append(item);
+            for(int i = 0; i < productfixturesConfigs.size(); ++i)
+            {
+                clip = fixtureOffAction_.at(productfixturesConfigs.at(i).first);
+                item.SetClip(clip);
+                if(clip >= 1000)
+                {
+                    item.SetClip(clip - 1000);
+                    item.SetIFVal(false);
+                }
+                ret.append(item);
+            }
 
 
             /*X2, Y2, back to standby*/
@@ -717,10 +805,15 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             item.SetSVal(80);
             item.SetDVal(0);
             if(SetAxisICMoldItem_(&item, axis_ + Y1_AXIS, STANDBY_SETTING))
+            {
+                item.SetActualPos(0);
                 ret.append(item);
+            }
             item.SetNum(stepNum++);
             if(SetAxisICMoldItem_(&item, axis_ + X1_AXIS, STANDBY_SETTING))
+            {
                 ret.append(item);
+            }
 
         }
         else
@@ -777,20 +870,49 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             item.SetNum(stepNum++);
             item.SetSVal(0);
             item.SetDVal(10);
-            item.SetClip(fixtureOffAction_.at(ui->productFixtureBox->currentIndex()));
-            ret.append(item);
-            item.SetClip(fixtureOffAction_.at(ui->outletFixtureBox->currentIndex()));
-            ret.append(item);
+//            item.SetClip(fixtureOffAction_.at(ui->productFixtureBox->currentIndex()));
+//            ret.append(item);
+            int clip;
+            for(int i = 0; i < productfixturesConfigs.size(); ++i)
+            {
+                clip = fixtureOffAction_.at(productfixturesConfigs.at(i).first);
+                item.SetClip(clip);
+                if(clip >= 1000)
+                {
+                    item.SetClip(clip - 1000);
+                    item.SetIFVal(false);
+                }
+                ret.append(item);
+            }
+//            item.SetClip(fixtureOffAction_.at(ui->outletFixtureBox->currentIndex()));
+//            ret.append(item);
+            for(int i = 0; i < outletfixturesConfigs.size(); ++i)
+            {
+                clip = fixtureOffAction_.at(outletfixturesConfigs.at(i).first);
+                item.SetClip(clip);
+                if(clip >= 1000)
+                {
+                    item.SetClip(clip - 1000);
+                    item.SetIFVal(false);
+                }
+                ret.append(item);
+            }
 
             item.SetNum(stepNum++);
             item.SetSVal(80);
             item.SetDVal(0);
             if(SetAxisICMoldItem_(&item, axis_ + Y1_AXIS, STANDBY_SETTING))
+            {
+                item.SetActualPos(0);
                 ret.append(item);
+            }
             if(isSubArmUsed)
             {
                 if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, STANDBY_SETTING))
+                {
+                    item.SetActualPos(0);
                     ret.append(item);
+                }
             }
             item.SetNum(stepNum++);
             if(SetAxisICMoldItem_(&item, axis_ + X1_AXIS, STANDBY_SETTING))
@@ -850,15 +972,18 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
         item.SetNum(stepNum++);
         item.SetSVal(0);
         item.SetDVal(10);
-        int clip = fixtureOffAction_.at(ui->productFixtureBox->currentIndex());
-        //        item.SetClip();
-        item.SetClip(clip);
-        if(clip >= 1000)
+        int clip;
+        for(int i = 0; i < productfixturesConfigs.size(); ++i)
         {
-            item.SetClip(clip - 1000);
-            item.SetIFVal(false);
+            clip = fixtureOffAction_.at(productfixturesConfigs.at(i).first);
+            item.SetClip(clip);
+            if(clip >= 1000)
+            {
+                item.SetClip(clip - 1000);
+                item.SetIFVal(false);
+            }
+            ret.append(item);
         }
-        ret.append(item);
 
 
         /*X1, Y1, back to standby*/
@@ -866,7 +991,10 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
         item.SetSVal(80);
         item.SetDVal(0);
         if(SetAxisICMoldItem_(&item, axis_ + Y1_AXIS, STANDBY_SETTING))
+        {
+            item.SetActualPos(0);
             ret.append(item);
+        }
         item.SetNum(stepNum++);
         if(SetAxisICMoldItem_(&item, axis_ + X1_AXIS, STANDBY_SETTING))
             ret.append(item);
@@ -886,22 +1014,29 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
         item.SetNum(stepNum++);
         item.SetSVal(0);
         item.SetDVal(10);
-        int clip = fixtureOffAction_.at(ui->productFixtureBox->currentIndex());
+        int clip ;
         //        item.SetClip(fixtureOffAction_.at(ui->outletFixtureBox->currentIndex()));
-        item.SetClip(clip);
-        if(clip >= 1000)
+        for(int i = 0; i < outletfixturesConfigs.size(); ++i)
         {
-            item.SetClip(clip - 1000);
-            item.SetIFVal(false);
+            clip = fixtureOffAction_.at(outletfixturesConfigs.at(i).first);
+            item.SetClip(clip);
+            if(clip >= 1000)
+            {
+                item.SetClip(clip - 1000);
+                item.SetIFVal(false);
+            }
+            ret.append(item);
         }
-        ret.append(item);
 
         /*X2, Y2, back to standby*/
         item.SetNum(stepNum++);
         item.SetSVal(80);
         item.SetDVal(0);
         if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, STANDBY_SETTING))
+        {
+            item.SetActualPos(0);
             ret.append(item);
+        }
         item.SetNum(stepNum++);
         if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, STANDBY_SETTING))
             ret.append(item);
@@ -2016,4 +2151,22 @@ void ICProgramGuidePage::on_setIn3_clicked()
             (host->HostStatus(ICVirtualHost::AxisLastPos2).toUInt() << 16);
     ui->outX1->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisX1, axisLast));
     ui->outX2->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisX2, axisLast));
+}
+
+void ICProgramGuidePage::on_pFixtureSelect_clicked()
+{
+    if(fixtrueEditor_->ShowEditor(productfixturesConfigs) == QDialog::Accepted)
+    {
+        productfixturesConfigs = fixtrueEditor_->GetConfigs();
+        ui->pFixture->setText(fixtrueEditor_->SelectedNames().join(","));
+    }
+}
+
+void ICProgramGuidePage::on_oFixtureSelect_clicked()
+{
+    if(fixtrueEditor_->ShowEditor(outletfixturesConfigs) == QDialog::Accepted)
+    {
+        outletfixturesConfigs = fixtrueEditor_->GetConfigs();
+        ui->oFixtrue->setText(fixtrueEditor_->SelectedNames().join(","));
+    }
 }
