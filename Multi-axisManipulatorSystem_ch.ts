@@ -2674,22 +2674,22 @@ Reason</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="209"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="220"/>
         <source>Signal Settings</source>
         <translation>信号设定</translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="210"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="221"/>
         <source>Product Settings</source>
         <translation>产品设定</translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="211"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="222"/>
         <source>Machine Configure</source>
         <translation>运行参数</translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="208"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="219"/>
         <source>Maintains</source>
         <translation>维护/保养</translation>
     </message>
@@ -2698,22 +2698,22 @@ Reason</source>
         <translation type="obsolete">教导</translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="204"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="215"/>
         <source>Security Point Settings</source>
         <translation>安全点设定</translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="206"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="217"/>
         <source>Struct Settings</source>
         <translation>机器参数</translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="207"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="218"/>
         <source>Stack Settings</source>
         <translation>堆叠设定</translation>
     </message>
     <message>
-        <location filename="categorypage/icfunctionpageframe.cpp" line="205"/>
+        <location filename="categorypage/icfunctionpageframe.cpp" line="216"/>
         <source>System Settings</source>
         <translation>系统设定</translation>
     </message>
@@ -2730,7 +2730,7 @@ Reason</source>
         <translation>吸夹选择器</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icguidefixtureeditor.ui" line="63"/>
+        <location filename="hcinstruction/icguidefixtureeditor.ui" line="66"/>
         <source>Cancel All</source>
         <translation>恢复默认</translation>
     </message>
@@ -2775,99 +2775,99 @@ Reason</source>
         <translation type="obsolete">12</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icguidefixtureeditor.ui" line="131"/>
+        <location filename="hcinstruction/icguidefixtureeditor.ui" line="134"/>
         <source>Fixture</source>
         <translation>吸/夹</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icguidefixtureeditor.ui" line="136"/>
+        <location filename="hcinstruction/icguidefixtureeditor.ui" line="139"/>
         <source>Name</source>
         <translation>名称</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icguidefixtureeditor.ui" line="141"/>
+        <location filename="hcinstruction/icguidefixtureeditor.ui" line="144"/>
         <source>Is Check</source>
         <translation>是否需要确认</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icguidefixtureeditor.ui" line="406"/>
+        <location filename="hcinstruction/icguidefixtureeditor.ui" line="409"/>
         <source>OK</source>
         <translation>确定</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icguidefixtureeditor.ui" line="416"/>
+        <location filename="hcinstruction/icguidefixtureeditor.ui" line="419"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
         <location filename="hcinstruction/icguidefixtureeditor.cpp" line="15"/>
-        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="104"/>
+        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="105"/>
         <source>Fixture1  </source>
         <translation>夹1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icguidefixtureeditor.cpp" line="15"/>
-        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="104"/>
+        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="105"/>
         <source>Fixture2  </source>
         <translation>夹2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icguidefixtureeditor.cpp" line="15"/>
-        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="104"/>
+        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="105"/>
         <source>Fixture3  </source>
         <translation>夹3</translation>
     </message>
     <message>
         <location filename="hcinstruction/icguidefixtureeditor.cpp" line="15"/>
-        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="104"/>
+        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="105"/>
         <source>Fixture4  </source>
         <translation>夹4</translation>
     </message>
     <message>
         <location filename="hcinstruction/icguidefixtureeditor.cpp" line="16"/>
-        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="105"/>
+        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="106"/>
         <source>Sucker1   </source>
         <translation>吸1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icguidefixtureeditor.cpp" line="16"/>
-        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="105"/>
+        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="106"/>
         <source>Sucker2   </source>
         <translation>吸2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icguidefixtureeditor.cpp" line="17"/>
-        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="106"/>
+        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="107"/>
         <source>Sucker3   </source>
         <translation>吸3</translation>
     </message>
     <message>
         <location filename="hcinstruction/icguidefixtureeditor.cpp" line="17"/>
-        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="106"/>
+        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="107"/>
         <source>Sucker4   </source>
         <translation>吸4</translation>
     </message>
     <message>
         <location filename="hcinstruction/icguidefixtureeditor.cpp" line="18"/>
-        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="107"/>
+        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="108"/>
         <source>Sucker5   </source>
         <translation>吸5</translation>
     </message>
     <message>
         <location filename="hcinstruction/icguidefixtureeditor.cpp" line="18"/>
-        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="107"/>
+        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="108"/>
         <source>Sucker6   </source>
         <translation>吸6</translation>
     </message>
     <message>
         <location filename="hcinstruction/icguidefixtureeditor.cpp" line="19"/>
-        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="108"/>
+        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="109"/>
         <source>Sucker7   </source>
         <translation>吸7</translation>
     </message>
     <message>
         <location filename="hcinstruction/icguidefixtureeditor.cpp" line="19"/>
-        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="108"/>
+        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="109"/>
         <source>Sucker8   </source>
         <translation>吸8</translation>
     </message>
@@ -4663,27 +4663,27 @@ Reason</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="204"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="537"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="538"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="337"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="338"/>
         <source>Single run ready</source>
         <translation>步进准备状态</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="341"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="342"/>
         <source>Single cycle ready</source>
         <translation>单循环准备状态</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="538"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="539"/>
         <source>Can not edit standby position program</source>
         <translation>不能修改待机点位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="905"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="907"/>
         <source>Flag[%1]:%2</source>
         <translation>标签[%1]:%2</translation>
     </message>
@@ -4692,7 +4692,7 @@ Reason</source>
         <translation type="obsolete">需要忽略这个警告吗?</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="830"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="831"/>
         <source>Follow</source>
         <translation>画面滚动</translation>
     </message>
@@ -4700,8 +4700,8 @@ Reason</source>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="427"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="105"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="259"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="845"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="855"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="846"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="856"/>
         <source>Speed Disable</source>
         <translation>禁止
 调速</translation>
@@ -4790,7 +4790,7 @@ Reason</source>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="96"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="331"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="836"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="837"/>
         <source>No Follow</source>
         <translation>画面暂停</translation>
     </message>
@@ -4824,7 +4824,7 @@ Disable</source>
         <translation>暂停</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="845"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="846"/>
         <source>Speed Enable</source>
         <translation>允许
 调速</translation>
@@ -6646,7 +6646,6 @@ Clear</source>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.cpp" line="263"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="279"/>
         <source>Times</source>
         <translation>间隔模数</translation>
     </message>
@@ -8841,7 +8840,7 @@ Please enter an digit between </source>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="420"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="737"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1303"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1324"/>
         <source>Product</source>
         <translation>成品位置设定</translation>
     </message>
@@ -8850,14 +8849,14 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage.ui" line="881"/>
         <location filename="hcinstruction/icprogramguidepage.ui" line="962"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="761"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="2116"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="2142"/>
         <source>GX1:</source>
         <translation>主引拔:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="483"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="845"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="2115"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="2141"/>
         <source>GY1:</source>
         <translation>主上下:</translation>
     </message>
@@ -8898,16 +8897,16 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage.ui" line="927"/>
         <location filename="hcinstruction/icprogramguidepage.ui" line="976"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="956"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1547"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1995"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1573"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="2021"/>
         <source>GX2:</source>
         <translation>副引拔:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="594"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1040"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1546"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1994"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1572"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="2020"/>
         <source>GY2:</source>
         <translation>副上下:</translation>
     </message>
@@ -9016,7 +9015,7 @@ Please enter an digit between </source>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="534"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="932"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1304"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1325"/>
         <source>Outlet</source>
         <translation>水口位置设定</translation>
     </message>
@@ -9075,42 +9074,42 @@ Please enter an digit between </source>
         <translation>上一页选项</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="1035"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="1038"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1470"/>
         <source>Next</source>
         <translation>下一页选项</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.ui" line="1042"/>
+        <location filename="hcinstruction/icprogramguidepage.ui" line="1045"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1489"/>
         <source>Finish</source>
         <translation>完成</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1286"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1394"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1307"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1416"/>
         <source>Get Position Settings</source>
         <translation>取物位置设定</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1317"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1421"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1339"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1443"/>
         <source>Release Product Position Settings</source>
         <translation>放成品位置设定</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1338"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1442"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1360"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1464"/>
         <source>Release Outlet Position Settings</source>
         <translation>放水口位置设定</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1487"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1513"/>
         <source>Finish(%1/%2)</source>
         <translation>完成(%1/%2)</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1493"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1519"/>
         <source>Stanby Settings</source>
         <translation>待机点设定</translation>
     </message>
@@ -11113,7 +11112,7 @@ Please input the root password to confirm.</source>
         <translation>%1模号格式更新.请检查该模号使用的子程序是否正确!</translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="813"/>
+        <location filename="mainframe.ui" line="825"/>
         <location filename="mainframe.cpp" line="1624"/>
         <source>L Pos</source>
         <translation>看位置</translation>

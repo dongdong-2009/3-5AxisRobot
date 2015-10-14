@@ -2043,7 +2043,7 @@ void ICProgramGuidePage::on_setInButton_clicked()
     ui->zEdit->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisZ, axisLast));
     ui->x2Edit->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisX2, axisLast));
     ui->y2Edit->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisY2, axisLast));
-    if(ui->mainArmOUtletBox->isChecked())
+    if(ui->mainArmOUtletBox->isChecked() && pageIndex_ != 1)
     {
         ui->x2Edit->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisX1, axisLast));
         ui->y2Edit->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisY1, axisLast));
