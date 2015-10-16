@@ -112,6 +112,8 @@ public:
     QDate NextCycle(int item) { return GetParameter(SystemMachine, QString("NextCycleItem-%1").arg(item), QDate::currentDate().addDays(30)).toDate();}
     void SetNextCycle(int item, QDate th) { SaveParameter(SystemMachine, QString("NextCycleItem-%1").arg(item), th);}
 
+    bool IsSuperLogin() { return isSuperLogin_;}
+
 signals:
     void CurrentLanguageChanged();
 
@@ -131,6 +133,7 @@ private:
     QTranslator *sysTranslator_;
     QMap<QString, double> axisToRotate_;
     int beepFD_;
+    bool isSuperLogin_;
     ICParametersSave(const QString fileName = QString());
 };
 

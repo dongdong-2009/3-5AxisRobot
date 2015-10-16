@@ -39,6 +39,7 @@ ICParametersSave::ICParametersSave(const QString fileName)
     beepFD_ = 0;
 #endif
     SetKeyTone(KeyTone(), false);
+    isSuperLogin_ = false;
 //    ioctl(beepFD_, 0, KeyTone() ? 1 : 0);
 }
 
@@ -138,6 +139,7 @@ bool ICParametersSave::VerifyPassword(OperationLevel level, const QString &passw
 {
     QString parameter;
     QString pw;
+    isSuperLogin_ = false;
     if(level == MachineOperator)
     {
         return true;
@@ -157,6 +159,8 @@ bool ICParametersSave::VerifyPassword(OperationLevel level, const QString &passw
         pw = "7825";
     }
     QString registerPwd = GetParameter("AdminInformation", parameter, pw).toString();
+    if(registerPwd == SuperPassward())
+        isSuperLogin_ = true;
     return (registerPwd == password || password == "szhcrobot" || password == SuperPassward());
 }
 

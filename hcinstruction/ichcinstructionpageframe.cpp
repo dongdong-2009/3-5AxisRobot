@@ -466,10 +466,13 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
     /******currentEdit_标记为0表示为主程序（主程序时不能删除待机点）*****/
     if(programList_.at(gIndex).StepNum() == 0 && currentEdit_ == 0 && currentmoldname.left(4) != "szhc")
     {
-        QMessageBox::warning(this,
-                             tr("Warning"),
-                             tr("Can not add standby position program"));
-        return;
+        if(!ICParametersSave::Instance()->IsSuperLogin())
+        {
+            QMessageBox::warning(this,
+                                 tr("Warning"),
+                                 tr("Can not add standby position program"));
+            return;
+        }
     }
     bool isParallel = false;
     bool isServo = false;
@@ -708,10 +711,13 @@ void ICHCInstructionPageFrame::on_deleteToolButton_clicked()
     QString currentmoldname  = ICParametersSave::Instance()->MoldName("");
     if(programList_.at(gIndex).StepNum() == 0 && currentEdit_ == 0 && currentmoldname.left(4) != "szhc")
     {
-        QMessageBox::warning(this,
-                             tr("Warning"),
-                             tr("Can not delete standby position program"));
-        return;
+        if(!ICParametersSave::Instance()->IsSuperLogin())
+        {
+            QMessageBox::warning(this,
+                                 tr("Warning"),
+                                 tr("Can not delete standby position program"));
+            return;
+        }
     }
     if(sIndex == -1)
     {
@@ -870,9 +876,12 @@ void ICHCInstructionPageFrame::on_upButton_clicked()
     }
     if(MoldInformation::Instance()->IsStandProgram(ICParametersSave::Instance()->MoldName("")))
     {
-        QMessageBox::warning(this, tr("warning"),
-                             tr("Stand program can not do Up action"));
-        return;
+        if(!ICParametersSave::Instance()->IsSuperLogin())
+        {
+            QMessageBox::warning(this, tr("warning"),
+                                 tr("Stand program can not do Up action"));
+            return;
+        }
    }
     FindIndex_(currentRow, gIndex, tIndex, sIndex);
     //子程序也可以分解和组合，所以无需判断
@@ -975,9 +984,12 @@ void ICHCInstructionPageFrame::on_downButton_clicked()
     }
     if(MoldInformation::Instance()->IsStandProgram(ICParametersSave::Instance()->MoldName("")))
     {
-        QMessageBox::warning(this, tr("warning"),
-                             tr("Stand program can not do Down action"));
-        return;
+        if(!ICParametersSave::Instance()->IsSuperLogin())
+        {
+            QMessageBox::warning(this, tr("warning"),
+                                 tr("Stand program can not do Down action"));
+            return;
+        }
    }
     FindIndex_(currentRow, gIndex, tIndex, sIndex);
     //子程序也可以分解和组合，所以无需判断
