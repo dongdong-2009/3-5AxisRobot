@@ -991,7 +991,8 @@ void ICHCSystemSettingsFrame::on_registerBtn_clicked()
 void ICHCSystemSettingsFrame::on_verifySupperButton_clicked()
 {
     if(ui->supperPwdEdit->text() == ICParametersSave::Instance()->SuperPassward()
-            || ui->supperPwdEdit->text() == "szhcrobot")
+            || ui->supperPwdEdit->text() == "szhcrobot"
+            || ui->supperPwdEdit->text() == "hamorobot")
     {
         ui->label_41->show();
         ui->factoryCode->show();
