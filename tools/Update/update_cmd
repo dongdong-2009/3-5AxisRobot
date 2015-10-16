@@ -5,6 +5,10 @@ cp Base.fnc /opt/Qt/apps/records -f
 cp global.qss /opt/Qt/apps/stylesheet -f
 cp ./WenQuanYi.ttf /opt/Qt/fonts
 cp QtAutorun.sh /usr/bin -f
+cp *.fnc /opt/Qt/apps/records -f
+cp *.act /opt/Qt/apps/records -f
+cp *.sub* /opt/Qt/apps/records -f
+cp  StandPrograms /opt/Qt/apps/sysconfig
 #cd 3a8
 #cp -rf records subs sysconfig /mnt/database
 #reboot

@@ -320,6 +320,9 @@ QMessageBox QAbstractButton
            <height>48</height>
           </size>
          </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(85, 255, 0);</string>
+         </property>
          <property name="text">
           <string>Load</string>
          </property>
@@ -344,6 +347,9 @@ QMessageBox QAbstractButton
            <width>70</width>
            <height>48</height>
           </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 0, 0);</string>
          </property>
          <property name="text">
           <string>Delete</string>
