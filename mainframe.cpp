@@ -847,7 +847,18 @@ void MainFrame::StatusRefreshed()
         hostCompareDialog_->show();
     }
     int hintCode = virtualHost->HintNum();
-    if(alarmString->PriorAlarmNum() != static_cast<int>(errCode_) || hintCode != oldHintCode_)
+    if(hintCode != oldHintCode_ && errCode_ == 0)
+    {
+        if(hintCode != 0)
+        {
+            ui->cycleTimeAndFinistWidget->SetHintInfo(tr("Hint") + QString::number(hintCode) + ":" + alarmString->HintInfo(hintCode));
+        }
+        else
+        {
+            ui->cycleTimeAndFinistWidget->SetAlarmInfo("");
+        }
+    }
+    if(alarmString->PriorAlarmNum() != static_cast<int>(errCode_))
     {
         oldHintCode_ = hintCode;
         qDebug()<<"hint code"<<hintCode<<alarmString->HintInfo(hintCode);
@@ -866,6 +877,7 @@ void MainFrame::StatusRefreshed()
             ui->cycleTimeAndFinistWidget->SetAlarmInfo("");
         }
     }
+
 //    finishCount_ = virtualHost->HostStatus(ICVirtualHost::DbgX1).toUInt();
 //    if(finishCount_ != oldFinishCount_)
 //    {
