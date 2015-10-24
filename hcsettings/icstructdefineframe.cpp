@@ -36,72 +36,72 @@ uint port;
 
 typedef union{
     struct {
-        u_int16_t a1 : 3;
-        u_int16_t a2 : 3;
-        u_int16_t a3 : 3;
-        u_int16_t a4 : 3;
-        u_int16_t a5 : 3;
-        u_int16_t resv : 1;
+        quint16 a1 : 3;
+        quint16 a2 : 3;
+        quint16 a3 : 3;
+        quint16 a4 : 3;
+        quint16 a5 : 3;
+        quint16 resv : 1;
     }mode;
-    u_int16_t allMode;
+    quint16 allMode;
 }AxisMode;
 
 
 
 typedef union{
     struct {
-        u_int16_t x : 2;
-        u_int16_t y : 2;
-        u_int16_t z : 2;
-        u_int16_t p : 2;
-        u_int16_t q : 2;
-        u_int16_t a : 2;
-        u_int16_t b : 2;
-        u_int16_t c : 2;
+        quint16 x : 2;
+        quint16 y : 2;
+        quint16 z : 2;
+        quint16 p : 2;
+        quint16 q : 2;
+        quint16 a : 2;
+        quint16 b : 2;
+        quint16 c : 2;
     }b;
-    u_int16_t combine;
+    quint16 combine;
 }OriginStatus;
 
 typedef union{
     struct {
-        u_int32_t y0 : 1;
-        u_int32_t y1 : 1;
-        u_int32_t y2 : 1;
-        u_int32_t y3 : 1;
-        u_int32_t y4 : 1;
-        u_int32_t y5 : 1;
-        u_int32_t y6 : 1;
-        u_int32_t y7 : 1;
+        quint32 y0 : 1;
+        quint32 y1 : 1;
+        quint32 y2 : 1;
+        quint32 y3 : 1;
+        quint32 y4 : 1;
+        quint32 y5 : 1;
+        quint32 y6 : 1;
+        quint32 y7 : 1;
 
-        u_int32_t y10 : 1;
-        u_int32_t y11 : 1;
-        u_int32_t y12 : 1;
-        u_int32_t y13 : 1;
-        u_int32_t y14 : 1;
-        u_int32_t y15 : 1;
-        u_int32_t y16 : 1;
-        u_int32_t y17 : 1;
+        quint32 y10 : 1;
+        quint32 y11 : 1;
+        quint32 y12 : 1;
+        quint32 y13 : 1;
+        quint32 y14 : 1;
+        quint32 y15 : 1;
+        quint32 y16 : 1;
+        quint32 y17 : 1;
 
-        u_int32_t y20 : 1;
-        u_int32_t y21 : 1;
-        u_int32_t y22 : 1;
-        u_int32_t y23 : 1;
-        u_int32_t y24 : 1;
-        u_int32_t y25 : 1;
-        u_int32_t y26 : 1;
-        u_int32_t y27 : 1;
+        quint32 y20 : 1;
+        quint32 y21 : 1;
+        quint32 y22 : 1;
+        quint32 y23 : 1;
+        quint32 y24 : 1;
+        quint32 y25 : 1;
+        quint32 y26 : 1;
+        quint32 y27 : 1;
 
-        u_int32_t y30 : 1;
-        u_int32_t y31 : 1;
-        u_int32_t y32 : 1;
-        u_int32_t y33 : 1;
-        u_int32_t y34 : 1;
-        u_int32_t y35 : 1;
-        u_int32_t y36 : 1;
-        u_int32_t y37 : 1;
+        quint32 y30 : 1;
+        quint32 y31 : 1;
+        quint32 y32 : 1;
+        quint32 y33 : 1;
+        quint32 y34 : 1;
+        quint32 y35 : 1;
+        quint32 y36 : 1;
+        quint32 y37 : 1;
     }b;
-    u_int16_t combine16[2];
-    u_int32_t combine32;
+    quint16 combine16[2];
+    quint32 combine32;
 }OutputWay;
 
 ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
