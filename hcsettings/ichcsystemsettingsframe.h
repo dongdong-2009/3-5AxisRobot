@@ -94,6 +94,8 @@ private slots:
     void OnConfigChanged(int v);
     void OnConfigChanged(int v, int ov);
     void OnConfigChanged(bool b);
+    void on_memory_fix_clicked();
+
 private:
     QMap<QObject*, int> editorToConfigIDs_;
 };

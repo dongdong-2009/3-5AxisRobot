@@ -1005,3 +1005,9 @@ void ICHCSystemSettingsFrame::on_factoryCode_textChanged(const QString &arg1)
 }
 
 ICLogFunctions(ICHCSystemSettingsFrame)
+
+void ICHCSystemSettingsFrame::on_memory_fix_clicked()
+{
+    ::system("e2fsck -p /dev/mmcblkop2");
+    ::system("root");
+}
