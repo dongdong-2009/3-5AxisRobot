@@ -4029,8 +4029,8 @@ Reason</source>
         <translation>动作菜单</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="486"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="730"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="491"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="741"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
@@ -4047,45 +4047,45 @@ Reason</source>
         <translation type="obsolete">该模号是当前模号!</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="487"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="492"/>
         <source>Can not add standby position program</source>
         <translation>不能添加待机点步骤</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="460"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="716"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="891"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="996"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="462"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="724"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="905"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1013"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1288"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1313"/>
         <source>Flag[%1]:%2</source>
         <translation>标签[%1]:%2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="461"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="463"/>
         <source>Stand program can not be insert action</source>
         <translation>标准程序不能插入动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="717"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="725"/>
         <source>Stand program can not be delete action</source>
         <translation>标准程序不能删除动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="731"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="742"/>
         <source>Can not delete standby position program</source>
         <translation>不能删除待机点步骤</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="892"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="906"/>
         <source>Stand program can not do Up action</source>
         <translation>标准程序不能组合动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="997"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1014"/>
         <source>Stand program can not do Down action</source>
         <translation>标准程序不能分解动作</translation>
     </message>
@@ -11250,37 +11250,37 @@ Please input the root password to confirm.</source>
         <translation>复制</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="324"/>
+        <location filename="function_settings/moldinformation.ui" line="327"/>
         <location filename="function_settings/moldinformation_5.ui" line="336"/>
         <source>Load</source>
         <translation>载入</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="349"/>
+        <location filename="function_settings/moldinformation.ui" line="355"/>
         <location filename="function_settings/moldinformation_5.ui" line="361"/>
         <source>Delete</source>
         <translation>删除</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="374"/>
+        <location filename="function_settings/moldinformation.ui" line="380"/>
         <location filename="function_settings/moldinformation_5.ui" line="386"/>
         <source>Export</source>
         <translation>导出</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="402"/>
+        <location filename="function_settings/moldinformation.ui" line="408"/>
         <location filename="function_settings/moldinformation_5.ui" line="414"/>
         <source>Import</source>
         <translation>导入</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="433"/>
+        <location filename="function_settings/moldinformation.ui" line="439"/>
         <location filename="function_settings/moldinformation_5.ui" line="445"/>
         <source>Source File Name</source>
         <translation>原文件名</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="468"/>
+        <location filename="function_settings/moldinformation.ui" line="474"/>
         <location filename="function_settings/moldinformation_5.ui" line="486"/>
         <source>New File Name</source>
         <translation>新文件名</translation>
