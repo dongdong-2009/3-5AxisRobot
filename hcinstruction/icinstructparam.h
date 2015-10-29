@@ -39,7 +39,7 @@ public:
 
         ACT_PoseVert2,
         ACT_GASUB,
-        ACT_GAADD,
+        ACT_3D,
         ACT_GBSUB,
         ACT_GBADD,
         ACT_GCSUB,

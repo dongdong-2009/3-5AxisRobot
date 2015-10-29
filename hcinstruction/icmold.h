@@ -157,6 +157,41 @@ public:
     int Flag() const { return flag_;}
     void SetFlag(int flag) { flag_ = flag;}
 
+    void Set3DAction(int action, int type, int pos, int speed, int delay, int angle = 0, int dir = 0)
+        {
+            SetAction(23);
+            ifVal_ &= 0xFFFFFFF0;
+            ifVal_ |= action;
+    //        ifVal_ |= type << 4;
+            SetActualPos(pos);
+            SetSVal(speed);
+            SetDVal(delay);
+            SetEarlyEnd(type);
+            ifPos_ &= 0xF;
+            ifPos_ |= (angle << 4);
+            SetBadProduct(dir);
+        }
+
+        int Get3DAction() const
+        {
+            return ifVal_ & 0xF;
+        }
+
+        int Get3DType() const
+        {
+            return IsEarlyEnd() ? 1 : 0;
+        }
+
+        int GetAngle() const
+        {
+            return ifPos_ >> 4;
+        }
+
+        int GetDir() const
+        {
+            return IsBadProduct();
+        }
+
 private:
     uint seq_;
     uint num_;
@@ -364,7 +399,7 @@ public:
         ACT_PoseVert2,   //21  垂直2
 
         ACT_GASUB,
-        ACT_GAADD,
+        ACT_3D,
         ACT_GBSUB,
         ACT_GBADD,
         ACT_GCSUB,

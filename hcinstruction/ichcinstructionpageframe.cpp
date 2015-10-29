@@ -34,6 +34,7 @@
 #include "icprogramguidepage.h"
 #include "ichcotherpage.h"
 #include "iccommenteditor.h"
+#include "iccurveeditor.h"
 
 #include <QDebug>
 #include <QMessageBox>
@@ -60,6 +61,7 @@ ICHCInstructionPageFrame::ICHCInstructionPageFrame(QWidget *parent) :
     guidePage_(NULL),
     otherPage_(NULL),
     commentPage_(NULL),
+    curvePage_(NULL),
     recordPath_("./records/"),
     currentAction_(None),
     currentEdit_(0),
@@ -101,7 +103,7 @@ void ICHCInstructionPageFrame::showEvent(QShowEvent *e)
     }
     if(ICParametersSave::Instance()->IsExtentFunctionUsed())
     {
-        ui->flagsButton->show();
+        ui->flagsButton->hide();
         ui->conditionsToolButton->show();
     }
     else
@@ -264,6 +266,12 @@ void ICHCInstructionPageFrame::OptionButtonClicked()
         optionButtonToPage_.insert(ui->commentButton, commentPage_);
         ui->settingStackedWidget->addWidget(commentPage_);
     }
+    else if(curvePage_ == NULL && optionButton == ui->curveButton)
+    {
+        curvePage_ = new ICCurveEditor();
+        optionButtonToPage_.insert(ui->curveButton, curvePage_);
+        ui->settingStackedWidget->addWidget(curvePage_);
+    }
     if(optionButton == ui->conditionsToolButton)
     {
 
@@ -355,6 +363,9 @@ void ICHCInstructionPageFrame::InitSignal()
             SIGNAL(clicked()),
             SLOT(OptionButtonClicked()));
     connect(ui->commentButton,
+            SIGNAL(clicked()),
+            SLOT(OptionButtonClicked()));
+    connect(ui->curveButton,
             SIGNAL(clicked()),
             SLOT(OptionButtonClicked()));
 }

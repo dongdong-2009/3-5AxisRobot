@@ -21,19 +21,19 @@ ICInstructParam::ICInstructParam()
 {
     InstallMoldInfo();
 
-//    connect(ICParametersSave::Instance(),
-//            SIGNAL(CurrentLanguageChanged()),
-//            this,
-//            SLOT(UpdateTranslate()));
+    //    connect(ICParametersSave::Instance(),
+    //            SIGNAL(CurrentLanguageChanged()),
+    //            this,
+    //            SLOT(UpdateTranslate()));
 
     InitClassesInfo();
-//    UpdateHostParam();
+    //    UpdateHostParam();
 }
 
 QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
 {
     QString commandStr;
-//    commandStr += QString::number(moldItem.Seq()) + " ";
+    //    commandStr += QString::number(moldItem.Seq()) + " ";
     if(moldItem.Action() == ICMold::ACTCOMMENT)
     {
         commandStr += QString::number(moldItem.Num()) + "    " + "*" + "    ";
@@ -52,10 +52,10 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
     {
         commandStr += QString::number(moldItem.Num()) + "    " + QString::number(moldItem.SubNum()) + "    ";
     }
-//    if(moldItem.GMVal() == 31)
-//    {
-//        return commandStr += actionGroupMap_.value(31);
-//    }
+    //    if(moldItem.GMVal() == 31)
+    //    {
+    //        return commandStr += actionGroupMap_.value(31);
+    //    }
 
     bool clipGroup = moldItem.IsClip();
     uint action;
@@ -84,8 +84,8 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             {
                 commandStr += tr("X023");
             }
-//            commandStr += tr("Fixture");
-//            commandStr += QString::number(moldItem.SVal() + 1);
+            //            commandStr += tr("Fixture");
+            //            commandStr += QString::number(moldItem.SVal() + 1);
             commandStr += " ";
             if(moldItem.IFVal() == 1)
             {
@@ -103,39 +103,55 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
 
         if(xyzStatusList_.contains(action))
         {
-//            commandStr += ICParameterConversion::TransThisIntToThisText(moldItem.Pos(), 1) + " ";
-            commandStr += ICParameterConversion::TransThisIntToThisText(moldItem.ActualPos(), POS_DECIMAL) + " ";
-//            commandStr += "X" + ICParameterConversion::TransThisIntToThisText(moldItem.X(), 1) + " ";
-//            commandStr += "Y" + ICParameterConversion::TransThisIntToThisText(moldItem.Y(), 1) + " ";
-//            commandStr += "Z" + ICParameterConversion::TransThisIntToThisText(moldItem.Z(), 1) + " ";
-//            if(action != G01)
-//            {
-//                commandStr == QObject::tr("Radius:") + ICParameterConversion::TransThisIntToThisText(moldItem.RVal(), 1);
-//            }
-            commandStr += tr("Speed:") + QString::number(moldItem.SVal()) + " ";
-            if(moldItem.IsEarlyEnd())
+            if(action == ACT_3D)
             {
-                if(!moldItem.IsEarlySpeedDown())
+                if(moldItem.Get3DType() == 0)
+                    commandStr += tr("Line");
+                else
+                    commandStr += tr("Curve");
+                commandStr += actionGroupMap_.value(moldItem.Get3DAction()) + ": ";
+            }
+            //            commandStr += ICParameterConversion::TransThisIntToThisText(moldItem.Pos(), 1) + " ";
+            commandStr += ICParameterConversion::TransThisIntToThisText(moldItem.ActualPos(), POS_DECIMAL) + " ";
+            if(moldItem.Get3DType() == 1)
+            {
+                commandStr += tr("a:") + ICParameterConversion::TransThisIntToThisText(moldItem.GetAngle(), 1) + " ";
+                commandStr += tr("Dir:") + (moldItem.GetDir() == 0 ? tr("PP") : tr("RP"));
+            }
+            //            commandStr += "X" + ICParameterConversion::TransThisIntToThisText(moldItem.X(), 1) + " ";
+            //            commandStr += "Y" + ICParameterConversion::TransThisIntToThisText(moldItem.Y(), 1) + " ";
+            //            commandStr += "Z" + ICParameterConversion::TransThisIntToThisText(moldItem.Z(), 1) + " ";
+            //            if(action != G01)
+            //            {
+            //                commandStr == QObject::tr("Radius:") + ICParameterConversion::TransThisIntToThisText(moldItem.RVal(), 1);
+            //            }
+            commandStr += tr("Speed:") + QString::number(moldItem.SVal()) + " ";
+            if(moldItem.Action() != ICMold::ACT_3D)
+            {
+                if(moldItem.IsEarlyEnd())
                 {
-                    commandStr += tr("Early End,Early Position:");
-//                    commandStr += QString().sprintf("%.1f", moldItem.IFPos() / (qreal)10) + " ";
-                    commandStr += QString::number(moldItem.ActualIfPos()) + " ";
-                }
+                    if(!moldItem.IsEarlySpeedDown())
+                    {
+                        commandStr += tr("Early End,Early Position:");
+                        //                    commandStr += QString().sprintf("%.1f", moldItem.IFPos() / (qreal)10) + " ";
+                        commandStr += QString::number(moldItem.ActualIfPos()) + " ";
+                    }
 
+                }
             }
             if(moldItem.IsEarlySpeedDown())
             {
                 if(!moldItem.IsEarlyEnd())
                 {
                     commandStr += tr("Early Speed-Down:") + tr("SPeed:") + QString::number(moldItem.GetEarlyDownSpeed()) + " ";
-//                    commandStr += tr("Early Position:") + QString().sprintf("%.1f", moldItem.IFPos() / (qreal)10) + " ";
+                    //                    commandStr += tr("Early Position:") + QString().sprintf("%.1f", moldItem.IFPos() / (qreal)10) + " ";
                     commandStr += tr("End Position:") + QString::number(moldItem.ActualIfPos()) + " ";
                 }
                 else
                 {
                     commandStr += tr("Early End,");
                     commandStr += tr("Early Speed-Down:") + tr("SPeed:") + QString::number(moldItem.GetEarlyDownSpeed()) + " ";
-//                    commandStr += tr("Early Position:") + QString().sprintf("%.1f", moldItem.IFPos() / (qreal)10) + " ";
+                    //                    commandStr += tr("Early Position:") + QString().sprintf("%.1f", moldItem.IFPos() / (qreal)10) + " ";
                     commandStr += tr("End Position:") + QString::number(moldItem.ActualIfPos()) + " ";
                 }
             }
@@ -145,14 +161,14 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             {
                 commandStr += QObject::tr("Bad Product En") + " ";
             }
-//            commandStr += tr("Delay")
+            //            commandStr += tr("Delay")
         }
         else if(action == ACTCHECKINPUT)
         {
-//            drs 
+            //            drs
             if(moldItem.IFVal() == 0)
             {
-//                commandStr += tr("Defective Products");
+                //                commandStr += tr("Defective Products");
             }
             else if(moldItem.IFVal() == 1)
             {
@@ -164,11 +180,11 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             }
             else if(moldItem.IFVal() ==3)
             {
-//                commandStr += tr("Try Product");
+                //                commandStr += tr("Try Product");
             }
             else if(moldItem.IFVal() ==4)
             {
-//                commandStr += tr("Sampling");
+                //                commandStr += tr("Sampling");
             }
             else if(moldItem.IFVal() == 5)
             {
@@ -207,7 +223,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
                 commandStr += tr("X036 OFF");
             }
             commandStr += " ";
-//            commandStr += " " + tr("ON:Macro") + QString::number(moldItem.RVal()) + " ";
+            //            commandStr += " " + tr("ON:Macro") + QString::number(moldItem.RVal()) + " ";
             if(moldItem.SVal() == 5)
             {
                 commandStr += tr("Defective Products") + " ";
@@ -284,7 +300,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             }
             else if(moldItem.SVal() == 13)
             {
-//                commandStr += tr("Mold Opened 2");
+                //                commandStr += tr("Mold Opened 2");
                 commandStr += tr("EUCOREIN");
             }
             else if(moldItem.SVal() == 14)
@@ -339,29 +355,29 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             }
             commandStr += " ";
         }
-//        else if(action == ICMold::ACT_AUX1)
-//        {
-//            if(moldItem.Num() == 0)
-//            {
-//                commandStr = tr("Home") + "    " + "*" + "    ";
-//            }
-//            else if(moldItem.SubNum() == 255)
-//            {
-//                commandStr = QString::number(moldItem.Num()) + "    " + "*" + "    ";
-//            }
-//            else
-//            {
-//                commandStr = QString::number(moldItem.Num()) + "    " + QString::number(moldItem.SubNum()) + "    ";
-//            }
-//            if(moldItem.IFVal() == 0)
-//            {
-//                commandStr += QObject::tr("Eject OFF 2:");
-//            }
-//            else
-//            {
-//                commandStr += QObject::tr("Eject ON 2:");
-//            }
-//        }
+        //        else if(action == ICMold::ACT_AUX1)
+        //        {
+        //            if(moldItem.Num() == 0)
+        //            {
+        //                commandStr = tr("Home") + "    " + "*" + "    ";
+        //            }
+        //            else if(moldItem.SubNum() == 255)
+        //            {
+        //                commandStr = QString::number(moldItem.Num()) + "    " + "*" + "    ";
+        //            }
+        //            else
+        //            {
+        //                commandStr = QString::number(moldItem.Num()) + "    " + QString::number(moldItem.SubNum()) + "    ";
+        //            }
+        //            if(moldItem.IFVal() == 0)
+        //            {
+        //                commandStr += QObject::tr("Eject OFF 2:");
+        //            }
+        //            else
+        //            {
+        //                commandStr += QObject::tr("Eject ON 2:");
+        //            }
+        //        }
 
 
     }
@@ -378,7 +394,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
         commandStr += QObject::tr("Delay time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 2) + "      ";
     }
 
-//    commandStr += QObject::tr("Delay time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 2) + "      ";
+    //    commandStr += QObject::tr("Delay time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 2) + "      ";
 
     return commandStr;
 }
@@ -398,6 +414,7 @@ void ICInstructParam::InstallMoldInfo()
     actionGroupMap_[GQ] = QObject::tr("Y2");
     actionGroupMap_[GA] = QObject::tr("A");
     actionGroupMap_[GB] = QObject::tr("B");
+    actionGroupMap_[ACT_3D] = QObject::tr("3-D");
     actionGroupMap_[ACTMAINUP] = QObject::tr("Main arm up");
     actionGroupMap_[ACTMAINDOWN] = QObject::tr("Main arm down");
     actionGroupMap_[ACTMAINFORWARD] = QObject::tr("Main arm forward");
@@ -413,13 +430,15 @@ void ICInstructParam::InstallMoldInfo()
     actionGroupMap_[ACTGOOUT] = QObject::tr("Traverse out");
     actionGroupMap_[ACTCOMEIN] = QObject::tr("Traverse in");
 
-//    actionGroupMap_.insert(ACTMAINMIDDOWN, QObject::tr("Main mid down"));
+
+    //    actionGroupMap_.insert(ACTMAINMIDDOWN, QObject::tr("Main mid down"));
     actionGroupMap_.insert(ACTCHECKINPUT, QObject::tr("Check"));
     actionGroupMap_.insert(ACTEND, QObject::tr("Mold end"));
     actionGroupMap_.insert(ACTParallel, QObject::tr("Parallel"));
     actionGroupMap_.insert(ACT_WaitMoldOpened, QObject::tr("Wait"));
     actionGroupMap_.insert(ACT_Cut, QObject::tr("Cut"));
     actionGroupMap_.insert(ACT_OTHER, QObject::tr("Other"));
+
 
     clipGroupMap_[ACTCLIP1ON] = QObject::tr("Clip1 ON");
     clipGroupMap_[ACTCLIP2ON] = QObject::tr("Clip2 ON");
@@ -430,15 +449,15 @@ void ICInstructParam::InstallMoldInfo()
     clipGroupMap_[ACTCLIP7ON] = QObject::tr("Injection ON");
     clipGroupMap_[ACTCLIP8ON] = QObject::tr("Conveyor ON");
     clipGroupMap_[ACTCLSMDON] = QObject::tr("Lock Mold ON");
-//    clipGroupMap_[ACTEJECTON] = QObject::tr("Eject ON 1");
+    //    clipGroupMap_[ACTEJECTON] = QObject::tr("Eject ON 1");
     clipGroupMap_[ACTEJECTON] = QObject::tr("Eject ON");
     clipGroupMap_[ACTLAYOUTON] = QObject::tr("Layout ON");
-//    clipGroupMap_[ACTCLIP12ON] = QObject::tr("Lock 2 Mold ON");
+    //    clipGroupMap_[ACTCLIP12ON] = QObject::tr("Lock 2 Mold ON");
     clipGroupMap_[ACTCLIP12ON] = QObject::tr("Core1 Permit");
     clipGroupMap_[ACTCLIP13ON] = QObject::tr("Core2 Permit");
-//    clipGroupMap_[ACTCLIP14ON] = QObject::tr("Clip14 ON");
-//    clipGroupMap_[ACTCLIP15ON] = QObject::tr("Clip15 ON");
-//    clipGroupMap_[ACTCLIP16ON] = QObject::tr("Clip16 ON");
+    //    clipGroupMap_[ACTCLIP14ON] = QObject::tr("Clip14 ON");
+    //    clipGroupMap_[ACTCLIP15ON] = QObject::tr("Clip15 ON");
+    //    clipGroupMap_[ACTCLIP16ON] = QObject::tr("Clip16 ON");
     clipGroupMap_[ACTCLIP1OFF] = QObject::tr("Clip1 OFF");
     clipGroupMap_[ACTCLIP2OFF] = QObject::tr("Clip2 OFF");
     clipGroupMap_[ACTCLIP3OFF] = QObject::tr("Clip3 OFF");
@@ -448,24 +467,24 @@ void ICInstructParam::InstallMoldInfo()
     clipGroupMap_[ACTCLIP7OFF] = QObject::tr("Injection OFF");
     clipGroupMap_[ACTCLIP8OFF] = QObject::tr("Conveyor OFF");
     clipGroupMap_[ACTCLSMDOFF] = QObject::tr("Lock Mold OFF");
-//    clipGroupMap_[ACTEJECTOFF] = QObject::tr("Eject OFF 1");
+    //    clipGroupMap_[ACTEJECTOFF] = QObject::tr("Eject OFF 1");
     clipGroupMap_[ACTEJECTOFF] = QObject::tr("Eject OFF");
     clipGroupMap_[ACTLAYOUTOFF] = QObject::tr("Layout OFF");
-//    clipGroupMap_[ACTCLIP12OFF] = QObject::tr("Lock 2 Mold OFF");
+    //    clipGroupMap_[ACTCLIP12OFF] = QObject::tr("Lock 2 Mold OFF");
     clipGroupMap_[ACTCLIP12OFF] = QObject::tr("Core1 OFF");
     clipGroupMap_[ACTCLIP13OFF] = QObject::tr("Core2 OFF");
     clipGroupMap_[ACT_AUX1] = QObject::tr("Reserve 1");
-//    clipGroupMap_[ACT_AUX1] = QObject::tr("");
+    //    clipGroupMap_[ACT_AUX1] = QObject::tr("");
     clipGroupMap_[ACT_AUX2] = QObject::tr("Reserve 2");
     clipGroupMap_[ACT_AUX3] = QObject::tr("Reserve 3");
     clipGroupMap_[ACT_AUX4] = QObject::tr("Reserve 4");
     clipGroupMap_[ACT_AUX5] = QObject::tr("Sucker 3");
     clipGroupMap_[ACT_AUX6] = QObject::tr("Sucker 4");
-//    clipGroupMap_[ACTCLIP14OFF] = QObject::tr("Clip14 OFF");
-//    clipGroupMap_[ACTCLIP15OFF] = QObject::tr("Clip15 OFF");
-//    clipGroupMap_[ACTCLIP16OFF] = QObject::tr("Clip16 OFF");
+    //    clipGroupMap_[ACTCLIP14OFF] = QObject::tr("Clip14 OFF");
+    //    clipGroupMap_[ACTCLIP15OFF] = QObject::tr("Clip15 OFF");
+    //    clipGroupMap_[ACTCLIP16OFF] = QObject::tr("Clip16 OFF");
     clipGroupMap_[ACTCLIPEND] = QObject::tr("Clip End");
-//    clipGroupMap_.insert(ACT_WaitMoldOpened, QObject::tr("Wait Mold Opened"));
+    //    clipGroupMap_.insert(ACT_WaitMoldOpened, QObject::tr("Wait Mold Opened"));
 }
 
 void ICInstructParam::InitClassesInfo()
@@ -478,10 +497,11 @@ void ICInstructParam::InitClassesInfo()
     xyzStatusList_.append(GA);
     xyzStatusList_.append(GB);
     xyzStatusList_.append(GC);
-//    xyzStatusList_.append(GYZ);
-//    xyzStatusList_.append(GZY);
-//    xyzStatusList_.append(GZX);
-//    xyzStatusList_.append(GXZ);
+    xyzStatusList_.append(ACT_3D);
+    //    xyzStatusList_.append(GYZ);
+    //    xyzStatusList_.append(GZY);
+    //    xyzStatusList_.append(GZX);
+    //    xyzStatusList_.append(GXZ);
 
     clipStatusList_.append(ACTCLIP7ON);
     clipStatusList_.append(ACTCLIP8ON);
@@ -494,12 +514,12 @@ void ICInstructParam::InitClassesInfo()
     countWayMap_.insert(3, tr("Stacked-2"));
     countWayMap_.insert(4, tr("Stacked-3"));
     countWayMap_.insert(5, tr("Stacked-4"));
-//    clipStatusList_.append(ACT_AUX1);
-//    clipStatusList_.append(ACT_AUX2);
-//    clipStatusList_.append(ACT_AUX3);
-//    clipStatusList_.append(ACT_AUX4);
-//    clipStatusList_.append(ACT_AUX5);
-//    clipStatusList_.append(ACT_AUX6);
+    //    clipStatusList_.append(ACT_AUX1);
+    //    clipStatusList_.append(ACT_AUX2);
+    //    clipStatusList_.append(ACT_AUX3);
+    //    clipStatusList_.append(ACT_AUX4);
+    //    clipStatusList_.append(ACT_AUX5);
+    //    clipStatusList_.append(ACT_AUX6);
 }
 
 bool ICInstructParam::IsStackedAction(int action)
@@ -523,7 +543,7 @@ void ICInstructParam::UpdateHostParam()
 
     commandStrList_ = ContentParam(ICMold::CurrentMold()->MoldContent());
 
-//    emit HostParamChanged();
+    //    emit HostParamChanged();
 }
 
 QStringList ICInstructParam::ContentParam(const QList<ICMoldItem>& moldContent)
