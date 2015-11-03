@@ -20,6 +20,9 @@
 #include "icutility.h"
 #include "icconfigstring.h"
 
+
+#include "iccycletimeandfinishedframe.h"
+
 static void BuildShiftMap(int beg, int* map)
 {
     int index = 0;
@@ -73,6 +76,7 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
     ui->brightnessBar->setValue((ICParametersSave::Instance()->Brightness()));
 
     QList<QAbstractButton*> buttons_ = ui->languageButtonGroup->buttons();
+
     for(int i = 0; i != buttons_.size(); ++i)
     {
         buttons_[i]->setCheckable(true);
@@ -80,7 +84,12 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
                 SIGNAL(clicked()),
                 this,
                 SLOT(languageBoxChange()));
+//        connect(buttons_at(i),
+//                SIGNAL(clicked()),
+//                this,
+//                SLOT(language_Boxchange()));
     }
+
 #ifndef Q_WS_WIN32
     uname(&osInfo_);
 #endif
@@ -136,6 +145,7 @@ void ICHCSystemSettingsFrame::languageBoxChange()
     if(ui->languageButtonGroup->checkedId()== 0)
     {
         paraSave->SetCountry(QLocale::China);
+
     }
     else if(ui->languageButtonGroup->checkedId() == 1)
     {

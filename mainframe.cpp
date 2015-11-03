@@ -20,6 +20,8 @@
 #include <QTranslator>
 #include <QDir>
 
+#include <QDebug>
+
 
 #include "ui_mainframe.h"
 
@@ -53,6 +55,11 @@
 #include "icrecaldialog.h"
 #include "icbackupdialog.h"
 //#include "ickeyboardhandler.h"
+
+#include "ichcsystemsettingsframe.h"
+
+
+
 #if defined(Q_WS_WIN32) || defined(Q_WS_X11)
 #include "simulateknob.h"
 #endif
@@ -89,6 +96,8 @@
 //private:
 //    MainFrame* mainFrame_;
 //};
+
+static ICAlarmString* alarmString = ICAlarmString::Instance();
 
 QMap<int, int> keyMap;
 QMap<int, int> knobMap;
@@ -391,12 +400,15 @@ void MainFrame::closeEvent(QCloseEvent *e)
 
 void MainFrame::changeEvent(QEvent *e)
 {
+    //static ICAlarmString* alarmString = ICAlarmString::Instance();
     QWidget::changeEvent(e);
     switch (e->type()) {
     case QEvent::LanguageChange:
     {
         ui->retranslateUi(this);
         UpdateTranslate();
+        ui->cycleTimeAndFinistWidget->SetAlarmInfo("Err" + QString::
+           number(errCode_) + ":" + alarmString->AlarmInfo(errCode_));
     }
         break;
     default:
@@ -684,6 +696,8 @@ void MainFrame::UpdateTranslate()
     ui->bPosLabel->setText(QString().sprintf("%.2f", oldBPos_ / 100.0));
     ui->cPosLabel->setText(QString().sprintf("%.2f", oldCPos_ / 100.0));
     ui->stepLabel->setText(QString::number(oldStep_));
+
+    //ui->cycleTimeAndFinistWidget->SetAlarmInfo("Err" + QString::number(errCode_) + ":" + alarmString->AlarmInfo(errCode_));
 }
 
 void MainFrame::CategoryButtonClicked()
@@ -706,7 +720,7 @@ void MainFrame::CategoryButtonClicked()
 void MainFrame::StatusRefreshed()
 {
 
-    static ICAlarmString* alarmString = ICAlarmString::Instance();
+    //static ICAlarmString* alarmString = ICAlarmString::Instance();
     static ICVirtualHost* virtualHost = ICVirtualHost::GlobalVirtualHost();
     //    if(isXPosChanged_)
     //    {
@@ -855,7 +869,7 @@ void MainFrame::StatusRefreshed()
         }
         else
         {
-            ui->cycleTimeAndFinistWidget->SetAlarmInfo("");
+            //ui->cycleTimeAndFinistWidget->SetAlarmInfo("");
         }
     }
     if(alarmString->PriorAlarmNum() != static_cast<int>(errCode_))
@@ -1606,3 +1620,23 @@ void MainFrame::MoldsCheck()
         }
     }
 }
+
+
+//void MainFrame::language_Boxchange()
+//{
+//    //ICParametersSave* paraSave = ICParametersSave::Instance();
+//    //if(ui->languageButtonGroup->checkedId()== 0)
+//    if(ui->sy)
+//    {
+//        //paraSave->SetCountry(QLocale::China);
+//        ui->cycleTimeAndFinistWidget->SetAlarmInfo(ICAlarmString::Instance()
+//                                                   ->AlarmInfo(errCode_));
+
+//    }
+//    else if(ui->languageButtonGroup->checkedId() == 1)
+//    {
+//        //paraSave->SetCountry(QLocale::UnitedStates);
+//        ui->cycleTimeAndFinistWidget->SetAlarmInfo(ICAlarmString::Instance()
+//                                                   ->AlarmInfo(errCode_));
+//    }
+//}

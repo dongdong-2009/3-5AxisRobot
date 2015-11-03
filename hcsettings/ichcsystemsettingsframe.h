@@ -51,6 +51,8 @@ private:
 #ifndef Q_WS_WIN32
     utsname osInfo_;
 #endif
+//public slots:
+//   void language_Boxchange();
 private slots:
     void languageBoxChange();
     void on_keyToneButton_toggled(bool checked);

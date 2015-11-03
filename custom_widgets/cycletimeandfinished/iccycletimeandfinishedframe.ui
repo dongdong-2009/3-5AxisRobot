@@ -73,7 +73,7 @@ border: 3px solid gray;
          </sizepolicy>
         </property>
         <property name="text">
-         <string/>
+         <string notr="true"/>
         </property>
        </widget>
       </item>

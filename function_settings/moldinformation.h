@@ -45,6 +45,7 @@ signals:
 private:
     bool CreateNewSourceFile(const QString & fileName);
     void AddNewInTableWidget(const QString & fileName, const QString & dateTime);
+    void ChangeNewInTableWidget(const QString & fileName, const QString & dateTime);
     bool CopySourceFile(const QString & originFileName, const QString & targetFileName);
     bool DeleteSourceFile(const QString & fileName);
 
@@ -81,6 +82,11 @@ private slots:
     void on_InverseToolButton_clicked();
     void on_unselectToolButton_clicked();
 
+    //void changestatus();
+
+    //void on_exportCheckBox_clicked();
+    void on_exportCheckBox_clicked();
+    void on_importCheckBox_clicked();
 };
 
 #endif // MOLDINFORMATION_H

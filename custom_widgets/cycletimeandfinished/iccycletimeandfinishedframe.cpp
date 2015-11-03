@@ -26,6 +26,7 @@ void ICCycleTimeAndFinishedFrame::changeEvent(QEvent *e)
     switch (e->type()) {
     case QEvent::LanguageChange:
         ui->retranslateUi(this);
+
         break;
     default:
         break;
