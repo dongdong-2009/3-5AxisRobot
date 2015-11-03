@@ -6,6 +6,9 @@
 #include "icvirtualkey.h"
 #include "icactioncommand.h"
 
+#include <QMessageBox>
+#include <QDebug>
+
 ICInitialFrame::ICInitialFrame(QWidget *parent) :
     ICFrame(parent),
     ui(new Ui::ICInitialFrame)
@@ -77,5 +80,12 @@ void ICInitialFrame::hideEvent(QHideEvent *e)
 //}
 void ICInitialFrame::on_Power_off_clicked()
 {
-    ::system("poweroff");
+    //qDebug("111222333");
+    if(QMessageBox::warning(this,
+                            tr("Warning"),
+                            tr("The system will be poweroff to calibrate! Do you want to continue?"),
+                            QMessageBox::Ok | QMessageBox::Cancel) == QMessageBox::Ok)
+    {
+        ::system("poweroff");
+    }
 }
