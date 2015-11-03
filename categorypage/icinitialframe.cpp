@@ -75,3 +75,7 @@ void ICInitialFrame::hideEvent(QHideEvent *e)
 //{
 //    ICCommandProcessor::Instance()->ExecuteHCCommand(IC::CMD_TurnStop, 0);
 //}
+void ICInitialFrame::on_Power_off_clicked()
+{
+    ::system("poweroff");
+}

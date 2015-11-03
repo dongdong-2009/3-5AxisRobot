@@ -34,6 +34,7 @@ private slots:
 //    void on_pushButton_clicked();
 
 private slots:
+      void on_Power_off_clicked();
 };
 
 #endif // ICINITIALFRAME_H
