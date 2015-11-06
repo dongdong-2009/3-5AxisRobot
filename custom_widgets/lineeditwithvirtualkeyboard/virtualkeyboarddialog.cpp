@@ -32,6 +32,8 @@ VirtualKeyboardDialog::VirtualKeyboardDialog(QWidget *parent) :
                 SLOT(KeyboardClicked()));
     }
     ui->display->installEventFilter(this);
+    this->setWindowFlags(Qt::WindowTitleHint | Qt::CustomizeWindowHint);
+    this->setFixedSize(800, 356);
 }
 
 VirtualKeyboardDialog::~VirtualKeyboardDialog()

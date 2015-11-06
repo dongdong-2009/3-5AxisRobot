@@ -37,6 +37,8 @@ VirtualNumericKeypadDialog::VirtualNumericKeypadDialog(QWidget *parent) :
             this,
             SLOT(KeyboardClicked(QString)));
     ui->displayLineEdit->installEventFilter(this);
+    this->setWindowFlags(Qt::WindowTitleHint | Qt::CustomizeWindowHint);
+    this->setFixedSize(420, 298);
 
 //    ui->displayLineEdit->setValidator(new QDoubleValidator(ui->displayLineEdit));
 }
