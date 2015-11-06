@@ -10666,67 +10666,67 @@ Please input the root password to confirm.</source>
         <translation>步序</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1098"/>
-        <location filename="mainframe.cpp" line="1102"/>
-        <location filename="mainframe.cpp" line="1506"/>
-        <location filename="mainframe.cpp" line="1548"/>
-        <location filename="mainframe.cpp" line="1555"/>
+        <location filename="mainframe.cpp" line="1099"/>
+        <location filename="mainframe.cpp" line="1103"/>
+        <location filename="mainframe.cpp" line="1507"/>
+        <location filename="mainframe.cpp" line="1549"/>
+        <location filename="mainframe.cpp" line="1556"/>
         <source>tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1548"/>
+        <location filename="mainframe.cpp" line="1549"/>
         <source>Spare Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1102"/>
+        <location filename="mainframe.cpp" line="1103"/>
         <source>No Register</source>
         <translation>没有注册</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="671"/>
+        <location filename="mainframe.cpp" line="672"/>
         <source>Function</source>
         <translation>功能</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1555"/>
+        <location filename="mainframe.cpp" line="1556"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation>没有注册，系统将在十分钟后重启</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="672"/>
+        <location filename="mainframe.cpp" line="673"/>
         <source>Monitor</source>
         <translation>监视</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1098"/>
+        <location filename="mainframe.cpp" line="1099"/>
         <source>Spear Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1135"/>
+        <location filename="mainframe.cpp" line="1136"/>
         <source>Records</source>
         <translation>档案</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1506"/>
+        <location filename="mainframe.cpp" line="1507"/>
         <source>No Register. System Restart Now...</source>
         <translation>没有注册，系统现在重启...</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1591"/>
-        <location filename="mainframe.cpp" line="1607"/>
+        <location filename="mainframe.cpp" line="1592"/>
+        <location filename="mainframe.cpp" line="1608"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1592"/>
+        <location filename="mainframe.cpp" line="1593"/>
         <source>%1 fnc is broken. Please remove this mold!</source>
         <translation>%1 模组参数丢失.请删除这个模号!</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1608"/>
+        <location filename="mainframe.cpp" line="1609"/>
         <source>%1 mold fixed. Please check the sub program!</source>
         <translation>%1模号格式更新.请检查该模号使用的子程序是否正确!</translation>
     </message>
@@ -10743,12 +10743,12 @@ Please input the root password to confirm.</source>
         <translation type="obsolete">欢迎</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="674"/>
+        <location filename="mainframe.cpp" line="675"/>
         <source>Record</source>
         <translation>档案</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="673"/>
+        <location filename="mainframe.cpp" line="674"/>
         <source>Alarm</source>
         <translation>报警/修改</translation>
     </message>
@@ -10765,13 +10765,13 @@ Please input the root password to confirm.</source>
         <translation type="obsolete">巨集参数从异常中恢复，请先检查巨集参数！</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="675"/>
+        <location filename="mainframe.cpp" line="676"/>
         <source>Return</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="855"/>
-        <location filename="mainframe.cpp" line="874"/>
+        <location filename="mainframe.cpp" line="856"/>
+        <location filename="mainframe.cpp" line="875"/>
         <source>Hint</source>
         <translation>提示</translation>
     </message>
@@ -10788,7 +10788,7 @@ Please input the root password to confirm.</source>
         <translation type="obsolete">还没进行原点!</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1086"/>
+        <location filename="mainframe.cpp" line="1087"/>
         <source>Instruct</source>
         <translation>教导</translation>
     </message>
