@@ -8782,93 +8782,93 @@ Please input the root password to confirm.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1545"/>
+        <location filename="mainframe.cpp" line="1548"/>
         <source>Spare Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1101"/>
+        <location filename="mainframe.cpp" line="1102"/>
         <source>No Register</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="670"/>
+        <location filename="mainframe.cpp" line="671"/>
         <source>Function</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="671"/>
+        <location filename="mainframe.cpp" line="672"/>
         <source>Monitor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="673"/>
+        <location filename="mainframe.cpp" line="674"/>
         <source>Record</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="672"/>
+        <location filename="mainframe.cpp" line="673"/>
         <source>Alarm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1097"/>
-        <location filename="mainframe.cpp" line="1101"/>
-        <location filename="mainframe.cpp" line="1504"/>
-        <location filename="mainframe.cpp" line="1545"/>
-        <location filename="mainframe.cpp" line="1552"/>
+        <location filename="mainframe.cpp" line="1098"/>
+        <location filename="mainframe.cpp" line="1102"/>
+        <location filename="mainframe.cpp" line="1506"/>
+        <location filename="mainframe.cpp" line="1548"/>
+        <location filename="mainframe.cpp" line="1555"/>
         <source>tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1552"/>
+        <location filename="mainframe.cpp" line="1555"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="674"/>
+        <location filename="mainframe.cpp" line="675"/>
         <source>Return</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="854"/>
-        <location filename="mainframe.cpp" line="873"/>
+        <location filename="mainframe.cpp" line="855"/>
+        <location filename="mainframe.cpp" line="874"/>
         <source>Hint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1097"/>
+        <location filename="mainframe.cpp" line="1098"/>
         <source>Spear Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1133"/>
+        <location filename="mainframe.cpp" line="1135"/>
         <source>Records</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1504"/>
+        <location filename="mainframe.cpp" line="1506"/>
         <source>No Register. System Restart Now...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1587"/>
-        <location filename="mainframe.cpp" line="1603"/>
+        <location filename="mainframe.cpp" line="1591"/>
+        <location filename="mainframe.cpp" line="1607"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1588"/>
+        <location filename="mainframe.cpp" line="1592"/>
         <source>%1 fnc is broken. Please remove this mold!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1604"/>
+        <location filename="mainframe.cpp" line="1608"/>
         <source>%1 mold fixed. Please check the sub program!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1085"/>
+        <location filename="mainframe.cpp" line="1086"/>
         <source>Instruct</source>
         <translation type="unfinished"></translation>
     </message>

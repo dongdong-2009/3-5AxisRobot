@@ -159,7 +159,8 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     isCPosChanged_(false),
     axisDefine_(-1),
     registe_timer(new QTimer),
-    reboot_timer(new QTimer)
+    reboot_timer(new QTimer),
+    noRegister(false)
 {
     connect(this,
             SIGNAL(LoadMessage(QString)),
@@ -408,6 +409,7 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
 {
     qDebug()<<"KeyEvent:"<<e->key();
 //    SetHasInput(true);
+    if(noRegister) return;
     if(keyMap.contains(e->key()))
     {
         int key = keyMap.value(e->key());
@@ -1099,6 +1101,7 @@ void MainFrame::ShowAutoPage()
         else if(resetTime < 0)
         {
             QMessageBox::information(this,tr("tips"),tr("No Register"));
+            return;
         }
     }
     functionPage_->ShowFunctionSelectPage();
@@ -1502,7 +1505,7 @@ void MainFrame::Register()
     {
 #ifndef Q_WS_X11
         QMessageBox::information(NULL,tr("tips"),tr("No Register. System Restart Now..."));
-        //        system("reboot");
+//        system("reboot");
 #endif
     }
 }
@@ -1518,6 +1521,7 @@ void MainFrame::CountRestTime()
         registe_timer->stop();
         reboot_timer->start(1000*60*10);
     }
+    noRegister = resetTime > 0;
     ICParametersSave::Instance()->SetRestTime(resetTime);
 }
 
@@ -1553,6 +1557,7 @@ void MainFrame::InitSpareTime()
             //            connect(reboot_timer,SIGNAL(timeout()),this,SLOT(Register()));
             //            registe_timer->start(1000*60*10);
             reboot_timer->start(1000*60*10);
+            noRegister = true;
 
         }
     }

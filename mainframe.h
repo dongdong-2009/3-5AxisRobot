@@ -167,7 +167,7 @@ private:
     int axisDefine_;
     QTimer timer_;
 
-    bool isFlag;
+    bool noRegister;
     QList<QList<QWidget*> > axisWidgets_;
     QList<uint> compareAlarmNums_;
 #if defined(Q_WS_WIN32) || defined(Q_WS_X11)
