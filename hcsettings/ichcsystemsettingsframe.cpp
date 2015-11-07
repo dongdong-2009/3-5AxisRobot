@@ -961,7 +961,7 @@ void ICHCSystemSettingsFrame::on_registerBtn_clicked()
         ui->tipLabel->setText(tr("Wrong Register Code!"));
         return;
     }
-    int hour = ICUtility::Register(ICParametersSave::Instance()->FacotryCode(), ui->registerCode->text(), ui->machineCode->text());
+    int hour = ICUtility::Register(ICParametersSave::Instance()->FacotryCode(), ui->machineCode->text(), ui->registerCode->text());
     if(hour == -1)
     {
         ui->tipLabel->setText(tr("Wrong Register Code!"));
