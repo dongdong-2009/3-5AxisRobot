@@ -113,13 +113,13 @@ const QList<int> backupKeySeq = QList<int>()<<ICKeyboard::FB_F5
                                      <<ICKeyboard::FB_F5;
 
 const QList<int> testKeySeq = QList<int>()<<ICKeyboard::FB_F5
-                                           <<ICKeyboard::FB_F3
-                                          <<ICKeyboard::FB_F4
                                          <<ICKeyboard::FB_F3
-                                        <<ICKeyboard::FB_F2
+                                        <<ICKeyboard::FB_F4
                                        <<ICKeyboard::FB_F3
-                                      <<ICKeyboard::FB_F1
-                                     <<ICKeyboard::FB_F5;
+                                      <<ICKeyboard::FB_F2
+                                     <<ICKeyboard::FB_F3
+                                    <<ICKeyboard::FB_F1
+                                   <<ICKeyboard::FB_F5;
 
 
 MainFrame *icMainFrame = NULL;
@@ -169,15 +169,6 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     emit LoadMessage("Connected");
     ui->setupUi(this);
 
-
-    InitSpareTime();
-//    connect(ICUpdateSystemPage::Instance(),
-//            SIGNAL(RegisterSucceed()),
-//            this,
-//            SLOT(InitSpareTime()));
-
-    connect(registe_timer,SIGNAL(timeout()),this,SLOT(CountRestTime()));
-    connect(reboot_timer,SIGNAL(timeout()),this,SLOT(Register()));
 
     ui->systemStatusFrame->SetOriginStatus(StatusLabel::OFFSTATUS);
     QDir configDir("./sysconfig");
@@ -348,24 +339,29 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
 
 #endif
 #ifdef Q_WS_X11
-//    ShowInstructPage();
-           ShowManualPage();
+    //    ShowInstructPage();
+    ShowManualPage();
     //         ShowAutoPage();
-//    ShowOrigin();
+    //    ShowOrigin();
 #endif
-           SetScreenSaverInterval(ICParametersSave::Instance()->BackLightTime() * 60000);
-           MoldsCheck();
+    SetScreenSaverInterval(ICParametersSave::Instance()->BackLightTime() * 60000);
+    MoldsCheck();
 #ifndef Q_WS_WIN32
-           int keyFD_ = open("/dev/input/event1", O_RDWR);
-           struct input_event inputEvent;
-           inputEvent.type = EV_SYN; //__set_bit
-           inputEvent.code = SYN_CONFIG;  //__set_bit
-           inputEvent.value = 1;
-           write(keyFD_,&inputEvent,sizeof(inputEvent));
-           ::close(keyFD_);
+    int keyFD_ = open("/dev/input/event1", O_RDWR);
+    struct input_event inputEvent;
+    inputEvent.type = EV_SYN; //__set_bit
+    inputEvent.code = SYN_CONFIG;  //__set_bit
+    inputEvent.value = 1;
+    write(keyFD_,&inputEvent,sizeof(inputEvent));
+    ::close(keyFD_);
 #endif
 
-           qDebug("Mainframe Init finished");
+    InitSpareTime();
+
+    connect(registe_timer,SIGNAL(timeout()),this,SLOT(CountRestTime()));
+    //           connect(reboot_timer,SIGNAL(timeout()),this,SLOT(Register()));
+
+    qDebug("Mainframe Init finished");
 }
 
 
@@ -408,7 +404,7 @@ void MainFrame::changeEvent(QEvent *e)
 void MainFrame::keyPressEvent(QKeyEvent *e)
 {
     qDebug()<<"KeyEvent:"<<e->key();
-//    SetHasInput(true);
+    //    SetHasInput(true);
     if(noRegister) return;
     if(keyMap.contains(e->key()))
     {
@@ -420,12 +416,12 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
             {
                 ICRecalDialog recalDialog;
                 recalDialog.exec();
-//                ::system("touch /mnt/config_data/recal");
-//                int ret = QMessageBox::warning(this,
-//                                     tr("Recal"),
-//                                     tr("You have press the recal sequence, recal after reboot"),
-//                                     QMessageBox::Yes | QMessageBox::No);
-//                if(ret == QMessageBox::Yes) ::system("reboot");
+                //                ::system("touch /mnt/config_data/recal");
+                //                int ret = QMessageBox::warning(this,
+                //                                     tr("Recal"),
+                //                                     tr("You have press the recal sequence, recal after reboot"),
+                //                                     QMessageBox::Yes | QMessageBox::No);
+                //                if(ret == QMessageBox::Yes) ::system("reboot");
 
             }
             else if(currentKeySeq == backupKeySeq)
@@ -436,7 +432,7 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
             else if(currentKeySeq == testKeySeq)
             {
                 ::system("chmod +x ./test_robot.sh && ./test_robot.sh");
-//                exit(0);
+                //                exit(0);
             }
             currentKeySeq.clear();
         }
@@ -498,7 +494,7 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
                     KeyToInstructEditor(key);
                 }
             }
-//            ICKeyboardHandler::Instance()->Keypressed(key);
+            //            ICKeyboardHandler::Instance()->Keypressed(key);
             //        QWidget::keyPressEvent(e);
         }
         }
@@ -512,20 +508,20 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
             currentKeySeq.clear();
         }
 #ifndef Q_WS_WIN32
-//        static bool isExeced = false;
-//        if(!isExeced)
-//        {
-//            int keyFD_ = open("/dev/input/event1", O_RDWR);
-//            struct input_event inputEvent;
-//            inputEvent.type = EV_SYN; //__set_bit
-//            inputEvent.code = SYN_CONFIG;  //__set_bit
-//            inputEvent.value = 1;
-//            write(keyFD_,&inputEvent,sizeof(inputEvent));
-//            isExeced = true;
-//            ::close(keyFD_);
-//        }
+        //        static bool isExeced = false;
+        //        if(!isExeced)
+        //        {
+        //            int keyFD_ = open("/dev/input/event1", O_RDWR);
+        //            struct input_event inputEvent;
+        //            inputEvent.type = EV_SYN; //__set_bit
+        //            inputEvent.code = SYN_CONFIG;  //__set_bit
+        //            inputEvent.value = 1;
+        //            write(keyFD_,&inputEvent,sizeof(inputEvent));
+        //            isExeced = true;
+        //            ::close(keyFD_);
+        //        }
 #endif
-//        ICKeyboardHandler::Instance()->Keypressed(key);
+        //        ICKeyboardHandler::Instance()->Keypressed(key);
     }
     else if(pulleyMap.contains(e->key()))
     {
@@ -710,6 +706,14 @@ void MainFrame::StatusRefreshed()
 
     static ICAlarmString* alarmString = ICAlarmString::Instance();
     static ICVirtualHost* virtualHost = ICVirtualHost::GlobalVirtualHost();
+    if(noRegister)
+    {
+//        ICCommandProcessor::Instance()->ExecuteHCCommand(IC::CMD_TurnStop, 0);
+        errCode_ = 4000;
+        alarmString->SetPriorAlarmNum(errCode_);
+        ui->cycleTimeAndFinistWidget->SetAlarmInfo("Err" + QString::number(errCode_) + ":" + alarmString->AlarmInfo(errCode_));
+        return;
+    }
     //    if(isXPosChanged_)
     //    {
     //        ui->xPosLabel->setStyleSheet("color: rgb(0, 0, 127);");
@@ -880,12 +884,12 @@ void MainFrame::StatusRefreshed()
         }
     }
 
-//    finishCount_ = virtualHost->HostStatus(ICVirtualHost::DbgX1).toUInt();
-//    if(finishCount_ != oldFinishCount_)
-//    {
-//        ui->cycleTimeAndFinistWidget->SetFinished(virtualHost->HostStatus(ICVirtualHost::DbgX1).toUInt());
-//        oldFinishCount_ = finishCount_;
-//    }
+    //    finishCount_ = virtualHost->HostStatus(ICVirtualHost::DbgX1).toUInt();
+    //    if(finishCount_ != oldFinishCount_)
+    //    {
+    //        ui->cycleTimeAndFinistWidget->SetFinished(virtualHost->HostStatus(ICVirtualHost::DbgX1).toUInt());
+    //        oldFinishCount_ = finishCount_;
+    //    }
     cycleTime_ = virtualHost->HostStatus(ICVirtualHost::Time).toUInt();
     if(cycleTime_ != oldCycleTime_)
     {
@@ -913,12 +917,12 @@ void MainFrame::StatusRefreshed()
         speed_ = "0";
         //        statusStr_ = tr("Stop");
 #ifdef Q_WS_X11
-//        finishCount_ = virtualHost->FinishProductCount();
-//        if(finishCount_ != oldFinishCount_)
-//        {
-//            ui->cycleTimeAndFinistWidget->SetFinished(finishCount_);
-//            oldFinishCount_ = finishCount_;
-//        }
+        //        finishCount_ = virtualHost->FinishProductCount();
+        //        if(finishCount_ != oldFinishCount_)
+        //        {
+        //            ui->cycleTimeAndFinistWidget->SetFinished(finishCount_);
+        //            oldFinishCount_ = finishCount_;
+        //        }
 #endif
         ui->systemStatusFrame->SetProgramStatus(StatusLabel::ONSTATUS);
     }
@@ -1066,11 +1070,11 @@ void MainFrame::StatusRefreshed()
         }
     }
     LevelChanged(ICProgramHeadFrame::Instance()->CurrentLevel());
-//    if(mousePoint_ != QCursor::pos())
-//    {
-//        mousePoint_ = QCursor::pos();
-////        SetHasInput(true);
-//    }
+    //    if(mousePoint_ != QCursor::pos())
+    //    {
+    //        mousePoint_ = QCursor::pos();
+    ////        SetHasInput(true);
+    //    }
 }
 
 void MainFrame::ShowManualPage()
@@ -1283,7 +1287,7 @@ bool MainFrame::IsOrigined() const
 
 void MainFrame::ShowScreenSaver()
 {
-//        screenSaver_->show();
+    //        screenSaver_->show();
     ICProgramHeadFrame::Instance()->SetCurrentLevel(ICParametersSave::MachineOperator);
 }
 
@@ -1492,7 +1496,7 @@ void MainFrame::CloseBackLight()
 #ifdef Q_WS_QWS
     ShowScreenSaver();
     system("BackLight.sh 0");
-//    SetBackLightOff(true);
+    //    SetBackLightOff(true);
 #endif
 }
 
@@ -1505,24 +1509,28 @@ void MainFrame::Register()
     {
 #ifndef Q_WS_X11
         QMessageBox::information(NULL,tr("tips"),tr("No Register. System Restart Now..."));
-//        system("reboot");
+        //        system("reboot");
 #endif
     }
 }
 
 void MainFrame::CountRestTime()
 {
-    resetTime-- ;
-    if(resetTime == 0)
+    int restTime = ICParametersSave::Instance()->RestTime(0);
+    if(restTime < 1)
     {
-        resetTime = -1;
-        ICParametersSave::Instance()->SetRestTime(resetTime);
-        Register();
-        registe_timer->stop();
-        reboot_timer->start(1000*60*10);
+        return;
     }
-    noRegister = resetTime > 0;
-    ICParametersSave::Instance()->SetRestTime(resetTime);
+    if(restTime == 1)
+    {
+        noRegister = true;
+        return;
+    }
+    noRegister = false;
+    --restTime;
+    ICParametersSave::Instance()->SetRestTime(restTime);
+    ICParametersSave::Instance()->SetBootDatetime(QDateTime::currentDateTime());
+    ::system("sync");
 }
 
 void MainFrame::checkAlarmModify()
@@ -1542,6 +1550,19 @@ void MainFrame::InitSpareTime()
     registe_timer->stop();
     reboot_timer->stop();
     resetTime = ICParametersSave::Instance()->RestTime(0);
+    //    int restTime = ICParametersSave::Instance()->RestTime(0);
+    if(resetTime != 0)
+    {
+        QDateTime last = ICParametersSave::Instance()->BootDatetime();
+        int overTime = QDateTime::currentDateTime().secsTo(last) / 3600;
+        resetTime -= qAbs(overTime);
+        if(resetTime <= 1)
+            resetTime = 1;
+        //        QMessageBox::information(this, "rest time", QString("%1 %2 %3").arg(last.toString())
+        //                                 .arg(overTime)
+        //                                 .arg(restTime));
+        ICParametersSave::Instance()->SetRestTime(resetTime);
+    }
     if(resetTime <= 7*24 )
     {
         if(resetTime > 0)
@@ -1551,12 +1572,12 @@ void MainFrame::InitSpareTime()
             //            registe_timer->start(1000*15);
             registe_timer->start(1000*3600);
         }
-        else if(resetTime < 0)
+        else if(resetTime == 1)
         {
-            QMessageBox::information(NULL,tr("tips"),tr("No Register,The System Will Reboot after 10 minutes"));
-            //            connect(reboot_timer,SIGNAL(timeout()),this,SLOT(Register()));
-            //            registe_timer->start(1000*60*10);
-            reboot_timer->start(1000*60*10);
+            //            QMessageBox::information(NULL,tr("tips"),tr("No Register,The System Will Reboot after 10 minutes"));
+            //            //            connect(reboot_timer,SIGNAL(timeout()),this,SLOT(Register()));
+            //            //            registe_timer->start(1000*60*10);
+            //            reboot_timer->start(1000*60*10);
             noRegister = true;
 
         }

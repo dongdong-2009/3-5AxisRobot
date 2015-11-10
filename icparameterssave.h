@@ -106,6 +106,9 @@ public:
     QString FacotryCode() { return GetParameter(SystemMachine, "FacortyCode", "000000").toString();}
     void SetFacotryCode(const QString& code) { SaveParameter(SystemMachine, "FacotryCode", code);}
 
+    QDateTime BootDatetime() { return QDateTime::fromString(GetParameter(SystemMachine, "BootDateTime", QDateTime::currentDateTime().toString()).toString());}
+      void SetBootDatetime(QDateTime dt) { SaveParameter(SystemMachine, "BootDateTime", dt.toString(), false);}
+
     int CareCycle(int item) { return GetParameter(SystemMachine, QString("CareCycleItem-%1").arg(item), 30).toInt();}
     void SetCareCycle(int item, int cycle) { SaveParameter(SystemMachine, QString("CareCycleItem-%1").arg(item), cycle);}
 
