@@ -720,14 +720,7 @@ void MainFrame::StatusRefreshed()
 
     //static ICAlarmString* alarmString = ICAlarmString::Instance();
     static ICVirtualHost* virtualHost = ICVirtualHost::GlobalVirtualHost();
-    if(noRegister)
-    {
-//        ICCommandProcessor::Instance()->ExecuteHCCommand(IC::CMD_TurnStop, 0);
-        errCode_ = 4000;
-        alarmString->SetPriorAlarmNum(errCode_);
-        ui->cycleTimeAndFinistWidget->SetAlarmInfo("Err" + QString::number(errCode_) + ":" + alarmString->AlarmInfo(errCode_));
-        return;
-    }
+
     //    if(isXPosChanged_)
     //    {
     //        ui->xPosLabel->setStyleSheet("color: rgb(0, 0, 127);");
@@ -862,25 +855,29 @@ void MainFrame::StatusRefreshed()
 #endif
     }
     errCode_ = virtualHost->AlarmNum();
+    if(noRegister)
+    {
+        errCode_ = 4000;
+    }
     if(compareAlarmNums_.indexOf(errCode_) != -1)
     {
         hostCompareDialog_->show();
     }
     int hintCode = virtualHost->HintNum();
-    if(hintCode != oldHintCode_ && errCode_ == 0)
+    if((hintCode != oldHintCode_) && (errCode_ == 0))
     {
+        oldHintCode_ = hintCode;
         if(hintCode != 0)
         {
             ui->cycleTimeAndFinistWidget->SetHintInfo(tr("Hint") + QString::number(hintCode) + ":" + alarmString->HintInfo(hintCode));
         }
         else
         {
-            //ui->cycleTimeAndFinistWidget->SetAlarmInfo("");
+            ui->cycleTimeAndFinistWidget->SetAlarmInfo("");
         }
     }
     if(alarmString->PriorAlarmNum() != static_cast<int>(errCode_))
     {
-        oldHintCode_ = hintCode;
         qDebug()<<"hint code"<<hintCode<<alarmString->HintInfo(hintCode);
         alarmString->SetPriorAlarmNum(errCode_);
         if(errCode_ != 0)
@@ -1084,6 +1081,7 @@ void MainFrame::StatusRefreshed()
         }
     }
     LevelChanged(ICProgramHeadFrame::Instance()->CurrentLevel());
+
     //    if(mousePoint_ != QCursor::pos())
     //    {
     //        mousePoint_ = QCursor::pos();
@@ -1543,6 +1541,23 @@ void MainFrame::CountRestTime()
     noRegister = false;
     --restTime;
     ICParametersSave::Instance()->SetRestTime(restTime);
+    ICParametersSave::Instance()->SetBootDatetime(QDateTime::currentDateTime());
+    ::system("sync");
+}
+
+void MainFrame::OnRegisterChanged()
+{
+    int restTime = ICParametersSave::Instance()->RestTime(0);
+    if(restTime < 1)
+    {
+        return;
+    }
+    if(restTime == 1)
+    {
+        noRegister = true;
+        return;
+    }
+    noRegister = false;
     ICParametersSave::Instance()->SetBootDatetime(QDateTime::currentDateTime());
     ::system("sync");
 }

@@ -84,7 +84,7 @@ private slots:
     void checkAlarmModify();
 
     void InitSpareTime();
-
+    void OnRegisterChanged();
 //    void InitHeavyPage();
 
 private:
