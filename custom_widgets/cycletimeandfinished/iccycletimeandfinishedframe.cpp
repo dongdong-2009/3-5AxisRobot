@@ -4,6 +4,8 @@
 #include "icalarmdetailsdialog.h"
 #include "icvirtualhost.h"
 
+//#include <QDebug>
+
 //ICCycleTimeAndFinishedFrame * ICCycleTimeAndFinishedFrame::instance_ = NULL;
 
 ICCycleTimeAndFinishedFrame::ICCycleTimeAndFinishedFrame(QWidget *parent) :

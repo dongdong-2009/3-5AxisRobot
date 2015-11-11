@@ -5272,6 +5272,7 @@ Reason</source>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="503"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="652"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="816"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1022"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
@@ -5398,6 +5399,11 @@ App %1; Host:</source>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="990"/>
         <source>hour</source>
         <translation>小时</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1023"/>
+        <source>The system will be for storage to repair ! Do you want to continue?</source>
+        <translation>系统会进行存储修复，确定要继续吗？</translation>
     </message>
     <message>
         <source>Backup files is not exists!</source>
@@ -6117,6 +6123,17 @@ App %1; Host:</source>
         <location filename="categorypage/icinitialframe.ui" line="45"/>
         <source>poweroff</source>
         <translation>关机</translation>
+    </message>
+    <message>
+        <location filename="categorypage/icinitialframe.cpp" line="85"/>
+        <source>Warning</source>
+        <translation>警告</translation>
+    </message>
+    <message>
+        <location filename="categorypage/icinitialframe.cpp" line="86"/>
+        <source>The system will poweroff ! Do you want to continue?</source>
+        <oldsource>The system will be poweroff to calibrate! Do you want to continue?</oldsource>
+        <translation>系统会关机，确定继续吗？</translation>
     </message>
 </context>
 <context>
@@ -10693,91 +10710,91 @@ Please input the root password to confirm.</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="95"/>
+        <location filename="function_settings/moldinformation.ui" line="86"/>
         <location filename="function_settings/moldinformation_5.ui" line="80"/>
         <source>All seclect</source>
         <translation>全选</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="129"/>
+        <location filename="function_settings/moldinformation.ui" line="120"/>
         <location filename="function_settings/moldinformation_5.ui" line="108"/>
         <source>All unselect</source>
         <translation>全不选</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="163"/>
+        <location filename="function_settings/moldinformation.ui" line="154"/>
         <location filename="function_settings/moldinformation_5.ui" line="136"/>
         <source>Inverse</source>
         <translation>反选</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="204"/>
+        <location filename="function_settings/moldinformation.ui" line="195"/>
         <location filename="function_settings/moldinformation_5.ui" line="177"/>
         <source>USB Export</source>
         <translation>USB导出</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="229"/>
+        <location filename="function_settings/moldinformation.ui" line="220"/>
         <location filename="function_settings/moldinformation_5.ui" line="205"/>
         <source>USB Import</source>
         <translation>USB导入</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="268"/>
+        <location filename="function_settings/moldinformation.ui" line="259"/>
         <location filename="function_settings/moldinformation_5.ui" line="253"/>
         <source>Mold Name</source>
         <translation>模号名</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="273"/>
+        <location filename="function_settings/moldinformation.ui" line="264"/>
         <location filename="function_settings/moldinformation_5.ui" line="258"/>
         <source>Create Date</source>
         <translation>最后修改日期</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="301"/>
+        <location filename="function_settings/moldinformation.ui" line="292"/>
         <location filename="function_settings/moldinformation_5.ui" line="286"/>
         <source>New</source>
         <translation>新建</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="326"/>
+        <location filename="function_settings/moldinformation.ui" line="317"/>
         <location filename="function_settings/moldinformation_5.ui" line="311"/>
         <source>Copy</source>
         <translation>复制</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="351"/>
+        <location filename="function_settings/moldinformation.ui" line="342"/>
         <location filename="function_settings/moldinformation_5.ui" line="336"/>
         <source>Load</source>
         <translation>载入</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="376"/>
+        <location filename="function_settings/moldinformation.ui" line="367"/>
         <location filename="function_settings/moldinformation_5.ui" line="361"/>
         <source>Delete</source>
         <translation>删除</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="401"/>
+        <location filename="function_settings/moldinformation.ui" line="392"/>
         <location filename="function_settings/moldinformation_5.ui" line="386"/>
         <source>Export</source>
         <translation>导出</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="429"/>
+        <location filename="function_settings/moldinformation.ui" line="420"/>
         <location filename="function_settings/moldinformation_5.ui" line="414"/>
         <source>Import</source>
         <translation>导入</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="458"/>
+        <location filename="function_settings/moldinformation.ui" line="451"/>
         <location filename="function_settings/moldinformation_5.ui" line="445"/>
         <source>Source File Name</source>
         <translation>原文件名</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="493"/>
+        <location filename="function_settings/moldinformation.ui" line="486"/>
         <location filename="function_settings/moldinformation_5.ui" line="486"/>
         <source>New File Name</source>
         <translation>新文件名</translation>

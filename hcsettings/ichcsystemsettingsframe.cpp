@@ -1018,6 +1018,12 @@ ICLogFunctions(ICHCSystemSettingsFrame)
 
 void ICHCSystemSettingsFrame::on_memory_fix_clicked()
 {
-    ::system("e2fsck -p /dev/mmcblkop2");
-    ::system("root");
+    if(QMessageBox::warning(this,
+                            tr("Warning"),
+                            tr("The system will be for storage to repair ! Do you want to continue?"),
+                            QMessageBox::Ok | QMessageBox::Cancel) == QMessageBox::Ok)
+    {
+        ::system("e2fsck -p /dev/mmcblkop2");
+        ::system("root");
+    }
 }

@@ -83,7 +83,7 @@ void ICInitialFrame::on_Power_off_clicked()
     //qDebug("111222333");
     if(QMessageBox::warning(this,
                             tr("Warning"),
-                            tr("The system will be poweroff to calibrate! Do you want to continue?"),
+                            tr("The system will poweroff ! Do you want to continue?"),
                             QMessageBox::Ok | QMessageBox::Cancel) == QMessageBox::Ok)
     {
         ::system("poweroff");
