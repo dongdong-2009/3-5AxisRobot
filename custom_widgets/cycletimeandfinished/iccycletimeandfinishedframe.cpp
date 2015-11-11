@@ -4,6 +4,8 @@
 #include "icalarmdetailsdialog.h"
 #include "icvirtualhost.h"
 
+//#include <QDebug>
+
 //ICCycleTimeAndFinishedFrame * ICCycleTimeAndFinishedFrame::instance_ = NULL;
 
 ICCycleTimeAndFinishedFrame::ICCycleTimeAndFinishedFrame(QWidget *parent) :
@@ -26,6 +28,7 @@ void ICCycleTimeAndFinishedFrame::changeEvent(QEvent *e)
     switch (e->type()) {
     case QEvent::LanguageChange:
         ui->retranslateUi(this);
+
         break;
     default:
         break;

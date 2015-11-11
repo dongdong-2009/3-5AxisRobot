@@ -29,8 +29,15 @@ MoldInformation::MoldInformation(QWidget *parent) :
     recordFilePath_("./records/")
 {
     ui->setupUi(this);
-    ui->buttonGroup->setId(ui->exportCheckBox,0);
-    ui->buttonGroup->setId(ui->importCheckBox,1);
+    //ui->buttonGroup->setId(ui->exportCheckBox,0);
+    //ui->buttonGroup->setId(ui->importCheckBox,1);
+    ui->exportCheckBox->setChecked(false);
+
+    //ui->exportCheckBox->setCheckState(Qt::Unchecked);
+    ui->exportToolButton->setEnabled(false);
+    ui->allToolButton->setEnabled(false);
+    ui->InverseToolButton->setEnabled(false);
+    ui->unselectToolButton->setEnabled(false);
     QFile file("./sysconfig/StandPrograms");
     if(file.open(QFile::ReadOnly | QFile::Text))
     {
@@ -45,15 +52,14 @@ MoldInformation::MoldInformation(QWidget *parent) :
     UpdateInformationTable();
     ui->informationTableWidget->setColumnWidth(1, 200);
     ui->informationTableWidget->horizontalHeader()->setResizeMode(0, QHeaderView::Stretch);
-
-    QList<QAbstractButton*> buttons = ui->buttonGroup->buttons();
-    for(int i = 0; i != buttons.size(); ++i)
-    {
-        connect(buttons.at(i),
-                SIGNAL(clicked()),
-                this,
-                SLOT(switchPushButton()));
-    }
+//QList<QAbstractButton*> buttons = ui->buttonGroup->buttons();
+//    for(int i = 0; i != buttons.size(); ++i)
+//    {
+//        connect(buttons.at(i),
+//                SIGNAL(clicked()),
+//                this,
+//                SLOT(switchPushButton()));
+//    }
 }
 
 MoldInformation::~MoldInformation()
@@ -177,11 +183,29 @@ void MoldInformation::AddNewInTableWidget(const QString & fileName, const QStrin
 {
     QTableWidgetItem * fileNameItem = new QTableWidgetItem(fileName.left(fileName.size() - 4));
     QTableWidgetItem * createDateTimeItem = new QTableWidgetItem(dateTime);
+    //fileNameItem->setCheckState(Qt::Unchecked);
+    if(ui->exportCheckBox->isChecked())
+    {
+        fileNameItem->setCheckState(Qt::Unchecked);
+    }
+    ui->informationTableWidget->insertRow(ui->informationTableWidget->rowCount());
+    ui->informationTableWidget->setItem(ui->informationTableWidget->rowCount() - 1,0,fileNameItem);
+    ui->informationTableWidget->setItem(ui->informationTableWidget->rowCount() - 1,1,createDateTimeItem);
+
+}
+
+void MoldInformation::ChangeNewInTableWidget(const QString & fileName, const QString & dateTime)
+{
+    QTableWidgetItem * fileNameItem = new QTableWidgetItem(fileName.left(fileName.size() - 4));
+    QTableWidgetItem * createDateTimeItem = new QTableWidgetItem(dateTime);
     fileNameItem->setCheckState(Qt::Unchecked);
     ui->informationTableWidget->insertRow(ui->informationTableWidget->rowCount());
     ui->informationTableWidget->setItem(ui->informationTableWidget->rowCount() - 1,0,fileNameItem);
     ui->informationTableWidget->setItem(ui->informationTableWidget->rowCount() - 1,1,createDateTimeItem);
+
 }
+
+
 bool MoldInformation::CopySourceFile(const QString & originFileName, const QString & targetFileName)
 {
     if(originFileName.isEmpty())
@@ -346,7 +370,7 @@ void MoldInformation::on_copyToolButton_clicked()
         AddNewInTableWidget(fileName, QDateTime::currentDateTime().toString("yyyy/MM/dd hh:mm:ss"));
         //        recordNames_->RecurdFileInfoListChanged(ui->destinationFileLineEdit->text(), ICRecordNames::ARCHIVES_COPY);
         //        emit NewFileCreated(fileName);
-        ui->destinationFileLineEdit->clear();
+        //ui->destinationFileLineEdit->clear();
     }
 }
 
@@ -770,6 +794,12 @@ void MoldInformation::on_importToolButton_clicked()
     }
 }
 
+/*void MoldInformation::on_exportCheckBox_clicked()
+{
+
+
+}*/
+
 void MoldInformation::on_exportToolButton_clicked()
 {
     selectedExportItemName_.clear();
@@ -890,29 +920,40 @@ void MoldInformation::on_exportToolButton_clicked()
 
 void MoldInformation::switchPushButton()
 {
-    switch (ui->buttonGroup->checkedId())
-    {
-    case 0:
-        ui->newToolButton->setEnabled(true);
-        ui->copyToolButton->setEnabled(true);
-        ui->loadToolButton->setEnabled(true);
-        ui->deleteToolButton->setEnabled(true);
-        ui->exportToolButton->setEnabled(true);
-        ui->importToolButton->setEnabled(false);
-        UpdateInformationTable();
-        ui->sourceFileNameLabel->clear();
-        break;
-    case 1:
-//        ui->newToolButton->setEnabled(false);
-//        ui->copyToolButton->setEnabled(false);
-//        ui->loadToolButton->setEnabled(false);
-//        ui->deleteToolButton->setEnabled(false);
+    qDebug("check-test");
+    //QString fileName = ui->destinationFileLineEdit->text() + ".act";
+
+//    else if(ui->importCheckBox->isChecked())
+//    {
+//        RefreshFileList();
+//    }
+//    switch (ui->buttonGroup->checkedId())
+//    {
+//    case 0:
+//        ui->newToolButton->setEnabled(true);
+//        ui->copyToolButton->setEnabled(true);
+//        ui->loadToolButton->setEnabled(true);
+//        ui->deleteToolButton->setEnabled(true);
 //        ui->exportToolButton->setEnabled(false);
-//        ui->importToolButton->setEnabled(true);
+//        ui->importToolButton->setEnabled(false);
+//        if(ui->exportCheckBox->isChecked())
+//        {
+//            ChangeNewInTableWidget(fileName, QDateTime::currentDateTime().toString("yyyy/MM/dd hh:mm:ss"));
+//        }
+//        UpdateInformationTable();
 //        ui->sourceFileNameLabel->clear();
-        RefreshFileList();
-        break;
-    }
+//        break;
+//    case 1:
+////        ui->newToolButton->setEnabled(false);
+////        ui->copyToolButton->setEnabled(false);
+////        ui->loadToolButton->setEnabled(false);
+////        ui->deleteToolButton->setEnabled(false);
+////        ui->exportToolButton->setEnabled(false);
+////        ui->importToolButton->setEnabled(true);
+////        ui->sourceFileNameLabel->clear();
+//        RefreshFileList();
+//        break;
+//    }
 }
 
 void MoldInformation::RefreshFileList()
@@ -1052,5 +1093,88 @@ bool MoldInformation::CheckIsUsbAttached() const
     QString content = file.readAll();
     file.close();
     return content.contains(QRegExp("/dev/sd[a-z]*[1-9]*"));
+
+}
+
+
+void MoldInformation::on_exportCheckBox_clicked()
+{
+    qDebug("123333");
+    if(ui->exportCheckBox->isChecked())
+    {
+        ui->importCheckBox->setCheckState(Qt::Unchecked);
+        qDebug("1234567");
+        ui->newToolButton->setEnabled(false);
+        ui->copyToolButton->setEnabled(false);
+        ui->loadToolButton->setEnabled(false);
+        ui->deleteToolButton->setEnabled(false);
+        ui->allToolButton->setEnabled(true);
+        ui->InverseToolButton->setEnabled(true);
+        ui->unselectToolButton->setEnabled(true);
+        ui->exportToolButton->setEnabled(true);
+        ui->importToolButton->setEnabled(false);
+        UpdateInformationTable();
+        for(int i=0;i<ui->informationTableWidget->rowCount();i++)
+        {
+            ui->informationTableWidget->item(i,0)->setCheckState(Qt::Unchecked);
+        }
+    }
+    else
+    {
+        ui->newToolButton->setEnabled(true);
+        ui->copyToolButton->setEnabled(true);
+        ui->loadToolButton->setEnabled(true);
+        ui->deleteToolButton->setEnabled(true);
+        ui->allToolButton->setEnabled(false);
+        ui->InverseToolButton->setEnabled(false);
+        ui->unselectToolButton->setEnabled(false);
+        ui->exportToolButton->setEnabled(false);
+        ui->importToolButton->setEnabled(false);
+        UpdateInformationTable();
+//        for(int i=0;i<ui->informationTableWidget->rowCount();i++)
+//        {
+//            //ui->informationTableWidget->setItemPrototype;
+//        }
+    }
+
+}
+
+
+
+void MoldInformation::on_importCheckBox_clicked()
+{
+    if(ui->importCheckBox->isChecked())
+    {
+        ui->newToolButton->setEnabled(false);
+        ui->copyToolButton->setEnabled(false);
+        ui->loadToolButton->setEnabled(false);
+        ui->deleteToolButton->setEnabled(false);
+        ui->allToolButton->setEnabled(false);
+        ui->InverseToolButton->setEnabled(false);
+        ui->unselectToolButton->setEnabled(false);
+        ui->exportToolButton->setEnabled(false);
+        ui->importToolButton->setEnabled(true);
+
+        ui->exportCheckBox->setCheckState(Qt::Unchecked);
+        RefreshFileList();
+        for(int i=0;i<ui->informationTableWidget->rowCount();i++)
+        {
+            ui->informationTableWidget->item(i,0)->setCheckState(Qt::Unchecked);
+        }
+        //UpdateInformationTable();
+
+    }
+    else
+    {
+        ui->newToolButton->setEnabled(true);
+        ui->copyToolButton->setEnabled(true);
+        ui->loadToolButton->setEnabled(true);
+        ui->deleteToolButton->setEnabled(true);
+        ui->allToolButton->setEnabled(false);
+        ui->InverseToolButton->setEnabled(false);
+        ui->unselectToolButton->setEnabled(false);
+        ui->exportToolButton->setEnabled(false);
+        ui->importToolButton->setEnabled(false);
+    }
 
 }

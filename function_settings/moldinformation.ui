@@ -10,6 +10,12 @@
     <height>418</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>610</width>
+    <height>0</height>
+   </size>
+  </property>
   <property name="maximumSize">
    <size>
     <width>16777215</width>
@@ -52,7 +58,7 @@ QMessageBox QAbstractButton
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <widget class="QToolButton" name="allToolButton">
        <property name="sizePolicy">
@@ -63,7 +69,13 @@ QMessageBox QAbstractButton
        </property>
        <property name="minimumSize">
         <size>
-         <width>70</width>
+         <width>100</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
          <height>35</height>
         </size>
        </property>
@@ -91,8 +103,14 @@ QMessageBox QAbstractButton
        </property>
        <property name="minimumSize">
         <size>
-         <width>70</width>
-         <height>0</height>
+         <width>100</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>35</height>
         </size>
        </property>
        <property name="layoutDirection">
@@ -119,8 +137,14 @@ QMessageBox QAbstractButton
        </property>
        <property name="minimumSize">
         <size>
-         <width>70</width>
-         <height>0</height>
+         <width>100</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>35</height>
         </size>
        </property>
        <property name="layoutDirection">
@@ -173,9 +197,6 @@ QMessageBox QAbstractButton
        <property name="checked">
         <bool>true</bool>
        </property>
-       <attribute name="buttonGroup">
-        <string notr="true">buttonGroup</string>
-       </attribute>
       </widget>
      </item>
      <item>
@@ -198,15 +219,12 @@ QMessageBox QAbstractButton
        <property name="text">
         <string>USB Import</string>
        </property>
-       <attribute name="buttonGroup">
-        <string notr="true">buttonGroup</string>
-       </attribute>
       </widget>
      </item>
     </layout>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
      <item>
       <widget class="ICTableWidget" name="informationTableWidget">
        <property name="sizePolicy">
@@ -488,19 +506,16 @@ QMessageBox QAbstractButton
  </widget>
  <customwidgets>
   <customwidget>
-   <class>ICLineEditWithVirtualKeyboard</class>
-   <extends>QLineEdit</extends>
-   <header>iclineeditwithvirtualkeyboard.h</header>
-  </customwidget>
-  <customwidget>
    <class>ICTableWidget</class>
    <extends>QTableWidget</extends>
    <header>ictablewidget.h</header>
   </customwidget>
+  <customwidget>
+   <class>ICLineEditWithVirtualKeyboard</class>
+   <extends>QLineEdit</extends>
+   <header>iclineeditwithvirtualkeyboard.h</header>
+  </customwidget>
  </customwidgets>
  <resources/>
  <connections/>
- <buttongroups>
-  <buttongroup name="buttonGroup"/>
- </buttongroups>
 </ui>

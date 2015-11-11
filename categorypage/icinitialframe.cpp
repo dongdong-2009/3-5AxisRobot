@@ -6,6 +6,9 @@
 #include "icvirtualkey.h"
 #include "icactioncommand.h"
 
+#include <QMessageBox>
+#include <QDebug>
+
 ICInitialFrame::ICInitialFrame(QWidget *parent) :
     ICFrame(parent),
     ui(new Ui::ICInitialFrame)
@@ -31,6 +34,18 @@ void ICInitialFrame::showEvent(QShowEvent *e)
 void ICInitialFrame::hideEvent(QHideEvent *e)
 {
     ICFrame::hideEvent(e);
+}
+
+void ICInitialFrame::changeEvent(QEvent *e)
+{
+    QWidget::changeEvent(e);
+    switch (e->type()) {
+    case QEvent::LanguageChange:
+        ui->retranslateUi(this);
+        break;
+    default:
+        break;
+    }
 }
 
 //void ICInitialFrame::on_hideToolButton_clicked()
@@ -75,3 +90,14 @@ void ICInitialFrame::hideEvent(QHideEvent *e)
 //{
 //    ICCommandProcessor::Instance()->ExecuteHCCommand(IC::CMD_TurnStop, 0);
 //}
+void ICInitialFrame::on_Power_off_clicked()
+{
+    //qDebug("111222333");
+    if(QMessageBox::warning(this,
+                            tr("Warning"),
+                            tr("The system will poweroff ! Do you want to continue?"),
+                            QMessageBox::Ok | QMessageBox::Cancel) == QMessageBox::Ok)
+    {
+        ::system("poweroff");
+    }
+}

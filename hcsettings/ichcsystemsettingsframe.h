@@ -51,6 +51,8 @@ private:
 #ifndef Q_WS_WIN32
     utsname osInfo_;
 #endif
+//public slots:
+//   void language_Boxchange();
 private slots:
     void languageBoxChange();
     void on_keyToneButton_toggled(bool checked);
@@ -94,6 +96,8 @@ private slots:
     void OnConfigChanged(int v);
     void OnConfigChanged(int v, int ov);
     void OnConfigChanged(bool b);
+    void on_memory_fix_clicked();
+
 private:
     QMap<QObject*, int> editorToConfigIDs_;
 };
