@@ -1018,8 +1018,8 @@ void MoldInformation::RefreshFileList()
 //        }
 //    }
 
+//    qDebug()<<acts;
     fileInfoList_ = recordDir.entryInfoList(QStringList()<<"*.act", QDir::Files);
-
     QFileInfoList userProgramList;
     QFileInfo tmp;
     foreach(tmp, fileInfoList_)
@@ -1175,6 +1175,7 @@ void MoldInformation::on_importCheckBox_clicked()
         ui->unselectToolButton->setEnabled(false);
         ui->exportToolButton->setEnabled(false);
         ui->importToolButton->setEnabled(false);
+        UpdateInformationTable();
     }
 
 }

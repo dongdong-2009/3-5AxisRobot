@@ -6224,12 +6224,12 @@ App %1; Host:</source>
         <translation>关机</translation>
     </message>
     <message>
-        <location filename="categorypage/icinitialframe.cpp" line="85"/>
+        <location filename="categorypage/icinitialframe.cpp" line="97"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="categorypage/icinitialframe.cpp" line="86"/>
+        <location filename="categorypage/icinitialframe.cpp" line="98"/>
         <source>The system will poweroff ! Do you want to continue?</source>
         <oldsource>The system will be poweroff to calibrate! Do you want to continue?</oldsource>
         <translation>系统会关机，确定继续吗？</translation>
@@ -10695,20 +10695,20 @@ Please input the root password to confirm.</source>
         <translation>步序</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1117"/>
-        <location filename="mainframe.cpp" line="1121"/>
-        <location filename="mainframe.cpp" line="1525"/>
-        <location filename="mainframe.cpp" line="1584"/>
+        <location filename="mainframe.cpp" line="1115"/>
+        <location filename="mainframe.cpp" line="1119"/>
+        <location filename="mainframe.cpp" line="1523"/>
+        <location filename="mainframe.cpp" line="1599"/>
         <source>tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1584"/>
+        <location filename="mainframe.cpp" line="1599"/>
         <source>Spare Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1121"/>
+        <location filename="mainframe.cpp" line="1119"/>
         <source>No Register</source>
         <translation>没有注册</translation>
     </message>
@@ -10727,33 +10727,33 @@ Please input the root password to confirm.</source>
         <translation>监视</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1117"/>
+        <location filename="mainframe.cpp" line="1115"/>
         <source>Spear Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1154"/>
+        <location filename="mainframe.cpp" line="1152"/>
         <source>Records</source>
         <translation>档案</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1525"/>
+        <location filename="mainframe.cpp" line="1523"/>
         <source>No Register. System Restart Now...</source>
         <translation>没有注册，系统现在重启...</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1627"/>
-        <location filename="mainframe.cpp" line="1643"/>
+        <location filename="mainframe.cpp" line="1642"/>
+        <location filename="mainframe.cpp" line="1658"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1628"/>
+        <location filename="mainframe.cpp" line="1643"/>
         <source>%1 fnc is broken. Please remove this mold!</source>
         <translation>%1 模组参数丢失.请删除这个模号!</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1644"/>
+        <location filename="mainframe.cpp" line="1659"/>
         <source>%1 mold fixed. Please check the sub program!</source>
         <translation>%1模号格式更新.请检查该模号使用的子程序是否正确!</translation>
     </message>
@@ -10797,8 +10797,8 @@ Please input the root password to confirm.</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="874"/>
-        <location filename="mainframe.cpp" line="893"/>
+        <location filename="mainframe.cpp" line="872"/>
+        <location filename="mainframe.cpp" line="890"/>
         <source>Hint</source>
         <translation>提示</translation>
     </message>
@@ -10815,7 +10815,7 @@ Please input the root password to confirm.</source>
         <translation type="obsolete">还没进行原点!</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1105"/>
+        <location filename="mainframe.cpp" line="1103"/>
         <source>Instruct</source>
         <translation>教导</translation>
     </message>
