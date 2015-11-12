@@ -1099,11 +1099,9 @@ bool MoldInformation::CheckIsUsbAttached() const
 
 void MoldInformation::on_exportCheckBox_clicked()
 {
-    qDebug("123333");
     if(ui->exportCheckBox->isChecked())
     {
         ui->importCheckBox->setCheckState(Qt::Unchecked);
-        qDebug("1234567");
         ui->newToolButton->setEnabled(false);
         ui->copyToolButton->setEnabled(false);
         ui->loadToolButton->setEnabled(false);
@@ -1113,6 +1111,8 @@ void MoldInformation::on_exportCheckBox_clicked()
         ui->unselectToolButton->setEnabled(true);
         ui->exportToolButton->setEnabled(true);
         ui->importToolButton->setEnabled(false);
+        ui->localBox->setChecked(false);
+
         UpdateInformationTable();
         for(int i=0;i<ui->informationTableWidget->rowCount();i++)
         {
@@ -1149,11 +1149,12 @@ void MoldInformation::on_importCheckBox_clicked()
         ui->copyToolButton->setEnabled(false);
         ui->loadToolButton->setEnabled(false);
         ui->deleteToolButton->setEnabled(false);
-        ui->allToolButton->setEnabled(false);
-        ui->InverseToolButton->setEnabled(false);
-        ui->unselectToolButton->setEnabled(false);
+        ui->allToolButton->setEnabled(true);
+        ui->InverseToolButton->setEnabled(true);
+        ui->unselectToolButton->setEnabled(true);
         ui->exportToolButton->setEnabled(false);
         ui->importToolButton->setEnabled(true);
+        ui->localBox->setChecked(false);
 
         ui->exportCheckBox->setCheckState(Qt::Unchecked);
         RefreshFileList();
@@ -1178,4 +1179,25 @@ void MoldInformation::on_importCheckBox_clicked()
         UpdateInformationTable();
     }
 
+}
+
+void MoldInformation::on_localBox_clicked()
+{
+    if(ui->localBox->isChecked())
+    {
+        ui->exportCheckBox->setChecked(false);
+        ui->importCheckBox->setChecked(false);
+        ui->newToolButton->setEnabled(true);
+        ui->copyToolButton->setEnabled(true);
+        ui->loadToolButton->setEnabled(true);
+        ui->deleteToolButton->setEnabled(true);
+        ui->allToolButton->setEnabled(false);
+        ui->InverseToolButton->setEnabled(false);
+        ui->unselectToolButton->setEnabled(false);
+        ui->exportToolButton->setEnabled(false);
+        ui->importToolButton->setEnabled(false);
+        UpdateInformationTable();
+    }
+    else
+        ui->localBox->setChecked(true);
 }

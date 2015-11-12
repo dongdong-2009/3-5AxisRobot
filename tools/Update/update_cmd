@@ -1,7 +1,10 @@
 #! /bin/sh
 
 cp Multi-axisManipulatorSystem* /opt/Qt/apps -f
-cp Base.fnc /opt/Qt/apps/records -f
+cp Base.* /opt/Qt/apps/records -f
+cp *-ch /opt/Qt/apps/sysconfig
+cp hwclock.sh /etc/init.d -f
+cp psplash usr/bin/psplash-default -f
 #cd 3a8
 #cp -rf records subs sysconfig /mnt/database
 #reboot
