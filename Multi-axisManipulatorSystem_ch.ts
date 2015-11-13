@@ -10856,72 +10856,77 @@ Please input the root password to confirm.</source>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="195"/>
+        <source>Local </source>
+        <translation>本机模号</translation>
+    </message>
+    <message>
+        <location filename="function_settings/moldinformation.ui" line="223"/>
         <location filename="function_settings/moldinformation_5.ui" line="177"/>
         <source>USB Export</source>
         <translation>USB导出</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="220"/>
+        <location filename="function_settings/moldinformation.ui" line="251"/>
         <location filename="function_settings/moldinformation_5.ui" line="205"/>
         <source>USB Import</source>
         <translation>USB导入</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="259"/>
+        <location filename="function_settings/moldinformation.ui" line="293"/>
         <location filename="function_settings/moldinformation_5.ui" line="253"/>
         <source>Mold Name</source>
         <translation>模号名</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="264"/>
+        <location filename="function_settings/moldinformation.ui" line="298"/>
         <location filename="function_settings/moldinformation_5.ui" line="258"/>
         <source>Create Date</source>
         <translation>最后修改日期</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="292"/>
+        <location filename="function_settings/moldinformation.ui" line="326"/>
         <location filename="function_settings/moldinformation_5.ui" line="286"/>
         <source>New</source>
         <translation>新建</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="317"/>
+        <location filename="function_settings/moldinformation.ui" line="351"/>
         <location filename="function_settings/moldinformation_5.ui" line="311"/>
         <source>Copy</source>
         <translation>复制</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="342"/>
+        <location filename="function_settings/moldinformation.ui" line="376"/>
         <location filename="function_settings/moldinformation_5.ui" line="336"/>
         <source>Load</source>
         <translation>载入</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="367"/>
+        <location filename="function_settings/moldinformation.ui" line="401"/>
         <location filename="function_settings/moldinformation_5.ui" line="361"/>
         <source>Delete</source>
         <translation>删除</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="392"/>
+        <location filename="function_settings/moldinformation.ui" line="426"/>
         <location filename="function_settings/moldinformation_5.ui" line="386"/>
         <source>Export</source>
         <translation>导出</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="420"/>
+        <location filename="function_settings/moldinformation.ui" line="454"/>
         <location filename="function_settings/moldinformation_5.ui" line="414"/>
         <source>Import</source>
         <translation>导入</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="451"/>
+        <location filename="function_settings/moldinformation.ui" line="485"/>
         <location filename="function_settings/moldinformation_5.ui" line="445"/>
         <source>Source File Name</source>
         <translation>原文件名</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="486"/>
+        <location filename="function_settings/moldinformation.ui" line="520"/>
         <location filename="function_settings/moldinformation_5.ui" line="486"/>
         <source>New File Name</source>
         <translation>新文件名</translation>
