@@ -8,7 +8,7 @@
 #include "icconfigstring.h"
 
 #include <QVector>
-//#include <QMessageBox>
+//#include "icmessagebox.h"
 #include <QDebug>
 #include "mainframe.h"
 #include "icmessagebox.h"
@@ -410,7 +410,7 @@ void ICStructDefineFrame::on_saveButton_clicked()
         host->SetSystemParameter(ICVirtualHost::SYS_Config_Xorsum, dataBuffer.at(6));
 //        host->SystemParameter(ICVirtualHost::SYS_Function);
         host->SaveSystemConfig();
-//        QMessageBox::information(this, tr("Tips"), tr("Save Sucessfully!"));
+//        ICMessageBox::ICWarning(this, tr("Tips"), tr("Save Sucessfully!"));
         ICMessageBox::ICWarning(this, tr("Tips"), tr("Save Sucessfully!"));
 //        QMessageBox box;
 //        box.setWindowTitle(tr("Tips"));

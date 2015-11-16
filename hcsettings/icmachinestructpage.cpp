@@ -2,7 +2,7 @@
 #include "ui_icmachinestructpage.h"
 
 #include <QButtonGroup>
-#include <QMessageBox>
+#include "icmessagebox.h"
 
 #include "icvirtualhost.h"
 #include "icparameterssave.h"
@@ -616,7 +616,7 @@ void ICMachineStructPage::on_saveToolButton_clicked()
         ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
         host->SaveAxisParam(currentAxis_);
         //        host->ReConfigure();
-        QMessageBox::information(this, tr("Information"), tr("Save Successfully!"));
+        ICMessageBox::ICWarning(this, tr("Information"), tr("Save Successfully!"));
         //        UpdateAxisDefine_();
         ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_AXIS_Config_Save, tr("Save"), tr(""));
     }

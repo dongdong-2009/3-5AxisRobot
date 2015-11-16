@@ -1,6 +1,6 @@
 #include "icupdatelogodialog.h"
 #include "ui_icupdatelogodialog.h"
-#include <QMessageBox>
+#include "icmessagebox.h"
 
 ICUpdateLogoDialog::ICUpdateLogoDialog(QWidget *parent) :
     QDialog(parent),
@@ -40,7 +40,7 @@ void ICUpdateLogoDialog::on_setToStartup_clicked()
 {
     if(ui->picView->CurrentSelectedPicture().isEmpty())
     {
-        QMessageBox::warning(this,tr("warning"),tr("No select picture!"));
+        ICMessageBox::ICWarning(this,tr("warning"),tr("No select picture!"));
         return;
     }
     startupPage_ = ui->picView->CurrentSelectedPicture();
@@ -56,14 +56,14 @@ void ICUpdateLogoDialog::on_setToStartup_clicked()
 #endif
     }
     ::system("sync");
-    QMessageBox::information(this,tr("Tips"),tr("Setting success,In operation after reboot!"));
+    ICMessageBox::ICWarning(this,tr("Tips"),tr("Setting success,In operation after reboot!"));
 }
 
 void ICUpdateLogoDialog::on_setToStandby_clicked()
 {
     if(ui->picView->CurrentSelectedPicture().isEmpty())
     {
-        QMessageBox::warning(this,tr("warning"),tr("No select picture!"));
+        ICMessageBox::ICWarning(this,tr("warning"),tr("No select picture!"));
         return;
     }
     standbyPage_ = ui->picView->CurrentSelectedPicture();
@@ -79,7 +79,7 @@ void ICUpdateLogoDialog::on_setToStandby_clicked()
 #endif
     }
     ::system("sync");
-    QMessageBox::information(this,tr("Tips"),tr("Setting success,In operation after reboot!"));
+    ICMessageBox::ICWarning(this,tr("Tips"),tr("Setting success,In operation after reboot!"));
 }
 
 //void ICUpdateLogoDialog::on_okButton_clicked()
@@ -113,7 +113,7 @@ void ICUpdateLogoDialog::on_setToAppIcon_clicked()
 {
     if(ui->picView->CurrentSelectedPicture().isEmpty())
     {
-        QMessageBox::warning(this,tr("warning"),tr("No select picture!"));
+        ICMessageBox::ICWarning(this,tr("warning"),tr("No select picture!"));
         return;
     }
     appIconPage_ = ui->picView->CurrentSelectedPicture();
@@ -129,5 +129,5 @@ void ICUpdateLogoDialog::on_setToAppIcon_clicked()
 #endif
     }
     ::system("sync");
-    QMessageBox::information(this,tr("Tips"),tr("Setting success,In operation after reboot!"));
+    ICMessageBox::ICWarning(this,tr("Tips"),tr("Setting success,In operation after reboot!"));
 }

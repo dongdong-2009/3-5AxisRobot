@@ -2,6 +2,7 @@
 
 workDir=$1
 binDir=$2
+hostBin=$3
 
 reinstallDir=${workDir}/${binDir}/Reinstall/Reinstall
 contentDir=${workDir}/tools/Reinstall
@@ -16,7 +17,7 @@ cp ${workDir}/Multi-axisManipulatorSystem_en.qm ${reinstallDir} -f
 inch=`cat ${workDir}/Multi-axisManipulatorSystem.pro | grep "SK_SIZE =" | awk '{print $3}'`
 swVersion=`cat ${workDir}/config.h | grep "APP_VERSION " | awk '{print $3}' | sed 's/\"//g' | tr -d ['\r']`
 trunkVersion=`cat ${workDir}/config.h | grep "TRUNK_VERSION " | awk '{print $3}' | sed 's/\"//g' | tr -d ['\r']`
-swVersion=${swVersion}_${trunkVersion}
+swVersion=${swVersion}_${hostBin}_${trunkVersion}
 cp ${contentDir}/${inch}-inch-qmap/3a8.qmap ${reinstallDir}
 cp -r ${contentDir}/${inch}resource ${reinstallDir}/resourcee
 
@@ -79,7 +80,7 @@ cp -r ${workDir}/tools/Update/* ${workDir}/${binDir}/Update/HCRobotPanel${swVers
 cp ${workDir}/${binDir}/Multi-axisManipulatorSystem ${updateDir} -f
 cp ${workDir}/Multi-axisManipulatorSystem_ch.qm ${updateDir} -f
 cp ${workDir}/Multi-axisManipulatorSystem_en.qm ${updateDir} -f
-
+cp ${workDir}/tools/hosts/${hostBin}_rom.bin ${updateDir}/rom.bin -f
 echo ${updateDir}.tar ${updateDir}
 cd ${workDir}/${binDir}/Update/ && tar -cf HCRobotPanel${swVersion}.tar HCRobotPanel${swVersion}
 HCbcrypt.sh ${updateDir}.tar

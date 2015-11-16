@@ -3,7 +3,7 @@
 
 #include <QDir>
 #include <QScrollBar>
-#include <QMessageBox>
+#include "icmessagebox.h"
 #include <QFileInfoList>
 
 #include "icmold.h"
@@ -37,7 +37,7 @@
 #include "iccurveeditor.h"
 
 #include <QDebug>
-#include <QMessageBox>
+#include "icmessagebox.h"
 
 //struct MoldItem
 //{
@@ -127,7 +127,7 @@ void ICHCInstructionPageFrame::showEvent(QShowEvent *e)
     UpdateHostParam();
 //    if(!icMainFrame->IsOrigined())
 //    {
-//        QMessageBox::warning(this, tr("Warning"), tr("Need to origin!"));
+//        ICMessageBox::ICWarning(this, tr("Warning"), tr("Need to origin!"));
 //    }
 }
 
@@ -452,7 +452,7 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
     }
     if(MoldInformation::Instance()->IsStandProgram(ICParametersSave::Instance()->MoldName("")))
     {
-        QMessageBox::warning(this, tr("warning"),
+        ICMessageBox::ICWarning(this, tr("warning"),
                              tr("Stand program can not be insert action"));
         return;
    }
@@ -479,7 +479,7 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
     {
         if(!ICParametersSave::Instance()->IsSuperLogin())
         {
-            QMessageBox::warning(this,
+            ICMessageBox::ICWarning(this,
                                  tr("Warning"),
                                  tr("Can not add standby position program"));
             return;
@@ -709,7 +709,7 @@ void ICHCInstructionPageFrame::on_deleteToolButton_clicked()
     }
     if(MoldInformation::Instance()->IsStandProgram(ICParametersSave::Instance()->MoldName("")))
     {
-        QMessageBox::warning(this, tr("warning"),
+        ICMessageBox::ICWarning(this, tr("warning"),
                              tr("Stand program can not be delete action"));
         return;
    }
@@ -724,7 +724,7 @@ void ICHCInstructionPageFrame::on_deleteToolButton_clicked()
     {
         if(!ICParametersSave::Instance()->IsSuperLogin())
         {
-            QMessageBox::warning(this,
+            ICMessageBox::ICWarning(this,
                                  tr("Warning"),
                                  tr("Can not delete standby position program"));
             return;
@@ -889,7 +889,7 @@ void ICHCInstructionPageFrame::on_upButton_clicked()
     {
         if(!ICParametersSave::Instance()->IsSuperLogin())
         {
-            QMessageBox::warning(this, tr("warning"),
+            ICMessageBox::ICWarning(this, tr("warning"),
                                  tr("Stand program can not do Up action"));
             return;
         }
@@ -898,7 +898,7 @@ void ICHCInstructionPageFrame::on_upButton_clicked()
     //子程序也可以分解和组合，所以无需判断
 //    if(programList_.at(gIndex).StepNum() == 1)
 //    {
-//        QMessageBox::warning(this,
+//        ICMessageBox::ICWarning(this,
 //                             tr("Warning"),
 //                             tr("Can not group up to standby position program"));
 //        return;
@@ -997,7 +997,7 @@ void ICHCInstructionPageFrame::on_downButton_clicked()
     {
         if(!ICParametersSave::Instance()->IsSuperLogin())
         {
-            QMessageBox::warning(this, tr("warning"),
+            ICMessageBox::ICWarning(this, tr("warning"),
                                  tr("Stand program can not do Down action"));
             return;
         }
@@ -1006,7 +1006,7 @@ void ICHCInstructionPageFrame::on_downButton_clicked()
     //子程序也可以分解和组合，所以无需判断
 //    if(programList_.at(gIndex).StepNum() == 0)
 //    {
-//        QMessageBox::warning(this,
+//        ICMessageBox::ICWarning(this,
 //                             tr("Warning"),
 //                             tr("Can not decompose standby position program"));
 //        return;
@@ -1197,7 +1197,7 @@ void ICHCInstructionPageFrame::on_tryButton_clicked()
 {
     //    if(!ICVirtualHost::GlobalVirtualHost()->IsOrigined())
     //    {
-    //        QMessageBox::warning(this,
+    //        ICMessageBox::ICWarning(this,
     //                             tr("Warning"),
     //                             tr("Has not been origin!"));
     //        return;

@@ -5,7 +5,7 @@
 #include "icvirtualhost.h"
 #include "iccommandkeywrapper.h"
 #include "ictimerpool.h"
-#include <QMessageBox>
+#include "icmessagebox.h"
 
 HCManualAdjustFrame::HCManualAdjustFrame(QWidget *parent) :
     QWidget(parent),

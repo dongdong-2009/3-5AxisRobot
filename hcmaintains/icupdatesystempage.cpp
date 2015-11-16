@@ -18,7 +18,7 @@
 #include <QDir>
 #include <QFile>
 #include <QKeyEvent>
-#include <QMessageBox>
+#include "icmessagebox.h"
 #include <QProcess>
 #include <QPushButton>
 #include <QRegExp>
@@ -345,7 +345,7 @@ void ICUpdateSystemPage::QueryStatus()
         if(connectHostFlag == FALSE)
         {
             timer_.stop();
-            QMessageBox::information(this, tr("tips"), tr("Update Host Successful!"));
+            ICMessageBox::ICWarning(this, tr("tips"), tr("Update Host Successful!"));
         }
         break;
 
@@ -375,9 +375,9 @@ void ICUpdateSystemPage::rebootButton()
     ICCommandProcessor::Instance()->ExecuteCommand(rebootCommand);
 //    while(!ICCommandProcessor::Instance()->ExecuteCommand(rebootCommand).toBool())
 //    {
-////        QMessageBox::information(this, tr("tips"), tr("Reboot Successful!"));
+////        ICMessageBox::ICWarning(this, tr("tips"), tr("Reboot Successful!"));
 //        QString ss = ICCommandProcessor::Instance()->ExecuteCommand(rebootCommand).toString();
-//        QMessageBox::information(this, tr("tips"),ss);
+//        ICMessageBox::ICWarning(this, tr("tips"),ss);
 //    }
 }
 
@@ -401,7 +401,7 @@ void ICUpdateSystemPage::writeHostButton()
 ////        {
 ////            timer_.start(100);
 ////        }
-////        QMessageBox::information(this, tr("Congratulations"),
+////        ICMessageBox::ICWarning(this, tr("Congratulations"),
 ////                                 tr("Update Host finished!"));
 //        return;
 //    }
@@ -412,7 +412,7 @@ void ICUpdateSystemPage::on_updateLogoButton_clicked()
  #ifndef Q_WS_X11
     if(!CheckIsUsbAttached())
     {
-        QMessageBox::warning(this,tr("warning"),tr("USB is not exist!"));
+        ICMessageBox::ICWarning(this,tr("warning"),tr("USB is not exist!"));
         return;
     }
 #endif
@@ -476,7 +476,7 @@ void ICUpdateSystemPage::on_updatePasswardButton_clicked()
         }
         else
         {
-            QMessageBox::warning(this,
+            ICMessageBox::ICWarning(this,
                                  tr("Warning"),
                                  tr("Old password is wrong"));
         }
@@ -580,14 +580,14 @@ void ICUpdateSystemPage::on_backToFactory_clicked()
         system("chmod 666 sysconfigbackup/*");
         system("mv sysconfigbackup/* sysconfig -f");
         system("sync");
-        QMessageBox::information(this, tr("Tips"), tr("Back to factory successfully! Now reboot!"));
+        ICMessageBox::ICWarning(this, tr("Tips"), tr("Back to factory successfully! Now reboot!"));
 #ifdef Q_WS_QWS
         system("reboot");
 #endif
     }
     else
     {
-        QMessageBox::information(this, tr("Tips"), tr("Wrong password!"));
+        ICMessageBox::ICWarning(this, tr("Tips"), tr("Wrong password!"));
     }
 
 }

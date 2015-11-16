@@ -2,7 +2,7 @@
 #include <QString>
 #include <QStringList>
 #include <QTimer>
-#include <QMessageBox>
+#include "icmessagebox.h"
 
 #ifndef Q_WS_WIN32
 #include <unistd.h>

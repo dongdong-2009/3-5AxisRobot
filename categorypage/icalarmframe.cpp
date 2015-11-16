@@ -5,7 +5,7 @@
 #include <QTextStream>
 #include <QDateTime>
 #include <QTimer>
-#include <QMessageBox>
+#include "icmessagebox.h"
 #include <QStringList>
 #include <QPair>
 #include "icconfigstring.h"

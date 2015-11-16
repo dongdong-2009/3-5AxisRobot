@@ -1,4 +1,4 @@
-#include <QMessageBox>
+#include "icmessagebox.h"
 #include <QKeyEvent>
 #include <QApplication>
 
@@ -123,7 +123,7 @@ void ICKeyboardHandler::Keypressed(int keyValue)
         commandProcessor->ExecuteVirtualKeyCommand(virtualKeyMap_.value(keyValue));
         if((!icMainFrame->IsOrigined()) && icMainFrame->IsAutoPageShown())
         {
-            QMessageBox::warning(NULL, tr("Warning"), tr("Need to origin!"));
+            ICMessageBox::ICWarning(NULL, tr("Warning"), tr("Need to origin!"));
         }
 
         return;
@@ -272,7 +272,7 @@ void ICKeyboardHandler::Keypressed(int keyValue)
         {
 //            if(!ICVirtualHost::GlobalVirtualHost()->IsOrigined())
 //            {
-//                QMessageBox::warning(NULL, tr("Warning"), tr("Need to origin!"));
+//                ICMessageBox::ICWarning(NULL, tr("Warning"), tr("Need to origin!"));
 //            }
         }
         commandProcessor->ExecuteVirtualKeyCommand(virtualKeyMap_.value(keyValue));

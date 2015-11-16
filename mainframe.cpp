@@ -13,7 +13,7 @@
 #include <QBoxLayout>
 #include <QButtonGroup>
 #include <QKeyEvent>
-#include <QMessageBox>
+#include "icmessagebox.h"
 #include <QRunnable>
 #include <QStackedLayout>
 #include <QThreadPool>
@@ -190,7 +190,7 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
             configDir.remove(backupFiles.at(i).left(backupFiles.at(i).size() - 1));
             configDir.rename(backupFiles.at(i), backupFiles.at(i).left(backupFiles.at(i).size() - 1));
         }
-        //        QMessageBox::critical(this, tr("Warning"), tr("System Configs has been recover, please check the configs first!"));
+        //        ICMessageBox::ICWarning(this, tr("Warning"), tr("System Configs has been recover, please check the configs first!"));
     }
     configDir.cd("../records/");
     backupFiles = configDir.entryList(QStringList()<<"*~");
@@ -201,7 +201,7 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
             configDir.remove(backupFiles.at(i).left(backupFiles.at(i).size() - 1));
             configDir.rename(backupFiles.at(i), backupFiles.at(i).left(backupFiles.at(i).size() - 1));
         }
-        //        QMessageBox::critical(this, tr("Warning"), tr("Record has been recover, please check the record first!"));
+        //        ICMessageBox::ICWarning(this, tr("Warning"), tr("Record has been recover, please check the record first!"));
     }
     configDir.cd("../subs/");
     backupFiles = configDir.entryList(QStringList()<<"*~");
@@ -212,7 +212,7 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
             configDir.remove(backupFiles.at(i).left(backupFiles.at(i).size() - 1));
             configDir.rename(backupFiles.at(i), backupFiles.at(i).left(backupFiles.at(i).size() - 1));
         }
-        //        QMessageBox::critical(this, tr("Warning"), tr("Sub has been recover, please check the sub first!"));
+        //        ICMessageBox::ICWarning(this, tr("Warning"), tr("Sub has been recover, please check the sub first!"));
     }
     icMainFrame = this;
     screenSaver_->hide();
@@ -429,7 +429,7 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
                 ICRecalDialog recalDialog;
                 recalDialog.exec();
                 //                ::system("touch /mnt/config_data/recal");
-                //                int ret = QMessageBox::warning(this,
+                //                int ret = ICMessageBox::ICWarning(this,
                 //                                     tr("Recal"),
                 //                                     tr("You have press the recal sequence, recal after reboot"),
                 //                                     QMessageBox::Yes | QMessageBox::No);
@@ -1098,7 +1098,7 @@ void MainFrame::ShowManualPage()
     nullButton_->click();
     //    if(!IsOrigined())
     //    {
-    //        QMessageBox::warning(this, tr("Warning"), tr("Need to origin!"));
+    //        ICMessageBox::ICWarning(this, tr("Warning"), tr("Need to origin!"));
     //    }
     ui->recordPageButton->setText(tr("Instruct"));
     //    ui->recordPageButton->setEnabled(true);
@@ -1112,11 +1112,11 @@ void MainFrame::ShowAutoPage()
     {
         if(resetTime > 0)
         {
-            QMessageBox::information(this,tr("tips"),tr("Spear Time %1 Hour").arg(resetTime));
+            ICMessageBox::ICWarning(this,tr("tips"),tr("Spear Time %1 Hour").arg(resetTime));
         }
         else if(resetTime < 0)
         {
-            QMessageBox::information(this,tr("tips"),tr("No Register"));
+            ICMessageBox::ICWarning(this,tr("tips"),tr("No Register"));
             return;
         }
     }
@@ -1127,7 +1127,7 @@ void MainFrame::ShowAutoPage()
     nullButton_->click();
     //    if(!IsOrigined())
     //    {
-    //        QMessageBox::warning(this, tr("Warning"), tr("Need to origin!"));
+    //        ICMessageBox::ICWarning(this, tr("Warning"), tr("Need to origin!"));
     //    }
 }
 
@@ -1520,7 +1520,7 @@ void MainFrame::Register()
     if(resetTime < 0)
     {
 #ifndef Q_WS_X11
-        QMessageBox::information(NULL,tr("tips"),tr("No Register. System Restart Now..."));
+        ICMessageBox::ICWarning(NULL,tr("tips"),tr("No Register. System Restart Now..."));
         //        system("reboot");
 #endif
     }
@@ -1587,7 +1587,7 @@ void MainFrame::InitSpareTime()
         resetTime -= qAbs(overTime);
         if(resetTime <= 1)
             resetTime = 1;
-        //        QMessageBox::information(this, "rest time", QString("%1 %2 %3").arg(last.toString())
+        //        ICMessageBox::ICWarning(this, "rest time", QString("%1 %2 %3").arg(last.toString())
         //                                 .arg(overTime)
         //                                 .arg(restTime));
         ICParametersSave::Instance()->SetRestTime(resetTime);
@@ -1596,14 +1596,14 @@ void MainFrame::InitSpareTime()
     {
         if(resetTime > 0)
         {
-            QMessageBox::information(NULL,tr("tips"),tr("Spare Time %1 Hour").arg(resetTime));
+            ICMessageBox::ICWarning(NULL,tr("tips"),tr("Spare Time %1 Hour").arg(resetTime));
             //            connect(registe_timer,SIGNAL(timeout()),this,SLOT(CountRestTime()));
             //            registe_timer->start(1000*15);
             registe_timer->start(1000*3600);
         }
         else if(resetTime == 1)
         {
-            //            QMessageBox::information(NULL,tr("tips"),tr("No Register,The System Will Reboot after 10 minutes"));
+            //            ICMessageBox::ICWarning(NULL,tr("tips"),tr("No Register,The System Will Reboot after 10 minutes"));
             //            //            connect(reboot_timer,SIGNAL(timeout()),this,SLOT(Register()));
             //            //            registe_timer->start(1000*60*10);
             //            reboot_timer->start(1000*60*10);
@@ -1638,7 +1638,7 @@ void MainFrame::MoldsCheck()
         tmp = dir.entryList(QStringList()<<QString("%1fnc").arg(name));
         if(tmp.isEmpty())
         {
-            QMessageBox::warning(this,
+            ICMessageBox::ICWarning(this,
                                  tr("warning"),
                                  QString(tr("%1 fnc is broken. Please remove this mold!")).arg(name));
             continue;
@@ -1654,7 +1654,7 @@ void MainFrame::MoldsCheck()
                        .arg(name)
                        .arg(j).toUtf8());
             }
-            QMessageBox::warning(this,
+            QMessageBox::critical(this,
                                  tr("warning"),
                                  QString(tr("%1 mold fixed. Please check the sub program!")).arg(name));
             continue;

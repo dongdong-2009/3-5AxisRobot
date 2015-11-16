@@ -1,7 +1,7 @@
 #include <QTranslator>
 #include <QDir>
 #include <QFile>
-#include <QMessageBox>
+#include "icmessagebox.h"
 #include <QFileDialog>
 
 #include "ichcsystemsettingsframe.h"
@@ -266,7 +266,7 @@ void ICHCSystemSettingsFrame::on_changeButton_clicked()
     if(ui->oldPwdEdit->text().isEmpty() ||
             ui->newPwdEdit->text().isEmpty())
     {
-        QMessageBox::information(this,
+        ICMessageBox::ICWarning(this,
                                  tr("Information"),
                                  tr("Please enter the old password and new password!"));
         return;
@@ -285,7 +285,7 @@ void ICHCSystemSettingsFrame::on_changeButton_clicked()
 
     if(currentlevel <= level && !config->VerifyPassword(level, ui->oldPwdEdit->text()))
     {
-        QMessageBox::warning(this,
+        ICMessageBox::ICWarning(this,
                              tr("Warning"),
                              tr("Old password is wrong!"));
         return;
@@ -293,7 +293,7 @@ void ICHCSystemSettingsFrame::on_changeButton_clicked()
     ICParametersSave::Instance()->SetPassword(level, ui->newPwdEdit->text());
     ui->oldPwdEdit->clear();
     ui->newPwdEdit->clear();
-    QMessageBox::information(this,
+    ICMessageBox::ICWarning(this,
                              tr("Information"),
                              tr("Change password successfully!"));
     ICAlarmFrame::Instance()->OnActionTriggered(ui->advanceAdminBox->isChecked() ? ICConfigString::kCS_PANEL_Root_Password : ICConfigString::kCS_PANEL_Admin_Password,
@@ -349,7 +349,7 @@ void ICHCSystemSettingsFrame::on_backupMachineButton_clicked()
 {
     if(!CheckIsUsbAttached())
     {
-        QMessageBox::warning(this, tr("Warning"), tr("USB is not connected!"));
+        ICMessageBox::ICWarning(this, tr("Warning"), tr("USB is not connected!"));
         return;
     }
     ICTipsWidget tipsWidget(tr("Backuping, please wait..."));
@@ -371,7 +371,7 @@ void ICHCSystemSettingsFrame::on_backupSystemButton_clicked()
 {
     if(!CheckIsUsbAttached())
     {
-        QMessageBox::warning(this, tr("Warning"), tr("USB is not connected!"));
+        ICMessageBox::ICWarning(this, tr("Warning"), tr("USB is not connected!"));
         return;
     }
     ICTipsWidget tipsWidget(tr("Backuping, please wait..."));
@@ -390,11 +390,11 @@ void ICHCSystemSettingsFrame::Information(bool isSuccess, const QString &msg)
 {
     if(isSuccess)
     {
-        QMessageBox::information(this, tr("Information"), tr("Operation finished!"));
+        ICMessageBox::ICWarning(this, tr("Information"), tr("Operation finished!"));
     }
     else
     {
-        QMessageBox::warning(this, tr("Information"), tr("Operation fail!") + msg);
+        ICMessageBox::ICWarning(this, tr("Information"), tr("Operation fail!") + msg);
     }
 }
 
@@ -402,7 +402,7 @@ void ICHCSystemSettingsFrame::Information(bool isSuccess, const QString &msg)
 //{
 //    if(!CheckIsUsbAttached())
 //    {
-//        QMessageBox::warning(this, tr("Warning"), tr("USB is not connected!"));
+//        ICMessageBox::ICWarning(this, tr("Warning"), tr("USB is not connected!"));
 //        return;
 //    }
 //    ICTipsWidget tipsWidget(tr("Backuping, please wait..."));
@@ -433,7 +433,7 @@ void ICHCSystemSettingsFrame::on_backupAllButton_clicked()
 #else
     if(!CheckIsUsbAttached())
     {
-        QMessageBox::warning(this, tr("Warning"), tr("USB is not connected!"));
+        ICMessageBox::ICWarning(this, tr("Warning"), tr("USB is not connected!"));
         return;
     }
     //    QDir dir("/mnt/udisk/HC5ABackup/records");
@@ -476,7 +476,7 @@ void ICHCSystemSettingsFrame::on_restoreMachineButton_clicked()
 {
     if(!CheckIsUsbAttached())
     {
-        QMessageBox::warning(this, tr("Warning"), tr("USB is not connected!"));
+        ICMessageBox::ICWarning(this, tr("Warning"), tr("USB is not connected!"));
         return;
     }
     ICTipsWidget tipsWidget(tr("Restoring, please wait..."));
@@ -493,7 +493,7 @@ void ICHCSystemSettingsFrame::on_restoreMachineButton_clicked()
         //    QDir dir("/mnt/udisk/HC5ABackup/sysconfig");
         //    if(!dir.exists())
         //    {
-        //        QMessageBox::warning(this, tr("Warnning"), tr("Backup files is not exists!"));
+        //        ICMessageBox::ICWarning(this, tr("Warnning"), tr("Backup files is not exists!"));
         //        return;
         //    }
         //    system("cp /mnt/udisk/HC5ABackup/sysconfig/param* /opt/Qt/bin/sysconfig -f");
@@ -510,7 +510,7 @@ void ICHCSystemSettingsFrame::on_restoreSystemButton_clicked()
 {
     if(!CheckIsUsbAttached())
     {
-        QMessageBox::warning(this, tr("Warning"), tr("USB is not connected!"));
+        ICMessageBox::ICWarning(this, tr("Warning"), tr("USB is not connected!"));
         return;
     }
     ICTipsWidget tipsWidget(tr("Restoring, please wait..."));
@@ -525,7 +525,7 @@ void ICHCSystemSettingsFrame::on_restoreSystemButton_clicked()
         //    QDir dir("/mnt/udisk/HC5ABackup/sysconfig");
         //    if(!dir.exists())
         //    {
-        //        QMessageBox::warning(this, tr("Warnning"), tr("Backup files is not exists!"));
+        //        ICMessageBox::ICWarning(this, tr("Warnning"), tr("Backup files is not exists!"));
         //        return;
         //    }
         //    system("cp /mnt/udisk/HC5ABackup/sysconfig/system.txt /opt/Qt/bin/sysconfig -f");
@@ -541,7 +541,7 @@ void ICHCSystemSettingsFrame::on_restoreSystemButton_clicked()
 //{
 //    if(!CheckIsUsbAttached())
 //    {
-//        QMessageBox::warning(this, tr("Warning"), tr("USB is not connected!"));
+//        ICMessageBox::ICWarning(this, tr("Warning"), tr("USB is not connected!"));
 //        return;
 //    }
 //    ICTipsWidget tipsWidget(tr("Restoring, please wait..."));
@@ -549,7 +549,7 @@ void ICHCSystemSettingsFrame::on_restoreSystemButton_clicked()
 //    QDir dir("/mnt/udisk/HC5ABackup/records");
 //    if(!dir.exists())
 //    {
-//        QMessageBox::warning(this, tr("Warnning"), tr("Backup files is not exists!"));
+//        ICMessageBox::ICWarning(this, tr("Warnning"), tr("Backup files is not exists!"));
 //        return;
 //    }
 //    QStringList acts = dir.entryList(QStringList()<<"*.act");
@@ -560,7 +560,7 @@ void ICHCSystemSettingsFrame::on_restoreSystemButton_clicked()
 //    }
 //    if(acts.size() != fncs.size())
 //    {
-//        QMessageBox::warning(this, tr("Warnning"), tr("Backup files is incomplete!"));
+//        ICMessageBox::ICWarning(this, tr("Warnning"), tr("Backup files is incomplete!"));
 //        return;
 //    }
 //    for(int i = 0; i != fncs.size(); ++i)
@@ -571,7 +571,7 @@ void ICHCSystemSettingsFrame::on_restoreSystemButton_clicked()
 //    {
 //        if(!fncs.contains(acts.at(i).left(acts.at(i).size() - 4)))
 //        {
-//            QMessageBox::warning(this, tr("Warnning"), tr("Backup files is incomplete!"));
+//            ICMessageBox::ICWarning(this, tr("Warnning"), tr("Backup files is incomplete!"));
 //            return;
 //        }
 //    }
@@ -587,7 +587,7 @@ void ICHCSystemSettingsFrame::on_restoreSystemButton_clicked()
 //        file.close();
 //        if(!programChecker.Check(actContent))
 //        {
-//            QMessageBox::warning(this, tr("Warnning"), tr("Wrong program format!"));
+//            ICMessageBox::ICWarning(this, tr("Warnning"), tr("Wrong program format!"));
 //            return;
 //        }
 //    }
@@ -601,12 +601,12 @@ void ICHCSystemSettingsFrame::on_restoreSystemButton_clicked()
 //        file.close();
 //        if(!configFormatChecker.CheckRowCount(actContent, 58,ICDataFormatChecker::kCompareEqual))
 //        {
-//            QMessageBox::warning(this, tr("Warnning"), tr("Wrong config format!"));
+//            ICMessageBox::ICWarning(this, tr("Warnning"), tr("Wrong config format!"));
 //            return;
 //        }
 //        if(!configFormatChecker.Check(actContent))
 //        {
-//            QMessageBox::warning(this, tr("Warnning"), tr("Wrong config format!"));
+//            ICMessageBox::ICWarning(this, tr("Warnning"), tr("Wrong config format!"));
 //            return;
 //        }
 //    }
@@ -626,7 +626,7 @@ void ICHCSystemSettingsFrame::on_restoreSystemButton_clicked()
 //        file.close();
 //        if(!programChecker.Check(actContent))
 //        {
-//            QMessageBox::warning(this, tr("Warnning"), tr("Wrong program format!"));
+//            ICMessageBox::ICWarning(this, tr("Warnning"), tr("Wrong program format!"));
 //            return;
 //        }
 //    }
@@ -641,7 +641,7 @@ void ICHCSystemSettingsFrame::on_restoreSystemButton_clicked()
 //    //    dir.setPath("/mnt/udisk/HC5ABackup/subs");
 //    //    if(!dir.exists())
 //    //    {
-//    //        QMessageBox::warning(this, tr("Warnning"), tr("Backup files is not exists!"));
+//    //        ICMessageBox::ICWarning(this, tr("Warnning"), tr("Backup files is not exists!"));
 //    //        return;
 //    //    }
 //    //    system("cp /mnt/udisk/HC5ABackup/subs/* /opt/Qt/bin/subs -f");
@@ -659,7 +659,7 @@ void ICHCSystemSettingsFrame::on_restoreAllButton_clicked()
 #else
     if(!CheckIsUsbAttached())
     {
-        QMessageBox::warning(this, tr("Warning"), tr("USB is not connected!"));
+        ICMessageBox::ICWarning(this, tr("Warning"), tr("USB is not connected!"));
         return;
     }
     QString getFileDir = "/mnt/udisk";
@@ -702,7 +702,7 @@ void ICHCSystemSettingsFrame::on_restoreAllButton_clicked()
         file.close();
         if(!programChecker.Check(actContent))
         {
-            QMessageBox::warning(this, tr("Warnning"), QString(tr("%1 wrong program format! Will skip this record!").arg(workReocrds.at(i))));
+            ICMessageBox::ICWarning(this, tr("Warnning"), QString(tr("%1 wrong program format! Will skip this record!").arg(workReocrds.at(i))));
             //            ret = false;
             skipRecords.append(workReocrds.at(i));
             continue;
@@ -715,14 +715,14 @@ void ICHCSystemSettingsFrame::on_restoreAllButton_clicked()
         file.close();
         if(!configFormatChecker.CheckRowCount(actContent, 58,ICDataFormatChecker::kCompareEqual))
         {
-            QMessageBox::warning(this, tr("Warnning"), QString(tr("%1 wrong config format! Will skip this record!").arg(workReocrds.at(i))));
+            ICMessageBox::ICWarning(this, tr("Warnning"), QString(tr("%1 wrong config format! Will skip this record!").arg(workReocrds.at(i))));
             //            ret = false;
             skipRecords.append(workReocrds.at(i));
             continue;
         }
         if(!configFormatChecker.Check(actContent))
         {
-            QMessageBox::warning(this, tr("Warnning"), QString(tr("%1 wrong config format! Will skip this record!").arg(workReocrds.at(i))));
+            ICMessageBox::ICWarning(this, tr("Warnning"), QString(tr("%1 wrong config format! Will skip this record!").arg(workReocrds.at(i))));
             //            ret = false;
             skipRecords.append(workReocrds.at(i));
         }
@@ -744,7 +744,7 @@ void ICHCSystemSettingsFrame::on_restoreAllButton_clicked()
         file.close();
         if(!programChecker.Check(actContent))
         {
-            QMessageBox::warning(this, tr("Warnning"), QString(tr("%1 wrong program format! Will skip this sub!").arg(subs.at(i))));
+            ICMessageBox::ICWarning(this, tr("Warnning"), QString(tr("%1 wrong program format! Will skip this sub!").arg(subs.at(i))));
             skipRecords.append(subs.at(i));
             //            ret = false;
             //            return;
@@ -822,7 +822,7 @@ void ICHCSystemSettingsFrame::StatusRefresh()
 
 void ICHCSystemSettingsFrame::on_calibrationBtn_clicked()
 {
-    if(QMessageBox::warning(this,
+    if(ICMessageBox::ICWarning(this,
                             tr("Warning"),
                             tr("The system will be reboot to calibrate! Do you want to continue?"),
                             QMessageBox::Ok | QMessageBox::Cancel) == QMessageBox::Ok)
@@ -874,12 +874,12 @@ bool ICHCSystemSettingsFrame::CheckRestoreSystemFiles_()
         file.close();
         if(!configChecker.CheckRowCount(sysContent, 162, ICDataFormatChecker::kCompareEqual))
         {
-            QMessageBox::warning(this, tr("Warnning"), tr("Wrong system config format!"));
+            ICMessageBox::ICWarning(this, tr("Warnning"), tr("Wrong system config format!"));
             return false;
         }
         if(!configChecker.Check(sysContent))
         {
-            QMessageBox::warning(this, tr("Warnning"), tr("Wrong system config format!"));
+            ICMessageBox::ICWarning(this, tr("Warnning"), tr("Wrong system config format!"));
             return false;
         }
     }
@@ -901,12 +901,12 @@ bool ICHCSystemSettingsFrame::CheckRestoreMachineFiles_()
         file.close();
         if(!configChecker.CheckRowCount(configContent, 7, ICDataFormatChecker::kCompareEqual))
         {
-            QMessageBox::warning(this, tr("Warnning"), tr("Wrong Axis config format!"));
+            ICMessageBox::ICWarning(this, tr("Warnning"), tr("Wrong Axis config format!"));
             return false;
         }
         if(!configChecker.Check(configContent))
         {
-            QMessageBox::warning(this, tr("Warnning"), tr("Wrong Axis config format!"));
+            ICMessageBox::ICWarning(this, tr("Warnning"), tr("Wrong Axis config format!"));
             return false;
         }
     }
@@ -918,7 +918,7 @@ bool ICHCSystemSettingsFrame::CheckRestoreMachineFiles_()
         QStringList rows = configContent.split("\n", QString::SkipEmptyParts);
         if(rows.size() != 8)
         {
-            QMessageBox::warning(this, tr("Warnning"), tr("Wrong Rotation config format!"));
+            ICMessageBox::ICWarning(this, tr("Warnning"), tr("Wrong Rotation config format!"));
             return false;
         }
         QStringList cols;
@@ -929,19 +929,19 @@ bool ICHCSystemSettingsFrame::CheckRestoreMachineFiles_()
             cols = rows.at(i).split(" ", QString::SkipEmptyParts);
             if(cols.size() != 2)
             {
-                QMessageBox::warning(this, tr("Warnning"), tr("Wrong Rotation config format!"));
+                ICMessageBox::ICWarning(this, tr("Warnning"), tr("Wrong Rotation config format!"));
                 return false;
             }
             //            if(cols.at(0) != axisName.at(i))
             //            {
-            //                QMessageBox::warning(this, tr("Warnning"), tr("Wrong Rotation config format!"));
+            //                ICMessageBox::ICWarning(this, tr("Warnning"), tr("Wrong Rotation config format!"));
             //                return false;
             //            }
 //            for(int j = 0; j != cols.at(1).size(); ++j)
 //            {
 //                if(!cols.at(1).at(j).isDigit())
 //                {
-//                    QMessageBox::warning(this, tr("Warnning"), tr("Wrong Rotation config format!"));
+//                    ICMessageBox::ICWarning(this, tr("Warnning"), tr("Wrong Rotation config format!"));
 //                    return false;
 //                }
 //            }
@@ -1028,7 +1028,7 @@ ICLogFunctions(ICHCSystemSettingsFrame)
 
 void ICHCSystemSettingsFrame::on_memory_fix_clicked()
 {
-    if(QMessageBox::warning(this,
+    if(ICMessageBox::ICWarning(this,
                             tr("Warning"),
                             tr("The system will be for storage to repair ! Do you want to continue?"),
                             QMessageBox::Ok | QMessageBox::Cancel) == QMessageBox::Ok)

@@ -2,7 +2,7 @@
 #include "ui_icmachinefigure.h"
 #include "icvirtualhost.h"
 #include "iclineeditwrapper.h"
-#include <QMessageBox>
+#include "icmessagebox.h"
 #include "icconfigstring.h"
 
 ICMachineFigure::ICMachineFigure(QWidget *parent) :
@@ -86,7 +86,7 @@ void ICMachineFigure::hideEvent(QHideEvent *e)
 //void ICMachineFigure::on_saveButton_clicked()
 //{
 //    ICVirtualHost::GlobalVirtualHost()->SaveSystemConfig();
-//    QMessageBox::information(this, tr("Tips"), tr("Save successfully!"));
+//    ICMessageBox::ICWarning(this, tr("Tips"), tr("Save successfully!"));
 //}
 
 ICLogFunctions(ICMachineFigure)

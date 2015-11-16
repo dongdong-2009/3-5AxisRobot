@@ -1,7 +1,7 @@
 #include <QDir>
 #include <QFile>
 #include <QDateTime>
-#include <QMessageBox>
+#include "icmessagebox.h"
 
 #include "icmacrosubroutine.h"
 #include "moldinformation.h"
@@ -89,7 +89,7 @@ bool MoldInformation::CreateNewSourceFile(const QString & fileName)
 {
     if(fileName.isEmpty())
     {
-        QMessageBox::warning(this, tr("warning"),
+        ICMessageBox::ICWarning(this, tr("warning"),
                              tr("New file name is empty,\n"
                                 "Please input the file name."),
                              QMessageBox::Ok);
@@ -111,7 +111,7 @@ bool MoldInformation::CreateNewSourceFile(const QString & fileName)
     {
         if(!newFile.open(QIODevice::ReadWrite))
         {
-            QMessageBox::warning(this, tr("Warnning"),tr("This name can't not be accept!"));
+            ICMessageBox::ICWarning(this, tr("Warnning"),tr("This name can't not be accept!"));
             return false;
         }
 #ifdef HC_8AXIS
@@ -163,7 +163,7 @@ bool MoldInformation::CreateNewSourceFile(const QString & fileName)
         QFile::copy(":/sysconfig/Base.sub", recordFilePath_ + "/" + fileNameNoExtent + "sub7");
         newFile.close();
         system(QString("chmod 666 %1/%2*").arg(recordFilePath_).arg(fileNameNoExtent).toLatin1());
-        QMessageBox::warning(this, tr("Success"),
+        ICMessageBox::ICWarning(this, tr("Success"),
                              tr("New file success."),
                              QMessageBox::Ok);
         system("sync");
@@ -171,7 +171,7 @@ bool MoldInformation::CreateNewSourceFile(const QString & fileName)
     }
     else
     {
-        QMessageBox::warning(this, tr("The file has been existing"),
+        ICMessageBox::ICWarning(this, tr("The file has been existing"),
                              tr("File already exists,\n"
                                 "Please change a new name."),
                              QMessageBox::Ok);
@@ -210,7 +210,7 @@ bool MoldInformation::CopySourceFile(const QString & originFileName, const QStri
 {
     if(originFileName.isEmpty())
     {
-        QMessageBox::warning(this, tr("warning"),
+        ICMessageBox::ICWarning(this, tr("warning"),
                              tr("Source file name is empty,\n"
                                 "Please choose an existing file."),
                              QMessageBox::Ok);
@@ -218,7 +218,7 @@ bool MoldInformation::CopySourceFile(const QString & originFileName, const QStri
     }
     if(targetFileName.isEmpty())
     {
-        QMessageBox::warning(this, tr("warning"),
+        ICMessageBox::ICWarning(this, tr("warning"),
                              tr("New file name is empty,\n"
                                 "Please write the destination file name."),
                              QMessageBox::Ok);
@@ -254,7 +254,7 @@ bool MoldInformation::CopySourceFile(const QString & originFileName, const QStri
             system("sync");
             if(isOk) return true;
             system(QString("rm %1*").arg(targetSubFilePath).toLatin1());
-//            QMessageBox::information(this, tr("Success"),
+//            ICMessageBox::ICWarning(this, tr("Success"),
 //                                     tr("Copy file success!"),
 //                                     QMessageBox::Ok);
 
@@ -263,7 +263,7 @@ bool MoldInformation::CopySourceFile(const QString & originFileName, const QStri
         QFile::remove(targetFilePathName);
         system("sync");
     }
-    QMessageBox::information(this, tr("warning"),
+    ICMessageBox::ICWarning(this, tr("warning"),
                              tr("Destination file already exists!\n"
                                 "Please try a new name"),
                              QMessageBox::Ok);
@@ -274,7 +274,7 @@ bool MoldInformation::DeleteSourceFile(const QString & fileName)
 {
     if(fileName.isEmpty())
     {
-        QMessageBox::warning(this, tr("warning"),
+        ICMessageBox::ICWarning(this, tr("warning"),
                              tr("Source file name is empty,\n"
                                 "Please choose an existing file."),
                              QMessageBox::Ok);
@@ -292,7 +292,7 @@ bool MoldInformation::DeleteSourceFile(const QString & fileName)
         configFile.chop(3);
         system(QString("rm %1sub*").arg(configFile).toLatin1());
         //        QFile::remove(ICSettingConfig::ConfigPath() + fileName);
-        //        QMessageBox::information(this, tr("Success"),
+        //        ICMessageBox::ICWarning(this, tr("Success"),
         //                                 tr("File deleted success!"),
         //                                 QMessageBox::Ok);
         system("sync");
@@ -300,7 +300,7 @@ bool MoldInformation::DeleteSourceFile(const QString & fileName)
     }
     else
     {
-        QMessageBox::warning(this, tr("warning"),
+        ICMessageBox::ICWarning(this, tr("warning"),
                              tr("File does not exist!"),
                              QMessageBox::Ok);
     }
@@ -344,7 +344,7 @@ void MoldInformation::on_newToolButton_clicked()
 {
     if(ui->destinationFileLineEdit->text().isEmpty())
     {
-        QMessageBox::warning(this, tr("Warning"), tr("file name is empty"));
+        ICMessageBox::ICWarning(this, tr("Warning"), tr("file name is empty"));
         return;
     }
     QString fileName = ui->destinationFileLineEdit->text() + ".act";
@@ -361,7 +361,7 @@ void MoldInformation::on_copyToolButton_clicked()
 {
     if(ui->destinationFileLineEdit->text().isEmpty())
     {
-        QMessageBox::warning(this, tr("Warning"), tr("file name is empty"));
+        ICMessageBox::ICWarning(this, tr("Warning"), tr("file name is empty"));
         return;
     }
     QString fileName = ui->destinationFileLineEdit->text() + ".act";
@@ -385,7 +385,7 @@ void MoldInformation::on_loadToolButton_clicked()
         moldName += ".act";
         if(ICParametersSave::Instance()->MoldName(QString()) == moldName)
         {
-            QMessageBox::information(this, tr("Tips"), tr("On the Current mold already!"));
+            ICMessageBox::ICWarning(this, tr("Tips"), tr("On the Current mold already!"));
             return;
         }
 
@@ -394,7 +394,7 @@ void MoldInformation::on_loadToolButton_clicked()
         {
             if(!ICMold::CurrentMold()->ReadMoldFile(filePathName))
             {
-                QMessageBox::critical(this, tr("critical"), tr("Read mold or mold para fail! Please change other mold!"));
+                ICMessageBox::ICWarning(this, tr("critical"), tr("Read mold or mold para fail! Please change other mold!"));
                 //                ICMold::CurrentMold()->ReadMoldFile(
                 return;
             }
@@ -424,7 +424,7 @@ void MoldInformation::on_loadToolButton_clicked()
                                                         oldMoldName);
 
 
-//            QMessageBox::information(this, tr("Tips"), tr("Load Mold Successful!"));
+//            ICMessageBox::ICWarning(this, tr("Tips"), tr("Load Mold Successful!"));
         }
         ICVirtualHost::GlobalVirtualHost()->SetFixtureCheck(true);
         qDebug("after load");
@@ -451,7 +451,7 @@ void MoldInformation::on_deleteToolButton_clicked()
 
         if(ICParametersSave::Instance()->MoldName(QString()) == selectedItem)
         {
-            QMessageBox::warning(this, tr("warning"),
+            ICMessageBox::ICWarning(this, tr("warning"),
                                  tr("The mold file ") +
                                  selectedItem +
                                  tr(" is being used"),
@@ -464,7 +464,7 @@ void MoldInformation::on_deleteToolButton_clicked()
 
         if(IsStandProgram(selectedItem))
         {
-            QMessageBox::warning(this, tr("warning"),
+            ICMessageBox::ICWarning(this, tr("warning"),
                                  tr("Stand programs can not be delete!"));
            flag = true;
            continue;
@@ -483,7 +483,7 @@ void MoldInformation::on_deleteToolButton_clicked()
         str.chop(4);
         if((str + ".act") == ICParametersSave::Instance()->MoldName(""))
         {
-            QMessageBox::warning(this, tr("warning"),
+            ICMessageBox::ICWarning(this, tr("warning"),
                                  tr("The mold file ") +
                                  str +
                                  tr(" is being used"),
@@ -493,7 +493,7 @@ void MoldInformation::on_deleteToolButton_clicked()
         }
         if(IsStandProgram(str + ".act"))
         {
-            QMessageBox::warning(this, tr("warning"),
+            ICMessageBox::ICWarning(this, tr("warning"),
                                  tr("Stand programs can not be delete!"));
             return;
         }
@@ -503,7 +503,7 @@ void MoldInformation::on_deleteToolButton_clicked()
     }
     if(selectedItemStringList.size() != 0)
     {
-        int ret = QMessageBox::warning(this, tr("warning"),
+        int ret = ICMessageBox::ICWarning(this, tr("warning"),
                                        tr("Are you sure to delete the selected files?"),
                                        QMessageBox::Ok | QMessageBox::Cancel,
                                        QMessageBox::Cancel);
@@ -585,7 +585,7 @@ void MoldInformation::on_importToolButton_clicked()
     QDir src_dir("./records/");
     if(!dir.exists())
     {
-        QMessageBox::warning(this, tr("Warnning"), tr("Backup files is not exists!"));
+        ICMessageBox::ICWarning(this, tr("Warnning"), tr("Backup files is not exists!"));
 //        ui->exportCheckBox->setChecked(true);
         return;
     }
@@ -601,7 +601,7 @@ void MoldInformation::on_importToolButton_clicked()
     //    }
     //    if(acts.size() != fncs.size())
     //    {
-    //        QMessageBox::warning(this, tr("Warnning"), tr("Backup files is incomplete!"));
+    //        ICMessageBox::ICWarning(this, tr("Warnning"), tr("Backup files is incomplete!"));
     //        return;
     //    }
     //    for(int i = 0; i != fncs.size(); ++i)
@@ -612,7 +612,7 @@ void MoldInformation::on_importToolButton_clicked()
     //    {
     //        if(!fncs.contains(acts.at(i).left(acts.at(i).size() - 4)))
     //        {
-    //            QMessageBox::warning(this, tr("Warnning"), tr("Backup files is incomplete!"));
+    //            ICMessageBox::ICWarning(this, tr("Warnning"), tr("Backup files is incomplete!"));
     //            return;
     //        }
     //    }
@@ -631,7 +631,7 @@ void MoldInformation::on_importToolButton_clicked()
             {
                 if(ICParametersSave::Instance()->MoldName(QString()) == item_text + ".act")
                 {
-                    QMessageBox::warning(this, tr("warning"),
+                    ICMessageBox::ICWarning(this, tr("warning"),
                                          tr("The mold file ") +
                                          item_text +
                                          tr(" is being used"),
@@ -677,7 +677,7 @@ void MoldInformation::on_importToolButton_clicked()
             }
             if(ICParametersSave::Instance()->MoldName(QString()) == str + ".act")
             {
-                QMessageBox::warning(this, tr("warning"),
+                ICMessageBox::ICWarning(this, tr("warning"),
                                      tr("The mold file ") +
                                      str +
                                      tr(" is being used"),
@@ -715,7 +715,7 @@ void MoldInformation::on_importToolButton_clicked()
         {
             if(!programChecker.Check(actContent))
             {
-                QMessageBox::warning(this, tr("Warnning"), tr("Wrong program format!"));
+                ICMessageBox::ICWarning(this, tr("Warnning"), tr("Wrong program format!"));
                 return;
             }
         }
@@ -723,12 +723,12 @@ void MoldInformation::on_importToolButton_clicked()
         {
             if(!configFormatChecker.CheckRowCount(actContent, 58,ICDataFormatChecker::kCompareEqual))
             {
-                QMessageBox::warning(this, tr("Warnning"), tr("Wrong config format!!!"));
+                ICMessageBox::ICWarning(this, tr("Warnning"), tr("Wrong config format!!!"));
                 return;
             }
             if(!configFormatChecker.Check(actContent))
             {
-                QMessageBox::warning(this, tr("Warnning"), tr("Wrong config format!"));
+                ICMessageBox::ICWarning(this, tr("Warnning"), tr("Wrong config format!"));
                 return;
             }
         }
@@ -767,7 +767,7 @@ void MoldInformation::on_importToolButton_clicked()
         file.close();
         if(!programChecker.Check(actContent))
         {
-            QMessageBox::warning(this, tr("Warnning"), tr("Wrong program format!!!"));
+            ICMessageBox::ICWarning(this, tr("Warnning"), tr("Wrong program format!!!"));
             return;
         }
     }
@@ -789,7 +789,7 @@ void MoldInformation::on_importToolButton_clicked()
 #endif
     if(!flagItem || !flagItem_)
     {
-        QMessageBox::information(this,tr("Information"), tr("Operation finished!"));
+        ICMessageBox::ICWarning(this,tr("Information"), tr("Operation finished!"));
         system("sync");
     }
 }
@@ -810,7 +810,7 @@ void MoldInformation::on_exportToolButton_clicked()
 #else
     if(!CheckIsUsbAttached())
     {
-        QMessageBox::warning(this, tr("Warning"), tr("USB is not connected!"));
+        ICMessageBox::ICWarning(this, tr("Warning"), tr("USB is not connected!"));
         return;
     }
     QDir dir("/mnt/udisk/HC5ABackup/records");
@@ -911,7 +911,7 @@ void MoldInformation::on_exportToolButton_clicked()
 #endif
     if(!flagItem || !flagItem_)
     {
-        QMessageBox::information(this,tr("Information"), tr("Operation finished!"));
+        ICMessageBox::ICWarning(this,tr("Information"), tr("Operation finished!"));
         system("sync");
     }
 
@@ -961,7 +961,7 @@ void MoldInformation::RefreshFileList()
 #ifdef Q_WS_QWS
     if(!CheckIsUsbAttached())
     {
-        QMessageBox::warning(this, tr("Warning"), tr("USB is not connected!"));
+        ICMessageBox::ICWarning(this, tr("Warning"), tr("USB is not connected!"));
         ui->exportCheckBox->click();
         return;
     }
@@ -985,7 +985,7 @@ void MoldInformation::RefreshFileList()
 
     if(!recordDir.exists())
     {
-        QMessageBox::warning(this, tr("Warnning"), tr("Backup files is not exists!"));
+        ICMessageBox::ICWarning(this, tr("Warnning"), tr("Backup files is not exists!"));
         return;
     }
     ICTipsWidget tipsWidget(tr("Refresh File List, please wait..."));
@@ -1002,7 +1002,7 @@ void MoldInformation::RefreshFileList()
     }
 //    if(acts.size() != fncs.size())
 //    {
-//        QMessageBox::warning(this, tr("Warnning"), tr("Backup files is incomplete!"));
+//        ICMessageBox::ICWarning(this, tr("Warnning"), tr("Backup files is incomplete!"));
 //        return;
 //    }
     for(int i = 0; i != fncs.size(); ++i)
@@ -1013,7 +1013,7 @@ void MoldInformation::RefreshFileList()
 //    {
 //        if(!fncs.contains(acts.at(i).left(acts.at(i).size() - 4)))
 //        {
-//            QMessageBox::warning(this, tr("Warnning"), tr("Backup files is incomplete!"));
+//            ICMessageBox::ICWarning(this, tr("Warnning"), tr("Backup files is incomplete!"));
 //            return;
 //        }
 //    }

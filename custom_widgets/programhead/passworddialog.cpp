@@ -1,4 +1,4 @@
-#include <QMessageBox>
+#include "icmessagebox.h"
 #include "passworddialog.h"
 #include "ui_passworddialog.h"
 #include "icparameterssave.h"
@@ -28,7 +28,7 @@ void PasswordDialog::on_buttonBox_accepted()
     }
     else
     {
-        QMessageBox::warning(this, tr("Error"), tr("Password is wrong!"));
+        ICMessageBox::ICWarning(this, tr("Error"), tr("Password is wrong!"));
     }
 }
 

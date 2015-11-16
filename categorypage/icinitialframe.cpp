@@ -6,7 +6,7 @@
 #include "icvirtualkey.h"
 #include "icactioncommand.h"
 
-#include <QMessageBox>
+#include "icmessagebox.h"
 #include <QDebug>
 
 ICInitialFrame::ICInitialFrame(QWidget *parent) :
@@ -93,7 +93,7 @@ void ICInitialFrame::changeEvent(QEvent *e)
 void ICInitialFrame::on_Power_off_clicked()
 {
     //qDebug("111222333");
-    if(QMessageBox::warning(this,
+    if(ICMessageBox::ICWarning(this,
                             tr("Warning"),
                             tr("The system will poweroff ! Do you want to continue?"),
                             QMessageBox::Ok | QMessageBox::Cancel) == QMessageBox::Ok)
