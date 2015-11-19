@@ -1590,11 +1590,12 @@ void MainFrame::InitSpareTime()
         //        ICMessageBox::ICWarning(this, "rest time", QString("%1 %2 %3").arg(last.toString())
         //                                 .arg(overTime)
         //                                 .arg(restTime));
+        ICParametersSave::Instance()->SetBootDatetime(QDateTime::currentDateTime());
         ICParametersSave::Instance()->SetRestTime(resetTime);
     }
     if(resetTime <= 7*24 )
     {
-        if(resetTime > 0)
+        if(resetTime > 1)
         {
             ICMessageBox::ICWarning(NULL,tr("tips"),tr("Spare Time %1 Hour").arg(resetTime));
             //            connect(registe_timer,SIGNAL(timeout()),this,SLOT(CountRestTime()));
