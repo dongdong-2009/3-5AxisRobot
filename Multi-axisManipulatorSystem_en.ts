@@ -6674,23 +6674,23 @@ Please enter an digit between </source>
     <name>ICOriginDialog</name>
     <message>
         <location filename="icorigindialog.cpp" line="39"/>
-        <location filename="icorigindialog.cpp" line="95"/>
+        <location filename="icorigindialog.cpp" line="100"/>
         <source>Please press the start button to start execute origin action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="icorigindialog.cpp" line="91"/>
+        <location filename="icorigindialog.cpp" line="96"/>
         <source>Originning...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="icorigindialog.cpp" line="124"/>
+        <location filename="icorigindialog.cpp" line="129"/>
         <source>Do you need to auto position?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="icorigindialog.cpp" line="161"/>
-        <location filename="icorigindialog.cpp" line="167"/>
+        <location filename="icorigindialog.cpp" line="166"/>
+        <location filename="icorigindialog.cpp" line="172"/>
         <source>Originning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8811,7 +8811,7 @@ Please input the root password to confirm.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1599"/>
+        <location filename="mainframe.cpp" line="1600"/>
         <source>Spare Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8844,7 +8844,7 @@ Please input the root password to confirm.</source>
         <location filename="mainframe.cpp" line="1115"/>
         <location filename="mainframe.cpp" line="1119"/>
         <location filename="mainframe.cpp" line="1523"/>
-        <location filename="mainframe.cpp" line="1599"/>
+        <location filename="mainframe.cpp" line="1600"/>
         <source>tips</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8875,18 +8875,18 @@ Please input the root password to confirm.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1642"/>
-        <location filename="mainframe.cpp" line="1658"/>
+        <location filename="mainframe.cpp" line="1643"/>
+        <location filename="mainframe.cpp" line="1659"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1643"/>
+        <location filename="mainframe.cpp" line="1644"/>
         <source>%1 fnc is broken. Please remove this mold!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1659"/>
+        <location filename="mainframe.cpp" line="1660"/>
         <source>%1 mold fixed. Please check the sub program!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -9883,7 +9883,7 @@ Admin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.cpp" line="18"/>
+        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.cpp" line="19"/>
         <source>VirtualKeyboard</source>
         <translation type="unfinished"></translation>
     </message>
@@ -9957,7 +9957,7 @@ Admin</source>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="421"/>
-        <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog.cpp" line="84"/>
+        <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog.cpp" line="96"/>
         <source>.</source>
         <translation type="unfinished"></translation>
     </message>

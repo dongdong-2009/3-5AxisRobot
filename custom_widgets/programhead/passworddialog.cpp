@@ -11,6 +11,8 @@ PasswordDialog::PasswordDialog(QWidget *parent) :
     ui->setupUi(this);
     buttonGroup_ = new QButtonGroup();
     InitButton();
+//    this->setWindowFlags(Qt::WindowTitleHint | Qt::CustomizeWindowHint);
+
 }
 
 PasswordDialog::~PasswordDialog()

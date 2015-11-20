@@ -1597,7 +1597,7 @@ void MainFrame::InitSpareTime()
     {
         if(resetTime > 1)
         {
-            ICMessageBox::ICWarning(NULL,tr("tips"),tr("Spare Time %1 Hour").arg(resetTime));
+            QMessageBox::warning(NULL,tr("tips"),tr("Spare Time %1 Hour").arg(resetTime));
             //            connect(registe_timer,SIGNAL(timeout()),this,SLOT(CountRestTime()));
             //            registe_timer->start(1000*15);
             registe_timer->start(1000*3600);
