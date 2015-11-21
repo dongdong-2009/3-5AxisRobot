@@ -7312,7 +7312,6 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="25"/>
         <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="134"/>
         <source>Spare Time: %1 h</source>
         <translation type="unfinished"></translation>
@@ -7328,7 +7327,6 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="27"/>
         <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="136"/>
         <source>No Register!</source>
         <translation type="unfinished"></translation>
@@ -8359,55 +8357,55 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="99"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="105"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="99"/>
         <source>Update Logo</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="118"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="124"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="118"/>
         <source>Scan Panel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="140"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="146"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="140"/>
         <source>Update HMI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="159"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="165"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="159"/>
         <source>Scan Host</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="181"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="187"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="181"/>
         <source>Update Host</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="200"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="206"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="200"/>
         <source>Update Super Password</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="219"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="225"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="219"/>
         <source>Back To Factory</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="248"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="254"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="248"/>
         <source>Update Host Process:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="267"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="273"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="267"/>
         <source>Care</source>
         <translation type="unfinished"></translation>
@@ -8441,31 +8439,31 @@ Please enter an digit between </source>
         <translation type="obsolete">Reserve</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="318"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="324"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="318"/>
         <source>Item</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="323"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="329"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="323"/>
         <source>Left Day</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="328"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="334"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="328"/>
         <source>Next Date</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="333"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="339"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="333"/>
         <source>Cycle</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="338"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="344"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="338"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="89"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="154"/>
@@ -9346,28 +9344,28 @@ Please try a new name</source>
 <context>
     <name>PasswdLevelLabel</name>
     <message>
-        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="48"/>
-        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="72"/>
-        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="82"/>
+        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="51"/>
+        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="75"/>
+        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="85"/>
         <source>Machine Operator</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="52"/>
-        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="74"/>
-        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="86"/>
+        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="55"/>
+        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="77"/>
+        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="89"/>
         <source>Machine Admin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="56"/>
-        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="76"/>
-        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="90"/>
+        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="59"/>
+        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="79"/>
+        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="93"/>
         <source>Advance Admin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="78"/>
+        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="81"/>
         <source>None Level</source>
         <translation type="unfinished"></translation>
     </message>
@@ -9408,12 +9406,12 @@ Admin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/passworddialog.cpp" line="31"/>
+        <location filename="custom_widgets/programhead/passworddialog.cpp" line="33"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/passworddialog.cpp" line="31"/>
+        <location filename="custom_widgets/programhead/passworddialog.cpp" line="33"/>
         <source>Password is wrong!</source>
         <translation type="unfinished"></translation>
     </message>

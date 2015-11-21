@@ -8809,7 +8809,6 @@ Please enter an digit between </source>
         <translation type="obsolete">小时</translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="25"/>
         <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="134"/>
         <source>Spare Time: %1 h</source>
         <translation>剩余时间:%1h</translation>
@@ -8825,7 +8824,6 @@ Please enter an digit between </source>
         <translation>无限制</translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="27"/>
         <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="136"/>
         <source>No Register!</source>
         <translation>没有注册！</translation>
@@ -10213,55 +10211,55 @@ Would you want to restart now?</source>
         <translation>维护</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="99"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="105"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="99"/>
         <source>Update Logo</source>
         <translation>更新图片</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="118"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="124"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="118"/>
         <source>Scan Panel</source>
         <translation>扫描更新包</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="140"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="146"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="140"/>
         <source>Update HMI</source>
         <translation>开始更新</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="159"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="165"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="159"/>
         <source>Scan Host</source>
         <translation>扫描主机更新包</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="181"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="187"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="181"/>
         <source>Update Host</source>
         <translation>更新主机</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="200"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="206"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="200"/>
         <source>Update Super Password</source>
         <translation>更新超级密码</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="219"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="225"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="219"/>
         <source>Back To Factory</source>
         <translation>恢复出厂</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="248"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="254"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="248"/>
         <source>Update Host Process:</source>
         <translation>更新进度:</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="267"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="273"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="267"/>
         <source>Care</source>
         <translation>保养</translation>
@@ -10291,31 +10289,31 @@ Would you want to restart now?</source>
         <translation type="obsolete">7</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="318"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="324"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="318"/>
         <source>Item</source>
         <translation>项目</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="323"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="329"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="323"/>
         <source>Left Day</source>
         <translation>剩余天数</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="328"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="334"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="328"/>
         <source>Next Date</source>
         <translation>下次保养日期</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="333"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="339"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="333"/>
         <source>Cycle</source>
         <translation>周期</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.ui" line="338"/>
+        <location filename="hcmaintains/icupdatesystempage.ui" line="344"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="338"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="89"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="154"/>
@@ -11361,28 +11359,28 @@ Please try a new name</source>
 <context>
     <name>PasswdLevelLabel</name>
     <message>
-        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="48"/>
-        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="72"/>
-        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="82"/>
+        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="51"/>
+        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="75"/>
+        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="85"/>
         <source>Machine Operator</source>
         <translation>操作员</translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="52"/>
-        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="74"/>
-        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="86"/>
+        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="55"/>
+        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="77"/>
+        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="89"/>
         <source>Machine Admin</source>
         <translation>管理员</translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="56"/>
-        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="76"/>
-        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="90"/>
+        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="59"/>
+        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="79"/>
+        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="93"/>
         <source>Advance Admin</source>
         <translation>高级管理员</translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="78"/>
+        <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="81"/>
         <source>None Level</source>
         <translation>无权限</translation>
     </message>
@@ -11439,12 +11437,12 @@ Admin</source>
         <translation>密码</translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/passworddialog.cpp" line="31"/>
+        <location filename="custom_widgets/programhead/passworddialog.cpp" line="33"/>
         <source>Error</source>
         <translation>错误</translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/passworddialog.cpp" line="31"/>
+        <location filename="custom_widgets/programhead/passworddialog.cpp" line="33"/>
         <source>Password is wrong!</source>
         <translation>密码错误！</translation>
     </message>
