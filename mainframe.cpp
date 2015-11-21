@@ -443,7 +443,7 @@ void MainFrame::keyPressEvent(QKeyEvent *e)
             }
             else if(currentKeySeq == testKeySeq)
             {
-                ::system("chmod +x ./test_robot.sh && ./test_robot.sh");
+                ::system("chmod +x /usr/bin/run_boardtest.sh && run_boardtest.sh");
                 //                exit(0);
             }
             currentKeySeq.clear();
