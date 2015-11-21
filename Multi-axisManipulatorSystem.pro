@@ -16,7 +16,7 @@ QT += sql
 
 SK_SIZE = 8
 
-HostType = d
+HostType = c
 
 DEFINES += HOST_TYPE='\\"$${HostType}\\"'
 

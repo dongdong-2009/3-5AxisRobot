@@ -547,8 +547,8 @@ void ICUpdateSystemPage::on_backToFactory_clicked()
         system("mkdir sysconfigbackup");
 #ifdef HC_SK_8
         QFile::copy(":/backupfor8inch/DistanceRotation", "./sysconfigbackup/DistanceRotation");
-        QFile::copy(":/backupfor8inch/Multi-axisManipulatorSystem.ini", "./sysconfigbackup/Multi-axisManipulatorSystem.ini");
-        QFile::copy(":/backupfor8inch/systemParameter.ini", "./sysconfigbackup/systemParameter.ini");
+//        QFile::copy(":/backupfor8inch/Multi-axisManipulatorSystem.ini", "./sysconfigbackup/Multi-axisManipulatorSystem.ini");
+//        QFile::copy(":/backupfor8inch/systemParameter.ini", "./sysconfigbackup/systemParameter.ini");
         QFile::copy(":/backupfor8inch/passwdfile", "./sysconfigbackup/passwdfile");
         QFile::copy(":/backupfor8inch/StandPrograms", "./sysconfigbackup/StandPrograms");
         QFile::copy(":/backupfor8inch/paramx.txt", "./sysconfigbackup/paramx.txt");
@@ -563,8 +563,8 @@ void ICUpdateSystemPage::on_backToFactory_clicked()
 
 #else
         QFile::copy(":/backupfor5inch/DistanceRotation", "./sysconfigbackup/DistanceRotation");
-        QFile::copy(":/backupfor5inch/Multi-axisManipulatorSystem.ini", "./sysconfigbackup/Multi-axisManipulatorSystem.ini");
-        QFile::copy(":/backupfor5inch/systemParameter.ini", "./sysconfigbackup/systemParameter.ini");
+//        QFile::copy(":/backupfor5inch/Multi-axisManipulatorSystem.ini", "./sysconfigbackup/Multi-axisManipulatorSystem.ini");
+//        QFile::copy(":/backupfor5inch/systemParameter.ini", "./sysconfigbackup/systemParameter.ini");
         QFile::copy(":/backupfor5inch/passwdfile", "./sysconfigbackup/passwdfile");
         QFile::copy(":/backupfor5inch/StandPrograms", "./sysconfigbackup/StandPrograms");
         QFile::copy(":/backupfor5inch/paramx.txt", "./sysconfigbackup/paramx.txt");
