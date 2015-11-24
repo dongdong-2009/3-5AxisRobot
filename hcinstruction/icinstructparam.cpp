@@ -113,7 +113,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             }
             //            commandStr += ICParameterConversion::TransThisIntToThisText(moldItem.Pos(), 1) + " ";
             commandStr += ICParameterConversion::TransThisIntToThisText(moldItem.ActualPos(), POS_DECIMAL) + " ";
-            if(moldItem.Get3DType() == 1)
+            if((moldItem.Get3DType()) == 1 && (action == ACT_3D))
             {
                 commandStr += tr("a:") + ICParameterConversion::TransThisIntToThisText(moldItem.GetAngle(), 1) + " ";
                 commandStr += tr("Dir:") + (moldItem.GetDir() == 0 ? tr("PP") : tr("RP"));
