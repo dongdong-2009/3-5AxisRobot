@@ -2279,74 +2279,74 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="141"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="145"/>
         <source>Fixture1  </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="141"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="145"/>
         <source>Fixture2  </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="141"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="145"/>
         <source>Fixture3  </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="141"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="145"/>
         <source>Fixture4  </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="21"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="142"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="146"/>
         <source>Sucker1   </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="21"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="142"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="146"/>
         <source>Sucker2   </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="22"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="143"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="147"/>
         <source>Sucker3   </source>
         <oldsource>Sucker3  </oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="23"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="144"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="148"/>
         <source>Sucker4   </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="24"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="145"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="149"/>
         <source>Sucker-5  </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="24"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="145"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="149"/>
         <source>Sucker-6  </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="25"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="146"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="150"/>
         <source>Sucker-7  </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="25"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="146"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="150"/>
         <source>Sucker-8  </source>
         <translation type="unfinished"></translation>
     </message>
@@ -3439,7 +3439,8 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="491"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="741"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="742"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="747"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3451,13 +3452,13 @@ Infomation</source>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="462"/>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="724"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="905"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1013"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="913"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1021"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1313"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1321"/>
         <source>Flag[%1]:%2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3472,17 +3473,22 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="742"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="743"/>
         <source>Can not delete standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="906"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="748"/>
+        <source>Do you really want to delete this action?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="914"/>
         <source>Stand program can not do Up action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1014"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1022"/>
         <source>Stand program can not do Down action</source>
         <translation type="unfinished"></translation>
     </message>

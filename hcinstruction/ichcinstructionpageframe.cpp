@@ -36,7 +36,7 @@
 #include "iccommenteditor.h"
 
 #include <QDebug>
-#include <QMessageBox>
+#include "icmessagebox.h"
 
 //struct MoldItem
 //{
@@ -726,6 +726,7 @@ void ICHCInstructionPageFrame::on_deleteToolButton_clicked()
             return;
         }
     }
+
     int gIndex;
     int tIndex;
     int sIndex;
@@ -742,6 +743,13 @@ void ICHCInstructionPageFrame::on_deleteToolButton_clicked()
                                  tr("Can not delete standby position program"));
             return;
         }
+    }
+    if(ICMessageBox::ICWarning(this, tr("Warning"),
+                               tr("Do you really want to delete this action?"),
+                               QMessageBox::Yes | QMessageBox::No) !=
+            QMessageBox::Yes)
+    {
+        return;
     }
     if(sIndex == -1)
     {

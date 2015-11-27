@@ -115,6 +115,10 @@ ICCutPage::~ICCutPage()
 }
 void ICCutPage::showEvent(QShowEvent *e)
 {
+    for(int i = 0; i < ui->tableWidget->rowCount(); ++i)
+    {
+        ui->tableWidget->item(i, 0)->setCheckState(Qt::Unchecked);
+    }
     connect(ICVirtualHost::GlobalVirtualHost(),
             SIGNAL(StatusRefreshed()),
             this,
@@ -171,6 +175,7 @@ void ICCutPage::SyncStatusImpl(const QList<ICMoldItem> &items)
         row = item.SVal();
         if(row >= ui->tableWidget->rowCount()) continue;
         ui->tableWidget->item(row, 0)->setCheckState(Qt::Checked);
+        ui->tableWidget->scrollToItem(ui->tableWidget->item(row, 0));
         button = qobject_cast<QPushButton*>(ui->tableWidget->cellWidget(row, 1));
 //        button->setChecked(item.IFVal());
         int currentClip = buttonToClip_.value(button);

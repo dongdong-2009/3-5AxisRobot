@@ -187,6 +187,10 @@ void ICHCFixturePage::changeEvent(QEvent *e)
 
 void ICHCFixturePage::showEvent(QShowEvent *e)
 {
+    for(int i = 0; i < ui->tableWidget->rowCount(); ++i)
+    {
+        ui->tableWidget->item(i, 0)->setCheckState(Qt::Unchecked);
+    }
     connect(ICVirtualHost::GlobalVirtualHost(),
             SIGNAL(StatusRefreshed()),
             this,
@@ -222,6 +226,7 @@ void ICHCFixturePage::SyncStatusImpl(const QList<ICMoldItem> &items)
 //        en = qobject_cast<QCheckBox*>(ui->tableWidget->cellWidget(row, 0));
 //        en->setCheckable(true);
         ui->tableWidget->item(row, 0)->setCheckState(Qt::Checked);
+        ui->tableWidget->scrollToItem(ui->tableWidget->item(row, 0));
 //        button = qobject_cast<QPushButton*>(ui->tableWidget->cellWidget(row, 1));
 //        button->setChecked(onClipToOffClip_.contains(mI.Clip()));
 //        qDebug()<<buttonToClip_.value(button);
