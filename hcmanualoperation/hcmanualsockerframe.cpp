@@ -76,7 +76,7 @@ void HCManualSockerFrame::StatusRefreshed()
     static QPixmap on(":/resource/ledgreen(16).png");
     static QPixmap inOn(":/resource/ledred(16).png");
     static ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
-    if(host->IsOutputOn(4))
+    if(host->IsClipOn(4))
     {
         ui->sucker1StatusLabel->setPixmap(on);
     }
@@ -85,7 +85,7 @@ void HCManualSockerFrame::StatusRefreshed()
         ui->sucker1StatusLabel->setPixmap(off);
     }
 
-    if(host->IsOutputOn(5))
+    if(host->IsClipOn(5))
     {
         ui->sucker2StatusLabel->setPixmap(on);
     }
@@ -94,7 +94,7 @@ void HCManualSockerFrame::StatusRefreshed()
         ui->sucker2StatusLabel->setPixmap(off);
     }
 
-    if(host->IsInputOn(4))
+    if(host->IsInputOn(5))
     {
         ui->sucker1Label->setPixmap(inOn);
     }
@@ -103,7 +103,7 @@ void HCManualSockerFrame::StatusRefreshed()
         ui->sucker1Label->setPixmap(off);
     }
 
-    if(host->IsInputOn(5))
+    if(host->IsInputOn(4))
     {
         ui->sucker2Label->setPixmap(inOn);
     }
@@ -112,7 +112,7 @@ void HCManualSockerFrame::StatusRefreshed()
         ui->sucker2Label->setPixmap(off);
     }
 
-    if(host->IsInputOn(6))
+    if(host->IsInputOn(7))
     {
         ui->sucker3Label->setPixmap(inOn);
     }
@@ -121,7 +121,7 @@ void HCManualSockerFrame::StatusRefreshed()
         ui->sucker3Label->setPixmap(off);
     }
 
-    if(host->IsInputOn(7))
+    if(host->IsInputOn(22))
     {
         ui->sucker4Label->setPixmap(inOn);
     }
@@ -130,7 +130,7 @@ void HCManualSockerFrame::StatusRefreshed()
         ui->sucker4Label->setPixmap(off);
     }
 
-    if(host->IsOutputOn(6))
+    if(host->IsOutputOn(21))
     {
         ui->sucker3StatusLabel->setPixmap(on);
     }
@@ -139,7 +139,7 @@ void HCManualSockerFrame::StatusRefreshed()
         ui->sucker3StatusLabel->setPixmap(off);
     }
 
-    if(host->IsOutputOn(7))
+    if(host->IsOutputOn(22))
     {
         ui->sucker4StatusLabel->setPixmap(on);
     }

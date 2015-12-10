@@ -6025,7 +6025,7 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="251"/>
         <source>C end limit</source>
-        <translation>夹2限制</translation>
+        <translation>C轴终点极限</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="257"/>
@@ -7417,25 +7417,25 @@ Please enter an digit between </source>
         <location filename="categorypage/icmonitorpageframe.cpp" line="43"/>
         <source>Horizontal-1</source>
         <oldsource>Horizontal</oldsource>
-        <translation>夹1限</translation>
+        <translation>水平1限</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="44"/>
         <source>Vertical-1</source>
         <oldsource>Vertical</oldsource>
-        <translation>夹2限</translation>
+        <translation>垂直1限</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="45"/>
         <source>Fixtur1</source>
         <oldsource>Fixture1</oldsource>
-        <translation>夹3限</translation>
+        <translation>夹1确认限</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="46"/>
         <source>Fixtur2</source>
         <oldsource>Fixture2</oldsource>
-        <translation>夹4限</translation>
+        <translation>夹2确认限</translation>
     </message>
     <message>
         <source>Reserve</source>
@@ -7444,7 +7444,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="62"/>
         <source>X2 In Limit</source>
-        <translation>X1轴原点</translation>
+        <translation>X2轴起点极限</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="63"/>
@@ -7454,54 +7454,54 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="64"/>
         <source>Y2 Origin</source>
-        <translation>Y2轴上位安全</translation>
+        <translation>Y2轴原点</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="65"/>
         <source>Y2 In Limit</source>
         <oldsource>Y2 Out Limit</oldsource>
-        <translation>Y2轴原点</translation>
+        <translation>Y2轴起点极限</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="66"/>
         <source>Fixture3</source>
         <oldsource>Fixture6</oldsource>
-        <translation>X1轴终点极限</translation>
+        <translation>夹3确认限</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="47"/>
         <source>Sucker2</source>
-        <translation>吸1限</translation>
+        <translation>吸2确认限</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="49"/>
         <source>X1 Out Limit</source>
         <oldsource>X Out Limit</oldsource>
-        <translation>吸3限</translation>
+        <translation>吸3确认限</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="50"/>
         <source>X1 In Limit</source>
         <oldsource>X In Limit</oldsource>
-        <translation>吸4限</translation>
+        <translation>X1轴终点极限</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="52"/>
         <source>X1 Origin</source>
         <oldsource>X Origin</oldsource>
-        <translation>水平1限</translation>
+        <translation>X1轴原点</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="53"/>
         <source>Fixtur4</source>
         <oldsource>Fixture4</oldsource>
-        <translation>垂直1限</translation>
+        <translation>夹3确认限</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="54"/>
         <source>Y1 In Limit</source>
         <oldsource>Y In Limit</oldsource>
-        <translation>水平2限</translation>
+        <translation>Y1轴起点极限</translation>
     </message>
     <message>
         <source>Spare1</source>
@@ -7524,7 +7524,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="60"/>
         <source>Pressure</source>
-        <translation>Z轴终点极限</translation>
+        <translation>气压检测</translation>
     </message>
     <message>
         <source>Vice Forward</source>
@@ -7554,7 +7554,7 @@ Please enter an digit between </source>
         <location filename="categorypage/icmonitorpageframe.cpp" line="68"/>
         <source>Y1 Out Limit</source>
         <oldsource>Y Out Limit</oldsource>
-        <translation>Y1轴原点</translation>
+        <translation>吸4确认限</translation>
     </message>
     <message>
         <source>Main Mid</source>
@@ -7567,37 +7567,37 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="72"/>
         <source>Z In Limit</source>
-        <translation>X041</translation>
+        <translation>Z轴起点极限</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="73"/>
         <source>Z Out Limit</source>
-        <translation>X042</translation>
+        <translation>Z轴终点极限</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="74"/>
         <source>Check In0</source>
-        <translation>X043</translation>
+        <translation>备用输入5</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="75"/>
         <source>Check In1</source>
-        <translation>X044</translation>
+        <translation>备用输入6</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="76"/>
         <source>Watch Dog</source>
-        <translation>X045</translation>
+        <translation>备用输入7</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="77"/>
         <source>Next Cycle App</source>
-        <translation>X046</translation>
+        <translation>备用输入8</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="78"/>
         <source>Mold Close App</source>
-        <translation>X047</translation>
+        <translation>备用输入9</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="80"/>
@@ -7651,65 +7651,65 @@ Please enter an digit between </source>
         <location filename="categorypage/icmonitorpageframe.cpp" line="94"/>
         <source>Horizontal-1 Valve</source>
         <oldsource>Horizontal Valve</oldsource>
-        <translation>夹1阀</translation>
+        <translation>水平1阀</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="95"/>
         <source>Vertical-1 Valve</source>
         <oldsource>Vertical Valve</oldsource>
-        <translation>夹2阀</translation>
+        <translation>垂直1阀</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="96"/>
         <source>Fixtur1 Valve</source>
         <oldsource>Fixture1 Valve</oldsource>
-        <translation>夹3阀</translation>
+        <translation>夹1阀</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="97"/>
         <source>Fixtur2 Valve</source>
         <oldsource>Fixture2 Valve</oldsource>
-        <translation>夹4阀</translation>
+        <translation>夹2阀</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="101"/>
         <source>Adjust Sub Back</source>
-        <translation>吸4阀</translation>
+        <translation>M0</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="105"/>
         <source>Adjust Sub Forward</source>
-        <translation>水平2阀</translation>
+        <translation>M1</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="106"/>
         <source>Next Cycle Sp2</source>
-        <translation>垂直2阀</translation>
+        <translation>备用输出2</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="107"/>
         <source>Horizontal-2 Valve</source>
-        <translation>报警</translation>
+        <translation>水平2阀</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="121"/>
         <source>Y040</source>
-        <translation>预留1</translation>
+        <translation>Y040</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="122"/>
         <source>Y041</source>
-        <translation>预留2</translation>
+        <translation>Y041</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="123"/>
         <source>Y042</source>
-        <translation>预留3</translation>
+        <translation>Y042</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="124"/>
         <source>Y043</source>
-        <translation>预留4</translation>
+        <translation>Y043</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="125"/>
@@ -7744,18 +7744,18 @@ Please enter an digit between </source>
         <location filename="categorypage/icmonitorpageframe.cpp" line="116"/>
         <source>Fixture3 Valve</source>
         <oldsource>Fixture6 Valve</oldsource>
-        <translation>Y034</translation>
+        <translation>夹3阀</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="98"/>
         <source>Sucker2 Valve</source>
-        <translation>吸1阀</translation>
+        <translation>吸2阀</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="55"/>
         <source>A Origin/Horizontal-2</source>
         <oldsource>A Origin/Vertical-2</oldsource>
-        <translation>垂直2限</translation>
+        <translation>A轴原点/水平2限</translation>
     </message>
     <message>
         <source>Horizontal-2</source>
@@ -7782,18 +7782,18 @@ Please enter an digit between </source>
         <location filename="categorypage/icmonitorpageframe.cpp" line="100"/>
         <source>Main Forward Valve</source>
         <oldsource>Main Forward</oldsource>
-        <translation>吸3阀</translation>
+        <translation>主臂前进阀</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="103"/>
         <source>Fixtur4 Valve</source>
         <oldsource>Fixture4 Valve</oldsource>
-        <translation>水平1阀</translation>
+        <translation>夹4阀</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="104"/>
         <source>Alarm</source>
-        <translation>垂直1阀</translation>
+        <translation>报警</translation>
     </message>
     <message>
         <source>Main Up Valve/EX-1</source>
@@ -7817,7 +7817,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="109"/>
         <source>Next Cycle Sp</source>
-        <translation>输送带</translation>
+        <translation>备用输出5</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="110"/>
@@ -7827,7 +7827,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="112"/>
         <source>Vice Forward Valve</source>
-        <translation>主臂前进阀</translation>
+        <translation>副前进阀</translation>
     </message>
     <message>
         <source>Vice Backward Valve</source>
@@ -7847,17 +7847,17 @@ Please enter an digit between </source>
         <location filename="categorypage/icmonitorpageframe.cpp" line="99"/>
         <source>Sucke1 Valve</source>
         <oldsource>Sucker1 Valve</oldsource>
-        <translation>吸2阀</translation>
+        <translation>吸1阀</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="67"/>
         <source>Y1 Origin</source>
-        <translation>Y1上位安全</translation>
+        <translation>Y1轴上位安全</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="71"/>
         <source>B Origin</source>
-        <translation>副臂夹限</translation>
+        <translation>Y轴原点</translation>
     </message>
     <message>
         <source>Go Out/EX-6</source>
@@ -7873,7 +7873,7 @@ Please enter an digit between </source>
         <location filename="categorypage/icmonitorpageframe.cpp" line="119"/>
         <source> Transport</source>
         <oldsource>Transport</oldsource>
-        <translation>Y037</translation>
+        <translation>输送带</translation>
     </message>
     <message>
         <source>Reserve 1</source>
@@ -8013,7 +8013,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="48"/>
         <source>Sucker1</source>
-        <translation>吸2限</translation>
+        <translation>吸1确认限</translation>
     </message>
     <message>
         <source>Main Forward Limit</source>
@@ -8044,37 +8044,37 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="59"/>
         <source>B Origin Limit</source>
-        <translation>Z轴起点极限</translation>
+        <translation>B轴起点极限</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="69"/>
         <source>Vertical-2</source>
-        <translation>B轴原点</translation>
+        <translation>垂直2限</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="113"/>
         <source>Adjust Sub Up</source>
-        <translation>副臂前进阀</translation>
+        <translation>M2</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="114"/>
         <source>Adjust Sub Down</source>
-        <translation>副下降阀</translation>
+        <translation>M3</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="115"/>
         <source>Vice Sub Down</source>
-        <translation>Y033</translation>
+        <translation>副下降阀</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="117"/>
         <source>Machine Reversal</source>
-        <translation>辅助气缸</translation>
+        <translation>电机反转</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="118"/>
         <source>Run Led</source>
-        <translation>Y036</translation>
+        <translation>运行灯</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="170"/>
