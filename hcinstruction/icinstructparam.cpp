@@ -317,6 +317,62 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             {
                 commandStr += tr("Product Clear");
             }
+            if(moldItem.IFVal() == 2)
+            {
+                commandStr += tr("Wait X026");
+            }
+            if(moldItem.IFVal() == 3)
+            {
+                commandStr += tr("Wait X040");
+            }
+            if(moldItem.IFVal() == 4)
+            {
+                commandStr += tr("Wait X043");
+            }
+            if(moldItem.IFVal() == 5)
+            {
+                commandStr += tr("Wait X044");
+            }
+            if(moldItem.IFVal() == 6)
+            {
+                commandStr += tr("Wait X016");
+            }
+            if(moldItem.IFVal() == 7)
+            {
+                commandStr += tr("Wait X017");
+            }
+            if(moldItem.IFVal() == 8)
+            {
+                commandStr += tr("Wait X036");
+            }
+            if(moldItem.IFVal() == 9)
+            {
+                commandStr += tr("Wait Sub-1");
+            }
+            if(moldItem.IFVal() == 10)
+            {
+                commandStr += tr("Wait Sub-2");
+            }
+            if(moldItem.IFVal() == 11)
+            {
+                commandStr += tr("Wait Sub-3");
+            }
+            if(moldItem.IFVal() == 12)
+            {
+                commandStr += tr("Wait Sub-4");
+            }
+            if(moldItem.IFVal() == 13)
+            {
+                commandStr += tr("Wait Sub-5");
+            }
+            if(moldItem.IFVal() == 14)
+            {
+                commandStr += tr("Wait Sub-6");
+            }
+            if(moldItem.IFVal() == 15)
+            {
+                commandStr += tr("Wait Sub-7");
+            }
             return commandStr;
         }
     }

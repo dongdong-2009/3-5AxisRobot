@@ -17,6 +17,7 @@
 #include "ickeyboard.h"
 #include "ictimerpool.h"
 #include "icparameterssave.h"
+#include "icvirtualkey.h"
 
 ICHCManualOperationPageFrame::ICHCManualOperationPageFrame(QWidget *parent) :
     QFrame(parent),
@@ -28,8 +29,7 @@ ICHCManualOperationPageFrame::ICHCManualOperationPageFrame(QWidget *parent) :
     reservePage_(NULL),
     serveAxisPage_(NULL),
     centralStackedLayout_(new QStackedLayout),
-    currentAction_(-1),
-    timerID_(-1)
+    currentAction_(-1)
 {
     ui->setupUi(this);
 //    ui->adjustToolButton->hide();
@@ -39,6 +39,10 @@ ICHCManualOperationPageFrame::ICHCManualOperationPageFrame(QWidget *parent) :
     InitInterface();
 //    InitSignal();
     ui->fixtureToolButton->click();
+//    ui->bxAddButton->hide();
+//    ui->bxSubButton->hide();
+//    ui->zxAddButton->hide();
+//    ui->zxSubButton->hide();
 }
 
 ICHCManualOperationPageFrame::~ICHCManualOperationPageFrame()
@@ -79,6 +83,8 @@ void ICHCManualOperationPageFrame::showEvent(QShowEvent *e)
         ui->bAddButton->show();
         ui->bSubButton->show();
     }
+    ui->axAddButton->show();
+    ui->axSubButton->show();
 //  //  if(manualAdjustPage_ != NULL)
 //  //  {
 //   //     manualAdjustPage_->ClearStatus();
@@ -95,7 +101,6 @@ void ICHCManualOperationPageFrame::showEvent(QShowEvent *e)
 void ICHCManualOperationPageFrame::hideEvent(QHideEvent *e)
 {
     QFrame::hideEvent(e);
-    if(timerID_ < 0) return;
     ICTimerPool::Instance()->Stop(timerID_, this, SLOT(StatusRefreshed()));
 //    disconnect(ICVirtualHost::GlobalVirtualHost(),
 //               SIGNAL(StatusRefreshed()),
@@ -160,6 +165,12 @@ void ICHCManualOperationPageFrame::InitInterface()
             SIGNAL(released()),
             SLOT(OnButtonReleased()));
     connect(ui->bSubButton,
+            SIGNAL(released()),
+            SLOT(OnButtonReleased()));
+    connect(ui->axAddButton,
+            SIGNAL(released()),
+            SLOT(OnButtonReleased()));
+    connect(ui->axSubButton,
             SIGNAL(released()),
             SLOT(OnButtonReleased()));
 //    ui->x1AxisButton->setText(tr("X1 Axis"));
@@ -293,53 +304,26 @@ void ICHCManualOperationPageFrame::StatusRefreshed()
     bool isAxisOn = !ui->aAddButton->isHidden();
     ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
     QString temp;
-    if(host->FixtureDefine() == 1)
+    if(host->IsInputOn(0))
     {
-        if(host->IsInputOn(0))
-        {
-            temp = tr("Horizontal-1 Limit On");
-        }
-        else if(host->IsInputOn(1))
-        {
-            temp = tr("Vertical-1 Limit On");
-        }
-        else
-        {
-            temp.clear();
-        }
-
-        if(host->IsInputOn(23) && isAxisOn)
-        {
-            temp += tr("/Horizontal-2 Limit On");
-        }
-        else if(host->IsInputOn(11) && isAxisOn)
-        {
-            temp += tr("/Vertical-2 Limit On");
-        }
+        temp = tr("Horizontal-1 Limit On");
+    }
+    else if(host->IsInputOn(1))
+    {
+        temp = tr("Vertical-1 Limit On");
     }
     else
     {
-        if(host->IsInputOn(0))
-        {
-            temp = tr("Vertical-1 Limit On");
-        }
-        else if(host->IsInputOn(1))
-        {
-            temp = tr("Horizontal-1 Limit On");
-        }
-        else
-        {
-            temp.clear();
-        }
+        temp.clear();
+    }
 
-        if(host->IsInputOn(23) && isAxisOn)
-        {
-            temp += tr("/Vertical-2 Limit On");
-        }
-        else if(host->IsInputOn(11) && isAxisOn)
-        {
-            temp += tr("/Horizontal-2 Limit On");
-        }
+    if(host->IsInputOn(23) && isAxisOn)
+    {
+        temp += tr("/Horizontal-2 Limit On");
+    }
+    else if(host->IsInputOn(11) && isAxisOn)
+    {
+        temp += tr("/Vertical-2 Limit On");
     }
 
     if(ui->currentPose->text() != temp)
@@ -447,10 +431,65 @@ void ICHCManualOperationPageFrame::on_bAddButton_pressed()
     ICKeyboard::Instace()->SetKeyValue(ICKeyboard::VFB_BAdd);
     ICKeyboard::Instace()->SetPressed(true);
 }
+void ICHCManualOperationPageFrame::on_axAddButton_pressed()
+{
+    ICKeyboard::Instace()->SetKeyValue(ICKeyboard::VFB_SP2);
+    ICKeyboard::Instace()->SetPressed(true);
+}
+void ICHCManualOperationPageFrame::on_axSubButton_pressed()
+{
+    ICKeyboard::Instace()->SetKeyValue(ICKeyboard::VFB_SP1);
+    ICKeyboard::Instace()->SetPressed(true);
+}
+
+void ICHCManualOperationPageFrame::on_bxAddButton_pressed()
+{
+//    ICKeyboard::Instace()->SetKeyValue(ICKeyboard::VFB_SP2);
+//    ICKeyboard::Instace()->SetPressed(true);
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_BXADD);
+}
+void ICHCManualOperationPageFrame::on_bxSubButton_pressed()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_BXSUB);
+}
+
+void ICHCManualOperationPageFrame::on_zxAddButton_pressed()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_ZXADD);
+}
+void ICHCManualOperationPageFrame::on_zxSubButton_pressed()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_ZXSUB);
+
+}
+
 void ICHCManualOperationPageFrame::AdjustFrameTransfer()
 {
     if(manualAdjustPage_ != NULL)
     {
         manualAdjustPage_->ChangeButtonColor();
     }
+}
+
+void ICHCManualOperationPageFrame::on_cxAddButton_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_CXADD);
+
+}
+
+void ICHCManualOperationPageFrame::on_cxSubButton_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_CXSUB);
+
+}
+
+void ICHCManualOperationPageFrame::on_dxAddButton_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_DXADD);
+
+}
+
+void ICHCManualOperationPageFrame::on_dxSubButton_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_DXSUB);
 }

@@ -47,6 +47,20 @@ private slots:
     void on_bSubButton_pressed();
 
     void on_bAddButton_pressed();
+    void on_axAddButton_pressed();
+    void on_axSubButton_pressed();
+    void on_bxAddButton_pressed();
+    void on_bxSubButton_pressed();
+    void on_zxAddButton_pressed();
+    void on_zxSubButton_pressed();
+
+    void on_cxAddButton_clicked();
+
+    void on_cxSubButton_clicked();
+
+    void on_dxAddButton_clicked();
+
+    void on_dxSubButton_clicked();
 
 private:
     Ui::ICHCManualOperationPageFrame *ui;
