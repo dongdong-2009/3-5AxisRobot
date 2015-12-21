@@ -399,7 +399,7 @@ public:
         ACT_PoseVert2,   //21  垂直2
 
         ACT_GASUB,
-        ACT_3D,
+        ACT_GAADD,
         ACT_GBSUB,
         ACT_GBADD,
         ACT_GCSUB,

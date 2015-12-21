@@ -78,6 +78,7 @@ ICHCInstructionPageFrame::ICHCInstructionPageFrame(QWidget *parent) :
 //    LoadAllRecordFileInfo();
 
     InitParameter();
+    ui->curveButton->hide();
 
 //    ui->conditionsToolButton->hide();
 }

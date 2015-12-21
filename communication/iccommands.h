@@ -113,6 +113,9 @@ public:
     int GMValue() const { return FlagValue("GMValue");}
     void SetGMValue(int value) { SetFlagValue("GMValue", value);}
 
+    int Sub() const { return FlagValue("Sub");}
+    void SetSub(int sub) { SetFlagValue("Sub", sub);}
+
     int CheckSum() const { return FlagValue("CheckSum");}
     void SetCheckSum(int value) { SetFlagValue("CheckSum", value);}
 protected:

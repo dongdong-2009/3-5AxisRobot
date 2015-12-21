@@ -3,7 +3,6 @@
 #include "iclineeditwrapper.h"
 #include "icvirtualhost.h"
 #include "icmold.h"
-#include "icconfigstring.h"
 
 #include <QDebug>
 
@@ -14,23 +13,6 @@ ICHCTimeFrame::ICHCTimeFrame(QWidget *parent) :
     ui->setupUi(this);
 
     InitInterFace();
-    editorToConfigIDs_.insert(ui->verticalineEdit, ICConfigString::kCS_TIME_Ver1);
-    editorToConfigIDs_.insert(ui->horizontalLineEdit, ICConfigString::kCS_TIME_Hor1);
-    editorToConfigIDs_.insert(ui->vertical2LineEdit, ICConfigString::kCS_TIME_Ver2);
-    editorToConfigIDs_.insert(ui->horizontal2LineEdit, ICConfigString::kCS_TIME_Hor2);
-    editorToConfigIDs_.insert(ui->mainArmUpEdit, ICConfigString::kCS_TIME_MArm_UP);
-    editorToConfigIDs_.insert(ui->mainArmDownEdit, ICConfigString::kCS_TIME_MArm_Dw);
-    editorToConfigIDs_.insert(ui->mainArmForwardEdit, ICConfigString::kCS_TIME_MArm_FW);
-    editorToConfigIDs_.insert(ui->mainArmBackwardEdit, ICConfigString::kCS_TIME_MArm_BW);
-    editorToConfigIDs_.insert(ui->secondaryArmUpLineEdit, ICConfigString::kCS_TIME_SArm_UP);
-    editorToConfigIDs_.insert(ui->secondaryArmDownLineEdit, ICConfigString::kCS_TIME_SArm_DW);
-    editorToConfigIDs_.insert(ui->secondayGoForwardLineEdit, ICConfigString::kCS_TIME_SArm_FW);
-    editorToConfigIDs_.insert(ui->secondayGoBackwardLineEdit, ICConfigString::kCS_TIME_SArm_BW);
-    editorToConfigIDs_.insert(ui->comeInEdit, ICConfigString::kCS_TIME_Z_BW);
-    editorToConfigIDs_.insert(ui->goOutEdit, ICConfigString::kCS_TIME_Z_FW);
-    ICLogInit
-
-            this->hide();
 }
 
 ICHCTimeFrame::~ICHCTimeFrame()
@@ -66,8 +48,9 @@ void ICHCTimeFrame::InitInterFace()
     BindingParam_(ui->mainArmBackwardEdit, ICVirtualHost::SM_TIMEMBACK);
     BindingParam_(ui->mainArmUpEdit, ICVirtualHost::SM_TIMEMUP);
     BindingParam_(ui->mainArmDownEdit, ICVirtualHost::SM_TIMEMDOWN);
-    BindingParam_(ui->comeInEdit, ICVirtualHost::SM_MAININ);
-    BindingParam_(ui->goOutEdit, ICVirtualHost::SM_MAINOUT);
+    BindingParam_(ui->zxTimeEdit, ICVirtualHost::SM_TIMEGAADD);
+    BindingParam_(ui->cxTimeEdit, ICVirtualHost::SM_TIMEGBSUB);
+    BindingParam_(ui->dxTimeEdit, ICVirtualHost::SM_TIMEGBADD);
 }
 
 void ICHCTimeFrame::BindingParam_(QLineEdit *edit, int addr)
@@ -103,5 +86,3 @@ void ICHCTimeFrame::changeEvent(QEvent *e)
         break;
     }
 }
-
-ICLogFunctions(ICHCTimeFrame)

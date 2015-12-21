@@ -12,6 +12,7 @@ namespace Ui {
 }
 
 class ICAutoRunRevise;
+class ICSubModifyDialog;
 
 class ICHCProgramMonitorFrame : public QFrame
 {
@@ -53,11 +54,7 @@ private slots:
 
     void on_cycle_clicked();
 
-    void on_pauseButton_toggled(bool checked);
-
-    QStringList Flags();
-    
-    void CareCheck();
+    void on_programSelector_currentIndexChanged(int index);
 
 private:
     void InitSignal();
@@ -76,6 +73,8 @@ private:
     QList<ICGroupMoldUIItem> programList_;
     QList<ICGroupMoldUIItem> programListBackup_;
     ICAutoRunRevise* autoRunRevise_;
+    ICSubModifyDialog* subModifyRevise_;
+
     bool isModify_;
     uint oldTime_;
     uint newTime_;
@@ -98,8 +97,6 @@ private:
     QMap<int, QString> checkResultMap_;
     int fixtureCount_[6];
     QTimer refreshTimer_;
-    QMap<int, int> flagToSetp;
-
 //    QMap<ICMoldItem*, ICMoldItem> modifyMap_;
 };
 #endif // ICHCPROGRAMMONITORFRAME_H

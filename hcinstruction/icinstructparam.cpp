@@ -126,19 +126,19 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             //                commandStr == QObject::tr("Radius:") + ICParameterConversion::TransThisIntToThisText(moldItem.RVal(), 1);
             //            }
             commandStr += tr("Speed:") + QString::number(moldItem.SVal()) + " ";
-            if(moldItem.Action() != ICMold::ACT_3D)
-            {
-                if(moldItem.IsEarlyEnd())
-                {
-                    if(!moldItem.IsEarlySpeedDown())
-                    {
-                        commandStr += tr("Early End,Early Position:");
-                        //                    commandStr += QString().sprintf("%.1f", moldItem.IFPos() / (qreal)10) + " ";
-                        commandStr += QString::number(moldItem.ActualIfPos()) + " ";
-                    }
+//            if(moldItem.Action() != ICMold::ACT_3D)
+//            {
+//                if(moldItem.IsEarlyEnd())
+//                {
+//                    if(!moldItem.IsEarlySpeedDown())
+//                    {
+//                        commandStr += tr("Early End,Early Position:");
+//                        //                    commandStr += QString().sprintf("%.1f", moldItem.IFPos() / (qreal)10) + " ";
+//                        commandStr += QString::number(moldItem.ActualIfPos()) + " ";
+//                    }
 
-                }
-            }
+//                }
+//            }
             if(moldItem.IsEarlySpeedDown())
             {
                 if(!moldItem.IsEarlyEnd())

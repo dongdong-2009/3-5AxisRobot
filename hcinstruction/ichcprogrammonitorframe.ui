@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>711</width>
     <height>517</height>
    </rect>
   </property>
@@ -28,10 +28,80 @@
    <enum>QFrame::Plain</enum>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>4</number>
+   </property>
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
+    <number>2</number>
+   </property>
+   <item>
+    <widget class="QComboBox" name="programSelector">
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <item>
+      <property name="text">
+       <string>Sub-1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Sub-2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Sub-3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Sub-4</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Sub-5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Sub-6</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Sub-7</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Sub-8</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Main</string>
+      </property>
+     </item>
+    </widget>
+   </item>
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="ICListWidget" name="moldContentListWidget">
+      <widget class="QListWidget" name="moldContentListWidget">
        <property name="minimumSize">
         <size>
          <width>300</width>
@@ -83,7 +153,7 @@ padding:5px;
           <enum>QFrame::Sunken</enum>
          </property>
          <property name="text">
-          <string notr="true">0</string>
+          <string>0</string>
          </property>
         </widget>
        </item>
@@ -122,7 +192,7 @@ padding:5px;
           <enum>QFrame::Sunken</enum>
          </property>
          <property name="text">
-          <string notr="true">0.00</string>
+          <string>0.00</string>
          </property>
         </widget>
        </item>
@@ -154,7 +224,7 @@ padding:5px;
           <enum>QFrame::Sunken</enum>
          </property>
          <property name="text">
-          <string notr="true">0</string>
+          <string>0</string>
          </property>
         </widget>
        </item>
@@ -204,7 +274,7 @@ color: rgb(255, 255, 0);</string>
           <enum>QFrame::Sunken</enum>
          </property>
          <property name="text">
-          <string notr="true">0.00</string>
+          <string>0.00</string>
          </property>
         </widget>
        </item>
@@ -246,7 +316,7 @@ color: rgb(255, 255, 0);</string>
           <enum>QFrame::Sunken</enum>
          </property>
          <property name="text">
-          <string notr="true">0</string>
+          <string>0</string>
          </property>
         </widget>
        </item>
@@ -441,54 +511,11 @@ color: rgb(255, 255, 0);</string>
        </property>
       </widget>
      </item>
-     <item>
-      <widget class="QPushButton" name="pauseButton">
-       <property name="minimumSize">
-        <size>
-         <width>120</width>
-         <height>48</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>120</width>
-         <height>48</height>
-        </size>
-       </property>
-       <property name="text">
-        <string>Pause</string>
-       </property>
-       <property name="icon">
-        <iconset resource="../resource.qrc">
-         <normaloff>:/resource/wait(32).png</normaloff>:/resource/wait(32).png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>32</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="checkable">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
     </layout>
    </item>
   </layout>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>ICListWidget</class>
-   <extends>QListWidget</extends>
-   <header>iclistwidget.h</header>
-  </customwidget>
- </customwidgets>
  <resources>
-  <include location="../resource.qrc"/>
-  <include location="../resource.qrc"/>
-  <include location="../resource.qrc"/>
-  <include location="../resource.qrc"/>
   <include location="../resource.qrc"/>
  </resources>
  <connections/>

@@ -24,7 +24,7 @@ ActionSettingFrame::ActionSettingFrame(QWidget *parent) :
     }
     for(int i = 0; i != 3; ++i)
     {
-        posValidator[i].setBottom(-50);
+        posValidator[i].setBottom(0);
     }
     InitInterface();
     axisWidgets_.append(QList<QWidget*>()<<ui->gxButton<<ui->x1DelayLineEdit<<ui->x1PosLineEdit<<ui->x1SpeedLineEdit<<ui->x1ForwardBox<<ui->x1BackwardBox);
@@ -35,6 +35,7 @@ ActionSettingFrame::ActionSettingFrame(QWidget *parent) :
     axisWidgets_.append(QList<QWidget*>()<<ui->gAButton<<ui->aDelayLineEdit<<ui->aPosLineEdit<<ui->aSpeedLineEdit<<ui->aHorizonBox<<ui->aVerticalBox);
     axisWidgets_.append(QList<QWidget*>()<<ui->gBButton<<ui->bDelayLineEdit<<ui->bPosLineEdit<<ui->bSpeedLineEdit<<ui->bHorizonBox<<ui->bVerticalBox);
     axisWidgets_.append(QList<QWidget*>()<<ui->gCButton<<ui->cDelayLineEdit<<ui->cPosLineEdit<<ui->cSpeedLineEdit<<ui->cHorizonBox<<ui->cVerticalBox);
+ //   axisWidgets_.append(QList<QWidget*>()<<ui->gAButton_2<<ui->aDelayLineEdit<<ui->aPosLineEdit<<ui->aSpeedLineEdit<<ui->aHorizonBox<<ui->aVerticalBox);
 
     ui->x1BoxbuttonGroup->setId(ui->x1ForwardBox,0);
     ui->x1BoxbuttonGroup->setId(ui->x1BackwardBox,1);
@@ -52,10 +53,27 @@ ActionSettingFrame::ActionSettingFrame(QWidget *parent) :
     ui->bBoxbuttonGroup->setId(ui->bVerticalBox,1);
     ui->cBoxbuttonGroup->setId(ui->cHorizonBox,0);
     ui->cBoxbuttonGroup->setId(ui->cVerticalBox,1);
-
+    ui->aBoxbuttonGroup_2->setId(ui->aHorizonBox_2,0);
+    ui->aBoxbuttonGroup_2->setId(ui->aVerticalBox_2,1);
+    ui->bxButtonGroup->setId(ui->bxSub, 0);
+    ui->bxButtonGroup->setId(ui->bxAdd, 1);
+    ui->zxButtonGroup->setId(ui->zxSub, 0);
+    ui->zxButtonGroup->setId(ui->zxAdd, 1);
+    ui->cxButtonGroup->setId(ui->cxSub, 0);
+    ui->cxButtonGroup->setId(ui->cxAdd, 1);
+    ui->dxbuttonGroup->setId(ui->dxSub, 0);
+    ui->dxbuttonGroup->setId(ui->dxAdd, 1);
 #ifdef Q_WS_X11
     UpdateAxisDefine_();
 #endif
+//    ui->bxAdd->hide();
+//    ui->bxSub->hide();
+//    ui->bxBox->hide();
+//    ui->zxAdd->hide();
+//    ui->zxSub->hide();
+//    ui->zxBox->hide();
+//    ui->bxDelayLineEdit->hide();
+//    ui->zxDelayLineEdit->hide();
     //    ui->x1SpeedLineEdit->hide();
 }
 
@@ -130,6 +148,17 @@ void ActionSettingFrame::InitInterface()
     ui->cPosLineEdit->setValidator(posValidator + 2);
 //    ui->cPosLineEdit->setValidator(posValidators_ + 7);
 
+    ui->aDelayLineEdit_2->SetDecimalPlaces(2);
+    ui->aDelayLineEdit_2->setValidator(validator);
+    ui->bxDelayLineEdit->SetDecimalPlaces(2);
+    ui->bxDelayLineEdit->setValidator(validator);
+    ui->zxDelayLineEdit->SetDecimalPlaces(2);
+    ui->zxDelayLineEdit->setValidator(validator);
+    ui->cxDelayLineEdit->SetDecimalPlaces(2);
+    ui->cxDelayLineEdit->setValidator(validator);
+    ui->dxDelayLineEdit->SetDecimalPlaces(2);
+    ui->dxDelayLineEdit->setValidator(validator);
+
     QIntValidator *speed = new QIntValidator(0, 100, this);
     ui->x1SpeedLineEdit->SetDecimalPlaces(0);
     ui->x1SpeedLineEdit->setValidator(speed);
@@ -186,6 +215,8 @@ void ActionSettingFrame::hideEvent(QHideEvent *e)
     ui->gAButton->setChecked(false);
     ui->gBButton->setChecked(false);
     ui->gCButton->setChecked(false);
+
+    ui->gAButton_2->setChecked(false);
     QFrame::hideEvent(e);
     disconnect(ICVirtualHost::GlobalVirtualHost(),
                SIGNAL(StatusRefreshed()),
@@ -197,16 +228,16 @@ void ActionSettingFrame::showEvent(QShowEvent *e)
 {
     UpdateAxisDefine_();
     ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
-    posMaxs_[0] = host->SystemParameter(ICVirtualHost::SYS_X_Maxium).toInt();
+    posMaxs_[0] = host->SystemParameter(ICVirtualHost::SYS_X_Length).toInt();
     posMaxs_[1] = host->SystemParameter(ICVirtualHost::SYS_Y_Maxium).toInt();
-    posMaxs_[2] = host->SystemParameter(ICVirtualHost::SYS_Z_Maxium).toInt();
+    posMaxs_[2] = host->SystemParameter(ICVirtualHost::SYS_Z_Length).toInt();
     posMaxs_[3] = host->SystemParameter(ICVirtualHost::SYS_P_Maxium).toInt();
     posMaxs_[4] = host->SystemParameter(ICVirtualHost::SYS_Q_Maxium).toInt();
     posMaxs_[5] = host->SystemParameter(ICVirtualHost::SYS_A_Maxium).toInt();
     posMaxs_[6] = host->SystemParameter(ICVirtualHost::SYS_B_Maxium).toInt();
     posMaxs_[7] = host->SystemParameter(ICVirtualHost::SYS_C_Maxium).toInt();
-    posLength_[0] = host->SystemParameter(ICVirtualHost::SYS_A_Length).toInt();
-    posLength_[1] = host->SystemParameter(ICVirtualHost::SYS_B_Length).toInt();
+    posLength_[0] = host->SystemParameter(ICVirtualHost::SYS_A_Maxium).toInt();
+    posLength_[1] = host->SystemParameter(ICVirtualHost::SYS_B_Maxium).toInt();
     posLength_[2] = host->SystemParameter(ICVirtualHost::SYS_C_Length).toInt();
 
     int mutil = qPow(10, SECTION_DECIMAL);
@@ -386,19 +417,20 @@ QList<ICMoldItem> ActionSettingFrame::CreateCommandImpl() const
     }
     if(ui->gAButton->isChecked() && (!ui->gAButton->isHidden()))
     {
-        if(ui->aHorizonBox->isHidden() && ui->aVerticalBox->isHidden())
-        {
+//        if(ui->aHorizonBox->isHidden() && ui->aVerticalBox->isHidden())
+//        {
             item.SetAction(ICMold::GA);
             item.SetActualPos(ui->aPosLineEdit->TransThisTextToThisInt());
             item.SetDVal(ui->aDelayLineEdit->TransThisTextToThisInt());
             item.SetSVal(ui->aSpeedLineEdit->TransThisTextToThisInt());
-        }
-        else
-        {
-            item.SetAction(ui->aBoxbuttonGroup->checkedId() == 1 ? ICMold::ACT_PoseVert2 : ICMold::ACT_PoseHori2);
-        }
-        item.SetDVal(ui->aDelayLineEdit->TransThisTextToThisInt());
-        item.SetIFVal(0);
+            item.SetIFVal(0);
+//        }
+//        else
+//        {
+//            item.SetAction(ICMold::ACT_PoseHori2);
+//            item.SetIFVal(ui->aBoxbuttonGroup->checkedId());
+//        }
+//        item.SetDVal(ui->aDelayLineEdit->TransThisTextToThisInt());
         item.SetActualIfPos(0);
         ret.append(item);
     }
@@ -409,6 +441,7 @@ QList<ICMoldItem> ActionSettingFrame::CreateCommandImpl() const
         item.SetActualPos(ui->bPosLineEdit->TransThisTextToThisInt());
         item.SetDVal(ui->bDelayLineEdit->TransThisTextToThisInt());
         item.SetSVal(ui->bSpeedLineEdit->TransThisTextToThisInt());
+        item.SetDVal(ui->bDelayLineEdit->TransThisTextToThisInt());
         item.SetIFVal(0);
         item.SetActualIfPos(0);
         ret.append(item);
@@ -428,6 +461,46 @@ QList<ICMoldItem> ActionSettingFrame::CreateCommandImpl() const
         }
         item.SetDVal(ui->cDelayLineEdit->TransThisTextToThisInt());
         item.SetIFVal(0);
+        item.SetActualIfPos(0);
+        ret.append(item);
+    }
+    if(ui->gAButton_2->isChecked() && (!ui->gAButton_2->isHidden()))
+    {
+        item.SetAction(ICMold::ACT_PoseHori2);
+        item.SetIFVal(ui->aBoxbuttonGroup_2->checkedId());
+        item.SetDVal(ui->aDelayLineEdit_2->TransThisTextToThisInt());
+        item.SetActualIfPos(0);
+        ret.append(item);
+    }
+    if(ui->bxBox->isChecked())
+    {
+        item.SetAction(ICMold::ACT_PoseVert2);
+        item.SetIFVal(ui->bxButtonGroup->checkedId());
+        item.SetDVal(ui->bxDelayLineEdit->TransThisTextToThisInt());
+        item.SetActualIfPos(0);
+        ret.append(item);
+    }
+    if(ui->zxBox->isChecked())
+    {
+        item.SetAction(ICMold::ACT_GAADD);
+        item.SetIFVal(ui->zxButtonGroup->checkedId());
+        item.SetDVal(ui->zxDelayLineEdit->TransThisTextToThisInt());
+        item.SetActualIfPos(0);
+        ret.append(item);
+    }
+    if(ui->cxBox->isChecked())
+    {
+        item.SetAction(ICMold::ACT_GBSUB);
+        item.SetIFVal(ui->cxButtonGroup->checkedId());
+        item.SetDVal(ui->cxDelayLineEdit->TransThisTextToThisInt());
+        item.SetActualIfPos(0);
+        ret.append(item);
+    }
+    if(ui->dxBox->isChecked())
+    {
+        item.SetAction(ICMold::ACT_GBADD);
+        item.SetIFVal(ui->dxbuttonGroup->checkedId());
+        item.SetDVal(ui->dxDelayLineEdit->TransThisTextToThisInt());
         item.SetActualIfPos(0);
         ret.append(item);
     }
@@ -599,6 +672,22 @@ void ActionSettingFrame::on_gCButton_toggled(bool checked)
         ui->cHorizonBox->setEnabled(false);
         ui->cVerticalBox->setEnabled(false);
 
+    }
+}
+
+void ActionSettingFrame::on_gAButton_2_toggled(bool checked)
+{
+    if(checked)
+    {
+        ui->aDelayLineEdit_2->setEnabled(true);
+        ui->aHorizonBox_2->setEnabled(true);
+        ui->aVerticalBox_2->setEnabled(true);
+    }
+    else
+    {
+        ui->aDelayLineEdit_2->setEnabled(false);
+        ui->aHorizonBox_2->setEnabled(false);
+        ui->aVerticalBox_2->setEnabled(false);
     }
 }
 
@@ -888,6 +977,42 @@ void ActionSettingFrame::KeyToActionCheck(int key)
             ui->cVerticalBox->setChecked(true);
         ui->gCButton->setChecked(true);
         break;
-
+    case ICKeyboard::VFB_SP1:
+    case ICKeyboard::VFB_SP2:
+        if((key == ICKeyboard::VFB_SP2 ? 0:1) == 0)
+            ui->aHorizonBox_2->setChecked(true);
+        else if((key == ICKeyboard::VFB_SP2 ? 0:1) == 1)
+            ui->aVerticalBox_2->setChecked(true);
+        ui->gAButton_2->setChecked(true);
+        break;
     }
+}
+
+void ActionSettingFrame::on_bxBox_toggled(bool checked)
+{
+    ui->bxSub->setEnabled(checked);
+    ui->bxAdd->setEnabled(checked);
+    ui->bxDelayLineEdit->setEnabled(checked);
+}
+
+void ActionSettingFrame::on_zxBox_toggled(bool checked)
+{
+    ui->zxSub->setEnabled(checked);
+    ui->zxAdd->setEnabled(checked);
+    ui->zxDelayLineEdit->setEnabled(checked);
+}
+
+void ActionSettingFrame::on_cxBox_toggled(bool checked)
+{
+    ui->cxSub->setEnabled(checked);
+    ui->cxAdd->setEnabled(checked);
+    ui->cxDelayLineEdit->setEnabled(checked);
+}
+
+
+void ActionSettingFrame::on_dxBox_toggled(bool checked)
+{
+    ui->dxSub->setEnabled(checked);
+    ui->dxAdd->setEnabled(checked);
+    ui->dxDelayLineEdit->setEnabled(checked);
 }

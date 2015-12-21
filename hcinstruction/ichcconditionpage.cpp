@@ -107,26 +107,26 @@ void ICHCConditionPage::InitCheckPointBox()
 
 void ICHCConditionPage::BoxClicked()
 {
-    int temp = buttonGroup->checkedId();
-    switch(temp)
-    {
-    case 0:
-        ui->subComboBox->setCurrentIndex(5);
-        ui->subComboBox->setEnabled(false);
-        break;
-    case 3:
-        ui->subComboBox->setCurrentIndex(7);
-        ui->subComboBox->setEnabled(false);
-        break;
-    case 4:
-        ui->subComboBox->setCurrentIndex(6);
-        ui->subComboBox->setEnabled(false);
-        break;
-    default:
-        ui->subComboBox->setCurrentIndex(0);
-        ui->subComboBox->setEnabled(true);
-        break;
-    }
+//    int temp = buttonGroup->checkedId();
+//    switch(temp)
+//    {
+//    case 0:
+//        ui->subComboBox->setCurrentIndex(5);
+//        ui->subComboBox->setEnabled(false);
+//        break;
+//    case 3:
+//        ui->subComboBox->setCurrentIndex(7);
+//        ui->subComboBox->setEnabled(false);
+//        break;
+//    case 4:
+//        ui->subComboBox->setCurrentIndex(6);
+//        ui->subComboBox->setEnabled(false);
+//        break;
+//    default:
+//        ui->subComboBox->setCurrentIndex(0);
+//        ui->subComboBox->setEnabled(true);
+//        break;
+//    }
 }
 
 void ICHCConditionPage::on_productCountBox_toggled(bool checked)

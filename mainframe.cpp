@@ -945,8 +945,8 @@ void MainFrame::StatusRefreshed()
                 (virtualHost->IsReadProductCount()) && ICKeyboard::Instace()->CurrentSwitchStatus() == ICKeyboard::KS_AutoStatu)
         {
 
-            finishCount_ = virtualHost->HostStatus(ICVirtualHost::DbgA0).toUInt() |
-                    (virtualHost->HostStatus(ICVirtualHost::DbgA1).toUInt() << 16);
+            finishCount_ = virtualHost->HostStatus(ICVirtualHost::DbgX1).toUInt();
+
             if(finishCount_ != oldFinishCount_)
             {
                 ui->cycleTimeAndFinistWidget->SetFinished(finishCount_);
