@@ -79,6 +79,10 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
                 commandStr += tr("Sucker");
                 commandStr += QString::number(moldItem.SVal() - 3);
             }
+            else if(moldItem.SVal() == 8)
+            {
+                commandStr += tr("SubFixture");
+            }
             else if(moldItem.SVal() == 6)
             {
                 commandStr += tr("X037");
@@ -377,7 +381,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             {
                 commandStr += QObject::tr("On") + ":";
             }
-            if(action != ICMold::ACT_AUX5 && action != ICMold::ACT_AUX6)
+            if(action != ICMold::ACT_AUX5 && action != ICMold::ACT_AUX6 && action != ICMold::ACT_AUX3)
             {
                 commandStr += " ";
                 commandStr += QObject::tr("Times:") + QString::number(moldItem.ActualMoldCount()) + " ";

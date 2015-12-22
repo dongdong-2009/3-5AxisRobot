@@ -8,7 +8,7 @@
 HCManualFixtureFrame::HCManualFixtureFrame(QWidget *parent) :
     QFrame(parent),
     ui(new Ui::HCManualFixtureFrame),
-    clips_(8, false),
+    clips_(16, false),
     timerID_(-1)
 {
     ui->setupUi(this);
@@ -29,6 +29,11 @@ HCManualFixtureFrame::HCManualFixtureFrame(QWidget *parent) :
     wrapper = new ICCommandKeyWrapper(ui->disconnectFixture3ToolButton, IC::VKEY_CLIP3OFF);
     wrappers_.append(wrapper);
     wrapper = new ICCommandKeyWrapper(ui->disconnectFixture4ToolButton, IC::VKEY_CLIP4OFF);
+    wrappers_.append(wrapper);
+
+    wrapper = new ICCommandKeyWrapper(ui->connectReserve3ToolButton, IC::VKEY_RESERVE3_ON);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->disconnectReserve3ToolButton, IC::VKEY_RESERVE3_OFF);
     wrappers_.append(wrapper);
 }
 
@@ -209,4 +214,40 @@ void HCManualFixtureFrame::StatusRefreshed()
             ui->fixture4InLabel->setPixmap(off);
         }
     }
+
+
+    if(host->IsOutputOn(17))
+    {
+        if(!clips_.at(8))
+        {
+            clips_.setBit(8);
+            ui->reserve3StatusLabel->setPixmap(on);
+        }
+    }
+    else
+    {
+        if(clips_.at(8))
+        {
+            clips_.clearBit(8);
+            ui->reserve3StatusLabel->setPixmap(off);
+        }
+    }
+
+    if(host->IsInputOn(28))
+    {
+        if(!clips_.at(9))
+        {
+            clips_.setBit(9);
+            ui->reserve3InLabel->setPixmap(inOn);
+        }
+    }
+    else
+    {
+        if(clips_.at(9))
+        {
+            clips_.clearBit(9);
+            ui->reserve3InLabel->setPixmap(off);
+        }
+    }
+
 }

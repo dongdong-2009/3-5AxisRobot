@@ -19,7 +19,8 @@ ICCutPage::ICCutPage(QWidget *parent) :
 //    ICLineEditWithVirtualNumericKeypad *delayEdit;
     ioNames_<<tr("Fixture1  ")<<tr("Fixture2  ")<<tr("Fixture3  ")<<tr("Fixture4  ")
            <<tr("Sucker1   ")<<tr("Sucker2   ")
-          <<tr("Sucker3  ")<<tr("Sucker4  ");
+          <<tr("Sucker3  ")<<tr("Sucker4  ")
+            <<tr("SubFixture");
     onClipToOffClip_.insert(ICMold::ACTCLIP1ON, ICMold::ACTCLIP1OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP2ON, ICMold::ACTCLIP2OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP3ON, ICMold::ACTCLIP3OFF);
@@ -28,6 +29,8 @@ ICCutPage::ICCutPage(QWidget *parent) :
     onClipToOffClip_.insert(ICMold::ACTCLIP6ON, ICMold::ACTCLIP6OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP7ON, ICMold::ACTCLIP7OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP8ON, ICMold::ACTCLIP8OFF);
+    onClipToOffClip_.insert(ICMold::ACTCLIP1ON + 1000, ICMold::ACTCLIP1OFF + 1000);
+
     offClipToOnClip_.insert(ICMold::ACTCLIP1OFF, ICMold::ACTCLIP1ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP2OFF, ICMold::ACTCLIP2ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP3OFF, ICMold::ACTCLIP3ON);
@@ -36,6 +39,8 @@ ICCutPage::ICCutPage(QWidget *parent) :
     offClipToOnClip_.insert(ICMold::ACTCLIP6OFF, ICMold::ACTCLIP6ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP7OFF, ICMold::ACTCLIP7ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP8OFF, ICMold::ACTCLIP8ON);
+    offClipToOnClip_.insert(ICMold::ACTCLIP1OFF + 1000, ICMold::ACTCLIP1ON + 1000);
+
     QList<uint> initStatus = onClipToOffClip_.values();
 //    QIntValidator *validator = new QIntValidator(0, 2000, this);
     for(int i = 0; i != ui->tableWidget->rowCount(); ++i)
@@ -75,6 +80,7 @@ ICCutPage::ICCutPage(QWidget *parent) :
     commandKeyMap_.insert(settingButtons_.at(5), qMakePair(static_cast<int>(IC::VKEY_CLIP6ON), static_cast<int>(IC::VKEY_CLIP6OFF)));
     commandKeyMap_.insert(settingButtons_.at(6), qMakePair(static_cast<int>(IC::VKEY_CLIP7ON), static_cast<int>(IC::VKEY_CLIP7OFF)));
     commandKeyMap_.insert(settingButtons_.at(7), qMakePair(static_cast<int>(IC::VKEY_CLIP8ON), static_cast<int>(IC::VKEY_CLIP8OFF)));
+    commandKeyMap_.insert(settingButtons_.at(8), qMakePair(static_cast<int>(IC::VKEY_CLIP8ON), static_cast<int>(IC::VKEY_CLIP8OFF)));
 
     connect(&buttonSignalMapper_,
             SIGNAL(mapped(QWidget*)),
@@ -113,7 +119,8 @@ void ICCutPage::changeEvent(QEvent *e)
         ioNames_.clear();
         ioNames_<<tr("Fixture1  ")<<tr("Fixture2  ")<<tr("Fixture3  ")<<tr("Fixture4  ")
                <<tr("Sucker1   ")<<tr("Sucker2   ")
-              <<tr("Sucker3  ")<<tr("Sucker4  ");
+              <<tr("Sucker3  ")<<tr("Sucker4  ")
+             <<tr("SubFixture");
         for(int i = 0; i != settingButtons_.size(); ++i)
         {
             settingButtons_[i]->setText(ioNames_.at(i));

@@ -151,6 +151,11 @@ QRadioButton::indicator:unchecked:disabled
        <string>Sucker4</string>
       </property>
      </row>
+     <row>
+      <property name="text">
+       <string>SubFixture</string>
+      </property>
+     </row>
      <column>
       <property name="text">
        <string>En</string>
@@ -254,11 +259,25 @@ QRadioButton::indicator:unchecked:disabled
       </property>
      </item>
      <item row="6" column="0">
+      <property name="text">
+       <string/>
+      </property>
       <property name="checkState">
        <enum>Unchecked</enum>
       </property>
      </item>
      <item row="7" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkState">
+       <enum>Unchecked</enum>
+      </property>
+     </item>
+     <item row="8" column="0">
+      <property name="text">
+       <string/>
+      </property>
       <property name="checkState">
        <enum>Unchecked</enum>
       </property>
