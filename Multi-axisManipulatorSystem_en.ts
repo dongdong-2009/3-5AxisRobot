@@ -1167,13 +1167,11 @@ Infomation</source>
     <name>ICHCDetectionFrame</name>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="14"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="14"/>
         <source>Frame</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="97"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="97"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="166"/>
         <source>Detect fixture 1</source>
         <translation>CHK.Fixture-1</translation>
@@ -1186,13 +1184,6 @@ Infomation</source>
         <location filename="hcsettings/ichcdetectionframe.ui" line="433"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="594"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="626"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="50"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="213"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="368"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="402"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="433"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="594"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="626"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="164"/>
         <source>Use</source>
         <translation type="unfinished"></translation>
@@ -1205,13 +1196,6 @@ Infomation</source>
         <location filename="hcsettings/ichcdetectionframe.ui" line="428"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="589"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="621"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="45"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="208"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="363"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="407"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="428"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="589"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="621"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="165"/>
         <source>Not Use</source>
         <translation type="unfinished"></translation>
@@ -1221,10 +1205,6 @@ Infomation</source>
         <location filename="hcsettings/ichcdetectionframe.ui" line="130"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="169"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="460"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="77"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="130"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="169"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="460"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="162"/>
         <source>Reversed Phase</source>
         <translation type="unfinished">RP</translation>
@@ -1234,10 +1214,6 @@ Infomation</source>
         <location filename="hcsettings/ichcdetectionframe.ui" line="135"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="174"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="465"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="82"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="135"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="174"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="465"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="163"/>
         <source>Positive Phase</source>
         <translation type="unfinished">PP</translation>
@@ -1248,7 +1224,6 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="247"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="247"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="172"/>
         <source>Detect fixture 2</source>
         <translation>CHK.Fixture-2</translation>
@@ -1259,42 +1234,36 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="182"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="182"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="178"/>
         <source>Detect fixture 3</source>
         <translation>CHK.Fixture-3</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="254"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="254"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="193"/>
         <source>Ejection Link Lock</source>
         <translation>Eje. Link Lock</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="104"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="104"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="196"/>
         <source>Detect Postion</source>
         <translation>Z.Move Pos</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="329"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="329"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="211"/>
         <source>Limit Lock Mold</source>
         <translation>Limit CM.</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="324"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="324"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="212"/>
         <source>No Limit Lock Mold</source>
         <translation>No Limit CM.</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="90"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="90"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="210"/>
         <source>Hor Standby</source>
         <oldsource>Standby Pose</oldsource>
@@ -1302,56 +1271,48 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="549"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="549"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="175"/>
         <source>Auto Run</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="298"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="298"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="169"/>
         <source>Close Mold</source>
         <translation></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="337"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="337"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="203"/>
         <source>U/D Position</source>
         <translation>U/D Ret Pos</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="499"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="499"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="198"/>
         <source>Don&apos;t need Mold Opened Signal</source>
         <translation>Don&apos;t need OM. Signal</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="473"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="473"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="207"/>
         <source>IMM Emergency</source>
         <translation>IMM.EMER.</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="504"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="504"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="197"/>
         <source>Need Mold Opened Signal</source>
         <translation>Need OM. Signal</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="634"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="634"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="199"/>
         <source>Detect Origin</source>
         <translation>Origin</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="541"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="541"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="202"/>
         <source>Don&apos;t Limit</source>
         <translation type="unfinished"></translation>
@@ -1359,8 +1320,6 @@ Infomation</source>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="285"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="536"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="285"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="536"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="201"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="205"/>
         <source>Horizontal</source>
@@ -1368,7 +1327,6 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="290"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="290"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="206"/>
         <source>No Limit</source>
         <translation type="unfinished"></translation>
@@ -1376,8 +1334,6 @@ Infomation</source>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="280"/>
         <location filename="hcsettings/ichcdetectionframe.ui" line="531"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="280"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="531"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="200"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="204"/>
         <source>Vertical</source>
@@ -1385,28 +1341,24 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="143"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="143"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="181"/>
         <source>Detect fixture 4</source>
         <translation>CHK.Fixture-4</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="563"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="563"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="184"/>
         <source>Detect Mid Mold</source>
         <translation>CHK. Mid Mold</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="376"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="376"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="187"/>
         <source>Detect Security Door</source>
         <translation>CHK. Security Door</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="556"/>
-        <location filename="hcsettings/ichcdetectionframe_5.ui" line="556"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="188"/>
         <source>Detect Pressure</source>
         <translation>CHK. Press</translation>
@@ -7997,217 +7949,63 @@ Admin</source>
     <name>VirtualKeyboardDialog</name>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="14"/>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="14"/>
         <source>Keyboard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="73"/>
-        <source>V</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="107"/>
-        <source>H</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="141"/>
-        <source>O</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="175"/>
-        <source>B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="209"/>
-        <source>E</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="243"/>
-        <source>P</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="277"/>
-        <source>R</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="311"/>
-        <source>W</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="345"/>
-        <source>I</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="379"/>
         <source>7</source>
         <oldsource>/</oldsource>
-        <translation type="unfinished">Reserve</translation>
+        <translation type="obsolete">Reserve</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="413"/>
-        <source>A</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="447"/>
-        <source>F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="481"/>
-        <source>J</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="515"/>
-        <source>Y</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="549"/>
         <source>2</source>
-        <translation type="unfinished">Y022</translation>
+        <translation type="obsolete">Y022</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="583"/>
         <source>0</source>
-        <translation type="unfinished">Reserve {0?}</translation>
+        <translation type="obsolete">Reserve {0?}</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="617"/>
-        <source>N</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="651"/>
         <source>5</source>
-        <translation type="unfinished">Y035</translation>
+        <translation type="obsolete">Y035</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="685"/>
-        <source>C</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="719"/>
-        <source>L</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="753"/>
-        <source>S</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="787"/>
         <source>8</source>
-        <translation type="unfinished">Reserve</translation>
+        <translation type="obsolete">Reserve</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="821"/>
         <source>6</source>
-        <translation type="unfinished">Y036</translation>
+        <translation type="obsolete">Y036</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="855"/>
         <source>3</source>
-        <translation type="unfinished">Y031</translation>
+        <translation type="obsolete">Y031</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="889"/>
-        <source>Z</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="923"/>
-        <source>M</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="957"/>
-        <source>T</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="991"/>
         <source>1</source>
-        <translation type="unfinished">Y017</translation>
+        <translation type="obsolete">Y017</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1025"/>
-        <source>Q</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1059"/>
         <source>9</source>
-        <translation type="unfinished">Reserve {9?}</translation>
+        <translation type="obsolete">Reserve {9?}</translation>
     </message>
     <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1093"/>
-        <source>G</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1127"/>
-        <source>K</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1161"/>
         <source>4</source>
         <oldsource>.</oldsource>
-        <translation type="unfinished">Y032</translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1195"/>
-        <source>U</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1229"/>
-        <source>X</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1263"/>
-        <source>D</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1405"/>
-        <source>(</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1439"/>
-        <source>)</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Y032</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1335"/>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1335"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1299"/>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1299"/>
         <source>Backspace</source>
         <translation>BS</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1371"/>
-        <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1371"/>
         <source>OK</source>
         <translation type="unfinished"></translation>
     </message>
