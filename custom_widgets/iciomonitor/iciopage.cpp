@@ -338,7 +338,7 @@ void ICIOPage::showEvent(QShowEvent *e)
         if(host->HasSubArmForwardLimit())
             multiLabels.value(X030)->setText(tr("X2 FW Limit"));
         else
-            multiLabels.value(X030)->setText(tr("M1"));
+            multiLabels.value(X030)->setText(tr("X030"));
     }
     else
     {
@@ -357,7 +357,7 @@ void ICIOPage::showEvent(QShowEvent *e)
         if(host->HasSubArmForwardLimit())
             multiLabels.value(X033)->setText(tr("Y2 DW Limit"));
         else
-            multiLabels.value(X033)->setText(tr("M2"));
+            multiLabels.value(X033)->setText(tr("X033"));
     }
     else
     {

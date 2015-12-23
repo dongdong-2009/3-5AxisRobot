@@ -5090,7 +5090,6 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="228"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="360"/>
         <source>M2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5415,6 +5414,7 @@ App %1; Host:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="360"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="365"/>
         <source>X033</source>
         <translation type="unfinished"></translation>

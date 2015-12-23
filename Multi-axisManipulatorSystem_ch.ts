@@ -6099,7 +6099,6 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="228"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="360"/>
         <source>M2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6117,7 +6116,7 @@ App %1; Host:</source>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="240"/>
         <source>Sucker-3 Valve</source>
         <oldsource>Sucker-3</oldsource>
-        <translation>吸3阀</translation>
+        <translation>电机反转</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="244"/>
@@ -6169,7 +6168,7 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="274"/>
         <source>X1 end Limit</source>
-        <translation>X1轴终点极限</translation>
+        <translation>Ax-</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="278"/>
@@ -6191,7 +6190,7 @@ App %1; Host:</source>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="284"/>
         <source>X016</source>
         <oldsource>X017</oldsource>
-        <translation>X016</translation>
+        <translation>Ax-</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="289"/>
@@ -6217,17 +6216,17 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="371"/>
         <source>A begin limit</source>
-        <translation>A轴起点极限</translation>
+        <translation>Cx+</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="401"/>
         <source>B Begin limit</source>
-        <translation>B轴起点极限</translation>
+        <translation>Zx-</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="407"/>
         <source>X026</source>
-        <translation type="unfinished">X026</translation>
+        <translation>Zx-</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="408"/>
@@ -6324,7 +6323,7 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="378"/>
         <source>X037</source>
-        <translation type="unfinished">X037</translation>
+        <translation>Cx+</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="379"/>
@@ -6345,7 +6344,7 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="385"/>
         <source>Vertical-2 Limit </source>
-        <translation>垂直2限</translation>
+        <translation>Cx+</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="310"/>
@@ -6365,12 +6364,12 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="333"/>
         <source>X2 Begin Limit</source>
-        <translation>X2轴起点极限</translation>
+        <translation>Bx-</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="352"/>
         <source>Y2 Begin Limit</source>
-        <translation>Y2轴起点极限</translation>
+        <translation>Dx-</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="388"/>
@@ -6400,7 +6399,7 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="345"/>
         <source>X030</source>
-        <translation></translation>
+        <translation>Bx-</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="346"/>
@@ -6432,9 +6431,10 @@ App %1; Host:</source>
         <translation type="unfinished">X032</translation>
     </message>
     <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="360"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="365"/>
         <source>X033</source>
-        <translation></translation>
+        <translation>Dx-</translation>
     </message>
     <message>
         <source>Sucker</source>
@@ -7737,7 +7737,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="62"/>
         <source>X2 In Limit</source>
-        <translation>X2轴起点极限</translation>
+        <translation>Bx-</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="63"/>
@@ -7753,7 +7753,7 @@ Please enter an digit between </source>
         <location filename="categorypage/icmonitorpageframe.cpp" line="65"/>
         <source>Y2 In Limit</source>
         <oldsource>Y2 Out Limit</oldsource>
-        <translation>Y2轴起点极限</translation>
+        <translation>Dx-</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="66"/>
@@ -7770,13 +7770,13 @@ Please enter an digit between </source>
         <location filename="categorypage/icmonitorpageframe.cpp" line="49"/>
         <source>X1 Out Limit</source>
         <oldsource>X Out Limit</oldsource>
-        <translation>X1轴终点极限</translation>
+        <translation>Ax-</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="50"/>
         <source>X1 In Limit</source>
         <oldsource>X In Limit</oldsource>
-        <translation>吸3确认限</translation>
+        <translation>Ax+</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="52"/>
@@ -7847,7 +7847,7 @@ Please enter an digit between </source>
         <location filename="categorypage/icmonitorpageframe.cpp" line="68"/>
         <source>Y1 Out Limit</source>
         <oldsource>Y Out Limit</oldsource>
-        <translation>吸4确认限</translation>
+        <translation>Cx-</translation>
     </message>
     <message>
         <source>Main Mid</source>
@@ -7987,37 +7987,37 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="121"/>
         <source>Y040</source>
-        <translation>横入阀</translation>
+        <translation>Ax+</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="122"/>
         <source>Y041</source>
-        <translation>横出阀</translation>
+        <translation>Bx+</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="123"/>
         <source>Y042</source>
-        <translation>横行慢速</translation>
+        <translation>Cx+</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="124"/>
         <source>Y043</source>
-        <translation>电机抱闸</translation>
+        <translation>Dx+</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="125"/>
         <source>Y044</source>
-        <translation>Y044</translation>
+        <translation>Ax-</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="126"/>
         <source>Y045</source>
-        <translation>Y045</translation>
+        <translation>Zx+</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="127"/>
         <source>Y046</source>
-        <translation>Y046</translation>
+        <translation>Cx-</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="128"/>
@@ -8337,12 +8337,12 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="59"/>
         <source>B Origin Limit</source>
-        <translation>B轴起点极限</translation>
+        <translation>Zx-</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="69"/>
         <source>Vertical-2</source>
-        <translation>钳放限</translation>
+        <translation>Cx+</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="113"/>
