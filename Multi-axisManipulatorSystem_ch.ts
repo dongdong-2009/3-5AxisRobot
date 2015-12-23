@@ -911,38 +911,38 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="161"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="171"/>
         <source>Sucker 3</source>
         <translation>吸3</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="238"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="178"/>
         <source>Sucker 1</source>
         <translation>吸1</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="270"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="26"/>
         <source>Sucker 4</source>
         <translation>吸4</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="44"/>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="69"/>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="231"/>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="305"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="114"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="139"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="164"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="323"/>
         <source>ON</source>
         <translation>通</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="154"/>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="196"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="203"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="228"/>
         <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="263"/>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="340"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="288"/>
         <source>OFF</source>
         <translation>断</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="86"/>
+        <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="340"/>
         <source>Sucker 2</source>
         <translation>吸2</translation>
     </message>
@@ -3405,7 +3405,7 @@ Reason</source>
         <translation type="obsolete">设入状态</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.ui" line="169"/>
+        <location filename="hcinstruction/ichcfixturepage.ui" line="159"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="169"/>
         <source>Delay</source>
         <translation>延时</translation>
@@ -3463,25 +3463,23 @@ Reason</source>
         <translation>吸2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.ui" line="146"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="146"/>
         <source>Sucker3</source>
         <translation>吸3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.ui" line="151"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="151"/>
         <source>Sucker4</source>
         <translation>吸4</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.ui" line="156"/>
+        <location filename="hcinstruction/ichcfixturepage.ui" line="146"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="156"/>
         <source>En</source>
         <translation>使能</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.ui" line="164"/>
+        <location filename="hcinstruction/ichcfixturepage.ui" line="154"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="164"/>
         <source>Current/Setting</source>
         <translation>当前设定</translation>
@@ -3504,51 +3502,47 @@ Reason</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="149"/>
         <source>Fixture1  </source>
         <translation>夹具1</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="149"/>
         <source>Fixture2  </source>
         <translation>夹具2</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="149"/>
         <source>Fixture3  </source>
         <translation>夹具3</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="149"/>
         <source>Fixture4  </source>
         <translation>夹具4</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="25"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="151"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
         <source>Sucker1   </source>
         <translation>吸1</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="25"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="151"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
         <source>Sucker2   </source>
         <translation>吸2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="26"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="152"/>
         <source>Sucker3   </source>
-        <translation>吸3</translation>
+        <translation type="obsolete">吸3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="26"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="152"/>
         <source>Sucker4   </source>
-        <translation>吸4</translation>
+        <translation type="obsolete">吸4</translation>
     </message>
     <message>
         <source>Injector   </source>
@@ -6088,7 +6082,6 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="220"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="341"/>
         <source>M1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6116,7 +6109,7 @@ App %1; Host:</source>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="240"/>
         <source>Sucker-3 Valve</source>
         <oldsource>Sucker-3</oldsource>
-        <translation>电机反转</translation>
+        <translation>预留5</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="244"/>
@@ -6397,6 +6390,7 @@ App %1; Host:</source>
         <translation type="unfinished">X024</translation>
     </message>
     <message>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="341"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="345"/>
         <source>X030</source>
         <translation>Bx-</translation>
@@ -8367,7 +8361,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="118"/>
         <source>Run Led</source>
-        <translation>吸4阀</translation>
+        <translation>预留6</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="170"/>
@@ -8704,27 +8698,29 @@ Please enter an digit between </source>
         <translation>预留4</translation>
     </message>
     <message>
-        <source>Reserve5</source>
-        <translation type="obsolete">预留5</translation>
-    </message>
-    <message>
-        <source>Reserve6</source>
-        <translation type="obsolete">预留6</translation>
-    </message>
-    <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="130"/>
+        <source>Reserve5</source>
+        <translation type="unfinished">预留5</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icpneumaticactionpage.ui" line="135"/>
+        <source>Reserve6</source>
+        <translation type="unfinished">预留6</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icpneumaticactionpage.ui" line="140"/>
         <location filename="hcinstruction/icpneumaticactionpage_5.ui" line="145"/>
         <source>En</source>
         <translation>使能</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icpneumaticactionpage.ui" line="138"/>
+        <location filename="hcinstruction/icpneumaticactionpage.ui" line="148"/>
         <location filename="hcinstruction/icpneumaticactionpage_5.ui" line="153"/>
         <source>Current/Setting</source>
         <translation>当前设定</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icpneumaticactionpage.ui" line="143"/>
+        <location filename="hcinstruction/icpneumaticactionpage.ui" line="153"/>
         <location filename="hcinstruction/icpneumaticactionpage_5.ui" line="158"/>
         <source>Delay/Times</source>
         <translation>延时    间隔模数</translation>
@@ -12079,14 +12075,12 @@ Admin</source>
         <translation>吸2断</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="537"/>
         <source>Sucker 3</source>
-        <translation>吸3</translation>
+        <translation type="obsolete">吸3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="538"/>
         <source>Sucker 4</source>
-        <translation>吸4</translation>
+        <translation type="obsolete">吸4</translation>
     </message>
     <message>
         <source>Clip5 ON</source>
@@ -12372,12 +12366,14 @@ Admin</source>
         <translation>预留4</translation>
     </message>
     <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="537"/>
         <source>Reserve 5</source>
-        <translation type="obsolete">预留5</translation>
+        <translation>预留5</translation>
     </message>
     <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="538"/>
         <source>Reserve 6</source>
-        <translation type="obsolete">预留6</translation>
+        <translation>预留6</translation>
     </message>
     <message>
         <source>Wait Mold Opened</source>

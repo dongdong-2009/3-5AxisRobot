@@ -22,24 +22,23 @@ ICHCFixturePage::ICHCFixturePage(QWidget *parent) :
     ICLineEditWithVirtualNumericKeypad* delays = new ICLineEditWithVirtualNumericKeypad[ui->tableWidget->rowCount()];
     ICLineEditWithVirtualNumericKeypad *delayEdit;
     ioNames_<<tr("Fixture1  ")<<tr("Fixture2  ")<<tr("Fixture3  ")<<tr("Fixture4  ")
-           <<tr("Sucker1   ")<<tr("Sucker2   ")
-             <<tr("Sucker3   ")<<tr("Sucker4   ");
+           <<tr("Sucker1   ")<<tr("Sucker2   ");
     onClipToOffClip_.insert(ICMold::ACTCLIP1ON, ICMold::ACTCLIP1OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP2ON, ICMold::ACTCLIP2OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP3ON, ICMold::ACTCLIP3OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP4ON, ICMold::ACTCLIP4OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP5ON, ICMold::ACTCLIP5OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP6ON, ICMold::ACTCLIP6OFF);
-    onClipToOffClip_.insert(ICMold::ACT_AUX5, ICMold::ACT_AUX5 + 1000);
-    onClipToOffClip_.insert(ICMold::ACT_AUX6, ICMold::ACT_AUX6 + 1000);
+//    onClipToOffClip_.insert(ICMold::ACT_AUX5, ICMold::ACT_AUX5 + 1000);
+//    onClipToOffClip_.insert(ICMold::ACT_AUX6, ICMold::ACT_AUX6 + 1000);
     offClipToOnClip_.insert(ICMold::ACTCLIP1OFF, ICMold::ACTCLIP1ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP2OFF, ICMold::ACTCLIP2ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP3OFF, ICMold::ACTCLIP3ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP4OFF, ICMold::ACTCLIP4ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP5OFF, ICMold::ACTCLIP5ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP6OFF, ICMold::ACTCLIP6ON);
-    offClipToOnClip_.insert(ICMold::ACT_AUX5 + 1000, ICMold::ACT_AUX5);
-    offClipToOnClip_.insert(ICMold::ACT_AUX6 + 1000, ICMold::ACT_AUX6);
+//    offClipToOnClip_.insert(ICMold::ACT_AUX5 + 1000, ICMold::ACT_AUX5);
+//    offClipToOnClip_.insert(ICMold::ACT_AUX6 + 1000, ICMold::ACT_AUX6);
     QList<uint> initStatus = onClipToOffClip_.values();
     QIntValidator *validator = new QIntValidator(0, 30000, this);
     for(int i = 0; i != ui->tableWidget->rowCount(); ++i)
@@ -90,8 +89,8 @@ ICHCFixturePage::ICHCFixturePage(QWidget *parent) :
     commandKeyMap_.insert(settingButtons_.at(3), qMakePair(static_cast<int>(IC::VKEY_CLIP4ON), static_cast<int>(IC::VKEY_CLIP4OFF)));
     commandKeyMap_.insert(settingButtons_.at(4), qMakePair(static_cast<int>(IC::VKEY_CLIP5ON), static_cast<int>(IC::VKEY_CLIP5OFF)));
     commandKeyMap_.insert(settingButtons_.at(5), qMakePair(static_cast<int>(IC::VKEY_CLIP6ON), static_cast<int>(IC::VKEY_CLIP6OFF)));
-    commandKeyMap_.insert(settingButtons_.at(6), qMakePair(static_cast<int>(IC::VKEY_RESERVE5_ON), static_cast<int>(IC::VKEY_RESERVE5_OFF)));
-    commandKeyMap_.insert(settingButtons_.at(7), qMakePair(static_cast<int>(IC::VKEY_RESERVE6_ON), static_cast<int>(IC::VKEY_RESERVE6_OFF)));
+//    commandKeyMap_.insert(settingButtons_.at(6), qMakePair(static_cast<int>(IC::VKEY_RESERVE5_ON), static_cast<int>(IC::VKEY_RESERVE5_OFF)));
+//    commandKeyMap_.insert(settingButtons_.at(7), qMakePair(static_cast<int>(IC::VKEY_RESERVE6_ON), static_cast<int>(IC::VKEY_RESERVE6_OFF)));
 
 
     connect(&buttonSignalMapper_,
@@ -148,8 +147,7 @@ void ICHCFixturePage::changeEvent(QEvent *e)
         ui->retranslateUi(this);
         ioNames_.clear();
         ioNames_<<tr("Fixture1  ")<<tr("Fixture2  ")<<tr("Fixture3  ")<<tr("Fixture4  ")
-               <<tr("Sucker1   ")<<tr("Sucker2   ")
-                 <<tr("Sucker3   ")<<tr("Sucker4   ");
+               <<tr("Sucker1   ")<<tr("Sucker2   ");
         for(int i = 0; i != settingButtons_.size(); ++i)
         {
             settingButtons_[i]->setText(ioNames_.at(i));
