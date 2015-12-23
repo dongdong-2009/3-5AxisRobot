@@ -197,7 +197,7 @@ void ActionSettingFrame::showEvent(QShowEvent *e)
 {
     UpdateAxisDefine_();
     ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
-    posMaxs_[0] = host->SystemParameter(ICVirtualHost::SYS_X_Maxium).toInt();
+    posMaxs_[0] = host->SystemParameter(ICVirtualHost::SYS_X_Length).toInt();
     posMaxs_[1] = host->SystemParameter(ICVirtualHost::SYS_Y_Maxium).toInt();
     posMaxs_[2] = host->SystemParameter(ICVirtualHost::SYS_Z_Maxium).toInt();
     posMaxs_[3] = host->SystemParameter(ICVirtualHost::SYS_P_Maxium).toInt();
