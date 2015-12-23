@@ -134,7 +134,7 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
             switch(item->Action())
             {
             case ICMold::GX:
-                addr = ICVirtualHost::SYS_X_Maxium;
+                addr = ICVirtualHost::SYS_X_Length;
                 posValidator_->setBottom(0);
                 ifposValidator_->setBottom(0);
                 break;
