@@ -3905,8 +3905,8 @@ Reason</source>
         <translation>主菜单</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="483"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="728"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="484"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="729"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
@@ -3923,45 +3923,45 @@ Reason</source>
         <translation type="obsolete">该模号是当前模号!</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="484"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="485"/>
         <source>Can not add standby position program</source>
         <translation>不能添加待机点步骤</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="455"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="712"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="892"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1000"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="456"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="713"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="893"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1001"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1293"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1294"/>
         <source>Flag[%1]:%2</source>
         <translation>标签[%1]:%2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="456"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="457"/>
         <source>Stand program can not be insert action</source>
         <translation>标准程序不能插入动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="713"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="714"/>
         <source>Stand program can not be delete action</source>
         <translation>标准程序不能删除动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="729"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="730"/>
         <source>Can not delete standby position program</source>
         <translation>不能删除待机点步骤</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="893"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="894"/>
         <source>Stand program can not do Up action</source>
         <translation>标准程序不能组合动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1001"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1002"/>
         <source>Stand program can not do Down action</source>
         <translation>标准程序不能分解动作</translation>
     </message>
