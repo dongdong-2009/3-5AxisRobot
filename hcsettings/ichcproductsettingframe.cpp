@@ -106,6 +106,8 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
     ICLogInit;
 
     this->hide();
+    ui->label_9->hide();
+    ui->samplingEdit_3->hide();
 
 }
 

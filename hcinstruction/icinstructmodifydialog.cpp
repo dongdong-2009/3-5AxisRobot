@@ -287,6 +287,9 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
         ui->selectEdit->SetThisIntToThisText(item->SVal() + 1);
         ui->selectEdit->show();
         ui->selectLabel->show();
+        ui->delayLabel->hide();
+        ui->delayTimeEdit->hide();
+        ui->delayUnitLabel->hide();
     }
     
 //    ui->posEdit->SetThisIntToThisText(item->Pos());

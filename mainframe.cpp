@@ -927,6 +927,8 @@ void MainFrame::StatusRefreshed()
     {
         actionDialog_->hide();
         speed_ = "0";
+        ui->cycleTimeAndFinistWidget->SetFinished(virtualHost->FinishProductCount());
+
         //        statusStr_ = tr("Stop");
 #ifdef Q_WS_X11
         //        finishCount_ = virtualHost->FinishProductCount();

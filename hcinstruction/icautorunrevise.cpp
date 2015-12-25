@@ -60,7 +60,8 @@ void ICAutoRunRevise::keyPressEvent(QKeyEvent *e)
 
 bool ICAutoRunRevise::ShowModifyItem(const ICMoldItem *item, ICMoldItem* ret, const QString &text)
 {
-    if(item->Action() == ICMold::ACTCOMMENT) return false;
+    if(item->Action() == ICMold::ACTCOMMENT ||
+            item->Clip() == ICMold::ACTLAYOUTON) return false;
 
     ui->currentMoldItemLabel->setText(text);
     ui->positionLabel->hide();

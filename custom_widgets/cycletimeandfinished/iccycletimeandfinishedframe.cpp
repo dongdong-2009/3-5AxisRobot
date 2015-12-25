@@ -42,7 +42,12 @@ void ICCycleTimeAndFinishedFrame::SetCycleTime(const QString & cycleTime)
 
 void ICCycleTimeAndFinishedFrame::SetFinished(int finishedCount)
 {
-    ui->finishedProductsLabel->setText(QString::number(finishedCount));
+    static int oldF = finishedCount;
+    if(oldF != finishedCount)
+    {
+        oldF = finishedCount;
+        ui->finishedProductsLabel->setText(QString::number(finishedCount));
+    }
 }
 
 void ICCycleTimeAndFinishedFrame::SetAlarmInfo(const QString & alarmInfo)
