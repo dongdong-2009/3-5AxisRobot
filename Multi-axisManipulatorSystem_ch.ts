@@ -867,7 +867,7 @@
     <message>
         <location filename="hcmanualoperation/hcmanualotherioframe.ui" line="20"/>
         <source>Injection</source>
-        <translation>喷油</translation>
+        <translation>加工</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualotherioframe.ui" line="61"/>
@@ -7842,7 +7842,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="108"/>
         <source>Paint Oil</source>
-        <translation>喷油</translation>
+        <translation>加工</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="109"/>
@@ -8244,7 +8244,7 @@ Please enter an digit between </source>
     <message>
         <location filename="hcinstruction/icperipherypage.ui" line="110"/>
         <source>Injector</source>
-        <translation>喷油</translation>
+        <translation>加工</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.ui" line="115"/>
@@ -8324,7 +8324,7 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icperipherypage.cpp" line="25"/>
         <location filename="hcinstruction/icperipherypage.cpp" line="83"/>
         <source>Injector   </source>
-        <translation>喷油</translation>
+        <translation>加工</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.cpp" line="25"/>
@@ -12076,7 +12076,7 @@ Admin</source>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="479"/>
         <source>Injection ON</source>
-        <translation>喷油通</translation>
+        <translation>加工通</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="480"/>
@@ -12289,7 +12289,7 @@ Admin</source>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="497"/>
         <source>Injection OFF</source>
-        <translation>喷油关</translation>
+        <translation>加工关</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="498"/>
