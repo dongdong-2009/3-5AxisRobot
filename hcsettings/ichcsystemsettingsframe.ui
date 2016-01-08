@@ -273,6 +273,41 @@ QRadioButton::indicator:unchecked:disabled
           </widget>
          </item>
          <item>
+          <widget class="QCheckBox" name="espBox">
+           <property name="styleSheet">
+            <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+QRadioButton::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+QRadioButton::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+           </property>
+           <property name="text">
+            <string notr="true">español</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">languageButtonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item>
           <spacer name="horizontalSpacer">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
@@ -2688,13 +2723,11 @@ height:30px;</string>
   <include location="../resource.qrc"/>
   <include location="../resource.qrc"/>
   <include location="../resource.qrc"/>
-  <include location="../resource.qrc"/>
-  <include location="../resource.qrc"/>
  </resources>
  <connections/>
  <buttongroups>
-  <buttongroup name="languageButtonGroup"/>
   <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="languageButtonGroup"/>
  </buttongroups>
 </ui>

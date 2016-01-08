@@ -1,0 +1,373 @@
+1:Error virtual
+2:Caracteres extraños
+3:Programa no termina
+4:ignorar characteres
+5:Caos de orión
+6:No posición final
+7:arco de definición
+8:Orden
+9:Radio largo
+10:Sobrevelocidad
+11:Definición doble IO
+12:no hay defición IO
+13:Acción de grupo es error
+14:Espera de grupo es error
+15:la próxima etapa de sacar es mala
+16:chequear fin fuera de rango
+17:Contexto registrado es malo
+18:chequeo del acción principal final
+19:Contexto de NUM de registro es malo
+20:Sub contexto de NUM de registro es malo
+21:Acción de registrar ha terminado
+22:X todavía está funcionando cuando genere acción
+23:Y todavía está funcionando cuando genere acción
+24:Z todavía está funcionando cuando genere acción
+25:El temporizador ha bajado a cero cuando G tiene tiempo de retardo
+26:Sobrevelocidad X
+27:Sobrevelocidad Y
+28:Sobrevelocidad Z
+29:Fallar en escribir memoria
+30:fallar en debug
+31:X1 CAN Bus falla en comunicación
+32:Y1 CAN Bus falla en comunicación
+33:Z CAN Bus falla en comunicación
+34:X2 CAN Bus falla en comunicación
+35:Y2 CAN Bus falla en comunicación
+36:A CAN Bus falla en comunicación
+37:B CAN Bus falla en comunicación
+38:C CAN Bus falla en comunicación
+39:Está corriendo antes de correr la curva
+40:Está preparado antes de correr la curva
+41:Está corriendo antes de correr la línea
+42:Está corriendo antes de correr el ciclo
+43:CAN falla en escribir
+44:CAN falla en escribir
+45:CAN falla en leer
+46:Falla en cambiar velocidad
+60:Sobrevelocidad de A
+61:Sobrevelocidad de B
+62:Sobrevelocidad de C
+63:A todavía está funcionando cuando genere acción
+64:B todavía está funcionando cuando genere acción
+65:C todavía está funcionando cuando genere acción
+70:Sobrevelocidad de X2
+71:Sobrevelocidad de Y2
+72:X2 todavía está funcionando cuando genere acción
+73:Y2 todavía está funcionando cuando genere acción
+100:pulso de retroalimentación con exceso de desviación largo de X
+101:pulso de retroalimentación con exceso de desviación largo de Y
+102:pulso de retroalimentación con exceso de desviación largo de Z
+103:error de z-pulso axial de X
+104:error de z-pulso axial de Y
+105:error de z-pulso axial de Z
+106:alarma de servicio de X
+107:alarma de servicio de Y
+108:alarma de servicio de Z
+109:Posición perdida X
+110:Posición perdida Y
+111:Posición perdida Z
+112:alarma máxima de X
+113:alarma míniima de X
+114:alarma máxima de Y
+115:alarma míniima de Y
+116:alarma máxima de Z
+117:alarma míniima de Z
+118:X-Posición demasiado grande
+119:X-Posición demasiado pequeño
+120:Y-Posición demasiado grande
+121:Y-Posición demasiado pequeño
+122:Z-Posición demasiado grande
+123:Z-Posición demasiado pequeño
+124:X es grande durante el funcionamiento
+125:X es pequeño durante el funcionamiento
+126:Y es grande durante el funcionamiento
+127:Y es pequeño durante el funcionamiento
+128:Z es grande durante el funcionamiento
+129:Z es pequeño durante el funcionamiento
+130:Fallar en guardar eje X
+131:Fallar en guardar eje Y
+132:Fallar en guardar eje Z
+133:Fallar en guardar estructura
+134:Comparar eje X
+135:Comparar eje Y
+136:Comparar eje Z
+137:Comparar estructura
+138:X no es de servicio
+139:Y no es de servicio
+140:Z no es de servicio
+160:pulso de retroalimentación largo de X2
+161:pulso de retroalimentación largo de Y2
+162:error de z-pulso axial de X2
+163:error de z-pulso axial de y2
+164:alarma de servicio de X2
+165:alarma de servicio de Y2
+166:Posición perdida X2
+167:Posición perdida Y2
+168:Alarma máxima de X2
+169:Alarma mínima de X2
+170:Alarma máxima de Y2
+171:Alarma mínima de Y2
+172:X2-Posición demasiado grande
+173:X2-Posición demasiado pequeño
+174:Y2-Posición demasiado grande
+175:Y2-Posición demasiado pequeña
+176:X2 es grande durante el funcionamiento
+177:X2 es pequeño durante el funcionamiento
+178:Y2 es grande durante el funcionamiento
+179:Y2 es pequeño durante el funcionamiento
+180:Fallar en guardar eje X2
+181:Fallar en guardar eje Y2
+182:comparar eje X2
+183::comparar eje Y2
+184:X2 no es de servicio
+185:Y2 no es de servicio
+200:pulso de retroalimentación con exceso de desviación largo de A
+201:pulso de retroalimentación con exceso de desviación largo de B
+202:pulso de retroalimentación con exceso de desviación largo de C
+203:error de z-pulso axial de A
+204:error de z-pulso axial de B
+205:error de z-pulso axial de C
+206:alarma de servicio de A
+207:alarma de servicio de B
+208:alarma de servicio de C
+209:posición perdida de A
+210:posición perdida de B
+211:posición perdida de C
+212:alarma máxima de A
+213:alarma mínima de A
+214:alarma máxima de B
+215:alarma mínima de B
+216:alarma máxima de C
+217:alarma mínima de C
+218:A-Posición demasiado grande
+219:A-Posición demasiado pequeña
+220:B-Posición demasiado grande
+221:B-Posición demasiado pequeña
+222:C-Posición demasiado grande
+223:C-Posición demasiado pequeña
+224:A es grande durante el funcionamiento
+225:A es pequeño durante el funcionamiento
+226:B es grande durante el funcionamiento
+227:B es pequeño durante el funcionamiento
+228:C es grande durante el funcionamiento
+229:C es pequeño durante el funcionamiento
+230:Fallar en guardar eje A
+231:Fallar en guardar eje B
+232:Fallar en guardar eje C
+233:SPI NULL
+234:Comparar eje A
+235:Comparar eje B
+236:Comparar eje C
+237:COMPARAR NULL
+238:A no es de servicio
+239:B no es de servicio
+240:C no es de servicio
+300:error en parámetros de eje X
+301:error en parámetros de eje Y
+302:error en parámetros de eje Z
+303:error y chequeo en acción
+304:Paro emergente
+305:Error en ciclo principal
+306:error de punto de espera
+307:error de sacar molde
+308:tolerancia demasiado grande
+309:Error de parámetro de función de molde
+310:iSub demasiado grande
+311:iSub re-llamado
+312:pila illegal
+313:pila apilada
+314:orden de acción no es correcta
+315:parámetro de sistema es malo
+316:Número de acción es malo
+317:Sub número de acción es malo
+318:sólo línea de número
+319:sólo funciona en estado automático
+320:Secuencia illega
+321:Check sumno es correcto
+322:Check GM valor no es correcto
+323:Esperar molde abierto
+324:GM valor no es correcto cuando se ajusta automáticamente
+325:Se duplica acción de broche
+326:Se repite acción
+327:Solo se puede utilizar en nivel 1
+328:Chequear la introducción durante el funcionamiento
+329:Error de parámetros de accesorio
+330:Posción ha cambiado, por favor, reinicie.
+331:error de parámetros de posición
+332:salida ha cambiado, por favor, reinicie
+333:Eje ha cambiado, por favor, reinicie
+334:chequeo y error de parámetros de iSub
+360:error en chequeo de parámetros de eje X2
+361:error en chequeo de parámetros de eje Y2
+362:error en chequeo de parámetros de eje A
+363:error en chequeo de parámetros de eje B
+364:error en chequeo de parámetros de eje C
+365:chequeo de parámetros de estructura
+400:error en leer parámetros de eje X
+401:error en leer parámetros de eje Y
+402:error en leer parámetros de eje Z
+403:error en leer parámetros de sistema
+404:error en leer parámetros de molde
+405:error en leer parámetros de Sub-Prg
+406:error en leer parámetros de función
+500:Perder contacto con MainCtrl!
+501:error de comunicación de panel de IO !
+502:ha alcanzado la cantidad de producción de diseño
+503:Presión baja
+504:Comm-WatchDog
+505:Lista de Sync no es correcta
+506:Tiempo ha sobrepasado durante la espera de señal
+507:Modificar parámetros en estado de no paro
+550:Posición de X1 y X2 ha sobrepasado el límite
+600:Z mueve hacia afuera, pero Z señal in ON
+601:Z mueve hacia afuera, pero Z señal in OFF
+602:Z mueve hacia interior, but Z fuera seguro señal ON
+603:Z mueve hacia interior, but Z fuera seguro señal OFF
+604:Y no es zona de seguridad pero origen On
+605:Y es dentro de la zona de seguridad pero origen off
+606:B  no es zona de seguridad pero origen On
+607:B es dentro de la zona de seguridad pero origen off
+700:Tiempo ha sobrepasado cuando espere X043
+701:Tiempo ha sobrepasado cuando espere X044
+702:Tiempo ha sobrepasado cuando espere accesorio-1
+703:Tiempo ha sobrepasado cuando espere accesorio-2
+704:Tiempo ha sobrepasado cuando espere accesorio-3
+705:Tiempo ha sobrepasado cuando espere accesorio-4
+706:Tiempo ha sobrepasado cuando espere chupador-1
+707:Tiempo ha sobrepasado cuando espere chupador-2
+708:Tiempo ha sobrepasado cuando espere eyector hacia adelante
+709:Tiempo ha sobrepasado cuando espere eyector hacia atrás
+710:Tiempo ha sobrepasado cuando espere core en
+711:Tiempo ha sobrepasado cuando espere core fuera
+1000:Molde medio señal es off cuando brazo baje
+1001:Señal de molde abierto es off cuando brazo baje
+1002:Puerta de seguridad es abierto cuando brazo baje
+1003:Señal vertical and horizontal ambos son on.
+1004:señal de trasnportar en y fuera ambas son on.
+1005:señal de molde abierto es off cuando brazo baje
+1006:Posición es horizontal cuando brazo baje dentro
+1007:Brazo baje dentro pero posición ni es dentro de Z en  zona de serguridad
+1008:Brazo baje fuera pero posición ni es dentro de Z en  zona de serguridad
+1009:Cuando el brazo baje no se puede detectar señal de zona de seguridad
+1010:No puede chequear zona de seguridad Z cuando Y1 baje
+1011:No puede chequear zona de seguridad X cuando Y1 baje
+1012:Ambas posiciones son horizontales
+1013:Sub brazo hacia delante y atrás son on
+1014:Sub brazo que sube y baja es on
+1015:Brazo principal hacia adelante  y atrás es on
+1016:brazo principal que sube y baja es on
+1017:Puerta de seguridad es abierto durante el funcionamiento
+1018:Acción de sub brazo no depende del molde
+1019:señal de molde abierto es off cuando origen regrese
+1020:señal de molde medio es off cuando origen regrese
+1021:La psocisión es vertical cuando origen regrese
+1022:La posición es horizontal cuando origen regrese
+1023:La psocisión es vertical cuando cruce
+1024:La psocisión es horizontal cuando regrese
+1025:La posición no es correcta cuando baje dentro
+1027:no ha terminado de cerrar molde
+1028:hace que pueda
+1038：El ajuste del eje Z no se encuentra en la zona de seguridad interior cuando producto de mala calidad
+1039：las configuraciones de ajuste del eje Z no se encuentra en la zona de seguridad interior cuando producto de mala calidad
+1040:la acción anterior no es eje Z
+1052:cruzar en y fuera, señal de brazo principal se corta
+1053:NULL
+1054:No hay eje X pero hay acción de X
+1055:No hay eje Y pero hay acción de Y
+1056:No hay eje Z pero hay acción de Z
+1057:No hay eje X2 pero hay acción de X2
+1058:No hay eje Y2 pero hay acción de Y2
+1059:No hay eje A pero hay acción de A
+1060:No hay eje B pero hay acción de B
+1061:No hay eje C pero hay acción de C
+1100:No puede chequear zona de seguridad cuando brazo principal baje
+1101:No puede chequear zona de seguridad cuando brazo secundario baje
+1102:Señal de Mold-abierto está apagado cuando Brazo Principal descende
+1103:Señal de Mold-abierto está apagado cuando brazo secundario descender
+1104:Límite superior de brazo principal es on cuando el principal brazo descende
+1105:Límite superior de sub brazo es on cuando sub brazo baje
+1106:límite descen principal está apagado después de brazo principal ha descendido
+1107:Límite Sub descen está apagado después de sub brazo ha descened
+1108:La señal del medio molde es apagado cuando descen principal brazo
+1109:La señal del medio molde es apagado cuando principal sub descen
+1.121:no se puede comprobar la zona de seguridad interior y exterior cuando ascienda Brazo principal
+1.121:no se puede comprobar la zona de seguridad interior y exterior cuando ascienda Brazo Sub
+1122:Es demasiado rápido cuando Brazo Principal ascenda
+1123:Es demasiado rápido cuando ascienda Brazo Sub
+1124:señal de Molde-abierto está apagado cuando Brazo Principal ascender
+1125:señal de Molde-abierto está apagado cuando ascienda Sub Brazo
+1126:límite superior principal es después de que el brazo principal ascende
+1127:límite superior Sub esté apagado después de Sub Brazo ascende
+1141:Límite Sub de espalda es después de que principal Brazo remita
+1141:Límite Sub de espalda es después de que Sub Brazo remita
+1142:límite principal es off después de principal Brazo vaya hacia atrás
+1143:Límite Sub de espalda es después de Sub Brazo backwarded
+1144:límite hacia adelante principal es después del brazo principal tiene delante
+1145:límite hacia adelante Sub es después de sub brazo tiene hacia adelante
+1146:límite hacia adelante principal es después del brazo principal está de vuelta
+1147:límite hacia adelante Sub es después de sub brazo está de vuelta
+1161:No se puede comprobar el límite superior de brazo principal al cambiar de posición
+1161:No se puede comprobar el límite superior sub al cambiar de posición
+1162:señal de Mold-abierto es off durante el cambio de posición
+1163:límite horizontal está apagado después del cambio de condiciones de horizonte
+1164:Límite vertical está apagado después del cambio de condiciones de Verizon
+1165:Fuera de la zona de seguridad cuando horizontal
+1170:No se puede comprobar el límite superior principal durante la posición-2 cambiante
+1171:No se puede comprobar el límite superior cuando la sub posición-2 cambiante
+1172:señal de Mol3d-abierto está apagado durante la posición-2 cambiante
+1173:límite horizontal está apagado después de la posición-2 cambio de horizonte
+1174:Fuera de la zona de seguridad cuando horizontal-2
+1180:límite superior de brazo principal está apagado durante la acción del aire de viajes dentro y fuera
+1181:límite superior de Sub brazo está apagado durante la acción del aire de viajes dentro y fuera
+1182:Límite de viajar en está apagado después de viajar fuera
+1183:Límite de viajar fuera está apagado después de salir de viaje
+1184:La posición no es la misma con la instrucción cuando viaje fuera
+1185:señal de Mold-abierto está apagado cuando viaje en
+1186:límite superior principal está apagado cuando viaje en el área de riesgo en el interior
+1187:límite superior de Sub brazo está apagado cuando viaje en el área de riesgo en el interior
+1188:Y1 no está dentro de la zona de seguridad cuando viaje dentro de la zona de peligro
+1189:límite superior principal no se enciende cuando cruce de fuera
+1190:límite superior principal no tanto se enciende cuando viaje fuera del interior
+1191:No se puede comprobar el límite superior cuando viaje en el área de riesgo sólo en el estado de manual de
+1192:Posición actual es manor que zona de seguridad móvil
+1193:Posición actual es mayor que zona de seguridad móvil
+Y2 no está en posición de subir
+1200:Broche1 señal off, Broche1 válvula on.
+1201:Broche1 señal on, Broche1 válvula off.
+1202:Broche2 señal off, Broche2 válvula on.
+1203:Broche2 señal on, Broche2 válvula off.
+1204:Broche3 señal off, Broche3 válvula on.
+1205:Broche3 señal on, Broche3 válvula off.
+1206:Broche4 señal off, Broche4 válvula on.
+1207:Broche4 señal on, Broche4 válvula off.
+1208:Chupador1 señal off, Chupador1 válvula on.
+1209:Chupador1 señal on, Chupador1 válvula off.
+1210:Chupador2 señal off, Chupador2 válvula on.
+1211:Chupador2 señal on, Chupador2 válvula off.
+1212:Broche7 señal off, Broche7 válvula on.
+1213:Broche7 señal on, Broche7 válvula off.
+1214:Broche8 señal off, Broche8 válvula on.
+1215:Broche8 señal on, Broche8 válvula off.
+1250:No puede chequear X037
+1251:No puede chequear X023
+1300:Por favor, chequee postura de espera.
+1301:Por favor, chequee señal de brazo principal que sube
+1302:Por favor, chequee señal de vice brazo que sube
+1303:Por favor, chequee el punto de espera X
+1304:Por favor, chequee el punto de espera Y
+1305:Por favor, chequee el punto de espera Z
+1306:Por favor, chequee el broche 1 de punto de espera
+1307:Por favor, chequee el broche 2 de punto de espera
+1308:Por favor, chequee el broche 3 de punto de espera
+1309:Por favor, chequee el broche 4 de punto de espera
+1310:Por favor, chequee el broche 5 de punto de espera
+1311:Por favor, chequee el broche 6 de punto de espera
+1312:Por favor, chequee el punto de espera A
+1313:Por favor, chequee el punto de espera B
+1314:Por favor, chequee el punto de espera C
+1315:Por favor, chequee el punto de esperat X2
+1316:Por favor, chequee el punto de espera Y2
+1400:No hay chequeo de límite superior
+1401:Punto actual y punto de espera no están en el mismo lado
+1402:Punto actual y punto de espera no están en el mismo lado
+1403:No se puede comprobar el límite superior de Y2

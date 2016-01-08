@@ -28,6 +28,7 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
     ui->languageButtonGroup->setId(ui->englishBox,1);
     ui->languageButtonGroup->setId(ui->ptBox, 2);
     ui->languageButtonGroup->setId(ui->ruBox, 3);
+    ui->languageButtonGroup->setId(ui->espBox,4);
     InitParameter();
     ui->extentFunctionCheckBox->setChecked(ICParametersSave::Instance()->IsExtentFunctionUsed());
     ui->limitFunctionBox->setChecked(ICParametersSave::Instance()->IsRegisterFunctinOn());
@@ -112,6 +113,8 @@ void ICHCSystemSettingsFrame::InitParameter()
         ui->ptBox->setChecked(true);
     else if(paraSave->Country() == QLocale::RussianFederation)
         ui->ruBox->setChecked(true);
+    else if(paraSave->Country() == QLocale::Spain)
+        ui->espBox->setChecked(true);
     // ui->languageComboBox->setCurrentIndex(index);
     if(paraSave->KeyTone())
     {
@@ -144,6 +147,10 @@ void ICHCSystemSettingsFrame::languageBoxChange()
     {
         paraSave->SetCountry(QLocale::RussianFederation);
     }
+    else if(ui->languageButtonGroup->checkedId() == 4)
+    {
+        paraSave->SetCountry(QLocale::Spain);
+    }
 }
 
 void ICHCSystemSettingsFrame::changeEvent(QEvent *e)
@@ -158,12 +165,14 @@ void ICHCSystemSettingsFrame::changeEvent(QEvent *e)
         int index = (paraSave->Country() == QLocale::China) ? 0 : 1;
         if(paraSave->Country() == QLocale::China)
             ui->chineseBox->setChecked(true);
-        else if(paraSave->Country() == QLocale::English)
+        else if(paraSave->Country() == QLocale::UnitedStates)
             ui->englishBox->setChecked(true);
         else if(paraSave->Country() == QLocale::Portugal)
             ui->ptBox->setChecked(true);
         else if(paraSave->Country() == QLocale::RussianFederation)
             ui->ruBox->setChecked(true);
+        else if(paraSave->Country() == QLocale::Spanish)
+            ui->espBox->setChecked(true);
     //    ui->languageComboBox->setCurrentIndex(index);
         ui->dateTimeEdit->setDateTime(QDateTime::currentDateTime());
         ui->axisXToolButton->setText(tr("X1 Axis"));

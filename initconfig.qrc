@@ -9,5 +9,7 @@
         <file>sysconfig/alarminfomation-ru</file>
         <file>sysconfig/alarminfomation-pt</file>
         <file>sysconfig/hintinfomation-pt</file>
+        <file>sysconfig/alarminfomation-esp</file>
+        <file>sysconfig/hintinfomation-esp</file>
     </qresource>
 </RCC>

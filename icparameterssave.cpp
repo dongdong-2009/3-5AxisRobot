@@ -103,6 +103,12 @@ void ICParametersSave::SetLanguage(QLocale::Language language)
         qApp->removeTranslator(sysTranslator_);
     }
         break;
+    case QLocale::Spanish:
+        {
+            translator_->load("Multi-axisManipulatorSystem_esp");
+            qApp->removeTranslator(sysTranslator_);
+        }
+        break;
     default:
         {
             return;
@@ -143,6 +149,12 @@ void ICParametersSave::SetCountry(QLocale::Country country)
         QLocale::setDefault(QLocale(QLocale::Russian, country));
         SetLanguage(QLocale::Russian);
     }
+        break;
+    case QLocale::Spain:
+        {
+            QLocale::setDefault(QLocale(QLocale::English, country));
+            SetLanguage(QLocale::Spanish);
+        }
         break;
     default:
         {
