@@ -18,6 +18,8 @@ SK_SIZE = 8
 
 HostType = t
 
+DEFINES += HC_TEST
+
 DEFINES += HOST_TYPE='\\"$${HostType}\\"'
 
 suffix = Size$${SK_SIZE}

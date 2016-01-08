@@ -371,6 +371,10 @@ MainFrame::MainFrame(QSplashScreen *splashScreen, QWidget *parent) :
     //           connect(reboot_timer,SIGNAL(timeout()),this,SLOT(Register()));
 
     qDebug("Mainframe Init finished");
+#ifdef HC_TEST
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_STOP);
+#endif
+
 }
 
 
@@ -719,6 +723,12 @@ void MainFrame::StatusRefreshed()
 {
 
     //static ICAlarmString* alarmString = ICAlarmString::Instance();
+#ifdef HC_TEST
+
+    ICCommandProcessor::Instance()->ExecuteHCCommand(IC::CMD_TuneMold, 0);
+#endif
+
+
     static ICVirtualHost* virtualHost = ICVirtualHost::GlobalVirtualHost();
 
     //    if(isXPosChanged_)
