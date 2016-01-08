@@ -102,7 +102,7 @@ ICHCFixturePage::ICHCFixturePage(QWidget *parent) :
     commandKeyMap_.insert(settingButtons_.at(5), qMakePair(static_cast<int>(IC::VKEY_CLIP6ON), static_cast<int>(IC::VKEY_CLIP6OFF)));
     commandKeyMap_.insert(settingButtons_.at(6), qMakePair(static_cast<int>(IC::VKEY_RESERVE5_ON), static_cast<int>(IC::VKEY_RESERVE5_OFF)));
     commandKeyMap_.insert(settingButtons_.at(7), qMakePair(static_cast<int>(IC::VKEY_RESERVE6_ON), static_cast<int>(IC::VKEY_RESERVE6_OFF)));
-    commandKeyMap_.insert(settingButtons_.at(8), qMakePair(static_cast<int>(IC::VKEY_RESERVE3_ON), static_cast<int>(IC::VKEY_RESERVE3_OFF)));
+    commandKeyMap_.insert(settingButtons_.at(8), qMakePair(static_cast<int>(IC::VKEY_SubFixture_ON), static_cast<int>(IC::VKEY_SubFixture_ON)));
 
 
     connect(&buttonSignalMapper_,
@@ -250,7 +250,15 @@ QList<ICMoldItem> ICHCFixturePage::CreateCommandImpl() const
     int clip;
     for(int i = 0; i != ui->tableWidget->rowCount(); ++i)
     {
-        if(ui->tableWidget->item(i,0)->checkState() == Qt::Checked)
+        if(i == 8)
+        {
+            item.SetAction(ICMold::ACT_OTHER);
+            item.SetIFVal(2);
+            clip = buttonToClip_.value(qobject_cast<QAbstractButton*>(ui->tableWidget->cellWidget(i, 1)));
+            item.SetSVal(clip < 1000);
+            ret.append(item);
+        }
+        else if(ui->tableWidget->item(i,0)->checkState() == Qt::Checked)
         {
             clip = buttonToClip_.value(qobject_cast<QAbstractButton*>(ui->tableWidget->cellWidget(i, 1)));
             item.SetClip(clip);

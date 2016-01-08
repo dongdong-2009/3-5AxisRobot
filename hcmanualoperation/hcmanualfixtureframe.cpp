@@ -31,9 +31,9 @@ HCManualFixtureFrame::HCManualFixtureFrame(QWidget *parent) :
     wrapper = new ICCommandKeyWrapper(ui->disconnectFixture4ToolButton, IC::VKEY_CLIP4OFF);
     wrappers_.append(wrapper);
 
-    wrapper = new ICCommandKeyWrapper(ui->connectReserve3ToolButton, IC::VKEY_RESERVE3_ON);
+    wrapper = new ICCommandKeyWrapper(ui->connectReserve3ToolButton, IC::VKEY_SubFixture_ON);
     wrappers_.append(wrapper);
-    wrapper = new ICCommandKeyWrapper(ui->disconnectReserve3ToolButton, IC::VKEY_RESERVE3_OFF);
+    wrapper = new ICCommandKeyWrapper(ui->disconnectReserve3ToolButton, IC::VKEY_SubFixture_OFF);
     wrappers_.append(wrapper);
 }
 
@@ -216,7 +216,7 @@ void HCManualFixtureFrame::StatusRefreshed()
     }
 
 
-    if(host->IsOutputOn(17))
+    if(host->IsOutputOn(28))
     {
         if(!clips_.at(8))
         {
@@ -233,7 +233,7 @@ void HCManualFixtureFrame::StatusRefreshed()
         }
     }
 
-    if(host->IsInputOn(28))
+    if(host->IsInputOn(16))
     {
         if(!clips_.at(9))
         {

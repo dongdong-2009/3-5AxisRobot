@@ -19,19 +19,19 @@ HCManualReservePage::HCManualReservePage(QWidget *parent) :
 
     ui->reserve5StatusLabel->hide();
     ui->reserve6StatusLabel->hide();
-    ui->reserve3StatusLabel->hide();
+//    ui->reserve3StatusLabel->hide();
 
     ui->connectReserve5ToolButton->hide();
     ui->connectReserve6ToolButton->hide();
-    ui->connectReserve3ToolButton->hide();
+//    ui->connectReserve3ToolButton->hide();
 
     ui->disconnectReserve5ToolButton->hide();
     ui->disconnectReserve6ToolButton->hide();
-    ui->disconnectReserve3ToolButton->hide();
+//    ui->disconnectReserve3ToolButton->hide();
 
     ui->label->hide();
     ui->label_5->hide();
-    ui->label_4->hide();
+//    ui->label_4->hide();
     ICCommandKeyWrapper *wrapper;
     wrapper = new ICCommandKeyWrapper(ui->connectReserve1ToolButton, IC::VKEY_RESERVE1_ON);
     wrappers_.append(wrapper);

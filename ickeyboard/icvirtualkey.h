@@ -118,6 +118,9 @@ enum ICVirtualKey
     VKEY_PAUSE,
     VKEY_RESTART,
 
+    VKEY_SubFixture_ON = 0xB0,
+    VKEY_SubFixture_OFF = 0xB1
+
 };
 
 }//namespace IC{

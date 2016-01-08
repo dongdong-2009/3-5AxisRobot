@@ -332,6 +332,11 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             {
                 commandStr += tr("Product Clear");
             }
+            else if(moldItem.IFVal() == 2)
+            {
+                commandStr += tr("Sub Fixture") + " ";
+                commandStr += moldItem.SVal() ? tr("ON") : tr("OFF");
+            }
             return commandStr;
         }
     }
