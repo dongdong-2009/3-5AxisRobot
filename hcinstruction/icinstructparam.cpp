@@ -323,7 +323,57 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
     else
     {
         action = moldItem.Clip();
-        commandStr += clipGroupMap_.value(action) + ": ";
+        if(action == ICMold::ACTEJECTON)
+        {
+            if(moldItem.IFVal() == 0)
+                commandStr += clipGroupMap_.value(action) + ": ";
+
+            else
+                commandStr += tr("Eje BW Permit On") + ": ";
+        }
+        else if(action == ICMold::ACTEJECTOFF)
+        {
+            if(moldItem.IFVal() == 0)
+                commandStr += clipGroupMap_.value(action) + ": ";
+
+            else
+                commandStr += tr("Eje BW Permit Off") + ": ";
+        }
+        else if(action == ICMold::ACT_CORE1_ON)
+        {
+            if(moldItem.IFVal() == 0)
+                commandStr += clipGroupMap_.value(action) + ": ";
+
+            else
+                commandStr += tr("Core1 Out Permit On") + ": ";
+        }
+        else if(action == ICMold::ACT_CORE1_OFF)
+        {
+            if(moldItem.IFVal() == 0)
+                commandStr += clipGroupMap_.value(action) + ": ";
+
+            else
+                commandStr += tr("Core1 Out Permit Off") + ": ";
+        }
+        else if(action == ICMold::ACT_CORE2_ON)
+        {
+            if(moldItem.IFVal() == 0)
+                commandStr += clipGroupMap_.value(action) + ": ";
+
+            else
+                commandStr += tr("Core2 Out Permit On") + ": ";
+        }
+        else if(action == ICMold::ACT_CORE2_OFF)
+        {
+            if(moldItem.IFVal() == 0)
+                commandStr += clipGroupMap_.value(action) + ": ";
+
+            else
+                commandStr += tr("Core2 Out Permit Off") + ": ";
+        }
+        else
+            commandStr += clipGroupMap_.value(action) + ": ";
+        //        commandStr += clipGroupMap_.value(action) + ": ";
         if(clipStatusList_.contains(action))
         {
             commandStr += QObject::tr("Times:") + QString::number(moldItem.ActualMoldCount()) + " ";
