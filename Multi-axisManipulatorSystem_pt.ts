@@ -1714,28 +1714,28 @@ ModifyTime</source>
         <translation>Inserir</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="453"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="661"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="454"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="662"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="454"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="455"/>
         <source>Can not add standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="647"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="648"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="648"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="649"/>
         <source>Stand program can not be delete action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="662"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="663"/>
         <source>Can not delete standby position program</source>
         <translation type="unfinished"></translation>
     </message>

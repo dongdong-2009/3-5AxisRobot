@@ -2303,8 +2303,8 @@ Reason</source>
         <translation>主菜单</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="453"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="661"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="454"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="662"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
@@ -2321,22 +2321,22 @@ Reason</source>
         <translation type="obsolete">该模号是当前模号!</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="454"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="455"/>
         <source>Can not add standby position program</source>
         <translation>不能添加待机点步骤</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="647"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="648"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="648"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="649"/>
         <source>Stand program can not be delete action</source>
         <translation>标准程序不能删除动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="662"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="663"/>
         <source>Can not delete standby position program</source>
         <translation>不能删除待机点步骤</translation>
     </message>

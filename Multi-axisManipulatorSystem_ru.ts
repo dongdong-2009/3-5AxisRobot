@@ -1709,28 +1709,28 @@ ModifyTime</source>
         <translation>вставить</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="453"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="661"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="454"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="662"/>
         <source>Warning</source>
         <translation>предупреждать</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="454"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="455"/>
         <source>Can not add standby position program</source>
         <translation>Не можете добавить резервный шаг</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="647"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="648"/>
         <source>warning</source>
         <translation>предупреждать</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="648"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="649"/>
         <source>Stand program can not be delete action</source>
         <translation>Не удается удалить шаг в программе по умолчанию</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="662"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="663"/>
         <source>Can not delete standby position program</source>
         <translation>Не удается удалить шаг в программе по умолчанию</translation>
     </message>
