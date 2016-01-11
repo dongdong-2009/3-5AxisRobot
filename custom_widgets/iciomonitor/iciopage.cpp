@@ -330,19 +330,30 @@ void ICIOPage::showEvent(QShowEvent *e)
     if(host->AxisDefine(ICVirtualHost::ICAxis_AxisX2) == ICVirtualHost::ICAxisDefine_Servo)
     {
         multiLabels.value(X031)->setText(tr("X2 Origin"));
-        multiLabels.value(X030)->setText(tr("X2 Begin Limit"));
+//        multiLabels.value(X030)->setText(tr("X2 Begin Limit"));
+        multiLabels.value(X030)->setText(tr("Sub Fixture"));
+
     }
     else if(host->AxisDefine(ICVirtualHost::ICAxis_AxisX2) == ICVirtualHost::ICAxisDefine_Pneumatic)
     {
         multiLabels.value(X031)->setText(tr("X2 BW Limit"));
         if(host->HasSubArmForwardLimit())
-            multiLabels.value(X030)->setText(tr("X2 FW Limit"));
+        {
+            multiLabels.value(X030)->setText(tr("Sub Fixture"));
+//            multiLabels.value(X030)->setText(tr("X2 FW Limit"));
+
+        }
         else
-            multiLabels.value(X030)->setText(tr("M1"));
+        {
+            multiLabels.value(X030)->setText(tr("Sub Fixture"));
+//            multiLabels.value(X030)->setText(tr("M1"));
+        }
     }
     else
     {
-        multiLabels.value(X030)->setText(tr("X030"));
+//        multiLabels.value(X030)->setText(tr("X030"));
+        multiLabels.value(X030)->setText(tr("Sub Fixture"));
+
         multiLabels.value(X031)->setText(tr("X031"));
     }
 
