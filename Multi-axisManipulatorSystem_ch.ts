@@ -6014,7 +6014,7 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="212"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="385"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="388"/>
         <source>M0</source>
         <translation>M0</translation>
     </message>
@@ -6025,7 +6025,6 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="220"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="347"/>
         <source>M1</source>
         <translation>M1</translation>
     </message>
@@ -6036,7 +6035,7 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="228"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="368"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="371"/>
         <source>M2</source>
         <translation>M2</translation>
     </message>
@@ -6121,12 +6120,12 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="283"/>
         <source>X020</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1轴原点 {020?}</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="284"/>
         <source>X016</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1轴原点 {016?}</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="289"/>
@@ -6141,12 +6140,12 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="301"/>
         <source>X022</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1轴原点 {022?}</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="302"/>
         <source>X035</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1轴原点 {035?}</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="309"/>
@@ -6157,67 +6156,68 @@ App %1; Host:</source>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="319"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="327"/>
         <source>X042</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1轴原点 {042?}</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="324"/>
         <source>X041</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1轴原点 {041?}</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="325"/>
         <source>X025</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1轴原点 {025?}</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="326"/>
         <source>X024</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1轴原点 {024?}</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="334"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="342"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="352"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="348"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="355"/>
         <source>Sub Fixture</source>
         <translation>副夹</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="354"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="357"/>
         <source>X031</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1轴原点 {031?}</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="372"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="375"/>
         <source>X032</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1轴原点 {032?}</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="373"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="376"/>
         <source>X033</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1轴原点 {033?}</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="379"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="382"/>
         <source>A begin limit</source>
         <translation>A轴起点极限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="386"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="389"/>
         <source>X037</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1轴原点 {037?}</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="409"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="412"/>
         <source>B Begin limit</source>
         <translation>B轴起点极限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="415"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="418"/>
         <source>X026</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1轴原点 {026?}</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="416"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="419"/>
         <source>X040</source>
         <translation>Y1轴原点</translation>
     </message>
@@ -6280,7 +6280,7 @@ App %1; Host:</source>
         <translation>副臂后退限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="378"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="381"/>
         <source>A Origin</source>
         <translation>A轴原点</translation>
     </message>
@@ -6289,23 +6289,23 @@ App %1; Host:</source>
         <translation type="obsolete">A轴终点极限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="387"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="390"/>
         <source>Y024</source>
         <translation type="unfinished">Y024</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="388"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="391"/>
         <source>Y046</source>
         <translation type="unfinished">Y046</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="392"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="400"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="395"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="403"/>
         <source>Horizon-2 Limit</source>
         <translation>水平2限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="393"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="396"/>
         <source>Vertical-2 Limit </source>
         <translation>垂直2限</translation>
     </message>
@@ -6324,32 +6324,32 @@ App %1; Host:</source>
         <translation type="obsolete">X2轴起点极限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="360"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="363"/>
         <source>Y2 Begin Limit</source>
         <translation>Y2轴起点极限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="396"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="399"/>
         <source>Vertical-2 Valve </source>
         <translation>垂直2阀</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="401"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="404"/>
         <source>Vertical-2 Limit</source>
         <translation>垂直2限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="403"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="406"/>
         <source>Vertical-2 Valve</source>
         <translation>垂直2阀</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="410"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="413"/>
         <source>B Origin</source>
         <translation>Y1轴原点</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="359"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="362"/>
         <source>Y2 Origin</source>
         <translation>Y2轴原点</translation>
     </message>
@@ -6358,12 +6358,12 @@ App %1; Host:</source>
         <translation type="obsolete">Y2轴终点极限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="364"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="367"/>
         <source>Y2 UP Limit</source>
         <translation>副臂上升限</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="366"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="369"/>
         <source>Y2 DW Limit</source>
         <translation>副臂下降限</translation>
     </message>
@@ -6380,8 +6380,8 @@ App %1; Host:</source>
         <translation type="obsolete">预留</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="395"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="402"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="398"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="405"/>
         <source>Horizon-2 Valve</source>
         <oldsource>Horizon-1</oldsource>
         <translation>水平2阀</translation>
@@ -6730,17 +6730,17 @@ App %1; Host:</source>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="311"/>
         <source>X016</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1轴原点 {016?}</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="315"/>
         <source>X026</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1轴原点 {026?}</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="319"/>
         <source>X036</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1轴原点 {036?}</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="333"/>
@@ -6807,12 +6807,12 @@ App %1; Host:</source>
         <location filename="hcinstruction/icinstructparam.cpp" line="88"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="323"/>
         <source>X037</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1轴原点 {037?}</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="92"/>
         <source>X023</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1轴原点 {023?}</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="99"/>

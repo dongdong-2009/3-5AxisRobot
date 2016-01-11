@@ -2,6 +2,7 @@
 
 cp Multi-axisManipulatorSystem* /opt/Qt/apps -f
 cp Base.fnc /opt/Qt/apps/records -f
+cp *.png /opt/Qt/apps/resource/ -f
 #cd 3a8
 #cp -rf records subs sysconfig /mnt/database
 #reboot

@@ -5035,7 +5035,7 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="212"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="385"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="388"/>
         <source>M0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5046,7 +5046,6 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="220"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="347"/>
         <source>M1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5057,7 +5056,7 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="228"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="368"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="371"/>
         <source>M2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5255,121 +5254,116 @@ App %1; Host:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="339"/>
-        <source>X2 BW Limit</source>
-        <oldsource>X2 FW Limit</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="354"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="357"/>
         <source>X031</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="359"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="362"/>
         <source>Y2 Origin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="360"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="363"/>
         <source>Y2 Begin Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="364"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="367"/>
         <source>Y2 UP Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="366"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="369"/>
         <source>Y2 DW Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="372"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="375"/>
         <source>X032</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="373"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="376"/>
         <source>X033</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="379"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="382"/>
         <source>A begin limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="409"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="412"/>
         <source>B Begin limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="410"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="413"/>
         <source>B Origin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="415"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="418"/>
         <source>X026</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="416"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="419"/>
         <source>X040</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="378"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="381"/>
         <source>A Origin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="334"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="342"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="352"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="348"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="355"/>
         <source>Sub Fixture</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="386"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="389"/>
         <source>X037</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="387"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="390"/>
         <source>Y024</source>
         <translation type="unfinished">Y024</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="388"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="391"/>
         <source>Y046</source>
         <translation type="unfinished">Y046</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="392"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="400"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="395"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="403"/>
         <source>Horizon-2 Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="393"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="396"/>
         <source>Vertical-2 Limit </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="396"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="399"/>
         <source>Vertical-2 Valve </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="401"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="404"/>
         <source>Vertical-2 Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="403"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="406"/>
         <source>Vertical-2 Valve</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5382,8 +5376,8 @@ App %1; Host:</source>
         <translation type="obsolete">Y011</translation>
     </message>
     <message>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="395"/>
-        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="402"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="398"/>
+        <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="405"/>
         <source>Horizon-2 Valve</source>
         <oldsource>Horizon-1</oldsource>
         <translation type="unfinished"></translation>
@@ -5650,32 +5644,32 @@ App %1; Host:</source>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="270"/>
         <source>CLIP1</source>
-        <translation type="unfinished"></translation>
+        <translation>Fixture-1 Input</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="274"/>
         <source>CLIP2</source>
-        <translation type="unfinished"></translation>
+        <translation>Fixture-2 Input</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="278"/>
         <source>CLIP3</source>
-        <translation type="unfinished"></translation>
+        <translation>Fixture-3 Input</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="282"/>
         <source>CLIP4</source>
-        <translation type="unfinished"></translation>
+        <translation>Fixture-4 Input</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="286"/>
         <source>CLIP5</source>
-        <translation type="unfinished"></translation>
+        <translation>Sucker-1 Input</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="290"/>
         <source>CLIP6</source>
-        <translation type="unfinished"></translation>
+        <translation>Sucker-2 Input</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="294"/>
@@ -8734,7 +8728,8 @@ Please enter an digit between </source>
     <message>
         <location filename="custom_widgets/systemstatusframe/icsystemstatusframe.ui" line="205"/>
         <source>IMM Signal</source>
-        <translation type="unfinished"></translation>
+        <translation>IMM 
+Signal</translation>
     </message>
 </context>
 <context>
@@ -9141,42 +9136,42 @@ Please input the root password to confirm.</source>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="179"/>
         <source>Wait XCLIP1</source>
         <oldsource>XCLIP1</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Wait Fixture-1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="104"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="201"/>
         <source>Wait XCLIP2</source>
         <oldsource>XCLIP2</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Wait Fixture-2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="144"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="223"/>
         <source>Wait XCLIP3</source>
         <oldsource>XCLIP3</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Wait Fixture-3</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="124"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="245"/>
         <source>Wait XCLIP4</source>
         <oldsource>XCLIP4</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Wait Fixture-4</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="214"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="267"/>
         <source>Wait XCLIP5</source>
         <oldsource>XCLIP5</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Wait Sucker-1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="134"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="289"/>
         <source>Wait XCLIP6</source>
         <oldsource>XCLIP6</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Wait Sucker-2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="174"/>
@@ -10074,22 +10069,22 @@ Admin</source>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="478"/>
         <source>Clip1 ON</source>
-        <translation type="unfinished"></translation>
+        <translation>Fixture-1 ON</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="479"/>
         <source>Clip2 ON</source>
-        <translation type="unfinished"></translation>
+        <translation>Fixture-2 ON</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="480"/>
         <source>Clip3 ON</source>
-        <translation type="unfinished"></translation>
+        <translation>Fixture-3 ON</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="481"/>
         <source>Clip4 ON</source>
-        <translation type="unfinished"></translation>
+        <translation>Fixture-4 ON</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="482"/>
@@ -10160,22 +10155,22 @@ Admin</source>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="496"/>
         <source>Clip1 OFF</source>
-        <translation type="unfinished"></translation>
+        <translation>Fixture-1 OFF</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="497"/>
         <source>Clip2 OFF</source>
-        <translation type="unfinished"></translation>
+        <translation>Fixture-2 OFF</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="498"/>
         <source>Clip3 OFF</source>
-        <translation type="unfinished"></translation>
+        <translation>Fixture-3 OFF</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="499"/>
         <source>Clip4 OFF</source>
-        <translation type="unfinished"></translation>
+        <translation>Fixture-4 OFF</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="161"/>
