@@ -49,8 +49,8 @@ ICIOPage::ICIOPage(QWidget *parent) :
     frameLayout_->setContentsMargins(2, 0, 2, 0);
     frameLayout_->setSpacing(12);
 #else
-    frameLayout_->setContentsMargins(2, 10, 2, 2);
-    frameLayout_->setSpacing(15);
+    frameLayout_->setContentsMargins(2, 2, 2, 2);
+    frameLayout_->setSpacing(8);
 #endif
     this->setLayout(frameLayout_);
 
@@ -120,6 +120,7 @@ void ICIOPage::BindingIOPoints(const QList<ICIOPoint> &points)
             leds = new QLabel();
             leds->setMaximumHeight(18);
             leds->setMinimumHeight(18);
+            descr->setMinimumHeight(34);
             itemLayout_ = new QHBoxLayout();
             leds->setPixmap(offPixmap_);
             ledToPoint_.insert(leds, point);
