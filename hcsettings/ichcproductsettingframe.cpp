@@ -109,6 +109,7 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
     ui->label_9->hide();
     ui->samplingEdit_3->hide();
 
+
 }
 
 ICHCProductSettingFrame::~ICHCProductSettingFrame()

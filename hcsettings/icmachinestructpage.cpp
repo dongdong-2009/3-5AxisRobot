@@ -61,7 +61,7 @@ ICMachineStructPage::ICMachineStructPage(QWidget *parent) :
     editorToConfigIDs_.insert(ui->distanceRotationEdit, ICConfigString::kCS_AXIS_Rotate_X1);
 
     ICLogInit
-
+            axisDefine_ = -1;
 }
 
 ICMachineStructPage::~ICMachineStructPage()
@@ -887,6 +887,9 @@ void ICMachineStructPage::on_mechanicalLengthLineEdit_textChanged(const QString 
     Q_UNUSED(arg1);
     maxMoveValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
     maximumValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
+    intValidator->setBottom(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
+    minSecValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
+    maxSecValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
 //    minSecValidator_->setTop(maximumValidator_->top());
 //    maxSecValidator_->setTop(maximumValidator_->top());
  //   externalValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
@@ -896,9 +899,9 @@ void ICMachineStructPage::on_mechanicalLengthLineEdit_textChanged(const QString 
 void ICMachineStructPage::on_maximumDisplacementLineEdit_textChanged(const QString &arg1)
 {
     Q_UNUSED(arg1);
-    intValidator->setBottom(ui->maximumDisplacementLineEdit->TransThisTextToThisInt());
-    minSecValidator_->setTop(ui->maximumDisplacementLineEdit->TransThisTextToThisInt());
-    maxSecValidator_->setTop(ui->maximumDisplacementLineEdit->TransThisTextToThisInt());
+//    intValidator->setBottom(ui->maximumDisplacementLineEdit->TransThisTextToThisInt());
+//    minSecValidator_->setTop(ui->maximumDisplacementLineEdit->TransThisTextToThisInt());
+//    maxSecValidator_->setTop(ui->maximumDisplacementLineEdit->TransThisTextToThisInt());
 }
 
 void ICMachineStructPage::OnConfigChanged(QObject *w, const QString& newV, const QString& oldV)
