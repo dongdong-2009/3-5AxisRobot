@@ -7,5 +7,7 @@
         <file>sysconfig/hintinfomation-ch</file>
         <file>sysconfig/Base.fnc</file>
         <file>sysconfig/Base.sub</file>
+        <file>sysconfig/alarminfomation-esp</file>
+        <file>sysconfig/hintinfomation-esp</file>
     </qresource>
 </RCC>

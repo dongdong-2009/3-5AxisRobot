@@ -145,13 +145,16 @@ RESOURCES += \
 
 TRANSLATIONS += Multi-axisManipulatorSystem_ch.ts \
     Multi-axisManipulatorSystem_en.ts \
-    Multi-axisManipulatorSystem_pt.ts
+    Multi-axisManipulatorSystem_pt.ts \
+    Multi-axisManipulatorSystem_esp.ts
 
 OTHER_FILES += \
     sysconfig/alarminfomation-en \
     sysconfig/alarminfomation-ch \
+    sysconfig/alarminfomation-esp \
     sysconfig/hintinfomation-ch \
     sysconfig/hintinfomation-en \
+    sysconfig/hintinfomation-esp \
     tools/autots.py
 
 
