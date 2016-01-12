@@ -111,6 +111,7 @@ public:
         kCS_SIG_Mid_Mold,
         kCS_SIG_EJE_Linked,
         kCS_SIG_Auto,
+        kCS_SIG_Sub_Fixture,
 
         kCS_PRD_START = 200,
         kCS_PRD_Number,

@@ -29,6 +29,7 @@ QString ICConfigString::ConfigString(int configID)
         case kCS_SIG_Mid_Mold: return tr("kCS_SIG_Mid_Mold");
         case kCS_SIG_EJE_Linked: return tr("kCS_SIG_EJE_Linked");
         case kCS_SIG_Auto: return tr("kCS_SIG_Auto");
+        case kCS_SIG_Sub_Fixture: return tr("kCS_SIG_Sub_Fixture");
         case kCS_PRD_Number: return tr("kCS_PRD_Number");
         case kCS_PRD_Wait_OM_Limit: return tr("kCS_PRD_Wait_OM_Limit");
         case kCS_PRD_Alarm_Time: return tr("kCS_PRD_Alarm_Time");

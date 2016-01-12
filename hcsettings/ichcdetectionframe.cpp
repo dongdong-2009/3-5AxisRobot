@@ -23,8 +23,8 @@ ICHCDetectionFrame::ICHCDetectionFrame(QWidget *parent) :
     wrappers_.append(wrapper);
     wrapper = new ICTwoSelectionComboBoxWrapper(ui->detectFixture4ComboBox, ICMold::CheckClip4);
     wrappers_.append(wrapper);
-//    wrapper = new ICTwoSelectionComboBoxWrapper(ui->detectSucker1ComboBox, ICMold::CheckClip5);
-//    wrappers_.append(wrapper);
+    wrapper = new ICTwoSelectionComboBoxWrapper(ui->detectSubFixtureComboBox, ICMold::CheckClip5);
+    wrappers_.append(wrapper);
 //    wrapper = new ICTwoSelectionComboBoxWrapper(ui->detectSucker2ComboBox, ICMold::CheckClip6);
 //    wrappers_.append(wrapper);
 
@@ -60,7 +60,7 @@ ICHCDetectionFrame::ICHCDetectionFrame(QWidget *parent) :
     editorToLogID_.insert(ui->detectFixture2ComboBox, ICConfigString::kCS_SIG_Fixture2);
     editorToLogID_.insert(ui->detectFixture3ComboBox, ICConfigString::kCS_SIG_Fixture3);
     editorToLogID_.insert(ui->detectFixture4ComboBox, ICConfigString::kCS_SIG_Fixture4);
-    editorToLogID_.insert(ui->detectIMMComboBox, ICConfigString::kCS_SIG_IMM_Stop);
+    editorToLogID_.insert(ui->detectSubFixtureComboBox, ICConfigString::kCS_SIG_Sub_Fixture);
     editorToLogID_.insert(ui->detectMidMoldComboBox, ICConfigString::kCS_SIG_Mid_Mold);
     editorToLogID_.insert(ui->detectOriginBox, ICConfigString::kCS_SIG_Origin);
     editorToLogID_.insert(ui->detectPositionBox, ICConfigString::kCS_SIG_Z_Move_Pos);
@@ -81,8 +81,6 @@ ICHCDetectionFrame::ICHCDetectionFrame(QWidget *parent) :
         ++p;
     }
 
-    ui->label_7->hide();
-    ui->detectIMMComboBox->hide();
 //    ui->downPositionBox->hide();
 //    ui->label_16->hide();
 }
@@ -233,9 +231,9 @@ void ICHCDetectionFrame::RetranslateUi_()
     ui->originPositionBox->setItemText(0, tr("Vertical"));
     ui->originPositionBox->setItemText(1, tr("Horizontal"));
     ui->originPositionBox->setItemText(2, tr("No Limit"));
-    ui->label_7->setText(tr("IMM Emergency"));
-    ui->detectIMMComboBox->setItemText(0, noUse);
-    ui->detectIMMComboBox->setItemText(1, use);
+    ui->label_7->setText(tr("Sub Fixture"));
+    ui->detectSubFixtureComboBox->setItemText(0, rp);
+    ui->detectSubFixtureComboBox->setItemText(1, pp);
     ui->label_16->setText(tr("Hor Standby"));
     ui->standbyPositionBox->setItemText(1, tr("Limit Lock Mold"));//限制锁模
     ui->standbyPositionBox->setItemText(0, tr("No Limit Lock Mold"));//不限制锁模
