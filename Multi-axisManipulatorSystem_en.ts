@@ -226,20 +226,21 @@
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="81"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="81"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="96"/>
         <source>Maximum displacement</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="107"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="116"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="132"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="136"/>
         <source>Internal security zone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="133"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="151"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="133"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="137"/>
         <source>External security zone</source>
         <translation type="unfinished"></translation>
     </message>
@@ -314,65 +315,70 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="103"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="145"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="105"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="149"/>
         <source>Min pos inside mold</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="104"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="146"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="106"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="150"/>
         <source>Max pos inside mold</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="117"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="158"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="110"/>
+        <source>Origin Offset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/axissettingsframe.cpp" line="121"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="162"/>
         <source>Max standby pos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="118"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="159"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="122"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="163"/>
         <source>Leave origin pos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="175"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="192"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="207"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="179"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="196"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="211"/>
         <source>Transeve security zone(Less)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="176"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="193"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="208"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="180"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="197"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="212"/>
         <source>Transeve security zone(Lagger)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="177"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="178"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="194"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="195"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="209"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="210"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="181"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="182"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="198"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="199"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="213"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="214"/>
         <source>degree</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="432"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="436"/>
         <source>Information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="432"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="436"/>
         <source>Save Successfully!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="433"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="437"/>
         <source>Save</source>
         <translation type="unfinished"></translation>
     </message>

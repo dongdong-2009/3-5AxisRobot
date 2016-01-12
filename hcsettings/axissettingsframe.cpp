@@ -93,6 +93,8 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
     ui->maxUnitLabel->setText(tr("mm"));
     minSecValidator_->setBottom(0);
     maxSecValidator_->setBottom(0);
+    ui->label_2->setText(tr("Maximum displacement"));
+
     if(currentAxis_ == ICVirtualHost::ICAxis_AxisX1)
     {
         machineLangth = ICVirtualHost::SYS_X_Length;
@@ -105,6 +107,8 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
         ui->label_2->show();
         ui->label_4->show();
         ui->maximumDisplacementLineEdit->show();
+        ui->label_2->setText(tr("Origin Offset"));
+
 
     }
     else if(currentAxis_ == ICVirtualHost::ICAxis_AxisY1)
