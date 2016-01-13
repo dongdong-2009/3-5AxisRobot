@@ -18,7 +18,8 @@ SK_SIZE = 8
 
 HostType = c
 
-DEFINES += HC_TEST
+#DEFINES += HC_TEST
+#DEFINES += Compatible6410
 
 DEFINES += HOST_TYPE='\\"$${HostType}\\"'
 
@@ -34,6 +35,19 @@ OBJECTS_DIR = temp_$${suffix}
 UI_DIR = temp_$${suffix}
 MOC_DIR = temp_$${suffix}
 RCC_DIR = temp_$${suffix}
+
+TRUNK_VERSION = 6.0.4
+APP_VERSION = XS5
+S_VERSION = $${APP_VERSION}_$${HostType}_$${TRUNK_VERSION}
+contains(DEFINES, Compatible6410){
+S_VERSION = $${S_VERSION}_cp6410
+}
+contains(DEFINES, HC_TEST){
+S_VERSION = $${S_VERSION}_test
+}
+VERSTR = '\\"$${S_VERSION}\\"'
+DEFINES += SHOW_VERSION=\"$${VERSTR}\"
+
 
 #INCLUDEPATH += vendor/ICCustomWidgets/include
 #INCLUDEPATH += vendor/IndustrialSystemFramework/include
@@ -167,7 +181,7 @@ contains(QMAKE_CXX, g++){
 }else{
 #system("python rename_ui.py temp_$${SK_SIZE}")
 unix:QMAKE_POST_LINK += " && HCbcrypt.sh -r $$DESTDIR/$$TARGET"
-unix:QMAKE_POST_LINK += "&& chmod +x tools/make_target && tools/make_target $$PWD $$DESTDIR $${HostType}"
+unix:QMAKE_POST_LINK += "&& chmod +x tools/make_target && tools/make_target $$PWD $$DESTDIR $${HostType} $${S_VERSION}"
 target.path = /opt/Qt/apps
 configsPathBase = tools/Reinstall
 translations.path = $${target.path}

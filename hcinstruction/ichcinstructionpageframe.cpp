@@ -78,6 +78,9 @@ ICHCInstructionPageFrame::ICHCInstructionPageFrame(QWidget *parent) :
 //    LoadAllRecordFileInfo();
 
     InitParameter();
+#ifdef Compatible6410
+    ui->tryButton->hide();
+#endif
 
 //    ui->conditionsToolButton->hide();
 }

@@ -959,15 +959,20 @@ void MainFrame::StatusRefreshed()
 
             finishCount_ = virtualHost->HostStatus(ICVirtualHost::DbgA0).toUInt() |
                     (virtualHost->HostStatus(ICVirtualHost::DbgA1).toUInt() << 16);
+#ifdef Compatible6410
+            finishCount_ = virtualHost->HostStatus(ICVirtualHost::DbgX1).toUInt();
+#endif
             if(finishCount_ != oldFinishCount_)
             {
                 ui->cycleTimeAndFinistWidget->SetFinished(finishCount_);
                 virtualHost->SetFinishProductCount(finishCount_);
                 oldFinishCount_ = finishCount_;
+#ifndef Compatible6410
                 if(ICParametersSave::Instance()->IsProductSave())
                 {
                     virtualHost->SaveSystemConfig();
                 }
+#endif
             }
         }
 

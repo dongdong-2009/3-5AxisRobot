@@ -109,6 +109,10 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
     ui->label_9->hide();
     ui->samplingEdit_3->hide();
 
+#ifdef Compatible6410
+    ui->productSave->hide();
+#endif
+
 
 }
 

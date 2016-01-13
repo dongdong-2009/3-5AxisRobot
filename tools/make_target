@@ -3,6 +3,7 @@
 workDir=$1
 binDir=$2
 hostBin=$3
+swVersion=$4
 
 reinstallDir=${workDir}/${binDir}/Reinstall/Reinstall
 contentDir=${workDir}/tools/Reinstall
@@ -15,9 +16,9 @@ cp ${workDir}/Multi-axisManipulatorSystem_ch.qm ${reinstallDir} -f
 cp ${workDir}/Multi-axisManipulatorSystem_en.qm ${reinstallDir} -f
 
 inch=`cat ${workDir}/Multi-axisManipulatorSystem.pro | grep "SK_SIZE =" | awk '{print $3}'`
-swVersion=`cat ${workDir}/config.h | grep "APP_VERSION " | awk '{print $3}' | sed 's/\"//g' | tr -d ['\r']`
+#swVersion=`cat ${workDir}/config.h | grep "APP_VERSION " | awk '{print $3}' | sed 's/\"//g' | tr -d ['\r']`
 trunkVersion=`cat ${workDir}/config.h | grep "TRUNK_VERSION " | awk '{print $3}' | sed 's/\"//g' | tr -d ['\r']`
-swVersion=${swVersion}_${hostBin}_${trunkVersion}
+#swVersion=${swVersion}_${hostBin}_${trunkVersion}
 cp ${contentDir}/${inch}-inch-qmap/3a8.qmap ${reinstallDir}
 cp -r ${contentDir}/${inch}resource ${reinstallDir}/resourcee
 
