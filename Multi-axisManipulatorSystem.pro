@@ -16,7 +16,7 @@ QT += sql
 
 SK_SIZE = 8
 
-HostType = t
+HostType = c
 
 DEFINES += HC_TEST
 
