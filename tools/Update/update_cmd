@@ -9,7 +9,7 @@ chmod +x /etc/rc0.d/S89closeled.sh
 cp LedTest_335x /usr/sbin/LedTest_335x -f
 chmod +x usr/sbin/LedTest_335x
 rm /opt/Qt/fonts/*
-cp ./WenQuanYi.ttf /opt/Qt/fonts
+tar -xzf ./WenQuanYi.ttf.tar.gz -C /opt/Qt/fonts
 cp QtAutorun.sh /usr/bin -f
 
 #cd 3a8

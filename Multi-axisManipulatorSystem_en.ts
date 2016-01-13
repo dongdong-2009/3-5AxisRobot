@@ -3241,51 +3241,51 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="483"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="728"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="486"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="731"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="484"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="487"/>
         <source>Can not add standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="455"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="712"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="892"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1000"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="458"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="715"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="895"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1003"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1293"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1296"/>
         <source>Flag[%1]:%2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="456"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="459"/>
         <source>Stand program can not be insert action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="713"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="716"/>
         <source>Stand program can not be delete action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="729"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="732"/>
         <source>Can not delete standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="893"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="896"/>
         <source>Stand program can not do Up action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1001"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1004"/>
         <source>Stand program can not do Down action</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3497,133 +3497,133 @@ Infomation</source>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="14"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="14"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="185"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="189"/>
         <source>Frame</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="39"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="207"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="186"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="190"/>
         <source>Product</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="266"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="269"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="210"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="214"/>
         <source>Recycle Time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="296"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="299"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="191"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="195"/>
         <source>Sampling Interval</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="319"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="322"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="192"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="196"/>
         <source>Bad Product</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="79"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="98"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="195"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="199"/>
         <source>Fixture</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="237"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="214"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="190"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="194"/>
         <source>TryProduct</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="180"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="176"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="198"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="202"/>
         <source>Reversed Phase</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="342"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="345"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="209"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="213"/>
         <source>Get Fail</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="350"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="353"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="200"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="204"/>
         <source>Alarm When Up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="355"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="358"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="201"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="205"/>
         <source>Alarm Once</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="409"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="412"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="202"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="206"/>
         <source>All</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="414"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="417"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="203"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="207"/>
         <source>Good</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="419"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="422"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="204"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="208"/>
         <source>Stack-1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="424"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="427"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="205"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="209"/>
         <source>Stack-2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="429"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="432"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="206"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="210"/>
         <source>Stack-3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="434"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="437"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="207"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="211"/>
         <source>Stack-4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="388"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="391"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="211"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="215"/>
         <source>Product Save</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="401"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="404"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="208"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="212"/>
         <source>Count Ways</source>
         <oldsource>Count Unit</oldsource>
         <translation type="unfinished"></translation>
@@ -3631,14 +3631,14 @@ Infomation</source>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="136"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="132"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="199"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="203"/>
         <source>Positive Phase</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="214"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="246"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="187"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="191"/>
         <source>Wait Mold Opened Limit Time</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3647,33 +3647,33 @@ Infomation</source>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="289"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="65"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="292"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="188"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="192"/>
         <source>s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="69"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="88"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="193"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="197"/>
         <source>Alarm Times</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="46"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="26"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="194"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="198"/>
         <source>Times</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="256"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="233"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="189"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="193"/>
         <source>Product Clear</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="228"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="232"/>
         <source>Product clear</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8884,12 +8884,12 @@ Please input the root password to confirm.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1613"/>
+        <location filename="mainframe.cpp" line="1618"/>
         <source>Spare Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1132"/>
+        <location filename="mainframe.cpp" line="1137"/>
         <source>No Register</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8914,10 +8914,10 @@ Please input the root password to confirm.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1128"/>
-        <location filename="mainframe.cpp" line="1132"/>
-        <location filename="mainframe.cpp" line="1536"/>
-        <location filename="mainframe.cpp" line="1613"/>
+        <location filename="mainframe.cpp" line="1133"/>
+        <location filename="mainframe.cpp" line="1137"/>
+        <location filename="mainframe.cpp" line="1541"/>
+        <location filename="mainframe.cpp" line="1618"/>
         <source>tips</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8933,38 +8933,38 @@ Please input the root password to confirm.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1128"/>
+        <location filename="mainframe.cpp" line="1133"/>
         <source>Spear Time %1 Hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1165"/>
+        <location filename="mainframe.cpp" line="1170"/>
         <source>Records</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1536"/>
+        <location filename="mainframe.cpp" line="1541"/>
         <source>No Register. System Restart Now...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1656"/>
-        <location filename="mainframe.cpp" line="1672"/>
+        <location filename="mainframe.cpp" line="1661"/>
+        <location filename="mainframe.cpp" line="1677"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1657"/>
+        <location filename="mainframe.cpp" line="1662"/>
         <source>%1 fnc is broken. Please remove this mold!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1673"/>
+        <location filename="mainframe.cpp" line="1678"/>
         <source>%1 mold fixed. Please check the sub program!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1116"/>
+        <location filename="mainframe.cpp" line="1121"/>
         <source>Instruct</source>
         <translation type="unfinished"></translation>
     </message>
