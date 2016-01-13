@@ -79,8 +79,8 @@ mkdir ${workDir}/${binDir}/Update
 mkdir ${workDir}/${binDir}/Update/HCRobotPanel${swVersion}
 cp -r ${workDir}/tools/Update/* ${workDir}/${binDir}/Update/HCRobotPanel${swVersion}
 cp ${workDir}/${binDir}/Multi-axisManipulatorSystem ${updateDir} -f
-cp ${workDir}/Multi-axisManipulatorSystem_ch.qm ${updateDir} -f
-cp ${workDir}/Multi-axisManipulatorSystem_en.qm ${updateDir} -f
+cp ${workDir}/Multi-axisManipulatorSystem_*.qm ${updateDir} -f
+#cp ${workDir}/Multi-axisManipulatorSystem_en.qm ${updateDir} -f
 cp ${workDir}/tools/hosts/${hostBin}_rom.bin ${updateDir}/rom.bin -f
 echo ${updateDir}.tar ${updateDir}
 cd ${workDir}/${binDir}/Update/ && tar -cf HCRobotPanel${swVersion}.tar HCRobotPanel${swVersion}
