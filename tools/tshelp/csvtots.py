@@ -23,10 +23,11 @@ for booksheet in cusTs.sheets():
     for row in range(booksheet.nrows):
         ct = booksheet.cell(row, 0).value
         source = str(booksheet.cell(row, 1).value)
+        zhTr = str(booksheet.cell(row, 2).value)
         tr = booksheet.cell(row, 4).value
         if ct not in tsedInfo:
             tsedInfo[ct] = {}
-        tsedInfo[ct][source] = {"source":source, "tr":tr}
+        tsedInfo[ct][source] = {"source":source, "tr":tr, "zhtrcount":len(zhTr) * 2}
 #print(tsedInfo)
 #        for col in range(booksheet.ncols):
 #            print(booksheet.cell(row, col).value)
@@ -40,7 +41,11 @@ for ct in inTargetContexts:
         for m in messages:
             source = str(m.find("source").text)
             if source in tsedMessageInfo:
-                m.find("translation").text = tsedMessageInfo[source]["tr"]
-
+                tr = tsedMessageInfo[source]["tr"]
+                trlen = len(tr)
+                if trlen <= tsedMessageInfo[source]["zhtrcount"]:
+                    m.find("translation").text = tr
+                else:
+                    m.find("translation").text = tr
 
 inTargetTs.write(sys.argv[3], "UTF-8", True)
