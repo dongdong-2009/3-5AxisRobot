@@ -250,7 +250,7 @@ QList<ICMoldItem> ICHCFixturePage::CreateCommandImpl() const
     int clip;
     for(int i = 0; i != ui->tableWidget->rowCount(); ++i)
     {
-        if(i == 8)
+        if(i == 8 && ui->tableWidget->item(i,0)->checkState() == Qt::Checked)
         {
             item.SetAction(ICMold::ACT_OTHER);
             item.SetIFVal(2);

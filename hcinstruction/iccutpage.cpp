@@ -80,7 +80,7 @@ ICCutPage::ICCutPage(QWidget *parent) :
     commandKeyMap_.insert(settingButtons_.at(5), qMakePair(static_cast<int>(IC::VKEY_CLIP6ON), static_cast<int>(IC::VKEY_CLIP6OFF)));
     commandKeyMap_.insert(settingButtons_.at(6), qMakePair(static_cast<int>(IC::VKEY_CLIP7ON), static_cast<int>(IC::VKEY_CLIP7OFF)));
     commandKeyMap_.insert(settingButtons_.at(7), qMakePair(static_cast<int>(IC::VKEY_CLIP8ON), static_cast<int>(IC::VKEY_CLIP8OFF)));
-    commandKeyMap_.insert(settingButtons_.at(8), qMakePair(static_cast<int>(IC::VKEY_CLIP8ON), static_cast<int>(IC::VKEY_CLIP8OFF)));
+    commandKeyMap_.insert(settingButtons_.at(8), qMakePair(static_cast<int>(IC::VKEY_SubFixture_ON), static_cast<int>(IC::VKEY_SubFixture_OFF)));
 
     connect(&buttonSignalMapper_,
             SIGNAL(mapped(QWidget*)),
