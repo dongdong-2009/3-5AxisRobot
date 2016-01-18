@@ -78,6 +78,7 @@ ICHCInstructionPageFrame::ICHCInstructionPageFrame(QWidget *parent) :
 //    LoadAllRecordFileInfo();
 
     InitParameter();
+    ui->curveButton->hide();
 #ifdef Compatible6410
     ui->tryButton->hide();
 #endif
@@ -106,7 +107,7 @@ void ICHCInstructionPageFrame::showEvent(QShowEvent *e)
     }
     if(ICParametersSave::Instance()->IsExtentFunctionUsed())
     {
-        ui->flagsButton->hide();
+        ui->flagsButton->show();
         ui->conditionsToolButton->show();
     }
     else

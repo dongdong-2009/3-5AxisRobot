@@ -3092,7 +3092,7 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="708"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="746"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="589"/>
         <source>Flags</source>
         <translation type="unfinished"></translation>
@@ -3230,7 +3230,7 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="746"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="708"/>
         <source>Curve</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3241,51 +3241,51 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="486"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="731"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="487"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="732"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="487"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="488"/>
         <source>Can not add standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="458"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="715"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="895"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1003"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="459"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="716"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="896"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1004"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1296"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1297"/>
         <source>Flag[%1]:%2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="459"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="460"/>
         <source>Stand program can not be insert action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="716"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="717"/>
         <source>Stand program can not be delete action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="732"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="733"/>
         <source>Can not delete standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="896"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="897"/>
         <source>Stand program can not do Up action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1004"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1005"/>
         <source>Stand program can not do Down action</source>
         <translation type="unfinished"></translation>
     </message>
