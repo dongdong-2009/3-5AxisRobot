@@ -311,11 +311,20 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
         ui->earlyEndTimeEdit->setEnabled(true);
         ui->earlyEndCheckBox->setChecked(true);
     }
+    else
+    {
+        ui->earlyEndCheckBox->setChecked(false);
+    }
     if(item->IsEarlySpeedDown())   // is early speed down checked?
     {
         ui->earlyEndTimeEdit->setEnabled(true);
         ui->earlyDownSpeedTimeEdit->setEnabled(true);
         ui->earlySpeedDownCheckBox->setChecked(true);
+    }
+    else
+    {
+        ui->earlyDownSpeedTimeEdit->setEnabled(false);
+        ui->earlySpeedDownCheckBox->setChecked(false);
     }
     if(item->IsEarlyEnd() == false && item->IsEarlySpeedDown() == false)
     {
