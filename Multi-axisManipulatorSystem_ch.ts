@@ -3384,49 +3384,49 @@ Reason</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="152"/>
         <source>Fixture1  </source>
         <translation>夹具1</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="152"/>
         <source>Fixture2  </source>
         <translation>夹具2</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="152"/>
         <source>Fixture3  </source>
         <translation>夹具3</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="150"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="152"/>
         <source>Fixture4  </source>
         <translation>夹具4</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="25"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="151"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="153"/>
         <source>Sucker1   </source>
         <translation>吸1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="25"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="151"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="26"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="154"/>
         <source>Sucker2   </source>
         <translation>吸2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="26"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="152"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="27"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="155"/>
         <source>Sucker3   </source>
         <translation>吸3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="26"/>
-        <location filename="hcinstruction/ichcfixturepage.cpp" line="152"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="28"/>
+        <location filename="hcinstruction/ichcfixturepage.cpp" line="156"/>
         <source>Sucker4   </source>
         <translation>吸4</translation>
     </message>

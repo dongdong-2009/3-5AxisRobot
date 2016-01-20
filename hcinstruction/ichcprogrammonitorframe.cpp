@@ -362,7 +362,9 @@ void ICHCProgramMonitorFrame::StatusRefreshed()
 
 void ICHCProgramMonitorFrame::SelectCurrentStep(int currentStep)
 {
-    currentStep = ICMold::CurrentMold()->DisplayStep(currentStep);
+//    ui->editToolButton->setText(QString("%1\n%2").arg(currentStep).arg());
+    if(currentMoldNum_ == 8)
+        currentStep = ICMold::CurrentMold()->DisplayStep(currentStep);
     if((currentStep != 0  && currentStep < oldStep_ && isModify_) ||
             (oldStep_ == 0 && currentStep > oldStep_ && isModify_))
     {
