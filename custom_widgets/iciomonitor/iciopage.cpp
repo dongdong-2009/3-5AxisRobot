@@ -49,8 +49,8 @@ ICIOPage::ICIOPage(QWidget *parent) :
     frameLayout_->setContentsMargins(2, 0, 2, 0);
     frameLayout_->setSpacing(12);
 #else
-    frameLayout_->setContentsMargins(2, 2, 2, 2);
-    frameLayout_->setSpacing(8);
+    frameLayout_->setContentsMargins(2, 0, 2, 0);
+    frameLayout_->setSpacing(4);
 #endif
     this->setLayout(frameLayout_);
 
