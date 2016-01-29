@@ -2194,15 +2194,15 @@ QRadioButton::indicator:unchecked:disabled
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroupA"/>
+  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroupB"/>
   <buttongroup name="buttonGroupC"/>
   <buttongroup name="buttonGroupD"/>
   <buttongroup name="buttonGroupE"/>
   <buttongroup name="buttonGroupF"/>
-  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroupG"/>
   <buttongroup name="buttonGroupH"/>
+  <buttongroup name="buttonGroup"/>
  </buttongroups>
 </ui>

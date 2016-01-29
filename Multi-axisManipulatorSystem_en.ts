@@ -4255,127 +4255,127 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="792"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="975"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="754"/>
         <source>Extent Function</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="836"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="909"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1013"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1061"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="792"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="840"/>
         <source>Use</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="849"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1054"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="862"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="952"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="722"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="991"/>
         <source>Verify</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="865"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1023"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="802"/>
         <source>Limit Function</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="931"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1006"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="779"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="842"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="856"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="943"/>
         <source>Register</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="951"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="799"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="876"/>
         <source>MachineCode:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="958"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="806"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="895"/>
         <source>Generate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="971"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="819"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="908"/>
         <source>RegisterCode:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1034"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="933"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="971"/>
         <source>RestTime:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1080"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="888"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1017"/>
         <source>Factory Code:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1106"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1070"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1045"/>
         <source>BackUp/Restore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1114"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1078"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1053"/>
         <source>Backup</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1126"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1090"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1065"/>
         <source>Backup Machine Configures</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1139"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1103"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1078"/>
         <source>Backup System Configures</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1152"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1116"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1091"/>
         <source>Backup All</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1162"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1126"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1101"/>
         <source>Restore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1174"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1138"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1113"/>
         <source>Restore Machine Configures</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1187"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1151"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1126"/>
         <source>Restore System Configures</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1200"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1164"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1139"/>
         <source>Restore All</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1242"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1206"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1181"/>
         <source>umount</source>
         <translation type="unfinished"></translation>
