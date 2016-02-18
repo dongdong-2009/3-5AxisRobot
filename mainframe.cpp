@@ -408,8 +408,12 @@ void MainFrame::changeEvent(QEvent *e)
     {
         ui->retranslateUi(this);
         UpdateTranslate();
-        ui->cycleTimeAndFinistWidget->SetAlarmInfo("Err" + QString::
-           number(errCode_) + ":" + alarmString->AlarmInfo(errCode_));
+
+        if(errCode_ != 0){
+            ui->cycleTimeAndFinistWidget->SetAlarmInfo("Err" + QString::
+                number(errCode_) + ":" + alarmString->AlarmInfo(errCode_));
+        }
+
     }
         break;
     default:
@@ -686,7 +690,7 @@ void MainFrame::UpdateTranslate()
     ui->alarmPageButton->setText(tr("Alarm"));
     ui->recordPageButton->setText(tr("Record"));
     ui->returnPageButton-> setText(tr("Return"));
-    ui->cycleTimeAndFinistWidget->SetAlarmInfo(ICAlarmString::Instance()->AlarmInfo(errCode_));
+//    ui->cycleTimeAndFinistWidget->SetAlarmInfo(ICAlarmString::Instance()->AlarmInfo(errCode_));
     ui->cycleTimeAndFinistWidget->SetCycleTime(QString().sprintf("%.1f", cycleTime_ / 200.0));
     ui->cycleTimeAndFinistWidget->SetFinished(oldFinishCount_);
     ui->xPosLabel->setText(QString().sprintf("%.2f", oldXPos_ / 100.0));

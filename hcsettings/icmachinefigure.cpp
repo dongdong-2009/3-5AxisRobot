@@ -12,7 +12,9 @@ ICMachineFigure::ICMachineFigure(QWidget *parent) :
     ui->setupUi(this);
 //    ui->figure->resize(this->size());
 
-    QIntValidator * validator = new QIntValidator(0, 65530, this);
+    quint32 xLength = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_X_Length).toUInt();
+
+    QIntValidator * validator = new QIntValidator(0, xLength, this);
     ui->xsec1->setValidator(validator);
     ui->xsec2->setValidator(validator);
     ui->xsec3->setValidator(validator);
