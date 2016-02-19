@@ -49,6 +49,7 @@ void PasswordDialog::ShowPwdEdit()
 void PasswordDialog::showEvent(QShowEvent *e)
 {
     ui->pwdEdit->clear();
+   // PasswordDialog::setStyleSheet ("background-color: #000000;color: #ffffff;");
     QDialog::showEvent(e);
 }
 
