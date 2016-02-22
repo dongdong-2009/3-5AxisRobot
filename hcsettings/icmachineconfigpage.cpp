@@ -38,7 +38,7 @@ ICMachineConfigPage::ICMachineConfigPage(QWidget *parent) :
     ui->toleranceLineEdit->SetDecimalPlaces(2);
     ui->toleranceLineEdit->setValidator(new QIntValidator(0, 9999, this));
     ui->pullPushDistance->SetDecimalPlaces(1);
-    ui->pullPushDistance->setValidator(new QIntValidator(0, 1000, this));
+    ui->pullPushDistance->setValidator(new QIntValidator(100, 1000, this));
     //    ui->xEarlyEndEdit->SetDecimalPlaces(1);
     //    ui->xEarlyEndEdit->setValidator(validator);
     //    ui->yEarlyEndEdit->SetDecimalPlaces(1);
