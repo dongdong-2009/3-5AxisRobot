@@ -39,6 +39,7 @@ void ICOriginDialog::showEvent(QShowEvent *e)
     ui->label->setText(tr("Please press the start button to start execute origin action"));
     ui->yesBtn->hide();
     ui->noBtn->hide();
+    setFixedSize(470,100);
     QDialog::showEvent(e);
 }
 

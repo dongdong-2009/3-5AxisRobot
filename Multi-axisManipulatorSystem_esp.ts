@@ -3848,7 +3848,7 @@ Rendimiento</translation>
         <translation>Apilamiento-4</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="232"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="233"/>
         <source>Product clear</source>
         <translation>Producto claro</translation>
     </message>
@@ -4438,134 +4438,134 @@ borrar</translation>
         <translation>Configuraciones de admin</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="975"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="981"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="754"/>
         <source>Extent Function</source>
         <translation>Función
 extendida</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1013"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1061"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1019"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1067"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="792"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="840"/>
         <source>Use</source>
         <translation>Uso</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="862"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="952"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="868"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="958"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="722"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="991"/>
         <source>Verify</source>
         <translation>Verificar</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1023"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1029"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="802"/>
         <source>Limit Function</source>
         <translation>Función de
  registro</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="779"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="842"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="785"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="848"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="856"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="943"/>
         <source>Register</source>
         <translation>Registrar</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="799"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="805"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="876"/>
         <source>MachineCode:</source>
         <translation>Código de máquina</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="806"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="812"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="895"/>
         <source>Generate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="819"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="825"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="908"/>
         <source>RegisterCode:</source>
         <translation>Register Code:</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="933"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="939"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="971"/>
         <source>RestTime:</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="888"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="894"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1017"/>
         <source>Factory Code:</source>
         <translation>Factory Code:</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1070"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1076"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1045"/>
         <source>BackUp/Restore</source>
         <translation>Copia de seguridad/restaurar</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1078"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1084"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1053"/>
         <source>Backup</source>
         <translation>Apoyo</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1090"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1096"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1065"/>
         <source>Backup Machine Configures</source>
         <translation>Máquina de copia de
 seguridad se configura</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1103"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1109"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1078"/>
         <source>Backup System Configures</source>
         <translation>Configuraciones de
 sistema de copia de seguridad</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1116"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1122"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1091"/>
         <source>Backup All</source>
         <translation>Copia de seguridad
 de todos</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1126"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1132"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1101"/>
         <source>Restore</source>
         <translation>Restaurar</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1138"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1144"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1113"/>
         <source>Restore Machine Configures</source>
         <translation>restaurar las
 configuraciones de máquina</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1151"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1157"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1126"/>
         <source>Restore System Configures</source>
         <translation>Restaurar
 configuraciones de sistema </translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1164"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1170"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1139"/>
         <source>Restore All</source>
         <translation>Restaurar lo todo</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1206"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1212"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1181"/>
         <source>umount</source>
         <translation>umount</translation>
@@ -6904,23 +6904,23 @@ hacia atrás</translation>
     </message>
     <message>
         <location filename="icorigindialog.cpp" line="39"/>
-        <location filename="icorigindialog.cpp" line="100"/>
+        <location filename="icorigindialog.cpp" line="101"/>
         <source>Please press the start button to start execute origin action</source>
         <translation>Por favor, pulse el botón de inicio para comenzar a ejecutar la acción original</translation>
     </message>
     <message>
-        <location filename="icorigindialog.cpp" line="96"/>
+        <location filename="icorigindialog.cpp" line="97"/>
         <source>Originning...</source>
         <translation>Originando…</translation>
     </message>
     <message>
-        <location filename="icorigindialog.cpp" line="129"/>
+        <location filename="icorigindialog.cpp" line="130"/>
         <source>Do you need to auto position?</source>
         <translation>¿Necesita la posición automática?</translation>
     </message>
     <message>
-        <location filename="icorigindialog.cpp" line="166"/>
-        <location filename="icorigindialog.cpp" line="172"/>
+        <location filename="icorigindialog.cpp" line="167"/>
+        <location filename="icorigindialog.cpp" line="173"/>
         <source>Originning</source>
         <translation>Originando</translation>
     </message>
@@ -7648,7 +7648,7 @@ de producción</translation>
         <translation>Por favor, pulse el botón de inicio para ejecutar regreso</translation>
     </message>
     <message>
-        <location filename="icreturnpage.cpp" line="76"/>
+        <location filename="icreturnpage.cpp" line="77"/>
         <source>Returnning</source>
         <translation>Regresando</translation>
     </message>
@@ -9013,87 +9013,87 @@ Core fuera</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="684"/>
+        <location filename="mainframe.cpp" line="688"/>
         <source>Function</source>
         <translation>Función</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="685"/>
+        <location filename="mainframe.cpp" line="689"/>
         <source>Monitor</source>
         <translation>Monitor</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="686"/>
+        <location filename="mainframe.cpp" line="690"/>
         <source>Alarm</source>
         <translation>Alarma</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="687"/>
+        <location filename="mainframe.cpp" line="691"/>
         <source>Record</source>
         <translation>Registros</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="688"/>
+        <location filename="mainframe.cpp" line="692"/>
         <source>Return</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="883"/>
-        <location filename="mainframe.cpp" line="901"/>
+        <location filename="mainframe.cpp" line="887"/>
+        <location filename="mainframe.cpp" line="905"/>
         <source>Hint</source>
         <translation>Sugerencia</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1121"/>
+        <location filename="mainframe.cpp" line="1125"/>
         <source>Instruct</source>
         <translation>Instrucción</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1133"/>
         <location filename="mainframe.cpp" line="1137"/>
-        <location filename="mainframe.cpp" line="1541"/>
-        <location filename="mainframe.cpp" line="1618"/>
+        <location filename="mainframe.cpp" line="1141"/>
+        <location filename="mainframe.cpp" line="1545"/>
+        <location filename="mainframe.cpp" line="1622"/>
         <source>tips</source>
         <translation>Sugerencia</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1133"/>
+        <location filename="mainframe.cpp" line="1137"/>
         <source>Spear Time %1 Hour</source>
         <translation>Tiempo Libre: %1 Hora</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1137"/>
+        <location filename="mainframe.cpp" line="1141"/>
         <source>No Register</source>
         <translation>No hay registro</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1170"/>
+        <location filename="mainframe.cpp" line="1174"/>
         <source>Records</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1541"/>
+        <location filename="mainframe.cpp" line="1545"/>
         <source>No Register. System Restart Now...</source>
         <translation>No hay registro, el sistema va a reiniciar</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1618"/>
+        <location filename="mainframe.cpp" line="1622"/>
         <source>Spare Time %1 Hour</source>
         <translation>Tiempo Libre: %1 Hora</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1661"/>
-        <location filename="mainframe.cpp" line="1677"/>
+        <location filename="mainframe.cpp" line="1665"/>
+        <location filename="mainframe.cpp" line="1681"/>
         <source>warning</source>
         <translation>Advertencia</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1662"/>
+        <location filename="mainframe.cpp" line="1666"/>
         <source>%1 fnc is broken. Please remove this mold!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1678"/>
+        <location filename="mainframe.cpp" line="1682"/>
         <source>%1 mold fixed. Please check the sub program!</source>
         <translation type="unfinished"></translation>
     </message>

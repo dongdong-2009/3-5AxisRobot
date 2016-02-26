@@ -27,6 +27,7 @@ void ICReturnPage::showEvent(QShowEvent *e)
             SIGNAL(StatusRefreshed()),
             this,
             SLOT(StatusRefresh()));
+        setFixedSize(445,120);
     QDialog::showEvent(e);
 }
 

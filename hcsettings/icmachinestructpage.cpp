@@ -880,6 +880,10 @@ void ICMachineStructPage::StatusRefresh()
     ui->testLineEdit->setText(pos);
     ui->feedbackEdit->setText(feedbackPos);
     ui->zSignalEdit->setText(zSignal);
+
+    ui->testLineEdit->setReadOnly(true);
+    ui->feedbackEdit->setReadOnly(true);
+    ui->zSignalEdit->setReadOnly(true);
 }
 
 void ICMachineStructPage::on_mechanicalLengthLineEdit_textChanged(const QString &arg1)
