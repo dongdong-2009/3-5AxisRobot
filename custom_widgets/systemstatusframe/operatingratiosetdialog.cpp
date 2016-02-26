@@ -21,6 +21,7 @@ OperatingRatioSetDialog::~OperatingRatioSetDialog()
 
 void OperatingRatioSetDialog::changeEvent(QEvent *e)
 {
+    setFixedSize(491,203);
     QDialog::changeEvent(e);
     switch (e->type()) {
     case QEvent::LanguageChange:

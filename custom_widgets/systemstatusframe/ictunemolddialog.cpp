@@ -38,6 +38,7 @@ void ICTuneMoldDialog::showEvent(QShowEvent *e)
     connect(ICVirtualHost::GlobalVirtualHost(),
             SIGNAL(StatusRefreshed()),
             SLOT(RefreshStatus()));
+    setFixedSize(351,158);
     QDialog::showEvent(e);
 }
 
