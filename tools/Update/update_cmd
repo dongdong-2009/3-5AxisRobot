@@ -3,7 +3,8 @@
 cp Multi-axisManipulatorSystem* /opt/Qt/apps -f
 cp Base.fnc /opt/Qt/apps/records -f
 cp global.qss /opt/Qt/apps/stylesheet -f
-cp ./WenQuanYi.ttf /opt/Qt/fonts
+rm /opt/Qt/fonts/*
+tar -xzf ./WenQuanYi.ttf.tar.gz -C /opt/Qt/fonts
 cp QtAutorun.sh /usr/bin -f
 cp *.fnc /opt/Qt/apps/records -f
 cp *.act /opt/Qt/apps/records -f

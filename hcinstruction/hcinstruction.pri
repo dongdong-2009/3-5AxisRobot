@@ -28,7 +28,8 @@ HEADERS += \
     $$PWD/icprogramguidepage.h \
     $$PWD/ichcotherpage.h \
     $$PWD/iccommenteditor.h \
-    hcinstruction/icguidefixtureeditor.h
+    hcinstruction/icguidefixtureeditor.h \
+    hcinstruction/icbadproducteditor.h
 
 SOURCES += \
     $$PWD/ichcinstructionpageframe.cpp \
@@ -58,7 +59,8 @@ SOURCES += \
     $$PWD/icprogramguidepage.cpp \
     $$PWD/ichcotherpage.cpp \
     $$PWD/iccommenteditor.cpp \
-    hcinstruction/icguidefixtureeditor.cpp
+    hcinstruction/icguidefixtureeditor.cpp \
+    hcinstruction/icbadproducteditor.cpp
 
 FORMS += \
     $$PWD/icautorunrevise.ui \
@@ -70,7 +72,8 @@ FORMS += \
     $$PWD/ichcotherpage.ui \
     $$PWD/iccommenteditor.ui \
     $$PWD/icinstructmodifydialog.ui \
-    hcinstruction/icguidefixtureeditor.ui
+    hcinstruction/icguidefixtureeditor.ui \
+    hcinstruction/icbadproducteditor.ui
 
 
 

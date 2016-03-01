@@ -8,6 +8,7 @@
 
 #include "icmold.h"
 #include "icinstructmodifydialog.h"
+#include "icbadproducteditor.h"
 
 namespace Ui {
     class ICHCInstructionPageFrame;
@@ -76,6 +77,7 @@ private slots:
 
     void on_moldContentListWidget_itemPressed(QListWidgetItem *item);
 
+    void OnBadProductSettingsChanged();
 signals:
 //    void JumpToProgramEditorPage();
 
@@ -112,6 +114,7 @@ private:
     ICInstructionEditorBase * stackPage_;
     ICInstructionEditorBase * otherPage_;
     ICInstructionEditorBase * commentPage_;
+    ICBadProductEditor * badProductEditor_;
     ICProgramGuidePage * guidePage_;
     ICInstructModifyDialog *modifyDialog_;
 

@@ -74,6 +74,8 @@ public:
     bool ReadMacroSubroutieFiles(const QString& dir);
     bool SaveMacroSubroutieFile(int group);
     void SaveMacroSubroutieFiles();
+    void GenerateBadProductSub(const QList<ICMoldItem>& offFixtures,
+                               const QList<uint> pos);
 
     ICMacroAllSubroutine SubRoutines() const { return subroutines_;}
     QList<ICMoldItem> SubRoutine(int group) const;

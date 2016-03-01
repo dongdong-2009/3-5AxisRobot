@@ -1288,6 +1288,65 @@ Reason</source>
     </message>
 </context>
 <context>
+    <name>ICBadProductEditor</name>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="14"/>
+        <source>Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="23"/>
+        <source>Y1:</source>
+        <translation>主上下:</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="30"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="73"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="103"/>
+        <source>mm</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="53"/>
+        <source>Ok</source>
+        <translation>确定</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="145"/>
+        <source>Bad Product En</source>
+        <translation>不良品使能</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="152"/>
+        <source>X1:</source>
+        <translation>主引拔:</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="159"/>
+        <source>Z:</source>
+        <translation>横走行:</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="172"/>
+        <source>Set In</source>
+        <translation>设入</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="189"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="206"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="223"/>
+        <source>Speed:</source>
+        <translation>速度:</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="230"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="237"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="244"/>
+        <source>%</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
     <name>ICCareTipUI</name>
     <message>
         <location filename="iccaretipui.ui" line="14"/>
@@ -3875,6 +3934,11 @@ Reason</source>
         <translation>序列动作</translation>
     </message>
     <message>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="761"/>
+        <source>Bad Product</source>
+        <translation>不良品设定</translation>
+    </message>
+    <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="530"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="703"/>
         <source>Comment</source>
@@ -3931,14 +3995,14 @@ Reason</source>
         <translation type="obsolete">下一步</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1116"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1154"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="1095"/>
         <source>Insert</source>
         <translation>插    入
 确认键</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="769"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="807"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="752"/>
         <source>Modify</source>
         <translation>编 辑
@@ -3993,51 +4057,51 @@ Reason</source>
         <translation type="obsolete">巨集7</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="810"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="848"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="790"/>
         <source>Delete</source>
         <translation>删除</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="851"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="889"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="828"/>
         <source>Decompose</source>
         <translation>分解</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="895"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="933"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="869"/>
         <source>Compose</source>
         <translation>组合</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="940"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="978"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="997"/>
         <source>Try</source>
         <translation>试行</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="987"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1025"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="923"/>
         <source>A+</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1024"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1062"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="960"/>
         <source>A-</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1088"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1126"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="1070"/>
         <source>Menu</source>
         <translation>动作菜单</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="491"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="742"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="747"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="502"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="753"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="758"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
@@ -4054,50 +4118,50 @@ Reason</source>
         <translation type="obsolete">该模号是当前模号!</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="492"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="503"/>
         <source>Can not add standby position program</source>
         <translation>不能添加待机点步骤</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="462"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="724"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="913"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1021"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="473"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="735"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="924"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1032"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1321"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1332"/>
         <source>Flag[%1]:%2</source>
         <translation>标签[%1]:%2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="463"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="474"/>
         <source>Stand program can not be insert action</source>
         <translation>标准程序不能插入动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="725"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="736"/>
         <source>Stand program can not be delete action</source>
         <translation>标准程序不能删除动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="743"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="754"/>
         <source>Can not delete standby position program</source>
         <translation>不能删除待机点步骤</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="748"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="759"/>
         <source>Do you really want to delete this action?</source>
         <translation>确定要删除选中动作吗?</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="914"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="925"/>
         <source>Stand program can not do Up action</source>
         <translation>标准程序不能组合动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1022"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1033"/>
         <source>Stand program can not do Down action</source>
         <translation>标准程序不能分解动作</translation>
     </message>

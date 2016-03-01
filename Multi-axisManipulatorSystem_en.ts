@@ -1043,6 +1043,65 @@ Infomation</source>
     </message>
 </context>
 <context>
+    <name>ICBadProductEditor</name>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="14"/>
+        <source>Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="23"/>
+        <source>Y1:</source>
+        <translation type="unfinished">Y1:</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="30"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="73"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="103"/>
+        <source>mm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="53"/>
+        <source>Ok</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="145"/>
+        <source>Bad Product En</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="152"/>
+        <source>X1:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="159"/>
+        <source>Z:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="172"/>
+        <source>Set In</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="189"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="206"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="223"/>
+        <source>Speed:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="230"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="237"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="244"/>
+        <source>%</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ICCareTipUI</name>
     <message>
         <location filename="iccaretipui.ui" line="14"/>
@@ -3330,49 +3389,54 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="851"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="761"/>
+        <source>Bad Product</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="889"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="828"/>
         <source>Decompose</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="895"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="933"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="869"/>
         <source>Compose</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="940"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="978"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="997"/>
         <source>Try</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="987"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1025"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="923"/>
         <source>A+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1024"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1062"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="960"/>
         <source>A-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1088"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1126"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="1070"/>
         <source>Menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1116"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1154"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="1095"/>
         <source>Insert</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="769"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="807"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="752"/>
         <source>Modify</source>
         <translation type="unfinished"></translation>
@@ -3438,63 +3502,63 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="810"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="848"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="790"/>
         <source>Delete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="491"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="742"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="747"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="502"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="753"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="758"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="492"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="503"/>
         <source>Can not add standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="462"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="724"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="913"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1021"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="473"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="735"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="924"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1032"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1321"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1332"/>
         <source>Flag[%1]:%2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="463"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="474"/>
         <source>Stand program can not be insert action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="725"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="736"/>
         <source>Stand program can not be delete action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="743"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="754"/>
         <source>Can not delete standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="748"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="759"/>
         <source>Do you really want to delete this action?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="914"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="925"/>
         <source>Stand program can not do Up action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1022"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1033"/>
         <source>Stand program can not do Down action</source>
         <translation type="unfinished"></translation>
     </message>

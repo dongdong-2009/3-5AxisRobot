@@ -4,6 +4,7 @@
 #include "icmold.h"
 #include "icinstructparam.h"
 #include "icfile.h"
+#include "icmacrosubroutine.h"
 
 struct MoldStepData
 {
@@ -174,7 +175,9 @@ QList<ICMoldItem> ICTopMoldUIItem::ToMoldItems() const
 
 ICMold* ICMold::currentMold_ = NULL;
 ICMold::ICMold(QObject *parent) :
-    QObject(parent)
+    QObject(parent),
+    isBadProductEn_(false),
+    badProductPos_(QList<uint>()<<0<<0<<0<<80<<80<<80)
 {
     ICInstructParam::Instance();
     //    axisActions_.append(GX);
@@ -211,7 +214,20 @@ bool ICMold::ReadMoldFile(const QString &fileName, bool isLoadParams)
     qDebug()<<"size"<<records.size();
     QList<ICMoldItem> tempmoldContent;
     QString itemsContent;
-    for(int i = 0; i != records.size(); ++i)
+    int recordsStart = 0;
+    if(records.size() >= 1)
+    {
+        itemsContent = records.at(0);
+        items = itemsContent.split(' ', QString::SkipEmptyParts);
+        if(items.size() == 7)
+        {
+            SetBadProductEn(items.at(0).toInt() == 1);
+            SetBadProductPos(QList<uint>()<<items.at(1).toUInt()<<items.at(2).toUInt()<<items.at(3).toUInt()
+                             <<items.at(4).toUInt()<<items.at(5).toUInt()<<items.at(6).toUInt());
+            recordsStart = 1;
+        }
+    }
+    for(int i = recordsStart; i != records.size(); ++i)
     {
         itemsContent = records.at(i);
         items = itemsContent.split(' ', QString::SkipEmptyParts);
@@ -325,6 +341,18 @@ bool ICMold::SaveMoldFile(bool isSaveParams)
     {
         qDebug("mold content less than 4 when save");
         return false;
+    }
+    if(IsBadProductEn())
+    {
+        toWrite += QString("%1 %2 %3 %4 %5 %6 %7\n").arg(1)
+                .arg(badProductPos_.at(0)).arg(badProductPos_.at(1)).arg(badProductPos_.at(2))
+                .arg(badProductPos_.at(3)).arg(badProductPos_.at(4)).arg(badProductPos_.at(5))
+                .toUtf8();
+        ICMacroSubroutine::Instance()->GenerateBadProductSub(needToCutOffFixtures_, BadProductPos());
+        QString moldName = moldName_;
+        moldName.chop(3);
+        QFile::remove(QString("%1sub5").arg(moldName));
+        qDebug()<<QFile::copy(QString("subs/sub5.prg"), QString("%1sub5").arg(moldName));
     }
     for(int i = 0; i != moldContent_.size(); ++i)
     {
@@ -570,23 +598,54 @@ void ICMold::Compile()
     ICMoldItem item;
     ICMoldItem toSentItem;
     QList<ICMoldItem> tmpContent = moldContent_;
+//    QList<int> fixtureOnItems;
+    needToCutOffFixtures_.clear();
+
+    bool isYUp = false;
+    bool isYDown = false;
+    bool isBadProductInserted = !IsBadProductEn();
+    int badProductStepFix = 0;
+    int badProductStep = -1;
     for(int i = 0; i != tmpContent.size(); ++i)
     {
-        moldContent_[i].SetSeq(i);
+//        moldContent_[i].SetSeq(i);
         item = tmpContent.at(i);
-        tmpContent[i].SetNum(item.Num() - stepOffset);
+        if((item.Action() == GZ) && isYUp && !isBadProductInserted)
+        {
+            // Find where to insert BadProduct check
+            for(int j = i - 1; j >= 0; --j)
+            {
+                if(tmpContent.at(j).Num() != item.Num())
+                {
+                    ICMoldItem badProductCheckItem;
+                    badProductCheckItem.SetAction(ACTCHECKINPUT);
+                    badProductCheckItem.SetIFVal(0);
+                    badProductCheckItem.SetSVal(5);
+                    badProductCheckItem.SetFlag(j);
+                    badProductCheckItem.SetNum(tmpContent.at(j).Num() + stepOffset);
+                    badProductStep = j + 1;
+                    tmpContent.insert(badProductStep,badProductCheckItem);
+                    badProductStepFix = 1;
+                    isBadProductInserted = true;
+                    i = badProductStep;
+                    item = tmpContent.at(badProductStep);
+                    break;
+                }
+            }
+        }
+        tmpContent[i].SetNum(item.Num() - stepOffset + badProductStepFix);
         qDebug()<<tmpContent[i].ToString();
-        stepMap_.insert(tmpContent.at(i).Num(), moldContent_.at(i).Num());
+        stepMap_.insert(tmpContent.at(i).Num(), moldContent_.at(i - badProductStepFix).Num());
         if(item.Action() == ACTCOMMENT)
         {
             qDebug()<<item.Flag()<<item.Num();
             flagToSetp.insert(item.Flag(), tmpContent[i].Num());
-            if(i == 0 && moldContent_.at(i + 1).Num() == item.Num())
+            if(i == 0 && moldContent_.at(i + 1 - badProductStepFix).Num() == item.Num())
             {
                 continue;
             }
-            else if(moldContent_.at(i + 1).Num() == item.Num() ||
-                    moldContent_.at(i - 1).Num() == item.Num())
+            else if(moldContent_.at(i + 1 - badProductStepFix).Num() == item.Num() ||
+                    moldContent_.at(i - 1 - badProductStepFix).Num() == item.Num())
             {
                 continue;
             }
@@ -597,6 +656,32 @@ void ICMold::Compile()
         else if(tmpContent.at(i).Action() == ACTCHECKINPUT)
         {
             conditionPos.append(i);
+        }
+        else if(((item.Clip() >= ACTCLIP1ON) && (item.Clip() <= ACTCLIP6ON)) ||
+                ((item.Clip() >= ACT_AUX1) && (item.Clip() <= ACT_AUX3) && (item.IFVal() == 1)))
+        {
+//            fixtureOnItems.append(item.Clip());
+            ICMoldItem fixtureItem = item;
+            if(((item.Clip() >= ACTCLIP1ON) && (item.Clip() <= ACTCLIP6ON)))
+            {
+                fixtureItem.SetClip(ACTCLIP1OFF + item.Clip());
+            }
+            else if((item.Clip() >= ACT_AUX1) && (item.Clip() <= ACT_AUX3))
+            {
+                fixtureItem.SetIFVal(0);
+            }
+            needToCutOffFixtures_.append(fixtureItem);
+        }
+        else if(item.Action() == GY)
+        {
+            if(item.ActualPos() != 0)
+            {
+                isYDown = true;
+            }
+            else if(isYDown && item.ActualPos() == 0)
+            {
+                isYUp = true;
+            }
         }
     }
     int returnStep;
@@ -611,15 +696,26 @@ void ICMold::Compile()
                     returnStep);
     }
     toSentContent_.clear();
-    for(int i = 0; i < moldContent_.size(); ++i)
+    int newbadProductStep = badProductStep;
+    for(int i = 0; i < tmpContent.size(); ++i)
     {
         toSentItem = tmpContent.at(i);
         if(toSentItem.Action() == ACTCOMMENT)
             continue;
+        if(i == badProductStep)
+        {
+            newbadProductStep = toSentContent_.size();
+        }
+//        qDebug()<<toSentItem.ToString();
         toSentItem.SetSeq(toSentContent_.size());
         toSentItem.ReSum();
         toSentContent_.append(toSentItem);
     }
+
+    toSentContent_[newbadProductStep].SetDVal(toSentContent_.last().Num() - toSentContent_.at(newbadProductStep).Num());
+    toSentContent_[newbadProductStep].ReSum();
+//    qDebug()<<toSentContent_[newbadProductStep].ToString();
+//    qDebug("End");
 }
 
 int ICMold::ToHostSeq(int seq) const

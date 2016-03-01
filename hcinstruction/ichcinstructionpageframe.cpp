@@ -60,6 +60,7 @@ ICHCInstructionPageFrame::ICHCInstructionPageFrame(QWidget *parent) :
     guidePage_(NULL),
     otherPage_(NULL),
     commentPage_(NULL),
+    badProductEditor_(NULL),
     recordPath_("./records/"),
     currentAction_(None),
     currentEdit_(0),
@@ -270,6 +271,13 @@ void ICHCInstructionPageFrame::OptionButtonClicked()
         optionButtonToPage_.insert(ui->commentButton, commentPage_);
         ui->settingStackedWidget->addWidget(commentPage_);
     }
+    else if(badProductEditor_ == NULL && optionButton == ui->backProductButton)
+    {
+        badProductEditor_ = new ICBadProductEditor();
+        connect(badProductEditor_, SIGNAL(BadProductSettingChanged()), SLOT(OnBadProductSettingsChanged()));
+        optionButtonToPage_.insert(ui->backProductButton, badProductEditor_);
+        ui->settingStackedWidget->addWidget(badProductEditor_);
+    }
     if(optionButton == ui->conditionsToolButton)
     {
 
@@ -364,6 +372,9 @@ void ICHCInstructionPageFrame::InitSignal()
             SIGNAL(clicked()),
             SLOT(OptionButtonClicked()));
     connect(ui->commentButton,
+            SIGNAL(clicked()),
+            SLOT(OptionButtonClicked()));
+    connect(ui->backProductButton,
             SIGNAL(clicked()),
             SLOT(OptionButtonClicked()));
 }
@@ -1380,4 +1391,9 @@ void ICHCInstructionPageFrame::on_moldContentListWidget_itemPressed(QListWidgetI
         }
         //        else if(mI.Action() == ICMold::ACT_)
     }
+}
+
+void ICHCInstructionPageFrame::OnBadProductSettingsChanged()
+{
+    isModifyProgram_ = true;
 }

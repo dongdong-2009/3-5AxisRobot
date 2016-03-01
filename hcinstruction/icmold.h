@@ -62,7 +62,7 @@ public:
     {
         if(!IsClip())
         {
-            return 0;
+            return 32;
         }
         return GMVal() & 0x7F;
     }
@@ -466,6 +466,15 @@ public:
     int ToHostSeq(int seq) const;
     int ToHostNum(int seq) const;
 
+    bool IsBadProductEn() const { return isBadProductEn_;}
+    void SetBadProductEn(bool en) { isBadProductEn_ = en;}
+
+    QList<uint> BadProductPos() const { return badProductPos_;}
+    void SetBadProductPos(const QList<uint>& pos)
+    {
+        badProductPos_ = pos;
+    }
+
     static bool IsAxisAction(int action)
     {
         return action >= ICMold::GC && action <= ICMold::GB;
@@ -485,6 +494,9 @@ private:
     QMap<int, int> stepMap_;
     QList<ICMoldItem> toSentContent_;
 //    QList<ACTGROUP> axisActions_;
+    bool isBadProductEn_;
+    QList<uint> badProductPos_;
+    QList<ICMoldItem> needToCutOffFixtures_;
     static ICMold* currentMold_;
 
 };
