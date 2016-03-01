@@ -35,10 +35,10 @@
   <widget class="QPushButton" name="Power_off">
    <property name="geometry">
     <rect>
-     <x>700</x>
-     <y>330</y>
-     <width>80</width>
-     <height>40</height>
+     <x>690</x>
+     <y>319</y>
+     <width>101</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="text">

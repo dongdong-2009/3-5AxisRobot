@@ -942,7 +942,7 @@ QRadioButton::indicator:unchecked:disabled
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
          <x>9</x>
@@ -1240,7 +1240,7 @@ QRadioButton::indicator:unchecked:disabled
  </resources>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="languageButtonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
  </buttongroups>
 </ui>

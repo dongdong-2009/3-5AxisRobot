@@ -246,8 +246,8 @@
         <rect>
          <x>2</x>
          <y>300</y>
-         <width>129</width>
-         <height>20</height>
+         <width>181</width>
+         <height>21</height>
         </rect>
        </property>
        <property name="text">
@@ -257,9 +257,9 @@
       <widget class="QProgressBar" name="copyFilesProgressBar">
        <property name="geometry">
         <rect>
-         <x>182</x>
+         <x>192</x>
          <y>299</y>
-         <width>411</width>
+         <width>401</width>
          <height>23</height>
         </rect>
        </property>
