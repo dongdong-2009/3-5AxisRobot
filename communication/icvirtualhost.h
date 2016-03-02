@@ -670,7 +670,8 @@ private Q_SLOTS:
 
 private:
     void InitSubs_();
-    void InitSystem_();
+    void InitSystem_(const QVector<uint> &tempItemValues);
+    QVector<uint> ReadSystemConfigs_();
     void InitMold_();
     void InitMoldParam_();
     void InitAddrToSysPosMap_();
@@ -736,7 +737,7 @@ public:
         host->WriteMoldTohost_();
         host->currentMold_->UpdateSyncSum();
         host->InitMoldParam_();
-        host->InitSystem_();
+        host->InitSystem_(host->ReadSystemConfigs_());
         host->isParamChanged_ = false;
     }
 };
@@ -749,7 +750,7 @@ inline void ICVirtualHost::ReConfigure()
     WriteMoldTohost_();
     currentMold_->UpdateSyncSum();
     InitMoldParam_();
-    InitSystem_();
+    InitSystem_(ReadSystemConfigs_());
     isParamChanged_ = false;
 //    WriteSystemTohost_();
 //    ReconfigureRunable *r = new ReconfigureRunable();

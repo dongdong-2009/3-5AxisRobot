@@ -5,6 +5,7 @@
 #include "icinstructparam.h"
 #include "icfile.h"
 #include "icmacrosubroutine.h"
+#include "icvirtualhost.h"
 
 struct MoldStepData
 {
@@ -191,8 +192,8 @@ bool ICMold::ReadMoldFile(const QString &fileName, bool isLoadParams)
     {
         return false;
     }
-//    QTextStream fs(&file);
-//    moldName_ = fileName;
+    //    QTextStream fs(&file);
+    //    moldName_ = fileName;
     QString content = QString::fromUtf8(file.readAll());
     file.close();
     //    content = content.remove('\r');
@@ -286,7 +287,7 @@ bool ICMold::ReadMoldFile(const QString &fileName, bool isLoadParams)
 
 bool ICMold::ReadMoldParamsFile(const QString &fileName)
 {
-//    moldParamName_ = fileName;
+    //    moldParamName_ = fileName;
     QFile file(fileName);
     if(!file.open(QFile::ReadOnly | QFile::Text))
     {
@@ -323,10 +324,10 @@ bool ICMold::ReadMoldParamsFile(const QString &fileName)
         }
         stackParams_.append(stackParam);
     }
-//    moldParams_[CheckClip5] = 0;
-//    moldParams_[CheckClip6] = 0;
+    //    moldParams_[CheckClip5] = 0;
+    //    moldParams_[CheckClip6] = 0;
     checkSum_ = items.last().toUInt();
-//    UpdateSyncSum();
+    //    UpdateSyncSum();
     moldParamName_ = fileName;
     return true;
 }
@@ -335,7 +336,7 @@ bool ICMold::SaveMoldFile(bool isSaveParams)
 {
     bool ret = false;
     Compile();
-//    MoldReSum();
+    //    MoldReSum();
     QByteArray toWrite;
     if(moldContent_.size() < 1)
     {
@@ -360,23 +361,23 @@ bool ICMold::SaveMoldFile(bool isSaveParams)
     }
     ICFile file(moldName_);
     ret = file.ICWrite(toWrite);
-//    QFile file(moldName_ + ".bak");
-//    if(!file.open(QFile::Write | QFile::Text))
-//    {
-//        return false;
-//    }
-////    if(file.readAll() != toWrite)
-////    {
-//    //        QFile::copy(moldName_, moldName_ + "~");
-////    file.resize(0);
-//    file.write(toWrite);
-//    file.close();
-//    //    QDir dir(file.parent())
-//    //    system(QString("rm %1~").arg(moldName_).toAscii());
-//    //        QFile::remove(moldName_ + "~");
-//    QFile::copy(moldName_ + ".bak", moldName_);
-//    ret = true;
-////    }
+    //    QFile file(moldName_ + ".bak");
+    //    if(!file.open(QFile::Write | QFile::Text))
+    //    {
+    //        return false;
+    //    }
+    ////    if(file.readAll() != toWrite)
+    ////    {
+    //    //        QFile::copy(moldName_, moldName_ + "~");
+    ////    file.resize(0);
+    //    file.write(toWrite);
+    //    file.close();
+    //    //    QDir dir(file.parent())
+    //    //    system(QString("rm %1~").arg(moldName_).toAscii());
+    //    //        QFile::remove(moldName_ + "~");
+    //    QFile::copy(moldName_ + ".bak", moldName_);
+    //    ret = true;
+    ////    }
     if(isSaveParams)
     {
         SaveMoldParamsFile();
@@ -398,22 +399,22 @@ bool ICMold::SaveMoldParamsFile()
     }
     ICFile file(moldParamName_);
     ret = file.ICWrite(toWrite);
-//    QFile file(moldParamName_ + ".bak");
-//    if(!file.open(QFile::ReadWrite | QFile::Text))
-//    {
-//        return false;
-//    }
-////    if(file.readAll() != toWrite)
-////    {
-////    QFile::copy(moldParamName_, moldParamName_ + "~");
-////    file.resize(0);
-//    file.write(toWrite);
-//    file.close();
-//    //    system(QString("rm %1~").arg(moldParamName_).toAscii());
-////    QFile::remove(moldParamName_ + "~");
-//    QFile::copy(moldParamName_ + ".bak", moldParamName_);
-//    ret = true;
-////    }
+    //    QFile file(moldParamName_ + ".bak");
+    //    if(!file.open(QFile::ReadWrite | QFile::Text))
+    //    {
+    //        return false;
+    //    }
+    ////    if(file.readAll() != toWrite)
+    ////    {
+    ////    QFile::copy(moldParamName_, moldParamName_ + "~");
+    ////    file.resize(0);
+    //    file.write(toWrite);
+    //    file.close();
+    //    //    system(QString("rm %1~").arg(moldParamName_).toAscii());
+    ////    QFile::remove(moldParamName_ + "~");
+    //    QFile::copy(moldParamName_ + ".bak", moldParamName_);
+    //    ret = true;
+    ////    }
     return ret;
 }
 
@@ -422,8 +423,8 @@ uint ICMold::SyncAct() const
     uint ret = 0;
     for(int i = 0; i != toSentContent_.size(); ++i)
     {
-//        if(toSentContent_.at(i).Action() != ACTCOMMENT)
-            ret += toSentContent_.at(i).GMVal();
+        //        if(toSentContent_.at(i).Action() != ACTCOMMENT)
+        ret += toSentContent_.at(i).GMVal();
     }
     return ret;
 }
@@ -433,8 +434,8 @@ uint ICMold::SyncSum() const
     uint ret = 0;
     for(int i = 0; i != toSentContent_.size(); ++i)
     {
-//        if(toSentContent_.at(i).Action() != ACTCOMMENT)
-            ret += toSentContent_.at(i).Sum();
+        //        if(toSentContent_.at(i).Action() != ACTCOMMENT)
+        ret += toSentContent_.at(i).Sum();
     }
     return ret;
 }
@@ -598,19 +599,22 @@ void ICMold::Compile()
     ICMoldItem item;
     ICMoldItem toSentItem;
     QList<ICMoldItem> tmpContent = moldContent_;
-//    QList<int> fixtureOnItems;
+    //    QList<int> fixtureOnItems;
     needToCutOffFixtures_.clear();
 
     bool isYUp = false;
     bool isYDown = false;
+    bool isMoldOpend = false;
     bool isBadProductInserted = !IsBadProductEn();
     int badProductStepFix = 0;
     int badProductStep = -1;
+    int inPos = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Z_InSafe).toUInt() * 10;
+    int currentZ = 65530;
     for(int i = 0; i != tmpContent.size(); ++i)
     {
-//        moldContent_[i].SetSeq(i);
+        //        moldContent_[i].SetSeq(i);
         item = tmpContent.at(i);
-        if((item.Action() == GZ) && isYUp && !isBadProductInserted)
+        if((item.Action() == GZ) && (item.ActualPos() > inPos) && isYUp && !isBadProductInserted)
         {
             // Find where to insert BadProduct check
             for(int j = i - 1; j >= 0; --j)
@@ -660,7 +664,7 @@ void ICMold::Compile()
         else if(((item.Clip() >= ACTCLIP1ON) && (item.Clip() <= ACTCLIP6ON)) ||
                 ((item.Clip() >= ACT_AUX1) && (item.Clip() <= ACT_AUX3) && (item.IFVal() == 1)))
         {
-//            fixtureOnItems.append(item.Clip());
+            //            fixtureOnItems.append(item.Clip());
             ICMoldItem fixtureItem = item;
             if(((item.Clip() >= ACTCLIP1ON) && (item.Clip() <= ACTCLIP6ON)))
             {
@@ -672,7 +676,15 @@ void ICMold::Compile()
             }
             needToCutOffFixtures_.append(fixtureItem);
         }
-        else if(item.Action() == GY)
+        else if((item.Action() == ACT_WaitMoldOpened) && (item.SVal() == 1))
+        {
+            isMoldOpend = true;
+        }
+        else if(item.Action() == GZ)
+        {
+            currentZ = item.ActualPos();
+        }
+        else if((item.Action() == GY) && (isMoldOpend) && (currentZ <= inPos))
         {
             if(item.ActualPos() != 0)
             {
@@ -706,16 +718,19 @@ void ICMold::Compile()
         {
             newbadProductStep = toSentContent_.size();
         }
-//        qDebug()<<toSentItem.ToString();
+        //        qDebug()<<toSentItem.ToString();
         toSentItem.SetSeq(toSentContent_.size());
         toSentItem.ReSum();
         toSentContent_.append(toSentItem);
     }
 
-    toSentContent_[newbadProductStep].SetDVal(toSentContent_.last().Num() - toSentContent_.at(newbadProductStep).Num());
-    toSentContent_[newbadProductStep].ReSum();
-//    qDebug()<<toSentContent_[newbadProductStep].ToString();
-//    qDebug("End");
+    if(newbadProductStep >= 0)
+    {
+        toSentContent_[newbadProductStep].SetDVal(toSentContent_.last().Num() - toSentContent_.at(newbadProductStep).Num());
+        toSentContent_[newbadProductStep].ReSum();
+    }
+    //    qDebug()<<toSentContent_[newbadProductStep].ToString();
+    //    qDebug("End");
 }
 
 int ICMold::ToHostSeq(int seq) const

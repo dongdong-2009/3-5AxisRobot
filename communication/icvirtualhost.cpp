@@ -67,10 +67,11 @@ ICVirtualHost::ICVirtualHost(QObject *parent) :
     InitSystemMap_();
     InitAddrToSysPosMap_();
     InitICStatusMap_();
+    QVector<uint> tempV = ReadSystemConfigs_();
     InitSubs_();
     InitMold_();
     InitMoldParam_();
-    InitSystem_();
+    InitSystem_(tempV);
     SetGlobalSpeed(20);
     //    exit(-1);
 
@@ -559,7 +560,10 @@ void ICVirtualHost::WriteSubTohost_()
     }
 }
 
-void ICVirtualHost::InitSystem_()
+static bool isSystemInited = false;
+
+
+QVector<uint> ICVirtualHost::ReadSystemConfigs_()
 {
     QString path = "./sysconfig/system.txt";
     QFile systemParaFile(path);
@@ -578,9 +582,7 @@ void ICVirtualHost::InitSystem_()
     systemParaFile.close();
 
     QStringList items = fileContent.split("\n", QString::SkipEmptyParts);
-    QVector<uint8_t> dataSection;
     QVector<uint> tempItemValues;
-    static bool isSystemInited = false;
     uint fl, fh;
     if(isSystemInited)
     {
@@ -653,6 +655,104 @@ void ICVirtualHost::InitSystem_()
             tempItemValues.append(0);
         }
     }
+    return tempItemValues;
+}
+
+void ICVirtualHost::InitSystem_(const QVector<uint>& tempItemValues)
+{
+//    QString path = "./sysconfig/system.txt";
+//    QFile systemParaFile(path);
+//    if(!systemParaFile.exists())
+//    {
+//        isInitSuccess_ = false;
+//        path += ".bak";
+//        systemParaFile.setFileName(path);
+//    }
+//    if(!systemParaFile.open(QFile::ReadOnly | QFile::Text))
+//    {
+//        qCritical("Open system.txt fail");
+//        //        exit(-1);
+//    }
+//    QString fileContent = systemParaFile.readAll();
+//    systemParaFile.close();
+
+//    QStringList items = fileContent.split("\n", QString::SkipEmptyParts);
+    QVector<uint8_t> dataSection;
+//    QVector<uint> tempItemValues;
+//    static bool isSystemInited = false;
+//    uint fl, fh;
+//    if(isSystemInited)
+//    {
+//        fl = systemParamMap_.value(SYS_RsvReadMold).toUInt();
+//        fh = systemParamMap_.value(SYS_RsvWorkmold).toUInt();
+//    }
+//    for(int i = 0; i != items.size(); ++i)
+//    {
+//        tempItemValues.append(items.at(i).toUInt());
+//        systemParamMap_.insert(static_cast<ICSystemParameter>(i), tempItemValues.last());
+//    }
+//    if(isSystemInited)
+//    {
+//        tempItemValues[SYS_RsvReadMold] = fl;
+//        tempItemValues[SYS_RsvWorkmold] = fh;
+//        systemParamMap_.insert(SYS_RsvReadMold, fl);
+//        systemParamMap_.insert(SYS_RsvWorkmold, fh);
+//    }
+
+//    if(tempItemValues.size() < systemParamMap_.size())
+//    {
+//        tempItemValues.resize(systemParamMap_.size());
+//    }
+//    //    tempItemValues.append(0);
+
+//    GetAxisParam_("./sysconfig/paramx.txt",
+//                  SYS_X_Length,
+//                  SYS_Y_Length,
+//                  tempItemValues);
+//    GetAxisParam_("./sysconfig/paramy.txt",
+//                  SYS_Y_Length,
+//                  SYS_Z_Length,
+//                  tempItemValues);
+//#ifdef HC_8AXIS
+//    GetAxisParam_("./sysconfig/paramz.txt",
+//                  SYS_Z_Length,
+//                  SYS_P_Length,
+//                  tempItemValues);
+//    GetAxisParam_("./sysconfig/paramp.txt",
+//                  SYS_P_Length,
+//                  SYS_Q_Length,
+//                  tempItemValues);
+//    GetAxisParam_("./sysconfig/paramq.txt",
+//                  SYS_Q_Length,
+//                  SYS_A_Length,
+//                  tempItemValues);
+//    GetAxisParam_("./sysconfig/parama.txt",
+//                  SYS_A_Length,
+//                  SYS_B_Length,
+//                  tempItemValues);
+//    GetAxisParam_("./sysconfig/paramb.txt",
+//                  SYS_B_Length,
+//                  SYS_C_Length,
+//                  tempItemValues);
+//    GetAxisParam_("./sysconfig/paramc.txt",
+//                  SYS_C_Length,
+//                  SYS_Config_Signal,
+//                  tempItemValues);
+//#else
+//    GetAxisParam_("./sysconfig/paramz.txt",
+//                  SYS_Z_Length,
+//                  SYS_X_Origin,
+//                  tempItemValues);
+//#endif
+
+//    const int count = tempItemValues.size();
+//    if(count % 4 != 0)
+//    {
+//        for(int i = 0; i != 4 - (count % 4); ++i)
+//        {
+//            tempItemValues.append(0);
+//        }
+//    }
 
 
     ICCommandProcessor* commandProcessor = ICCommandProcessor::Instance();
