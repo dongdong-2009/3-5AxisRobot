@@ -15,7 +15,7 @@ ICBadProductEditor::ICBadProductEditor(QWidget *parent) :
     ui->y1Speed->SetDecimalPlaces(0);
     ui->zSpeed->SetDecimalPlaces(0);
 
-    ui->x1Pos->setValidator(new QIntValidator(0, 65530, this));
+    ui->x1Pos->setValidator(new QIntValidator(0, 655300, this));
     ui->y1Pos->setValidator(ui->x1Pos->validator());
     ui->zPos->setValidator(ui->x1Pos->validator());
 

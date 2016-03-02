@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>999</width>
-    <height>446</height>
+    <height>494</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -756,6 +756,9 @@ padding:5px;
              <width>140</width>
              <height>48</height>
             </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 0 0);</string>
            </property>
            <property name="text">
             <string>Bad Product</string>
