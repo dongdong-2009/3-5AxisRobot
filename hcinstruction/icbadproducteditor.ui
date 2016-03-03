@@ -35,7 +35,7 @@
     <widget class="ICLineEditWithVirtualNumericKeypad" name="x1Pos">
      <property name="minimumSize">
       <size>
-       <width>150</width>
+       <width>100</width>
        <height>32</height>
       </size>
      </property>
@@ -78,7 +78,7 @@
     <widget class="ICLineEditWithVirtualNumericKeypad" name="zPos">
      <property name="minimumSize">
       <size>
-       <width>150</width>
+       <width>100</width>
        <height>32</height>
       </size>
      </property>
@@ -108,7 +108,7 @@
     <widget class="ICLineEditWithVirtualNumericKeypad" name="y1Pos">
      <property name="minimumSize">
       <size>
-       <width>150</width>
+       <width>100</width>
        <height>32</height>
       </size>
      </property>

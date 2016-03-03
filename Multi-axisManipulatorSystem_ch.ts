@@ -1314,7 +1314,7 @@ Reason</source>
     <message>
         <location filename="hcinstruction/icbadproducteditor.ui" line="145"/>
         <source>Bad Product En</source>
-        <translation>不良品使能</translation>
+        <translation>不良品选择</translation>
     </message>
     <message>
         <location filename="hcinstruction/icbadproducteditor.ui" line="152"/>

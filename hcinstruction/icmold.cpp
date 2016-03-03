@@ -699,6 +699,8 @@ void ICMold::Compile()
     int returnStep;
     for(int i = 0; i != conditionPos.size(); ++i)
     {
+        if(conditionPos.at(i) == badProductStep)
+            continue;
         qDebug()<<moldContent_.at(conditionPos.at(i)).Flag()<<tmpContent.at(conditionPos.at(i)).Num();
         returnStep = flagToSetp.value(moldContent_.at(conditionPos.at(i)).Flag(), 0) -
                 tmpContent.at(conditionPos.at(i)).Num();

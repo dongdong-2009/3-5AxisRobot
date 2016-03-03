@@ -165,6 +165,13 @@ void ICMacroSubroutine::GenerateBadProductSub(const QList<ICMoldItem> &offFixtur
     }
 
     item.SetNum(3);
+    item.SetAction(ICMold::GY);
+    item.SetActualPos(0);
+    item.SetSVal(pos.at(4));
+    item.SetDVal(0);
+    sub.append(item);
+
+    item.SetNum(4);
     item.SetDVal(0);
     item.SetSVal(0);
     item.SetIFVal(0);
