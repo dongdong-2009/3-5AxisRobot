@@ -3389,54 +3389,54 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="761"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="764"/>
         <source>Bad Product</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="889"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="892"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="828"/>
         <source>Decompose</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="933"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="936"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="869"/>
         <source>Compose</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="978"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="981"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="997"/>
         <source>Try</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1025"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1028"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="923"/>
         <source>A+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1062"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1065"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="960"/>
         <source>A-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1126"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1129"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="1070"/>
         <source>Menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1154"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1157"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="1095"/>
         <source>Insert</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="807"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="810"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="752"/>
         <source>Modify</source>
         <translation type="unfinished"></translation>
@@ -3502,7 +3502,7 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="848"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="851"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="790"/>
         <source>Delete</source>
         <translation type="unfinished"></translation>
@@ -8974,7 +8974,7 @@ Please input the root password to confirm.</source>
 <context>
     <name>ICVirtualHost</name>
     <message>
-        <location filename="communication/icvirtualhost.cpp" line="103"/>
+        <location filename="communication/icvirtualhost.cpp" line="104"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>

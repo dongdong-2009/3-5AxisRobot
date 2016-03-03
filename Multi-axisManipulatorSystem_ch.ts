@@ -3934,7 +3934,7 @@ Reason</source>
         <translation>序列动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="761"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="764"/>
         <source>Bad Product</source>
         <translation>不良品设定</translation>
     </message>
@@ -3995,14 +3995,14 @@ Reason</source>
         <translation type="obsolete">下一步</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1154"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1157"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="1095"/>
         <source>Insert</source>
         <translation>插    入
 确认键</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="807"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="810"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="752"/>
         <source>Modify</source>
         <translation>编 辑
@@ -4057,43 +4057,43 @@ Reason</source>
         <translation type="obsolete">巨集7</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="848"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="851"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="790"/>
         <source>Delete</source>
         <translation>删除</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="889"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="892"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="828"/>
         <source>Decompose</source>
         <translation>分解</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="933"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="936"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="869"/>
         <source>Compose</source>
         <translation>组合</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="978"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="981"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="997"/>
         <source>Try</source>
         <translation>试行</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1025"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1028"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="923"/>
         <source>A+</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1062"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1065"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="960"/>
         <source>A-</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1126"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1129"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="1070"/>
         <source>Menu</source>
         <translation>动作菜单</translation>
@@ -10911,7 +10911,7 @@ Please input the root password to confirm.</source>
 <context>
     <name>ICVirtualHost</name>
     <message>
-        <location filename="communication/icvirtualhost.cpp" line="103"/>
+        <location filename="communication/icvirtualhost.cpp" line="104"/>
         <source>Error</source>
         <translation>错误</translation>
     </message>
