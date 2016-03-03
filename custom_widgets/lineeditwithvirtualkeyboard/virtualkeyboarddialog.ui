@@ -212,7 +212,7 @@
    <widget class="QPushButton" name="letterP">
     <property name="geometry">
      <rect>
-      <x>650</x>
+      <x>648</x>
       <y>73</y>
       <width>60</width>
       <height>55</height>
@@ -1266,9 +1266,9 @@
    <widget class="QToolButton" name="backspace">
     <property name="geometry">
      <rect>
-      <x>710</x>
+      <x>707</x>
       <y>10</y>
-      <width>80</width>
+      <width>93</width>
       <height>55</height>
      </rect>
     </property>
@@ -1302,9 +1302,9 @@
    <widget class="QToolButton" name="cancel">
     <property name="geometry">
      <rect>
-      <x>720</x>
+      <x>710</x>
       <y>73</y>
-      <width>70</width>
+      <width>80</width>
       <height>55</height>
      </rect>
     </property>

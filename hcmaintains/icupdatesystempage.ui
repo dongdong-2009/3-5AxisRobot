@@ -279,7 +279,7 @@
           <set>QAbstractItemView::NoEditTriggers</set>
          </property>
          <attribute name="verticalHeaderDefaultSectionSize">
-          <number>70</number>
+          <number>90</number>
          </attribute>
          <attribute name="verticalHeaderMinimumSectionSize">
           <number>70</number>

@@ -41,6 +41,12 @@
      </property>
      <item>
       <widget class="QPushButton" name="axisXToolButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
        <property name="styleSheet">
         <string notr="true">width:60px ;
 height:30px;</string>
@@ -58,6 +64,12 @@ height:30px;</string>
      </item>
      <item>
       <widget class="QPushButton" name="axisYToolButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
        <property name="styleSheet">
         <string notr="true">width:60px ;
 height:30px;</string>
@@ -75,6 +87,12 @@ height:30px;</string>
      </item>
      <item>
       <widget class="QPushButton" name="axisZToolButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
        <property name="styleSheet">
         <string notr="true">width:60px ;
 height:30px;</string>
@@ -92,6 +110,12 @@ height:30px;</string>
      </item>
      <item>
       <widget class="QPushButton" name="axisPToolButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
        <property name="styleSheet">
         <string notr="true">width:60px ;
 height:30px;</string>
@@ -109,6 +133,12 @@ height:30px;</string>
      </item>
      <item>
       <widget class="QPushButton" name="axisQToolButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
        <property name="styleSheet">
         <string notr="true">width:60px ;
 height:30px;</string>
@@ -126,6 +156,12 @@ height:30px;</string>
      </item>
      <item>
       <widget class="QPushButton" name="axisAToolButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
        <property name="styleSheet">
         <string notr="true">width:60px ;
 height:30px;</string>
@@ -143,6 +179,12 @@ height:30px;</string>
      </item>
      <item>
       <widget class="QPushButton" name="axisBToolButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
        <property name="styleSheet">
         <string notr="true">width:60px ;
 height:30px;</string>
@@ -160,6 +202,12 @@ height:30px;</string>
      </item>
      <item>
       <widget class="QPushButton" name="axisCToolButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
        <property name="styleSheet">
         <string notr="true">width:60px ;
 height:30px;</string>
@@ -177,6 +225,12 @@ height:30px;</string>
      </item>
      <item>
       <widget class="QPushButton" name="structDefButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
        <property name="styleSheet">
         <string notr="true">width:60px ;
 height:30px;</string>
@@ -194,6 +248,12 @@ height:30px;</string>
      </item>
      <item>
       <widget class="QPushButton" name="timeLimitButton">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>50</height>
+        </size>
+       </property>
        <property name="styleSheet">
         <string notr="true">width:60px ;
 height:30px;</string>
@@ -250,7 +310,7 @@ height:30px;</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>26</width>
+              <width>40</width>
               <height>0</height>
              </size>
             </property>
@@ -295,7 +355,7 @@ height:30px;</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>26</width>
+              <width>40</width>
               <height>0</height>
              </size>
             </property>
@@ -340,7 +400,7 @@ height:30px;</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>26</width>
+              <width>40</width>
               <height>0</height>
              </size>
             </property>
@@ -411,7 +471,7 @@ height:30px;</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>26</width>
+              <width>40</width>
               <height>0</height>
              </size>
             </property>
@@ -456,7 +516,7 @@ height:30px;</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>26</width>
+              <width>40</width>
               <height>0</height>
              </size>
             </property>

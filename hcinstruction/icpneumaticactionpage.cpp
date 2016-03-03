@@ -60,8 +60,8 @@ ICPneumaticActionPage::ICPneumaticActionPage(QWidget *parent) :
     ui->tableWidget->setColumnWidth(0, 46);
     ui->tableWidget->setColumnWidth(1, 80);
 #else
-    ui->tableWidget->setColumnWidth(0, 50);
-    ui->tableWidget->setColumnWidth(1, 105);
+    ui->tableWidget->setColumnWidth(0, 48);
+    ui->tableWidget->setColumnWidth(1, 132);
 #endif
 
 
