@@ -73,3 +73,8 @@ void ICBadProductEditor::on_setInBtn_clicked()
     ui->zPos->SetThisIntToThisText(ICVirtualHost::GlobalVirtualHost()->GetActualPos(ICVirtualHost::ICAxis_AxisZ));
 
 }
+
+void ICBadProductEditor::on_badProductEn_toggled(bool checked)
+{
+    ui->okButton->setStyleSheet(checked ? "background-color: rgb(0, 255, 0);" : "");
+}
