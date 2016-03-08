@@ -3,6 +3,7 @@
 #include "ui_passworddialog.h"
 #include "icparameterssave.h"
 #include <QKeyEvent>
+#include "mainframe.h"
 
 PasswordDialog::PasswordDialog(QWidget *parent) :
     QDialog(parent),
@@ -76,7 +77,7 @@ void PasswordDialog::keyPressEvent(QKeyEvent *e)
 //    else
 //    {
     QKeyEvent* ke = new QKeyEvent(*e);
-    qApp->postEvent(this->parentWidget(), ke);
+    qApp->postEvent(icMainFrame, ke);
 //    this->accept();
 //        this->accept();
 //    }
