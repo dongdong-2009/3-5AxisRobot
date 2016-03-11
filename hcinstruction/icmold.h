@@ -475,6 +475,15 @@ public:
         badProductPos_ = pos;
     }
 
+    bool IsTryProductEn() const { return isTryProductEn_;}
+    void SetTryProductEn(bool en) { isTryProductEn_ = en;}
+
+    QList<uint> TryProductPos() const { return tryProductPos_;}
+    void SetTryProductPos(const QList<uint>& pos)
+    {
+        tryProductPos_ = pos;
+    }
+
     static bool IsAxisAction(int action)
     {
         return action >= ICMold::GC && action <= ICMold::GB;
@@ -496,6 +505,8 @@ private:
 //    QList<ACTGROUP> axisActions_;
     bool isBadProductEn_;
     QList<uint> badProductPos_;
+    bool isTryProductEn_;
+    QList<uint> tryProductPos_;
     QList<ICMoldItem> needToCutOffFixtures_;
     static ICMold* currentMold_;
 

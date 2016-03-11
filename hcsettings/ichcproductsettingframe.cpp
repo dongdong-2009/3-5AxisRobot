@@ -31,11 +31,11 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
                                                        ICLineEditWrapper::Integer);
     wrappers_.append(wrapper);
 
-    wrapper = new ICLineEditWrapper(ui->tryProductEdit,
-                                                       ICMold::TryProduct,
-                                                       ICLineEditWrapper::Mold,
-                                                       ICLineEditWrapper::Integer);
-    wrappers_.append(wrapper);
+//    wrapper = new ICLineEditWrapper(ui->tryProductEdit,
+//                                                       ICMold::TryProduct,
+//                                                       ICLineEditWrapper::Mold,
+//                                                       ICLineEditWrapper::Integer);
+//    wrappers_.append(wrapper);
 
     wrapper = new ICLineEditWrapper(ui->samplingEdit,
                                                        ICMold::Sampling,
@@ -104,6 +104,9 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
     editorToConfigIDs_.insert(ui->tryProductEdit, ICConfigString::kCS_PRD_Try_number);
     editorToConfigIDs_.insert(ui->samplingEdit, ICConfigString::kCS_PRD_Sample_cycle);
     ICLogInit;
+
+    ui->tryProductEdit->hide();
+    ui->label_7->hide();
 
     this->hide();
 

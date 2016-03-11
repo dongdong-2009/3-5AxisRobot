@@ -32,6 +32,10 @@ private slots:
 
     void on_badProductEn_toggled(bool checked);
 
+    void on_tryProductEn_toggled(bool checked);
+
+    void on_setInBtn_2_clicked();
+
 private:
     Ui::ICBadProductEditor *ui;
 };

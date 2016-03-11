@@ -182,3 +182,53 @@ void ICMacroSubroutine::GenerateBadProductSub(const QList<ICMoldItem> &offFixtur
     SaveMacroSubroutieFile(5);
 //    pos.SetAction();
 }
+
+void ICMacroSubroutine::GenerateTryProductSub(const QList<ICMoldItem> &offFixtures, const QList<uint> pos)
+{
+    subroutines_[7].clear();
+    QList<ICMoldItem> sub;
+    ICMoldItem item;
+    item.SetNum(0);
+    item.SetAction(ICMold::GX);
+    item.SetActualPos(pos.at(0));
+    item.SetSVal(pos.at(3));
+    item.SetDVal(0);
+    sub.append(item);
+
+    item.SetAction(ICMold::GZ);
+    item.SetActualPos(pos.at(2));
+    item.SetSVal(pos.at(5));
+    sub.append(item);
+
+    item.SetNum(1);
+    item.SetAction(ICMold::GY);
+    item.SetActualPos(pos.at(1));
+    item.SetSVal(pos.at(4));
+    sub.append(item);
+
+
+    for(int i = 0; i < offFixtures.size(); ++i)
+    {
+        item = offFixtures.at(i);
+        item.SetNum(2);
+        sub.append(item);
+    }
+
+    item.SetNum(3);
+    item.SetAction(ICMold::GY);
+    item.SetActualPos(0);
+    item.SetSVal(pos.at(4));
+    item.SetDVal(0);
+    sub.append(item);
+
+    item.SetNum(4);
+    item.SetDVal(0);
+    item.SetSVal(0);
+    item.SetIFVal(0);
+    item.SetAction(ICMold::ACTEND);
+    sub.append(item);
+
+    SetSubRoutine(sub, 7);
+    SaveMacroSubroutieFile(7);
+//    pos.SetAction();
+}

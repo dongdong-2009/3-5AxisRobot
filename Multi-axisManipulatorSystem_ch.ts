@@ -1295,53 +1295,73 @@ Reason</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="23"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="283"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="323"/>
         <source>Y1:</source>
         <translation>主上下:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="30"/>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="73"/>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="103"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="196"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="203"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="330"/>
         <source>mm</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="53"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="422"/>
+        <source>Try Product En</source>
+        <translation>试产选择</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="511"/>
+        <source>Try count:</source>
+        <translation>试产数:</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="534"/>
         <source>Ok</source>
         <translation>确定</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="145"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="93"/>
         <source>Bad Product En</source>
         <translation>不良品选择</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="152"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="100"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="236"/>
         <source>X1:</source>
         <translation>主引拔:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="159"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="169"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="269"/>
         <source>Z:</source>
         <translation>横走行:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="172"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="162"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="504"/>
         <source>Set In</source>
         <translation>设入</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="189"/>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="206"/>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="223"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="243"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="276"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="297"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="337"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="344"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="491"/>
         <source>Speed:</source>
         <translation>速度:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="230"/>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="237"/>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="244"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="189"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="229"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="290"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="390"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="429"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="455"/>
         <source>%</source>
         <translation></translation>
     </message>
