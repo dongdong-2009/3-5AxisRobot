@@ -1,4 +1,4 @@
-#include <QMessageBox>
+//#include <QMessageBox>
 #include <QKeyEvent>
 #include <QApplication>
 
@@ -10,6 +10,7 @@
 #include "icvirtualkey.h"
 #include "icactioncommand.h"
 #include "icparameterssave.h"
+#include "icmessagebox.h"
 //#include "icprogramheadframe.h"
 //#include "icmold.h"
 //#include "icmacrosubroutine.h"
@@ -115,16 +116,37 @@ void ICKeyboardHandler::Keypressed(int keyValue)
                (QString::number(keyValue) + " is not define").toAscii());
 
 
+
     static ICVirtualHost* virtualHost = ICVirtualHost::GlobalVirtualHost();
     uint status = virtualHost->CurrentStatus();
     ICCommandProcessor* commandProcessor = ICCommandProcessor::Instance();
     if(keyValue == ICKeyboard::VFB_Run)
     {
-        commandProcessor->ExecuteVirtualKeyCommand(virtualKeyMap_.value(keyValue));
         if((!icMainFrame->IsOrigined()) && icMainFrame->IsAutoPageShown())
         {
             QMessageBox::warning(NULL, tr("Warning"), tr("Need to origin!"));
         }
+        if(virtualHost->CurrentStatus() == ICVirtualHost::Auto)
+        {
+            if(ICMold::CurrentMold()->IsTryProductEn())
+            {
+                if(ICMessageBox::ICWarning(NULL,
+                                      tr("Try Product"),
+                                      QString(tr("Do you need to try product for %1 mold"))
+                                         .arg(ICMold::CurrentMold()->MoldParam(ICMold::TryProduct)),
+                                         QMessageBox::Yes | QMessageBox::No) == QMessageBox::Yes)
+                {
+                    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(0xc1);
+                }
+                else
+                {
+                    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(0xc0);
+                }
+            }
+        }
+        else
+            commandProcessor->ExecuteVirtualKeyCommand(virtualKeyMap_.value(keyValue));
+
 
         return;
     }

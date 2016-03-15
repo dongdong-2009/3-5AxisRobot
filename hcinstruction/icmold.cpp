@@ -626,6 +626,7 @@ void ICMold::Compile()
     bool isMoldOpend = false;
     bool isBadProductInserted = !IsBadProductEn();
     bool isTryProductInserted = !IsTryProductEn();
+    bool isInserted = !(IsBadProductEn() || IsTryProductEn());
     int badProductStepFix = 0;
     int badProductStep = -1;
     int tryProductStep = -1;
@@ -635,51 +636,55 @@ void ICMold::Compile()
     {
         //        moldContent_[i].SetSeq(i);
         item = tmpContent.at(i);
-        if((item.Action() == GZ) && (item.ActualPos() > inPos) && isYUp && !isBadProductInserted)
+        if((item.Action() == GZ) && (item.ActualPos() > inPos) && isYUp && !isInserted)
         {
             // Find where to insert BadProduct check
+
             for(int j = i - 1; j >= 0; --j)
             {
                 if(tmpContent.at(j).Num() != item.Num())
                 {
-                    ICMoldItem badProductCheckItem;
-                    badProductCheckItem.SetAction(ACTCHECKINPUT);
-                    badProductCheckItem.SetIFVal(0);
-                    badProductCheckItem.SetSVal(5);
-                    badProductCheckItem.SetFlag(j);
-                    badProductCheckItem.SetNum(tmpContent.at(j).Num() + stepOffset);
-                    badProductStep = j + 1;
-                    tmpContent.insert(badProductStep,badProductCheckItem);
-                    badProductStepFix += 1;
-                    isBadProductInserted = true;
-                    i = badProductStep;
-                    item = tmpContent.at(badProductStep);
+
+                    if(!isTryProductInserted)
+                    {
+                        ICMoldItem badProductCheckItem;
+                        badProductCheckItem.SetAction(ACTCHECKINPUT);
+                        badProductCheckItem.SetIFVal(3);
+                        badProductCheckItem.SetSVal(7);
+                        badProductCheckItem.SetFlag(j);
+                        badProductCheckItem.SetNum(tmpContent.at(j).Num() + stepOffset);
+                        tryProductStep = j + 1 + badProductStepFix;
+                        tmpContent.insert(tryProductStep,badProductCheckItem);
+                        badProductStepFix += 1;
+                        isTryProductInserted = true;
+                        item = tmpContent.at(tryProductStep);
+                        tmpContent[tryProductStep].SetNum(item.Num() - stepOffset + badProductStepFix);
+                        qDebug()<<tmpContent[tryProductStep].ToString();
+                        stepMap_.insert(tmpContent.at(tryProductStep).Num(), moldContent_.at(tryProductStep - badProductStepFix).Num());
+                    }
+                    if(!isBadProductInserted)
+                    {
+                        ICMoldItem badProductCheckItem;
+                        badProductCheckItem.SetAction(ACTCHECKINPUT);
+                        badProductCheckItem.SetIFVal(0);
+                        badProductCheckItem.SetSVal(5);
+                        badProductCheckItem.SetFlag(j);
+                        badProductCheckItem.SetNum(tmpContent.at(j).Num() + stepOffset);
+                        badProductStep = j + 1 + badProductStepFix;
+                        tmpContent.insert(badProductStep,badProductCheckItem);
+                        badProductStepFix += 1;
+                        isBadProductInserted = true;
+                        item = tmpContent.at(badProductStep);
+                        tmpContent[badProductStep].SetNum(item.Num() - stepOffset + badProductStepFix);
+                        qDebug()<<tmpContent[badProductStep].ToString();
+                        stepMap_.insert(tmpContent.at(badProductStep).Num(), moldContent_.at(badProductStep - badProductStepFix).Num());
+                    }
+                    i = qMax(badProductStep, tryProductStep) + 1;
                     break;
                 }
             }
-        }
-        if((item.Action() == GZ) && (item.ActualPos() > inPos) && isYUp && !isTryProductInserted)
-        {
-            // Find where to insert BadProduct check
-            for(int j = i - 1; j >= 0; --j)
-            {
-                if(tmpContent.at(j).Num() != item.Num())
-                {
-                    ICMoldItem badProductCheckItem;
-                    badProductCheckItem.SetAction(ACTCHECKINPUT);
-                    badProductCheckItem.SetIFVal(0);
-                    badProductCheckItem.SetSVal(7);
-                    badProductCheckItem.SetFlag(j);
-                    badProductCheckItem.SetNum(tmpContent.at(j).Num() + stepOffset);
-                    tryProductStep = j + 1;
-                    tmpContent.insert(tryProductStep,badProductCheckItem);
-                    badProductStepFix += 1;
-                    isTryProductInserted = true;
-                    i = tryProductStep;
-                    item = tmpContent.at(tryProductStep);
-                    break;
-                }
-            }
+            isInserted = true;
+            item = tmpContent.at(i);
         }
         tmpContent[i].SetNum(item.Num() - stepOffset + badProductStepFix);
         qDebug()<<tmpContent[i].ToString();
@@ -771,7 +776,7 @@ void ICMold::Compile()
         {
             newTryProductStep = toSentContent_.size();
         }
-        //        qDebug()<<toSentItem.ToString();
+        qDebug()<<toSentItem.ToString();
         toSentItem.SetSeq(toSentContent_.size());
         toSentItem.ReSum();
         toSentContent_.append(toSentItem);

@@ -52,6 +52,7 @@
 #include "ickeyboard.h"
 #include "icrecaldialog.h"
 #include "icbackupdialog.h"
+#include "icmessagebox.h"
 //#include "ickeyboardhandler.h"
 #if defined(Q_WS_WIN32) || defined(Q_WS_X11)
 #include "simulateknob.h"
@@ -1112,6 +1113,7 @@ void MainFrame::ShowAutoPage()
             QMessageBox::information(this,tr("tips"),tr("No Register"));
         }
     }
+
     functionPage_->ShowFunctionSelectPage();
     centerStackedLayout_->setCurrentWidget(autoPage_);
     //    ICProgramHeadFrame::Instance()->SetCurrentCategoryName(tr("Auto")) ;
