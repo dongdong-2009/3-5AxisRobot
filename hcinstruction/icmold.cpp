@@ -221,15 +221,20 @@ bool ICMold::ReadMoldFile(const QString &fileName, bool isLoadParams)
     {
         itemsContent = records.at(0);
         items = itemsContent.split(' ', QString::SkipEmptyParts);
-        if(items.size() >= 7)
+        if(items.size() == 7)
         {
             SetBadProductEn(items.at(0).toInt() == 1);
             SetBadProductPos(QList<uint>()<<items.at(1).toUInt()<<items.at(2).toUInt()<<items.at(3).toUInt()
                              <<items.at(4).toUInt()<<items.at(5).toUInt()<<items.at(6).toUInt());
             recordsStart = 1;
         }
-        if(items.size() == 14)
+        else if(items.size() == 14)
         {
+            SetBadProductEn(items.at(0).toInt() == 1);
+            SetBadProductPos(QList<uint>()<<items.at(1).toUInt()<<items.at(2).toUInt()<<items.at(3).toUInt()
+                             <<items.at(4).toUInt()<<items.at(5).toUInt()<<items.at(6).toUInt());
+            recordsStart = 1;
+
             SetTryProductEn(items.at(7).toInt() == 1);
             SetTryProductPos(QList<uint>()<<items.at(8).toUInt()<<items.at(9).toUInt()<<items.at(10).toUInt()
                              <<items.at(11).toUInt()<<items.at(12).toUInt()<<items.at(13).toUInt());

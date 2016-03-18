@@ -7113,22 +7113,22 @@ Clear</source>
 <context>
     <name>ICKeyboardHandler</name>
     <message>
-        <location filename="ickeyboard/ickeyboardhandler.cpp" line="126"/>
+        <location filename="ickeyboard/ickeyboardhandler.cpp" line="127"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="ickeyboard/ickeyboardhandler.cpp" line="126"/>
+        <location filename="ickeyboard/ickeyboardhandler.cpp" line="127"/>
         <source>Need to origin!</source>
         <translation>还没原点复归！</translation>
     </message>
     <message>
-        <location filename="ickeyboard/ickeyboardhandler.cpp" line="133"/>
+        <location filename="ickeyboard/ickeyboardhandler.cpp" line="134"/>
         <source>Try Product</source>
         <translation>试产</translation>
     </message>
     <message>
-        <location filename="ickeyboard/ickeyboardhandler.cpp" line="134"/>
+        <location filename="ickeyboard/ickeyboardhandler.cpp" line="135"/>
         <source>Do you need to try product for %1 mold</source>
         <translation>需要试产%1模吗?</translation>
     </message>

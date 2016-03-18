@@ -126,7 +126,8 @@ void ICKeyboardHandler::Keypressed(int keyValue)
         {
             QMessageBox::warning(NULL, tr("Warning"), tr("Need to origin!"));
         }
-        if(virtualHost->CurrentStatus() == ICVirtualHost::Auto)
+        if(virtualHost->CurrentStatus() == ICVirtualHost::Auto &&
+                virtualHost->HostStatus(ICVirtualHost::DbgX0) == ICVirtualHost::AutoReady)
         {
             if(ICMold::CurrentMold()->IsTryProductEn())
             {
@@ -143,6 +144,9 @@ void ICKeyboardHandler::Keypressed(int keyValue)
                     ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(0xc0);
                 }
             }
+            else
+                commandProcessor->ExecuteVirtualKeyCommand(virtualKeyMap_.value(keyValue));
+
         }
         else
             commandProcessor->ExecuteVirtualKeyCommand(virtualKeyMap_.value(keyValue));
