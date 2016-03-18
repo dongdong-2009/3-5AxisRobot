@@ -3913,7 +3913,7 @@ de ciclo</translation>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="331"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="331"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="830"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="842"/>
         <source>No Follow</source>
         <translation>No restrear</translation>
     </message>
@@ -3932,10 +3932,10 @@ de ciclo</translation>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="427"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="427"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="105"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="258"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="839"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="849"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="117"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="270"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="851"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="861"/>
         <source>Speed Disable</source>
         <translation>Speed Un</translation>
     </message>
@@ -3951,74 +3951,74 @@ de ciclo</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="58"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="87"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="68"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="99"/>
         <source>Has not teach check Fixture-1!</source>
         <translation>No hay chequeo de broche de enseñanza 1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="59"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="88"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="69"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="100"/>
         <source>Has not teach check Fixture-2!</source>
         <translation>No hay chequeo de broche de enseñanza 2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="60"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="89"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="70"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="101"/>
         <source>Has not teach check Fixture-3!</source>
         <translation>¡No hay chequeo de broche de enseñanza!</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="61"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="90"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="71"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="102"/>
         <source>Has not teach check Fixture-4!</source>
         <translation>No hay chequeo de broche de enseñanza 4</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="62"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="91"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="72"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="103"/>
         <source>Has not teach check Sucker-1!</source>
         <translation>No hay chequeo de broche de enseñanza 1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="63"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="92"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="73"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="104"/>
         <source>Has not teach check Sucker-2!</source>
         <translation>No hay chequeo de broche de enseñanza 2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="203"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="537"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="215"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="549"/>
         <source>Warning</source>
         <translation>Advertencia</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="336"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="348"/>
         <source>Single run ready</source>
         <translation>carrera única lista</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="340"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="352"/>
         <source>Single cycle ready</source>
         <translation>Ciclo único listo</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="538"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="550"/>
         <source>Can not edit standby position program</source>
         <translation>No se puede editar el programaen posición de espera</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="824"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="836"/>
         <source>Follow</source>
         <translation>rastrear</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="839"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="851"/>
         <source>Speed Enable</source>
         <translation>Speed En</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="899"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="911"/>
         <source>Flag[%1]:%2</source>
         <translation>Bandera[%1]%2</translation>
     </message>
@@ -9648,12 +9648,12 @@ superior</translation>
         <translation>contraseña</translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/passworddialog.cpp" line="33"/>
+        <location filename="custom_widgets/programhead/passworddialog.cpp" line="34"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="custom_widgets/programhead/passworddialog.cpp" line="33"/>
+        <location filename="custom_widgets/programhead/passworddialog.cpp" line="34"/>
         <source>Password is wrong!</source>
         <translation>¡Contraseña no es correcta!</translation>
     </message>
@@ -10133,6 +10133,49 @@ superior</translation>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="421"/>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog.cpp" line="96"/>
         <source>.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>icactionsix</name>
+    <message>
+        <location filename="hcinstruction/icactionsix.ui" line="14"/>
+        <source>Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icactionsix.ui" line="35"/>
+        <source>down</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icactionsix.ui" line="48"/>
+        <source>start-up</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icactionsix.ui" line="61"/>
+        <source>up</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icactionsix.ui" line="74"/>
+        <source>origin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icactionsix.ui" line="87"/>
+        <source>return</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icactionsix.ui" line="100"/>
+        <source>stop it</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icactionsix.ui" line="128"/>
+        <source>close</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

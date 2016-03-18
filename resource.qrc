@@ -60,5 +60,6 @@
         <file>resource/fixture_check(32).png</file>
         <file>resource/machine_struct.png</file>
         <file>resource/auto-onecycle.png</file>
+        <file>resource/actsix.png</file>
     </qresource>
 </RCC>

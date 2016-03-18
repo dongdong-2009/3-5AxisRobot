@@ -16,7 +16,9 @@
 #include "icmold.h"
 #include "iccaretipui.h"
 
+
 QMessageBox* checkMessageBox;
+icactionsix *Actions;
 
 ICHCProgramMonitorFrame::ICHCProgramMonitorFrame(QWidget *parent) :
     QFrame(parent),
@@ -30,6 +32,15 @@ ICHCProgramMonitorFrame::ICHCProgramMonitorFrame(QWidget *parent) :
     switchOff_(":/resource/switch_off.png")
 {
     ui->setupUi(this);
+
+    QPushButton *ActionsButton = new QPushButton(0);
+    ActionsButton->setIcon(QPixmap(":/resource/actsix.png"));
+    ActionsButton->setGeometry(QRect(665,18,35,35));
+    ActionsButton->setWindowFlags(Qt::WindowStaysOnTopHint | Qt::Tool);
+    ActionsButton->setFocusPolicy(Qt::NoFocus);
+    ActionsButton->show();
+
+    connect(ActionsButton,SIGNAL(clicked()),this,SLOT(dialogfunction()));
 
     autoRunRevise_ = new ICAutoRunRevise(this);
     InitSignal();
@@ -69,12 +80,16 @@ ICHCProgramMonitorFrame::ICHCProgramMonitorFrame(QWidget *parent) :
     LevelChanged(ICProgramHeadFrame::Instance()->CurrentLevel());
     checkMessageBox = new ICMessageBox(this);
     ui->pauseButton->hide();
+    Actions = new icactionsix;
+    //Actions->setWindowFlags(Qt::FramelessWindowHint);
+
 }
 
 ICHCProgramMonitorFrame::~ICHCProgramMonitorFrame()
 {
     delete autoRunRevise_;
     delete checkMessageBox;
+    delete Actions;
     delete ui;
 }
 
@@ -923,4 +938,9 @@ void ICHCProgramMonitorFrame::CareCheck()
         ICCareTipUI careTip;
         careTip.exec();
     }
+}
+
+void ICHCProgramMonitorFrame::dialogfunction()
+{
+    Actions->show();
 }
