@@ -178,8 +178,10 @@ ICMold* ICMold::currentMold_ = NULL;
 ICMold::ICMold(QObject *parent) :
     QObject(parent),
     isBadProductEn_(false),
-    badProductPos_(QList<uint>()<<0<<0<<0<<80<<80<<80),
-    tryProductPos_(QList<uint>()<<0<<0<<0<<80<<80<<80)
+    isTryProductEn_(false),
+    isSubArmBPEn_(false),
+    badProductPos_(QList<uint>()<<0<<0<<0<<0<<0<<80<<80<<80<<80<<80),
+    tryProductPos_(QList<uint>()<<0<<0<<0<<0<<0<<80<<80<<80<<80<<80)
 {
     ICInstructParam::Instance();
     //    axisActions_.append(GX);
@@ -238,6 +240,18 @@ bool ICMold::ReadMoldFile(const QString &fileName, bool isLoadParams)
             SetTryProductEn(items.at(7).toInt() == 1);
             SetTryProductPos(QList<uint>()<<items.at(8).toUInt()<<items.at(9).toUInt()<<items.at(10).toUInt()
                              <<items.at(11).toUInt()<<items.at(12).toUInt()<<items.at(13).toUInt());
+        }
+        else if(items.size() == 23)
+        {
+            SetSubArmBPEn(items.at(0).toInt() == 1);
+            SetBadProductEn(items.at(1).toInt() == 1);
+            SetBadProductPos(QList<uint>()<<items.at(2).toUInt()<<items.at(3).toUInt()<<items.at(4).toUInt()<<items.at(5).toUInt()<<items.at(6).toUInt()
+                             <<items.at(7).toUInt()<<items.at(8).toUInt()<<items.at(9).toUInt()<<items.at(10).toUInt()<<items.at(11).toUInt());
+            recordsStart = 1;
+
+            SetTryProductEn(items.at(12).toInt() == 1);
+            SetTryProductPos(QList<uint>()<<items.at(13).toUInt()<<items.at(14).toUInt()<<items.at(15).toUInt()<<items.at(16).toUInt()<<items.at(17).toUInt()
+                                 <<items.at(18).toUInt()<<items.at(19).toUInt()<<items.at(20).toUInt()<<items.at(21).toUInt()<<items.at(22).toUInt());
         }
     }
     for(int i = recordsStart; i != records.size(); ++i)
@@ -357,24 +371,37 @@ bool ICMold::SaveMoldFile(bool isSaveParams)
     }
     if(IsBadProductEn() || IsTryProductEn())
     {
-        toWrite += QString("%1 %2 %3 %4 %5 %6 %7 %8\n").arg(IsBadProductEn() ? 1 : 0)
+        qDebug()<<badProductPos_.size()<<tryProductPos_.size();
+        QString toAppend = QString::number(IsSubArmBPEn()) + " " +
+                QString("%1 %2 %3 %4 %5 %6").arg(IsBadProductEn() ? 1 :0)
                 .arg(badProductPos_.at(0)).arg(badProductPos_.at(1)).arg(badProductPos_.at(2))
-                .arg(badProductPos_.at(3)).arg(badProductPos_.at(4)).arg(badProductPos_.at(5))
-                .arg(QString("%1 %2 %3 %4 %5 %6 %7").arg(IsTryProductEn() ? 1 : 0)
-                     .arg(tryProductPos_.at(0)).arg(tryProductPos_.at(1)).arg(tryProductPos_.at(2))
-                     .arg(tryProductPos_.at(3)).arg(tryProductPos_.at(4)).arg(tryProductPos_.at(5)))
-                .toUtf8();
+                .arg(badProductPos_.at(3)).arg(badProductPos_.at(4)) + " " +
+                QString("%1 %2 %3 %4 %5").arg(badProductPos_.at(5)).arg(badProductPos_.at(6))
+                .arg(badProductPos_.at(7)).arg(badProductPos_.at(8)).arg(badProductPos_.at(9)) + " " +
+                QString("%1 %2 %3 %4 %5 %6").arg(IsTryProductEn() ? 1 :0)
+                .arg(tryProductPos_.at(0)).arg(tryProductPos_.at(1)).arg(tryProductPos_.at(2))
+                .arg(tryProductPos_.at(3)).arg(tryProductPos_.at(4)) + " " +
+                QString("%1 %2 %3 %4 %5").arg(tryProductPos_.at(5)).arg(tryProductPos_.at(6))
+                .arg(tryProductPos_.at(7)).arg(tryProductPos_.at(8)).arg(tryProductPos_.at(9)) + "\n";
+//        toWrite += QString("%1 %2 %3 %4 %5 %6 %7 %8\n").arg(IsBadProductEn() ? 1 : 0)
+//                .arg(badProductPos_.at(0)).arg(badProductPos_.at(1)).arg(badProductPos_.at(2))
+//                .arg(badProductPos_.at(3)).arg(badProductPos_.at(4)).arg(badProductPos_.at(5))
+//                .arg(QString("%1 %2 %3 %4 %5 %6 %7").arg(IsTryProductEn() ? 1 : 0)
+//                     .arg(tryProductPos_.at(0)).arg(tryProductPos_.at(1)).arg(tryProductPos_.at(2))
+//                     .arg(tryProductPos_.at(3)).arg(tryProductPos_.at(4)).arg(tryProductPos_.at(5)))
+//                .toUtf8();
+        toWrite += toAppend.toUtf8();
         QString moldName = moldName_;
         moldName.chop(3);
         if(IsBadProductEn())
         {
-            ICMacroSubroutine::Instance()->GenerateBadProductSub(needToCutOffFixtures_, BadProductPos());
+            ICMacroSubroutine::Instance()->GenerateBadProductSub(needToCutOffFixtures_, BadProductPos(), IsSubArmBPEn());
             QFile::remove(QString("%1sub5").arg(moldName));
             qDebug()<<QFile::copy(QString("subs/sub5.prg"), QString("%1sub5").arg(moldName));
         }
         if(IsTryProductEn())
         {
-            ICMacroSubroutine::Instance()->GenerateTryProductSub(needToCutOffFixtures_, TryProductPos());
+            ICMacroSubroutine::Instance()->GenerateTryProductSub(needToCutOffFixtures_, TryProductPos(), IsSubArmBPEn());
             QFile::remove(QString("%1sub7").arg(moldName));
             qDebug()<<QFile::copy(QString("subs/sub7.prg"), QString("%1sub7").arg(moldName));
         }

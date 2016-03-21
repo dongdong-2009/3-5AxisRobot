@@ -133,27 +133,36 @@ uint ICMacroSubroutine::SyncSum() const
     return ret;
 }
 
-void ICMacroSubroutine::GenerateBadProductSub(const QList<ICMoldItem> &offFixtures, const QList<uint> pos)
+void ICMacroSubroutine::GenerateBadProductSub(const QList<ICMoldItem> &offFixtures, const QList<uint> pos, bool isSub)
 {
     subroutines_[5].clear();
     QList<ICMoldItem> sub;
     ICMoldItem item;
     item.SetNum(0);
-    item.SetAction(ICMold::GX);
-    item.SetActualPos(pos.at(0));
-    item.SetSVal(pos.at(3));
+    item.SetAction(isSub ? ICMold::GP : ICMold::GX);
+    item.SetActualPos(isSub ? pos.at(3) : pos.at(0));
+    item.SetSVal(isSub ? pos.at(8) : pos.at(5));
     item.SetDVal(0);
     sub.append(item);
 
     item.SetAction(ICMold::GZ);
     item.SetActualPos(pos.at(2));
-    item.SetSVal(pos.at(5));
+    item.SetSVal(pos.at(7));
     sub.append(item);
 
-    item.SetNum(1);
-    item.SetAction(ICMold::GY);
-    item.SetActualPos(pos.at(1));
-    item.SetSVal(pos.at(4));
+    if(!isSub)
+    {
+        item.SetAction(ICMold::ACTPOSEHORI);
+        item.SetNum(1);
+        item.SetSVal(0);
+        item.SetDVal(0);
+        sub.append(item);
+    }
+
+    item.SetNum(isSub ? 1 : 2);
+    item.SetAction(isSub ? ICMold::GQ : ICMold::GY);
+    item.SetActualPos(isSub ? pos.at(4) : pos.at(1));
+    item.SetSVal(isSub ? pos.at(9) : pos.at(4));
     sub.append(item);
 
 
@@ -165,10 +174,10 @@ void ICMacroSubroutine::GenerateBadProductSub(const QList<ICMoldItem> &offFixtur
     }
 
     item.SetNum(3);
-    item.SetAction(ICMold::GY);
+    item.SetAction(isSub ? ICMold::GQ : ICMold::GY);
     item.SetActualPos(0);
-    item.SetSVal(pos.at(4));
-    item.SetDVal(0);
+    item.SetSVal(isSub ? pos.at(9) : pos.at(4));
+    item.SetDVal(50);
     sub.append(item);
 
     item.SetNum(4);
@@ -183,27 +192,36 @@ void ICMacroSubroutine::GenerateBadProductSub(const QList<ICMoldItem> &offFixtur
 //    pos.SetAction();
 }
 
-void ICMacroSubroutine::GenerateTryProductSub(const QList<ICMoldItem> &offFixtures, const QList<uint> pos)
+void ICMacroSubroutine::GenerateTryProductSub(const QList<ICMoldItem> &offFixtures, const QList<uint> pos, bool isSub)
 {
     subroutines_[7].clear();
     QList<ICMoldItem> sub;
     ICMoldItem item;
     item.SetNum(0);
-    item.SetAction(ICMold::GX);
-    item.SetActualPos(pos.at(0));
-    item.SetSVal(pos.at(3));
+    item.SetAction(isSub ? ICMold::GP : ICMold::GX);
+    item.SetActualPos(isSub ? pos.at(3) : pos.at(0));
+    item.SetSVal(isSub ? pos.at(8) : pos.at(5));
     item.SetDVal(0);
     sub.append(item);
 
     item.SetAction(ICMold::GZ);
     item.SetActualPos(pos.at(2));
-    item.SetSVal(pos.at(5));
+    item.SetSVal(pos.at(7));
     sub.append(item);
 
-    item.SetNum(1);
-    item.SetAction(ICMold::GY);
-    item.SetActualPos(pos.at(1));
-    item.SetSVal(pos.at(4));
+    if(!isSub)
+    {
+        item.SetAction(ICMold::ACTPOSEHORI);
+        item.SetNum(1);
+        item.SetSVal(0);
+        item.SetDVal(0);
+        sub.append(item);
+    }
+
+    item.SetNum(isSub ? 1 : 2);
+    item.SetAction(isSub ? ICMold::GQ : ICMold::GY);
+    item.SetActualPos(isSub ? pos.at(4) : pos.at(1));
+    item.SetSVal(isSub ? pos.at(9) : pos.at(4));
     sub.append(item);
 
 
@@ -215,10 +233,10 @@ void ICMacroSubroutine::GenerateTryProductSub(const QList<ICMoldItem> &offFixtur
     }
 
     item.SetNum(3);
-    item.SetAction(ICMold::GY);
+    item.SetAction(isSub ? ICMold::GQ : ICMold::GY);
     item.SetActualPos(0);
-    item.SetSVal(pos.at(4));
-    item.SetDVal(0);
+    item.SetSVal(isSub ? pos.at(9) : pos.at(4));
+    item.SetDVal(50);
     sub.append(item);
 
     item.SetNum(4);

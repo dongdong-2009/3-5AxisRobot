@@ -472,7 +472,10 @@ public:
     QList<uint> BadProductPos() const { return badProductPos_;}
     void SetBadProductPos(const QList<uint>& pos)
     {
-        badProductPos_ = pos;
+        for(int i = 0;  i < pos.size(); ++i)
+        {
+            badProductPos_[i] = pos.at(i);
+        }
     }
 
     bool IsTryProductEn() const { return isTryProductEn_;}
@@ -481,8 +484,14 @@ public:
     QList<uint> TryProductPos() const { return tryProductPos_;}
     void SetTryProductPos(const QList<uint>& pos)
     {
-        tryProductPos_ = pos;
+        for(int i = 0; i < pos.size(); ++i)
+        {
+            tryProductPos_[i] = pos.at(i);
+        }
     }
+
+    bool IsSubArmBPEn() const { return isSubArmBPEn_;}
+    void SetSubArmBPEn( bool en) { isSubArmBPEn_ = en;}
 
     static bool IsAxisAction(int action)
     {
@@ -506,6 +515,7 @@ private:
     bool isBadProductEn_;
     QList<uint> badProductPos_;
     bool isTryProductEn_;
+    bool isSubArmBPEn_;
     QList<uint> tryProductPos_;
     QList<ICMoldItem> needToCutOffFixtures_;
     static ICMold* currentMold_;

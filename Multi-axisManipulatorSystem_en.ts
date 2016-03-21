@@ -1050,30 +1050,54 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="283"/>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="323"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="100"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="588"/>
         <source>Y1:</source>
         <translation type="unfinished">Y1:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="196"/>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="203"/>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="330"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="128"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="247"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="461"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="612"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="629"/>
         <source>mm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="422"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="135"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="636"/>
+        <source>X2:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="431"/>
         <source>Try Product En</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="511"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="349"/>
         <source>Try count:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="534"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="500"/>
+        <source>Main Arm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="535"/>
+        <source>Sub Arm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="605"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="643"/>
+        <source>Y2:</source>
+        <translation type="unfinished">Y2:</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="818"/>
         <source>Ok</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1083,40 +1107,48 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="100"/>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="236"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="107"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="221"/>
         <source>X1:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="169"/>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="269"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="304"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="468"/>
         <source>Z:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="162"/>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="504"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="362"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="382"/>
         <source>Set In</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="243"/>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="276"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="121"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="152"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="159"/>
         <location filename="hcinstruction/icbadproducteditor.ui" line="297"/>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="337"/>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="344"/>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="491"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="399"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="564"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="670"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="677"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="736"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="743"/>
         <source>Speed:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="189"/>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="229"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="114"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="185"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="254"/>
         <location filename="hcinstruction/icbadproducteditor.ui" line="290"/>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="390"/>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="429"/>
-        <location filename="hcinstruction/icbadproducteditor.ui" line="455"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="369"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="571"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="722"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="729"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="788"/>
+        <location filename="hcinstruction/icbadproducteditor.ui" line="795"/>
         <source>%</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5971,12 +6003,12 @@ Clear</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ickeyboard/ickeyboardhandler.cpp" line="134"/>
+        <location filename="ickeyboard/ickeyboardhandler.cpp" line="135"/>
         <source>Try Product</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ickeyboard/ickeyboardhandler.cpp" line="135"/>
+        <location filename="ickeyboard/ickeyboardhandler.cpp" line="136"/>
         <source>Do you need to try product for %1 mold</source>
         <translation type="unfinished"></translation>
     </message>

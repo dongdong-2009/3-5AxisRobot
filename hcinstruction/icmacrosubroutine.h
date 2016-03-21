@@ -75,9 +75,11 @@ public:
     bool SaveMacroSubroutieFile(int group);
     void SaveMacroSubroutieFiles();
     void GenerateBadProductSub(const QList<ICMoldItem>& offFixtures,
-                               const QList<uint> pos);
+                               const QList<uint> pos,
+                               bool isSub);
     void GenerateTryProductSub(const QList<ICMoldItem>& offFixtures,
-                               const QList<uint> pos);
+                               const QList<uint> pos,
+                               bool isSub);
 
     ICMacroAllSubroutine SubRoutines() const { return subroutines_;}
     QList<ICMoldItem> SubRoutine(int group) const;

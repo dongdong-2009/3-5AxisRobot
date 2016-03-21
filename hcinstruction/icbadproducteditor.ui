@@ -41,9 +41,9 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>0</y>
+        <y>-272</y>
         <width>384</width>
-        <height>356</height>
+        <height>536</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout">
@@ -62,7 +62,7 @@
        <property name="spacing">
         <number>4</number>
        </property>
-       <item row="0" column="0" colspan="2">
+       <item row="1" column="0" colspan="2">
         <widget class="QCheckBox" name="badProductEn">
          <property name="styleSheet">
           <string notr="true">::indicator {
@@ -94,117 +94,73 @@
          </property>
         </widget>
        </item>
-       <item row="7" column="0">
-        <widget class="QLabel" name="label_13">
+       <item row="11" column="0">
+        <widget class="QLabel" name="label_14">
+         <property name="text">
+          <string>Y1:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label">
          <property name="text">
           <string>X1:</string>
          </property>
         </widget>
        </item>
-       <item row="3" column="1">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="y1Pos">
-         <property name="minimumSize">
-          <size>
-           <width>90</width>
-           <height>32</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="1">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="zPos">
-         <property name="minimumSize">
-          <size>
-           <width>90</width>
-           <height>32</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="5">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="y1Speed">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>32</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>16777215</height>
-          </size>
-         </property>
-         <property name="text">
-          <string notr="true"/>
-         </property>
-        </widget>
-       </item>
-       <item row="8" column="1">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="y1Pos_2">
-         <property name="minimumSize">
-          <size>
-           <width>90</width>
-           <height>32</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QPushButton" name="setInBtn">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>32</height>
-          </size>
-         </property>
-         <property name="text">
-          <string>Set In</string>
-         </property>
-        </widget>
-       </item>
-       <item row="9" column="0">
-        <widget class="QLabel" name="label_15">
-         <property name="text">
-          <string>Z:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="3">
-        <spacer name="horizontalSpacer">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="8" column="6">
-        <widget class="QLabel" name="label_20">
+       <item row="12" column="6">
+        <widget class="QLabel" name="label_21">
          <property name="text">
           <string>%</string>
          </property>
         </widget>
        </item>
+       <item row="4" column="4">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>Speed:</string>
+         </property>
+        </widget>
+       </item>
        <item row="3" column="2">
-        <widget class="QLabel" name="label_5">
+        <widget class="QLabel" name="label_4">
          <property name="text">
           <string>mm</string>
          </property>
         </widget>
        </item>
-       <item row="4" column="2">
-        <widget class="QLabel" name="label_6">
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_23">
          <property name="text">
-          <string>mm</string>
+          <string>X2:</string>
          </property>
         </widget>
        </item>
-       <item row="5" column="5">
+       <item row="10" column="1">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="x1Pos_2">
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="4">
+        <widget class="QLabel" name="label_18">
+         <property name="text">
+          <string>Speed:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="4">
+        <widget class="QLabel" name="label_16">
+         <property name="text">
+          <string>Speed:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="5">
         <widget class="ICLineEditWithVirtualNumericKeypad" name="tryCount">
          <property name="minimumSize">
           <size>
@@ -223,29 +179,25 @@
          </property>
         </widget>
        </item>
-       <item row="9" column="6">
-        <widget class="QLabel" name="label_21">
+       <item row="3" column="6">
+        <widget class="QLabel" name="label_10">
          <property name="text">
           <string>%</string>
          </property>
         </widget>
        </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="label">
-         <property name="text">
-          <string>X1:</string>
+       <item row="4" column="1">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="y1Pos">
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>32</height>
+          </size>
          </property>
         </widget>
        </item>
-       <item row="2" column="4">
-        <widget class="QLabel" name="label_7">
-         <property name="text">
-          <string>Speed:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="5">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="x1Speed">
+       <item row="4" column="5">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="y1Speed">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -263,42 +215,14 @@
          </property>
         </widget>
        </item>
-       <item row="4" column="0">
-        <widget class="QLabel" name="label_3">
+       <item row="10" column="0">
+        <widget class="QLabel" name="label_13">
          <property name="text">
-          <string>Z:</string>
+          <string>X1:</string>
          </property>
         </widget>
        </item>
-       <item row="9" column="4">
-        <widget class="QLabel" name="label_18">
-         <property name="text">
-          <string>Speed:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="8" column="0">
-        <widget class="QLabel" name="label_14">
-         <property name="text">
-          <string>Y1:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="6">
-        <widget class="QLabel" name="label_10">
-         <property name="text">
-          <string>%</string>
-         </property>
-        </widget>
-       </item>
-       <item row="8" column="4">
-        <widget class="QLabel" name="label_17">
-         <property name="text">
-          <string>Speed:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="8" column="5">
+       <item row="11" column="5">
         <widget class="ICLineEditWithVirtualNumericKeypad" name="y1Speed_2">
          <property name="minimumSize">
           <size>
@@ -317,36 +241,22 @@
          </property>
         </widget>
        </item>
-       <item row="3" column="0">
-        <widget class="QLabel" name="label_2">
-         <property name="text">
-          <string>Y1:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="2">
-        <widget class="QLabel" name="label_4">
+       <item row="5" column="2">
+        <widget class="QLabel" name="label_6">
          <property name="text">
           <string>mm</string>
          </property>
         </widget>
        </item>
-       <item row="3" column="4">
-        <widget class="QLabel" name="label_8">
+       <item row="4" column="6">
+        <widget class="QLabel" name="label_11">
          <property name="text">
-          <string>Speed:</string>
+          <string>%</string>
          </property>
         </widget>
        </item>
-       <item row="4" column="4">
-        <widget class="QLabel" name="label_9">
-         <property name="text">
-          <string>Speed:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="1">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="x1Pos_2">
+       <item row="3" column="1">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="x1Pos">
          <property name="minimumSize">
           <size>
            <width>90</width>
@@ -355,7 +265,7 @@
          </property>
         </widget>
        </item>
-       <item row="7" column="5">
+       <item row="10" column="5">
         <widget class="ICLineEditWithVirtualNumericKeypad" name="x1Speed_2">
          <property name="minimumSize">
           <size>
@@ -374,8 +284,107 @@
          </property>
         </widget>
        </item>
+       <item row="5" column="6">
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>%</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="4">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>Speed:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Z:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="5">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="zSpeed_2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true"/>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="5">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="zSpeed">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true"/>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="2" colspan="3">
+        <widget class="QLabel" name="label_22">
+         <property name="text">
+          <string>Try count:</string>
+         </property>
+        </widget>
+       </item>
        <item row="2" column="1">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="x1Pos">
+        <widget class="QPushButton" name="setInBtn">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Set In</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="6">
+        <widget class="QLabel" name="label_19">
+         <property name="text">
+          <string>%</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QPushButton" name="setInBtn_2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Set In</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="1">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="zPos_2">
          <property name="minimumSize">
           <size>
            <width>90</width>
@@ -384,14 +393,14 @@
          </property>
         </widget>
        </item>
-       <item row="3" column="6">
-        <widget class="QLabel" name="label_11">
+       <item row="3" column="4">
+        <widget class="QLabel" name="label_7">
          <property name="text">
-          <string>%</string>
+          <string>Speed:</string>
          </property>
         </widget>
        </item>
-       <item row="5" column="0" colspan="2">
+       <item row="8" column="0" colspan="2">
         <widget class="QCheckBox" name="tryProductEn">
          <property name="styleSheet">
           <string notr="true">::indicator {
@@ -423,41 +432,21 @@
          </property>
         </widget>
        </item>
-       <item row="4" column="6">
-        <widget class="QLabel" name="label_12">
-         <property name="text">
-          <string>%</string>
+       <item row="3" column="3">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
          </property>
-        </widget>
-       </item>
-       <item row="4" column="5">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="zSpeed">
-         <property name="minimumSize">
+         <property name="sizeHint" stdset="0">
           <size>
-           <width>0</width>
-           <height>32</height>
+           <width>40</width>
+           <height>20</height>
           </size>
          </property>
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>16777215</height>
-          </size>
-         </property>
-         <property name="text">
-          <string notr="true"/>
-         </property>
-        </widget>
+        </spacer>
        </item>
-       <item row="7" column="6">
-        <widget class="QLabel" name="label_19">
-         <property name="text">
-          <string>%</string>
-         </property>
-        </widget>
-       </item>
-       <item row="9" column="1">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="zPos_2">
+       <item row="5" column="1">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="zPos">
          <property name="minimumSize">
           <size>
            <width>90</width>
@@ -466,8 +455,92 @@
          </property>
         </widget>
        </item>
-       <item row="9" column="5">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="zSpeed_2">
+       <item row="4" column="2">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>mm</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="0">
+        <widget class="QLabel" name="label_15">
+         <property name="text">
+          <string>Z:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <widget class="QCheckBox" name="mainArm">
+         <property name="styleSheet">
+          <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+         </property>
+         <property name="text">
+          <string>Main Arm</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="0" column="2" colspan="4">
+        <widget class="QCheckBox" name="subArm">
+         <property name="styleSheet">
+          <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+         </property>
+         <property name="text">
+          <string>Sub Arm</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="3" column="5">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="x1Speed">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -485,30 +558,241 @@
          </property>
         </widget>
        </item>
-       <item row="7" column="4">
-        <widget class="QLabel" name="label_16">
+       <item row="11" column="4">
+        <widget class="QLabel" name="label_17">
          <property name="text">
           <string>Speed:</string>
          </property>
         </widget>
        </item>
+       <item row="11" column="6">
+        <widget class="QLabel" name="label_20">
+         <property name="text">
+          <string>%</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="1">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="y1Pos_2">
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Y1:</string>
+         </property>
+        </widget>
+       </item>
        <item row="6" column="1">
-        <widget class="QPushButton" name="setInBtn_2">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="x2Pos">
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_24">
+         <property name="text">
+          <string>Y2:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <widget class="QLabel" name="label_25">
+         <property name="text">
+          <string>mm</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="y2Pos">
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="2">
+        <widget class="QLabel" name="label_26">
+         <property name="text">
+          <string>mm</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="0">
+        <widget class="QLabel" name="label_27">
+         <property name="text">
+          <string>X2:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="0">
+        <widget class="QLabel" name="label_28">
+         <property name="text">
+          <string>Y2:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="1">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="x2Pos_2">
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="1">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="y2Pos_2">
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="4">
+        <widget class="QLabel" name="label_29">
+         <property name="text">
+          <string>Speed:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="4">
+        <widget class="QLabel" name="label_30">
+         <property name="text">
+          <string>Speed:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="5">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="x2Speed">
          <property name="minimumSize">
           <size>
            <width>0</width>
            <height>32</height>
           </size>
          </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>16777215</height>
+          </size>
+         </property>
          <property name="text">
-          <string>Set In</string>
+          <string notr="true"/>
          </property>
         </widget>
        </item>
-       <item row="5" column="2" colspan="3">
-        <widget class="QLabel" name="label_22">
+       <item row="7" column="5">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="y2Speed">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>16777215</height>
+          </size>
+         </property>
          <property name="text">
-          <string>Try count:</string>
+          <string notr="true"/>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="6">
+        <widget class="QLabel" name="label_31">
+         <property name="text">
+          <string>%</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="6">
+        <widget class="QLabel" name="label_32">
+         <property name="text">
+          <string>%</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="4">
+        <widget class="QLabel" name="label_33">
+         <property name="text">
+          <string>Speed:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="4">
+        <widget class="QLabel" name="label_34">
+         <property name="text">
+          <string>Speed:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="5">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="x2Speed_2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true"/>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="5">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="y2Speed_2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string notr="true"/>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="6">
+        <widget class="QLabel" name="label_35">
+         <property name="text">
+          <string>%</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="6">
+        <widget class="QLabel" name="label_36">
+         <property name="text">
+          <string>%</string>
          </property>
         </widget>
        </item>
@@ -546,4 +830,7 @@
  </customwidgets>
  <resources/>
  <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
 </ui>
