@@ -684,6 +684,82 @@ padding:5px;
            </property>
           </widget>
          </item>
+         <item row="7" column="1">
+          <widget class="QToolButton" name="cutModuleButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>48</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>140</width>
+             <height>48</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Cut Module</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../resource.qrc">
+             <normaloff>:/resource/macro(32).png</normaloff>:/resource/macro(32).png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="toolButtonStyle">
+            <enum>Qt::ToolButtonTextBesideIcon</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QToolButton" name="flagsButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>48</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>140</width>
+             <height>48</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Flags</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../resource.qrc">
+             <normaloff>:/resource/macro(32).png</normaloff>:/resource/macro(32).png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="toolButtonStyle">
+            <enum>Qt::ToolButtonTextBesideIcon</enum>
+           </property>
+          </widget>
+         </item>
          <item row="8" column="1">
           <widget class="QToolButton" name="curveButton">
            <property name="sizePolicy">
@@ -710,44 +786,6 @@ padding:5px;
            <property name="icon">
             <iconset resource="../resource.qrc">
              <normaloff>:/resource/Linear(32).png</normaloff>:/resource/Linear(32).png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>32</width>
-             <height>32</height>
-            </size>
-           </property>
-           <property name="toolButtonStyle">
-            <enum>Qt::ToolButtonTextBesideIcon</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="7" column="1">
-          <widget class="QToolButton" name="flagsButton">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>140</width>
-             <height>48</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>140</width>
-             <height>48</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>Flags</string>
-           </property>
-           <property name="icon">
-            <iconset resource="../resource.qrc">
-             <normaloff>:/resource/macro(32).png</normaloff>:/resource/macro(32).png</iconset>
            </property>
            <property name="iconSize">
             <size>

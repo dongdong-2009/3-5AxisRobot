@@ -200,6 +200,10 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
         {
             ui->badProductBox->show();
         }
+//        if( item->Action() == ICMold::GY)
+//        {
+//            ui->badProductBox->show();
+//        }
         /************任务：待机点姿势可以修改*******/
         if(item->Action() == ICMold::ACTPOSEHORI || item->Action() == ICMold::ACT_PoseHori2)
         {

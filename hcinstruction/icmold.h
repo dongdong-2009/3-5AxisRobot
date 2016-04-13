@@ -172,25 +172,28 @@ public:
             SetBadProduct(dir);
         }
 
-        int Get3DAction() const
-        {
-            return ifVal_ & 0xF;
-        }
+    int Get3DAction() const
+    {
+        return ifVal_ & 0xF;
+    }
 
-        int Get3DType() const
-        {
-            return IsEarlyEnd() ? 1 : 0;
-        }
+    int Get3DType() const
+    {
+        return IsEarlyEnd() ? 1 : 0;
+    }
 
-        int GetAngle() const
-        {
-            return ifPos_ >> 4;
-        }
+    int GetAngle() const
+    {
+        return ifPos_ >> 4;
+    }
 
-        int GetDir() const
-        {
-            return IsBadProduct();
-        }
+    int GetDir() const
+    {
+        return IsBadProduct();
+    }
+
+//    void SetAsCutModule() { isCutModule_ = 1;}
+//    bool IsCutModule() const { return isCutModule_ == 1;}
 
 private:
     uint seq_;
@@ -204,6 +207,7 @@ private:
     uint dVal_;
     QString comment_;
     int flag_;
+//    int isCutModule_;
     mutable uint sum_;
 };
 

@@ -15,6 +15,7 @@ namespace Ui {
 class ActionSettingFrame;
 class ICProgramGuidePage;
 class ICHCConditionPage;
+class ICCutModuleActionPage;
 
 class ICHCInstructionPageFrame : public QFrame
 {
@@ -109,6 +110,7 @@ private:
     QWidget * otherPage_;
     QWidget * commentPage_;
     QWidget * curvePage_;
+    ICCutModuleActionPage * cutModulePage_;
     ICProgramGuidePage * guidePage_;
     ICInstructModifyDialog *modifyDialog_;
 
