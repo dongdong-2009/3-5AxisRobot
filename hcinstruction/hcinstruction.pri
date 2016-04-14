@@ -29,7 +29,8 @@ HEADERS += \
     $$PWD/ichcotherpage.h \
     $$PWD/iccommenteditor.h \
     hcinstruction/iccurveeditor.h \
-    hcinstruction/iccutmoduleactionpage.h
+    hcinstruction/iccutmoduleactionpage.h \
+    hcinstruction/icguidefixtureeditor.h
 
 SOURCES += \
     $$PWD/ichcinstructionpageframe.cpp \
@@ -60,7 +61,8 @@ SOURCES += \
     $$PWD/ichcotherpage.cpp \
     $$PWD/iccommenteditor.cpp \
     hcinstruction/iccurveeditor.cpp \
-    hcinstruction/iccutmoduleactionpage.cpp
+    hcinstruction/iccutmoduleactionpage.cpp \
+    hcinstruction/icguidefixtureeditor.cpp
 
 FORMS += \
     $$PWD/icautorunrevise.ui \
@@ -73,7 +75,8 @@ FORMS += \
     $$PWD/iccommenteditor.ui \
     $$PWD/icinstructmodifydialog.ui \
     hcinstruction/iccurveeditor.ui \
-    hcinstruction/iccutmoduleactionpage.ui
+    hcinstruction/iccutmoduleactionpage.ui \
+    hcinstruction/icguidefixtureeditor.ui
 
 
 

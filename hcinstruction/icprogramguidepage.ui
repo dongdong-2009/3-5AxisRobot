@@ -51,7 +51,7 @@ QCheckBox::indicator:unchecked:disabled
    <item>
     <widget class="QStackedWidget" name="stackedWidget">
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="page1">
       <layout class="QVBoxLayout" name="verticalLayout_13">
@@ -66,7 +66,7 @@ QCheckBox::indicator:unchecked:disabled
          <property name="title">
           <string>Select Arm</string>
          </property>
-         <layout class="QVBoxLayout" name="verticalLayout_15">
+         <layout class="QHBoxLayout" name="horizontalLayout_13">
           <item>
            <widget class="QCheckBox" name="usedMainArmBox">
             <property name="text">
@@ -74,6 +74,13 @@ QCheckBox::indicator:unchecked:disabled
             </property>
             <property name="checked">
              <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="mainArmOUtletBox">
+            <property name="text">
+             <string>M Outlet</string>
             </property>
            </widget>
           </item>
@@ -107,46 +114,19 @@ QCheckBox::indicator:unchecked:disabled
            </widget>
           </item>
           <item>
-           <widget class="ICComboBox" name="productFixtureBox">
-            <item>
-             <property name="text">
-              <string>Fixture-1</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Fixture-2</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Fixture-3</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Fixture-4</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sucker-1</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sucker-2</string>
-             </property>
-            </item>
+           <widget class="QLabel" name="pFixture">
+            <property name="text">
+             <string>None</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="productCheck">
+           <widget class="QPushButton" name="pFixtureSelect">
             <property name="text">
-             <string>Check Fixture</string>
-            </property>
-            <property name="checked">
-             <bool>true</bool>
+             <string>open Editor</string>
             </property>
            </widget>
           </item>
@@ -173,49 +153,19 @@ QCheckBox::indicator:unchecked:disabled
            </widget>
           </item>
           <item>
-           <widget class="ICComboBox" name="outletFixtureBox">
-            <property name="currentIndex">
-             <number>1</number>
+           <widget class="QLabel" name="oFixtrue">
+            <property name="text">
+             <string>None</string>
             </property>
-            <item>
-             <property name="text">
-              <string>Fixture-1</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Fixture-2</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Fixture-3</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Fixture-4</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sucker-1</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sucker-2</string>
-             </property>
-            </item>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="outletCheck">
+           <widget class="QPushButton" name="oFixtureSelect">
             <property name="text">
-             <string>Check Fixture</string>
-            </property>
-            <property name="checked">
-             <bool>true</bool>
+             <string>open Editor</string>
             </property>
            </widget>
           </item>
@@ -259,6 +209,9 @@ QCheckBox::indicator:unchecked:disabled
          </item>
          <item>
           <widget class="QPushButton" name="setInButton">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 255, 0);</string>
+           </property>
            <property name="text">
             <string>Set In</string>
            </property>
@@ -850,6 +803,218 @@ QCheckBox::indicator:unchecked:disabled
        </item>
       </layout>
      </widget>
+     <widget class="QWidget" name="page">
+      <layout class="QVBoxLayout" name="verticalLayout_9">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QGroupBox" name="optionalGroup">
+         <property name="styleSheet">
+          <string notr="true">#groupBox::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+#groupBox::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+#groupBox::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+#groupBox::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+#groupBox::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+         </property>
+         <property name="title">
+          <string>Optional</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_15">
+          <property name="topMargin">
+           <number>9</number>
+          </property>
+          <property name="bottomMargin">
+           <number>2</number>
+          </property>
+          <item>
+           <widget class="QGroupBox" name="getProductBack">
+            <property name="title">
+             <string>Get Product Back</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout">
+             <property name="topMargin">
+              <number>2</number>
+             </property>
+             <property name="bottomMargin">
+              <number>2</number>
+             </property>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>GX1:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="ICLineEditWithVirtualNumericKeypad" name="gx1Back">
+               <property name="text">
+                <string notr="true">0.0</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QPushButton" name="setIn1">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(85, 255, 0);</string>
+               </property>
+               <property name="text">
+                <string>Set In</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="getOutletBack">
+            <property name="title">
+             <string>Get Outlet Back</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <property name="topMargin">
+              <number>2</number>
+             </property>
+             <property name="bottomMargin">
+              <number>2</number>
+             </property>
+             <item row="1" column="1">
+              <widget class="ICLineEditWithVirtualNumericKeypad" name="gx2Back">
+               <property name="text">
+                <string notr="true">0.0</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>GX2:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QPushButton" name="setIn2">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(85, 255, 0);</string>
+               </property>
+               <property name="text">
+                <string>Set In</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="x1X2OutGroup">
+            <property name="title">
+             <string>X1 X2 Before Go Out</string>
+            </property>
+            <layout class="QFormLayout" name="formLayout_4">
+             <property name="fieldGrowthPolicy">
+              <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+             </property>
+             <property name="topMargin">
+              <number>2</number>
+             </property>
+             <property name="bottomMargin">
+              <number>2</number>
+             </property>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>GX1:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="ICLineEditWithVirtualNumericKeypad" name="outX1">
+               <property name="text">
+                <string notr="true">0.0</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>GX2:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="ICLineEditWithVirtualNumericKeypad" name="outX2">
+               <property name="text">
+                <string notr="true">0.0</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QPushButton" name="setIn3">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(85, 255, 0);</string>
+               </property>
+               <property name="text">
+                <string>Set In</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </widget>
    </item>
    <item>
@@ -866,6 +1031,9 @@ QCheckBox::indicator:unchecked:disabled
      </item>
      <item>
       <widget class="QPushButton" name="nextButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 0);</string>
+       </property>
        <property name="text">
         <string>Next</string>
        </property>
@@ -894,25 +1062,20 @@ QCheckBox::indicator:unchecked:disabled
    <header>icinstructioneditorbase.h</header>
    <container>1</container>
   </customwidget>
-  <customwidget>
-   <class>ICComboBox</class>
-   <extends>QComboBox</extends>
-   <header>iccombobox.h</header>
-  </customwidget>
  </customwidgets>
  <resources/>
  <connections/>
  <buttongroups>
+  <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroupY1"/>
   <buttongroup name="buttonGroupY2"/>
   <buttongroup name="buttonGroupX1"/>
-  <buttongroup name="buttonGroupX2"/>
   <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroupX2"/>
   <buttongroup name="buttonGroupA"/>
   <buttongroup name="buttonGroupB"/>
   <buttongroup name="buttonGroupC"/>
   <buttongroup name="buttonGroupOutlet"/>
   <buttongroup name="buttonGroupZ"/>
-  <buttongroup name="buttonGroup_2"/>
-  <buttongroup name="buttonGroupY1"/>
  </buttongroups>
 </ui>

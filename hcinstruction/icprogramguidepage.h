@@ -6,6 +6,7 @@
 #include <QIntValidator>
 #include <QMap>
 #include <QButtonGroup>
+#include "icguidefixtureeditor.h"
 namespace Ui {
 class ICProgramGuidePage;
 }
@@ -67,6 +68,18 @@ private slots:
 
     void on_setInButton_clicked();
 
+    void on_mainArmOUtletBox_toggled(bool checked);
+
+    void on_setIn1_clicked();
+
+    void on_setIn2_clicked();
+
+    void on_setIn3_clicked();
+
+    void on_pFixtureSelect_clicked();
+
+    void on_oFixtureSelect_clicked();
+
 private:
     struct _ICAxis_
     {
@@ -124,6 +137,11 @@ private:
     int posMaxs_[8];
     _ICAxis_ axis_[8];
     QIntValidator* validator ;
+    ICGuideFixtureEditor* fixtrueEditor_;
+    QList<QPair<int , bool> > productfixturesConfigs;
+    QList<QPair<int , bool> > outletfixturesConfigs;
+
+
 };
 
 #endif // ICPROGRAMGUIDEPAGE_H
