@@ -280,7 +280,7 @@
         <location filename="hcsettings/axissettingsframe.ui" line="81"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="81"/>
         <source>Maximum displacement</source>
-        <translation>最大移动</translation>
+        <translation>原点偏置</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="107"/>
@@ -6348,7 +6348,7 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="157"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="254"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="271"/>
         <source>Limit Time</source>
         <translation>限制时间</translation>
     </message>
@@ -6381,7 +6381,7 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="55"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="112"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="129"/>
         <source>Delay Time</source>
         <translation>延迟时间</translation>
     </message>
@@ -6428,7 +6428,7 @@ App %1; Host:</source>
         <translation>不良品使能</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="189"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="206"/>
         <source>speed</source>
         <translation>速度</translation>
     </message>
@@ -6437,8 +6437,8 @@ App %1; Host:</source>
         <translation type="obsolete">返回步号</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="263"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="279"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="280"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="296"/>
         <source>Times</source>
         <translation>间隔模数</translation>
     </message>
@@ -7114,7 +7114,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icmachinestructpage.cpp" line="308"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="320"/>
         <source>Maximum displacement</source>
-        <translation>最大移动</translation>
+        <translation>原点偏置</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="427"/>

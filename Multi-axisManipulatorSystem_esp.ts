@@ -5415,7 +5415,7 @@ de eje B</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="55"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="112"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="129"/>
         <source>Delay Time</source>
         <translation>Tiempo de retardo</translation>
     </message>
@@ -5431,7 +5431,7 @@ de eje B</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="157"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="254"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="271"/>
         <source>Limit Time</source>
         <translation>tiempo de límite</translation>
     </message>
@@ -5509,13 +5509,13 @@ de eje B</translation>
         <translation type="unfinished">Salta a</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="189"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="206"/>
         <source>speed</source>
         <translation>Velocidad</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="263"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="279"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="280"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="296"/>
         <source>Times</source>
         <translation type="unfinished">s</translation>
     </message>
