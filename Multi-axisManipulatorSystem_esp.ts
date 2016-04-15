@@ -6155,7 +6155,7 @@ externa</translation>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="549"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="637"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="621"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="623"/>
         <source>Save</source>
         <translation>guardar</translation>
     </message>
@@ -6350,12 +6350,12 @@ de cruzar(mayor)</translation>
         <translation>Offset original</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="619"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="621"/>
         <source>Information</source>
         <translation>Sugerencia</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="619"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="621"/>
         <source>Save Successfully!</source>
         <translation>Guardar con éxito!</translation>
     </message>
