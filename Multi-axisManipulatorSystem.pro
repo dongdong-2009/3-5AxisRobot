@@ -5,7 +5,9 @@ TARGET = Multi-axisManipulatorSystem
 TEMPLATE = app
 QMAKE_CFLAGS += -std=c99
 
-QMAKE_CXX = ccache $${QMAKE_CXX}
+CCACHE=""
+unix:CCACHE=ccache
+QMAKE_CXX = $${CCACHE} $${QMAKE_CXX}
 QMAKE_STRIP = $${member(QMAKE_CXX, 1)}
 message($$QMAKE_STRIP)
 QMAKE_STRIP = $${replace(QMAKE_STRIP, -g++, -strip)}

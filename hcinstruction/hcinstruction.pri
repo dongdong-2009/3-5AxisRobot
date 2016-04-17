@@ -27,7 +27,8 @@ HEADERS += \
     $$PWD/icstackeditor.h \
     $$PWD/icprogramguidepage.h \
     $$PWD/ichcotherpage.h \
-    $$PWD/iccommenteditor.h
+    $$PWD/iccommenteditor.h \
+    hcinstruction/icsimpleteachpage.h
 
 SOURCES += \
     $$PWD/ichcinstructionpageframe.cpp \
@@ -56,7 +57,8 @@ SOURCES += \
     $$PWD/icstackeditor.cpp \
     $$PWD/icprogramguidepage.cpp \
     $$PWD/ichcotherpage.cpp \
-    $$PWD/iccommenteditor.cpp
+    $$PWD/iccommenteditor.cpp \
+    hcinstruction/icsimpleteachpage.cpp
 
 FORMS += \
     $$PWD/icautorunrevise.ui \
@@ -67,7 +69,8 @@ FORMS += \
     $$PWD/icstackeditor.ui \
     $$PWD/ichcotherpage.ui \
     $$PWD/iccommenteditor.ui \
-    $$PWD/icinstructmodifydialog.ui
+    $$PWD/icinstructmodifydialog.ui \
+    hcinstruction/icsimpleteachpage.ui
 
 
 
@@ -101,3 +104,6 @@ FORMS += $$PWD/ichcinstructionpageframe_5.ui \
     $$PWD/actionsettingframe_5.ui \
     $$PWD/ichcprogrammonitorframe_5.ui
 }
+
+
+
