@@ -34,6 +34,7 @@
 #include "icprogramguidepage.h"
 #include "ichcotherpage.h"
 #include "iccommenteditor.h"
+#include "icsimpleteachpage.h"
 
 #include <QDebug>
 #include <QMessageBox>
@@ -43,7 +44,7 @@
 //    int stepNum;
 //    int
 //};
-
+ICSimpleTeachPage* simpleTeach;
 ICHCInstructionPageFrame::ICHCInstructionPageFrame(QWidget *parent) :
     QFrame(parent),
     ui(new Ui::ICHCInstructionPageFrame),
@@ -76,12 +77,15 @@ ICHCInstructionPageFrame::ICHCInstructionPageFrame(QWidget *parent) :
 //    LoadAllRecordFileInfo();
 
     InitParameter();
+    simpleTeach = new ICSimpleTeachPage();
+    simpleTeach->show();
 
 //    ui->conditionsToolButton->hide();
 }
 
 ICHCInstructionPageFrame::~ICHCInstructionPageFrame()
 {
+    delete simpleTeach;
     delete modifyDialog_;
     delete ui;
 }
