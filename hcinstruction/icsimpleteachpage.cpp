@@ -1,6 +1,7 @@
 #include "icsimpleteachpage.h"
 #include "ui_icsimpleteachpage.h"
 #include "config.h"
+#include <QDebug>
 
 ICSimpleTeachPage::ICSimpleTeachPage(QWidget *parent) :
     QWidget(parent),
@@ -136,19 +137,33 @@ void ICSimpleTeachPage::SetMainArmPosEnabled(bool en)
     ui->cutOutletPosX1->setVisible(en);
     ui->cutOutletPosY1->setVisible(en);
 
+    ui->stdSpeedX1->setVisible(en);
+    ui->stdSpeedY1->setVisible(en);
+    ui->getProductSpeedX1->setVisible(en);
+    ui->getProductSpeedY1->setVisible(en);
+    ui->getOutletSpeedX1->setVisible(en);
+    ui->getOutletSpeedY1->setVisible(en);
+    ui->speedBHorX1->setVisible(en);
+    ui->speedBHorY1->setVisible(en);
+
     ui->pIX1Label->setVisible(en);
     ui->pIX1Label_2->setVisible(en);
     ui->pIX1Label_3->setVisible(en);
+    ui->pIX1Label_4->setVisible(en);
     ui->pIX1mmLabel->setVisible(en);
     ui->pIX1mmLabel_2->setVisible(en);
     ui->pIX1mmLabel_3->setVisible(en);
+    ui->pIX1SpeedLabel->setVisible(en);
+
 
     ui->pIY1Label->setVisible(en);
     ui->pIY1Label_2->setVisible(en);
     ui->pIY1Label_3->setVisible(en);
+    ui->pIY1Label_4->setVisible(en);
     ui->pIY1mmLabel->setVisible(en);
     ui->pIY1mmLabel_2->setVisible(en);
     ui->pIY1mmLabel_3->setVisible(en);
+    ui->pIY1SpeedLabel->setVisible(en);
 }
 
 void ICSimpleTeachPage::SetSubArmPosEnabled(bool en)
@@ -171,15 +186,28 @@ void ICSimpleTeachPage::SetSubArmPosEnabled(bool en)
     ui->releaseOutletPosX2->setVisible(en);
     ui->releaseOutletPosY2->setVisible(en);
 
+    ui->stdSpeedX2->setVisible(en);
+    ui->stdSpeedY2->setVisible(en);
+    ui->getProductSpeedX2->setVisible(en);
+    ui->getProductSpeedY2->setVisible(en);
+    ui->getOutletSpeedX2->setVisible(en);
+    ui->getOutletSpeedY2->setVisible(en);
+    ui->speedBHorX2->setVisible(en);
+    ui->speedBHorY2->setVisible(en);
+
     ui->pIX2Label->setVisible(en);
     ui->pIX2Label_2->setVisible(en);
+    ui->pIX2Label_3->setVisible(en);
     ui->pIX2mmLabel->setVisible(en);
     ui->pIX2mmLabel_2->setVisible(en);
+    ui->pIX2SpeedLabel->setVisible(en);
 
     ui->pIY2Label->setVisible(en);
     ui->pIY2Label_2->setVisible(en);
+    ui->pIY2Label_3->setVisible(en);
     ui->pIY2mmLabel->setVisible(en);
     ui->pIY2mmLabel_2->setVisible(en);
+    ui->pIY2SpeedLabel->setVisible(en);
 
 }
 
@@ -207,6 +235,15 @@ QString ICSimpleTeachPage::PosDataToString(const QVariantList &data, bool noSubA
 
 }
 
+ICLineEditWithVirtualNumericKeypad* CreateSpeedEdit(int speed, const QValidator* v)
+{
+    ICLineEditWithVirtualNumericKeypad* tmp = new ICLineEditWithVirtualNumericKeypad();
+    tmp->SetDecimalPlaces(0);
+    tmp->setValidator(v);
+    tmp->SetThisIntToThisText(speed);
+    return tmp;
+}
+
 void ICSimpleTeachPage::on_addProductPos_clicked()
 {
     QVariantList posData;
@@ -217,6 +254,18 @@ void ICSimpleTeachPage::on_addProductPos_clicked()
                 <<ui->releaseProductPosY2->TransThisTextToThisInt();
     releasePosModelData.append(posData);
     ui->releasePosView->addItem(PosDataToString(posData));
+
+    QList<ICLineEditWithVirtualNumericKeypad*> tmp;
+    tmp<<CreateSpeedEdit(80, &speedValidator_)<<CreateSpeedEdit(80, &speedValidator_)<<CreateSpeedEdit(80, &speedValidator_)
+      <<CreateSpeedEdit(80, &speedValidator_)<<CreateSpeedEdit(80, &speedValidator_);
+    releaseProductSpeedUI.append(tmp);
+    int toInsertRow = releaseProductSpeedUI.size();
+    QLabel *posName = new QLabel(QString(tr("Rel Product Pos-%1")).arg(toInsertRow));
+    posName->setMinimumWidth(ui->label_20->minimumWidth());
+    posName->setMaximumWidth(posName->minimumWidth());
+    ui->releaseProductSpeedGroup->addWidget(posName, toInsertRow, 0);
+    for(int i = 0; i < tmp.size(); ++i)
+        ui->releaseProductSpeedGroup->addWidget(tmp.at(i), toInsertRow, i + 1);
 }
 
 void ICSimpleTeachPage::on_modifyProductPos_clicked()
@@ -241,6 +290,28 @@ void ICSimpleTeachPage::on_deleteProductPos_clicked()
     int toModifyIndex = ui->releasePosView->row(selected.at(0));
     releasePosModelData.removeAt(toModifyIndex);
     delete ui->releasePosView->takeItem(toModifyIndex);
+    QList<ICLineEditWithVirtualNumericKeypad*> tmp = releaseProductSpeedUI[toModifyIndex];
+    releaseProductSpeedUI.removeAt(toModifyIndex);
+    QLayoutItem* lI;
+    qDebug()<<ui->releaseProductSpeedGroup->rowCount();
+    for(int i = 0; i < ui->releaseProductSpeedGroup->columnCount(); ++i)
+    {
+        lI = ui->releaseProductSpeedGroup->itemAtPosition(toModifyIndex, i);
+        ui->releaseProductSpeedGroup->removeWidget(lI->widget());
+        lI->widget()->close();
+        lI->widget()->deleteLater();
+//        delete lI->widget();
+//        delete lI;
+    }
+    qDebug()<<ui->releaseProductSpeedGroup->rowCount();
+
+    QLabel* posName;
+//    for(int i = toModifyIndex; i < ui->releaseProductSpeedGroup->rowCount() - 1; ++i)
+//    {
+//        posName = qobject_cast<QLabel*>(ui->releaseProductSpeedGroup->itemAtPosition(i, 0)->widget());
+//        posName->setText((QString(tr("Rel Product Pos-%1")).arg(i - 1)));
+//    }
+//    qDeleteAll(tmp);
 }
 
 

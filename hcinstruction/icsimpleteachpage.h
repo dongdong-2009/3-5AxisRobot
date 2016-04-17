@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QVariantList>
+#include <QIntValidator>
 
 class QLabel;
 class QPushButton;
@@ -24,6 +25,8 @@ namespace Ui {
 //    QLabel* fixtureInfo;
 
 //};
+
+
 
 class ICSimpleTeachPage : public QWidget
 {
@@ -85,6 +88,10 @@ private:
     QList<QVariantList> releasePosModelData;
     QList<QVariantList> releaseOutletModelData;
     QList<QVariantList> cutOutletModelData;
+    QList<QList<ICLineEditWithVirtualNumericKeypad*> > releaseProductSpeedUI;
+    QList<QList<ICLineEditWithVirtualNumericKeypad*> > releaseOutletSpeedUI;
+    QList<QList<ICLineEditWithVirtualNumericKeypad*> > cutOutletSpeedUI;
+    QIntValidator speedValidator_;
 
 
 };
