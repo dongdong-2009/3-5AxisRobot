@@ -73,17 +73,17 @@ void ICSimpleTeachPage::showEvent(QShowEvent *e)
     QWidget::showEvent(e);
 }
 
-
-void ICSimpleTeachPage::on_pushButton_2_toggled(bool checked)
+void ICSimpleTeachPage::on_posOutsideBtn_toggled(bool checked)
 {
     if(checked)
         ui->posPageContainer->setCurrentIndex(1);
 }
 
-void ICSimpleTeachPage::on_pushButton_3_toggled(bool checked)
+void ICSimpleTeachPage::on_posOfCutBtn_toggled(bool checked)
 {
     if(checked)
         ui->posPageContainer->setCurrentIndex(2);
+
 }
 
 void ICSimpleTeachPage::on_posInsideBtn_toggled(bool checked)
@@ -95,27 +95,91 @@ void ICSimpleTeachPage::on_posInsideBtn_toggled(bool checked)
 void ICSimpleTeachPage::on_mainArmEn_toggled(bool checked)
 {
     ui->cutOutletEn->setEnabled(checked);
+    SetMainArmPosEnabled(checked || ui->mainArmOutletEn->isChecked());
 }
 
 void ICSimpleTeachPage::on_mainArmOutletEn_toggled(bool checked)
 {
     if(checked)
         ui->subArmEn->setChecked(false);
+    SetMainArmPosEnabled(checked || ui->mainArmEn->isChecked());
+
 }
 
 void ICSimpleTeachPage::on_subArmEn_toggled(bool checked)
 {
     if(checked)
         ui->mainArmOutletEn->setChecked(false);
+    SetSubArmPosEnabled(checked);
 }
 
 void ICSimpleTeachPage::SetMainArmPosEnabled(bool en)
 {
+    ui->stdPosX1->setVisible(en);
+    ui->stdPosY1->setVisible(en);
 
+    ui->getProductPosX1->setVisible(en);
+    ui->getProductPosY1->setVisible(en);
+
+    ui->getOutletPosX1->setVisible(en);
+    ui->getOutletPosY1->setVisible(en);
+
+    ui->posBHorX1->setVisible(en);
+    ui->posBHorY1->setVisible(en);
+
+    ui->releaseProductPosX1->setVisible(en);
+    ui->releaseProductPosY1->setVisible(en);
+
+    ui->releaseOutletPosX1->setVisible(en);
+    ui->releaseOutletPosY1->setVisible(en);
+
+    ui->cutOutletPosX1->setVisible(en);
+    ui->cutOutletPosY1->setVisible(en);
+
+    ui->pIX1Label->setVisible(en);
+    ui->pIX1Label_2->setVisible(en);
+    ui->pIX1Label_3->setVisible(en);
+    ui->pIX1mmLabel->setVisible(en);
+    ui->pIX1mmLabel_2->setVisible(en);
+    ui->pIX1mmLabel_3->setVisible(en);
+
+    ui->pIY1Label->setVisible(en);
+    ui->pIY1Label_2->setVisible(en);
+    ui->pIY1Label_3->setVisible(en);
+    ui->pIY1mmLabel->setVisible(en);
+    ui->pIY1mmLabel_2->setVisible(en);
+    ui->pIY1mmLabel_3->setVisible(en);
 }
 
 void ICSimpleTeachPage::SetSubArmPosEnabled(bool en)
 {
+    ui->stdPosX2->setVisible(en);
+    ui->stdPosY2->setVisible(en);
+
+    ui->getProductPosX2->setVisible(en);
+    ui->getProductPosY2->setVisible(en);
+
+    ui->getOutletPosX2->setVisible(en);
+    ui->getOutletPosY2->setVisible(en);
+
+    ui->posBHorX2->setVisible(en);
+    ui->posBHorY2->setVisible(en);
+
+    ui->releaseProductPosX2->setVisible(en);
+    ui->releaseProductPosY2->setVisible(en);
+
+    ui->releaseOutletPosX2->setVisible(en);
+    ui->releaseOutletPosY2->setVisible(en);
+
+    ui->pIX2Label->setVisible(en);
+    ui->pIX2Label_2->setVisible(en);
+    ui->pIX2mmLabel->setVisible(en);
+    ui->pIX2mmLabel_2->setVisible(en);
+
+    ui->pIY2Label->setVisible(en);
+    ui->pIY2Label_2->setVisible(en);
+    ui->pIY2mmLabel->setVisible(en);
+    ui->pIY2mmLabel_2->setVisible(en);
 
 }
 
@@ -250,3 +314,6 @@ void ICSimpleTeachPage::on_deleteCut_clicked()
     cutOutletModelData.removeAt(toModifyIndex);
     delete ui->cutPosView->takeItem(toModifyIndex);
 }
+
+
+

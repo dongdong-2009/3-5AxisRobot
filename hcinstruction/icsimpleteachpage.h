@@ -40,11 +40,11 @@ protected:
 
 private slots:
 
-    void on_pushButton_2_toggled(bool checked);
-
-    void on_pushButton_3_toggled(bool checked);
-
     void on_posInsideBtn_toggled(bool checked);
+
+    void on_posOutsideBtn_toggled(bool checked);
+
+    void on_posOfCutBtn_toggled(bool checked);
 
     void on_mainArmEn_toggled(bool checked);
 
@@ -73,6 +73,7 @@ private slots:
     void on_modifyCut_clicked();
 
     void on_deleteCut_clicked();
+
 
 private:
     QString PosDataToString(const QVariantList& data, bool noSubArm = false, const QString& dataName = "") const ;
