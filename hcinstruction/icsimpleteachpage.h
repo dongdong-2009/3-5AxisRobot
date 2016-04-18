@@ -4,11 +4,19 @@
 #include <QWidget>
 #include <QVariantList>
 #include <QIntValidator>
+#include "icguidefixtureeditor.h"
 
 class QLabel;
 class QPushButton;
 class ICLineEditWithVirtualNumericKeypad;
 class QGridLayout;
+
+typedef QList<QPair<int , bool> > FixtureConfigs;
+
+struct PosData{
+    QVariantList pos;
+    FixtureConfigs fixtureConfis;
+};
 
 namespace Ui {
     class ICSimpleTeachPage;
@@ -92,8 +100,19 @@ private slots:
     void on_deleteCut_clicked();
 
 
+    void on_getProductFSel_clicked();
+
+    void on_getOutletFSel_clicked();
+
+
+    void on_releaseProductFSel_clicked();
+
+    void on_releaseOutletFSel_clicked();
+
+    void on_cutFSel_clicked();
+
 private:
-    QString PosDataToString(const QVariantList& data, bool noSubArm = false, const QString& dataName = "") const ;
+    QString PosDataToString(const PosData& posData, bool noSubArm = false, const QString& dataName = "") const ;
     bool UsedMainArm() const;
     bool UsedSubArm() const;
 
@@ -101,13 +120,24 @@ private:
     void DelPosHelper(int row, QGridLayout* layout, QList<PosSpeedUIWidgets>& speedUI, const QString& posName);
 private:
     Ui::ICSimpleTeachPage *ui;
-    QList<QVariantList> releasePosModelData;
-    QList<QVariantList> releaseOutletModelData;
-    QList<QVariantList> cutOutletModelData;
+    QList<PosData> releasePosModelData;
+    QList<PosData> releaseOutletModelData;
+    QList<PosData> cutOutletModelData;
     QList<PosSpeedUIWidgets> releaseProductSpeedUI;
     QList<PosSpeedUIWidgets> releaseOutletSpeedUI;
     QList<PosSpeedUIWidgets> cutOutletSpeedUI;
     QIntValidator speedValidator_;
+
+    ICGuideFixtureEditor* fixtureSel_;
+    FixtureConfigs getProductFixtureConfigs_;
+    FixtureConfigs getOutletFixtureConfigs_;
+    FixtureConfigs releaseProductCFConfigs_;
+    FixtureConfigs releaseOutletCFConfigs_;
+    FixtureConfigs cutOutletCFConfigs_;
+//    QList<FixtureConfigs> releaseProductFConfigs_;
+//    QList<FixtureConfigs> releaseOutletFConfigs_;
+//    QList<FixtureConfigs> cutOutletFConfigs_;
+//    QList<QPair<int , bool> > cutFixtureConfigs_;
 
 
 };

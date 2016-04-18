@@ -21,9 +21,10 @@ public:
 
 public slots:
     QList<QPair<int , bool> > GetConfigs() const;
-    int ShowEditor(const QList<QPair<int , bool> >& fixturesConfigs );
+    int ShowEditor(const QList<QPair<int , bool> >& fixturesConfigs, bool isNoCheckMode = false);
     void CommandButtonClicked(QWidget* widget);
     QStringList SelectedNames() const;
+    QStringList SelectedNames(const QList<QPair<int , bool> >& fixturesConfigs ) const;
 
 
 protected:

@@ -117,8 +117,9 @@ void ICGuideFixtureEditor::changeEvent(QEvent *e)
     }
 }
 
-int ICGuideFixtureEditor::ShowEditor(const QList<QPair<int, bool> > &fixturesConfigs)
+int ICGuideFixtureEditor::ShowEditor(const QList<QPair<int, bool> > &fixturesConfigs, bool isNoCheckMode)
 {
+    ui->tableWidget->setColumnHidden(2, isNoCheckMode);
     on_pushButton_clicked();
     QPair<int, bool> config;
     for(int i = 0; i < fixturesConfigs.size(); ++i)
@@ -197,6 +198,19 @@ QStringList ICGuideFixtureEditor::SelectedNames() const
             ret.append(settingButtons_.at(i)->text());
 //        ui->tableWidget->item(i, 0)->setCheckState(Qt::Unchecked);
 //        ui->tableWidget->item(i, 2)->setCheckState(Qt::Unchecked);
+    }
+    return ret;
+}
+
+QStringList ICGuideFixtureEditor::SelectedNames(const QList<QPair<int, bool> > &fixturesConfigs) const
+{
+    QStringList ret;
+    for(int i = 0; i < fixturesConfigs.size(); ++i)
+    {
+        if(fixturesConfigs.at(i).second)
+            ret.append(QString("%1[Check]").arg(settingButtons_.at(fixturesConfigs.at(i).first)->text()));
+        else
+            ret.append(settingButtons_.at(fixturesConfigs.at(i).first)->text());
     }
     return ret;
 }

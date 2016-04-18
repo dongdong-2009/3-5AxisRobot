@@ -8,6 +8,10 @@ ICSimpleTeachPage::ICSimpleTeachPage(QWidget *parent) :
     ui(new Ui::ICSimpleTeachPage)
 {
     ui->setupUi(this);
+
+    fixtureSel_ = new ICGuideFixtureEditor();
+    fixtureSel_->hide();
+
     ui->stdPosX1->SetDecimalPlaces(POS_DECIMAL);
     ui->stdPosY1->SetDecimalPlaces(POS_DECIMAL);
     ui->stdPosZ->SetDecimalPlaces(POS_DECIMAL);
@@ -47,6 +51,31 @@ ICSimpleTeachPage::ICSimpleTeachPage(QWidget *parent) :
     ui->cutOutletPosX1->SetDecimalPlaces(POS_DECIMAL);
     ui->cutOutletPosY1->SetDecimalPlaces(POS_DECIMAL);
     ui->cutOutletPosZ->SetDecimalPlaces(POS_DECIMAL);
+
+    ui->stdSpeedX1->setValidator(&speedValidator_);
+    ui->stdSpeedY1->setValidator(&speedValidator_);
+    ui->stdSpeedZ->setValidator(&speedValidator_);
+    ui->stdSpeedX2->setValidator(&speedValidator_);
+    ui->stdSpeedY2->setValidator(&speedValidator_);
+
+    ui->getProductSpeedX1->setValidator(&speedValidator_);
+    ui->getProductSpeedY1->setValidator(&speedValidator_);
+    ui->getProductSpeedZ->setValidator(&speedValidator_);
+    ui->getProductSpeedX2->setValidator(&speedValidator_);
+    ui->getProductSpeedY2->setValidator(&speedValidator_);
+
+    ui->getOutletSpeedX1->setValidator(&speedValidator_);
+    ui->getOutletSpeedY1->setValidator(&speedValidator_);
+    ui->getOutletSpeedZ->setValidator(&speedValidator_);
+    ui->getOutletSpeedX2->setValidator(&speedValidator_);
+    ui->getOutletSpeedY2->setValidator(&speedValidator_);
+
+    ui->speedBHorX1->setValidator(&speedValidator_);
+    ui->speedBHorY1->setValidator(&speedValidator_);
+    ui->speedBHorZ->setValidator(&speedValidator_);
+    ui->speedBHorX2->setValidator(&speedValidator_);
+    ui->speedBHorY2->setValidator(&speedValidator_);
+
 
 }
 
@@ -164,6 +193,28 @@ void ICSimpleTeachPage::SetMainArmPosEnabled(bool en)
     ui->pIY1mmLabel_2->setVisible(en);
     ui->pIY1mmLabel_3->setVisible(en);
     ui->pIY1SpeedLabel->setVisible(en);
+
+    PosSpeedUIWidgets speedUI;
+    for(int i = 0; i < releaseProductSpeedUI.size(); ++i)
+    {
+        speedUI = releaseProductSpeedUI.at(i);
+        speedUI.b.x1SpeedEdit->setVisible(en);
+        speedUI.b.y1SpeedEdit->setVisible(en);
+    }
+
+    for(int i = 0; i < releaseOutletSpeedUI.size(); ++i)
+    {
+        speedUI = releaseOutletSpeedUI.at(i);
+        speedUI.b.x1SpeedEdit->setVisible(en);
+        speedUI.b.y1SpeedEdit->setVisible(en);
+    }
+
+    for(int i = 0; i < cutOutletSpeedUI.size(); ++i)
+    {
+        speedUI = cutOutletSpeedUI.at(i);
+        speedUI.b.x1SpeedEdit->setVisible(en);
+        speedUI.b.y1SpeedEdit->setVisible(en);
+    }
 }
 
 void ICSimpleTeachPage::SetSubArmPosEnabled(bool en)
@@ -209,6 +260,27 @@ void ICSimpleTeachPage::SetSubArmPosEnabled(bool en)
     ui->pIY2mmLabel_2->setVisible(en);
     ui->pIY2SpeedLabel->setVisible(en);
 
+    PosSpeedUIWidgets speedUI;
+    for(int i = 0; i < releaseProductSpeedUI.size(); ++i)
+    {
+        speedUI = releaseProductSpeedUI.at(i);
+        speedUI.b.x2SpeedEdit->setVisible(en);
+        speedUI.b.y2SpeedEdit->setVisible(en);
+    }
+
+    for(int i = 0; i < releaseOutletSpeedUI.size(); ++i)
+    {
+        speedUI = releaseOutletSpeedUI.at(i);
+        speedUI.b.x2SpeedEdit->setVisible(en);
+        speedUI.b.y2SpeedEdit->setVisible(en);
+    }
+
+    for(int i = 0; i < cutOutletSpeedUI.size(); ++i)
+    {
+        speedUI = cutOutletSpeedUI.at(i);
+        speedUI.b.x2SpeedEdit->setVisible(en);
+        speedUI.b.y2SpeedEdit->setVisible(en);
+    }
 }
 
 bool ICSimpleTeachPage::UsedMainArm() const
@@ -221,9 +293,10 @@ bool ICSimpleTeachPage::UsedSubArm() const
     return ui->subArmEn->isChecked();
 }
 
-QString ICSimpleTeachPage::PosDataToString(const QVariantList &data, bool noSubArm,  const QString& dataName) const
+QString ICSimpleTeachPage::PosDataToString(const PosData &posData, bool noSubArm,  const QString& dataName) const
 {
     QString ret;
+    QVariantList data = posData.pos;
     if(UsedMainArm())
         ret += QString(tr("X1:%1, Y1:%2, ")).arg(QString::number(data.at(0).toInt() / 100.0, 'f', 2))
                 .arg(QString::number(data.at(1).toInt() / 100.0, 'f', 2));
@@ -231,6 +304,7 @@ QString ICSimpleTeachPage::PosDataToString(const QVariantList &data, bool noSubA
     if(UsedSubArm() && !noSubArm)
         ret += QString(tr(", X2:%1, Y2:%2")).arg(QString::number(data.at(3).toInt() / 100.0, 'f', 2))
                 .arg(QString::number(data.at(4).toInt() / 100.0, 'f', 2));
+    ret += tr("Use") + fixtureSel_->SelectedNames(posData.fixtureConfis).join(",");
     return ret;
 
 }
@@ -279,12 +353,13 @@ void ICSimpleTeachPage::DelPosHelper(int row, QGridLayout *layout, QList<PosSpee
 
 void ICSimpleTeachPage::on_addProductPos_clicked()
 {
-    QVariantList posData;
-    posData<<ui->releaseProductPosX1->TransThisTextToThisInt()
+    PosData posData;
+    posData.pos<<ui->releaseProductPosX1->TransThisTextToThisInt()
           <<ui->releaseProductPosY1->TransThisTextToThisInt()
             <<ui->releaseProductPosZ->TransThisTextToThisInt()
               <<ui->releaseProductPosX2->TransThisTextToThisInt()
                 <<ui->releaseProductPosY2->TransThisTextToThisInt();
+    posData.fixtureConfis = releaseProductCFConfigs_;
     releasePosModelData.append(posData);
     ui->releasePosView->addItem(PosDataToString(posData));
 
@@ -298,12 +373,13 @@ void ICSimpleTeachPage::on_modifyProductPos_clicked()
     QList<QListWidgetItem*> selected = ui->releasePosView->selectedItems();
     if(selected.size() == 0) return;
     int toModifyIndex = ui->releasePosView->row(selected.at(0));
-    QVariantList posData;
-    posData<<ui->releaseProductPosX1->TransThisTextToThisInt()
+    PosData posData;
+    posData.pos<<ui->releaseProductPosX1->TransThisTextToThisInt()
           <<ui->releaseProductPosY1->TransThisTextToThisInt()
             <<ui->releaseProductPosZ->TransThisTextToThisInt()
               <<ui->releaseProductPosX2->TransThisTextToThisInt()
                 <<ui->releaseProductPosY2->TransThisTextToThisInt();
+    posData.fixtureConfis = releaseProductCFConfigs_;
     releasePosModelData[toModifyIndex] = posData;
     selected[0]->setText(PosDataToString(posData));
 }
@@ -317,17 +393,19 @@ void ICSimpleTeachPage::on_deleteProductPos_clicked()
     delete ui->releasePosView->takeItem(toModifyIndex);
 
     DelPosHelper(toModifyIndex, ui->releaseProductSpeedGroup, releaseProductSpeedUI, tr("Rel Product"));
+
 }
 
 
 void ICSimpleTeachPage::on_addOutletPos_clicked()
 {
-    QVariantList posData;
-    posData<<ui->releaseOutletPosX1->TransThisTextToThisInt()
+    PosData posData;
+    posData.pos<<ui->releaseOutletPosX1->TransThisTextToThisInt()
           <<ui->releaseOutletPosY1->TransThisTextToThisInt()
             <<ui->releaseOutletPosZ->TransThisTextToThisInt()
               <<ui->releaseOutletPosX2->TransThisTextToThisInt()
                 <<ui->releaseOutletPosY2->TransThisTextToThisInt();
+    posData.fixtureConfis = (releaseOutletCFConfigs_);
     releaseOutletModelData.append(posData);
     ui->releaseOutletView->addItem(PosDataToString(posData));
 
@@ -339,14 +417,16 @@ void ICSimpleTeachPage::on_modifyOutletPos_clicked()
     QList<QListWidgetItem*> selected = ui->releaseOutletView->selectedItems();
     if(selected.size() == 0) return;
     int toModifyIndex = ui->releaseOutletView->row(selected.at(0));
-    QVariantList posData;
-    posData<<ui->releaseOutletPosX1->TransThisTextToThisInt()
+    PosData posData;
+    posData.pos<<ui->releaseOutletPosX1->TransThisTextToThisInt()
           <<ui->releaseOutletPosY1->TransThisTextToThisInt()
             <<ui->releaseOutletPosZ->TransThisTextToThisInt()
               <<ui->releaseOutletPosX2->TransThisTextToThisInt()
                 <<ui->releaseOutletPosY2->TransThisTextToThisInt();
+    posData.fixtureConfis = (releaseOutletCFConfigs_);
     releaseOutletModelData[toModifyIndex] = posData;
     selected[0]->setText(PosDataToString(posData));
+
 }
 
 void ICSimpleTeachPage::on_deleteOutletPos_clicked()
@@ -362,11 +442,12 @@ void ICSimpleTeachPage::on_deleteOutletPos_clicked()
 
 void ICSimpleTeachPage::on_addCut_clicked()
 {
-    QVariantList posData;
-    posData<<ui->cutOutletPosX1->TransThisTextToThisInt()
+    PosData posData;
+    posData.pos<<ui->cutOutletPosX1->TransThisTextToThisInt()
           <<ui->cutOutletPosY1->TransThisTextToThisInt()
             <<ui->cutOutletPosZ->TransThisTextToThisInt()
               <<0<<0;
+    posData.fixtureConfis = cutOutletCFConfigs_;
     cutOutletModelData.append(posData);
     ui->cutPosView->addItem(PosDataToString(posData, true));
 
@@ -378,11 +459,12 @@ void ICSimpleTeachPage::on_modifyCut_clicked()
     QList<QListWidgetItem*> selected = ui->cutPosView->selectedItems();
     if(selected.size() == 0) return;
     int toModifyIndex = ui->cutPosView->row(selected.at(0));
-    QVariantList posData;
-    posData<<ui->cutOutletPosX1->TransThisTextToThisInt()
+    PosData posData;
+    posData.pos<<ui->cutOutletPosX1->TransThisTextToThisInt()
           <<ui->cutOutletPosY1->TransThisTextToThisInt()
             <<ui->cutOutletPosZ->TransThisTextToThisInt()
               <<0<<0;
+    posData.fixtureConfis = cutOutletCFConfigs_;
     cutOutletModelData[toModifyIndex] = posData;
     selected[0]->setText(PosDataToString(posData, true));
 }
@@ -400,3 +482,38 @@ void ICSimpleTeachPage::on_deleteCut_clicked()
 
 
 
+
+void ICSimpleTeachPage::on_getProductFSel_clicked()
+{
+    fixtureSel_->ShowEditor(getProductFixtureConfigs_);
+    getProductFixtureConfigs_ = fixtureSel_->GetConfigs();
+    ui->getProductFInfo->setText(fixtureSel_->SelectedNames(getProductFixtureConfigs_).join(","));
+}
+
+void ICSimpleTeachPage::on_getOutletFSel_clicked()
+{
+    fixtureSel_->ShowEditor(getOutletFixtureConfigs_);
+    getOutletFixtureConfigs_ = fixtureSel_->GetConfigs();
+    ui->getOutletFInfo->setText(fixtureSel_->SelectedNames(getOutletFixtureConfigs_).join(","));
+}
+
+void ICSimpleTeachPage::on_releaseProductFSel_clicked()
+{
+    fixtureSel_->ShowEditor(releaseProductCFConfigs_, true);
+    releaseProductCFConfigs_ = fixtureSel_->GetConfigs();
+    ui->releaseProductCFInfo->setText(fixtureSel_->SelectedNames(releaseProductCFConfigs_).join(","));
+}
+
+void ICSimpleTeachPage::on_releaseOutletFSel_clicked()
+{
+    fixtureSel_->ShowEditor(releaseOutletCFConfigs_, true);
+    releaseOutletCFConfigs_ = fixtureSel_->GetConfigs();
+    ui->releaseOutletCFInfo->setText(fixtureSel_->SelectedNames(releaseOutletCFConfigs_).join(","));
+}
+
+void ICSimpleTeachPage::on_cutFSel_clicked()
+{
+    fixtureSel_->ShowEditor(cutOutletCFConfigs_, true);
+    cutOutletCFConfigs_ = fixtureSel_->GetConfigs();
+    ui->cutFInfo->setText(fixtureSel_->SelectedNames(cutOutletCFConfigs_).join(","));
+}
