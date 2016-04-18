@@ -154,6 +154,7 @@ void ICSimpleTeachPage::showEvent(QShowEvent *e)
     ui->mainArmOutletEn->setChecked(stData_->usedMainArmOutlet);
     ui->subArmEn->setChecked(stData_->usedSubArm);
     ui->cutOutletEn->setChecked(stData_->usedCutOutlet);
+    ui->cutOnTime->SetThisIntToThisText(stData_->cutOnTime);
 
     ui->stdPosX1->SetThisIntToThisText(stData_->stdPos.b.x1);
     ui->stdPosY1->SetThisIntToThisText(stData_->stdPos.b.y1);

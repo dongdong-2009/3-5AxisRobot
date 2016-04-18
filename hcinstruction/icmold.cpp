@@ -397,13 +397,14 @@ bool ICMold::ReadSimpleTeachFile(const QString &fileName)
         simpleTeachData_.releaseProductPosList.append(simpleTeachData_.getProductPos);
         simpleTeachData_.releaseOutletPosList.append(simpleTeachData_.getOutletPos);
 
-        simpleTeachData_.cutOnTime = 0.5;
+        simpleTeachData_.cutOnTime = 50;
         return true;
     }
 
     QString simpleTeachContent = file.readAll();
     qDebug()<<simpleTeachContent;
     file.close();
+    simpleTeachData_.InitFromByteArray(simpleTeachContent);
     return true;
 
 }
@@ -691,4 +692,73 @@ int ICMold::ToHostSeq(int seq) const
 int ICMold::ToHostNum(int seq) const
 {
     return toSentContent_.at(seq).Num();
+}
+
+bool AxisPosData::InitFromByteArray(const QString &text)
+{
+    QStringList lineItems = text.split(",", QString::SkipEmptyParts);
+    return InitFormStringItems(lineItems);
+}
+
+bool AxisPosData::InitFormStringItems(const QList<QString> &items)
+{
+    if(items.size() != AXISPOSDATASIZE) return false;
+    for(int i = 0; i < AXISPOSDATASIZE; ++i)
+    {
+        all[i] = items.at(i).toInt();
+    }
+    return true;
+}
+
+bool ReleasePosData::InitFromByteArray(const QString &text)
+{
+    QStringList lineItems = text.split(",", QString::SkipEmptyParts);
+    if(!pos.InitFormStringItems(lineItems.mid(0, AXISPOSDATASIZE))) return false;
+    if((lineItems.size() - AXISPOSDATASIZE) % 2 != 0) return false;
+    for(int i = AXISPOSDATASIZE; i < lineItems.size(); i +=2)
+    {
+        fixtureConfis.append(qMakePair<int, bool>(lineItems.at(i).toInt(),
+                                                  lineItems.at(i + 1).toInt()));
+    }
+    return true;
+}
+
+bool SimpleTeachData::InitFromByteArray(const QString &text)
+{
+    QStringList contentList = text.split("\n");
+    if(contentList.size() != 9) return false;
+    QStringList lineItems = contentList.at(0).split(",", QString::SkipEmptyParts);
+    if(lineItems.size() != 4) return false;
+    usedMainArm = lineItems.at(0).toInt();
+    usedMainArmOutlet = lineItems.at(1).toInt();
+    usedSubArm = lineItems.at(2).toInt();
+    usedCutOutlet = lineItems.at(3).toInt();
+
+    if(!stdPos.InitFromByteArray(contentList.at(1))) return false;
+    if(!getProductPos.InitFromByteArray(contentList.at(2))) return false;
+    if(!getOutletPos.InitFromByteArray(contentList.at(3))) return false;
+    if(!posBH.InitFromByteArray(contentList.at(4))) return false;
+    QStringList releasePos = contentList.at(5).split("|", QString::SkipEmptyParts);
+    for(int i = 0; i < releasePos.size(); ++i)
+    {
+        ReleasePosData data;
+        if(!data.InitFromByteArray(releasePos.at(i))) return false;
+        releaseProductPosList.append(data);
+    }
+    releasePos = contentList.at(6).split("|", QString::SkipEmptyParts);
+    for(int i = 0; i < releasePos.size(); ++i)
+    {
+        ReleasePosData data;
+        if(!data.InitFromByteArray(releasePos.at(i))) return false;
+        releaseOutletPosList.append(data);
+    }
+    releasePos = contentList.at(7).split("|", QString::SkipEmptyParts);
+    for(int i = 0; i < releasePos.size(); ++i)
+    {
+        ReleasePosData data;
+        if(!data.InitFromByteArray(releasePos.at(i))) return false;
+        cutOutletPosList.append(data);
+    }
+    cutOnTime = contentList.at(8).toInt();
+    return true;
 }

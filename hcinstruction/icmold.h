@@ -12,6 +12,7 @@ typedef QList<QPair<int , bool> > FixtureConfigs;
 
 
 union AxisPosData{
+#define AXISPOSDATASIZE  15
     AxisPosData()
     {
         b.x1 = 0;
@@ -49,17 +50,20 @@ union AxisPosData{
         quint32 y2D;
 
     }b;
-    quint32 all[15];
+    quint32 all[AXISPOSDATASIZE];
     QByteArray toByteArray() const
     {
         QByteArray ret;
-        for(int i = 0; i < 15; ++i)
+        for(int i = 0; i < AXISPOSDATASIZE; ++i)
         {
             ret += (QByteArray::number(all[i]) + ",");
         }
         ret.chop(1);
         return ret;
     }
+
+    bool InitFromByteArray(const QString& text);
+    bool InitFormStringItems(const QList<QString>& items);
 };
 
 struct ReleasePosData{
@@ -74,6 +78,7 @@ struct ReleasePosData{
         }
         return ret;
     }
+    bool InitFromByteArray(const QString& text);
 };
 
 struct SimpleTeachData
@@ -102,7 +107,7 @@ struct SimpleTeachData
         ret += posBH.toByteArray() + "\n";
         for(int i = 0; i < releaseProductPosList.size(); ++i)
         {
-            ret += releaseProductPosList.at(i).toByteArray() + ",";
+            ret += releaseProductPosList.at(i).toByteArray() + " |";
         }
         if(!releaseProductPosList.isEmpty())
             ret.chop(1);
@@ -110,7 +115,7 @@ struct SimpleTeachData
 
         for(int i = 0; i < releaseOutletPosList.size(); ++i)
         {
-            ret += releaseOutletPosList.at(i).toByteArray() + ",";
+            ret += releaseOutletPosList.at(i).toByteArray() + "|";
         }
         if(!releaseOutletPosList.isEmpty())
             ret.chop(1);
@@ -118,13 +123,15 @@ struct SimpleTeachData
 
         for(int i = 0; i < cutOutletPosList.size(); ++i)
         {
-            ret += cutOutletPosList.at(i).toByteArray() + ",";
+            ret += cutOutletPosList.at(i).toByteArray() + "|";
         }
         if(!cutOutletPosList.isEmpty())
             ret.chop(1);
         ret += "\n";
+        ret += QByteArray::number(cutOnTime);
         return ret;
     }
+    bool InitFromByteArray(const QString& text);
 };
 
 class ICMoldItem
