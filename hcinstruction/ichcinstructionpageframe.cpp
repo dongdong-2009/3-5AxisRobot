@@ -84,6 +84,7 @@ ICHCInstructionPageFrame::ICHCInstructionPageFrame(QWidget *parent) :
 #ifdef Compatible6410
     ui->tryButton->hide();
 #endif
+    ui->stackedWidget->setCurrentIndex(1);
 //    ui->flagsButton->hide();
 
 //    ui->conditionsToolButton->hide();

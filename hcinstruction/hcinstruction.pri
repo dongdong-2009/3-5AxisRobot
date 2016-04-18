@@ -3,8 +3,6 @@ INCLUDEPATH += $$PWD
 HEADERS += \
     $$PWD/ichcinstructionpageframe.h \
     $$PWD/actionsettingframe.h \
-    #$$PWD/ichcparametersframe.h \
-    #$$PWD/routesettingdialog.h \
     $$PWD/ichcinjectionpage.h \
     $$PWD/ichcfixturepage.h \
     $$PWD/ichcconditionpage.h \
@@ -12,8 +10,6 @@ HEADERS += \
     $$PWD/icmacrosubroutine.h \
     $$PWD/icinstructparam.h \
     $$PWD/ichcprogrammonitorframe.h \
-    #$$PWD/ichceditordialog.h \
-    #$$PWD/icmacroparameditorframe.h \
     $$PWD/icautorunrevise.h \
     $$PWD/icinstructioneditorbase.h \
     $$PWD/icflagseditor.h \
@@ -28,15 +24,14 @@ HEADERS += \
     $$PWD/icprogramguidepage.h \
     $$PWD/ichcotherpage.h \
     $$PWD/iccommenteditor.h \
-    hcinstruction/iccurveeditor.h \
-    hcinstruction/iccutmoduleactionpage.h \
-    hcinstruction/icguidefixtureeditor.h
+    $$PWD/iccurveeditor.h \
+    $$PWD/iccutmoduleactionpage.h \
+    $$PWD/icguidefixtureeditor.h \
+    $$PWD/icsimpleteachpage.h
 
 SOURCES += \
     $$PWD/ichcinstructionpageframe.cpp \
     $$PWD/actionsettingframe.cpp \
-    #$$PWD/ichcparametersframe.cpp \
-    #$$PWD/routesettingdialog.cpp \
     $$PWD/ichcinjectionpage.cpp \
     $$PWD/ichcfixturepage.cpp \
     $$PWD/ichcconditionpage.cpp \
@@ -44,8 +39,6 @@ SOURCES += \
     $$PWD/icmacrosubroutine.cpp \
     $$PWD/icinstructparam.cpp \
     $$PWD/ichcprogrammonitorframe.cpp \
-    #$$PWD/ichceditordialog.cpp \
-    #$$PWD/icmacroparameditorframe.cpp \
     $$PWD/icautorunrevise.cpp \
     $$PWD/icinstructioneditorbase.cpp \
     $$PWD/icflagseditor.cpp \
@@ -60,9 +53,10 @@ SOURCES += \
     $$PWD/icprogramguidepage.cpp \
     $$PWD/ichcotherpage.cpp \
     $$PWD/iccommenteditor.cpp \
-    hcinstruction/iccurveeditor.cpp \
-    hcinstruction/iccutmoduleactionpage.cpp \
-    hcinstruction/icguidefixtureeditor.cpp
+    $$PWD/icsimpleteachpage.cpp \
+    $$PWD/iccurveeditor.cpp \
+    $$PWD/iccutmoduleactionpage.cpp \
+    $$PWD/icguidefixtureeditor.cpp
 
 FORMS += \
     $$PWD/icautorunrevise.ui \
@@ -74,9 +68,10 @@ FORMS += \
     $$PWD/ichcotherpage.ui \
     $$PWD/iccommenteditor.ui \
     $$PWD/icinstructmodifydialog.ui \
-    hcinstruction/iccurveeditor.ui \
-    hcinstruction/iccutmoduleactionpage.ui \
-    hcinstruction/icguidefixtureeditor.ui
+    $$PWD/icsimpleteachpage.ui \
+    $$PWD/iccurveeditor.ui \
+    $$PWD/iccutmoduleactionpage.ui \
+    $$PWD/icguidefixtureeditor.ui
 
 
 
@@ -110,3 +105,6 @@ FORMS += $$PWD/ichcinstructionpageframe_5.ui \
     $$PWD/actionsettingframe_5.ui \
     $$PWD/ichcprogrammonitorframe_5.ui
 }
+
+
+
