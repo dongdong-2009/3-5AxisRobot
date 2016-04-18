@@ -118,6 +118,20 @@ private slots:
 
     void on_saveBtn_clicked();
 
+    void on_stdSetIn_clicked();
+
+    void on_getProductPosSetIn_clicked();
+
+    void on_getOutletPosSetIn_clicked();
+
+    void on_posBHorSetIn_clicked();
+
+    void on_releaseProductPosSetIn_clicked();
+
+    void on_releaseOutletPosSetIn_clicked();
+
+    void on_cutPosSetIn_clicked();
+
 private:
     QString PosDataToString(const ReleasePosData& posData, bool noSubArm = false, const QString& dataName = "") const ;
     bool UsedMainArm() const;

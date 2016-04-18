@@ -1,6 +1,7 @@
 #include "icsimpleteachpage.h"
 #include "ui_icsimpleteachpage.h"
 #include "config.h"
+#include "icvirtualhost.h"
 #include <QDebug>
 
 ICSimpleTeachPage::ICSimpleTeachPage(QWidget *parent) :
@@ -873,4 +874,82 @@ void ICSimpleTeachPage::on_saveBtn_clicked()
         stData_->cutOutletPosList[i].pos.b.x2S = tmp.b.x2SpeedEdit->TransThisTextToThisInt();
         stData_->cutOutletPosList[i].pos.b.y2S = tmp.b.y2SpeedEdit->TransThisTextToThisInt();
     }
+    ICMold::CurrentMold()->SaveSimpleTeachFile();
+}
+
+void SetInHelper(ICLineEditWithVirtualNumericKeypad* x1,
+                 ICLineEditWithVirtualNumericKeypad* y1,
+                 ICLineEditWithVirtualNumericKeypad* z,
+                 ICLineEditWithVirtualNumericKeypad* x2,
+                 ICLineEditWithVirtualNumericKeypad* y2)
+{
+    ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
+    x1->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisX1));
+    y1->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisY1));
+    z->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisZ));
+    if(x2 != NULL)
+        x2->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisX2));
+    if(y2 != NULL)
+        y2->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisY2));
+
+
+}
+
+void ICSimpleTeachPage::on_stdSetIn_clicked()
+{
+    SetInHelper(ui->stdPosX1, ui->stdPosY1, ui->stdPosZ, ui->stdPosX2, ui->stdPosY2);
+}
+
+void ICSimpleTeachPage::on_getProductPosSetIn_clicked()
+{
+    SetInHelper(ui->getProductPosX1,
+                ui->getProductPosY1,
+                ui->getProductPosZ,
+                ui->getProductPosX2,
+                ui->getProductPosY2);
+}
+
+void ICSimpleTeachPage::on_getOutletPosSetIn_clicked()
+{
+    SetInHelper(ui->getOutletPosX1,
+                ui->getOutletPosY1,
+                ui->getOutletPosZ,
+                ui->getOutletPosX2,
+                ui->getOutletPosY2);
+}
+
+void ICSimpleTeachPage::on_posBHorSetIn_clicked()
+{
+    SetInHelper(ui->posBHorX1,
+                ui->posBHorY1,
+                ui->posBHorZ,
+                ui->posBHorX2,
+                ui->posBHorY2);
+}
+
+void ICSimpleTeachPage::on_releaseProductPosSetIn_clicked()
+{
+    SetInHelper(ui->releaseProductPosX1,
+                ui->releaseProductPosY1,
+                ui->releaseProductPosZ,
+                ui->releaseProductPosX2,
+                ui->releaseProductPosY2);
+}
+
+void ICSimpleTeachPage::on_releaseOutletPosSetIn_clicked()
+{
+    SetInHelper(ui->releaseOutletPosX1,
+                ui->releaseOutletPosY1,
+                ui->releaseOutletPosZ,
+                ui->releaseOutletPosX2,
+                ui->releaseOutletPosY2);
+}
+
+void ICSimpleTeachPage::on_cutPosSetIn_clicked()
+{
+    SetInHelper(ui->cutOutletPosX1,
+                ui->cutOutletPosY1,
+                ui->cutOutletPosZ,
+                NULL,
+                NULL);
 }
