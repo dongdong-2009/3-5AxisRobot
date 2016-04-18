@@ -464,6 +464,7 @@ public:
     void MoldReSum() {MoldReSum(moldContent_);}
     bool ReadMoldFile(const QString& fileName, bool isLoadParams = true);
     bool ReadMoldParamsFile(const QString& fileName);
+    bool ReadSimpleTeachFile(const QString& fileName);
 
     bool SaveMoldFile(bool isSaveParams = true);
     bool SaveMoldParamsFile();
