@@ -304,8 +304,8 @@ void ICSimpleTeachPage::SetMainArmPosEnabled(bool en)
     ui->getProductPosX1->setVisible(en);
     ui->getProductPosY1->setVisible(en);
 
-    ui->getOutletPosX1->setVisible(en);
-    ui->getOutletPosY1->setVisible(en);
+    ui->getOutletPosX1->setVisible(en && UsedReleaseOutlet());
+    ui->getOutletPosY1->setVisible(en && UsedReleaseOutlet());
 
     ui->posBHorX1->setVisible(en);
     ui->posBHorY1->setVisible(en);
@@ -313,8 +313,8 @@ void ICSimpleTeachPage::SetMainArmPosEnabled(bool en)
     ui->releaseProductPosX1->setVisible(en);
     ui->releaseProductPosY1->setVisible(en);
 
-    ui->releaseOutletPosX1->setVisible(en);
-    ui->releaseOutletPosY1->setVisible(en);
+    ui->releaseOutletPosX1->setVisible(en && UsedReleaseOutlet());
+    ui->releaseOutletPosY1->setVisible(en && UsedReleaseOutlet());
 
     ui->cutOutletPosX1->setVisible(en);
     ui->cutOutletPosY1->setVisible(en);
@@ -323,8 +323,8 @@ void ICSimpleTeachPage::SetMainArmPosEnabled(bool en)
     ui->stdSpeedY1->setVisible(en);
     ui->getProductSpeedX1->setVisible(en);
     ui->getProductSpeedY1->setVisible(en);
-    ui->getOutletSpeedX1->setVisible(en);
-    ui->getOutletSpeedY1->setVisible(en);
+    ui->getOutletSpeedX1->setVisible(en && UsedReleaseOutlet());
+    ui->getOutletSpeedY1->setVisible(en && UsedReleaseOutlet());
     ui->speedBHorX1->setVisible(en);
     ui->speedBHorY1->setVisible(en);
 
@@ -358,8 +358,8 @@ void ICSimpleTeachPage::SetMainArmPosEnabled(bool en)
     for(int i = 0; i < releaseOutletSpeedUI.size(); ++i)
     {
         speedUI = releaseOutletSpeedUI.at(i);
-        speedUI.b.x1SpeedEdit->setVisible(en);
-        speedUI.b.y1SpeedEdit->setVisible(en);
+        speedUI.b.x1SpeedEdit->setVisible(en && UsedReleaseOutlet());
+        speedUI.b.y1SpeedEdit->setVisible(en && UsedReleaseOutlet());
     }
 
     for(int i = 0; i < cutOutletSpeedUI.size(); ++i)
@@ -443,14 +443,14 @@ void ICSimpleTeachPage::SetReleaseOutletEnabled(bool en)
     ui->getOutletFSel->setVisible(en);
     ui->getOutletPosSetIn->setVisible(en);
     ui->getOutletPosX1->setVisible(en);
-    ui->getOutletPosX2->setVisible(en);
     ui->getOutletPosY1->setVisible(en);
-    ui->getOutletPosY2->setVisible(en);
+    ui->getOutletPosX2->setVisible(en && UsedSubArm());
+    ui->getOutletPosY2->setVisible(en && UsedSubArm());
     ui->getOutletPosZ->setVisible(en);
     ui->getOutletSpeedX1->setVisible(en);
-    ui->getOutletSpeedX2->setVisible(en);
     ui->getOutletSpeedY1->setVisible(en);
-    ui->getOutletSpeedY2->setVisible(en);
+    ui->getOutletSpeedX2->setVisible(en && UsedSubArm());
+    ui->getOutletSpeedY2->setVisible(en && UsedSubArm());
     ui->getOutletSpeedZ->setVisible(en);
     ui->label_22->setVisible(en);
 
@@ -459,9 +459,9 @@ void ICSimpleTeachPage::SetReleaseOutletEnabled(bool en)
     ui->releaseOutletCFInfo->setVisible(en);
     ui->releaseOutletFSel->setVisible(en);
     ui->releaseOutletPosX1->setVisible(en);
-    ui->releaseOutletPosX2->setVisible(en);
     ui->releaseOutletPosY1->setVisible(en);
-    ui->releaseOutletPosY2->setVisible(en);
+    ui->releaseOutletPosX2->setVisible(en && UsedSubArm());
+    ui->releaseOutletPosY2->setVisible(en && UsedSubArm());
     ui->releaseOutletPosZ->setVisible(en);
     ui->releaseOutletView->setVisible(en);
     ui->releaseOutletPosSetIn->setVisible(en);
@@ -474,8 +474,8 @@ void ICSimpleTeachPage::SetReleaseOutletEnabled(bool en)
         releaseOutletSpeedUI[i].b.x1SpeedEdit->setVisible(en);
         releaseOutletSpeedUI[i].b.y1SpeedEdit->setVisible(en);
         releaseOutletSpeedUI[i].b.zSpeedEdit->setVisible(en);
-        releaseOutletSpeedUI[i].b.x2SpeedEdit->setVisible(en);
-        releaseOutletSpeedUI[i].b.y2SpeedEdit->setVisible(en);
+        releaseOutletSpeedUI[i].b.x2SpeedEdit->setVisible(en && UsedSubArm());
+        releaseOutletSpeedUI[i].b.y2SpeedEdit->setVisible(en && UsedSubArm());
 
     }
 }
@@ -489,13 +489,13 @@ void ICSimpleTeachPage::SetReleaseProductEnabled(bool en)
     ui->getProductPosX1->setVisible(en);
     ui->getProductPosY1->setVisible(en);
     ui->getProductPosZ->setVisible(en);
-    ui->getProductPosX2->setVisible(en);
-    ui->getProductPosY2->setVisible(en);
+    ui->getProductPosX2->setVisible(en && UsedReleaseOutlet());
+    ui->getProductPosY2->setVisible(en && UsedReleaseOutlet());
     ui->getProductSpeedX1->setVisible(en);
     ui->getProductSpeedY1->setVisible(en);
     ui->getProductSpeedZ->setVisible(en);
-    ui->getProductSpeedX2->setVisible(en);
-    ui->getProductSpeedY2->setVisible(en);
+    ui->getProductSpeedX2->setVisible(en  && UsedReleaseOutlet());
+    ui->getProductSpeedY2->setVisible(en  && UsedReleaseOutlet());
     ui->label->setVisible(en);
 
 
@@ -508,8 +508,8 @@ void ICSimpleTeachPage::SetReleaseProductEnabled(bool en)
     ui->releaseProductPosX1->setVisible(en);
     ui->releaseProductPosY1->setVisible(en);
     ui->releaseProductPosZ->setVisible(en);
-    ui->releaseProductPosX2->setVisible(en);
-    ui->releaseProductPosY2->setVisible(en);
+    ui->releaseProductPosX2->setVisible(en  && UsedReleaseOutlet());
+    ui->releaseProductPosY2->setVisible(en  && UsedReleaseOutlet());
     ui->addProductPos->setVisible(en);
     ui->modifyProductPos->setVisible(en);
     ui->deleteProductPos->setVisible(en);
@@ -519,8 +519,8 @@ void ICSimpleTeachPage::SetReleaseProductEnabled(bool en)
         releaseProductSpeedUI[i].b.x1SpeedEdit->setVisible(en);
         releaseProductSpeedUI[i].b.y1SpeedEdit->setVisible(en);
         releaseProductSpeedUI[i].b.zSpeedEdit->setVisible(en);
-        releaseProductSpeedUI[i].b.x2SpeedEdit->setVisible(en);
-        releaseProductSpeedUI[i].b.y2SpeedEdit->setVisible(en);
+        releaseProductSpeedUI[i].b.x2SpeedEdit->setVisible(en  && UsedReleaseOutlet());
+        releaseProductSpeedUI[i].b.y2SpeedEdit->setVisible(en  && UsedReleaseOutlet());
 
     }
 }
@@ -578,7 +578,7 @@ ICLineEditWithVirtualNumericKeypad* CreateSpeedEdit(int speed, const QValidator*
     tmp->SetDecimalPlaces(0);
     tmp->setValidator(v);
     tmp->SetThisIntToThisText(speed);
-    tmp->setMinimumHeight( 30);
+    tmp->setMinimumHeight(30);
     tmp->setMaximumHeight(30);
 
     return tmp;
@@ -785,4 +785,92 @@ void ICSimpleTeachPage::on_cutFSel_clicked()
 void ICSimpleTeachPage::on_cutOutletEn_toggled(bool checked)
 {
     SetCutOutletEnabled(checked);
+}
+
+
+void ICSimpleTeachPage::on_saveBtn_clicked()
+{
+    stData_->cutOnTime = ui->cutOnTime->TransThisTextToThisInt();
+
+    stData_->usedMainArm = ui->mainArmEn->isChecked();
+    stData_->usedMainArmOutlet = ui->mainArmOutletEn->isChecked();
+    stData_->usedSubArm = ui->subArmEn->isChecked();
+    stData_->usedCutOutlet = ui->cutOutletEn->isChecked();
+
+    stData_->stdPos.b.x1 = ui->stdPosX1->TransThisTextToThisInt();
+    stData_->stdPos.b.y1 = ui->stdPosY1->TransThisTextToThisInt();
+    stData_->stdPos.b.z = ui->stdPosZ->TransThisTextToThisInt();
+    stData_->stdPos.b.x2 = ui->stdPosX2->TransThisTextToThisInt();
+    stData_->stdPos.b.y2 = ui->stdPosY2->TransThisTextToThisInt();
+    stData_->stdPos.b.x1S = ui->stdSpeedX1->TransThisTextToThisInt();
+    stData_->stdPos.b.y1S = ui->stdSpeedY1->TransThisTextToThisInt();
+    stData_->stdPos.b.zS = ui->stdSpeedZ->TransThisTextToThisInt();
+    stData_->stdPos.b.x2S = ui->stdSpeedX2->TransThisTextToThisInt();
+    stData_->stdPos.b.y2S = ui->stdSpeedY2->TransThisTextToThisInt();
+
+    stData_->getProductPos.pos.b.x1 = ui->getProductPosX1->TransThisTextToThisInt();
+    stData_->getProductPos.pos.b.y1 = ui->getProductPosY1->TransThisTextToThisInt();
+    stData_->getProductPos.pos.b.z = ui->getProductPosZ->TransThisTextToThisInt();
+    stData_->getProductPos.pos.b.x2 = ui->getProductPosX2->TransThisTextToThisInt();
+    stData_->getProductPos.pos.b.y2 = ui->getProductPosY2->TransThisTextToThisInt();
+    stData_->getProductPos.pos.b.x1S = ui->getProductSpeedX1->TransThisTextToThisInt();
+    stData_->getProductPos.pos.b.y1S = ui->getProductSpeedY1->TransThisTextToThisInt();
+    stData_->getProductPos.pos.b.zS = ui->getProductSpeedZ->TransThisTextToThisInt();
+    stData_->getProductPos.pos.b.x2S = ui->getProductSpeedX2->TransThisTextToThisInt();
+    stData_->getProductPos.pos.b.y2S = ui->getProductSpeedY2->TransThisTextToThisInt();
+
+    stData_->getOutletPos.pos.b.x1 = ui->getOutletPosX1->TransThisTextToThisInt();
+    stData_->getOutletPos.pos.b.y1 = ui->getOutletPosY1->TransThisTextToThisInt();
+    stData_->getOutletPos.pos.b.z = ui->getOutletPosZ->TransThisTextToThisInt();
+    stData_->getOutletPos.pos.b.x2 = ui->getOutletPosX2->TransThisTextToThisInt();
+    stData_->getOutletPos.pos.b.y2 = ui->getOutletPosY2->TransThisTextToThisInt();
+    stData_->getOutletPos.pos.b.x1S = ui->getOutletSpeedX1->TransThisTextToThisInt();
+    stData_->getOutletPos.pos.b.y1S = ui->getOutletSpeedY1->TransThisTextToThisInt();
+    stData_->getOutletPos.pos.b.zS = ui->getOutletSpeedZ->TransThisTextToThisInt();
+    stData_->getOutletPos.pos.b.x2S = ui->getOutletSpeedX2->TransThisTextToThisInt();
+    stData_->getOutletPos.pos.b.y2S = ui->getOutletSpeedY2->TransThisTextToThisInt();
+
+    stData_->posBH.b.x1 = ui->posBHorX1->TransThisTextToThisInt();
+    stData_->posBH.b.y1 = ui->posBHorY1->TransThisTextToThisInt();
+    stData_->posBH.b.z = ui->posBHorZ->TransThisTextToThisInt();
+    stData_->posBH.b.x2 = ui->posBHorX2->TransThisTextToThisInt();
+    stData_->posBH.b.y2 = ui->posBHorY2->TransThisTextToThisInt();
+    stData_->posBH.b.x1S = ui->speedBHorX1->TransThisTextToThisInt();
+    stData_->posBH.b.y1S = ui->speedBHorY1->TransThisTextToThisInt();
+    stData_->posBH.b.zS = ui->speedBHorZ->TransThisTextToThisInt();
+    stData_->posBH.b.x2S = ui->speedBHorX2->TransThisTextToThisInt();
+    stData_->posBH.b.y2S = ui->speedBHorY2->TransThisTextToThisInt();
+
+    PosSpeedUIWidgets tmp;
+    for(int i = 0; i < releaseProductSpeedUI.size(); ++i)
+    {
+        tmp = releaseProductSpeedUI.at(i);
+        stData_->releaseProductPosList[i].pos.b.x1S = tmp.b.x1SpeedEdit->TransThisTextToThisInt();
+        stData_->releaseProductPosList[i].pos.b.y1S = tmp.b.y1SpeedEdit->TransThisTextToThisInt();
+        stData_->releaseProductPosList[i].pos.b.zS = tmp.b.zSpeedEdit->TransThisTextToThisInt();
+        stData_->releaseProductPosList[i].pos.b.x2S = tmp.b.x2SpeedEdit->TransThisTextToThisInt();
+        stData_->releaseProductPosList[i].pos.b.y2S = tmp.b.y2SpeedEdit->TransThisTextToThisInt();
+
+    }
+
+    for(int i = 0; i < releaseOutletSpeedUI.size(); ++i)
+    {
+        tmp = releaseOutletSpeedUI.at(i);
+        stData_->releaseOutletPosList[i].pos.b.x1S = tmp.b.x1SpeedEdit->TransThisTextToThisInt();
+        stData_->releaseOutletPosList[i].pos.b.y1S = tmp.b.y1SpeedEdit->TransThisTextToThisInt();
+        stData_->releaseOutletPosList[i].pos.b.zS = tmp.b.zSpeedEdit->TransThisTextToThisInt();
+        stData_->releaseOutletPosList[i].pos.b.x2S = tmp.b.x2SpeedEdit->TransThisTextToThisInt();
+        stData_->releaseOutletPosList[i].pos.b.y2S = tmp.b.y2SpeedEdit->TransThisTextToThisInt();
+
+    }
+
+    for(int i = 0; i < cutOutletSpeedUI.size(); ++i)
+    {
+        tmp = cutOutletSpeedUI.at(i);
+        stData_->cutOutletPosList[i].pos.b.x1S = tmp.b.x1SpeedEdit->TransThisTextToThisInt();
+        stData_->cutOutletPosList[i].pos.b.y1S = tmp.b.y1SpeedEdit->TransThisTextToThisInt();
+        stData_->cutOutletPosList[i].pos.b.zS = tmp.b.zSpeedEdit->TransThisTextToThisInt();
+        stData_->cutOutletPosList[i].pos.b.x2S = tmp.b.x2SpeedEdit->TransThisTextToThisInt();
+        stData_->cutOutletPosList[i].pos.b.y2S = tmp.b.y2SpeedEdit->TransThisTextToThisInt();
+    }
 }

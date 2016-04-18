@@ -212,5 +212,7 @@ QStringList ICGuideFixtureEditor::SelectedNames(const QList<QPair<int, bool> > &
         else
             ret.append(settingButtons_.at(fixturesConfigs.at(i).first)->text());
     }
+    if(ret.isEmpty())
+        ret.append(tr("None"));
     return ret;
 }

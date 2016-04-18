@@ -1686,6 +1686,12 @@
              <height>30</height>
             </size>
            </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
           </widget>
          </item>
          <item row="1" column="5" colspan="2">
@@ -1731,6 +1737,12 @@
              <height>30</height>
             </size>
            </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
           </widget>
          </item>
          <item row="3" column="2">
@@ -1738,6 +1750,12 @@
            <property name="minimumSize">
             <size>
              <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
              <height>30</height>
             </size>
            </property>
@@ -1751,6 +1769,12 @@
              <height>30</height>
             </size>
            </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
           </widget>
          </item>
          <item row="5" column="2">
@@ -1758,6 +1782,12 @@
            <property name="minimumSize">
             <size>
              <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
              <height>30</height>
             </size>
            </property>
@@ -1771,6 +1801,12 @@
              <height>30</height>
             </size>
            </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
           </widget>
          </item>
          <item row="3" column="3">
@@ -1778,6 +1814,12 @@
            <property name="minimumSize">
             <size>
              <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
              <height>30</height>
             </size>
            </property>
@@ -1791,6 +1833,12 @@
              <height>30</height>
             </size>
            </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
           </widget>
          </item>
          <item row="4" column="4">
@@ -1798,6 +1846,12 @@
            <property name="minimumSize">
             <size>
              <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
              <height>30</height>
             </size>
            </property>
@@ -1811,6 +1865,12 @@
              <height>30</height>
             </size>
            </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
           </widget>
          </item>
          <item row="5" column="4">
@@ -1818,6 +1878,12 @@
            <property name="minimumSize">
             <size>
              <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
              <height>30</height>
             </size>
            </property>
@@ -1831,6 +1897,12 @@
              <height>30</height>
             </size>
            </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
           </widget>
          </item>
          <item row="4" column="5" colspan="2">
@@ -1838,6 +1910,12 @@
            <property name="minimumSize">
             <size>
              <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
              <height>30</height>
             </size>
            </property>
@@ -1851,6 +1929,12 @@
              <height>30</height>
             </size>
            </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
           </widget>
          </item>
          <item row="2" column="2">
@@ -1858,6 +1942,12 @@
            <property name="minimumSize">
             <size>
              <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
              <height>30</height>
             </size>
            </property>
@@ -1871,6 +1961,12 @@
              <height>30</height>
             </size>
            </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
           </widget>
          </item>
          <item row="2" column="5" colspan="2">
@@ -1878,6 +1974,12 @@
            <property name="minimumSize">
             <size>
              <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
              <height>30</height>
             </size>
            </property>
@@ -1948,6 +2050,12 @@
              <height>30</height>
             </size>
            </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
           </widget>
          </item>
          <item row="4" column="1">
@@ -1955,6 +2063,12 @@
            <property name="minimumSize">
             <size>
              <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
              <height>30</height>
             </size>
            </property>
@@ -1981,6 +2095,12 @@
            <property name="minimumSize">
             <size>
              <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
              <height>30</height>
             </size>
            </property>
@@ -2054,12 +2174,12 @@
     </attribute>
    </widget>
   </widget>
-  <widget class="QPushButton" name="pushButton_5">
+  <widget class="QPushButton" name="saveBtn">
    <property name="geometry">
     <rect>
-     <x>698</x>
+     <x>688</x>
      <y>7</y>
-     <width>91</width>
+     <width>101</width>
      <height>41</height>
     </rect>
    </property>

@@ -116,6 +116,8 @@ private slots:
 
     void on_cutOutletEn_toggled(bool checked);
 
+    void on_saveBtn_clicked();
+
 private:
     QString PosDataToString(const ReleasePosData& posData, bool noSubArm = false, const QString& dataName = "") const ;
     bool UsedMainArm() const;
