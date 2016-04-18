@@ -264,6 +264,11 @@ bool ICMold::ReadMoldFile(const QString &fileName, bool isLoadParams)
         moldContent_ = tempmoldContent;
         moldName_ = fileName;
     }
+    QString simpleTeachFileName = fileName;
+    simpleTeachFileName.chop(3);
+    simpleTeachFileName += "st";
+    ReadSimpleTeachFile(simpleTeachFileName);
+
     Compile();
     return ret;
 }
@@ -315,6 +320,94 @@ bool ICMold::ReadMoldParamsFile(const QString &fileName)
     return true;
 }
 
+bool ICMold::ReadSimpleTeachFile(const QString &fileName)
+{
+    QFile file(fileName);
+    simpleTeachFileName_ = fileName;
+    if(!file.open(QFile::ReadOnly | QFile::Text))
+    {
+        simpleTeachData_.usedMainArm = true;
+        simpleTeachData_.usedMainArmOutlet = false;
+        simpleTeachData_.usedSubArm = false;
+        simpleTeachData_.usedCutOutlet = false;
+        simpleTeachData_.stdPos.b.x1 = 0;
+        simpleTeachData_.stdPos.b.x1D = 0;
+        simpleTeachData_.stdPos.b.x1S = 80;
+        simpleTeachData_.stdPos.b.y1 = 0;
+        simpleTeachData_.stdPos.b.y1D = 0;
+        simpleTeachData_.stdPos.b.y1S = 80;
+        simpleTeachData_.stdPos.b.z = 0;
+        simpleTeachData_.stdPos.b.zD = 0;
+        simpleTeachData_.stdPos.b.zS = 80;
+        simpleTeachData_.stdPos.b.x2 = 0;
+        simpleTeachData_.stdPos.b.x2D = 0;
+        simpleTeachData_.stdPos.b.x2S = 80;
+        simpleTeachData_.stdPos.b.y2 = 0;
+        simpleTeachData_.stdPos.b.y2D = 0;
+        simpleTeachData_.stdPos.b.y2S = 80;
+
+        simpleTeachData_.getProductPos.pos.b.x1 = 0;
+        simpleTeachData_.getProductPos.pos.b.x1D = 0;
+        simpleTeachData_.getProductPos.pos.b.x1S = 80;
+        simpleTeachData_.getProductPos.pos.b.y1 = 0;
+        simpleTeachData_.getProductPos.pos.b.y1D = 0;
+        simpleTeachData_.getProductPos.pos.b.y1S = 80;
+        simpleTeachData_.getProductPos.pos.b.z = 0;
+        simpleTeachData_.getProductPos.pos.b.zD = 0;
+        simpleTeachData_.getProductPos.pos.b.zS = 80;
+        simpleTeachData_.getProductPos.pos.b.x2 = 0;
+        simpleTeachData_.getProductPos.pos.b.x2D = 0;
+        simpleTeachData_.getProductPos.pos.b.x2S = 80;
+        simpleTeachData_.getProductPos.pos.b.y2 = 0;
+        simpleTeachData_.getProductPos.pos.b.y2D = 0;
+        simpleTeachData_.getProductPos.pos.b.y2S = 80;
+
+        simpleTeachData_.getOutletPos.pos.b.x1 = 0;
+        simpleTeachData_.getOutletPos.pos.b.x1D = 0;
+        simpleTeachData_.getOutletPos.pos.b.x1S = 80;
+        simpleTeachData_.getOutletPos.pos.b.y1 = 0;
+        simpleTeachData_.getOutletPos.pos.b.y1D = 0;
+        simpleTeachData_.getOutletPos.pos.b.y1S = 80;
+        simpleTeachData_.getOutletPos.pos.b.z = 0;
+        simpleTeachData_.getOutletPos.pos.b.zD = 0;
+        simpleTeachData_.getOutletPos.pos.b.zS = 80;
+        simpleTeachData_.getOutletPos.pos.b.x2 = 0;
+        simpleTeachData_.getOutletPos.pos.b.x2D = 0;
+        simpleTeachData_.getOutletPos.pos.b.x2S = 80;
+        simpleTeachData_.getOutletPos.pos.b.y2 = 0;
+        simpleTeachData_.getOutletPos.pos.b.y2D = 0;
+        simpleTeachData_.getOutletPos.pos.b.y2S = 80;
+
+        simpleTeachData_.posBH.b.x1 = 0;
+        simpleTeachData_.posBH.b.x1D = 0;
+        simpleTeachData_.posBH.b.x1S = 80;
+        simpleTeachData_.posBH.b.y1 = 0;
+        simpleTeachData_.posBH.b.y1D = 0;
+        simpleTeachData_.posBH.b.y1S = 80;
+        simpleTeachData_.posBH.b.z = 0;
+        simpleTeachData_.posBH.b.zD = 0;
+        simpleTeachData_.posBH.b.zS = 80;
+        simpleTeachData_.posBH.b.x2 = 0;
+        simpleTeachData_.posBH.b.x2D = 0;
+        simpleTeachData_.posBH.b.x2S = 80;
+        simpleTeachData_.posBH.b.y2 = 0;
+        simpleTeachData_.posBH.b.y2D = 0;
+        simpleTeachData_.posBH.b.y2S = 80;
+
+        simpleTeachData_.releaseProductPosList.append(simpleTeachData_.getProductPos);
+        simpleTeachData_.releaseOutletPosList.append(simpleTeachData_.getOutletPos);
+
+        simpleTeachData_.cutOnTime = 0.5;
+        return true;
+    }
+
+    QString simpleTeachContent = file.readAll();
+    qDebug()<<simpleTeachContent;
+    file.close();
+    return true;
+
+}
+
 bool ICMold::SaveMoldFile(bool isSaveParams)
 {
     bool ret = false;
@@ -332,23 +425,6 @@ bool ICMold::SaveMoldFile(bool isSaveParams)
     }
     ICFile file(moldName_);
     ret = file.ICWrite(toWrite);
-//    QFile file(moldName_ + ".bak");
-//    if(!file.open(QFile::Write | QFile::Text))
-//    {
-//        return false;
-//    }
-////    if(file.readAll() != toWrite)
-////    {
-//    //        QFile::copy(moldName_, moldName_ + "~");
-////    file.resize(0);
-//    file.write(toWrite);
-//    file.close();
-//    //    QDir dir(file.parent())
-//    //    system(QString("rm %1~").arg(moldName_).toAscii());
-//    //        QFile::remove(moldName_ + "~");
-//    QFile::copy(moldName_ + ".bak", moldName_);
-//    ret = true;
-////    }
     if(isSaveParams)
     {
         SaveMoldParamsFile();
@@ -370,23 +446,14 @@ bool ICMold::SaveMoldParamsFile()
     }
     ICFile file(moldParamName_);
     ret = file.ICWrite(toWrite);
-//    QFile file(moldParamName_ + ".bak");
-//    if(!file.open(QFile::ReadWrite | QFile::Text))
-//    {
-//        return false;
-//    }
-////    if(file.readAll() != toWrite)
-////    {
-////    QFile::copy(moldParamName_, moldParamName_ + "~");
-////    file.resize(0);
-//    file.write(toWrite);
-//    file.close();
-//    //    system(QString("rm %1~").arg(moldParamName_).toAscii());
-////    QFile::remove(moldParamName_ + "~");
-//    QFile::copy(moldParamName_ + ".bak", moldParamName_);
-//    ret = true;
-////    }
     return ret;
+}
+
+bool ICMold::SaveSimpleTeachFile()
+{
+     QByteArray toWrite = simpleTeachData_.toByteArray();
+     ICFile file(simpleTeachFileName_);
+     return file.ICWrite(toWrite);
 }
 
 uint ICMold::SyncAct() const

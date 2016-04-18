@@ -8,6 +8,125 @@
 #include <stdint.h>
 #include <QDebug>
 
+typedef QList<QPair<int , bool> > FixtureConfigs;
+
+
+union AxisPosData{
+    AxisPosData()
+    {
+        b.x1 = 0;
+        b.x1S = 80;
+        b.x1D = 0;
+        b.y1 = 0;
+        b.y1S = 80;
+        b.y1D = 0;
+        b.z = 0;
+        b.zS = 80;
+        b.zD = 0;
+        b.x2 = 0;
+        b.x2S = 80;
+        b.x2D = 0;
+        b.y2 = 0;
+        b.y2S = 80;
+        b.y2D = 0;
+    }
+
+    struct{
+        quint32 x1;
+        quint32 x1S;
+        quint32 x1D;
+        quint32 y1;
+        quint32 y1S;
+        quint32 y1D;
+        quint32 z;
+        quint32 zS;
+        quint32 zD;
+        quint32 x2;
+        quint32 x2S;
+        quint32 x2D;
+        quint32 y2;
+        quint32 y2S;
+        quint32 y2D;
+
+    }b;
+    quint32 all[15];
+    QByteArray toByteArray() const
+    {
+        QByteArray ret;
+        for(int i = 0; i < 15; ++i)
+        {
+            ret += (QByteArray::number(all[i]) + ",");
+        }
+        ret.chop(1);
+        return ret;
+    }
+};
+
+struct ReleasePosData{
+    AxisPosData pos;
+    FixtureConfigs fixtureConfis;
+    QByteArray toByteArray() const
+    {
+        QByteArray ret = pos.toByteArray();
+        for(int i = 0; i < fixtureConfis.size(); ++i)
+        {
+            ret += "," + QByteArray::number(fixtureConfis.at(i).first) + "," + QByteArray::number(fixtureConfis.at(i).second);
+        }
+        return ret;
+    }
+};
+
+struct SimpleTeachData
+{
+    bool usedMainArm;
+    bool usedMainArmOutlet;
+    bool usedSubArm;
+    bool usedCutOutlet;
+    AxisPosData stdPos;
+    ReleasePosData getProductPos;
+    ReleasePosData getOutletPos;
+    AxisPosData posBH;
+    QList<ReleasePosData> releaseProductPosList;
+    QList<ReleasePosData> releaseOutletPosList;
+    QList<ReleasePosData> cutOutletPosList;
+    quint32 cutOnTime;
+    QByteArray toByteArray() const
+    {
+        QByteArray ret = QByteArray::number(usedMainArm) + "," +
+                QByteArray::number(usedMainArmOutlet) + "," +
+                QByteArray::number(usedSubArm) + "," +
+                QByteArray::number(usedCutOutlet) + "\n";
+        ret +=stdPos.toByteArray() + "\n";
+        ret += getProductPos.toByteArray() + "\n";
+        ret += getOutletPos.toByteArray() + "\n";
+        ret += posBH.toByteArray() + "\n";
+        for(int i = 0; i < releaseProductPosList.size(); ++i)
+        {
+            ret += releaseProductPosList.at(i).toByteArray() + ",";
+        }
+        if(!releaseProductPosList.isEmpty())
+            ret.chop(1);
+        ret += "\n";
+
+        for(int i = 0; i < releaseOutletPosList.size(); ++i)
+        {
+            ret += releaseOutletPosList.at(i).toByteArray() + ",";
+        }
+        if(!releaseOutletPosList.isEmpty())
+            ret.chop(1);
+        ret += "\n";
+
+        for(int i = 0; i < cutOutletPosList.size(); ++i)
+        {
+            ret += cutOutletPosList.at(i).toByteArray() + ",";
+        }
+        if(!cutOutletPosList.isEmpty())
+            ret.chop(1);
+        ret += "\n";
+        return ret;
+    }
+};
+
 class ICMoldItem
 {
 public:
@@ -468,6 +587,7 @@ public:
 
     bool SaveMoldFile(bool isSaveParams = true);
     bool SaveMoldParamsFile();
+    bool SaveSimpleTeachFile();
 
     QList<ICMoldItem> MoldContent() const { return moldContent_;}
     void SetMoldContent(const QList<ICMoldItem>& moldContent) { moldContent_ = moldContent;}
@@ -505,6 +625,8 @@ public:
     int ToHostSeq(int seq) const;
     int ToHostNum(int seq) const;
 
+    SimpleTeachData* GetSimpleTeachData() { return &simpleTeachData_;}
+
 signals:
     void MoldPramChanged(int, int);
     void MoldNumberParamChanged();
@@ -516,8 +638,10 @@ private:
     int checkSum_;
     QString moldName_;
     QString moldParamName_;
+    QString simpleTeachFileName_;
     QMap<int, int> stepMap_;
     QList<ICMoldItem> toSentContent_;
+    SimpleTeachData simpleTeachData_;
 //    QList<ACTGROUP> axisActions_;
     static ICMold* currentMold_;
 

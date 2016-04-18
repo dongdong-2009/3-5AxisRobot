@@ -5,18 +5,18 @@
 #include <QVariantList>
 #include <QIntValidator>
 #include "icguidefixtureeditor.h"
+#include "icmold.h"
 
 class QLabel;
 class QPushButton;
 class ICLineEditWithVirtualNumericKeypad;
 class QGridLayout;
 
-typedef QList<QPair<int , bool> > FixtureConfigs;
 
-struct PosData{
-    QVariantList pos;
-    FixtureConfigs fixtureConfis;
-};
+//struct PosData{
+//    QVariantList pos;
+//    FixtureConfigs fixtureConfis;
+//};
 
 namespace Ui {
     class ICSimpleTeachPage;
@@ -79,6 +79,9 @@ private slots:
 
     void SetMainArmPosEnabled(bool en);
     void SetSubArmPosEnabled(bool en);
+    void SetReleaseOutletEnabled(bool en);
+    void SetReleaseProductEnabled(bool en);
+    void SetCutOutletEnabled(bool en);
 
     void on_addProductPos_clicked();
 
@@ -111,33 +114,33 @@ private slots:
 
     void on_cutFSel_clicked();
 
+    void on_cutOutletEn_toggled(bool checked);
+
 private:
-    QString PosDataToString(const PosData& posData, bool noSubArm = false, const QString& dataName = "") const ;
+    QString PosDataToString(const ReleasePosData& posData, bool noSubArm = false, const QString& dataName = "") const ;
     bool UsedMainArm() const;
     bool UsedSubArm() const;
+    bool UsedReleaseOutlet() const;
 
-    void AddPosHelper(QGridLayout* layout, QList<PosSpeedUIWidgets>& speedUI, const QString& posName);
+    void AddPosHelper(QGridLayout* layout, QList<PosSpeedUIWidgets>& speedUI, const QString& posName, int defaultSpeed = 80);
     void DelPosHelper(int row, QGridLayout* layout, QList<PosSpeedUIWidgets>& speedUI, const QString& posName);
 private:
     Ui::ICSimpleTeachPage *ui;
-    QList<PosData> releasePosModelData;
-    QList<PosData> releaseOutletModelData;
-    QList<PosData> cutOutletModelData;
     QList<PosSpeedUIWidgets> releaseProductSpeedUI;
     QList<PosSpeedUIWidgets> releaseOutletSpeedUI;
     QList<PosSpeedUIWidgets> cutOutletSpeedUI;
     QIntValidator speedValidator_;
+    QIntValidator posValidator_;
+    QIntValidator delayValidator_;
 
     ICGuideFixtureEditor* fixtureSel_;
-    FixtureConfigs getProductFixtureConfigs_;
-    FixtureConfigs getOutletFixtureConfigs_;
+
+
     FixtureConfigs releaseProductCFConfigs_;
     FixtureConfigs releaseOutletCFConfigs_;
     FixtureConfigs cutOutletCFConfigs_;
-//    QList<FixtureConfigs> releaseProductFConfigs_;
-//    QList<FixtureConfigs> releaseOutletFConfigs_;
-//    QList<FixtureConfigs> cutOutletFConfigs_;
-//    QList<QPair<int , bool> > cutFixtureConfigs_;
+
+    SimpleTeachData* stData_;
 
 
 };
