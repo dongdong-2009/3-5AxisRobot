@@ -397,6 +397,18 @@ bool ICMold::ReadSimpleTeachFile(const QString &fileName)
         simpleTeachData_.releaseProductPosList.append(simpleTeachData_.getProductPos);
         simpleTeachData_.releaseOutletPosList.append(simpleTeachData_.getOutletPos);
 
+        simpleTeachData_.releaseProductYUp = 0;
+        simpleTeachData_.releaseProductYUpS = 80;
+        simpleTeachData_.releaseProductYUpD = 0;
+
+        simpleTeachData_.releaseOutletYUp = 0;
+        simpleTeachData_.releaseOutletYUpS = 80;
+        simpleTeachData_.releaseOutletYUpD = 0;
+
+        simpleTeachData_.cutOutletYUp = 0;
+        simpleTeachData_.cutOutletYUpS = 80;
+        simpleTeachData_.cutOutletYUpD = 0;
+
         simpleTeachData_.cutOnTime = 50;
         return true;
     }
@@ -714,8 +726,9 @@ bool ReleasePosData::InitFromByteArray(const QString &text)
 {
     QStringList lineItems = text.split(",", QString::SkipEmptyParts);
     if(!pos.InitFormStringItems(lineItems.mid(0, AXISPOSDATASIZE))) return false;
-    if((lineItems.size() - AXISPOSDATASIZE) % 2 != 0) return false;
-    for(int i = AXISPOSDATASIZE; i < lineItems.size(); i +=2)
+    int fixtureCount = lineItems.size();
+    if((fixtureCount - AXISPOSDATASIZE) % 2 != 0) return false;
+    for(int i = AXISPOSDATASIZE; i < fixtureCount; i +=2)
     {
         fixtureConfis.append(qMakePair<int, bool>(lineItems.at(i).toInt(),
                                                   lineItems.at(i + 1).toInt()));
@@ -759,6 +772,242 @@ bool SimpleTeachData::InitFromByteArray(const QString &text)
         if(!data.InitFromByteArray(releasePos.at(i))) return false;
         cutOutletPosList.append(data);
     }
-    cutOnTime = contentList.at(8).toInt();
+    lineItems = contentList.at(8).split(",");
+    if(lineItems.size() != 10) return false;
+    releaseProductYUp = lineItems.at(0).toInt();
+    releaseProductYUpS = lineItems.at(1).toInt();
+    releaseProductYUpD = lineItems.at(2).toInt();
+    releaseOutletYUp = lineItems.at(3).toInt();
+    releaseOutletYUpS = lineItems.at(4).toInt();
+    releaseOutletYUpD = lineItems.at(5).toInt();
+    cutOutletYUp = lineItems.at(6).toInt();
+    cutOutletYUpS = lineItems.at(7).toInt();
+    cutOutletYUpD = lineItems.at(8).toInt();
+    cutOnTime = lineItems.at(9).toInt();
+    return true;
+}
+
+void FillAxisPItem(int action, ICMoldItem& item)
+{
+    item.SetSVal(0);
+    item.SetDVal(0);
+    item.SetAction(action);
+}
+
+
+void FillAxisItem(int action, const AxisPosData& data, ICMoldItem& item)
+{
+    if(action == -1) return;
+    if(action < ICMold::GB)
+    {
+        int dataIndex = (action - 1) * 3;
+        item.SetAction(action);
+        item.SetActualPos(data.all[dataIndex++]);
+        item.SetSVal(data.all[dataIndex++]);
+        item.SetDVal(data.all[dataIndex]);
+    }
+    else
+        FillAxisPItem(action, item);
+}
+
+
+void FillPosItems(const QList<int>& actionSeq,
+                  const AxisPosData& data,
+                  QList<ICMoldItem>& program,
+                  const QList<int>& steps)
+{
+    ICMoldItem item;
+    for(int i = 0; i < actionSeq.size(); ++i)
+    {
+        if(actionSeq.at(i) < 0) continue;
+        item.SetNum(steps.at(i));
+        FillAxisItem(actionSeq.at(i), data, item);
+        program.append(item);
+    }
+}
+
+int getXAction(int type, int pA)
+{
+    if(type == 3)
+        return ICMold::GX;
+    else if(type == 1)
+        return pA;
+    else
+       return -1;
+}
+int getYAction(int type, int pA)
+{
+    if(type == 3)
+        return ICMold::GY;
+    else if(type == 1)
+        return pA;
+    else
+       return -1;
+}
+int getZAction(int type, int pA)
+{
+    if(type == 3)
+        return ICMold::GZ;
+    else if(type == 1)
+        return pA;
+    else
+       return -1;
+}int getX2Action(int type, int pA)
+{
+    if(type == 3)
+        return ICMold::GP;
+    else if(type == 1)
+        return pA;
+    else
+       return -1;
+}int getY2Action(int type, int pA)
+{
+    if(type == 3)
+        return ICMold::GQ;
+    else if(type == 1)
+        return pA;
+    else
+       return -1;
+}
+
+QList<int> fixtureOnAction_(QList<int>()<<ICMold::ACTCLIP1ON<<ICMold::ACTCLIP2ON<<ICMold::ACTCLIP3ON
+                            <<ICMold::ACTCLIP4ON<<ICMold::ACTCLIP5ON<<ICMold::ACTCLIP6ON
+                           <<ICMold::ACT_AUX5<<ICMold::ACT_AUX6<<ICMold::ACT_AUX1
+                          <<ICMold::ACT_AUX2<<ICMold::ACT_AUX3<<ICMold::ACT_AUX4);
+QList<int> fixtureOffAction_(QList<int>()<<ICMold::ACTCLIP1OFF<<ICMold::ACTCLIP2OFF<<ICMold::ACTCLIP3OFF
+                             <<ICMold::ACTCLIP4OFF<<ICMold::ACTCLIP5OFF<<ICMold::ACTCLIP6OFF
+                            <<(ICMold::ACT_AUX5 + 1000)<<(ICMold::ACT_AUX6 + 1000)<<(ICMold::ACT_AUX1 + 1000)
+                           <<(ICMold::ACT_AUX2 + 1000)<<(ICMold::ACT_AUX3 + 1000)<<(ICMold::ACT_AUX4 + 1000));
+
+void FillFixtureItems(const FixtureConfigs& fConfigs, bool isOn,  QList<ICMoldItem>& program, int step)
+{
+    ICMoldItem item;
+    item.SetDVal(10);
+    item.SetNum(step);
+    item.SetIFVal(isOn);
+    item.SetActualMoldCount(0);
+    for(int i = 0; i < fConfigs.size(); ++i)
+    {
+        item.SetClip(fixtureOnAction_.at(fConfigs.at(i).first));
+        program.append(item);
+    }
+}
+
+void FillFixtureCheckItems(const FixtureConfigs& fConfigs, bool isOn,  QList<ICMoldItem>& program, int &step)
+{
+    ICMoldItem item;
+    item.SetDVal(10);
+    item.SetIFVal(isOn);
+    item.SetAction(ICMold::ACT_Cut);
+    for(int i = 0; i < fConfigs.size(); ++i)
+    {
+        if(fConfigs.at(i).second)
+        {
+            item.SetNum(++step);
+            item.SetSVal(fConfigs.at(i).first);
+            program.append(item);
+        }
+    }
+}
+
+bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Type, int y2Type)
+{
+    QList<ICMoldItem> program;
+    ICMoldItem item;
+    int step = 0;
+
+    //std pos
+    QList<int> axisActionList;
+    QList<int> steps;
+    steps<<step<<step<<step<<step<<step;
+    axisActionList<<getXAction(x1Type, ACTMAINBACKWARD)
+                    <<getYAction(y1Type, ACTMAINUP)
+                      <<getZAction(zType, ACTCOMEIN)
+                        <<getX2Action(x2Type, ACTVICEBACKWARD)
+                          <<getY2Action(y2Type, ACTVICEUP);
+    FillPosItems(axisActionList, simpleTeachData_.stdPos, program, steps);
+    item.SetAction(ACTPOSEVERT);
+    item.SetDVal(0);
+    item.SetSVal(0);
+    program.append(item);
+    item.SetNum(++step);
+    item.SetAction(ACT_WaitMoldOpened);
+    item.SetSVal(1);
+    program.append(item);
+    step++;
+
+    //only use mian arm
+    if(simpleTeachData_.usedMainArm && !simpleTeachData_.usedMainArmOutlet && !simpleTeachData_.usedSubArm)
+    {
+        //get product
+        steps.clear();
+        steps<<step<<step + 1;
+        axisActionList.clear();
+        axisActionList
+                <<getZAction(zType, ACTCOMEIN)
+               <<getYAction(y1Type, ACTMAINDOWN);
+        FillPosItems(axisActionList, simpleTeachData_.getProductPos.pos, program, steps);
+        step += 1;
+        item.SetNum(++step);
+        item.SetClip(ACTEJECTON); // Ejector on
+        item.SetDVal(10);
+        program.append(item);
+        // forward
+        FillAxisItem(getXAction(x1Type, ACTMAINFORWARD), simpleTeachData_.getProductPos.pos, item);
+        item.SetNum(++step);
+        program.append(item);
+        // fixture
+        FillFixtureItems(simpleTeachData_.getProductPos.fixtureConfis, true, program, ++step);
+        // backward
+        FillAxisItem(getXAction(x1Type, ACTMAINBACKWARD), simpleTeachData_.stdPos, item);
+        item.SetNum(++step);
+        program.append(item);
+        // fixture check
+        FillFixtureCheckItems(simpleTeachData_.getProductPos.fixtureConfis, true, program, step);
+        // go up
+        FillAxisItem(getYAction(y1Type, ACTMAINUP), simpleTeachData_.stdPos, item);
+        item.SetNum(++step);
+        item.SetActualPos(0);
+        program.append(item);
+        // pos before hor
+        FillAxisItem(getXAction(x1Type, ACTMAINFORWARD), simpleTeachData_.posBH, item);
+        item.SetNum(++step);
+        program.append(item);
+        // hor
+        item.SetAction(ACTPOSEHORI);
+        item.SetDVal(0);
+        item.SetSVal(0);
+        item.SetNum(++step);
+        program.append(item);
+        // close Mold
+        item.SetNum(++step);
+        item.SetClip(ICMold::ACTCLSMDON);
+        item.SetDVal(10);
+        program.append(item);
+        // go out
+        steps.clear();
+        steps<<step + 1<<step + 1;
+        axisActionList.clear();
+        axisActionList
+                <<getZAction(zType, ACTCOMEIN)
+               <<getXAction(x1Type, ACTMAINFORWARD);
+        ++step;
+        for(int i = 0; i < simpleTeachData_.releaseProductPosList.size(); ++i)
+        {
+
+            FillPosItems(axisActionList, simpleTeachData_.releaseProductPosList.at(i).pos, program, steps);
+            // release product
+            FillAxisItem(getYAction(y1Type, ACTMAINDOWN), simpleTeachData_.releaseProductPosList.at(i).pos, item);
+            item.SetNum(++step);
+            program.append(item);
+            steps[0] = steps[1] = ++step;
+        }
+    }
+
+
+    moldContent_ = program;
+
+
+
     return true;
 }

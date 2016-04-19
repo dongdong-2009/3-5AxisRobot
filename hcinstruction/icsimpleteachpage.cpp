@@ -125,6 +125,15 @@ ICSimpleTeachPage::ICSimpleTeachPage(QWidget *parent) :
 
     ui->cutOnTime->SetDecimalPlaces(2);
     ui->cutOnTime->setValidator(&delayValidator_);
+    ui->releaseProductPYU->SetDecimalPlaces(POS_DECIMAL);
+    ui->releaseOutPYU1->SetDecimalPlaces(POS_DECIMAL);
+    ui->releaseOutPYU2->SetDecimalPlaces(POS_DECIMAL);
+    ui->cutOutletPYU->SetDecimalPlaces(POS_DECIMAL);
+
+    ui->releaseProductPYU->setValidator(&posValidator_);
+    ui->releaseOutPYU1->setValidator(&posValidator_);
+    ui->releaseOutPYU2->setValidator(&posValidator_);
+    ui->cutOutletPYU->setValidator(&posValidator_);
 
 }
 
@@ -155,6 +164,10 @@ void ICSimpleTeachPage::showEvent(QShowEvent *e)
     ui->subArmEn->setChecked(stData_->usedSubArm);
     ui->cutOutletEn->setChecked(stData_->usedCutOutlet);
     ui->cutOnTime->SetThisIntToThisText(stData_->cutOnTime);
+    ui->releaseProductPYU->SetThisIntToThisText(stData_->releaseProductYUp);
+    ui->releaseOutPYU1->SetThisIntToThisText(stData_->releaseOutletYUp);
+    ui->releaseOutPYU2->SetThisIntToThisText(stData_->releaseOutletYUp);
+    ui->cutOutletPYU->SetThisIntToThisText(stData_->cutOutletYUp);
 
     ui->stdPosX1->SetThisIntToThisText(stData_->stdPos.b.x1);
     ui->stdPosY1->SetThisIntToThisText(stData_->stdPos.b.y1);
@@ -203,6 +216,9 @@ void ICSimpleTeachPage::showEvent(QShowEvent *e)
     ui->speedBHorX2->SetThisIntToThisText(stData_->posBH.b.x2S);
     ui->speedBHorY2->SetThisIntToThisText(stData_->posBH.b.y2S);
 
+    releaseProductSpeedUI.clear();
+    releaseOutletSpeedUI.clear();
+    cutOutletSpeedUI.clear();
     for(int i = 0; i < stData_->releaseProductPosList.size(); ++i)
     {
         ReleasePosData posData = stData_->releaseProductPosList.at(i);
@@ -455,6 +471,10 @@ void ICSimpleTeachPage::SetReleaseOutletEnabled(bool en)
     ui->getOutletSpeedY2->setVisible(en && UsedSubArm());
     ui->getOutletSpeedZ->setVisible(en);
     ui->label_22->setVisible(en);
+    ui->label_16->setVisible(en);
+    ui->releaseOutletPYUSetIn->setVisible(en);
+    ui->releaseOutPYU1->setVisible(en && ui->mainArmOutletEn->isChecked());
+    ui->releaseOutPYU2->setVisible(en && UsedSubArm());
 
 
     ui->label_3->setVisible(en);
@@ -499,6 +519,9 @@ void ICSimpleTeachPage::SetReleaseProductEnabled(bool en)
     ui->getProductSpeedX2->setVisible(en  && UsedReleaseOutlet());
     ui->getProductSpeedY2->setVisible(en  && UsedReleaseOutlet());
     ui->label->setVisible(en);
+    ui->label_15->setVisible(en);
+    ui->releaseProductPosPYUSetIn->setVisible(en);
+    ui->releaseProductPYU->setVisible(en);
 
 
 
@@ -843,6 +866,11 @@ void ICSimpleTeachPage::on_saveBtn_clicked()
     stData_->posBH.b.x2S = ui->speedBHorX2->TransThisTextToThisInt();
     stData_->posBH.b.y2S = ui->speedBHorY2->TransThisTextToThisInt();
 
+    stData_->releaseProductYUp = ui->releaseProductPYU->TransThisTextToThisInt();
+    stData_->releaseOutletYUp = stData_->usedMainArmOutlet ? ui->releaseOutPYU1->TransThisTextToThisInt() :
+                                                             ui->releaseOutPYU2->TransThisTextToThisInt();
+    stData_->cutOutletYUp = ui->cutOutletPYU->TransThisTextToThisInt();
+
     PosSpeedUIWidgets tmp;
     for(int i = 0; i < releaseProductSpeedUI.size(); ++i)
     {
@@ -876,6 +904,12 @@ void ICSimpleTeachPage::on_saveBtn_clicked()
         stData_->cutOutletPosList[i].pos.b.y2S = tmp.b.y2SpeedEdit->TransThisTextToThisInt();
     }
     ICMold::CurrentMold()->SaveSimpleTeachFile();
+    ICMold::CurrentMold()->CompileSimpleTeachFile(ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisX1),
+                                   ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisY1),
+                                   ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisZ),
+                                   ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisX2),
+                                   ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisY2));
+
 }
 
 void SetInHelper(ICLineEditWithVirtualNumericKeypad* x1,

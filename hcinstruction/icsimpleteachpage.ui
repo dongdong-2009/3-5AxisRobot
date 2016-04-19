@@ -42,7 +42,7 @@
       <enum>QFrame::StyledPanel</enum>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="page">
       <layout class="QGridLayout" name="gridLayout">
@@ -461,9 +461,9 @@
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>-148</y>
+            <y>-240</y>
             <width>653</width>
-            <height>444</height>
+            <height>536</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_2">
@@ -485,6 +485,175 @@
            <property name="verticalSpacing">
             <number>6</number>
            </property>
+           <item row="12" column="1" rowspan="3">
+            <widget class="QLabel" name="label_3">
+             <property name="minimumSize">
+              <size>
+               <width>120</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>120</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Release  Outlet Pos:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="3">
+            <widget class="ICLineEditWithVirtualNumericKeypad" name="releaseOutletPosX1">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>32</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="2" rowspan="3">
+            <widget class="QPushButton" name="releaseOutletPosSetIn">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>80</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Set In</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="7">
+            <widget class="ICLineEditWithVirtualNumericKeypad" name="posBHorY2">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>32</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="16" column="2">
+            <widget class="QPushButton" name="modifyOutletPos">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Modify</string>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="6">
+            <widget class="ICLineEditWithVirtualNumericKeypad" name="releaseOutletPosX2">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>32</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1" rowspan="2">
+            <widget class="QLabel" name="label_2">
+             <property name="minimumSize">
+              <size>
+               <width>120</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>120</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Release  Product Pos:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="3">
+            <widget class="ICLineEditWithVirtualNumericKeypad" name="releaseProductPosX1">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>32</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2" rowspan="2">
+            <widget class="QPushButton" name="releaseProductPosSetIn">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>80</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Set In</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="4">
+            <widget class="ICLineEditWithVirtualNumericKeypad" name="releaseProductPosY1">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>32</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="1" colspan="7">
+            <widget class="Line" name="line_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="3" colspan="5">
+            <widget class="QLabel" name="releaseOutletCFInfo">
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+           <item row="16" column="3" rowspan="2" colspan="4">
+            <widget class="QListWidget" name="releaseOutletView"/>
+           </item>
+           <item row="8" column="3" rowspan="2" colspan="4">
+            <widget class="QListWidget" name="releasePosView">
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+             <property name="alternatingRowColors">
+              <bool>true</bool>
+             </property>
+             <property name="selectionBehavior">
+              <enum>QAbstractItemView::SelectRows</enum>
+             </property>
+            </widget>
+           </item>
            <item row="0" column="5">
             <widget class="QLabel" name="label_5">
              <property name="text">
@@ -502,6 +671,25 @@
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="1">
+            <widget class="QLabel" name="label_15">
+             <property name="minimumSize">
+              <size>
+               <width>120</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>120</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Per Y Up Pos:</string>
              </property>
             </widget>
            </item>
@@ -593,7 +781,17 @@
              </property>
             </widget>
            </item>
-           <item row="12" column="5">
+           <item row="2" column="3">
+            <widget class="ICLineEditWithVirtualNumericKeypad" name="posBHorX1">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>32</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="5">
             <widget class="ICLineEditWithVirtualNumericKeypad" name="releaseOutletPosZ">
              <property name="minimumSize">
               <size>
@@ -616,8 +814,21 @@
              </property>
             </widget>
            </item>
-           <item row="2" column="3">
-            <widget class="ICLineEditWithVirtualNumericKeypad" name="posBHorX1">
+           <item row="7" column="1" colspan="2">
+            <widget class="QPushButton" name="releaseProductFSel">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Release P Fixture Sel</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="7">
+            <widget class="ICLineEditWithVirtualNumericKeypad" name="releaseProductPosY2">
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -639,7 +850,7 @@
              </property>
             </widget>
            </item>
-           <item row="12" column="7">
+           <item row="13" column="7">
             <widget class="ICLineEditWithVirtualNumericKeypad" name="releaseOutletPosY2">
              <property name="minimumSize">
               <size>
@@ -693,7 +904,7 @@
              </property>
             </widget>
            </item>
-           <item row="14" column="1" colspan="2">
+           <item row="15" column="1" colspan="2">
             <widget class="QPushButton" name="releaseOutletFSel">
              <property name="minimumSize">
               <size>
@@ -706,16 +917,13 @@
              </property>
             </widget>
            </item>
-           <item row="7" column="1" colspan="2">
-            <widget class="QPushButton" name="releaseProductFSel">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>40</height>
-              </size>
-             </property>
+           <item row="0" column="6">
+            <widget class="QLabel" name="pIX2Label_2">
              <property name="text">
-              <string>Release P Fixture Sel</string>
+              <string>X2</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -732,26 +940,6 @@
              </property>
             </widget>
            </item>
-           <item row="0" column="4">
-            <widget class="QLabel" name="pIY1Label_2">
-             <property name="text">
-              <string>Y1</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="6">
-            <widget class="QLabel" name="pIX2Label_2">
-             <property name="text">
-              <string>X2</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
            <item row="0" column="7">
             <widget class="QLabel" name="pIY2Label_2">
              <property name="text">
@@ -762,18 +950,8 @@
              </property>
             </widget>
            </item>
-           <item row="12" column="4">
+           <item row="13" column="4">
             <widget class="ICLineEditWithVirtualNumericKeypad" name="releaseOutletPosY1">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>32</height>
-              </size>
-             </property>
-            </widget>
-           </item>
-           <item row="5" column="5">
-            <widget class="ICLineEditWithVirtualNumericKeypad" name="releaseProductPosZ">
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -792,8 +970,8 @@
              </property>
             </widget>
            </item>
-           <item row="5" column="7">
-            <widget class="ICLineEditWithVirtualNumericKeypad" name="releaseProductPosY2">
+           <item row="5" column="5">
+            <widget class="ICLineEditWithVirtualNumericKeypad" name="releaseProductPosZ">
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -802,7 +980,7 @@
              </property>
             </widget>
            </item>
-           <item row="15" column="7">
+           <item row="16" column="7">
             <widget class="QPushButton" name="deleteOutletPos">
              <property name="minimumSize">
               <size>
@@ -815,7 +993,7 @@
              </property>
             </widget>
            </item>
-           <item row="15" column="1">
+           <item row="16" column="1">
             <widget class="QPushButton" name="addOutletPos">
              <property name="minimumSize">
               <size>
@@ -828,27 +1006,8 @@
              </property>
             </widget>
            </item>
-           <item row="11" column="1" rowspan="3">
-            <widget class="QLabel" name="label_3">
-             <property name="minimumSize">
-              <size>
-               <width>120</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>120</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>Release  Outlet Pos:</string>
-             </property>
-            </widget>
-           </item>
-           <item row="11" column="2" rowspan="3">
-            <widget class="QPushButton" name="releaseOutletPosSetIn">
+           <item row="10" column="2">
+            <widget class="QPushButton" name="releaseProductPosPYUSetIn">
              <property name="minimumSize">
               <size>
                <width>80</width>
@@ -866,41 +1025,18 @@
              </property>
             </widget>
            </item>
-           <item row="12" column="3">
-            <widget class="ICLineEditWithVirtualNumericKeypad" name="releaseOutletPosX1">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>32</height>
-              </size>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="7">
-            <widget class="ICLineEditWithVirtualNumericKeypad" name="posBHorY2">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>32</height>
-              </size>
-             </property>
-            </widget>
-           </item>
-           <item row="15" column="2">
-            <widget class="QPushButton" name="modifyOutletPos">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>40</height>
-              </size>
-             </property>
+           <item row="0" column="4">
+            <widget class="QLabel" name="pIY1Label_2">
              <property name="text">
-              <string>Modify</string>
+              <string>Y1</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
-           <item row="4" column="1" rowspan="2">
-            <widget class="QLabel" name="label_2">
+           <item row="18" column="1">
+            <widget class="QLabel" name="label_16">
              <property name="minimumSize">
               <size>
                <width>120</width>
@@ -914,12 +1050,12 @@
               </size>
              </property>
              <property name="text">
-              <string>Release  Product Pos:</string>
+              <string>Per Y Up Pos:</string>
              </property>
             </widget>
            </item>
-           <item row="12" column="6">
-            <widget class="ICLineEditWithVirtualNumericKeypad" name="releaseOutletPosX2">
+           <item row="10" column="4">
+            <widget class="ICLineEditWithVirtualNumericKeypad" name="releaseProductPYU">
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -928,8 +1064,28 @@
              </property>
             </widget>
            </item>
-           <item row="4" column="2" rowspan="2">
-            <widget class="QPushButton" name="releaseProductPosSetIn">
+           <item row="18" column="4">
+            <widget class="ICLineEditWithVirtualNumericKeypad" name="releaseOutPYU1">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>32</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="18" column="7">
+            <widget class="ICLineEditWithVirtualNumericKeypad" name="releaseOutPYU2">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>32</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="18" column="2">
+            <widget class="QPushButton" name="releaseOutletPYUSetIn">
              <property name="minimumSize">
               <size>
                <width>80</width>
@@ -946,56 +1102,6 @@
               <string>Set In</string>
              </property>
             </widget>
-           </item>
-           <item row="5" column="3">
-            <widget class="ICLineEditWithVirtualNumericKeypad" name="releaseProductPosX1">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>32</height>
-              </size>
-             </property>
-            </widget>
-           </item>
-           <item row="5" column="4">
-            <widget class="ICLineEditWithVirtualNumericKeypad" name="releaseProductPosY1">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>32</height>
-              </size>
-             </property>
-            </widget>
-           </item>
-           <item row="10" column="1" colspan="7">
-            <widget class="Line" name="line_2">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-            </widget>
-           </item>
-           <item row="8" column="3" rowspan="2" colspan="4">
-            <widget class="QListWidget" name="releasePosView">
-             <property name="editTriggers">
-              <set>QAbstractItemView::NoEditTriggers</set>
-             </property>
-             <property name="alternatingRowColors">
-              <bool>true</bool>
-             </property>
-             <property name="selectionBehavior">
-              <enum>QAbstractItemView::SelectRows</enum>
-             </property>
-            </widget>
-           </item>
-           <item row="14" column="3" colspan="5">
-            <widget class="QLabel" name="releaseOutletCFInfo">
-             <property name="text">
-              <string>TextLabel</string>
-             </property>
-            </widget>
-           </item>
-           <item row="15" column="3" rowspan="2" colspan="4">
-            <widget class="QListWidget" name="releaseOutletView"/>
            </item>
           </layout>
          </widget>
@@ -1082,19 +1188,6 @@
               <set>Qt::AlignCenter</set>
              </property>
             </widget>
-           </item>
-           <item row="7" column="5">
-            <spacer name="verticalSpacer_3">
-             <property name="orientation">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>20</width>
-               <height>40</height>
-              </size>
-             </property>
-            </spacer>
            </item>
            <item row="3" column="1">
             <widget class="QLabel" name="label_9">
@@ -1261,6 +1354,25 @@
              </property>
             </widget>
            </item>
+           <item row="7" column="2">
+            <widget class="QPushButton" name="cutPYUSetIn">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>80</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Set In</string>
+             </property>
+            </widget>
+           </item>
            <item row="5" column="6">
             <widget class="QPushButton" name="deleteCut">
              <property name="minimumSize">
@@ -1289,6 +1401,42 @@
            </item>
            <item row="5" column="3" rowspan="2" colspan="3">
             <widget class="QListWidget" name="cutPosView"/>
+           </item>
+           <item row="8" column="2">
+            <spacer name="verticalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="7" column="1">
+            <widget class="QLabel" name="label_13">
+             <property name="text">
+              <string>Per Y Up</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="4">
+            <widget class="ICLineEditWithVirtualNumericKeypad" name="cutOutletPYU">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>32</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>120</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
            </item>
           </layout>
          </widget>

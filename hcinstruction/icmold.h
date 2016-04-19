@@ -94,6 +94,15 @@ struct SimpleTeachData
     QList<ReleasePosData> releaseProductPosList;
     QList<ReleasePosData> releaseOutletPosList;
     QList<ReleasePosData> cutOutletPosList;
+    quint32 releaseProductYUp;
+    quint32 releaseProductYUpS;
+    quint32 releaseProductYUpD;
+    quint32 releaseOutletYUp;
+    quint32 releaseOutletYUpS;
+    quint32 releaseOutletYUpD;
+    quint32 cutOutletYUp;
+    quint32 cutOutletYUpS;
+    quint32 cutOutletYUpD;
     quint32 cutOnTime;
     QByteArray toByteArray() const
     {
@@ -128,7 +137,16 @@ struct SimpleTeachData
         if(!cutOutletPosList.isEmpty())
             ret.chop(1);
         ret += "\n";
-        ret += QByteArray::number(cutOnTime);
+        ret += QByteArray::number(releaseProductYUp) + "," +
+                QByteArray::number(releaseProductYUpS) + "," +
+                QByteArray::number(releaseProductYUpD) + "," +
+                QByteArray::number(releaseOutletYUp) + "," +
+                QByteArray::number(releaseOutletYUpS) + "," +
+                QByteArray::number(releaseOutletYUpD) + "," +
+                QByteArray::number(cutOutletYUp) + "," +
+                QByteArray::number(cutOutletYUpS) + "," +
+                QByteArray::number(cutOutletYUpD) + "," +
+                QByteArray::number(cutOnTime);
         return ret;
     }
     bool InitFromByteArray(const QString& text);
@@ -595,6 +613,7 @@ public:
     bool SaveMoldFile(bool isSaveParams = true);
     bool SaveMoldParamsFile();
     bool SaveSimpleTeachFile();
+    bool CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Type, int y2Type);
 
     QList<ICMoldItem> MoldContent() const { return moldContent_;}
     void SetMoldContent(const QList<ICMoldItem>& moldContent) { moldContent_ = moldContent;}
