@@ -219,6 +219,9 @@ void ICSimpleTeachPage::showEvent(QShowEvent *e)
     releaseProductSpeedUI.clear();
     releaseOutletSpeedUI.clear();
     cutOutletSpeedUI.clear();
+    ui->releasePosView->clear();
+    ui->releaseOutletView->clear();
+    ui->cutPosView->clear();
     for(int i = 0; i < stData_->releaseProductPosList.size(); ++i)
     {
         ReleasePosData posData = stData_->releaseProductPosList.at(i);

@@ -42,7 +42,7 @@
       <enum>QFrame::StyledPanel</enum>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="page">
       <layout class="QGridLayout" name="gridLayout">
@@ -461,7 +461,7 @@
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>-240</y>
+            <y>0</y>
             <width>653</width>
             <height>536</height>
            </rect>
