@@ -1059,7 +1059,7 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
             FillReleasePoseItems(simpleTeachData_.cutOutletPosList, program, step,
                                  simpleTeachData_.cutOutletYUp, simpleTeachData_.cutOutletYUpS,
                                  simpleTeachData_.cutOutletYUpD, x1Type, y1Type, zType, x2Type, y2Type,
-                                 true, simpleTeachData_.cutOnTime);
+                                 false, true, simpleTeachData_.cutOnTime);
         }
 
         FillReleasePoseItems(simpleTeachData_.releaseProductPosList, program, step,

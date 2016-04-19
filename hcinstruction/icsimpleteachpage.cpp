@@ -154,6 +154,12 @@ void ICSimpleTeachPage::changeEvent(QEvent *e)
     }
 }
 
+void ICSimpleTeachPage::hideEvent(QHideEvent *e)
+{
+    on_saveBtn_clicked();
+    QWidget::hideEvent(e);
+}
+
 void ICSimpleTeachPage::showEvent(QShowEvent *e)
 {
     ui->posInsideBtn->setChecked(true);

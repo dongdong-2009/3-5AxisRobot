@@ -61,7 +61,7 @@ public:
 protected:
     void changeEvent(QEvent *);
     void showEvent(QShowEvent *e);
-//    void hideEvent(QHideEvent *e);
+    void hideEvent(QHideEvent *e);
 
 private slots:
 

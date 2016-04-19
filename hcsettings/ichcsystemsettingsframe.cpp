@@ -54,6 +54,14 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
     ui->limitFunctionBox->setChecked(ICParametersSave::Instance()->IsRegisterFunctinOn());
     ui->limitFunctionBox->blockSignals(false);
 
+    ui->programModeGroup->setId(ui->simpleMode, 0);
+    ui->programModeGroup->setId(ui->teachMode, 1);
+
+    ui->programModeGroup->button(ICParametersSave::Instance()->ProgramMode())->setChecked(true);
+
+    connect(ui->programModeGroup, SIGNAL(buttonClicked(int)), SLOT(OnProgramModeChanged(int)));
+
+
     QAbstractButton* button;
     foreach(button, buttonGroup_->buttons())
     {
@@ -217,6 +225,8 @@ void ICHCSystemSettingsFrame::showEvent(QShowEvent *e)
     ui->extentFunctionCheckBox->setEnabled(false);
     ui->limitFunctionBox->setEnabled(false);
     ui->limitFunctionLabel->setEnabled(false);
+    ui->teachMode->setEnabled(false);
+    ui->simpleMode->setEnabled(false);
 
     //    ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
     //    ui->hmiMachienLenghtLabel->setText(host->SystemParameter(ICVirtualHost::SYS_));
@@ -328,6 +338,8 @@ void ICHCSystemSettingsFrame::on_verifyButton_clicked()
         ui->extentFunctionCheckBox->setEnabled(true);
         ui->limitFunctionLabel->setEnabled(true);
         ui->limitFunctionBox->setEnabled(true);
+        ui->teachMode->setEnabled(true);
+        ui->simpleMode->setEnabled(true);
     }
     ui->pwdEdit->clear();
 }
@@ -1045,4 +1057,9 @@ void ICHCSystemSettingsFrame::on_memory_fix_clicked()
         ::system("e2fsck -p /dev/mmcblkop2");
         ::system("root");
     }
+}
+
+void ICHCSystemSettingsFrame::OnProgramModeChanged(int id)
+{
+    ICParametersSave::Instance()->SetProgramMode(id);
 }

@@ -84,7 +84,7 @@ ICHCInstructionPageFrame::ICHCInstructionPageFrame(QWidget *parent) :
 #ifdef Compatible6410
     ui->tryButton->hide();
 #endif
-    ui->stackedWidget->setCurrentIndex(1);
+//    ui->stackedWidget->setCurrentIndex(1);
 //    ui->flagsButton->hide();
 
 //    ui->conditionsToolButton->hide();
@@ -98,6 +98,7 @@ ICHCInstructionPageFrame::~ICHCInstructionPageFrame()
 
 void ICHCInstructionPageFrame::showEvent(QShowEvent *e)
 {
+    ui->stackedWidget->setCurrentIndex(ICParametersSave::Instance()->ProgramMode() == 0 ? 1 : 0);
     ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
     if(host->AxisDefine(ICVirtualHost::ICAxis_AxisA) == ICVirtualHost::ICAxisDefine_None)
     {
