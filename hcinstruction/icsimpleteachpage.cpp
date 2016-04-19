@@ -937,9 +937,12 @@ void SetInHelper(ICLineEditWithVirtualNumericKeypad* x1,
                  ICLineEditWithVirtualNumericKeypad* y2)
 {
     ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
-    x1->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisX1));
-    y1->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisY1));
-    z->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisZ));
+    if(x1 != NULL)
+        x1->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisX1));
+    if(y1 != NULL)
+        y1->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisY1));
+    if(z != NULL)
+        z->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisZ));
     if(x2 != NULL)
         x2->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisX2));
     if(y2 != NULL)
