@@ -296,6 +296,10 @@ void ICSimpleTeachPage::on_posInsideBtn_toggled(bool checked)
 void ICSimpleTeachPage::on_mainArmEn_toggled(bool checked)
 {
     ui->cutOutletEn->setEnabled(checked);
+    if(checked)
+        ui->mainArmOutletEn->setChecked(false);
+    else
+        ui->cutOutletEn->setChecked(false);
     SetMainArmPosEnabled(checked || ui->mainArmOutletEn->isChecked());
     SetReleaseProductEnabled(checked);
 }
@@ -303,7 +307,10 @@ void ICSimpleTeachPage::on_mainArmEn_toggled(bool checked)
 void ICSimpleTeachPage::on_mainArmOutletEn_toggled(bool checked)
 {
     if(checked)
+    {
         ui->subArmEn->setChecked(false);
+        ui->mainArmEn->setChecked(false);
+    }
     SetMainArmPosEnabled(checked || ui->mainArmEn->isChecked());
     SetReleaseOutletEnabled(checked || ui->subArmEn->isChecked());
 
@@ -319,11 +326,11 @@ void ICSimpleTeachPage::on_subArmEn_toggled(bool checked)
 
 void ICSimpleTeachPage::SetMainArmPosEnabled(bool en)
 {
-    ui->stdPosX1->setVisible(en);
-    ui->stdPosY1->setVisible(en);
+    ui->stdPosX1->setVisible(UsedMainArm());
+    ui->stdPosY1->setVisible(UsedMainArm());
 
-    ui->getProductPosX1->setVisible(en);
-    ui->getProductPosY1->setVisible(en);
+    ui->getProductPosX1->setVisible(ui->mainArmEn->isChecked());
+    ui->getProductPosY1->setVisible(ui->mainArmEn->isChecked());
 
     ui->getOutletPosX1->setVisible(en && UsedReleaseOutlet());
     ui->getOutletPosY1->setVisible(en && UsedReleaseOutlet());
@@ -331,8 +338,8 @@ void ICSimpleTeachPage::SetMainArmPosEnabled(bool en)
     ui->posBHorX1->setVisible(en);
     ui->posBHorY1->setVisible(en);
 
-    ui->releaseProductPosX1->setVisible(en);
-    ui->releaseProductPosY1->setVisible(en);
+    ui->releaseProductPosX1->setVisible(ui->mainArmEn->isChecked());
+    ui->releaseProductPosY1->setVisible(ui->mainArmEn->isChecked());
 
     ui->releaseOutletPosX1->setVisible(en && UsedReleaseOutlet());
     ui->releaseOutletPosY1->setVisible(en && UsedReleaseOutlet());
@@ -342,38 +349,39 @@ void ICSimpleTeachPage::SetMainArmPosEnabled(bool en)
 
     ui->stdSpeedX1->setVisible(en);
     ui->stdSpeedY1->setVisible(en);
-    ui->getProductSpeedX1->setVisible(en);
-    ui->getProductSpeedY1->setVisible(en);
+    ui->getProductSpeedX1->setVisible(ui->mainArmEn->isChecked());
+    ui->getProductSpeedY1->setVisible(ui->mainArmEn->isChecked());
     ui->getOutletSpeedX1->setVisible(en && UsedReleaseOutlet());
     ui->getOutletSpeedY1->setVisible(en && UsedReleaseOutlet());
     ui->speedBHorX1->setVisible(en);
     ui->speedBHorY1->setVisible(en);
 
-    ui->pIX1Label->setVisible(en);
+    ui->pIX1Label->setVisible(UsedMainArm());
     ui->pIX1Label_2->setVisible(en);
     ui->pIX1Label_3->setVisible(en);
     ui->pIX1Label_4->setVisible(en);
-    ui->pIX1mmLabel->setVisible(en);
+    ui->pIX1mmLabel->setVisible(UsedMainArm());
     ui->pIX1mmLabel_2->setVisible(en);
     ui->pIX1mmLabel_3->setVisible(en);
-    ui->pIX1SpeedLabel->setVisible(en);
+    ui->pIX1SpeedLabel->setVisible(UsedMainArm());
 
 
-    ui->pIY1Label->setVisible(en);
+    ui->pIY1Label->setVisible(UsedMainArm());
     ui->pIY1Label_2->setVisible(en);
     ui->pIY1Label_3->setVisible(en);
     ui->pIY1Label_4->setVisible(en);
-    ui->pIY1mmLabel->setVisible(en);
+    ui->pIY1mmLabel->setVisible(UsedMainArm());
     ui->pIY1mmLabel_2->setVisible(en);
     ui->pIY1mmLabel_3->setVisible(en);
-    ui->pIY1SpeedLabel->setVisible(en);
+    ui->pIY1SpeedLabel->setVisible(UsedMainArm());
 
     PosSpeedUIWidgets speedUI;
     for(int i = 0; i < releaseProductSpeedUI.size(); ++i)
     {
         speedUI = releaseProductSpeedUI.at(i);
-        speedUI.b.x1SpeedEdit->setVisible(en);
-        speedUI.b.y1SpeedEdit->setVisible(en);
+        speedUI.b.x1SpeedEdit->setVisible(ui->mainArmEn->isChecked());
+        speedUI.b.y1SpeedEdit->setVisible(ui->mainArmEn->isChecked());
+
     }
 
     for(int i = 0; i < releaseOutletSpeedUI.size(); ++i)
@@ -386,8 +394,8 @@ void ICSimpleTeachPage::SetMainArmPosEnabled(bool en)
     for(int i = 0; i < cutOutletSpeedUI.size(); ++i)
     {
         speedUI = cutOutletSpeedUI.at(i);
-        speedUI.b.x1SpeedEdit->setVisible(en);
-        speedUI.b.y1SpeedEdit->setVisible(en);
+        speedUI.b.x1SpeedEdit->setVisible(ui->mainArmEn->isChecked());
+        speedUI.b.y1SpeedEdit->setVisible(ui->mainArmEn->isChecked());
     }
 }
 
@@ -396,8 +404,8 @@ void ICSimpleTeachPage::SetSubArmPosEnabled(bool en)
     ui->stdPosX2->setVisible(en);
     ui->stdPosY2->setVisible(en);
 
-    ui->getProductPosX2->setVisible(en);
-    ui->getProductPosY2->setVisible(en);
+    ui->getProductPosX2->setVisible(en && UsedMainArm());
+    ui->getProductPosY2->setVisible(en && UsedMainArm());
 
     ui->getOutletPosX2->setVisible(en);
     ui->getOutletPosY2->setVisible(en);
@@ -405,16 +413,16 @@ void ICSimpleTeachPage::SetSubArmPosEnabled(bool en)
     ui->posBHorX2->setVisible(en);
     ui->posBHorY2->setVisible(en);
 
-    ui->releaseProductPosX2->setVisible(en);
-    ui->releaseProductPosY2->setVisible(en);
+    ui->releaseProductPosX2->setVisible(en && UsedMainArm());
+    ui->releaseProductPosY2->setVisible(en && UsedMainArm());
 
     ui->releaseOutletPosX2->setVisible(en);
     ui->releaseOutletPosY2->setVisible(en);
 
     ui->stdSpeedX2->setVisible(en);
     ui->stdSpeedY2->setVisible(en);
-    ui->getProductSpeedX2->setVisible(en);
-    ui->getProductSpeedY2->setVisible(en);
+    ui->getProductSpeedX2->setVisible(en && UsedMainArm());
+    ui->getProductSpeedY2->setVisible(en && UsedMainArm());
     ui->getOutletSpeedX2->setVisible(en);
     ui->getOutletSpeedY2->setVisible(en);
     ui->speedBHorX2->setVisible(en);
@@ -438,8 +446,8 @@ void ICSimpleTeachPage::SetSubArmPosEnabled(bool en)
     for(int i = 0; i < releaseProductSpeedUI.size(); ++i)
     {
         speedUI = releaseProductSpeedUI.at(i);
-        speedUI.b.x2SpeedEdit->setVisible(en);
-        speedUI.b.y2SpeedEdit->setVisible(en);
+        speedUI.b.x2SpeedEdit->setVisible(en && UsedMainArm());
+        speedUI.b.y2SpeedEdit->setVisible(en && UsedMainArm());
     }
 
     for(int i = 0; i < releaseOutletSpeedUI.size(); ++i)
@@ -452,8 +460,8 @@ void ICSimpleTeachPage::SetSubArmPosEnabled(bool en)
     for(int i = 0; i < cutOutletSpeedUI.size(); ++i)
     {
         speedUI = cutOutletSpeedUI.at(i);
-        speedUI.b.x2SpeedEdit->setVisible(en);
-        speedUI.b.y2SpeedEdit->setVisible(en);
+        speedUI.b.x2SpeedEdit->setVisible(en && ui->cutOutletEn->isChecked());
+        speedUI.b.y2SpeedEdit->setVisible(en && ui->cutOutletEn->isChecked());
     }
 }
 
@@ -463,13 +471,13 @@ void ICSimpleTeachPage::SetReleaseOutletEnabled(bool en)
     ui->getOutletFInfo->setVisible(en);
     ui->getOutletFSel->setVisible(en);
     ui->getOutletPosSetIn->setVisible(en);
-    ui->getOutletPosX1->setVisible(en);
-    ui->getOutletPosY1->setVisible(en);
+    ui->getOutletPosX1->setVisible(en && UsedMainArm());
+    ui->getOutletPosY1->setVisible(en && UsedMainArm());
     ui->getOutletPosX2->setVisible(en && UsedSubArm());
     ui->getOutletPosY2->setVisible(en && UsedSubArm());
     ui->getOutletPosZ->setVisible(en);
-    ui->getOutletSpeedX1->setVisible(en);
-    ui->getOutletSpeedY1->setVisible(en);
+    ui->getOutletSpeedX1->setVisible(en && UsedMainArm());
+    ui->getOutletSpeedY1->setVisible(en && UsedMainArm());
     ui->getOutletSpeedX2->setVisible(en && UsedSubArm());
     ui->getOutletSpeedY2->setVisible(en && UsedSubArm());
     ui->getOutletSpeedZ->setVisible(en);
@@ -483,8 +491,8 @@ void ICSimpleTeachPage::SetReleaseOutletEnabled(bool en)
     ui->label_3->setVisible(en);
     ui->releaseOutletCFInfo->setVisible(en);
     ui->releaseOutletFSel->setVisible(en);
-    ui->releaseOutletPosX1->setVisible(en);
-    ui->releaseOutletPosY1->setVisible(en);
+    ui->releaseOutletPosX1->setVisible(en && UsedMainArm());
+    ui->releaseOutletPosY1->setVisible(en && UsedMainArm());
     ui->releaseOutletPosX2->setVisible(en && UsedSubArm());
     ui->releaseOutletPosY2->setVisible(en && UsedSubArm());
     ui->releaseOutletPosZ->setVisible(en);
@@ -496,8 +504,8 @@ void ICSimpleTeachPage::SetReleaseOutletEnabled(bool en)
     for(int i = 0; i < releaseOutletSpeedUI.size(); ++i)
     {
         releaseOutletSpeedUI[i].b.posName->setVisible(en);
-        releaseOutletSpeedUI[i].b.x1SpeedEdit->setVisible(en);
-        releaseOutletSpeedUI[i].b.y1SpeedEdit->setVisible(en);
+        releaseOutletSpeedUI[i].b.x1SpeedEdit->setVisible(en && UsedMainArm());
+        releaseOutletSpeedUI[i].b.y1SpeedEdit->setVisible(en && UsedMainArm());
         releaseOutletSpeedUI[i].b.zSpeedEdit->setVisible(en);
         releaseOutletSpeedUI[i].b.x2SpeedEdit->setVisible(en && UsedSubArm());
         releaseOutletSpeedUI[i].b.y2SpeedEdit->setVisible(en && UsedSubArm());
@@ -912,6 +920,7 @@ void ICSimpleTeachPage::on_saveBtn_clicked()
                                    ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisZ),
                                    ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisX2),
                                    ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisY2));
+    ICVirtualHost::GlobalVirtualHost()->ReConfigure();
 
 }
 
@@ -990,4 +999,20 @@ void ICSimpleTeachPage::on_cutPosSetIn_clicked()
                 ui->cutOutletPosZ,
                 NULL,
                 NULL);
+}
+
+void ICSimpleTeachPage::on_releaseProductPosPYUSetIn_clicked()
+{
+    SetInHelper(NULL, ui->releaseProductPYU, NULL, NULL, NULL);
+}
+
+void ICSimpleTeachPage::on_releaseOutletPYUSetIn_clicked()
+{
+    SetInHelper(NULL, ui->releaseOutPYU1, NULL, NULL, NULL);
+
+}
+
+void ICSimpleTeachPage::on_cutPYUSetIn_clicked()
+{
+    SetInHelper(NULL, ui->cutOutletPYU, NULL, NULL, NULL);
 }

@@ -132,6 +132,12 @@ private slots:
 
     void on_cutPosSetIn_clicked();
 
+    void on_releaseProductPosPYUSetIn_clicked();
+
+    void on_releaseOutletPYUSetIn_clicked();
+
+    void on_cutPYUSetIn_clicked();
+
 private:
     QString PosDataToString(const ReleasePosData& posData, bool noSubArm = false, const QString& dataName = "") const ;
     bool UsedMainArm() const;

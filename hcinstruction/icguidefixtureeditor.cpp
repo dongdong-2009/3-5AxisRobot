@@ -208,7 +208,7 @@ QStringList ICGuideFixtureEditor::SelectedNames(const QList<QPair<int, bool> > &
     for(int i = 0; i < fixturesConfigs.size(); ++i)
     {
         if(fixturesConfigs.at(i).second)
-            ret.append(QString("%1[Check]").arg(settingButtons_.at(fixturesConfigs.at(i).first)->text()));
+            ret.append(QString(tr("%1[Check]")).arg(settingButtons_.at(fixturesConfigs.at(i).first)->text()));
         else
             ret.append(settingButtons_.at(fixturesConfigs.at(i).first)->text());
     }

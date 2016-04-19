@@ -2679,6 +2679,11 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="211"/>
+        <source>%1[Check]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="hcinstruction/icguidefixtureeditor.cpp" line="216"/>
         <source>None</source>
         <translation type="unfinished"></translation>
@@ -8025,11 +8030,6 @@ Please enter an digit between </source>
     <message>
         <location filename="hcinstruction/icsimpleteachpage.ui" line="1334"/>
         <source>Add Cut</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1398"/>
-        <source>Cut Pos-1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

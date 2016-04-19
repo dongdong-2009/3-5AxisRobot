@@ -927,6 +927,7 @@ void FillReleasePoseItems(const QList<ReleasePosData>& data,
                           quint32 yUps,
                           quint32 yUpd,
                           int x1Type, int y1Type, int zType, int x2Type, int y2Type,
+                          bool isSub = false,
                           bool isCut = false,
                           quint32 cutOnTime = 0)
 {
@@ -936,6 +937,10 @@ void FillReleasePoseItems(const QList<ReleasePosData>& data,
     axisActionList
             <<getZAction(zType, ICMold::ACTCOMEIN)
            <<getXAction(x1Type, ICMold::ACTMAINFORWARD);
+    if(isSub)
+    {
+        axisActionList[1] = getX2Action(x2Type, ICMold::ACTVICEFORWARD);
+    }
     QList<int> steps;
     steps<<step + 1<<step + 1;
     for(int i = 0; i < data.size(); ++i)
@@ -944,7 +949,10 @@ void FillReleasePoseItems(const QList<ReleasePosData>& data,
         steps[0] = steps[1] = step;
         FillPosItems(axisActionList, data.at(i).pos, program, steps);
         // release product
-        FillAxisItem(getYAction(y1Type, ICMold::ACTMAINDOWN), data.at(i).pos, item);
+        if(isSub)
+            FillAxisItem(getY2Action(y2Type, ICMold::ACTVICEDOWN), data.at(i).pos, item);
+        else
+            FillAxisItem(getYAction(y1Type, ICMold::ACTMAINDOWN), data.at(i).pos, item);
         item.SetNum(++step);
         program.append(item);
         if(isCut)
@@ -956,6 +964,8 @@ void FillReleasePoseItems(const QList<ReleasePosData>& data,
             FillFixtureItems(data.at(i).fixtureConfis, false, program, ++step);
         // PYU
         item.SetAction(getYAction(y1Type,  ICMold::ACTMAINUP));
+        if(isSub)
+            item.SetAction(getY2Action(y2Type,  ICMold::ACTVICEUP));
         item.SetNum(++step);
         item.SetActualPos(yUp);
         item.SetSVal(yUps);
@@ -1056,26 +1066,271 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
                              simpleTeachData_.releaseProductYUp, simpleTeachData_.releaseProductYUpS,
                              simpleTeachData_.releaseProductYUpD, x1Type, y1Type, zType, x2Type, y2Type);
 
+        // up to go in
+//        if(simpleTeachData_.usedMainArm)
+        {
+            item.SetAction(getYAction(y1Type, ACTMAINUP));
+            item.SetNum(++step);
+            item.SetActualPos(0);
+            item.SetSVal(simpleTeachData_.stdPos.b.y1S);
+            item.SetDVal(20);
+            program.append(item);
+            item.SetAction(getXAction(x1Type, ACTMAINFORWARD));
+            item.SetNum(++step);
+            item.SetActualPos(simpleTeachData_.posBH.b.x1);
+            item.SetSVal(simpleTeachData_.posBH.b.x1S);
+            item.SetDVal(20);
+            program.append(item);
+        }
+
     }
-
-    //
-
-    // up to go in
-    if(simpleTeachData_.usedMainArm)
+    else if(simpleTeachData_.usedMainArm && !simpleTeachData_.usedMainArmOutlet && simpleTeachData_.usedSubArm) // main and sub
     {
+        //get product
+
+        steps.clear();
+        steps<<step<<step + 1;
+        axisActionList.clear();
+        axisActionList
+                <<getZAction(zType, ACTCOMEIN)
+               <<getYAction(y1Type, ACTMAINDOWN);
+        FillPosItems(axisActionList, simpleTeachData_.getProductPos.pos, program, steps);
+        FillAxisItem(getY2Action(y2Type, ACTVICEDOWN), simpleTeachData_.getOutletPos.pos, item);
+        step += 1;
+        item.SetNum(step);
+        program.append(item);
+
+        item.SetNum(++step);
+        item.SetClip(ACTEJECTON); // Ejector on
+        item.SetDVal(10);
+        program.append(item);
+        // forward
+        FillAxisItem(getXAction(x1Type, ACTMAINFORWARD), simpleTeachData_.getProductPos.pos, item);
+        item.SetNum(++step);
+        program.append(item);
+        FillAxisItem(getX2Action(x2Type, ACTVICEFORWARD), simpleTeachData_.getOutletPos.pos, item);
+        program.append(item);
+        // fixture
+        FillFixtureItems(simpleTeachData_.getProductPos.fixtureConfis, true, program, ++step);
+        FillFixtureItems(simpleTeachData_.getOutletPos.fixtureConfis, true, program, step);
+        // backward
+        FillAxisItem(getXAction(x1Type, ACTMAINBACKWARD), simpleTeachData_.stdPos, item);
+        item.SetNum(++step);
+        program.append(item);
+        FillAxisItem(getX2Action(x2Type, ACTVICEBACKWARD), simpleTeachData_.stdPos, item);
+        program.append(item);
+        // fixture check
+        FillFixtureCheckItems(simpleTeachData_.getProductPos.fixtureConfis, true, program, step);
+        FillFixtureCheckItems(simpleTeachData_.getOutletPos.fixtureConfis, true, program, step);
+        // go up
+        FillAxisItem(getYAction(y1Type, ACTMAINUP), simpleTeachData_.stdPos, item);
+        item.SetNum(++step);
+        item.SetActualPos(0);
+        program.append(item);
+        FillAxisItem(getY2Action(y2Type, ACTVICEUP), simpleTeachData_.stdPos, item);
+        item.SetActualPos(0);
+        program.append(item);
+        // pos before hor
+        FillAxisItem(getXAction(x1Type, ACTMAINFORWARD), simpleTeachData_.posBH, item);
+        item.SetNum(++step);
+        program.append(item);
+        FillAxisItem(getX2Action(x2Type, ACTVICEFORWARD), simpleTeachData_.posBH, item);
+        program.append(item);
+        // hor
+        FillPoseItem(ACTPOSEHORI, item);
+        item.SetNum(++step);
+        program.append(item);
+        // close Mold
+        item.SetNum(++step);
+        item.SetClip(ICMold::ACTCLSMDON);
+        item.SetDVal(10);
+        program.append(item);
+        // go out
+
+        if(simpleTeachData_.usedCutOutlet)
+        {
+            FillReleasePoseItems(simpleTeachData_.cutOutletPosList, program, step,
+                                 simpleTeachData_.cutOutletYUp, simpleTeachData_.cutOutletYUpS,
+                                 simpleTeachData_.cutOutletYUpD, x1Type, y1Type, zType, x2Type, y2Type,
+                                 false, true, simpleTeachData_.cutOnTime);
+        }
+
+        FillReleasePoseItems(simpleTeachData_.releaseProductPosList, program, step,
+                             simpleTeachData_.releaseProductYUp, simpleTeachData_.releaseProductYUpS,
+                             simpleTeachData_.releaseProductYUpD, x1Type, y1Type, zType, x2Type, y2Type);
         item.SetAction(getYAction(y1Type, ACTMAINUP));
         item.SetNum(++step);
         item.SetActualPos(0);
         item.SetSVal(simpleTeachData_.stdPos.b.y1S);
         item.SetDVal(20);
         program.append(item);
+
+        FillReleasePoseItems(simpleTeachData_.releaseOutletPosList, program, step,
+                             simpleTeachData_.releaseOutletYUp, simpleTeachData_.releaseOutletYUpS,
+                             simpleTeachData_.releaseOutletYUpD, x1Type, y1Type, zType, x2Type, y2Type,
+                             true);
+
+
+        item.SetAction(getY2Action(y2Type, ACTVICEUP));
+        item.SetNum(++step);
+        item.SetActualPos(0);
+        item.SetSVal(simpleTeachData_.stdPos.b.y2S);
+        item.SetDVal(20);
+        program.append(item);
+
         item.SetAction(getXAction(x1Type, ACTMAINFORWARD));
-        item.SetNum(step);
+        item.SetNum(++step);
         item.SetActualPos(simpleTeachData_.posBH.b.x1);
         item.SetSVal(simpleTeachData_.posBH.b.x1S);
         item.SetDVal(20);
         program.append(item);
+        item.SetAction(getX2Action(x2Type, ACTVICEFORWARD));
+        item.SetNum(step);
+        item.SetActualPos(simpleTeachData_.posBH.b.x2);
+        item.SetSVal(simpleTeachData_.posBH.b.x2S);
+        item.SetDVal(20);
+        program.append(item);
     }
+    else if(!simpleTeachData_.usedMainArm && simpleTeachData_.usedMainArmOutlet && !simpleTeachData_.usedSubArm) // main and main outlet
+    {
+        //get product
+        steps.clear();
+        steps<<step<<step + 1;
+        axisActionList.clear();
+        axisActionList
+                <<getZAction(zType, ACTCOMEIN)
+               <<getYAction(y1Type, ACTMAINDOWN);
+        FillPosItems(axisActionList, simpleTeachData_.getOutletPos.pos, program, steps);
+        step += 1;
+        item.SetNum(++step);
+        item.SetClip(ACTEJECTON); // Ejector on
+        item.SetDVal(10);
+        program.append(item);
+        // forward
+        FillAxisItem(getXAction(x1Type, ACTMAINFORWARD), simpleTeachData_.getOutletPos.pos, item);
+        item.SetNum(++step);
+        program.append(item);
+        // fixture
+        FillFixtureItems(simpleTeachData_.getOutletPos.fixtureConfis, true, program, ++step);
+        // backward
+        FillAxisItem(getXAction(x1Type, ACTMAINBACKWARD), simpleTeachData_.stdPos, item);
+        item.SetNum(++step);
+        program.append(item);
+        // fixture check
+        FillFixtureCheckItems(simpleTeachData_.getOutletPos.fixtureConfis, true, program, step);
+        // go up
+        FillAxisItem(getYAction(y1Type, ACTMAINUP), simpleTeachData_.stdPos, item);
+        item.SetNum(++step);
+        item.SetActualPos(0);
+        program.append(item);
+        // pos before hor
+        FillAxisItem(getXAction(x1Type, ACTMAINFORWARD), simpleTeachData_.posBH, item);
+        item.SetNum(++step);
+        program.append(item);
+        // hor
+        FillPoseItem(ACTPOSEHORI, item);
+        item.SetNum(++step);
+        program.append(item);
+        // close Mold
+        item.SetNum(++step);
+        item.SetClip(ICMold::ACTCLSMDON);
+        item.SetDVal(10);
+        program.append(item);
+        // go out
+
+        FillReleasePoseItems(simpleTeachData_.releaseOutletPosList, program, step,
+                             simpleTeachData_.releaseOutletYUp, simpleTeachData_.releaseOutletYUpS,
+                             simpleTeachData_.releaseOutletYUpD, x1Type, y1Type, zType, x2Type, y2Type);
+
+        // up to go in
+//        if(simpleTeachData_.usedMainArm)
+        {
+            item.SetAction(getYAction(y1Type, ACTMAINUP));
+            item.SetNum(++step);
+            item.SetActualPos(0);
+            item.SetSVal(simpleTeachData_.stdPos.b.y1S);
+            item.SetDVal(20);
+            program.append(item);
+            item.SetAction(getXAction(x1Type, ACTMAINFORWARD));
+            item.SetNum(++step);
+            item.SetActualPos(simpleTeachData_.posBH.b.x1);
+            item.SetSVal(simpleTeachData_.posBH.b.x1S);
+            item.SetDVal(20);
+            program.append(item);
+        }
+    }
+    else if(!simpleTeachData_.usedMainArm && !simpleTeachData_.usedMainArmOutlet && simpleTeachData_.usedSubArm)
+    {
+        //get product
+        steps.clear();
+        steps<<step<<step + 1;
+        axisActionList.clear();
+        axisActionList
+                <<getZAction(zType, ACTCOMEIN)
+               <<getY2Action(y2Type, ACTVICEDOWN);
+        FillPosItems(axisActionList, simpleTeachData_.getOutletPos.pos, program, steps);
+        step += 1;
+        item.SetNum(++step);
+        item.SetClip(ACTEJECTON); // Ejector on
+        item.SetDVal(10);
+        program.append(item);
+        // forward
+        FillAxisItem(getX2Action(x2Type, ACTVICEFORWARD), simpleTeachData_.getOutletPos.pos, item);
+        item.SetNum(++step);
+        program.append(item);
+        // fixture
+        FillFixtureItems(simpleTeachData_.getOutletPos.fixtureConfis, true, program, ++step);
+        // backward
+        FillAxisItem(getX2Action(x2Type, ACTVICEBACKWARD), simpleTeachData_.stdPos, item);
+        item.SetNum(++step);
+        program.append(item);
+        // fixture check
+        FillFixtureCheckItems(simpleTeachData_.getOutletPos.fixtureConfis, true, program, step);
+        // go up
+        FillAxisItem(getY2Action(y2Type, ACTVICEUP), simpleTeachData_.stdPos, item);
+        item.SetNum(++step);
+        item.SetActualPos(0);
+        program.append(item);
+        // pos before hor
+        FillAxisItem(getX2Action(x2Type, ACTMAINFORWARD), simpleTeachData_.posBH, item);
+        item.SetNum(++step);
+        program.append(item);
+        // hor
+        FillPoseItem(ACTPOSEHORI, item);
+        item.SetNum(++step);
+        program.append(item);
+        // close Mold
+        item.SetNum(++step);
+        item.SetClip(ICMold::ACTCLSMDON);
+        item.SetDVal(10);
+        program.append(item);
+        // go out
+
+
+        FillReleasePoseItems(simpleTeachData_.releaseOutletPosList, program, step,
+                             simpleTeachData_.releaseOutletYUp, simpleTeachData_.releaseOutletYUpS,
+                             simpleTeachData_.releaseOutletYUpD, x1Type, y1Type, zType, x2Type, y2Type,
+                             true);
+
+        // up to go in
+//        if(simpleTeachData_.usedMainArm)
+        {
+            item.SetAction(getY2Action(y2Type, ACTVICEUP));
+            item.SetNum(++step);
+            item.SetActualPos(0);
+            item.SetSVal(simpleTeachData_.stdPos.b.y2S);
+            item.SetDVal(20);
+            program.append(item);
+            item.SetAction(getX2Action(x2Type, ACTVICEFORWARD));
+            item.SetNum(++step);
+            item.SetActualPos(simpleTeachData_.posBH.b.x2);
+            item.SetSVal(simpleTeachData_.posBH.b.x2S);
+            item.SetDVal(20);
+            program.append(item);
+        }
+    }
+
+
     // end
     item.SetNum(++step);
     item.SetAction(ACTEND);
@@ -1085,6 +1340,7 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
 
     moldContent_ = program;
     MoldReSum();
+    SaveMoldFile(false);
 
     return true;
 }

@@ -2775,6 +2775,11 @@ uctos</translation>
         <translation type="unfinished">Chupador-3 {8 ?}</translation>
     </message>
     <message>
+        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="211"/>
+        <source>%1[Check]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="hcinstruction/icguidefixtureeditor.cpp" line="216"/>
         <source>None</source>
         <translation type="unfinished">Nada</translation>
@@ -8164,11 +8169,6 @@ de producción</translation>
     <message>
         <location filename="hcinstruction/icsimpleteachpage.ui" line="1334"/>
         <source>Add Cut</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1398"/>
-        <source>Cut Pos-1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -2940,9 +2940,14 @@ Reason</source>
         <translation>剪刀4</translation>
     </message>
     <message>
+        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="211"/>
+        <source>%1[Check]</source>
+        <translation>%1[检测]</translation>
+    </message>
+    <message>
         <location filename="hcinstruction/icguidefixtureeditor.cpp" line="216"/>
         <source>None</source>
-        <translation type="unfinished">无</translation>
+        <translation>无</translation>
     </message>
 </context>
 <context>
@@ -9524,7 +9529,7 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icsimpleteachpage.ui" line="731"/>
         <location filename="hcinstruction/icsimpleteachpage.ui" line="2189"/>
         <source>Pos before Hor:</source>
-        <translation>姿势前引拔位置:</translation>
+        <translation>姿势引拔位置:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icsimpleteachpage.ui" line="813"/>
@@ -9572,9 +9577,8 @@ Please enter an digit between </source>
         <translation>添加位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1398"/>
         <source>Cut Pos-1</source>
-        <translation>剪刀位置</translation>
+        <translation type="obsolete">剪刀位置</translation>
     </message>
     <message>
         <location filename="hcinstruction/icsimpleteachpage.ui" line="1421"/>
