@@ -6082,7 +6082,7 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="209"/>
         <source>Reserve-1</source>
-        <translation>预留1</translation>
+        <translation>剪刀1</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="213"/>
@@ -6093,7 +6093,7 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="217"/>
         <source>Reserve-2</source>
-        <translation>预留2</translation>
+        <translation>剪刀2</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="221"/>
@@ -6104,7 +6104,7 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="225"/>
         <source>Reserve-3</source>
-        <translation>预留3</translation>
+        <translation>剪刀3</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="229"/>
@@ -6115,7 +6115,7 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="233"/>
         <source>Reserve-4</source>
-        <translation>预留4</translation>
+        <translation>剪刀4</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="237"/>
