@@ -188,8 +188,8 @@ bool ICMold::ReadMoldFile(const QString &fileName, bool isLoadParams)
     {
         return false;
     }
-//    QTextStream fs(&file);
-//    moldName_ = fileName;
+    //    QTextStream fs(&file);
+    //    moldName_ = fileName;
     QString content = QString::fromUtf8(file.readAll());
     file.close();
     //    content = content.remove('\r');
@@ -275,7 +275,7 @@ bool ICMold::ReadMoldFile(const QString &fileName, bool isLoadParams)
 
 bool ICMold::ReadMoldParamsFile(const QString &fileName)
 {
-//    moldParamName_ = fileName;
+    //    moldParamName_ = fileName;
     QFile file(fileName);
     if(!file.open(QFile::ReadOnly | QFile::Text))
     {
@@ -312,10 +312,10 @@ bool ICMold::ReadMoldParamsFile(const QString &fileName)
         }
         stackParams_.append(stackParam);
     }
-//    moldParams_[CheckClip5] = 0;
-//    moldParams_[CheckClip6] = 0;
+    //    moldParams_[CheckClip5] = 0;
+    //    moldParams_[CheckClip6] = 0;
     checkSum_ = items.last().toUInt();
-//    UpdateSyncSum();
+    //    UpdateSyncSum();
     moldParamName_ = fileName;
     return true;
 }
@@ -425,7 +425,7 @@ bool ICMold::SaveMoldFile(bool isSaveParams)
 {
     bool ret = false;
     Compile();
-//    MoldReSum();
+    //    MoldReSum();
     QByteArray toWrite;
     if(moldContent_.size() < 1)
     {
@@ -464,9 +464,9 @@ bool ICMold::SaveMoldParamsFile()
 
 bool ICMold::SaveSimpleTeachFile()
 {
-     QByteArray toWrite = simpleTeachData_.toByteArray();
-     ICFile file(simpleTeachFileName_);
-     return file.ICWrite(toWrite);
+    QByteArray toWrite = simpleTeachData_.toByteArray();
+    ICFile file(simpleTeachFileName_);
+    return file.ICWrite(toWrite);
 }
 
 uint ICMold::SyncAct() const
@@ -474,8 +474,8 @@ uint ICMold::SyncAct() const
     uint ret = 0;
     for(int i = 0; i != toSentContent_.size(); ++i)
     {
-//        if(toSentContent_.at(i).Action() != ACTCOMMENT)
-            ret += toSentContent_.at(i).GMVal();
+        //        if(toSentContent_.at(i).Action() != ACTCOMMENT)
+        ret += toSentContent_.at(i).GMVal();
     }
     return ret;
 }
@@ -485,8 +485,8 @@ uint ICMold::SyncSum() const
     uint ret = 0;
     for(int i = 0; i != toSentContent_.size(); ++i)
     {
-//        if(toSentContent_.at(i).Action() != ACTCOMMENT)
-            ret += toSentContent_.at(i).Sum();
+        //        if(toSentContent_.at(i).Action() != ACTCOMMENT)
+        ret += toSentContent_.at(i).Sum();
     }
     return ret;
 }
@@ -833,7 +833,7 @@ int getXAction(int type, int pA)
     else if(type == 1)
         return pA;
     else
-       return -1;
+        return -1;
 }
 int getYAction(int type, int pA)
 {
@@ -842,7 +842,7 @@ int getYAction(int type, int pA)
     else if(type == 1)
         return pA;
     else
-       return -1;
+        return -1;
 }
 int getZAction(int type, int pA)
 {
@@ -851,7 +851,7 @@ int getZAction(int type, int pA)
     else if(type == 1)
         return pA;
     else
-       return -1;
+        return -1;
 }int getX2Action(int type, int pA)
 {
     if(type == 3)
@@ -859,7 +859,7 @@ int getZAction(int type, int pA)
     else if(type == 1)
         return pA;
     else
-       return -1;
+        return -1;
 }int getY2Action(int type, int pA)
 {
     if(type == 3)
@@ -867,22 +867,22 @@ int getZAction(int type, int pA)
     else if(type == 1)
         return pA;
     else
-       return -1;
+        return -1;
 }
 
 QList<int> fixtureOnAction_(QList<int>()<<ICMold::ACTCLIP1ON<<ICMold::ACTCLIP2ON<<ICMold::ACTCLIP3ON
                             <<ICMold::ACTCLIP4ON<<ICMold::ACTCLIP5ON<<ICMold::ACTCLIP6ON
-                           <<ICMold::ACT_AUX5<<ICMold::ACT_AUX6<<ICMold::ACT_AUX1
-                          <<ICMold::ACT_AUX2<<ICMold::ACT_AUX3<<ICMold::ACT_AUX4);
+                            <<ICMold::ACT_AUX5<<ICMold::ACT_AUX6<<ICMold::ACT_AUX1
+                            <<ICMold::ACT_AUX2<<ICMold::ACT_AUX3<<ICMold::ACT_AUX4);
 QList<int> fixtureOffAction_(QList<int>()<<ICMold::ACTCLIP1OFF<<ICMold::ACTCLIP2OFF<<ICMold::ACTCLIP3OFF
                              <<ICMold::ACTCLIP4OFF<<ICMold::ACTCLIP5OFF<<ICMold::ACTCLIP6OFF
-                            <<(ICMold::ACT_AUX5)<<(ICMold::ACT_AUX6)<<(ICMold::ACT_AUX1)
-                           <<(ICMold::ACT_AUX2)<<(ICMold::ACT_AUX3)<<(ICMold::ACT_AUX4));
+                             <<(ICMold::ACT_AUX5)<<(ICMold::ACT_AUX6)<<(ICMold::ACT_AUX1)
+                             <<(ICMold::ACT_AUX2)<<(ICMold::ACT_AUX3)<<(ICMold::ACT_AUX4));
 
-void FillFixtureItems(const FixtureConfigs& fConfigs, bool isOn,  QList<ICMoldItem>& program, int step)
+void FillFixtureItems(const FixtureConfigs& fConfigs, bool isOn,  QList<ICMoldItem>& program, int step, int delay = 10)
 {
     ICMoldItem item;
-    item.SetDVal(10);
+    item.SetDVal(delay);
     item.SetNum(step);
     item.SetIFVal(isOn);
     item.SetActualMoldCount(0);
@@ -920,6 +920,56 @@ void FillPoseItem(int action, ICMoldItem& item)
     item.SetSVal(0);
 }
 
+void FillReleasePoseItems(const QList<ReleasePosData>& data,
+                          QList<ICMoldItem>& program,
+                          int& step,
+                          quint32 yUp,
+                          quint32 yUps,
+                          quint32 yUpd,
+                          int x1Type, int y1Type, int zType, int x2Type, int y2Type,
+                          bool isCut = false,
+                          quint32 cutOnTime = 0)
+{
+    if(data.isEmpty()) return;
+    ICMoldItem item;
+    QList<int> axisActionList;
+    axisActionList
+            <<getZAction(zType, ICMold::ACTCOMEIN)
+           <<getXAction(x1Type, ICMold::ACTMAINFORWARD);
+    QList<int> steps;
+    steps<<step + 1<<step + 1;
+    for(int i = 0; i < data.size(); ++i)
+    {
+        ++step;
+        steps[0] = steps[1] = step;
+        FillPosItems(axisActionList, data.at(i).pos, program, steps);
+        // release product
+        FillAxisItem(getYAction(y1Type, ICMold::ACTMAINDOWN), data.at(i).pos, item);
+        item.SetNum(++step);
+        program.append(item);
+        if(isCut)
+        {
+            FillFixtureItems(data.at(i).fixtureConfis, true, program, ++step);
+            FillFixtureItems(data.at(i).fixtureConfis, false, program, ++step, cutOnTime);
+        }
+        else
+            FillFixtureItems(data.at(i).fixtureConfis, false, program, ++step);
+        // PYU
+        item.SetAction(getYAction(y1Type,  ICMold::ACTMAINUP));
+        item.SetNum(++step);
+        item.SetActualPos(yUp);
+        item.SetSVal(yUps);
+        item.SetDVal(yUpd);
+        program.append(item);
+    }
+    // remove the more one y up
+    if(!data.isEmpty() && !isCut)
+    {
+        program.pop_back();
+        --step;
+    }
+}
+
 bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Type, int y2Type)
 {
     QList<ICMoldItem> program;
@@ -931,10 +981,10 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
     QList<int> steps;
     steps<<step<<step<<step<<step<<step;
     axisActionList<<getXAction(x1Type, ACTMAINBACKWARD)
-                    <<getYAction(y1Type, ACTMAINUP)
-                      <<getZAction(zType, ACTCOMEIN)
-                        <<getX2Action(x2Type, ACTVICEBACKWARD)
-                          <<getY2Action(y2Type, ACTVICEUP);
+                 <<getYAction(y1Type, ACTMAINUP)
+                <<getZAction(zType, ACTCOMEIN)
+               <<getX2Action(x2Type, ACTVICEBACKWARD)
+              <<getY2Action(y2Type, ACTVICEUP);
     FillPosItems(axisActionList, simpleTeachData_.stdPos, program, steps);
     item.SetAction(ACTPOSEVERT);
     item.SetDVal(0);
@@ -993,51 +1043,39 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         item.SetDVal(10);
         program.append(item);
         // go out
-        steps.clear();
-        steps<<step + 1<<step + 1;
-        axisActionList.clear();
-        axisActionList
-                <<getZAction(zType, ACTCOMEIN)
-               <<getXAction(x1Type, ACTMAINFORWARD);
-        ++step;
-        for(int i = 0; i < simpleTeachData_.releaseProductPosList.size(); ++i)
-        {
 
-            FillPosItems(axisActionList, simpleTeachData_.releaseProductPosList.at(i).pos, program, steps);
-            // release product
-            FillAxisItem(getYAction(y1Type, ACTMAINDOWN), simpleTeachData_.releaseProductPosList.at(i).pos, item);
-            item.SetNum(++step);
-            program.append(item);
-            FillFixtureItems(simpleTeachData_.releaseProductPosList.at(i).fixtureConfis, false, program, ++step);
-            // PYU
-            item.SetAction(getYAction(y1Type, ACTMAINUP));
-            item.SetNum(++step);
-            item.SetActualPos(simpleTeachData_.releaseProductYUp);
-            item.SetSVal(simpleTeachData_.releaseProductYUpS);
-            item.SetDVal(simpleTeachData_.releaseProductYUpD);
-            program.append(item);
-            steps[0] = steps[1] = ++step;
-        }
-        // remove the more one y up
-        if(!simpleTeachData_.releaseProductPosList.isEmpty())
+        if(simpleTeachData_.usedCutOutlet)
         {
-            program.pop_back();
-            --step;
+            FillReleasePoseItems(simpleTeachData_.cutOutletPosList, program, step,
+                                 simpleTeachData_.cutOutletYUp, simpleTeachData_.cutOutletYUpS,
+                                 simpleTeachData_.cutOutletYUpD, x1Type, y1Type, zType, x2Type, y2Type,
+                                 true, simpleTeachData_.cutOnTime);
         }
+
+        FillReleasePoseItems(simpleTeachData_.releaseProductPosList, program, step,
+                             simpleTeachData_.releaseProductYUp, simpleTeachData_.releaseProductYUpS,
+                             simpleTeachData_.releaseProductYUpD, x1Type, y1Type, zType, x2Type, y2Type);
+
     }
+
+    //
+
     // up to go in
-    item.SetAction(getYAction(y1Type, ACTMAINUP));
-    item.SetNum(++step);
-    item.SetActualPos(0);
-    item.SetSVal(simpleTeachData_.stdPos.b.y1S);
-    item.SetDVal(20);
-    program.append(item);
-    item.SetAction(getXAction(x1Type, ACTMAINFORWARD));
-    item.SetNum(step);
-    item.SetActualPos(simpleTeachData_.posBH.b.x1);
-    item.SetSVal(simpleTeachData_.posBH.b.x1S);
-    item.SetDVal(20);
-    program.append(item);
+    if(simpleTeachData_.usedMainArm)
+    {
+        item.SetAction(getYAction(y1Type, ACTMAINUP));
+        item.SetNum(++step);
+        item.SetActualPos(0);
+        item.SetSVal(simpleTeachData_.stdPos.b.y1S);
+        item.SetDVal(20);
+        program.append(item);
+        item.SetAction(getXAction(x1Type, ACTMAINFORWARD));
+        item.SetNum(step);
+        item.SetActualPos(simpleTeachData_.posBH.b.x1);
+        item.SetSVal(simpleTeachData_.posBH.b.x1S);
+        item.SetDVal(20);
+        program.append(item);
+    }
     // end
     item.SetNum(++step);
     item.SetAction(ACTEND);
