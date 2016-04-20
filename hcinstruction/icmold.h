@@ -81,6 +81,16 @@ struct ReleasePosData{
     bool InitFromByteArray(const QString& text);
 };
 
+union CutTime{
+    struct{
+        quint32 cutAfterPullTime:10;
+        quint32 cutOnTime:10;
+        quint32 pullOffAfterCutOffTime:10;
+        quint32 rev:2;
+    }b;
+    quint32 all;
+};
+
 struct SimpleTeachData
 {
     bool usedMainArm;
@@ -103,7 +113,15 @@ struct SimpleTeachData
     quint32 cutOutletYUp;
     quint32 cutOutletYUpS;
     quint32 cutOutletYUpD;
-    quint32 cutOnTime;
+    CutTime cutTime;
+    quint32 afterGetX1;
+    quint32 afterGetX1S;
+    quint32 afterGetX1D;
+    quint32 afterGetX2;
+    quint32 afterGetX2S;
+    quint32 afterGetX2D;
+    bool usedAfterGetPos;
+    bool usedPBHPos;
     QByteArray toByteArray() const
     {
         QByteArray ret = QByteArray::number(usedMainArm) + "," +
@@ -146,7 +164,15 @@ struct SimpleTeachData
                 QByteArray::number(cutOutletYUp) + "," +
                 QByteArray::number(cutOutletYUpS) + "," +
                 QByteArray::number(cutOutletYUpD) + "," +
-                QByteArray::number(cutOnTime);
+                QByteArray::number(cutTime.all) + "," +
+                QByteArray::number(afterGetX1) + "," +
+                QByteArray::number(afterGetX1S) + "," +
+                QByteArray::number(afterGetX1D) + "," +
+                QByteArray::number(afterGetX2) + "," +
+                QByteArray::number(afterGetX2S) + "," +
+                QByteArray::number(afterGetX2D) + "," +
+                QByteArray::number(usedAfterGetPos) + "," +
+                QByteArray::number(usedPBHPos);
         return ret;
     }
     bool InitFromByteArray(const QString& text);

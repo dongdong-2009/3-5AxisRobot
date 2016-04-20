@@ -3683,51 +3683,51 @@ Bandera</translation>
 rtar</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="473"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="731"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="911"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1019"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="477"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="735"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="915"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1023"/>
         <source>warning</source>
         <translation>Advertencia</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="474"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="478"/>
         <source>Stand program can not be insert action</source>
         <translation>Programa de soporte no se puede insertar la acción</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="502"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="747"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="506"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="751"/>
         <source>Warning</source>
         <translation>Advertencia</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="503"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="507"/>
         <source>Can not add standby position program</source>
         <translation>No se puede añadir la posición de reserva del programa</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="732"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="736"/>
         <source>Stand program can not be delete action</source>
         <translation>El programa estándar no puede borrar acción</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="748"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="752"/>
         <source>Can not delete standby position program</source>
         <translation>No puede borrar el programa de la posición de reserva </translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="912"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="916"/>
         <source>Stand program can not do Up action</source>
         <translation>Programa de soporte no puede hacer hasta la acción</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1020"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1024"/>
         <source>Stand program can not do Down action</source>
         <translation>Programa de soporte no puede hacer hacia abajo acción</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1312"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1316"/>
         <source>Flag[%1]:%2</source>
         <translation>Bandera[%1]%2</translation>
     </message>
@@ -4178,7 +4178,7 @@ de ciclo</translation>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="331"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="331"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="830"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="834"/>
         <source>No Follow</source>
         <translation>No restrear</translation>
     </message>
@@ -4199,8 +4199,8 @@ de ciclo</translation>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="427"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="105"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="258"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="839"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="849"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="843"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="853"/>
         <source>Speed Disable</source>
         <translation>Speed Un</translation>
     </message>
@@ -4273,17 +4273,17 @@ de ciclo</translation>
         <translation>No se puede editar el programaen posición de espera</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="824"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="828"/>
         <source>Follow</source>
         <translation>rastrear</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="839"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="843"/>
         <source>Speed Enable</source>
         <translation>Speed En</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="899"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="903"/>
         <source>Flag[%1]:%2</source>
         <translation>Bandera[%1]%2</translation>
     </message>
@@ -8008,293 +8008,316 @@ de producción</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="55"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="660"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1193"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1740"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="368"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="746"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1295"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1992"/>
         <source>X1</source>
         <translation type="unfinished">X1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="65"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1007"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1299"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1756"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="186"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1074"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1401"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1941"/>
         <source>Y1</source>
         <translation type="unfinished">Y1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="75"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="650"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1319"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1772"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="97"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="736"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1421"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2091"/>
         <source>Z</source>
         <translation type="unfinished">Z</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="85"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="912"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1788"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="321"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="979"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1909"/>
         <source>X2</source>
         <translation type="unfinished">X2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="95"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="935"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1804"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="388"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1002"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2270"/>
         <source>Y2</source>
         <translation type="unfinished">Y2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="105"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2181"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="341"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1896"/>
         <source>Get Product Pos:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="124"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="200"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="359"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="532"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="619"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="740"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1000"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1078"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1244"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1402"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="119"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="208"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="257"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="480"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="618"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="705"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="807"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1067"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1145"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1346"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1504"/>
         <source>Set In</source>
         <translation type="unfinished">guardar</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="181"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1906"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="281"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1979"/>
         <source>Standby Pos:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="257"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="267"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="277"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="287"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="297"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="689"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="699"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="855"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="865"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="875"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1203"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1309"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1329"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="67"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="311"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="331"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="358"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="415"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="775"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="785"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="922"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="932"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="942"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1305"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1411"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1431"/>
         <source>mm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="326"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="431"/>
         <source>Get Product Fixture Sel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="340"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2200"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="398"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2209"/>
         <source>Get Outlet Pos:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="422"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="294"/>
         <source>Get Out Fixture Sel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="503"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="589"/>
         <source>Release  Outlet Pos:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="561"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="928"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1383"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="647"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="995"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1485"/>
         <source>Modify</source>
         <translation type="unfinished">Editar</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="590"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="676"/>
         <source>Release  Product Pos:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="682"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1029"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="768"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1096"/>
         <source>Per Y Up Pos:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="721"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2219"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2046"/>
         <source>Pos before Hor:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="815"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="882"/>
         <source>Add Product Pos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="828"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="895"/>
         <source>Release P Fixture Sel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1091"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1104"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1464"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1158"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1171"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1566"/>
         <source>Delete</source>
         <translation type="unfinished">Borrar</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="905"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="972"/>
         <source>Release O Fixture Sel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="981"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="512"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2404"/>
+        <source>After Get Pos:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1048"/>
         <source>Add Outlet Pos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1225"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="260"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="755"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="780"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1219"/>
+        <source>PHB En</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1327"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="286"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="787"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="812"/>
         <source>Cut Pos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1345"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1447"/>
         <source>Cut Sel-1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1364"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1466"/>
         <source>Add Cut</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1429"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1531"/>
         <source>Per Y Up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1516"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1618"/>
         <source>Main Arm En</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1551"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1653"/>
         <source>Main Arm Outlet En</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1583"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1685"/>
         <source>Sub Arm En</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1615"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1717"/>
         <source>Cut Outlet En</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1640"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1742"/>
         <source>Pos Inside</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1662"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1764"/>
         <source>Pos Outside</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1681"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1783"/>
         <source>Pos of Cut</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1696"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1798"/>
         <source>Speed Conf</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1820"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1836"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1852"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1884"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2264"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1925"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1957"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2222"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2238"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2382"/>
         <source>%</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2317"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2470"/>
         <source>Time Conf</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2332"/>
-        <source>Cut On Time:</source>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2485"/>
+        <source>Cut Time-2:</source>
+        <oldsource>Cut On Time:</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2342"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2495"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2502"/>
         <source>s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2351"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2509"/>
+        <source>Cut Time-1:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2519"/>
+        <source>Cut Time-3:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2531"/>
         <source>Advance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2365"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2545"/>
         <source>Save Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="230"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="668"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="697"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="256"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="700"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="729"/>
         <source>Rel Product</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="245"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="714"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="742"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="271"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="746"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="774"/>
         <source>Rel Outlet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="600"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="632"/>
         <source>X1:%1, Y1:%2, </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="602"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="634"/>
         <source>Z:%1
 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="604"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="636"/>
         <source>, X2:%1, Y2:%2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="606"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="638"/>
         <source>Use</source>
         <translation type="unfinished">Uso</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="627"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="652"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="659"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="684"/>
         <source>%2-%1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -9568,17 +9591,12 @@ Core fuera</translation>
         <translation>Sistema de control de mano mecánica de varios ejes</translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="192"/>
+        <location filename="mainframe.ui" line="193"/>
         <location filename="mainframe_5.ui" line="216"/>
         <source>Z:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="224"/>
-        <location filename="mainframe.ui" line="269"/>
-        <location filename="mainframe.ui" line="314"/>
-        <location filename="mainframe.ui" line="359"/>
-        <location filename="mainframe.ui" line="404"/>
         <location filename="mainframe_5.ui" line="248"/>
         <location filename="mainframe_5.ui" line="293"/>
         <location filename="mainframe_5.ui" line="338"/>
@@ -9588,39 +9606,48 @@ Core fuera</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="237"/>
+        <location filename="mainframe.ui" line="230"/>
+        <location filename="mainframe.ui" line="281"/>
+        <location filename="mainframe.ui" line="332"/>
+        <location filename="mainframe.ui" line="383"/>
+        <location filename="mainframe.ui" line="434"/>
+        <source>mm  </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainframe.ui" line="244"/>
         <location filename="mainframe_5.ui" line="261"/>
         <source>X1:</source>
         <translation type="unfinished">X1:</translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="282"/>
+        <location filename="mainframe.ui" line="295"/>
         <location filename="mainframe_5.ui" line="306"/>
         <source>Y1:</source>
         <translation type="unfinished">Y1:</translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="327"/>
+        <location filename="mainframe.ui" line="346"/>
         <location filename="mainframe_5.ui" line="351"/>
         <source>X2:</source>
         <translation type="unfinished">X2:</translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="372"/>
+        <location filename="mainframe.ui" line="397"/>
         <location filename="mainframe_5.ui" line="396"/>
         <source>Y2:</source>
         <translation type="unfinished">Y2:</translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="489"/>
+        <location filename="mainframe.ui" line="519"/>
         <location filename="mainframe_5.ui" line="513"/>
         <source>A:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="521"/>
-        <location filename="mainframe.ui" line="566"/>
-        <location filename="mainframe.ui" line="611"/>
+        <location filename="mainframe.ui" line="551"/>
+        <location filename="mainframe.ui" line="596"/>
+        <location filename="mainframe.ui" line="641"/>
         <location filename="mainframe_5.ui" line="545"/>
         <location filename="mainframe_5.ui" line="590"/>
         <location filename="mainframe_5.ui" line="635"/>
@@ -9628,19 +9655,19 @@ Core fuera</translation>
         <translation>grado</translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="534"/>
+        <location filename="mainframe.ui" line="564"/>
         <location filename="mainframe_5.ui" line="558"/>
         <source>B:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="579"/>
+        <location filename="mainframe.ui" line="609"/>
         <location filename="mainframe_5.ui" line="603"/>
         <source>C:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainframe.ui" line="631"/>
+        <location filename="mainframe.ui" line="661"/>
         <location filename="mainframe_5.ui" line="655"/>
         <source>Step</source>
         <translation type="unfinished"></translation>
@@ -9847,16 +9874,16 @@ archivo nuevo</translation>
         <location filename="function_settings/moldinformation.cpp" line="92"/>
         <location filename="function_settings/moldinformation.cpp" line="213"/>
         <location filename="function_settings/moldinformation.cpp" line="221"/>
-        <location filename="function_settings/moldinformation.cpp" line="266"/>
         <location filename="function_settings/moldinformation.cpp" line="277"/>
-        <location filename="function_settings/moldinformation.cpp" line="303"/>
-        <location filename="function_settings/moldinformation.cpp" line="454"/>
-        <location filename="function_settings/moldinformation.cpp" line="467"/>
-        <location filename="function_settings/moldinformation.cpp" line="486"/>
-        <location filename="function_settings/moldinformation.cpp" line="496"/>
-        <location filename="function_settings/moldinformation.cpp" line="506"/>
-        <location filename="function_settings/moldinformation.cpp" line="634"/>
-        <location filename="function_settings/moldinformation.cpp" line="680"/>
+        <location filename="function_settings/moldinformation.cpp" line="288"/>
+        <location filename="function_settings/moldinformation.cpp" line="315"/>
+        <location filename="function_settings/moldinformation.cpp" line="466"/>
+        <location filename="function_settings/moldinformation.cpp" line="479"/>
+        <location filename="function_settings/moldinformation.cpp" line="498"/>
+        <location filename="function_settings/moldinformation.cpp" line="508"/>
+        <location filename="function_settings/moldinformation.cpp" line="518"/>
+        <location filename="function_settings/moldinformation.cpp" line="646"/>
+        <location filename="function_settings/moldinformation.cpp" line="693"/>
         <source>warning</source>
         <translation>Advertencia</translation>
     </message>
@@ -9869,12 +9896,12 @@ está vacío, ingrese el nombre del archivo.</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="114"/>
-        <location filename="function_settings/moldinformation.cpp" line="588"/>
-        <location filename="function_settings/moldinformation.cpp" line="718"/>
-        <location filename="function_settings/moldinformation.cpp" line="726"/>
-        <location filename="function_settings/moldinformation.cpp" line="731"/>
-        <location filename="function_settings/moldinformation.cpp" line="770"/>
-        <location filename="function_settings/moldinformation.cpp" line="988"/>
+        <location filename="function_settings/moldinformation.cpp" line="600"/>
+        <location filename="function_settings/moldinformation.cpp" line="732"/>
+        <location filename="function_settings/moldinformation.cpp" line="740"/>
+        <location filename="function_settings/moldinformation.cpp" line="745"/>
+        <location filename="function_settings/moldinformation.cpp" line="784"/>
+        <location filename="function_settings/moldinformation.cpp" line="1004"/>
         <source>Warnning</source>
         <translation>Advertencia</translation>
     </message>
@@ -9907,7 +9934,7 @@ introduzca un nuevo nombre de archivo.</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="214"/>
-        <location filename="function_settings/moldinformation.cpp" line="278"/>
+        <location filename="function_settings/moldinformation.cpp" line="289"/>
         <source>Source file name is empty,
 Please choose an existing file.</source>
         <translation>Nombre del archivo fuente está
@@ -9920,154 +9947,154 @@ Please write the destination file name.</source>
         <translation>Nombre del archivo está vacío, ingrese el nombre del archivo.</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="267"/>
+        <location filename="function_settings/moldinformation.cpp" line="278"/>
         <source>Destination file already exists!
 Please try a new name</source>
         <translation>¡Archivo de destino ya existe! Por favor, intente un nuevo nombre.</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="304"/>
+        <location filename="function_settings/moldinformation.cpp" line="316"/>
         <source>File does not exist!</source>
         <translation>El archivo no existe</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="347"/>
-        <location filename="function_settings/moldinformation.cpp" line="364"/>
-        <location filename="function_settings/moldinformation.cpp" line="813"/>
-        <location filename="function_settings/moldinformation.cpp" line="964"/>
+        <location filename="function_settings/moldinformation.cpp" line="359"/>
+        <location filename="function_settings/moldinformation.cpp" line="376"/>
+        <location filename="function_settings/moldinformation.cpp" line="827"/>
+        <location filename="function_settings/moldinformation.cpp" line="980"/>
         <source>Warning</source>
         <translation>Advertencia</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="347"/>
-        <location filename="function_settings/moldinformation.cpp" line="364"/>
+        <location filename="function_settings/moldinformation.cpp" line="359"/>
+        <location filename="function_settings/moldinformation.cpp" line="376"/>
         <source>file name is empty</source>
         <translation>El nombre es vacío</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="388"/>
+        <location filename="function_settings/moldinformation.cpp" line="400"/>
         <source>Tips</source>
         <translation>Sugerencia</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="388"/>
+        <location filename="function_settings/moldinformation.cpp" line="400"/>
         <source>On the Current mold already!</source>
         <translation>¡En el actual molde ya!</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="397"/>
+        <location filename="function_settings/moldinformation.cpp" line="409"/>
         <source>critical</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="397"/>
+        <location filename="function_settings/moldinformation.cpp" line="409"/>
         <source>Read mold or mold para fail! Please change other mold!</source>
         <translation>Dato de molde ha fallado! Por favor cambia para otro molde!</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="410"/>
+        <location filename="function_settings/moldinformation.cpp" line="422"/>
         <source>Loading...</source>
         <translation>Cargando…</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="455"/>
-        <location filename="function_settings/moldinformation.cpp" line="487"/>
-        <location filename="function_settings/moldinformation.cpp" line="635"/>
-        <location filename="function_settings/moldinformation.cpp" line="681"/>
+        <location filename="function_settings/moldinformation.cpp" line="467"/>
+        <location filename="function_settings/moldinformation.cpp" line="499"/>
+        <location filename="function_settings/moldinformation.cpp" line="647"/>
+        <location filename="function_settings/moldinformation.cpp" line="694"/>
         <source>The mold file </source>
         <translation>Archivo de molde</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="457"/>
-        <location filename="function_settings/moldinformation.cpp" line="489"/>
-        <location filename="function_settings/moldinformation.cpp" line="637"/>
-        <location filename="function_settings/moldinformation.cpp" line="683"/>
+        <location filename="function_settings/moldinformation.cpp" line="469"/>
+        <location filename="function_settings/moldinformation.cpp" line="501"/>
+        <location filename="function_settings/moldinformation.cpp" line="649"/>
+        <location filename="function_settings/moldinformation.cpp" line="696"/>
         <source> is being used</source>
         <translation>está siendo usado</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="468"/>
-        <location filename="function_settings/moldinformation.cpp" line="497"/>
+        <location filename="function_settings/moldinformation.cpp" line="480"/>
+        <location filename="function_settings/moldinformation.cpp" line="509"/>
         <source>Stand programs can not be delete!</source>
         <translation>Programas de soporte no se pueden borrar!</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="507"/>
+        <location filename="function_settings/moldinformation.cpp" line="519"/>
         <source>Are you sure to delete the selected files?</source>
         <translation>¿Seguro borrar los archivos seleccionados?</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="588"/>
-        <location filename="function_settings/moldinformation.cpp" line="988"/>
+        <location filename="function_settings/moldinformation.cpp" line="600"/>
+        <location filename="function_settings/moldinformation.cpp" line="1004"/>
         <source>Backup files is not exists!</source>
         <translation>Archivos de copia de seguridad no existe!</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="644"/>
-        <location filename="function_settings/moldinformation.cpp" line="673"/>
-        <location filename="function_settings/moldinformation.cpp" line="835"/>
-        <location filename="function_settings/moldinformation.cpp" line="864"/>
+        <location filename="function_settings/moldinformation.cpp" line="656"/>
+        <location filename="function_settings/moldinformation.cpp" line="686"/>
+        <location filename="function_settings/moldinformation.cpp" line="849"/>
+        <location filename="function_settings/moldinformation.cpp" line="879"/>
         <source>tips</source>
         <translation>Sugerencia</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="644"/>
-        <location filename="function_settings/moldinformation.cpp" line="673"/>
-        <location filename="function_settings/moldinformation.cpp" line="835"/>
-        <location filename="function_settings/moldinformation.cpp" line="864"/>
+        <location filename="function_settings/moldinformation.cpp" line="656"/>
+        <location filename="function_settings/moldinformation.cpp" line="686"/>
+        <location filename="function_settings/moldinformation.cpp" line="849"/>
+        <location filename="function_settings/moldinformation.cpp" line="879"/>
         <source>%1 is exist,replace it?</source>
         <translation>% 1 es existe, ¿reemplazarlo?</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="718"/>
+        <location filename="function_settings/moldinformation.cpp" line="732"/>
         <source>Wrong program format!</source>
         <translation>Forma de programa mala</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="726"/>
+        <location filename="function_settings/moldinformation.cpp" line="740"/>
         <source>Wrong config format!!!</source>
         <translation>Forma de programa mala</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="731"/>
+        <location filename="function_settings/moldinformation.cpp" line="745"/>
         <source>Wrong config format!</source>
         <translation>forma de configuraciones malas</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="737"/>
+        <location filename="function_settings/moldinformation.cpp" line="751"/>
         <source>Restoring, please wait...</source>
         <translation>Restaurando, por favor, espere…</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="770"/>
+        <location filename="function_settings/moldinformation.cpp" line="784"/>
         <source>Wrong program format!!!</source>
         <translation>Forma de programa mala</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="792"/>
-        <location filename="function_settings/moldinformation.cpp" line="914"/>
+        <location filename="function_settings/moldinformation.cpp" line="806"/>
+        <location filename="function_settings/moldinformation.cpp" line="930"/>
         <source>Information</source>
         <translation>Sugerencia</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="792"/>
-        <location filename="function_settings/moldinformation.cpp" line="914"/>
+        <location filename="function_settings/moldinformation.cpp" line="806"/>
+        <location filename="function_settings/moldinformation.cpp" line="930"/>
         <source>Operation finished!</source>
         <translation>Operación termina</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="813"/>
-        <location filename="function_settings/moldinformation.cpp" line="964"/>
+        <location filename="function_settings/moldinformation.cpp" line="827"/>
+        <location filename="function_settings/moldinformation.cpp" line="980"/>
         <source>USB is not connected!</source>
         <translation>¡USB no está conectado!</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="887"/>
+        <location filename="function_settings/moldinformation.cpp" line="903"/>
         <source>Backuping, please wait...</source>
         <translation>Está guardando la copia, por favor, espere…</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="991"/>
+        <location filename="function_settings/moldinformation.cpp" line="1007"/>
         <source>Refresh File List, please wait...</source>
         <translation>Refrescar la lista de archivo, espere por favor…</translation>
     </message>

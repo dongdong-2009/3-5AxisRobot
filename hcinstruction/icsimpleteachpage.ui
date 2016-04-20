@@ -46,26 +46,48 @@
      </property>
      <widget class="QWidget" name="page">
       <layout class="QGridLayout" name="gridLayout">
-       <property name="verticalSpacing">
-        <number>10</number>
+       <property name="leftMargin">
+        <number>2</number>
        </property>
-       <item row="0" column="2">
-        <widget class="QLabel" name="pIX1Label">
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <property name="rightMargin">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>2</number>
+       </property>
+       <property name="spacing">
+        <number>4</number>
+       </property>
+       <item row="1" column="6">
+        <widget class="QLabel" name="pIY2mmLabel">
          <property name="text">
-          <string>X1</string>
+          <string>mm</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
          </property>
         </widget>
        </item>
-       <item row="0" column="3">
-        <widget class="QLabel" name="pIY1Label">
-         <property name="text">
-          <string>Y1</string>
+       <item row="2" column="2">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="stdPosX1">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
          </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
+        </widget>
+       </item>
+       <item row="3" column="5">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="getProductPosX2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
          </property>
         </widget>
        </item>
@@ -76,33 +98,6 @@
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="5">
-        <widget class="QLabel" name="pIX2Label">
-         <property name="text">
-          <string>X2</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="6">
-        <widget class="QLabel" name="pIY2Label">
-         <property name="text">
-          <string>Y2</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="0">
-        <widget class="QLabel" name="label">
-         <property name="text">
-          <string>Get Product Pos:</string>
          </property>
         </widget>
        </item>
@@ -135,6 +130,36 @@
          </property>
         </widget>
        </item>
+       <item row="2" column="4">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="stdPosZ">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="5">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="stdPosX2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="stdPosY1">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
        <item row="3" column="3">
         <widget class="ICLineEditWithVirtualNumericKeypad" name="getProductPosY1">
          <property name="minimumSize">
@@ -145,8 +170,8 @@
          </property>
         </widget>
        </item>
-       <item row="3" column="4">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="getProductPosZ">
+       <item row="7" column="5">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="afterGetPosX2">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -155,30 +180,13 @@
          </property>
         </widget>
        </item>
-       <item row="3" column="5">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="getProductPosX2">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>32</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="6">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="getProductPosY2">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>32</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="label_7">
+       <item row="0" column="3">
+        <widget class="QLabel" name="pIY1Label">
          <property name="text">
-          <string>Standby Pos:</string>
+          <string>Y1</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
          </property>
         </widget>
        </item>
@@ -201,8 +209,8 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="2">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="stdPosX1">
+       <item row="3" column="4">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="getProductPosZ">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -211,8 +219,8 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="3">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="stdPosY1">
+       <item row="5" column="3">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="getOutletPosY1">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -221,123 +229,13 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="4">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="stdPosZ">
+       <item row="5" column="2">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="getOutletPosX1">
          <property name="minimumSize">
           <size>
            <width>0</width>
            <height>32</height>
           </size>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="5">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="stdPosX2">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>32</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="6">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="stdPosY2">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>32</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="2">
-        <widget class="QLabel" name="pIX1mmLabel">
-         <property name="text">
-          <string>mm</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="3">
-        <widget class="QLabel" name="pIY1mmLabel">
-         <property name="text">
-          <string>mm</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="4">
-        <widget class="QLabel" name="label_10">
-         <property name="text">
-          <string>mm</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="5">
-        <widget class="QLabel" name="pIX2mmLabel">
-         <property name="text">
-          <string>mm</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="6">
-        <widget class="QLabel" name="pIY2mmLabel">
-         <property name="text">
-          <string>mm</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="1">
-        <spacer name="verticalSpacer">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="4" column="0" colspan="2">
-        <widget class="QPushButton" name="getProductFSel">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>40</height>
-          </size>
-         </property>
-         <property name="text">
-          <string>Get Product Fixture Sel</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="2" colspan="5">
-        <widget class="QLabel" name="getProductFInfo">
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="0">
-        <widget class="QLabel" name="label_14">
-         <property name="text">
-          <string>Get Outlet Pos:</string>
          </property>
         </widget>
        </item>
@@ -360,8 +258,15 @@
          </property>
         </widget>
        </item>
-       <item row="5" column="2">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="getOutletPosX1">
+       <item row="4" column="2" colspan="5">
+        <widget class="QLabel" name="getProductFInfo">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="6">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="stdPosY2">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -370,43 +275,10 @@
          </property>
         </widget>
        </item>
-       <item row="5" column="3">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="getOutletPosY1">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>32</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="4">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="getOutletPosZ">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>32</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="5">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="getOutletPosX2">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>32</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="6">
-        <widget class="ICLineEditWithVirtualNumericKeypad" name="getOutletPosY2">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>32</height>
-          </size>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>Standby Pos:</string>
          </property>
         </widget>
        </item>
@@ -423,10 +295,224 @@
          </property>
         </widget>
        </item>
+       <item row="5" column="5">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="getOutletPosX2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QLabel" name="pIX2mmLabel">
+         <property name="text">
+          <string>mm</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QLabel" name="pIX2Label">
+         <property name="text">
+          <string>X2</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>mm</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Get Product Pos:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="2">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="afterGetPosX1">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="pIX1mmLabel">
+         <property name="text">
+          <string>mm</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="pIX1Label">
+         <property name="text">
+          <string>X1</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="6">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="getOutletPosY2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="6">
+        <widget class="QLabel" name="pIY2Label">
+         <property name="text">
+          <string>Y2</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_14">
+         <property name="text">
+          <string>Get Outlet Pos:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="6">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="getProductPosY2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="pIY1mmLabel">
+         <property name="text">
+          <string>mm</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0" colspan="2">
+        <widget class="QPushButton" name="getProductFSel">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Get Product Fixture Sel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="4">
+        <widget class="ICLineEditWithVirtualNumericKeypad" name="getOutletPosZ">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
        <item row="6" column="2" colspan="5">
         <widget class="QLabel" name="getOutletFInfo">
          <property name="text">
           <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="7" column="1">
+        <widget class="QPushButton" name="afterGetPosSetIn">
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Set In</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QCheckBox" name="afterGetPosEn">
+         <property name="styleSheet">
+          <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+         </property>
+         <property name="text">
+          <string>After Get Pos:</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
@@ -700,25 +786,6 @@
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="1">
-            <widget class="QLabel" name="label_8">
-             <property name="minimumSize">
-              <size>
-               <width>120</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>120</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>Pos before Hor:</string>
              </property>
             </widget>
            </item>
@@ -1121,6 +1188,41 @@
            <item row="16" column="3" rowspan="2" colspan="5">
             <widget class="QListWidget" name="releaseOutletView"/>
            </item>
+           <item row="2" column="1">
+            <widget class="QCheckBox" name="pHBEn">
+             <property name="styleSheet">
+              <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+             </property>
+             <property name="text">
+              <string>PHB En</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
           </layout>
          </widget>
         </widget>
@@ -1170,8 +1272,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>667</width>
-            <height>306</height>
+            <width>296</width>
+            <height>282</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_3">
@@ -1728,283 +1830,8 @@
        </property>
        <item>
         <layout class="QGridLayout" name="gridLayout_4">
-         <item row="0" column="1">
-          <widget class="QLabel" name="pIX1Label_4">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="text">
-            <string>X1</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="2">
-          <widget class="QLabel" name="pIY1Label_4">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="text">
-            <string>Y1</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="3">
-          <widget class="QLabel" name="label_19">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="text">
-            <string>Z</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="4">
-          <widget class="QLabel" name="pIX2Label_3">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="text">
-            <string>X2</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="5" colspan="2">
-          <widget class="QLabel" name="pIY2Label_3">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="text">
-            <string>Y2</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QLabel" name="pIX1SpeedLabel">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="text">
-            <string>%</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="3">
-          <widget class="QLabel" name="pIZSpeedLabel">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="text">
-            <string>%</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="4">
-          <widget class="QLabel" name="pIX2SpeedLabel">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="text">
-            <string>%</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="1">
-          <widget class="ICLineEditWithVirtualNumericKeypad" name="stdSpeedX1">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>30</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="5" colspan="2">
-          <widget class="QLabel" name="pIY2SpeedLabel">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="text">
-            <string>%</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="QLabel" name="label_20">
-           <property name="minimumSize">
-            <size>
-             <width>120</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>120</width>
-             <height>16777215</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>Standby Pos:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="1">
-          <widget class="ICLineEditWithVirtualNumericKeypad" name="speedBHorX1">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>30</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="2">
-          <widget class="ICLineEditWithVirtualNumericKeypad" name="getProductSpeedY1">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>30</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="2">
-          <widget class="ICLineEditWithVirtualNumericKeypad" name="getOutletSpeedY1">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>30</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="2">
-          <widget class="ICLineEditWithVirtualNumericKeypad" name="speedBHorY1">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>30</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="3">
-          <widget class="ICLineEditWithVirtualNumericKeypad" name="speedBHorZ">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>30</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="3">
-          <widget class="ICLineEditWithVirtualNumericKeypad" name="getProductSpeedZ">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>30</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="3">
-          <widget class="ICLineEditWithVirtualNumericKeypad" name="getOutletSpeedZ">
+         <item row="2" column="2">
+          <widget class="ICLineEditWithVirtualNumericKeypad" name="stdSpeedY1">
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -2035,120 +1862,8 @@
            </property>
           </widget>
          </item>
-         <item row="3" column="4">
-          <widget class="ICLineEditWithVirtualNumericKeypad" name="getProductSpeedX2">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>30</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="4">
-          <widget class="ICLineEditWithVirtualNumericKeypad" name="speedBHorX2">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>30</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="5" colspan="2">
-          <widget class="ICLineEditWithVirtualNumericKeypad" name="getProductSpeedY2">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>30</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="5" colspan="2">
-          <widget class="ICLineEditWithVirtualNumericKeypad" name="getOutletSpeedY2">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>30</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="5" colspan="2">
-          <widget class="ICLineEditWithVirtualNumericKeypad" name="speedBHorY2">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>30</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="2">
-          <widget class="ICLineEditWithVirtualNumericKeypad" name="stdSpeedY1">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>30</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="4">
-          <widget class="ICLineEditWithVirtualNumericKeypad" name="stdSpeedX2">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>30</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="5" colspan="2">
-          <widget class="ICLineEditWithVirtualNumericKeypad" name="stdSpeedY2">
+         <item row="5" column="2">
+          <widget class="ICLineEditWithVirtualNumericKeypad" name="speedBHorY1">
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -2182,8 +1897,72 @@
            </property>
           </widget>
          </item>
-         <item row="4" column="0">
-          <widget class="QLabel" name="label_22">
+         <item row="0" column="4">
+          <widget class="QLabel" name="pIX2Label_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>X2</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLabel" name="pIZSpeedLabel">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>%</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="pIY1Label_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Y1</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="pIX1SpeedLabel">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>%</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_20">
            <property name="minimumSize">
             <size>
              <width>120</width>
@@ -2197,31 +1976,28 @@
             </size>
            </property>
            <property name="text">
-            <string>Get Outlet Pos:</string>
+            <string>Standby Pos:</string>
            </property>
           </widget>
          </item>
-         <item row="5" column="0">
-          <widget class="QLabel" name="label_23">
-           <property name="minimumSize">
-            <size>
-             <width>120</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>120</width>
-             <height>16777215</height>
-            </size>
+         <item row="0" column="1">
+          <widget class="QLabel" name="pIX1Label_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
            </property>
            <property name="text">
-            <string>Pos before Hor:</string>
+            <string>X1</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
            </property>
           </widget>
          </item>
-         <item row="3" column="1">
-          <widget class="ICLineEditWithVirtualNumericKeypad" name="getProductSpeedX1">
+         <item row="4" column="3">
+          <widget class="ICLineEditWithVirtualNumericKeypad" name="getOutletSpeedZ">
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -2252,6 +2028,348 @@
            </property>
           </widget>
          </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_23">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Pos before Hor:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="5" colspan="2">
+          <widget class="ICLineEditWithVirtualNumericKeypad" name="getOutletSpeedY2">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="ICLineEditWithVirtualNumericKeypad" name="getProductSpeedZ">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="label_19">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Z</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="ICLineEditWithVirtualNumericKeypad" name="getOutletSpeedY1">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="4">
+          <widget class="ICLineEditWithVirtualNumericKeypad" name="speedBHorX2">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="4">
+          <widget class="ICLineEditWithVirtualNumericKeypad" name="getProductSpeedX2">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="5" colspan="2">
+          <widget class="ICLineEditWithVirtualNumericKeypad" name="speedBHorY2">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="ICLineEditWithVirtualNumericKeypad" name="stdSpeedX1">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="ICLineEditWithVirtualNumericKeypad" name="getProductSpeedX1">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_22">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Get Outlet Pos:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="5" colspan="2">
+          <widget class="QLabel" name="pIY2SpeedLabel">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>%</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLabel" name="pIX2SpeedLabel">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>%</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="ICLineEditWithVirtualNumericKeypad" name="getProductSpeedY1">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="5" colspan="2">
+          <widget class="QLabel" name="pIY2Label_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Y2</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="5" colspan="2">
+          <widget class="ICLineEditWithVirtualNumericKeypad" name="getProductSpeedY2">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="ICLineEditWithVirtualNumericKeypad" name="speedBHorX1">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="3">
+          <widget class="ICLineEditWithVirtualNumericKeypad" name="speedBHorZ">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="5" colspan="2">
+          <widget class="ICLineEditWithVirtualNumericKeypad" name="stdSpeedY2">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="ICLineEditWithVirtualNumericKeypad" name="stdSpeedZ">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <widget class="ICLineEditWithVirtualNumericKeypad" name="stdSpeedX2">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
          <item row="1" column="2">
           <widget class="QLabel" name="pIY1SpeedLabel">
            <property name="sizePolicy">
@@ -2268,8 +2386,43 @@
            </property>
           </widget>
          </item>
-         <item row="2" column="3">
-          <widget class="ICLineEditWithVirtualNumericKeypad" name="stdSpeedZ">
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_26">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>After Get Pos:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="ICLineEditWithVirtualNumericKeypad" name="afterGetPosX1S">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="4">
+          <widget class="ICLineEditWithVirtualNumericKeypad" name="afterGetPosX2S">
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -2321,23 +2474,57 @@
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>181</width>
-       <height>25</height>
+       <width>301</width>
+       <height>101</height>
       </rect>
      </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
-      <item>
-       <widget class="QLabel" name="label_24">
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_27">
         <property name="text">
-         <string>Cut On Time:</string>
+         <string>Cut Time-2:</string>
         </property>
        </widget>
       </item>
-      <item>
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="cutOnTime"/>
+      <item row="0" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="cutTime1"/>
       </item>
-      <item>
+      <item row="0" column="2">
        <widget class="QLabel" name="label_25">
+        <property name="text">
+         <string>s</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_28">
+        <property name="text">
+         <string>s</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_24">
+        <property name="text">
+         <string>Cut Time-1:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="cutTime2"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_29">
+        <property name="text">
+         <string>Cut Time-3:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="cutTime3"/>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="label_30">
         <property name="text">
          <string>s</string>
         </property>

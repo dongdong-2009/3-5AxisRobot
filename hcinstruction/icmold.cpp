@@ -409,7 +409,18 @@ bool ICMold::ReadSimpleTeachFile(const QString &fileName)
         simpleTeachData_.cutOutletYUpS = 80;
         simpleTeachData_.cutOutletYUpD = 0;
 
-        simpleTeachData_.cutOnTime = 50;
+//        simpleTeachData_.cutTime.all = 50;
+        simpleTeachData_.cutTime.b.cutOnTime = 50;
+        simpleTeachData_.cutTime.b.cutAfterPullTime = 10;
+        simpleTeachData_.cutTime.b.pullOffAfterCutOffTime = 0;
+
+        simpleTeachData_.afterGetX1 = 0;
+        simpleTeachData_.afterGetX1S = 80;
+        simpleTeachData_.afterGetX1D = 0;
+
+        simpleTeachData_.afterGetX2 = 0;
+        simpleTeachData_.afterGetX2S = 80;
+        simpleTeachData_.afterGetX2D = 0;
         return true;
     }
 
@@ -773,7 +784,7 @@ bool SimpleTeachData::InitFromByteArray(const QString &text)
         cutOutletPosList.append(data);
     }
     lineItems = contentList.at(8).split(",");
-    if(lineItems.size() != 10) return false;
+//    if(lineItems.size() != 10) return false;
     releaseProductYUp = lineItems.at(0).toInt();
     releaseProductYUpS = lineItems.at(1).toInt();
     releaseProductYUpD = lineItems.at(2).toInt();
@@ -783,7 +794,28 @@ bool SimpleTeachData::InitFromByteArray(const QString &text)
     cutOutletYUp = lineItems.at(6).toInt();
     cutOutletYUpS = lineItems.at(7).toInt();
     cutOutletYUpD = lineItems.at(8).toInt();
-    cutOnTime = lineItems.at(9).toInt();
+    cutTime.all = lineItems.at(9).toInt();
+    if(lineItems.size() < 18)
+    {
+        afterGetX1 = 0;
+        afterGetX1S = 80;
+        afterGetX1D = 0;
+
+        afterGetX2 = 0;
+        afterGetX2S = 80;
+        afterGetX2D = 0;
+    }
+    else
+    {
+        afterGetX1 = lineItems.at(10).toInt();
+        afterGetX1S = lineItems.at(11).toInt();
+        afterGetX1D = lineItems.at(12).toInt();
+        afterGetX2 = lineItems.at(13).toInt();
+        afterGetX2S = lineItems.at(14).toInt();
+        afterGetX2D = lineItems.at(15).toInt();
+        usedAfterGetPos = lineItems.at(16).toInt();
+        usedPBHPos = lineItems.at(17).toInt();
+    }
     return true;
 }
 
@@ -910,7 +942,7 @@ void FillFixtureItems(const FixtureConfigs& fConfigs, bool isOn,  QList<ICMoldIt
 void FillFixtureCheckItems(const FixtureConfigs& fConfigs, bool isOn,  QList<ICMoldItem>& program, int &step)
 {
     ICMoldItem item;
-    item.SetDVal(10);
+    item.SetDVal(50);
     item.SetIFVal(isOn);
     item.SetAction(ICMold::ACT_Cut);
     for(int i = 0; i < fConfigs.size(); ++i)
@@ -940,7 +972,7 @@ void FillReleasePoseItems(const QList<ReleasePosData>& data,
                           int x1Type, int y1Type, int zType, int x2Type, int y2Type,
                           bool isSub = false,
                           bool isCut = false,
-                          quint32 cutOnTime = 0,
+                          CutTime cutTime = CutTime(),
                           const QString& comment = "")
 {
     if(data.isEmpty()) return;
@@ -973,8 +1005,36 @@ void FillReleasePoseItems(const QList<ReleasePosData>& data,
         program.append(item);
         if(isCut)
         {
-            FillFixtureItems(data.at(i).fixtureConfis, true, program, ++step);
-            FillFixtureItems(data.at(i).fixtureConfis, false, program, ++step, cutOnTime);
+            if(data.at(i).fixtureConfis.size() == 1)
+            {
+                FillFixtureItems(data.at(i).fixtureConfis, true, program, ++step);
+                FillFixtureItems(data.at(i).fixtureConfis, false, program, ++step, cutTime.b.cutOnTime);
+            }
+            else if(data.at(i).fixtureConfis.size() == 2)
+            {
+                FixtureConfigs fConfigs = data.at(i).fixtureConfis;
+                item.SetDVal(0);
+                item.SetNum(++step);
+                item.SetIFVal(true);
+                item.SetActualMoldCount(0);
+                item.SetClip(fixtureOnAction_.at(fConfigs.at(0).first));
+                program.append(item);
+                item.SetClip(fixtureOnAction_.at(fConfigs.at(1).first));
+                item.SetNum(++step);
+                item.SetDVal(cutTime.b.cutAfterPullTime);
+                program.append(item);
+
+                item.SetIFVal(false);
+                item.SetClip(fixtureOffAction_.at(fConfigs.at(1).first));
+                item.SetNum(++step);
+                item.SetDVal(cutTime.b.cutOnTime);
+                program.append(item);
+
+                item.SetClip(fixtureOffAction_.at(fConfigs.at(0).first));
+                item.SetNum(++step);
+                item.SetDVal(cutTime.b.pullOffAfterCutOffTime);
+                program.append(item);
+            }
         }
         else
             FillFixtureItems(data.at(i).fixtureConfis, false, program, ++step);
@@ -1051,9 +1111,16 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         // fixture
         FillFixtureItems(simpleTeachData_.getProductPos.fixtureConfis, true, program, ++step);
         // backward
-        FillAxisItem(getXAction(x1Type, ACTMAINBACKWARD), simpleTeachData_.stdPos, item);
-        item.SetNum(++step);
-        program.append(item);
+        if(simpleTeachData_.usedAfterGetPos)
+        {
+            AddCommentAction(QString::fromUtf8("取产品后引拔位置"), ++step, program);
+            item.SetAction(getXAction(x1Type, ACTMAINBACKWARD));
+            item.SetActualPos(simpleTeachData_.afterGetX1);
+            item.SetDVal(simpleTeachData_.afterGetX1D);
+            item.SetSVal(simpleTeachData_.afterGetX1S);
+            item.SetNum(++step);
+            program.append(item);
+        }
         // fixture check
         FillFixtureCheckItems(simpleTeachData_.getProductPos.fixtureConfis, true, program, step);
         // go up
@@ -1062,10 +1129,13 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         item.SetActualPos(0);
         program.append(item);
         // pos before hor
-        AddCommentAction(QString::fromUtf8("姿势前位置"), ++step, program);
-        FillAxisItem(getXAction(x1Type, ACTMAINFORWARD), simpleTeachData_.posBH, item);
-        item.SetNum(++step);
-        program.append(item);
+        if(simpleTeachData_.usedPBHPos)
+        {
+            AddCommentAction(QString::fromUtf8("姿势前位置"), ++step, program);
+            FillAxisItem(getXAction(x1Type, ACTMAINFORWARD), simpleTeachData_.posBH, item);
+            item.SetNum(++step);
+            program.append(item);
+        }
         // hor
         FillPoseItem(ACTPOSEHORI, item);
         item.SetNum(++step);
@@ -1082,14 +1152,14 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
             FillReleasePoseItems(simpleTeachData_.cutOutletPosList, program, step,
                                  simpleTeachData_.cutOutletYUp, simpleTeachData_.cutOutletYUpS,
                                  simpleTeachData_.cutOutletYUpD, x1Type, y1Type, zType, x2Type, y2Type,
-                                 false, true, simpleTeachData_.cutOnTime,
+                                 false, true, simpleTeachData_.cutTime,
                                  QString::fromUtf8("剪刀位置"));
         }
 
         FillReleasePoseItems(simpleTeachData_.releaseProductPosList, program, step,
                              simpleTeachData_.releaseProductYUp, simpleTeachData_.releaseProductYUpS,
                              simpleTeachData_.releaseProductYUpD, x1Type, y1Type, zType, x2Type, y2Type,
-                             false, false, 0, QString::fromUtf8("放产品位置"));
+                             false, false, simpleTeachData_.cutTime, QString::fromUtf8("放产品位置"));
 
         // up to go in
 //        if(simpleTeachData_.usedMainArm)
@@ -1139,11 +1209,23 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         FillFixtureItems(simpleTeachData_.getProductPos.fixtureConfis, true, program, ++step);
         FillFixtureItems(simpleTeachData_.getOutletPos.fixtureConfis, true, program, step);
         // backward
-        FillAxisItem(getXAction(x1Type, ACTMAINBACKWARD), simpleTeachData_.stdPos, item);
-        item.SetNum(++step);
-        program.append(item);
-        FillAxisItem(getX2Action(x2Type, ACTVICEBACKWARD), simpleTeachData_.stdPos, item);
-        program.append(item);
+        if(simpleTeachData_.usedAfterGetPos)
+        {
+            AddCommentAction(QString::fromUtf8("取产品和水口后引拔位置"), ++step, program);
+            item.SetAction(getXAction(x1Type, ACTMAINBACKWARD));
+            item.SetActualPos(simpleTeachData_.afterGetX1);
+            item.SetDVal(simpleTeachData_.afterGetX1D);
+            item.SetSVal(simpleTeachData_.afterGetX1S);
+            item.SetNum(++step);
+            program.append(item);
+            item.SetAction(getX2Action(x2Type, ACTVICEBACKWARD));
+            item.SetActualPos(simpleTeachData_.afterGetX2);
+            item.SetDVal(simpleTeachData_.afterGetX2D);
+            item.SetSVal(simpleTeachData_.afterGetX2S);
+            item.SetNum(step);
+            program.append(item);
+
+        }
         // fixture check
         FillFixtureCheckItems(simpleTeachData_.getProductPos.fixtureConfis, true, program, step);
         FillFixtureCheckItems(simpleTeachData_.getOutletPos.fixtureConfis, true, program, step);
@@ -1156,12 +1238,15 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         item.SetActualPos(0);
         program.append(item);
         // pos before hor
-        AddCommentAction(QString::fromUtf8("姿势前位置"), ++step, program);
-        FillAxisItem(getXAction(x1Type, ACTMAINFORWARD), simpleTeachData_.posBH, item);
-        item.SetNum(++step);
-        program.append(item);
-        FillAxisItem(getX2Action(x2Type, ACTVICEFORWARD), simpleTeachData_.posBH, item);
-        program.append(item);
+        if(simpleTeachData_.usedPBHPos)
+        {
+            AddCommentAction(QString::fromUtf8("姿势前位置"), ++step, program);
+            FillAxisItem(getXAction(x1Type, ACTMAINFORWARD), simpleTeachData_.posBH, item);
+            item.SetNum(++step);
+            program.append(item);
+            FillAxisItem(getX2Action(x2Type, ACTVICEFORWARD), simpleTeachData_.posBH, item);
+            program.append(item);
+        }
         // hor
         FillPoseItem(ACTPOSEHORI, item);
         item.SetNum(++step);
@@ -1178,14 +1263,14 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
             FillReleasePoseItems(simpleTeachData_.cutOutletPosList, program, step,
                                  simpleTeachData_.cutOutletYUp, simpleTeachData_.cutOutletYUpS,
                                  simpleTeachData_.cutOutletYUpD, x1Type, y1Type, zType, x2Type, y2Type,
-                                 false, true, simpleTeachData_.cutOnTime,
+                                 false, true, simpleTeachData_.cutTime,
                                  QString::fromUtf8("剪刀位置"));
         }
 
         FillReleasePoseItems(simpleTeachData_.releaseProductPosList, program, step,
                              simpleTeachData_.releaseProductYUp, simpleTeachData_.releaseProductYUpS,
                              simpleTeachData_.releaseProductYUpD, x1Type, y1Type, zType, x2Type, y2Type,
-                             false, false, 0, QString::fromUtf8("放产品位置"));
+                             false, false, simpleTeachData_.cutTime, QString::fromUtf8("放产品位置"));
         item.SetAction(getYAction(y1Type, ACTMAINUP));
         item.SetNum(++step);
         item.SetActualPos(0);
@@ -1196,7 +1281,7 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         FillReleasePoseItems(simpleTeachData_.releaseOutletPosList, program, step,
                              simpleTeachData_.releaseOutletYUp, simpleTeachData_.releaseOutletYUpS,
                              simpleTeachData_.releaseOutletYUpD, x1Type, y1Type, zType, x2Type, y2Type,
-                             true, false, 0, QString::fromUtf8("放水口位置"));
+                             true, false, simpleTeachData_.cutTime, QString::fromUtf8("放水口位置"));
 
 
         item.SetAction(getY2Action(y2Type, ACTVICEUP));
@@ -1242,9 +1327,16 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         // fixture
         FillFixtureItems(simpleTeachData_.getOutletPos.fixtureConfis, true, program, ++step);
         // backward
-        FillAxisItem(getXAction(x1Type, ACTMAINBACKWARD), simpleTeachData_.stdPos, item);
-        item.SetNum(++step);
-        program.append(item);
+        if(simpleTeachData_.usedAfterGetPos)
+        {
+            AddCommentAction(QString::fromUtf8("取水口后引拔位置"), ++step, program);
+            item.SetAction(getXAction(x1Type, ACTMAINBACKWARD));
+            item.SetActualPos(simpleTeachData_.afterGetX1);
+            item.SetDVal(simpleTeachData_.afterGetX1D);
+            item.SetSVal(simpleTeachData_.afterGetX1S);
+            item.SetNum(++step);
+            program.append(item);
+        }
         // fixture check
         FillFixtureCheckItems(simpleTeachData_.getOutletPos.fixtureConfis, true, program, step);
         // go up
@@ -1253,10 +1345,13 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         item.SetActualPos(0);
         program.append(item);
         // pos before hor
-        AddCommentAction(QString::fromUtf8("姿势前位置"), ++step, program);
-        FillAxisItem(getXAction(x1Type, ACTMAINFORWARD), simpleTeachData_.posBH, item);
-        item.SetNum(++step);
-        program.append(item);
+        if(simpleTeachData_.usedPBHPos)
+        {
+            AddCommentAction(QString::fromUtf8("姿势前位置"), ++step, program);
+            FillAxisItem(getXAction(x1Type, ACTMAINFORWARD), simpleTeachData_.posBH, item);
+            item.SetNum(++step);
+            program.append(item);
+        }
         // hor
         FillPoseItem(ACTPOSEHORI, item);
         item.SetNum(++step);
@@ -1271,7 +1366,7 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         FillReleasePoseItems(simpleTeachData_.releaseOutletPosList, program, step,
                              simpleTeachData_.releaseOutletYUp, simpleTeachData_.releaseOutletYUpS,
                              simpleTeachData_.releaseOutletYUpD, x1Type, y1Type, zType, x2Type, y2Type,
-                             true, false, 0, QString::fromUtf8("放水口位置"));
+                             true, false, simpleTeachData_.cutTime, QString::fromUtf8("放水口位置"));
 
         // up to go in
 //        if(simpleTeachData_.usedMainArm)
@@ -1313,9 +1408,16 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         // fixture
         FillFixtureItems(simpleTeachData_.getOutletPos.fixtureConfis, true, program, ++step);
         // backward
-        FillAxisItem(getX2Action(x2Type, ACTVICEBACKWARD), simpleTeachData_.stdPos, item);
-        item.SetNum(++step);
-        program.append(item);
+        if(simpleTeachData_.usedAfterGetPos)
+        {
+            AddCommentAction(QString::fromUtf8("取水口后引拔位置"), ++step, program);
+            item.SetAction(getX2Action(x2Type, ACTVICEBACKWARD));
+            item.SetActualPos(simpleTeachData_.afterGetX2);
+            item.SetDVal(simpleTeachData_.afterGetX2D);
+            item.SetSVal(simpleTeachData_.afterGetX2S);
+            item.SetNum(++step);
+            program.append(item);
+        }
         // fixture check
         FillFixtureCheckItems(simpleTeachData_.getOutletPos.fixtureConfis, true, program, step);
         // go up
@@ -1324,10 +1426,13 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         item.SetActualPos(0);
         program.append(item);
         // pos before hor
-        AddCommentAction(QString::fromUtf8("姿势前位置"), ++step, program);
-        FillAxisItem(getX2Action(x2Type, ACTMAINFORWARD), simpleTeachData_.posBH, item);
-        item.SetNum(++step);
-        program.append(item);
+        if(simpleTeachData_.usedPBHPos)
+        {
+            AddCommentAction(QString::fromUtf8("姿势前位置"), ++step, program);
+            FillAxisItem(getX2Action(x2Type, ACTMAINFORWARD), simpleTeachData_.posBH, item);
+            item.SetNum(++step);
+            program.append(item);
+        }
         // hor
         FillPoseItem(ACTPOSEHORI, item);
         item.SetNum(++step);
@@ -1343,7 +1448,7 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         FillReleasePoseItems(simpleTeachData_.releaseOutletPosList, program, step,
                              simpleTeachData_.releaseOutletYUp, simpleTeachData_.releaseOutletYUpS,
                              simpleTeachData_.releaseOutletYUpD, x1Type, y1Type, zType, x2Type, y2Type,
-                             true, false, 0, QString::fromUtf8("放水口位置"));
+                             true, false, simpleTeachData_.cutTime, QString::fromUtf8("放水口位置"));
 
         // up to go in
 //        if(simpleTeachData_.usedMainArm)
