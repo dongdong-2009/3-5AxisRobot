@@ -448,6 +448,10 @@ void ICHCInstructionPageFrame::UpdateUIProgramList_()
                 {
                     ui->moldContentListWidget->item(j + index)->setBackgroundColor("red");
                 }
+                else if(tmp->Action() == ICMold::ACTCOMMENT)
+                {
+                    ui->moldContentListWidget->item(j + index)->setBackgroundColor("magenta");
+                }
                 else
                 {
                     ui->moldContentListWidget->item(j + index)->setBackgroundColor(color);
