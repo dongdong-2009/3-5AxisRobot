@@ -117,8 +117,9 @@ void ICGuideFixtureEditor::changeEvent(QEvent *e)
     }
 }
 
-int ICGuideFixtureEditor::ShowEditor(const QList<QPair<int, bool> > &fixturesConfigs, bool isNoCheckMode)
+int ICGuideFixtureEditor::ShowEditor(const QList<QPair<int, bool> > &fixturesConfigs, bool isNoCheckMode, bool isCutMode)
 {
+    isCutMode_ = isCutMode;
     ui->tableWidget->setColumnHidden(2, isNoCheckMode);
     on_pushButton_clicked();
     QPair<int, bool> config;
@@ -215,4 +216,26 @@ QStringList ICGuideFixtureEditor::SelectedNames(const QList<QPair<int, bool> > &
     if(ret.isEmpty())
         ret.append(tr("None"));
     return ret;
+}
+
+void ICGuideFixtureEditor::on_tableWidget_itemChanged(QTableWidgetItem *item)
+{
+    if(isCutMode_ && item->checkState() == Qt::Checked)
+    {
+        int checkedCount = 1;
+        QTableWidgetItem* tmp;
+        for(int i = 0; i < ui->tableWidget->rowCount(); ++i)
+        {
+            tmp = ui->tableWidget->item(i, 0);
+            if(tmp->checkState() == Qt::Checked && tmp != item )
+            {
+                ++checkedCount;
+                if(checkedCount == 3)
+                {
+                    tmp->setCheckState(Qt::Unchecked);
+                    break;
+                }
+            }
+        }
+    }
 }

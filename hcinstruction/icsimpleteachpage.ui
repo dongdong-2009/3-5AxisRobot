@@ -1272,8 +1272,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>296</width>
-            <height>282</height>
+            <width>667</width>
+            <height>306</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_3">

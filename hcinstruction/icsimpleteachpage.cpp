@@ -845,7 +845,7 @@ void ICSimpleTeachPage::on_releaseOutletFSel_clicked()
 
 void ICSimpleTeachPage::on_cutFSel_clicked()
 {
-    fixtureSel_->ShowEditor(cutOutletCFConfigs_, true);
+    fixtureSel_->ShowEditor(cutOutletCFConfigs_, true, true);
     cutOutletCFConfigs_ = fixtureSel_->GetConfigs();
     ui->cutFInfo->setText(fixtureSel_->SelectedNames(cutOutletCFConfigs_).join(","));
 }

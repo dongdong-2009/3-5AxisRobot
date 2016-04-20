@@ -5,7 +5,7 @@
 #include <QMap>
 #include <QSignalMapper>
 class QAbstractButton;
-
+class QTableWidgetItem;
 
 namespace Ui {
 class ICGuideFixtureEditor;
@@ -21,7 +21,7 @@ public:
 
 public slots:
     QList<QPair<int , bool> > GetConfigs() const;
-    int ShowEditor(const QList<QPair<int , bool> >& fixturesConfigs, bool isNoCheckMode = false);
+    int ShowEditor(const QList<QPair<int , bool> >& fixturesConfigs, bool isNoCheckMode = false, bool isCutMode = false);
     void CommandButtonClicked(QWidget* widget);
     QStringList SelectedNames() const;
     QStringList SelectedNames(const QList<QPair<int , bool> >& fixturesConfigs ) const;
@@ -37,6 +37,8 @@ private slots:
 
     void on_cancelButton_clicked();
 
+    void on_tableWidget_itemChanged(QTableWidgetItem *item);
+
 private:
     Ui::ICGuideFixtureEditor *ui;
     QStringList ioNames_;
@@ -49,6 +51,8 @@ private:
     QPixmap onPixmap_;
     QPixmap offPixmap_;
     QMap<int, int> clipToRow_;
+
+    bool isCutMode_;
 
 };
 
