@@ -1006,7 +1006,7 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
     ICMoldItem item;
     int step = 0;
 
-    AddCommentAction(QString::fromUtf8("待机点开始"), step, program);
+//    AddCommentAction(QString::fromUtf8("待机点开始"), step, program);
     QList<int> axisActionList;
     QList<int> steps;
     steps<<step<<step<<step<<step<<step;
