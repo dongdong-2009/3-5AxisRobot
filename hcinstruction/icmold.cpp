@@ -879,6 +879,17 @@ QList<int> fixtureOffAction_(QList<int>()<<ICMold::ACTCLIP1OFF<<ICMold::ACTCLIP2
                              <<(ICMold::ACT_AUX5)<<(ICMold::ACT_AUX6)<<(ICMold::ACT_AUX1)
                              <<(ICMold::ACT_AUX2)<<(ICMold::ACT_AUX3)<<(ICMold::ACT_AUX4));
 
+static int flag = 0;
+void AddCommentAction(const QString& comment, int step, QList<ICMoldItem>& program)
+{
+    ICMoldItem item;
+    item.SetAction(ICMold::ACTCOMMENT);
+    item.SetComment(comment);
+    item.SetFlag(flag++);
+    item.SetNum(step);
+    program.append(item);
+}
+
 void FillFixtureItems(const FixtureConfigs& fConfigs, bool isOn,  QList<ICMoldItem>& program, int step, int delay = 10)
 {
     ICMoldItem item;
@@ -929,7 +940,8 @@ void FillReleasePoseItems(const QList<ReleasePosData>& data,
                           int x1Type, int y1Type, int zType, int x2Type, int y2Type,
                           bool isSub = false,
                           bool isCut = false,
-                          quint32 cutOnTime = 0)
+                          quint32 cutOnTime = 0,
+                          const QString& comment = "")
 {
     if(data.isEmpty()) return;
     ICMoldItem item;
@@ -946,6 +958,10 @@ void FillReleasePoseItems(const QList<ReleasePosData>& data,
     for(int i = 0; i < data.size(); ++i)
     {
         ++step;
+        if(!comment.isEmpty())
+        {
+            AddCommentAction(QString("%1%2").arg(comment).arg(i + 1), step++, program);
+        }
         steps[0] = steps[1] = step;
         FillPosItems(axisActionList, data.at(i).pos, program, steps);
         // release product
@@ -980,13 +996,17 @@ void FillReleasePoseItems(const QList<ReleasePosData>& data,
     }
 }
 
+
+
+
 bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Type, int y2Type)
 {
+    flag = 0;
     QList<ICMoldItem> program;
     ICMoldItem item;
     int step = 0;
 
-    //std pos
+    AddCommentAction(QString::fromUtf8("待机点开始"), step, program);
     QList<int> axisActionList;
     QList<int> steps;
     steps<<step<<step<<step<<step<<step;
@@ -1006,10 +1026,12 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
     program.append(item);
     step++;
 
+
     //only use mian arm
     if(simpleTeachData_.usedMainArm && !simpleTeachData_.usedMainArmOutlet && !simpleTeachData_.usedSubArm)
     {
         //get product
+        AddCommentAction(QString::fromUtf8("取产品开始"), step++, program);
         steps.clear();
         steps<<step<<step + 1;
         axisActionList.clear();
@@ -1040,6 +1062,7 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         item.SetActualPos(0);
         program.append(item);
         // pos before hor
+        AddCommentAction(QString::fromUtf8("姿势前位置"), ++step, program);
         FillAxisItem(getXAction(x1Type, ACTMAINFORWARD), simpleTeachData_.posBH, item);
         item.SetNum(++step);
         program.append(item);
@@ -1059,12 +1082,14 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
             FillReleasePoseItems(simpleTeachData_.cutOutletPosList, program, step,
                                  simpleTeachData_.cutOutletYUp, simpleTeachData_.cutOutletYUpS,
                                  simpleTeachData_.cutOutletYUpD, x1Type, y1Type, zType, x2Type, y2Type,
-                                 false, true, simpleTeachData_.cutOnTime);
+                                 false, true, simpleTeachData_.cutOnTime,
+                                 QString::fromUtf8("剪刀位置"));
         }
 
         FillReleasePoseItems(simpleTeachData_.releaseProductPosList, program, step,
                              simpleTeachData_.releaseProductYUp, simpleTeachData_.releaseProductYUpS,
-                             simpleTeachData_.releaseProductYUpD, x1Type, y1Type, zType, x2Type, y2Type);
+                             simpleTeachData_.releaseProductYUpD, x1Type, y1Type, zType, x2Type, y2Type,
+                             false, false, 0, QString::fromUtf8("放产品位置"));
 
         // up to go in
 //        if(simpleTeachData_.usedMainArm)
@@ -1087,7 +1112,7 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
     else if(simpleTeachData_.usedMainArm && !simpleTeachData_.usedMainArmOutlet && simpleTeachData_.usedSubArm) // main and sub
     {
         //get product
-
+        AddCommentAction(QString::fromUtf8("取产品和水口开始"), step++, program);
         steps.clear();
         steps<<step<<step + 1;
         axisActionList.clear();
@@ -1131,6 +1156,7 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         item.SetActualPos(0);
         program.append(item);
         // pos before hor
+        AddCommentAction(QString::fromUtf8("姿势前位置"), ++step, program);
         FillAxisItem(getXAction(x1Type, ACTMAINFORWARD), simpleTeachData_.posBH, item);
         item.SetNum(++step);
         program.append(item);
@@ -1152,12 +1178,14 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
             FillReleasePoseItems(simpleTeachData_.cutOutletPosList, program, step,
                                  simpleTeachData_.cutOutletYUp, simpleTeachData_.cutOutletYUpS,
                                  simpleTeachData_.cutOutletYUpD, x1Type, y1Type, zType, x2Type, y2Type,
-                                 false, true, simpleTeachData_.cutOnTime);
+                                 false, true, simpleTeachData_.cutOnTime,
+                                 QString::fromUtf8("剪刀位置"));
         }
 
         FillReleasePoseItems(simpleTeachData_.releaseProductPosList, program, step,
                              simpleTeachData_.releaseProductYUp, simpleTeachData_.releaseProductYUpS,
-                             simpleTeachData_.releaseProductYUpD, x1Type, y1Type, zType, x2Type, y2Type);
+                             simpleTeachData_.releaseProductYUpD, x1Type, y1Type, zType, x2Type, y2Type,
+                             false, false, 0, QString::fromUtf8("放产品位置"));
         item.SetAction(getYAction(y1Type, ACTMAINUP));
         item.SetNum(++step);
         item.SetActualPos(0);
@@ -1168,7 +1196,7 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         FillReleasePoseItems(simpleTeachData_.releaseOutletPosList, program, step,
                              simpleTeachData_.releaseOutletYUp, simpleTeachData_.releaseOutletYUpS,
                              simpleTeachData_.releaseOutletYUpD, x1Type, y1Type, zType, x2Type, y2Type,
-                             true);
+                             true, false, 0, QString::fromUtf8("放水口位置"));
 
 
         item.SetAction(getY2Action(y2Type, ACTVICEUP));
@@ -1194,6 +1222,7 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
     else if(!simpleTeachData_.usedMainArm && simpleTeachData_.usedMainArmOutlet && !simpleTeachData_.usedSubArm) // main and main outlet
     {
         //get product
+        AddCommentAction(QString::fromUtf8("取水口开始"), step++, program);
         steps.clear();
         steps<<step<<step + 1;
         axisActionList.clear();
@@ -1224,6 +1253,7 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         item.SetActualPos(0);
         program.append(item);
         // pos before hor
+        AddCommentAction(QString::fromUtf8("姿势前位置"), ++step, program);
         FillAxisItem(getXAction(x1Type, ACTMAINFORWARD), simpleTeachData_.posBH, item);
         item.SetNum(++step);
         program.append(item);
@@ -1240,7 +1270,8 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
 
         FillReleasePoseItems(simpleTeachData_.releaseOutletPosList, program, step,
                              simpleTeachData_.releaseOutletYUp, simpleTeachData_.releaseOutletYUpS,
-                             simpleTeachData_.releaseOutletYUpD, x1Type, y1Type, zType, x2Type, y2Type);
+                             simpleTeachData_.releaseOutletYUpD, x1Type, y1Type, zType, x2Type, y2Type,
+                             true, false, 0, QString::fromUtf8("放水口位置"));
 
         // up to go in
 //        if(simpleTeachData_.usedMainArm)
@@ -1262,6 +1293,7 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
     else if(!simpleTeachData_.usedMainArm && !simpleTeachData_.usedMainArmOutlet && simpleTeachData_.usedSubArm)
     {
         //get product
+        AddCommentAction(QString::fromUtf8("取水口开始"), step++, program);
         steps.clear();
         steps<<step<<step + 1;
         axisActionList.clear();
@@ -1292,6 +1324,7 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         item.SetActualPos(0);
         program.append(item);
         // pos before hor
+        AddCommentAction(QString::fromUtf8("姿势前位置"), ++step, program);
         FillAxisItem(getX2Action(x2Type, ACTMAINFORWARD), simpleTeachData_.posBH, item);
         item.SetNum(++step);
         program.append(item);
@@ -1310,7 +1343,7 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         FillReleasePoseItems(simpleTeachData_.releaseOutletPosList, program, step,
                              simpleTeachData_.releaseOutletYUp, simpleTeachData_.releaseOutletYUpS,
                              simpleTeachData_.releaseOutletYUpD, x1Type, y1Type, zType, x2Type, y2Type,
-                             true);
+                             true, false, 0, QString::fromUtf8("放水口位置"));
 
         // up to go in
 //        if(simpleTeachData_.usedMainArm)
