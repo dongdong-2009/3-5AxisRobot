@@ -2775,12 +2775,12 @@ uctos</translation>
         <translation type="unfinished">Chupador-3 {8 ?}</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="211"/>
+        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="212"/>
         <source>%1[Check]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="216"/>
+        <location filename="hcinstruction/icguidefixtureeditor.cpp" line="217"/>
         <source>None</source>
         <translation type="unfinished">Nada</translation>
     </message>
@@ -8174,8 +8174,8 @@ de producción</translation>
     <message>
         <location filename="hcinstruction/icsimpleteachpage.ui" line="1327"/>
         <location filename="hcinstruction/icsimpleteachpage.cpp" line="286"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="787"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="812"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="808"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="835"/>
         <source>Cut Pos</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8257,6 +8257,7 @@ de producción</translation>
     <message>
         <location filename="hcinstruction/icsimpleteachpage.ui" line="2495"/>
         <location filename="hcinstruction/icsimpleteachpage.ui" line="2502"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2529"/>
         <source>s</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8271,53 +8272,69 @@ de producción</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2531"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2538"/>
         <source>Advance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2545"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2552"/>
         <source>Save Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/icsimpleteachpage.cpp" line="256"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="700"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="729"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="714"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="744"/>
         <source>Rel Product</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/icsimpleteachpage.cpp" line="271"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="746"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="774"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="762"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="792"/>
         <source>Rel Outlet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="632"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="295"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="296"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="297"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="712"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="733"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="743"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="760"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="779"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="793"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="806"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="823"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="836"/>
+        <source>Pos</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="637"/>
         <source>X1:%1, Y1:%2, </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="634"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="639"/>
         <source>Z:%1
 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="636"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="641"/>
         <source>, X2:%1, Y2:%2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="638"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="643"/>
         <source>Use</source>
         <translation type="unfinished">Uso</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="659"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="684"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="672"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="697"/>
         <source>%2-%1</source>
         <translation type="unfinished"></translation>
     </message>

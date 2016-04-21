@@ -433,7 +433,9 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
     }
     else
     {
-        on_maximumDisplacementLineEdit_textChanged("");
+//        on_maximumDisplacementLineEdit_textChanged("");
+        minSecValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
+        maxSecValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
     }
     p = editorToConfigIDs_.begin();
     while(p != editorToConfigIDs_.end())

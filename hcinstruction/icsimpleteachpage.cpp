@@ -292,6 +292,11 @@ void ICSimpleTeachPage::showEvent(QShowEvent *e)
         tmp.b.y2SpeedEdit->SetThisIntToThisText(posData.pos.b.y2S);
     }
 
+    RefreshViewPosHelper(stData_->releaseProductPosList, ui->releasePosView, tr("Pos"));
+    RefreshViewPosHelper(stData_->releaseOutletPosList, ui->releaseOutletView, tr("Pos"));
+    RefreshViewPosHelper(stData_->cutOutletPosList, ui->cutPosView, tr("Pos"));
+
+
     on_mainArmEn_toggled(ui->mainArmEn->isChecked());
     on_mainArmOutletEn_toggled(ui->mainArmOutletEn->isChecked());
     on_subArmEn_toggled(ui->subArmEn->isChecked());
@@ -640,6 +645,14 @@ QString ICSimpleTeachPage::PosDataToString(const ReleasePosData &posData, bool n
 
 }
 
+void ICSimpleTeachPage::RefreshViewPosHelper(const QList<ReleasePosData>& data, QListWidget* view, const QString& label)
+{
+    for(int i = 0; i < data.size(); ++i)
+    {
+        view->item(i)->setText(QString("%1%2[%4]").arg(label).arg(i + 1).arg(PosDataToString(data.at(i))));
+    }
+}
+
 ICLineEditWithVirtualNumericKeypad* CreateSpeedEdit(int speed, const QValidator* v)
 {
     ICLineEditWithVirtualNumericKeypad* tmp = new ICLineEditWithVirtualNumericKeypad();
@@ -696,6 +709,7 @@ void ICSimpleTeachPage::on_addProductPos_clicked()
     posData.fixtureConfis = releaseProductCFConfigs_;
     stData_->releaseProductPosList.append(posData);
     ui->releasePosView->addItem(PosDataToString(posData));
+    RefreshViewPosHelper(stData_->releaseProductPosList, ui->releasePosView, tr("Pos"));
 
     AddPosHelper(ui->releaseProductSpeedGroup, releaseProductSpeedUI, tr("Rel Product"), posData.pos.b.x1S);
 }
@@ -715,7 +729,8 @@ void ICSimpleTeachPage::on_modifyProductPos_clicked()
     posData.pos.b.y2 = ui->releaseProductPosY2->TransThisTextToThisInt();
     posData.fixtureConfis = releaseProductCFConfigs_;
     stData_->releaseProductPosList[toModifyIndex] = posData;
-    selected[0]->setText(PosDataToString(posData));
+//    selected[0]->setText(PosDataToString(posData));
+    RefreshViewPosHelper(stData_->releaseProductPosList, ui->releasePosView, tr("Pos"));
 }
 
 void ICSimpleTeachPage::on_deleteProductPos_clicked()
@@ -725,7 +740,7 @@ void ICSimpleTeachPage::on_deleteProductPos_clicked()
     int toModifyIndex = ui->releasePosView->row(selected.at(0));
     stData_->releaseProductPosList.removeAt(toModifyIndex);
     delete ui->releasePosView->takeItem(toModifyIndex);
-
+    RefreshViewPosHelper(stData_->releaseProductPosList, ui->releasePosView, tr("Pos"));
     DelPosHelper(toModifyIndex, ui->releaseProductSpeedGroup, releaseProductSpeedUI, tr("Rel Product"));
 
 }
@@ -742,6 +757,7 @@ void ICSimpleTeachPage::on_addOutletPos_clicked()
     posData.fixtureConfis = (releaseOutletCFConfigs_);
     stData_->releaseOutletPosList.append(posData);
     ui->releaseOutletView->addItem(PosDataToString(posData));
+    RefreshViewPosHelper(stData_->releaseOutletPosList, ui->releaseOutletView, tr("Pos"));
 
     AddPosHelper(ui->releaseOutletSpeedGroup, releaseOutletSpeedUI, tr("Rel Outlet"), posData.pos.b.x1S);
 }
@@ -759,7 +775,9 @@ void ICSimpleTeachPage::on_modifyOutletPos_clicked()
     posData.pos.b.y2 = ui->releaseOutletPosY2->TransThisTextToThisInt();
     posData.fixtureConfis = (releaseOutletCFConfigs_);
     stData_->releaseOutletPosList[toModifyIndex] = posData;
-    selected[0]->setText(PosDataToString(posData));
+//    selected[0]->setText(PosDataToString(posData));
+    RefreshViewPosHelper(stData_->releaseOutletPosList, ui->releaseOutletView, tr("Pos"));
+
 
 }
 
@@ -772,6 +790,8 @@ void ICSimpleTeachPage::on_deleteOutletPos_clicked()
     delete ui->releaseOutletView->takeItem(toModifyIndex);
 
     DelPosHelper(toModifyIndex, ui->releaseOutletSpeedGroup, releaseOutletSpeedUI, tr("Rel Outlet"));
+    RefreshViewPosHelper(stData_->releaseOutletPosList, ui->releaseOutletView, tr("Pos"));
+
 }
 
 void ICSimpleTeachPage::on_addCut_clicked()
@@ -783,6 +803,7 @@ void ICSimpleTeachPage::on_addCut_clicked()
     posData.fixtureConfis = cutOutletCFConfigs_;
     stData_->cutOutletPosList.append(posData);
     ui->cutPosView->addItem(PosDataToString(posData, true));
+    RefreshViewPosHelper(stData_->cutOutletPosList, ui->cutPosView, tr("Pos"));
 
     AddPosHelper(ui->cutOutletSpeedGroup, cutOutletSpeedUI, tr("Cut Pos"), posData.pos.b.x1S);
 }
@@ -798,7 +819,9 @@ void ICSimpleTeachPage::on_modifyCut_clicked()
     posData.pos.b.z = ui->cutOutletPosZ->TransThisTextToThisInt();
     posData.fixtureConfis = cutOutletCFConfigs_;
     stData_->cutOutletPosList[toModifyIndex] = posData;
-    selected[0]->setText(PosDataToString(posData, true));
+//    selected[0]->setText(PosDataToString(posData, true));
+    RefreshViewPosHelper(stData_->cutOutletPosList, ui->cutPosView, tr("Pos"));
+
 }
 
 void ICSimpleTeachPage::on_deleteCut_clicked()
@@ -810,6 +833,8 @@ void ICSimpleTeachPage::on_deleteCut_clicked()
     delete ui->cutPosView->takeItem(toModifyIndex);
 
     DelPosHelper(toModifyIndex, ui->cutOutletSpeedGroup, cutOutletSpeedUI, tr("Cut Pos"));
+    RefreshViewPosHelper(stData_->cutOutletPosList, ui->cutPosView, tr("Pos"));
+
 }
 
 

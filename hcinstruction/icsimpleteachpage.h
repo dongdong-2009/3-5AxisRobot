@@ -11,6 +11,7 @@ class QLabel;
 class QPushButton;
 class ICLineEditWithVirtualNumericKeypad;
 class QGridLayout;
+class QListWidget;
 
 
 //struct PosData{
@@ -142,6 +143,7 @@ private slots:
 
 private:
     QString PosDataToString(const ReleasePosData& posData, bool noSubArm = false, const QString& dataName = "") const ;
+    void RefreshViewPosHelper(const QList<ReleasePosData>& data, QListWidget* view, const QString& label);
     bool UsedMainArm() const;
     bool UsedSubArm() const;
     bool UsedReleaseOutlet() const;
