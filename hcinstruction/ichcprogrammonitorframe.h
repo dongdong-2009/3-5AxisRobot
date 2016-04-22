@@ -12,6 +12,7 @@ namespace Ui {
 }
 
 class ICAutoRunRevise;
+class ICSimpleAutoEditor;
 
 class ICHCProgramMonitorFrame : public QFrame
 {
@@ -76,6 +77,7 @@ private:
     QList<ICGroupMoldUIItem> programList_;
     QList<ICGroupMoldUIItem> programListBackup_;
     ICAutoRunRevise* autoRunRevise_;
+    ICSimpleAutoEditor* simpleAutoEditor_;
     bool isModify_;
     uint oldTime_;
     uint newTime_;

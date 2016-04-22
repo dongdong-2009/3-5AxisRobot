@@ -15,6 +15,7 @@
 #include "icparameterssave.h"
 #include "icmold.h"
 #include "iccaretipui.h"
+#include "icsimpleautoeditor.h"
 
 QMessageBox* checkMessageBox;
 
@@ -32,6 +33,7 @@ ICHCProgramMonitorFrame::ICHCProgramMonitorFrame(QWidget *parent) :
     ui->setupUi(this);
 
     autoRunRevise_ = new ICAutoRunRevise(this);
+    simpleAutoEditor_ = new ICSimpleAutoEditor(this);
     InitSignal();
     //    UpdateHostParam();
     //    ICInstructParam::Instance()->UpdateHostParam();
@@ -74,6 +76,7 @@ ICHCProgramMonitorFrame::ICHCProgramMonitorFrame(QWidget *parent) :
 ICHCProgramMonitorFrame::~ICHCProgramMonitorFrame()
 {
     delete autoRunRevise_;
+    delete simpleAutoEditor_;
     delete checkMessageBox;
     delete ui;
 }
@@ -509,6 +512,12 @@ void ICHCProgramMonitorFrame::InitSignal()
 
 void ICHCProgramMonitorFrame::on_editToolButton_clicked()
 {
+    if(ICParametersSave::Instance()->ProgramMode() == 0)
+    {
+        simpleAutoEditor_->exec();
+        return;
+    }
+
     if(currentMoldNum_ != 8)
     {
         return;

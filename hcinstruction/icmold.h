@@ -123,6 +123,8 @@ struct AdvanceData{
 
 struct SimpleTeachData
 {
+    QMap<int, quint32*> posIndexToPosDelayMap;
+    QMap<int, int> posIndexToProgramLine;
     bool usedMainArm;
     bool usedMainArmOutlet;
     bool usedSubArm;
