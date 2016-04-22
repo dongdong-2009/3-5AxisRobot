@@ -177,6 +177,7 @@ void ICSimpleTeachPage::showEvent(QShowEvent *e)
     ui->posInsideBtn->setChecked(true);
 
     stData_ = ICMold::CurrentMold()->GetSimpleTeachData();
+    ui->alwaysCheck->setChecked(stData_->advanceData.flags.b.alwaysCheck);
     ui->mainArmEn->setChecked(stData_->usedMainArm);
     ui->mainArmOutletEn->setChecked(stData_->usedMainArmOutlet);
     ui->subArmEn->setChecked(stData_->usedSubArm);
@@ -883,6 +884,7 @@ void ICSimpleTeachPage::on_cutOutletEn_toggled(bool checked)
 
 void ICSimpleTeachPage::on_saveBtn_clicked()
 {
+    stData_->advanceData.flags.b.alwaysCheck = ui->alwaysCheck->isChecked();
     stData_->cutTime.b.cutAfterPullTime = ui->cutTime1->TransThisTextToThisInt();
     stData_->cutTime.b.cutOnTime = ui->cutTime2->TransThisTextToThisInt();
     stData_->cutTime.b.pullOffAfterCutOffTime = ui->cutTime3->TransThisTextToThisInt();

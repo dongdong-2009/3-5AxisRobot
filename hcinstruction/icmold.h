@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QList>
 #include <QString>
+#include <QStringList>
 #include <QSharedData>
 #include <stdint.h>
 #include <QDebug>
@@ -91,6 +92,35 @@ union CutTime{
     quint32 all;
 };
 
+union AdvanceFlags{
+    struct{
+        quint32 alwaysCheck:1;
+        quint32 rev:31;
+    }b;
+    quint32 all;
+};
+
+struct AdvanceData{
+    AdvanceFlags flags;
+    AdvanceData()
+    {
+        flags.all = 0;
+    }
+
+    QByteArray toByteArray() const
+    {
+        QByteArray ret = QByteArray::number(flags.all);
+        return ret;
+    }
+    bool InitFromByteArray(const QString& text)
+    {
+        QStringList lineItems = text.split(",", QString::SkipEmptyParts);
+        if(lineItems.isEmpty()) return false;
+        flags.all = lineItems.at(0).toUInt();
+        return true;
+    }
+};
+
 struct SimpleTeachData
 {
     bool usedMainArm;
@@ -122,6 +152,7 @@ struct SimpleTeachData
     quint32 afterGetX2D;
     bool usedAfterGetPos;
     bool usedPBHPos;
+    AdvanceData advanceData;
     QByteArray toByteArray() const
     {
         QByteArray ret = QByteArray::number(usedMainArm) + "," +
@@ -173,6 +204,8 @@ struct SimpleTeachData
                 QByteArray::number(afterGetX2D) + "," +
                 QByteArray::number(usedAfterGetPos) + "," +
                 QByteArray::number(usedPBHPos);
+        ret += "\n";
+        ret += advanceData.toByteArray();
         return ret;
     }
     bool InitFromByteArray(const QString& text);

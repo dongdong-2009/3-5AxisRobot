@@ -1,5 +1,4 @@
 #include <QFile>
-#include <QStringList>
 #include <QDebug>
 #include "icmold.h"
 #include "icinstructparam.h"
@@ -750,7 +749,7 @@ bool ReleasePosData::InitFromByteArray(const QString &text)
 bool SimpleTeachData::InitFromByteArray(const QString &text)
 {
     QStringList contentList = text.split("\n");
-    if(contentList.size() != 9) return false;
+    if(contentList.size() < 9) return false;
     QStringList lineItems = contentList.at(0).split(",", QString::SkipEmptyParts);
     if(lineItems.size() != 4) return false;
     usedMainArm = lineItems.at(0).toInt();
@@ -815,6 +814,14 @@ bool SimpleTeachData::InitFromByteArray(const QString &text)
         afterGetX2D = lineItems.at(15).toInt();
         usedAfterGetPos = lineItems.at(16).toInt();
         usedPBHPos = lineItems.at(17).toInt();
+    }
+    if(contentList.size() < 10)
+    {
+        advanceData.flags.all = 0;
+    }
+    else
+    {
+        advanceData.InitFromByteArray(contentList.at(9));
     }
     return true;
 }
@@ -1128,6 +1135,17 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         item.SetNum(++step);
         item.SetActualPos(0);
         program.append(item);
+        // close Mold
+        item.SetNum(++step);
+        item.SetClip(ICMold::ACTCLSMDON);
+        item.SetDVal(0);
+        program.append(item);
+        // close check
+        if(!simpleTeachData_.advanceData.flags.b.alwaysCheck)
+        {
+            FillFixtureCheckItems(simpleTeachData_.getProductPos.fixtureConfis, false, program, step);
+        }
+
         // pos before hor
         if(simpleTeachData_.usedPBHPos)
         {
@@ -1140,13 +1158,8 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         FillPoseItem(ACTPOSEHORI, item);
         item.SetNum(++step);
         program.append(item);
-        // close Mold
-        item.SetNum(++step);
-        item.SetClip(ICMold::ACTCLSMDON);
-        item.SetDVal(10);
-        program.append(item);
-        // go out
 
+        // go out
         if(simpleTeachData_.usedCutOutlet)
         {
             FillReleasePoseItems(simpleTeachData_.cutOutletPosList, program, step,
@@ -1237,6 +1250,17 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         FillAxisItem(getY2Action(y2Type, ACTVICEUP), simpleTeachData_.stdPos, item);
         item.SetActualPos(0);
         program.append(item);
+        // close Mold
+        item.SetNum(++step);
+        item.SetClip(ICMold::ACTCLSMDON);
+        item.SetDVal(0);
+        program.append(item);
+        // close check
+        if(!simpleTeachData_.advanceData.flags.b.alwaysCheck)
+        {
+            FillFixtureCheckItems(simpleTeachData_.getProductPos.fixtureConfis, false, program, step);
+            FillFixtureCheckItems(simpleTeachData_.getOutletPos.fixtureConfis, false, program, step);
+        }
         // pos before hor
         if(simpleTeachData_.usedPBHPos)
         {
@@ -1250,11 +1274,6 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         // hor
         FillPoseItem(ACTPOSEHORI, item);
         item.SetNum(++step);
-        program.append(item);
-        // close Mold
-        item.SetNum(++step);
-        item.SetClip(ICMold::ACTCLSMDON);
-        item.SetDVal(10);
         program.append(item);
         // go out
 
@@ -1344,6 +1363,16 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         item.SetNum(++step);
         item.SetActualPos(0);
         program.append(item);
+        // close Mold
+        item.SetNum(++step);
+        item.SetClip(ICMold::ACTCLSMDON);
+        item.SetDVal(0);
+        program.append(item);
+        // close check
+        if(!simpleTeachData_.advanceData.flags.b.alwaysCheck)
+        {
+            FillFixtureCheckItems(simpleTeachData_.getOutletPos.fixtureConfis, false, program, step);
+        }
         // pos before hor
         if(simpleTeachData_.usedPBHPos)
         {
@@ -1355,11 +1384,6 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         // hor
         FillPoseItem(ACTPOSEHORI, item);
         item.SetNum(++step);
-        program.append(item);
-        // close Mold
-        item.SetNum(++step);
-        item.SetClip(ICMold::ACTCLSMDON);
-        item.SetDVal(10);
         program.append(item);
         // go out
 
@@ -1425,6 +1449,16 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         item.SetNum(++step);
         item.SetActualPos(0);
         program.append(item);
+        // close Mold
+        item.SetNum(++step);
+        item.SetClip(ICMold::ACTCLSMDON);
+        item.SetDVal(0);
+        program.append(item);
+        // close check
+        if(!simpleTeachData_.advanceData.flags.b.alwaysCheck)
+        {
+            FillFixtureCheckItems(simpleTeachData_.getOutletPos.fixtureConfis, false, program, step);
+        }
         // pos before hor
         if(simpleTeachData_.usedPBHPos)
         {
@@ -1436,11 +1470,6 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         // hor
         FillPoseItem(ACTPOSEHORI, item);
         item.SetNum(++step);
-        program.append(item);
-        // close Mold
-        item.SetNum(++step);
-        item.SetClip(ICMold::ACTCLSMDON);
-        item.SetDVal(10);
         program.append(item);
         // go out
 
