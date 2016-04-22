@@ -123,8 +123,20 @@ struct AdvanceData{
 
 struct SimpleTeachData
 {
+    QList<int> GetEditorLine(quint32* delay) const
+    {
+        QList<int> ret;
+        if(!delayToPosIndex.contains(delay)) return ret;
+        QList<int> posIndex = delayToPosIndex.values(delay);
+        for(int i = 0; i < posIndex.size(); ++i)
+        {
+            ret.append(posIndexToProgramLine.value(posIndex.at(i), -1));
+        }
+        return ret;
+    }
     QMap<int, quint32*> posIndexToPosDelayMap;
     QMap<int, int> posIndexToProgramLine;
+    QMultiMap<quint32*, int > delayToPosIndex;
     bool usedMainArm;
     bool usedMainArmOutlet;
     bool usedSubArm;

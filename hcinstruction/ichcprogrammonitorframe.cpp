@@ -512,9 +512,40 @@ void ICHCProgramMonitorFrame::InitSignal()
 
 void ICHCProgramMonitorFrame::on_editToolButton_clicked()
 {
+    int gIndex;
+    int tIndex;
+    int sIndex;
     if(ICParametersSave::Instance()->ProgramMode() == 0)
     {
         simpleAutoEditor_->exec();
+        QMap<int, int> modifiedDelays = simpleAutoEditor_->GetModifiedDelays();
+        QMap<int, int>::const_iterator p = modifiedDelays.begin();
+        ICCommandProcessor* processor = ICCommandProcessor::Instance();
+        ICAutoAdjustCommand command;
+        ICMoldItem *toSendItem;
+        while(p != modifiedDelays.end())
+        {
+            FindIndex_(p.key(), gIndex, tIndex, sIndex);
+            ICTopMoldUIItem * topItem = &programList_[gIndex].at(tIndex);
+            toSendItem = topItem->BaseItem();
+            toSendItem->SetDVal(p.value());
+            toSendItem->ReSum();
+            command.SetSlave(processor->SlaveID());
+            command.SetSequence(toSendItem->Seq());
+            command.SetDelayTime(toSendItem->DVal());
+            command.SetSpeed(toSendItem->SVal());
+            command.SetDPos(0);
+            command.SetGMValue(toSendItem->GMVal());
+            command.SetCheckSum(toSendItem->Sum());
+            processor->ExecuteCommand(command);
+            ++p;
+        }
+        if(!modifiedDelays.isEmpty())
+        {
+            ICMold::CurrentMold()->SetMoldContent(ICMold::UIItemToMoldItem(programList_));
+            UpdateUIProgramList_();
+            ICMold::CurrentMold()->SaveSimpleTeachFile();
+        }
         return;
     }
 
@@ -533,9 +564,7 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
         return;
     }
 #endif
-    int gIndex;
-    int tIndex;
-    int sIndex;
+
     qDebug("Before Find index");
     FindIndex_(selectedRow, gIndex, tIndex, sIndex);
     qDebug("End Find index");

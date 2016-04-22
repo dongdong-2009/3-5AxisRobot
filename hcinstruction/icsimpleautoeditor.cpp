@@ -34,6 +34,13 @@ ICSimpleAutoEditor::ICSimpleAutoEditor(QWidget *parent) :
     ui->DlyBHorX2->setValidator(&delayValidator_);
     ui->DlyBHorY2->setValidator(&delayValidator_);
 
+    ui->afterGetPosX1D->setValidator(&delayValidator_);
+    ui->afterGetPosX2D->setValidator(&delayValidator_);
+
+    ui->afterReleaseProductY1D->setValidator(&delayValidator_);
+    ui->afterReleaseOutletY2D->setValidator(&delayValidator_);
+    ui->afterCutOutletY1D->setValidator(&delayValidator_);
+
     ui->stdDlyX1->SetDecimalPlaces(2);
     ui->stdDlyY1->SetDecimalPlaces(2);
     ui->stdDlyZ->SetDecimalPlaces(2);
@@ -59,6 +66,20 @@ ICSimpleAutoEditor::ICSimpleAutoEditor(QWidget *parent) :
     ui->DlyBHorX2->SetDecimalPlaces(2);
     ui->DlyBHorY2->SetDecimalPlaces(2);
 
+    ui->afterGetPosX1D->SetDecimalPlaces(2);
+    ui->afterGetPosX2D->SetDecimalPlaces(2);
+
+    ui->afterReleaseProductY1D->SetDecimalPlaces(2);
+    ui->afterReleaseOutletY2D->SetDecimalPlaces(2);
+    ui->afterCutOutletY1D->SetDecimalPlaces(2);
+
+//    delayEditToPosIndexMap_.insert(ui->stdDlyX1, 0);
+//    delayEditToPosIndexMap_.insert(ui->stdDlyY1, 1);
+//    delayEditToPosIndexMap_.insert(ui->stdDlyZ, 2);
+//    delayEditToPosIndexMap_.insert(ui->stdDlyX2, 3);
+//    delayEditToPosIndexMap_.insert(ui->stdDlyY2, 4);
+
+
 }
 
 ICSimpleAutoEditor::~ICSimpleAutoEditor()
@@ -78,15 +99,146 @@ void ICSimpleAutoEditor::changeEvent(QEvent *e)
     }
 }
 
+ICLineEditWithVirtualNumericKeypad* CreateDlyEdit(int dly, const QValidator* v)
+{
+    ICLineEditWithVirtualNumericKeypad* tmp = new ICLineEditWithVirtualNumericKeypad();
+    tmp->SetDecimalPlaces(0);
+    tmp->setValidator(v);
+    tmp->SetThisIntToThisText(dly);
+    tmp->setMinimumHeight(30);
+    tmp->setMaximumHeight(30);
+    tmp->SetDecimalPlaces(2);
+
+    return tmp;
+}
+
+
+void ICSimpleAutoEditor::AddPosHelper(QGridLayout *layout, QList<PosDlyUIWidgets> &dlyUI, const QString& posName, int defaultDly)
+{
+    int toInsertRow = dlyUI.size();
+    PosDlyUIWidgets tmp;
+    tmp.b.posName = new QLabel(QString(tr("%2-%1")).arg(toInsertRow + 1).arg(posName));
+    tmp.b.posName->setMinimumWidth(ui->label_20->minimumWidth());
+    tmp.b.posName->setMaximumWidth(ui->label_20->maximumWidth());
+    tmp.b.x1DlyEdit = CreateDlyEdit(defaultDly, &delayValidator_);
+    tmp.b.y1DlyEdit = CreateDlyEdit(defaultDly, &delayValidator_);
+    tmp.b.zDlyEdit = CreateDlyEdit(defaultDly, &delayValidator_);
+    tmp.b.x2DlyEdit = CreateDlyEdit(defaultDly, &delayValidator_);
+    tmp.b.y2DlyEdit = CreateDlyEdit(defaultDly, &delayValidator_);
+    dlyUI.append(tmp);
+    for(int i = 0; i < 6; ++i)
+        layout->addWidget(tmp.all[i], toInsertRow, i);
+}
+
+void ClearGirdUIHelper(QList<PosDlyUIWidgets>& uis)
+{
+    for(int i = 0; i < uis.size(); ++i)
+    {
+        PosDlyUIWidgets w = uis[i];
+        w.b.posName->close();
+        w.b.x1DlyEdit->close();
+        w.b.y1DlyEdit->close();
+        w.b.zDlyEdit->close();
+        w.b.x2DlyEdit->close();
+        w.b.y2DlyEdit->close();
+        w.b.posName->deleteLater();
+        w.b.x1DlyEdit->deleteLater();
+        w.b.y1DlyEdit->deleteLater();
+        w.b.zDlyEdit->deleteLater();
+        w.b.x2DlyEdit->deleteLater();
+        w.b.y2DlyEdit->deleteLater();
+    }
+    uis.clear();
+}
+
 void ICSimpleAutoEditor::showEvent(QShowEvent *e)
 {
     stData_ = ICMold::CurrentMold()->GetSimpleTeachData();
+
+    ui->stdDlyX1->SetThisIntToThisText(stData_->stdPos.b.x1D);
+    ui->stdDlyY1->SetThisIntToThisText(stData_->stdPos.b.y1D);
+    ui->stdDlyZ->SetThisIntToThisText(stData_->stdPos.b.zD);
+    ui->stdDlyX2->SetThisIntToThisText(stData_->stdPos.b.x2D);
+    ui->stdDlyY2->SetThisIntToThisText(stData_->stdPos.b.y2D);
+
+    ui->getProductDlyX1->SetThisIntToThisText(stData_->getProductPos.pos.b.x1D);
+    ui->getProductDlyY1->SetThisIntToThisText(stData_->getProductPos.pos.b.y1D);
+    ui->getProductDlyZ->SetThisIntToThisText(stData_->getProductPos.pos.b.zD);
+    ui->getProductDlyX2->SetThisIntToThisText(stData_->getProductPos.pos.b.x2D);
+    ui->getProductDlyY2->SetThisIntToThisText(stData_->getProductPos.pos.b.y2D);
+
+    ui->getOutletDlyX1->SetThisIntToThisText(stData_->getOutletPos.pos.b.x1D);
+    ui->getOutletDlyY1->SetThisIntToThisText(stData_->getOutletPos.pos.b.y1D);
+    ui->getOutletDlyZ->SetThisIntToThisText(stData_->getOutletPos.pos.b.zD);
+    ui->getOutletDlyX2->SetThisIntToThisText(stData_->getOutletPos.pos.b.x1D);
+    ui->getOutletDlyY2->SetThisIntToThisText(stData_->getOutletPos.pos.b.x1D);
+
+    ui->DlyBHorX1->SetThisIntToThisText(stData_->posBH.b.x1D);
+    ui->DlyBHorY1->SetThisIntToThisText(stData_->posBH.b.y1D);
+    ui->DlyBHorZ->SetThisIntToThisText(stData_->posBH.b.zD);
+    ui->DlyBHorX2->SetThisIntToThisText(stData_->posBH.b.x2D);
+    ui->DlyBHorY2->SetThisIntToThisText(stData_->posBH.b.y2D);
+
+    ui->afterGetPosX1D->SetThisIntToThisText(stData_->afterGetX1D);
+    ui->afterGetPosX2D->SetThisIntToThisText(stData_->afterGetX2D);
+
+    ui->afterReleaseProductY1D->SetThisIntToThisText(stData_->releaseProductYUpD);
+    ui->afterReleaseOutletY2D->SetThisIntToThisText(stData_->releaseOutletYUpD);
+    ui->afterCutOutletY1D->SetThisIntToThisText(stData_->cutOutletYUpD);
+
+    ClearGirdUIHelper(releaseProductDlyUI);
+    for(int i = 0; i < stData_->releaseProductPosList.size(); ++i)
+    {
+        ReleasePosData posData = stData_->releaseProductPosList.at(i);
+        AddPosHelper(ui->releaseProductDlyGroup, releaseProductDlyUI, tr("Rel Product"));
+        PosDlyUIWidgets tmp = releaseProductDlyUI.last();
+        tmp.b.x1DlyEdit->SetThisIntToThisText(posData.pos.b.x1D);
+        tmp.b.y1DlyEdit->SetThisIntToThisText(posData.pos.b.y1D);
+        tmp.b.zDlyEdit->SetThisIntToThisText(posData.pos.b.zD);
+        tmp.b.x2DlyEdit->SetThisIntToThisText(posData.pos.b.x2D);
+        tmp.b.y2DlyEdit->SetThisIntToThisText(posData.pos.b.y2D);
+    }
+
+    ClearGirdUIHelper(releaseOutletDlyUI);
+    for(int i = 0; i < stData_->releaseOutletPosList.size(); ++i)
+    {
+        ReleasePosData posData = stData_->releaseOutletPosList.at(i);
+        AddPosHelper(ui->releaseOutletDlyGroup, releaseOutletDlyUI, tr("Rel Outlet"));
+        PosDlyUIWidgets tmp = releaseOutletDlyUI.last();
+        tmp.b.x1DlyEdit->SetThisIntToThisText(posData.pos.b.x1D);
+        tmp.b.y1DlyEdit->SetThisIntToThisText(posData.pos.b.y1D);
+        tmp.b.zDlyEdit->SetThisIntToThisText(posData.pos.b.zD);
+        tmp.b.x2DlyEdit->SetThisIntToThisText(posData.pos.b.x2D);
+        tmp.b.y2DlyEdit->SetThisIntToThisText(posData.pos.b.y2D);
+    }
+
+    ClearGirdUIHelper(cutOutletDlyUI);
+    for(int i = 0; i < stData_->cutOutletPosList.size(); ++i)
+    {
+        ReleasePosData posData = stData_->cutOutletPosList.at(i);
+        AddPosHelper(ui->cutOutletDlyGroup, cutOutletDlyUI, tr("Cut Outlet"));
+        PosDlyUIWidgets tmp = cutOutletDlyUI.last();
+        tmp.b.x1DlyEdit->SetThisIntToThisText(posData.pos.b.x1D);
+        tmp.b.y1DlyEdit->SetThisIntToThisText(posData.pos.b.y1D);
+        tmp.b.zDlyEdit->SetThisIntToThisText(posData.pos.b.zD);
+        tmp.b.x2DlyEdit->SetThisIntToThisText(posData.pos.b.x2D);
+        tmp.b.y2DlyEdit->SetThisIntToThisText(posData.pos.b.y2D);
+    }
+
     SetMainArmPosEnabled(UsedMainArm());
+    SetSubArmPosEnabled(UsedSubArm());
+    SetReleaseProductEnabled(UsedMainArm());
+    SetReleaseOutletEnabled(UsedReleaseOutlet());
+    SetCutOutletEnabled(stData_->usedCutOutlet);
+
     QDialog::showEvent(e);
 }
 
 void ICSimpleAutoEditor::SetMainArmPosEnabled(bool en)
 {
+    ui->label_27->setVisible(en);
+    ui->afterReleaseProductY1D->setVisible(en);
+
     ui->afterGetPosX1D->setVisible(en);
     ui->stdDlyX1->setVisible(en);
     ui->stdDlyY1->setVisible(en);
@@ -131,7 +283,7 @@ void ICSimpleAutoEditor::SetMainArmPosEnabled(bool en)
 void ICSimpleAutoEditor::SetSubArmPosEnabled(bool en)
 {
     ui->afterGetPosX2D->setVisible(en);
-
+    ui->afterReleaseOutletY2D->setVisible(en);
 
     ui->stdDlyX2->setVisible(en);
     ui->stdDlyY2->setVisible(en);
@@ -179,6 +331,7 @@ void ICSimpleAutoEditor::SetReleaseOutletEnabled(bool en)
     ui->getOutletDlyY2->setVisible(en && UsedSubArm());
     ui->getOutletDlyZ->setVisible(en);
     ui->label_22->setVisible(en);
+    ui->label_28->setVisible(en);
 
 
     for(int i = 0; i < releaseOutletDlyUI.size(); ++i)
@@ -217,6 +370,8 @@ void ICSimpleAutoEditor::SetReleaseProductEnabled(bool en)
 
 void ICSimpleAutoEditor::SetCutOutletEnabled(bool en)
 {
+    ui->label_29->setVisible(en);
+    ui->afterCutOutletY1D->setVisible(en && stData_->usedMainArm);
     for(int i = 0; i < cutOutletDlyUI.size(); ++i)
     {
         cutOutletDlyUI[i].b.posName->setVisible(en);
@@ -233,8 +388,85 @@ void ICSimpleAutoEditor::on_cancelButton_clicked()
     this->reject();
 }
 
+void CheckModifyHelper(ICLineEditWithVirtualNumericKeypad* editor, quint32* delayAddr, QMap<int, int> & ret,
+                       const SimpleTeachData* stData)
+{
+    if(editor->TransThisTextToThisInt() != *delayAddr)
+    {
+        *delayAddr = editor->TransThisTextToThisInt();
+        QList<int> line = stData->GetEditorLine(delayAddr);
+        for(int i = 0; i < line.size(); ++i)
+        {
+            ret.insert(line.at(i), *delayAddr);
+        }
+    }
+}
+
 void ICSimpleAutoEditor::on_okButton_clicked()
 {
+    modifiedDelays.clear();
+
+    CheckModifyHelper(ui->stdDlyX1, &stData_->stdPos.b.x1D, modifiedDelays, stData_);
+    CheckModifyHelper(ui->stdDlyY1, &stData_->stdPos.b.y1D, modifiedDelays, stData_);
+    CheckModifyHelper(ui->stdDlyZ, &stData_->stdPos.b.zD, modifiedDelays, stData_);
+    CheckModifyHelper(ui->stdDlyX2, &stData_->stdPos.b.x2D, modifiedDelays, stData_);
+    CheckModifyHelper(ui->stdDlyY2, &stData_->stdPos.b.y2D, modifiedDelays, stData_);
+
+    CheckModifyHelper(ui->getProductDlyX1, &stData_->getProductPos.pos.b.x1D, modifiedDelays, stData_);
+    CheckModifyHelper(ui->getProductDlyY1, &stData_->getProductPos.pos.b.y1D, modifiedDelays, stData_);
+    CheckModifyHelper(ui->getProductDlyZ, &stData_->getProductPos.pos.b.zD, modifiedDelays, stData_);
+    CheckModifyHelper(ui->getProductDlyX2, &stData_->getProductPos.pos.b.x2D, modifiedDelays, stData_);
+    CheckModifyHelper(ui->getProductDlyY2, &stData_->getProductPos.pos.b.y2D, modifiedDelays, stData_);
+
+    CheckModifyHelper(ui->getOutletDlyX1, &stData_->getOutletPos.pos.b.x1D, modifiedDelays, stData_);
+    CheckModifyHelper(ui->getOutletDlyY1, &stData_->getOutletPos.pos.b.y1D, modifiedDelays, stData_);
+    CheckModifyHelper(ui->getOutletDlyZ, &stData_->getOutletPos.pos.b.zD, modifiedDelays, stData_);
+    CheckModifyHelper(ui->getOutletDlyX2, &stData_->getOutletPos.pos.b.x2D, modifiedDelays, stData_);
+    CheckModifyHelper(ui->getOutletDlyY2, &stData_->getOutletPos.pos.b.y2D, modifiedDelays, stData_);
+
+    CheckModifyHelper(ui->DlyBHorX1, &stData_->posBH.b.x1D, modifiedDelays, stData_);
+    CheckModifyHelper(ui->DlyBHorY1, &stData_->posBH.b.y1D, modifiedDelays, stData_);
+    CheckModifyHelper(ui->DlyBHorZ, &stData_->posBH.b.zD, modifiedDelays, stData_);
+    CheckModifyHelper(ui->DlyBHorX2, &stData_->posBH.b.x2D, modifiedDelays, stData_);
+    CheckModifyHelper(ui->DlyBHorY2, &stData_->posBH.b.y2D, modifiedDelays, stData_);
+
+    CheckModifyHelper(ui->afterGetPosX1D, &stData_->afterGetX1D, modifiedDelays, stData_);
+    CheckModifyHelper(ui->afterGetPosX2D, &stData_->afterGetX2D, modifiedDelays, stData_);
+    CheckModifyHelper(ui->afterReleaseProductY1D, &stData_->releaseProductYUpD, modifiedDelays, stData_);
+    CheckModifyHelper(ui->afterReleaseOutletY2D, &stData_->releaseOutletYUpD, modifiedDelays, stData_);
+    CheckModifyHelper(ui->afterCutOutletY1D, &stData_->cutOutletYUpD, modifiedDelays, stData_);
+
+    for(int i = 0; i < releaseProductDlyUI.size(); ++i)
+    {
+        PosDlyUIWidgets ws = releaseProductDlyUI.at(i);
+        CheckModifyHelper(ws.b.x1DlyEdit, &stData_->releaseProductPosList[i].pos.b.x1D, modifiedDelays, stData_);
+        CheckModifyHelper(ws.b.y1DlyEdit, &stData_->releaseProductPosList[i].pos.b.y1D, modifiedDelays, stData_);
+        CheckModifyHelper(ws.b.zDlyEdit, &stData_->releaseProductPosList[i].pos.b.zD, modifiedDelays, stData_);
+        CheckModifyHelper(ws.b.x2DlyEdit, &stData_->releaseProductPosList[i].pos.b.x2D, modifiedDelays, stData_);
+        CheckModifyHelper(ws.b.y2DlyEdit, &stData_->releaseProductPosList[i].pos.b.y2D, modifiedDelays, stData_);
+    }
+
+    for(int i = 0; i < releaseOutletDlyUI.size(); ++i)
+    {
+        PosDlyUIWidgets ws = releaseOutletDlyUI.at(i);
+        CheckModifyHelper(ws.b.x1DlyEdit, &stData_->releaseOutletPosList[i].pos.b.x1D, modifiedDelays, stData_);
+        CheckModifyHelper(ws.b.y1DlyEdit, &stData_->releaseOutletPosList[i].pos.b.y1D, modifiedDelays, stData_);
+        CheckModifyHelper(ws.b.zDlyEdit, &stData_->releaseOutletPosList[i].pos.b.zD, modifiedDelays, stData_);
+        CheckModifyHelper(ws.b.x2DlyEdit, &stData_->releaseOutletPosList[i].pos.b.x2D, modifiedDelays, stData_);
+        CheckModifyHelper(ws.b.y2DlyEdit, &stData_->releaseOutletPosList[i].pos.b.y2D, modifiedDelays, stData_);
+    }
+
+    for(int i = 0; i < cutOutletDlyUI.size(); ++i)
+    {
+        PosDlyUIWidgets ws = cutOutletDlyUI.at(i);
+        CheckModifyHelper(ws.b.x1DlyEdit, &stData_->cutOutletPosList[i].pos.b.x1D, modifiedDelays, stData_);
+        CheckModifyHelper(ws.b.y1DlyEdit, &stData_->cutOutletPosList[i].pos.b.y1D, modifiedDelays, stData_);
+        CheckModifyHelper(ws.b.zDlyEdit, &stData_->cutOutletPosList[i].pos.b.zD, modifiedDelays, stData_);
+        CheckModifyHelper(ws.b.x2DlyEdit, &stData_->cutOutletPosList[i].pos.b.x2D, modifiedDelays, stData_);
+        CheckModifyHelper(ws.b.y2DlyEdit, &stData_->cutOutletPosList[i].pos.b.y2D, modifiedDelays, stData_);
+    }
+
+
     this->accept();
 }
 

@@ -8,6 +8,7 @@
 class QLabel;
 class ICLineEditWithVirtualNumericKeypad;
 class QIntValidator;
+class QGridLayout;
 
 
 namespace Ui {
@@ -41,6 +42,8 @@ public:
     void SetReleaseOutletEnabled(bool en);
     void SetReleaseProductEnabled(bool en);
     void SetCutOutletEnabled(bool en);
+    QMap<int, int> GetModifiedDelays() const { return modifiedDelays;}
+    void AddPosHelper(QGridLayout *layout, QList<PosDlyUIWidgets> &dlyUI, const QString& posName, int defaultDly = 0);
 
 protected:
     void changeEvent(QEvent *e);
@@ -66,6 +69,8 @@ private:
     QList<PosDlyUIWidgets> cutOutletDlyUI;
 
     QIntValidator delayValidator_;
+
+    QMap<int, int> modifiedDelays;
 
 };
 

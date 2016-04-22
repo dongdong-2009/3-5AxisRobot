@@ -172,6 +172,27 @@ void ICSimpleTeachPage::hideEvent(QHideEvent *e)
     QWidget::hideEvent(e);
 }
 
+void ClearGirdUIHelper(QList<PosSpeedUIWidgets>& uis)
+{
+    for(int i = 0; i < uis.size(); ++i)
+    {
+        PosSpeedUIWidgets w = uis[i];
+        w.b.posName->close();
+        w.b.x1SpeedEdit->close();
+        w.b.y1SpeedEdit->close();
+        w.b.zSpeedEdit->close();
+        w.b.x2SpeedEdit->close();
+        w.b.y2SpeedEdit->close();
+        w.b.posName->deleteLater();
+        w.b.x1SpeedEdit->deleteLater();
+        w.b.y1SpeedEdit->deleteLater();
+        w.b.zSpeedEdit->deleteLater();
+        w.b.x2SpeedEdit->deleteLater();
+        w.b.y2SpeedEdit->deleteLater();
+    }
+    uis.clear();
+}
+
 void ICSimpleTeachPage::showEvent(QShowEvent *e)
 {
     ui->posInsideBtn->setChecked(true);
@@ -243,9 +264,9 @@ void ICSimpleTeachPage::showEvent(QShowEvent *e)
     ui->speedBHorX2->SetThisIntToThisText(stData_->posBH.b.x2S);
     ui->speedBHorY2->SetThisIntToThisText(stData_->posBH.b.y2S);
 
-    releaseProductSpeedUI.clear();
-    releaseOutletSpeedUI.clear();
-    cutOutletSpeedUI.clear();
+    ClearGirdUIHelper(releaseProductSpeedUI);
+    ClearGirdUIHelper(releaseOutletSpeedUI);
+    ClearGirdUIHelper(cutOutletSpeedUI);
     ui->releasePosView->clear();
     ui->releaseOutletView->clear();
     ui->cutPosView->clear();
