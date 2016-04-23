@@ -147,6 +147,13 @@ ICSimpleTeachPage::ICSimpleTeachPage(QWidget *parent) :
     ui->afterGetPosX1S->setValidator(&speedValidator_);
     ui->afterGetPosX2S->setValidator(&speedValidator_);
 
+    ICMold::CurrentMold()->CompileSimpleTeachFile(ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisX1),
+                                   ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisY1),
+                                   ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisZ),
+                                   ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisX2),
+                                   ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisY2));
+    ICVirtualHost::GlobalVirtualHost()->ReConfigure();
+
 }
 
 ICSimpleTeachPage::~ICSimpleTeachPage()

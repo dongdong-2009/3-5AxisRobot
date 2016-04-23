@@ -127,15 +127,11 @@ struct SimpleTeachData
     {
         QList<int> ret;
         if(!delayToPosIndex.contains(delay)) return ret;
-        QList<int> posIndex = delayToPosIndex.values(delay);
-        for(int i = 0; i < posIndex.size(); ++i)
-        {
-            ret.append(posIndexToProgramLine.value(posIndex.at(i), -1));
-        }
+        ret  = delayToPosIndex.values(delay);
         return ret;
     }
-    QMap<int, quint32*> posIndexToPosDelayMap;
-    QMap<int, int> posIndexToProgramLine;
+//    QMap<int, quint32*> posIndexToPosDelayMap;
+//    QMap<int, int> posIndexToProgramLine;
     QMultiMap<quint32*, int > delayToPosIndex;
     bool usedMainArm;
     bool usedMainArmOutlet;

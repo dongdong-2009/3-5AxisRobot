@@ -38,6 +38,7 @@ ICSimpleAutoEditor::ICSimpleAutoEditor(QWidget *parent) :
     ui->afterGetPosX2D->setValidator(&delayValidator_);
 
     ui->afterReleaseProductY1D->setValidator(&delayValidator_);
+    ui->afterReleaseProductY1D_2->setValidator(&delayValidator_);
     ui->afterReleaseOutletY2D->setValidator(&delayValidator_);
     ui->afterCutOutletY1D->setValidator(&delayValidator_);
 
@@ -70,6 +71,7 @@ ICSimpleAutoEditor::ICSimpleAutoEditor(QWidget *parent) :
     ui->afterGetPosX2D->SetDecimalPlaces(2);
 
     ui->afterReleaseProductY1D->SetDecimalPlaces(2);
+    ui->afterReleaseProductY1D_2->SetDecimalPlaces(2);
     ui->afterReleaseOutletY2D->SetDecimalPlaces(2);
     ui->afterCutOutletY1D->SetDecimalPlaces(2);
 
@@ -185,6 +187,7 @@ void ICSimpleAutoEditor::showEvent(QShowEvent *e)
     ui->afterReleaseProductY1D->SetThisIntToThisText(stData_->releaseProductYUpD);
     ui->afterReleaseOutletY2D->SetThisIntToThisText(stData_->releaseOutletYUpD);
     ui->afterCutOutletY1D->SetThisIntToThisText(stData_->cutOutletYUpD);
+    ui->afterReleaseProductY1D_2->SetThisIntToThisText(stData_->releaseOutletYUpD);
 
     ClearGirdUIHelper(releaseProductDlyUI);
     for(int i = 0; i < stData_->releaseProductPosList.size(); ++i)
@@ -226,8 +229,8 @@ void ICSimpleAutoEditor::showEvent(QShowEvent *e)
     }
 
     SetMainArmPosEnabled(UsedMainArm());
-    SetSubArmPosEnabled(UsedSubArm());
-    SetReleaseProductEnabled(UsedMainArm());
+    SetSubArmPosEnabled(stData_->usedSubArm);
+    SetReleaseProductEnabled(stData_->usedMainArm);
     SetReleaseOutletEnabled(UsedReleaseOutlet());
     SetCutOutletEnabled(stData_->usedCutOutlet);
 
@@ -236,8 +239,8 @@ void ICSimpleAutoEditor::showEvent(QShowEvent *e)
 
 void ICSimpleAutoEditor::SetMainArmPosEnabled(bool en)
 {
-    ui->label_27->setVisible(en);
-    ui->afterReleaseProductY1D->setVisible(en);
+    ui->label_27->setVisible(en && stData_->usedMainArm);
+    ui->afterReleaseProductY1D->setVisible(en && stData_->usedMainArm);
 
     ui->afterGetPosX1D->setVisible(en);
     ui->stdDlyX1->setVisible(en);
@@ -332,6 +335,7 @@ void ICSimpleAutoEditor::SetReleaseOutletEnabled(bool en)
     ui->getOutletDlyZ->setVisible(en);
     ui->label_22->setVisible(en);
     ui->label_28->setVisible(en);
+    ui->afterReleaseProductY1D_2->setVisible(en && stData_->usedMainArmOutlet);
 
 
     for(int i = 0; i < releaseOutletDlyUI.size(); ++i)
@@ -378,8 +382,8 @@ void ICSimpleAutoEditor::SetCutOutletEnabled(bool en)
         cutOutletDlyUI[i].b.x1DlyEdit->setVisible(en);
         cutOutletDlyUI[i].b.y1DlyEdit->setVisible(en);
         cutOutletDlyUI[i].b.zDlyEdit->setVisible(en);
-        cutOutletDlyUI[i].b.x2DlyEdit->setVisible(en);
-        cutOutletDlyUI[i].b.y2DlyEdit->setVisible(en);
+        cutOutletDlyUI[i].b.x2DlyEdit->setVisible(en && UsedSubArm());
+        cutOutletDlyUI[i].b.y2DlyEdit->setVisible(en && UsedSubArm());
     }
 }
 
@@ -433,8 +437,11 @@ void ICSimpleAutoEditor::on_okButton_clicked()
     CheckModifyHelper(ui->afterGetPosX1D, &stData_->afterGetX1D, modifiedDelays, stData_);
     CheckModifyHelper(ui->afterGetPosX2D, &stData_->afterGetX2D, modifiedDelays, stData_);
     CheckModifyHelper(ui->afterReleaseProductY1D, &stData_->releaseProductYUpD, modifiedDelays, stData_);
-    CheckModifyHelper(ui->afterReleaseOutletY2D, &stData_->releaseOutletYUpD, modifiedDelays, stData_);
     CheckModifyHelper(ui->afterCutOutletY1D, &stData_->cutOutletYUpD, modifiedDelays, stData_);
+    if(stData_->usedSubArm)
+        CheckModifyHelper(ui->afterReleaseOutletY2D, &stData_->releaseOutletYUpD, modifiedDelays, stData_);
+    if(stData_->usedMainArmOutlet)
+        CheckModifyHelper(ui->afterReleaseProductY1D_2, &stData_->releaseOutletYUpD, modifiedDelays, stData_);
 
     for(int i = 0; i < releaseProductDlyUI.size(); ++i)
     {

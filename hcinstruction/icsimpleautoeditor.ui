@@ -756,6 +756,22 @@
            </property>
           </widget>
          </item>
+         <item row="8" column="2">
+          <widget class="ICLineEditWithVirtualNumericKeypad" name="afterReleaseProductY1D_2">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
         </layout>
        </item>
        <item>
