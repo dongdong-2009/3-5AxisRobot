@@ -36,6 +36,8 @@ ICSimpleAutoEditor::ICSimpleAutoEditor(QWidget *parent) :
 
     ui->afterGetPosX1D->setValidator(&delayValidator_);
     ui->afterGetPosX2D->setValidator(&delayValidator_);
+    ui->afterGetPosY1D->setValidator(&delayValidator_);
+    ui->afterGetPosY2D->setValidator(&delayValidator_);
 
     ui->afterReleaseProductY1D->setValidator(&delayValidator_);
     ui->afterReleaseProductY1D_2->setValidator(&delayValidator_);
@@ -69,6 +71,8 @@ ICSimpleAutoEditor::ICSimpleAutoEditor(QWidget *parent) :
 
     ui->afterGetPosX1D->SetDecimalPlaces(2);
     ui->afterGetPosX2D->SetDecimalPlaces(2);
+    ui->afterGetPosY1D->SetDecimalPlaces(2);
+    ui->afterGetPosY2D->SetDecimalPlaces(2);
 
     ui->afterReleaseProductY1D->SetDecimalPlaces(2);
     ui->afterReleaseProductY1D_2->SetDecimalPlaces(2);
@@ -183,6 +187,8 @@ void ICSimpleAutoEditor::showEvent(QShowEvent *e)
 
     ui->afterGetPosX1D->SetThisIntToThisText(stData_->afterGetX1D);
     ui->afterGetPosX2D->SetThisIntToThisText(stData_->afterGetX2D);
+    ui->afterGetPosY1D->SetThisIntToThisText(stData_->afterGetY1D);
+    ui->afterGetPosY2D->SetThisIntToThisText(stData_->afterGetY2D);
 
     ui->afterReleaseProductY1D->SetThisIntToThisText(stData_->releaseProductYUpD);
     ui->afterReleaseOutletY2D->SetThisIntToThisText(stData_->releaseOutletYUpD);
@@ -243,6 +249,7 @@ void ICSimpleAutoEditor::SetMainArmPosEnabled(bool en)
     ui->afterReleaseProductY1D->setVisible(en && stData_->usedMainArm);
 
     ui->afterGetPosX1D->setVisible(en);
+    ui->afterGetPosY1D->setVisible(en);
     ui->stdDlyX1->setVisible(en);
     ui->stdDlyY1->setVisible(en);
     ui->getProductDlyX1->setVisible(stData_->usedMainArm);
@@ -286,6 +293,7 @@ void ICSimpleAutoEditor::SetMainArmPosEnabled(bool en)
 void ICSimpleAutoEditor::SetSubArmPosEnabled(bool en)
 {
     ui->afterGetPosX2D->setVisible(en);
+    ui->afterGetPosY2D->setVisible(en);
     ui->afterReleaseOutletY2D->setVisible(en);
 
     ui->stdDlyX2->setVisible(en);
@@ -436,6 +444,8 @@ void ICSimpleAutoEditor::on_okButton_clicked()
 
     CheckModifyHelper(ui->afterGetPosX1D, &stData_->afterGetX1D, modifiedDelays, stData_);
     CheckModifyHelper(ui->afterGetPosX2D, &stData_->afterGetX2D, modifiedDelays, stData_);
+    CheckModifyHelper(ui->afterGetPosY1D, &stData_->afterGetY1D, modifiedDelays, stData_);
+    CheckModifyHelper(ui->afterGetPosY2D, &stData_->afterGetY2D, modifiedDelays, stData_);
     CheckModifyHelper(ui->afterReleaseProductY1D, &stData_->releaseProductYUpD, modifiedDelays, stData_);
     CheckModifyHelper(ui->afterCutOutletY1D, &stData_->cutOutletYUpD, modifiedDelays, stData_);
     if(stData_->usedSubArm)

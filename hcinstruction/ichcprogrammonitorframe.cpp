@@ -522,29 +522,34 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
         QMap<int, int>::const_iterator p = modifiedDelays.begin();
         ICCommandProcessor* processor = ICCommandProcessor::Instance();
         ICAutoAdjustCommand command;
-        ICMoldItem *toSendItem;
+        ICMoldItem toSendItem;
         while(p != modifiedDelays.end())
         {
             FindIndex_(p.key(), gIndex, tIndex, sIndex);
             ICTopMoldUIItem * topItem = &programList_[gIndex].at(tIndex);
-            toSendItem = topItem->BaseItem();
-            toSendItem->SetDVal(p.value());
-            toSendItem->ReSum();
+            topItem->BaseItem()->SetDVal(p.value());
+            topItem->BaseItem()->ReSum();
+            toSendItem = *topItem->BaseItem();
+            toSendItem.SetSeq(ICMold::CurrentMold()->ToHostSeq(toSendItem.Seq()));
+            toSendItem.SetNum(ICMold::CurrentMold()->ToHostNum(toSendItem.Seq()));
+            toSendItem.ReSum();
             command.SetSlave(processor->SlaveID());
-            command.SetSequence(toSendItem->Seq());
-            command.SetDelayTime(toSendItem->DVal());
-            command.SetSpeed(toSendItem->SVal());
+            command.SetSequence(toSendItem.Seq());
+            command.SetDelayTime(toSendItem.DVal());
+            command.SetSpeed(toSendItem.SVal());
             command.SetDPos(0);
-            command.SetGMValue(toSendItem->GMVal());
-            command.SetCheckSum(toSendItem->Sum());
+            command.SetGMValue(toSendItem.GMVal());
+            command.SetCheckSum(toSendItem.Sum());
             processor->ExecuteCommand(command);
             ++p;
         }
         if(!modifiedDelays.isEmpty())
         {
             ICMold::CurrentMold()->SetMoldContent(ICMold::UIItemToMoldItem(programList_));
-            UpdateUIProgramList_();
             ICMold::CurrentMold()->SaveSimpleTeachFile();
+            ICMold::CurrentMold()->SaveMoldFile();
+            UpdateHostParam();
+//            UpdateUIProgramList_();
         }
         return;
     }

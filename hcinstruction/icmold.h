@@ -160,6 +160,12 @@ struct SimpleTeachData
     quint32 afterGetX2;
     quint32 afterGetX2S;
     quint32 afterGetX2D;
+    quint32 afterGetY1;
+    quint32 afterGetY1S;
+    quint32 afterGetY1D;
+    quint32 afterGetY2;
+    quint32 afterGetY2S;
+    quint32 afterGetY2D;
     bool usedAfterGetPos;
     bool usedPBHPos;
     AdvanceData advanceData;
@@ -213,7 +219,13 @@ struct SimpleTeachData
                 QByteArray::number(afterGetX2S) + "," +
                 QByteArray::number(afterGetX2D) + "," +
                 QByteArray::number(usedAfterGetPos) + "," +
-                QByteArray::number(usedPBHPos);
+                QByteArray::number(usedPBHPos) + "," +
+                QByteArray::number(afterGetY1) + "," +
+                QByteArray::number(afterGetY1S) + "," +
+                QByteArray::number(afterGetY1D) + "," +
+                QByteArray::number(afterGetY2) + "," +
+                QByteArray::number(afterGetY2S) + "," +
+                QByteArray::number(afterGetY2D);
         ret += "\n";
         ret += advanceData.toByteArray();
         return ret;

@@ -7943,32 +7943,32 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="826"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="858"/>
         <source>Ok</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="851"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="883"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="122"/>
+        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="126"/>
         <source>%2-%1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="196"/>
+        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="202"/>
         <source>Rel Product</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="209"/>
+        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="215"/>
         <source>Rel Outlet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="222"/>
+        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="228"/>
         <source>Cut Outlet</source>
         <translation type="unfinished"></translation>
     </message>

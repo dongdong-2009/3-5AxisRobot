@@ -9454,7 +9454,7 @@ Please enter an digit between </source>
     <message>
         <location filename="hcinstruction/icsimpleautoeditor.ui" line="464"/>
         <source>After Get Pos:</source>
-        <translation>取物后引拔:</translation>
+        <translation>取物后:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icsimpleautoeditor.ui" line="471"/>
@@ -9487,32 +9487,32 @@ Please enter an digit between </source>
         <translation>剪刀后上升:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="826"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="858"/>
         <source>Ok</source>
         <translation>确定</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="851"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="883"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="122"/>
+        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="126"/>
         <source>%2-%1</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="196"/>
+        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="202"/>
         <source>Rel Product</source>
         <translation>放产品位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="209"/>
+        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="215"/>
         <source>Rel Outlet</source>
         <translation>放水口位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="222"/>
+        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="228"/>
         <source>Cut Outlet</source>
         <translation>剪水口</translation>
     </message>
@@ -9805,7 +9805,7 @@ Please enter an digit between </source>
     <message>
         <location filename="hcinstruction/icsimpleteachpage.ui" line="2578"/>
         <source>Always Check</source>
-        <translation type="unfinished"></translation>
+        <translation>夹吸全程检测</translation>
     </message>
     <message>
         <location filename="hcinstruction/icsimpleteachpage.ui" line="2596"/>

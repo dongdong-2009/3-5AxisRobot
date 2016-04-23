@@ -63,6 +63,7 @@ private slots:
 private:
     void InitSignal();
     void UpdateUIProgramList_();
+
     void FindIndex_(int currentIndex, int& groupItemIndex, int& topItemIndex, int& subItemIndex);
 
 //    void AddCommandStr(const QString & commandStr);

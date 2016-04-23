@@ -420,6 +420,14 @@ bool ICMold::ReadSimpleTeachFile(const QString &fileName)
         simpleTeachData_.afterGetX2 = 0;
         simpleTeachData_.afterGetX2S = 80;
         simpleTeachData_.afterGetX2D = 0;
+
+        simpleTeachData_.afterGetY1 = 0;
+        simpleTeachData_.afterGetY1S = 80;
+        simpleTeachData_.afterGetY1D = 0;
+
+        simpleTeachData_.afterGetY2 = 0;
+        simpleTeachData_.afterGetY2S = 80;
+        simpleTeachData_.afterGetY2D = 0;
         return true;
     }
 
@@ -794,7 +802,7 @@ bool SimpleTeachData::InitFromByteArray(const QString &text)
     cutOutletYUpS = lineItems.at(7).toInt();
     cutOutletYUpD = lineItems.at(8).toInt();
     cutTime.all = lineItems.at(9).toInt();
-    if(lineItems.size() < 18)
+    if(lineItems.size() < 24)
     {
         afterGetX1 = 0;
         afterGetX1S = 80;
@@ -803,6 +811,15 @@ bool SimpleTeachData::InitFromByteArray(const QString &text)
         afterGetX2 = 0;
         afterGetX2S = 80;
         afterGetX2D = 0;
+
+        afterGetY1 = 0;
+        afterGetY1S = 80;
+        afterGetY1D = 0;
+
+        afterGetY2 = 0;
+        afterGetY2S = 80;
+        afterGetY2D = 0;
+
     }
     else
     {
@@ -814,6 +831,13 @@ bool SimpleTeachData::InitFromByteArray(const QString &text)
         afterGetX2D = lineItems.at(15).toInt();
         usedAfterGetPos = lineItems.at(16).toInt();
         usedPBHPos = lineItems.at(17).toInt();
+        afterGetY1 = lineItems.at(18).toInt();;
+        afterGetY1S = lineItems.at(19).toInt();;
+        afterGetY1D = lineItems.at(20).toInt();;
+
+        afterGetY2 = lineItems.at(21).toInt();;
+        afterGetY2S = lineItems.at(22).toInt();;
+        afterGetY2D = lineItems.at(23).toInt();;
     }
     if(contentList.size() < 10)
     {
@@ -1217,6 +1241,8 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         FillAxisItem(getYAction(y1Type, ACTMAINUP), simpleTeachData_.stdPos, item);
         item.SetNum(++step);
         item.SetActualPos(0);
+        item.SetDVal(simpleTeachData_.afterGetY1D);
+        SetEditorInfoHelper(program.size(), &simpleTeachData_.afterGetY1D, simpleTeachData_.delayToPosIndex);
         program.append(item);
         // close Mold
         item.SetNum(++step);
@@ -1267,15 +1293,20 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
             item.SetAction(getYAction(y1Type, ACTMAINUP));
             item.SetNum(++step);
             item.SetActualPos(0);
-            item.SetSVal(simpleTeachData_.stdPos.b.y1S);
-            item.SetDVal(simpleTeachData_.stdPos.b.y1D);
+            item.SetSVal(simpleTeachData_.releaseProductYUpS);
+            item.SetDVal(simpleTeachData_.releaseProductYUpD);
+            SetEditorInfoHelper(program.size(), &simpleTeachData_.releaseProductYUpD, simpleTeachData_.delayToPosIndex);
             program.append(item);
-            item.SetAction(getXAction(x1Type, ACTMAINFORWARD));
-            item.SetNum(++step);
-            item.SetActualPos(simpleTeachData_.posBH.b.x1);
-            item.SetSVal(simpleTeachData_.posBH.b.x1S);
-            item.SetDVal(simpleTeachData_.posBH.b.x1D);
-            program.append(item);
+            if(simpleTeachData_.usedPBHPos)
+            {
+                item.SetAction(getXAction(x1Type, ACTMAINFORWARD));
+                item.SetNum(++step);
+                item.SetActualPos(simpleTeachData_.posBH.b.x1);
+                item.SetSVal(simpleTeachData_.posBH.b.x1S);
+                item.SetDVal(simpleTeachData_.posBH.b.x1D);
+                SetEditorInfoHelper(program.size(), &simpleTeachData_.posBH.b.x1D, simpleTeachData_.delayToPosIndex);
+                program.append(item);
+            }
         }
 
     }
@@ -1305,8 +1336,10 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         // forward
         FillAxisItem(getXAction(x1Type, ACTMAINFORWARD), simpleTeachData_.getProductPos.pos, item);
         item.SetNum(++step);
+        SetEditorInfoHelper(program.size(), &simpleTeachData_.getProductPos.pos.b.x1D, simpleTeachData_.delayToPosIndex);
         program.append(item);
         FillAxisItem(getX2Action(x2Type, ACTVICEFORWARD), simpleTeachData_.getOutletPos.pos, item);
+        SetEditorInfoHelper(program.size(), &simpleTeachData_.getProductPos.pos.b.x2D, simpleTeachData_.delayToPosIndex);
         program.append(item);
         // fixture
         FillFixtureItems(simpleTeachData_.getProductPos.fixtureConfis, true, program, ++step);
@@ -1340,9 +1373,15 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         FillAxisItem(getYAction(y1Type, ACTMAINUP), simpleTeachData_.stdPos, item);
         item.SetNum(++step);
         item.SetActualPos(0);
+        item.SetDVal(simpleTeachData_.afterGetY1D);
+        SetEditorInfoHelper(program.size(), &simpleTeachData_.afterGetY1D,
+                            simpleTeachData_.delayToPosIndex);
         program.append(item);
         FillAxisItem(getY2Action(y2Type, ACTVICEUP), simpleTeachData_.stdPos, item);
         item.SetActualPos(0);
+        item.SetDVal(simpleTeachData_.afterGetY2D);
+        SetEditorInfoHelper(program.size(), &simpleTeachData_.afterGetY2D,
+                            simpleTeachData_.delayToPosIndex);
         program.append(item);
         // close Mold
         item.SetNum(++step);
@@ -1393,8 +1432,10 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         item.SetAction(getYAction(y1Type, ACTMAINUP));
         item.SetNum(++step);
         item.SetActualPos(0);
-        item.SetSVal(simpleTeachData_.stdPos.b.y1S);
-        item.SetDVal(simpleTeachData_.stdPos.b.y1D);
+        item.SetSVal(simpleTeachData_.releaseProductYUpS);
+        item.SetDVal(simpleTeachData_.releaseProductYUpD);
+        SetEditorInfoHelper(program.size(), &simpleTeachData_.releaseProductYUpD,
+                            simpleTeachData_.delayToPosIndex);
         program.append(item);
 
         FillReleasePoseItems(simpleTeachData_.releaseOutletPosList, program, step,
@@ -1407,22 +1448,31 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         item.SetAction(getY2Action(y2Type, ACTVICEUP));
         item.SetNum(++step);
         item.SetActualPos(0);
-        item.SetSVal(simpleTeachData_.stdPos.b.y2S);
-        item.SetDVal(simpleTeachData_.stdPos.b.y2D);
+        item.SetSVal(simpleTeachData_.releaseOutletYUpS);
+        item.SetDVal(simpleTeachData_.releaseOutletYUpD);
+        SetEditorInfoHelper(program.size(), &simpleTeachData_.releaseOutletYUpD,
+                            simpleTeachData_.delayToPosIndex);
         program.append(item);
 
-        item.SetAction(getXAction(x1Type, ACTMAINFORWARD));
-        item.SetNum(++step);
-        item.SetActualPos(simpleTeachData_.posBH.b.x1);
-        item.SetSVal(simpleTeachData_.posBH.b.x1S);
-        item.SetDVal(simpleTeachData_.posBH.b.x1D);
-        program.append(item);
-        item.SetAction(getX2Action(x2Type, ACTVICEFORWARD));
-        item.SetNum(step);
-        item.SetActualPos(simpleTeachData_.posBH.b.x2);
-        item.SetSVal(simpleTeachData_.posBH.b.x2S);
-        item.SetDVal(simpleTeachData_.posBH.b.x2D);
-        program.append(item);
+        if(simpleTeachData_.usedPBHPos)
+        {
+            item.SetAction(getXAction(x1Type, ACTMAINFORWARD));
+            item.SetNum(++step);
+            item.SetActualPos(simpleTeachData_.posBH.b.x1);
+            item.SetSVal(simpleTeachData_.posBH.b.x1S);
+            item.SetDVal(simpleTeachData_.posBH.b.x1D);
+            SetEditorInfoHelper(program.size(), &simpleTeachData_.posBH.b.x1D,
+                                simpleTeachData_.delayToPosIndex);
+            program.append(item);
+            item.SetAction(getX2Action(x2Type, ACTVICEFORWARD));
+            item.SetNum(step);
+            item.SetActualPos(simpleTeachData_.posBH.b.x2);
+            item.SetSVal(simpleTeachData_.posBH.b.x2S);
+            item.SetDVal(simpleTeachData_.posBH.b.x2D);
+            SetEditorInfoHelper(program.size(), &simpleTeachData_.posBH.b.x2D,
+                                simpleTeachData_.delayToPosIndex);
+            program.append(item);
+        }
     }
     else if(!simpleTeachData_.usedMainArm && simpleTeachData_.usedMainArmOutlet && !simpleTeachData_.usedSubArm) // main and main outlet
     {
@@ -1444,6 +1494,8 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         // forward
         FillAxisItem(getXAction(x1Type, ACTMAINFORWARD), simpleTeachData_.getOutletPos.pos, item);
         item.SetNum(++step);
+        SetEditorInfoHelper(program.size(), &simpleTeachData_.getOutletPos.pos.b.x1D,
+                            simpleTeachData_.delayToPosIndex);
         program.append(item);
         // fixture
         FillFixtureItems(simpleTeachData_.getOutletPos.fixtureConfis, true, program, ++step);
@@ -1465,7 +1517,9 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         // go up
         FillAxisItem(getYAction(y1Type, ACTMAINUP), simpleTeachData_.stdPos, item);
         item.SetNum(++step);
+        item.SetDVal(simpleTeachData_.afterGetY1D);
         item.SetActualPos(0);
+        SetEditorInfoHelper(program.size(), &simpleTeachData_.afterGetY1D, simpleTeachData_.delayToPosIndex);
         program.append(item);
         // close Mold
         item.SetNum(++step);
@@ -1505,15 +1559,20 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
             item.SetAction(getYAction(y1Type, ACTMAINUP));
             item.SetNum(++step);
             item.SetActualPos(0);
-            item.SetSVal(simpleTeachData_.stdPos.b.y1S);
-            item.SetDVal(simpleTeachData_.stdPos.b.y1D);
+            item.SetSVal(simpleTeachData_.releaseOutletYUpS);
+            item.SetDVal(simpleTeachData_.releaseOutletYUpD);
+            SetEditorInfoHelper(program.size(), &simpleTeachData_.releaseOutletYUpD, simpleTeachData_.delayToPosIndex);
             program.append(item);
-            item.SetAction(getXAction(x1Type, ACTMAINFORWARD));
-            item.SetNum(++step);
-            item.SetActualPos(simpleTeachData_.posBH.b.x1);
-            item.SetSVal(simpleTeachData_.posBH.b.x1S);
-            item.SetDVal(simpleTeachData_.posBH.b.x1D);
-            program.append(item);
+            if(simpleTeachData_.usedPBHPos)
+            {
+                item.SetAction(getXAction(x1Type, ACTMAINFORWARD));
+                item.SetNum(++step);
+                item.SetActualPos(simpleTeachData_.posBH.b.x1);
+                item.SetSVal(simpleTeachData_.posBH.b.x1S);
+                item.SetDVal(simpleTeachData_.posBH.b.x1D);
+                SetEditorInfoHelper(program.size(), &simpleTeachData_.posBH.b.x1D, simpleTeachData_.delayToPosIndex);
+                program.append(item);
+            }
         }
     }
     else if(!simpleTeachData_.usedMainArm && !simpleTeachData_.usedMainArmOutlet && simpleTeachData_.usedSubArm)
@@ -1536,6 +1595,7 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         // forward
         FillAxisItem(getX2Action(x2Type, ACTVICEFORWARD), simpleTeachData_.getOutletPos.pos, item);
         item.SetNum(++step);
+        SetEditorInfoHelper(program.size(), &simpleTeachData_.getOutletPos.pos.b.x2D, simpleTeachData_.delayToPosIndex);
         program.append(item);
         // fixture
         FillFixtureItems(simpleTeachData_.getOutletPos.fixtureConfis, true, program, ++step);
@@ -1558,6 +1618,8 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         FillAxisItem(getY2Action(y2Type, ACTVICEUP), simpleTeachData_.stdPos, item);
         item.SetNum(++step);
         item.SetActualPos(0);
+        item.SetDVal(simpleTeachData_.afterGetY2D);
+        SetEditorInfoHelper(program.size(), &simpleTeachData_.afterGetY2D, simpleTeachData_.delayToPosIndex);
         program.append(item);
         // close Mold
         item.SetNum(++step);
@@ -1598,15 +1660,21 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
             item.SetAction(getY2Action(y2Type, ACTVICEUP));
             item.SetNum(++step);
             item.SetActualPos(0);
-            item.SetSVal(simpleTeachData_.stdPos.b.y2S);
-            item.SetDVal(simpleTeachData_.stdPos.b.y2D);
+            item.SetSVal(simpleTeachData_.releaseOutletYUpS);
+            item.SetDVal(simpleTeachData_.releaseOutletYUpD);
+            SetEditorInfoHelper(program.size(), &simpleTeachData_.releaseOutletYUpD, simpleTeachData_.delayToPosIndex);
             program.append(item);
-            item.SetAction(getX2Action(x2Type, ACTVICEFORWARD));
-            item.SetNum(++step);
-            item.SetActualPos(simpleTeachData_.posBH.b.x2);
-            item.SetSVal(simpleTeachData_.posBH.b.x2S);
-            item.SetDVal(simpleTeachData_.posBH.b.x2D);
-            program.append(item);
+            if(simpleTeachData_.usedPBHPos)
+            {
+                item.SetAction(getX2Action(x2Type, ACTVICEFORWARD));
+                item.SetNum(++step);
+                item.SetActualPos(simpleTeachData_.posBH.b.x2);
+                item.SetSVal(simpleTeachData_.posBH.b.x2S);
+                item.SetDVal(simpleTeachData_.posBH.b.x2D);
+                SetEditorInfoHelper(program.size(), &simpleTeachData_.posBH.b.x2D, simpleTeachData_.delayToPosIndex);
+
+                program.append(item);
+            }
         }
     }
 
