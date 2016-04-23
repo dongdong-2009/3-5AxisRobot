@@ -263,6 +263,9 @@
          <property name="text">
           <string/>
          </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="2" column="6">
@@ -446,6 +449,9 @@
         <widget class="QLabel" name="getOutletFInfo">
          <property name="text">
           <string/>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
@@ -977,6 +983,9 @@
              <property name="text">
               <string/>
              </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
             </widget>
            </item>
            <item row="4" column="2" rowspan="2">
@@ -1025,6 +1034,9 @@
             <widget class="QLabel" name="releaseProductCFInfo">
              <property name="text">
               <string/>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -1271,7 +1283,7 @@
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>-125</y>
+            <y>0</y>
             <width>653</width>
             <height>434</height>
            </rect>
@@ -1571,6 +1583,9 @@
             <widget class="QLabel" name="cutFInfo">
              <property name="text">
               <string/>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -2479,10 +2494,37 @@
        <x>10</x>
        <y>10</y>
        <width>301</width>
-       <height>101</height>
+       <height>161</height>
       </rect>
      </property>
      <layout class="QGridLayout" name="gridLayout_5">
+      <item row="0" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="cutTime1"/>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="label_30">
+        <property name="text">
+         <string>s</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="bFOND"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_31">
+        <property name="text">
+         <string>BFOND:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_29">
+        <property name="text">
+         <string>Cut Time-3:</string>
+        </property>
+       </widget>
+      </item>
       <item row="1" column="0">
        <widget class="QLabel" name="label_27">
         <property name="text">
@@ -2490,15 +2532,8 @@
         </property>
        </widget>
       </item>
-      <item row="0" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="cutTime1"/>
-      </item>
-      <item row="0" column="2">
-       <widget class="QLabel" name="label_25">
-        <property name="text">
-         <string>s</string>
-        </property>
-       </widget>
+      <item row="1" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="cutTime2"/>
       </item>
       <item row="1" column="2">
        <widget class="QLabel" name="label_28">
@@ -2514,21 +2549,35 @@
         </property>
        </widget>
       </item>
-      <item row="1" column="1">
-       <widget class="ICLineEditWithVirtualNumericKeypad" name="cutTime2"/>
-      </item>
-      <item row="2" column="0">
-       <widget class="QLabel" name="label_29">
+      <item row="3" column="2">
+       <widget class="QLabel" name="label_32">
         <property name="text">
-         <string>Cut Time-3:</string>
+         <string>s</string>
         </property>
        </widget>
       </item>
       <item row="2" column="1">
        <widget class="ICLineEditWithVirtualNumericKeypad" name="cutTime3"/>
       </item>
-      <item row="2" column="2">
-       <widget class="QLabel" name="label_30">
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_25">
+        <property name="text">
+         <string>s</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_33">
+        <property name="text">
+         <string>BFOFFD:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="ICLineEditWithVirtualNumericKeypad" name="bFOFFD"/>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLabel" name="label_34">
         <property name="text">
          <string>s</string>
         </property>

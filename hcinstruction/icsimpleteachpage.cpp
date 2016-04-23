@@ -147,6 +147,12 @@ ICSimpleTeachPage::ICSimpleTeachPage(QWidget *parent) :
     ui->afterGetPosX1S->setValidator(&speedValidator_);
     ui->afterGetPosX2S->setValidator(&speedValidator_);
 
+    ui->bFOND->setValidator(&delayValidator_);
+    ui->bFOFFD->setValidator(&delayValidator_);
+    ui->bFOND->SetDecimalPlaces(2);
+    ui->bFOFFD->SetDecimalPlaces(2);
+
+
     ICMold::CurrentMold()->CompileSimpleTeachFile(ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisX1),
                                    ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisY1),
                                    ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisZ),
@@ -213,6 +219,8 @@ void ICSimpleTeachPage::showEvent(QShowEvent *e)
     ui->cutTime1->SetThisIntToThisText(stData_->cutTime.b.cutAfterPullTime);
     ui->cutTime2->SetThisIntToThisText(stData_->cutTime.b.cutOnTime);
     ui->cutTime3->SetThisIntToThisText(stData_->cutTime.b.pullOffAfterCutOffTime);
+    ui->bFOND->SetThisIntToThisText(stData_->beforeFixtrueOnD);
+    ui->bFOFFD->SetThisIntToThisText(stData_->beforeFixtrueOffD);
     ui->releaseProductPYU->SetThisIntToThisText(stData_->releaseProductYUp);
     ui->releaseOutPYU1->SetThisIntToThisText(stData_->releaseOutletYUp);
     ui->releaseOutPYU2->SetThisIntToThisText(stData_->releaseOutletYUp);
@@ -916,6 +924,8 @@ void ICSimpleTeachPage::on_saveBtn_clicked()
     stData_->cutTime.b.cutAfterPullTime = ui->cutTime1->TransThisTextToThisInt();
     stData_->cutTime.b.cutOnTime = ui->cutTime2->TransThisTextToThisInt();
     stData_->cutTime.b.pullOffAfterCutOffTime = ui->cutTime3->TransThisTextToThisInt();
+    stData_->beforeFixtrueOnD = ui->bFOND->TransThisTextToThisInt();
+    stData_->beforeFixtrueOffD = ui->bFOFFD->TransThisTextToThisInt();
 
     stData_->usedMainArm = ui->mainArmEn->isChecked();
     stData_->usedMainArmOutlet = ui->mainArmOutletEn->isChecked();
@@ -1107,7 +1117,7 @@ void ICSimpleTeachPage::on_releaseProductPosPYUSetIn_clicked()
 
 void ICSimpleTeachPage::on_releaseOutletPYUSetIn_clicked()
 {
-    SetInHelper(NULL, ui->releaseOutPYU1, NULL, NULL, NULL);
+    SetInHelper(NULL, ui->releaseOutPYU1, NULL, ui->releaseOutPYU2, NULL);
 
 }
 
