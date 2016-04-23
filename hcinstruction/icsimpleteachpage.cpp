@@ -1117,7 +1117,7 @@ void ICSimpleTeachPage::on_releaseProductPosPYUSetIn_clicked()
 
 void ICSimpleTeachPage::on_releaseOutletPYUSetIn_clicked()
 {
-    SetInHelper(NULL, ui->releaseOutPYU1, NULL, ui->releaseOutPYU2, NULL);
+    SetInHelper(NULL, ui->releaseOutPYU1, NULL, NULL, ui->releaseOutPYU2);
 
 }
 
