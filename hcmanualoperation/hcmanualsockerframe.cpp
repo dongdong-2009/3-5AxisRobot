@@ -31,6 +31,17 @@ HCManualSockerFrame::HCManualSockerFrame(QWidget *parent) :
     wrapper = new ICCommandKeyWrapper(ui->disconnectSucker4ToolButton, IC::VKEY_RESERVE6_OFF);
     wrappers_.append(wrapper);
 
+    ui->label_3->hide();
+    ui->sucker3Label->hide();
+    ui->connectSucker3ToolButton->hide();
+    ui->disconnectSucker3ToolButton->hide();
+    ui->sucker3StatusLabel->hide();
+
+    ui->label_4->hide();
+    ui->sucker4Label->hide();
+    ui->connectSucker4ToolButton->hide();
+    ui->disconnectSucker4ToolButton->hide();
+    ui->sucker4StatusLabel->hide();
 }
 
 HCManualSockerFrame::~HCManualSockerFrame()

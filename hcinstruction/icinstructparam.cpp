@@ -399,11 +399,11 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             {
                 commandStr += QObject::tr("On") + ":";
             }
-            if(action != ICMold::ACT_AUX5 && action != ICMold::ACT_AUX6)
-            {
-                commandStr += " ";
-                commandStr += QObject::tr("Times:") + QString::number(moldItem.ActualMoldCount()) + " ";
-            }
+//            if(action != ICMold::ACT_AUX5 && action != ICMold::ACT_AUX6)
+//            {
+//                commandStr += " ";
+//                commandStr += QObject::tr("Times:") + QString::number(moldItem.ActualMoldCount()) + " ";
+//            }
             commandStr += " ";
         }
         //        else if(action == ICMold::ACT_AUX1)

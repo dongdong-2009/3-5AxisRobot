@@ -36,8 +36,8 @@ UI_DIR = temp_$${suffix}
 MOC_DIR = temp_$${suffix}
 RCC_DIR = temp_$${suffix}
 
-TRUNK_VERSION = 6.0.5
-APP_VERSION = XS5
+TRUNK_VERSION = XS5-6.0.5
+APP_VERSION = HBT-01-1.0
 S_VERSION = $${APP_VERSION}_$${HostType}_$${TRUNK_VERSION}
 contains(DEFINES, Compatible6410){
 S_VERSION = $${S_VERSION}_cp6410

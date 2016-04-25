@@ -1539,147 +1539,29 @@ QRadioButton::indicator:unchecked:disabled
          <property name="title">
           <string>Signal Define</string>
          </property>
-         <layout class="QVBoxLayout" name="verticalLayout_3">
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
           <item>
-           <widget class="QWidget" name="widget" native="true">
-            <layout class="QHBoxLayout" name="horizontalLayout">
-             <property name="spacing">
-              <number>10</number>
-             </property>
-             <property name="leftMargin">
-              <number>9</number>
-             </property>
-             <property name="topMargin">
-              <number>0</number>
-             </property>
-             <property name="rightMargin">
-              <number>0</number>
-             </property>
-             <property name="bottomMargin">
-              <number>0</number>
-             </property>
-             <item>
-              <widget class="QCheckBox" name="singleArmButton">
-               <property name="styleSheet">
-                <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-QRadioButton::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-QRadioButton::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}
-
-
-
-</string>
-               </property>
-               <property name="text">
-                <string>Single Arm</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-               <property name="checked">
-                <bool>true</bool>
-               </property>
-               <property name="autoExclusive">
-                <bool>true</bool>
-               </property>
-               <attribute name="buttonGroup">
-                <string notr="true">buttonGroup</string>
-               </attribute>
-              </widget>
-             </item>
-             <item>
-              <widget class="QCheckBox" name="doubleArmButton">
-               <property name="styleSheet">
-                <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-QRadioButton::indicator:checked:disabled
-{
- image: url(:/resource/check_checked_disable.png);
-}
-
-QRadioButton::indicator:unchecked:disabled
-{
- image: url(:/resource/check_unchecked_disable.png);
-}
-
-
-
-</string>
-               </property>
-               <property name="text">
-                <string>Double Arm</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-               <property name="autoExclusive">
-                <bool>true</bool>
-               </property>
-               <attribute name="buttonGroup">
-                <string notr="true">buttonGroup</string>
-               </attribute>
-              </widget>
-             </item>
-             <item>
-              <spacer name="horizontalSpacer">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>40</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_2">
-            <property name="leftMargin">
-             <number>9</number>
-            </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
             <item>
-             <widget class="QGroupBox" name="mainArmBox">
-              <property name="title">
-               <string>Main Arm</string>
-              </property>
-              <layout class="QVBoxLayout" name="verticalLayout">
+             <widget class="QWidget" name="widget" native="true">
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <property name="spacing">
+                <number>10</number>
+               </property>
+               <property name="leftMargin">
+                <number>9</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
                <item>
-                <widget class="QCheckBox" name="mainArmDownLimitButton">
+                <widget class="QCheckBox" name="singleArmButton">
                  <property name="styleSheet">
                   <string notr="true">::indicator {
      width: 32px;
@@ -1695,20 +1577,39 @@ QRadioButton::indicator:unchecked:disabled
      image: url(:/resource/check_checked.png);
  }
 
+QRadioButton::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+QRadioButton::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}
+
 
 
 </string>
                  </property>
                  <property name="text">
-                  <string>Down Limit</string>
+                  <string>Single Arm</string>
                  </property>
                  <property name="checkable">
                   <bool>true</bool>
                  </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">buttonGroup</string>
+                 </attribute>
                 </widget>
                </item>
                <item>
-                <widget class="QCheckBox" name="mainArmBackwardLimitButton">
+                <widget class="QCheckBox" name="doubleArmButton">
                  <property name="styleSheet">
                   <string notr="true">::indicator {
      width: 32px;
@@ -1723,50 +1624,151 @@ QRadioButton::indicator:unchecked:disabled
 {
      image: url(:/resource/check_checked.png);
  }
+
+QRadioButton::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+QRadioButton::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}
+
+
+
 </string>
                  </property>
                  <property name="text">
-                  <string>Backward Limit</string>
+                  <string>Double Arm</string>
                  </property>
                  <property name="checkable">
                   <bool>true</bool>
                  </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">buttonGroup</string>
+                 </attribute>
                 </widget>
                </item>
                <item>
-                <widget class="QCheckBox" name="mainArmForwardLimitButton">
-                 <property name="styleSheet">
-                  <string notr="true">::indicator {
-     width: 32px;
-     height: 32px;
- }
-
-::indicator:unchecked 
-{
-     image: url(:/resource/check_unchecked.png);
- }
-::indicator:checked 
-{
-     image: url(:/resource/check_checked.png);
- }
-
-</string>
+                <spacer name="horizontalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
                  </property>
-                 <property name="text">
-                  <string>Forword Limit</string>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
                  </property>
-                 <property name="checkable">
-                  <bool>true</bool>
-                 </property>
-                </widget>
+                </spacer>
                </item>
               </layout>
              </widget>
             </item>
             <item>
-             <widget class="QGroupBox" name="subArmBox">
-              <property name="styleSheet">
-               <string notr="true">QCheckBox::indicator {
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <property name="leftMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <widget class="QGroupBox" name="mainArmBox">
+                <property name="title">
+                 <string>Main Arm</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout">
+                 <item>
+                  <widget class="QCheckBox" name="mainArmDownLimitButton">
+                   <property name="styleSheet">
+                    <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+
+
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Down Limit</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="mainArmBackwardLimitButton">
+                   <property name="styleSheet">
+                    <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Backward Limit</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="mainArmForwardLimitButton">
+                   <property name="styleSheet">
+                    <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Forword Limit</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="subArmBox">
+                <property name="styleSheet">
+                 <string notr="true">QCheckBox::indicator {
      width: 32px;
      height: 32px;
  }
@@ -1793,58 +1795,352 @@ QCheckBox::indicator:unchecked:disabled
 
 
 </string>
-              </property>
-              <property name="title">
-               <string>Sub Arm</string>
-              </property>
-              <layout class="QVBoxLayout" name="verticalLayout_2">
-               <item>
-                <widget class="QCheckBox" name="subArmDownLimitButton">
-                 <property name="text">
-                  <string>Down Limit</string>
-                 </property>
-                 <property name="checkable">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QCheckBox" name="subArmBackwardLimitButton">
-                 <property name="text">
-                  <string>Backword Limit</string>
-                 </property>
-                 <property name="checkable">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QCheckBox" name="subArmForwardLimitButton">
-                 <property name="text">
-                  <string>Forward Limit</string>
-                 </property>
-                 <property name="checkable">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-              </layout>
-             </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_2">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
+                </property>
+                <property name="title">
+                 <string>Sub Arm</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_2">
+                 <item>
+                  <widget class="QCheckBox" name="subArmDownLimitButton">
+                   <property name="text">
+                    <string>Down Limit</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="subArmBackwardLimitButton">
+                   <property name="text">
+                    <string>Backword Limit</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="subArmForwardLimitButton">
+                   <property name="text">
+                    <string>Forward Limit</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
             </item>
            </layout>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="title">
+             <string>Limit Type</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_5">
+             <item row="3" column="1">
+              <widget class="QComboBox" name="x2SSel">
+               <property name="minimumSize">
+                <size>
+                 <width>60</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <item>
+                <property name="text">
+                 <string>AO</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>AL</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="x1SSel">
+               <property name="minimumSize">
+                <size>
+                 <width>60</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <item>
+                <property name="text">
+                 <string>AO</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>AL</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_29">
+               <property name="text">
+                <string>X1-S</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label_32">
+               <property name="text">
+                <string>X2-S</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="3">
+              <widget class="QLabel" name="label_37">
+               <property name="text">
+                <string>X2-E</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QComboBox" name="y1SSel">
+               <property name="minimumSize">
+                <size>
+                 <width>60</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <item>
+                <property name="text">
+                 <string>AO</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>AL</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="4" column="3">
+              <widget class="QLabel" name="label_38">
+               <property name="text">
+                <string>Y2-E</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="3">
+              <widget class="QLabel" name="label_35">
+               <property name="text">
+                <string>Y1-E</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="2" column="3">
+              <widget class="QLabel" name="label_36">
+               <property name="text">
+                <string>Z-E</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QComboBox" name="zSSel">
+               <property name="minimumSize">
+                <size>
+                 <width>60</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <item>
+                <property name="text">
+                 <string>AO</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>AL</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_30">
+               <property name="text">
+                <string>Y1-S</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_31">
+               <property name="text">
+                <string>Z-S</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QLabel" name="label_34">
+               <property name="text">
+                <string>X1-E</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label_33">
+               <property name="text">
+                <string>Y2-S</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QComboBox" name="y2SSel">
+               <property name="minimumSize">
+                <size>
+                 <width>60</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <item>
+                <property name="text">
+                 <string>AO</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>AL</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="4">
+              <widget class="QComboBox" name="x1ESel">
+               <property name="minimumSize">
+                <size>
+                 <width>60</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <item>
+                <property name="text">
+                 <string>AO</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>AL</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="1" column="4">
+              <widget class="QComboBox" name="y1ESel">
+               <property name="minimumSize">
+                <size>
+                 <width>60</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <item>
+                <property name="text">
+                 <string>AO</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>AL</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="2" column="4">
+              <widget class="QComboBox" name="zESel">
+               <property name="minimumSize">
+                <size>
+                 <width>60</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <item>
+                <property name="text">
+                 <string>AO</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>AL</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="3" column="4">
+              <widget class="QComboBox" name="x2ESel">
+               <property name="minimumSize">
+                <size>
+                 <width>60</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <item>
+                <property name="text">
+                 <string>AO</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>AL</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="4" column="4">
+              <widget class="QComboBox" name="y2ESel">
+               <property name="minimumSize">
+                <size>
+                 <width>60</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <item>
+                <property name="text">
+                 <string>AO</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>AL</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </widget>
           </item>
          </layout>
         </widget>
@@ -2225,14 +2521,16 @@ QRadioButton::indicator:unchecked:disabled
  <connections/>
  <buttongroups>
   <buttongroup name="buttonGroupA"/>
-  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroupB"/>
+  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroupC"/>
   <buttongroup name="buttonGroupD"/>
   <buttongroup name="buttonGroupE"/>
   <buttongroup name="buttonGroupF"/>
+  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroupG"/>
-  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroupH"/>
+  <buttongroup name="buttonGroup_3"/>
+  <buttongroup name="buttonGroup_4"/>
  </buttongroups>
 </ui>

@@ -31,6 +31,26 @@ struct {
 uint port;
 }AXIS_MODIFY_DATA;
 
+union AxisLimitDefines
+{
+    struct{
+        quint16 x1S:1;
+        quint16 x1E:1;
+        quint16 y1S:1;
+        quint16 y1E:1;
+        quint16 zS:1;
+        quint16 zE:1;
+        quint16 x2S:1;
+        quint16 x2E:1;
+        quint16 y2S:1;
+        quint16 y2E:1;
+        quint16 a:2;
+        quint16 b:2;
+        quint16 c:2;
+    }b;
+    quint16 all;
+};
+
 ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::ICStructDefineFrame)
@@ -189,6 +209,20 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
     v &= 0xFFFF;
     v >>= 15;
     ui->fixtureComboBox->setCurrentIndex(v);
+
+    AxisLimitDefines ald;
+    ald.all = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Resv2).toInt();
+    ui->x1SSel->setCurrentIndex(ald.b.x1S);
+    ui->x1ESel->setCurrentIndex(ald.b.x1E);
+    ui->y1SSel->setCurrentIndex(ald.b.y1S);
+    ui->y1ESel->setCurrentIndex(ald.b.y1E);
+    ui->zSSel->setCurrentIndex(ald.b.zS);
+    ui->zESel->setCurrentIndex(ald.b.zE);
+    ui->x2SSel->setCurrentIndex(ald.b.x2S);
+    ui->x2ESel->setCurrentIndex(ald.b.x2E);
+    ui->y2SSel->setCurrentIndex(ald.b.y2S);
+    ui->y2ESel->setCurrentIndex(ald.b.y2E);
+
 
     editorToConfigIDs_.insert(ui->x1Box, ICConfigString::kCS_STRUCT_Axis_Define_X1);
     editorToConfigIDs_.insert(ui->y1Box, ICConfigString::kCS_STRUCT_Axis_Define_Y1);
@@ -386,7 +420,21 @@ void ICStructDefineFrame::on_saveButton_clicked()
 //    data.split.a7 = ui->portB->currentIndex() == 0 ? 0 : ui->portB->currentIndex() + 7;
 //    data.split.a8 = ui->portC->currentIndex() == 0 ? 0 : ui->portC->currentIndex() + 7;
     dataBuffer[4] = ui->servoFlex->currentIndex();
-    dataBuffer[5] = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Resv2).toUInt();
+    AxisLimitDefines ald;
+    ald.b.a = 0;
+    ald.b.b = 0;
+    ald.b.c = 0;
+    ald.b.x1S = ui->x1SSel->currentIndex();
+    ald.b.x1E = ui->x1ESel->currentIndex();
+    ald.b.y1S = ui->y1SSel->currentIndex();
+    ald.b.y1E = ui->y1ESel->currentIndex();
+    ald.b.zS = ui->zSSel->currentIndex();
+    ald.b.zE = ui->zESel->currentIndex();
+    ald.b.x2S = ui->x2SSel->currentIndex();
+    ald.b.x2E = ui->x2ESel->currentIndex();
+    ald.b.y2S = ui->y2SSel->currentIndex();
+    ald.b.y2E = ui->y2ESel->currentIndex();
+    dataBuffer[5] = ald.all;
     for(int i = 0; i != 6; ++i)
     {
         sum += dataBuffer.at(i);
