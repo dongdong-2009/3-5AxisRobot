@@ -93,6 +93,7 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
     ui->maxUnitLabel->setText(tr("mm"));
     minSecValidator_->setBottom(0);
     maxSecValidator_->setBottom(0);
+    maxMoveValidator_->setBottom(-1000);
     if(currentAxis_ == ICVirtualHost::ICAxis_AxisX1)
     {
         machineLangth = ICVirtualHost::SYS_X_Length;
