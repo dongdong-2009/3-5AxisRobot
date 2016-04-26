@@ -2993,13 +2993,11 @@ molde medio</translation>
         <translation type="unfinished">Chupador-2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.ui" line="146"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="146"/>
         <source>Sucker3</source>
         <translation type="unfinished">Chupador-3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.ui" line="151"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="151"/>
         <source>Sucker4</source>
         <translation type="unfinished">Chupador-4</translation>
@@ -3009,20 +3007,20 @@ molde medio</translation>
         <translation type="obsolete">Chupador-9</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.ui" line="156"/>
+        <location filename="hcinstruction/ichcfixturepage.ui" line="146"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="156"/>
         <source>En</source>
         <translation>EN</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.ui" line="164"/>
+        <location filename="hcinstruction/ichcfixturepage.ui" line="154"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="164"/>
         <source>Current/Setting</source>
         <translation>Configuraciones
 actuales</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.ui" line="169"/>
+        <location filename="hcinstruction/ichcfixturepage.ui" line="159"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="169"/>
         <source>Delay</source>
         <translation>Retrasado</translation>
@@ -7106,8 +7104,8 @@ ortador</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="130"/>
-        <source>New Row</source>
-        <translation type="unfinished"></translation>
+        <source>Reserve5</source>
+        <translation type="unfinished">Reservar5</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="135"/>
@@ -8304,20 +8302,6 @@ de producción</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1869"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1889"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1930"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1984"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2032"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2052"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2072"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2092"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2112"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2132"/>
-        <source>AO</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1874"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1894"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1935"/>
@@ -8328,6 +8312,20 @@ de producción</translation>
         <location filename="hcsettings/icstructdefineframe.ui" line="2097"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="2117"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="2137"/>
+        <source>AO</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1869"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1889"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1930"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1984"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2032"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2052"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2072"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2092"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2112"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2132"/>
         <source>AL</source>
         <translation type="unfinished"></translation>
     </message>

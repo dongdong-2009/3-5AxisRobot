@@ -1866,12 +1866,12 @@ QCheckBox::indicator:unchecked:disabled
                </property>
                <item>
                 <property name="text">
-                 <string>AO</string>
+                 <string>AL</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>AL</string>
+                 <string>AO</string>
                 </property>
                </item>
               </widget>
@@ -1886,12 +1886,12 @@ QCheckBox::indicator:unchecked:disabled
                </property>
                <item>
                 <property name="text">
-                 <string>AO</string>
+                 <string>AL</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>AL</string>
+                 <string>AO</string>
                 </property>
                </item>
               </widget>
@@ -1927,12 +1927,12 @@ QCheckBox::indicator:unchecked:disabled
                </property>
                <item>
                 <property name="text">
-                 <string>AO</string>
+                 <string>AL</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>AL</string>
+                 <string>AO</string>
                 </property>
                </item>
               </widget>
@@ -1981,12 +1981,12 @@ QCheckBox::indicator:unchecked:disabled
                </property>
                <item>
                 <property name="text">
-                 <string>AO</string>
+                 <string>AL</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>AL</string>
+                 <string>AO</string>
                 </property>
                </item>
               </widget>
@@ -2029,12 +2029,12 @@ QCheckBox::indicator:unchecked:disabled
                </property>
                <item>
                 <property name="text">
-                 <string>AO</string>
+                 <string>AL</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>AL</string>
+                 <string>AO</string>
                 </property>
                </item>
               </widget>
@@ -2049,12 +2049,12 @@ QCheckBox::indicator:unchecked:disabled
                </property>
                <item>
                 <property name="text">
-                 <string>AO</string>
+                 <string>AL</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>AL</string>
+                 <string>AO</string>
                 </property>
                </item>
               </widget>
@@ -2069,12 +2069,12 @@ QCheckBox::indicator:unchecked:disabled
                </property>
                <item>
                 <property name="text">
-                 <string>AO</string>
+                 <string>AL</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>AL</string>
+                 <string>AO</string>
                 </property>
                </item>
               </widget>
@@ -2089,12 +2089,12 @@ QCheckBox::indicator:unchecked:disabled
                </property>
                <item>
                 <property name="text">
-                 <string>AO</string>
+                 <string>AL</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>AL</string>
+                 <string>AO</string>
                 </property>
                </item>
               </widget>
@@ -2109,12 +2109,12 @@ QCheckBox::indicator:unchecked:disabled
                </property>
                <item>
                 <property name="text">
-                 <string>AO</string>
+                 <string>AL</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>AL</string>
+                 <string>AO</string>
                 </property>
                </item>
               </widget>
@@ -2129,12 +2129,12 @@ QCheckBox::indicator:unchecked:disabled
                </property>
                <item>
                 <property name="text">
-                 <string>AO</string>
+                 <string>AL</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>AL</string>
+                 <string>AO</string>
                 </property>
                </item>
               </widget>
@@ -2530,7 +2530,5 @@ QRadioButton::indicator:unchecked:disabled
   <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroupG"/>
   <buttongroup name="buttonGroupH"/>
-  <buttongroup name="buttonGroup_3"/>
-  <buttongroup name="buttonGroup_4"/>
  </buttongroups>
 </ui>

@@ -3281,7 +3281,7 @@ Reason</source>
         <translation type="obsolete">设入状态</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.ui" line="169"/>
+        <location filename="hcinstruction/ichcfixturepage.ui" line="159"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="169"/>
         <source>Delay</source>
         <translation>延时</translation>
@@ -3339,25 +3339,23 @@ Reason</source>
         <translation>吸2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.ui" line="146"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="146"/>
         <source>Sucker3</source>
         <translation>吸3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.ui" line="151"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="151"/>
         <source>Sucker4</source>
         <translation>吸4</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.ui" line="156"/>
+        <location filename="hcinstruction/ichcfixturepage.ui" line="146"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="156"/>
         <source>En</source>
         <translation>使能</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcfixturepage.ui" line="164"/>
+        <location filename="hcinstruction/ichcfixturepage.ui" line="154"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="164"/>
         <source>Current/Setting</source>
         <translation>当前设定</translation>
@@ -7688,7 +7686,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="125"/>
         <source>Y044</source>
-        <translation>Y044</translation>
+        <translation>清除伺服报警</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="126"/>
@@ -8386,12 +8384,8 @@ Please enter an digit between </source>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="130"/>
-        <source>New Row</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Reserve5</source>
-        <translation type="obsolete">预留5</translation>
+        <translation type="unfinished">预留5</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="135"/>
@@ -9677,20 +9671,6 @@ Please enter an digit between </source>
         <translation>限位类型</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1869"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1889"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1930"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1984"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2032"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2052"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2072"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2092"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2112"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2132"/>
-        <source>AO</source>
-        <translation>常开</translation>
-    </message>
-    <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1874"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1894"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1935"/>
@@ -9701,6 +9681,20 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="2097"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="2117"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="2137"/>
+        <source>AO</source>
+        <translation>常开</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1869"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1889"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1930"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1984"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2032"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2052"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2072"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2092"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2112"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2132"/>
         <source>AL</source>
         <translation>常闭</translation>
     </message>

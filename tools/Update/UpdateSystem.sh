@@ -5,7 +5,7 @@ chmod +x UpdateGUI
 
 sync
 sync
-#hostPackages=`find . -name "rom.bin"`
+hostPackages=`find . -name "rom.bin"`
 if [ "$hostPackages" != "" ] ; then
     chmod +x ModbusUartProgramer
     ./ModbusUartProgramer /dev/ttySZHC0 rom.bin -qws
