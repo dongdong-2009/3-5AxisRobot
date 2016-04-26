@@ -26,8 +26,6 @@ ICSimpleTeachPage::ICSimpleTeachPage(QWidget *parent) :
     ui->getProductPosX1->SetDecimalPlaces(POS_DECIMAL);
     ui->getProductPosY1->SetDecimalPlaces(POS_DECIMAL);
     ui->getProductPosZ->SetDecimalPlaces(POS_DECIMAL);
-    ui->getProductPosX2->SetDecimalPlaces(POS_DECIMAL);
-    ui->getProductPosY2->SetDecimalPlaces(POS_DECIMAL);
 
     ui->getOutletPosX1->SetDecimalPlaces(POS_DECIMAL);
     ui->getOutletPosY1->SetDecimalPlaces(POS_DECIMAL);
@@ -67,8 +65,6 @@ ICSimpleTeachPage::ICSimpleTeachPage(QWidget *parent) :
     ui->getProductPosX1->setValidator(&posValidator_);
     ui->getProductPosY1->setValidator(&posValidator_);
     ui->getProductPosZ->setValidator(&posValidator_);
-    ui->getProductPosX2->setValidator(&posValidator_);
-    ui->getProductPosY2->setValidator(&posValidator_);
 
     ui->getOutletPosX1->setValidator(&posValidator_);
     ui->getOutletPosY1->setValidator(&posValidator_);
@@ -108,8 +104,6 @@ ICSimpleTeachPage::ICSimpleTeachPage(QWidget *parent) :
     ui->getProductSpeedX1->setValidator(&speedValidator_);
     ui->getProductSpeedY1->setValidator(&speedValidator_);
     ui->getProductSpeedZ->setValidator(&speedValidator_);
-    ui->getProductSpeedX2->setValidator(&speedValidator_);
-    ui->getProductSpeedY2->setValidator(&speedValidator_);
 
     ui->getOutletSpeedX1->setValidator(&speedValidator_);
     ui->getOutletSpeedY1->setValidator(&speedValidator_);
@@ -118,10 +112,8 @@ ICSimpleTeachPage::ICSimpleTeachPage(QWidget *parent) :
     ui->getOutletSpeedY2->setValidator(&speedValidator_);
 
     ui->speedBHorX1->setValidator(&speedValidator_);
-    ui->speedBHorY1->setValidator(&speedValidator_);
-    ui->speedBHorZ->setValidator(&speedValidator_);
+
     ui->speedBHorX2->setValidator(&speedValidator_);
-    ui->speedBHorY2->setValidator(&speedValidator_);
 
     ui->cutTime1->SetDecimalPlaces(2);
     ui->cutTime1->setValidator(&delayValidator_);
@@ -247,13 +239,9 @@ void ICSimpleTeachPage::showEvent(QShowEvent *e)
     ui->getProductPosX1->SetThisIntToThisText(stData_->getProductPos.pos.b.x1);
     ui->getProductPosY1->SetThisIntToThisText(stData_->getProductPos.pos.b.y1);
     ui->getProductPosZ->SetThisIntToThisText(stData_->getProductPos.pos.b.z);
-    ui->getProductPosX2->SetThisIntToThisText(stData_->getProductPos.pos.b.x2);
-    ui->getProductPosY2->SetThisIntToThisText(stData_->getProductPos.pos.b.y2);
     ui->getProductSpeedX1->SetThisIntToThisText(stData_->getProductPos.pos.b.x1S);
     ui->getProductSpeedY1->SetThisIntToThisText(stData_->getProductPos.pos.b.y1S);
     ui->getProductSpeedZ->SetThisIntToThisText(stData_->getProductPos.pos.b.zS);
-    ui->getProductSpeedX2->SetThisIntToThisText(stData_->getProductPos.pos.b.x2S);
-    ui->getProductSpeedY2->SetThisIntToThisText(stData_->getProductPos.pos.b.y2S);
     ui->getProductFInfo->setText(fixtureSel_->SelectedNames(stData_->getProductPos.fixtureConfis).join(","));
 
     ui->getOutletPosX1->SetThisIntToThisText(stData_->getOutletPos.pos.b.x1);
@@ -274,10 +262,8 @@ void ICSimpleTeachPage::showEvent(QShowEvent *e)
     ui->posBHorX2->SetThisIntToThisText(stData_->posBH.b.x2);
     ui->posBHorY2->SetThisIntToThisText(stData_->posBH.b.y2);
     ui->speedBHorX1->SetThisIntToThisText(stData_->posBH.b.x1S);
-    ui->speedBHorY1->SetThisIntToThisText(stData_->posBH.b.y1S);
-    ui->speedBHorZ->SetThisIntToThisText(stData_->posBH.b.zS);
+
     ui->speedBHorX2->SetThisIntToThisText(stData_->posBH.b.x2S);
-    ui->speedBHorY2->SetThisIntToThisText(stData_->posBH.b.y2S);
 
     ClearGirdUIHelper(releaseProductSpeedUI);
     ClearGirdUIHelper(releaseOutletSpeedUI);
@@ -425,7 +411,6 @@ void ICSimpleTeachPage::SetMainArmPosEnabled(bool en)
     ui->getOutletSpeedX1->setVisible(en && UsedReleaseOutlet());
     ui->getOutletSpeedY1->setVisible(en && UsedReleaseOutlet());
     ui->speedBHorX1->setVisible(en);
-    ui->speedBHorY1->setVisible(en);
 
     ui->pIX1Label->setVisible(UsedMainArm());
     ui->pIX1Label_2->setVisible(en);
@@ -462,12 +447,15 @@ void ICSimpleTeachPage::SetMainArmPosEnabled(bool en)
         speedUI.b.y1SpeedEdit->setVisible(en && UsedReleaseOutlet());
     }
 
-    for(int i = 0; i < cutOutletSpeedUI.size(); ++i)
-    {
-        speedUI = cutOutletSpeedUI.at(i);
-        speedUI.b.x1SpeedEdit->setVisible(ui->mainArmEn->isChecked());
-        speedUI.b.y1SpeedEdit->setVisible(ui->mainArmEn->isChecked());
-    }
+    SetCutOutletEnabled(ui->cutOutletEn);
+
+//    for(int i = 0; i < cutOutletSpeedUI.size(); ++i)
+//    {
+//        speedUI = cutOutletSpeedUI.at(i);
+//        speedUI.b.x1SpeedEdit->setVisible(ui->mainArmEn->isChecked());
+//        speedUI.b.y1SpeedEdit->setVisible(ui->mainArmEn->isChecked());
+//    }
+
 }
 
 void ICSimpleTeachPage::SetSubArmPosEnabled(bool en)
@@ -475,8 +463,6 @@ void ICSimpleTeachPage::SetSubArmPosEnabled(bool en)
     ui->stdPosX2->setVisible(en);
     ui->stdPosY2->setVisible(en);
 
-    ui->getProductPosX2->setVisible(en && UsedMainArm());
-    ui->getProductPosY2->setVisible(en && UsedMainArm());
 
     ui->getOutletPosX2->setVisible(en);
     ui->getOutletPosY2->setVisible(en);
@@ -495,12 +481,9 @@ void ICSimpleTeachPage::SetSubArmPosEnabled(bool en)
 
     ui->stdSpeedX2->setVisible(en);
     ui->stdSpeedY2->setVisible(en);
-    ui->getProductSpeedX2->setVisible(en && UsedMainArm());
-    ui->getProductSpeedY2->setVisible(en && UsedMainArm());
     ui->getOutletSpeedX2->setVisible(en);
     ui->getOutletSpeedY2->setVisible(en);
     ui->speedBHorX2->setVisible(en);
-    ui->speedBHorY2->setVisible(en);
 
     ui->pIX2Label->setVisible(en);
     ui->pIX2Label_2->setVisible(en);
@@ -531,12 +514,12 @@ void ICSimpleTeachPage::SetSubArmPosEnabled(bool en)
         speedUI.b.y2SpeedEdit->setVisible(en);
     }
 
-    for(int i = 0; i < cutOutletSpeedUI.size(); ++i)
-    {
-        speedUI = cutOutletSpeedUI.at(i);
-        speedUI.b.x2SpeedEdit->setVisible(en && ui->cutOutletEn->isChecked());
-        speedUI.b.y2SpeedEdit->setVisible(en && ui->cutOutletEn->isChecked());
-    }
+//    for(int i = 0; i < cutOutletSpeedUI.size(); ++i)
+//    {
+//        speedUI = cutOutletSpeedUI.at(i);
+//        speedUI.b.x2SpeedEdit->setVisible(en && ui->cutOutletEn->isChecked());
+//        speedUI.b.y2SpeedEdit->setVisible(en && ui->cutOutletEn->isChecked());
+//    }
 }
 
 void ICSimpleTeachPage::SetReleaseOutletEnabled(bool en)
@@ -584,6 +567,13 @@ void ICSimpleTeachPage::SetReleaseOutletEnabled(bool en)
         releaseOutletSpeedUI[i].b.x2SpeedEdit->setVisible(en && UsedSubArm());
         releaseOutletSpeedUI[i].b.y2SpeedEdit->setVisible(en && UsedSubArm());
 
+        releaseOutletSpeedUI[i].b.x1SpeedEdit->setEnabled(ui->mainArmOutletEn->isChecked());
+        releaseOutletSpeedUI[i].b.y1SpeedEdit->setEnabled(ui->mainArmOutletEn->isChecked());
+        releaseOutletSpeedUI[i].b.x1SpeedEdit->setEchoMode(releaseOutletSpeedUI[i].b.x1SpeedEdit->isEnabled() ? QLineEdit::Normal : QLineEdit::Password);
+        releaseOutletSpeedUI[i].b.y1SpeedEdit->setEchoMode(releaseOutletSpeedUI[i].b.y1SpeedEdit->isEnabled() ? QLineEdit::Normal : QLineEdit::Password);
+//        releaseOutletSpeedUI[i].b.x2SpeedEdit->setEnabled(en && UsedSubArm());
+//        releaseOutletSpeedUI[i].b.y2SpeedEdit->setEnabled(en && UsedSubArm());
+
     }
 }
 
@@ -596,13 +586,9 @@ void ICSimpleTeachPage::SetReleaseProductEnabled(bool en)
     ui->getProductPosX1->setVisible(en);
     ui->getProductPosY1->setVisible(en);
     ui->getProductPosZ->setVisible(en);
-    ui->getProductPosX2->setVisible(en && UsedReleaseOutlet());
-    ui->getProductPosY2->setVisible(en && UsedReleaseOutlet());
     ui->getProductSpeedX1->setVisible(en);
     ui->getProductSpeedY1->setVisible(en);
     ui->getProductSpeedZ->setVisible(en);
-    ui->getProductSpeedX2->setVisible(en  && UsedReleaseOutlet());
-    ui->getProductSpeedY2->setVisible(en  && UsedReleaseOutlet());
     ui->label->setVisible(en);
     ui->label_15->setVisible(en);
     ui->releaseProductPosPYUSetIn->setVisible(en);
@@ -631,6 +617,10 @@ void ICSimpleTeachPage::SetReleaseProductEnabled(bool en)
         releaseProductSpeedUI[i].b.zSpeedEdit->setVisible(en);
         releaseProductSpeedUI[i].b.x2SpeedEdit->setVisible(en  && UsedReleaseOutlet());
         releaseProductSpeedUI[i].b.y2SpeedEdit->setVisible(en  && UsedReleaseOutlet());
+        releaseProductSpeedUI[i].b.x2SpeedEdit->setEnabled(false);
+        releaseProductSpeedUI[i].b.y2SpeedEdit->setEnabled(false);
+        releaseProductSpeedUI[i].b.x2SpeedEdit->setEchoMode(QLineEdit::Password);
+        releaseProductSpeedUI[i].b.y2SpeedEdit->setEchoMode(QLineEdit::Password);
 
     }
 }
@@ -647,6 +637,10 @@ void ICSimpleTeachPage::SetCutOutletEnabled(bool en)
         cutOutletSpeedUI[i].b.zSpeedEdit->setVisible(en);
         cutOutletSpeedUI[i].b.x2SpeedEdit->setVisible(en);
         cutOutletSpeedUI[i].b.y2SpeedEdit->setVisible(en);
+        cutOutletSpeedUI[i].b.x2SpeedEdit->setEnabled(false);
+        cutOutletSpeedUI[i].b.y2SpeedEdit->setEnabled(false);
+        cutOutletSpeedUI[i].b.x2SpeedEdit->setEchoMode(QLineEdit::Password);
+        cutOutletSpeedUI[i].b.y2SpeedEdit->setEchoMode(QLineEdit::Password);
 
     }
 }
@@ -946,13 +940,9 @@ void ICSimpleTeachPage::on_saveBtn_clicked()
     stData_->getProductPos.pos.b.x1 = ui->getProductPosX1->TransThisTextToThisInt();
     stData_->getProductPos.pos.b.y1 = ui->getProductPosY1->TransThisTextToThisInt();
     stData_->getProductPos.pos.b.z = ui->getProductPosZ->TransThisTextToThisInt();
-    stData_->getProductPos.pos.b.x2 = ui->getProductPosX2->TransThisTextToThisInt();
-    stData_->getProductPos.pos.b.y2 = ui->getProductPosY2->TransThisTextToThisInt();
     stData_->getProductPos.pos.b.x1S = ui->getProductSpeedX1->TransThisTextToThisInt();
     stData_->getProductPos.pos.b.y1S = ui->getProductSpeedY1->TransThisTextToThisInt();
     stData_->getProductPos.pos.b.zS = ui->getProductSpeedZ->TransThisTextToThisInt();
-    stData_->getProductPos.pos.b.x2S = ui->getProductSpeedX2->TransThisTextToThisInt();
-    stData_->getProductPos.pos.b.y2S = ui->getProductSpeedY2->TransThisTextToThisInt();
 
     stData_->getOutletPos.pos.b.x1 = ui->getOutletPosX1->TransThisTextToThisInt();
     stData_->getOutletPos.pos.b.y1 = ui->getOutletPosY1->TransThisTextToThisInt();
@@ -971,10 +961,7 @@ void ICSimpleTeachPage::on_saveBtn_clicked()
     stData_->posBH.b.x2 = ui->posBHorX2->TransThisTextToThisInt();
     stData_->posBH.b.y2 = ui->posBHorY2->TransThisTextToThisInt();
     stData_->posBH.b.x1S = ui->speedBHorX1->TransThisTextToThisInt();
-    stData_->posBH.b.y1S = ui->speedBHorY1->TransThisTextToThisInt();
-    stData_->posBH.b.zS = ui->speedBHorZ->TransThisTextToThisInt();
     stData_->posBH.b.x2S = ui->speedBHorX2->TransThisTextToThisInt();
-    stData_->posBH.b.y2S = ui->speedBHorY2->TransThisTextToThisInt();
 
     stData_->releaseProductYUp = ui->releaseProductPYU->TransThisTextToThisInt();
     stData_->releaseOutletYUp = stData_->usedMainArmOutlet ? ui->releaseOutPYU1->TransThisTextToThisInt() :
@@ -1061,8 +1048,8 @@ void ICSimpleTeachPage::on_getProductPosSetIn_clicked()
     SetInHelper(ui->getProductPosX1,
                 ui->getProductPosY1,
                 ui->getProductPosZ,
-                ui->getProductPosX2,
-                ui->getProductPosY2);
+                NULL,
+                NULL);
 }
 
 void ICSimpleTeachPage::on_getOutletPosSetIn_clicked()
