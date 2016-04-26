@@ -1357,7 +1357,7 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
         SetEditorInfoHelper(program.size(), &simpleTeachData_.getProductPos.pos.b.x1D, simpleTeachData_.delayToPosIndex);
         program.append(item);
         FillAxisItem(getX2Action(x2Type, ACTVICEFORWARD), simpleTeachData_.getOutletPos.pos, item);
-        SetEditorInfoHelper(program.size(), &simpleTeachData_.getProductPos.pos.b.x2D, simpleTeachData_.delayToPosIndex);
+        SetEditorInfoHelper(program.size(), &simpleTeachData_.getOutletPos.pos.b.x2D, simpleTeachData_.delayToPosIndex);
         program.append(item);
         // fixture
         FillFixtureItems(simpleTeachData_.getProductPos.fixtureConfis, true, program, ++step, simpleTeachData_.beforeFixtrueOnD);

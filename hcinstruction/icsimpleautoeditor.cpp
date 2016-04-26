@@ -27,10 +27,7 @@ ICSimpleAutoEditor::ICSimpleAutoEditor(QWidget *parent) :
     ui->getOutletDlyY2->setValidator(&delayValidator_);
 
     ui->DlyBHorX1->setValidator(&delayValidator_);
-    ui->DlyBHorY1->setValidator(&delayValidator_);
-    ui->DlyBHorZ->setValidator(&delayValidator_);
     ui->DlyBHorX2->setValidator(&delayValidator_);
-    ui->DlyBHorY2->setValidator(&delayValidator_);
 
     ui->afterGetPosX1D->setValidator(&delayValidator_);
     ui->afterGetPosX2D->setValidator(&delayValidator_);
@@ -60,10 +57,7 @@ ICSimpleAutoEditor::ICSimpleAutoEditor(QWidget *parent) :
     ui->getOutletDlyY2->SetDecimalPlaces(2);
 
     ui->DlyBHorX1->SetDecimalPlaces(2);
-    ui->DlyBHorY1->SetDecimalPlaces(2);
-    ui->DlyBHorZ->SetDecimalPlaces(2);
     ui->DlyBHorX2->SetDecimalPlaces(2);
-    ui->DlyBHorY2->SetDecimalPlaces(2);
 
     ui->afterGetPosX1D->SetDecimalPlaces(2);
     ui->afterGetPosX2D->SetDecimalPlaces(2);
@@ -170,14 +164,11 @@ void ICSimpleAutoEditor::showEvent(QShowEvent *e)
     ui->getOutletDlyX1->SetThisIntToThisText(stData_->getOutletPos.pos.b.x1D);
     ui->getOutletDlyY1->SetThisIntToThisText(stData_->getOutletPos.pos.b.y1D);
     ui->getOutletDlyZ->SetThisIntToThisText(stData_->getOutletPos.pos.b.zD);
-    ui->getOutletDlyX2->SetThisIntToThisText(stData_->getOutletPos.pos.b.x1D);
-    ui->getOutletDlyY2->SetThisIntToThisText(stData_->getOutletPos.pos.b.x1D);
+    ui->getOutletDlyX2->SetThisIntToThisText(stData_->getOutletPos.pos.b.x2D);
+    ui->getOutletDlyY2->SetThisIntToThisText(stData_->getOutletPos.pos.b.y2D);
 
     ui->DlyBHorX1->SetThisIntToThisText(stData_->posBH.b.x1D);
-    ui->DlyBHorY1->SetThisIntToThisText(stData_->posBH.b.y1D);
-    ui->DlyBHorZ->SetThisIntToThisText(stData_->posBH.b.zD);
     ui->DlyBHorX2->SetThisIntToThisText(stData_->posBH.b.x2D);
-    ui->DlyBHorY2->SetThisIntToThisText(stData_->posBH.b.y2D);
 
     ui->afterGetPosX1D->SetThisIntToThisText(stData_->afterGetX1D);
     ui->afterGetPosX2D->SetThisIntToThisText(stData_->afterGetX2D);
@@ -257,7 +248,6 @@ void ICSimpleAutoEditor::SetMainArmPosEnabled(bool en)
     ui->getOutletDlyX1->setVisible(en && UsedReleaseOutlet());
     ui->getOutletDlyY1->setVisible(en && UsedReleaseOutlet());
     ui->DlyBHorX1->setVisible(en);
-    ui->DlyBHorY1->setVisible(en);
 
     ui->pIX1Label_4->setVisible(en);
     ui->pIX1DlyLabel->setVisible(UsedMainArm());
@@ -301,7 +291,6 @@ void ICSimpleAutoEditor::SetSubArmPosEnabled(bool en)
     ui->getOutletDlyX2->setVisible(en);
     ui->getOutletDlyY2->setVisible(en);
     ui->DlyBHorX2->setVisible(en);
-    ui->DlyBHorY2->setVisible(en);
 
     ui->pIX2Label_3->setVisible(en);
     ui->pIX2DlyLabel->setVisible(en);
@@ -341,7 +330,8 @@ void ICSimpleAutoEditor::SetReleaseOutletEnabled(bool en)
     ui->getOutletDlyY1->setEchoMode(en && stData_->usedMainArmOutlet ? QLineEdit::Normal : QLineEdit::Password);
     ui->getOutletDlyX2->setVisible(en && UsedSubArm());
     ui->getOutletDlyY2->setVisible(en && UsedSubArm());
-    ui->getOutletDlyZ->setVisible(en);
+    ui->getOutletDlyZ->setEnabled(en && !stData_->usedMainArm);
+    ui->getOutletDlyZ->setEchoMode(ui->getOutletDlyZ->isEnabled() ? QLineEdit::Normal : QLineEdit::Password);
     ui->label_22->setVisible(en);
     ui->label_28->setVisible(en);
     ui->afterReleaseProductY1D_2->setVisible(en && stData_->usedMainArmOutlet);
@@ -368,6 +358,8 @@ void ICSimpleAutoEditor::SetReleaseProductEnabled(bool en)
     ui->getProductDlyY1->setVisible(en);
     ui->getProductDlyZ->setVisible(en);
     ui->label->setVisible(en);
+    ui->getOutletDlyZ->setEnabled(!en);
+    ui->getOutletDlyZ->setEchoMode(ui->getOutletDlyZ->isEnabled() ? QLineEdit::Normal : QLineEdit::Password);
 
     for(int i = 0; i < releaseProductDlyUI.size(); ++i)
     {
@@ -442,10 +434,7 @@ void ICSimpleAutoEditor::on_okButton_clicked()
     CheckModifyHelper(ui->getOutletDlyY2, &stData_->getOutletPos.pos.b.y2D, modifiedDelays, stData_);
 
     CheckModifyHelper(ui->DlyBHorX1, &stData_->posBH.b.x1D, modifiedDelays, stData_);
-    CheckModifyHelper(ui->DlyBHorY1, &stData_->posBH.b.y1D, modifiedDelays, stData_);
-    CheckModifyHelper(ui->DlyBHorZ, &stData_->posBH.b.zD, modifiedDelays, stData_);
     CheckModifyHelper(ui->DlyBHorX2, &stData_->posBH.b.x2D, modifiedDelays, stData_);
-    CheckModifyHelper(ui->DlyBHorY2, &stData_->posBH.b.y2D, modifiedDelays, stData_);
 
     CheckModifyHelper(ui->afterGetPosX1D, &stData_->afterGetX1D, modifiedDelays, stData_);
     CheckModifyHelper(ui->afterGetPosX2D, &stData_->afterGetX2D, modifiedDelays, stData_);
