@@ -9418,101 +9418,101 @@ Please enter an digit between </source>
         <translation>主上下</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="129"/>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="362"/>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="615"/>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="666"/>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="682"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="113"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="314"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="535"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="586"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="602"/>
         <source>s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="167"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="151"/>
         <source>After Release Product:</source>
         <translation>放产品后上升:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="202"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="186"/>
         <source>Standby Pos:</source>
         <translation>待机位置:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="221"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="205"/>
         <source>Get Product Pos:</source>
         <translation>取产品位置:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="234"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="218"/>
         <source>Y2</source>
         <translation>副上下</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="378"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="330"/>
         <source>X1</source>
         <translation>主引拔</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="464"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="400"/>
         <source>After Get Pos:</source>
         <translation>取物后:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="471"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="407"/>
         <source>Delay</source>
         <translation>延时</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="490"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="426"/>
         <source>After Release Outlet:</source>
         <translation>放水口后上升:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="535"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="471"/>
         <source>Z</source>
         <translation>横行轴</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="637"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="557"/>
         <source>Get Outlet Pos:</source>
         <translation>取水口位置:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="720"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="624"/>
         <source>Pos before Hor:</source>
         <translation>姿势引拔位置:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="739"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="643"/>
         <source>After Cut Outlet:</source>
         <translation>剪刀后上升:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="858"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="778"/>
         <source>Ok</source>
         <translation>确定</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.ui" line="883"/>
+        <location filename="hcinstruction/icsimpleautoeditor.ui" line="803"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="126"/>
+        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="116"/>
         <source>%2-%1</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="202"/>
+        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="187"/>
         <source>Rel Product</source>
         <translation>放产品位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="215"/>
+        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="200"/>
         <source>Rel Outlet</source>
         <translation>放水口位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="228"/>
+        <location filename="hcinstruction/icsimpleautoeditor.cpp" line="213"/>
         <source>Cut Outlet</source>
         <translation>剪水口</translation>
     </message>
@@ -9530,184 +9530,184 @@ Please enter an digit between </source>
         <translation>位置设定</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="368"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="606"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1366"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1996"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="361"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="592"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1358"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1832"/>
         <source>X1</source>
         <translation>主引拔</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="186"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="743"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1376"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1945"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="176"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="729"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1368"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1848"/>
         <source>Y1</source>
         <translation>主上下</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="97"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="577"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1402"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2095"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="87"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="563"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1394"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1864"/>
         <source>Z</source>
         <translation>横行轴</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="321"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="776"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1913"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="314"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="762"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1880"/>
         <source>X2</source>
         <translation>副引拔</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="388"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="707"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2274"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="381"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="693"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1896"/>
         <source>Y2</source>
         <translation>副上下</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="341"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1900"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="334"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2097"/>
         <source>Get Product Pos:</source>
         <translation>取产品位置:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="119"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="208"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="257"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="480"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="599"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="997"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1112"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1141"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1193"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1310"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1462"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="109"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="198"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="247"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="466"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="585"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="986"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1104"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1133"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1185"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1302"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1454"/>
         <source>Set In</source>
         <translation>设入</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="281"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1983"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="274"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1998"/>
         <source>Standby Pos:</source>
         <translation>待机位置:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icsimpleteachpage.ui" line="67"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="311"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="331"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="358"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="415"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="838"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="896"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="919"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="929"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="939"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1330"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1488"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1498"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="304"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="324"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="351"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="398"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="824"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="882"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="905"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="915"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="925"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1322"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1480"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1490"/>
         <source>mm</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="431"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="414"/>
         <source>Get Product Fixture Sel</source>
         <translation>取产品夹吸选择</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="398"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2213"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="391"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2164"/>
         <source>Get Outlet Pos:</source>
         <translation>取水口位置:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="294"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="287"/>
         <source>Get Out Fixture Sel</source>
         <translation>取水口夹吸选择</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="512"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2408"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="498"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2314"/>
         <source>After Get Pos:</source>
         <translation>取物后引拔:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="641"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="627"/>
         <source>Release  Outlet Pos:</source>
         <translation>放水口位置:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1206"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1219"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1514"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1198"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1211"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1506"/>
         <source>Modify</source>
         <translation>修改</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="879"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="865"/>
         <source>Release  Product Pos:</source>
         <translation>放产品位置:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="860"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="971"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="846"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="957"/>
         <source>Per Y Up Pos:</source>
         <translation>放后上升位置:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="821"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="807"/>
         <source>PHB En</source>
         <translation>姿势前引拔:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2050"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2263"/>
         <source>Pos before Hor:</source>
         <translation>姿势引拔位置:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1154"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1146"/>
         <source>Add Product Pos</source>
         <translation>添加位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="687"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="673"/>
         <source>Release P Fixture Sel</source>
         <translation>放产品夹吸选择</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="622"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="664"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1443"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="608"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="650"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1435"/>
         <source>Delete</source>
         <translation>删除</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="912"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="898"/>
         <source>Release O Fixture Sel</source>
         <translation>放水口夹吸选择</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="759"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="745"/>
         <source>Add Outlet Pos</source>
         <translation>添加位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1481"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="323"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="845"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="872"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1473"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="309"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="839"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="866"/>
         <source>Cut Pos</source>
         <translation>剪刀位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1566"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1558"/>
         <source>Cut Sel-1</source>
         <translation>剪刀选择</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1424"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1416"/>
         <source>Add Cut</source>
         <translation>添加位置</translation>
     </message>
@@ -9716,169 +9716,169 @@ Please enter an digit between </source>
         <translation type="obsolete">剪刀位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1521"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1513"/>
         <source>Per Y Up</source>
         <translation>剪后上升位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1622"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1617"/>
         <source>Main Arm En</source>
         <translation>主臂取产品</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1657"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1652"/>
         <source>Main Arm Outlet En</source>
         <translation>主臂取水口</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1689"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1684"/>
         <source>Sub Arm En</source>
         <translation>副臂取水口</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1721"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1716"/>
         <source>Cut Outlet En</source>
         <translation>剪刀动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1746"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1741"/>
         <source>Pos Inside</source>
         <translation>模内位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1768"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1763"/>
         <source>Pos Outside</source>
         <translation>模外位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1787"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1782"/>
         <source>Pos of Cut</source>
         <translation>剪刀位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1802"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1797"/>
         <source>Speed Conf</source>
         <translation>速度设定</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1929"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="1961"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2226"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2242"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2386"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1912"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1928"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1944"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1960"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="1976"/>
         <source>%</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2474"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2380"/>
         <source>Time Conf</source>
         <translation>时间设定</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2502"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2408"/>
         <source>BFOND:</source>
         <translation>夹吸通前延时:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2516"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2422"/>
         <source>Cut Time-2:</source>
         <oldsource>Cut On Time:</oldsource>
         <translation>剪刀通时间:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2492"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2526"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2540"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2550"/>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2567"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2398"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2432"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2446"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2456"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2473"/>
         <source>s</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2533"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2439"/>
         <source>Cut Time-1:</source>
         <translation>滑拉后剪刀开始通时间:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2509"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2415"/>
         <source>Cut Time-3:</source>
         <translation>剪刀断后滑拉开始断时间:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2557"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2463"/>
         <source>BFOFFD:</source>
         <translation>夹吸断前延时:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2576"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2482"/>
         <source>Advance</source>
         <translation>高级</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2613"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2519"/>
         <source>Always Check</source>
         <translation>夹吸全程检测</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.ui" line="2631"/>
+        <location filename="hcinstruction/icsimpleteachpage.ui" line="2537"/>
         <source>Save Settings</source>
         <translation>保存设定</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="293"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="751"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="781"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="279"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="745"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="775"/>
         <source>Rel Product</source>
         <translation>放产品位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="308"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="799"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="829"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="294"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="793"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="823"/>
         <source>Rel Outlet</source>
         <translation>放水口位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="332"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="333"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="334"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="749"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="770"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="780"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="797"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="816"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="830"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="843"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="860"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="873"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="318"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="319"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="320"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="743"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="764"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="774"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="791"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="810"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="824"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="837"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="854"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="867"/>
         <source>Pos</source>
         <translation>位置</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="674"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="668"/>
         <source>X1:%1, Y1:%2, </source>
         <translation>主引拔:%1,主上下:%2,</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="676"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="670"/>
         <source>Z:%1
 </source>
         <translation>横行轴:%1
 </translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="678"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="672"/>
         <source>, X2:%1, Y2:%2</source>
         <translation>,副引拔:%1,副上下:%2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="680"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="674"/>
         <source>Use</source>
         <translation>使用</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="709"/>
-        <location filename="hcinstruction/icsimpleteachpage.cpp" line="734"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="703"/>
+        <location filename="hcinstruction/icsimpleteachpage.cpp" line="728"/>
         <source>%2-%1</source>
         <translation></translation>
     </message>

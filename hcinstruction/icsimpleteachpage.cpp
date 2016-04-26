@@ -447,7 +447,7 @@ void ICSimpleTeachPage::SetMainArmPosEnabled(bool en)
         speedUI.b.y1SpeedEdit->setVisible(en && UsedReleaseOutlet());
     }
 
-    SetCutOutletEnabled(ui->cutOutletEn);
+    SetCutOutletEnabled(ui->cutOutletEn->isChecked());
 
 //    for(int i = 0; i < cutOutletSpeedUI.size(); ++i)
 //    {
