@@ -386,8 +386,8 @@ void ICSimpleTeachPage::SetMainArmPosEnabled(bool en)
     ui->getProductPosX1->setVisible(ui->mainArmEn->isChecked());
     ui->getProductPosY1->setVisible(ui->mainArmEn->isChecked());
 
-    ui->getOutletPosX1->setVisible(en && UsedReleaseOutlet());
-    ui->getOutletPosY1->setVisible(en && UsedReleaseOutlet());
+    ui->getOutletPosX1->setVisible(en && ui->mainArmOutletEn->isChecked());
+    ui->getOutletPosY1->setVisible(en && ui->mainArmOutletEn->isChecked());
 
     ui->afterGetPosX1->setVisible(en);
     ui->afterGetPosX1S->setVisible(en);
@@ -528,8 +528,8 @@ void ICSimpleTeachPage::SetReleaseOutletEnabled(bool en)
     ui->getOutletFInfo->setVisible(en);
     ui->getOutletFSel->setVisible(en);
     ui->getOutletPosSetIn->setVisible(en);
-    ui->getOutletPosX1->setVisible(en && UsedMainArm());
-    ui->getOutletPosY1->setVisible(en && UsedMainArm());
+    ui->getOutletPosX1->setVisible(en && ui->mainArmOutletEn->isChecked());
+    ui->getOutletPosY1->setVisible(en && ui->mainArmOutletEn->isChecked());
     ui->getOutletPosX2->setVisible(en && UsedSubArm());
     ui->getOutletPosY2->setVisible(en && UsedSubArm());
     ui->getOutletPosZ->setVisible(en);
@@ -537,7 +537,7 @@ void ICSimpleTeachPage::SetReleaseOutletEnabled(bool en)
     ui->getOutletSpeedY1->setVisible(en && UsedMainArm());
     ui->getOutletSpeedX2->setVisible(en && UsedSubArm());
     ui->getOutletSpeedY2->setVisible(en && UsedSubArm());
-    ui->getOutletSpeedZ->setVisible(en);
+    ui->getOutletSpeedZ->setVisible(en && !ui->mainArmEn->isChecked());
     ui->label_22->setVisible(en);
     ui->label_16->setVisible(en);
     ui->releaseOutletPYUSetIn->setVisible(en);

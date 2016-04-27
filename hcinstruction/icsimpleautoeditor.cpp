@@ -330,6 +330,7 @@ void ICSimpleAutoEditor::SetReleaseOutletEnabled(bool en)
     ui->getOutletDlyY1->setEchoMode(en && stData_->usedMainArmOutlet ? QLineEdit::Normal : QLineEdit::Password);
     ui->getOutletDlyX2->setVisible(en && UsedSubArm());
     ui->getOutletDlyY2->setVisible(en && UsedSubArm());
+    ui->getOutletDlyZ->setVisible(en);
     ui->getOutletDlyZ->setEnabled(en && !stData_->usedMainArm);
     ui->getOutletDlyZ->setEchoMode(ui->getOutletDlyZ->isEnabled() ? QLineEdit::Normal : QLineEdit::Password);
     ui->label_22->setVisible(en);
