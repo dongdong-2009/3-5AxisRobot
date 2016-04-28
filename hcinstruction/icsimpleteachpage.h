@@ -142,8 +142,8 @@ private slots:
     void on_afterGetPosSetIn_clicked();
 
 private:
-    QString PosDataToString(const ReleasePosData& posData, bool noSubArm = false, const QString& dataName = "") const ;
-    void RefreshViewPosHelper(const QList<ReleasePosData>& data, QListWidget* view, const QString& label);
+    QString PosDataToString(const ReleasePosData& posData, bool noSubArm = false, const QString& dataName = "", bool noMainArm = false) const ;
+    void RefreshViewPosHelper(const QList<ReleasePosData>& data, QListWidget* view, const QString& label, bool noMainArm, bool noSubArm);
     bool UsedMainArm() const;
     bool UsedSubArm() const;
     bool UsedReleaseOutlet() const;

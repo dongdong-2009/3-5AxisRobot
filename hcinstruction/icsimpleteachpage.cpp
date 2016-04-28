@@ -311,9 +311,9 @@ void ICSimpleTeachPage::showEvent(QShowEvent *e)
         tmp.b.y2SpeedEdit->SetThisIntToThisText(posData.pos.b.y2S);
     }
 
-    RefreshViewPosHelper(stData_->releaseProductPosList, ui->releasePosView, tr("Pos"));
-    RefreshViewPosHelper(stData_->releaseOutletPosList, ui->releaseOutletView, tr("Pos"));
-    RefreshViewPosHelper(stData_->cutOutletPosList, ui->cutPosView, tr("Pos"));
+    RefreshViewPosHelper(stData_->releaseProductPosList, ui->releasePosView, tr("Pos"), false, true);
+    RefreshViewPosHelper(stData_->releaseOutletPosList, ui->releaseOutletView, tr("Pos"), ui->mainArmEn->isChecked(), ui->mainArmOutletEn->isChecked());
+    RefreshViewPosHelper(stData_->cutOutletPosList, ui->cutPosView, tr("Pos"), false, true);
 
 
     on_mainArmEn_toggled(ui->mainArmEn->isChecked());
@@ -384,6 +384,7 @@ void ICSimpleTeachPage::SetMainArmPosEnabled(bool en)
 
     ui->getOutletPosX1->setVisible(en && ui->mainArmOutletEn->isChecked());
     ui->getOutletPosY1->setVisible(en && ui->mainArmOutletEn->isChecked());
+    ui->getOutletPosZ->setVisible(!ui->mainArmEn->isChecked());
 
     ui->afterGetPosX1->setVisible(en);
     ui->afterGetPosX1S->setVisible(en);
@@ -404,8 +405,9 @@ void ICSimpleTeachPage::SetMainArmPosEnabled(bool en)
     ui->stdSpeedY1->setVisible(en);
     ui->getProductSpeedX1->setVisible(ui->mainArmEn->isChecked());
     ui->getProductSpeedY1->setVisible(ui->mainArmEn->isChecked());
-    ui->getOutletSpeedX1->setVisible(en && UsedReleaseOutlet());
-    ui->getOutletSpeedY1->setVisible(en && UsedReleaseOutlet());
+    ui->getOutletSpeedX1->setVisible(en && ui->mainArmOutletEn->isChecked());
+    ui->getOutletSpeedY1->setVisible(en && ui->mainArmOutletEn->isChecked());
+    ui->getOutletSpeedZ->setVisible(!ui->mainArmEn->isChecked());
     ui->speedBHorX1->setVisible(en);
 
     ui->pIX1Label->setVisible(UsedMainArm());
@@ -526,12 +528,12 @@ void ICSimpleTeachPage::SetReleaseOutletEnabled(bool en)
     ui->getOutletPosY1->setVisible(en && ui->mainArmOutletEn->isChecked());
     ui->getOutletPosX2->setVisible(en && UsedSubArm());
     ui->getOutletPosY2->setVisible(en && UsedSubArm());
-    ui->getOutletPosZ->setVisible(en);
-    ui->getOutletSpeedX1->setVisible(en && UsedMainArm());
-    ui->getOutletSpeedY1->setVisible(en && UsedMainArm());
+    ui->getOutletPosZ->setVisible(!ui->mainArmEn->isChecked());
+    ui->getOutletSpeedX1->setVisible(en && ui->mainArmOutletEn->isChecked());
+    ui->getOutletSpeedY1->setVisible(en && ui->mainArmOutletEn->isChecked());
     ui->getOutletSpeedX2->setVisible(en && UsedSubArm());
     ui->getOutletSpeedY2->setVisible(en && UsedSubArm());
-    ui->getOutletSpeedZ->setVisible(en && !ui->mainArmEn->isChecked());
+    ui->getOutletSpeedZ->setVisible(!ui->mainArmEn->isChecked());
     ui->label_22->setVisible(en);
     ui->label_16->setVisible(en);
     ui->releaseOutletPYUSetIn->setVisible(en);
@@ -653,27 +655,32 @@ bool ICSimpleTeachPage::UsedReleaseOutlet() const
     return ui->subArmEn->isChecked() || ui->mainArmOutletEn->isChecked();
 }
 
-QString ICSimpleTeachPage::PosDataToString(const ReleasePosData &posData, bool noSubArm,  const QString& dataName) const
+QString ICSimpleTeachPage::PosDataToString(const ReleasePosData &posData, bool noSubArm,  const QString& dataName, bool noMainArm) const
 {
     QString ret;
     AxisPosData data = posData.pos;
-    if(UsedMainArm())
+    if(UsedMainArm() && !noMainArm)
+    {
         ret += QString(tr("X1:%1, Y1:%2, ")).arg(QString::number(data.b.x1 / 100.0, 'f', 2))
                 .arg(QString::number(data.b.y1 / 100.0, 'f', 2));
-    ret += QString(tr("Z:%1\n")).arg(QString::number(data.b.z / 100.0, 'f', 2));
+        ret += QString(tr("Z:%1\n")).arg(QString::number(data.b.z / 100.0, 'f', 2));
+
+    }
+    else
+        ret += QString(tr("Z:%1")).arg(QString::number(data.b.z / 100.0, 'f', 2));
     if(UsedSubArm() && !noSubArm)
-        ret += QString(tr(", X2:%1, Y2:%2")).arg(QString::number(data.b.x2 / 100.0, 'f', 2))
+        ret += QString(tr(", X2:%1, Y2:%2\n")).arg(QString::number(data.b.x2 / 100.0, 'f', 2))
                 .arg(QString::number(data.b.y2 / 100.0, 'f', 2));
     ret += tr("Use") + fixtureSel_->SelectedNames(posData.fixtureConfis).join(",");
     return ret;
 
 }
 
-void ICSimpleTeachPage::RefreshViewPosHelper(const QList<ReleasePosData>& data, QListWidget* view, const QString& label)
+void ICSimpleTeachPage::RefreshViewPosHelper(const QList<ReleasePosData>& data, QListWidget* view, const QString& label, bool noMainArm, bool noSubArm)
 {
     for(int i = 0; i < data.size(); ++i)
     {
-        view->item(i)->setText(QString("%1%2[%4]").arg(label).arg(i + 1).arg(PosDataToString(data.at(i))));
+        view->item(i)->setText(QString("%1%2[%4]").arg(label).arg(i + 1).arg(PosDataToString(data.at(i), noSubArm, "", noMainArm)));
     }
 }
 
@@ -732,7 +739,7 @@ void ICSimpleTeachPage::on_addProductPos_clicked()
     posData.fixtureConfis = releaseProductCFConfigs_;
     stData_->releaseProductPosList.append(posData);
     ui->releasePosView->addItem(PosDataToString(posData));
-    RefreshViewPosHelper(stData_->releaseProductPosList, ui->releasePosView, tr("Pos"));
+    RefreshViewPosHelper(stData_->releaseProductPosList, ui->releasePosView, tr("Pos"), false, true);
 
     AddPosHelper(ui->releaseProductSpeedGroup, releaseProductSpeedUI, tr("Rel Product"), posData.pos.b.x1S);
 }
@@ -751,7 +758,7 @@ void ICSimpleTeachPage::on_modifyProductPos_clicked()
     posData.fixtureConfis = releaseProductCFConfigs_;
     stData_->releaseProductPosList[toModifyIndex] = posData;
 //    selected[0]->setText(PosDataToString(posData));
-    RefreshViewPosHelper(stData_->releaseProductPosList, ui->releasePosView, tr("Pos"));
+    RefreshViewPosHelper(stData_->releaseProductPosList, ui->releasePosView, tr("Pos"), false, true);
 }
 
 void ICSimpleTeachPage::on_deleteProductPos_clicked()
@@ -761,7 +768,7 @@ void ICSimpleTeachPage::on_deleteProductPos_clicked()
     int toModifyIndex = ui->releasePosView->row(selected.at(0));
     stData_->releaseProductPosList.removeAt(toModifyIndex);
     delete ui->releasePosView->takeItem(toModifyIndex);
-    RefreshViewPosHelper(stData_->releaseProductPosList, ui->releasePosView, tr("Pos"));
+    RefreshViewPosHelper(stData_->releaseProductPosList, ui->releasePosView, tr("Pos"), false, true);
     DelPosHelper(toModifyIndex, ui->releaseProductSpeedGroup, releaseProductSpeedUI, tr("Rel Product"));
 
 }
@@ -778,7 +785,7 @@ void ICSimpleTeachPage::on_addOutletPos_clicked()
     posData.fixtureConfis = (releaseOutletCFConfigs_);
     stData_->releaseOutletPosList.append(posData);
     ui->releaseOutletView->addItem(PosDataToString(posData));
-    RefreshViewPosHelper(stData_->releaseOutletPosList, ui->releaseOutletView, tr("Pos"));
+    RefreshViewPosHelper(stData_->releaseOutletPosList, ui->releaseOutletView, tr("Pos"), ui->mainArmEn->isChecked(), ui->mainArmOutletEn->isChecked());
 
     AddPosHelper(ui->releaseOutletSpeedGroup, releaseOutletSpeedUI, tr("Rel Outlet"), posData.pos.b.x1S);
 }
@@ -797,7 +804,7 @@ void ICSimpleTeachPage::on_modifyOutletPos_clicked()
     posData.fixtureConfis = (releaseOutletCFConfigs_);
     stData_->releaseOutletPosList[toModifyIndex] = posData;
 //    selected[0]->setText(PosDataToString(posData));
-    RefreshViewPosHelper(stData_->releaseOutletPosList, ui->releaseOutletView, tr("Pos"));
+    RefreshViewPosHelper(stData_->releaseOutletPosList, ui->releaseOutletView, tr("Pos"), ui->mainArmEn->isChecked(), ui->mainArmOutletEn->isChecked());
 
 
 }
@@ -811,7 +818,7 @@ void ICSimpleTeachPage::on_deleteOutletPos_clicked()
     delete ui->releaseOutletView->takeItem(toModifyIndex);
 
     DelPosHelper(toModifyIndex, ui->releaseOutletSpeedGroup, releaseOutletSpeedUI, tr("Rel Outlet"));
-    RefreshViewPosHelper(stData_->releaseOutletPosList, ui->releaseOutletView, tr("Pos"));
+    RefreshViewPosHelper(stData_->releaseOutletPosList, ui->releaseOutletView, tr("Pos"), ui->mainArmEn->isChecked(), ui->mainArmOutletEn->isChecked());
 
 }
 
@@ -824,7 +831,7 @@ void ICSimpleTeachPage::on_addCut_clicked()
     posData.fixtureConfis = cutOutletCFConfigs_;
     stData_->cutOutletPosList.append(posData);
     ui->cutPosView->addItem(PosDataToString(posData, true));
-    RefreshViewPosHelper(stData_->cutOutletPosList, ui->cutPosView, tr("Pos"));
+    RefreshViewPosHelper(stData_->cutOutletPosList, ui->cutPosView, tr("Pos"), false, true);
 
     AddPosHelper(ui->cutOutletSpeedGroup, cutOutletSpeedUI, tr("Cut Pos"), posData.pos.b.x1S);
 }
@@ -841,7 +848,7 @@ void ICSimpleTeachPage::on_modifyCut_clicked()
     posData.fixtureConfis = cutOutletCFConfigs_;
     stData_->cutOutletPosList[toModifyIndex] = posData;
 //    selected[0]->setText(PosDataToString(posData, true));
-    RefreshViewPosHelper(stData_->cutOutletPosList, ui->cutPosView, tr("Pos"));
+    RefreshViewPosHelper(stData_->cutOutletPosList, ui->cutPosView, tr("Pos"), false, true);
 
 }
 
@@ -854,7 +861,7 @@ void ICSimpleTeachPage::on_deleteCut_clicked()
     delete ui->cutPosView->takeItem(toModifyIndex);
 
     DelPosHelper(toModifyIndex, ui->cutOutletSpeedGroup, cutOutletSpeedUI, tr("Cut Pos"));
-    RefreshViewPosHelper(stData_->cutOutletPosList, ui->cutPosView, tr("Pos"));
+    RefreshViewPosHelper(stData_->cutOutletPosList, ui->cutPosView, tr("Pos"), false, true);
 
 }
 
