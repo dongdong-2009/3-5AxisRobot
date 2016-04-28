@@ -570,16 +570,16 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
          *调整对话框中标题栏文字显示
         */
         QString str = topItem->ToStringList().join("\n");
-        if(str.size() > 37)
-        {
-            str.insert(38,"\n");
-            str.insert(39,"\t");
-        }
-        if(str.size() > 65)
-        {
-            str.insert(66,"\n");
-            str.insert(67,"\t");
-        }
+//        if(str.size() > 37)
+//        {
+//            str.insert(38,"\n");
+//            str.insert(39,"\t");
+//        }
+//        if(str.size() > 65)
+//        {
+//            str.insert(66,"\n");
+//            str.insert(67,"\t");
+//        }
 
         /*****/
         bool isM = autoRunRevise_->ShowModifyItem(item, &ret, str);

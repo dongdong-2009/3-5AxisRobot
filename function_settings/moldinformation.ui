@@ -452,7 +452,7 @@ QMessageBox QAbstractButton
      </item>
     </layout>
    </item>
-   <item row="2" column="0" colspan="5">
+   <item row="2" column="0" colspan="7">
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
       <widget class="QLabel" name="label">
