@@ -533,8 +533,8 @@
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>0</y>
-            <width>348</width>
+            <y>-364</y>
+            <width>653</width>
             <height>660</height>
            </rect>
           </property>
@@ -707,22 +707,6 @@
              </property>
             </widget>
            </item>
-           <item row="2" column="7">
-            <widget class="ICLineEditWithVirtualNumericKeypad" name="posBHorY2">
-             <property name="enabled">
-              <bool>false</bool>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>32</height>
-              </size>
-             </property>
-             <property name="echoMode">
-              <enum>QLineEdit::Password</enum>
-             </property>
-            </widget>
-           </item>
            <item row="0" column="4">
             <widget class="QLabel" name="pIY1Label_2">
              <property name="text">
@@ -746,16 +730,6 @@
              </property>
             </widget>
            </item>
-           <item row="5" column="7">
-            <widget class="ICLineEditWithVirtualNumericKeypad" name="releaseProductPosY2">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>32</height>
-              </size>
-             </property>
-            </widget>
-           </item>
            <item row="0" column="6">
             <widget class="QLabel" name="pIX2Label_2">
              <property name="text">
@@ -763,16 +737,6 @@
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="5" column="6">
-            <widget class="ICLineEditWithVirtualNumericKeypad" name="releaseProductPosX2">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>32</height>
-              </size>
              </property>
             </widget>
            </item>
@@ -994,22 +958,6 @@
              </property>
             </widget>
            </item>
-           <item row="2" column="5">
-            <widget class="ICLineEditWithVirtualNumericKeypad" name="posBHorZ">
-             <property name="enabled">
-              <bool>false</bool>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>32</height>
-              </size>
-             </property>
-             <property name="echoMode">
-              <enum>QLineEdit::Password</enum>
-             </property>
-            </widget>
-           </item>
            <item row="7" column="3" colspan="5">
             <widget class="QLabel" name="releaseProductCFInfo">
              <property name="text">
@@ -1027,22 +975,6 @@
                <width>0</width>
                <height>32</height>
               </size>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="4">
-            <widget class="ICLineEditWithVirtualNumericKeypad" name="posBHorY1">
-             <property name="enabled">
-              <bool>false</bool>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>32</height>
-              </size>
-             </property>
-             <property name="echoMode">
-              <enum>QLineEdit::Password</enum>
              </property>
             </widget>
            </item>
@@ -1264,7 +1196,7 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>296</width>
+            <width>653</width>
             <height>434</height>
            </rect>
           </property>

@@ -403,6 +403,7 @@ void ICSimpleAutoEditor::on_cancelButton_clicked()
 void CheckModifyHelper(ICLineEditWithVirtualNumericKeypad* editor, quint32* delayAddr, QMap<int, int> & ret,
                        const SimpleTeachData* stData)
 {
+    if(!editor->isVisible() || !editor->isEnabled()) return;
     if(editor->TransThisTextToThisInt() != *delayAddr)
     {
         *delayAddr = editor->TransThisTextToThisInt();
@@ -454,18 +455,24 @@ void ICSimpleAutoEditor::on_okButton_clicked()
         CheckModifyHelper(ws.b.x1DlyEdit, &stData_->releaseProductPosList[i].pos.b.x1D, modifiedDelays, stData_);
         CheckModifyHelper(ws.b.y1DlyEdit, &stData_->releaseProductPosList[i].pos.b.y1D, modifiedDelays, stData_);
         CheckModifyHelper(ws.b.zDlyEdit, &stData_->releaseProductPosList[i].pos.b.zD, modifiedDelays, stData_);
-        CheckModifyHelper(ws.b.x2DlyEdit, &stData_->releaseProductPosList[i].pos.b.x2D, modifiedDelays, stData_);
-        CheckModifyHelper(ws.b.y2DlyEdit, &stData_->releaseProductPosList[i].pos.b.y2D, modifiedDelays, stData_);
+//        CheckModifyHelper(ws.b.x2DlyEdit, &stData_->releaseProductPosList[i].pos.b.x2D, modifiedDelays, stData_);
+//        CheckModifyHelper(ws.b.y2DlyEdit, &stData_->releaseProductPosList[i].pos.b.y2D, modifiedDelays, stData_);
     }
 
     for(int i = 0; i < releaseOutletDlyUI.size(); ++i)
     {
         PosDlyUIWidgets ws = releaseOutletDlyUI.at(i);
-        CheckModifyHelper(ws.b.x1DlyEdit, &stData_->releaseOutletPosList[i].pos.b.x1D, modifiedDelays, stData_);
-        CheckModifyHelper(ws.b.y1DlyEdit, &stData_->releaseOutletPosList[i].pos.b.y1D, modifiedDelays, stData_);
+        if(stData_->usedMainArmOutlet)
+        {
+            CheckModifyHelper(ws.b.x1DlyEdit, &stData_->releaseOutletPosList[i].pos.b.x1D, modifiedDelays, stData_);
+            CheckModifyHelper(ws.b.y1DlyEdit, &stData_->releaseOutletPosList[i].pos.b.y1D, modifiedDelays, stData_);
+        }
         CheckModifyHelper(ws.b.zDlyEdit, &stData_->releaseOutletPosList[i].pos.b.zD, modifiedDelays, stData_);
-        CheckModifyHelper(ws.b.x2DlyEdit, &stData_->releaseOutletPosList[i].pos.b.x2D, modifiedDelays, stData_);
-        CheckModifyHelper(ws.b.y2DlyEdit, &stData_->releaseOutletPosList[i].pos.b.y2D, modifiedDelays, stData_);
+        if(stData_->usedSubArm)
+        {
+            CheckModifyHelper(ws.b.x2DlyEdit, &stData_->releaseOutletPosList[i].pos.b.x2D, modifiedDelays, stData_);
+            CheckModifyHelper(ws.b.y2DlyEdit, &stData_->releaseOutletPosList[i].pos.b.y2D, modifiedDelays, stData_);
+        }
     }
 
     for(int i = 0; i < cutOutletDlyUI.size(); ++i)
@@ -474,8 +481,8 @@ void ICSimpleAutoEditor::on_okButton_clicked()
         CheckModifyHelper(ws.b.x1DlyEdit, &stData_->cutOutletPosList[i].pos.b.x1D, modifiedDelays, stData_);
         CheckModifyHelper(ws.b.y1DlyEdit, &stData_->cutOutletPosList[i].pos.b.y1D, modifiedDelays, stData_);
         CheckModifyHelper(ws.b.zDlyEdit, &stData_->cutOutletPosList[i].pos.b.zD, modifiedDelays, stData_);
-        CheckModifyHelper(ws.b.x2DlyEdit, &stData_->cutOutletPosList[i].pos.b.x2D, modifiedDelays, stData_);
-        CheckModifyHelper(ws.b.y2DlyEdit, &stData_->cutOutletPosList[i].pos.b.y2D, modifiedDelays, stData_);
+//        CheckModifyHelper(ws.b.x2DlyEdit, &stData_->cutOutletPosList[i].pos.b.x2D, modifiedDelays, stData_);
+//        CheckModifyHelper(ws.b.y2DlyEdit, &stData_->cutOutletPosList[i].pos.b.y2D, modifiedDelays, stData_);
     }
 
 
