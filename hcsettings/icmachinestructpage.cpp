@@ -249,7 +249,7 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
     minSecValidator_->setBottom(0);
     maxSecValidator_->setBottom(0);
 
-    maximumValidator_->setBottom(0);
+    maximumValidator_->setBottom(-1000);
     ui->maximumDisplacementLineEdit->setValidator(maximumValidator_);
     ui->mechanicalLengthLineEdit->setValidator(intValidator);
     intValidator->setTop(65530);
