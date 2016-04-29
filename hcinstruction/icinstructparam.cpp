@@ -33,7 +33,7 @@ ICInstructParam::ICInstructParam()
 QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
 {
     QString commandStr;
-    //    commandStr += QString::number(moldItem.Seq()) + " ";
+//    commandStr += QString::number(moldItem.Seq()) + " ";
     if(moldItem.Action() == ICMold::ACTCOMMENT)
     {
         commandStr += QString::number(moldItem.Num()) + "    " + "*" + "    ";

@@ -512,6 +512,13 @@ void ICHCProgramMonitorFrame::InitSignal()
 
 void ICHCProgramMonitorFrame::on_editToolButton_clicked()
 {
+#ifdef Q_WS_QWS
+    if(ICVirtualHost::GlobalVirtualHost()->CurrentStatus() != ICVirtualHost::Auto)
+    {
+        return;
+    }
+#endif
+
     int gIndex;
     int tIndex;
     int sIndex;
@@ -523,8 +530,12 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
         ICCommandProcessor* processor = ICCommandProcessor::Instance();
         ICAutoAdjustCommand command;
         ICMoldItem toSendItem;
+        qDebug()<<modifiedDelays;
+//        QString message;
+
         while(p != modifiedDelays.end())
         {
+//            message += QString("%1, %2 |").arg(p.key()).arg(p.value());
             FindIndex_(p.key(), gIndex, tIndex, sIndex);
             ICTopMoldUIItem * topItem = &programList_[gIndex].at(tIndex);
             topItem->BaseItem()->SetDVal(p.value());
@@ -551,6 +562,7 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
             UpdateHostParam();
 //            UpdateUIProgramList_();
         }
+
         return;
     }
 

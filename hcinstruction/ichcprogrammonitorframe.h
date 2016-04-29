@@ -103,6 +103,7 @@ private:
     QTimer refreshTimer_;
     QMap<int, int> flagToSetp;
 
+
 //    QMap<ICMoldItem*, ICMoldItem> modifyMap_;
 };
 #endif // ICHCPROGRAMMONITORFRAME_H
