@@ -1164,13 +1164,15 @@ void FillReleasePoseItems(QList<ReleasePosData>& data,
         item.SetActualPos(yUp);
         item.SetSVal(yUps);
         item.SetDVal(yUpd);
-        SetEditorInfoHelper(program.size(), &yUpd, delayToPosIndex);
+        if((i != data.size() -1) || isCut)
+            SetEditorInfoHelper(program.size(), &yUpd, delayToPosIndex);
 
         program.append(item);
     }
     // remove the more one y up
     if(!data.isEmpty() && !isCut)
     {
+//        delayToPosIndex.remove
         program.pop_back();
         --step;
     }
