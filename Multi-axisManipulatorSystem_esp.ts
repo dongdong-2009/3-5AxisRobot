@@ -4178,7 +4178,7 @@ de ciclo</translation>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="331"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="331"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="877"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="889"/>
         <source>No Follow</source>
         <translation>No restrear</translation>
     </message>
@@ -4199,8 +4199,8 @@ de ciclo</translation>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="427"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="108"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="261"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="886"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="896"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="898"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="908"/>
         <source>Speed Disable</source>
         <translation>Speed Un</translation>
     </message>
@@ -4253,7 +4253,7 @@ de ciclo</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="206"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="580"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="592"/>
         <source>Warning</source>
         <translation>Advertencia</translation>
     </message>
@@ -4268,22 +4268,22 @@ de ciclo</translation>
         <translation>Ciclo único listo</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="581"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="593"/>
         <source>Can not edit standby position program</source>
         <translation>No se puede editar el programaen posición de espera</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="871"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="883"/>
         <source>Follow</source>
         <translation>rastrear</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="886"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="898"/>
         <source>Speed Enable</source>
         <translation>Speed En</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="946"/>
+        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="958"/>
         <source>Flag[%1]:%2</source>
         <translation>Bandera[%1]%2</translation>
     </message>
