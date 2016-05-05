@@ -765,7 +765,7 @@ void ICMold::Compile()
         {
             currentZ = item.ActualPos();
         }
-        else if((item.Action() == GY) && (isMoldOpend) && (currentZ <= inPos))
+        else if((item.Action() == GY || item.Action() == GQ) && (isMoldOpend) && (currentZ <= inPos))
         {
             if(item.ActualPos() != 0)
             {
