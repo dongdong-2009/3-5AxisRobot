@@ -408,7 +408,7 @@ bool ICMold::ReadSimpleTeachFile(const QString &fileName)
         simpleTeachData_.cutOutletYUpS = 80;
         simpleTeachData_.cutOutletYUpD = 0;
 
-//        simpleTeachData_.cutTime.all = 50;
+        //        simpleTeachData_.cutTime.all = 50;
         simpleTeachData_.cutTime.b.cutOnTime = 50;
         simpleTeachData_.cutTime.b.cutAfterPullTime = 10;
         simpleTeachData_.cutTime.b.pullOffAfterCutOffTime = 0;
@@ -794,7 +794,7 @@ bool SimpleTeachData::InitFromByteArray(const QString &text)
         cutOutletPosList.append(data);
     }
     lineItems = contentList.at(8).split(",");
-//    if(lineItems.size() != 10) return false;
+    //    if(lineItems.size() != 10) return false;
     releaseProductYUp = lineItems.at(0).toInt();
     releaseProductYUpS = lineItems.at(1).toInt();
     releaseProductYUpD = lineItems.at(2).toInt();
@@ -1172,7 +1172,7 @@ void FillReleasePoseItems(QList<ReleasePosData>& data,
     // remove the more one y up
     if(!data.isEmpty() && !isCut)
     {
-//        delayToPosIndex.remove
+        //        delayToPosIndex.remove
         program.pop_back();
         --step;
     }
@@ -1190,7 +1190,7 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
     int step = 0;
 
 
-//    AddCommentAction(QString::fromUtf8("待机点开始"), step, program);
+    //    AddCommentAction(QString::fromUtf8("待机点开始"), step, program);
     QList<int> axisActionList;
     QList<int> steps;
     steps<<step<<step<<step<<step<<step;
@@ -1200,7 +1200,7 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
                <<getX2Action(x2Type, ACTVICEBACKWARD)
               <<getY2Action(y2Type, ACTVICEUP);
     FillPosItems(axisActionList, simpleTeachData_.stdPos, program, steps,
-                simpleTeachData_.delayToPosIndex);
+                 simpleTeachData_.delayToPosIndex);
 
     item.SetAction(ACTPOSEVERT);
     item.SetDVal(0);
@@ -1307,27 +1307,40 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
                              simpleTeachData_.delayToPosIndex,
                              false, false, simpleTeachData_.cutTime, QString::fromUtf8("放产品位置"));
 
-        // up to go in
-//        if(simpleTeachData_.usedMainArm)
+        item.SetAction(getYAction(y1Type, ACTMAINUP));
+        item.SetNum(++step);
+        item.SetActualPos(0);
+        item.SetSVal(simpleTeachData_.releaseProductYUpS);
+        item.SetDVal(simpleTeachData_.releaseProductYUpD);
+        SetEditorInfoHelper(program.size(), &simpleTeachData_.releaseProductYUpD, simpleTeachData_.delayToPosIndex);
+        program.append(item);
+
+        item.SetAction(getXAction(x1Type, ACTMAINFORWARD));
+        item.SetNum(++step);
+        if(simpleTeachData_.usedPBHPos)
         {
-            item.SetAction(getYAction(y1Type, ACTMAINUP));
-            item.SetNum(++step);
-            item.SetActualPos(0);
-            item.SetSVal(simpleTeachData_.releaseProductYUpS);
-            item.SetDVal(simpleTeachData_.releaseProductYUpD);
-            SetEditorInfoHelper(program.size(), &simpleTeachData_.releaseProductYUpD, simpleTeachData_.delayToPosIndex);
-            program.append(item);
-            if(simpleTeachData_.usedPBHPos)
-            {
-                item.SetAction(getXAction(x1Type, ACTMAINFORWARD));
-                item.SetNum(++step);
-                item.SetActualPos(simpleTeachData_.posBH.b.x1);
-                item.SetSVal(simpleTeachData_.posBH.b.x1S);
-                item.SetDVal(simpleTeachData_.posBH.b.x1D);
-                SetEditorInfoHelper(program.size(), &simpleTeachData_.posBH.b.x1D, simpleTeachData_.delayToPosIndex);
-                program.append(item);
-            }
+            item.SetActualPos(simpleTeachData_.posBH.b.x1);
+            item.SetSVal(simpleTeachData_.posBH.b.x1S);
+            item.SetDVal(simpleTeachData_.posBH.b.x1D);
+            SetEditorInfoHelper(program.size(), &simpleTeachData_.posBH.b.x1D, simpleTeachData_.delayToPosIndex);
         }
+        else
+        {
+            item.SetActualPos(simpleTeachData_.stdPos.b.x1);
+            item.SetSVal(simpleTeachData_.stdPos.b.x1S);
+            item.SetDVal(simpleTeachData_.stdPos.b.x1D);
+            SetEditorInfoHelper(program.size(), &simpleTeachData_.stdPos.b.x1D, simpleTeachData_.delayToPosIndex);
+        }
+        program.append(item);
+
+        item.SetAction(getZAction(zType, ACTCOMEIN));
+        item.SetNum(step);
+        item.SetActualPos(simpleTeachData_.stdPos.b.z);
+        item.SetSVal(simpleTeachData_.stdPos.b.zS);
+        item.SetDVal(simpleTeachData_.stdPos.b.zD);
+        SetEditorInfoHelper(program.size(), &simpleTeachData_.stdPos.b.zD, simpleTeachData_.delayToPosIndex);
+        program.append(item);
+
 
     }
     else if(simpleTeachData_.usedMainArm && !simpleTeachData_.usedMainArmOutlet && simpleTeachData_.usedSubArm) // main and sub
@@ -1480,25 +1493,50 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
                             simpleTeachData_.delayToPosIndex);
         program.append(item);
 
+        item.SetAction(getXAction(x1Type, ACTMAINFORWARD));
+        item.SetNum(++step);
+        item.SetActualPos(simpleTeachData_.posBH.b.x1);
         if(simpleTeachData_.usedPBHPos)
         {
-            item.SetAction(getXAction(x1Type, ACTMAINFORWARD));
-            item.SetNum(++step);
-            item.SetActualPos(simpleTeachData_.posBH.b.x1);
             item.SetSVal(simpleTeachData_.posBH.b.x1S);
             item.SetDVal(simpleTeachData_.posBH.b.x1D);
             SetEditorInfoHelper(program.size(), &simpleTeachData_.posBH.b.x1D,
                                 simpleTeachData_.delayToPosIndex);
-            program.append(item);
-            item.SetAction(getX2Action(x2Type, ACTVICEFORWARD));
-            item.SetNum(step);
+        }
+        else
+        {
+            item.SetSVal(simpleTeachData_.stdPos.b.x1S);
+            item.SetDVal(simpleTeachData_.stdPos.b.x1D);
+            SetEditorInfoHelper(program.size(), &simpleTeachData_.stdPos.b.x1D,
+                                simpleTeachData_.delayToPosIndex);
+        }
+        program.append(item);
+        item.SetAction(getX2Action(x2Type, ACTVICEFORWARD));
+        item.SetNum(step);
+        if(simpleTeachData_.usedPBHPos)
+        {
             item.SetActualPos(simpleTeachData_.posBH.b.x2);
             item.SetSVal(simpleTeachData_.posBH.b.x2S);
             item.SetDVal(simpleTeachData_.posBH.b.x2D);
             SetEditorInfoHelper(program.size(), &simpleTeachData_.posBH.b.x2D,
                                 simpleTeachData_.delayToPosIndex);
-            program.append(item);
         }
+        else
+        {
+            item.SetSVal(simpleTeachData_.stdPos.b.x2S);
+            item.SetDVal(simpleTeachData_.stdPos.b.x2D);
+            SetEditorInfoHelper(program.size(), &simpleTeachData_.stdPos.b.x2D,
+                                simpleTeachData_.delayToPosIndex);
+        }
+        program.append(item);
+
+        item.SetAction(getZAction(zType, ACTCOMEIN));
+        item.SetNum(step);
+        item.SetActualPos(simpleTeachData_.stdPos.b.z);
+        item.SetSVal(simpleTeachData_.stdPos.b.zS);
+        item.SetDVal(simpleTeachData_.stdPos.b.zD);
+        SetEditorInfoHelper(program.size(), &simpleTeachData_.stdPos.b.zD, simpleTeachData_.delayToPosIndex);
+        program.append(item);
     }
     else if(!simpleTeachData_.usedMainArm && simpleTeachData_.usedMainArmOutlet && !simpleTeachData_.usedSubArm) // main and main outlet
     {
@@ -1581,27 +1619,40 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
                              simpleTeachData_.delayToPosIndex,
                              false, false, simpleTeachData_.cutTime, QString::fromUtf8("放水口位置"));
 
-        // up to go in
-//        if(simpleTeachData_.usedMainArm)
+
+        item.SetAction(getYAction(y1Type, ACTMAINUP));
+        item.SetNum(++step);
+        item.SetActualPos(0);
+        item.SetSVal(simpleTeachData_.releaseOutletYUpS);
+        item.SetDVal(simpleTeachData_.releaseOutletYUpD);
+        SetEditorInfoHelper(program.size(), &simpleTeachData_.releaseOutletYUpD, simpleTeachData_.delayToPosIndex);
+        program.append(item);
+        item.SetAction(getXAction(x1Type, ACTMAINFORWARD));
+        item.SetNum(++step);
+        if(simpleTeachData_.usedPBHPos)
         {
-            item.SetAction(getYAction(y1Type, ACTMAINUP));
-            item.SetNum(++step);
-            item.SetActualPos(0);
-            item.SetSVal(simpleTeachData_.releaseOutletYUpS);
-            item.SetDVal(simpleTeachData_.releaseOutletYUpD);
-            SetEditorInfoHelper(program.size(), &simpleTeachData_.releaseOutletYUpD, simpleTeachData_.delayToPosIndex);
-            program.append(item);
-            if(simpleTeachData_.usedPBHPos)
-            {
-                item.SetAction(getXAction(x1Type, ACTMAINFORWARD));
-                item.SetNum(++step);
-                item.SetActualPos(simpleTeachData_.posBH.b.x1);
-                item.SetSVal(simpleTeachData_.posBH.b.x1S);
-                item.SetDVal(simpleTeachData_.posBH.b.x1D);
-                SetEditorInfoHelper(program.size(), &simpleTeachData_.posBH.b.x1D, simpleTeachData_.delayToPosIndex);
-                program.append(item);
-            }
+            item.SetActualPos(simpleTeachData_.posBH.b.x1);
+            item.SetSVal(simpleTeachData_.posBH.b.x1S);
+            item.SetDVal(simpleTeachData_.posBH.b.x1D);
+            SetEditorInfoHelper(program.size(), &simpleTeachData_.posBH.b.x1D, simpleTeachData_.delayToPosIndex);
         }
+        else
+        {
+            item.SetActualPos(simpleTeachData_.stdPos.b.x1);
+            item.SetSVal(simpleTeachData_.stdPos.b.x1S);
+            item.SetDVal(simpleTeachData_.stdPos.b.x1D);
+            SetEditorInfoHelper(program.size(), &simpleTeachData_.stdPos.b.x1D, simpleTeachData_.delayToPosIndex);
+        }
+        program.append(item);
+
+        item.SetAction(getZAction(zType, ACTCOMEIN));
+        item.SetNum(step);
+        item.SetActualPos(simpleTeachData_.stdPos.b.z);
+        item.SetSVal(simpleTeachData_.stdPos.b.zS);
+        item.SetDVal(simpleTeachData_.stdPos.b.zD);
+        SetEditorInfoHelper(program.size(), &simpleTeachData_.stdPos.b.zD, simpleTeachData_.delayToPosIndex);
+        program.append(item);
+
     }
     else if(!simpleTeachData_.usedMainArm && !simpleTeachData_.usedMainArmOutlet && simpleTeachData_.usedSubArm)
     {
@@ -1685,29 +1736,41 @@ bool ICMold::CompileSimpleTeachFile(int x1Type, int y1Type, int zType, int x2Typ
                              simpleTeachData_.delayToPosIndex,
                              true, false, simpleTeachData_.cutTime, QString::fromUtf8("放水口位置"));
 
-        // up to go in
-//        if(simpleTeachData_.usedMainArm)
-        {
-            item.SetAction(getY2Action(y2Type, ACTVICEUP));
-            item.SetNum(++step);
-            item.SetActualPos(0);
-            item.SetSVal(simpleTeachData_.releaseOutletYUpS);
-            item.SetDVal(simpleTeachData_.releaseOutletYUpD);
-            SetEditorInfoHelper(program.size(), &simpleTeachData_.releaseOutletYUpD, simpleTeachData_.delayToPosIndex);
-            program.append(item);
-            if(simpleTeachData_.usedPBHPos)
-            {
-                item.SetAction(getX2Action(x2Type, ACTVICEFORWARD));
-                item.SetNum(++step);
-                item.SetActualPos(simpleTeachData_.posBH.b.x2);
-                item.SetSVal(simpleTeachData_.posBH.b.x2S);
-                item.SetDVal(simpleTeachData_.posBH.b.x2D);
-                SetEditorInfoHelper(program.size(), &simpleTeachData_.posBH.b.x2D, simpleTeachData_.delayToPosIndex);
 
-                program.append(item);
-            }
+        item.SetAction(getY2Action(y2Type, ACTVICEUP));
+        item.SetNum(++step);
+        item.SetActualPos(0);
+        item.SetSVal(simpleTeachData_.releaseOutletYUpS);
+        item.SetDVal(simpleTeachData_.releaseOutletYUpD);
+        SetEditorInfoHelper(program.size(), &simpleTeachData_.releaseOutletYUpD, simpleTeachData_.delayToPosIndex);
+        program.append(item);
+        item.SetAction(getX2Action(x2Type, ACTVICEFORWARD));
+        item.SetNum(++step);
+        if(simpleTeachData_.usedPBHPos)
+        {
+            item.SetActualPos(simpleTeachData_.posBH.b.x2);
+            item.SetSVal(simpleTeachData_.posBH.b.x2S);
+            item.SetDVal(simpleTeachData_.posBH.b.x2D);
+            SetEditorInfoHelper(program.size(), &simpleTeachData_.posBH.b.x2D, simpleTeachData_.delayToPosIndex);
         }
+        else
+        {
+            item.SetActualPos(simpleTeachData_.stdPos.b.x2);
+            item.SetSVal(simpleTeachData_.stdPos.b.x2S);
+            item.SetDVal(simpleTeachData_.stdPos.b.x2D);
+            SetEditorInfoHelper(program.size(), &simpleTeachData_.stdPos.b.x2D, simpleTeachData_.delayToPosIndex);
+        }
+        program.append(item);
+
+        item.SetAction(getZAction(zType, ACTCOMEIN));
+        item.SetNum(step);
+        item.SetActualPos(simpleTeachData_.stdPos.b.z);
+        item.SetSVal(simpleTeachData_.stdPos.b.zS);
+        item.SetDVal(simpleTeachData_.stdPos.b.zD);
+        SetEditorInfoHelper(program.size(), &simpleTeachData_.stdPos.b.zD, simpleTeachData_.delayToPosIndex);
+        program.append(item);
     }
+
 
 
     // end

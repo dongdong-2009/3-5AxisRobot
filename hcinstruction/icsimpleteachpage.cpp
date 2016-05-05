@@ -510,12 +510,12 @@ void ICSimpleTeachPage::SetSubArmPosEnabled(bool en)
         speedUI.b.y2SpeedEdit->setVisible(en);
     }
 
-//    for(int i = 0; i < cutOutletSpeedUI.size(); ++i)
-//    {
-//        speedUI = cutOutletSpeedUI.at(i);
-//        speedUI.b.x2SpeedEdit->setVisible(en && ui->cutOutletEn->isChecked());
-//        speedUI.b.y2SpeedEdit->setVisible(en && ui->cutOutletEn->isChecked());
-//    }
+    for(int i = 0; i < cutOutletSpeedUI.size(); ++i)
+    {
+        speedUI = cutOutletSpeedUI.at(i);
+        speedUI.b.x2SpeedEdit->setVisible(en && ui->cutOutletEn->isChecked());
+        speedUI.b.y2SpeedEdit->setVisible(en && ui->cutOutletEn->isChecked());
+    }
 }
 
 void ICSimpleTeachPage::SetReleaseOutletEnabled(bool en)
@@ -630,8 +630,8 @@ void ICSimpleTeachPage::SetCutOutletEnabled(bool en)
         cutOutletSpeedUI[i].b.x1SpeedEdit->setVisible(en);
         cutOutletSpeedUI[i].b.y1SpeedEdit->setVisible(en);
         cutOutletSpeedUI[i].b.zSpeedEdit->setVisible(en);
-        cutOutletSpeedUI[i].b.x2SpeedEdit->setVisible(en);
-        cutOutletSpeedUI[i].b.y2SpeedEdit->setVisible(en);
+        cutOutletSpeedUI[i].b.x2SpeedEdit->setVisible(en && ui->subArmEn->isChecked());
+        cutOutletSpeedUI[i].b.y2SpeedEdit->setVisible(en && ui->subArmEn->isChecked());
         cutOutletSpeedUI[i].b.x2SpeedEdit->setEnabled(false);
         cutOutletSpeedUI[i].b.y2SpeedEdit->setEnabled(false);
         cutOutletSpeedUI[i].b.x2SpeedEdit->setEchoMode(QLineEdit::Password);
@@ -711,6 +711,13 @@ void ICSimpleTeachPage::AddPosHelper(QGridLayout *layout, QList<PosSpeedUIWidget
     speedUI.append(tmp);
     for(int i = 0; i < 6; ++i)
         layout->addWidget(tmp.all[i], toInsertRow, i);
+
+    on_mainArmEn_toggled(ui->mainArmEn->isChecked());
+    on_mainArmOutletEn_toggled(ui->mainArmOutletEn->isChecked());
+    on_subArmEn_toggled(ui->subArmEn->isChecked());
+    on_cutOutletEn_toggled(ui->cutOutletEn->isChecked());
+
+
 }
 
 void ICSimpleTeachPage::DelPosHelper(int row, QGridLayout *layout, QList<PosSpeedUIWidgets> &speedUI, const QString &posName)

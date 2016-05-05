@@ -82,6 +82,7 @@ private slots:
     void SetSubArmPosEnabled(bool en);
     void SetReleaseOutletEnabled(bool en);
     void SetReleaseProductEnabled(bool en);
+
     void SetCutOutletEnabled(bool en);
 
     void on_addProductPos_clicked();
