@@ -184,7 +184,7 @@ máximo</translation>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="107"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="116"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="132"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="133"/>
         <source>Internal security zone</source>
         <translation>Zona de seguridad
 interna</translation>
@@ -192,7 +192,7 @@ interna</translation>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="133"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="151"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="133"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="134"/>
         <source>External security zone</source>
         <translation>Zona de seguridad
 externa</translation>
@@ -277,71 +277,71 @@ borrar</translation>
         <translation>guardar</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="103"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="145"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="104"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="146"/>
         <source>Min pos inside mold</source>
         <translation>posición mínima
 Disminución del molde</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="104"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="146"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="105"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="147"/>
         <source>Max pos inside mold</source>
         <translation>Posición máxima
 Disminución del molde</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="117"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="158"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="118"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="159"/>
         <source>Max standby pos</source>
         <translation>Posición máxima
 de espera</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="118"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="159"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="119"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="160"/>
         <source>Leave origin pos</source>
         <translation>Posición de origen
 que deja</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="175"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="192"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="207"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="176"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="193"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="208"/>
         <source>Transeve security zone(Less)</source>
         <translation>Zona de seguridad
 Z (Menos)</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="176"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="193"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="208"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="177"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="194"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="209"/>
         <source>Transeve security zone(Lagger)</source>
         <translation>Zona de seguridad
 de cruzar(mayor)</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="177"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="178"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="194"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="179"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="195"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="209"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="196"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="210"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="211"/>
         <source>degree</source>
         <translation>grado</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="432"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="433"/>
         <source>Information</source>
         <translation>Sugerencia</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="432"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="433"/>
         <source>Save Successfully!</source>
         <translation>Guardar con éxito!</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="433"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="434"/>
         <source>Save</source>
         <translation>guardar</translation>
     </message>
@@ -918,45 +918,45 @@ modificar alarma</translation>
         <translation>Sugerencia</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icautorunrevise.ui" line="32"/>
+        <location filename="hcinstruction/icautorunrevise.ui" line="182"/>
         <source>TextLabel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icautorunrevise.ui" line="49"/>
+        <location filename="hcinstruction/icautorunrevise.ui" line="139"/>
         <source>Pos(+/-5):</source>
         <translation>Posición(+/-5):</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icautorunrevise.ui" line="66"/>
+        <location filename="hcinstruction/icautorunrevise.ui" line="126"/>
         <source>%</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icautorunrevise.ui" line="73"/>
+        <location filename="hcinstruction/icautorunrevise.ui" line="156"/>
         <source>mm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icautorunrevise.ui" line="80"/>
-        <location filename="hcinstruction/icautorunrevise.ui" line="87"/>
+        <location filename="hcinstruction/icautorunrevise.ui" line="66"/>
+        <location filename="hcinstruction/icautorunrevise.ui" line="96"/>
         <source>s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icautorunrevise.ui" line="107"/>
+        <location filename="hcinstruction/icautorunrevise.ui" line="109"/>
         <source>Speed:</source>
         <translation>Velocidad:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icautorunrevise.ui" line="130"/>
+        <location filename="hcinstruction/icautorunrevise.ui" line="49"/>
         <location filename="hcinstruction/icautorunrevise.cpp" line="76"/>
         <source>Delay Time:</source>
         <translation>Tiempo de
 retardo:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icautorunrevise.ui" line="146"/>
+        <location filename="hcinstruction/icautorunrevise.ui" line="79"/>
         <location filename="hcinstruction/icautorunrevise.cpp" line="100"/>
         <source>Limit Time:</source>
         <translation>Tiempo
@@ -9245,9 +9245,9 @@ archivo nuevo</translation>
         <location filename="function_settings/moldinformation.cpp" line="467"/>
         <location filename="function_settings/moldinformation.cpp" line="486"/>
         <location filename="function_settings/moldinformation.cpp" line="496"/>
-        <location filename="function_settings/moldinformation.cpp" line="506"/>
-        <location filename="function_settings/moldinformation.cpp" line="634"/>
-        <location filename="function_settings/moldinformation.cpp" line="680"/>
+        <location filename="function_settings/moldinformation.cpp" line="514"/>
+        <location filename="function_settings/moldinformation.cpp" line="642"/>
+        <location filename="function_settings/moldinformation.cpp" line="688"/>
         <source>warning</source>
         <translation>Advertencia</translation>
     </message>
@@ -9260,12 +9260,12 @@ está vacío, ingrese el nombre del archivo.</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="114"/>
-        <location filename="function_settings/moldinformation.cpp" line="588"/>
-        <location filename="function_settings/moldinformation.cpp" line="718"/>
+        <location filename="function_settings/moldinformation.cpp" line="596"/>
         <location filename="function_settings/moldinformation.cpp" line="726"/>
-        <location filename="function_settings/moldinformation.cpp" line="731"/>
-        <location filename="function_settings/moldinformation.cpp" line="770"/>
-        <location filename="function_settings/moldinformation.cpp" line="988"/>
+        <location filename="function_settings/moldinformation.cpp" line="734"/>
+        <location filename="function_settings/moldinformation.cpp" line="739"/>
+        <location filename="function_settings/moldinformation.cpp" line="778"/>
+        <location filename="function_settings/moldinformation.cpp" line="996"/>
         <source>Warnning</source>
         <translation>Advertencia</translation>
     </message>
@@ -9324,8 +9324,8 @@ Please try a new name</source>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="347"/>
         <location filename="function_settings/moldinformation.cpp" line="364"/>
-        <location filename="function_settings/moldinformation.cpp" line="813"/>
-        <location filename="function_settings/moldinformation.cpp" line="964"/>
+        <location filename="function_settings/moldinformation.cpp" line="821"/>
+        <location filename="function_settings/moldinformation.cpp" line="972"/>
         <source>Warning</source>
         <translation>Advertencia</translation>
     </message>
@@ -9363,16 +9363,16 @@ Please try a new name</source>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="455"/>
         <location filename="function_settings/moldinformation.cpp" line="487"/>
-        <location filename="function_settings/moldinformation.cpp" line="635"/>
-        <location filename="function_settings/moldinformation.cpp" line="681"/>
+        <location filename="function_settings/moldinformation.cpp" line="643"/>
+        <location filename="function_settings/moldinformation.cpp" line="689"/>
         <source>The mold file </source>
         <translation>Archivo de molde</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="457"/>
         <location filename="function_settings/moldinformation.cpp" line="489"/>
-        <location filename="function_settings/moldinformation.cpp" line="637"/>
-        <location filename="function_settings/moldinformation.cpp" line="683"/>
+        <location filename="function_settings/moldinformation.cpp" line="645"/>
+        <location filename="function_settings/moldinformation.cpp" line="691"/>
         <source> is being used</source>
         <translation>está siendo usado</translation>
     </message>
@@ -9383,82 +9383,82 @@ Please try a new name</source>
         <translation>Programas de soporte no se pueden borrar!</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="507"/>
+        <location filename="function_settings/moldinformation.cpp" line="515"/>
         <source>Are you sure to delete the selected files?</source>
         <translation>¿Seguro borrar los archivos seleccionados?</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="588"/>
-        <location filename="function_settings/moldinformation.cpp" line="988"/>
+        <location filename="function_settings/moldinformation.cpp" line="596"/>
+        <location filename="function_settings/moldinformation.cpp" line="996"/>
         <source>Backup files is not exists!</source>
         <translation>Archivos de copia de seguridad no existe!</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="644"/>
-        <location filename="function_settings/moldinformation.cpp" line="673"/>
-        <location filename="function_settings/moldinformation.cpp" line="835"/>
-        <location filename="function_settings/moldinformation.cpp" line="864"/>
+        <location filename="function_settings/moldinformation.cpp" line="652"/>
+        <location filename="function_settings/moldinformation.cpp" line="681"/>
+        <location filename="function_settings/moldinformation.cpp" line="843"/>
+        <location filename="function_settings/moldinformation.cpp" line="872"/>
         <source>tips</source>
         <translation>Sugerencia</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="644"/>
-        <location filename="function_settings/moldinformation.cpp" line="673"/>
-        <location filename="function_settings/moldinformation.cpp" line="835"/>
-        <location filename="function_settings/moldinformation.cpp" line="864"/>
+        <location filename="function_settings/moldinformation.cpp" line="652"/>
+        <location filename="function_settings/moldinformation.cpp" line="681"/>
+        <location filename="function_settings/moldinformation.cpp" line="843"/>
+        <location filename="function_settings/moldinformation.cpp" line="872"/>
         <source>%1 is exist,replace it?</source>
         <translation>% 1 es existe, ¿reemplazarlo?</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="718"/>
+        <location filename="function_settings/moldinformation.cpp" line="726"/>
         <source>Wrong program format!</source>
         <translation>Forma de programa mala</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="726"/>
+        <location filename="function_settings/moldinformation.cpp" line="734"/>
         <source>Wrong config format!!!</source>
         <translation>Forma de programa mala</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="731"/>
+        <location filename="function_settings/moldinformation.cpp" line="739"/>
         <source>Wrong config format!</source>
         <translation>forma de configuraciones malas</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="737"/>
+        <location filename="function_settings/moldinformation.cpp" line="745"/>
         <source>Restoring, please wait...</source>
         <translation>Restaurando, por favor, espere…</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="770"/>
+        <location filename="function_settings/moldinformation.cpp" line="778"/>
         <source>Wrong program format!!!</source>
         <translation>Forma de programa mala</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="792"/>
-        <location filename="function_settings/moldinformation.cpp" line="914"/>
+        <location filename="function_settings/moldinformation.cpp" line="800"/>
+        <location filename="function_settings/moldinformation.cpp" line="922"/>
         <source>Information</source>
         <translation>Sugerencia</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="792"/>
-        <location filename="function_settings/moldinformation.cpp" line="914"/>
+        <location filename="function_settings/moldinformation.cpp" line="800"/>
+        <location filename="function_settings/moldinformation.cpp" line="922"/>
         <source>Operation finished!</source>
         <translation>Operación termina</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="813"/>
-        <location filename="function_settings/moldinformation.cpp" line="964"/>
+        <location filename="function_settings/moldinformation.cpp" line="821"/>
+        <location filename="function_settings/moldinformation.cpp" line="972"/>
         <source>USB is not connected!</source>
         <translation>¡USB no está conectado!</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="887"/>
+        <location filename="function_settings/moldinformation.cpp" line="895"/>
         <source>Backuping, please wait...</source>
         <translation>Está guardando la copia, por favor, espere…</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="991"/>
+        <location filename="function_settings/moldinformation.cpp" line="999"/>
         <source>Refresh File List, please wait...</source>
         <translation>Refrescar la lista de archivo, espere por favor…</translation>
     </message>
