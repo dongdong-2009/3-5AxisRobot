@@ -16,7 +16,7 @@ QT += sql
 
 SK_SIZE = 8
 
-HostType = c
+HostType = n
 
 #DEFINES += HC_TEST
 #DEFINES += Compatible6410
