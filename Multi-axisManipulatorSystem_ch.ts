@@ -5855,7 +5855,7 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="252"/>
         <source>C end limit</source>
-        <translation>C 轴终点极限</translation>
+        <translation>C轴起点极限</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="258"/>

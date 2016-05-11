@@ -35,7 +35,11 @@ ICHCProgramMonitorFrame::ICHCProgramMonitorFrame(QWidget *parent) :
 
     QPushButton *ActionsButton = new QPushButton(0);
     ActionsButton->setIcon(QPixmap(":/resource/actsix.png"));
-    ActionsButton->setGeometry(QRect(665,18,35,35));
+#ifdef HC_SK_8
+    ActionsButton->setGeometry(QRect(655,18,35,35));
+#else
+    ActionsButton->setGeometry(QRect(455,18,35,35));
+#endif
     ActionsButton->setWindowFlags(Qt::WindowStaysOnTopHint | Qt::Tool);
     ActionsButton->setFocusPolicy(Qt::NoFocus);
     ActionsButton->show();
