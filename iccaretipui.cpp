@@ -32,6 +32,7 @@ ICCareTipUI::ICCareTipUI(QWidget *parent) :
     }
 //    ui->careTable->horizontalHeader()->setSet
     ui->careTable->resizeColumnsToContents();
+    ui->careTable->resizeRowsToContents();
     ui->careTable->horizontalHeader()->setResizeMode(0, QHeaderView::Stretch);
 }
 

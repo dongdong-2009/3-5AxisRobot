@@ -708,13 +708,13 @@ QRadioButton::indicator:unchecked:disabled
          </property>
          <property name="minimumSize">
           <size>
-           <width>78</width>
+           <width>100</width>
            <height>38</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>70</width>
+           <width>100</width>
            <height>50</height>
           </size>
          </property>
@@ -733,13 +733,13 @@ QRadioButton::indicator:unchecked:disabled
          </property>
          <property name="minimumSize">
           <size>
-           <width>78</width>
+           <width>100</width>
            <height>38</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>70</width>
+           <width>100</width>
            <height>50</height>
           </size>
          </property>
