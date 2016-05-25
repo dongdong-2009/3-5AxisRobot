@@ -276,66 +276,66 @@
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="104"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="146"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="147"/>
         <source>Min pos inside mold</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="105"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="147"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="148"/>
         <source>Max pos inside mold</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="118"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="159"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="160"/>
         <source>Max standby pos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="119"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="160"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="161"/>
         <source>Leave origin pos</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="176"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="193"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="208"/>
-        <source>Transeve security zone(Less)</source>
-        <translation>Transeve secur-
-ity zone(Less)</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="177"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="194"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="209"/>
+        <source>Transeve security zone(Less)</source>
+        <translation>Transeve secur-
+ity zone(Less)</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/axissettingsframe.cpp" line="178"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="195"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="210"/>
         <source>Transeve security zone(Lagger)</source>
         <translation>Transeve securi-
 ty zone(Lagger)</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="178"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="179"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="195"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="180"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="196"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="210"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="197"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="211"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="212"/>
         <source>degree</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="433"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="434"/>
         <source>Information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="433"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="434"/>
         <source>Save Successfully!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="434"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="435"/>
         <source>Save</source>
         <translation type="unfinished"></translation>
     </message>
@@ -369,6 +369,7 @@ ty zone(Lagger)</translation>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="205"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="438"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe.cpp" line="77"/>
         <source>Adjust Forbid</source>
         <translation type="unfinished"></translation>
     </message>
@@ -456,6 +457,11 @@ ty zone(Lagger)</translation>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="264"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="686"/>
         <source>M2 -</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcmanualadjustframe.cpp" line="235"/>
+        <source>Adjust En</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -8192,7 +8198,7 @@ Operator</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2073"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1979"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1993"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2069"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="357"/>
@@ -8200,7 +8206,7 @@ Operator</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2111"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2055"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1954"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2031"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="358"/>
@@ -8208,21 +8214,21 @@ Operator</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2041"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1906"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2086"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="360"/>
         <source>Adjust</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1953"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1899"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="349"/>
         <source>Ret On Close</source>
         <translation>Ret O-
 n Close</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1874"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2074"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="345"/>
         <source>SE Door Mode</source>
         <translation>SE Do-
@@ -8250,14 +8256,14 @@ or Mode</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1912"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1944"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="348"/>
         <source>Run On Close</source>
         <translation type="unfinished">Run O-
 n Close</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1991"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2023"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="350"/>
         <source>Stop On Close</source>
         <translation type="unfinished">Stop O-
@@ -8348,21 +8354,21 @@ n Close</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2028"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2098"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2148"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="299"/>
         <source>Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2033"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2103"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2153"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="300"/>
         <source>NoLimit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2020"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2090"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2140"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="298"/>
         <source>In Mold Limit</source>

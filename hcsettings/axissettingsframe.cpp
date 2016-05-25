@@ -93,7 +93,7 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
     ui->maxUnitLabel->setText(tr("mm"));
     minSecValidator_->setBottom(0);
     maxSecValidator_->setBottom(0);
-    maxMoveValidator_->setBottom(-1000);
+    maxMoveValidator_->setBottom(0);
     if(currentAxis_ == ICVirtualHost::ICAxis_AxisX1)
     {
         machineLangth = ICVirtualHost::SYS_X_Length;
@@ -135,6 +135,7 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
         ui->label_2->show();
         ui->label_4->show();
         ui->maximumDisplacementLineEdit->show();
+        minSecValidator_->setBottom(1);
     }
     else if(currentAxis_ == ICVirtualHost::ICAxis_AxisX2)
     {
