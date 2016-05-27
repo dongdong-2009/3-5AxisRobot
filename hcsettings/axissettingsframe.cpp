@@ -22,6 +22,10 @@ AxisSettingsFrame::AxisSettingsFrame(QWidget *parent) :
     ui->label_3->hide();
     ui->mechanicalLengthLineEdit->hide();
 
+    ui->label_2->hide();
+    ui->maximumDisplacementLineEdit->hide();
+    ui->label_4->hide();
+
     InitInterface();
     connect(ICProgramHeadFrame::Instance(),
             SIGNAL(LevelChanged(int)),
@@ -103,9 +107,9 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
         total = ICParametersSave::Instance()->DistanceRotation("X");
         minText = tr("Min pos inside mold");
         maxText = tr("Max pos inside mold");
-        ui->label_2->show();
-        ui->label_4->show();
-        ui->maximumDisplacementLineEdit->show();
+//        ui->label_2->show();
+//        ui->label_4->show();
+//        ui->maximumDisplacementLineEdit->show();
 
     }
     else if(currentAxis_ == ICVirtualHost::ICAxis_AxisY1)
@@ -117,9 +121,9 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
         total = ICParametersSave::Instance()->DistanceRotation("Y");
         minText = tr("Max standby pos");
         maxText = tr("Leave origin pos");
-        ui->label_2->show();
-        ui->label_4->show();
-        ui->maximumDisplacementLineEdit->show();
+//        ui->label_2->show();
+//        ui->label_4->show();
+//        ui->maximumDisplacementLineEdit->show();
         minSecValidator_->setBottom(10);
         maxSecValidator_->setBottom(500);
     }
@@ -132,9 +136,9 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
         total = ICParametersSave::Instance()->DistanceRotation("Z");
         minText = tr("Internal security zone");
         maxText = tr("External security zone");
-        ui->label_2->show();
-        ui->label_4->show();
-        ui->maximumDisplacementLineEdit->show();
+//        ui->label_2->show();
+//        ui->label_4->show();
+//        ui->maximumDisplacementLineEdit->show();
         minSecValidator_->setBottom(1);
     }
     else if(currentAxis_ == ICVirtualHost::ICAxis_AxisX2)
@@ -146,9 +150,9 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
         total = ICParametersSave::Instance()->DistanceRotation("P");
         minText = tr("Min pos inside mold");
         maxText = tr("Max pos inside mold");
-        ui->label_2->show();
-        ui->label_4->show();
-        ui->maximumDisplacementLineEdit->show();
+//        ui->label_2->show();
+//        ui->label_4->show();
+//        ui->maximumDisplacementLineEdit->show();
     }
     else if(currentAxis_ == ICVirtualHost::ICAxis_AxisY2)
     {
@@ -159,9 +163,9 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
         total = ICParametersSave::Instance()->DistanceRotation("Q");
         minText = tr("Max standby pos");
         maxText = tr("Leave origin pos");
-        ui->label_2->show();
-        ui->label_4->show();
-        ui->maximumDisplacementLineEdit->show();
+//        ui->label_2->show();
+//        ui->label_4->show();
+//        ui->maximumDisplacementLineEdit->show();
         minSecValidator_->setBottom(10);
         maxSecValidator_->setBottom(500);
     }

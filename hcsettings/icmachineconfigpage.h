@@ -7,7 +7,7 @@
 class ICLineEditWrapper;
 
 namespace Ui {
-    class ICMachineConfigPage;
+class ICMachineConfigPage;
 }
 
 class ICMachineConfigPage : public QWidget
@@ -32,6 +32,39 @@ private:
 
     int axisDefine_;
     QList<QList<QWidget*> > axisWidgets_;
+
+private slots:
+    void on_xADEdit_textChanged(const QString &arg1);
+
+    void on_yADEdit_textChanged(const QString &arg1);
+
+    void on_zADEdit_textChanged(const QString &arg1);
+
+    void on_x2ADEdit_textChanged(const QString &arg1);
+
+    void on_y2ADEdit_textChanged(const QString &arg1);
+
+    void on_bADEdit_textChanged(const QString &arg1);
+
+    void on_aADEdit_textChanged(const QString &arg1);
+
+    void on_cADEdit_textChanged(const QString &arg1);
+
+    void on_xADEdit_2_textChanged(const QString &arg1);
+
+    void on_yADEdit_2_textChanged(const QString &arg1);
+
+    void on_zADEdit_2_textChanged(const QString &arg1);
+
+    void on_x2ADEdit_2_textChanged(const QString &arg1);
+
+    void on_y2ADEdit_2_textChanged(const QString &arg1);
+
+    void on_aADEdit_2_textChanged(const QString &arg1);
+
+    void on_bADEdit_2_textChanged(const QString &arg1);
+
+    void on_cADEdit_2_textChanged(const QString &arg1);
 
 private slots:
     void OnConfigChanged(QObject* w, const QString& newV, const QString& oldV);

@@ -10,15 +10,15 @@ ICMachineConfigPage::ICMachineConfigPage(QWidget *parent) :
     ui(new Ui::ICMachineConfigPage)
 {
     ui->setupUi(this);
-    axisWidgets_.append(QList<QWidget*>()<<ui->x1ALabel<<ui->x1MLabel<<ui->xADEdit<<ui->x1SLabel<<ui->xMaxSpeedEdit<<ui->x1SLabel_2);
-    axisWidgets_.append(QList<QWidget*>()<<ui->y1MLabel<<ui->y1ALabel<<ui->y1SLabel<<ui->yADEdit<<ui->yMaxSpeedEdit<<ui->x1SLabel_3);
-    axisWidgets_.append(QList<QWidget*>()<<ui->zALabel<<ui->zADEdit<<ui->zMaxSpeedEdit<<ui->zMLabel<<ui->zSLabel<<ui->x1SLabel_4);
-    axisWidgets_.append(QList<QWidget*>()<<ui->x2ADEdit<<ui->x2ALabel<<ui->x2MaxSpeedEdit<<ui->x2MLabel<<ui->x2SLabel<<ui->x1SLabel_5);
-    axisWidgets_.append(QList<QWidget*>()<<ui->y2ADEdit<<ui->y2ALabel<<ui->y2MaxSpeedEdit<<ui->y2MLabel<<ui->y2SLabel<<ui->x1SLabel_6);
-    axisWidgets_.append(QList<QWidget*>()<<ui->aADEdit<<ui->aALabel<<ui->aMaxSpeedEdit<<ui->aMLabel<<ui->aSLabel<<ui->x1SLabel_7);
-    axisWidgets_.append(QList<QWidget*>()<<ui->bADEdit<<ui->bALabel<<ui->bMaxSpeedEdit<<ui->bMLabel<<ui->bSLabel<<ui->x1SLabel_8);
-    axisWidgets_.append(QList<QWidget*>()<<ui->cADEdit<<ui->cALabel<<ui->cMaxSpeedEdit<<ui->cMLabel<<ui->cSLabel<<ui->x1SLabel_9);
-    QIntValidator * validator = new QIntValidator(0, 32767, this);
+    axisWidgets_.append(QList<QWidget*>()<<ui->x1ALabel<<ui->x1MLabel<<ui->xADEdit<<ui->x1SLabel<<ui->xMaxSpeedEdit<<ui->x1SLabel_2<<ui->x1ALabel_2<<ui->x1SLabel_10<<ui->xADEdit_2);
+    axisWidgets_.append(QList<QWidget*>()<<ui->y1MLabel<<ui->y1ALabel<<ui->y1SLabel<<ui->yADEdit<<ui->yMaxSpeedEdit<<ui->x1SLabel_3<<ui->y1ALabel_2<<ui->y1SLabel_2<<ui->yADEdit_2);
+    axisWidgets_.append(QList<QWidget*>()<<ui->zALabel<<ui->zADEdit<<ui->zMaxSpeedEdit<<ui->zMLabel<<ui->zSLabel<<ui->x1SLabel_4<<ui->zALabel_2<<ui->zSLabel_2<<ui->zADEdit_2);
+    axisWidgets_.append(QList<QWidget*>()<<ui->x2ADEdit<<ui->x2ALabel<<ui->x2MaxSpeedEdit<<ui->x2MLabel<<ui->x2SLabel<<ui->x1SLabel_5<<ui->x2ALabel_2<<ui->x2SLabel_2<<ui->x2ADEdit_2);
+    axisWidgets_.append(QList<QWidget*>()<<ui->y2ADEdit<<ui->y2ALabel<<ui->y2MaxSpeedEdit<<ui->y2MLabel<<ui->y2SLabel<<ui->x1SLabel_6<<ui->y2ALabel_2<<ui->y2SLabel_2<<ui->y2ADEdit_2);
+    axisWidgets_.append(QList<QWidget*>()<<ui->aADEdit<<ui->aALabel<<ui->aMaxSpeedEdit<<ui->aMLabel<<ui->aSLabel<<ui->x1SLabel_7<<ui->aADEdit_2<<ui->aSLabel_2<<ui->aALabel_2);
+    axisWidgets_.append(QList<QWidget*>()<<ui->bADEdit<<ui->bALabel<<ui->bMaxSpeedEdit<<ui->bMLabel<<ui->bSLabel<<ui->x1SLabel_8<<ui->bALabel_2<<ui->bSLabel_2<<ui->bADEdit_2);
+    axisWidgets_.append(QList<QWidget*>()<<ui->cADEdit<<ui->cALabel<<ui->cMaxSpeedEdit<<ui->cMLabel<<ui->cSLabel<<ui->x1SLabel_9<<ui->cALabel_2<<ui->cSLabel_2<<ui->cADEdit_2);
+    QIntValidator * validator = new QIntValidator(0, 255, this);
     ui->xADEdit->SetDecimalPlaces(2);
     ui->xADEdit->setValidator(validator);
     ui->yADEdit->SetDecimalPlaces(2);
@@ -35,6 +35,23 @@ ICMachineConfigPage::ICMachineConfigPage(QWidget *parent) :
     ui->bADEdit->setValidator(validator);
     ui->cADEdit->SetDecimalPlaces(2);
     ui->cADEdit->setValidator(validator);
+
+    ui->xADEdit_2->SetDecimalPlaces(2);
+    ui->xADEdit_2->setValidator(validator);
+    ui->yADEdit_2->SetDecimalPlaces(2);
+    ui->yADEdit_2->setValidator(validator);
+    ui->zADEdit_2->SetDecimalPlaces(2);
+    ui->zADEdit_2->setValidator(validator);
+    ui->x2ADEdit_2->SetDecimalPlaces(2);
+    ui->x2ADEdit_2->setValidator(validator);
+    ui->y2ADEdit_2->SetDecimalPlaces(2);
+    ui->y2ADEdit_2->setValidator(validator);
+    ui->aADEdit_2->SetDecimalPlaces(2);
+    ui->aADEdit_2->setValidator(validator);
+    ui->bADEdit_2->SetDecimalPlaces(2);
+    ui->bADEdit_2->setValidator(validator);
+    ui->cADEdit_2->SetDecimalPlaces(2);
+    ui->cADEdit_2->setValidator(validator);
     ui->toleranceLineEdit->SetDecimalPlaces(2);
     ui->toleranceLineEdit->setValidator(new QIntValidator(0, 9999, this));
     ui->pullPushDistance->SetDecimalPlaces(1);
@@ -56,27 +73,27 @@ ICMachineConfigPage::ICMachineConfigPage(QWidget *parent) :
     ui->bMaxSpeedEdit->setValidator(validator);
     ui->cMaxSpeedEdit->setValidator(validator);
 
-
-    ICLineEditWrapper* wrapper = new ICLineEditWrapper(ui->xADEdit,
-                                                       ICVirtualHost::SM_ACCTIMEX,
-                                                       ICLineEditWrapper::System,
-                                                       ICLineEditWrapper::TwoFraction);
-    wrappers_.append(wrapper);
-    wrapper = new ICLineEditWrapper(ui->yADEdit,
-                                    ICVirtualHost::SM_ACCTIMEY,
-                                    ICLineEditWrapper::System,
-                                    ICLineEditWrapper::TwoFraction);
-    wrappers_.append(wrapper);
-    wrapper = new ICLineEditWrapper(ui->yADEdit,
-                                    ICVirtualHost::SM_ACCTIMEY,
-                                    ICLineEditWrapper::System,
-                                    ICLineEditWrapper::TwoFraction);
-    wrappers_.append(wrapper);
-    wrapper = new ICLineEditWrapper(ui->zADEdit,
-                                    ICVirtualHost::SM_ACCTIMEZ,
-                                    ICLineEditWrapper::System,
-                                    ICLineEditWrapper::TwoFraction);
-    wrappers_.append(wrapper);
+    ICLineEditWrapper* wrapper ;
+    //    wrapper = new ICLineEditWrapper(ui->xADEdit,
+    //                                                       ICVirtualHost::SM_ACCTIMEX,
+    //                                                       ICLineEditWrapper::System,
+    //                                                       ICLineEditWrapper::TwoFraction);
+    //    wrappers_.append(wrapper);
+    //    wrapper = new ICLineEditWrapper(ui->yADEdit,
+    //                                    ICVirtualHost::SM_ACCTIMEY,
+    //                                    ICLineEditWrapper::System,
+    //                                    ICLineEditWrapper::TwoFraction);
+    //    wrappers_.append(wrapper);
+    //    wrapper = new ICLineEditWrapper(ui->yADEdit,
+    //                                    ICVirtualHost::SM_ACCTIMEY,
+    //                                    ICLineEditWrapper::System,
+    //                                    ICLineEditWrapper::TwoFraction);
+    //    wrappers_.append(wrapper);
+    //    wrapper = new ICLineEditWrapper(ui->zADEdit,
+    //                                    ICVirtualHost::SM_ACCTIMEZ,
+    //                                    ICLineEditWrapper::System,
+    //                                    ICLineEditWrapper::TwoFraction);
+    //    wrappers_.append(wrapper);
     wrapper = new ICLineEditWrapper(ui->xMaxSpeedEdit,
                                     ICVirtualHost::SM_LMTVX,
                                     ICLineEditWrapper::System,
@@ -99,36 +116,36 @@ ICMachineConfigPage::ICMachineConfigPage(QWidget *parent) :
                                     ICLineEditWrapper::TwoFraction);
     wrappers_.append(wrapper);
 
-    wrapper = new ICLineEditWrapper(ui->x2ADEdit,
-                                    ICVirtualHost::SM_ACCTIMEP,
-                                    ICLineEditWrapper::System,
-                                    ICLineEditWrapper::TwoFraction);
-    wrappers_.append(wrapper);
+    //    wrapper = new ICLineEditWrapper(ui->x2ADEdit,
+    //                                    ICVirtualHost::SM_ACCTIMEP,
+    //                                    ICLineEditWrapper::System,
+    //                                    ICLineEditWrapper::TwoFraction);
+    //    wrappers_.append(wrapper);
 
-    wrapper = new ICLineEditWrapper(ui->y2ADEdit,
-                                    ICVirtualHost::SM_ACCTIMEQ,
-                                    ICLineEditWrapper::System,
-                                    ICLineEditWrapper::TwoFraction);
-    wrappers_.append(wrapper);
+    //    wrapper = new ICLineEditWrapper(ui->y2ADEdit,
+    //                                    ICVirtualHost::SM_ACCTIMEQ,
+    //                                    ICLineEditWrapper::System,
+    //                                    ICLineEditWrapper::TwoFraction);
+    //    wrappers_.append(wrapper);
 
-    wrapper = new ICLineEditWrapper(ui->aADEdit,
-                                    ICVirtualHost::SM_ACCTIMEA,
-                                    ICLineEditWrapper::System,
-                                    ICLineEditWrapper::TwoFraction);
-    wrappers_.append(wrapper);
+    //    wrapper = new ICLineEditWrapper(ui->aADEdit,
+    //                                    ICVirtualHost::SM_ACCTIMEA,
+    //                                    ICLineEditWrapper::System,
+    //                                    ICLineEditWrapper::TwoFraction);
+    //    wrappers_.append(wrapper);
 
-    wrapper = new ICLineEditWrapper(ui->bADEdit,
-                                    ICVirtualHost::SM_ACCTIMEB,
-                                    ICLineEditWrapper::System,
-                                    ICLineEditWrapper::TwoFraction);
-    wrappers_.append(wrapper);
+    //    wrapper = new ICLineEditWrapper(ui->bADEdit,
+    //                                    ICVirtualHost::SM_ACCTIMEB,
+    //                                    ICLineEditWrapper::System,
+    //                                    ICLineEditWrapper::TwoFraction);
+    //    wrappers_.append(wrapper);
 
-    wrapper = new ICLineEditWrapper(ui->cADEdit,
-                                    ICVirtualHost::SM_ACCTIMEC,
-                                    ICLineEditWrapper::System,
-                                    ICLineEditWrapper::TwoFraction);
+    //    wrapper = new ICLineEditWrapper(ui->cADEdit,
+    //                                    ICVirtualHost::SM_ACCTIMEC,
+    //                                    ICLineEditWrapper::System,
+    //                                    ICLineEditWrapper::TwoFraction);
 
-    wrappers_.append(wrapper);
+    //    wrappers_.append(wrapper);
 
     wrapper = new ICLineEditWrapper(ui->x2MaxSpeedEdit,
                                     ICVirtualHost::SM_LMTVP,
@@ -166,6 +183,65 @@ ICMachineConfigPage::ICMachineConfigPage(QWidget *parent) :
                                     ICLineEditWrapper::OneFraction);
     wrappers_.append(wrapper);
 
+    int xValue = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_AccTimeX).toInt();
+    int yValue = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_AccTimeY).toInt();
+    int zValue = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_AccTimeZ).toInt();
+    int x2Value = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_AccTimeP).toInt();
+    int y2Value = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_AccTimeQ).toInt();
+    int aValue = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_AccTimeA).toInt();
+    int bValue = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_AccTimeB).toInt();
+    int cValue = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_AccTimeC).toInt();
+
+    ui->xADEdit->blockSignals(true);
+    ui->xADEdit_2->blockSignals(true);
+    ui->yADEdit->blockSignals(true);
+    ui->yADEdit_2->blockSignals(true);
+    ui->zADEdit->blockSignals(true);
+    ui->zADEdit_2->blockSignals(true);
+    ui->x2ADEdit->blockSignals(true);
+    ui->x2ADEdit_2->blockSignals(true);
+    ui->y2ADEdit->blockSignals(true);
+    ui->y2ADEdit_2->blockSignals(true);
+    ui->aADEdit->blockSignals(true);
+    ui->aADEdit_2->blockSignals(true);
+    ui->bADEdit->blockSignals(true);
+    ui->bADEdit_2->blockSignals(true);
+    ui->cADEdit->blockSignals(true);
+    ui->cADEdit_2->blockSignals(true);
+    ui->xADEdit->SetThisIntToThisText(xValue & 0xFF);
+    ui->xADEdit_2->SetThisIntToThisText(xValue >> 8);
+    ui->yADEdit->SetThisIntToThisText(yValue & 0xFF);
+    ui->yADEdit_2->SetThisIntToThisText(yValue >> 8);
+    ui->zADEdit->SetThisIntToThisText(zValue & 0xFF);
+    ui->zADEdit_2->SetThisIntToThisText(zValue >> 8);
+    ui->x2ADEdit->SetThisIntToThisText(x2Value & 0xFF);
+    ui->x2ADEdit_2->SetThisIntToThisText(x2Value >> 8);
+    ui->y2ADEdit->SetThisIntToThisText(y2Value & 0xFF);
+    ui->y2ADEdit_2->SetThisIntToThisText(y2Value >> 8);
+    ui->aADEdit->SetThisIntToThisText(aValue & 0xFF);
+    ui->aADEdit_2->SetThisIntToThisText(aValue >> 8);
+    ui->bADEdit->SetThisIntToThisText(bValue & 0xFF);
+    ui->bADEdit_2->SetThisIntToThisText(bValue >> 8);
+    ui->cADEdit->SetThisIntToThisText(cValue & 0xFF);
+    ui->cADEdit_2->SetThisIntToThisText(cValue >> 8);
+    ui->xADEdit->blockSignals(false);
+    ui->xADEdit_2->blockSignals(false);
+    ui->yADEdit->blockSignals(false);
+    ui->yADEdit_2->blockSignals(false);
+    ui->zADEdit->blockSignals(false);
+    ui->zADEdit_2->blockSignals(false);
+    ui->x2ADEdit->blockSignals(false);
+    ui->x2ADEdit_2->blockSignals(false);
+    ui->y2ADEdit->blockSignals(false);
+    ui->y2ADEdit_2->blockSignals(false);
+    ui->aADEdit->blockSignals(false);
+    ui->aADEdit_2->blockSignals(false);
+    ui->bADEdit->blockSignals(false);
+    ui->bADEdit_2->blockSignals(false);
+    ui->cADEdit->blockSignals(false);
+    ui->cADEdit_2->blockSignals(false);
+
+
     editorToConfigIDs_.insert(ui->toleranceLineEdit, ICConfigString::kCS_RUN_Tolerance);
     editorToConfigIDs_.insert(ui->pullPushDistance, ICConfigString::kCS_RUN_Distance_X1_X2);
     editorToConfigIDs_.insert(ui->xADEdit, ICConfigString::kCS_RUN_Acc_Time_X1);
@@ -186,9 +262,9 @@ ICMachineConfigPage::ICMachineConfigPage(QWidget *parent) :
     editorToConfigIDs_.insert(ui->cMaxSpeedEdit, ICConfigString::kCS_RUN_Speed_Limit_C);
 
     ICLogInit;
-//    ui->servoFlex->blockSignals(true);
-//    ui->servoFlex->setCurrentIndex(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Language).toInt());
-//    ui->servoFlex->blockSignals(false);
+    //    ui->servoFlex->blockSignals(true);
+    //    ui->servoFlex->setCurrentIndex(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Language).toInt());
+    //    ui->servoFlex->blockSignals(false);
 }
 
 ICMachineConfigPage::~ICMachineConfigPage()
@@ -203,11 +279,11 @@ void ICMachineConfigPage::changeEvent(QEvent *e)
     switch (e->type()) {
     case QEvent::LanguageChange:
     {
-//        int ci = ui->servoFlex->currentIndex();
-//        ui->servoFlex->blockSignals(true);
+        //        int ci = ui->servoFlex->currentIndex();
+        //        ui->servoFlex->blockSignals(true);
         ui->retranslateUi(this);
-//        ui->servoFlex->setCurrentIndex(ci);
-//        ui->servoFlex->blockSignals(false);
+        //        ui->servoFlex->setCurrentIndex(ci);
+        //        ui->servoFlex->blockSignals(false);
     }
         break;
     default:
@@ -229,7 +305,7 @@ void ICMachineConfigPage::hideEvent(QHideEvent *e)
 
 void ICMachineConfigPage::showEvent(QShowEvent *e)
 {
-//    bool isExtent = ICParametersSave::Instance()->IsExtentFunctionUsed();
+    //    bool isExtent = ICParametersSave::Instance()->IsExtentFunctionUsed();
     UpdateAxisDefine_();
     QWidget::showEvent(e);
 }
@@ -335,6 +411,104 @@ void ICMachineConfigPage::HideWidgets_(QList<QWidget *> &widgets)
     {
         widgets[i]->hide();
     }
+}
+
+void ICMachineConfigPage::on_xADEdit_textChanged(const QString &arg1)
+{
+    int v = (ui->xADEdit->TransThisTextToThisInt() ) | (ui->xADEdit_2->TransThisTextToThisInt()<<8);
+    ICVirtualHost::GlobalVirtualHost()->SetSystemParameter(ICVirtualHost::SYS_AccTimeX, v);
+
+}
+
+void ICMachineConfigPage::on_yADEdit_textChanged(const QString &arg1)
+{
+    int v = (ui->yADEdit->TransThisTextToThisInt() ) | (ui->yADEdit_2->TransThisTextToThisInt()<<8);
+    ICVirtualHost::GlobalVirtualHost()->SetSystemParameter(ICVirtualHost::SYS_AccTimeY, v);
+}
+
+void ICMachineConfigPage::on_zADEdit_textChanged(const QString &arg1)
+{
+    int v = (ui->zADEdit->TransThisTextToThisInt() ) | (ui->zADEdit_2->TransThisTextToThisInt()<<8);
+    ICVirtualHost::GlobalVirtualHost()->SetSystemParameter(ICVirtualHost::SYS_AccTimeZ, v);
+}
+
+void ICMachineConfigPage::on_x2ADEdit_textChanged(const QString &arg1)
+{
+    int v = (ui->x2ADEdit->TransThisTextToThisInt() ) | (ui->x2ADEdit_2->TransThisTextToThisInt()<<8);
+    ICVirtualHost::GlobalVirtualHost()->SetSystemParameter(ICVirtualHost::SYS_AccTimeP, v);
+}
+
+void ICMachineConfigPage::on_y2ADEdit_textChanged(const QString &arg1)
+{
+    int v = (ui->y2ADEdit->TransThisTextToThisInt() ) | (ui->y2ADEdit_2->TransThisTextToThisInt()<<8);
+    ICVirtualHost::GlobalVirtualHost()->SetSystemParameter(ICVirtualHost::SYS_AccTimeQ, v);
+}
+
+void ICMachineConfigPage::on_aADEdit_textChanged(const QString &arg1)
+{
+    int v = (ui->aADEdit->TransThisTextToThisInt() ) | (ui->aADEdit_2->TransThisTextToThisInt()<<8);
+    ICVirtualHost::GlobalVirtualHost()->SetSystemParameter(ICVirtualHost::SYS_AccTimeA, v);
+}
+
+void ICMachineConfigPage::on_bADEdit_textChanged(const QString &arg1)
+{
+    int v = (ui->bADEdit->TransThisTextToThisInt() ) | (ui->bADEdit_2->TransThisTextToThisInt()<<8);
+    ICVirtualHost::GlobalVirtualHost()->SetSystemParameter(ICVirtualHost::SYS_AccTimeB, v);
+}
+
+void ICMachineConfigPage::on_cADEdit_textChanged(const QString &arg1)
+{
+    int v = (ui->cADEdit->TransThisTextToThisInt() ) | (ui->cADEdit_2->TransThisTextToThisInt()<<8);
+    ICVirtualHost::GlobalVirtualHost()->SetSystemParameter(ICVirtualHost::SYS_AccTimeC, v);
+}
+
+//LOW SPEED
+void ICMachineConfigPage::on_xADEdit_2_textChanged(const QString &arg1)
+{
+    int v = (ui->xADEdit->TransThisTextToThisInt() ) | (ui->xADEdit_2->TransThisTextToThisInt()<<8);
+    ICVirtualHost::GlobalVirtualHost()->SetSystemParameter(ICVirtualHost::SYS_AccTimeX, v);
+}
+
+void ICMachineConfigPage::on_yADEdit_2_textChanged(const QString &arg1)
+{
+    int v = (ui->yADEdit->TransThisTextToThisInt() ) | (ui->yADEdit_2->TransThisTextToThisInt()<<8);
+    ICVirtualHost::GlobalVirtualHost()->SetSystemParameter(ICVirtualHost::SYS_AccTimeY, v);
+}
+
+void ICMachineConfigPage::on_zADEdit_2_textChanged(const QString &arg1)
+{
+    int v = (ui->zADEdit->TransThisTextToThisInt() ) | (ui->zADEdit_2->TransThisTextToThisInt()<<8);
+    ICVirtualHost::GlobalVirtualHost()->SetSystemParameter(ICVirtualHost::SYS_AccTimeZ, v);
+}
+
+void ICMachineConfigPage::on_x2ADEdit_2_textChanged(const QString &arg1)
+{
+    int v = (ui->x2ADEdit->TransThisTextToThisInt() ) | (ui->x2ADEdit_2->TransThisTextToThisInt()<<8);
+    ICVirtualHost::GlobalVirtualHost()->SetSystemParameter(ICVirtualHost::SYS_AccTimeP, v);
+}
+
+void ICMachineConfigPage::on_y2ADEdit_2_textChanged(const QString &arg1)
+{
+    int v = (ui->y2ADEdit->TransThisTextToThisInt() ) | (ui->y2ADEdit_2->TransThisTextToThisInt()<<8);
+    ICVirtualHost::GlobalVirtualHost()->SetSystemParameter(ICVirtualHost::SYS_AccTimeQ, v);
+}
+
+void ICMachineConfigPage::on_aADEdit_2_textChanged(const QString &arg1)
+{
+    int v = (ui->aADEdit->TransThisTextToThisInt() ) | (ui->aADEdit_2->TransThisTextToThisInt()<<8);
+    ICVirtualHost::GlobalVirtualHost()->SetSystemParameter(ICVirtualHost::SYS_AccTimeA, v);
+}
+
+void ICMachineConfigPage::on_bADEdit_2_textChanged(const QString &arg1)
+{
+    int v = (ui->bADEdit->TransThisTextToThisInt() ) | (ui->bADEdit_2->TransThisTextToThisInt()<<8);
+    ICVirtualHost::GlobalVirtualHost()->SetSystemParameter(ICVirtualHost::SYS_AccTimeB, v);
+}
+
+void ICMachineConfigPage::on_cADEdit_2_textChanged(const QString &arg1)
+{
+    int v = (ui->cADEdit->TransThisTextToThisInt() ) | (ui->cADEdit_2->TransThisTextToThisInt()<<8);
+    ICVirtualHost::GlobalVirtualHost()->SetSystemParameter(ICVirtualHost::SYS_AccTimeC, v);
 }
 
 ICLogFunctions(ICMachineConfigPage)

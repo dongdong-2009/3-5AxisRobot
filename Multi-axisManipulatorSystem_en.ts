@@ -2200,147 +2200,24 @@ Infomation</source>
 <context>
     <name>ICCutModuleActionPage</name>
     <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="14"/>
-        <source>Form</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="20"/>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="48"/>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="126"/>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="146"/>
-        <source>%</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="27"/>
-        <source>Fixture:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="34"/>
-        <source>X1:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="41"/>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="223"/>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="237"/>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="244"/>
         <source>80</source>
-        <translation type="unfinished">Reserve {80?}</translation>
+        <translation type="obsolete">Reserve {80?}</translation>
     </message>
     <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="55"/>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="202"/>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="230"/>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="251"/>
-        <source>mm</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="63"/>
-        <source>Fixture-1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="68"/>
-        <source>Fixture-2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="73"/>
-        <source>Fixture-3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="78"/>
-        <source>Fixture-4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="83"/>
-        <source>Sucker-1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="88"/>
-        <source>Sucker-2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="93"/>
-        <source>Sucker-3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="98"/>
-        <source>Sucker-4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="103"/>
-        <source>Reserve-1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="108"/>
-        <source>Reserve-2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="113"/>
-        <source>Reserve-3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="118"/>
-        <source>Reserve-4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="153"/>
         <source>0.50</source>
-        <translation type="unfinished">Y031 {0.50?}</translation>
+        <translation type="obsolete">Y031 {0.50?}</translation>
     </message>
     <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="160"/>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="195"/>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="209"/>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="216"/>
         <source>0.00</source>
-        <translation type="unfinished">Reserve {0.00?}</translation>
+        <translation type="obsolete">Reserve {0.00?}</translation>
     </message>
     <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="167"/>
-        <source>s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="174"/>
-        <source>Y1:Up</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="188"/>
-        <source>Z:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="264"/>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="298"/>
         <source>Set In</source>
-        <translation type="unfinished">Save</translation>
+        <translation type="obsolete">Save</translation>
     </message>
     <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="271"/>
-        <source>Cut Outlet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutmoduleactionpage.ui" line="285"/>
         <source>Y1:</source>
-        <translation type="unfinished">Y1:</translation>
+        <translation type="obsolete">Y1:</translation>
     </message>
 </context>
 <context>
@@ -2712,33 +2589,33 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="359"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="371"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="144"/>
         <source>Check Point</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="581"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="593"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="252"/>
         <source>Defective Products</source>
         <translation>Defective
  Products</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="238"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="250"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="415"/>
         <source>X043</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="537"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="549"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="479"/>
         <source>X044</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="140"/>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="505"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="517"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="99"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="609"/>
         <source>Try Product</source>
@@ -2747,32 +2624,32 @@ duct</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="135"/>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="648"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="660"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="447"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="604"/>
         <source>Sampling</source>
         <translation>Sampling</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="167"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="179"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="554"/>
         <source>Use Macro</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="435"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="447"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="319"/>
         <source>Fixture-2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="467"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="479"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="511"/>
         <source>Sucker-3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="206"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="218"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="543"/>
         <source>Sucker-4</source>
         <translation type="unfinished"></translation>
@@ -2814,43 +2691,43 @@ duct</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="154"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="160"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="617"/>
         <source>Go to flag</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="308"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="320"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="208"/>
         <source>Fixture-3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="397"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="409"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="176"/>
         <source>Fixture-1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="687"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="692"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="131"/>
         <source>Product Count</source>
         <translation>Product Count</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="346"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="358"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="287"/>
         <source>Fixture-4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="270"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="282"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="383"/>
         <source>Sucker-1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="616"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="628"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="351"/>
         <source>Sucker-2</source>
         <translation type="unfinished"></translation>
@@ -3380,7 +3257,7 @@ ve Phase</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="768"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="730"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="589"/>
         <source>Flags</source>
         <translation type="unfinished"></translation>
@@ -3410,51 +3287,51 @@ ve Phase</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="928"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="890"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="828"/>
         <source>Decompose</source>
         <translation>Deco-
 mpose</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="969"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="931"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="869"/>
         <source>Compose</source>
         <translation>Com-
 pose</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1010"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="972"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="997"/>
         <source>Try</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1057"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1019"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="923"/>
         <source>A+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1094"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1056"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="960"/>
         <source>A-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1158"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1120"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="1070"/>
         <source>Menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1183"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1145"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="1095"/>
         <source>Insert</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="852"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="814"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="752"/>
         <source>Modify</source>
         <translation type="unfinished"></translation>
@@ -3521,67 +3398,62 @@ tor I/O</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="730"/>
-        <source>Cut Module</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="806"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="768"/>
         <source>Curve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="890"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.ui" line="852"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="790"/>
         <source>Delete</source>
         <translation>Del</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="506"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="751"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="495"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="740"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="507"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="496"/>
         <source>Can not add standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="477"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="735"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="915"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1023"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="467"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="724"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="904"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1012"/>
         <source>warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1316"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1305"/>
         <source>Flag[%1]:%2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="478"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="468"/>
         <source>Stand program can not be insert action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="736"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="725"/>
         <source>Stand program can not be delete action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="752"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="741"/>
         <source>Can not delete standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="916"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="905"/>
         <source>Stand program can not do Up action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1024"/>
+        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1013"/>
         <source>Stand program can not do Down action</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6091,109 +5963,142 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="166"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="205"/>
+        <source>X1 Deceleration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="215"/>
+        <source>X2 Acceleration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="225"/>
+        <source>C Deceleration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="300"/>
+        <source>A Deceleration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="400"/>
+        <source>Y1 Acceleration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="417"/>
+        <source>Y2 Acceleration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="427"/>
+        <source>C Acceleration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="509"/>
+        <source>B Acceleration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="578"/>
+        <source>Z Acceleration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="588"/>
+        <source>Y1 Deceleration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="598"/>
+        <source>X2 Deceleration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="637"/>
+        <source>A Acceleration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="673"/>
+        <source>B Deceleration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="790"/>
+        <source>Y2 Deceleration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="855"/>
         <source>Tolerance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="137"/>
-        <source>X1 Acceleration and Deceleration</source>
-        <oldsource>X Acceleration and Deceleration</oldsource>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="884"/>
+        <source>Z Deceleration</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="426"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="131"/>
         <source>X1 Max Speed</source>
         <oldsource>X Max Speed</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="390"/>
-        <source>Y1 Acceleration and Deceleration</source>
-        <oldsource>Y Acceleration and Deceleration</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="618"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="470"/>
         <source>Y1 Max Speed</source>
         <oldsource>Y Max Speed</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="508"/>
-        <source>Z Acceleration and Deceleration</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="373"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="721"/>
         <source>Z Max Speed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="63"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="264"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="393"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="647"/>
         <source>mm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="608"/>
-        <source>X2 Acceleration and Deceleration</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="560"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="499"/>
         <source>X2 Max Speed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="498"/>
-        <source>Y2 Acceleration and Deceleration</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="469"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="627"/>
         <source>Y2 Max Speed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="436"/>
-        <source>A Acceleration and Deceleration</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="89"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="800"/>
         <source>A Max Speed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="531"/>
-        <source>B Acceleration and Deceleration</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="176"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="30"/>
         <source>B Max Speed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="459"/>
-        <source>C Acceleration and Deceleration</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="628"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="73"/>
         <source>C Max Speed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="638"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="645"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="652"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="659"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="666"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="673"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="680"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="687"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="59"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="66"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="248"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="329"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="410"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="437"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="750"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="783"/>
         <source>%</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6203,14 +6108,27 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="30"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="56"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="205"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="212"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="219"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="347"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="383"/>
-        <location filename="hcsettings/icmachineconfigpage.ui" line="419"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="121"/>
+        <source>X1 Acceleration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="160"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="255"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="463"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="519"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="526"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="571"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="776"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="810"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="926"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="933"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="940"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="947"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="954"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="961"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="968"/>
+        <location filename="hcsettings/icmachineconfigpage.ui" line="975"/>
         <source>s</source>
         <translation type="unfinished"></translation>
     </message>
