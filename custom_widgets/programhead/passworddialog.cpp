@@ -83,6 +83,13 @@ void PasswordDialog::keyPressEvent(QKeyEvent *e)
 //    }
 }
 
+void PasswordDialog::keyReleaseEvent(QKeyEvent *e)
+{
+    QKeyEvent* ke = new QKeyEvent(*e);
+    qApp->postEvent(icMainFrame, ke);//this->parentWidget()
+
+}
+
 void PasswordDialog::InitButton()
 {
     buttonGroup_->addButton(ui->MachineOperatorPushButton,0);

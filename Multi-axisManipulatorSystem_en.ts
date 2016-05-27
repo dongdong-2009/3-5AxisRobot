@@ -3840,7 +3840,7 @@ ve Phase</translation>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="858"/>
         <source>Speed Enable</source>
-        <translation>SPD UN</translation>
+        <translation>SPD EN</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="918"/>
