@@ -199,14 +199,14 @@ ward</translation>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="107"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="116"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="132"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="133"/>
         <source>Internal security zone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="133"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="151"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="133"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="134"/>
         <source>External security zone</source>
         <translation type="unfinished"></translation>
     </message>
@@ -281,67 +281,67 @@ ward</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="103"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="145"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="104"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="146"/>
         <source>Min pos inside mold</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="104"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="146"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="105"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="147"/>
         <source>Max pos inside mold</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="117"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="158"/>
-        <source>Max standby pos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="118"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="159"/>
-        <source>Leave origin pos</source>
+        <source>Max standby pos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="175"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="192"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="207"/>
-        <source>Transeve security zone(Less)</source>
-        <translation>Transeve secur-
-ity zone(Less)</translation>
+        <location filename="hcsettings/axissettingsframe.cpp" line="119"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="160"/>
+        <source>Leave origin pos</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="176"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="193"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="208"/>
+        <source>Transeve security zone(Less)</source>
+        <translation>Transeve secur-
+ity zone(Less)</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/axissettingsframe.cpp" line="177"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="194"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="209"/>
         <source>Transeve security zone(Lagger)</source>
         <translation>Transeve securi-
 ty zone(Lagger)</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="177"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="178"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="194"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="179"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="195"/>
-        <location filename="hcsettings/axissettingsframe.cpp" line="209"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="196"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="210"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="211"/>
         <source>degree</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="432"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="433"/>
         <source>Information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="432"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="433"/>
         <source>Save Successfully!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="433"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="434"/>
         <source>Save</source>
         <translation type="unfinished"></translation>
     </message>
@@ -874,12 +874,12 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icautorunrevise.ui" line="32"/>
+        <location filename="hcinstruction/icautorunrevise.ui" line="182"/>
         <source>TextLabel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icautorunrevise.ui" line="130"/>
+        <location filename="hcinstruction/icautorunrevise.ui" line="49"/>
         <location filename="hcinstruction/icautorunrevise.cpp" line="76"/>
         <source>Delay Time:</source>
         <translation type="unfinished"></translation>
@@ -890,34 +890,34 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icautorunrevise.ui" line="107"/>
+        <location filename="hcinstruction/icautorunrevise.ui" line="109"/>
         <source>Speed:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icautorunrevise.ui" line="49"/>
+        <location filename="hcinstruction/icautorunrevise.ui" line="139"/>
         <source>Pos(+/-5):</source>
         <oldsource>Pos:</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icautorunrevise.ui" line="80"/>
-        <location filename="hcinstruction/icautorunrevise.ui" line="87"/>
+        <location filename="hcinstruction/icautorunrevise.ui" line="66"/>
+        <location filename="hcinstruction/icautorunrevise.ui" line="96"/>
         <source>s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icautorunrevise.ui" line="66"/>
+        <location filename="hcinstruction/icautorunrevise.ui" line="126"/>
         <source>%</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icautorunrevise.ui" line="73"/>
+        <location filename="hcinstruction/icautorunrevise.ui" line="156"/>
         <source>mm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icautorunrevise.ui" line="146"/>
+        <location filename="hcinstruction/icautorunrevise.ui" line="79"/>
         <location filename="hcinstruction/icautorunrevise.cpp" line="100"/>
         <source>Limit Time:</source>
         <translation type="unfinished"></translation>

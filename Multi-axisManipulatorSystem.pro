@@ -16,7 +16,7 @@ QT += sql
 
 SK_SIZE = 8
 
-HostType = c
+HostType = n
 
 #DEFINES += HC_TEST
 #DEFINES += Compatible6410
@@ -37,7 +37,7 @@ MOC_DIR = temp_$${suffix}
 RCC_DIR = temp_$${suffix}
 
 TRUNK_VERSION = XS5-6.0.6
-APP_VERSION = BORUNTE-HUICHUAN-ZENGLIANG_1.1.0
+APP_VERSION = BORUNTE-HUICHUAN-ZENGLIANG-1.1
 S_VERSION = $${APP_VERSION}_$${HostType}_$${TRUNK_VERSION}
 contains(DEFINES, Compatible6410){
 S_VERSION = $${S_VERSION}_cp6410
