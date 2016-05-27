@@ -422,7 +422,7 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
     ui->maxLabel->setText(maxText);
     /*********BUG#186.同791行一起**************/
     intValidator->setBottom(ui->maximumDisplacementLineEdit->TransThisTextToThisInt());
-    maxMoveValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
+    //maxMoveValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
     maximumValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
     if(currentAxis_ == ICVirtualHost::ICAxis_AxisC ||
             currentAxis_ == ICVirtualHost::ICAxis_AxisA ||
@@ -433,9 +433,9 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
     }
     else
     {
-//        on_maximumDisplacementLineEdit_textChanged("");
-        minSecValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
-        maxSecValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
+            minSecValidator_->setTop(maximumValidator_->top());
+            maxSecValidator_->setTop(maximumValidator_->top());
+        //on_maximumDisplacementLineEdit_textChanged("");
     }
     p = editorToConfigIDs_.begin();
     while(p != editorToConfigIDs_.end())
@@ -632,7 +632,7 @@ void ICMachineStructPage::InitInterface()
     ui->mechanicalLengthLineEdit->SetDecimalPlaces(1);
     intValidator = new QIntValidator(0, 65530, this);
     ui->mechanicalLengthLineEdit->setValidator(intValidator);
-    maxMoveValidator_ = new QIntValidator(0, 65530, this);
+    //maxMoveValidator_ = new QIntValidator(0, 65530, this);
     originValidator_ = new QIntValidator(-900, 900, this);
     ui->maximumDisplacementLineEdit->SetDecimalPlaces(1);
     maximumValidator_ = new QIntValidator(0, 65530, this);
@@ -882,12 +882,16 @@ void ICMachineStructPage::StatusRefresh()
     ui->testLineEdit->setText(pos);
     ui->feedbackEdit->setText(feedbackPos);
     ui->zSignalEdit->setText(zSignal);
+
+    ui->testLineEdit->setReadOnly(true);
+    ui->feedbackEdit->setReadOnly(true);
+    ui->zSignalEdit->setReadOnly(true);
 }
 
 void ICMachineStructPage::on_mechanicalLengthLineEdit_textChanged(const QString &arg1)
 {
     Q_UNUSED(arg1);
-    maxMoveValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
+    //maxMoveValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
     maximumValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
     intValidator->setBottom(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
     minSecValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());

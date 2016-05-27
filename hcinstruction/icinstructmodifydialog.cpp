@@ -5,6 +5,8 @@
 #include "config.h"
 #include <qmath.h>
 #include <QKeyEvent>
+#include "mainframe.h"
+#include "ickeyboard.h"
 
 ICInstructModifyDialog::ICInstructModifyDialog(QWidget *parent) :
     QDialog(parent),
@@ -62,8 +64,23 @@ void ICInstructModifyDialog::changeEvent(QEvent *e)
 void ICInstructModifyDialog::keyPressEvent(QKeyEvent *e)
 {
     QKeyEvent* ke = new QKeyEvent(*e);
-    qApp->postEvent(this->parentWidget(), ke);
-    this->reject();
+    int key = ke->key();
+    qApp->postEvent(icMainFrame, ke);//this->parentWidget()
+    if(key == Qt::Key_F4||key == Qt::Key_F7||key == Qt::Key_F5)
+    {
+        this->reject();
+    }
+    else
+    {
+        //this->accept();
+    }
+}
+
+void ICInstructModifyDialog::keyReleaseEvent(QKeyEvent *e)
+{
+    QKeyEvent* ke = new QKeyEvent(*e);
+    qApp->postEvent(icMainFrame, ke);//this->parentWidget()
+
 }
 
 bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
@@ -120,6 +137,7 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
     ui->backwardBox->hide();
     ui->flagBox->hide();
     ui->returnStepLabel->hide();
+    ui->setButton->hide();
 //    ui->earlySpeedLabel->hide();
     bool isMoldCount = false;
 
@@ -129,6 +147,7 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
         if( item->Action() <= ICMold::GB)
         {
 //            ui->earlySpeedLabel->show();
+            ui->setButton->show();
             ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
             ICVirtualHost::ICSystemParameter addr;
             switch(item->Action())

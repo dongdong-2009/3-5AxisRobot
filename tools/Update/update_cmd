@@ -1,5 +1,6 @@
 #! /bin/sh
 
+cp qt_es.qm /opt/Qt/apps -f
 cp Multi-axisManipulatorSystem* /opt/Qt/apps -f
 cp Base.* /opt/Qt/apps/records -f
 cp hwclock.sh /etc/init.d -f

@@ -3,6 +3,7 @@
 #include "ui_passworddialog.h"
 #include "icparameterssave.h"
 #include <QKeyEvent>
+#include "mainframe.h"
 
 PasswordDialog::PasswordDialog(QWidget *parent) :
     QDialog(parent),
@@ -49,6 +50,7 @@ void PasswordDialog::ShowPwdEdit()
 void PasswordDialog::showEvent(QShowEvent *e)
 {
     ui->pwdEdit->clear();
+   // PasswordDialog::setStyleSheet ("background-color: #000000;color: #ffffff;");
     QDialog::showEvent(e);
 }
 
@@ -75,10 +77,17 @@ void PasswordDialog::keyPressEvent(QKeyEvent *e)
 //    else
 //    {
     QKeyEvent* ke = new QKeyEvent(*e);
-    qApp->postEvent(this->parentWidget(), ke);
+    qApp->postEvent(icMainFrame, ke);
 //    this->accept();
 //        this->accept();
 //    }
+}
+
+void PasswordDialog::keyReleaseEvent(QKeyEvent *e)
+{
+    QKeyEvent* ke = new QKeyEvent(*e);
+    qApp->postEvent(icMainFrame, ke);//this->parentWidget()
+
 }
 
 void PasswordDialog::InitButton()

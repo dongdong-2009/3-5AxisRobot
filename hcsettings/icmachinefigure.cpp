@@ -12,7 +12,9 @@ ICMachineFigure::ICMachineFigure(QWidget *parent) :
     ui->setupUi(this);
 //    ui->figure->resize(this->size());
 
-    QIntValidator * validator = new QIntValidator(0, 65530, this);
+    quint32 xLength = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_X_Length).toUInt();
+
+    validator = new QIntValidator(0, xLength, this);
     ui->xsec1->setValidator(validator);
     ui->xsec2->setValidator(validator);
     ui->xsec3->setValidator(validator);
@@ -72,6 +74,8 @@ void ICMachineFigure::changeEvent(QEvent *e)
 
 void ICMachineFigure::showEvent(QShowEvent *e)
 {
+    quint32 xLength = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_X_Length).toUInt();
+    validator->setTop(xLength);
     ui->xmin->setText(QString("%1").arg(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_X_InSafe).toUInt() / 10.0));
     ui->xmax->setText(QString("%1").arg(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_X_OutSafe).toUInt() / 10.0));
     QWidget::showEvent(e);

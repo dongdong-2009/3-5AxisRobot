@@ -6,6 +6,7 @@
 #include <QMap>
 #include <QTimer>
 #include "icmold.h"
+#include "icactionsix.h"
 
 namespace Ui {
     class ICHCProgramMonitorFrame;
@@ -46,6 +47,7 @@ private slots:
     void on_speedEnableButton_clicked();
 
     void OnTimeOut();
+    void dialogfunction();
 
     void on_singleStepButton_pressed();
 

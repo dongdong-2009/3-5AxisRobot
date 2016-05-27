@@ -35,7 +35,6 @@
 #include "ichcotherpage.h"
 #include "iccommenteditor.h"
 #include "iccurveeditor.h"
-#include "iccutmoduleactionpage.h"
 
 #include <QDebug>
 #include "icmessagebox.h"
@@ -63,7 +62,6 @@ ICHCInstructionPageFrame::ICHCInstructionPageFrame(QWidget *parent) :
     otherPage_(NULL),
     commentPage_(NULL),
     curvePage_(NULL),
-    cutModulePage_(NULL),
     recordPath_("./records/"),
     currentAction_(None),
     currentEdit_(0),
@@ -281,12 +279,7 @@ void ICHCInstructionPageFrame::OptionButtonClicked()
         optionButtonToPage_.insert(ui->curveButton, curvePage_);
         ui->settingStackedWidget->addWidget(curvePage_);
     }
-    else if(cutModulePage_ == NULL && optionButton == ui->cutModuleButton)
-    {
-        cutModulePage_ = new ICCutModuleActionPage();
-        optionButtonToPage_.insert(ui->cutModuleButton, cutModulePage_);
-        ui->settingStackedWidget->addWidget(cutModulePage_);
-    }
+
     if(optionButton == ui->conditionsToolButton)
     {
 
@@ -381,9 +374,6 @@ void ICHCInstructionPageFrame::InitSignal()
             SIGNAL(clicked()),
             SLOT(OptionButtonClicked()));
     connect(ui->curveButton,
-            SIGNAL(clicked()),
-            SLOT(OptionButtonClicked()));
-    connect(ui->cutModuleButton,
             SIGNAL(clicked()),
             SLOT(OptionButtonClicked()));
 }
@@ -482,7 +472,6 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
     ICFlagsEditor *flagsEditor = qobject_cast<ICFlagsEditor*> (editor);
     ActionSettingFrame *servoEditor = qobject_cast<ActionSettingFrame*>(editor);
     ICCommentEditor *commentEdit = qobject_cast<ICCommentEditor*>(editor);
-    ICCutModuleActionPage* cMAEditor = qobject_cast<ICCutModuleActionPage*>(editor);
     if(editor == NULL)
     {
         return;
@@ -511,7 +500,7 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
     bool isParallel = false;
     bool isServo = false;
     bool isComment = false;
-    if(flagsEditor != NULL || cMAEditor != NULL)
+    if(flagsEditor != NULL )
     {
         isParallel = true;
     }
@@ -540,7 +529,7 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
             if(isParallel)
             {
                 ICGroupMoldUIItem groupItem;
-                ICTopMoldUIItem topItem = cMAEditor == NULL ? flagsEditor->CreateTopUIItem() :  cMAEditor->CreateTopUIItem();
+                ICTopMoldUIItem topItem = flagsEditor->CreateTopUIItem();
                 groupItem.AddToMoldUIItem(topItem);
                 groupItem.SetStepNum(gIndex);
                 insertedGroupItems.append(groupItem);
@@ -604,7 +593,7 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
             const int stepNum = programList_.at(gIndex).StepNum();
             if(isParallel)
             {
-                topItem = cMAEditor == NULL ? flagsEditor->CreateTopUIItem() :  cMAEditor->CreateTopUIItem();
+                topItem = flagsEditor->CreateTopUIItem();
                 topItem.SetStepNum(stepNum);
                 insertedTopItems.append(topItem);
             }

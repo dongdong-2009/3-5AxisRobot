@@ -8,7 +8,7 @@
 PasswdLevelLabel::PasswdLevelLabel(QWidget * parent)
     : QLabel(parent)
 {
-    passwordDialog_ = new PasswordDialog(this);
+    passwordDialog_ = new PasswordDialog(0);
 //    passwordDialog_->setWindowFlags(Qt::WindowTitleHint | Qt::CustomizeWindowHint);
     passwordDialog_->setFixedSize(386,257);
 

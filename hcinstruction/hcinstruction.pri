@@ -25,14 +25,16 @@ HEADERS += \
     $$PWD/ichcotherpage.h \
     $$PWD/iccommenteditor.h \
     $$PWD/iccurveeditor.h \
-    $$PWD/iccutmoduleactionpage.h \
+    $$PWD/icactionsix.h \
     $$PWD/icguidefixtureeditor.h \
     $$PWD/icsimpleteachpage.h \
-    hcinstruction/icsimpleautoeditor.h
+    $$PWD/icsimpleautoeditor.h
 
 SOURCES += \
     $$PWD/ichcinstructionpageframe.cpp \
     $$PWD/actionsettingframe.cpp \
+    #$$PWD/ichcparametersframe.cpp \
+    #$$PWD/routesettingdialog.cpp \
     $$PWD/ichcinjectionpage.cpp \
     $$PWD/ichcfixturepage.cpp \
     $$PWD/ichcconditionpage.cpp \
@@ -40,6 +42,8 @@ SOURCES += \
     $$PWD/icmacrosubroutine.cpp \
     $$PWD/icinstructparam.cpp \
     $$PWD/ichcprogrammonitorframe.cpp \
+    #$$PWD/ichceditordialog.cpp \
+    #$$PWD/icmacroparameditorframe.cpp \
     $$PWD/icautorunrevise.cpp \
     $$PWD/icinstructioneditorbase.cpp \
     $$PWD/icflagseditor.cpp \
@@ -56,9 +60,9 @@ SOURCES += \
     $$PWD/iccommenteditor.cpp \
     $$PWD/icsimpleteachpage.cpp \
     $$PWD/iccurveeditor.cpp \
-    $$PWD/iccutmoduleactionpage.cpp \
+    $$PWD/icactionsix.cpp \
     $$PWD/icguidefixtureeditor.cpp \
-    hcinstruction/icsimpleautoeditor.cpp
+    $$PWD/icsimpleautoeditor.cpp
 
 FORMS += \
     $$PWD/icautorunrevise.ui \
@@ -72,9 +76,9 @@ FORMS += \
     $$PWD/icinstructmodifydialog.ui \
     $$PWD/icsimpleteachpage.ui \
     $$PWD/iccurveeditor.ui \
-    $$PWD/iccutmoduleactionpage.ui \
+    $$PWD/icactionsix.ui \
     $$PWD/icguidefixtureeditor.ui \
-    hcinstruction/icsimpleautoeditor.ui
+    $$PWD/icsimpleautoeditor.ui
 
 
 

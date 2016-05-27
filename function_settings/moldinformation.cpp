@@ -510,8 +510,16 @@ void MoldInformation::on_deleteToolButton_clicked()
             return;
         }
 
-        selectedItemStringList << ui->informationTableWidget->item(ui->informationTableWidget->currentRow(),0)->text() + ".act" ;
-        selectedItemNumberList << ui->informationTableWidget->currentRow();
+        if(ui->informationTableWidget->currentRow()<0)
+        {
+            return;
+        }
+        else
+        {
+            selectedItemStringList << ui->informationTableWidget->item(ui->informationTableWidget->currentRow(),0)->text() + ".act" ;
+            selectedItemNumberList << ui->informationTableWidget->currentRow();
+        }
+
     }
     if(selectedItemStringList.size() != 0)
     {

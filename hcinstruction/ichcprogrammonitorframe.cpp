@@ -17,7 +17,9 @@
 #include "iccaretipui.h"
 #include "icsimpleautoeditor.h"
 
+
 QMessageBox* checkMessageBox;
+icactionsix *Actions;
 
 ICHCProgramMonitorFrame::ICHCProgramMonitorFrame(QWidget *parent) :
     QFrame(parent),
@@ -31,6 +33,19 @@ ICHCProgramMonitorFrame::ICHCProgramMonitorFrame(QWidget *parent) :
     switchOff_(":/resource/switch_off.png")
 {
     ui->setupUi(this);
+
+    QPushButton *ActionsButton = new QPushButton(0);
+    ActionsButton->setIcon(QPixmap(":/resource/actsix.png"));
+#ifdef HC_SK_8
+    ActionsButton->setGeometry(QRect(655,18,35,35));
+#else
+    ActionsButton->setGeometry(QRect(455,18,35,35));
+#endif
+    ActionsButton->setWindowFlags(Qt::WindowStaysOnTopHint | Qt::Tool);
+    ActionsButton->setFocusPolicy(Qt::NoFocus);
+    ActionsButton->show();
+
+    connect(ActionsButton,SIGNAL(clicked()),this,SLOT(dialogfunction()));
 
     autoRunRevise_ = new ICAutoRunRevise(this);
     simpleAutoEditor_ = new ICSimpleAutoEditor(this);
@@ -71,6 +86,9 @@ ICHCProgramMonitorFrame::ICHCProgramMonitorFrame(QWidget *parent) :
     LevelChanged(ICProgramHeadFrame::Instance()->CurrentLevel());
     checkMessageBox = new ICMessageBox(this);
     ui->pauseButton->hide();
+    Actions = new icactionsix;
+    //Actions->setWindowFlags(Qt::FramelessWindowHint);
+
 }
 
 ICHCProgramMonitorFrame::~ICHCProgramMonitorFrame()
@@ -78,6 +96,7 @@ ICHCProgramMonitorFrame::~ICHCProgramMonitorFrame()
     delete autoRunRevise_;
     delete simpleAutoEditor_;
     delete checkMessageBox;
+    delete Actions;
     delete ui;
 }
 
@@ -610,16 +629,16 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
          *调整对话框中标题栏文字显示
         */
         QString str = topItem->ToStringList().join("\n");
-        if(str.size() > 37)
-        {
-            str.insert(38,"\n");
-            str.insert(39,"\t");
-        }
-        if(str.size() > 65)
-        {
-            str.insert(66,"\n");
-            str.insert(67,"\t");
-        }
+//        if(str.size() > 37)
+//        {
+//            str.insert(38,"\n");
+//            str.insert(39,"\t");
+//        }
+//        if(str.size() > 65)
+//        {
+//            str.insert(66,"\n");
+//            str.insert(67,"\t");
+//        }
 
         /*****/
         bool isM = autoRunRevise_->ShowModifyItem(item, &ret, str);
@@ -982,4 +1001,9 @@ void ICHCProgramMonitorFrame::CareCheck()
         ICCareTipUI careTip;
         careTip.exec();
     }
+}
+
+void ICHCProgramMonitorFrame::dialogfunction()
+{
+    Actions->show();
 }

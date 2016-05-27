@@ -168,6 +168,7 @@ void ICHCSystemSettingsFrame::languageBoxChange()
     }
 }
 
+
 void ICHCSystemSettingsFrame::changeEvent(QEvent *e)
 {
     QFrame::changeEvent(e);
@@ -1056,6 +1057,18 @@ void ICHCSystemSettingsFrame::on_memory_fix_clicked()
     {
         ::system("e2fsck -p /dev/mmcblkop2");
         ::system("root");
+    }
+}
+
+void ICHCSystemSettingsFrame::on_machineAdminBox_toggled(bool checked)
+{
+    if(ui->machineAdminBox->isChecked())
+    {
+        ui->oldPwdEdit->setEnabled(false);
+    }
+    else
+    {
+        ui->oldPwdEdit->setEnabled(true);
     }
 }
 

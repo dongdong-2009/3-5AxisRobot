@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1192</width>
-    <height>460</height>
+    <height>466</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -27,6 +27,12 @@
      </property>
      <item>
       <widget class="QPushButton" name="axisX1ToolButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
        <property name="styleSheet">
         <string notr="true">width:60px ;
 height:30px;</string>
@@ -44,6 +50,12 @@ height:30px;</string>
      </item>
      <item>
       <widget class="QPushButton" name="axisY1ToolButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
        <property name="styleSheet">
         <string notr="true">width:60px ;
 height:30px;</string>
@@ -61,6 +73,12 @@ height:30px;</string>
      </item>
      <item>
       <widget class="QPushButton" name="axisZToolButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
        <property name="styleSheet">
         <string notr="true">width:60px ;
 height:30px;</string>
@@ -78,6 +96,12 @@ height:30px;</string>
      </item>
      <item>
       <widget class="QPushButton" name="axisX2ToolButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
        <property name="styleSheet">
         <string notr="true">width:60px ;
 height:30px;</string>
@@ -95,6 +119,12 @@ height:30px;</string>
      </item>
      <item>
       <widget class="QPushButton" name="axisY2ToolButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
        <property name="styleSheet">
         <string notr="true">width:60px ;
 height:30px;</string>
@@ -112,6 +142,12 @@ height:30px;</string>
      </item>
      <item>
       <widget class="QPushButton" name="axisAToolButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
        <property name="styleSheet">
         <string notr="true">width:60px ;
 height:30px;</string>
@@ -129,6 +165,12 @@ height:30px;</string>
      </item>
      <item>
       <widget class="QPushButton" name="axisBToolButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
        <property name="styleSheet">
         <string notr="true">width:60px ;
 height:30px;</string>
@@ -143,6 +185,12 @@ height:30px;</string>
      </item>
      <item>
       <widget class="QPushButton" name="axisCToolButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
        <property name="styleSheet">
         <string notr="true">width:60px ;
 height:30px;</string>
@@ -160,6 +208,12 @@ height:30px;</string>
      </item>
      <item>
       <widget class="QPushButton" name="machineFigureButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
        <property name="styleSheet">
         <string notr="true">width:60px ;
 height:30px;</string>

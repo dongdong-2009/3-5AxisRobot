@@ -397,6 +397,7 @@ void ICSimpleAutoEditor::SetCutOutletEnabled(bool en)
 
 void ICSimpleAutoEditor::on_cancelButton_clicked()
 {
+    modifiedDelays.clear();
     this->reject();
 }
 

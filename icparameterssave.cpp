@@ -100,7 +100,8 @@ void ICParametersSave::SetLanguage(QLocale::Language language, bool isSync)
     case QLocale::Spanish:
         {
             translator_->load("Multi-axisManipulatorSystem_esp");
-            qApp->removeTranslator(sysTranslator_);
+            sysTranslator_->load("qt_es.qm");
+            qApp->installTranslator(sysTranslator_);
         }
         break;
     default:

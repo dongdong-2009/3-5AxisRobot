@@ -99,6 +99,8 @@ private slots:
     void OnConfigChanged(bool b);
     void on_memory_fix_clicked();
 
+    void on_machineAdminBox_toggled(bool checked);
+
 private:
     QMap<QObject*, int> editorToConfigIDs_;
 };

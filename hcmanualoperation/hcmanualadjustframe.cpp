@@ -74,6 +74,7 @@ void HCManualAdjustFrame::changeEvent(QEvent *e)
 
 void HCManualAdjustFrame::ChangeButtonColor()
 {
+    ui->AdjustForbidButton->setText(tr("Adjust Forbid"));
     ui->AdjustForbidButton->setStyleSheet("color:red;");
 }
 
@@ -231,5 +232,6 @@ void HCManualAdjustFrame::StatusRefreshed()
 
 void HCManualAdjustFrame::on_AdjustForbidButton_clicked()
 {
+    ui->AdjustForbidButton->setText(tr("Adjust En"));
     ui->AdjustForbidButton->setStyleSheet("color:green;");
 }

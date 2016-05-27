@@ -146,7 +146,6 @@
 238:A is no servo
 239:B is no servo
 240:C is no servo
-200:Connect to Host fail
 300:X param error
 301:Y param error
 302:Z param error
@@ -181,6 +180,7 @@
 331:Position parameters is fail
 332:Output is changed, please reboot
 333:Axis is changed, please reboot
+334:Parameter check and error
 360:X2 axis parameters check fail
 361:Y2 axis parameters check fail
 362:A axis parameters check fail
@@ -211,6 +211,7 @@
 605:Y raised by Up-lmt off
 606:B descend by Up-lmt On
 607:B raised by Up-lmt off
+608:Y raised by Up-lmt off
 700:Time is over while wating for X043
 701:Time is over while wating for X044
 702:Time is over while wating for fixture-1
@@ -250,6 +251,10 @@
 1024:The position is horizontal when traving
 1025:The position is wrong when down inside
 1027:Close mold is not finish
+1028:Fault clearing
+1029:No automatic signal
+1030:Horizontal position 2 no vertical
+1031:The position is horizontal 2 when traving
 1038：The Z axis is not in the inner security zone when bad product
 1039：The Z axis setting is not in the inner security zone when bad product
 1040:The action of forward is not Z axis
@@ -273,7 +278,6 @@
 1107:Sub descen limit is off after sub arm has descened
 1108:Mid mold signal is off when main arm descen
 1109:Mid mold signal is off when main sub descen
-1194:Y2 data
 1120:Can not check the inner and outter security zone when Main Arm ascend
 1121:Can not check the inner and outter security zone when Sub Arm ascend
 1122:It's too fast when Main Arm ascend
@@ -355,3 +359,4 @@
 1401:Currnt point and waiting point are not both inside
 1402:Currnt point and waiting point are not both outside
 1403:Can not check the Y2 up limit
+

@@ -4,6 +4,8 @@
 #include "icmessagebox.h"
 #include "icvirtualhost.h"
 #include "icparameterssave.h"
+#include "mainframe.h"
+#include <QKeyEvent>
 
 ICHostComparePage::ICHostComparePage(QWidget *parent) :
     QDialog(parent),
@@ -126,4 +128,10 @@ void ICHostComparePage::on_hmiBtn_clicked()
         }
     }
     accepted();
+}
+
+void ICHostComparePage::keyPressEvent(QKeyEvent *e)
+{
+    QKeyEvent* ke = new QKeyEvent(*e);
+    qApp->postEvent(icMainFrame, ke);
 }
