@@ -82,6 +82,8 @@ ICHCInstructionPageFrame::ICHCInstructionPageFrame(QWidget *parent) :
 #ifdef Compatible6410
     ui->tryButton->hide();
 #endif
+//    ui->stackedWidget->setCurrentIndex(1);
+//    ui->flagsButton->hide();
 
 //    ui->conditionsToolButton->hide();
 }
@@ -94,6 +96,7 @@ ICHCInstructionPageFrame::~ICHCInstructionPageFrame()
 
 void ICHCInstructionPageFrame::showEvent(QShowEvent *e)
 {
+    ui->stackedWidget->setCurrentIndex(ICParametersSave::Instance()->ProgramMode() == 0 ? 1 : 0);
     ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
     if(host->AxisDefine(ICVirtualHost::ICAxis_AxisA) == ICVirtualHost::ICAxisDefine_None)
     {
@@ -107,7 +110,7 @@ void ICHCInstructionPageFrame::showEvent(QShowEvent *e)
     }
     if(ICParametersSave::Instance()->IsExtentFunctionUsed())
     {
-        ui->flagsButton->show();
+        ui->flagsButton->hide();
         ui->conditionsToolButton->show();
     }
     else
@@ -276,6 +279,7 @@ void ICHCInstructionPageFrame::OptionButtonClicked()
         optionButtonToPage_.insert(ui->curveButton, curvePage_);
         ui->settingStackedWidget->addWidget(curvePage_);
     }
+
     if(optionButton == ui->conditionsToolButton)
     {
 
@@ -434,6 +438,10 @@ void ICHCInstructionPageFrame::UpdateUIProgramList_()
                 {
                     ui->moldContentListWidget->item(j + index)->setBackgroundColor("red");
                 }
+                else if(tmp->Action() == ICMold::ACTCOMMENT)
+                {
+                    ui->moldContentListWidget->item(j + index)->setBackgroundColor("magenta");
+                }
                 else
                 {
                     ui->moldContentListWidget->item(j + index)->setBackgroundColor(color);
@@ -492,7 +500,7 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
     bool isParallel = false;
     bool isServo = false;
     bool isComment = false;
-    if(flagsEditor != NULL)
+    if(flagsEditor != NULL )
     {
         isParallel = true;
     }

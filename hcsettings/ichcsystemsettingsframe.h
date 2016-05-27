@@ -85,6 +85,7 @@ private slots:
     void on_verifySupperButton_clicked();
 
     void on_factoryCode_textChanged(const QString &arg1);
+    void OnProgramModeChanged(int id);
 
 private:
     bool CheckRestoreSystemFiles_();

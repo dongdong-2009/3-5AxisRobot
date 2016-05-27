@@ -235,6 +235,13 @@ bool MoldInformation::CopySourceFile(const QString & originFileName, const QStri
     targetConfigFilePath.chop(3);
     targetConfigFilePath += "fnc";
 
+    QString originSTFilePath = originFilePathName;
+    originSTFilePath.chop(3);
+    originSTFilePath += "st";
+    QString targetSTFilePath = targetFilePathName;
+    targetSTFilePath.chop(3);
+    targetSTFilePath += "st";
+
     QString originSubFilePath = originFilePathName;
     originSubFilePath.chop(3);
     originSubFilePath += "sub";
@@ -244,21 +251,25 @@ bool MoldInformation::CopySourceFile(const QString & originFileName, const QStri
     //    QFile::copy(originConfigFilePath, targetConfigFilePath);
     if(QFile::copy(originFilePathName, targetFilePathName))
     {
-        if(QFile::copy(originConfigFilePath, targetConfigFilePath))
+        if(QFile::copy(originSTFilePath, targetSTFilePath))
         {
-            bool isOk = true;
-            for(int i = 0; i != 8; ++i)
+            if(QFile::copy(originConfigFilePath, targetConfigFilePath))
             {
-                isOk = isOk && QFile::copy(originSubFilePath+ QString::number(i), targetSubFilePath + QString::number(i));
-            }
-            system("sync");
-            if(isOk) return true;
-            system(QString("rm %1*").arg(targetSubFilePath).toLatin1());
-//            ICMessageBox::ICWarning(this, tr("Success"),
-//                                     tr("Copy file success!"),
-//                                     QMessageBox::Ok);
+                bool isOk = true;
+                for(int i = 0; i != 8; ++i)
+                {
+                    isOk = isOk && QFile::copy(originSubFilePath+ QString::number(i), targetSubFilePath + QString::number(i));
+                }
+                system("sync");
+                if(isOk) return true;
+                system(QString("rm %1*").arg(targetSubFilePath).toLatin1());
+                //            ICMessageBox::ICWarning(this, tr("Success"),
+                //                                     tr("Copy file success!"),
+                //                                     QMessageBox::Ok);
 
-            QFile::remove(targetConfigFilePath);
+                QFile::remove(targetConfigFilePath);
+            }
+            QFile::remove(targetSTFilePath);
         }
         QFile::remove(targetFilePathName);
         system("sync");
@@ -291,6 +302,7 @@ bool MoldInformation::DeleteSourceFile(const QString & fileName)
         QFile::remove(configFile);
         configFile.chop(3);
         system(QString("rm %1sub*").arg(configFile).toLatin1());
+        system(QString("rm %1st").arg(configFile).toLatin1());
         //        QFile::remove(ICSettingConfig::ConfigPath() + fileName);
         //        ICMessageBox::ICWarning(this, tr("Success"),
         //                                 tr("File deleted success!"),
@@ -498,8 +510,16 @@ void MoldInformation::on_deleteToolButton_clicked()
             return;
         }
 
-        selectedItemStringList << ui->informationTableWidget->item(ui->informationTableWidget->currentRow(),0)->text() + ".act" ;
-        selectedItemNumberList << ui->informationTableWidget->currentRow();
+        if(ui->informationTableWidget->currentRow()<0)
+        {
+            return;
+        }
+        else
+        {
+            selectedItemStringList << ui->informationTableWidget->item(ui->informationTableWidget->currentRow(),0)->text() + ".act" ;
+            selectedItemNumberList << ui->informationTableWidget->currentRow();
+        }
+
     }
     if(selectedItemStringList.size() != 0)
     {
@@ -658,6 +678,7 @@ void MoldInformation::on_importToolButton_clicked()
             selectedImportItemName_.append(item_text + ".sub5");
             selectedImportItemName_.append(item_text + ".sub6");
             selectedImportItemName_.append(item_text + ".sub7");
+            selectedImportItemName_.append(item_text + ".st");
             flagItem = FALSE ;
         }
     }
@@ -696,6 +717,7 @@ void MoldInformation::on_importToolButton_clicked()
         selectedImportItemName_.append(str + ".sub5");
         selectedImportItemName_.append(str + ".sub6");
         selectedImportItemName_.append(str + ".sub7");
+        selectedImportItemName_.append(str += ".st");
 
         flagItem_ = FALSE;
     }
@@ -849,6 +871,7 @@ void MoldInformation::on_exportToolButton_clicked()
             selectedExportItemName_.append(item_text + ".sub5");
             selectedExportItemName_.append(item_text + ".sub6");
             selectedExportItemName_.append(item_text + ".sub7");
+            selectedExportItemName_.append(item_text + ".st");
             flagItem = FALSE ;
         }
     }
@@ -877,6 +900,7 @@ void MoldInformation::on_exportToolButton_clicked()
         selectedExportItemName_.append(str + ".sub5");
         selectedExportItemName_.append(str + ".sub6");
         selectedExportItemName_.append(str + ".sub7");
+        selectedExportItemName_.append(str + ".st");
         flagItem_ = FALSE;
     }
     if(selectedExportItemName_.size() == 0)

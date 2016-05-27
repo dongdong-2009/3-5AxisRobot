@@ -135,6 +135,7 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
         ui->label_2->show();
         ui->label_4->show();
         ui->maximumDisplacementLineEdit->show();
+        minSecValidator_->setBottom(1);
     }
     else if(currentAxis_ == ICVirtualHost::ICAxis_AxisX2)
     {

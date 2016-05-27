@@ -15,6 +15,7 @@
 #include "icparameterssave.h"
 #include "icmold.h"
 #include "iccaretipui.h"
+#include "icsimpleautoeditor.h"
 
 
 QMessageBox* checkMessageBox;
@@ -35,7 +36,11 @@ ICHCProgramMonitorFrame::ICHCProgramMonitorFrame(QWidget *parent) :
 
     QPushButton *ActionsButton = new QPushButton(0);
     ActionsButton->setIcon(QPixmap(":/resource/actsix.png"));
-    ActionsButton->setGeometry(QRect(665,18,35,35));
+#ifdef HC_SK_8
+    ActionsButton->setGeometry(QRect(655,18,35,35));
+#else
+    ActionsButton->setGeometry(QRect(455,18,35,35));
+#endif
     ActionsButton->setWindowFlags(Qt::WindowStaysOnTopHint | Qt::Tool);
     ActionsButton->setFocusPolicy(Qt::NoFocus);
     ActionsButton->show();
@@ -43,6 +48,7 @@ ICHCProgramMonitorFrame::ICHCProgramMonitorFrame(QWidget *parent) :
     connect(ActionsButton,SIGNAL(clicked()),this,SLOT(dialogfunction()));
 
     autoRunRevise_ = new ICAutoRunRevise(this);
+    simpleAutoEditor_ = new ICSimpleAutoEditor(this);
     InitSignal();
     //    UpdateHostParam();
     //    ICInstructParam::Instance()->UpdateHostParam();
@@ -88,6 +94,7 @@ ICHCProgramMonitorFrame::ICHCProgramMonitorFrame(QWidget *parent) :
 ICHCProgramMonitorFrame::~ICHCProgramMonitorFrame()
 {
     delete autoRunRevise_;
+    delete simpleAutoEditor_;
     delete checkMessageBox;
     delete Actions;
     delete ui;
@@ -524,6 +531,60 @@ void ICHCProgramMonitorFrame::InitSignal()
 
 void ICHCProgramMonitorFrame::on_editToolButton_clicked()
 {
+#ifdef Q_WS_QWS
+    if(ICVirtualHost::GlobalVirtualHost()->CurrentStatus() != ICVirtualHost::Auto)
+    {
+        return;
+    }
+#endif
+
+    int gIndex;
+    int tIndex;
+    int sIndex;
+    if(ICParametersSave::Instance()->ProgramMode() == 0)
+    {
+        simpleAutoEditor_->exec();
+        QMap<int, int> modifiedDelays = simpleAutoEditor_->GetModifiedDelays();
+        QMap<int, int>::const_iterator p = modifiedDelays.begin();
+        ICCommandProcessor* processor = ICCommandProcessor::Instance();
+        ICAutoAdjustCommand command;
+        ICMoldItem toSendItem;
+        qDebug()<<modifiedDelays;
+//        QString message;
+
+        while(p != modifiedDelays.end())
+        {
+//            message += QString("%1, %2 |").arg(p.key()).arg(p.value());
+            FindIndex_(p.key(), gIndex, tIndex, sIndex);
+            ICTopMoldUIItem * topItem = &programList_[gIndex].at(tIndex);
+            topItem->BaseItem()->SetDVal(p.value());
+            topItem->BaseItem()->ReSum();
+            toSendItem = *topItem->BaseItem();
+            toSendItem.SetSeq(ICMold::CurrentMold()->ToHostSeq(toSendItem.Seq()));
+            toSendItem.SetNum(ICMold::CurrentMold()->ToHostNum(toSendItem.Seq()));
+            toSendItem.ReSum();
+            command.SetSlave(processor->SlaveID());
+            command.SetSequence(toSendItem.Seq());
+            command.SetDelayTime(toSendItem.DVal());
+            command.SetSpeed(toSendItem.SVal());
+            command.SetDPos(0);
+            command.SetGMValue(toSendItem.GMVal());
+            command.SetCheckSum(toSendItem.Sum());
+            processor->ExecuteCommand(command);
+            ++p;
+        }
+        if(!modifiedDelays.isEmpty())
+        {
+            ICMold::CurrentMold()->SetMoldContent(ICMold::UIItemToMoldItem(programList_));
+            ICMold::CurrentMold()->SaveSimpleTeachFile();
+            ICMold::CurrentMold()->SaveMoldFile();
+            UpdateHostParam();
+//            UpdateUIProgramList_();
+        }
+
+        return;
+    }
+
     if(currentMoldNum_ != 8)
     {
         return;
@@ -539,9 +600,7 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
         return;
     }
 #endif
-    int gIndex;
-    int tIndex;
-    int sIndex;
+
     qDebug("Before Find index");
     FindIndex_(selectedRow, gIndex, tIndex, sIndex);
     qDebug("End Find index");
@@ -765,6 +824,10 @@ void ICHCProgramMonitorFrame::UpdateUIProgramList_()
                 else if(tmp->Action() == ICInstructParam::ACT_WaitMoldOpened)
                 {
                     ui->moldContentListWidget->item(j + index)->setBackgroundColor("red");
+                }
+                else if(tmp->Action() == ICMold::ACTCOMMENT)
+                {
+                    ui->moldContentListWidget->item(j + index)->setBackgroundColor("magenta");
                 }
                 else
                 {

@@ -13,6 +13,7 @@ namespace Ui {
 }
 
 class ICAutoRunRevise;
+class ICSimpleAutoEditor;
 
 class ICHCProgramMonitorFrame : public QFrame
 {
@@ -64,6 +65,7 @@ private slots:
 private:
     void InitSignal();
     void UpdateUIProgramList_();
+
     void FindIndex_(int currentIndex, int& groupItemIndex, int& topItemIndex, int& subItemIndex);
 
 //    void AddCommandStr(const QString & commandStr);
@@ -78,6 +80,7 @@ private:
     QList<ICGroupMoldUIItem> programList_;
     QList<ICGroupMoldUIItem> programListBackup_;
     ICAutoRunRevise* autoRunRevise_;
+    ICSimpleAutoEditor* simpleAutoEditor_;
     bool isModify_;
     uint oldTime_;
     uint newTime_;
@@ -101,6 +104,7 @@ private:
     int fixtureCount_[6];
     QTimer refreshTimer_;
     QMap<int, int> flagToSetp;
+
 
 //    QMap<ICMoldItem*, ICMoldItem> modifyMap_;
 };

@@ -6,6 +6,8 @@
 
 class ICLineEditWrapper;
 
+class QIntValidator;
+
 namespace Ui {
 class ICMachineFigure;
 }
@@ -38,6 +40,7 @@ private slots:
     void OnConfigChanged(bool b);
 private:
     QMap<QObject*, int> editorToConfigIDs_;
+    QIntValidator * validator;
 };
 
 #endif // ICMACHINEFIGURE_H

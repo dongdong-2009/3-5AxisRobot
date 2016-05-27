@@ -93,6 +93,15 @@ ICProgramGuidePage::ICProgramGuidePage(QWidget *parent) :
         posEdits_[i]->SetDecimalPlaces(POS_DECIMAL);
         posEdits_[i]->setValidator(&posValidators_[i]);
     }
+    ui->gx1Back->SetDecimalPlaces(POS_DECIMAL);
+    ui->gx2Back->SetDecimalPlaces(POS_DECIMAL);
+    ui->outX1->SetDecimalPlaces(POS_DECIMAL);
+    ui->outX2->SetDecimalPlaces(POS_DECIMAL);
+    ui->gx1Back->setValidator(&posValidators_[0]);
+    ui->gx2Back->setValidator(&posValidators_[3]);
+    ui->outX1->setValidator(&posValidators_[0]);
+    ui->outX2->setValidator(&posValidators_[3]);
+
     QList<int> temp;
     temp<<ICMold::ACTMAINFORWARD<<ICMold::ACTMAINBACKWARD;
     limitActionMap_.insert(axis_ + 0, temp);
@@ -120,12 +129,18 @@ ICProgramGuidePage::ICProgramGuidePage(QWidget *parent) :
     temp.clear();
 
     fixtureOnAction_<<ICMold::ACTCLIP1ON<<ICMold::ACTCLIP2ON<<ICMold::ACTCLIP3ON
-                   <<ICMold::ACTCLIP4ON<<ICMold::ACTCLIP5ON<<ICMold::ACTCLIP6ON;
+                   <<ICMold::ACTCLIP4ON<<ICMold::ACTCLIP5ON<<ICMold::ACTCLIP6ON
+                  <<ICMold::ACT_AUX5<<ICMold::ACT_AUX6<<ICMold::ACT_AUX1
+                 <<ICMold::ACT_AUX2<<ICMold::ACT_AUX3<<ICMold::ACT_AUX4;
     fixtureOffAction_<<ICMold::ACTCLIP1OFF<<ICMold::ACTCLIP2OFF<<ICMold::ACTCLIP3OFF
-                    <<ICMold::ACTCLIP4OFF<<ICMold::ACTCLIP5OFF<<ICMold::ACTCLIP6OFF;
+                    <<ICMold::ACTCLIP4OFF<<ICMold::ACTCLIP5OFF<<ICMold::ACTCLIP6OFF
+                   <<(ICMold::ACT_AUX5 + 1000)<<(ICMold::ACT_AUX6 + 1000)<<(ICMold::ACT_AUX1 + 1000)
+                  <<(ICMold::ACT_AUX2 + 1000)<<(ICMold::ACT_AUX3 + 1000)<<(ICMold::ACT_AUX4 + 1000);
 
     on_usedMainArmBox_toggled(ui->usedMainArmBox->isChecked());
     on_usedSubArmBox_toggled(ui->usedSubArmBox->isChecked());
+    if(ui->mainArmOUtletBox->isChecked())
+        on_mainArmOUtletBox_toggled(ui->mainArmOUtletBox->isChecked());
     HideWidgets_(axisWidgets_[8]);
     ui->outRunningHorizonBox->hide();
     ui->inRunningHorizonBox->hide();
@@ -133,10 +148,16 @@ ICProgramGuidePage::ICProgramGuidePage(QWidget *parent) :
     validator = new QIntValidator(1, 4, this);
     ui->stackGroup->setValidator(validator);
 
+    fixtrueEditor_ = new ICGuideFixtureEditor(this);
 
-//#ifdef Q_WS_X11
-//    UpdateAxisDefine_();
-//#endif
+//    ui->productFixtureBox->hide();
+//    ui->productCheck->hide();
+//    ui->outletFixtureBox->hide();
+//    ui->outletCheck->hide();
+
+    //#ifdef Q_WS_X11
+    //    UpdateAxisDefine_();
+    //#endif
 }
 
 ICProgramGuidePage::~ICProgramGuidePage()
@@ -192,6 +213,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
     QList<ICMoldItem> ret;
     bool isMainArmUsed = ui->usedMainArmBox->isChecked();
     bool isSubArmUsed = ui->usedSubArmBox->isChecked();
+    bool isMOutletUsed = ui->mainArmOUtletBox->isChecked();
     int stepNum = 0;
     item.SetSVal(80);
     item.SetDVal(0);
@@ -228,7 +250,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
         if(!isMainArmUsed && !isSubArmUsed)
         {
         }
-        else
+        else if(axis_[C_AXIS].standbyLimit == 0)
         {
             item.SetNum(stepNum++);
             item.SetSVal(0);
@@ -240,7 +262,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
     item.SetDVal(0);
     if(!isMainArmUsed && !isSubArmUsed)
     {
-  /***BUG#182**主副臂都不选择时，应出现模组结束（原来没有）*/
+        /***BUG#182**主副臂都不选择时，应出现模组结束（原来没有）*/
         item.SetNum(stepNum++);
         item.SetSVal(0);
         item.SetDVal(0);
@@ -275,6 +297,14 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             ret.append(item);
         }
     }
+    //    else if(ui->mainArmOUtletBox->isChecked())
+    //    {
+    //        if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, GET_PRODUCT_SETTING))
+    //        {
+    //            item.SetAction(ICMold::GY);
+    //            ret.append(item);
+    //        }
+    //    }
 
     /*Ejector on*/
     item.SetNum(stepNum++);
@@ -305,15 +335,27 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
     item.SetNum(stepNum++);
     if(isMainArmUsed)
     {
-        item.SetClip(fixtureOnAction_.at(ui->productFixtureBox->currentIndex()));
-        ret.append(item);
-    }
-    if(isSubArmUsed)
-    {
-        item.SetClip(fixtureOnAction_.at(ui->outletFixtureBox->currentIndex()));
-        ret.append(item);
-    }
+        item.SetIFVal(true);
+        item.SetActualMoldCount(0);
+        for(int i = 0; i < productfixturesConfigs.size(); ++i)
+        {
+            item.SetClip(fixtureOnAction_.at(productfixturesConfigs.at(i).first));
+            ret.append(item);
+        }
+//        item.SetClip(fixtureOnAction_.at(ui->productFixtureBox->currentIndex()));
 
+    }
+    if(isSubArmUsed || isMOutletUsed)
+    {
+        item.SetIFVal(true);
+        item.SetActualMoldCount(0);
+        for(int i = 0; i < outletfixturesConfigs.size(); ++i)
+        {
+            item.SetClip(fixtureOnAction_.at(outletfixturesConfigs.at(i).first));
+            ret.append(item);
+        }
+//        item.SetClip(fixtureOnAction_.at(ui->outletFixtureBox->currentIndex()));
+    }
 
     /*X axis backward*/
     item.SetDVal(0);
@@ -321,33 +363,67 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
     item.SetNum(stepNum++);
     if(isMainArmUsed)
     {
-        if(SetAxisICMoldItem_(&item, axis_ + X1_AXIS, STANDBY_SETTING))
+        if(!ui->optionalGroup->isChecked())
         {
-            ret.append(item);
+            if(SetAxisICMoldItem_(&item, axis_ + X1_AXIS, STANDBY_SETTING))
+            {
+                ret.append(item);
+            }
+        }
+        else
+        {
+            if(SetAxisICMoldItem_(&item, axis_ + X1_AXIS, STANDBY_SETTING))
+            {
+                item.SetActualPos(ui->gx1Back->TransThisTextToThisInt());
+                ret.append(item);
+            }
         }
     }
     if(isSubArmUsed)
     {
-        if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, STANDBY_SETTING))
+        if(!ui->optionalGroup->isChecked())
         {
-            ret.append(item);
+            if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, STANDBY_SETTING))
+            {
+                ret.append(item);
+            }
+        }
+        else
+        {
+            if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, STANDBY_SETTING))
+            {
+                item.SetActualPos(ui->gx2Back->TransThisTextToThisInt());
+                ret.append(item);
+            }
         }
     }
 
     /*fixture check*/
     item.SetAction(ICMold::ACT_Cut);
     item.SetIFVal(1);
-    if(isMainArmUsed && ui->productCheck->isChecked())
+    if(isMainArmUsed)
     {
-        item.SetNum(stepNum++);
-        item.SetSVal(ui->productFixtureBox->currentIndex());
-        ret.append(item);
+        for(int i = 0; i < productfixturesConfigs.size(); ++i)
+        {
+            if(productfixturesConfigs.at(i).second)
+            {
+                item.SetNum(stepNum++);
+                item.SetSVal(productfixturesConfigs.at(i).first);
+                ret.append(item);
+            }
+        }
     }
-    if(isSubArmUsed && ui->outletCheck->isChecked())
+    if((isSubArmUsed || isMOutletUsed))
     {
-        item.SetNum(stepNum++);
-        item.SetSVal(ui->outletFixtureBox->currentIndex());
-        ret.append(item);
+        for(int i = 0; i < outletfixturesConfigs.size(); ++i)
+        {
+            if(outletfixturesConfigs.at(i).second)
+            {
+                item.SetNum(stepNum++);
+                item.SetSVal(outletfixturesConfigs.at(i).first);
+                ret.append(item);
+            }
+        }
     }
 
     /*go up*/
@@ -358,6 +434,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
     {
         if(SetAxisICMoldItem_(&item, axis_ + Y1_AXIS, STANDBY_SETTING))
         {
+            item.SetActualPos(0);
             ret.append(item);
         }
     }
@@ -365,7 +442,26 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
     {
         if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, STANDBY_SETTING))
         {
+            item.SetActualPos(0);
             ret.append(item);
+        }
+    }
+
+    if(ui->optionalGroup->isChecked())
+    {
+        if(isSubArmUsed && isMainArmUsed)
+        {
+            item.SetNum(stepNum++);
+            if(SetAxisICMoldItem_(&item, axis_ + X1_AXIS, STANDBY_SETTING))
+            {
+                item.SetActualPos(ui->outX1->TransThisTextToThisInt());
+                ret.append(item);
+            }
+            if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, STANDBY_SETTING))
+            {
+                item.SetActualPos(ui->outX2->TransThisTextToThisInt());
+                ret.append(item);
+            }
         }
     }
 
@@ -391,12 +487,12 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
     item.SetDVal(10);
     ret.append(item);
 
-    item.SetNum(stepNum++);
+    item.SetNum(stepNum);
     item.SetAction(ICMold::GZ);
     item.SetSVal(80);
     item.SetDVal(0);
 
-    if(isMainArmUsed && isSubArmUsed)
+    if(isMainArmUsed && (isSubArmUsed || isMOutletUsed))
     {
         if(axis_[Z_AXIS].releaseProductPos < axis_[Z_AXIS].releaseOutletPos)
         {
@@ -406,7 +502,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             /******************************************/
             if(!ui->cBoxHorizontal->isHidden() && !ui->cBoxVertical->isHidden())
             {
-                item.SetNum(stepNum++);
+                item.SetNum(stepNum);
                 item.SetSVal(0);
                 if(axis_[C_AXIS].releaseProductLimit == 0)
                     item.SetAction(ICMold::ACTPOSEHORI);
@@ -443,48 +539,121 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             item.SetNum(stepNum++);
             item.SetSVal(0);
             item.SetDVal(10);
-            item.SetClip(fixtureOffAction_.at(ui->productFixtureBox->currentIndex()));
-            ret.append(item);
+//            item.SetClip(fixtureOffAction_.at(ui->productFixtureBox->currentIndex()));
+            int clip;
+            for(int i = 0; i < productfixturesConfigs.size(); ++i)
+            {
+                clip = fixtureOffAction_.at(productfixturesConfigs.at(i).first);
+                item.SetClip(clip);
+                item.SetActualMoldCount(0);
+                if(clip >= 1000)
+                {
+                    item.SetClip(clip - 1000);
+                    item.SetIFVal(false);
+                }
+                ret.append(item);
+            }
+//            ret.append(item);
 
             /*Y1, back to standby*/
             item.SetNum(stepNum++);
             item.SetSVal(80);
             item.SetDVal(0);
             if(SetAxisICMoldItem_(&item, axis_ + Y1_AXIS, STANDBY_SETTING))
+            {
+                item.SetActualPos(0);
                 ret.append(item);
+            }
 
             /*to release outlet pos*/
             item.SetNum(stepNum++);
-            if(SetAxisICMoldItem_(&item, axis_ + X1_AXIS, STANDBY_SETTING))
-                ret.append(item);
+            if(isMOutletUsed)
+            {
+                if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, RELEASE_OUTLET_SETTING))
+                {
+                    item.SetAction(ICMold::GX);
+                    ret.append(item);
+                }
+            }
+            else
+            {
+                if(SetAxisICMoldItem_(&item, axis_ + X1_AXIS, STANDBY_SETTING))
+                    ret.append(item);
+            }
             if(SetAxisICMoldItem_(&item, axis_ + Z_AXIS, RELEASE_OUTLET_SETTING))
                 ret.append(item);
-            if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, RELEASE_OUTLET_SETTING))
-                ret.append(item);
-            item.SetNum(stepNum++);
-            if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, RELEASE_OUTLET_SETTING))
-                ret.append(item);
+            if(isSubArmUsed)
+            {
+                if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, RELEASE_OUTLET_SETTING))
+                    ret.append(item);
+                item.SetNum(stepNum++);
+                if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, RELEASE_OUTLET_SETTING))
+                    ret.append(item);
+            }
+            else if(isMOutletUsed)
+            {
+                item.SetNum(stepNum++);
+                if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, RELEASE_OUTLET_SETTING))
+                {
+                    item.SetAction(ICMold::GY);
+                    ret.append(item);
+                }
+            }
 
 
             /*release outlet*/
             item.SetNum(stepNum++);
             item.SetSVal(0);
             item.SetDVal(10);
-            item.SetClip(fixtureOffAction_.at(ui->outletFixtureBox->currentIndex()));
-            ret.append(item);
+//            item.SetClip(fixtureOffAction_.at(ui->outletFixtureBox->currentIndex()));
+//            ret.append(item);
+            for(int i = 0; i < outletfixturesConfigs.size(); ++i)
+            {
+                clip = fixtureOffAction_.at(outletfixturesConfigs.at(i).first);
+                item.SetClip(clip);
+                item.SetActualMoldCount(0);
+                if(clip >= 1000)
+                {
+                    item.SetClip(clip - 1000);
+                    item.SetIFVal(false);
+                }
+                ret.append(item);
+            }
+
 
             /*X2, Y2, back to standby*/
             item.SetNum(stepNum++);
             item.SetSVal(80);
             item.SetDVal(0);
-            if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, STANDBY_SETTING))
-                ret.append(item);
-            item.SetNum(stepNum++);
-            if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, STANDBY_SETTING))
-                ret.append(item);
+            if(isSubArmUsed)
+            {
+                if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, STANDBY_SETTING))
+                {
+                    item.SetActualPos(0);
+                    ret.append(item);
+                }
+                item.SetNum(stepNum++);
+                if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, STANDBY_SETTING))
+                    ret.append(item);
+            }
+            else if(isMOutletUsed)
+            {
+                if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, STANDBY_SETTING))
+                {
+                    item.SetAction(ICMold::GY);
+                    item.SetActualPos(0);
+                    ret.append(item);
+                }
+                item.SetNum(stepNum++);
+                if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, STANDBY_SETTING))
+                {
+                    item.SetAction(ICMold::GX);
+                    ret.append(item);
+                }
+            }
 
         }
-        else if(axis_[Z_AXIS].releaseProductPos > axis_[Z_AXIS].releaseOutletPos)
+        else if(axis_[Z_AXIS].releaseProductPos >= axis_[Z_AXIS].releaseOutletPos)
         {
             /*to release outlet pos*/
             if(SetAxisICMoldItem_(&item, axis_ + Z_AXIS, RELEASE_OUTLET_SETTING))
@@ -501,37 +670,98 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             }
             /******************************************/
 
-            if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, RELEASE_OUTLET_SETTING))
-                ret.append(item);
-            item.SetNum(stepNum++);
-            if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, RELEASE_OUTLET_SETTING))
-                ret.append(item);
-            /*release outlet*/
-            item.SetNum(stepNum++);
-            item.SetSVal(0);
-            item.SetDVal(10);
-            item.SetClip(fixtureOffAction_.at(ui->outletFixtureBox->currentIndex()));
-            ret.append(item);
-
-            /*Y2, back to standby*/
             item.SetNum(stepNum++);
             item.SetSVal(80);
             item.SetDVal(0);
-            if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, STANDBY_SETTING))
+            if(isSubArmUsed)
+            {
+                if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, RELEASE_OUTLET_SETTING))
+                    ret.append(item);
+                item.SetNum(++stepNum);
+                if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, RELEASE_OUTLET_SETTING))
+                    ret.append(item);
+            }
+            else if(isMOutletUsed)
+            {
+                if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, RELEASE_OUTLET_SETTING))
+                {
+                    item.SetAction(ICMold::GX);
+                    ret.append(item);
+                }
+                item.SetNum(++stepNum);
+                if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, RELEASE_OUTLET_SETTING))
+                {
+                    item.SetAction(ICMold::GY);
+                    ret.append(item);
+                }
+            }
+            /*release outlet*/
+            item.SetNum(++stepNum);
+            item.SetSVal(0);
+            item.SetDVal(10);
+//            item.SetClip(fixtureOffAction_.at(ui->outletFixtureBox->currentIndex()));
+//            ret.append(item);
+            int clip;
+            for(int i = 0; i < outletfixturesConfigs.size(); ++i)
+            {
+                clip = fixtureOffAction_.at(outletfixturesConfigs.at(i).first);
+                item.SetClip(clip);
+                item.SetActualMoldCount(0);
+                if(clip >= 1000)
+                {
+                    item.SetClip(clip - 1000);
+                    item.SetIFVal(false);
+                }
                 ret.append(item);
+            }
+
+
+            /*Y2, back to standby*/
+            item.SetNum(++stepNum);
+            item.SetSVal(80);
+            item.SetDVal(0);
+            if(isSubArmUsed)
+            {
+                if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, STANDBY_SETTING))
+                {
+                    item.SetActualPos(0);
+                    ret.append(item);
+                }
+            }
+            else if(isMOutletUsed)
+            {
+                if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, STANDBY_SETTING))
+                {
+                    item.SetAction(ICMold::GY);
+                    item.SetActualPos(0);
+                    ret.append(item);
+                }
+            }
 
 
 
             /*to release product pos*/
-            item.SetNum(stepNum++);
-            if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, STANDBY_SETTING))
-                ret.append(item);
+            item.SetNum(++stepNum);
+            if(isSubArmUsed)
+            {
+                if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, STANDBY_SETTING))
+                    ret.append(item);
+            }
+            else if(isMOutletUsed)
+            {
+                if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, STANDBY_SETTING))
+                {
+                    item.SetAction(ICMold::GX);
+                    ret.append(item);
+                }
+            }
+            item.SetNum(++stepNum);
             if(SetAxisICMoldItem_(&item, axis_ + Z_AXIS, RELEASE_PRODUCT_SETTING))
-                ret.append(item);         
+                ret.append(item);
             /******************************************/
             if(!ui->cBoxHorizontal->isHidden() && !ui->cBoxVertical->isHidden())
             {
-                item.SetNum(stepNum++);
+//                item.SetNum(stepNum++);
                 item.SetSVal(0);
                 if(axis_[C_AXIS].releaseProductLimit == 0)
                     item.SetAction(ICMold::ACTPOSEHORI);
@@ -568,8 +798,20 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             item.SetNum(stepNum++);
             item.SetSVal(0);
             item.SetDVal(10);
-            item.SetClip(fixtureOffAction_.at(ui->productFixtureBox->currentIndex()));
-            ret.append(item);
+//            item.SetClip(fixtureOffAction_.at(ui->productFixtureBox->currentIndex()));
+//            ret.append(item);
+            for(int i = 0; i < productfixturesConfigs.size(); ++i)
+            {
+                clip = fixtureOffAction_.at(productfixturesConfigs.at(i).first);
+                item.SetClip(clip);
+                item.SetActualMoldCount(0);
+                if(clip >= 1000)
+                {
+                    item.SetClip(clip - 1000);
+                    item.SetIFVal(false);
+                }
+                ret.append(item);
+            }
 
 
             /*X2, Y2, back to standby*/
@@ -577,10 +819,15 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             item.SetSVal(80);
             item.SetDVal(0);
             if(SetAxisICMoldItem_(&item, axis_ + Y1_AXIS, STANDBY_SETTING))
+            {
+                item.SetActualPos(0);
                 ret.append(item);
+            }
             item.SetNum(stepNum++);
             if(SetAxisICMoldItem_(&item, axis_ + X1_AXIS, STANDBY_SETTING))
+            {
                 ret.append(item);
+            }
 
         }
         else
@@ -604,8 +851,11 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             item.SetDVal(0);
             if(SetAxisICMoldItem_(&item, axis_ + X1_AXIS, RELEASE_PRODUCT_SETTING))
                 ret.append(item);
-            if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, RELEASE_OUTLET_SETTING))
-                ret.append(item);
+            if(isSubArmUsed)
+            {
+                if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, RELEASE_OUTLET_SETTING))
+                    ret.append(item);
+            }
             if(ui->stackedEn->isChecked())
             {
                 item.SetSVal(ui->stackGroup->TransThisTextToThisInt() - 1);
@@ -624,30 +874,70 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             item.SetNum(stepNum++);
             if(SetAxisICMoldItem_(&item, axis_ + Y1_AXIS, RELEASE_PRODUCT_SETTING))
                 ret.append(item);
-            if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, RELEASE_OUTLET_SETTING))
-                ret.append(item);
+            if(isSubArmUsed)
+            {
+                if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, RELEASE_OUTLET_SETTING))
+                    ret.append(item);
+            }
 
 
             item.SetNum(stepNum++);
             item.SetSVal(0);
             item.SetDVal(10);
-            item.SetClip(fixtureOffAction_.at(ui->productFixtureBox->currentIndex()));
-            ret.append(item);
-            item.SetClip(fixtureOffAction_.at(ui->outletFixtureBox->currentIndex()));
-            ret.append(item);
+//            item.SetClip(fixtureOffAction_.at(ui->productFixtureBox->currentIndex()));
+//            ret.append(item);
+            int clip;
+            for(int i = 0; i < productfixturesConfigs.size(); ++i)
+            {
+                clip = fixtureOffAction_.at(productfixturesConfigs.at(i).first);
+                item.SetClip(clip);
+                item.SetActualMoldCount(0);
+                if(clip >= 1000)
+                {
+                    item.SetClip(clip - 1000);
+                    item.SetIFVal(false);
+                }
+                ret.append(item);
+            }
+//            item.SetClip(fixtureOffAction_.at(ui->outletFixtureBox->currentIndex()));
+//            ret.append(item);
+            for(int i = 0; i < outletfixturesConfigs.size(); ++i)
+            {
+                clip = fixtureOffAction_.at(outletfixturesConfigs.at(i).first);
+                item.SetClip(clip);
+                item.SetActualMoldCount(0);
+                if(clip >= 1000)
+                {
+                    item.SetClip(clip - 1000);
+                    item.SetIFVal(false);
+                }
+                ret.append(item);
+            }
 
             item.SetNum(stepNum++);
             item.SetSVal(80);
             item.SetDVal(0);
             if(SetAxisICMoldItem_(&item, axis_ + Y1_AXIS, STANDBY_SETTING))
+            {
+                item.SetActualPos(0);
                 ret.append(item);
-            if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, STANDBY_SETTING))
-                ret.append(item);
+            }
+            if(isSubArmUsed)
+            {
+                if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, STANDBY_SETTING))
+                {
+                    item.SetActualPos(0);
+                    ret.append(item);
+                }
+            }
             item.SetNum(stepNum++);
             if(SetAxisICMoldItem_(&item, axis_ + X1_AXIS, STANDBY_SETTING))
                 ret.append(item);
-            if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, STANDBY_SETTING))
-                ret.append(item);
+            if(isSubArmUsed)
+            {
+                if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, STANDBY_SETTING))
+                    ret.append(item);
+            }
 
         }
 
@@ -660,7 +950,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
         /*****************************************/
         if(!ui->cBoxHorizontal->isHidden() && !ui->cBoxVertical->isHidden())
         {
-            item.SetNum(stepNum++);
+//            item.SetNum(stepNum++);
             item.SetSVal(0);
             if(axis_[C_AXIS].releaseProductLimit == 0)
                 item.SetAction(ICMold::ACTPOSEHORI);
@@ -669,13 +959,7 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             ret.append(item);
         }
         /*****************************************/
-        if(ui->stackedEn->isChecked())
-        {
-            item.SetSVal(ui->stackGroup->TransThisTextToThisInt() - 1);
-            item.SetClip(ICMold::ACTLAYOUTON);
-            ret.append(item);
-            item.SetSVal(80);
-        }
+
         item.SetNum(stepNum++);
         item.SetSVal(80);
         item.SetDVal(0);
@@ -689,6 +973,13 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
             if(SetAxisICMoldItem_(&item, axis_ + C_AXIS, RELEASE_PRODUCT_SETTING))
                 ret.append(item);
         }
+        if(ui->stackedEn->isChecked())
+        {
+            item.SetSVal(ui->stackGroup->TransThisTextToThisInt() - 1);
+            item.SetClip(ICMold::ACTLAYOUTON);
+            ret.append(item);
+            item.SetSVal(80);
+        }
         item.SetNum(stepNum++);
         if(SetAxisICMoldItem_(&item, axis_ + Y1_AXIS, RELEASE_PRODUCT_SETTING))
             ret.append(item);
@@ -698,8 +989,19 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
         item.SetNum(stepNum++);
         item.SetSVal(0);
         item.SetDVal(10);
-        item.SetClip(fixtureOffAction_.at(ui->productFixtureBox->currentIndex()));
-        ret.append(item);
+        int clip;
+        for(int i = 0; i < productfixturesConfigs.size(); ++i)
+        {
+            clip = fixtureOffAction_.at(productfixturesConfigs.at(i).first);
+            item.SetClip(clip);
+            item.SetActualMoldCount(0);
+            if(clip >= 1000)
+            {
+                item.SetClip(clip - 1000);
+                item.SetIFVal(false);
+            }
+            ret.append(item);
+        }
 
 
         /*X1, Y1, back to standby*/
@@ -707,7 +1009,10 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
         item.SetSVal(80);
         item.SetDVal(0);
         if(SetAxisICMoldItem_(&item, axis_ + Y1_AXIS, STANDBY_SETTING))
+        {
+            item.SetActualPos(0);
             ret.append(item);
+        }
         item.SetNum(stepNum++);
         if(SetAxisICMoldItem_(&item, axis_ + X1_AXIS, STANDBY_SETTING))
             ret.append(item);
@@ -715,6 +1020,8 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
     else if(isSubArmUsed)
     {
         /*to release outlet pos*/
+        item.SetNum(stepNum++);
+
         if(SetAxisICMoldItem_(&item, axis_ + Z_AXIS, RELEASE_OUTLET_SETTING))
             ret.append(item);
         if( SetAxisICMoldItem_(&item, axis_ + X2_AXIS, RELEASE_OUTLET_SETTING))
@@ -727,15 +1034,30 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
         item.SetNum(stepNum++);
         item.SetSVal(0);
         item.SetDVal(10);
-        item.SetClip(fixtureOffAction_.at(ui->outletFixtureBox->currentIndex()));
-        ret.append(item);
+        int clip ;
+        //        item.SetClip(fixtureOffAction_.at(ui->outletFixtureBox->currentIndex()));
+        for(int i = 0; i < outletfixturesConfigs.size(); ++i)
+        {
+            clip = fixtureOffAction_.at(outletfixturesConfigs.at(i).first);
+            item.SetClip(clip);
+            item.SetActualMoldCount(0);
+            if(clip >= 1000)
+            {
+                item.SetClip(clip - 1000);
+                item.SetIFVal(false);
+            }
+            ret.append(item);
+        }
 
         /*X2, Y2, back to standby*/
         item.SetNum(stepNum++);
         item.SetSVal(80);
         item.SetDVal(0);
         if(SetAxisICMoldItem_(&item, axis_ + Y2_AXIS, STANDBY_SETTING))
+        {
+            item.SetActualPos(0);
             ret.append(item);
+        }
         item.SetNum(stepNum++);
         if(SetAxisICMoldItem_(&item, axis_ + X2_AXIS, STANDBY_SETTING))
             ret.append(item);
@@ -971,9 +1293,9 @@ void ICProgramGuidePage::on_nextButton_clicked()
     {
         ui->stackedWidget->setCurrentIndex(1);
         ShowForStandby_();
-       // SaveAxis_(STANDBY_SETTING);
+        // SaveAxis_(STANDBY_SETTING);
         UpdateAxisShow(STANDBY_SETTING);
-//        ui->cBox->setEnabled(true);
+        //        ui->cBox->setEnabled(true);
         ui->cBoxHorizontal->setEnabled(true);
         ui->cBoxVertical->setEnabled(true);
         ui->cEdit->setEnabled(true);
@@ -985,6 +1307,9 @@ void ICProgramGuidePage::on_nextButton_clicked()
         ui->descrLabel->setText(tr("Get Position Settings"));
         on_usedMainArmBox_toggled(ui->usedMainArmBox->isChecked());
         on_usedSubArmBox_toggled(ui->usedSubArmBox->isChecked());
+        //        if(ui->mainArmOUtletBox->isChecked())
+        //            on_mainArmOUtletBox_toggled(ui->mainArmOUtletBox->isChecked());
+
         ui->commonGroupBox->show();
         SetAxisBoxEnabled_(true);
         if(axis_[C_AXIS].mode == AXIS_SERVO)
@@ -1001,6 +1326,15 @@ void ICProgramGuidePage::on_nextButton_clicked()
     }
     else if(pageIndex_ == 3)
     {
+        ui->stackedWidget->setCurrentIndex(3);
+        ui->getOutletBack->setVisible(ui->usedSubArmBox->isChecked());
+        ui->getProductBack->setVisible(ui->usedMainArmBox->isChecked());
+        ui->x1X2OutGroup->setVisible(ui->usedSubArmBox->isChecked() && ui->usedMainArmBox->isChecked());
+    }
+    else if(pageIndex_ == 4)
+    {
+        ui->stackedWidget->setCurrentIndex(2);
+
         ui->stackedWidget->setCurrentIndex(1);
         ui->descrLabel->setText(tr("Release Product Position Settings"));
         on_usedMainArmBox_toggled(ui->usedMainArmBox->isChecked());
@@ -1020,16 +1354,18 @@ void ICProgramGuidePage::on_nextButton_clicked()
         SaveAxis_(GET_PRODUCT_SETTING);
         UpdateAxisShow(RELEASE_PRODUCT_SETTING);
     }
-    else if(pageIndex_ == 4)
+    else if(pageIndex_ == 5)
     {
         ui->stackedWidget->setCurrentIndex(1);
         ui->descrLabel->setText(tr("Release Outlet Position Settings"));
         on_usedSubArmBox_toggled(ui->usedSubArmBox->isChecked());
+        if(ui->mainArmOUtletBox->isChecked())
+            on_mainArmOUtletBox_toggled(ui->mainArmOUtletBox->isChecked());
         ui->productGroupBox->hide();
         ui->cEdit->setEnabled(false);
         ui->cBoxHorizontal->setEnabled(false);
         ui->cBoxVertical->setEnabled(false);
-        if(!ui->usedSubArmBox->isChecked())
+        if(!ui->usedSubArmBox->isChecked()  && !ui->mainArmOUtletBox->isChecked())
         {
             ui->commonGroupBox->hide();
         }
@@ -1040,7 +1376,7 @@ void ICProgramGuidePage::on_nextButton_clicked()
         SaveAxis_(RELEASE_PRODUCT_SETTING);
         UpdateAxisShow(RELEASE_OUTLET_SETTING);
     }
-    else if(pageIndex_ == 5)
+    else if(pageIndex_ == 6)
     {
         ui->stackedWidget->setCurrentIndex(2);
         SaveAxis_(RELEASE_OUTLET_SETTING);
@@ -1052,12 +1388,15 @@ void ICProgramGuidePage::on_preButton_clicked()
 {
     --pageIndex_;
     if(pageIndex_ == 0)
-        {
-            ui->stackedWidget->setCurrentIndex(0);
-            on_usedMainArmBox_toggled(ui->usedMainArmBox->isChecked());
-            on_usedSubArmBox_toggled(ui->usedSubArmBox->isChecked());
-           SaveAxis_(STANDBY_SETTING);
-        }
+    {
+        ui->stackedWidget->setCurrentIndex(0);
+        on_usedMainArmBox_toggled(ui->usedMainArmBox->isChecked());
+        on_usedSubArmBox_toggled(ui->usedSubArmBox->isChecked());
+        if(ui->mainArmOUtletBox->isChecked())
+            on_mainArmOUtletBox_toggled(ui->mainArmOUtletBox->isChecked());
+
+        SaveAxis_(STANDBY_SETTING);
+    }
     else if(pageIndex_ == 1) //show for standby settings
     {
         ui->stackedWidget->setCurrentIndex(1);
@@ -1072,9 +1411,14 @@ void ICProgramGuidePage::on_preButton_clicked()
     else if(pageIndex_ == 2)
     {
         ui->stackedWidget->setCurrentIndex(1);
+
+        ui->stackedWidget->setCurrentIndex(1);
         ui->descrLabel->setText(tr("Get Position Settings"));
         on_usedMainArmBox_toggled(ui->usedMainArmBox->isChecked());
         on_usedSubArmBox_toggled(ui->usedSubArmBox->isChecked());
+        if(ui->mainArmOUtletBox->isChecked())
+            on_mainArmOUtletBox_toggled(ui->mainArmOUtletBox->isChecked());
+
         ui->commonGroupBox->show();
         SetAxisBoxEnabled_(true);
         if(axis_[C_AXIS].mode == AXIS_SERVO)
@@ -1088,6 +1432,12 @@ void ICProgramGuidePage::on_preButton_clicked()
         UpdateAxisShow(GET_PRODUCT_SETTING);
     }
     else if(pageIndex_ == 3)
+    {
+        ui->stackedWidget->setCurrentIndex(3);
+        ui->getOutletBack->setVisible(ui->usedSubArmBox->isChecked());
+        ui->x1X2OutGroup->setVisible(ui->usedSubArmBox->isChecked());
+    }
+    else if(pageIndex_ == 4)
     {
         ui->stackedWidget->setCurrentIndex(1);
         ui->descrLabel->setText(tr("Release Product Position Settings"));
@@ -1108,12 +1458,14 @@ void ICProgramGuidePage::on_preButton_clicked()
         UpdateAxisShow(RELEASE_PRODUCT_SETTING);
         SetAxisBoxEnabled_(true);
     }
-    else if(pageIndex_ == 4)
+    else if(pageIndex_ == 5)
     {
         ui->stackedWidget->setCurrentIndex(1);
         ui->descrLabel->setText(tr("Release Outlet Position Settings"));
         on_usedSubArmBox_toggled(ui->usedSubArmBox->isChecked());
-    //    ui->productGroupBox->hide();
+        if(ui->mainArmOUtletBox->isChecked())
+            on_mainArmOUtletBox_toggled(ui->mainArmOUtletBox->isChecked());
+        //    ui->productGroupBox->hide();
         if(axis_[C_AXIS].mode == AXIS_SERVO)
             ui->cEdit->setEnabled(false);
         if(axis_[C_AXIS].mode == AXIS_PNEUMATIC)
@@ -1121,7 +1473,7 @@ void ICProgramGuidePage::on_preButton_clicked()
             ui->cBoxHorizontal->setEnabled(false);
             ui->cBoxVertical->setEnabled(false);
         }
-        if(!ui->usedSubArmBox->isChecked())
+        if(!ui->usedSubArmBox->isChecked() && !ui->mainArmOUtletBox->isChecked())
         {
             ui->commonGroupBox->hide();
         }
@@ -1137,6 +1489,7 @@ void ICProgramGuidePage::on_preButton_clicked()
 
 void ICProgramGuidePage::UpdatePageButton_()
 {
+    ui->finishButton->setEnabled(false);
     switch(pageIndex_)
     {
     case 0: ui->preButton->setEnabled(false);
@@ -1145,13 +1498,19 @@ void ICProgramGuidePage::UpdatePageButton_()
     case 1:
     case 2:
     case 3:
-    case 4: ui->preButton->setEnabled(true);
+    case 4:
+    case 5:
+        ui->preButton->setEnabled(true);
         ui->nextButton->setEnabled(true);
         break;
-    case 5: ui->nextButton->setEnabled(false);break;
+    case 6:
+        ui->nextButton->setEnabled(false);
+        ui->finishButton->setEnabled(true);
+        break;
     default:break;
 
     }
+    ui->finishButton->setText(QString(tr("Finish(%1/%2)")).arg(pageIndex_).arg(6));
 
 }
 
@@ -1164,51 +1523,57 @@ void ICProgramGuidePage::ShowForStandby_()
     SetAxisBoxEnabled_(false);
     ui->cBoxHorizontal->setEnabled(true);
     ui->cBoxVertical->setEnabled(true);
-//    ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
-//    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisX1) == ICVirtualHost::ICAxisDefine_Pneumatic)
-//    {
-//     //   ui->x1Box->setCurrentIndex(1);
-//        SetAxis_(axis_, ui->x1Box->currentIndex(), STANDBY_SETTING);
-//    }
-//    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisY1) == ICVirtualHost::ICAxisDefine_Pneumatic)
-//    {
-//      //  ui->y1Box->setCurrentIndex(0);
-//        SetAxis_(axis_ + 1, ui->y1Box->currentIndex(), STANDBY_SETTING);
-//    }
-//    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisZ) == ICVirtualHost::ICAxisDefine_Pneumatic)
-//    {
-//      //  ui->zBox->setCurrentIndex(0);
-//        SetAxis_(axis_ + 2, ui->zBox->currentIndex(), STANDBY_SETTING);
-//    }
-//    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisX2) == ICVirtualHost::ICAxisDefine_Pneumatic)
-//    {
-//       // ui->x2Box->setCurrentIndex(1);
-//        SetAxis_(axis_ + 3, ui->x2Box->currentIndex(), STANDBY_SETTING);
-//    }
-//    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisY2) == ICVirtualHost::ICAxisDefine_Pneumatic)
-//    {
-//      //  ui->y2Box->setCurrentIndex(1);
-//        SetAxis_(axis_ + 4, ui->y2Box->currentIndex(), STANDBY_SETTING);
-//    }
-//    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisA) == ICVirtualHost::ICAxisDefine_Servo)
-//    {
-////        HideWidgets_(axisWidgets_[5]);
-////        ui->aEdit->SetThisIntToThisText(0);
-//    }
-//    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisB) == ICVirtualHost::ICAxisDefine_Servo)
-//    {
-////        HideWidgets_(axisWidgets_[6]);
-////        ui->bEdit->SetThisIntToThisText(0);
-//    }
-//    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisC) == ICVirtualHost::ICAxisDefine_Servo)
-//    {
-////        HideWidgets_(axisWidgets_[7]);
-////        ui->cEdit->SetThisIntToThisText(0);
-//    }
+    //    ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
+    //    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisX1) == ICVirtualHost::ICAxisDefine_Pneumatic)
+    //    {
+    //     //   ui->x1Box->setCurrentIndex(1);
+    //        SetAxis_(axis_, ui->x1Box->currentIndex(), STANDBY_SETTING);
+    //    }
+    //    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisY1) == ICVirtualHost::ICAxisDefine_Pneumatic)
+    //    {
+    //      //  ui->y1Box->setCurrentIndex(0);
+    //        SetAxis_(axis_ + 1, ui->y1Box->currentIndex(), STANDBY_SETTING);
+    //    }
+    //    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisZ) == ICVirtualHost::ICAxisDefine_Pneumatic)
+    //    {
+    //      //  ui->zBox->setCurrentIndex(0);
+    //        SetAxis_(axis_ + 2, ui->zBox->currentIndex(), STANDBY_SETTING);
+    //    }
+    //    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisX2) == ICVirtualHost::ICAxisDefine_Pneumatic)
+    //    {
+    //       // ui->x2Box->setCurrentIndex(1);
+    //        SetAxis_(axis_ + 3, ui->x2Box->currentIndex(), STANDBY_SETTING);
+    //    }
+    //    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisY2) == ICVirtualHost::ICAxisDefine_Pneumatic)
+    //    {
+    //      //  ui->y2Box->setCurrentIndex(1);
+    //        SetAxis_(axis_ + 4, ui->y2Box->currentIndex(), STANDBY_SETTING);
+    //    }
+    //    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisA) == ICVirtualHost::ICAxisDefine_Servo)
+    //    {
+    ////        HideWidgets_(axisWidgets_[5]);
+    ////        ui->aEdit->SetThisIntToThisText(0);
+    //    }
+    //    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisB) == ICVirtualHost::ICAxisDefine_Servo)
+    //    {
+    ////        HideWidgets_(axisWidgets_[6]);
+    ////        ui->bEdit->SetThisIntToThisText(0);
+    //    }
+    //    if(host->AxisDefine(ICVirtualHost::ICAxis_AxisC) == ICVirtualHost::ICAxisDefine_Servo)
+    //    {
+    ////        HideWidgets_(axisWidgets_[7]);
+    ////        ui->cEdit->SetThisIntToThisText(0);
+    //    }
     if(ui->usedMainArmBox->isChecked())
+    {
         on_usedMainArmBox_toggled(true);
-    if(ui->usedMainArmBox->isChecked())
-        on_usedSubArmBox_toggled(true);
+    }
+    ui->outletGroupBox->show();
+    ui->gy2Label->setText(tr("GY2:"));
+    ui->gx2Label->setText(tr("GX2:"));
+    //    if(ui->usedMainArmBox->isChecked())
+    //        on_usedSubArmBox_toggled(true);
+
 }
 
 void ICProgramGuidePage::SetAxisBoxEnabled_(bool en)
@@ -1292,7 +1657,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
     case 0:
         if(setting == STANDBY_SETTING)
         {
-        //        edit->setCurrentIndex(axis->standbyLimit);
+            //        edit->setCurrentIndex(axis->standbyLimit);
             if(axis->standbyLimit == 0)
                 ui->x1BoxBackward->setChecked(true);
             else if(axis->standbyLimit == 1)
@@ -1300,7 +1665,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
         }
         else if(setting == GET_PRODUCT_SETTING)
         {
-        //        edit->setCurrentIndex(axis->getLimit);
+            //        edit->setCurrentIndex(axis->getLimit);
             if(axis->getLimit == 0)
                 ui->x1BoxBackward->setChecked(true);
             else if(axis->getLimit == 1)
@@ -1308,7 +1673,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
         }
         else if(setting == RELEASE_PRODUCT_SETTING)
         {
-//            edit->setCurrentIndex(axis->releaseProductLimit);
+            //            edit->setCurrentIndex(axis->releaseProductLimit);
             if(axis->releaseProductLimit == 0)
                 ui->x1BoxBackward->setChecked(true);
             else if(axis->releaseProductLimit == 1)
@@ -1316,7 +1681,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
         }
         else if(setting == RELEASE_OUTLET_SETTING)
         {
-//            edit->setCurrentIndex(axis->releaseOutletLimit);
+            //            edit->setCurrentIndex(axis->releaseOutletLimit);
             if(axis->releaseProductLimit == 0)
                 ui->x1BoxBackward->setChecked(true);
             else if(axis->releaseProductLimit == 1)
@@ -1326,7 +1691,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
     case 1:
         if(setting == STANDBY_SETTING)
         {
-        //        edit->setCurrentIndex(axis->standbyLimit);
+            //        edit->setCurrentIndex(axis->standbyLimit);
             if(axis->standbyLimit == 0)
                 ui->y1BoxUp->setChecked(true);
             else if(axis->standbyLimit == 1)
@@ -1334,7 +1699,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
         }
         else if(setting == GET_PRODUCT_SETTING)
         {
-        //        edit->setCurrentIndex(axis->getLimit);
+            //        edit->setCurrentIndex(axis->getLimit);
             if(axis->getLimit == 0)
                 ui->y1BoxUp->setChecked(true);
             else if(axis->getLimit == 1)
@@ -1342,7 +1707,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
         }
         else if(setting == RELEASE_PRODUCT_SETTING)
         {
-//            edit->setCurrentIndex(axis->releaseProductLimit);
+            //            edit->setCurrentIndex(axis->releaseProductLimit);
             if(axis->releaseProductLimit == 0)
                 ui->y1BoxUp->setChecked(true);
             else if(axis->releaseProductLimit == 1)
@@ -1350,7 +1715,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
         }
         else if(setting == RELEASE_OUTLET_SETTING)
         {
-//            edit->setCurrentIndex(axis->releaseOutletLimit);
+            //            edit->setCurrentIndex(axis->releaseOutletLimit);
             if(axis->releaseProductLimit == 0)
                 ui->y1BoxUp->setChecked(true);
             else if(axis->releaseProductLimit == 1)
@@ -1394,7 +1759,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
     case 3:
         if(setting == STANDBY_SETTING)
         {
-        //        edit->setCurrentIndex(axis->standbyLimit);
+            //        edit->setCurrentIndex(axis->standbyLimit);
             if(axis->standbyLimit == 0)
                 ui->x2BoxBackward->setChecked(true);
             else if(axis->standbyLimit == 1)
@@ -1402,7 +1767,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
         }
         else if(setting == GET_PRODUCT_SETTING)
         {
-        //        edit->setCurrentIndex(axis->getLimit);
+            //        edit->setCurrentIndex(axis->getLimit);
             if(axis->getLimit == 0)
                 ui->x2BoxBackward->setChecked(true);
             else if(axis->getLimit == 1)
@@ -1410,7 +1775,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
         }
         else if(setting == RELEASE_PRODUCT_SETTING)
         {
-//            edit->setCurrentIndex(axis->releaseProductLimit);
+            //            edit->setCurrentIndex(axis->releaseProductLimit);
             if(axis->releaseProductLimit == 0)
                 ui->x2BoxBackward->setChecked(true);
             else if(axis->releaseProductLimit == 1)
@@ -1418,7 +1783,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
         }
         else if(setting == RELEASE_OUTLET_SETTING)
         {
-//            edit->setCurrentIndex(axis->releaseOutletLimit);
+            //            edit->setCurrentIndex(axis->releaseOutletLimit);
             if(axis->releaseProductLimit == 0)
                 ui->x2BoxBackward->setChecked(true);
             else if(axis->releaseProductLimit == 1)
@@ -1428,7 +1793,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
     case 4:
         if(setting == STANDBY_SETTING)
         {
-        //        edit->setCurrentIndex(axis->standbyLimit);
+            //        edit->setCurrentIndex(axis->standbyLimit);
             if(axis->standbyLimit == 0)
                 ui->y2BoxUp->setChecked(true);
             else if(axis->standbyLimit == 1)
@@ -1436,7 +1801,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
         }
         else if(setting == GET_PRODUCT_SETTING)
         {
-        //        edit->setCurrentIndex(axis->getLimit);
+            //        edit->setCurrentIndex(axis->getLimit);
             if(axis->getLimit == 0)
                 ui->y2BoxUp->setChecked(true);
             else if(axis->getLimit == 1)
@@ -1444,7 +1809,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
         }
         else if(setting == RELEASE_PRODUCT_SETTING)
         {
-//            edit->setCurrentIndex(axis->releaseProductLimit);
+            //            edit->setCurrentIndex(axis->releaseProductLimit);
             if(axis->releaseProductLimit == 0)
                 ui->y2BoxUp->setChecked(true);
             else if(axis->releaseProductLimit == 1)
@@ -1452,7 +1817,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
         }
         else if(setting == RELEASE_OUTLET_SETTING)
         {
-//            edit->setCurrentIndex(axis->releaseOutletLimit);
+            //            edit->setCurrentIndex(axis->releaseOutletLimit);
             if(axis->releaseProductLimit == 0)
                 ui->y2BoxUp->setChecked(true);
             else if(axis->releaseProductLimit == 1)
@@ -1462,7 +1827,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
     case 5:
         if(setting == STANDBY_SETTING)
         {
-        //        edit->setCurrentIndex(axis->standbyLimit);
+            //        edit->setCurrentIndex(axis->standbyLimit);
             if(axis->standbyLimit == 0)
                 ui->aBoxHorizontal->setChecked(true);
             else if(axis->standbyLimit == 1)
@@ -1470,7 +1835,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
         }
         else if(setting == GET_PRODUCT_SETTING)
         {
-        //        edit->setCurrentIndex(axis->getLimit);
+            //        edit->setCurrentIndex(axis->getLimit);
             if(axis->getLimit == 0)
                 ui->aBoxHorizontal->setChecked(true);
             else if(axis->getLimit == 1)
@@ -1478,7 +1843,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
         }
         else if(setting == RELEASE_PRODUCT_SETTING)
         {
-//            edit->setCurrentIndex(axis->releaseProductLimit);
+            //            edit->setCurrentIndex(axis->releaseProductLimit);
             if(axis->releaseProductLimit == 0)
                 ui->aBoxHorizontal->setChecked(true);
             else if(axis->releaseProductLimit == 1)
@@ -1486,7 +1851,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
         }
         else if(setting == RELEASE_OUTLET_SETTING)
         {
-//            edit->setCurrentIndex(axis->releaseOutletLimit);
+            //            edit->setCurrentIndex(axis->releaseOutletLimit);
             if(axis->releaseProductLimit == 0)
                 ui->aBoxHorizontal->setChecked(true);
             else if(axis->releaseProductLimit == 1)
@@ -1496,7 +1861,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
     case 6:
         if(setting == STANDBY_SETTING)
         {
-        //        edit->setCurrentIndex(axis->standbyLimit);
+            //        edit->setCurrentIndex(axis->standbyLimit);
             if(axis->standbyLimit == 0)
                 ui->bBoxHorizontal->setChecked(true);
             else if(axis->standbyLimit == 1)
@@ -1504,7 +1869,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
         }
         else if(setting == GET_PRODUCT_SETTING)
         {
-        //        edit->setCurrentIndex(axis->getLimit);
+            //        edit->setCurrentIndex(axis->getLimit);
             if(axis->getLimit == 0)
                 ui->bBoxHorizontal->setChecked(true);
             else if(axis->getLimit == 1)
@@ -1512,7 +1877,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
         }
         else if(setting == RELEASE_PRODUCT_SETTING)
         {
-//            edit->setCurrentIndex(axis->releaseProductLimit);
+            //            edit->setCurrentIndex(axis->releaseProductLimit);
             if(axis->releaseProductLimit == 0)
                 ui->bBoxHorizontal->setChecked(true);
             else if(axis->releaseProductLimit == 1)
@@ -1520,7 +1885,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
         }
         else if(setting == RELEASE_OUTLET_SETTING)
         {
-//            edit->setCurrentIndex(axis->releaseOutletLimit);
+            //            edit->setCurrentIndex(axis->releaseOutletLimit);
             if(axis->releaseProductLimit == 0)
                 ui->bBoxHorizontal->setChecked(true);
             else if(axis->releaseProductLimit == 1)
@@ -1530,7 +1895,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
     case 7:
         if(setting == STANDBY_SETTING)
         {
-        //        edit->setCurrentIndex(axis->standbyLimit);
+            //        edit->setCurrentIndex(axis->standbyLimit);
             if(axis->standbyLimit == 1)
                 ui->cBoxHorizontal->setChecked(true);
             else if(axis->standbyLimit == 0)
@@ -1538,7 +1903,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
         }
         else if(setting == GET_PRODUCT_SETTING)
         {
-        //        edit->setCurrentIndex(axis->getLimit);
+            //        edit->setCurrentIndex(axis->getLimit);
             if(axis->getLimit == 1)
                 ui->cBoxHorizontal->setChecked(true);
             else if(axis->getLimit == 0)
@@ -1546,7 +1911,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
         }
         else if(setting == RELEASE_PRODUCT_SETTING)
         {
-//            edit->setCurrentIndex(axis->releaseProductLimit);
+            //            edit->setCurrentIndex(axis->releaseProductLimit);
             if(axis->releaseProductLimit == 1)
                 ui->cBoxHorizontal->setChecked(true);
             else if(axis->releaseProductLimit == 0)
@@ -1554,7 +1919,7 @@ void ICProgramGuidePage::SetAxisLimitEdit_(_ICAxis_ *axis, int setting, int i)
         }
         else if(setting == RELEASE_OUTLET_SETTING)
         {
-//            edit->setCurrentIndex(axis->releaseOutletLimit);
+            //            edit->setCurrentIndex(axis->releaseOutletLimit);
             if(axis->releaseProductLimit == 1)
                 ui->cBoxHorizontal->setChecked(true);
             else if(axis->releaseProductLimit == 0)
@@ -1574,7 +1939,7 @@ void ICProgramGuidePage::UpdateAxisShow(int setting)
         else if(axis_[i].mode == AXIS_PNEUMATIC)
         {
             SetAxisLimitEdit_(axis_ + i, setting, i);
-//            SetAxisLimitEdit_(limitEdits_[i], axis_ + i, setting, i);
+            //            SetAxisLimitEdit_(limitEdits_[i], axis_ + i, setting, i);
         }
     }
 }
@@ -1647,15 +2012,20 @@ void ICProgramGuidePage::on_usedMainArmBox_toggled(bool checked)
 
 void ICProgramGuidePage::on_usedSubArmBox_toggled(bool checked)
 {
+    ui->mainArmOUtletBox->blockSignals(true);
     if(checked)
     {
         ui->outletGroupBox->show();
+        ui->mainArmOUtletBox->setChecked(false);
+        ui->gy2Label->setText(tr("GY2:"));
+        ui->gx2Label->setText(tr("GX2:"));
     }
     else
     {
         ui->outletGroupBox->hide();
     }
     ui->outletFixtureGroup->setEnabled(checked);
+    ui->mainArmOUtletBox->blockSignals(false);
 }
 
 void ICProgramGuidePage::on_stackedEn_toggled(bool checked)
@@ -1673,6 +2043,11 @@ void ICProgramGuidePage::on_setInButton_clicked()
     ui->zEdit->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisZ, axisLast));
     ui->x2Edit->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisX2, axisLast));
     ui->y2Edit->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisY2, axisLast));
+    if(ui->mainArmOUtletBox->isChecked() && pageIndex_ != 1)
+    {
+        ui->x2Edit->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisX1, axisLast));
+        ui->y2Edit->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisY1, axisLast));
+    }
     ui->aEdit->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisA, axisLast));
     ui->bEdit->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisB, axisLast));
     ui->cEdit->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisC, axisLast));
@@ -1684,7 +2059,7 @@ void ICProgramGuidePage::GuideKeyToActionCheck(int key)
     {
     case ICKeyboard::VFB_X1Add:
     case ICKeyboard::VFB_X1Sub:
-//        ui->x1Box->setCurrentIndex(key == ICKeyboard::VFB_X1Add ? 0:1);
+        //        ui->x1Box->setCurrentIndex(key == ICKeyboard::VFB_X1Add ? 0:1);
         if((key == ICKeyboard::VFB_X1Add ? 0:1) == 0)
             ui->x1BoxBackward->setChecked(true);
         else if((key == ICKeyboard::VFB_X1Add ? 0:1) == 1)
@@ -1692,7 +2067,7 @@ void ICProgramGuidePage::GuideKeyToActionCheck(int key)
         break;
     case ICKeyboard::VFB_Y1Add:
     case ICKeyboard::VFB_Y1Sub:
-//        ui->y1Box->setCurrentIndex(key == ICKeyboard::VFB_Y1Add ? 1:0);
+        //        ui->y1Box->setCurrentIndex(key == ICKeyboard::VFB_Y1Add ? 1:0);
         if((key == ICKeyboard::VFB_Y1Add ? 0:1) == 1)
             ui->y1BoxUp->setChecked(true);
         else if((key == ICKeyboard::VFB_Y1Add ? 0:1) == 0)
@@ -1700,7 +2075,7 @@ void ICProgramGuidePage::GuideKeyToActionCheck(int key)
         break;
     case ICKeyboard::VFB_ZAdd:
     case ICKeyboard::VFB_ZSub:
-//        ui->zBox->setCurrentIndex(key == ICKeyboard::VFB_ZAdd ? 1:0);
+        //        ui->zBox->setCurrentIndex(key == ICKeyboard::VFB_ZAdd ? 1:0);
         if((key == ICKeyboard::VFB_ZAdd ? 0:1) == 1)
             ui->zBoxComeIn->setChecked(true);
         else if((key == ICKeyboard::VFB_ZAdd ? 0:1) == 0)
@@ -1708,7 +2083,7 @@ void ICProgramGuidePage::GuideKeyToActionCheck(int key)
         break;
     case ICKeyboard::VFB_X2Add:
     case ICKeyboard::VFB_X2Sub:
-//        ui->x2Box->setCurrentIndex(key == ICKeyboard::VFB_X2Add ? 0:1);
+        //        ui->x2Box->setCurrentIndex(key == ICKeyboard::VFB_X2Add ? 0:1);
         if(!ICParametersSave::Instance()->IsSingleArm())
         {
             if((key == ICKeyboard::VFB_X2Add ? 0:1) == 0)
@@ -1719,7 +2094,7 @@ void ICProgramGuidePage::GuideKeyToActionCheck(int key)
         break;
     case ICKeyboard::VFB_Y2Add:
     case ICKeyboard::VFB_Y2Sub:
-//        ui->y2Box->setCurrentIndex(key == ICKeyboard::VFB_Y2Add ?0:1);
+        //        ui->y2Box->setCurrentIndex(key == ICKeyboard::VFB_Y2Add ?0:1);
         if(!ICParametersSave::Instance()->IsSingleArm())
         {
             if((key == ICKeyboard::VFB_Y2Add ? 0:1) == 0)
@@ -1730,7 +2105,7 @@ void ICProgramGuidePage::GuideKeyToActionCheck(int key)
         break;
     case ICKeyboard::VFB_AAdd:
     case ICKeyboard::VFB_ASub:
-//        ui->aBox->setCurrentIndex(key == ICKeyboard::VFB_AAdd ? 0:1);
+        //        ui->aBox->setCurrentIndex(key == ICKeyboard::VFB_AAdd ? 0:1);
         if((key == ICKeyboard::VFB_AAdd ? 0:1) == 0)
             ui->aBoxHorizontal->setChecked(true);
         else if((key == ICKeyboard::VFB_AAdd ? 0:1) == 1)
@@ -1738,7 +2113,7 @@ void ICProgramGuidePage::GuideKeyToActionCheck(int key)
         break;
     case ICKeyboard::VFB_BAdd:
     case ICKeyboard::VFB_BSub:
-//        ui->bBox->setCurrentIndex(key == ICKeyboard::VFB_BAdd ? 1:0);
+        //        ui->bBox->setCurrentIndex(key == ICKeyboard::VFB_BAdd ? 1:0);
         if((key == ICKeyboard::VFB_BAdd ? 0:1) == 1)
             ui->bBoxHorizontal->setChecked(true);
         else if((key == ICKeyboard::VFB_BAdd ? 0:1) == 0)
@@ -1746,12 +2121,78 @@ void ICProgramGuidePage::GuideKeyToActionCheck(int key)
         break;
     case ICKeyboard::VFB_Pose_Horizontal:
     case ICKeyboard::VFB_Pose_Vertical:
-//        ui->cBox->setCurrentIndex(key == ICKeyboard::VFB_Pose_Horizontal ? 1:0);
+        //        ui->cBox->setCurrentIndex(key == ICKeyboard::VFB_Pose_Horizontal ? 1:0);
         if((key == ICKeyboard::VFB_Pose_Horizontal ? 0:1) == 0)
             ui->cBoxVertical->setChecked(true);
         else if((key == ICKeyboard::VFB_Pose_Horizontal ? 0:1) == 1)
             ui->cBoxHorizontal->setChecked(true);
         break;
 
+    }
+}
+
+void ICProgramGuidePage::on_mainArmOUtletBox_toggled(bool checked)
+{
+    ui->usedSubArmBox->blockSignals(true);
+    if(checked)
+    {
+        ui->outletGroupBox->show();
+        ui->usedSubArmBox->setChecked(false);
+        ui->gy2Label->setText(tr("GY1:"));
+        ui->gx2Label->setText(tr("GX1:"));
+        ui->x2Edit->setValidator(&posValidators_[0]);
+        ui->y2Edit->setValidator(&posValidators_[1]);
+    }
+    else
+    {
+        ui->outletGroupBox->hide();
+        ui->x2Edit->setValidator(&posValidators_[3]);
+        ui->y2Edit->setValidator(&posValidators_[4]);
+    }
+    ui->outletFixtureGroup->setEnabled(checked);
+    ui->usedSubArmBox->blockSignals(false);
+
+}
+
+void ICProgramGuidePage::on_setIn1_clicked()
+{
+    ICVirtualHost *host = ICVirtualHost::GlobalVirtualHost();
+    uint axisLast = host->HostStatus(ICVirtualHost::AxisLastPos1).toUInt() |
+            (host->HostStatus(ICVirtualHost::AxisLastPos2).toUInt() << 16);
+    ui->gx1Back->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisX1, axisLast));
+}
+
+void ICProgramGuidePage::on_setIn2_clicked()
+{
+    ICVirtualHost *host = ICVirtualHost::GlobalVirtualHost();
+    uint axisLast = host->HostStatus(ICVirtualHost::AxisLastPos1).toUInt() |
+            (host->HostStatus(ICVirtualHost::AxisLastPos2).toUInt() << 16);
+    ui->gx2Back->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisX2, axisLast));
+}
+
+void ICProgramGuidePage::on_setIn3_clicked()
+{
+    ICVirtualHost *host = ICVirtualHost::GlobalVirtualHost();
+    uint axisLast = host->HostStatus(ICVirtualHost::AxisLastPos1).toUInt() |
+            (host->HostStatus(ICVirtualHost::AxisLastPos2).toUInt() << 16);
+    ui->outX1->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisX1, axisLast));
+    ui->outX2->SetThisIntToThisText(host->GetActualPos(ICVirtualHost::ICAxis_AxisX2, axisLast));
+}
+
+void ICProgramGuidePage::on_pFixtureSelect_clicked()
+{
+    if(fixtrueEditor_->ShowEditor(productfixturesConfigs) == QDialog::Accepted)
+    {
+        productfixturesConfigs = fixtrueEditor_->GetConfigs();
+        ui->pFixture->setText(fixtrueEditor_->SelectedNames().join(","));
+    }
+}
+
+void ICProgramGuidePage::on_oFixtureSelect_clicked()
+{
+    if(fixtrueEditor_->ShowEditor(outletfixturesConfigs) == QDialog::Accepted)
+    {
+        outletfixturesConfigs = fixtrueEditor_->GetConfigs();
+        ui->oFixtrue->setText(fixtrueEditor_->SelectedNames().join(","));
     }
 }

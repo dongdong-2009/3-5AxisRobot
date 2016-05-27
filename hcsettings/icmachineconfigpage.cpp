@@ -10,14 +10,14 @@ ICMachineConfigPage::ICMachineConfigPage(QWidget *parent) :
     ui(new Ui::ICMachineConfigPage)
 {
     ui->setupUi(this);
-    axisWidgets_.append(QList<QWidget*>()<<ui->x1ALabel<<ui->x1MLabel<<ui->xADEdit<<ui->x1SLabel<<ui->xMaxSpeedEdit);
-    axisWidgets_.append(QList<QWidget*>()<<ui->y1MLabel<<ui->y1ALabel<<ui->y1SLabel<<ui->yADEdit<<ui->yMaxSpeedEdit);
-    axisWidgets_.append(QList<QWidget*>()<<ui->zALabel<<ui->zADEdit<<ui->zMaxSpeedEdit<<ui->zMLabel<<ui->zSLabel);
-    axisWidgets_.append(QList<QWidget*>()<<ui->x2ADEdit<<ui->x2ALabel<<ui->x2MaxSpeedEdit<<ui->x2MLabel<<ui->x2SLabel);
-    axisWidgets_.append(QList<QWidget*>()<<ui->y2ADEdit<<ui->y2ALabel<<ui->y2MaxSpeedEdit<<ui->y2MLabel<<ui->y2SLabel);
-    axisWidgets_.append(QList<QWidget*>()<<ui->aADEdit<<ui->aALabel<<ui->aMaxSpeedEdit<<ui->aMLabel<<ui->aSLabel);
-    axisWidgets_.append(QList<QWidget*>()<<ui->bADEdit<<ui->bALabel<<ui->bMaxSpeedEdit<<ui->bMLabel<<ui->bSLabel);
-    axisWidgets_.append(QList<QWidget*>()<<ui->cADEdit<<ui->cALabel<<ui->cMaxSpeedEdit<<ui->cMLabel<<ui->cSLabel);
+    axisWidgets_.append(QList<QWidget*>()<<ui->x1ALabel<<ui->x1MLabel<<ui->xADEdit<<ui->x1SLabel<<ui->xMaxSpeedEdit<<ui->x1SLabel_2);
+    axisWidgets_.append(QList<QWidget*>()<<ui->y1MLabel<<ui->y1ALabel<<ui->y1SLabel<<ui->yADEdit<<ui->yMaxSpeedEdit<<ui->x1SLabel_3);
+    axisWidgets_.append(QList<QWidget*>()<<ui->zALabel<<ui->zADEdit<<ui->zMaxSpeedEdit<<ui->zMLabel<<ui->zSLabel<<ui->x1SLabel_4);
+    axisWidgets_.append(QList<QWidget*>()<<ui->x2ADEdit<<ui->x2ALabel<<ui->x2MaxSpeedEdit<<ui->x2MLabel<<ui->x2SLabel<<ui->x1SLabel_5);
+    axisWidgets_.append(QList<QWidget*>()<<ui->y2ADEdit<<ui->y2ALabel<<ui->y2MaxSpeedEdit<<ui->y2MLabel<<ui->y2SLabel<<ui->x1SLabel_6);
+    axisWidgets_.append(QList<QWidget*>()<<ui->aADEdit<<ui->aALabel<<ui->aMaxSpeedEdit<<ui->aMLabel<<ui->aSLabel<<ui->x1SLabel_7);
+    axisWidgets_.append(QList<QWidget*>()<<ui->bADEdit<<ui->bALabel<<ui->bMaxSpeedEdit<<ui->bMLabel<<ui->bSLabel<<ui->x1SLabel_8);
+    axisWidgets_.append(QList<QWidget*>()<<ui->cADEdit<<ui->cALabel<<ui->cMaxSpeedEdit<<ui->cMLabel<<ui->cSLabel<<ui->x1SLabel_9);
     QIntValidator * validator = new QIntValidator(0, 32767, this);
     ui->xADEdit->SetDecimalPlaces(2);
     ui->xADEdit->setValidator(validator);

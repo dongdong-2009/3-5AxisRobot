@@ -5,7 +5,9 @@ TARGET = Multi-axisManipulatorSystem
 TEMPLATE = app
 QMAKE_CFLAGS += -std=c99
 
-QMAKE_CXX = ccache $${QMAKE_CXX}
+CCACHE=""
+unix:CCACHE=ccache
+QMAKE_CXX = $${CCACHE} $${QMAKE_CXX}
 QMAKE_STRIP = $${member(QMAKE_CXX, 1)}
 message($$QMAKE_STRIP)
 QMAKE_STRIP = $${replace(QMAKE_STRIP, -g++, -strip)}
@@ -36,8 +38,8 @@ UI_DIR = temp_$${suffix}
 MOC_DIR = temp_$${suffix}
 RCC_DIR = temp_$${suffix}
 
-TRUNK_VERSION = XS5-6.0.6
-APP_VERSION = BORUNTE-HUICHUAN-ZENGLIANG-1.1
+TRUNK_VERSION = XS-6.1.0
+APP_VERSION = BORUNTE-HUICHUAN-ZENGLIANG-1.2
 S_VERSION = $${APP_VERSION}_$${HostType}_$${TRUNK_VERSION}
 contains(DEFINES, Compatible6410){
 S_VERSION = $${S_VERSION}_cp6410

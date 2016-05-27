@@ -117,6 +117,9 @@ public:
 
     bool IsSuperLogin() { return isSuperLogin_;}
 
+    int ProgramMode() { return GetParameter(SystemMachine, QString("ProgramMode"), 1).toInt();}
+    void SetProgramMode(int mode) { SaveParameter(SystemMachine, QString("ProgramMode"), mode);}
+
 signals:
     void CurrentLanguageChanged();
 

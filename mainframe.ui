@@ -184,6 +184,7 @@ border: 3px solid green;
        <widget class="QLabel" name="zLabel">
         <property name="font">
          <font>
+          <pointsize>8</pointsize>
           <weight>75</weight>
           <bold>true</bold>
          </font>
@@ -197,13 +198,13 @@ border: 3px solid green;
        <widget class="QLabel" name="zPosLabel">
         <property name="minimumSize">
          <size>
-          <width>75</width>
+          <width>70</width>
           <height>0</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>75</width>
+          <width>70</width>
           <height>16777215</height>
          </size>
         </property>
@@ -220,8 +221,13 @@ border: 3px solid green;
       </item>
       <item>
        <widget class="QLabel" name="zmmLabel">
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
         <property name="text">
-         <string>mm    </string>
+         <string>mm  </string>
         </property>
        </widget>
       </item>
@@ -229,6 +235,7 @@ border: 3px solid green;
        <widget class="QLabel" name="x1Label">
         <property name="font">
          <font>
+          <pointsize>8</pointsize>
           <weight>75</weight>
           <bold>true</bold>
          </font>
@@ -242,13 +249,13 @@ border: 3px solid green;
        <widget class="QLabel" name="xPosLabel">
         <property name="minimumSize">
          <size>
-          <width>75</width>
+          <width>70</width>
           <height>0</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>75</width>
+          <width>70</width>
           <height>16777215</height>
          </size>
         </property>
@@ -265,8 +272,13 @@ border: 3px solid green;
       </item>
       <item>
        <widget class="QLabel" name="x1mmLabel">
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
         <property name="text">
-         <string>mm    </string>
+         <string>mm  </string>
         </property>
        </widget>
       </item>
@@ -274,6 +286,7 @@ border: 3px solid green;
        <widget class="QLabel" name="y1Label">
         <property name="font">
          <font>
+          <pointsize>8</pointsize>
           <weight>75</weight>
           <bold>true</bold>
          </font>
@@ -287,13 +300,13 @@ border: 3px solid green;
        <widget class="QLabel" name="yPosLabel">
         <property name="minimumSize">
          <size>
-          <width>75</width>
+          <width>70</width>
           <height>0</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>75</width>
+          <width>70</width>
           <height>16777215</height>
          </size>
         </property>
@@ -310,8 +323,13 @@ border: 3px solid green;
       </item>
       <item>
        <widget class="QLabel" name="y1mmLabel">
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
         <property name="text">
-         <string>mm    </string>
+         <string>mm  </string>
         </property>
        </widget>
       </item>
@@ -319,6 +337,7 @@ border: 3px solid green;
        <widget class="QLabel" name="x2Label">
         <property name="font">
          <font>
+          <pointsize>8</pointsize>
           <weight>75</weight>
           <bold>true</bold>
          </font>
@@ -332,13 +351,13 @@ border: 3px solid green;
        <widget class="QLabel" name="pPosLabel">
         <property name="minimumSize">
          <size>
-          <width>75</width>
+          <width>70</width>
           <height>0</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>75</width>
+          <width>70</width>
           <height>16777215</height>
          </size>
         </property>
@@ -355,8 +374,13 @@ border: 3px solid green;
       </item>
       <item>
        <widget class="QLabel" name="x2mmLabel">
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
         <property name="text">
-         <string>mm    </string>
+         <string>mm  </string>
         </property>
        </widget>
       </item>
@@ -364,6 +388,7 @@ border: 3px solid green;
        <widget class="QLabel" name="y2Label">
         <property name="font">
          <font>
+          <pointsize>8</pointsize>
           <weight>75</weight>
           <bold>true</bold>
          </font>
@@ -377,13 +402,13 @@ border: 3px solid green;
        <widget class="QLabel" name="qPosLabel">
         <property name="minimumSize">
          <size>
-          <width>75</width>
+          <width>70</width>
           <height>0</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>75</width>
+          <width>70</width>
           <height>16777215</height>
          </size>
         </property>
@@ -400,8 +425,13 @@ border: 3px solid green;
       </item>
       <item>
        <widget class="QLabel" name="y2mmLabel">
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
         <property name="text">
-         <string>mm    </string>
+         <string>mm  </string>
         </property>
        </widget>
       </item>

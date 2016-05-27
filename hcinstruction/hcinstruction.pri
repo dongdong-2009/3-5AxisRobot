@@ -3,8 +3,6 @@ INCLUDEPATH += $$PWD
 HEADERS += \
     $$PWD/ichcinstructionpageframe.h \
     $$PWD/actionsettingframe.h \
-    #$$PWD/ichcparametersframe.h \
-    #$$PWD/routesettingdialog.h \
     $$PWD/ichcinjectionpage.h \
     $$PWD/ichcfixturepage.h \
     $$PWD/ichcconditionpage.h \
@@ -12,8 +10,6 @@ HEADERS += \
     $$PWD/icmacrosubroutine.h \
     $$PWD/icinstructparam.h \
     $$PWD/ichcprogrammonitorframe.h \
-    #$$PWD/ichceditordialog.h \
-    #$$PWD/icmacroparameditorframe.h \
     $$PWD/icautorunrevise.h \
     $$PWD/icinstructioneditorbase.h \
     $$PWD/icflagseditor.h \
@@ -28,8 +24,11 @@ HEADERS += \
     $$PWD/icprogramguidepage.h \
     $$PWD/ichcotherpage.h \
     $$PWD/iccommenteditor.h \
-    hcinstruction/iccurveeditor.h \
-    hcinstruction/icactionsix.h
+    $$PWD/iccurveeditor.h \
+    $$PWD/icactionsix.h \
+    $$PWD/icguidefixtureeditor.h \
+    $$PWD/icsimpleteachpage.h \
+    $$PWD/icsimpleautoeditor.h
 
 SOURCES += \
     $$PWD/ichcinstructionpageframe.cpp \
@@ -59,8 +58,11 @@ SOURCES += \
     $$PWD/icprogramguidepage.cpp \
     $$PWD/ichcotherpage.cpp \
     $$PWD/iccommenteditor.cpp \
-    hcinstruction/iccurveeditor.cpp \
-    hcinstruction/icactionsix.cpp
+    $$PWD/icsimpleteachpage.cpp \
+    $$PWD/iccurveeditor.cpp \
+    $$PWD/icactionsix.cpp \
+    $$PWD/icguidefixtureeditor.cpp \
+    $$PWD/icsimpleautoeditor.cpp
 
 FORMS += \
     $$PWD/icautorunrevise.ui \
@@ -72,8 +74,11 @@ FORMS += \
     $$PWD/ichcotherpage.ui \
     $$PWD/iccommenteditor.ui \
     $$PWD/icinstructmodifydialog.ui \
-    hcinstruction/iccurveeditor.ui \
-    hcinstruction/icactionsix.ui
+    $$PWD/icsimpleteachpage.ui \
+    $$PWD/iccurveeditor.ui \
+    $$PWD/icactionsix.ui \
+    $$PWD/icguidefixtureeditor.ui \
+    $$PWD/icsimpleautoeditor.ui
 
 
 
@@ -107,3 +112,6 @@ FORMS += $$PWD/ichcinstructionpageframe_5.ui \
     $$PWD/actionsettingframe_5.ui \
     $$PWD/ichcprogrammonitorframe_5.ui
 }
+
+
+
