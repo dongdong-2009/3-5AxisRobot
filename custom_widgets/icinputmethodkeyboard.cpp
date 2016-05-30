@@ -2,6 +2,7 @@
 #include "ui_icinputmethodkeyboard.h"
 #include <QSqlQuery>
 #include <QDebug>
+#include "mainframe.h"
 
 QList<QPushButton*> cnButtons;
 
@@ -37,6 +38,13 @@ ICInputMethodKeyboard::ICInputMethodKeyboard(QWidget *parent) :
 ICInputMethodKeyboard::~ICInputMethodKeyboard()
 {
     delete ui;
+}
+
+void ICInputMethodKeyboard::keyPressEvent(QKeyEvent *e)
+{
+    QKeyEvent* ke = new QKeyEvent(*e);
+    qApp->postEvent(icMainFrame, ke);
+    this->reject();
 }
 
 void ICInputMethodKeyboard::changeEvent(QEvent *e)
