@@ -190,6 +190,10 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
     v >>= 15;
     ui->fixtureComboBox->setCurrentIndex(v);
 
+    ui->originSpeed->SetDecimalPlaces(0);
+    ui->originSpeed->setValidator(new QIntValidator(1, 10, this));
+    ui->originSpeed->SetThisIntToThisText(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Resv2).toInt());
+
     editorToConfigIDs_.insert(ui->x1Box, ICConfigString::kCS_STRUCT_Axis_Define_X1);
     editorToConfigIDs_.insert(ui->y1Box, ICConfigString::kCS_STRUCT_Axis_Define_Y1);
     editorToConfigIDs_.insert(ui->zBox, ICConfigString::kCS_STRUCT_Axis_Define_Z);
@@ -386,7 +390,7 @@ void ICStructDefineFrame::on_saveButton_clicked()
 //    data.split.a7 = ui->portB->currentIndex() == 0 ? 0 : ui->portB->currentIndex() + 7;
 //    data.split.a8 = ui->portC->currentIndex() == 0 ? 0 : ui->portC->currentIndex() + 7;
     dataBuffer[4] = ui->servoFlex->currentIndex();
-    dataBuffer[5] = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Resv2).toUInt();
+    dataBuffer[5] = ui->originSpeed->TransThisTextToThisInt();
     for(int i = 0; i != 6; ++i)
     {
         sum += dataBuffer.at(i);
