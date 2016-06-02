@@ -3,6 +3,7 @@
 #include "config.h"
 #include "icvirtualhost.h"
 #include <QDebug>
+#include "icparameterssave.h"
 
 ICSimpleTeachPage::ICSimpleTeachPage(QWidget *parent) :
     QWidget(parent),
@@ -34,10 +35,10 @@ ICSimpleTeachPage::ICSimpleTeachPage(QWidget *parent) :
     ui->getOutletPosY2->SetDecimalPlaces(POS_DECIMAL);
 
     ui->posBHorX1->SetDecimalPlaces(POS_DECIMAL);
-//    ui->posBHorY1->SetDecimalPlaces(POS_DECIMAL);
-//    ui->posBHorZ->SetDecimalPlaces(POS_DECIMAL);
+    //    ui->posBHorY1->SetDecimalPlaces(POS_DECIMAL);
+    //    ui->posBHorZ->SetDecimalPlaces(POS_DECIMAL);
     ui->posBHorX2->SetDecimalPlaces(POS_DECIMAL);
-//    ui->posBHorY2->SetDecimalPlaces(POS_DECIMAL);
+    //    ui->posBHorY2->SetDecimalPlaces(POS_DECIMAL);
 
     ui->releaseProductPosX1->SetDecimalPlaces(POS_DECIMAL);
     ui->releaseProductPosY1->SetDecimalPlaces(POS_DECIMAL);
@@ -71,10 +72,10 @@ ICSimpleTeachPage::ICSimpleTeachPage(QWidget *parent) :
     ui->getOutletPosY2->setValidator(&posValidator_);
 
     ui->posBHorX1->setValidator(&posValidator_);
-//    ui->posBHorY1->setValidator(&posValidator_);
-//    ui->posBHorZ->setValidator(&posValidator_);
+    //    ui->posBHorY1->setValidator(&posValidator_);
+    //    ui->posBHorZ->setValidator(&posValidator_);
     ui->posBHorX2->setValidator(&posValidator_);
-//    ui->posBHorY2->setValidator(&posValidator_);
+    //    ui->posBHorY2->setValidator(&posValidator_);
 
     ui->releaseProductPosX1->setValidator(&posValidator_);
     ui->releaseProductPosY1->setValidator(&posValidator_);
@@ -141,12 +142,15 @@ ICSimpleTeachPage::ICSimpleTeachPage(QWidget *parent) :
     ui->bFOFFD->SetDecimalPlaces(2);
 
 
-    ICMold::CurrentMold()->CompileSimpleTeachFile(ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisX1),
-                                   ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisY1),
-                                   ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisZ),
-                                   ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisX2),
-                                   ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisY2));
-    ICVirtualHost::GlobalVirtualHost()->ReConfigure();
+    if(ICParametersSave::Instance()->ProgramMode() == 0)
+    {
+        ICMold::CurrentMold()->CompileSimpleTeachFile(ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisX1),
+                                                      ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisY1),
+                                                      ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisZ),
+                                                      ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisX2),
+                                                      ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisY2));
+        ICVirtualHost::GlobalVirtualHost()->ReConfigure();
+    }
 
 }
 
@@ -253,10 +257,10 @@ void ICSimpleTeachPage::showEvent(QShowEvent *e)
     ui->getOutletFInfo->setText(fixtureSel_->SelectedNames(stData_->getOutletPos.fixtureConfis).join(","));
 
     ui->posBHorX1->SetThisIntToThisText(stData_->posBH.b.x1);
-//    ui->posBHorY1->SetThisIntToThisText(stData_->posBH.b.y1);
-//    ui->posBHorZ->SetThisIntToThisText(stData_->posBH.b.z);
+    //    ui->posBHorY1->SetThisIntToThisText(stData_->posBH.b.y1);
+    //    ui->posBHorZ->SetThisIntToThisText(stData_->posBH.b.z);
     ui->posBHorX2->SetThisIntToThisText(stData_->posBH.b.x2);
-//    ui->posBHorY2->SetThisIntToThisText(stData_->posBH.b.y2);
+    //    ui->posBHorY2->SetThisIntToThisText(stData_->posBH.b.y2);
     ui->speedBHorX1->SetThisIntToThisText(stData_->posBH.b.x1S);
 
     ui->speedBHorX2->SetThisIntToThisText(stData_->posBH.b.x2S);
@@ -390,7 +394,7 @@ void ICSimpleTeachPage::SetMainArmPosEnabled(bool en)
     ui->afterGetPosX1S->setVisible(en);
 
     ui->posBHorX1->setVisible(en);
-//    ui->posBHorY1->setVisible(en);
+    //    ui->posBHorY1->setVisible(en);
 
     ui->releaseProductPosX1->setVisible(ui->mainArmEn->isChecked());
     ui->releaseProductPosY1->setVisible(ui->mainArmEn->isChecked());
@@ -447,12 +451,12 @@ void ICSimpleTeachPage::SetMainArmPosEnabled(bool en)
 
     SetCutOutletEnabled(ui->cutOutletEn->isChecked());
 
-//    for(int i = 0; i < cutOutletSpeedUI.size(); ++i)
-//    {
-//        speedUI = cutOutletSpeedUI.at(i);
-//        speedUI.b.x1SpeedEdit->setVisible(ui->mainArmEn->isChecked());
-//        speedUI.b.y1SpeedEdit->setVisible(ui->mainArmEn->isChecked());
-//    }
+    //    for(int i = 0; i < cutOutletSpeedUI.size(); ++i)
+    //    {
+    //        speedUI = cutOutletSpeedUI.at(i);
+    //        speedUI.b.x1SpeedEdit->setVisible(ui->mainArmEn->isChecked());
+    //        speedUI.b.y1SpeedEdit->setVisible(ui->mainArmEn->isChecked());
+    //    }
 
 }
 
@@ -469,7 +473,7 @@ void ICSimpleTeachPage::SetSubArmPosEnabled(bool en)
     ui->afterGetPosX2S->setVisible(en);
 
     ui->posBHorX2->setVisible(en);
-//    ui->posBHorY2->setVisible(en);
+    //    ui->posBHorY2->setVisible(en);
 
 
     ui->releaseOutletPosX2->setVisible(en);
@@ -567,8 +571,8 @@ void ICSimpleTeachPage::SetReleaseOutletEnabled(bool en)
         releaseOutletSpeedUI[i].b.y1SpeedEdit->setEnabled(ui->mainArmOutletEn->isChecked());
         releaseOutletSpeedUI[i].b.x1SpeedEdit->setEchoMode(releaseOutletSpeedUI[i].b.x1SpeedEdit->isEnabled() ? QLineEdit::Normal : QLineEdit::Password);
         releaseOutletSpeedUI[i].b.y1SpeedEdit->setEchoMode(releaseOutletSpeedUI[i].b.y1SpeedEdit->isEnabled() ? QLineEdit::Normal : QLineEdit::Password);
-//        releaseOutletSpeedUI[i].b.x2SpeedEdit->setEnabled(en && UsedSubArm());
-//        releaseOutletSpeedUI[i].b.y2SpeedEdit->setEnabled(en && UsedSubArm());
+        //        releaseOutletSpeedUI[i].b.x2SpeedEdit->setEnabled(en && UsedSubArm());
+        //        releaseOutletSpeedUI[i].b.y2SpeedEdit->setEnabled(en && UsedSubArm());
 
     }
 }
@@ -764,7 +768,7 @@ void ICSimpleTeachPage::on_modifyProductPos_clicked()
     posData.pos.b.z = ui->releaseProductPosZ->TransThisTextToThisInt();
     posData.fixtureConfis = releaseProductCFConfigs_;
     stData_->releaseProductPosList[toModifyIndex] = posData;
-//    selected[0]->setText(PosDataToString(posData));
+    //    selected[0]->setText(PosDataToString(posData));
     RefreshViewPosHelper(stData_->releaseProductPosList, ui->releasePosView, tr("Pos"), false, true);
 }
 
@@ -810,7 +814,7 @@ void ICSimpleTeachPage::on_modifyOutletPos_clicked()
     posData.pos.b.y2 = ui->releaseOutletPosY2->TransThisTextToThisInt();
     posData.fixtureConfis = (releaseOutletCFConfigs_);
     stData_->releaseOutletPosList[toModifyIndex] = posData;
-//    selected[0]->setText(PosDataToString(posData));
+    //    selected[0]->setText(PosDataToString(posData));
     RefreshViewPosHelper(stData_->releaseOutletPosList, ui->releaseOutletView, tr("Pos"), ui->mainArmEn->isChecked(), ui->mainArmOutletEn->isChecked());
 
 
@@ -854,7 +858,7 @@ void ICSimpleTeachPage::on_modifyCut_clicked()
     posData.pos.b.z = ui->cutOutletPosZ->TransThisTextToThisInt();
     posData.fixtureConfis = cutOutletCFConfigs_;
     stData_->cutOutletPosList[toModifyIndex] = posData;
-//    selected[0]->setText(PosDataToString(posData, true));
+    //    selected[0]->setText(PosDataToString(posData, true));
     RefreshViewPosHelper(stData_->cutOutletPosList, ui->cutPosView, tr("Pos"), false, true);
 
 }
@@ -960,10 +964,10 @@ void ICSimpleTeachPage::on_saveBtn_clicked()
     stData_->getOutletPos.pos.b.y2S = ui->getOutletSpeedY2->TransThisTextToThisInt();
 
     stData_->posBH.b.x1 = ui->posBHorX1->TransThisTextToThisInt();
-//    stData_->posBH.b.y1 = ui->posBHorY1->TransThisTextToThisInt();
-//    stData_->posBH.b.z = ui->posBHorZ->TransThisTextToThisInt();
+    //    stData_->posBH.b.y1 = ui->posBHorY1->TransThisTextToThisInt();
+    //    stData_->posBH.b.z = ui->posBHorZ->TransThisTextToThisInt();
     stData_->posBH.b.x2 = ui->posBHorX2->TransThisTextToThisInt();
-//    stData_->posBH.b.y2 = ui->posBHorY2->TransThisTextToThisInt();
+    //    stData_->posBH.b.y2 = ui->posBHorY2->TransThisTextToThisInt();
     stData_->posBH.b.x1S = ui->speedBHorX1->TransThisTextToThisInt();
     stData_->posBH.b.x2S = ui->speedBHorX2->TransThisTextToThisInt();
 
@@ -1013,10 +1017,10 @@ void ICSimpleTeachPage::on_saveBtn_clicked()
     }
     ICMold::CurrentMold()->SaveSimpleTeachFile();
     ICMold::CurrentMold()->CompileSimpleTeachFile(ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisX1),
-                                   ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisY1),
-                                   ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisZ),
-                                   ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisX2),
-                                   ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisY2));
+                                                  ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisY1),
+                                                  ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisZ),
+                                                  ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisX2),
+                                                  ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisY2));
     ICVirtualHost::GlobalVirtualHost()->ReConfigure();
 
 }
