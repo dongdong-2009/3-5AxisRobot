@@ -147,6 +147,16 @@ void HCManualAdjustFrame::StatusRefreshed()
         }
     }
 
+    if(host->IsInputOn(24))   //x040
+    {
+        ui->x040Status->setPixmap(inputOnPixmap_);
+    }
+    else
+    {
+        ui->x040Status->setPixmap(offPixmap_);
+
+    }
+
     if(host->IsOutputOn(7))   //y017
     {
         if(!currentStatus_.at(4))

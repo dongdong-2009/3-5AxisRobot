@@ -216,7 +216,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             }
             else if(moldItem.IFVal() == 12)
             {
-                commandStr += tr("X016 OFF");
+                commandStr += tr("X017 OFF");
             }
             else if(moldItem.IFVal() == 13)
             {
