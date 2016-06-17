@@ -283,7 +283,7 @@ void ICHCSystemSettingsFrame::on_keyToneButton_toggled(bool checked)
 
 void ICHCSystemSettingsFrame::on_changeButton_clicked()
 {
-    if(ui->oldPwdEdit->text().isEmpty() ||
+    if(/*ui->oldPwdEdit->text().isEmpty() ||*/
             ui->newPwdEdit->text().isEmpty())
     {
         ICMessageBox::ICWarning(this,
