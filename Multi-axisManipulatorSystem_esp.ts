@@ -466,7 +466,12 @@ ajustar</translation>
         <translation>X023</translation>
     </message>
     <message>
-        <location filename="hcmanualoperation/hcmanualadjustframe.cpp" line="235"/>
+        <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="690"/>
+        <source>X040</source>
+        <translation type="unfinished">X040</translation>
+    </message>
+    <message>
+        <location filename="hcmanualoperation/hcmanualadjustframe.cpp" line="245"/>
         <source>Adjust En</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2544,7 +2549,7 @@ producto en el-molde</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="140"/>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="505"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="476"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="99"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="609"/>
         <source>Try Product</source>
@@ -2552,69 +2557,68 @@ producto en el-molde</translation>
 producción</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="687"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="321"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="131"/>
         <source>Product Count</source>
         <translation>Conde de
  molde</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="359"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="144"/>
         <source>Check Point</source>
         <translation>Punto de chequeo</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="397"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="616"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="176"/>
         <source>Fixture-1</source>
         <translation>Acce-
 sorio-1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="308"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="406"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="208"/>
         <source>Fixture-3</source>
         <translation>Acce-
 sorio-3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="581"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="365"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="252"/>
         <source>Defective Products</source>
         <translation>Producto
 malo</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="346"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="578"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="287"/>
         <source>Fixture-4</source>
         <translation>Acce-
 sorio-4</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="435"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="686"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="319"/>
         <source>Fixture-2</source>
         <translation>Acce-
 sorio-2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="616"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="282"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="351"/>
         <source>Sucker-2</source>
         <translation>Chup-
 ador2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="270"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="250"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="383"/>
         <source>Sucker-1</source>
         <translation>Chup-
 ador1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="238"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="438"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="415"/>
         <source>X043</source>
         <translation type="unfinished">X043</translation>
@@ -2628,20 +2632,20 @@ ador1</translation>
         <translation>tomamuestra</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="537"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="540"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="479"/>
         <source>X044</source>
         <translation type="unfinished">X044</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="467"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="508"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="511"/>
         <source>Sucker-3</source>
         <translation>Chup-
 ador-3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="206"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="218"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="543"/>
         <source>Sucker-4</source>
         <translation>Chup-
@@ -2685,13 +2689,13 @@ ador 4</translation>
 malo</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="167"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="179"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="554"/>
         <source>Use Macro</source>
         <translation>Uso</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="154"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="160"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="617"/>
         <source>Go to flag</source>
         <translation>Salta a</translation>
@@ -5684,7 +5688,8 @@ de eje B</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="219"/>
-        <source>X016 OFF</source>
+        <source>X017 OFF</source>
+        <oldsource>X016 OFF</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8329,7 +8334,7 @@ de producción</translation>
         <translation>Otra definición</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2161"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2174"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="349"/>
         <source>Ret On Close</source>
         <translation>Cuando retorno
@@ -8410,14 +8415,14 @@ de mol</translation>
         <translation>No utilizar</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2120"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2082"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="348"/>
         <source>Run On Close</source>
         <translation>Cuando ejecuta
  Cerrar</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2082"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2136"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="350"/>
         <source>Stop On Close</source>
         <translation>Cuando detener
