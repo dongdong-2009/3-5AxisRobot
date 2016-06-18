@@ -3,6 +3,7 @@
 #include <QSqlQuery>
 #include <QKeyEvent>
 #include <QApplication>
+#include "icparameterssave.h"
 
 //#include <QDebug>
 
@@ -41,7 +42,19 @@ void ICAlarmDetailsDialog::ShowDetails(int alarmID)
 
     if(alarmID == 0) return;
     QSqlQuery query;
-    query.exec(QString("SELECT * FROM tb_alarm_helper_zh_cn WHERE alarm_id = %1").arg(alarmID));
+    QString tableName = "tb_alarm_helper_";
+    int c = ICParametersSave::Instance()->Country();
+    if(c == QLocale::UnitedStates)
+    {
+        tableName += "us_en";
+    }
+    else
+    {
+        tableName += "zh_cn";
+
+    }
+
+    query.exec(QString("SELECT * FROM tb_alarm_helper_%2 WHERE alarm_id = %1").arg(alarmID).arg(tableName));
     if(query.next())
     {
 
