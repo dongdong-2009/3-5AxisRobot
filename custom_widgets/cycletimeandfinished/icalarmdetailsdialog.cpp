@@ -54,7 +54,7 @@ void ICAlarmDetailsDialog::ShowDetails(int alarmID)
 
     }
 
-    query.exec(QString("SELECT * FROM tb_alarm_helper_%2 WHERE alarm_id = %1").arg(alarmID).arg(tableName));
+    query.exec(QString("SELECT * FROM %2 WHERE alarm_id = %1").arg(alarmID).arg(tableName));
     if(query.next())
     {
 
