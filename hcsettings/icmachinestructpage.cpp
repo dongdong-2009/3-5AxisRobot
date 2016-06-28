@@ -893,7 +893,7 @@ void ICMachineStructPage::on_mechanicalLengthLineEdit_textChanged(const QString 
     Q_UNUSED(arg1);
     //maxMoveValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
     maximumValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
-    intValidator->setBottom(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
+//    intValidator->setBottom(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
     minSecValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
     maxSecValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
 //    minSecValidator_->setTop(maximumValidator_->top());
@@ -905,7 +905,7 @@ void ICMachineStructPage::on_mechanicalLengthLineEdit_textChanged(const QString 
 void ICMachineStructPage::on_maximumDisplacementLineEdit_textChanged(const QString &arg1)
 {
     Q_UNUSED(arg1);
-//    intValidator->setBottom(ui->maximumDisplacementLineEdit->TransThisTextToThisInt());
+    intValidator->setBottom(ui->maximumDisplacementLineEdit->TransThisTextToThisInt());
 //    minSecValidator_->setTop(ui->maximumDisplacementLineEdit->TransThisTextToThisInt());
 //    maxSecValidator_->setTop(ui->maximumDisplacementLineEdit->TransThisTextToThisInt());
 }
