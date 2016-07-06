@@ -519,6 +519,8 @@ private:
     QList<uint> tryProductPos_;
     QList<ICMoldItem> needToCutOffFixtures_;
     static ICMold* currentMold_;
+    int badProductStep_;
+    int tryProductStep_;
 
 };
 

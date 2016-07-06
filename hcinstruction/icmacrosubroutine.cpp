@@ -4,6 +4,7 @@
 #include <QStringList>
 #include "icmacrosubroutine.h"
 #include "icfile.h"
+#include "icvirtualhost.h"
 
 QScopedPointer<ICMacroSubroutine> ICMacroSubroutine::instance_;
 ICMacroSubroutine::ICMacroSubroutine(QObject *parent) :
@@ -143,7 +144,12 @@ void ICMacroSubroutine::GenerateBadProductSub(const QList<ICMoldItem> &offFixtur
     item.SetActualPos(isSub ? pos.at(3) : pos.at(0));
     item.SetSVal(isSub ? pos.at(8) : pos.at(5));
     item.SetDVal(0);
-    sub.append(item);
+    bool x2Servo = ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisX2) == ICVirtualHost::ICAxisDefine_Servo;
+    bool y2Servo = ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisY2) == ICVirtualHost::ICAxisDefine_Servo;
+    if((item.Action() == ICMold::GP) && x2Servo)
+    {
+        sub.append(item);
+    }
 
     item.SetAction(ICMold::GZ);
     item.SetActualPos(pos.at(2));
@@ -163,7 +169,8 @@ void ICMacroSubroutine::GenerateBadProductSub(const QList<ICMoldItem> &offFixtur
     item.SetAction(isSub ? ICMold::GQ : ICMold::GY);
     item.SetActualPos(isSub ? pos.at(4) : pos.at(1));
     item.SetSVal(isSub ? pos.at(9) : pos.at(4));
-    sub.append(item);
+    if((item.Action() == ICMold::GQ) && y2Servo)
+        sub.append(item);
 
 
     for(int i = 0; i < offFixtures.size(); ++i)
@@ -178,9 +185,16 @@ void ICMacroSubroutine::GenerateBadProductSub(const QList<ICMoldItem> &offFixtur
     item.SetActualPos(0);
     item.SetSVal(isSub ? pos.at(9) : pos.at(4));
     item.SetDVal(50);
-    sub.append(item);
+    if((item.Action() == ICMold::GQ) && y2Servo)
+    {
+        sub.append(item);
+        item.SetNum(3);
+    }
+    else
+    {
+        item.SetNum(4);
+    }
 
-    item.SetNum(4);
     item.SetDVal(0);
     item.SetSVal(0);
     item.SetIFVal(0);
@@ -197,12 +211,15 @@ void ICMacroSubroutine::GenerateTryProductSub(const QList<ICMoldItem> &offFixtur
     subroutines_[7].clear();
     QList<ICMoldItem> sub;
     ICMoldItem item;
+    bool x2Servo = ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisX2) == ICVirtualHost::ICAxisDefine_Servo;
+    bool y2Servo = ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisY2) == ICVirtualHost::ICAxisDefine_Servo;
     item.SetNum(0);
     item.SetAction(isSub ? ICMold::GP : ICMold::GX);
     item.SetActualPos(isSub ? pos.at(3) : pos.at(0));
     item.SetSVal(isSub ? pos.at(8) : pos.at(5));
     item.SetDVal(0);
-    sub.append(item);
+    if((item.Action() == ICMold::GP && x2Servo))
+        sub.append(item);
 
     item.SetAction(ICMold::GZ);
     item.SetActualPos(pos.at(2));
@@ -222,7 +239,8 @@ void ICMacroSubroutine::GenerateTryProductSub(const QList<ICMoldItem> &offFixtur
     item.SetAction(isSub ? ICMold::GQ : ICMold::GY);
     item.SetActualPos(isSub ? pos.at(4) : pos.at(1));
     item.SetSVal(isSub ? pos.at(9) : pos.at(4));
-    sub.append(item);
+    if((item.Action() == ICMold::GQ) && y2Servo)
+        sub.append(item);
 
 
     for(int i = 0; i < offFixtures.size(); ++i)
@@ -237,9 +255,14 @@ void ICMacroSubroutine::GenerateTryProductSub(const QList<ICMoldItem> &offFixtur
     item.SetActualPos(0);
     item.SetSVal(isSub ? pos.at(9) : pos.at(4));
     item.SetDVal(50);
-    sub.append(item);
+    if((item.Action() == ICMold::GQ) && y2Servo)
+    {
+        sub.append(item);
+        item.SetNum(3);
+    }
+    else
+        item.SetNum(4);
 
-    item.SetNum(4);
     item.SetDVal(0);
     item.SetSVal(0);
     item.SetIFVal(0);

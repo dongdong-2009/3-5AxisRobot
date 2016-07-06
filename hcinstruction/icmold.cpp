@@ -662,6 +662,8 @@ void ICMold::Compile()
     int badProductStepFix = 0;
     int badProductStep = -1;
     int tryProductStep = -1;
+    badProductStep_ = -1;
+    tryProductStep_ = -1;
     int inPos = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Z_InSafe).toUInt() * 10;
     int currentZ = 65530;
     for(int i = 0; i != tmpContent.size(); ++i)
@@ -818,11 +820,13 @@ void ICMold::Compile()
     {
         toSentContent_[newbadProductStep].SetDVal(toSentContent_.last().Num() - toSentContent_.at(newbadProductStep).Num());
         toSentContent_[newbadProductStep].ReSum();
+        badProductStep_ = newbadProductStep;
     }
     if(newTryProductStep >= 0)
     {
         toSentContent_[newTryProductStep].SetDVal(toSentContent_.last().Num() - toSentContent_.at(newTryProductStep).Num());
         toSentContent_[newTryProductStep].ReSum();
+        tryProductStep_ = newTryProductStep;
     }
     //    qDebug()<<toSentContent_[newbadProductStep].ToString();
     //    qDebug("End");
@@ -836,7 +840,18 @@ int ICMold::ToHostSeq(int seq) const
         if(moldContent_.at(i).Action() == ACTCOMMENT)
             ++countComment;
     }
-    return seq - countComment;
+    int ret = seq - countComment;
+    if(isBadProductEn_)
+    {
+        if(ret >= badProductStep_)
+            ret++;
+    }
+    if(isTryProductEn_)
+    {
+        if(ret >= tryProductStep_)
+            ret++;
+    }
+    return ret;
 }
 
 int ICMold::ToHostNum(int seq) const
