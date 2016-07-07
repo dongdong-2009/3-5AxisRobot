@@ -399,7 +399,9 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             {
                 commandStr += QObject::tr("On") + ":";
             }
+#ifndef HC_4F2S
             if(action != ICMold::ACT_AUX5 && action != ICMold::ACT_AUX6)
+#endif
             {
                 commandStr += " ";
                 commandStr += QObject::tr("Times:") + QString::number(moldItem.ActualMoldCount()) + " ";
@@ -531,6 +533,10 @@ void ICInstructParam::InstallMoldInfo()
     clipGroupMap_[ACT_AUX4] = QObject::tr("Reserve 4");
     clipGroupMap_[ACT_AUX5] = QObject::tr("Sucker 3");
     clipGroupMap_[ACT_AUX6] = QObject::tr("Sucker 4");
+#ifdef HC_4F2S
+    clipGroupMap_[ACT_AUX5] = QObject::tr("Reserve 5");
+    clipGroupMap_[ACT_AUX6] = QObject::tr("Reserve 6");
+#endif
     //    clipGroupMap_[ACTCLIP14OFF] = QObject::tr("Clip14 OFF");
     //    clipGroupMap_[ACTCLIP15OFF] = QObject::tr("Clip15 OFF");
     //    clipGroupMap_[ACTCLIP16OFF] = QObject::tr("Clip16 OFF");
