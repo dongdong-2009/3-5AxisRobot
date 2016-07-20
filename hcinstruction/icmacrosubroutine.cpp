@@ -136,6 +136,7 @@ uint ICMacroSubroutine::SyncSum() const
 
 void ICMacroSubroutine::GenerateBadProductSub(const QList<ICMoldItem> &offFixtures, const QList<uint> pos, bool isSub)
 {
+    qDebug()<<"pos:"<<pos;
     subroutines_[5].clear();
     QList<ICMoldItem> sub;
     ICMoldItem item;
@@ -166,33 +167,34 @@ void ICMacroSubroutine::GenerateBadProductSub(const QList<ICMoldItem> &offFixtur
         sub.append(item);
     }
 
-    item.SetNum(isSub ? 1 : 2);
+    item.SetNum(sub.last().Num() + 1);
     item.SetAction(isSub ? ICMold::GQ : ICMold::GY);
     item.SetActualPos(isSub ? pos.at(4) : pos.at(1));
-    item.SetSVal(isSub ? pos.at(9) : pos.at(4));
+    item.SetSVal(isSub ? pos.at(9) : pos.at(6));
     if(((item.Action() == ICMold::GQ) && y2Servo) ||
             item.Action() == ICMold::GY)
         sub.append(item);
 
 
+    int fN = sub.last().Num() + 1;
     for(int i = 0; i < offFixtures.size(); ++i)
     {
         item = offFixtures.at(i);
-        item.SetNum(2);
+        item.SetNum(fN);
         sub.append(item);
     }
 
-    item.SetNum(3);
+    item.SetNum(sub.last().Num() + 1);
     item.SetAction(isSub ? ICMold::GQ : ICMold::GY);
     item.SetActualPos(0);
-    item.SetSVal(isSub ? pos.at(9) : pos.at(4));
+    item.SetSVal(isSub ? pos.at(9) : pos.at(6));
     item.SetDVal(50);
     if(((item.Action() == ICMold::GQ) && y2Servo) ||
             item.Action() == ICMold::GY)
     {
         sub.append(item);
-        item.SetNum(4);
     }
+    item.SetNum(sub.last().Num() + 1);
     item.SetDVal(0);
     item.SetSVal(0);
     item.SetIFVal(0);
@@ -234,33 +236,35 @@ void ICMacroSubroutine::GenerateTryProductSub(const QList<ICMoldItem> &offFixtur
         sub.append(item);
     }
 
-    item.SetNum(isSub ? 1 : 2);
+    item.SetNum(sub.last().Num() + 1);
     item.SetAction(isSub ? ICMold::GQ : ICMold::GY);
     item.SetActualPos(isSub ? pos.at(4) : pos.at(1));
-    item.SetSVal(isSub ? pos.at(9) : pos.at(4));
+    item.SetSVal(isSub ? pos.at(9) : pos.at(6));
     if(((item.Action() == ICMold::GQ) && y2Servo) ||
             item.Action() == ICMold::GY)
         sub.append(item);
 
 
+    int fN = sub.last().Num() + 1;
     for(int i = 0; i < offFixtures.size(); ++i)
     {
         item = offFixtures.at(i);
-        item.SetNum(2);
+        item.SetNum(fN);
         sub.append(item);
     }
 
-    item.SetNum(3);
+    item.SetNum(sub.last().Num() + 1);
     item.SetAction(isSub ? ICMold::GQ : ICMold::GY);
     item.SetActualPos(0);
-    item.SetSVal(isSub ? pos.at(9) : pos.at(4));
+    item.SetSVal(isSub ? pos.at(9) : pos.at(6));
     item.SetDVal(50);
     if(((item.Action() == ICMold::GQ) && y2Servo) ||
             item.Action() == ICMold::GY)
     {
         sub.append(item);
-        item.SetNum(4);
     }
+
+    item.SetNum(sub.last().Num() + 1);
 
     item.SetDVal(0);
     item.SetSVal(0);
