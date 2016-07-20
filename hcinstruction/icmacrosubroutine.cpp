@@ -188,13 +188,8 @@ void ICMacroSubroutine::GenerateBadProductSub(const QList<ICMoldItem> &offFixtur
     if((item.Action() == ICMold::GQ) && y2Servo)
     {
         sub.append(item);
-        item.SetNum(3);
-    }
-    else
-    {
         item.SetNum(4);
     }
-
     item.SetDVal(0);
     item.SetSVal(0);
     item.SetIFVal(0);
@@ -258,10 +253,8 @@ void ICMacroSubroutine::GenerateTryProductSub(const QList<ICMoldItem> &offFixtur
     if((item.Action() == ICMold::GQ) && y2Servo)
     {
         sub.append(item);
-        item.SetNum(3);
-    }
-    else
         item.SetNum(4);
+    }
 
     item.SetDVal(0);
     item.SetSVal(0);
