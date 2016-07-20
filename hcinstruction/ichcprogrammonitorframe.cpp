@@ -532,13 +532,13 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
     FindIndex_(selectedRow, gIndex, tIndex, sIndex);
     qDebug("End Find index");
     /************BUG#201**********/
-    if(programList_.at(gIndex).StepNum() == 0)  //表示待机点位置（自动运行时待机点位置不能删除）
-    {
-        QMessageBox::warning(this,
-                             tr("Warning"),
-                             tr("Can not edit standby position program"));
-        return;
-    }
+//    if(programList_.at(gIndex).StepNum() == 0)  //表示待机点位置（自动运行时待机点位置不能删除）
+//    {
+//        QMessageBox::warning(this,
+//                             tr("Warning"),
+//                             tr("Can not edit standby position program"));
+//        return;
+//    }
     if(sIndex < 0)
     {
         qDebug("Sindex");

@@ -4127,7 +4127,6 @@ Disable</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="204"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="538"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4139,11 +4138,6 @@ Disable</source>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="342"/>
         <source>Single cycle ready</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="539"/>
-        <source>Can not edit standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

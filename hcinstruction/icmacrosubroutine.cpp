@@ -146,7 +146,8 @@ void ICMacroSubroutine::GenerateBadProductSub(const QList<ICMoldItem> &offFixtur
     item.SetDVal(0);
     bool x2Servo = ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisX2) == ICVirtualHost::ICAxisDefine_Servo;
     bool y2Servo = ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisY2) == ICVirtualHost::ICAxisDefine_Servo;
-    if((item.Action() == ICMold::GP) && x2Servo)
+    if(((item.Action() == ICMold::GP) && x2Servo) ||
+            item.Action() == ICMold::GX)
     {
         sub.append(item);
     }
@@ -169,7 +170,8 @@ void ICMacroSubroutine::GenerateBadProductSub(const QList<ICMoldItem> &offFixtur
     item.SetAction(isSub ? ICMold::GQ : ICMold::GY);
     item.SetActualPos(isSub ? pos.at(4) : pos.at(1));
     item.SetSVal(isSub ? pos.at(9) : pos.at(4));
-    if((item.Action() == ICMold::GQ) && y2Servo)
+    if(((item.Action() == ICMold::GQ) && y2Servo) ||
+            item.Action() == ICMold::GY)
         sub.append(item);
 
 
@@ -185,7 +187,8 @@ void ICMacroSubroutine::GenerateBadProductSub(const QList<ICMoldItem> &offFixtur
     item.SetActualPos(0);
     item.SetSVal(isSub ? pos.at(9) : pos.at(4));
     item.SetDVal(50);
-    if((item.Action() == ICMold::GQ) && y2Servo)
+    if(((item.Action() == ICMold::GQ) && y2Servo) ||
+            item.Action() == ICMold::GY)
     {
         sub.append(item);
         item.SetNum(4);
@@ -213,7 +216,8 @@ void ICMacroSubroutine::GenerateTryProductSub(const QList<ICMoldItem> &offFixtur
     item.SetActualPos(isSub ? pos.at(3) : pos.at(0));
     item.SetSVal(isSub ? pos.at(8) : pos.at(5));
     item.SetDVal(0);
-    if((item.Action() == ICMold::GP && x2Servo))
+    if(((item.Action() == ICMold::GP) && x2Servo) ||
+            item.Action() == ICMold::GX)
         sub.append(item);
 
     item.SetAction(ICMold::GZ);
@@ -234,7 +238,8 @@ void ICMacroSubroutine::GenerateTryProductSub(const QList<ICMoldItem> &offFixtur
     item.SetAction(isSub ? ICMold::GQ : ICMold::GY);
     item.SetActualPos(isSub ? pos.at(4) : pos.at(1));
     item.SetSVal(isSub ? pos.at(9) : pos.at(4));
-    if((item.Action() == ICMold::GQ) && y2Servo)
+    if(((item.Action() == ICMold::GQ) && y2Servo) ||
+            item.Action() == ICMold::GY)
         sub.append(item);
 
 
@@ -250,7 +255,8 @@ void ICMacroSubroutine::GenerateTryProductSub(const QList<ICMoldItem> &offFixtur
     item.SetActualPos(0);
     item.SetSVal(isSub ? pos.at(9) : pos.at(4));
     item.SetDVal(50);
-    if((item.Action() == ICMold::GQ) && y2Servo)
+    if(((item.Action() == ICMold::GQ) && y2Servo) ||
+            item.Action() == ICMold::GY)
     {
         sub.append(item);
         item.SetNum(4);

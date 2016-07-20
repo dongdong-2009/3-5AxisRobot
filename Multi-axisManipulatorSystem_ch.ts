@@ -4791,7 +4791,6 @@ Reason</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="204"/>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="538"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
@@ -4806,9 +4805,8 @@ Reason</source>
         <translation>单循环准备状态</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="539"/>
         <source>Can not edit standby position program</source>
-        <translation>不能修改待机点位置</translation>
+        <translation type="obsolete">不能修改待机点位置</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="907"/>
