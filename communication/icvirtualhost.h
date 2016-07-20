@@ -315,6 +315,7 @@ public:
 
     enum ICRuntimeStatus
     {
+
         AutoReady       = 0,
         AutoRunning     = 1,
         AutoSingleCycle = 2,
