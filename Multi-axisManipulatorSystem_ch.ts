@@ -2858,11 +2858,10 @@ Reason</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="96"/>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="609"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="99"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="609"/>
         <source>Try Product</source>
-        <translation>工装</translation>
+        <translation>试产</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="444"/>
@@ -3007,8 +3006,9 @@ Reason</source>
         <translation type="obsolete">子程序7</translation>
     </message>
     <message>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="609"/>
         <source>Sub-8</source>
-        <translation type="obsolete">子程序8</translation>
+        <translation>工装</translation>
     </message>
     <message>
         <source>ON:</source>
@@ -6715,6 +6715,7 @@ App %1; Host:</source>
         <translation type="obsolete">提前结束位置：</translation>
     </message>
     <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="171"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="229"/>
         <source>Defective Products</source>
         <translation>不良品</translation>
@@ -7032,14 +7033,20 @@ App %1; Host:</source>
         <translation type="obsolete">计数方式</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="233"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="183"/>
         <source>Try Product</source>
         <translation>试产</translation>
     </message>
     <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="187"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="237"/>
         <source>Sampling</source>
         <translation>取样</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="233"/>
+        <source>GZ</source>
+        <translation>工装</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="241"/>

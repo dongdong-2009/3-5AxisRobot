@@ -168,7 +168,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             //            drs
             if(moldItem.IFVal() == 0)
             {
-                //                commandStr += tr("Defective Products");
+                commandStr += tr("Defective Products");
             }
             else if(moldItem.IFVal() == 1)
             {
@@ -180,11 +180,11 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             }
             else if(moldItem.IFVal() ==3)
             {
-                //                commandStr += tr("Try Product");
+                commandStr += tr("Try Product");
             }
             else if(moldItem.IFVal() ==4)
             {
-                //                commandStr += tr("Sampling");
+                commandStr += tr("Sampling");
             }
             else if(moldItem.IFVal() == 5)
             {
@@ -230,7 +230,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             }
             else if(moldItem.SVal() == 7)
             {
-                commandStr += tr("Try Product") + " ";
+                commandStr += tr("GZ") + " ";
             }
             else if(moldItem.SVal() == 6)
             {

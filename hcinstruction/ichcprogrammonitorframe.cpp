@@ -176,7 +176,7 @@ void ICHCProgramMonitorFrame::showEvent(QShowEvent *e)
     }
     if(!checkResult.isEmpty())
     {
-        ICMessageBox::warning(this,
+        ICMessageBox::ICWarning(this,
                              tr("Warning"),
                              checkResult);
     }

@@ -2553,7 +2553,6 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="96"/>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="609"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="99"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="609"/>
         <source>Try Product</source>
@@ -2625,6 +2624,11 @@ Infomation</source>
         <location filename="hcinstruction/ichcconditionpage.ui" line="599"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="599"/>
         <source>Bad Product</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="609"/>
+        <source>Sub-8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5635,18 +5639,25 @@ App %1; Host:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="171"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="229"/>
         <source>Defective Products</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="233"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="183"/>
         <source>Try Product</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="187"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="237"/>
         <source>Sampling</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="233"/>
+        <source>GZ</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

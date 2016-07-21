@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>414</width>
-    <height>362</height>
+    <height>377</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -606,7 +606,7 @@ QRadioButton::indicator:unchecked:disabled
         </item>
         <item>
          <property name="text">
-          <string>Try Product</string>
+          <string>Sub-8</string>
          </property>
         </item>
        </widget>
