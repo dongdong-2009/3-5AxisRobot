@@ -10,7 +10,7 @@
 #include "icmacrosubroutine.h"
 #include "icvirtualkey.h"
 #include "ickeyboard.h"
-#include <QMessageBox>
+#include "icmessagebox.h"
 #include "icprogramheadframe.h"
 #include "icparameterssave.h"
 #include "icsubmodifydialog.h"
@@ -176,7 +176,7 @@ void ICHCProgramMonitorFrame::showEvent(QShowEvent *e)
     }
     if(!checkResult.isEmpty())
     {
-        QMessageBox::warning(this,
+        ICMessageBox::warning(this,
                              tr("Warning"),
                              checkResult);
     }

@@ -2352,16 +2352,6 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/iccutpage.ui" line="140"/>
-        <source>Sucker3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutpage.ui" line="145"/>
-        <source>Sucker4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="hcinstruction/iccutpage_5.ui" line="146"/>
         <source>X037</source>
         <translation type="unfinished"></translation>
@@ -2372,13 +2362,13 @@ Infomation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/iccutpage.ui" line="150"/>
+        <location filename="hcinstruction/iccutpage.ui" line="140"/>
         <location filename="hcinstruction/iccutpage_5.ui" line="156"/>
         <source>En</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/iccutpage.ui" line="158"/>
+        <location filename="hcinstruction/iccutpage.ui" line="148"/>
         <location filename="hcinstruction/iccutpage_5.ui" line="164"/>
         <source>Setting</source>
         <oldsource>Current/Setting</oldsource>
@@ -2386,50 +2376,38 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="114"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="113"/>
         <source>Fixture1  </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="114"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="113"/>
         <source>Fixture2  </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="114"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="113"/>
         <source>Fixture3  </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="114"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="113"/>
         <source>Fixture4  </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="21"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="115"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="114"/>
         <source>Sucker1   </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="21"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="115"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="114"/>
         <source>Sucker2   </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutpage.cpp" line="22"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="116"/>
-        <source>Sucker3  </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/iccutpage.cpp" line="22"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="116"/>
-        <source>Sucker4  </source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -5501,7 +5479,7 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="157"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="254"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="273"/>
         <source>Limit Time</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5534,7 +5512,7 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="55"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="112"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="129"/>
         <source>Delay Time</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5581,13 +5559,13 @@ App %1; Host:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="189"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="208"/>
         <source>speed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="263"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="279"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="282"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="298"/>
         <source>Times</source>
         <translation type="unfinished"></translation>
     </message>

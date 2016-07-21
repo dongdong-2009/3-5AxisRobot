@@ -2601,14 +2601,12 @@ Reason</source>
         <translation>吸2检测</translation>
     </message>
     <message>
-        <location filename="hcinstruction/iccutpage.ui" line="140"/>
         <source>Sucker3</source>
-        <translation>吸3检测</translation>
+        <translation type="obsolete">吸3检测</translation>
     </message>
     <message>
-        <location filename="hcinstruction/iccutpage.ui" line="145"/>
         <source>Sucker4</source>
-        <translation>吸4检测</translation>
+        <translation type="obsolete">吸4检测</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage_5.ui" line="146"/>
@@ -2621,13 +2619,13 @@ Reason</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/iccutpage.ui" line="150"/>
+        <location filename="hcinstruction/iccutpage.ui" line="140"/>
         <location filename="hcinstruction/iccutpage_5.ui" line="156"/>
         <source>En</source>
         <translation>使能</translation>
     </message>
     <message>
-        <location filename="hcinstruction/iccutpage.ui" line="158"/>
+        <location filename="hcinstruction/iccutpage.ui" line="148"/>
         <location filename="hcinstruction/iccutpage_5.ui" line="164"/>
         <source>Setting</source>
         <oldsource>Current/Setting</oldsource>
@@ -2635,51 +2633,47 @@ Reason</source>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="114"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="113"/>
         <source>Fixture1  </source>
         <translation>夹具1检测</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="114"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="113"/>
         <source>Fixture2  </source>
         <translation>夹具2检测</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="114"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="113"/>
         <source>Fixture3  </source>
         <translation>夹具3检测</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="114"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="113"/>
         <source>Fixture4  </source>
         <translation>夹具4检测</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="21"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="115"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="114"/>
         <source>Sucker1   </source>
         <translation>吸1检测</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="21"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="115"/>
+        <location filename="hcinstruction/iccutpage.cpp" line="114"/>
         <source>Sucker2   </source>
         <translation>吸2检测</translation>
     </message>
     <message>
-        <location filename="hcinstruction/iccutpage.cpp" line="22"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="116"/>
         <source>Sucker3  </source>
-        <translation>吸3检测</translation>
+        <translation type="obsolete">吸3检测</translation>
     </message>
     <message>
-        <location filename="hcinstruction/iccutpage.cpp" line="22"/>
-        <location filename="hcinstruction/iccutpage.cpp" line="116"/>
         <source>Sucker4  </source>
-        <translation>吸4检测</translation>
+        <translation type="obsolete">吸4检测</translation>
     </message>
 </context>
 <context>
@@ -6614,7 +6608,7 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="157"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="254"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="273"/>
         <source>Limit Time</source>
         <translation>限制时间</translation>
     </message>
@@ -6647,7 +6641,7 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="55"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="112"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="129"/>
         <source>Delay Time</source>
         <translation>延迟时间</translation>
     </message>
@@ -6694,7 +6688,7 @@ App %1; Host:</source>
         <translation>不良品使能</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="189"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="208"/>
         <source>speed</source>
         <translation>速度</translation>
     </message>
@@ -6703,8 +6697,8 @@ App %1; Host:</source>
         <translation type="obsolete">返回步号</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="263"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="279"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="282"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="298"/>
         <source>Times</source>
         <translation>间隔模数</translation>
     </message>
@@ -9271,7 +9265,7 @@ Please enter an digit between </source>
     <message>
         <location filename="hcinstruction/icprogramselector.ui" line="86"/>
         <source>TryProduct</source>
-        <translation>试产</translation>
+        <translation>工装</translation>
     </message>
     <message>
         <source>Sub-6</source>

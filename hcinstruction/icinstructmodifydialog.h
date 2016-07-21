@@ -24,6 +24,7 @@ public:
 protected:
     void changeEvent(QEvent *e);
     void keyPressEvent(QKeyEvent* e);
+    void keyReleaseEvent(QKeyEvent* e);
 
 private slots:
 

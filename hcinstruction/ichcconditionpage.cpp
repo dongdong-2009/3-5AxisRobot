@@ -11,7 +11,7 @@ ICHCConditionPage::ICHCConditionPage(QWidget *parent) :
 //    ui->returnLineEdit->setValidator(new QIntValidator(-32767, 32767, this));
     buttonGroup = new QButtonGroup ;
     ui->subComboBox->setCurrentIndex(5);
-    ui->subComboBox->setEnabled(false);
+//    ui->subComboBox->setEnabled(false);
 //    ui->returnLineEdit->setText("1");
     InitCheckPointBox();
     ui->moldCountEdit->setEnabled(false);
