@@ -251,8 +251,9 @@ bool MoldInformation::CopySourceFile(const QString & originFileName, const QStri
     //    QFile::copy(originConfigFilePath, targetConfigFilePath);
     if(QFile::copy(originFilePathName, targetFilePathName))
     {
-        if(QFile::copy(originSTFilePath, targetSTFilePath))
-        {
+        QFile::copy(originSTFilePath, targetSTFilePath);
+//        if(QFile::copy(originSTFilePath, targetSTFilePath))
+//        {
             if(QFile::copy(originConfigFilePath, targetConfigFilePath))
             {
                 bool isOk = true;
@@ -270,7 +271,7 @@ bool MoldInformation::CopySourceFile(const QString & originFileName, const QStri
                 QFile::remove(targetConfigFilePath);
             }
             QFile::remove(targetSTFilePath);
-        }
+//        }
         QFile::remove(targetFilePathName);
         system("sync");
     }
