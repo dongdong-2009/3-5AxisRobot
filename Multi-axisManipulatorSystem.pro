@@ -20,7 +20,7 @@ HostType = n
 
 #DEFINES += HC_TEST
 #DEFINES += Compatible6410
-DEFINES += HC_4F2S
+#DEFINES += HC_4F2S
 
 DEFINES += HOST_TYPE='\\"$${HostType}\\"'
 
@@ -38,7 +38,7 @@ MOC_DIR = temp_$${suffix}
 RCC_DIR = temp_$${suffix}
 
 TRUNK_VERSION = 6.0.7
-APP_VERSION = XS5-4F2S
+APP_VERSION = XS5
 S_VERSION = $${APP_VERSION}_$${HostType}_$${TRUNK_VERSION}
 contains(DEFINES, Compatible6410){
 S_VERSION = $${S_VERSION}_cp6410
