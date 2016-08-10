@@ -631,6 +631,7 @@ void ICStructDefineFrame::on_saveButton_clicked()
     axisMode.mode.a3 = ui->os3->currentIndex();
     axisMode.mode.a4 = ui->os4->currentIndex();
     axisMode.mode.a5 = ui->os5->currentIndex();
+    axisMode.mode.resv = ui->originSeqBox->isChecked();
     dataBuffer[4] = axisMode.allMode;
 //    dataBuffer[5] = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Resv2).toUInt();
     for(int i = 0; i != 6; ++i)

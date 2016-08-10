@@ -2148,7 +2148,7 @@ QRadioButton::indicator:unchecked:disabled
       <attribute name="title">
        <string>Origin</string>
       </attribute>
-      <widget class="QGroupBox" name="groupBox">
+      <widget class="QGroupBox" name="originSeqBox">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -2157,8 +2157,36 @@ QRadioButton::indicator:unchecked:disabled
          <height>241</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+QRadioButton::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+QRadioButton::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+       </property>
        <property name="title">
         <string>Origin Sequence</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
        </property>
        <layout class="QFormLayout" name="formLayout">
         <property name="fieldGrowthPolicy">
@@ -3774,6 +3802,9 @@ QRadioButton::indicator:unchecked:disabled
  <resources/>
  <connections/>
  <buttongroups>
+  <buttongroup name="buttonGroupG"/>
+  <buttongroup name="buttonGroupH"/>
+  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroupA"/>
   <buttongroup name="buttonGroupB"/>
@@ -3781,8 +3812,5 @@ QRadioButton::indicator:unchecked:disabled
   <buttongroup name="buttonGroupD"/>
   <buttongroup name="buttonGroupE"/>
   <buttongroup name="buttonGroupF"/>
-  <buttongroup name="buttonGroupG"/>
-  <buttongroup name="buttonGroupH"/>
-  <buttongroup name="buttonGroup_2"/>
  </buttongroups>
 </ui>

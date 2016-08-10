@@ -134,7 +134,7 @@ void HCManualFixtureFrame::StatusRefreshed()
             ui->fixture3StatusLabel->setPixmap(off);
         }
     }
-    if(host->IsClipOn(3))
+    if(host->IsOutputOn(8))
     {
         if(!clips_.at(3))
         {
