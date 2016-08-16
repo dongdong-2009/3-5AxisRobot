@@ -16,6 +16,16 @@ ICHCStackedSettingsFrame::ICHCStackedSettingsFrame(QWidget *parent) :
     ui->setupUi(this);
 
     InitInterface();
+    ui->s1->SetDecimalPlaces(2);
+    ui->s2->SetDecimalPlaces(2);
+    ui->s3->SetDecimalPlaces(2);
+    ui->s1->setValidator(new QIntValidator(0, 65530, this));
+    ui->s2->setValidator(ui->s1->validator());
+    ui->s3->setValidator(ui->s1->validator());
+    ui->yNum->setValidator(ui->s1->validator());
+    ui->nL->setValidator(ui->s1->validator());
+    ui->ySpace->SetDecimalPlaces(2);
+    ui->ySpace->setValidator(ui->s1->validator());
 //    ui->currentPageLabel->setText(ui->page0ToolButton->text());
     currentPage_ = 0;
     RefreshStackParams_(currentPage_);
@@ -45,6 +55,8 @@ ICHCStackedSettingsFrame::ICHCStackedSettingsFrame(QWidget *parent) :
     ICLogInit
 
             this->hide();
+    ui->stackedWidget->setCurrentIndex(1);
+
 
 
 }
@@ -61,6 +73,8 @@ void ICHCStackedSettingsFrame::on_page3ToolButton_clicked()
 //    ui->currentPageLabel->setText(ui->page3ToolButton->text());
     currentPage_ = 3;
     RefreshStackParams_(currentPage_);
+    ui->stackedWidget->setCurrentIndex(0);
+
 }
 
 void ICHCStackedSettingsFrame::on_page2ToolButton_clicked()
@@ -71,6 +85,8 @@ void ICHCStackedSettingsFrame::on_page2ToolButton_clicked()
 //    ui->currentPageLabel->setText(ui->page2ToolButton->text());
     currentPage_ = 2;
     RefreshStackParams_(currentPage_);
+    ui->stackedWidget->setCurrentIndex(0);
+
 }
 
 void ICHCStackedSettingsFrame::on_page1ToolButton_clicked()
@@ -82,6 +98,7 @@ void ICHCStackedSettingsFrame::on_page1ToolButton_clicked()
 //    ui->currentPageLabel->setText(ui->page1ToolButton->text());
     currentPage_ = 1;
     RefreshStackParams_(currentPage_);
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 void ICHCStackedSettingsFrame::on_page0ToolButton_clicked()
@@ -91,6 +108,7 @@ void ICHCStackedSettingsFrame::on_page0ToolButton_clicked()
 //    ui->currentPageLabel->setText(ui->page0ToolButton->text());
     currentPage_ = 0;
     RefreshStackParams_(currentPage_);
+    ui->stackedWidget->setCurrentIndex(1);
 }
 
 void ICHCStackedSettingsFrame::InitInterface()
@@ -167,6 +185,16 @@ void ICHCStackedSettingsFrame::RefreshStackParams_(int group)
     ui->countWayBox->setCurrentIndex(ICMold::CurrentMold()->MoldParam(static_cast<ICMold::ICMoldParam>(currentPage_)));
     ui->subArm->setChecked(stackParams.at(ICMold::Seq) >> 15);
 
+    if(currentPage_ == 0)
+    {
+        ui->nL->SetThisIntToThisText(ui->zRPLatticeLineEdit->TransThisTextToThisInt());
+        ui->s1->SetThisIntToThisText(ui->zRPStepLineEdit->TransThisTextToThisInt());
+        ui->s2->SetThisIntToThisText(ui->xRPStepLineEdit->TransThisTextToThisInt());
+        ui->s3->SetThisIntToThisText(ui->xRPLatticeLineEdit->TransThisTextToThisInt());
+        ui->yNum->SetThisIntToThisText(ui->yRPLatticeLineEdit->TransThisTextToThisInt());
+        ui->ySpace->SetThisIntToThisText(ui->yRPStepLineEdit->TransThisTextToThisInt());
+    }
+
     p = editorToConfigIDs_.begin();
     while(p != editorToConfigIDs_.end())
     {
@@ -219,12 +247,30 @@ QList<int> ICHCStackedSettingsFrame::GetCurrentStatus_() const
     }
 
     status.append(seqH + seqL);
-    status.append(ui->xRPLatticeLineEdit->TransThisTextToThisInt() | (ui->xUnit->isChecked() << 15));
-    status.append(ui->yRPLatticeLineEdit->TransThisTextToThisInt() | (ui->yUnit->isChecked() << 15));
-    status.append(ui->zRPLatticeLineEdit->TransThisTextToThisInt() | (ui->zUnit->isChecked() << 15));
-    status.append(ui->xRPStepLineEdit->TransThisTextToThisInt() );
-    status.append(ui->yRPStepLineEdit->TransThisTextToThisInt() );
-    status.append(ui->zRPStepLineEdit->TransThisTextToThisInt());
+    if(currentPage_ == 0)
+    {
+//        ui->nL->SetThisIntToThisText(ui->zRPLatticeLineEdit->TransThisTextToThisInt());
+//        ui->s1->SetThisIntToThisText(ui->zRPStepLineEdit->TransThisTextToThisInt());
+//        ui->s2->SetThisIntToThisText(ui->xRPStepLineEdit->TransThisTextToThisInt());
+//        ui->s3->SetThisIntToThisText(ui->xRPLatticeLineEdit->TransThisTextToThisInt());
+//        ui->yNum->SetThisIntToThisText(ui->yRPLatticeLineEdit->TransThisTextToThisInt());
+//        ui->ySpace->SetThisIntToThisText(ui->yRPStepLineEdit->TransThisTextToThisInt());
+        status.append(ui->s3->TransThisTextToThisInt());
+        status.append(ui->yNum->TransThisTextToThisInt());
+        status.append(ui->nL->TransThisTextToThisInt());
+        status.append(ui->s2->TransThisTextToThisInt());
+        status.append(ui->ySpace->TransThisTextToThisInt());
+        status.append(ui->s1->TransThisTextToThisInt());
+    }
+    else
+    {
+        status.append(ui->xRPLatticeLineEdit->TransThisTextToThisInt() | (ui->xUnit->isChecked() << 15));
+        status.append(ui->yRPLatticeLineEdit->TransThisTextToThisInt() | (ui->yUnit->isChecked() << 15));
+        status.append(ui->zRPLatticeLineEdit->TransThisTextToThisInt() | (ui->zUnit->isChecked() << 15));
+        status.append(ui->xRPStepLineEdit->TransThisTextToThisInt() );
+        status.append(ui->yRPStepLineEdit->TransThisTextToThisInt() );
+        status.append(ui->zRPStepLineEdit->TransThisTextToThisInt());
+    }
     status.append(ui->countWayBox->currentIndex());
     qDebug()<<status;
 //    status.append(ui->xRPCheckBox->isChecked() ? 1 : 0);
