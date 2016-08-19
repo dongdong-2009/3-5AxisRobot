@@ -19,9 +19,13 @@ ICHCStackedSettingsFrame::ICHCStackedSettingsFrame(QWidget *parent) :
     ui->s1->SetDecimalPlaces(2);
     ui->s2->SetDecimalPlaces(2);
     ui->s3->SetDecimalPlaces(2);
+    ui->boxSpace->SetDecimalPlaces(2);
+    ui->bPos->SetDecimalPlaces(2);
     ui->s1->setValidator(new QIntValidator(0, 65530, this));
     ui->s2->setValidator(ui->s1->validator());
     ui->s3->setValidator(ui->s1->validator());
+    ui->boxSpace->setValidator(ui->s1->validator());
+    ui->bPos->setValidator(ui->s1->validator());
     ui->yNum->setValidator(ui->s1->validator());
     ui->nL->setValidator(ui->s1->validator());
     ui->ySpace->SetDecimalPlaces(2);
@@ -193,6 +197,8 @@ void ICHCStackedSettingsFrame::RefreshStackParams_(int group)
         ui->s3->SetThisIntToThisText(ui->xRPLatticeLineEdit->TransThisTextToThisInt());
         ui->yNum->SetThisIntToThisText(ui->yRPLatticeLineEdit->TransThisTextToThisInt());
         ui->ySpace->SetThisIntToThisText(ui->yRPStepLineEdit->TransThisTextToThisInt());
+        ui->boxSpace->SetThisIntToThisText(stackParams.at(ICMold::CNT_X));
+        ui->bPos->SetThisIntToThisText(stackParams.at(ICMold::CNT_Y));
     }
 
     p = editorToConfigIDs_.begin();
@@ -261,6 +267,7 @@ QList<int> ICHCStackedSettingsFrame::GetCurrentStatus_() const
         status.append(ui->s2->TransThisTextToThisInt());
         status.append(ui->ySpace->TransThisTextToThisInt());
         status.append(ui->s1->TransThisTextToThisInt());
+//        status.append(ui->boxSpace->TransThisTextToThisInt());
     }
     else
     {
@@ -285,7 +292,13 @@ void ICHCStackedSettingsFrame::SetStackStatus_(const QList<int> &status)
     const int count = status.size() - 1;
     for(int i = 0; i != count; ++i)
     {
-        currentMold->SetStackParam(currentPage_, static_cast<ICMold::ICStatckParam>(i), status.at(i));
+        currentMold->SetStackParam(currentPage_, static_cast<ICMold::ICStatckParam>
+                                   (i), status.at(i));
+    }
+    if(currentPage_ == 0)
+    {
+        currentMold->SetStackParam(currentPage_, ICMold::CNT_X, ui->boxSpace->TransThisTextToThisInt());
+        currentMold->SetStackParam(currentPage_, ICMold::CNT_Y, ui->bPos->TransThisTextToThisInt());
     }
     currentMold->SetMoldParam(static_cast<ICMold::ICMoldParam>(currentPage_), status.at(count));
 }

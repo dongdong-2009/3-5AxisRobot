@@ -1185,13 +1185,13 @@
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
          <x>20</x>
          <y>260</y>
          <width>491</width>
-         <height>83</height>
+         <height>112</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_2">
@@ -1199,6 +1199,13 @@
          <widget class="QLabel" name="label_15">
           <property name="text">
            <string>a</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_14">
+          <property name="text">
+           <string>NL</string>
           </property>
          </widget>
         </item>
@@ -1239,13 +1246,6 @@
           </property>
          </widget>
         </item>
-        <item row="0" column="0">
-         <widget class="QLabel" name="label_14">
-          <property name="text">
-           <string>NL</string>
-          </property>
-         </widget>
-        </item>
         <item row="0" column="6">
          <widget class="QLabel" name="label_20">
           <property name="text">
@@ -1257,13 +1257,6 @@
          <widget class="QLabel" name="label_19">
           <property name="text">
            <string>S2</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="4">
-         <widget class="QLabel" name="label_16">
-          <property name="text">
-           <string>S3</string>
           </property>
          </widget>
         </item>
@@ -1304,17 +1297,17 @@
           </property>
          </widget>
         </item>
-        <item row="1" column="0">
-         <widget class="QLabel" name="label_22">
-          <property name="text">
-           <string>Y Space</string>
-          </property>
-         </widget>
-        </item>
         <item row="2" column="0">
          <widget class="QLabel" name="label_23">
           <property name="text">
            <string>Y Num</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_22">
+          <property name="text">
+           <string>Y Space</string>
           </property>
          </widget>
         </item>
@@ -1335,6 +1328,61 @@
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QLabel" name="label_16">
+          <property name="text">
+           <string>S3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="4">
+         <widget class="QLabel" name="label_24">
+          <property name="text">
+           <string>Box Space</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="5">
+         <widget class="ICLineEditWithVirtualNumericKeypad" name="boxSpace">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="6">
+         <widget class="QLabel" name="label_25">
+          <property name="text">
+           <string>mm</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_26">
+          <property name="text">
+           <string>B</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="ICLineEditWithVirtualNumericKeypad" name="bPos">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLabel" name="label_27">
+          <property name="text">
+           <string>deg</string>
           </property>
          </widget>
         </item>
@@ -1360,13 +1408,13 @@
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroup"/>
-  <buttongroup name="buttonGroup_3"/>
   <buttongroup name="buttonGroup_4"/>
   <buttongroup name="buttonGroup_5"/>
   <buttongroup name="buttonGroup_6"/>
   <buttongroup name="buttonGroup_7"/>
   <buttongroup name="buttonGroup_8"/>
+  <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup_3"/>
  </buttongroups>
 </ui>

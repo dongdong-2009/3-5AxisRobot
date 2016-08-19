@@ -381,6 +381,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
         else if(IsStackedAction(action))
         {
             commandStr += QObject::tr("Selected:") + QString::number(moldItem.SVal() + 1) + tr("Group") + " ";
+            commandStr += moldItem.IFVal() == 1 ? tr("Box-2") : tr("Box-1");
             return commandStr;
         }
         else if(action == ICMold::ACT_AUX1 ||

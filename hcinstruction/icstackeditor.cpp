@@ -169,6 +169,7 @@ QList<ICMoldItem> ICStackEditor::CreateCommandImpl() const
             item.SetClip(ICMold::ACTLAYOUTON);
             item.SetDVal(0);
             item.SetSVal(i);
+            item.SetIFVal(ui->boxSel->currentIndex());
             ret.append(item);
         }
     }
