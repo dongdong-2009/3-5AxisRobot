@@ -5559,11 +5559,13 @@ de eje B</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="81"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="336"/>
         <source>X037</source>
         <translation type="unfinished">X037</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="85"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="332"/>
         <source>X023</source>
         <translation type="unfinished">X023</translation>
     </message>
@@ -5784,7 +5786,42 @@ de eje B</translation>
         <translation>Core sale bien</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="318"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="312"/>
+        <source>X045</source>
+        <translation type="unfinished">X045</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="316"/>
+        <source>X046</source>
+        <translation type="unfinished">X046</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="320"/>
+        <source>X047</source>
+        <translation type="unfinished">X047</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="324"/>
+        <source>X026</source>
+        <translation type="unfinished">X026</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="328"/>
+        <source>X040</source>
+        <translation type="unfinished">X040</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="340"/>
+        <source>X017</source>
+        <translation type="unfinished">X017</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="344"/>
+        <source>X036</source>
+        <translation type="unfinished">X036</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="354"/>
         <source>Product Clear</source>
         <translation>Producto claro</translation>
     </message>
@@ -5797,67 +5834,67 @@ de eje B</translation>
         <translation type="obsolete">OFF</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="332"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="368"/>
         <source>Eje BW Permit On</source>
         <translation>Permitir que la eyección hacia atrás</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="340"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="376"/>
         <source>Eje BW Permit Off</source>
         <translation>Eje BW Permiso Off</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="348"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="384"/>
         <source>Core1 Out Permit On</source>
         <translation>Core 1 Fuera de Permisos On</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="356"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="392"/>
         <source>Core1 Out Permit Off</source>
         <translation>Core 1 Fuera de Permisos Off</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="364"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="400"/>
         <source>Core2 Out Permit On</source>
         <translation>Core 2 Fuera de Permisos On</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="372"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="408"/>
         <source>Core2 Out Permit Off</source>
         <translation>Core 2 Fuera de Permisos Off</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="383"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="419"/>
         <source>Group</source>
         <translation>Grupo</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="568"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="604"/>
         <source>All</source>
         <translation>Todo</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="569"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="605"/>
         <source>Good</source>
         <translation>Producto bueno</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="570"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="606"/>
         <source>Stacked-1</source>
         <translation>Apilamiento-1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="571"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="607"/>
         <source>Stacked-2</source>
         <translation>Apilamiento-2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="572"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="608"/>
         <source>Stacked-3</source>
         <translation>Apilamiento-3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="573"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="609"/>
         <source>Stacked-4</source>
         <translation>Apilamiento-4</translation>
     </message>
@@ -8908,101 +8945,146 @@ Please input the root password to confirm.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="61"/>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="91"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="55"/>
         <source>Wait Condition</source>
         <translation>Esperar condición </translation>
     </message>
     <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="82"/>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="112"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="91"/>
         <source>Wait Mold Opened</source>
         <translation>Esperar abrir molde</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="92"/>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="172"/>
+        <source>Wait X040</source>
+        <translation type="unfinished">Esperar X040</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="222"/>
+        <source>Wait X023</source>
+        <translation type="unfinished">Esperar X023</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="232"/>
+        <source>Wait X045</source>
+        <translation type="unfinished">Esperar X045</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="242"/>
+        <source>Wait X037</source>
+        <translation type="unfinished">Esperar X037</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="252"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="179"/>
         <source>Wait XCLIP1</source>
         <translation>Esperar
 XCLIP1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="102"/>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="322"/>
+        <source>Wait X017</source>
+        <translation type="unfinished">Esperar X017</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="332"/>
+        <source>Wait X036</source>
+        <translation type="unfinished">Esperar X036</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="122"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="113"/>
         <source>Wait Security Door Closed</source>
         <translation>Esperar que la puerta
 de seguridad cierre</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="112"/>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="162"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="201"/>
         <source>Wait XCLIP2</source>
         <translation>Esperar
 XCLIP2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="122"/>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="282"/>
+        <source>Wait X046</source>
+        <translation type="unfinished">Esperar X046</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="292"/>
+        <source>Wait X026</source>
+        <translation type="unfinished">Esperar X026</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="302"/>
+        <source>Wait X047</source>
+        <translation type="unfinished">Esperar X047</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="312"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="135"/>
         <source>Wait X043</source>
         <translation>Esperar X043</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="132"/>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="272"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="223"/>
         <source>Wait XCLIP3</source>
         <translation>Esperar
 XCLIP3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="142"/>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="152"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="157"/>
         <source>Wait X044</source>
         <translation>Esperar X044</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="152"/>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="212"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="245"/>
         <source>Wait XCLIP4</source>
         <translation>Esperar
 XCLIP4</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="162"/>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="192"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="311"/>
         <source>Wait EUEJF</source>
         <translation>Esperar
 EUEJF</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="172"/>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="202"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="267"/>
         <source>Wait XCLIP5</source>
         <translation>Esperar
 chupador 1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="182"/>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="262"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="333"/>
         <source>Wait EUEJB</source>
         <translation>Esperar
 EUEJF</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="192"/>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="142"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="289"/>
         <source>Wait XCLIP6</source>
         <translation>Esperar
 chupador2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="202"/>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="182"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="355"/>
         <source>Wait EUCOREIN</source>
         <translation>Esperar
 COREIN</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="212"/>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="132"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="377"/>
         <source>Wait EUCOREOUT</source>
         <translation>Esperar
@@ -9722,7 +9804,7 @@ superior</translation>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="99"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="254"/>
-        <location filename="hcinstruction/icinstructparam.cpp" line="447"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="483"/>
         <source>Delay time:</source>
         <translation>Tiempo de retardo:</translation>
     </message>
@@ -9733,353 +9815,353 @@ superior</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="245"/>
-        <location filename="hcinstruction/icinstructparam.cpp" line="311"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="347"/>
         <source>Limit time:</source>
         <translation>Tiempo de límite</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="379"/>
-        <location filename="hcinstruction/icinstructparam.cpp" line="407"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="415"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="443"/>
         <source>Times:</source>
         <translation>Tiempos:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="383"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="419"/>
         <source>Selected:</source>
         <translation>Elegido:</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="396"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="432"/>
         <source>Off</source>
         <translation>OFF</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="400"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="436"/>
         <source>On</source>
         <translation>On</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="442"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="478"/>
         <source>Action time:</source>
         <translation>Tiempo de acción</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="462"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="498"/>
         <source>C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="463"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="499"/>
         <source>X1</source>
         <translation>X1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="464"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="500"/>
         <source>Y1</source>
         <translation>Y1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="465"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="501"/>
         <source>Z</source>
         <translation>Z</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="466"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="502"/>
         <source>X2</source>
         <translation>X2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="467"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="503"/>
         <source>Y2</source>
         <translation>Y2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="468"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="504"/>
         <source>A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="469"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="505"/>
         <source>B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="470"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="506"/>
         <source>3-D</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="471"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="507"/>
         <source>Main arm up</source>
         <translation>Brazo principal sube</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="472"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="508"/>
         <source>Main arm down</source>
         <translation>Brazo principal baja</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="473"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="509"/>
         <source>Main arm forward</source>
         <translation>Brazo principal hacia adelante</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="474"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="510"/>
         <source>Main arm backward</source>
         <translation>Brazo principal hacia atrás</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="475"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="511"/>
         <source>Horizontal posture 1</source>
         <translation>postura horizontal 1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="476"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="512"/>
         <source>Vertical posture 1</source>
         <translation>Postira vertical 1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="477"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="513"/>
         <source>Horizontal posture 2</source>
         <translation>Postura horizontal 2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="478"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="514"/>
         <source>Vertical posture 2</source>
         <translation>Postura vertical 2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="479"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="515"/>
         <source>Vice arm up</source>
         <translation>Sub-brazo sube</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="480"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="516"/>
         <source>Vice arm down</source>
         <translation>Vice brazo baja</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="481"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="517"/>
         <source>Vice arm forward</source>
         <translation>Brazo secundario hacia delante</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="482"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="518"/>
         <source>Vice arm backward</source>
         <translation>Vice brazo hacia atrás</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="483"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="519"/>
         <source>Traverse out</source>
         <translation>Cruzar</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="484"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="520"/>
         <source>Traverse in</source>
         <translation>Cruzar en</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="488"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="524"/>
         <source>Check</source>
         <translation>Cortar</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="489"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="525"/>
         <source>Mold end</source>
         <translation>Molde termina</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="490"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="526"/>
         <source>Parallel</source>
         <translation>Paralelo</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="491"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="527"/>
         <source>Wait</source>
         <translation>esperar</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="492"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="528"/>
         <source>Cut</source>
         <translation>Cortar</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="493"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="529"/>
         <source>Other</source>
         <translation>Otros</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="496"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="532"/>
         <source>Clip1 ON</source>
         <translation>Broche 1 ON</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="497"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="533"/>
         <source>Clip2 ON</source>
         <translation>Broche2 ON</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="498"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="534"/>
         <source>Clip3 ON</source>
         <translation>broche 3 ON</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="499"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="535"/>
         <source>Clip4 ON</source>
         <translation>Broche 4 ON</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="500"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="536"/>
         <source>Sucker1: ON</source>
         <translation>Chupador 1 ON</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="501"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="537"/>
         <source>Sucker2: ON</source>
         <translation>Chupador 2 ON</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="502"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="538"/>
         <source>Injection ON</source>
         <translation>Inyección ON</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="503"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="539"/>
         <source>Conveyor ON</source>
         <translation>Transportador ON</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="504"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="540"/>
         <source>Lock Mold ON</source>
         <translation>Molde de la cerradura ON</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="506"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="542"/>
         <source>Eject ON</source>
         <translation>Expulsar ON</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="507"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="543"/>
         <source>Layout ON</source>
         <translation>empezar a apilar</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="509"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="545"/>
         <source>Core1 Permit</source>
         <translation>Permiso de Core1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="510"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="546"/>
         <source>Core2 Permit</source>
         <translation>Core2 Permiso</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="514"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="550"/>
         <source>Clip1 OFF</source>
         <translation>Broche 1 OFF</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="515"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="551"/>
         <source>Clip2 OFF</source>
         <translation>Broche 2 OFF</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="516"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="552"/>
         <source>Clip3 OFF</source>
         <translation>Broche3 OFF</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="517"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="553"/>
         <source>Clip4 OFF</source>
         <translation>broche 4 OFF</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="518"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="554"/>
         <source>Sucker1: OFF</source>
         <translation>Chupador 1 OFF</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="519"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="555"/>
         <source>Sucker2: OFF</source>
         <translation>Chupador 2 OFF</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="520"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="556"/>
         <source>Injection OFF</source>
         <translation>Inyección OFF</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="521"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="557"/>
         <source>Conveyor OFF</source>
         <translation>Transportadora OFF</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="522"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="558"/>
         <source>Lock Mold OFF</source>
         <translation>Cerrar molde OFF</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="524"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="560"/>
         <source>Eject OFF</source>
         <translation>Eyectar OFF</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="525"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="561"/>
         <source>Layout OFF</source>
         <translation>Pila termina</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="527"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="563"/>
         <source>Core1 OFF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="528"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="564"/>
         <source>Core2 OFF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="529"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="565"/>
         <source>Reserve 1</source>
         <translation>Reservar 1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="531"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="567"/>
         <source>Reserve 2</source>
         <translation>Reservar2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="532"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="568"/>
         <source>Reserve 3</source>
         <translation>Reservar3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="533"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="569"/>
         <source>Reserve 4</source>
         <translation>Reservar4</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="534"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="570"/>
         <source>Sucker 3</source>
         <translation>Chupador-3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="535"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="571"/>
         <source>Sucker 4</source>
         <translation>Chupador 4</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="537"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="573"/>
         <source>Reserve 5</source>
         <translation type="unfinished">Reservar5</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="538"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="574"/>
         <source>Reserve 6</source>
         <translation type="unfinished">Reservar6</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="543"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="579"/>
         <source>Clip End</source>
         <translation>Broche termina</translation>
     </message>
