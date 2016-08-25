@@ -307,39 +307,39 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             {
                 commandStr += tr("EUCOREOUT");
             }
-            else if(moldItem.SVal() == 15)
+            else if(moldItem.SVal() == 17)
             {
                 commandStr += tr("X045");
             }
-            else if(moldItem.SVal() == 16)
+            else if(moldItem.SVal() == 18)
             {
                 commandStr += tr("X046");
             }
-            else if(moldItem.SVal() == 17)
+            else if(moldItem.SVal() == 19)
             {
                 commandStr += tr("X047");
             }
-            else if(moldItem.SVal() == 18)
+            else if(moldItem.SVal() == 20)
             {
                 commandStr += tr("X026");
             }
-            else if(moldItem.SVal() == 19)
+            else if(moldItem.SVal() == 21)
             {
                 commandStr += tr("X040");
             }
-            else if(moldItem.SVal() == 20)
+            else if(moldItem.SVal() == 22)
             {
                 commandStr += tr("X023");
             }
-            else if(moldItem.SVal() == 21)
+            else if(moldItem.SVal() == 23)
             {
                 commandStr += tr("X037");
             }
-            else if(moldItem.SVal() == 22)
+            else if(moldItem.SVal() == 24)
             {
                 commandStr += tr("X017");
             }
-            else if(moldItem.SVal() == 23)
+            else if(moldItem.SVal() == 25)
             {
                 commandStr += tr("X036");
             }
