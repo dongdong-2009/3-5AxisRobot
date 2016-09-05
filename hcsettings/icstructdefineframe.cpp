@@ -184,6 +184,7 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
         ui->adjNoUse->blockSignals(false);
     }
 
+    ui->lockEn->setChecked(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Resv2).toInt());
     ui->servoFlex->setCurrentIndex(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Resv1).toInt());
     int v = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt();
     v &= 0xFFFF;
@@ -386,7 +387,7 @@ void ICStructDefineFrame::on_saveButton_clicked()
 //    data.split.a7 = ui->portB->currentIndex() == 0 ? 0 : ui->portB->currentIndex() + 7;
 //    data.split.a8 = ui->portC->currentIndex() == 0 ? 0 : ui->portC->currentIndex() + 7;
     dataBuffer[4] = ui->servoFlex->currentIndex();
-    dataBuffer[5] = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Resv2).toUInt();
+    dataBuffer[5] = ui->lockEn->isChecked();
     for(int i = 0; i != 6; ++i)
     {
         sum += dataBuffer.at(i);
