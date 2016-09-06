@@ -105,8 +105,8 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
     editorToConfigIDs_.insert(ui->samplingEdit, ICConfigString::kCS_PRD_Sample_cycle);
     ICLogInit;
 
-    ui->tryProductEdit->hide();
-    ui->label_7->hide();
+//    ui->tryProductEdit->hide();
+//    ui->label_7->hide();
 
     this->hide();
 
