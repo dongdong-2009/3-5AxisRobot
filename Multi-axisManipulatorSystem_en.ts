@@ -9171,96 +9171,106 @@ OREOUT</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="93"/>
+        <location filename="function_settings/moldinformation.ui" line="202"/>
         <location filename="function_settings/moldinformation_5.ui" line="80"/>
         <source>All seclect</source>
         <translation>All select</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="121"/>
+        <location filename="function_settings/moldinformation.ui" line="174"/>
         <location filename="function_settings/moldinformation_5.ui" line="108"/>
         <source>All unselect</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="149"/>
+        <location filename="function_settings/moldinformation.ui" line="93"/>
         <location filename="function_settings/moldinformation_5.ui" line="136"/>
         <source>Inverse</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="190"/>
+        <location filename="function_settings/moldinformation.ui" line="307"/>
         <source>Local </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="218"/>
+        <location filename="function_settings/moldinformation.ui" line="121"/>
         <location filename="function_settings/moldinformation_5.ui" line="177"/>
         <source>USB Export</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="246"/>
+        <location filename="function_settings/moldinformation.ui" line="149"/>
         <location filename="function_settings/moldinformation_5.ui" line="205"/>
         <source>USB Import</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="286"/>
+        <location filename="function_settings/moldinformation.ui" line="350"/>
         <location filename="function_settings/moldinformation_5.ui" line="253"/>
         <source>Mold Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="291"/>
+        <location filename="function_settings/moldinformation.ui" line="355"/>
         <location filename="function_settings/moldinformation_5.ui" line="258"/>
         <source>Create Date</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="319"/>
+        <location filename="function_settings/moldinformation.ui" line="383"/>
         <location filename="function_settings/moldinformation_5.ui" line="286"/>
         <source>New</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="344"/>
+        <location filename="function_settings/moldinformation.ui" line="408"/>
         <location filename="function_settings/moldinformation_5.ui" line="311"/>
         <source>Copy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="369"/>
+        <location filename="function_settings/moldinformation.ui" line="433"/>
         <location filename="function_settings/moldinformation_5.ui" line="336"/>
         <source>Load</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="394"/>
+        <location filename="function_settings/moldinformation.ui" line="458"/>
         <location filename="function_settings/moldinformation_5.ui" line="361"/>
         <source>Delete</source>
         <translation type="unfinished">Del</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="419"/>
+        <location filename="function_settings/moldinformation.ui" line="483"/>
         <location filename="function_settings/moldinformation_5.ui" line="386"/>
         <source>Export</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="447"/>
+        <location filename="function_settings/moldinformation.ui" line="511"/>
         <location filename="function_settings/moldinformation_5.ui" line="414"/>
         <source>Import</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="478"/>
+        <location filename="function_settings/moldinformation.ui" line="535"/>
+        <source>Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="function_settings/moldinformation.ui" line="545"/>
+        <source>Clear</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="function_settings/moldinformation.ui" line="235"/>
         <location filename="function_settings/moldinformation_5.ui" line="445"/>
         <source>Source File Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.ui" line="513"/>
+        <location filename="function_settings/moldinformation.ui" line="270"/>
         <location filename="function_settings/moldinformation_5.ui" line="486"/>
         <source>New File Name</source>
         <translation type="unfinished"></translation>

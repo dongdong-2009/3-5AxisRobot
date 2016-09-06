@@ -1209,3 +1209,22 @@ void MoldInformation::on_localBox_clicked()
     else
         ui->localBox->setChecked(true);
 }
+
+void MoldInformation::on_searchBtn_clicked()
+{
+    const int rc = ui->informationTableWidget->rowCount();
+    for(int i = 0; i < rc; ++i)
+    {
+        if(!ui->informationTableWidget->item(i, 0)->text().contains(ui->searchContent->text(), Qt::CaseInsensitive))
+            ui->informationTableWidget->setRowHidden(i, true);
+    }
+}
+
+void MoldInformation::on_clearBtn_clicked()
+{
+    const int rc = ui->informationTableWidget->rowCount();
+    for(int i = 0; i < rc; ++i)
+    {
+        ui->informationTableWidget->setRowHidden(i, false);
+    }
+}
