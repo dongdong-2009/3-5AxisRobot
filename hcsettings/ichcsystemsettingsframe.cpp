@@ -273,7 +273,7 @@ void ICHCSystemSettingsFrame::on_keyToneButton_toggled(bool checked)
 
 void ICHCSystemSettingsFrame::on_changeButton_clicked()
 {
-    if(ui->oldPwdEdit->text().isEmpty() ||
+    if(/*ui->oldPwdEdit->text().isEmpty() ||*/
             ui->newPwdEdit->text().isEmpty())
     {
         ICMessageBox::ICWarning(this,
@@ -827,7 +827,7 @@ void ICHCSystemSettingsFrame::StatusRefresh()
     QString os(osInfo_.release);
 #endif
     os += "; ";
-    ui->versionLabel->setText("Version: OS:" + os + QString(tr("\nApp %1; Host:")).arg(SHOW_VERSION) + ICVirtualHost::GlobalVirtualHost()->HostStatus(ICVirtualHost::Time).toString());
+    ui->versionLabel->setText("Version: OS:" + os + QString(tr("\nApp %1; Host:")).arg(QString::fromUtf8(SHOW_VERSION)) + ICVirtualHost::GlobalVirtualHost()->HostStatus(ICVirtualHost::Time).toString());
 }
 
 void ICHCSystemSettingsFrame::on_calibrationBtn_clicked()

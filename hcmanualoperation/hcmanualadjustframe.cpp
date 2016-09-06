@@ -74,6 +74,7 @@ void HCManualAdjustFrame::changeEvent(QEvent *e)
 
 void HCManualAdjustFrame::ChangeButtonColor()
 {
+    ui->AdjustForbidButton->setText(tr("Adjust Forbid"));
     ui->AdjustForbidButton->setStyleSheet("color:red;");
 }
 
@@ -144,6 +145,16 @@ void HCManualAdjustFrame::StatusRefreshed()
             currentStatus_.clearBit(3);
             ui->x033Status->setPixmap(offPixmap_);
         }
+    }
+
+    if(host->IsInputOn(24))   //x040
+    {
+        ui->x040Status->setPixmap(inputOnPixmap_);
+    }
+    else
+    {
+        ui->x040Status->setPixmap(offPixmap_);
+
     }
 
     if(host->IsOutputOn(7))   //y017
@@ -231,5 +242,6 @@ void HCManualAdjustFrame::StatusRefreshed()
 
 void HCManualAdjustFrame::on_AdjustForbidButton_clicked()
 {
+    ui->AdjustForbidButton->setText(tr("Adjust En"));
     ui->AdjustForbidButton->setStyleSheet("color:green;");
 }

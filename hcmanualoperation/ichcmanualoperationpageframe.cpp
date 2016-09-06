@@ -39,6 +39,8 @@ ICHCManualOperationPageFrame::ICHCManualOperationPageFrame(QWidget *parent) :
     InitInterface();
 //    InitSignal();
     ui->fixtureToolButton->click();
+    ui->currentPose->hide();
+
 }
 
 ICHCManualOperationPageFrame::~ICHCManualOperationPageFrame()

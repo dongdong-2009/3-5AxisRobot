@@ -132,6 +132,10 @@ ICHCFixturePage::ICHCFixturePage(QWidget *parent) :
 //    }
 //    ui->conveyorOtherEdit->setValidator(validator);
 //    ui->injectionOtherEdit->setValidator(validator);
+#ifdef HC_4F2S
+    ui->tableWidget->setRowHidden(6,true);
+    ui->tableWidget->setRowHidden(7, true);
+#endif
 
 }
 

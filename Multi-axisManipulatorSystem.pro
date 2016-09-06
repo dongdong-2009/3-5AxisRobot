@@ -16,10 +16,11 @@ QT += sql
 
 SK_SIZE = 8
 
-HostType = c
+HostType = n
 
 #DEFINES += HC_TEST
 #DEFINES += Compatible6410
+#DEFINES += HC_4F2S
 
 DEFINES += HOST_TYPE='\\"$${HostType}\\"'
 
@@ -36,7 +37,7 @@ UI_DIR = temp_$${suffix}
 MOC_DIR = temp_$${suffix}
 RCC_DIR = temp_$${suffix}
 
-TRUNK_VERSION = XS5-6.0.5
+TRUNK_VERSION = XS5-6.0.8
 APP_VERSION = HBT-01-1.3
 S_VERSION = $${APP_VERSION}_$${HostType}_$${TRUNK_VERSION}
 contains(DEFINES, Compatible6410){

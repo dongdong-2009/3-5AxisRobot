@@ -35,7 +35,11 @@ ICHCProgramMonitorFrame::ICHCProgramMonitorFrame(QWidget *parent) :
 
     QPushButton *ActionsButton = new QPushButton(0);
     ActionsButton->setIcon(QPixmap(":/resource/actsix.png"));
-    ActionsButton->setGeometry(QRect(665,18,35,35));
+#ifdef HC_SK_8
+    ActionsButton->setGeometry(QRect(655,18,35,35));
+#else
+    ActionsButton->setGeometry(QRect(455,18,35,35));
+#endif
     ActionsButton->setWindowFlags(Qt::WindowStaysOnTopHint | Qt::Tool);
     ActionsButton->setFocusPolicy(Qt::NoFocus);
     ActionsButton->show();
@@ -570,16 +574,16 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
          *调整对话框中标题栏文字显示
         */
         QString str = topItem->ToStringList().join("\n");
-        if(str.size() > 37)
-        {
-            str.insert(38,"\n");
-            str.insert(39,"\t");
-        }
-        if(str.size() > 65)
-        {
-            str.insert(66,"\n");
-            str.insert(67,"\t");
-        }
+//        if(str.size() > 37)
+//        {
+//            str.insert(38,"\n");
+//            str.insert(39,"\t");
+//        }
+//        if(str.size() > 65)
+//        {
+//            str.insert(66,"\n");
+//            str.insert(67,"\t");
+//        }
 
         /*****/
         bool isM = autoRunRevise_->ShowModifyItem(item, &ret, str);

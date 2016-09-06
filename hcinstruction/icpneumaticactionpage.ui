@@ -206,9 +206,6 @@ QRadioButton::indicator:unchecked:disabled
       </property>
      </item>
      <item row="4" column="0">
-      <property name="text">
-       <string/>
-      </property>
       <property name="checkState">
        <enum>Unchecked</enum>
       </property>

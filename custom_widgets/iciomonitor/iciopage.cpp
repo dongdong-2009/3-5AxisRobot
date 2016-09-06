@@ -238,7 +238,11 @@ void ICIOPage::showEvent(QShowEvent *e)
     }
     if(host->PeripheryOutput(4))
     {
+#ifdef HC_4F2S
+        multiLabels.value(Y035)->setText(tr("Motor Invert"));
+#else
         multiLabels.value(Y035)->setText(tr("Sucker-3 Valve"));
+#endif
     }
     else
     {

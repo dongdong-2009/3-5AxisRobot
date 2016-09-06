@@ -498,8 +498,16 @@ void MoldInformation::on_deleteToolButton_clicked()
             return;
         }
 
-        selectedItemStringList << ui->informationTableWidget->item(ui->informationTableWidget->currentRow(),0)->text() + ".act" ;
-        selectedItemNumberList << ui->informationTableWidget->currentRow();
+        if(ui->informationTableWidget->currentRow()<0)
+        {
+            return;
+        }
+        else
+        {
+            selectedItemStringList << ui->informationTableWidget->item(ui->informationTableWidget->currentRow(),0)->text() + ".act" ;
+            selectedItemNumberList << ui->informationTableWidget->currentRow();
+        }
+
     }
     if(selectedItemStringList.size() != 0)
     {
@@ -1200,4 +1208,23 @@ void MoldInformation::on_localBox_clicked()
     }
     else
         ui->localBox->setChecked(true);
+}
+
+void MoldInformation::on_searchBtn_clicked()
+{
+    const int rc = ui->informationTableWidget->rowCount();
+    for(int i = 0; i < rc; ++i)
+    {
+        if(!ui->informationTableWidget->item(i, 0)->text().contains(ui->searchContent->text(), Qt::CaseInsensitive))
+            ui->informationTableWidget->setRowHidden(i, true);
+    }
+}
+
+void MoldInformation::on_clearBtn_clicked()
+{
+    const int rc = ui->informationTableWidget->rowCount();
+    for(int i = 0; i < rc; ++i)
+    {
+        ui->informationTableWidget->setRowHidden(i, false);
+    }
 }
