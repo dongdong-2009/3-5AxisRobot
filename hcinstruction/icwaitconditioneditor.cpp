@@ -89,19 +89,19 @@ QList<ICMoldItem> ICWaitConditionEditor::CreateCommandImpl() const
     }
     else if(ui->x016Box->isChecked())
     {
-        item.SetSVal(17);
+        item.SetSVal(24);
     }
     else if(ui->x026Box->isChecked())
     {
-        item.SetSVal(18);
+        item.SetSVal(20);
     }
     else if(ui->x036Box->isChecked())
     {
-        item.SetSVal(19);
+        item.SetSVal(25);
     }
     else if(ui->x037Box->isChecked())
     {
-        item.SetSVal(20);
+        item.SetSVal(23);
     }
     ret.append(item);
     return ret;

@@ -306,19 +306,19 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             {
                 commandStr += tr("EUCOREOUT");
             }
-            else if(moldItem.SVal() == 17)
+            else if(moldItem.SVal() == 24)
             {
                 commandStr += tr("X016");
             }
-            else if(moldItem.SVal() == 18)
+            else if(moldItem.SVal() == 20)
             {
                 commandStr += tr("X026");
             }
-            else if(moldItem.SVal() == 19)
+            else if(moldItem.SVal() == 25)
             {
                 commandStr += tr("X036");
             }
-            else if(moldItem.SVal() == 20)
+            else if(moldItem.SVal() == 23)
             {
                 commandStr += tr("X037");
             }
