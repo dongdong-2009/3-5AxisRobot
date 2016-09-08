@@ -38,7 +38,7 @@ MOC_DIR = temp_$${suffix}
 RCC_DIR = temp_$${suffix}
 
 TRUNK_VERSION = XS5-6.0.8
-APP_VERSION = HBT-01-1.3
+APP_VERSION = HBT-01-1.5
 S_VERSION = $${APP_VERSION}_$${HostType}_$${TRUNK_VERSION}
 contains(DEFINES, Compatible6410){
 S_VERSION = $${S_VERSION}_cp6410

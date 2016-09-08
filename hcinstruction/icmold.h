@@ -402,8 +402,7 @@ public:
         ACT_3D,
         ACT_GBSUB,
         ACT_GBADD,
-        ACT_GCSUB,
-        ACT_GCADD,
+        ACT_Shake,
 
         ACT_OTHER = 27,
         ACTCHECKINPUT=28,

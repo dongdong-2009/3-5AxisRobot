@@ -6,6 +6,12 @@ ICHCOtherPage::ICHCOtherPage(QWidget *parent) :
     ui(new Ui::ICHCOtherPage)
 {
     ui->setupUi(this);
+    ui->widthEdit->SetDecimalPlaces(2);
+    ui->widthEdit->setValidator(new QIntValidator(0, 10000, this));
+    ui->speedEdit->SetDecimalPlaces(0);
+    ui->speedEdit->setValidator(new QIntValidator(0, 100, this));
+    ui->delayEdit->SetDecimalPlaces(2);
+    ui->delayEdit->setValidator(new QIntValidator(0, 30000, this));
 }
 
 ICHCOtherPage::~ICHCOtherPage()
@@ -33,6 +39,18 @@ QList<ICMoldItem> ICHCOtherPage::CreateCommandImpl() const
     if(ui->clearButton->isChecked())
     {
         item.SetIFVal(1);
+    }
+    else if(ui->shakeGroup->isChecked())
+    {
+        item.SetAction(ICMold::ACT_Shake);
+        item.SetActualPos(ui->widthEdit->TransThisTextToThisInt());
+        item.SetSVal(ui->speedEdit->TransThisTextToThisInt());
+        item.SetDVal(ui->delayEdit->TransThisTextToThisInt());
+        item.SetBadProduct(ui->rPbox->isChecked());
+        int ifv = item.IFPos();
+        ifv |= ui->stEdit->TransThisTextToThisInt() << 8;
+        ifv |= (ui->axisSel->currentIndex() + 1) << 12;
+        item.SetIFPos(ifv);
     }
     else
         return ret;

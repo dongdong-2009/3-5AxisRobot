@@ -1857,7 +1857,7 @@ QCheckBox::indicator:unchecked:disabled
             </property>
             <layout class="QGridLayout" name="gridLayout_5">
              <item row="3" column="1">
-              <widget class="QComboBox" name="x2SSel">
+              <widget class="ICComboBox" name="x2SSel">
                <property name="minimumSize">
                 <size>
                  <width>60</width>
@@ -1877,7 +1877,7 @@ QCheckBox::indicator:unchecked:disabled
               </widget>
              </item>
              <item row="0" column="1">
-              <widget class="QComboBox" name="x1SSel">
+              <widget class="ICComboBox" name="x1SSel">
                <property name="minimumSize">
                 <size>
                  <width>60</width>
@@ -1918,7 +1918,7 @@ QCheckBox::indicator:unchecked:disabled
               </widget>
              </item>
              <item row="1" column="1">
-              <widget class="QComboBox" name="y1SSel">
+              <widget class="ICComboBox" name="y1SSel">
                <property name="minimumSize">
                 <size>
                  <width>60</width>
@@ -1972,7 +1972,7 @@ QCheckBox::indicator:unchecked:disabled
               </widget>
              </item>
              <item row="2" column="1">
-              <widget class="QComboBox" name="zSSel">
+              <widget class="ICComboBox" name="zSSel">
                <property name="minimumSize">
                 <size>
                  <width>60</width>
@@ -2020,7 +2020,7 @@ QCheckBox::indicator:unchecked:disabled
               </widget>
              </item>
              <item row="4" column="1">
-              <widget class="QComboBox" name="y2SSel">
+              <widget class="ICComboBox" name="y2SSel">
                <property name="minimumSize">
                 <size>
                  <width>60</width>
@@ -2040,7 +2040,7 @@ QCheckBox::indicator:unchecked:disabled
               </widget>
              </item>
              <item row="0" column="4">
-              <widget class="QComboBox" name="x1ESel">
+              <widget class="ICComboBox" name="x1ESel">
                <property name="minimumSize">
                 <size>
                  <width>60</width>
@@ -2060,7 +2060,7 @@ QCheckBox::indicator:unchecked:disabled
               </widget>
              </item>
              <item row="1" column="4">
-              <widget class="QComboBox" name="y1ESel">
+              <widget class="ICComboBox" name="y1ESel">
                <property name="minimumSize">
                 <size>
                  <width>60</width>
@@ -2080,7 +2080,7 @@ QCheckBox::indicator:unchecked:disabled
               </widget>
              </item>
              <item row="2" column="4">
-              <widget class="QComboBox" name="zESel">
+              <widget class="ICComboBox" name="zESel">
                <property name="minimumSize">
                 <size>
                  <width>60</width>
@@ -2100,7 +2100,7 @@ QCheckBox::indicator:unchecked:disabled
               </widget>
              </item>
              <item row="3" column="4">
-              <widget class="QComboBox" name="x2ESel">
+              <widget class="ICComboBox" name="x2ESel">
                <property name="minimumSize">
                 <size>
                  <width>60</width>
@@ -2120,7 +2120,7 @@ QCheckBox::indicator:unchecked:disabled
               </widget>
              </item>
              <item row="4" column="4">
-              <widget class="QComboBox" name="y2ESel">
+              <widget class="ICComboBox" name="y2ESel">
                <property name="minimumSize">
                 <size>
                  <width>60</width>
@@ -2526,17 +2526,15 @@ QRadioButton::indicator:unchecked:disabled
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroupC"/>
   <buttongroup name="buttonGroupD"/>
   <buttongroup name="buttonGroupE"/>
   <buttongroup name="buttonGroupF"/>
-  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroupG"/>
   <buttongroup name="buttonGroupH"/>
   <buttongroup name="buttonGroup_2"/>
-  <buttongroup name="buttonGroupA"/>
   <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroupA"/>
   <buttongroup name="buttonGroupB"/>
-  <buttongroup name="buttonGroupC"/>
  </buttongroups>
 </ui>

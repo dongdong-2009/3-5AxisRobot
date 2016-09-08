@@ -76,6 +76,10 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
                 commandStr += tr("Sucker");
                 commandStr += QString::number(moldItem.SVal() - 3);
             }
+            else if(moldItem.SVal() == 8)
+            {
+                commandStr += tr("Fixture-5");
+            }
             else if(moldItem.SVal() == 6)
             {
                 commandStr += tr("X037");
@@ -355,6 +359,16 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             }
             return commandStr;
         }
+        else if(moldItem.Action() == ICMold::ACT_Shake)
+        {
+            static QStringList axisName = QStringList()<<"C"<<"X1"<<"Y1"<<"Z"<<"X2"<<"Y2";
+            commandStr += axisName.at((moldItem.IFPos() >> 12) & 0xF) + tr("Axis") + " ";
+            commandStr += moldItem.IsBadProduct() ? tr("RP") : tr("PP");
+            commandStr += tr("S Width:")  + ICParameterConversion::TransThisIntToThisText(moldItem.ActualPos(), 2) + " ";
+            commandStr += tr("Times:") + QString::number((moldItem.IFPos() >> 8) & 0xF) + " ";
+            commandStr += tr("Speed:") + QString::number(moldItem.SVal()) + " ";
+//            commandStr += tr("Delay")
+        }
     }
     else
     {
@@ -436,7 +450,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
                 commandStr += QObject::tr("On") + ":";
             }
 #ifndef HC_4F2S
-            if(action != ICMold::ACT_AUX5 && action != ICMold::ACT_AUX6)
+            if(action != ICMold::ACT_AUX5 && action != ICMold::ACT_AUX6 && action != ICMold::ACT_AUX3)
 #endif
             {
                 commandStr += " ";
@@ -527,6 +541,7 @@ void ICInstructParam::InstallMoldInfo()
     actionGroupMap_.insert(ACT_WaitMoldOpened, QObject::tr("Wait"));
     actionGroupMap_.insert(ACT_Cut, QObject::tr("Cut"));
     actionGroupMap_.insert(ACT_OTHER, QObject::tr("Other"));
+    actionGroupMap_.insert(ICMold::ACT_Shake, QObject::tr("Shake"));
 
 
     clipGroupMap_[ACTCLIP1ON] = QObject::tr("Clip1 ON");

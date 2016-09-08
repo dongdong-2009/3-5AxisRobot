@@ -19,23 +19,29 @@ ICCutPage::ICCutPage(QWidget *parent) :
 //    ICLineEditWithVirtualNumericKeypad *delayEdit;
     ioNames_<<tr("Fixture1  ")<<tr("Fixture2  ")<<tr("Fixture3  ")<<tr("Fixture4  ")
            <<tr("Sucker1   ")
-          <<tr("Sucker2   ");
+          <<tr("Sucker2   ")
+         <<tr("Sucker3   ")
+        <<tr("Sucker4   ")
+          <<tr("Fixture5  ");
     onClipToOffClip_.insert(ICMold::ACTCLIP1ON, ICMold::ACTCLIP1OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP2ON, ICMold::ACTCLIP2OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP3ON, ICMold::ACTCLIP3OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP4ON, ICMold::ACTCLIP4OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP5ON, ICMold::ACTCLIP5OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP6ON, ICMold::ACTCLIP6OFF);
-//    onClipToOffClip_.insert(ICMold::ACTCLIP7ON, ICMold::ACTCLIP7OFF);
-//    onClipToOffClip_.insert(ICMold::ACTCLIP8ON, ICMold::ACTCLIP8OFF);
+    onClipToOffClip_.insert(ICMold::ACTCLIP7ON, ICMold::ACTCLIP7OFF);
+    onClipToOffClip_.insert(ICMold::ACTCLIP8ON, ICMold::ACTCLIP8OFF);
+    onClipToOffClip_.insert(10000, 10001);
     offClipToOnClip_.insert(ICMold::ACTCLIP1OFF, ICMold::ACTCLIP1ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP2OFF, ICMold::ACTCLIP2ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP3OFF, ICMold::ACTCLIP3ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP4OFF, ICMold::ACTCLIP4ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP5OFF, ICMold::ACTCLIP5ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP6OFF, ICMold::ACTCLIP6ON);
-//    offClipToOnClip_.insert(ICMold::ACTCLIP7OFF, ICMold::ACTCLIP7ON);
-//    offClipToOnClip_.insert(ICMold::ACTCLIP8OFF, ICMold::ACTCLIP8ON);
+    offClipToOnClip_.insert(ICMold::ACTCLIP7OFF, ICMold::ACTCLIP7ON);
+    offClipToOnClip_.insert(ICMold::ACTCLIP8OFF, ICMold::ACTCLIP8ON);
+    offClipToOnClip_.insert(10001, 10000);
+
     QList<uint> initStatus = onClipToOffClip_.values();
 //    QIntValidator *validator = new QIntValidator(0, 2000, this);
     for(int i = 0; i != ui->tableWidget->rowCount(); ++i)
@@ -117,7 +123,10 @@ void ICCutPage::changeEvent(QEvent *e)
         ioNames_.clear();
         ioNames_<<tr("Fixture1  ")<<tr("Fixture2  ")<<tr("Fixture3  ")<<tr("Fixture4  ")
                <<tr("Sucker1   ")
-              <<tr("Sucker2   ");
+              <<tr("Sucker2   ")
+             <<tr("Sucker3   ")
+            <<tr("Sucker4   ")
+              <<tr("Fixture5  ");
         for(int i = 0; i != settingButtons_.size(); ++i)
         {
             settingButtons_[i]->setText(ioNames_.at(i));

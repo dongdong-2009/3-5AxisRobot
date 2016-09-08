@@ -27,6 +27,11 @@ HCManualReservePage::HCManualReservePage(QWidget *parent) :
     ui->label->hide();
     ui->label_5->hide();
 #endif
+
+    ui->reserve3StatusLabel->hide();
+    ui->connectReserve3ToolButton->hide();
+    ui->disconnectReserve3ToolButton->hide();
+    ui->label_4->hide();
     ICCommandKeyWrapper *wrapper;
     wrapper = new ICCommandKeyWrapper(ui->connectReserve1ToolButton, IC::VKEY_RESERVE1_ON);
     wrappers_.append(wrapper);
