@@ -71,7 +71,7 @@
         <location filename="hcinstruction/actionsettingframe.ui" line="240"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1697"/>
         <source>GA</source>
-        <translation>A</translation>
+        <translation>旋转</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="417"/>
@@ -79,7 +79,7 @@
         <location filename="hcinstruction/actionsettingframe_5.ui" line="138"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1064"/>
         <source>Vertical-2</source>
-        <translation>垂直2</translation>
+        <translation>左</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="376"/>
@@ -87,7 +87,7 @@
         <location filename="hcinstruction/actionsettingframe_5.ui" line="97"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1023"/>
         <source>Horizon-2</source>
-        <translation>水平2</translation>
+        <translation>右</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="509"/>
@@ -4033,13 +4033,13 @@ Reason</source>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="959"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="923"/>
         <source>A+</source>
-        <translation></translation>
+        <translation>左旋转</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="996"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="960"/>
         <source>A-</source>
-        <translation></translation>
+        <translation>右旋转</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1060"/>
@@ -4131,13 +4131,13 @@ Reason</source>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="149"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe_5.ui" line="158"/>
         <source>A+</source>
-        <translation></translation>
+        <translation>左旋转</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="174"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe_5.ui" line="183"/>
         <source>A-</source>
-        <translation></translation>
+        <translation>右旋转</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="199"/>
@@ -4199,13 +4199,13 @@ Reason</source>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="325"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="353"/>
         <source>/Horizontal-2 Limit On</source>
-        <translation>/水平2限通</translation>
+        <translation>/右旋转限通</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="329"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="349"/>
         <source>/Vertical-2 Limit On</source>
-        <translation>垂直2限通</translation>
+        <translation>左旋转限通</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="368"/>
@@ -4228,17 +4228,17 @@ Reason</source>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="384"/>
         <source>Horizontal-2</source>
-        <translation>水平2</translation>
+        <translation>右旋转</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="392"/>
         <source>Vertical-2</source>
-        <translation>垂直2</translation>
+        <translation>左旋转</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="396"/>
         <source>Vertical-1/Vertical-2</source>
-        <translation>垂直1/垂直2</translation>
+        <translation>垂直1/左旋转</translation>
     </message>
     <message>
         <source>Horizontal</source>
@@ -6311,12 +6311,12 @@ App %1; Host:</source>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="395"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="403"/>
         <source>Horizon-2 Limit</source>
-        <translation>水平2限</translation>
+        <translation>右旋转限</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="396"/>
         <source>Vertical-2 Limit </source>
-        <translation>垂直2限</translation>
+        <translation>左旋转限</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="310"/>
@@ -6340,17 +6340,17 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="399"/>
         <source>Vertical-2 Valve </source>
-        <translation>垂直2阀</translation>
+        <translation>左旋转阀</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="404"/>
         <source>Vertical-2 Limit</source>
-        <translation>垂直2限</translation>
+        <translation>左旋转限</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="406"/>
         <source>Vertical-2 Valve</source>
-        <translation>垂直2阀</translation>
+        <translation>左旋转阀</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="413"/>
@@ -6393,7 +6393,7 @@ App %1; Host:</source>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="405"/>
         <source>Horizon-2 Valve</source>
         <oldsource>Horizon-1</oldsource>
-        <translation>水平2阀</translation>
+        <translation>右旋转阀</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="250"/>
@@ -7858,7 +7858,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="107"/>
         <source>Horizontal-2 Valve</source>
-        <translation>水平2阀</translation>
+        <translation>右旋转阀</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="121"/>
@@ -7924,7 +7924,7 @@ Please enter an digit between </source>
         <location filename="categorypage/icmonitorpageframe.cpp" line="55"/>
         <source>A Origin/Horizontal-2</source>
         <oldsource>A Origin/Vertical-2</oldsource>
-        <translation>A轴原点/水平2限</translation>
+        <translation>右旋转限</translation>
     </message>
     <message>
         <source>Horizontal-2</source>
@@ -8218,7 +8218,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="69"/>
         <source>Vertical-2</source>
-        <translation>垂直2限</translation>
+        <translation>左旋转限</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="113"/>
@@ -12366,12 +12366,12 @@ Admin</source>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="461"/>
         <source>Horizontal posture 2</source>
-        <translation>姿势水平2</translation>
+        <translation>右旋转</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="462"/>
         <source>Vertical posture 2</source>
-        <translation>姿势垂直2</translation>
+        <translation>左旋转</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="473"/>

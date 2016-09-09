@@ -23,10 +23,16 @@
    <property name="leftMargin">
     <number>2</number>
    </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
    <property name="rightMargin">
     <number>2</number>
    </property>
-   <property name="horizontalSpacing">
+   <property name="bottomMargin">
+    <number>2</number>
+   </property>
+   <property name="spacing">
     <number>4</number>
    </property>
    <item row="0" column="1">
@@ -939,7 +945,7 @@
      <property name="minimumSize">
       <size>
        <width>64</width>
-       <height>40</height>
+       <height>24</height>
       </size>
      </property>
      <property name="text">
@@ -1740,13 +1746,13 @@
  <resources/>
  <connections/>
  <buttongroups>
+  <buttongroup name="y1BoxbuttonGroup"/>
+  <buttongroup name="cBoxbuttonGroup"/>
   <buttongroup name="y2BoxbuttonGroup"/>
   <buttongroup name="x1BoxbuttonGroup"/>
   <buttongroup name="x2BoxbuttonGroup"/>
   <buttongroup name="zBoxbuttonGroup"/>
   <buttongroup name="aBoxbuttonGroup"/>
   <buttongroup name="bBoxbuttonGroup"/>
-  <buttongroup name="y1BoxbuttonGroup"/>
-  <buttongroup name="cBoxbuttonGroup"/>
  </buttongroups>
 </ui>
