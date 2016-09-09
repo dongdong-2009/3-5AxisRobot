@@ -831,7 +831,7 @@ void MainFrame::StatusRefreshed()
     newLedFlags_ |= (virtualHost->IsInputOn(32)? 4 : 0);
     newLedFlags_ |= (virtualHost->IsOutputOn(32)? 2 : 0);
     newLedFlags_ |= (virtualHost->IsOutputOn(33)? 1 : 0);
-    newLedFlags_ |= (virtualHost->IsOutputOn(47) ? 16 : 0);
+    newLedFlags_ |= (virtualHost->IsOutputOn(32) ? 16 : 0);
 
     if(newLedFlags_ != ledFlags_)
     {
