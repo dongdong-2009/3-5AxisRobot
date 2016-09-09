@@ -745,16 +745,16 @@ void ICHCInstructionPageFrame::on_deleteToolButton_clicked()
     /************BUG181:子程序位置插入后不能删除******************/
 
     QString currentmoldname  = ICParametersSave::Instance()->MoldName("");
-    if(programList_.at(gIndex).StepNum() == 0 && currentEdit_ == 0 && currentmoldname.left(4) != "szhc")
-    {
-        if(!ICParametersSave::Instance()->IsSuperLogin())
-        {
-            QMessageBox::warning(this,
-                                 tr("Warning"),
-                                 tr("Can not delete standby position program"));
-            return;
-        }
-    }
+//    if(programList_.at(gIndex).StepNum() == 0 && currentEdit_ == 0 && currentmoldname.left(4) != "szhc")
+//    {
+//        if(!ICParametersSave::Instance()->IsSuperLogin())
+//        {
+//            QMessageBox::warning(this,
+//                                 tr("Warning"),
+//                                 tr("Can not delete standby position program"));
+//            return;
+//        }
+//    }
     if(ICMessageBox::ICWarning(this, tr("Warning"),
                                tr("Do you really want to delete this action?"),
                                QMessageBox::Yes | QMessageBox::No) !=

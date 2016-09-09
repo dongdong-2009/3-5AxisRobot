@@ -14,9 +14,14 @@ ICMessageBox::ICMessageBox(QWidget *parent) :
 void ICMessageBox::keyPressEvent(QKeyEvent *e)
 {
 //    e->ignore();
-    QKeyEvent* ke = new QKeyEvent(*e);
-    qApp->postEvent(icMainFrame, ke);
-    this->close();
+    if(e->key() == Qt::Key_F4 ||
+            e->key() == Qt::Key_F5 ||
+            e->key() == Qt::Key_F7)
+    {
+        QKeyEvent* ke = new QKeyEvent(*e);
+        qApp->postEvent(icMainFrame, ke);
+        this->close();
+    }
 }
 
 int ICMessageBox::ICWarning(QWidget *parent, const QString &title, const QString &text, StandardButtons buttons, StandardButton defaultButton)

@@ -4152,7 +4152,6 @@ Reason</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="502"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="753"/>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="758"/>
         <source>Warning</source>
         <translation>警告</translation>
@@ -4198,9 +4197,8 @@ Reason</source>
         <translation>标准程序不能删除动作</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="754"/>
         <source>Can not delete standby position program</source>
-        <translation>不能删除待机点步骤</translation>
+        <translation type="obsolete">不能删除待机点步骤</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="759"/>

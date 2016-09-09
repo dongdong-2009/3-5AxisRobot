@@ -3561,7 +3561,6 @@ Infomation</source>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="502"/>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="753"/>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="758"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
@@ -3592,11 +3591,6 @@ Infomation</source>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="736"/>
         <source>Stand program can not be delete action</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="754"/>
-        <source>Can not delete standby position program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

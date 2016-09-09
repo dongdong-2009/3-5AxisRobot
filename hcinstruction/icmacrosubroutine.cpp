@@ -195,26 +195,26 @@ void ICMacroSubroutine::GenerateBadProductSub(const QList<ICMoldItem> &offFixtur
         sub.append(item);
     }
 
-    item.SetNum(sub.last().Num() + 1);
-    item.SetAction(ICMold::GX);
-    item.SetActualPos(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_X_Maxium).toUInt());
-    item.SetDVal(0);
-    item.SetSVal(pos.at(5));
-    sub.append(item);
+//    item.SetNum(sub.last().Num() + 1);
+//    item.SetAction(ICMold::GX);
+//    item.SetActualPos(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_X_Maxium).toUInt());
+//    item.SetDVal(0);
+//    item.SetSVal(pos.at(5));
+//    sub.append(item);
 
-    item.SetNum(sub.last().Num() + 1);
-    item.SetAction(ICMold::GZ);
-    item.SetActualPos(0);
-    item.SetDVal(0);
-    item.SetSVal(pos.at(7));
-    sub.append(item);
+//    item.SetNum(sub.last().Num() + 1);
+//    item.SetAction(ICMold::GZ);
+//    item.SetActualPos(0);
+//    item.SetDVal(0);
+//    item.SetSVal(pos.at(7));
+//    sub.append(item);
 
-    item.SetNum(sub.last().Num() + 1);
-    item.SetAction(ICMold::ACTPOSEVERT);
-    item.SetDVal(0);
-    item.SetIFVal(0);
-    item.SetActualIfPos(0);
-    sub.append(item);
+//    item.SetNum(sub.last().Num() + 1);
+//    item.SetAction(ICMold::ACTPOSEVERT);
+//    item.SetDVal(0);
+//    item.SetIFVal(0);
+//    item.SetActualIfPos(0);
+//    sub.append(item);
 
     item.SetNum(sub.last().Num() + 1);
     item.SetDVal(0);
@@ -286,26 +286,26 @@ void ICMacroSubroutine::GenerateTryProductSub(const QList<ICMoldItem> &offFixtur
         sub.append(item);
     }
 
-    item.SetNum(sub.last().Num() + 1);
-    item.SetAction(ICMold::GX);
-    item.SetActualPos(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_X_Maxium).toUInt());
-    item.SetDVal(0);
-    item.SetSVal(pos.at(5));
-    sub.append(item);
+//    item.SetNum(sub.last().Num() + 1);
+//    item.SetAction(ICMold::GX);
+//    item.SetActualPos(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_X_Maxium).toUInt());
+//    item.SetDVal(0);
+//    item.SetSVal(pos.at(5));
+//    sub.append(item);
 
-    item.SetNum(sub.last().Num() + 1);
-    item.SetAction(ICMold::GZ);
-    item.SetActualPos(0);
-    item.SetDVal(0);
-    item.SetSVal(pos.at(7));
-    sub.append(item);
+//    item.SetNum(sub.last().Num() + 1);
+//    item.SetAction(ICMold::GZ);
+//    item.SetActualPos(0);
+//    item.SetDVal(0);
+//    item.SetSVal(pos.at(7));
+//    sub.append(item);
 
-    item.SetNum(sub.last().Num() + 1);
-    item.SetAction(ICMold::ACTPOSEVERT);
-    item.SetDVal(0);
-    item.SetIFVal(0);
-    item.SetActualIfPos(0);
-    sub.append(item);
+//    item.SetNum(sub.last().Num() + 1);
+//    item.SetAction(ICMold::ACTPOSEVERT);
+//    item.SetDVal(0);
+//    item.SetIFVal(0);
+//    item.SetActualIfPos(0);
+//    sub.append(item);
 
     item.SetNum(sub.last().Num() + 1);
     item.SetDVal(0);
