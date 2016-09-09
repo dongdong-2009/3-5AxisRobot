@@ -80,6 +80,10 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             {
                 commandStr += tr("Fixture-5");
             }
+            else if(moldItem.SVal() == 9)
+            {
+                commandStr += tr("Fixture-6");
+            }
             else if(moldItem.SVal() == 6)
             {
                 commandStr += tr("X037");
@@ -450,7 +454,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
                 commandStr += QObject::tr("On") + ":";
             }
 #ifndef HC_4F2S
-            if(action != ICMold::ACT_AUX5 && action != ICMold::ACT_AUX6 && action != ICMold::ACT_AUX3)
+            if(action != ICMold::ACT_AUX5 && action != ICMold::ACT_AUX6 && action != ICMold::ACT_AUX3 && action != ICMold::ACT_AUX4)
 #endif
             {
                 commandStr += " ";

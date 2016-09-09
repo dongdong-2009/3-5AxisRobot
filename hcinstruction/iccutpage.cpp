@@ -22,7 +22,8 @@ ICCutPage::ICCutPage(QWidget *parent) :
           <<tr("Sucker2   ")
          <<tr("Sucker3   ")
         <<tr("Sucker4   ")
-          <<tr("Fixture5  ");
+       <<tr("Fixture5  ")
+      <<tr("Fixture6  ");
     onClipToOffClip_.insert(ICMold::ACTCLIP1ON, ICMold::ACTCLIP1OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP2ON, ICMold::ACTCLIP2OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP3ON, ICMold::ACTCLIP3OFF);
@@ -32,6 +33,7 @@ ICCutPage::ICCutPage(QWidget *parent) :
     onClipToOffClip_.insert(ICMold::ACTCLIP7ON, ICMold::ACTCLIP7OFF);
     onClipToOffClip_.insert(ICMold::ACTCLIP8ON, ICMold::ACTCLIP8OFF);
     onClipToOffClip_.insert(10000, 10001);
+    onClipToOffClip_.insert(10002, 10003);
     offClipToOnClip_.insert(ICMold::ACTCLIP1OFF, ICMold::ACTCLIP1ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP2OFF, ICMold::ACTCLIP2ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP3OFF, ICMold::ACTCLIP3ON);
@@ -41,6 +43,7 @@ ICCutPage::ICCutPage(QWidget *parent) :
     offClipToOnClip_.insert(ICMold::ACTCLIP7OFF, ICMold::ACTCLIP7ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP8OFF, ICMold::ACTCLIP8ON);
     offClipToOnClip_.insert(10001, 10000);
+    offClipToOnClip_.insert(10002, 10003);
 
     QList<uint> initStatus = onClipToOffClip_.values();
 //    QIntValidator *validator = new QIntValidator(0, 2000, this);
@@ -126,7 +129,8 @@ void ICCutPage::changeEvent(QEvent *e)
               <<tr("Sucker2   ")
              <<tr("Sucker3   ")
             <<tr("Sucker4   ")
-              <<tr("Fixture5  ");
+           <<tr("Fixture5  ")
+          <<tr("Fixture6  ");
         for(int i = 0; i != settingButtons_.size(); ++i)
         {
             settingButtons_[i]->setText(ioNames_.at(i));

@@ -87,6 +87,7 @@ ICPneumaticActionPage::ICPneumaticActionPage(QWidget *parent) :
     ui->tableWidget->setRowHidden(5,true);
 #endif
     ui->tableWidget->setRowHidden(2, true);
+    ui->tableWidget->setRowHeight(3, true);
 }
 
 ICPneumaticActionPage::~ICPneumaticActionPage()

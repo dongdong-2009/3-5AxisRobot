@@ -36,6 +36,11 @@ HCManualFixtureFrame::HCManualFixtureFrame(QWidget *parent) :
     wrapper = new ICCommandKeyWrapper(ui->disconnectReserve3ToolButton, IC::VKEY_RESERVE3_OFF);
     wrappers_.append(wrapper);
 
+    wrapper = new ICCommandKeyWrapper(ui->connectReserve4ToolButton, IC::VKEY_RESERVE4_ON);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->disconnectReserve4ToolButton, IC::VKEY_RESERVE4_OFF);
+    wrappers_.append(wrapper);
+
 //    ui->reserve4InLabel->hide();
 
 }
@@ -230,4 +235,17 @@ void HCManualFixtureFrame::StatusRefreshed()
         }
     }
     ui->reserve3InLabel->setPixmap(host->IsInputOn(28) ? inOn : off);
+
+    if(host->PeripheryOutput(3) == 1)
+    {
+        if(host->IsOutputOn(18))
+        {
+            ui->reserve4StatusLabel->setPixmap(on);
+        }
+        else
+        {
+            ui->reserve4StatusLabel->setPixmap(off);
+        }
+    }
+    ui->reserve4InLabel->setPixmap(host->IsInputOn(24) ? inOn : off);
 }
