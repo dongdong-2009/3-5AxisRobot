@@ -42,6 +42,8 @@ AxisSettingsFrame::AxisSettingsFrame(QWidget *parent) :
     editorToConfigIDs_.insert(ui->externalSecurityZoneLineEdit, ICConfigString::kCS_AXIS_Max_X1);
     editorToConfigIDs_.insert(ui->distanceRotationEdit, ICConfigString::kCS_AXIS_Rotate_X1);
 
+    ui->pushButton->hide();
+
     ICLogInit
 }
 
