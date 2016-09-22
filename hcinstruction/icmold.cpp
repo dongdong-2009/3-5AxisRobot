@@ -603,14 +603,20 @@ QList<ICGroupMoldUIItem> ICMold::MoldItemToUIItem(const QList<ICMoldItem> &items
     return groupRet;
 }
 
-QStringList ICMold::UIItemsToStringList(const QList<ICGroupMoldUIItem> &items)
+QStringList ICMold::UIItemsToStringList(const QList<ICGroupMoldUIItem> &items, bool isMain)
 {
     QStringList ret;
     ICGroupMoldUIItem item;
     int itemCount;
     QList<int> pos;
-    pos<<0<<0<<0<<0<<0<<0<<0<<0;
+    pos<<0<<0<<-1<<0<<0<<0<<0<<0;
     ICMoldItem baseItem;
+    ICInstructParam::BeforeWaitMoldOpen = true;
+    ICInstructParam::IsMainProgram = isMain;
+    int firstDownIndex = -1;
+    int uDStandbyIndex = -1;
+    ICMoldItem firstDownItem;
+    ICMoldItem uDStandbyItem;
     for(int i = 0; i != items.size(); ++i)
     {
         item = items.at(i);
@@ -623,8 +629,31 @@ QStringList ICMold::UIItemsToStringList(const QList<ICGroupMoldUIItem> &items)
             {
                 pos[baseItem.Action()] = baseItem.Pos();
             }
+            if(ICInstructParam::BeforeWaitMoldOpen)
+            {
+                if(baseItem.Action() == GX)
+                {
+                    firstDownIndex = ret.size() - 1;
+                    firstDownItem = baseItem;
+                }
+                else if(baseItem.Action() == GY)
+                {
+                    uDStandbyIndex = ret.size() - 1;
+                    uDStandbyItem = baseItem;
+                }
+            }
+            if((baseItem.Action() == ACT_WaitMoldOpened) && (baseItem.SVal() == 1))
+            {
+                ICInstructParam::BeforeWaitMoldOpen = false;
+            }
         }
     }
+    ICInstructParam::BeforeWaitMoldOpen = true;
+    if(firstDownIndex >= 0)
+        ret[firstDownIndex] = ICInstructParam::ConvertCommandStr(firstDownItem, pos, true);
+    if(uDStandbyIndex >= 0)
+        ret[uDStandbyIndex] = ICInstructParam::ConvertCommandStr(uDStandbyItem, pos, false, true);
+    ICInstructParam::BeforeWaitMoldOpen = false;
     return ret;
 }
 

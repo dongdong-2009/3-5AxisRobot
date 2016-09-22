@@ -98,7 +98,10 @@ public:
         return instance_;
     }
 
-    static QString ConvertCommandStr(const ICMoldItem & moldItem, const QList<int>& curPos = QList<int>());
+    static QString ConvertCommandStr(const ICMoldItem & moldItem, const QList<int>& curPos = QList<int>(), bool isFirstDown = false, bool isUD = false);
+
+    static bool BeforeWaitMoldOpen;
+    static bool IsMainProgram;
 
     QStringList CommandStrList() { return commandStrList_; }
     void AppendCommandStrList(const QString & commandStr);

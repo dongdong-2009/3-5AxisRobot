@@ -412,7 +412,7 @@ void ICHCInstructionPageFrame::UpdateUIProgramList_()
     ui->moldContentListWidget->clear();
     qDebug("after clear");
 
-    ui->moldContentListWidget->addItems(ICMold::UIItemsToStringList(programList_));
+    ui->moldContentListWidget->addItems(ICMold::UIItemsToStringList(programList_, currentEdit_ == 0));
     ICGroupMoldUIItem groupItem;
     int topItemRowCount;
     int index = 0;
@@ -494,16 +494,16 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
     FindIndex_(index, gIndex, tIndex, sIndex);
     QString currentmoldname  = ICParametersSave::Instance()->MoldName("");
     /******currentEdit_标记为0表示为主程序（主程序时不能删除待机点）*****/
-    if(programList_.at(gIndex).StepNum() == 0 && currentEdit_ == 0 && currentmoldname.left(4) != "szhc")
-    {
-        if(!ICParametersSave::Instance()->IsSuperLogin())
-        {
-            QMessageBox::warning(this,
-                                 tr("Warning"),
-                                 tr("Can not add standby position program"));
-            return;
-        }
-    }
+//    if(programList_.at(gIndex).StepNum() == 0 && currentEdit_ == 0 && currentmoldname.left(4) != "szhc")
+//    {
+//        if(!ICParametersSave::Instance()->IsSuperLogin())
+//        {
+//            QMessageBox::warning(this,
+//                                 tr("Warning"),
+//                                 tr("Can not add standby position program"));
+//            return;
+//        }
+//    }
     bool isParallel = false;
     bool isServo = false;
     bool isComment = false;

@@ -727,7 +727,7 @@ void ICHCProgramMonitorFrame::UpdateUIProgramList_()
 {
     ui->moldContentListWidget->clear();
     qDebug("after clear");
-    ui->moldContentListWidget->addItems(ICMold::UIItemsToStringList(programList_));
+    ui->moldContentListWidget->addItems(ICMold::UIItemsToStringList(programList_, currentMoldNum_ == 8));
     ICGroupMoldUIItem groupItem;
     int topItemRowCount;
     int index = 0;

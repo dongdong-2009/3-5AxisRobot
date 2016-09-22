@@ -442,7 +442,7 @@ public:
     static void Delete(int step, QList<ICMoldItem>& sourceItems);
     static QList<ICMoldItem> UIItemToMoldItem(const QList<ICGroupMoldUIItem>& items);
     static QList<ICGroupMoldUIItem> MoldItemToUIItem(const QList<ICMoldItem>& items);
-    static QStringList UIItemsToStringList(const QList<ICGroupMoldUIItem>& items);
+    static QStringList UIItemsToStringList(const QList<ICGroupMoldUIItem>& items, bool isMain);
 
     QList<ICGroupMoldUIItem> ToUIItems() const { return MoldItemToUIItem(MoldContent());}
 

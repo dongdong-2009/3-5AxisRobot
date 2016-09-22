@@ -12,6 +12,8 @@
 #include <QDebug>
 
 ICInstructParam * ICInstructParam::instance_ = NULL;
+bool ICInstructParam::BeforeWaitMoldOpen = true;
+bool ICInstructParam::IsMainProgram = true;
 QMap<int, QString> ICInstructParam::actionGroupMap_;
 QMap<int, QString> ICInstructParam::clipGroupMap_;
 QList<int> ICInstructParam::xyzStatusList_;
@@ -31,7 +33,7 @@ ICInstructParam::ICInstructParam()
 //    UpdateHostParam();
 }
 
-QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem, const QList<int>& curPos)
+QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem, const QList<int>& curPos,  bool isFirstDown, bool isUD)
 {
     QString commandStr;
 //    commandStr += QString::number(moldItem.Seq()) + " ";
@@ -41,7 +43,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem, const QL
         commandStr += QString(tr("#Flag[%2]:Comment:%1").arg(moldItem.Comment()).arg(moldItem.Flag()));
         return commandStr;
     }
-    if(moldItem.Num() == 0)
+    if(BeforeWaitMoldOpen && IsMainProgram)
     {
         commandStr += tr("Home") + "    " + "*" + "    ";
     }
@@ -104,14 +106,15 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem, const QL
 
         if(xyzStatusList_.contains(action))
         {
-            if(moldItem.Num() == 0)
+            if(BeforeWaitMoldOpen && IsMainProgram)
             {
-                if(moldItem.Action() == GX)
+                qDebug()<<curPos;
+                if(moldItem.Action() == GX && isFirstDown)
                 {
                     commandStr = tr("1stDown") + "    " + "*" + " ";
                     commandStr += actionGroupMap_.value(action) + ": ";
                 }
-                else if(moldItem.Action() == GY)
+                else if(moldItem.Action() == GY && isUD)
                 {
                     commandStr = tr("StanbyPos") + "    " + "*" + " ";
                     commandStr += actionGroupMap_.value(action) + ": ";
