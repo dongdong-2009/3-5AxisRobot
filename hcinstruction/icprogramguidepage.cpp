@@ -219,13 +219,45 @@ QList<ICMoldItem> ICProgramGuidePage::CreateCommandImpl() const
     item.SetDVal(0);
     item.SetNum(stepNum++);
     item.SetSubNum(255);
-    for(int i = 0; i != 8; ++i )//standby step
+    if(SetAxisICMoldItem_(&item, axis_ + 2, STANDBY_SETTING))
     {
-        if(SetAxisICMoldItem_(&item, axis_ + i, STANDBY_SETTING))
-        {
-            ret.append(item);
-        }
+        ret.append(item);
     }
+    if(SetAxisICMoldItem_(&item, axis_ + 5, STANDBY_SETTING))
+    {
+        ret.append(item);
+    }
+    if(SetAxisICMoldItem_(&item, axis_ + 0, STANDBY_SETTING))
+    {
+        ret.append(item);
+    }
+    if(SetAxisICMoldItem_(&item, axis_ + 1, STANDBY_SETTING))
+    {
+        ret.append(item);
+    }
+    if(SetAxisICMoldItem_(&item, axis_ + 3, STANDBY_SETTING))
+    {
+        ret.append(item);
+    }
+    if(SetAxisICMoldItem_(&item, axis_ + 4, STANDBY_SETTING))
+    {
+        ret.append(item);
+    }
+    if(SetAxisICMoldItem_(&item, axis_ + 6, STANDBY_SETTING))
+    {
+        ret.append(item);
+    }
+    if(SetAxisICMoldItem_(&item, axis_ + 7, STANDBY_SETTING))
+    {
+        ret.append(item);
+    }
+//    for(int i = 0; i != 8; ++i )//standby step
+//    {
+//        if(SetAxisICMoldItem_(&item, axis_ + i, STANDBY_SETTING))
+//        {
+//            ret.append(item);
+//        }
+//    }
     /***BUG#205**C轴选无，也必须在起点位置显示姿势垂直1****/
     if(axis_[7].mode == AXIS_NONE)
     {

@@ -112,20 +112,21 @@ bool MoldInformation::CreateNewSourceFile(const QString & fileName)
         QList<ICMoldItem> items;
         ICMoldItem item;
 
+        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisY1, ICMold::GY, ICMold::ACTMAINUP);
+        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisY2, ICMold::GQ, ICMold::ACTVICEUP);
+        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisX1, ICMold::GX, ICMold::ACTMAINBACKWARD);
+        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisZ, ICMold::GZ, ICMold::ACTCOMEIN);
+        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisX2, ICMold::GP, ICMold::ACTVICEBACKWARD);
+        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisA, ICMold::GA, ICMold::ACT_PoseVert2);
+        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisB, ICMold::GB, -1);
+        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisC, ICMold::GC, -1);
+
         if(ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisC) != ICVirtualHost::ICAxisDefine_Servo)
         {
             item.SetAction(ICMold::ACTPOSEVERT);
             item.SetNum(0);
             items.append(item);
         }
-        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisX1, ICMold::GX, ICMold::ACTMAINBACKWARD);
-        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisY1, ICMold::GY, ICMold::ACTMAINUP);
-        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisZ, ICMold::GZ, ICMold::ACTCOMEIN);
-        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisX2, ICMold::GP, ICMold::ACTVICEBACKWARD);
-        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisY2, ICMold::GQ, ICMold::ACTVICEUP);
-        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisA, ICMold::GA, ICMold::ACT_PoseVert2);
-        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisB, ICMold::GB, -1);
-        CreateFileHelper_(items, ICVirtualHost::ICAxis_AxisC, ICMold::GC, -1);
         item.SetAction(ICMold::ACT_WaitMoldOpened);
         item.SetSVal(1);
         item.SetNum(1);
