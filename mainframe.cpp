@@ -848,7 +848,7 @@ void MainFrame::StatusRefreshed()
     errCode_ = virtualHost->AlarmNum();
     if(compareAlarmNums_.indexOf(errCode_) != -1)
     {
-        hostCompareDialog_->move(100, 200);
+        hostCompareDialog_->move(100, 100);
         hostCompareDialog_->show();
     }
     int hintCode = virtualHost->HintNum();
