@@ -59,383 +59,425 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
 
     bool clipGroup = moldItem.IsClip();
     uint action;
-
-    if(!clipGroup)
+    if (moldItem.Action() == ICMold::ACT_PoseVert2)
     {
-        action = moldItem.Action();
-
-        if(action == ACT_Cut)
-        {
-            if(moldItem.SVal() < 4)
-            {
-                commandStr += tr("Fixture");
-                commandStr += QString::number(moldItem.SVal() + 1);
-            }
-            else if(moldItem.SVal() < 8)
-            {
-                commandStr += tr("Sucker");
-                commandStr += QString::number(moldItem.SVal() - 3);
-            }
-            else if(moldItem.SVal() == 6)
-            {
-                commandStr += tr("X037");
-            }
-            else
-            {
-                commandStr += tr("X023");
-            }
-            //            commandStr += tr("Fixture");
-            //            commandStr += QString::number(moldItem.SVal() + 1);
-            commandStr += " ";
-            if(moldItem.IFVal() == 1)
-            {
-                commandStr += tr("Begin");
-            }
-            else
-            {
-                commandStr += tr("End");
-            }
-            commandStr += actionGroupMap_.value(action);
-            commandStr += QObject::tr("Delay time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 2) + "      ";
-            return commandStr;
-        }
-        commandStr += actionGroupMap_.value(action) + ": ";
-
-        if(xyzStatusList_.contains(action))
-        {
-            if(action == ACT_3D)
-            {
-                if(moldItem.Get3DType() == 0)
-                    commandStr += tr("Line");
-                else
-                    commandStr += tr("Curve");
-                commandStr += actionGroupMap_.value(moldItem.Get3DAction()) + ": ";
-            }
-            //            commandStr += ICParameterConversion::TransThisIntToThisText(moldItem.Pos(), 1) + " ";
-            commandStr += ICParameterConversion::TransThisIntToThisText(moldItem.ActualPos(), POS_DECIMAL) + " ";
-            if((moldItem.Get3DType()) == 1 && (action == ACT_3D))
-            {
-                commandStr += tr("a:") + ICParameterConversion::TransThisIntToThisText(moldItem.GetAngle(), 1) + " ";
-                commandStr += tr("Dir:") + (moldItem.GetDir() == 0 ? tr("PP") : tr("RP"));
-            }
-            //            commandStr += "X" + ICParameterConversion::TransThisIntToThisText(moldItem.X(), 1) + " ";
-            //            commandStr += "Y" + ICParameterConversion::TransThisIntToThisText(moldItem.Y(), 1) + " ";
-            //            commandStr += "Z" + ICParameterConversion::TransThisIntToThisText(moldItem.Z(), 1) + " ";
-            //            if(action != G01)
-            //            {
-            //                commandStr == QObject::tr("Radius:") + ICParameterConversion::TransThisIntToThisText(moldItem.RVal(), 1);
-            //            }
-            commandStr += tr("Speed:") + QString::number(moldItem.SVal()) + " ";
-//            if(moldItem.Action() != ICMold::ACT_3D)
-//            {
-//                if(moldItem.IsEarlyEnd())
-//                {
-//                    if(!moldItem.IsEarlySpeedDown())
-//                    {
-//                        commandStr += tr("Early End,Early Position:");
-//                        //                    commandStr += QString().sprintf("%.1f", moldItem.IFPos() / (qreal)10) + " ";
-//                        commandStr += QString::number(moldItem.ActualIfPos()) + " ";
-//                    }
-
-//                }
-//            }
-            if(moldItem.IsEarlySpeedDown())
-            {
-                if(!moldItem.IsEarlyEnd())
-                {
-                    commandStr += tr("Early Speed-Down:") + tr("SPeed:") + QString::number(moldItem.GetEarlyDownSpeed()) + " ";
-                    //                    commandStr += tr("Early Position:") + QString().sprintf("%.1f", moldItem.IFPos() / (qreal)10) + " ";
-                    commandStr += tr("End Position:") + QString::number(moldItem.ActualIfPos()) + " ";
-                }
-                else
-                {
-                    commandStr += tr("Early End,");
-                    commandStr += tr("Early Speed-Down:") + tr("SPeed:") + QString::number(moldItem.GetEarlyDownSpeed()) + " ";
-                    //                    commandStr += tr("Early Position:") + QString().sprintf("%.1f", moldItem.IFPos() / (qreal)10) + " ";
-                    commandStr += tr("End Position:") + QString::number(moldItem.ActualIfPos()) + " ";
-                }
-            }
-
-
-            if(moldItem.IsBadProduct() && moldItem.Action() == GZ)
-            {
-                commandStr += QObject::tr("Bad Product En") + " ";
-            }
-            //            commandStr += tr("Delay")
-        }
-        else if(action == ACTCHECKINPUT)
-        {
-            //            drs
-            if(moldItem.IFVal() == 0)
-            {
-                commandStr += tr("Defective Products");
-            }
-            else if(moldItem.IFVal() == 1)
-            {
-                commandStr += tr("X043");
-            }
-            else if(moldItem.IFVal() ==2)
-            {
-                commandStr += tr("X044");
-            }
-            else if(moldItem.IFVal() ==3)
-            {
-                commandStr += tr("Try Product");
-            }
-            else if(moldItem.IFVal() ==4)
-            {
-                commandStr += tr("Sampling");
-            }
-            else if(moldItem.IFVal() == 5)
-            {
-                commandStr += tr("X012 OFF");
-            }
-            else if(moldItem.IFVal() == 6)
-            {
-                commandStr += tr("X013 OFF");
-            }
-            else if(moldItem.IFVal() == 7)
-            {
-                commandStr += tr("X034 OFF");
-            }
-            else if(moldItem.IFVal() == 8)
-            {
-                commandStr += tr("X021 OFF");
-            }
-            else if(moldItem.IFVal() == 9)
-            {
-                commandStr += tr("X015 OFF");
-            }
-            else if(moldItem.IFVal() == 10)
-            {
-                commandStr += tr("X014 OFF");
-            }
-            else if(moldItem.IFVal() == 11)
-            {
-                commandStr += tr("Mold Count") + ":" + QString::number(moldItem.IFPos());
-            }
-            else if(moldItem.IFVal() == 12)
-            {
-                commandStr += tr("X016 OFF");
-            }
-            else if(moldItem.IFVal() == 13)
-            {
-                commandStr += tr("X036 OFF");
-            }
-            commandStr += " ";
-            //            commandStr += " " + tr("ON:Macro") + QString::number(moldItem.RVal()) + " ";
-            if(moldItem.SVal() == 5)
-            {
-                commandStr += tr("Defective Products") + " ";
-            }
-            else if(moldItem.SVal() == 7)
-            {
-                commandStr += tr("GZ") + " ";
-            }
-            else if(moldItem.SVal() == 6)
-            {
-                commandStr += tr("Sampling") + " ";
-            }
-            else
-            {
-                commandStr += tr("Sub-") + QString::number(moldItem.SVal() + 1) + " ";
-            }
-
-            commandStr += QString(tr("Go to Flag[%1]").arg(moldItem.Flag()));
-            commandStr += QObject::tr("Limit time:") + ICParameterConversion::TransThisIntToThisText(moldItem.Pos(), 2) + "      ";
-            return commandStr;
-        }
-        else if(action == ACT_WaitMoldOpened)
-        {
-            if(moldItem.SVal() == 1)
-            {
-                commandStr += tr("Mold Opened");
-                commandStr += " ";
-                commandStr += QObject::tr("Delay time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 2) + "      ";
-                return commandStr;
-            }
-            else if(moldItem.SVal() == 2)
-            {
-                commandStr += tr("Security Door Closed");
-            }
-            else if(moldItem.SVal() == 3)
-            {
-                commandStr += tr("X043");
-            }
-            else if(moldItem.SVal() == 4)
-            {
-                commandStr += tr("X044");
-            }
-            else if(moldItem.SVal() == 5)
-            {
-                commandStr += tr("CLIP1");
-            }
-            else if(moldItem.SVal() == 6)
-            {
-                commandStr += tr("CLIP2");
-            }
-            else if(moldItem.SVal() == 7)
-            {
-                commandStr += tr("CLIP3");
-            }
-            else if(moldItem.SVal() == 8)
-            {
-                commandStr += tr("CLIP4");
-            }
-            else if(moldItem.SVal() == 9)
-            {
-                commandStr += tr("CLIP5");
-            }
-            else if(moldItem.SVal() == 10)
-            {
-                commandStr += tr("CLIP6");
-            }
-            else if(moldItem.SVal() == 11)
-            {
-                commandStr += tr("EUEJF");
-            }
-            else if(moldItem.SVal() == 12)
-            {
-                commandStr += tr("EUEJB");
-            }
-            else if(moldItem.SVal() == 13)
-            {
-                //                commandStr += tr("Mold Opened 2");
-                commandStr += tr("EUCOREIN");
-            }
-            else if(moldItem.SVal() == 14)
-            {
-                commandStr += tr("EUCOREOUT");
-            }
-            commandStr += " ";
-            commandStr += QObject::tr("Limit time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 2) + "      ";
-            return commandStr;
-        }
-        else if(moldItem.Action() == ICMold::ACT_OTHER)
-        {
-            if(moldItem.IFVal() == 1)
-            {
-                commandStr += tr("Product Clear");
-            }
-            if(moldItem.IFVal() == 2)
-            {
-                commandStr += tr("Wait X026");
-            }
-            if(moldItem.IFVal() == 3)
-            {
-                commandStr += tr("Wait X040");
-            }
-            if(moldItem.IFVal() == 4)
-            {
-                commandStr += tr("Wait X043");
-            }
-            if(moldItem.IFVal() == 5)
-            {
-                commandStr += tr("Wait X044");
-            }
-            if(moldItem.IFVal() == 6)
-            {
-                commandStr += tr("Wait X016");
-            }
-            if(moldItem.IFVal() == 7)
-            {
-                commandStr += tr("Wait X017");
-            }
-            if(moldItem.IFVal() == 8)
-            {
-                commandStr += tr("Wait X036");
-            }
-            if(moldItem.IFVal() == 9)
-            {
-                commandStr += tr("Wait Sub-1");
-            }
-            if(moldItem.IFVal() == 10)
-            {
-                commandStr += tr("Wait Sub-2");
-            }
-            if(moldItem.IFVal() == 11)
-            {
-                commandStr += tr("Wait Sub-3");
-            }
-            if(moldItem.IFVal() == 12)
-            {
-                commandStr += tr("Wait Sub-4");
-            }
-            if(moldItem.IFVal() == 13)
-            {
-                commandStr += tr("Wait Sub-5");
-            }
-            if(moldItem.IFVal() == 14)
-            {
-                commandStr += tr("Wait Sub-6");
-            }
-            if(moldItem.IFVal() == 15)
-            {
-                commandStr += tr("Wait Sub-7");
-            }
-            return commandStr;
-        }
+        if (moldItem.IFVal() == 0)
+            commandStr += tr("Bx- :");
+        else
+            commandStr += tr("Bx+ :");
+        commandStr += QObject::tr("Delay time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 2) + "      ";
+    }
+    else if (moldItem.Action() == ICMold::ACT_PoseHori2)
+    {
+        if (moldItem.IFVal() == 0)
+            commandStr += tr("Ax-:");
+        else
+            commandStr += tr("Ax+:");
+        commandStr += QObject::tr("Delay time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 2) + "      ";
+    }
+    else if (moldItem.Action() == ICMold::ACT_GAADD)
+    {
+        if (moldItem.IFVal() == 0)
+            commandStr += tr("Zx-:");
+        else
+            commandStr += tr("Zx+:");
+        commandStr += QObject::tr("Delay time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 2) + "      ";
+    }
+    else if (moldItem.Action() == ICMold::ACT_GBSUB)
+    {
+        if (moldItem.IFVal() == 0)
+            commandStr += tr("Cx-:");
+        else
+            commandStr += tr("Cx+:");
+        commandStr += QObject::tr("Delay time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 2) + "      ";
+    }
+    else if (moldItem.Action() == ICMold::ACT_GBADD)
+    {
+        if (moldItem.IFVal() == 0)
+            commandStr += tr("Dx-:");
+        else
+            commandStr += tr("Dx+:");
+        commandStr += QObject::tr("Delay time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 2) + "      ";
     }
     else
     {
-        action = moldItem.Clip();
-        commandStr += clipGroupMap_.value(action) + ": ";
-        if(clipStatusList_.contains(action))
+        if(!clipGroup)
         {
-            commandStr += QObject::tr("Times:") + QString::number(moldItem.ActualMoldCount()) + " ";
-        }
-        else if(IsStackedAction(action))
-        {
-            commandStr += QObject::tr("Selected:") + QString::number(moldItem.SVal() + 1) + tr("Group") + " ";
-        }
-        else if(action == ICMold::ACT_AUX1 ||
-                action == ICMold::ACT_AUX2 ||
-                action == ICMold::ACT_AUX3 ||
-                action == ICMold::ACT_AUX4 ||
-                action == ICMold::ACT_AUX5 ||
-                action == ICMold::ACT_AUX6)
-        {
-            commandStr.chop(2);
-            if(moldItem.IFVal() == 0)
+            action = moldItem.Action();
+
+            if(action == ACT_Cut)
             {
-                commandStr += QObject::tr("Off") + ":";
-            }
-            else
-            {
-                commandStr += QObject::tr("On") + ":";
-            }
-//            if(action != ICMold::ACT_AUX5 && action != ICMold::ACT_AUX6)
-            {
+                if(moldItem.SVal() < 4)
+                {
+                    commandStr += tr("Fixture");
+                    commandStr += QString::number(moldItem.SVal() + 1);
+                }
+                else if(moldItem.SVal() < 8)
+                {
+                    commandStr += tr("Sucker");
+                    commandStr += QString::number(moldItem.SVal() - 3);
+                }
+                else if(moldItem.SVal() == 6)
+                {
+                    commandStr += tr("X037");
+                }
+                else
+                {
+                    commandStr += tr("X023");
+                }
+                //            commandStr += tr("Fixture");
+                //            commandStr += QString::number(moldItem.SVal() + 1);
                 commandStr += " ";
+                if(moldItem.IFVal() == 1)
+                {
+                    commandStr += tr("Begin");
+                }
+                else
+                {
+                    commandStr += tr("End");
+                }
+                commandStr += actionGroupMap_.value(action);
+                commandStr += QObject::tr("Delay time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 2) + "      ";
+                return commandStr;
+            }
+            commandStr += actionGroupMap_.value(action) + ": ";
+
+            if(xyzStatusList_.contains(action))
+            {
+                if(action == ACT_3D)
+                {
+                    if(moldItem.Get3DType() == 0)
+                        commandStr += tr("Line");
+                    else
+                        commandStr += tr("Curve");
+                    commandStr += actionGroupMap_.value(moldItem.Get3DAction()) + ": ";
+                }
+                //            commandStr += ICParameterConversion::TransThisIntToThisText(moldItem.Pos(), 1) + " ";
+                commandStr += ICParameterConversion::TransThisIntToThisText(moldItem.ActualPos(), POS_DECIMAL) + " ";
+                if((moldItem.Get3DType()) == 1 && (action == ACT_3D))
+                {
+                    commandStr += tr("a:") + ICParameterConversion::TransThisIntToThisText(moldItem.GetAngle(), 1) + " ";
+                    commandStr += tr("Dir:") + (moldItem.GetDir() == 0 ? tr("PP") : tr("RP"));
+                }
+                //            commandStr += "X" + ICParameterConversion::TransThisIntToThisText(moldItem.X(), 1) + " ";
+                //            commandStr += "Y" + ICParameterConversion::TransThisIntToThisText(moldItem.Y(), 1) + " ";
+                //            commandStr += "Z" + ICParameterConversion::TransThisIntToThisText(moldItem.Z(), 1) + " ";
+                //            if(action != G01)
+                //            {
+                //                commandStr == QObject::tr("Radius:") + ICParameterConversion::TransThisIntToThisText(moldItem.RVal(), 1);
+                //            }
+                commandStr += tr("Speed:") + QString::number(moldItem.SVal()) + " ";
+                //            if(moldItem.Action() != ICMold::ACT_3D)
+                //            {
+                //                if(moldItem.IsEarlyEnd())
+                //                {
+                //                    if(!moldItem.IsEarlySpeedDown())
+                //                    {
+                //                        commandStr += tr("Early End,Early Position:");
+                //                        //                    commandStr += QString().sprintf("%.1f", moldItem.IFPos() / (qreal)10) + " ";
+                //                        commandStr += QString::number(moldItem.ActualIfPos()) + " ";
+                //                    }
+
+                //                }
+                //            }
+                if(moldItem.IsEarlySpeedDown())
+                {
+                    if(!moldItem.IsEarlyEnd())
+                    {
+                        commandStr += tr("Early Speed-Down:") + tr("SPeed:") + QString::number(moldItem.GetEarlyDownSpeed()) + " ";
+                        //                    commandStr += tr("Early Position:") + QString().sprintf("%.1f", moldItem.IFPos() / (qreal)10) + " ";
+                        commandStr += tr("End Position:") + QString::number(moldItem.ActualIfPos()) + " ";
+                    }
+                    else
+                    {
+                        commandStr += tr("Early End,");
+                        commandStr += tr("Early Speed-Down:") + tr("SPeed:") + QString::number(moldItem.GetEarlyDownSpeed()) + " ";
+                        //                    commandStr += tr("Early Position:") + QString().sprintf("%.1f", moldItem.IFPos() / (qreal)10) + " ";
+                        commandStr += tr("End Position:") + QString::number(moldItem.ActualIfPos()) + " ";
+                    }
+                }
+
+
+                if(moldItem.IsBadProduct() && moldItem.Action() == GZ)
+                {
+                    commandStr += QObject::tr("Bad Product En") + " ";
+                }
+                //            commandStr += tr("Delay")
+            }
+            else if(action == ACTCHECKINPUT)
+            {
+                //            drs
+                if(moldItem.IFVal() == 0)
+                {
+                    commandStr += tr("Defective Products");
+                }
+                else if(moldItem.IFVal() == 1)
+                {
+                    commandStr += tr("X043");
+                }
+                else if(moldItem.IFVal() ==2)
+                {
+                    commandStr += tr("X044");
+                }
+                else if(moldItem.IFVal() ==3)
+                {
+                    commandStr += tr("Try Product");
+                }
+                else if(moldItem.IFVal() ==4)
+                {
+                    commandStr += tr("Sampling");
+                }
+                else if(moldItem.IFVal() == 5)
+                {
+                    commandStr += tr("X012 OFF");
+                }
+                else if(moldItem.IFVal() == 6)
+                {
+                    commandStr += tr("X013 OFF");
+                }
+                else if(moldItem.IFVal() == 7)
+                {
+                    commandStr += tr("X034 OFF");
+                }
+                else if(moldItem.IFVal() == 8)
+                {
+                    commandStr += tr("X021 OFF");
+                }
+                else if(moldItem.IFVal() == 9)
+                {
+                    commandStr += tr("X015 OFF");
+                }
+                else if(moldItem.IFVal() == 10)
+                {
+                    commandStr += tr("X014 OFF");
+                }
+                else if(moldItem.IFVal() == 11)
+                {
+                    commandStr += tr("Mold Count") + ":" + QString::number(moldItem.IFPos());
+                }
+                else if(moldItem.IFVal() == 12)
+                {
+                    commandStr += tr("X016 OFF");
+                }
+                else if(moldItem.IFVal() == 13)
+                {
+                    commandStr += tr("X036 OFF");
+                }
+                commandStr += " ";
+                //            commandStr += " " + tr("ON:Macro") + QString::number(moldItem.RVal()) + " ";
+                if(moldItem.SVal() == 5)
+                {
+                    commandStr += tr("Defective Products") + " ";
+                }
+                else if(moldItem.SVal() == 7)
+                {
+                    commandStr += tr("GZ") + " ";
+                }
+                else if(moldItem.SVal() == 6)
+                {
+                    commandStr += tr("Sampling") + " ";
+                }
+                else
+                {
+                    commandStr += tr("Sub-") + QString::number(moldItem.SVal() + 1) + " ";
+                }
+
+                commandStr += QString(tr("Go to Flag[%1]").arg(moldItem.Flag()));
+                commandStr += QObject::tr("Limit time:") + ICParameterConversion::TransThisIntToThisText(moldItem.Pos(), 2) + "      ";
+                return commandStr;
+            }
+            else if(action == ACT_WaitMoldOpened)
+            {
+                if(moldItem.SVal() == 1)
+                {
+                    commandStr += tr("Mold Opened");
+                    commandStr += " ";
+                    commandStr += QObject::tr("Delay time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 2) + "      ";
+                    return commandStr;
+                }
+                else if(moldItem.SVal() == 2)
+                {
+                    commandStr += tr("Security Door Closed");
+                }
+                else if(moldItem.SVal() == 3)
+                {
+                    commandStr += tr("X043");
+                }
+                else if(moldItem.SVal() == 4)
+                {
+                    commandStr += tr("X044");
+                }
+                else if(moldItem.SVal() == 5)
+                {
+                    commandStr += tr("CLIP1");
+                }
+                else if(moldItem.SVal() == 6)
+                {
+                    commandStr += tr("CLIP2");
+                }
+                else if(moldItem.SVal() == 7)
+                {
+                    commandStr += tr("CLIP3");
+                }
+                else if(moldItem.SVal() == 8)
+                {
+                    commandStr += tr("CLIP4");
+                }
+                else if(moldItem.SVal() == 9)
+                {
+                    commandStr += tr("CLIP5");
+                }
+                else if(moldItem.SVal() == 10)
+                {
+                    commandStr += tr("CLIP6");
+                }
+                else if(moldItem.SVal() == 11)
+                {
+                    commandStr += tr("EUEJF");
+                }
+                else if(moldItem.SVal() == 12)
+                {
+                    commandStr += tr("EUEJB");
+                }
+                else if(moldItem.SVal() == 13)
+                {
+                    //                commandStr += tr("Mold Opened 2");
+                    commandStr += tr("EUCOREIN");
+                }
+                else if(moldItem.SVal() == 14)
+                {
+                    commandStr += tr("EUCOREOUT");
+                }
+                commandStr += " ";
+                commandStr += QObject::tr("Limit time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 2) + "      ";
+                return commandStr;
+            }
+            else if(moldItem.Action() == ICMold::ACT_OTHER)
+            {
+                if(moldItem.IFVal() == 1)
+                {
+                    commandStr += tr("Product Clear");
+                }
+                if(moldItem.IFVal() == 2)
+                {
+                    commandStr += tr("Wait X026");
+                }
+                if(moldItem.IFVal() == 3)
+                {
+                    commandStr += tr("Wait X040");
+                }
+                if(moldItem.IFVal() == 4)
+                {
+                    commandStr += tr("Wait X043");
+                }
+                if(moldItem.IFVal() == 5)
+                {
+                    commandStr += tr("Wait X044");
+                }
+                if(moldItem.IFVal() == 6)
+                {
+                    commandStr += tr("Wait X016");
+                }
+                if(moldItem.IFVal() == 7)
+                {
+                    commandStr += tr("Wait X017");
+                }
+                if(moldItem.IFVal() == 8)
+                {
+                    commandStr += tr("Wait X036");
+                }
+                if(moldItem.IFVal() == 9)
+                {
+                    commandStr += tr("Wait Sub-1");
+                }
+                if(moldItem.IFVal() == 10)
+                {
+                    commandStr += tr("Wait Sub-2");
+                }
+                if(moldItem.IFVal() == 11)
+                {
+                    commandStr += tr("Wait Sub-3");
+                }
+                if(moldItem.IFVal() == 12)
+                {
+                    commandStr += tr("Wait Sub-4");
+                }
+                if(moldItem.IFVal() == 13)
+                {
+                    commandStr += tr("Wait Sub-5");
+                }
+                if(moldItem.IFVal() == 14)
+                {
+                    commandStr += tr("Wait Sub-6");
+                }
+                if(moldItem.IFVal() == 15)
+                {
+                    commandStr += tr("Wait Sub-7");
+                }
+                return commandStr;
+            }
+        }
+        else
+        {
+            action = moldItem.Clip();
+            commandStr += clipGroupMap_.value(action) + ": ";
+            if(clipStatusList_.contains(action))
+            {
                 commandStr += QObject::tr("Times:") + QString::number(moldItem.ActualMoldCount()) + " ";
             }
-            commandStr += " ";
+            else if(IsStackedAction(action))
+            {
+                commandStr += QObject::tr("Selected:") + QString::number(moldItem.SVal() + 1) + tr("Group") + " ";
+            }
+            else if(action == ICMold::ACT_AUX1 ||
+                    action == ICMold::ACT_AUX2 ||
+                    action == ICMold::ACT_AUX3 ||
+                    action == ICMold::ACT_AUX4 ||
+                    action == ICMold::ACT_AUX5 ||
+                    action == ICMold::ACT_AUX6)
+            {
+                commandStr.chop(2);
+                if(moldItem.IFVal() == 0)
+                {
+                    commandStr += QObject::tr("Off") + ":";
+                }
+                else
+                {
+                    commandStr += QObject::tr("On") + ":";
+                }
+                //            if(action != ICMold::ACT_AUX5 && action != ICMold::ACT_AUX6)
+                {
+                    commandStr += " ";
+                    commandStr += QObject::tr("Times:") + QString::number(moldItem.ActualMoldCount()) + " ";
+                }
+                commandStr += " ";
+            }
+            //        else if(action == ICMold::ACT_AUX1)
+            //        {
+            //            if(moldItem.Num() == 0)
+            //            {
+            //                commandStr = tr("Home") + "    " + "*" + "    ";
+            //            }
+            //            else if(moldItem.SubNum() == 255)
+            //            {
+            //                commandStr = QString::number(moldItem.Num()) + "    " + "*" + "    ";
+            //            }
+            //            else
+            //            {
+            //                commandStr = QString::number(moldItem.Num()) + "    " + QString::number(moldItem.SubNum()) + "    ";
+            //            }
+            //            if(moldItem.IFVal() == 0)
+            //            {
+            //                commandStr += QObject::tr("Eject OFF 2:");
+            //            }
+            //            else
+            //            {
+            //                commandStr += QObject::tr("Eject ON 2:");
+            //            }
+            //        }
+
+
         }
-        //        else if(action == ICMold::ACT_AUX1)
-        //        {
-        //            if(moldItem.Num() == 0)
-        //            {
-        //                commandStr = tr("Home") + "    " + "*" + "    ";
-        //            }
-        //            else if(moldItem.SubNum() == 255)
-        //            {
-        //                commandStr = QString::number(moldItem.Num()) + "    " + "*" + "    ";
-        //            }
-        //            else
-        //            {
-        //                commandStr = QString::number(moldItem.Num()) + "    " + QString::number(moldItem.SubNum()) + "    ";
-        //            }
-        //            if(moldItem.IFVal() == 0)
-        //            {
-        //                commandStr += QObject::tr("Eject OFF 2:");
-        //            }
-        //            else
-        //            {
-        //                commandStr += QObject::tr("Eject ON 2:");
-        //            }
-        //        }
-
-
     }
     if(moldItem.Clip() == ICMold::ACTCLIP7ON ||
             moldItem.Clip() == ICMold::ACTCLIP7OFF ||
