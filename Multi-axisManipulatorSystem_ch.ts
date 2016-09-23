@@ -8972,7 +8972,7 @@ Please enter an digit between </source>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="420"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="737"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1324"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1356"/>
         <source>Product</source>
         <translation>成品位置设定</translation>
     </message>
@@ -8981,14 +8981,14 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage.ui" line="881"/>
         <location filename="hcinstruction/icprogramguidepage.ui" line="962"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="761"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="2142"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="2174"/>
         <source>GX1:</source>
         <translation>主引拔:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="483"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="845"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="2141"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="2173"/>
         <source>GY1:</source>
         <translation>主上下:</translation>
     </message>
@@ -9029,16 +9029,16 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage.ui" line="927"/>
         <location filename="hcinstruction/icprogramguidepage.ui" line="976"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="956"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1573"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="2021"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1605"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="2053"/>
         <source>GX2:</source>
         <translation>副引拔:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="594"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1040"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1572"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="2020"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1604"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="2052"/>
         <source>GY2:</source>
         <translation>副上下:</translation>
     </message>
@@ -9147,7 +9147,7 @@ Please enter an digit between </source>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="534"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="932"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1325"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1357"/>
         <source>Outlet</source>
         <translation>水口位置设定</translation>
     </message>
@@ -9218,30 +9218,30 @@ Please enter an digit between </source>
         <translation>完成</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1307"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1416"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1339"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1448"/>
         <source>Get Position Settings</source>
         <translation>取物位置设定</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1339"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1443"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1371"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1475"/>
         <source>Release Product Position Settings</source>
         <translation>放成品位置设定</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1360"/>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1464"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1392"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1496"/>
         <source>Release Outlet Position Settings</source>
         <translation>放水口位置设定</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1513"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1545"/>
         <source>Finish(%1/%2)</source>
         <translation>完成(%1/%2)</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icprogramguidepage.cpp" line="1519"/>
+        <location filename="hcinstruction/icprogramguidepage.cpp" line="1551"/>
         <source>Stanby Settings</source>
         <translation>待机点设定</translation>
     </message>
@@ -11131,7 +11131,7 @@ Please input the root password to confirm.</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1626"/>
+        <location filename="mainframe.cpp" line="1627"/>
         <source>L Alarm</source>
         <translation>看报警</translation>
     </message>
@@ -11184,21 +11184,21 @@ Please input the root password to confirm.</source>
         <translation>步序</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1109"/>
-        <location filename="mainframe.cpp" line="1113"/>
-        <location filename="mainframe.cpp" line="1517"/>
-        <location filename="mainframe.cpp" line="1558"/>
-        <location filename="mainframe.cpp" line="1565"/>
+        <location filename="mainframe.cpp" line="1110"/>
+        <location filename="mainframe.cpp" line="1114"/>
+        <location filename="mainframe.cpp" line="1518"/>
+        <location filename="mainframe.cpp" line="1559"/>
+        <location filename="mainframe.cpp" line="1566"/>
         <source>tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1558"/>
+        <location filename="mainframe.cpp" line="1559"/>
         <source>Spare Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1113"/>
+        <location filename="mainframe.cpp" line="1114"/>
         <source>No Register</source>
         <translation>没有注册</translation>
     </message>
@@ -11208,7 +11208,7 @@ Please input the root password to confirm.</source>
         <translation>功能</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1565"/>
+        <location filename="mainframe.cpp" line="1566"/>
         <source>No Register,The System Will Reboot after 10 minutes</source>
         <translation>没有注册，系统将在十分钟后重启</translation>
     </message>
@@ -11218,7 +11218,7 @@ Please input the root password to confirm.</source>
         <translation>输出入表示</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1109"/>
+        <location filename="mainframe.cpp" line="1110"/>
         <source>Spear Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
@@ -11231,34 +11231,34 @@ Please input the root password to confirm.</source>
         <translation type="obsolete">需要试产%1模吗?</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1146"/>
+        <location filename="mainframe.cpp" line="1147"/>
         <source>Records</source>
         <translation>模具档案</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1517"/>
+        <location filename="mainframe.cpp" line="1518"/>
         <source>No Register. System Restart Now...</source>
         <translation>没有注册，系统现在重启...</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1600"/>
-        <location filename="mainframe.cpp" line="1616"/>
+        <location filename="mainframe.cpp" line="1601"/>
+        <location filename="mainframe.cpp" line="1617"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1601"/>
+        <location filename="mainframe.cpp" line="1602"/>
         <source>%1 fnc is broken. Please remove this mold!</source>
         <translation>%1 模组参数丢失.请删除这个模号!</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1617"/>
+        <location filename="mainframe.cpp" line="1618"/>
         <source>%1 mold fixed. Please check the sub program!</source>
         <translation>%1模号格式更新.请检查该模号使用的子程序是否正确!</translation>
     </message>
     <message>
         <location filename="mainframe.ui" line="825"/>
-        <location filename="mainframe.cpp" line="1626"/>
+        <location filename="mainframe.cpp" line="1627"/>
         <source>L Pos</source>
         <translation>看位置</translation>
     </message>
@@ -11302,7 +11302,7 @@ Please input the root password to confirm.</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="866"/>
+        <location filename="mainframe.cpp" line="867"/>
         <source>Hint</source>
         <translation>提示</translation>
     </message>
@@ -11319,7 +11319,7 @@ Please input the root password to confirm.</source>
         <translation type="obsolete">还没进行原点!</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1097"/>
+        <location filename="mainframe.cpp" line="1098"/>
         <source>Instruct</source>
         <translation>动作编辑</translation>
     </message>
@@ -11432,18 +11432,18 @@ Please input the root password to confirm.</source>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="86"/>
-        <location filename="function_settings/moldinformation.cpp" line="189"/>
-        <location filename="function_settings/moldinformation.cpp" line="197"/>
-        <location filename="function_settings/moldinformation.cpp" line="242"/>
-        <location filename="function_settings/moldinformation.cpp" line="253"/>
-        <location filename="function_settings/moldinformation.cpp" line="279"/>
-        <location filename="function_settings/moldinformation.cpp" line="430"/>
-        <location filename="function_settings/moldinformation.cpp" line="443"/>
-        <location filename="function_settings/moldinformation.cpp" line="462"/>
-        <location filename="function_settings/moldinformation.cpp" line="472"/>
-        <location filename="function_settings/moldinformation.cpp" line="482"/>
-        <location filename="function_settings/moldinformation.cpp" line="610"/>
-        <location filename="function_settings/moldinformation.cpp" line="656"/>
+        <location filename="function_settings/moldinformation.cpp" line="190"/>
+        <location filename="function_settings/moldinformation.cpp" line="198"/>
+        <location filename="function_settings/moldinformation.cpp" line="243"/>
+        <location filename="function_settings/moldinformation.cpp" line="254"/>
+        <location filename="function_settings/moldinformation.cpp" line="280"/>
+        <location filename="function_settings/moldinformation.cpp" line="431"/>
+        <location filename="function_settings/moldinformation.cpp" line="444"/>
+        <location filename="function_settings/moldinformation.cpp" line="463"/>
+        <location filename="function_settings/moldinformation.cpp" line="473"/>
+        <location filename="function_settings/moldinformation.cpp" line="483"/>
+        <location filename="function_settings/moldinformation.cpp" line="611"/>
+        <location filename="function_settings/moldinformation.cpp" line="657"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
@@ -11455,12 +11455,12 @@ Please input the file name.</source>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="108"/>
-        <location filename="function_settings/moldinformation.cpp" line="564"/>
-        <location filename="function_settings/moldinformation.cpp" line="694"/>
-        <location filename="function_settings/moldinformation.cpp" line="702"/>
-        <location filename="function_settings/moldinformation.cpp" line="707"/>
-        <location filename="function_settings/moldinformation.cpp" line="746"/>
-        <location filename="function_settings/moldinformation.cpp" line="947"/>
+        <location filename="function_settings/moldinformation.cpp" line="565"/>
+        <location filename="function_settings/moldinformation.cpp" line="695"/>
+        <location filename="function_settings/moldinformation.cpp" line="703"/>
+        <location filename="function_settings/moldinformation.cpp" line="708"/>
+        <location filename="function_settings/moldinformation.cpp" line="747"/>
+        <location filename="function_settings/moldinformation.cpp" line="948"/>
         <source>Warnning</source>
         <translation>警告</translation>
     </message>
@@ -11470,35 +11470,35 @@ Please input the file name.</source>
         <translation>名子不能用！</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="160"/>
+        <location filename="function_settings/moldinformation.cpp" line="161"/>
         <source>Success</source>
         <translation>成功</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="161"/>
+        <location filename="function_settings/moldinformation.cpp" line="162"/>
         <source>New file success.</source>
         <translation>新建文件成功.</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="168"/>
+        <location filename="function_settings/moldinformation.cpp" line="169"/>
         <source>The file has been existing</source>
         <translation>文件已存在</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="169"/>
+        <location filename="function_settings/moldinformation.cpp" line="170"/>
         <source>File already exists,
 Please change a new name.</source>
         <translation>文件已存在,请输入一个新的文件名.</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="190"/>
-        <location filename="function_settings/moldinformation.cpp" line="254"/>
+        <location filename="function_settings/moldinformation.cpp" line="191"/>
+        <location filename="function_settings/moldinformation.cpp" line="255"/>
         <source>Source file name is empty,
 Please choose an existing file.</source>
         <translation>源文件名为空,请选择一个存在的文件.</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="198"/>
+        <location filename="function_settings/moldinformation.cpp" line="199"/>
         <source>New file name is empty,
 Please write the destination file name.</source>
         <translation>文件名为空,请输入文件名.</translation>
@@ -11508,7 +11508,7 @@ Please write the destination file name.</source>
         <translation type="obsolete">复制文件成功!</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="243"/>
+        <location filename="function_settings/moldinformation.cpp" line="244"/>
         <source>Destination file already exists!
 Please try a new name</source>
         <translation>目标文件已存在！请重试</translation>
@@ -11518,67 +11518,67 @@ Please try a new name</source>
         <translation type="obsolete">没有选择文件</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="483"/>
+        <location filename="function_settings/moldinformation.cpp" line="484"/>
         <source>Are you sure to delete the selected files?</source>
         <oldsource>Are you sure to delete the selected files </oldsource>
         <translation>确定删除选择的文件吗?</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="713"/>
+        <location filename="function_settings/moldinformation.cpp" line="714"/>
         <source>Restoring, please wait...</source>
         <translation>还原中，请稍后...</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="694"/>
+        <location filename="function_settings/moldinformation.cpp" line="695"/>
         <source>Wrong program format!</source>
         <translation>错误的程序格式！</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="364"/>
+        <location filename="function_settings/moldinformation.cpp" line="365"/>
         <source>On the Current mold already!</source>
         <translation>已经在当前模号上！</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="702"/>
+        <location filename="function_settings/moldinformation.cpp" line="703"/>
         <source>Wrong config format!!!</source>
         <translation>错误的配置格式!</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="707"/>
+        <location filename="function_settings/moldinformation.cpp" line="708"/>
         <source>Wrong config format!</source>
         <translation>错误的模组参数格式！</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="620"/>
-        <location filename="function_settings/moldinformation.cpp" line="649"/>
-        <location filename="function_settings/moldinformation.cpp" line="805"/>
-        <location filename="function_settings/moldinformation.cpp" line="834"/>
+        <location filename="function_settings/moldinformation.cpp" line="621"/>
+        <location filename="function_settings/moldinformation.cpp" line="650"/>
+        <location filename="function_settings/moldinformation.cpp" line="806"/>
+        <location filename="function_settings/moldinformation.cpp" line="835"/>
         <source>tips</source>
         <oldsource>t1ips</oldsource>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="620"/>
-        <location filename="function_settings/moldinformation.cpp" line="649"/>
-        <location filename="function_settings/moldinformation.cpp" line="805"/>
-        <location filename="function_settings/moldinformation.cpp" line="834"/>
+        <location filename="function_settings/moldinformation.cpp" line="621"/>
+        <location filename="function_settings/moldinformation.cpp" line="650"/>
+        <location filename="function_settings/moldinformation.cpp" line="806"/>
+        <location filename="function_settings/moldinformation.cpp" line="835"/>
         <source>%1 is exist,replace it?</source>
         <translation>%1文件存在，是否替换？</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="746"/>
+        <location filename="function_settings/moldinformation.cpp" line="747"/>
         <source>Wrong program format!!!</source>
         <translation>错误的程序格式!!!</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="768"/>
-        <location filename="function_settings/moldinformation.cpp" line="884"/>
+        <location filename="function_settings/moldinformation.cpp" line="769"/>
+        <location filename="function_settings/moldinformation.cpp" line="885"/>
         <source>Information</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="768"/>
-        <location filename="function_settings/moldinformation.cpp" line="884"/>
+        <location filename="function_settings/moldinformation.cpp" line="769"/>
+        <location filename="function_settings/moldinformation.cpp" line="885"/>
         <source>Operation finished!</source>
         <translation>操作完成！</translation>
     </message>
@@ -11587,8 +11587,8 @@ Please try a new name</source>
         <translation type="obsolete">备份文件不完整！</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="783"/>
-        <location filename="function_settings/moldinformation.cpp" line="923"/>
+        <location filename="function_settings/moldinformation.cpp" line="784"/>
+        <location filename="function_settings/moldinformation.cpp" line="924"/>
         <source>USB is not connected!</source>
         <translation>没有检测到U盘！</translation>
     </message>
@@ -11597,12 +11597,12 @@ Please try a new name</source>
         <translation type="obsolete">没有勾选模号</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="857"/>
+        <location filename="function_settings/moldinformation.cpp" line="858"/>
         <source>Backuping, please wait...</source>
         <translation>备份中，请稍后...</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="950"/>
+        <location filename="function_settings/moldinformation.cpp" line="951"/>
         <source>Refresh File List, please wait...</source>
         <translation>刷新文件列表，请稍后...</translation>
     </message>
@@ -11611,8 +11611,8 @@ Please try a new name</source>
         <translation type="obsolete">备份文件不完整！</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="564"/>
-        <location filename="function_settings/moldinformation.cpp" line="947"/>
+        <location filename="function_settings/moldinformation.cpp" line="565"/>
+        <location filename="function_settings/moldinformation.cpp" line="948"/>
         <source>Backup files is not exists!</source>
         <translation>没有可用的备份文件!</translation>
     </message>
@@ -11621,41 +11621,41 @@ Please try a new name</source>
         <translation type="obsolete">删除文件成功!</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="280"/>
+        <location filename="function_settings/moldinformation.cpp" line="281"/>
         <source>File does not exist!</source>
         <translation>文件不存在!</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="323"/>
-        <location filename="function_settings/moldinformation.cpp" line="340"/>
-        <location filename="function_settings/moldinformation.cpp" line="783"/>
-        <location filename="function_settings/moldinformation.cpp" line="923"/>
+        <location filename="function_settings/moldinformation.cpp" line="324"/>
+        <location filename="function_settings/moldinformation.cpp" line="341"/>
+        <location filename="function_settings/moldinformation.cpp" line="784"/>
+        <location filename="function_settings/moldinformation.cpp" line="924"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="323"/>
-        <location filename="function_settings/moldinformation.cpp" line="340"/>
+        <location filename="function_settings/moldinformation.cpp" line="324"/>
+        <location filename="function_settings/moldinformation.cpp" line="341"/>
         <source>file name is empty</source>
         <translation>文件名空</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="373"/>
+        <location filename="function_settings/moldinformation.cpp" line="374"/>
         <source>critical</source>
         <translation>错误</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="373"/>
+        <location filename="function_settings/moldinformation.cpp" line="374"/>
         <source>Read mold or mold para fail! Please change other mold!</source>
         <translation>模组数据已损坏，请更换其它模组!</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="386"/>
+        <location filename="function_settings/moldinformation.cpp" line="387"/>
         <source>Loading...</source>
         <translation>载入中...</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="364"/>
+        <location filename="function_settings/moldinformation.cpp" line="365"/>
         <source>Tips</source>
         <translation>提示</translation>
     </message>
@@ -11664,24 +11664,24 @@ Please try a new name</source>
         <translation type="obsolete">装载模号成功！</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="431"/>
-        <location filename="function_settings/moldinformation.cpp" line="463"/>
-        <location filename="function_settings/moldinformation.cpp" line="611"/>
-        <location filename="function_settings/moldinformation.cpp" line="657"/>
+        <location filename="function_settings/moldinformation.cpp" line="432"/>
+        <location filename="function_settings/moldinformation.cpp" line="464"/>
+        <location filename="function_settings/moldinformation.cpp" line="612"/>
+        <location filename="function_settings/moldinformation.cpp" line="658"/>
         <source>The mold file </source>
         <translation>模号文件</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="433"/>
-        <location filename="function_settings/moldinformation.cpp" line="465"/>
-        <location filename="function_settings/moldinformation.cpp" line="613"/>
-        <location filename="function_settings/moldinformation.cpp" line="659"/>
+        <location filename="function_settings/moldinformation.cpp" line="434"/>
+        <location filename="function_settings/moldinformation.cpp" line="466"/>
+        <location filename="function_settings/moldinformation.cpp" line="614"/>
+        <location filename="function_settings/moldinformation.cpp" line="660"/>
         <source> is being used</source>
         <translation>正被使用</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="444"/>
-        <location filename="function_settings/moldinformation.cpp" line="473"/>
+        <location filename="function_settings/moldinformation.cpp" line="445"/>
+        <location filename="function_settings/moldinformation.cpp" line="474"/>
         <source>Stand programs can not be delete!</source>
         <translation>标准程序不能删除！</translation>
     </message>
