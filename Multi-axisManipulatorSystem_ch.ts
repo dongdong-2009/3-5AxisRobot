@@ -142,12 +142,12 @@
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="2351"/>
         <source>Dx-</source>
-        <translation>升</translation>
+        <translation>降</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="2392"/>
         <source>Dx+</source>
-        <translation>降</translation>
+        <translation>升</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="308"/>
@@ -3983,7 +3983,7 @@ Reason</source>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="198"/>
         <source>Dx-</source>
-        <translation>标仓升</translation>
+        <translation>标仓降</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="224"/>
@@ -4019,7 +4019,7 @@ Reason</source>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="320"/>
         <source>Dx+</source>
-        <translation>标仓降</translation>
+        <translation>标仓升</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="336"/>
@@ -6942,12 +6942,12 @@ App %1; Host:</oldsource>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="97"/>
         <source>Dx-:</source>
-        <translation>标仓升:</translation>
+        <translation>标仓降:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="99"/>
         <source>Dx+:</source>
-        <translation>标仓降:</translation>
+        <translation>标仓升:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="117"/>
