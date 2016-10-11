@@ -10,38 +10,29 @@ HCManualSockerFrame::HCManualSockerFrame(QWidget *parent) :
     ui(new Ui::HCManualSockerFrame)
 {
     ui->setupUi(this);
+    ui->reserve3InLabel->hide();
+    ui->reserve4InLabel->hide();
     ICCommandKeyWrapper *wrapper;
-    wrapper = new ICCommandKeyWrapper(ui->connectSucker1ToolButton, IC::VKEY_CLIP5ON);
+
+    wrapper = new ICCommandKeyWrapper(ui->connectReserve3ToolButton, IC::VKEY_RESERVE3_ON);
     wrappers_.append(wrapper);
-    wrapper = new ICCommandKeyWrapper(ui->connectSucker2ToolButton, IC::VKEY_CLIP6ON);
+    wrapper = new ICCommandKeyWrapper(ui->connectReserve4ToolButton, IC::VKEY_RESERVE4_ON);
     wrappers_.append(wrapper);
 
-    wrapper = new ICCommandKeyWrapper(ui->disconnectSucker1ToolButton, IC::VKEY_CLIP5OFF);
+    wrapper = new ICCommandKeyWrapper(ui->disconnectReserve3ToolButton, IC::VKEY_RESERVE3_OFF);
     wrappers_.append(wrapper);
-    wrapper = new ICCommandKeyWrapper(ui->disconnectSucker2ToolButton, IC::VKEY_CLIP6OFF);
-    wrappers_.append(wrapper);
-
-    wrapper = new ICCommandKeyWrapper(ui->connectSucker3ToolButton, IC::VKEY_RESERVE5_ON);
-    wrappers_.append(wrapper);
-    wrapper = new ICCommandKeyWrapper(ui->connectSucker4ToolButton, IC::VKEY_RESERVE6_ON);
+    wrapper = new ICCommandKeyWrapper(ui->disconnectReserve4ToolButton, IC::VKEY_RESERVE4_OFF);
     wrappers_.append(wrapper);
 
-    wrapper = new ICCommandKeyWrapper(ui->disconnectSucker3ToolButton, IC::VKEY_RESERVE5_OFF);
+    wrapper = new ICCommandKeyWrapper(ui->connectReserve5ToolButton, IC::VKEY_RESERVE5_ON);
     wrappers_.append(wrapper);
-    wrapper = new ICCommandKeyWrapper(ui->disconnectSucker4ToolButton, IC::VKEY_RESERVE6_OFF);
+    wrapper = new ICCommandKeyWrapper(ui->connectReserve6ToolButton, IC::VKEY_RESERVE6_ON);
     wrappers_.append(wrapper);
 
-    ui->label_3->hide();
-    ui->label_4->hide();
-    ui->sucker3Label->hide();
-    ui->sucker4Label->hide();
-    ui->sucker3StatusLabel->hide();
-    ui->sucker4StatusLabel->hide();
-    ui->connectSucker3ToolButton->hide();
-    ui->connectSucker4ToolButton->hide();
-    ui->disconnectSucker3ToolButton->hide();
-    ui->disconnectSucker4ToolButton->hide();
-
+    wrapper = new ICCommandKeyWrapper(ui->disconnectReserve5ToolButton, IC::VKEY_RESERVE5_OFF);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->disconnectReserve6ToolButton, IC::VKEY_RESERVE6_OFF);
+    wrappers_.append(wrapper);
 
 }
 
@@ -88,76 +79,63 @@ void HCManualSockerFrame::StatusRefreshed()
     static QPixmap on(":/resource/ledgreen(16).png");
     static QPixmap inOn(":/resource/ledred(16).png");
     static ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
-    if(host->IsClipOn(4))
+
+    if(host->PeripheryOutput(2) == 1)
     {
-        ui->sucker1StatusLabel->setPixmap(on);
-    }
-    else
-    {
-        ui->sucker1StatusLabel->setPixmap(off);
+        if(host->IsOutputOn(17))
+        {
+            ui->reserve3StatusLabel->setPixmap(on);
+        }
+        else
+        {
+            ui->reserve3StatusLabel->setPixmap(off);
+        }
     }
 
-    if(host->IsClipOn(5))
+    if(host->PeripheryOutput(3) == 1)
     {
-        ui->sucker2StatusLabel->setPixmap(on);
-    }
-    else
-    {
-        ui->sucker2StatusLabel->setPixmap(off);
-    }
-
-    if(host->IsInputOn(5))
-    {
-        ui->sucker1Label->setPixmap(inOn);
-    }
-    else
-    {
-        ui->sucker1Label->setPixmap(off);
+        if(host->IsOutputOn(18))
+        {
+            ui->reserve4StatusLabel->setPixmap(on);
+        }
+        else
+        {
+            ui->reserve4StatusLabel->setPixmap(off);
+        }
     }
 
-    if(host->IsInputOn(4))
+    if(host->PeripheryOutput(4) == 1)
     {
-        ui->sucker2Label->setPixmap(inOn);
-    }
-    else
-    {
-        ui->sucker2Label->setPixmap(off);
+        if(host->IsOutputOn(21))
+        {
+            ui->reserve5StatusLabel->setPixmap(on);
+
+        }
+        else
+        {
+
+            ui->reserve5StatusLabel->setPixmap(off);
+
+        }
     }
 
-    if(host->IsInputOn(7))
+    if(host->PeripheryOutput(5) == 1)
     {
-        ui->sucker3Label->setPixmap(inOn);
-    }
-    else
-    {
-        ui->sucker3Label->setPixmap(off);
+        if(host->IsOutputOn(22))
+        {
+
+            ui->reserve6StatusLabel->setPixmap(on);
+
+        }
+        else
+        {
+
+            ui->reserve6StatusLabel->setPixmap(off);
+
+        }
     }
 
-    if(host->IsInputOn(22))
-    {
-        ui->sucker4Label->setPixmap(inOn);
-    }
-    else
-    {
-        ui->sucker4Label->setPixmap(off);
-    }
-
-    if(host->IsOutputOn(21))
-    {
-        ui->sucker3StatusLabel->setPixmap(on);
-    }
-    else
-    {
-        ui->sucker3StatusLabel->setPixmap(off);
-    }
-
-    if(host->IsOutputOn(22))
-    {
-        ui->sucker4StatusLabel->setPixmap(on);
-    }
-    else
-    {
-        ui->sucker4StatusLabel->setPixmap(off);
-    }
+    ui->reserve5InLabel->setPixmap(host->IsInputOn(28) ? inOn : off);
+    ui->reserve6InLabel->setPixmap(host->IsInputOn(29) ? inOn : off);
 
 }

@@ -69,11 +69,11 @@ ActionSettingFrame::ActionSettingFrame(QWidget *parent) :
 //    ui->bxAdd->hide();
 //    ui->bxSub->hide();
 //    ui->bxBox->hide();
-//    ui->zxAdd->hide();
-//    ui->zxSub->hide();
-//    ui->zxBox->hide();
+    ui->zxAdd->hide();
+    ui->zxSub->hide();
+    ui->zxBox->hide();
 //    ui->bxDelayLineEdit->hide();
-//    ui->zxDelayLineEdit->hide();
+    ui->zxDelayLineEdit->hide();
     //    ui->x1SpeedLineEdit->hide();
 }
 

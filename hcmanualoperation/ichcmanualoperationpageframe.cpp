@@ -39,10 +39,13 @@ ICHCManualOperationPageFrame::ICHCManualOperationPageFrame(QWidget *parent) :
     InitInterface();
 //    InitSignal();
     ui->fixtureToolButton->click();
+    ui->reserveToolButton->hide();
+    ui->otherToolButton->hide();
+
 //    ui->bxAddButton->hide();
 //    ui->bxSubButton->hide();
-//    ui->zxAddButton->hide();
-//    ui->zxSubButton->hide();
+    ui->zxAddButton->hide();
+    ui->zxSubButton->hide();
 }
 
 ICHCManualOperationPageFrame::~ICHCManualOperationPageFrame()

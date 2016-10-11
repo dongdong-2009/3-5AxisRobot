@@ -56,14 +56,9 @@ ICPneumaticActionPage::ICPneumaticActionPage(QWidget *parent) :
                 SLOT(map()));
 
     }
-#ifdef HC_SK_5
-    ui->tableWidget->setColumnWidth(0, 46);
-    ui->tableWidget->setColumnWidth(1, 80);
-#else
-    ui->tableWidget->setColumnWidth(0, 50);
-    ui->tableWidget->setColumnWidth(1, 105);
-#endif
 
+    ui->tableWidget->setColumnWidth(0, 50);
+    ui->tableWidget->setColumnWidth(1, 97);
 
     commandKeyMap_.insert(settingButtons_.at(0), qMakePair(static_cast<int>(IC::VKEY_RESERVE1_ON), static_cast<int>(IC::VKEY_RESERVE1_OFF)));
     commandKeyMap_.insert(settingButtons_.at(1), qMakePair(static_cast<int>(IC::VKEY_RESERVE2_ON), static_cast<int>(IC::VKEY_RESERVE2_OFF)));
@@ -82,6 +77,8 @@ ICPneumaticActionPage::ICPneumaticActionPage(QWidget *parent) :
             SIGNAL(mapped(QWidget*)),
             this,
             SLOT(CommandButtonClicked(QWidget*)));
+    ui->tableWidget->setRowHidden(4, true);
+    ui->tableWidget->setRowHidden(5, true);
 }
 
 ICPneumaticActionPage::~ICPneumaticActionPage()
@@ -100,7 +97,7 @@ void ICPneumaticActionPage::changeEvent(QEvent *e)
 //               <<tr("Reserve3  ")<<tr("Reserve4  ")<<tr("Reserve5  ")<<tr("Reserve6  ");
         ioNames_<<tr("Reserve1  ")<<tr("Reserve2  ")
                <<tr("Reserve3  ")<<tr("Reserve4  ")<<tr("Reserve5  ")<<tr("Reserve6  ");
-        for(int i = 0; i != ui->tableWidget->rowCount(); ++i)
+        for(int i = 0; i != settingButtons_.size(); ++i)
         {
             settingButtons_[i]->setText(ioNames_.at(i));
         }
@@ -151,7 +148,8 @@ QList<ICMoldItem> ICPneumaticActionPage::CreateCommandImpl() const
 {
     QList<ICMoldItem> ret;
     ICMoldItem item;
-    for(int i = 0; i != ui->tableWidget->rowCount(); ++i)
+
+    for(int i=0; i != ui->tableWidget->rowCount(); ++i)
     {
         if(ui->tableWidget->item(i, 0)->checkState() == Qt::Checked)
         {
@@ -163,6 +161,14 @@ QList<ICMoldItem> ICPneumaticActionPage::CreateCommandImpl() const
             ret.append(item);
         }
     }
+//    if(ui->tableWidget->item(i, 0)->checkState() == Qt::Checked)
+//    {
+//        item.SetAction(ICMold::ACT_PoseHori2);
+//        item.SetIFVal(0);
+//        item.SetDVal(editorVector_.at(i)->Delay());
+//        item.SetActualIfPos(0);
+//        ret.append(item);
+//    }
     return ret;
 }
 

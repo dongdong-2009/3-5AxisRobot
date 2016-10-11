@@ -8,8 +8,7 @@
 HCManualFixtureFrame::HCManualFixtureFrame(QWidget *parent) :
     QFrame(parent),
     ui(new Ui::HCManualFixtureFrame),
-    clips_(8, false),
-    timerID_(-1)
+    clips_(16, false)
 {
     ui->setupUi(this);
     ICCommandKeyWrapper *wrapper;
@@ -21,6 +20,10 @@ HCManualFixtureFrame::HCManualFixtureFrame(QWidget *parent) :
     wrappers_.append(wrapper);
     wrapper = new ICCommandKeyWrapper(ui->connectFixture4ToolButton, IC::VKEY_CLIP4ON);
     wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->connectSucker1ToolButton, IC::VKEY_CLIP5ON);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->connectSucker2ToolButton, IC::VKEY_CLIP6ON);
+    wrappers_.append(wrapper);
 
     wrapper = new ICCommandKeyWrapper(ui->disconnectFixture1ToolButton, IC::VKEY_CLIP1OFF);
     wrappers_.append(wrapper);
@@ -29,6 +32,33 @@ HCManualFixtureFrame::HCManualFixtureFrame(QWidget *parent) :
     wrapper = new ICCommandKeyWrapper(ui->disconnectFixture3ToolButton, IC::VKEY_CLIP3OFF);
     wrappers_.append(wrapper);
     wrapper = new ICCommandKeyWrapper(ui->disconnectFixture4ToolButton, IC::VKEY_CLIP4OFF);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->disconnectSucker1ToolButton, IC::VKEY_CLIP5OFF);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->disconnectSucker2ToolButton, IC::VKEY_CLIP6OFF);
+    wrappers_.append(wrapper);
+
+    ui->reserve1InLabel->hide();
+    ui->reserve2InLabel->hide();
+
+    wrapper = new ICCommandKeyWrapper(ui->connectReserve1ToolButton, IC::VKEY_RESERVE1_ON);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->connectReserve2ToolButton, IC::VKEY_RESERVE2_ON);
+    wrappers_.append(wrapper);
+
+    wrapper = new ICCommandKeyWrapper(ui->disconnectReserve1ToolButton, IC::VKEY_RESERVE1_OFF);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->disconnectReserve2ToolButton, IC::VKEY_RESERVE2_OFF);
+    wrappers_.append(wrapper);
+
+    wrapper = new ICCommandKeyWrapper(ui->conveyorOnButton, IC::VKEY_CLIP8ON);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->onInjectionButton, IC::VKEY_CLIP7ON);
+    wrappers_.append(wrapper);
+
+    wrapper = new ICCommandKeyWrapper(ui->conveyorOFFButton, IC::VKEY_CLIP8OFF);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->offInjectionButton, IC::VKEY_CLIP7OFF);
     wrappers_.append(wrapper);
 }
 
@@ -55,7 +85,6 @@ void HCManualFixtureFrame::hideEvent(QHideEvent *e)
     //               SIGNAL(StatusRefreshed()),
     //               this,
     //               SLOT(StatusRefreshed()));
-    if(timerID_ < 0) return;
     ICTimerPool::Instance()->Stop(timerID_, this, SLOT(StatusRefreshed()));
 }
 
@@ -209,4 +238,53 @@ void HCManualFixtureFrame::StatusRefreshed()
             ui->fixture4InLabel->setPixmap(off);
         }
     }
+
+    if(host->PeripheryOutput(0) == 1)
+    {
+        if(host->IsOutputOn(7))
+        {
+            ui->reserve1StatusLabel->setPixmap(on);
+
+        }
+        else
+        {
+            ui->reserve1StatusLabel->setPixmap(off);
+        }
+    }
+
+    if(host->PeripheryOutput(1) == 1)
+    {
+        if(host->IsOutputOn(10))
+        {
+            ui->reserve2StatusLabel->setPixmap(on);
+        }
+        else
+        {
+            ui->reserve2StatusLabel->setPixmap(off);
+        }
+    }
+
+    if(host->IsClipOn(6))
+    {
+        ui->injectionStatusLabel->setPixmap(on);
+    }
+    else
+    {
+        ui->injectionStatusLabel->setPixmap(off);
+    }
+
+    if(host->IsClipOn(7))
+    {
+        ui->conveyorStatusLabel->setPixmap(on);
+    }
+    else
+    {
+        ui->conveyorStatusLabel->setPixmap(off);
+    }
+
+    ui->sucker1Label->setPixmap(host->IsInputOn(5) ? inOn : off);
+    ui->sucker2Label->setPixmap(host->IsInputOn(4) ? inOn : off);
+
+    ui->sucker1StatusLabel->setPixmap(host->IsOutputOn(5) ? on : off);
+    ui->sucker2StatusLabel->setPixmap(host->IsOutputOn(4) ? on : off);
 }

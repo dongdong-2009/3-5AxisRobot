@@ -20,54 +20,363 @@
    <enum>QFrame::Raised</enum>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="1" column="8">
+   <item row="0" column="14">
+    <widget class="QLabel" name="reserve6InLabel">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../custom_widgets/iciomonitor/iciomonitor.qrc">:/resource/ledgray(16).png</pixmap>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="9">
+    <widget class="QLabel" name="reserve3StatusLabel">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../custom_widgets/iciomonitor/iciomonitor.qrc">:/resource/ledgray(16).png</pixmap>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="10" colspan="2">
+    <widget class="QToolButton" name="disconnectReserve5ToolButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>OFF</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
     <widget class="QLabel" name="label_4">
      <property name="text">
-      <string>Sucker 4</string>
+      <string>Reserve3</string>
      </property>
     </widget>
    </item>
-   <item row="0" column="1">
-    <widget class="QLabel" name="sucker1Label">
+   <item row="1" column="14">
+    <widget class="QLabel" name="reserve4InLabel">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
      <property name="text">
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../resource.qrc">:/resource/ledgray(16).png</pixmap>
+      <pixmap resource="../custom_widgets/iciomonitor/iciomonitor.qrc">:/resource/ledgray(16).png</pixmap>
      </property>
     </widget>
    </item>
-   <item row="1" column="11">
-    <widget class="QLabel" name="sucker4StatusLabel">
+   <item row="1" column="17">
+    <widget class="QLabel" name="reserve4StatusLabel">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
      <property name="text">
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../resource.qrc">:/resource/ledgray(16).png</pixmap>
+      <pixmap resource="../custom_widgets/iciomonitor/iciomonitor.qrc">:/resource/ledgray(16).png</pixmap>
      </property>
     </widget>
    </item>
-   <item row="1" column="1">
-    <widget class="QLabel" name="sucker3Label">
+   <item row="0" column="0" colspan="3">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Reserve5</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="10">
+    <widget class="QToolButton" name="disconnectReserve3ToolButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>OFF</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="13">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Reserve4</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="9">
+    <widget class="QLabel" name="reserve5StatusLabel">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
      <property name="text">
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../resource.qrc">:/resource/ledgray(16).png</pixmap>
+      <pixmap resource="../custom_widgets/iciomonitor/iciomonitor.qrc">:/resource/ledgray(16).png</pixmap>
      </property>
     </widget>
    </item>
-   <item row="0" column="4">
-    <widget class="QLabel" name="sucker1StatusLabel">
+   <item row="1" column="6">
+    <widget class="QToolButton" name="connectReserve3ToolButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>ON</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="19" colspan="2">
+    <widget class="QToolButton" name="disconnectReserve6ToolButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>OFF</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="6" colspan="3">
+    <widget class="QToolButton" name="connectReserve5ToolButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>ON</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="15">
+    <widget class="QToolButton" name="connectReserve4ToolButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>ON</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="13">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Reserve6</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QLabel" name="reserve3InLabel">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
      <property name="text">
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../resource.qrc">:/resource/ledgray(16).png</pixmap>
+      <pixmap resource="../custom_widgets/iciomonitor/iciomonitor.qrc">:/resource/ledgray(16).png</pixmap>
      </property>
     </widget>
    </item>
-   <item row="0" column="6">
+   <item row="0" column="15" colspan="2">
+    <widget class="QToolButton" name="connectReserve6ToolButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>ON</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="19">
+    <widget class="QToolButton" name="disconnectReserve4ToolButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>OFF</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QLabel" name="reserve5InLabel">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../custom_widgets/iciomonitor/iciomonitor.qrc">:/resource/ledgray(16).png</pixmap>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="17" colspan="2">
+    <widget class="QLabel" name="reserve6StatusLabel">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../custom_widgets/iciomonitor/iciomonitor.qrc">:/resource/ledgray(16).png</pixmap>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="12">
     <spacer name="horizontalSpacer">
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
@@ -80,275 +389,10 @@
      </property>
     </spacer>
    </item>
-   <item row="1" column="9">
-    <widget class="QLabel" name="sucker4Label">
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../resource.qrc">:/resource/ledgray(16).png</pixmap>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="10">
-    <widget class="QToolButton" name="connectSucker4ToolButton">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>48</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>48</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>ON</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="2">
-    <widget class="QToolButton" name="connectSucker3ToolButton">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>48</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>48</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>ON</string>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="2">
-    <widget class="QToolButton" name="connectSucker1ToolButton">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>48</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>48</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>ON</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="0">
-    <widget class="QLabel" name="label_3">
-     <property name="text">
-      <string>Sucker 3</string>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="0">
-    <widget class="QLabel" name="label">
-     <property name="text">
-      <string>Sucker 1</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="13">
-    <widget class="QToolButton" name="disconnectSucker4ToolButton">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>48</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>48</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>OFF</string>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="5">
-    <widget class="QToolButton" name="disconnectSucker1ToolButton">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>48</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>48</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>OFF</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="4">
-    <widget class="QLabel" name="sucker3StatusLabel">
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../resource.qrc">:/resource/ledgray(16).png</pixmap>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="13">
-    <widget class="QToolButton" name="disconnectSucker2ToolButton">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>48</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>48</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>OFF</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="5">
-    <widget class="QToolButton" name="disconnectSucker3ToolButton">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>48</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>48</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>OFF</string>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="11">
-    <widget class="QLabel" name="sucker2StatusLabel">
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../resource.qrc">:/resource/ledgray(16).png</pixmap>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="10">
-    <widget class="QToolButton" name="connectSucker2ToolButton">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>48</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>48</width>
-       <height>48</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>ON</string>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="9">
-    <widget class="QLabel" name="sucker2Label">
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../resource.qrc">:/resource/ledgray(16).png</pixmap>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="8">
-    <widget class="QLabel" name="label_2">
-     <property name="text">
-      <string>Sucker 2</string>
-     </property>
-    </widget>
-   </item>
   </layout>
  </widget>
  <resources>
-  <include location="../resource.qrc"/>
-  <include location="../resource.qrc"/>
-  <include location="../resource.qrc"/>
-  <include location="../resource.qrc"/>
-  <include location="../resource.qrc"/>
+  <include location="../custom_widgets/iciomonitor/iciomonitor.qrc"/>
  </resources>
  <connections/>
 </ui>

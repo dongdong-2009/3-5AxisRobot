@@ -54,7 +54,7 @@ QCheckBox::indicator:unchecked:disabled
      <property name="title">
       <string>Wait Condition</string>
      </property>
-     <layout class="QGridLayout" name="gridLayout">
+     <layout class="QFormLayout" name="formLayout">
       <property name="leftMargin">
        <number>2</number>
       </property>
@@ -71,30 +71,10 @@ QCheckBox::indicator:unchecked:disabled
         </attribute>
        </widget>
       </item>
-      <item row="0" column="1">
-       <widget class="QCheckBox" name="xclip1CheckBox">
-        <property name="text">
-         <string>Wait XCLIP1</string>
-        </property>
-        <attribute name="buttonGroup">
-         <string notr="true">buttonGroup</string>
-        </attribute>
-       </widget>
-      </item>
       <item row="1" column="0">
        <widget class="QCheckBox" name="securityDoorCheckBox">
         <property name="text">
          <string>Wait Security Door Closed</string>
-        </property>
-        <attribute name="buttonGroup">
-         <string notr="true">buttonGroup</string>
-        </attribute>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QCheckBox" name="xclip2CheckBox">
-        <property name="text">
-         <string>Wait XCLIP2</string>
         </property>
         <attribute name="buttonGroup">
          <string notr="true">buttonGroup</string>
@@ -111,20 +91,40 @@ QCheckBox::indicator:unchecked:disabled
         </attribute>
        </widget>
       </item>
-      <item row="2" column="1">
-       <widget class="QCheckBox" name="xclip3CheckBox">
+      <item row="3" column="0">
+       <widget class="QCheckBox" name="x044CheckBox">
         <property name="text">
-         <string>Wait XCLIP3</string>
+         <string>Wait X044</string>
         </property>
         <attribute name="buttonGroup">
          <string notr="true">buttonGroup</string>
         </attribute>
        </widget>
       </item>
-      <item row="3" column="0">
-       <widget class="QCheckBox" name="x044CheckBox">
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="xclip1CheckBox">
         <property name="text">
-         <string>Wait X044</string>
+         <string>Wait XCLIP1</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="xclip2CheckBox">
+        <property name="text">
+         <string>Wait XCLIP2</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QCheckBox" name="xclip3CheckBox">
+        <property name="text">
+         <string>Wait XCLIP3</string>
         </property>
         <attribute name="buttonGroup">
          <string notr="true">buttonGroup</string>
@@ -141,16 +141,6 @@ QCheckBox::indicator:unchecked:disabled
         </attribute>
        </widget>
       </item>
-      <item row="4" column="0">
-       <widget class="QCheckBox" name="euejfCheckBox">
-        <property name="text">
-         <string>Wait EUEJF</string>
-        </property>
-        <attribute name="buttonGroup">
-         <string notr="true">buttonGroup</string>
-        </attribute>
-       </widget>
-      </item>
       <item row="4" column="1">
        <widget class="QCheckBox" name="xclip5CheckBox">
         <property name="text">
@@ -161,20 +151,30 @@ QCheckBox::indicator:unchecked:disabled
         </attribute>
        </widget>
       </item>
-      <item row="5" column="0">
-       <widget class="QCheckBox" name="euejbCheckBox">
+      <item row="5" column="1">
+       <widget class="QCheckBox" name="xclip6CheckBox">
         <property name="text">
-         <string>Wait EUEJB</string>
+         <string>Wait XCLIP6</string>
         </property>
         <attribute name="buttonGroup">
          <string notr="true">buttonGroup</string>
         </attribute>
        </widget>
       </item>
-      <item row="5" column="1">
-       <widget class="QCheckBox" name="xclip6CheckBox">
+      <item row="4" column="0">
+       <widget class="QCheckBox" name="euejfCheckBox">
         <property name="text">
-         <string>Wait XCLIP6</string>
+         <string>Wait EUEJF</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QCheckBox" name="euejbCheckBox">
+        <property name="text">
+         <string>Wait EUEJB</string>
         </property>
         <attribute name="buttonGroup">
          <string notr="true">buttonGroup</string>
