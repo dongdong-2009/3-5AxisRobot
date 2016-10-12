@@ -153,7 +153,7 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
             switch(item->Action())
             {
             case ICMold::GX:
-                addr = ICVirtualHost::SYS_X_Maxium;
+                addr = ICVirtualHost::SYS_X_Length;
                 posValidator_->setBottom(0);
                 ifposValidator_->setBottom(0);
                 break;
@@ -163,7 +163,7 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
                 ifposValidator_->setBottom(0);
                 break;
             case ICMold::GZ:
-                addr = ICVirtualHost::SYS_Z_Maxium;
+                addr = ICVirtualHost::SYS_Z_Length;
                 posValidator_->setBottom(0);
                 ifposValidator_->setBottom(0);
                 break;
@@ -178,12 +178,12 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
                 ifposValidator_->setBottom(0);
                 break;
             case ICMold::GA:
-                addr = ICVirtualHost::SYS_C_Length;
+                addr = ICVirtualHost::SYS_A_Length;
                 posValidator_->setBottom(-50);
                 ifposValidator_->setBottom(-50);
                 break;
             case ICMold::GB:
-                addr = ICVirtualHost::SYS_C_Length;
+                addr = ICVirtualHost::SYS_B_Length;
                 posValidator_->setBottom(-50);
                 ifposValidator_->setBottom(-50);
                 break;

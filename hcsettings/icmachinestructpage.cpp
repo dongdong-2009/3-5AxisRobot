@@ -263,7 +263,9 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
         minText = tr("Min pos inside mold");
         maxText = tr("Max pos inside mold");
         ui->distanceRotationEdit->SetDecimalPlaces(2);      
-        ui->label_2->setText(tr("Maximum displacement"));
+//        ui->label_2->setText(tr("Maximum displacement"));
+        ui->label_2->setText(tr("Origin Offset"));
+
 
     }
     else if(currentAxis_ == ICVirtualHost::ICAxis_AxisY1)
@@ -426,7 +428,9 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
     maximumValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
     if(currentAxis_ == ICVirtualHost::ICAxis_AxisC ||
             currentAxis_ == ICVirtualHost::ICAxis_AxisA ||
-            currentAxis_ == ICVirtualHost::ICAxis_AxisB)
+            currentAxis_ == ICVirtualHost::ICAxis_AxisB ||
+            currentAxis_ == ICVirtualHost::ICAxis_AxisX1 ||
+            currentAxis_ == ICVirtualHost::ICAxis_AxisZ)
     {
         minSecValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
         maxSecValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());

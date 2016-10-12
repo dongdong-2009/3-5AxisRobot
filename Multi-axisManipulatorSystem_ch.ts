@@ -563,7 +563,7 @@
         <translation>度</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="433"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="442"/>
         <source>Save</source>
         <translation>保存</translation>
     </message>
@@ -572,12 +572,12 @@
         <translation type="obsolete">横行安全范围(大于)</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="432"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="441"/>
         <source>Information</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="hcsettings/axissettingsframe.cpp" line="432"/>
+        <location filename="hcsettings/axissettingsframe.cpp" line="441"/>
         <source>Save Successfully!</source>
         <translation>保存成功!</translation>
     </message>
@@ -7608,7 +7608,7 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="489"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="637"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="621"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="623"/>
         <source>Save</source>
         <translation>保存</translation>
     </message>
@@ -7795,12 +7795,12 @@ Please enter an digit between </source>
         <translation>原点偏置</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="619"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="621"/>
         <source>Information</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="619"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="621"/>
         <source>Save Successfully!</source>
         <translation>保存成功!</translation>
     </message>

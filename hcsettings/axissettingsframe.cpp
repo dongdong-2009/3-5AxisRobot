@@ -102,9 +102,13 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
         total = ICParametersSave::Instance()->DistanceRotation("X");
         minText = tr("Min pos inside mold");
         maxText = tr("Max pos inside mold");
-        ui->label_2->show();
-        ui->label_4->show();
-        ui->maximumDisplacementLineEdit->show();
+//        ui->label_2->show();
+//        ui->label_4->show();
+        ui->label_2->hide();
+        ui->label_4->hide();
+//        ui->maximumDisplacementLineEdit->show();
+        ui->maximumDisplacementLineEdit->hide();
+
 
     }
     else if(currentAxis_ == ICVirtualHost::ICAxis_AxisY1)
@@ -233,6 +237,15 @@ void AxisSettingsFrame::SetCurrentAxis(QString currentAxisName, int axis)
     maxMoveValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
     maxSecValidator_->setTop(maxMoveValidator_->top());
     minSecValidator_->setTop(maxMoveValidator_->top());
+    if(currentAxis_ == ICVirtualHost::ICAxis_AxisC ||
+            currentAxis_ == ICVirtualHost::ICAxis_AxisA ||
+            currentAxis_ == ICVirtualHost::ICAxis_AxisB ||
+            currentAxis_ == ICVirtualHost::ICAxis_AxisX1 ||
+            currentAxis_ == ICVirtualHost::ICAxis_AxisZ)
+    {
+        minSecValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
+        maxSecValidator_->setTop(ui->mechanicalLengthLineEdit->TransThisTextToThisInt());
+    }
     p = editorToConfigIDs_.begin();
     while(p != editorToConfigIDs_.end())
     {
