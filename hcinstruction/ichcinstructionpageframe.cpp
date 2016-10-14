@@ -104,7 +104,7 @@ void ICHCInstructionPageFrame::showEvent(QShowEvent *e)
     }
     if(ICParametersSave::Instance()->IsExtentFunctionUsed())
     {
-        ui->flagsButton->hide();
+        ui->flagsButton->show();
         ui->conditionsToolButton->show();
     }
     else

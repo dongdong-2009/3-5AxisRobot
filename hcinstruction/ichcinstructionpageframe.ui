@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>999</width>
-    <height>446</height>
+    <height>484</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -684,7 +684,7 @@ padding:5px;
            </property>
           </widget>
          </item>
-         <item row="8" column="0">
+         <item row="7" column="1">
           <widget class="QToolButton" name="flagsButton">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -722,7 +722,7 @@ padding:5px;
            </property>
           </widget>
          </item>
-         <item row="7" column="1">
+         <item row="8" column="0">
           <widget class="QToolButton" name="curveButton">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
