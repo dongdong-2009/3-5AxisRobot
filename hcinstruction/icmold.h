@@ -121,7 +121,7 @@ public:
     void SetActualPos(int pos)
     {
         int p = pos / 10;
-        int d = pos % 10;
+        int d = qAbs(pos % 10);
         SetPos(p);
         ifPos_ &= 0xFFFFFFF0;
         ifPos_ |= d;
