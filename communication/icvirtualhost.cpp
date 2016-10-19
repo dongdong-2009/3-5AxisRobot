@@ -1120,6 +1120,7 @@ int ICVirtualHost::GetActualPos(ICAxis axis, uint axisLastPos) const
         }
         else
         {
+            ret += 10;
             return ret -=((axisLastPos >> (axis * 4)) & 0xF);
         }
     }
