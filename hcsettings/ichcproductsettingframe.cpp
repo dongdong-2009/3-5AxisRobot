@@ -25,6 +25,8 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
     ui->waitTimeEdit->setValidator(new QIntValidator(0, 32760, ui->waitTimeEdit));
     ui->recycleTimeEdit->SetDecimalPlaces(1);
     ui->recycleTimeEdit->setValidator(new QIntValidator(0, 30000, ui->recycleTimeEdit));
+    ui->realRecycleTimeEdit->SetDecimalPlaces(1);
+    ui->realRecycleTimeEdit->setValidator(new QIntValidator(0, 3000, ui->realRecycleTimeEdit));
     ICLineEditWrapper *wrapper = new ICLineEditWrapper(ui->productLineEdit,
                                                        ICMold::Product,
                                                        ICLineEditWrapper::Mold,
@@ -92,6 +94,12 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
     ui->productSave->blockSignals(true);
     ui->productSave->setChecked(ICParametersSave::Instance()->IsProductSave());
     ui->productSave->blockSignals(false);
+    ui->recycleMode->blockSignals(true);
+    ui->recycleMode->setCurrentIndex(ICVirtualHost::GlobalVirtualHost()->RecycleMode());
+    ui->recycleMode->blockSignals(false);
+    ui->realRecycleTimeEdit->blockSignals(true);
+    ui->realRecycleTimeEdit->SetThisIntToThisText(ICVirtualHost::GlobalVirtualHost()->RecycleTime());
+    ui->realRecycleTimeEdit->blockSignals(false);
 
     editorToConfigIDs_.insert(ui->productLineEdit, ICConfigString::kCS_PRD_Number);
     editorToConfigIDs_.insert(ui->waitTimeEdit, ICConfigString::kCS_PRD_Wait_OM_Limit);
@@ -103,6 +111,8 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
     editorToConfigIDs_.insert(ui->getFailWay, ICConfigString::kCS_PRD_Alarm_Occasion_When_Get_Fail);
     editorToConfigIDs_.insert(ui->tryProductEdit, ICConfigString::kCS_PRD_Try_number);
     editorToConfigIDs_.insert(ui->samplingEdit, ICConfigString::kCS_PRD_Sample_cycle);
+    editorToConfigIDs_.insert(ui->recycleMode, ICConfigString::kCS_PRD_Reclcle_Mode);
+    editorToConfigIDs_.insert(ui->realRecycleTimeEdit, ICConfigString::kCS_PRD_Reclcle_Time);
     ICLogInit;
 
     this->hide();
@@ -138,7 +148,7 @@ void ICHCProductSettingFrame::hideEvent(QHideEvent *e)
         dataBuffer[2] = host->SystemParameter(ICVirtualHost::SYS_Config_Out).toUInt();
         dataBuffer[3] = host->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toUInt();
         dataBuffer[4] = host->SystemParameter(ICVirtualHost::SYS_Config_Resv1).toUInt();
-        dataBuffer[5] = host->SystemParameter(ICVirtualHost::SYS_Config_Resv1).toUInt();
+        dataBuffer[5] = host->SystemParameter(ICVirtualHost::SYS_Config_Resv2).toUInt();
     //    dataBuffer[3] = ICVirtualHost::GlobalVirtualHost()->FixtureDefine();
         for(int i = 0; i != 6; ++i)
         {
@@ -288,3 +298,13 @@ void ICHCProductSettingFrame::on_productSave_toggled(bool checked)
 }
 
 ICLogFunctions(ICHCProductSettingFrame)
+
+void ICHCProductSettingFrame::on_recycleMode_currentIndexChanged(int index)
+{
+    ICVirtualHost::GlobalVirtualHost()->SetRecycleMode(index);
+}
+
+void ICHCProductSettingFrame::on_realRecycleTimeEdit_textChanged(const QString &arg1)
+{
+    ICVirtualHost::GlobalVirtualHost()->SetRecycleTime(ui->realRecycleTimeEdit->TransThisTextToThisInt());
+}
