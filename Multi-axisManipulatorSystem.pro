@@ -37,7 +37,7 @@ UI_DIR = temp_$${suffix}
 MOC_DIR = temp_$${suffix}
 RCC_DIR = temp_$${suffix}
 
-TRUNK_VERSION = 6.0.8
+TRUNK_VERSION = 6.0.9
 APP_VERSION = XS5
 S_VERSION = $${APP_VERSION}_$${HostType}_$${TRUNK_VERSION}
 contains(DEFINES, Compatible6410){

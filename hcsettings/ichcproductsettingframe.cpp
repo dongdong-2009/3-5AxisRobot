@@ -223,6 +223,12 @@ void ICHCProductSettingFrame::retranslateUi_()
     ui->label_10->setText(tr("Get Fail"));
     ui->label_19->setText(tr("Recycle Time"));
     ui->productSave->setText(tr("Product Save"));
+    ui->label_20->setText(tr("Recycle Mode"));
+    ui->recycleMode->setItemText(0, tr("Recycle Mode-1"));
+    ui->recycleMode->setItemText(1, tr("Recycle Mode-2"));
+    ui->recycleMode->setItemText(2, tr("Recycle Mode-3"));
+    ui->label_3->setText(tr("Recycle-T"));
+
 }
 
 void ICHCProductSettingFrame::OnMoldNumberParamChanged()
