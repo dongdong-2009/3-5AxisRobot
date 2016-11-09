@@ -132,6 +132,7 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
     ui->delayTimeEdit->setValidator(validator_);
     ui->limitLabel->hide();
     ui->limitTimeEdit->hide();
+//    ui->limitTimeEdit->SetDecimalPlaces(1);
     ui->limitUnitLabel->hide();
     ui->forwardBox->hide();
     ui->backwardBox->hide();
@@ -253,6 +254,7 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
             ui->delayUnitLabel->hide();
             ui->limitLabel->show();
             ui->limitTimeEdit->show();
+            ui->limitTimeEdit->SetDecimalPlaces(2);
             ui->limitUnitLabel->show();
             ui->limitTimeEdit->SetThisIntToThisText(item->Pos());
             ui->flagBox->show();
@@ -270,6 +272,7 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
         }
         else if(item->Action() == ICMold::ACT_WaitMoldOpened && item->SVal() != 1)
         {
+            ui->delayTimeEdit->SetDecimalPlaces(1);
             ui->delayLabel->setText(tr("Limit Time"));
         }
     }
