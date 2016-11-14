@@ -376,7 +376,10 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
         //        commandStr += clipGroupMap_.value(action) + ": ";
         if(clipStatusList_.contains(action))
         {
-            commandStr += QObject::tr("Times:") + QString::number(moldItem.ActualMoldCount()) + " ";
+            if(action == ICMold::ACTCLIP7ON || action == ICMold::ACTCLIP7OFF)
+                commandStr += QObject::tr("Times:") + QString::number(moldItem.ActualMoldCount() * 1000) + " ";
+            else
+                commandStr += QObject::tr("Times:") + QString::number(moldItem.ActualMoldCount()) + " ";
         }
         else if(IsStackedAction(action))
         {
