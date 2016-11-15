@@ -44,8 +44,8 @@ ICHCManualOperationPageFrame::ICHCManualOperationPageFrame(QWidget *parent) :
 
 //    ui->bxAddButton->hide();
 //    ui->bxSubButton->hide();
-    ui->zxAddButton->hide();
-    ui->zxSubButton->hide();
+//    ui->zxAddButton->hide();
+//    ui->zxSubButton->hide();
 }
 
 ICHCManualOperationPageFrame::~ICHCManualOperationPageFrame()
