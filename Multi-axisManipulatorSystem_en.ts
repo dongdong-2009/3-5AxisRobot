@@ -3660,26 +3660,31 @@ sed Phase</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="234"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="226"/>
         <source>Recycle Mode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="374"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="227"/>
         <source>Recycle Mode-1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="379"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="228"/>
         <source>Recycle Mode-2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="384"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="229"/>
         <source>Recycle Mode-3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="395"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="230"/>
         <source>Recycle-T</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3747,7 +3752,7 @@ ve Phase</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="243"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="249"/>
         <source>Product clear</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5361,7 +5366,7 @@ cal-2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="157"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="273"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="276"/>
         <source>Limit Time</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5443,13 +5448,13 @@ ward</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="208"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="209"/>
         <source>speed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="282"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="298"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="285"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="301"/>
         <source>Times</source>
         <translation type="unfinished">s</translation>
     </message>

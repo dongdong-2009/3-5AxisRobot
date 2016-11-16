@@ -4273,6 +4273,7 @@ Reason</source>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="234"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="226"/>
         <source>Recycle Mode</source>
         <translation>再循环模式</translation>
     </message>
@@ -4285,21 +4286,25 @@ Reason</source>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="374"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="227"/>
         <source>Recycle Mode-1</source>
         <translation>可锁模后延时关</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="379"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="228"/>
         <source>Recycle Mode-2</source>
         <translation>运行到等待开模到位处</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="384"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="229"/>
         <source>Recycle Mode-3</source>
         <translation>与可锁模同步</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="395"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="230"/>
         <source>Recycle-T</source>
         <translation>再循环时间</translation>
     </message>
@@ -4456,7 +4461,7 @@ Reason</source>
         <translation>产品清零</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="243"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="249"/>
         <source>Product clear</source>
         <translation>产品清零</translation>
     </message>
@@ -6396,7 +6401,7 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="157"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="273"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="276"/>
         <source>Limit Time</source>
         <translation>限制时间</translation>
     </message>
@@ -6476,7 +6481,7 @@ App %1; Host:</source>
         <translation>不良品使能</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="208"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="209"/>
         <source>speed</source>
         <translation>速度</translation>
     </message>
@@ -6485,8 +6490,8 @@ App %1; Host:</source>
         <translation type="obsolete">返回步号</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="282"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="298"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="285"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="301"/>
         <source>Times</source>
         <translation>间隔模数</translation>
     </message>
