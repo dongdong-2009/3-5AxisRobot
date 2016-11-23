@@ -250,24 +250,39 @@ QVariant ICAutoAdjustCommand::Send(modbus_param_t *modbusParam)
     QVariant result(false);
     int tryedTimes = 0;
     int ret;
-    do
+    if(Sub() < 0){
+        do
+        {
+            ret = hc_auto_adj(modbusParam,
+                              Slave(),
+                              Sequence(),
+                              DelayTime(),
+                              Speed(),
+                              DPos(),
+                              GMValue(),
+                              CheckSum());
+            ++tryedTimes;
+        }while(ret != 0 && tryedTimes < RetryTimes());
+    }
+    else
     {
-        ret = hc_auto_adj(modbusParam,
-                          Slave(),
-                          Sequence(),
-                          DelayTime(),
-                          Speed(),
-                          DPos(),
-                          GMValue(),
-                          CheckSum());
-        ++tryedTimes;
-    }while(ret != 0 && tryedTimes < RetryTimes());
+        do
+        {
+            ret = hc_auto_adj_sub(modbusParam,
+                                  Slave(),
+                                  Sequence(),
+                                  Sub(),
+                                  DelayTime(),
+                                  CheckSum());
+            ++tryedTimes;
+        }while(ret != 0 && tryedTimes < RetryTimes());
+    }
     if(ret < 0)
     {
-//        qDebug("auto false");
+        //        qDebug("auto false");
         return result;
     }
-//    qDebug("auto true");
+    //    qDebug("auto true");
     result.setValue(true);
     return result;
 }

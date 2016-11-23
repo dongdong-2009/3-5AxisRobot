@@ -198,6 +198,8 @@ static unsigned int compute_response_length(modbus_param_t *mb_param,
             length += 6;
         }
         break;
+    case FC_HC_AUTO_ADJ_SUB:
+        return 9;
     case FC_HC_TEACH_STEP:
     case FC_HC_GET_AXIS_PARA:
     case FC_HC_SET_AXIS_PARA:
@@ -798,6 +800,9 @@ static int modbus_receive(modbus_param_t *mb_param,
             query_nb_value = response_nb_value = 14;
         }
         break;
+        case FC_HC_AUTO_ADJ_SUB:
+            query_nb_value = response_nb_value = 9;
+            break;
         case FC_HC_QUERY_STATUS:
             {
 //                response[2] = 0x17;
@@ -2260,6 +2265,57 @@ int hc_auto_adj(modbus_param_t *mb_param, int slave, int seq, int delay, int spe
     }
 
     for(i = 0; i != 14; ++i)
+    {
+        if(query[i] != response[i])
+        {
+            return -1;
+        }
+    }
+
+    return 0;
+}
+
+int hc_auto_adj_sub(modbus_param_t *mb_param,
+                    int slave,
+                    int seq,
+                    int sub,
+                    int delay,
+                    int sum)
+{
+#ifndef NATIVE_WIN32
+    tcflush(mb_param->fd, TCIOFLUSH);
+#endif
+    int ret;
+    int i;
+    int query_length;
+
+    uint8_t query[9];
+
+    query_length = 7;
+//	byte_count = nb * 2;
+//	query[query_length++] = byte_count;
+    query[0] = slave;
+    query[1] = FC_HC_AUTO_ADJ_SUB;
+    query[2] = sub & 0x00FF;
+    query[3] = seq;
+    query[4] = delay & 0x00FF;
+    query[5] = delay >> 8;
+    query[6] = sum;
+
+//    printf("delay:%d speed:%d dpos:%d gmvalue:%d sum%d \n", query[6],query[7], query[8], query[9], query[10]);
+    ret = modbus_send(mb_param, query, query_length);
+    if (ret < 0)
+    {
+        return -1;
+    }
+    uint8_t response[MAX_MESSAGE_LENGTH];
+    ret = modbus_receive(mb_param, query, response);
+    if(ret != 9)
+    {
+        return -1;
+    }
+
+    for(i = 0; i != 9; ++i)
     {
         if(query[i] != response[i])
         {

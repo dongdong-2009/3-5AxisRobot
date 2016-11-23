@@ -150,6 +150,7 @@ extern "C" {
 #define FC_HC_TEACH_PARA            0x42
 #define FC_HC_MODIFY_SYS_PARA       0x43
 #define FC_HC_AUTO_ADJ              0x44
+#define FC_HC_AUTO_ADJ_SUB          0x48
 //#define FC_HC_DOES_NEED_TEACH_STEP  0x45
 #define FC_HC_GET_AXIS_PARA         0x45
 #define FC_HC_SELECT_CONFIG         0x46
@@ -410,6 +411,13 @@ int hc_auto_adj(modbus_param_t *mb_param,
                 int speed,
                 int dpos,
                 int gmValue,
+                int sum);
+
+int hc_auto_adj_sub(modbus_param_t *mb_param,
+                int slave,
+                int seq,
+                int sub,
+                int delay,
                 int sum);
 
 int hc_does_need_teach_step(modbus_param_t *mb_param,
