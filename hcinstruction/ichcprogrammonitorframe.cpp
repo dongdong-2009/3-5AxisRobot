@@ -178,8 +178,8 @@ void ICHCProgramMonitorFrame::showEvent(QShowEvent *e)
     if(!checkResult.isEmpty())
     {
         ICMessageBox::ICWarning(this,
-                             tr("Warning"),
-                             checkResult);
+                                tr("Warning"),
+                                checkResult);
     }
     //    if(needWarn)
     //    {
@@ -273,10 +273,10 @@ void ICHCProgramMonitorFrame::StatusRefreshed()
     ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
     newTime_ = host->HostStatus(ICVirtualHost::DbgZ0).toUInt();
     if(host->CurrentStatus() != ICVirtualHost::Auto) return;
-//    if(host->currentMoldNum() != currentMoldNum_)
-//    {
-//        MoldNumChanged(host->currentMoldNum());
-//    }
+    //    if(host->currentMoldNum() != currentMoldNum_)
+    //    {
+    //        MoldNumChanged(host->currentMoldNum());
+    //    }
 
     if(newTime_ != oldTime_)
     {
@@ -337,7 +337,7 @@ void ICHCProgramMonitorFrame::StatusRefreshed()
 
 void ICHCProgramMonitorFrame::SelectCurrentStep(int currentStep)
 {
-//    ui->editToolButton->setText(QString("%1\n%2").arg(currentStep).arg());
+    //    ui->editToolButton->setText(QString("%1\n%2").arg(currentStep).arg());
     if(currentMoldNum_ == 8)
         currentStep = ICMold::CurrentMold()->DisplayStep(currentStep);
     if((currentStep != 0  && currentStep < oldStep_ && isModify_) ||
@@ -531,16 +531,16 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
          *调整对话框中标题栏文字显示
         */
         QString str = topItem->ToStringList().join("\n");
-//        if(str.size() > 37)
-//        {
-//            str.insert(38,"\n");
-//            str.insert(39,"\t");
-//        }
-//        if(str.size() > 65)
-//        {
-//            str.insert(66,"\n");
-//            str.insert(67,"\t");
-//        }
+        //        if(str.size() > 37)
+        //        {
+        //            str.insert(38,"\n");
+        //            str.insert(39,"\t");
+        //        }
+        //        if(str.size() > 65)
+        //        {
+        //            str.insert(66,"\n");
+        //            str.insert(67,"\t");
+        //        }
 
         /*****/
         bool isM;
@@ -588,38 +588,6 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
             {
                 if(isModify_)
                 {
-                    if(currentMoldNum_ != 8)
-                    {
-                        item->SetDVal(ret.DVal());
-                        item->ReSum();
-                        ICMoldItem toSendItem = *item;
-                        toSendItem.SetSeq(ICMold::CurrentMold()->ToHostSeq(item->Seq()));
-                        toSendItem.SetNum(ICMold::CurrentMold()->ToHostNum(toSendItem.Seq()));
-                        toSendItem.ReSum();
-                        UpdateUIProgramList_();
-                        processor = ICCommandProcessor::Instance();
-                        command.SetSlave(processor->SlaveID());
-                        command.SetSequence(toSendItem.Seq());
-                        command.SetDelayTime(toSendItem.DVal());
-                        command.SetSpeed(toSendItem.SVal());
-                        command.SetDPos(ret.Pos());
-                        command.SetGMValue(toSendItem.GMVal());
-                        command.SetSub(currentMoldNum_);
-                        command.SetCheckSum(toSendItem.Sum());
-#ifdef Q_WS_X11
-                        isM = true ;
-#else
-                        isM = processor->ExecuteCommand(command).toBool();
-#endif
-                        qDebug()<<"after show"<<isM;
-                        if(isM)
-                        {
-                            //                    ICMold::CurrentMold()->SetMoldContent(ICMold::UIItemToMoldItem(programList_));
-                            ICMacroSubroutine::Instance()->SetSubRoutine(ICMold::UIItemToMoldItem(programList_),currentMoldNum_);
-                            ICMacroSubroutine::Instance()->SaveMacroSubroutieFile(currentMoldNum_);
-                        }
-                    }
-
                     currentBackup = programListBackup_[gIndex].at(tIndex).BaseItem();
                     item->SetDVal(ret.DVal());
                     item->SetSVal(ret.SVal());
@@ -638,7 +606,7 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
                     command.SetSpeed(toSendItem.SVal());
                     command.SetDPos(ret.Pos());
                     command.SetGMValue(toSendItem.GMVal());
-                    command.SetSub(currentMoldNum_);
+                    command.SetSub(-1);
                     command.SetCheckSum(toSendItem.Sum());
                 }
                 else
@@ -649,8 +617,8 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
                     //                currentBackup->SetPos(currentBackup->Pos() + ret.Pos());
                     currentBackup->SetActualPos(currentBackup->ActualPos() + ret.Pos() * 10);
                     currentBackup->ReSum();
-                ICMoldItem toSendItem = *currentBackup;
-                toSendItem.SetSeq(ICMold::CurrentMold()->ToHostSeq(currentBackup->Seq()));
+                    ICMoldItem toSendItem = *currentBackup;
+                    toSendItem.SetSeq(ICMold::CurrentMold()->ToHostSeq(currentBackup->Seq()));
                     toSendItem.SetNum(ICMold::CurrentMold()->ToHostNum(toSendItem.Seq()));
                     toSendItem.ReSum();
                     UpdateUIProgramList_();
@@ -661,7 +629,7 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
                     command.SetSpeed(toSendItem.SVal());
                     command.SetDPos(ret.Pos());
                     command.SetGMValue(toSendItem.GMVal());
-                    command.SetSub(currentMoldNum_);
+                    command.SetSub(-1);
                     command.SetCheckSum(toSendItem.Sum());
                 }
 #ifdef Q_WS_X11
@@ -693,7 +661,7 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
         {
             if(isModify_)
             {
-               currentBackup = programListBackup_[gIndex].at(tIndex).at(sIndex).BaseItem();
+                currentBackup = programListBackup_[gIndex].at(tIndex).at(sIndex).BaseItem();
                 item->SetDVal(ret.DVal());
                 item->SetSVal(ret.SVal());
                 //               item->SetPos(currentBackup->Pos() + ret.Pos());
@@ -716,14 +684,14 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
             }
             else
             {
-               currentBackup = programList_[gIndex].at(tIndex).at(sIndex).BaseItem();
+                currentBackup = programList_[gIndex].at(tIndex).at(sIndex).BaseItem();
                 currentBackup->SetDVal(ret.DVal());
                 currentBackup->SetSVal(ret.SVal());
                 //               currentBackup->SetPos(currentBackup->Pos() + ret.Pos());
                 currentBackup->SetActualPos(currentBackup->ActualPos() + ret.Pos() * 10);
                 currentBackup->ReSum();
-               ICMoldItem toSendItem = *currentBackup;
-               toSendItem.SetSeq(ICMold::CurrentMold()->ToHostSeq(currentBackup->Seq()));
+                ICMoldItem toSendItem = *currentBackup;
+                toSendItem.SetSeq(ICMold::CurrentMold()->ToHostSeq(currentBackup->Seq()));
                 toSendItem.SetNum(ICMold::CurrentMold()->ToHostNum(toSendItem.Seq()));
                 toSendItem.ReSum();
                 UpdateUIProgramList_();
