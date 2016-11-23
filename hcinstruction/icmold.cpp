@@ -557,6 +557,7 @@ void ICMold::Compile()
     ICMoldItem item;
     ICMoldItem toSentItem;
     QList<ICMoldItem> tmpContent = moldContent_;
+    stepMap_.clear();
     for(int i = 0; i != tmpContent.size(); ++i)
     {
         moldContent_[i].SetSeq(i);

@@ -53,8 +53,11 @@ private slots:
     void LevelChanged(int);
 
     void on_cycle_clicked();
-
     void on_programSelector_currentIndexChanged(int index);
+
+//    void on_pauseButton_toggled(bool checked);
+
+//    QStringList Flags();
 
 private:
     void InitSignal();
@@ -74,7 +77,6 @@ private:
     QList<ICGroupMoldUIItem> programListBackup_;
     ICAutoRunRevise* autoRunRevise_;
     ICSubModifyDialog* subModifyRevise_;
-
     bool isModify_;
     uint oldTime_;
     uint newTime_;
@@ -97,6 +99,8 @@ private:
     QMap<int, QString> checkResultMap_;
     int fixtureCount_[6];
     QTimer refreshTimer_;
+    QMap<int, int> flagToSetp;
+
 //    QMap<ICMoldItem*, ICMoldItem> modifyMap_;
 };
 #endif // ICHCPROGRAMMONITORFRAME_H

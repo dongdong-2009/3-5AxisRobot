@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>711</width>
+    <width>718</width>
     <height>517</height>
    </rect>
   </property>
@@ -28,27 +28,18 @@
    <enum>QFrame::Plain</enum>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
-   <property name="spacing">
-    <number>4</number>
-   </property>
-   <property name="leftMargin">
-    <number>2</number>
-   </property>
-   <property name="topMargin">
-    <number>2</number>
-   </property>
-   <property name="rightMargin">
-    <number>2</number>
-   </property>
-   <property name="bottomMargin">
-    <number>2</number>
-   </property>
    <item>
     <widget class="ICComboBox" name="programSelector">
-     <property name="maximumSize">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
       <size>
-       <width>200</width>
-       <height>16777215</height>
+       <width>150</width>
+       <height>0</height>
       </size>
      </property>
      <item>
@@ -153,7 +144,7 @@ padding:5px;
           <enum>QFrame::Sunken</enum>
          </property>
          <property name="text">
-          <string>0</string>
+          <string notr="true">0</string>
          </property>
         </widget>
        </item>
@@ -192,7 +183,7 @@ padding:5px;
           <enum>QFrame::Sunken</enum>
          </property>
          <property name="text">
-          <string>0.00</string>
+          <string notr="true">0.00</string>
          </property>
         </widget>
        </item>
@@ -224,7 +215,7 @@ padding:5px;
           <enum>QFrame::Sunken</enum>
          </property>
          <property name="text">
-          <string>0</string>
+          <string notr="true">0</string>
          </property>
         </widget>
        </item>
@@ -274,7 +265,7 @@ color: rgb(255, 255, 0);</string>
           <enum>QFrame::Sunken</enum>
          </property>
          <property name="text">
-          <string>0.00</string>
+          <string notr="true">0.00</string>
          </property>
         </widget>
        </item>
@@ -316,7 +307,7 @@ color: rgb(255, 255, 0);</string>
           <enum>QFrame::Sunken</enum>
          </property>
          <property name="text">
-          <string>0</string>
+          <string notr="true">0</string>
          </property>
         </widget>
        </item>
@@ -339,6 +330,9 @@ color: rgb(255, 255, 0);</string>
    </item>
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="spacing">
+      <number>12</number>
+     </property>
      <item>
       <widget class="QToolButton" name="editToolButton">
        <property name="sizePolicy">
@@ -349,13 +343,7 @@ color: rgb(255, 255, 0);</string>
        </property>
        <property name="minimumSize">
         <size>
-         <width>120</width>
-         <height>48</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>120</width>
+         <width>130</width>
          <height>48</height>
         </size>
        </property>
@@ -387,13 +375,7 @@ color: rgb(255, 255, 0);</string>
        </property>
        <property name="minimumSize">
         <size>
-         <width>120</width>
-         <height>48</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>120</width>
+         <width>130</width>
          <height>48</height>
         </size>
        </property>
@@ -419,13 +401,7 @@ color: rgb(255, 255, 0);</string>
       <widget class="QToolButton" name="singleStepButton">
        <property name="minimumSize">
         <size>
-         <width>120</width>
-         <height>48</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>120</width>
+         <width>130</width>
          <height>48</height>
         </size>
        </property>
@@ -451,13 +427,7 @@ color: rgb(255, 255, 0);</string>
       <widget class="QToolButton" name="cycle">
        <property name="minimumSize">
         <size>
-         <width>120</width>
-         <height>48</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>120</width>
+         <width>130</width>
          <height>48</height>
         </size>
        </property>
@@ -483,13 +453,7 @@ color: rgb(255, 255, 0);</string>
       <widget class="QToolButton" name="speedEnableButton">
        <property name="minimumSize">
         <size>
-         <width>120</width>
-         <height>48</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>120</width>
+         <width>130</width>
          <height>48</height>
         </size>
        </property>
