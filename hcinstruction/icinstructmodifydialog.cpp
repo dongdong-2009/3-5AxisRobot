@@ -26,7 +26,7 @@ ICInstructModifyDialog::ICInstructModifyDialog(QWidget *parent) :
     ui->speedEdit->setValidator(validator);
     
     posValidator_ = new QIntValidator(0, 65530 * qPow(10, SECTION_DECIMAL), this);
-    ifposValidator_ = new QIntValidator(0, 6553, this);
+    ifposValidator_ = new QIntValidator(0, 65530, this);
     ui->posEdit->SetDecimalPlaces(POS_DECIMAL);
     ui->posEdit->setValidator(posValidator_);
 
@@ -195,7 +195,11 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
             }
             
             posValidator_->setTop(host->SystemParameter(addr).toInt() * qPow(10, SECTION_DECIMAL));
+#ifdef HC_10M
+            ifposValidator_->setTop(host->SystemParameter(addr).toInt());
+#else
             ifposValidator_->setTop(host->SystemParameter(addr).toInt() / 10);
+#endif
             validator->setTop(100);
             
             ui->positionLabel->show();
