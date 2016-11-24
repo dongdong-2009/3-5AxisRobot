@@ -251,14 +251,14 @@ void AxisSettingsFrame::InitInterface()
     QIntValidator * intValidator = new QIntValidator(0, 65530, this);
     maxSecValidator_ = new QIntValidator(0, 0, this);
     minSecValidator_ = new QIntValidator(0, 0, this);
-    ui->mechanicalLengthLineEdit->SetDecimalPlaces(1);
+    ui->mechanicalLengthLineEdit->SetDecimalPlaces(LENGTH_DEC);
     ui->mechanicalLengthLineEdit->setValidator(intValidator);
-    ui->maximumDisplacementLineEdit->SetDecimalPlaces(1);
+    ui->maximumDisplacementLineEdit->SetDecimalPlaces(LENGTH_DEC);
     maxMoveValidator_ = new QIntValidator(0, 65530, this);
     ui->maximumDisplacementLineEdit->setValidator(maxMoveValidator_);
-    ui->internalSecurityZoneLineEdit->SetDecimalPlaces(1);
+    ui->internalSecurityZoneLineEdit->SetDecimalPlaces(LENGTH_DEC);
     ui->internalSecurityZoneLineEdit->setValidator(minSecValidator_);
-    ui->externalSecurityZoneLineEdit->SetDecimalPlaces(1);
+    ui->externalSecurityZoneLineEdit->SetDecimalPlaces(LENGTH_DEC);
     ui->externalSecurityZoneLineEdit->setValidator(maxSecValidator_);
     ui->distanceRotationEdit->SetDecimalPlaces(2);
     ui->distanceRotationEdit->setValidator(intValidator);
