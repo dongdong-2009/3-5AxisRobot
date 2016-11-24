@@ -557,9 +557,9 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
                 item->SetDVal(ret.DVal());
                 item->ReSum();
                 ICMoldItem toSendItem = *item;
-                toSendItem.SetSeq(ICMold::CurrentMold()->ToHostSeq(item->Seq()));
-                toSendItem.SetNum(ICMold::CurrentMold()->ToHostNum(toSendItem.Seq()));
-                toSendItem.ReSum();
+//                toSendItem.SetSeq(ICMold::CurrentMold()->ToHostSeq(item->Seq()));
+//                toSendItem.SetNum(ICMold::CurrentMold()->ToHostNum(toSendItem.Seq()));
+//                toSendItem.ReSum();
                 UpdateUIProgramList_();
                 processor = ICCommandProcessor::Instance();
                 command.SetSlave(processor->SlaveID());
@@ -582,6 +582,13 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
                     //                    ICMold::CurrentMold()->SetMoldContent(ICMold::UIItemToMoldItem(programList_));
                     ICMacroSubroutine::Instance()->SetSubRoutine(ICMold::UIItemToMoldItem(programList_),currentMoldNum_);
                     ICMacroSubroutine::Instance()->SaveMacroSubroutieFile(currentMoldNum_);
+                    QString moldName = ICParametersSave::Instance()->MoldName("Base.act");
+                    moldName.chop(3);
+                    moldName += "sub";
+                    moldName = QString("records/%1%2").arg(moldName).arg(currentMoldNum_);
+                    QFile::remove(moldName);
+                    QFile::copy(QString("subs/sub%1.prg").arg(currentMoldNum_), moldName);
+
                 }
             }
             else

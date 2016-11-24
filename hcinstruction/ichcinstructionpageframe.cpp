@@ -451,12 +451,12 @@ void ICHCInstructionPageFrame::on_insertToolButton_clicked()
             return;  //教导页面点插入无任何动作
         }
     }
-    if(MoldInformation::Instance()->IsStandProgram(ICParametersSave::Instance()->MoldName("")))
-    {
-        ICMessageBox::ICWarning(this, tr("warning"),
-                             tr("Stand program can not be insert action"));
-        return;
-   }
+//    if(MoldInformation::Instance()->IsStandProgram(ICParametersSave::Instance()->MoldName("")))
+//    {
+//        ICMessageBox::ICWarning(this, tr("warning"),
+//                             tr("Stand program can not be insert action"));
+//        return;
+//   }
     ICInstructionEditorBase* editor = qobject_cast<ICInstructionEditorBase*>(ui->settingStackedWidget->currentWidget());
     ICFlagsEditor *flagsEditor = qobject_cast<ICFlagsEditor*> (editor);
     ActionSettingFrame *servoEditor = qobject_cast<ActionSettingFrame*>(editor);
@@ -708,12 +708,12 @@ void ICHCInstructionPageFrame::on_deleteToolButton_clicked()
     {
         return;
     }
-    if(MoldInformation::Instance()->IsStandProgram(ICParametersSave::Instance()->MoldName("")))
-    {
-        ICMessageBox::ICWarning(this, tr("warning"),
-                             tr("Stand program can not be delete action"));
-        return;
-   }
+//    if(MoldInformation::Instance()->IsStandProgram(ICParametersSave::Instance()->MoldName("")))
+//    {
+//        ICMessageBox::ICWarning(this, tr("warning"),
+//                             tr("Stand program can not be delete action"));
+//        return;
+//   }
     int gIndex;
     int tIndex;
     int sIndex;
