@@ -6401,7 +6401,7 @@ App %1; Host:</source>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="157"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="276"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="280"/>
         <source>Limit Time</source>
         <translation>限制时间</translation>
     </message>
@@ -6481,7 +6481,7 @@ App %1; Host:</source>
         <translation>不良品使能</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="209"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="213"/>
         <source>speed</source>
         <translation>速度</translation>
     </message>
@@ -6490,8 +6490,8 @@ App %1; Host:</source>
         <translation type="obsolete">返回步号</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="285"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="301"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="289"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="305"/>
         <source>Times</source>
         <translation>间隔模数</translation>
     </message>
@@ -10943,20 +10943,20 @@ Please input the root password to confirm.</source>
         <translation>步序</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1137"/>
-        <location filename="mainframe.cpp" line="1141"/>
-        <location filename="mainframe.cpp" line="1545"/>
-        <location filename="mainframe.cpp" line="1622"/>
+        <location filename="mainframe.cpp" line="1144"/>
+        <location filename="mainframe.cpp" line="1148"/>
+        <location filename="mainframe.cpp" line="1552"/>
+        <location filename="mainframe.cpp" line="1629"/>
         <source>tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1622"/>
+        <location filename="mainframe.cpp" line="1629"/>
         <source>Spare Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1141"/>
+        <location filename="mainframe.cpp" line="1148"/>
         <source>No Register</source>
         <translation>没有注册</translation>
     </message>
@@ -10975,33 +10975,33 @@ Please input the root password to confirm.</source>
         <translation>监视</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1137"/>
+        <location filename="mainframe.cpp" line="1144"/>
         <source>Spear Time %1 Hour</source>
         <translation>剩余时间:%1小时</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1174"/>
+        <location filename="mainframe.cpp" line="1181"/>
         <source>Records</source>
         <translation>档案</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1545"/>
+        <location filename="mainframe.cpp" line="1552"/>
         <source>No Register. System Restart Now...</source>
         <translation>没有注册，系统现在重启...</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1665"/>
-        <location filename="mainframe.cpp" line="1681"/>
+        <location filename="mainframe.cpp" line="1672"/>
+        <location filename="mainframe.cpp" line="1688"/>
         <source>warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1666"/>
+        <location filename="mainframe.cpp" line="1673"/>
         <source>%1 fnc is broken. Please remove this mold!</source>
         <translation>%1 模组参数丢失.请删除这个模号!</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1682"/>
+        <location filename="mainframe.cpp" line="1689"/>
         <source>%1 mold fixed. Please check the sub program!</source>
         <translation>%1模号格式更新.请检查该模号使用的子程序是否正确!</translation>
     </message>
@@ -11045,8 +11045,8 @@ Please input the root password to confirm.</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="887"/>
-        <location filename="mainframe.cpp" line="905"/>
+        <location filename="mainframe.cpp" line="894"/>
+        <location filename="mainframe.cpp" line="912"/>
         <source>Hint</source>
         <translation>提示</translation>
     </message>
@@ -11063,7 +11063,7 @@ Please input the root password to confirm.</source>
         <translation type="obsolete">还没进行原点!</translation>
     </message>
     <message>
-        <location filename="mainframe.cpp" line="1125"/>
+        <location filename="mainframe.cpp" line="1132"/>
         <source>Instruct</source>
         <translation>教导</translation>
     </message>
