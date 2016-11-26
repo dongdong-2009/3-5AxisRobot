@@ -116,12 +116,17 @@ public:
 
     int ActualPos() const
     {
-        return (QString::number(Pos()) + QString::number(IFPos() & 0xF)).toInt();
+        int ret =  (QString::number(Pos()) + QString::number(IFPos() & 0xF)).toInt();
+        if(ret < 0)
+            ret += 10;
+        return ret;
     }
     void SetActualPos(int pos)
     {
+        if(pos < 0)
+            pos -= 10;
         int p = pos / 10;
-        int d = pos % 10;
+        int d = qAbs(pos % 10);
         SetPos(p);
         ifPos_ &= 0xFFFFFFF0;
         ifPos_ |= d;

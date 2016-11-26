@@ -124,6 +124,8 @@ public:
         kCS_PRD_Product_Clear,
         kCS_PRD_Try_number,
         kCS_PRD_Sample_cycle,
+        kCS_PRD_Reclcle_Mode,
+        kCS_PRD_Reclcle_Time,
 
         kCS_RUN_START = 300,
         kCS_RUN_Tolerance,

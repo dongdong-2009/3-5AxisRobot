@@ -344,7 +344,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
                 commandStr += tr("X036");
             }
             commandStr += " ";
-            commandStr += QObject::tr("Limit time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 2) + "      ";
+            commandStr += QObject::tr("Limit time:") + ICParameterConversion::TransThisIntToThisText(moldItem.DVal(), 1) + "      ";
             return commandStr;
         }
         else if(moldItem.Action() == ICMold::ACT_OTHER)

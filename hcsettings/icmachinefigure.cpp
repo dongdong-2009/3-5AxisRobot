@@ -28,22 +28,22 @@ ICMachineFigure::ICMachineFigure(QWidget *parent) :
     ICLineEditWrapper* wrapper = new ICLineEditWrapper(ui->xsec1,
                                                        ICVirtualHost::SM_X_SEC1,
                                                        ICLineEditWrapper::System,
-                                                       ICLineEditWrapper::OneFraction);
+                                                       ICLineEditWrapper::Integer);
     wrappers_.append(wrapper);
     wrapper = new ICLineEditWrapper(ui->xsec2,
                                     ICVirtualHost::SM_X_SEC2,
                                     ICLineEditWrapper::System,
-                                    ICLineEditWrapper::OneFraction);
+                                    ICLineEditWrapper::Integer);
     wrappers_.append(wrapper);
     wrapper = new ICLineEditWrapper(ui->xsec3,
                                     ICVirtualHost::SM_X_SEC3,
                                     ICLineEditWrapper::System,
-                                    ICLineEditWrapper::OneFraction);
+                                    ICLineEditWrapper::Integer);
     wrappers_.append(wrapper);
     wrapper = new ICLineEditWrapper(ui->xsec4,
                                     ICVirtualHost::SM_X_SEC4,
                                     ICLineEditWrapper::System,
-                                    ICLineEditWrapper::OneFraction);
+                                    ICLineEditWrapper::Integer);
     wrappers_.append(wrapper);
 
     editorToConfigIDs_.insert(ui->xsec3, ICConfigString::kCS_SECP_Inside_X_Min);
@@ -76,8 +76,8 @@ void ICMachineFigure::showEvent(QShowEvent *e)
 {
     quint32 xLength = ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_X_Length).toUInt();
     validator->setTop(xLength);
-    ui->xmin->setText(QString("%1").arg(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_X_InSafe).toUInt() / 10.0));
-    ui->xmax->setText(QString("%1").arg(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_X_OutSafe).toUInt() / 10.0));
+    ui->xmin->setText(QString("%1").arg(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_X_InSafe).toUInt()));
+    ui->xmax->setText(QString("%1").arg(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_X_OutSafe).toUInt()));
     QWidget::showEvent(e);
 }
 

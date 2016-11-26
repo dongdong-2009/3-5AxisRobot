@@ -132,6 +132,7 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
     ui->delayTimeEdit->setValidator(validator_);
     ui->limitLabel->hide();
     ui->limitTimeEdit->hide();
+//    ui->limitTimeEdit->SetDecimalPlaces(1);
     ui->limitUnitLabel->hide();
     ui->forwardBox->hide();
     ui->backwardBox->hide();
@@ -178,19 +179,19 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
                 ifposValidator_->setBottom(0);
                 break;
             case ICMold::GA:
-                addr = ICVirtualHost::SYS_C_Length;
-                posValidator_->setBottom(-50);
-                ifposValidator_->setBottom(-50);
+                addr = ICVirtualHost::SYS_A_Length;
+                posValidator_->setBottom(host->SystemParameter(ICVirtualHost::SYS_A_Maxium).toInt() * 10);
+                ifposValidator_->setBottom(host->SystemParameter(ICVirtualHost::SYS_A_Maxium).toInt() / 10);
                 break;
             case ICMold::GB:
-                addr = ICVirtualHost::SYS_C_Length;
-                posValidator_->setBottom(-50);
-                ifposValidator_->setBottom(-50);
+                addr = ICVirtualHost::SYS_B_Length;
+                posValidator_->setBottom(host->SystemParameter(ICVirtualHost::SYS_B_Maxium).toInt() * 10);
+                ifposValidator_->setBottom(host->SystemParameter(ICVirtualHost::SYS_B_Maxium).toInt() / 10);
                 break;
             case ICMold::GC:
                 addr = ICVirtualHost::SYS_C_Length;
-                posValidator_->setBottom(-50);
-                ifposValidator_->setBottom(-50);
+                posValidator_->setBottom(host->SystemParameter(ICVirtualHost::SYS_C_Maxium).toInt() * 10);
+                ifposValidator_->setBottom(host->SystemParameter(ICVirtualHost::SYS_C_Maxium).toInt() / 10);
                 break;
             }
             
@@ -257,6 +258,7 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
             ui->delayUnitLabel->hide();
             ui->limitLabel->show();
             ui->limitTimeEdit->show();
+            ui->limitTimeEdit->SetDecimalPlaces(2);
             ui->limitUnitLabel->show();
             ui->limitTimeEdit->SetThisIntToThisText(item->Pos());
             ui->flagBox->show();
@@ -274,6 +276,7 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
         }
         else if(item->Action() == ICMold::ACT_WaitMoldOpened && item->SVal() != 1)
         {
+            ui->delayTimeEdit->SetDecimalPlaces(1);
             ui->delayLabel->setText(tr("Limit Time"));
         }
     }
