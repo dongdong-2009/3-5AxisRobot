@@ -21,6 +21,9 @@ HostType = n
 #DEFINES += HC_TEST
 #DEFINES += Compatible6410
 #DEFINES += HC_4F2S
+DEFINES += HC_10M
+DEFINES += LENGTH_DEC=0
+DEFINES += USE_DEC=1
 
 DEFINES += HOST_TYPE='\\"$${HostType}\\"'
 

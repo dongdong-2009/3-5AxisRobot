@@ -10,9 +10,9 @@
 #endif
 
 #define IFPOS_DECIMAL 0
-#define POS_DECIMAL 2
+#define POS_DECIMAL USE_DEC
 #define SECTION_DECIMAL 1
-#define STACK_DECIMAL 2
+#define STACK_DECIMAL USE_DEC
 
 //#define TRUNK_VERSION "6.0.4"
 //#define APP_VERSION "XS5"
