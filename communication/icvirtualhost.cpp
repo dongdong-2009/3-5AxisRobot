@@ -109,7 +109,7 @@ ICVirtualHost::ICVirtualHost(QObject *parent) :
     //    RefreshStatus();
     //    RefreshStatus();
 #ifndef Q_WS_WIN32
-    watchdogFd_ = open("/dev/watchdog",O_RDONLY );
+//    watchdogFd_ = open("/dev/watchdog",O_RDONLY );
 #else
     watchdogFd_ = 0;
 #endif
