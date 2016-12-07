@@ -28,6 +28,18 @@
 28:Z over speed
 29:Write memory fail
 30:Debug fail
+31:Wait for X servo CAN timeout
+32:Wait for Y servo CAN timeout
+33:Wait for Z servo CAN timeout
+34:Wait for X2 servo CAN timeout
+35:Wait for Y2 servo CAN timeout
+36:Wait for A servo CAN timeout
+37:Wait for B servo CAN timeout
+38:Wait for C servo CAN timeout
+43:Write Can config fail
+44:Write Can config fail
+45:Read Can config fail
+46:change speed fail
 60:A over speed
 61:B over speed
 62:C over speed
@@ -359,4 +371,93 @@
 1401:Currnt point and waiting point are not both inside
 1402:Currnt point and waiting point are not both outside
 1403:Can not check the Y2 up limit
+2000:Servo error, please check
+2001:Servo overcurrent
+2002:Servo overvoltage
+2003:Servo low voltage
+2004:Regeneration resistance is abnormal
+2005:Servo overloaded
+2006:Servo over speed
+2007:Position control error is too large
+2008:Encoder internal error
+2009:Electronic gear ratio setting error, correction position error
+2010:Emergency shutdown
+2011:Insulation Gate The gate transistor is overheating
+2012:The main circuit power supply is abnormal
+2013:Pre-Overload Warning
+2014:Motor collision error
+2015:UVW wiring error
+2016:Closed-loop position control error is too large
+2017:pdo receives an overflow
+2018:Pdo access exception
+2019:Heartbeat or node protection function error
+2020:Can bus hardware exception
+2021:Can communication synchronization exception
+2022:Special filter setting is too large
+2023:Servo forward limit
+2024:Servo reverse limit
+2100:Servo fault
+2101:Servo overcurrent
+2102:Drive main circuit overvoltage
+2103:Drive main circuit undervoltage
+2104:Servo control undervoltage
+2105:Servo output is shorted to ground
+2106:Power line phase failure warning
+2107:Braking resistor is overloaded
+2108:Drive Overload Warning
+2109:Motor power line break
+2110:Drive heatsink is overheating
+2111:Drive parameter storage failure
+2112:The drive setting parameter is abnormal
+2113:The motor is locked
+2114:Encoder internal fault
+2115:The motor is overspeed
+2116:Drive position deviation is too large
+2117:The drive pulse is abnormal
+2118:CANopen node protection or heartbeat timeout
+2119:CANopen PDO transmission length error
+2120:Servo touches reverse switch
+4000:The trial time is up, please register
+
+insert into tb_alarm_helper_us_en ("alarm_id", "alarm_text", "alarm_reason", "alarm_solution") values ('2100', 'Servo Fault', '', '');
+insert into tb_alarm_helper_us_en ("alarm_id", "alarm_text", "alarm_reason", "alarm_solution") values ('2101', 'Servo overcurrent', '', 'Please check the drive, the corresponding alarm alarm number: Er.200, the specific solution to view the drive manual');
+insert into tb_alarm_helper_us_en ("alarm_id", "alarm_text", "alarm_reason", "alarm_solution") values ('2102', 'drive main circuit overvoltage', '', 'Please check the driver, the corresponding alarm alarm: Er.400, specific solutions to view the drive operating instructions');
+insert into tb_alarm_helper_us_en ("alarm_id", "alarm_text", "alarm_reason", "alarm_solution") values ('2103', 'Drive main circuit undervoltage', '', 'Please check the drive, the corresponding alarm alarm: Er.410, the specific solution to view the drive manual');
+insert into tb_alarm_helper_us_en ("alarm_id", "alarm_text", "alarm_reason", "alarm_solution") values ('2104', 'Servo control under voltage', '', 'Please check the drive, the corresponding alarm alarm: Er.430, the specific solution to view the drive manual');
+insert into tb_alarm_helper_us_en ("alarm_id", "alarm_text", "alarm_reason", "alarm_solution") values ('2105', 'servo output to ground short circuit', '', 'Please check the drive, the corresponding alarm alarm: Er.210, the specific solution to view the drive operating instructions');
+insert into tb_alarm_helper_us_en ("alarm_id", "alarm_text", "alarm_reason", "alarm_solution") values ('2106', 'Power line phase failure warning', '', 'Please check the drive, the corresponding alarm alarm: Er.420 / Er.990, specific solutions to view the drive manual');
+insert into tb_alarm_helper_us_en ("alarm_id", "alarm_text", "alarm_reason", "alarm_solution") values ('2107', 'Braking resistor overload', '', '');
+insert into tb_alarm_helper_us_en ("alarm_id", "alarm_text", "alarm_reason", "alarm_solution") values ('2108', 'Drive Overload Warning', '', 'Please check the drive, the corresponding alarm alarm number: Er.610 / Er.620 / Er.909, the specific solution to view the drive manual');
+insert into tb_alarm_helper_us_en ("alarm_id", "alarm_text", "alarm_reason", "alarm_solution") values ('2109', 'motor power line disconnection', '', 'Please check the driver, the corresponding alarm alarm: Er.939, specific solutions to view the drive instruction manual');
+insert into tb_alarm_helper_us_en ("alarm_id", "alarm_text", "alarm_reason", "alarm_solution") values ('2110', 'Drive heat sink overheated', '', 'Please check the drive, corresponding to the drive alarm number: Er.650, the specific solution to view the drive manual');
+insert into tb_alarm_helper_us_en ("alarm_id", "alarm_text", "alarm_reason", "alarm_solution") values ('2111', 'Drive parameter storage failure', '', 'Please check the drive, the corresponding alarm number: Er.108, the specific solution to view the drive manual');
+insert into tb_alarm_helper_us_en ("alarm_id", "alarm_text", "alarm_reason", "alarm_solution") values ('2112', 'Drive setup parameter error', ',' Please check the drive, the corresponding driver alarm number: Er.101 / Er.105 / Er.111 / Er.130 / Er.131 / Er.110 / Er .922 / Er.941 / Er.b03, the specific solution to view the driver's instructions');
+insert into tb_alarm_helper_us_en ("alarm_id", "alarm_text", "alarm_reason", "alarm_solution") values ('2113', 'motor stall', '', 'Please check the drive, the corresponding alarm alarm: Er.630, the specific solution to view the drive manual');
+insert into tb_alarm_helper_us_en ("alarm_id", "alarm_text", "alarm_reason", "alarm_solution") values ('2114', 'Encoder internal fault', '', 'Please check the drive, the corresponding alarm alarm number: Er.136 / Er.A33 / Er.A34 / Er.A35 / Er.980 / Er.740, specific Workaround Check the drive's operating instructions');
+insert into tb_alarm_helper_us_en ("alarm_id", "alarm_text", "alarm_reason", "alarm_solution") values ('2115', 'motor overrun', '', 'Please check the drive, the corresponding alarm alarm: Er.500, the specific solution to view the drive manual');
+insert into tb_alarm_helper_us_en ("alarm_id", "alarm_text", "alarm_reason", "alarm_solution") values ('2116', 'Drive position deviation is too large', '', 'Please check the drive, the corresponding alarm alarm number: Er.b00 / Er.b02, specific solutions to view the drive manual');
+insert into tb_alarm_helper_us_en ("alarm_id", "alarm_text", "alarm_reason", "alarm_solution") values ('2117', 'Drive Impulse Exception', '', 'Please check the drive, corresponding to the driver alarm number: Er.208 / Er.220 / Er.207 / Er.234 / Er.602 / Er.510 / Er. B01 / Er.A40 / Er.601, the specific solution to view the drive instructions');
+insert into tb_alarm_helper_us_en ("alarm_id", "alarm_text", "alarm_reason", "alarm_solution") values ('2118', 'CANopen node protection or heartbeat timeout', '', 'Please check the drive, the corresponding alarm number: Er.d04, the specific solution to view the drive manual');
+insert into tb_alarm_helper_us_en ("alarm_id", "alarm_text", "alarm_reason", "alarm_solution") values ('2119', 'CANopen PDO transmission length error', '', 'Please check the drive, the corresponding alarm alarm number: Er.d08, the specific solution to view the drive manual');
+insert into tb_alarm_helper_us_en ("alarm_id", "alarm_text", "alarm_reason", "alarm_solution") values ('2120', 'servo hit the reverse switch', ',' Please check the drive, the corresponding alarm alarm: Er.952, the specific solution to view the drive operating instructions');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
