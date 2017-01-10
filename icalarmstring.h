@@ -51,12 +51,15 @@ public:
     const QString AlarmEnglishInfoPathName;
     const QString AlarmSpanishInfoPathName;
     const QString AlarmNederlandInfoPathName;
+    const QString AlarmFranceInfoPathName;
 
 
     const QString HintChInfoPathName;
     const QString HintEnInfoPathName;
     const QString HintEspInfoPathName;
     const QString HintNederlandInfoPathName;
+    const QString HintFranceInfoPathName;
+
 
 
 signals:

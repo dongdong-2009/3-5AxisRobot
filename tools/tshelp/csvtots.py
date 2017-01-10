@@ -9,7 +9,7 @@ import xlrd
 
 
 if len(sys.argv) < 4:
-    print("Usage: python3 csvtots.py cusTS target_ts out_file")
+    print("Usage: python3 csvtots.py cusTS target_ts out_file lenLimit")
     exit
 
 inTargetTs = ET.parse(sys.argv[2])
@@ -28,7 +28,7 @@ for booksheet in cusTs.sheets():
         tr = booksheet.cell(row, 4).value
         if ct not in tsedInfo:
             tsedInfo[ct] = {}
-        tsedInfo[ct][source] = {"source":source, "tr":tr, "zhtrcount":len(enTr) + 4}
+        tsedInfo[ct][source] = {"source":source, "tr":tr, "zhtrcount":len(enTr) + int(sys.argv[4])}
 #print(tsedInfo)
 #        for col in range(booksheet.ncols):
 #            print(booksheet.cell(row, col).value)

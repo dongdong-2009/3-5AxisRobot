@@ -172,7 +172,8 @@ TRANSLATIONS += Multi-axisManipulatorSystem_ch.ts \
     Multi-axisManipulatorSystem_en.ts \
     Multi-axisManipulatorSystem_pt.ts \
     Multi-axisManipulatorSystem_esp.ts \
-    Multi-axisManipulatorSystem_nl.ts
+    Multi-axisManipulatorSystem_nl.ts \
+    Multi-axisManipulatorSystem_fr.ts
 
 OTHER_FILES += \
     sysconfig/alarminfomation-en \

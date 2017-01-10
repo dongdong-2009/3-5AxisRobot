@@ -111,6 +111,13 @@ void ICParametersSave::SetLanguage(QLocale::Language language, bool isSync)
         qApp->installTranslator(sysTranslator_);
     }
         break;
+    case QLocale::French:
+    {
+        translator_->load("Multi-axisManipulatorSystem_fr");
+//        sysTranslator_->load("qt_es.qm");
+        qApp->installTranslator(sysTranslator_);
+    }
+        break;
     default:
     {
         return;
@@ -150,6 +157,12 @@ void ICParametersSave::SetCountry(QLocale::Country country, bool isSync)
     {
         QLocale::setDefault(QLocale(QLocale::English, country));
         SetLanguage(QLocale::Dutch, isSync);
+    }
+        break;
+    case QLocale::France:
+    {
+        QLocale::setDefault(QLocale(QLocale::English, country));
+        SetLanguage(QLocale::French, isSync);
     }
         break;
     default:
