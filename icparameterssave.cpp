@@ -9,18 +9,18 @@ ICParametersSave * ICParametersSave::instance_ = NULL;
 
 ICParametersSave::ICParametersSave(const QString fileName)
     : QSettings(fileName, QSettings::IniFormat),
-    ProductOperationer("ProductOperationer"),
-    ProductAdministrator("ProductAdministrator"),
-    ProductAlarmHistory("ProductAlarmHistory"),
-    SystemMachine("SystemMachine"),
-    SystemLocale("SystemLanguage"),
-    InstructMultidotPut("InstructMultidotPut"),
-    CommunicationConfig("CommunicationConfig"),
-    ProductConfig("ProductConfig"),
-    translator_(new QTranslator()),
+      ProductOperationer("ProductOperationer"),
+      ProductAdministrator("ProductAdministrator"),
+      ProductAlarmHistory("ProductAlarmHistory"),
+      SystemMachine("SystemMachine"),
+      SystemLocale("SystemLanguage"),
+      InstructMultidotPut("InstructMultidotPut"),
+      CommunicationConfig("CommunicationConfig"),
+      ProductConfig("ProductConfig"),
+      translator_(new QTranslator()),
       sysTranslator_(new QTranslator())
 {
-//    SetFileName("./sysconfig/systemParameter.hc");
+    //    SetFileName("./sysconfig/systemParameter.hc");
     QFile file("./sysconfig/DistanceRotation");
     if(file.open(QFile::ReadOnly | QFile::Text))
     {
@@ -40,7 +40,7 @@ ICParametersSave::ICParametersSave(const QString fileName)
 #endif
     SetKeyTone(KeyTone(), false);
     isSuperLogin_ = false;
-//    ioctl(beepFD_, 0, KeyTone() ? 1 : 0);
+    //    ioctl(beepFD_, 0, KeyTone() ? 1 : 0);
 }
 
 ICParametersSave::~ICParametersSave()
@@ -55,7 +55,7 @@ void ICParametersSave::SaveParameter(const QString & group,const QString & key, 
     this->endGroup();
     if(issync)
     {
-       this->sync();
+        this->sync();
         ::system("sync");
     }
 }
@@ -85,29 +85,36 @@ void ICParametersSave::SetLanguage(QLocale::Language language, bool isSync)
     switch(language)
     {
     case QLocale::Chinese:
-        {
-            translator_->load("Multi-axisManipulatorSystem_ch");
-            sysTranslator_->load("qt_zh_CN");
-            qApp->installTranslator(sysTranslator_);
-        }
+    {
+        translator_->load("Multi-axisManipulatorSystem_ch");
+        sysTranslator_->load("qt_zh_CN");
+        qApp->installTranslator(sysTranslator_);
+    }
         break;
     case QLocale::English:
-        {
-            translator_->load("Multi-axisManipulatorSystem_en");
-            qApp->removeTranslator(sysTranslator_);
-        }
+    {
+        translator_->load("Multi-axisManipulatorSystem_en");
+        qApp->removeTranslator(sysTranslator_);
+    }
         break;
     case QLocale::Spanish:
-        {
-            translator_->load("Multi-axisManipulatorSystem_esp");
-            sysTranslator_->load("qt_es.qm");
-            qApp->installTranslator(sysTranslator_);
-        }
+    {
+        translator_->load("Multi-axisManipulatorSystem_esp");
+        sysTranslator_->load("qt_es.qm");
+        qApp->installTranslator(sysTranslator_);
+    }
+        break;
+    case QLocale::Dutch:
+    {
+        translator_->load("Multi-axisManipulatorSystem_nl");
+//        sysTranslator_->load("qt_es.qm");
+        qApp->installTranslator(sysTranslator_);
+    }
         break;
     default:
-        {
-            return;
-        }
+    {
+        return;
+    }
     }
 
 
@@ -122,28 +129,34 @@ void ICParametersSave::SetCountry(QLocale::Country country, bool isSync)
     switch(country)
     {
     case QLocale::China:
-        {
-            QLocale::setDefault(QLocale(QLocale::Chinese, country));
-            SetLanguage(QLocale::Chinese, isSync);
-        }
+    {
+        QLocale::setDefault(QLocale(QLocale::Chinese, country));
+        SetLanguage(QLocale::Chinese, isSync);
+    }
         break;
     case QLocale::UnitedStates:
-        {
-            QLocale::setDefault(QLocale(QLocale::English, country));
-            SetLanguage(QLocale::English, isSync);
-        }
+    {
+        QLocale::setDefault(QLocale(QLocale::English, country));
+        SetLanguage(QLocale::English, isSync);
+    }
         break;
     case QLocale::Spain:
-        {
-            QLocale::setDefault(QLocale(QLocale::English, country));
-            SetLanguage(QLocale::Spanish, isSync);
-        }
+    {
+        QLocale::setDefault(QLocale(QLocale::English, country));
+        SetLanguage(QLocale::Spanish, isSync);
+    }
+        break;
+    case QLocale::Netherlands:
+    {
+        QLocale::setDefault(QLocale(QLocale::English, country));
+        SetLanguage(QLocale::Dutch, isSync);
+    }
         break;
     default:
-        {
-            QLocale::setDefault(QLocale(QLocale::Chinese, country));
-            SetLanguage(QLocale::Chinese, isSync);
-        }
+    {
+        QLocale::setDefault(QLocale(QLocale::Chinese, country));
+        SetLanguage(QLocale::Chinese, isSync);
+    }
     }
     SaveParameter(SystemLocale, "SystemCountry", static_cast<int>(country), isSync);
 }
@@ -221,7 +234,7 @@ void ICParametersSave::SetDistanceRotation(const QString &axisName, double value
         }
     }
     file.close();
-//    system("rm ./sysconfig/DistanceRotation~");
+    //    system("rm ./sysconfig/DistanceRotation~");
     QFile::remove("./sysconfig/DistanceRotation~");
 }
 

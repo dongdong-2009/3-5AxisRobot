@@ -46,6 +46,7 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
     ui->languageButtonGroup->setId(ui->chineseBox,0);
     ui->languageButtonGroup->setId(ui->englishBox,1);
     ui->languageButtonGroup->setId(ui->spanishBox, 2);
+    ui->languageButtonGroup->setId(ui->nederlandBox, 3);
     InitParameter();
     ui->extentFunctionCheckBox->blockSignals(true);
     ui->extentFunctionCheckBox->setChecked(ICParametersSave::Instance()->IsExtentFunctionUsed());
@@ -125,6 +126,8 @@ void ICHCSystemSettingsFrame::InitParameter()
         ui->englishBox->setChecked(true);
     else if(paraSave->Country() == QLocale::Spain)
         ui->spanishBox->setChecked(true);
+    else if(paraSave->Country() == QLocale::Netherlands)
+        ui->nederlandBox->setChecked(true);
     // ui->languageComboBox->setCurrentIndex(index);
     if(paraSave->KeyTone())
     {
@@ -158,6 +161,10 @@ void ICHCSystemSettingsFrame::languageBoxChange()
     {
         paraSave->SetCountry(QLocale::Spain);
     }
+    else if(ui->languageButtonGroup->checkedId() == 3)
+    {
+        paraSave->SetCountry(QLocale::Netherlands);
+    }
 }
 
 
@@ -177,6 +184,8 @@ void ICHCSystemSettingsFrame::changeEvent(QEvent *e)
             ui->englishBox->setChecked(true);
         else if(paraSave->Country() == QLocale::Spain)
             ui->spanishBox->setChecked(true);
+        else if(paraSave->Country() == QLocale::Netherlands)
+            ui->nederlandBox->setChecked(true);
         //    ui->languageComboBox->setCurrentIndex(index);
         ui->dateTimeEdit->setDateTime(QDateTime::currentDateTime());
 
