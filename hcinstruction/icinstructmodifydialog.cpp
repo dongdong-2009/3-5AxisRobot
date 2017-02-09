@@ -223,7 +223,16 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
         if( item->Action() == ICMold::GZ)
         {
             ui->badProductBox->show();
+            ui->badProductBox->setText(tr("Bad Product"));
         }
+#ifdef X1_BAD_FUNC
+        if( item->Action() == ICMold::GX)
+        {
+            ui->badProductBox->show();
+            ui->badProductBox->setText(tr("Suck Page"));
+
+        }
+#endif
         /************任务：待机点姿势可以修改*******/
         if(item->Action() == ICMold::ACTPOSEHORI || item->Action() == ICMold::ACT_PoseHori2)
         {
