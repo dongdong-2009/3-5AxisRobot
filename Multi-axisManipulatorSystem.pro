@@ -39,7 +39,7 @@ UI_DIR = temp_$${suffix}
 MOC_DIR = temp_$${suffix}
 RCC_DIR = temp_$${suffix}
 
-TRUNK_VERSION = 6.1.0
+TRUNK_VERSION = 6.1.1
 APP_VERSION = XS5
 S_VERSION = $${APP_VERSION}_$${HostType}_$${TRUNK_VERSION}
 contains(DEFINES, Compatible6410){
@@ -174,7 +174,9 @@ TRANSLATIONS += Multi-axisManipulatorSystem_ch.ts \
     Multi-axisManipulatorSystem_pt.ts \
     Multi-axisManipulatorSystem_esp.ts \
     Multi-axisManipulatorSystem_nl.ts \
-    Multi-axisManipulatorSystem_fr.ts
+    Multi-axisManipulatorSystem_fr.ts \
+    Multi-axisManipulatorSystem_kr.ts
+
 
 OTHER_FILES += \
     sysconfig/alarminfomation-en \
