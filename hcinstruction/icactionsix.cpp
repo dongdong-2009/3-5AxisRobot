@@ -65,3 +65,10 @@ void icactionsix::keyPressEvent(QKeyEvent *e)
     qApp->postEvent(icMainFrame, ke);
    // this->reject();
 }
+
+void icactionsix::keyReleaseEvent(QKeyEvent *e)
+{
+    QKeyEvent* ke = new QKeyEvent(*e);
+    qApp->postEvent(icMainFrame, ke);//this->parentWidget()
+
+}

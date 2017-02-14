@@ -53,6 +53,10 @@ private slots:
     void OnConfigChanged(int v);
     void OnConfigChanged(int v, int ov);
     void OnConfigChanged(bool b);
+    void on_recycleMode_currentIndexChanged(int index);
+
+    void on_realRecycleTimeEdit_textChanged(const QString &arg1);
+
 private:
     QMap<QObject*, int> editorToConfigIDs_;
 };

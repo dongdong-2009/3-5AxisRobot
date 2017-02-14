@@ -46,6 +46,9 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
     ui->languageButtonGroup->setId(ui->chineseBox,0);
     ui->languageButtonGroup->setId(ui->englishBox,1);
     ui->languageButtonGroup->setId(ui->spanishBox, 2);
+    ui->languageButtonGroup->setId(ui->nederlandBox, 3);
+    ui->languageButtonGroup->setId(ui->franceBox, 4);
+    ui->languageButtonGroup->setId(ui->koreanBox, 5);
     InitParameter();
     ui->extentFunctionCheckBox->blockSignals(true);
     ui->extentFunctionCheckBox->setChecked(ICParametersSave::Instance()->IsExtentFunctionUsed());
@@ -133,6 +136,12 @@ void ICHCSystemSettingsFrame::InitParameter()
         ui->englishBox->setChecked(true);
     else if(paraSave->Country() == QLocale::Spain)
         ui->spanishBox->setChecked(true);
+    else if(paraSave->Country() == QLocale::Netherlands)
+        ui->nederlandBox->setChecked(true);
+    else if(paraSave->Country() == QLocale::France)
+        ui->franceBox->setChecked(true);
+    else if(paraSave->Country() == QLocale::RepublicOfKorea)
+        ui->koreanBox->setChecked(true);
     // ui->languageComboBox->setCurrentIndex(index);
     if(paraSave->KeyTone())
     {
@@ -166,6 +175,18 @@ void ICHCSystemSettingsFrame::languageBoxChange()
     {
         paraSave->SetCountry(QLocale::Spain);
     }
+    else if(ui->languageButtonGroup->checkedId() == 3)
+    {
+        paraSave->SetCountry(QLocale::Netherlands);
+    }
+    else if(ui->languageButtonGroup->checkedId() == 4)
+    {
+        paraSave->SetCountry(QLocale::France);
+    }
+    else if(ui->languageButtonGroup->checkedId() == 5)
+    {
+        paraSave->SetCountry(QLocale::RepublicOfKorea);
+    }
 }
 
 
@@ -185,6 +206,12 @@ void ICHCSystemSettingsFrame::changeEvent(QEvent *e)
             ui->englishBox->setChecked(true);
         else if(paraSave->Country() == QLocale::Spain)
             ui->spanishBox->setChecked(true);
+        else if(paraSave->Country() == QLocale::Netherlands)
+            ui->nederlandBox->setChecked(true);
+        else if(paraSave->Country() == QLocale::France)
+            ui->franceBox->setChecked(true);
+        else if(paraSave->Country() == QLocale::RepublicOfKorea)
+            ui->koreanBox->setChecked(true);
         //    ui->languageComboBox->setCurrentIndex(index);
         ui->dateTimeEdit->setDateTime(QDateTime::currentDateTime());
 
@@ -839,7 +866,7 @@ void ICHCSystemSettingsFrame::StatusRefresh()
     QString os(osInfo_.release);
 #endif
     os += "; ";
-    ui->versionLabel->setText("Version: OS:" + os + QString(tr("\nApp %1; Host:")).arg(SHOW_VERSION) + ICVirtualHost::GlobalVirtualHost()->HostStatus(ICVirtualHost::Time).toString());
+    ui->versionLabel->setText("Version: OS:" + os + QString(tr("\nApp %1; Host:")).arg(QString::fromUtf8(SHOW_VERSION)) + ICVirtualHost::GlobalVirtualHost()->HostStatus(ICVirtualHost::Time).toString());
 }
 
 void ICHCSystemSettingsFrame::on_calibrationBtn_clicked()

@@ -16,6 +16,10 @@ ICHCConditionPage::ICHCConditionPage(QWidget *parent) :
     InitCheckPointBox();
     ui->moldCountEdit->setEnabled(false);
     ui->moldCountEdit->setValidator(new QIntValidator(0, 65530, this));
+#ifdef HC_4F2S
+    ui->sucker3Box->setText("X017");
+    ui->sucker4Box->setText("X036");
+#endif
 }
 
 ICHCConditionPage::~ICHCConditionPage()
@@ -29,6 +33,10 @@ void ICHCConditionPage::changeEvent(QEvent *e)
     switch (e->type()) {
     case QEvent::LanguageChange:
         ui->retranslateUi(this);
+#ifdef HC_4F2S
+    ui->sucker3Box->setText("X017");
+    ui->sucker4Box->setText("X036");
+#endif
         break;
     default:
         break;

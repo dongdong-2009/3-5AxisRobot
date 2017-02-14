@@ -47,7 +47,11 @@ void ICMonitorPageFrame::Init_()
     points.append(ICIOPoint("X014", tr("Sucker2"), 4));
     points.append(ICIOPoint("X015", tr("Sucker1"), 5));//吸1确认限
     points.append(ICIOPoint("X016", tr("X1 Out Limit"), 6));
+#ifdef HC_4F2S
     points.append(ICIOPoint("X017", tr("X1 In Limit"), 7));
+#else
+    points.append(ICIOPoint("X017", tr("Sucker3"), 7));
+#endif
 
     points.append(ICIOPoint("X020", tr("X1 Origin"), 8));
     points.append(ICIOPoint("X021", tr("Fixtur4"), 9));
@@ -65,7 +69,11 @@ void ICMonitorPageFrame::Init_()
     points.append(ICIOPoint("X033", tr("Y2 In Limit"), 19));
     points.append(ICIOPoint("X034", tr("Fixture3"), 20));
     points.append(ICIOPoint("X035", tr("Y1 Origin"), 21));
+#ifdef HC_4F2S
     points.append(ICIOPoint("X036", tr("Y1 Out Limit"), 22));
+#else
+    points.append(ICIOPoint("X036", tr("Sucker4"), 22));
+#endif
     points.append(ICIOPoint("X037", tr("Vertical-2"), 23));
 
     points.append(ICIOPoint("X040", tr("B Origin"), 24));
@@ -114,8 +122,13 @@ void ICMonitorPageFrame::Init_()
     points.append(ICIOPoint("Y032", tr("Adjust Sub Down"), 18));
     points.append(ICIOPoint("Y033", tr("Vice Sub Down"), 19));
     points.append(ICIOPoint("Y034", tr("Fixture3 Valve"), 20));
+#ifdef HC_4F2S
     points.append(ICIOPoint("Y035", tr("Machine Reversal"), 21));//4
     points.append(ICIOPoint("Y036", tr("Run Led"), 22));//3
+#else
+    points.append(ICIOPoint("Y035", tr("Sucker3 Valve"), 21));//4
+    points.append(ICIOPoint("Y036", tr("Sucker4 Valve"), 22));//3
+#endif
     points.append(ICIOPoint("Y037", tr(" Transport"), 23));
 
     points.append(ICIOPoint("Y040", tr("Y040"), 24));

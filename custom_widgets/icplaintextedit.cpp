@@ -1,9 +1,7 @@
 #include "icplaintextedit.h"
 
-#include "icinputmethodkeyboard.h"
 #include <QApplication>
 
-ICInputMethodKeyboard* keyboard_ = NULL;
 
 ICPlainTextEdit::ICPlainTextEdit(QWidget *parent) :
     QPlainTextEdit(parent)

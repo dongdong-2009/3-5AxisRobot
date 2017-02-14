@@ -1,0 +1,408 @@
+1:Virtual Error
+2:Strange Chars
+3:Program no end
+4:Ignored chars
+5:Orion chaos
+6:No end position
+7:Arc definition
+8:sequentie
+9:Large Radio
+10:Over speed
+11:Double Define IO
+12:None Define IO
+13:Group Action is error
+14:Group standby is error
+15:Find next step wrong
+16:Check end out of range
+17:Register context is wrong
+18:Check main action end
+19:Register Num context is wrong
+20:Register Sub context is wrong
+21:Register action has finished
+22:X is still running when generate action
+23:Y is still running when generate action
+24:Z is still running when generate action
+25:The timer has down to zero when G has delay time
+26:X1 over speed
+27:Y1 over speed
+28:Z over speed
+29:flash time out schrijven
+30:debug fail
+60:A over speed
+61:B over speed
+62:C over speed
+63:A is still running when generate action
+64:B is still running when generate action
+65:C is still running when generate action
+70:X2 over speed
+71:Y2 over speed
+72:X2 is still running when generate action
+73:Y2 is still running when generate action
+100:X1 servo terugmelding groter dan tolerantie
+101:Y1 servo terugmelding groter dan tolerantie
+102:Z servo feedback groter dan tolerantie
+103:X1  servo alarm fout
+104:Y1 servo alarm fout
+105:Z servo alarm fout
+106:X1 servo alarm
+107:Y1 servo alarm
+108:Z servo alarm  
+109:X1 niet in positie
+110:Y1 niet in positie
+111:Z niet in positie
+112:X1 buiten eindpositie
+113:X1 buiten startpositie
+114:Y1 buiten eindpositie
+115:Y1 buiten startpositie
+116:Z buiten eindpositie
+117:Z buiten startpositie
+118:X1 is te groot
+119:X1 is te klein
+120:Y1 is te groot
+121:Y1 is te klein
+122:Z is te groot
+123Z is te klein
+124:X1 pos. Te groot tijdens beweging
+125:X1 pos. Te klein tijdens beweging
+126:Y1 pos. Te groot tijdens beweging
+127:Y1 pos. Te klein tijdens beweging
+128:Z pos. Te groot tijdens beweging
+129:Z pos. Te klein tijdens beweging
+130:X1 configuratie save fout
+131:Y1 configuratie save fout
+132:Z configuratie save fout
+133:Struct save fail
+134:X axis compare
+135:Y axis compare
+136:Z axis compare
+137:Struct compare
+138:X1 is niet geconfigureerd als servo as
+139:Y1 is niet geconfigureerd als servo as
+140:Z is niet geconfigureerd als servo as
+160:X2 servo feedback groter dan tolerantie
+161:Y2 servo feedback groter dan tolerantie
+162:X2 servo Z signaal fout
+163:Y2 servo Z signaal fout
+164:X2 servo alarm
+165:Y2 servo alarm
+166:X2 niet in positie
+167:Y2 niet in positie
+168:X2 over maximum limiet
+169:X2 over minimum limiet
+170:Y2 over maximum limiet
+171:Y2 over minimum limiet
+172:X2 positie te groot
+173:X2 positie te klein
+174:Y2 positie te groot
+175:Y2 positie te klein
+176:X2 positie te groot tijdens beweging
+177:X2 positie te klein tijdens beweging
+178:Y2 positie te groot tijdens beweging
+179:Y2 positie te klein tijdens beweging
+182:X2 configuratie save fout
+181:Y2 configuratie save fout
+182:X2 configures is not the same with panel
+183:Y2 configures is not the same with panel
+184:X2 is niet gedefinieerd als servo as
+185:Y2 is niet gedefinieerd als servo as
+200:A servo feed back groter dan tolerantie
+201:B servo feed back groter dan tolerantie
+202:C servo feed back groter dan tolerantie
+203:A servo Z signaal fout
+204:B servo Z signaal fout
+205:C servo Z signaal fout
+206:A servo alarm
+207:B servo alarm
+208:C servo alarm
+209:A is niet in positie
+210:B is niet in positie
+211:C is niet in positie
+212:A beweegt over maximum limiet
+213:A beweegt over minimum limiet
+214:B beweegt over maximum limiet
+215:B beweegt over minimum limiet
+216:C beweegt over maximum limiet
+217:C beweegt over minimum limiet
+218:A positie is te groot
+219:A positie is te klein
+220:B positie is te groot
+221:B positie is te klein
+222:C positie is te groot
+223:C positie is te klein
+224::A positie is te groot tijdens werking
+225:A positie is te klein tijdens werking
+226:B positie is te groot tijdens werking
+227:B positie is te klein tijdens werking
+228:C positie is te groot tijdens werking
+229:C positie is te klein tijdens werking
+230:A configuratie save fout config
+231:B configuratie save fout
+232:C configuratie save fout
+233:SPI nul
+234:A configures is not the same with panel
+235:B configures is not the same with panel
+236:C configures is not the same with panel
+237:COMARE NULL
+238:A is niet gedefinieerd als servo as
+239:B is niet gedefinieerd als servo as
+240:C is niet gedefinieerd als servo as
+300:X1 configuratie fout
+301:Y1 configuratie fout
+302:Z configuratie fout
+303:programma crc fout
+304:noodstop
+305:Hoofd cyclus fout
+306:stand by positie fout
+307:Get Program fail
+308:tolerantie is te groot
+309:programma setting fout
+310:Macro index is te groot
+311:Macro nested
+312:stapel groep is fout
+313:stapelen copieren
+314:actie sequence fout
+315:Systeem configuratie crc fout
+316:actie sequence fout
+317:actie sequence fout
+319:paralel instructie alone
+319:automatisch vereist
+320:programma lijn fout
+321:programma crc fout tijdens werking
+322:programma actie fout tijdens werking
+323:wacht voor einde O.M.
+324:programma in auto mode fout
+325:grijper copieren
+326:actie copieren
+327:oproepen in eerste level
+328:controleer voorwaarden bij uitvoeren actie
+329:controleer grijper
+330:Struct configures changed, please reboot
+331:Struct configures is wrong
+332:Struct configures changed, please reboot
+333:Struct configures changed, please reboot
+334:Macro program crc wrong
+360:X2 configures is not the same with panel
+361:Y2 configures is not the same with panel
+362:A configures is not the same with panel
+363:B configures is not the same with panel
+364:C configures is not the same with panel
+365:Struct configures is not the same with panel
+400:Get X1 configures fail
+401:Get Y1 configures fail
+402:Get Z configures fail
+403:Init fail
+404:Program Init fail
+405:Macro Init fail
+406:Program settings init fail
+500:Connect host fail
+501:I/O bord verbindingsfout
+502:produkt positie bereikt
+503:druk te laag
+504:communicatie time out
+505:programma crc fout
+506:wacht signaal time out
+507:Modify configures in non-stop mode
+550: as conflict
+600:matrijs beveiligingssignaal is aan bij Z bewegen uit matrijs
+601:matrijs beveiligingssignaal is uit bij Z bewegen uit matrijs
+602:Out-mold security signal is on when Z move to in-mold
+603:Out-mold security signal is off when Z move to in-mold
+604:Y origin is on when in non-security section
+605:Y origin is off when in security section
+606:B origin is on when in non-security section
+607:B origin is off when in security section
+608:Y origin is off when in security section
+700:wacht X043 time out
+701:wacht X044 time out
+702:wacht grijper 1 time out
+703:wacht grijper 2 time out
+704:wacht grijper 3 time out
+705:wacht grijper 4 time out
+706:wacht vacuum 1 time ouy
+707:wacht vacuum 2 time out
+708:wacht uitwerper voor time out
+709:wacht uitwerper terug time out
+710:wacht kerntrek in time out
+711:wacht kerntrek uit time out
+1000:matrijs tussen pos is laag wanneer Y onder
+1001:matrijs open signaal is laag wanneer Y onder
+1002:veiligheidsdeur is open bij Y beneden
+1003:positie signaal beide aan
+1004:Z home en buiten matrijs zijn beide aan
+1005:O.M. signaal is laag wanneer Y in matrijs
+1006:positie 1 is fout wanneer Y in matrijs
+1007:Y onder in matrijs maar Z niet in veilige zone
+1008:Y onder buiten matrijs maar Z niet in veilige zone
+1009:kan het veiligheidssignaal niet controleren wanneer Y onder
+1010:Y1 is onder maar Z niet in veilige zone
+1011:Y1 is onder maar X1 niet in veilige zone
+1012:beide posities horizontaal
+1013:X2 vor en terug zijn beide aan
+1014:Y2 boven en onder zijn beide aan
+1015:X1 voor en terug zijn beide aan
+1016:Y1 boven en onder zijn beide aan
+1017:veiligheidsdeur is open tijdens produktie
+1018:Y2 is onder maar X1 niet in veilige zone
+1019:O.M signaal is uitgeschakeld wanneer oorsprong
+1020:matrijs tussenpositie is uit bij home
+1021:vertikale positie is uit bij home
+1022:horizontale positie is uit bij home
+1023:vertikale positie is uit wanneer Z beweegt
+1024:horizontale positie is uit wanneer Z beweegt
+1025:positie 2 is fout bij Y2 tussen matrijs
+1027: matrijs sluiten niet beeindigd
+1028:Fault clearing
+1029: niet in automatisch
+1030:Horizontal position 2 no vertical
+1031:The position is horizontal 2 when traving
+1038:Z is niet buiten matrijs bij afkeur
+1039:Z is niet buiten matrijs bij afkeur
+1040:laatste stap is geen Z actie
+1052;Z max en Y1 boven zin beide uit
+1053:geen
+1054:Teach X1 action but not define X1 axis
+1055:Teach Y1 action but not define Y1 axis
+1056:Teach Z action but not define Z axis
+1057:Teach X2 action but not define X2 axis
+1058:Teach Y2 action but not define Y2 axis
+1059:Teach A action but not define A axis
+1060:Teach B action but not define B axis
+1070:Teach C action but not define C axis
+1100:Y1 beneden maar Z niet in veilige zone
+1101:Y2 beneden maar Z niet in veilige zone
+1102:O.M signaal is uitgeschakeld wanneer Y1 omlaag
+1103:O.M signaal is uitgeschakeld wanneer Y2 omlaag
+1104:Y1 boven is aan maar Y1 is onder
+1105:Y2 boven is aan maar Y2 is onder
+1106:Y1 onder is uit maar Y1 is onder
+1107:Y2 onder is uit maar Y2 is onder
+1108:matrijs tussenpositie is uit bij Y1 onder
+1109:matrijs tussenpositie is uit bij Y2 onder
+1120:In-mold security signaal is uit bij Y1 boven
+1121:In-mold security signaal is uit bij Y2 boven
+1122:Y1 is over speed
+1123:Y2 is over speed
+1124:O.M signaal is uitgeschakeld wanneer Y1 omhoog
+1125:O.M signaal is uitgeschakeld wanneer Y2 omhoog
+1126:Y1 boven is uit maar Y1 is boven
+1127:Y2 boven is uit maar Y2 is boven
+1140:X1 terug is uit maar X1 is voor
+1142:X2 terug is uit maar X2 is voor
+1142:X1 terug is uit maar X1 is terug
+1143:X2 terug is uit maar X2 is terug
+1144:X1 voor is uit maar X1 is voor
+1145:X2 voor is uit maar X2 is voor
+1146:x1 voor is aan maar X1 is terug
+1147:X2 voor is aan maar X2 is terug
+1160:Y1 boven is uit wanneer pos wijzigt
+1161:Y2 boven is uit wanneer pos wijzigt
+1162:O.M is uitgeschakeld wanneer verandering van positie-1
+1163:Horizontal-1 limit is off when Position-1 trun to horizontal
+1164:Vertical-1 limit is off when vertical-1 trun to horizontal
+1165:Z is niet in veilige zone bij verandering positie
+1170;Y1 boven is uit wanneer pos 2 wijzigt
+1171:Y2 boven is uit wanneer pos 2 wijzigt
+1172:O.M is uitgeschakeld wanneer verandering van positie-2
+1173:Horizontal-2 limit is off when Position-2 trun to horizontal
+1174:Vertical-2 limit is off when vertical-2 trun to horizontal
+1180:Y1 boven is uit wanneer Z beweegt
+1181:Y2 boven is uit wanneer Z beweegt
+1182:Z start limiet is uit wanneer Z in matrijs beweegt
+1183:Z start limiet is uit wanneer Z uit beweegt
+1184:Position  is not on the way when  Z move out
+1185:O.M is uitgeschakeld wanneer Z verplaatsen
+1186:Y1 boven is uit wanneer Z in verboden gebied beweegt
+1187:Y2 boven is uit wanneer Z in verboden gebied beweegt
+1188:Y1 is niet in veilige zone wanneet Z in niet veilige zone
+1189:Y1 boven is uit wanneer Z beweegt van buiten naar binnen
+1190:Y1 boven is uit wanneer Z beweegt van binnen naar buiten
+1191:Y1 is niet in veilige zone wanneet Z in niet veilige zone
+1192:huidige positie is kleiner dan beweegbare veiligheidspositie
+1193:huidige positie is groter dan beweegbare veiligheidspositie
+1194:Y2 is niet boven
+1200:grijper 1 ventiel is aan maar eindpositie is laag
+1201:grijper 1 ventiel is uit maar eindpositie is hoog
+1202:grijper 2 ventiel is aan maar eindpositie is laag
+1203:grijper 2 ventiel is uit maar eindpositie is hoog
+1204:grijper 3 ventiel is aan maar eindpositie is laag
+1205:grijper 3 ventiel is uit maar eindpositie is hoog
+1206:grijper 4 ventiel is aan maar eindpositie is laag
+1207:grijper 4 ventiel is uit maar eindpositie is hoog
+1208:vacuum 1 ventiel is aan maar eindpositie is laag
+1209:vacuum 1 ventiel is uit maar eindpositie is hoog
+1210:vacuum 2 ventiel is aan maar eindpositie is laag
+1211:vacuum 2 ventiel is uit maar eindpositie is hoog
+1212:vacuum 3 ventiel is aan maar eindpositie is laag
+1213:vacuum 3 ventiel is uit maar eindpositie is hoog
+1214:vacuum 4 ventiel is aan maar eindpositie is laag
+1215:vacuum 4 ventiel is uit maar eindpositie is hoog
+1250:kan X037 signaal niet controleren
+1251:kan X023 signaal niet controleren
+1300:controleer de home positie
+1301:controleer Y1 boven in home stap
+1302:controleer Y2 boven in home stap
+1303:controleer X1 positie in home stap
+1304:controleer Y1 positie in home stap
+1305:controleer Z positie in home stap
+1306:controleer grijper 1 in home stap
+1307:controleer grijper 2 in home stap
+1308:controleer grijper 3 in home stap
+1309:controleer grijper 4 in home stap
+1310:controleer vacuum 1 in home stap
+1311:controleer vacuum 2 in home stap
+1312:controleer A positie in home stap
+1313:controleer B positie in home stap
+1314:controleer C positie in home stap
+1315:controleer X2 positie in home stap
+1316:controleer Y2 positie in home stap
+1400:Y1 boven is uit
+1401:Y1 en Y2 zijn niet tussen de matrijs
+1402:Y1 en Y2 zijn niet buiten de matrijs
+1403:Y2 boven is uit
+2000: Servo storing, controleert u de schijf
+2001: Servo overstroom
+2002: Over-voltage servo
+2003: Low-voltage servo
+2004: Abnormale regeneratieve weerstand
+2005: Servo overbelasting
+2006: Servo snelheidsoverschrijding
+2007: De positie fout is te groot
+2008: Encoder interne fout
+2009: Elektronische overbrengingsverhouding instelling fout, foutcorrectie posities
+2010: Noodstop
+2011: geïsoleerde gated bipolaire transistor oververhitting
+2012: de belangrijkste circuit macht anomalieën
+2013: Pre-overload waarschuwing
+2014: Motor botsing error
+2015: UVW bedrading error
+2016: Closed-loop puntsbesturing fout is te groot
+2017: BOB ontvangen overflow
+toegang uitzondering pdo: 2018
+2019: hartslag of bescherming knooppunt fout
+2020: can uitzondering bus hardware
+2021: kan de communicatie anomalie te synchroniseren
+2022: Special filter wordt te hoog
+2023: Forward limiet servo
+2024: Servo reverse limiet
+2100: Servo Fault
+2101: Servo overstroom
+2102: de belangrijkste circuit overspanning
+2103: de belangrijkste circuit onderspanning
+2104: De servobesturingsschakeling onderspanning
+2105: Servo kortsluiting aan de grond
+2106: Het netsnoer waarschuwing fase
+2107: Remweerstand overbelast
+2108: Warning Drive Overload
+2109: motorvermogen kabelbreuk
+2110: Drive oververhitting radiator
+2111: Drive parameter opslag falen
+uitzondering Drive ingestelde parameters: 2112
+2113: Motor Stall
+2114: Encoder interne fout
+2115: Motor snelheidsoverschrijding
+2116: Drive positie error
+2117: aandrijving impuls abnormale
+2118: CANopen knooppunt bescherming of hartslag timeout
+2119: CANopen BOB transmissie lengte fout
+4000: Trial tijd verstreken is, kunt u zich inschrijven
+

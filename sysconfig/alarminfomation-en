@@ -50,9 +50,9 @@
 71:Y2 over speed
 72:X2 is still running when generate action
 73:Y2 is still running when generate action
-100:X large warp
-101:Y large warp
-102:Z large warp
+100:X axis feedback pulse deviation is too large
+101:Y axis feedback pulse deviation is too large
+102:Z axis feedback pulse deviation is too large
 103:X axial z-pluse error
 104:Y axial z-pluse error
 105:Z axial z-pluse error
@@ -91,10 +91,10 @@
 138:X is no servo
 139:Y is no servo
 140:Z is no servo
-160:X2 large warp
-161:Y2 large warp
-162:axial z-pluse error
-163:axial z-pluse error
+160:X2 axis feedback pulse deviation is too large
+161:Y2 axis feedback pulse deviation is too large
+162:X2 axial z-pluse error
+163:Y2 axial z-pluse error
 164:X2-servo alarm
 165:Y2-servo alarm
 166:X2 missed pos
@@ -117,9 +117,9 @@
 183:Y2 axis compare
 184:X2 is no servo
 185:Y2 is no servo
-200:A large warp
-201:B large warp
-202:C large warp
+200:A axis feedback pulse deviation is too large
+201:B axis feedback pulse deviation is too large
+202:C axis feedback pulse deviation is too large
 203:A axial z-pluse error
 204:B axial z-pluse error
 205:C axial z-pluse error
@@ -175,7 +175,7 @@
 314:Action sequence is wrong
 315:System parameter is wrong
 316:Action number is wrong
-317:Sub action number is wrong
+317:Action number is wrong
 318:Number line only
 319:Just run on auto status
 320:Illega sequence
@@ -214,7 +214,7 @@
 505:Sync program list wrong
 506:Time overlay when waiting signal
 507:Modify parameter not in stop status is not premit
-550:X axis conflict
+550:X1 axis, X2 axis position setting wrong
 600:Z move outside, but Z insafe signal ON
 601:Z move outside, but Z insafe signal OFF
 602:Z move inside, but Z outsafe signal ON
@@ -223,7 +223,7 @@
 605:Y raised by Up-lmt off
 606:B descend by Up-lmt On
 607:B raised by Up-lmt off
-608:Y raised by Up-lmt off
+608:Y2 descend by Up-lmt On
 700:Time is over while wating for X043
 701:Time is over while wating for X044
 702:Time is over while wating for fixture-1
@@ -240,35 +240,36 @@
 1001:Mold Opened signal is off when Arm descend.
 1002:Safety door is opened when Arm descend.
 1003:Vertical and horizontal signal is both on.
-1004:Travel in and travel out signal is both on.
+1004:Z axis Travel in and travel out signal is both on.
 1005:Mold Opened signal is off when Arm descend inside inner
 1006:Position is horizontal when Arm descend inside inner.
 1007:Arm descend inside inner but position is not inside Z in security zone.
 1008:Arm descend inside outer but position is not inside Z out security zone
 1009:Can not check the security zone when Arm descend.
-1010:Can not check the security zone when Y1 descend.
-1011:Can not check the security zone when Arm ascend
+1010:Can not check Z axis the security zone when Y1 descend.
+1011:Can not check X axis the security zone when Y1 descend.
 1012:Tow position is all in horizontal
 1013:Sub forward and backward limit is both on
 1014:Sub up and down limit is both on
 1015:Main forward and backward limit is both on
 1016:Main up and down limit is both on
 1017:Security door is opened when running
-1018:Sub arm action is not depend on the mold
+1018:Can not check X axis the security zone when Y2 descend.
 1019:The mold opened signal is off when origin
 1020:The mid mold signal is off when origin
-1021: The position is vertical when origin
-1022：The position is horizontal when origin
-1023:The position is vertical when traving
-1024:The position is horizontal when traving
-1025:The position is wrong when down inside
+1021:The position is no vertical when origin
+1022:The position is no horizontal when origin
+1023:The position is no vertical when traving
+1024:The position is no horizontal when traving
+1025:The position  2 is wrong when down inside
+1026:level 2 vertical limit at the same time ON
 1027:Close mold is not finish
 1028:Fault clearing
 1029:No automatic signal
-1030:Horizontal position 2 no vertical
+1030:Horizontal position 2 no Vertical
 1031:The position is horizontal 2 when traving
-1038：The Z axis is not in the inner security zone when bad product
-1039：The Z axis setting is not in the inner security zone when bad product
+1038:The Z axis is not in the outside security zone when bad product
+1039:The Z axis setting is not in the outside security zone when bad product
 1040:The action of forward is not Z axis
 1052:Z insafe signal，Z outsafe signal and main up signal is both off
 1053:NULL
@@ -306,17 +307,17 @@
 1145:Sub forward limit is off after sub arm has forward
 1146:Main forward limit is on after main arm is back
 1147:Sub forward limit is on after sub arm is back
-1160:Can not check the main upper limmit when position changing
-1161:Can not check the sub upper limmit when position changing
-1162:Mold-opened signal is off when position changing
-1163:horizontal limit is off after position change to horizon
-1164:Vertical limit is off after position change to verizon
+1160:Can not check the main upper limmit when position 1 changing
+1161:Can not check the sub upper limmit when position 1 changing
+1162:Mold-opened signal is off when position 1 changing
+1163:horizontal limit is off after position 1 change to horizon
+1164:Vertical 1 limit is off after position 1 change to verizon
 1165:Out of Security area when horizontal
 1170:Can not check the main upper limmit when position-2 changing
 1171:Can not check the sub upper limmit when position-2 changing
 1172:Mold-opened signal is off when position-2 changing
 1173:horizontal limit is off after position-2 change to horizon
-1174:Out of Security area when horizontal-2
+1174:Vertical 2 limit is off after position-2 change to Vertical
 1180:Main upper limmit is off when air action Travel in and Travel out
 1181:Sub upper limmit is off when air action Travel in and Travel out
 1182:Travel in limmit is off after Travel in
@@ -332,6 +333,7 @@
 1192:Current position is less than the moveabel security position
 1193:Current position is larger than the moveable security position
 1194:Y2 is not on the up pos
+1195:Wait for Y1, Y2 rise signal is  overtime when Travel
 1200:Clip1 signal off, Clip1 valve on.
 1201:Clip1 signal on, Clip1 valve off.
 1202:Clip2 signal off, Clip2 valve on.
@@ -340,14 +342,14 @@
 1205:Clip3 signal on, Clip3 valve off.
 1206:Clip4 signal off, Clip4 valve on.
 1207:Clip4 signal on, Clip4 valve off.
-1208:Suck1 signal off, Suck1 valve on.
-1209:Suck1 signal on, Suck1 valve off.
-1210:Suck2 signal off, Suck2 valve on.
-1211:Suck2 signal on, Suck2 valve off.
-1212:Clip7 signal off, Clip7 valve on.
-1213:Clip7 signal on, Clip7 valve off.
-1214:Clip8 signal off, Clip8 valve on.
-1215:Clip8 signal on, Clip8 valve off.
+1208:Suck1 signal on, Suck1 valve off.
+1209:Suck1 signal off, Suck1 valve on.
+1210:Suck2 signal on, Suck2 valve off.
+1211:Suck2 signal off, Suck2 valve on.
+1212:Clip7 signal on, Clip7 valve off.
+1213:Clip7 signal off, Clip7 valve on.
+1214:Clip8 signal on, Clip8 valve off.
+1215:Clip8 signal off, Clip8 valve on.
 1250:Can not check X037
 1251:Can not check X023
 1300:Please check Waiting Pose.
@@ -360,8 +362,8 @@
 1307:Please check Waiting Point Clip 2
 1308:Please check Waiting Point Clip 3
 1309:Please check Waiting Point Clip 4
-1310:Please check Waiting Point Clip 5
-1311:Please check Waiting Point Clip 6
+1310:Please check Waiting Point Suck 1
+1311:Please check Waiting Point Suck 2
 1312:Please check Waiting Point A
 1313:Please check Waiting Point B
 1314:Please check Waiting Point C
@@ -371,50 +373,50 @@
 1401:Currnt point and waiting point are not both inside
 1402:Currnt point and waiting point are not both outside
 1403:Can not check the Y2 up limit
-2000:Servo error, please check
-2001:Servo overcurrent
-2002:Servo overvoltage
-2003:Servo low voltage
-2004:Regeneration resistance is abnormal
-2005:Servo overloaded
-2006:Servo over speed
-2007:Position control error is too large
-2008:Encoder internal error
-2009:Electronic gear ratio setting error, correction position error
-2010:Emergency shutdown
-2011:Insulation Gate The gate transistor is overheating
-2012:The main circuit power supply is abnormal
-2013:Pre-Overload Warning
-2014:Motor collision error
-2015:UVW wiring error
-2016:Closed-loop position control error is too large
-2017:pdo receives an overflow
-2018:Pdo access exception
-2019:Heartbeat or node protection function error
-2020:Can bus hardware exception
-2021:Can communication synchronization exception
-2022:Special filter setting is too large
-2023:Servo forward limit
-2024:Servo reverse limit
-2100:Servo fault
-2101:Servo overcurrent
-2102:Drive main circuit overvoltage
-2103:Drive main circuit undervoltage
-2104:Servo control undervoltage
-2105:Servo output is shorted to ground
-2106:Power line phase failure warning
-2107:Braking resistor is overloaded
-2108:Drive Overload Warning
-2109:Motor power line break
-2110:Drive heatsink is overheating
-2111:Drive parameter storage failure
-2112:The drive setting parameter is abnormal
-2113:The motor is locked
-2114:Encoder internal fault
-2115:The motor is overspeed
-2116:Drive position deviation is too large
-2117:The drive pulse is abnormal
+2000:servo malfunction, please check the drive
+2001:servo current overload
+2002:servo overvoltage
+2003:servo low voltage
+2004:retrogradation resistance anomalies
+2005:servo overload
+2006:servo overspeed
+2007:position control error is too large
+2008:the encoder internal fault
+2009:electronic gear than setting error, error correction position
+2010:emergency stop
+2011:insulated gate transistor is overheating
+2012:the main circuit power supply abnormality
+2013:overload warning in advance
+2014:the motor collision Error
+2015:UVW connection errors
+2016:closed-loop position control error is too large
+2017:pdo receive overflow
+2018:pdo access exception
+2019:the heart or node protection function Error
+2020:can bus hardware abnormalities
+2021:the can communication synchronization exception
+2022:special filter set is too large
+2023:servo is limit
+2024:servo reverse limit
+2100:servo malfunction
+2101:servo current overload
+2102:the primary loop electric overvoltage
+2103:the primary loop electric voltage
+2104:servo control electric voltage
+2105:servo output of short circuit
+2106:the power cord is short of warning
+2107:braking resistor overload
+2108:drive overload warning
+2109:motor power line break
+2110:drive radiator is overheating
+2111:drive parameters storage failure
+2112:drive set parameters abnormality
+2113:motor stalling
+2114:the encoder internal fault
+2115:the motor overspeed
+2116:drive position deviation is too large
+2117:abnormal drive pulse
 2118:CANopen node protection or heartbeat timeout
 2119:CANopen PDO transmission length error
 2120:Servo touches reverse switch
-4000:The trial time is up, please register
+4000:The time has come trial, please register

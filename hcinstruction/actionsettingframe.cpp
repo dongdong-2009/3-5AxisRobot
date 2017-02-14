@@ -208,6 +208,10 @@ void ActionSettingFrame::showEvent(QShowEvent *e)
     posLength_[0] = host->SystemParameter(ICVirtualHost::SYS_A_Length).toInt();
     posLength_[1] = host->SystemParameter(ICVirtualHost::SYS_B_Length).toInt();
     posLength_[2] = host->SystemParameter(ICVirtualHost::SYS_C_Length).toInt();
+    abcMin_[0] = host->SystemParameter(ICVirtualHost::SYS_A_Maxium).toInt();
+    abcMin_[1] = host->SystemParameter(ICVirtualHost::SYS_B_Maxium).toInt();
+    abcMin_[2] = host->SystemParameter(ICVirtualHost::SYS_C_Maxium).toInt();
+
 
     int mutil = qPow(10, SECTION_DECIMAL);
     for(int i = 0; i != 8; ++i)
@@ -217,6 +221,7 @@ void ActionSettingFrame::showEvent(QShowEvent *e)
     for(int i = 0; i != 3; ++i)
     {
         posValidator[i].setTop(posLength_[i] * mutil);
+        posValidator[i].setBottom(abcMin_[i] * mutil);
     }
 
     QFrame::showEvent(e);

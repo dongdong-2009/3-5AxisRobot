@@ -22,6 +22,9 @@ HostType = n
 
 #DEFINES += HC_TEST
 #DEFINES += Compatible6410
+#DEFINES += HC_4F2S
+#DEFINES += HC_10M
+DEFINES += X1_BAD_FUNC
 
 DEFINES += HOST_TYPE='\\"$${HostType}\\"'
 
@@ -38,7 +41,7 @@ UI_DIR = temp_$${suffix}
 MOC_DIR = temp_$${suffix}
 RCC_DIR = temp_$${suffix}
 
-TRUNK_VERSION = XS-6.1.0
+TRUNK_VERSION = 6.1.1
 APP_VERSION = BORUNTE-HUICHUAN-ZENGLIANG-2.6
 S_VERSION = $${APP_VERSION}_$${HostType}_$${TRUNK_VERSION}
 contains(DEFINES, Compatible6410){
@@ -47,6 +50,15 @@ S_VERSION = $${S_VERSION}_cp6410
 contains(DEFINES, HC_TEST){
 S_VERSION = $${S_VERSION}_test
 }
+contains(DEFINES, HC_10M){
+DEFINES += LENGTH_DEC=0
+DEFINES += USE_DEC=1
+S_VERSION = $${S_VERSION}_10M
+}else{
+DEFINES += LENGTH_DEC=1
+DEFINES += USE_DEC=2
+}
+
 VERSTR = '\\"$${S_VERSION}\\"'
 DEFINES += SHOW_VERSION=\"$${VERSTR}\"
 
@@ -162,7 +174,11 @@ RESOURCES += \
 TRANSLATIONS += Multi-axisManipulatorSystem_ch.ts \
     Multi-axisManipulatorSystem_en.ts \
     Multi-axisManipulatorSystem_pt.ts \
-    Multi-axisManipulatorSystem_esp.ts
+    Multi-axisManipulatorSystem_esp.ts \
+    Multi-axisManipulatorSystem_nl.ts \
+    Multi-axisManipulatorSystem_fr.ts \
+    Multi-axisManipulatorSystem_kr.ts
+
 
 OTHER_FILES += \
     sysconfig/alarminfomation-en \
@@ -170,9 +186,7 @@ OTHER_FILES += \
     sysconfig/alarminfomation-esp \
     sysconfig/hintinfomation-ch \
     sysconfig/hintinfomation-en \
-    sysconfig/hintinfomation-esp \
-    tools/autots.py
-
+    sysconfig/hintinfomation-esp
 
 QMAKE_POST_LINK += "cp *.qm $$DESTDIR"
 QMAKE_PRE_LINK += "lrelease $${TARGET}.pro"

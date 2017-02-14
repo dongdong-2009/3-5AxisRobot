@@ -9,5 +9,11 @@
         <file>sysconfig/Base.sub</file>
         <file>sysconfig/alarminfomation-esp</file>
         <file>sysconfig/hintinfomation-esp</file>
+        <file>sysconfig/alarminfomation-fr</file>
+        <file>sysconfig/alarminfomation-nl</file>
+        <file>sysconfig/alarminfomation-kr</file>
+        <file>sysconfig/hintinfomation-fr</file>
+        <file>sysconfig/hintinfomation-kr</file>
+        <file>sysconfig/hintinfomation-nl</file>
     </qresource>
 </RCC>

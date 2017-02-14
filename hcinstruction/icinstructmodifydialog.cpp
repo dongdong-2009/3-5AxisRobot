@@ -26,7 +26,7 @@ ICInstructModifyDialog::ICInstructModifyDialog(QWidget *parent) :
     ui->speedEdit->setValidator(validator);
     
     posValidator_ = new QIntValidator(0, 65530 * qPow(10, SECTION_DECIMAL), this);
-    ifposValidator_ = new QIntValidator(0, 6553, this);
+    ifposValidator_ = new QIntValidator(0, 65530, this);
     ui->posEdit->SetDecimalPlaces(POS_DECIMAL);
     ui->posEdit->setValidator(posValidator_);
 
@@ -132,6 +132,7 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
     ui->delayTimeEdit->setValidator(validator_);
     ui->limitLabel->hide();
     ui->limitTimeEdit->hide();
+//    ui->limitTimeEdit->SetDecimalPlaces(1);
     ui->limitUnitLabel->hide();
     ui->forwardBox->hide();
     ui->backwardBox->hide();
@@ -142,6 +143,8 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
     bool isMoldCount = false;
 
 
+
+    ui->customName->setPlainText(item->Comment());
     if(item->IsAction())
     {
         if( item->Action() <= ICMold::GB)
@@ -178,24 +181,28 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
                 ifposValidator_->setBottom(0);
                 break;
             case ICMold::GA:
-                addr = ICVirtualHost::SYS_C_Length;
-                posValidator_->setBottom(-50);
-                ifposValidator_->setBottom(-50);
+                addr = ICVirtualHost::SYS_A_Length;
+                posValidator_->setBottom(host->SystemParameter(ICVirtualHost::SYS_A_Maxium).toInt() * 10);
+                ifposValidator_->setBottom(host->SystemParameter(ICVirtualHost::SYS_A_Maxium).toInt() / 10);
                 break;
             case ICMold::GB:
-                addr = ICVirtualHost::SYS_C_Length;
-                posValidator_->setBottom(-50);
-                ifposValidator_->setBottom(-50);
+                addr = ICVirtualHost::SYS_B_Length;
+                posValidator_->setBottom(host->SystemParameter(ICVirtualHost::SYS_B_Maxium).toInt() * 10);
+                ifposValidator_->setBottom(host->SystemParameter(ICVirtualHost::SYS_B_Maxium).toInt() / 10);
                 break;
             case ICMold::GC:
                 addr = ICVirtualHost::SYS_C_Length;
-                posValidator_->setBottom(-50);
-                ifposValidator_->setBottom(-50);
+                posValidator_->setBottom(host->SystemParameter(ICVirtualHost::SYS_C_Maxium).toInt() * 10);
+                ifposValidator_->setBottom(host->SystemParameter(ICVirtualHost::SYS_C_Maxium).toInt() / 10);
                 break;
             }
             
             posValidator_->setTop(host->SystemParameter(addr).toInt() * qPow(10, SECTION_DECIMAL));
+#ifdef HC_10M
+            ifposValidator_->setTop(host->SystemParameter(addr).toInt());
+#else
             ifposValidator_->setTop(host->SystemParameter(addr).toInt() / 10);
+#endif
             validator->setTop(100);
             
             ui->positionLabel->show();
@@ -218,7 +225,16 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
         if( item->Action() == ICMold::GZ)
         {
             ui->badProductBox->show();
+            ui->badProductBox->setText(tr("Bad Product"));
         }
+#ifdef X1_BAD_FUNC
+        if( item->Action() == ICMold::GX)
+        {
+            ui->badProductBox->show();
+            ui->badProductBox->setText(tr("Suck Page"));
+
+        }
+#endif
 //        if( item->Action() == ICMold::GY)
 //        {
 //            ui->badProductBox->show();
@@ -257,6 +273,7 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
             ui->delayUnitLabel->hide();
             ui->limitLabel->show();
             ui->limitTimeEdit->show();
+            ui->limitTimeEdit->SetDecimalPlaces(2);
             ui->limitUnitLabel->show();
             ui->limitTimeEdit->SetThisIntToThisText(item->Pos());
             ui->flagBox->show();
@@ -274,6 +291,7 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
         }
         else if(item->Action() == ICMold::ACT_WaitMoldOpened && item->SVal() != 1)
         {
+            ui->delayTimeEdit->SetDecimalPlaces(1);
             ui->delayLabel->setText(tr("Limit Time"));
         }
     }
@@ -465,6 +483,7 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
             }
         }
     }
+    item->SetComment(ui->customName->toPlainText());
     return isok;
 }
 

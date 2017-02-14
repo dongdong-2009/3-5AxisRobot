@@ -60,6 +60,8 @@ ICMachineStructPage::ICMachineStructPage(QWidget *parent) :
     editorToConfigIDs_.insert(ui->externalSecurityZoneLineEdit, ICConfigString::kCS_AXIS_Max_X1);
     editorToConfigIDs_.insert(ui->distanceRotationEdit, ICConfigString::kCS_AXIS_Rotate_X1);
 
+    ui->pushButton->hide();
+
     ICLogInit
             axisDefine_ = -1;
 }
@@ -629,18 +631,18 @@ void ICMachineStructPage::InitInterface()
     //QIntValidator * intValidator = new QIntValidator(0, 65530, this);
     minSecValidator_ = new QIntValidator(0,0,this);
     maxSecValidator_ = new QIntValidator(0, 0, this);
-    ui->mechanicalLengthLineEdit->SetDecimalPlaces(1);
+    ui->mechanicalLengthLineEdit->SetDecimalPlaces(LENGTH_DEC);
     intValidator = new QIntValidator(0, 65530, this);
     ui->mechanicalLengthLineEdit->setValidator(intValidator);
     //maxMoveValidator_ = new QIntValidator(0, 65530, this);
     originValidator_ = new QIntValidator(-900, 900, this);
-    ui->maximumDisplacementLineEdit->SetDecimalPlaces(1);
+    ui->maximumDisplacementLineEdit->SetDecimalPlaces(LENGTH_DEC);
     maximumValidator_ = new QIntValidator(0, 65530, this);
     ui->maximumDisplacementLineEdit->setValidator(maximumValidator_);
   //  externalValidator_ = new QIntValidator(0, 65530, this);
-    ui->internalSecurityZoneLineEdit->SetDecimalPlaces(1);
+    ui->internalSecurityZoneLineEdit->SetDecimalPlaces(LENGTH_DEC);
     ui->internalSecurityZoneLineEdit->setValidator(minSecValidator_);
-    ui->externalSecurityZoneLineEdit->SetDecimalPlaces(1);
+    ui->externalSecurityZoneLineEdit->SetDecimalPlaces(LENGTH_DEC);
     ui->externalSecurityZoneLineEdit->setValidator(maxSecValidator_);
     rotateValidator_ = new QIntValidator(0, 65530, this);
     ui->distanceRotationEdit->SetDecimalPlaces(2);

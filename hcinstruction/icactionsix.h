@@ -30,6 +30,7 @@ private slots:
 
 protected:
     void keyPressEvent(QKeyEvent* e);
+    void keyReleaseEvent(QKeyEvent* e);
 
 private:
     Ui::icactionsix *ui;

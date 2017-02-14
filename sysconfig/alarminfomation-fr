@@ -1,0 +1,408 @@
+1:Virtual Error
+2:Strange Chars
+3:Program no end
+4:Ignored chars
+5:Orion chaos
+6:No end position
+7:Arc definition
+8:Séquence
+9:Large Radio
+10:Over speed
+11:Double Define IO
+12:None Define IO
+13:Group Action is error
+14:Group standby is error
+15:Find next step wrong
+16:Check end out of range
+17:Register context is wrong
+18:Check main action end
+19:Register Num context is wrong
+20:Register Sub context is wrong
+21:Register action has finished
+22:X is still running when generate action
+23:Y is still running when generate action
+24:Z is still running when generate action
+25:The timer has down to zero when G has delay time
+26:X1 au-dessus de la vitesse
+27:Y1 au-dessus de la vitesse
+28:Z au-dessus de la vitesse
+29:Écrire flash time out
+30:Échec de débogage
+60:A au-dessus de la vitesse
+61:B au-dessus de la vitesse
+62:C au-dessus de la vitesse
+63:A is still running when generate action
+64:B is still running when generate action
+65:C is still running when generate action
+70:X2 au-dessus de la vitesse
+71:Y2 au-dessus de la vitesse
+72:X2 is still running when generate action
+73:Y2 is still running when generate action
+100:X1 commentaires de servo plus de tolérance
+101:Y1 commentaires de servo plus de tolérance
+102:Z commentaires de servo plus de tolérance
+103:X1 signal de servo Z mal
+104:Y1 signal de servo Z mal
+105:Z signal de servo Z mal
+106:X1 alarme servo
+107:Y1 alarme servo
+108:Z alarme servo
+109:X1 pas en position
+110:Y1 pas en position
+111:Z pas en position
+112:X1 passez sur la TI de finir les limites
+113:X1 passez sur la TI de finir les limites
+114:Y1 passez sur la TI de finir les limites
+115:Y1 passez sur la TI de finir les limites
+116:Z passez sur la TI de finir les limites
+117:Z passez sur la TI de finir les limites
+118:X1 trop grand
+119:X1 trop petit
+120:Y1 trop grand
+121:Y1 trop petit
+122:Z trop grand
+123:Z trop petit
+124:X1 pos est trop grande lors de l’exécution
+125:X1 pos est trop petit, lors de l’exécution
+126:Y1 pos est trop grande lors de l’exécution
+127:Y1 pos est trop petit, lors de l’exécution
+128:Z pos est trop grande lors de l’exécution
+129:Z pos est trop petit, lors de l’exécution
+130:X1 configure enregistrer mal
+131:Y1 configure enregistrer mal
+132:Z configure enregistrer mal
+133:Struct save fail
+134:X axis compare
+135:Y axis compare
+136:Z axis compare
+137:Struct compare
+138:X1 n’est pas défini comme type d’axe servo
+139:Y1 n’est pas défini comme type d’axe servo
+140:Z n’est pas défini comme type d’axe servo
+160:X2 commentaires de servo plus de tolérance
+161:Y2 commentaires de servo plus de tolérance
+162:X2 signal de servo Z mal
+163:Y2 signal de servo Z mal
+164:X2 servo alarm
+165:Y2 servo alarm
+166:X2 pas en position
+167:Y2 pas en position
+168:X2 passez sur la TI de finir les limites
+169:X2 passez sur la TI de finir les limites
+170:XY2 passez sur la TI de finir les limites
+171:Y2 passez sur la TI de finir les limites
+172:X2 pos. Top grand
+173:X2 pos. Trop petit
+174:Y2 pos. Trop grand
+175:Y2 pos. Trop petit
+176:X2 pos est trop grande lors de l’exécution
+177:X2 pos est trop petit, lors de l’exécution
+178:Y2 pos est trop grande lors de l’exécution
+179:Y2 pos est trop petit, lors de l’exécution
+180:X2 configure enregistrer mal
+181:Y2 configure enregistrer mal
+182:X2 configure n’est pas la même chose avec panneau
+183:Y2 configure n’est pas la même chose avec panneau
+184:X2 n’est pas défini comme type d’axe servo
+185:Y2 n’est pas défini comme type d’axe servo
+200:A feedback de servo plu de tolérance
+201:B feedback de servo plu de tolérance
+202:C feedback de servo plu de tolérance
+203:A servo Z signal erreur
+204:B servo Z signal erreur
+205:C servo Z signal erreur
+206:A servo alarm
+207:B servo alarm
+208:C servo alarm
+209:A pas en position
+210:B pas en position
+211:C pas en position
+212:A Placez sur la TI de finir les limites
+213:A Placez sur la TI de finir les limites
+214:B Placez sur la TI de finir les limites
+215:B Placez sur la TI de finir les limites
+216:C Placez sur la TI de finir les limites
+217:C Placez sur la TI de finir les limites
+218:A pos. Trop grand
+219:A pos. Trop petit
+220:B pos. Trop grand
+221:B pos. Trop petit
+222:C pos. Trop grand
+223:C pos. Trop petit
+224:A pos est trop grande lors de l’exécution
+225:A pos est trop grande lors de l’exécution
+226:B pos est trop grande lors de l’exécution
+227:B pos est trop grande lors de l’exécution
+228:C pos est trop grande lors de l’exécution
+229:C pos est trop grande lors de l’exécution
+230:A configure enregistrer mal
+231:B configure enregistrer mal
+232:C configure enregistrer mal
+233:SPI NULL
+234:A configure n’est pas la même chose avec panneau
+235:B configure n’est pas la même chose avec panneau
+236:C configure n’est pas la même chose avec panneau
+237:COMARE NULL
+238:A n’est pas défini comme type d’axe servo
+239:B n’est pas défini comme type d’axe servo
+240:C n’est pas défini comme type d’axe servo
+300:X1 erreur configuration
+301:Y1 erreur configuration
+302:Z erreur configuration
+303:program crc erreur
+304:arret d'urgence
+305:Cycle de main mal
+306:origine Pos mal
+307:Get Program fail
+308:tolerance trop grand
+309:Paramètres du programme mal
+310:Macro index trop grand
+311:Macro nested
+312:Groupe de staple est faux
+313:copier staple
+314:Séquence d’actions mal
+315:Système configure mauvais crc
+316:Séquence d’actions mal
+317:Séquence d’actions mal
+319instruction paralle seul
+319:Doit être en mode auto
+320:Ligne de programme incorrect
+321:Lors de l’exécution du programme mauvais crc
+322:Programme action mal lors de l’exécution
+323:Attendre pour finition O.M.
+324:Changement de programme en mode auto fail
+325:copier pince
+326copier action
+327:Il faut appeler en premier niveau
+328:Vérifiez la condition quand excuting une action
+329:controler pince
+330:Struct configure a changé, Veuillez redémarrer
+331:Configure de struct ne va pas
+332:Struct configure a changé, Veuillez redémarrer
+333:Struct configure a changé, Veuillez redémarrer
+334:Macro programme crc erroné
+360:X2 configure n’est pas la même chose avec panneau
+361:Y2 configure n’est pas la même chose avec panneau
+362:A configure n’est pas la même chose avec panneau
+363:B configure n’est pas la même chose avec panneau
+364:C configure n’est pas la même chose avec panneau
+365:Struct configure n’est pas la même chose avec panneau
+400:Get X1 configure fail
+401:Get Y1 configure fail
+402:Get Z configure fail
+403:init fail
+404:program init fail
+405:macro init fail
+406:Échec du programme paramètres init
+500:connect host fail
+501:Se connecter faute de Conseil I/O 
+502:Cible du produit a fait
+503:pression trop bas
+504:time out communication
+505:program crc erreur
+506:Attendez le signal time out
+507:Modifier configure en mode non stop
+550: conflict axe
+600:Signal de sécurité dans le moule est allumé quand Z déplacer vers Out-moule
+601:Signal de sécurité dans le moule est éteint quand Z se déplacent à out-moule
+602:Out-moule sécurité signal est allumé quand Z aller dans le moule
+603:Out-moule sécurité signal est éteint quand Z se déplacent à surmoulée
+604:Origine Y est sur quand dans la section non-sécurité
+605:Origine Y est éteint quand dans la section sécurité
+606:Origine B est sur quand dans la section non-sécurité
+607:Origine B est éteint quand dans la section sécurité
+608:Origine Y est éteint quand dans la section sécurité
+700:attend X043 time out
+701:attend X044 time out
+702:attend pince 1 time out
+703:attend pince 2 time out
+704:attend pince 3 time out
+705:attend pince 4 time out
+706:attend vide 1 time out
+707:attend vide 2 time out
+708:attend ejecteur avant time out
+709:attend ejecteur retour time out
+710:attend noyaux entre time out
+711:attend noyaux sorti time out
+1000:Mid moule signal est hors tension lorsque vous Y vers le bas
+1001:Mid moule signal est hors tension lorsque vous Y vers le bas
+1002:Porte de sécurité est ouvert quand Y vers le bas
+1003:Signal de position est à la fois sur
+1004:Origine de Z et out-moule sécurité signal est à la fois sur
+1005:O.M. signal est éteint quand Y vers le bas dans le moule
+1006:1-position est mauvaise quand Y vers le bas dans le moule
+1007:Y vers le bas dans le moule mais Z n’est pas dans la section sécurité
+1008:Out-moule à Y vers le bas mais Z n’est pas dans la section sécurité
+1009:Peut pas vérifier la sécurité signal quand Y vers le bas
+1010:Y1 vers le bas mais Z n’est pas dans la section sécurité
+1011:Y1 vers le bas mais X1 n’est pas dans la section sécurité
+1012:Les deux position est horizontale
+1013:X2 FW et BW limiter sont à la fois sur
+1014:Y2 vers le HAUT et DW limite sont à la fois sur
+1015:X1 FW et BW limiter sont à la fois sur
+1016:Y1 UP et DW limite sont à la fois sur
+1017:Porte de sécurité est ouvert lors de l’exécution
+1018:Y2 vers le bas mais X1 n’est pas dans la section sécurité
+1019:O.M. signal est éteint quand origine
+1020:Milieu moule signal est éteint quand origine
+1021:Position vertial est hors tension lorsque vous origine
+1022:Position horizontale est éteint quand origine
+1023:Position verticale est éteint quand Z bouge
+1024:Position horizontale est éteint quand Z bouge
+1025:Position-2 est faux quand Y2 vers le bas dans le moule
+1027:fermeture moule non terminer
+1028:Fault clearing
+1029: pas en automatique
+1030:Horizontal position 2 no vertical
+1031:The position is horizontal 2 when traving
+1038:Z n'est pas en out-moule pos lorsque mauvais signal est allumé
+1039:Z n’est pas défini dans UO moule pos lorsque le mauvais signa est activé
+1040:Dernière étape n’est pas action Z
+1052:Limite de Z et Y1 UP sont tous deux hors
+1053:Aucun
+1054:teach X1 action mais pas definier axe X1
+1055:teach Y1 action mais pas definier axe y1
+1056:teach Z action mais pas definier axe Z
+1057:teach X2 action mais pas definier axe X2
+1058:teach Y2 action mais pas definier axe Y2
+1059:teach A action mais pas definier axe A
+1060:teach B action mais pas definier axe B
+1070:teach C action mais pas definier axe C
+1100:Y1 vers le bas mais Z n’est pas dans la section sécurité
+1101:Y1 vers le bas mais Z n’est pas dans la section sécurité
+1102:O.M. signal est éteint quand Y1 vers le bas
+1103:O.M. signal est éteint quand Y2 vers le bas
+1104:Y1 JUSQU'À la limite est allumé quand Y1 vers le bas
+1105:Y2 JUSQU'À la limite est allumé quand Y1 vers le bas
+1106:Limite de Y1 DW est hors tension lorsque vous Y1 vers le bas
+1107:Limite de Y2 DW est hors tension lorsque vous Y1 vers le bas
+1108:Milieu moule signal est éteint quand Y1 vers le bas
+1109:Milieu moule signal est éteint quand Y2 vers le bas
+1120:Signal de sécurité dans le moule est hors tension lorsque vous Y1 Up
+1121:Signal de sécurité dans le moule est hors tension lorsque vous Y2 Up
+1122:Y1 est au-dessus de la vitesse
+1123:Y2 est au-dessus de la vitesse
+1124:O.M. signal est éteint quand Y1 vers le haut
+1125:O.M. signal est éteint quand Y2 vers le haut
+1126:Y1 JUSQU'À la limite est hors tension lorsque vous Y1 vers le haut
+1127:Y2 JUSQU'À la limite est hors tension lorsque vous Y1 vers le haut
+1140:X1 limite de BW est éteint quand X1 vers l’avant
+1141:X2 limite de BW est éteint quand X2 vers l’avant
+1142:X1 BW limite est hors tension lorsque vous X1 vers l’arrière
+1143:X2 BW limite est hors tension lorsque vous X2 vers l’arrière
+1144:X1 limite FW est éteint quand X1 vers l’avant
+1145:X2 limite FW est éteint quand X2 vers l’avant
+1146:X1 limite FW est allumé quand X1 vers l’arrière
+1147:X2 limite FW est allumé quand X2 vers l’arrière
+1160:Y1 UP limit is off when Position-1 change
+1161:Y2 UP limit is off when Position-1 change
+1162O.M. est hors tension lorsque vous changer de position-1
+1163:Limite de horizontal-1 est hors tension lorsque vous trun Position-1 à l’horizontale
+1164:Vertical-1 limite est hors tension lorsque vous trun vertical-1 à l’horizontale
+1165:Z n’est pas dans la section de sécurité lorsque le changement de position
+1170:Limite de Y1 UP est désactivé quand changer de Position-2
+1171:Limite de Y2 UP est désactivé quand changer de Position-2
+1172:O.M. est hors tension lorsque vous changer de position-2
+1173:Limite horizontale-2 est hors tension lorsque vous trun Position-2 à l’horizontale
+1174:Limite verticale-2 est hors tension lorsque vous trun verticale-2 à l’horizontale
+1180:Y1 JUSQU'À la limite est éteint quand Z bouge
+1181:Y2 JUSQU'À la limite est éteint quand Z bouge
+1182:Limite de début de Z est éteint quand Z emménager dans le moule
+1183:Limite de début de Z est éteint quand z sortir
+1184:Position n’est pas sur le chemin quand Z sortir
+1185:O.M. est éteint quand Z bouge
+1186:Limite de Y1 est désactivé lorsque Z passez à la section de sécurité non
+1187:Limite de Y2 est désactivé lorsque Z passez à la section de sécurité non
+1188:Y1 n’est pas dans la section sécurité lorsque Z se déplacent dans la section non-sécurité
+1189:Y1 JUSQU'À la limite est éteint quand Z se déplacent hors de forme à l’intérieur
+1190:Y1 JUSQU'À la limite est éteint quand Z bouge forme à l’intérieur d’extérieur
+1191:Y1 n’est pas dans la section sécurité lorsque Z se déplacent dans la section non-sécurité
+1192:Pos actuels est plus petit que le pos de sécurité mobile
+1193:Pos actuels est plus grand que pos de sécurité mobile
+1194:Y2 n’est pas sur la position haute
+1200:pince 1 vanne sur mais limite pince 1 est hors
+1201:pince 1 vanne est éteint mais limite pince 1 est sur
+1202:pince 2 vanne sur mais limite pince 2 est hors
+1203:pince 2 vanne est éteint mais limite pince 2 est sur
+1204:pince 3 vanne sur mais limite pince 3 est hors
+1205:pince 3 vanne est éteint mais limite pince 3 est sur
+1206:pince 4 vanne sur mais limite pince 4 est hors
+1207:pince 4 vanne est éteint mais limite pince 4 est sur
+1208:vide 1 vanne sur mais limite vide 1 est hors
+1209:vide 1 vanne est éteint mais limite vide 1 est sur
+1210:vide 2 vanne sur mais limite vide 2 est hors
+1211:vide 2 vanne est éteint mais limite vide 2 est sur
+1212:vide 3 vanne sur mais limite vide 2 est hors
+1213:vide 3 vanne est éteint mais limite vide 2 est sur
+1214:vide 4 vanne sur mais limite vide 2 est hors
+1215:vide 4 vanne est éteint mais limite vide 2 est sur
+1250:Ne peut pas vérifier le X037 signal
+1251:Ne peut pas vérifier le X023 signal
+1300:S’il vous plaît vérifier la position d’étape maison
+1301:vérifier la limite Y1 vers le HAUT à l’étape de la maison
+1302:vérifier la limite Y2 vers le HAUT à l’étape de la maison
+1303:vérifier la X1 pos à l’étape de la maison
+1304:vérifier la Y1 pos à l’étape de la maison
+1305:vérifier la Z pos à l’étape de la maison
+1306:vérifier pince 1 à l’étape de la maison
+1307:vérifier pince 2 à l’étape de la maison
+1308:vérifier pince 3 à l’étape de la maison
+1309:vérifier pince 4 à l’étape de la maison
+1310:vérifier vide 1 à l’étape de la maison
+1311:vérifier vide 2 à l’étape de la maison
+1312:vérifier les pos A à l’étape de la maison
+1313:vérifier les pos B à l’étape de la maison
+1314:vérifier les pos C à l’étape de la maison
+1315:vérifier les pos X2 à l’étape de la maison
+1316:vérifier les pos Y2 à l’étape de la maison
+1400:Limite de Y1 UP est désactivé
+1401:Y1 et Y2 ne sont pas sur la dans le moule 
+1402:Y1 et Y2 ne sont pas sur l’out-mold 
+L1403:imite de Y2 UP est désactivé
+2000: Servo défaut, vérifier le lecteur
+2001 Servo surintensité
+2002: Over-tension servo
+2003: basse tension servo
+2004: résistance régénérative anormale
+2005: surcharge Servo
+2006: Servo survitesse
+2007: L'erreur de position est trop grande
+2008: Encoder erreur interne
+2009: Réducteur électronique erreur de réglage du rapport, les positions de correction d'erreur
+2010: Arrêt d'urgence
+2011: isolée fermée transistor bipolaire surchauffe
+2012: les principales anomalies de puissance du circuit
+2013: avertissement pré-surcharge
+2014: Moteur erreur de collision
+2015: UVW erreur de câblage
+2016: boucle fermée erreur de contrôle de position est trop grande
+2017: PDO recevoir trop-plein
+accès exception pdo: 2018
+2019: rythme cardiaque ou la protection de nœud erreur
+2020: can matériel bus exception
+2021: permet de synchroniser l'anomalie de communication
+2022: filtre spécial étant trop élevé
+2023: Attaquant limite servo
+2024: limite inverse Servo
+2100: Servo Fault
+2101: Servo surintensité
+2102: le circuit principal de surtension
+2103: le circuit principal de sous-tension
+2104: Le circuit de sous-tension de commande d'asservissement
+2105: Sortie Servo court-circuit à la masse
+2106: La phase d'avertissement du cordon d'alimentation
+2107: freinage surcharge de la résistance
+2108: Drive avertissement de surcharge
+2109: moteur saut de ligne d'alimentation
+2110: Drive radiateur surchauffe
+2111: Drive échec de stockage de paramètres
+2112: Drive paramètres réglés exception
+2113: blocage du moteur
+2114: Encoder défaut interne
+2115: survitesse
+2116: Drive erreur de position
+impulsion motrice anormale: 2117
+2118: CANopen protection de nœud ou timeout rythme cardiaque
+2119: CANopen PDO erreur de longueur de transmission
+4000: le temps de première instance est en place, s'il vous plaît inscrivez-vous
+

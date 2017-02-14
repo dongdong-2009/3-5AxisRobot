@@ -40,6 +40,8 @@ QString ICConfigString::ConfigString(int configID)
         case kCS_PRD_Product_Clear: return tr("kCS_PRD_Product_Clear");
         case kCS_PRD_Try_number: return tr("kCS_PRD_Try_number");
         case kCS_PRD_Sample_cycle: return tr("kCS_PRD_Sample_cycle");
+    case kCS_PRD_Reclcle_Mode: return tr("kCS_PRD_Reclcle_Mode");
+    case kCS_PRD_Reclcle_Time: return tr("kCS_PRD_Reclcle_Time");
         case kCS_RUN_Tolerance: return tr("kCS_RUN_Tolerance");
         case kCS_RUN_Distance_X1_X2: return tr("kCS_RUN_Distance_X1_X2");
         case kCS_RUN_Acc_Time_X1: return tr("kCS_RUN_Acc_Time_X1");

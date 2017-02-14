@@ -50,10 +50,20 @@ public:
     const QString AlarmChineseInfoPathName;
     const QString AlarmEnglishInfoPathName;
     const QString AlarmSpanishInfoPathName;
+    const QString AlarmNederlandInfoPathName;
+    const QString AlarmFranceInfoPathName;
+    const QString AlarmKoreaInfoPathName;
+
+
 
     const QString HintChInfoPathName;
     const QString HintEnInfoPathName;
     const QString HintEspInfoPathName;
+    const QString HintNederlandInfoPathName;
+    const QString HintFranceInfoPathName;
+    const QString HintKoreaInfoPathName;
+
+
 
 
 signals:

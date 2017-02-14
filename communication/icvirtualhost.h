@@ -658,6 +658,11 @@ public:
 
     bool IsReadProductCount() const { return currentAddr_ > 9;}
 
+    int RecycleMode() const;
+    void SetRecycleMode(int mode);
+    int RecycleTime() const;
+    void SetRecycleTime(int time);
+
 public Q_SLOTS:
     void SetMoldParam(int param, int value);
 Q_SIGNALS:
@@ -1069,6 +1074,32 @@ inline int ICVirtualHost::GetActualPos(ICAxis axis) const
     uint axisLastPos = HostStatus(AxisLastPos1).toUInt() | (HostStatus(AxisLastPos2).toUInt() << 16);
     return GetActualPos(axis, axisLastPos);
 
+}
+
+inline int ICVirtualHost::RecycleMode() const
+{
+    return SystemParameter(SYS_Config_Resv2).toUInt() & 0xF;
+}
+inline void ICVirtualHost::SetRecycleMode(int mode)
+{
+    int v = SystemParameter(SYS_Config_Resv2).toUInt();
+    v &= 0xFFF0;
+    v |= (mode & 0xF);
+    SetSystemParameter(SYS_Config_Resv2, v);
+    isParamChanged_ = true;
+}
+
+inline int ICVirtualHost::RecycleTime() const
+{
+    return SystemParameter(SYS_Config_Resv2).toUInt() >> 4;
+}
+inline void ICVirtualHost::SetRecycleTime(int time)
+{
+    int v = SystemParameter(SYS_Config_Resv2).toUInt();
+    v &= 0x000F;
+    v |= (time << 4);
+    SetSystemParameter(SYS_Config_Resv2, v);
+    isParamChanged_ = true;
 }
 
 #endif // ICVIRTUALHOST_H

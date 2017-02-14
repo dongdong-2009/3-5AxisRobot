@@ -88,6 +88,8 @@ private slots:
     void on_exportCheckBox_clicked();
     void on_importCheckBox_clicked();
     void on_localBox_clicked();
+    void on_searchBtn_clicked();
+    void on_clearBtn_clicked();
 };
 
 #endif // MOLDINFORMATION_H
