@@ -342,12 +342,12 @@ void MoldInformation::UpdateInformationTable()
 
 void MoldInformation::on_newToolButton_clicked()
 {
-    if(ui->destinationFileLineEdit->text().isEmpty())
+    if(ui->destinationFileLineEdit->toPlainText().isEmpty())
     {
         ICMessageBox::ICWarning(this, tr("Warning"), tr("file name is empty"));
         return;
     }
-    QString fileName = ui->destinationFileLineEdit->text() + ".act";
+    QString fileName = ui->destinationFileLineEdit->toPlainText() + ".act";
     if(CreateNewSourceFile(fileName))
     {
         AddNewInTableWidget(fileName, QDateTime::currentDateTime().toString("yyyy/MM/dd hh:mm:ss"));
@@ -359,12 +359,12 @@ void MoldInformation::on_newToolButton_clicked()
 
 void MoldInformation::on_copyToolButton_clicked()
 {
-    if(ui->destinationFileLineEdit->text().isEmpty())
+    if(ui->destinationFileLineEdit->toPlainText().isEmpty())
     {
         ICMessageBox::ICWarning(this, tr("Warning"), tr("file name is empty"));
         return;
     }
-    QString fileName = ui->destinationFileLineEdit->text() + ".act";
+    QString fileName = ui->destinationFileLineEdit->toPlainText() + ".act";
     if(CopySourceFile(ui->sourceFileNameLabel->text(), fileName))
     {
         AddNewInTableWidget(fileName, QDateTime::currentDateTime().toString("yyyy/MM/dd hh:mm:ss"));
@@ -1215,7 +1215,7 @@ void MoldInformation::on_searchBtn_clicked()
     const int rc = ui->informationTableWidget->rowCount();
     for(int i = 0; i < rc; ++i)
     {
-        if(!ui->informationTableWidget->item(i, 0)->text().contains(ui->searchContent->text(), Qt::CaseInsensitive))
+        if(!ui->informationTableWidget->item(i, 0)->text().contains(ui->searchContent->toPlainText(), Qt::CaseInsensitive))
             ui->informationTableWidget->setRowHidden(i, true);
     }
 }
