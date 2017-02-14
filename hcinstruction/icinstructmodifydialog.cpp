@@ -143,6 +143,8 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
     bool isMoldCount = false;
 
 
+
+    ui->customName->setPlainText(item->Comment());
     if(item->IsAction())
     {
         if( item->Action() <= ICMold::GB)
@@ -477,6 +479,7 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
             }
         }
     }
+    item->SetComment(ui->customName->toPlainText());
     return isok;
 }
 

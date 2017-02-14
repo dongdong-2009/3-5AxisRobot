@@ -213,8 +213,10 @@ bool ICMold::ReadMoldFile(const QString &fileName, bool isLoadParams)
     QString itemsContent;
     for(int i = 0; i != records.size(); ++i)
     {
+        moldItem.SetComment("");
         itemsContent = records.at(i);
         items = itemsContent.split(' ', QString::SkipEmptyParts);
+//        qDebug()<<"commentIMtes"<<items;
         if(items.size() > 12)
         {
             QStringList commentItem = items.mid(11);

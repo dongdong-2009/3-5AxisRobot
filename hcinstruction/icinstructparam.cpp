@@ -52,6 +52,9 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
     {
         commandStr += QString::number(moldItem.Num()) + "    " + QString::number(moldItem.SubNum()) + "    ";
     }
+    if(!moldItem.Comment().isEmpty()){
+        commandStr += moldItem.Comment() + ":";
+    }
     //    if(moldItem.GMVal() == 31)
     //    {
     //        return commandStr += actionGroupMap_.value(31);
