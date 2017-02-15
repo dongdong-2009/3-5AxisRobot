@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_CN" sourcelanguage="en_US">
+<TS version="2.0" language="zh_CN" sourcelanguage="en_US">
 <context>
     <name>ActionSettingFrame</name>
     <message>
@@ -5046,7 +5046,7 @@ Reason</source>
         <source>English</source>
         <translation>English</translation>
     </message>
-    <message>
+    <message utf8="true">
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="236"/>
         <source>español</source>
         <translation type="unfinished"></translation>
@@ -5056,12 +5056,12 @@ Reason</source>
         <source>Nederland</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
+    <message utf8="true">
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="306"/>
         <source>française</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
+    <message utf8="true">
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="341"/>
         <source>한국어</source>
         <translation type="unfinished"></translation>
@@ -5326,7 +5326,7 @@ Reason</source>
         <source>Mechanical length</source>
         <translation type="obsolete">机械长度</translation>
     </message>
-    <message>
+    <message utf8="true">
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="163"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="172"/>
         <source>中文</source>
