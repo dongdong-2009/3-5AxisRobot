@@ -49,6 +49,7 @@ ICHCDetectionFrame::ICHCDetectionFrame(QWidget *parent) :
     ui->originPositionBox->setCurrentIndex(host->OriginPosition());
     ui->detectSucker1ComboBox->setCurrentIndex(host->IsCloseMoldEn());
     ui->detectSucker2ComboBox->setCurrentIndex(host->IsAutoSignalUse());
+//    ui->detectIMMComboBox->setCurrentIndex(host->IsOutDownSecurityCheck());
 
 
     connect(ICMold::CurrentMold(),
@@ -81,7 +82,7 @@ ICHCDetectionFrame::ICHCDetectionFrame(QWidget *parent) :
         ++p;
     }
 
-    ui->label_7->hide();
+//    ui->label_7->hide();
     ui->detectIMMComboBox->hide();
 //    ui->downPositionBox->hide();
 //    ui->label_16->hide();
@@ -249,3 +250,7 @@ void ICHCDetectionFrame::OnConfigChanged(int index)
                                                 edit->currentText(),
                                                 edit->itemText(edit->LastValue()));
 }
+//void ICHCDetectionFrame::on_detectIMMComboBox_activated(int index)
+//{
+//    ICVirtualHost::GlobalVirtualHost()->SetOutDownSecurityCheck(index);
+//}

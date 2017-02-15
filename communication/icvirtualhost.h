@@ -479,7 +479,8 @@ public:
         SM_StandBy,  //待机姿势
         SM_TryProduct, //试产
         SM_Sampling, //取样
-        SM_LANGUAGE
+        SM_LANGUAGE,
+        SM_ODST,
     };
 
     enum ICTeachParamAddr
@@ -572,8 +573,10 @@ public:
 
     bool IsPressureCheck() const { return (SystemParameter(SYS_Function).toInt() & 0x00000010) != 0;}
     void SetPressureCheck(bool isCheck);
-    bool IsSecurityCheck() const { return (SystemParameter(SYS_Function).toInt() & 0x00000003) != 0;}
+    bool IsSecurityCheck() const { return (SystemParameter(SYS_Function).toInt() & 0x00000001) != 0;}
     void SetSecurityCheck(bool isCheck);
+    bool IsOutDownSecurityCheck() const { return (SystemParameter(SYS_Function).toInt() & 0x00000002) != 0;}
+    void SetOutDownSecurityCheck(bool isCheck);
     bool IsMidMoldCheck() const {return (SystemParameter(SYS_Function).toInt() & 0x00000004) != 0;}
     void SetMidMoldCheck(bool isCheck);
     bool IsEjectionLink() const { return (SystemParameter(SYS_Function).toInt() & 0x00000040) != 0;}
@@ -900,8 +903,17 @@ inline void ICVirtualHost::SetPressureCheck(bool isCheck)
 inline void ICVirtualHost::SetSecurityCheck(bool isCheck)
 {
     int val = SystemParameter(SYS_Function).toInt();
-    val &= 0xFFFFFFFD;
+    val &= 0xFFFFFFFE;
     (isCheck ? val |=0x00000001 : val&= 0xFFFFFFFE);
+    systemParamMap_.insert(SYS_Function, val);
+    isParamChanged_ = true;
+}
+
+inline void ICVirtualHost::SetOutDownSecurityCheck(bool isCheck)
+{
+    int val = SystemParameter(SYS_Function).toInt();
+    val &= 0xFFFFFFFD;
+    (isCheck ? val |=0x00000002 : val&= 0xFFFFFFFD);
     systemParamMap_.insert(SYS_Function, val);
     isParamChanged_ = true;
 }

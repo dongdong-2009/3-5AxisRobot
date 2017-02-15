@@ -52,6 +52,9 @@ private:
 
 private slots:
     void OnConfigChanged(int index);
+
+//    void on_detectIMMComboBox_activated(int index);
+
 private:
     QMap<QWidget*, int> editorToLogID_;
 };
