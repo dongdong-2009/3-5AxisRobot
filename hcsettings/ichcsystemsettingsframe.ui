@@ -160,7 +160,7 @@ QRadioButton::indicator:unchecked:disabled
 }</string>
            </property>
            <property name="text">
-            <string>中文</string>
+            <string notr="true">中文</string>
            </property>
            <property name="checked">
             <bool>true</bool>
@@ -198,7 +198,7 @@ QRadioButton::indicator:unchecked:disabled
 }</string>
            </property>
            <property name="text">
-            <string>English</string>
+            <string notr="true">English</string>
            </property>
            <attribute name="buttonGroup">
             <string notr="true">languageButtonGroup</string>
@@ -233,7 +233,7 @@ QRadioButton::indicator:unchecked:disabled
 }</string>
            </property>
            <property name="text">
-            <string>español</string>
+            <string notr="true">español</string>
            </property>
            <attribute name="buttonGroup">
             <string notr="true">languageButtonGroup</string>
@@ -268,7 +268,7 @@ QRadioButton::indicator:unchecked:disabled
 }</string>
            </property>
            <property name="text">
-            <string>Nederland</string>
+            <string notr="true">Nederland</string>
            </property>
            <attribute name="buttonGroup">
             <string notr="true">languageButtonGroup</string>
@@ -303,7 +303,7 @@ QRadioButton::indicator:unchecked:disabled
 }</string>
            </property>
            <property name="text">
-            <string>française</string>
+            <string notr="true">française</string>
            </property>
            <attribute name="buttonGroup">
             <string notr="true">languageButtonGroup</string>
@@ -338,7 +338,7 @@ QRadioButton::indicator:unchecked:disabled
 }</string>
            </property>
            <property name="text">
-            <string>한국어</string>
+            <string notr="true">한국어</string>
            </property>
            <attribute name="buttonGroup">
             <string notr="true">languageButtonGroup</string>
@@ -1447,7 +1447,7 @@ QRadioButton::indicator:unchecked:disabled
  <connections/>
  <buttongroups>
   <buttongroup name="programModeGroup"/>
-  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="languageButtonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
  </buttongroups>
 </ui>
