@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="zh_CN" sourcelanguage="en_US">
+<TS version="2.1" language="zh_CN" sourcelanguage="en_US">
 <context>
     <name>ActionSettingFrame</name>
     <message>
@@ -4470,7 +4470,7 @@ Reason</source>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="421"/>
         <location filename="hcsettings/ichcproductsettingframe.cpp" line="237"/>
         <source>Recycle Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>再循环模式</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="273"/>
@@ -4483,25 +4483,25 @@ Reason</source>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="311"/>
         <location filename="hcsettings/ichcproductsettingframe.cpp" line="238"/>
         <source>Recycle Mode-1</source>
-        <translation type="unfinished"></translation>
+        <translation>可锁模后延时关</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="316"/>
         <location filename="hcsettings/ichcproductsettingframe.cpp" line="239"/>
         <source>Recycle Mode-2</source>
-        <translation type="unfinished"></translation>
+        <translation>运行倒等待开模位置</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="321"/>
         <location filename="hcsettings/ichcproductsettingframe.cpp" line="240"/>
         <source>Recycle Mode-3</source>
-        <translation type="unfinished"></translation>
+        <translation>与锁模同步</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="203"/>
         <location filename="hcsettings/ichcproductsettingframe.cpp" line="241"/>
         <source>Recycle-T</source>
-        <translation type="unfinished"></translation>
+        <translation>再循环时间</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="354"/>
@@ -5506,7 +5506,7 @@ Reason</source>
         <source>Mechanical length</source>
         <translation type="obsolete">机械长度</translation>
     </message>
-    <message utf8="true">
+    <message>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="172"/>
         <source>中文</source>
         <translation></translation>
@@ -6612,7 +6612,7 @@ App %1; Host:</source>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="722"/>
         <source>Custom Name</source>
-        <translation type="unfinished"></translation>
+        <translation>自定义名称</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="361"/>
@@ -6698,7 +6698,7 @@ App %1; Host:</source>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.cpp" line="234"/>
         <source>Suck Page</source>
-        <translation type="unfinished"></translation>
+        <translation>吸纸</translation>
     </message>
     <message>
         <source>Return Step</source>
@@ -7976,7 +7976,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="86"/>
         <source>Mold Close App</source>
-        <translation>备用输入9</translation>
+        <translation>型外下降安全信号</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="88"/>
