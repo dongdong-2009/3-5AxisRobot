@@ -4386,29 +4386,8 @@ ve Phase</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="201"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="210"/>
         <source>English</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message utf8="true">
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="236"/>
-        <source>español</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="271"/>
-        <source>Nederland</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message utf8="true">
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="306"/>
-        <source>française</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message utf8="true">
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="341"/>
-        <source>한국어</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4645,7 +4624,6 @@ Admin</translation>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="163"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="172"/>
         <source>中文</source>
         <translation type="unfinished"></translation>
