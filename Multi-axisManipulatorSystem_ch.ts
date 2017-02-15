@@ -4489,7 +4489,7 @@ Reason</source>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="316"/>
         <location filename="hcsettings/ichcproductsettingframe.cpp" line="239"/>
         <source>Recycle Mode-2</source>
-        <translation>运行倒等待开模位置</translation>
+        <translation>运行到等待开模到位处</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="321"/>
@@ -8073,12 +8073,12 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="129"/>
         <source>Sucker3 Valve</source>
-        <translation type="unfinished"></translation>
+        <translation>吸3阀</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="130"/>
         <source>Sucker4 Valve</source>
-        <translation type="unfinished"></translation>
+        <translation>吸4阀</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="134"/>
@@ -8433,7 +8433,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="53"/>
         <source>Sucker3</source>
-        <translation type="unfinished"></translation>
+        <translation>吸3确认限</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="63"/>
@@ -8443,7 +8443,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="75"/>
         <source>Sucker4</source>
-        <translation type="unfinished"></translation>
+        <translation>吸4确认限</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="77"/>

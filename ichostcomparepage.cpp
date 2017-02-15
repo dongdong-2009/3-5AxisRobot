@@ -55,8 +55,13 @@ void ICHostComparePage::on_hostBtn_clicked()
         ICCommunicationCommandBase::ResultVector ret = process->ExecuteCommand(command).value<ICCommunicationCommandBase::ResultVector>();
         if(!ret.isEmpty())
         {
+//            qint16 v = ret.at(1);
+//            QMessageBox::information(this, "test", QString::number(ret.at(1)));
+//            QMessageBox::information(this, "test", QString::number(v));
+//            QMessageBox::information(this, "test1", QString::number(quint32(v)));
+
             host->SetSystemParameter(static_cast<ICVirtualHost::ICSystemParameter>(addr++), ret.at(0));
-            host->SetSystemParameter(static_cast<ICVirtualHost::ICSystemParameter>(addr++), static_cast<qint16>(ret.at(1)));
+            host->SetSystemParameter(static_cast<ICVirtualHost::ICSystemParameter>(addr++), quint32(qint16(ret.at(1))));
             host->SetSystemParameter(static_cast<ICVirtualHost::ICSystemParameter>(addr++), ret.at(2));
             host->SetSystemParameter(static_cast<ICVirtualHost::ICSystemParameter>(addr++), ret.at(3));
             host->SetSystemParameter(static_cast<ICVirtualHost::ICSystemParameter>(addr++), ret.at(4));
