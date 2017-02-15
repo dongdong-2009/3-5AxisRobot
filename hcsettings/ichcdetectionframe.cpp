@@ -82,7 +82,7 @@ ICHCDetectionFrame::ICHCDetectionFrame(QWidget *parent) :
         ++p;
     }
 
-//    ui->label_7->hide();
+    ui->label_7->hide();
     ui->detectIMMComboBox->hide();
 //    ui->downPositionBox->hide();
 //    ui->label_16->hide();
