@@ -56,7 +56,7 @@ void ICHostComparePage::on_hostBtn_clicked()
         if(!ret.isEmpty())
         {
             host->SetSystemParameter(static_cast<ICVirtualHost::ICSystemParameter>(addr++), ret.at(0));
-            host->SetSystemParameter(static_cast<ICVirtualHost::ICSystemParameter>(addr++), ret.at(1));
+            host->SetSystemParameter(static_cast<ICVirtualHost::ICSystemParameter>(addr++), static_cast<qint16>(ret.at(1)));
             host->SetSystemParameter(static_cast<ICVirtualHost::ICSystemParameter>(addr++), ret.at(2));
             host->SetSystemParameter(static_cast<ICVirtualHost::ICSystemParameter>(addr++), ret.at(3));
             host->SetSystemParameter(static_cast<ICVirtualHost::ICSystemParameter>(addr++), ret.at(4));
