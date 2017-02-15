@@ -27,6 +27,8 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
     ui->recycleTimeEdit->setValidator(new QIntValidator(0, 30000, ui->recycleTimeEdit));
     ui->realRecycleTimeEdit->SetDecimalPlaces(1);
     ui->realRecycleTimeEdit->setValidator(new QIntValidator(0, 3000, ui->realRecycleTimeEdit));
+    ui->odst->SetDecimalPlaces(1);
+    ui->odst->setValidator(ui->recycleTimeEdit->validator());
     ICLineEditWrapper *wrapper = new ICLineEditWrapper(ui->productLineEdit,
                                                        ICMold::Product,
                                                        ICLineEditWrapper::Mold,
@@ -63,6 +65,12 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
                                     ICLineEditWrapper::Integer);
     wrappers_.append(wrapper);
 
+    wrapper = new ICLineEditWrapper(ui->odst,
+                                    ICVirtualHost::SM_ODST,
+                                    ICLineEditWrapper::System,
+                                    ICLineEditWrapper::OneFraction);
+    wrappers_.append(wrapper);
+
 //    int currentPos = ICMold::CurrentMold()->MoldParam(ICMold::PosMainDown);
 //    if(currentPos > 1)
 //    {
@@ -83,6 +91,9 @@ ICHCProductSettingFrame::ICHCProductSettingFrame(QWidget *parent) :
 //    ui->fixtureComboBox->setCurrentIndex((ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::SYS_Config_Fixture).toInt() >> 15) & 1);
 //    ui->fixtureComboBox->setCurrentIndex(v);
     ui->getFailWay->setCurrentIndex(ICVirtualHost::GlobalVirtualHost()->GetFailAlarmWay());
+    ui->odstEn->blockSignals(true);
+    ui->odstEn->setChecked(ICVirtualHost::GlobalVirtualHost()->IsOutDownSecurityCheck());
+    ui->odstEn->blockSignals(false);
 
     connect(ICMold::CurrentMold(),
             SIGNAL(MoldNumberParamChanged()),
@@ -313,4 +324,9 @@ void ICHCProductSettingFrame::on_recycleMode_currentIndexChanged(int index)
 void ICHCProductSettingFrame::on_realRecycleTimeEdit_textChanged(const QString &arg1)
 {
     ICVirtualHost::GlobalVirtualHost()->SetRecycleTime(ui->realRecycleTimeEdit->TransThisTextToThisInt());
+}
+
+void ICHCProductSettingFrame::on_odstEn_toggled(bool checked)
+{
+    ICVirtualHost::GlobalVirtualHost()->SetOutDownSecurityCheck(checked);
 }
