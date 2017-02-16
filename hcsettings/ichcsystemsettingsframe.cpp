@@ -110,7 +110,7 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
     editorToConfigIDs_.insert(ui->limitFunctionBox, ICConfigString::kCS_PANEL_Register_Extent);
     ICLogInit
 
-            ui->koreanBox->hide();
+//            ui->koreanBox->hide();
 }
 
 ICHCSystemSettingsFrame::~ICHCSystemSettingsFrame()
