@@ -46,6 +46,8 @@ private:
     Ui::ICInputMethodKeyboard *ui;
     QPlainTextEdit* editor_;
     QSignalMapper signalMapper_;
+    QList<QPushButton*> cnButtons;
+
 };
 
 #endif // ICINPUTMETHODKEYBOARD_H

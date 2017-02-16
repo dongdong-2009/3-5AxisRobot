@@ -4,7 +4,6 @@
 #include <QDebug>
 #include "mainframe.h"
 
-QList<QPushButton*> cnButtons;
 
 ICInputMethodKeyboard::ICInputMethodKeyboard(QWidget *parent) :
     QDialog(parent),
@@ -63,14 +62,15 @@ QString currentPy;
 QStringList matchingList;
 int currentMachingGroup = 0;
 
-QStringList Matching(const QString& py)
+QStringList Matching(const QString& py, int num)
 {
     QStringList ret;
     QSqlQuery query;
 //    query.exec(QString("SELECT DISTINCT HanZi FROM tb_zh_CN_gb2312 WHERE PinYin Like '%0%' ORDER BY Freq DESC LIMIT %1, %2")
 //               .arg(py).arg(currentMachingGroup * cnButtons.size()).arg(cnButtons.size()));
     query.exec(QString("SELECT HanZi FROM tb_zh_CN_gb2312 WHERE PinYin Like '%0%' ORDER BY Freq DESC LIMIT %1, %2")
-               .arg(py).arg(currentMachingGroup * cnButtons.size()).arg(cnButtons.size()));
+               .arg(py).arg(currentMachingGroup * num).arg(num));
+    qDebug()<<"query"<<query.lastQuery();
     while(query.next())
     {
         ret.append(query.value(0).toString());
@@ -106,7 +106,7 @@ void ICInputMethodKeyboard::OnInputButtonClicked(const QString &text)
 //            editor_->insertPlainText(text.toLower());
             currentPy += text;
             ui->pyLabel->setText(currentPy.toLower());
-            matchingList =  Matching(currentPy);
+            matchingList =  Matching(currentPy, cnButtons.size());
             currentMachingGroup = 0;
             if(matchingList.size() > cnButtons.size())
             {
@@ -154,7 +154,7 @@ void ICInputMethodKeyboard::on_btn_bs_clicked()
             matchingList.clear();
         }
         else
-            matchingList =  Matching(currentPy);
+            matchingList =  Matching(currentPy, cnButtons.size());
         ui->pyLabel->setText(currentPy.toLower());
         currentMachingGroup = 0;
         if(matchingList.size() > cnButtons.size())
@@ -201,7 +201,7 @@ void ICInputMethodKeyboard::on_nextGroup_clicked()
 
 //    currentMachingGroup = ++currentMachingGroup % groups;
     ++currentMachingGroup;
-    matchingList = Matching(currentPy);
+    matchingList = Matching(currentPy, cnButtons.size());
     ShowMaching_(matchingList.mid(0, cnButtons.size()));
 }
 
@@ -217,7 +217,7 @@ void ICInputMethodKeyboard::on_upGroup_clicked()
     {
         --currentMachingGroup;
     }
-    matchingList = Matching(currentPy);
+    matchingList = Matching(currentPy, cnButtons.size());
     ShowMaching_(matchingList.mid(0, cnButtons.size()));
 }
 
