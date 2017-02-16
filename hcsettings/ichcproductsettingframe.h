@@ -57,8 +57,6 @@ private slots:
 
     void on_realRecycleTimeEdit_textChanged(const QString &arg1);
 
-    void on_odstEn_toggled(bool checked);
-
 private:
     QMap<QObject*, int> editorToConfigIDs_;
 };
