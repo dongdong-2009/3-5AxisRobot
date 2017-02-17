@@ -120,6 +120,10 @@ public:
     int ProgramMode() { return GetParameter(SystemMachine, QString("ProgramMode"), 1).toInt();}
     void SetProgramMode(int mode) { SaveParameter(SystemMachine, QString("ProgramMode"), mode);}
 
+
+    bool IsAbsServo() { return GetParameter(SystemMachine, QString("IsAbsServo"), false).toBool();}
+    void SetAbsServo(bool isEn) { SaveParameter(SystemMachine, QString("IsAbsServo"), isEn);}
+
 signals:
     void CurrentLanguageChanged();
 

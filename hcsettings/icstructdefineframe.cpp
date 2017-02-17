@@ -6,6 +6,7 @@
 #include "icvirtualhost.h"
 #include "icparameterssave.h"
 #include "icconfigstring.h"
+#include "icactioncommand.h"
 
 #include <QVector>
 //#include "icmessagebox.h"
@@ -198,6 +199,7 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
     ui->odst->setValidator(new QIntValidator(0, 30000, this));
     ui->odstEn->setChecked(ICVirtualHost::GlobalVirtualHost()->IsOutDownSecurityCheck());
     ui->odst->SetThisIntToThisText(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::ACT_GBSUB).toUInt());
+    ui->absServo->setChecked(ICParametersSave::Instance()->IsAbsServo());
     editorToConfigIDs_.insert(ui->x1Box, ICConfigString::kCS_STRUCT_Axis_Define_X1);
     editorToConfigIDs_.insert(ui->y1Box, ICConfigString::kCS_STRUCT_Axis_Define_Y1);
     editorToConfigIDs_.insert(ui->zBox, ICConfigString::kCS_STRUCT_Axis_Define_Z);
@@ -418,6 +420,7 @@ void ICStructDefineFrame::on_saveButton_clicked()
         host->SetSystemParameter(ICVirtualHost::SYS_Config_Xorsum, dataBuffer.at(6));
         host->SetOutDownSecurityCheck(ui->odstEn->isChecked());
         host->SetSystemParameter(ICVirtualHost::ACT_GBSUB, ui->odst->TransThisTextToThisInt());
+        ICParametersSave::Instance()->SetAbsServo(ui->absServo->isChecked());
 //        host->SystemParameter(ICVirtualHost::SYS_Function);
         host->SaveSystemConfig();
 //        ICMessageBox::ICWarning(this, tr("Tips"), tr("Save Sucessfully!"));
@@ -537,3 +540,9 @@ void ICStructDefineFrame::on_fixtureComboBox_currentIndexChanged(int index)
 }
 
 ICLogFunctions(ICStructDefineFrame)
+
+void ICStructDefineFrame::on_originBtn_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteHCCommand(IC::CMD_TurnZero, 0);
+
+}
