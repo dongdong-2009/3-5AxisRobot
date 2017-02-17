@@ -122,6 +122,7 @@ void ICParametersSave::SetLanguage(QLocale::Language language, bool isSync)
     {
         translator_->load("Multi-axisManipulatorSystem_kr");
         //        sysTranslator_->load("qt_es.qm");
+        sysTranslator_->load("qt_ko");
         qApp->installTranslator(sysTranslator_);
     }
         break;

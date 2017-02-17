@@ -340,7 +340,7 @@ QRadioButton::indicator:unchecked:disabled
    <item row="1" column="6">
     <widget class="QLabel" name="label_6">
      <property name="text">
-      <string>Times</string>
+      <string notr="true">s</string>
      </property>
     </widget>
    </item>
@@ -521,14 +521,14 @@ QRadioButton::indicator:unchecked:disabled
  </widget>
  <customwidgets>
   <customwidget>
-   <class>ICLineEditWithVirtualNumericKeypad</class>
-   <extends>QLineEdit</extends>
-   <header>iclineeditwithvirtualnumerickeypad.h</header>
-  </customwidget>
-  <customwidget>
    <class>ICComboBox</class>
    <extends>QComboBox</extends>
    <header>iccombobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ICLineEditWithVirtualNumericKeypad</class>
+   <extends>QLineEdit</extends>
+   <header>iclineeditwithvirtualnumerickeypad.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

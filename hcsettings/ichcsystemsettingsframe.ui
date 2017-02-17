@@ -65,13 +65,13 @@
            </property>
            <property name="minimumSize">
             <size>
-             <width>130</width>
+             <width>180</width>
              <height>40</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>130</width>
+             <width>180</width>
              <height>40</height>
             </size>
            </property>
@@ -1291,13 +1291,13 @@ QRadioButton::indicator:unchecked:disabled
          </property>
          <property name="minimumSize">
           <size>
-           <width>80</width>
+           <width>120</width>
            <height>48</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>80</width>
+           <width>120</width>
            <height>48</height>
           </size>
          </property>
