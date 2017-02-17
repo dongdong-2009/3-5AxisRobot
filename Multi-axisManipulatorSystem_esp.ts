@@ -3722,7 +3722,6 @@ nder</translation>
         <translation>Producto</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="343"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="26"/>
         <location filename="hcsettings/ichcproductsettingframe.cpp" line="216"/>
         <source>Times</source>
