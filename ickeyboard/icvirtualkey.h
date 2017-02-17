@@ -115,8 +115,8 @@ enum ICVirtualKey
     VKEY_PAUSE,
     VKEY_RESTART,
 
-    VKEY_FeedM_ON = 0xB0,
-    VKEY_FeedM_OFF = 0xB1,
+    VKEY_FeedM_ON = 0xBC,
+    VKEY_FeedM_OFF = 0xBD,
 
 };
 

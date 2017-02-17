@@ -22,13 +22,17 @@ ICPeripheryPage::ICPeripheryPage(QWidget *parent) :
     QPushButton * button;
     ICPeripheryParameterEditor* editors = new ICPeripheryParameterEditor[ui->actionWidget->rowCount()];
     ICPeripheryParameterEditor *editor;
-    ioNames_<<tr("Injector   ")<<tr("conveyor  ");
-    onClipToOffClip_.insert(ICMold::ACTCLIP7ON, ICMold::ACTCLIP7OFF);
+    ioNames_<<tr("Injector   ")<<tr("conveyor  ")
+           <<tr("Feed M");
+    onClipToOffClip_.insert(ICMold::ACTCLIP7ON, ICMold::ACTCLIP7ON + 1000);
     onClipToOffClip_.insert(ICMold::ACTCLIP8ON, ICMold::ACTCLIP8OFF);
-    offClipToOnClip_.insert(ICMold::ACTCLIP7OFF, ICMold::ACTCLIP7ON);
+    onClipToOffClip_.insert(ICMold::ACTCLIP7OFF, ICMold::ACTCLIP7OFF + 1000);
+    offClipToOnClip_.insert(ICMold::ICMold::ACTCLIP7ON + 1000, ICMold::ACTCLIP7ON);
     offClipToOnClip_.insert(ICMold::ACTCLIP8OFF, ICMold::ACTCLIP8ON);
+    offClipToOnClip_.insert(ICMold::ACTCLIP7OFF + 1000, ICMold::ACTCLIP7OFF);
 
-    QList<uint> initStatus = onClipToOffClip_.values();
+    QList<uint> initStatus;
+    initStatus<<(ICMold::ACTCLIP7ON + 1000)<<ICMold::ICMold::ACTCLIP8OFF<<(ICMold::ACTCLIP7OFF + 1000);
     //    QIntValidator *validator = new QIntValidator(0, 2000, this);
     for(int i = 0; i != ui->actionWidget->rowCount(); ++i)
     {
@@ -61,6 +65,7 @@ ICPeripheryPage::ICPeripheryPage(QWidget *parent) :
 
     commandKeyMap_.insert(settingButtons_.at(0), qMakePair(static_cast<int>(IC::VKEY_CLIP7ON), static_cast<int>(IC::VKEY_CLIP7OFF)));
     commandKeyMap_.insert(settingButtons_.at(1), qMakePair(static_cast<int>(IC::VKEY_CLIP8ON), static_cast<int>(IC::VKEY_CLIP8OFF)));
+    commandKeyMap_.insert(settingButtons_.at(2), qMakePair(static_cast<int>(IC::VKEY_FeedM_ON), static_cast<int>(IC::VKEY_FeedM_OFF)));
 
     connect(&buttonSignalMapper_,
             SIGNAL(mapped(QWidget*)),
@@ -80,7 +85,8 @@ void ICPeripheryPage::changeEvent(QEvent *e)
     case QEvent::LanguageChange:
         ui->retranslateUi(this);
         ioNames_.clear();
-        ioNames_<<tr("Injector   ")<<tr("conveyor  ");
+        ioNames_<<tr("Injector   ")<<tr("conveyor  ")
+               <<tr("Feed M");
         for(int i = 0; i != settingButtons_.size(); ++i)
         {
             settingButtons_[i]->setText(ioNames_.at(i));
@@ -148,7 +154,17 @@ QList<ICMoldItem> ICPeripheryPage::CreateCommandImpl() const
     {
         if(ui->actionWidget->item(i, 0)->checkState() == Qt::Checked)
         {
-            item.SetClip(buttonToClip_.value(qobject_cast<QAbstractButton*>(ui->actionWidget->cellWidget(i, 1))));
+            int clip = buttonToClip_.value(qobject_cast<QAbstractButton*>(ui->actionWidget->cellWidget(i, 1)));
+            if(clip >= 1000)
+            {
+                item.SetClip(clip - 1000);
+                item.SetIFVal(0);
+            }
+            else
+            {
+                item.SetClip(clip);
+                item.SetIFVal(1);
+            }
             item.SetDVal(editorVector_.at(i)->Delay());
 //            item.SetSVal(editorVector_.at(i)->Times());
             item.SetActualMoldCount(editorVector_.at(i)->Times());

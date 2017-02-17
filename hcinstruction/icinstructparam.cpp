@@ -416,6 +416,12 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             else
                 commandStr += tr("Core2 Out Permit Off") + ": ";
         }
+        else if(action == ICMold::ACTCLIP7ON || action == ICMold::ACTCLIP7OFF)
+        {
+            commandStr += clipGroupMap_.value(action);
+            commandStr += (moldItem.IFVal() == 1 ? tr("ON") : tr("OFF"));
+            commandStr += ": ";
+        }
         else
             commandStr += clipGroupMap_.value(action) + ": ";
         //        commandStr += clipGroupMap_.value(action) + ": ";
