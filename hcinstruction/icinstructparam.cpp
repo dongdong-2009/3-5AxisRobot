@@ -430,8 +430,7 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             if(action == ICMold::ACTCLIP7ON)
                 commandStr += QObject::tr("Times:") + QString::number(moldItem.ActualMoldCount() * 1000) + " ";
             else{
-                if(action != ICMold::ACTCLIP7OFF)
-                    commandStr += QObject::tr("Times:") + QString::number(moldItem.ActualMoldCount()) + " ";
+                commandStr += QObject::tr("Times:") + QString::number(moldItem.ActualMoldCount()) + " ";
             }
         }
         else if(IsStackedAction(action))
