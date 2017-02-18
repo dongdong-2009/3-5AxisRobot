@@ -294,7 +294,7 @@ bool ICInstructModifyDialog::ShowModifyItem(ICMoldItem *item)
     /******************BUG#117****************************/
     else if(item->Clip() == ICMold::ACTCLIP7ON
             || item->Clip() == ICMold::ACTCLIP8ON ||
-            ICMold::ACTCLIP7OFF)
+            item->Clip() == ICMold::ACTCLIP7OFF)
         
     {
         validator->setTop(20000);
