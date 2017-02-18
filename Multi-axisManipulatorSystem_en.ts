@@ -5467,8 +5467,8 @@ ward</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="300"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="316"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="301"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="317"/>
         <source>Times</source>
         <translation type="unfinished">s</translation>
     </message>
