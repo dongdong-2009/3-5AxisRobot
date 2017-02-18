@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_CN" sourcelanguage="en_US">
+<TS version="2.0" language="zh_CN" sourcelanguage="en_US">
 <context>
     <name>ActionSettingFrame</name>
     <message>
@@ -740,7 +740,7 @@
     <message>
         <location filename="hcmanualoperation/hcmanualotherioframe.ui" line="205"/>
         <source>Feed M</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">送料机</translation>
     </message>
 </context>
 <context>
@@ -5511,7 +5511,7 @@ Reason</source>
         <source>Mechanical length</source>
         <translation type="obsolete">机械长度</translation>
     </message>
-    <message>
+    <message utf8="true">
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="172"/>
         <source>中文</source>
         <translation></translation>
@@ -8133,7 +8133,7 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="141"/>
         <source>Y047</source>
-        <translation>Y047</translation>
+        <translation>送料机</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="198"/>
