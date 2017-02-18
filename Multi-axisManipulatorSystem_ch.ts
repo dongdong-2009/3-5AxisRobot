@@ -6710,8 +6710,8 @@ App %1; Host:</source>
         <translation type="obsolete">返回步号</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="304"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="320"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="305"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="321"/>
         <source>Times</source>
         <translation>间隔模数</translation>
     </message>

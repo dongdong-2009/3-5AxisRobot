@@ -5789,8 +5789,8 @@ de eje B</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="304"/>
-        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="320"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="305"/>
+        <location filename="hcinstruction/icinstructmodifydialog.cpp" line="321"/>
         <source>Times</source>
         <translation type="unfinished">s</translation>
     </message>
