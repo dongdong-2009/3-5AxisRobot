@@ -24,7 +24,7 @@ HCManualOtherIOFrame::HCManualOtherIOFrame(QWidget *parent) :
 
     wrapper = new ICCommandKeyWrapper(ui->onFeedMButton, IC::VKEY_FeedM_ON);
     wrappers_.append(wrapper);
-    wrapper = new ICCommandKeyWrapper(ui->offFeedMButton, IC::VKEY_FeedM_ON);
+    wrapper = new ICCommandKeyWrapper(ui->offFeedMButton, IC::VKEY_FeedM_OFF);
     wrappers_.append(wrapper);
 
 
