@@ -80,6 +80,7 @@ QStringList Matching(const QString& py, int num)
 
 void ICInputMethodKeyboard::on_btn_ent_clicked()
 {
+    editor_->setPlainText(ui->plainTextEdit->toPlainText());
     this->accept();
 }
 
@@ -89,18 +90,18 @@ void ICInputMethodKeyboard::OnInputButtonClicked(const QString &text)
     if(ui->btn_shift->isChecked())
     {
         if(text.at(0).isDigit())
-            editor_->insertPlainText(text);
+            ui->plainTextEdit->insertPlainText(text);
         else if(text.size() > 1)
-            editor_->insertPlainText(text.left(1));
+            ui->plainTextEdit->insertPlainText(text.left(1));
         else
-            editor_->insertPlainText(text.toUpper());
+            ui->plainTextEdit->insertPlainText(text.toUpper());
     }
     else
     {
         if(text.at(0).isDigit())
-            editor_->insertPlainText(text);
+            ui->plainTextEdit->insertPlainText(text);
         else if(text.size() > 1)
-            editor_->insertPlainText(text.right(1));
+            ui->plainTextEdit->insertPlainText(text.right(1));
         else if(IsChEn_())
         {
 //            editor_->insertPlainText(text.toLower());
@@ -120,7 +121,7 @@ void ICInputMethodKeyboard::OnInputButtonClicked(const QString &text)
         }
         else
         {
-            editor_->insertPlainText(text.toLower());
+            ui->plainTextEdit->insertPlainText(text.toLower());
         }
     }
 }
@@ -171,13 +172,13 @@ void ICInputMethodKeyboard::on_btn_bs_clicked()
         QKeyEvent *e = new QKeyEvent(QKeyEvent::KeyPress,
                                      Qt::Key_Backspace,
                                      Qt::NoModifier);
-        qApp->postEvent(editor_, e);
+        qApp->postEvent(ui->plainTextEdit, e);
     }
 }
 
 void ICInputMethodKeyboard::on_btn_space_clicked()
 {
-    editor_->insertPlainText(" ");
+    ui->plainTextEdit->insertPlainText(" ");
 }
 
 void ICInputMethodKeyboard::ShowMaching_(const QStringList &texts)
@@ -224,7 +225,7 @@ void ICInputMethodKeyboard::on_upGroup_clicked()
 void ICInputMethodKeyboard::OnCnButtonClicked()
 {
     QPushButton *btn = qobject_cast<QPushButton*>(sender());
-    editor_->insertPlainText(btn->text());
+    ui->plainTextEdit->insertPlainText(btn->text());
     QSqlQuery query;
     query.exec(QString("UPDATE tb_zh_CN_gb2312 SET Freq = Freq + 1 WHERE HanZi = '%1' AND PinYin = '%2'")
                .arg(btn->text()).arg(currentPy.toLower()));
