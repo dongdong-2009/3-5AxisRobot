@@ -31,6 +31,7 @@ private slots:
 protected:
     void keyPressEvent(QKeyEvent* e);
     void keyReleaseEvent(QKeyEvent* e);
+    void changeEvent(QEvent *);
 
 private:
     Ui::icactionsix *ui;

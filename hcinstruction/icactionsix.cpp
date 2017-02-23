@@ -59,6 +59,18 @@ void icactionsix::on_DownButton_clicked()
     QKeyEvent* ke = new QKeyEvent(QEvent::KeyPress,Qt::Key_N,Qt::NoModifier);
     qApp->postEvent(icMainFrame, ke);
 }
+
+void icactionsix::changeEvent(QEvent *e)
+{
+    QWidget::changeEvent(e);
+    switch (e->type()) {
+    case QEvent::LanguageChange:
+        ui->retranslateUi(this);
+        break;
+    default:
+        break;
+    }
+}
 void icactionsix::keyPressEvent(QKeyEvent *e)
 {
     QKeyEvent* ke = new QKeyEvent(*e);
