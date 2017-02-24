@@ -42,7 +42,6 @@ public:
 
 protected:
     virtual QVariant Send(modbus_param_t *modbusParam) = 0;
-
 protected:
     void SetSendError(bool statu) { isSendError_ = statu;}
     QRegExp BuildArgRegExp(const QString &flag) const;

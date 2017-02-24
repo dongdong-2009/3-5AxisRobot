@@ -7211,259 +7211,266 @@ Please enter an digit between </source>
         <translation>安全点</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="337"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="433"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="391"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="246"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="248"/>
         <source>Mechanical length</source>
         <translation>机械长度</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="318"/>
-        <location filename="hcsettings/icmachinestructpage.ui" line="363"/>
-        <location filename="hcsettings/icmachinestructpage.ui" line="408"/>
-        <location filename="hcsettings/icmachinestructpage.ui" line="479"/>
-        <location filename="hcsettings/icmachinestructpage.ui" line="524"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="344"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="382"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="510"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="529"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="555"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="593"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="420"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="468"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="516"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="564"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="612"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="241"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="242"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="243"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="244"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="245"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="246"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="247"/>
         <source>mm</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="382"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="484"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="439"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="268"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="281"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="296"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="310"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="322"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="270"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="286"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="303"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="320"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="335"/>
         <source>Maximum displacement</source>
         <translation>最大移动</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="427"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="325"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="487"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="293"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="300"/>
         <source>Internal security zone</source>
         <translation>型内安全区</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="453"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="363"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="535"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="294"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="301"/>
         <source>External security zone</source>
         <translation>型外安全区</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="498"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="574"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="583"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="247"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="249"/>
         <source>Distance/Rotation</source>
         <translation>每转距离</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="549"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="414"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="637"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="625"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="651"/>
         <source>Save</source>
         <translation>保存</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="559"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="465"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="305"/>
+        <source>Minimum displacement</source>
+        <translation type="unfinished">Z最小</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icmachinestructpage.ui" line="610"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="647"/>
         <source>Test Feedback</source>
         <translation>测试反馈</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="571"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="622"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="665"/>
         <source>Test</source>
         <translation>测试</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="585"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="636"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="688"/>
         <source>Feedback</source>
         <translation>反馈</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="599"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="650"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="711"/>
         <source>Z Signal</source>
         <translation>Z信号</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="627"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="678"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="751"/>
         <source>+Test</source>
         <translation>电机正转</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="646"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="697"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="770"/>
         <source>-Test</source>
         <translation>电机反转</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.ui" line="665"/>
+        <location filename="hcsettings/icmachinestructpage.ui" line="716"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="789"/>
         <source>Clear</source>
         <translation>清除测试</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="24"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="81"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="83"/>
         <source>X1 Axis</source>
         <oldsource>X Axis</oldsource>
         <translation>X1轴</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="25"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="82"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="84"/>
         <source>Y1 Axis</source>
         <oldsource>Y Axis</oldsource>
         <translation>Y1轴</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="26"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="83"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="85"/>
         <source>Z Axis</source>
         <translation>Z轴</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="27"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="84"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="86"/>
         <source>X2 Axis</source>
         <translation>X2轴</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="28"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="85"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="87"/>
         <source>Y2 Axis</source>
         <translation>Y2轴</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="29"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="86"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="88"/>
         <source>A Axis</source>
         <translation>A轴</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="30"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="87"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="89"/>
         <source>B Axis</source>
         <translation>B轴</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="31"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="88"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="90"/>
         <source>C Axis</source>
         <translation>C轴</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="32"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="89"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="91"/>
         <source>Struct Define</source>
         <translation>结构</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="33"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="90"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="92"/>
         <source>Time</source>
         <translation>时间</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="265"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="307"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="267"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="317"/>
         <source>Min pos inside mold</source>
         <translation>模内下降最小位置</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="266"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="308"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="268"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="318"/>
         <source>Max pos inside mold</source>
         <translation>模内下降最大位置</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="278"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="319"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="283"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="332"/>
         <source>Max standby pos</source>
         <translation>最大待机位置</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="279"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="320"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="284"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="333"/>
         <source>Leave origin pos</source>
         <translation>离开原点位置</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="336"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="363"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="388"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="352"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="382"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="410"/>
         <source>Transever security zone(Less)</source>
         <translation>横行安全范围(小于)</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="337"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="364"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="389"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="353"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="383"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="411"/>
         <source>Transever security zone(Lagger)</source>
         <translation>横行安全范围(大于)</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="338"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="339"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="340"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="341"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="342"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="365"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="366"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="367"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="368"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="369"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="398"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="399"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="400"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="401"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="402"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="354"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="355"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="356"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="357"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="358"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="384"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="385"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="386"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="387"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="388"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="420"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="421"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="422"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="423"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="424"/>
         <source>degree</source>
         <translation>度</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="343"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="370"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="403"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="359"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="389"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="425"/>
         <source>Max Rotate</source>
         <translation>最大旋转</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="344"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="371"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="404"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="360"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="390"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="426"/>
         <source>Machine Per</source>
         <translation>电机每圈</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="352"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="379"/>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="397"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="368"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="398"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="419"/>
         <source>Origin Offset</source>
         <translation>原点偏置</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="623"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="649"/>
         <source>Information</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="hcsettings/icmachinestructpage.cpp" line="623"/>
+        <location filename="hcsettings/icmachinestructpage.cpp" line="649"/>
         <source>Save Successfully!</source>
         <translation>保存成功!</translation>
     </message>
@@ -9398,7 +9405,8 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="14"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="247"/>
         <source>Form</source>
-        <translation>组合动作选择</translation>
+        <translatorcomment>原点复归</translatorcomment>
+        <translation type="unfinished">组合动作选择</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1534"/>
@@ -9489,7 +9497,7 @@ Please enter an digit between </source>
         <translation type="obsolete">需上升和下降限位</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2260"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2267"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2195"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="355"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="426"/>
@@ -9850,7 +9858,7 @@ Please enter an digit between </source>
         <translation>关门停止</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2206"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2209"/>
         <source>ODST</source>
         <translation>型外下降安全</translation>
     </message>
@@ -9858,6 +9866,11 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.ui" line="2219"/>
         <source>s</source>
         <translation></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2226"/>
+        <source>Origin Return</source>
+        <translation type="unfinished">原点复归</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="999"/>

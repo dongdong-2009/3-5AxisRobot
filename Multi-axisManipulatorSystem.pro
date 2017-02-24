@@ -19,7 +19,7 @@ SK_SIZE = 8
 HostType = n
 
 #DEFINES += HC_TEST
-#DEFINES += Compatible6410
+DEFINES += Compatible6410
 #DEFINES += HC_4F2S
 #DEFINES += HC_10M
 #DEFINES += X1_BAD_FUNC

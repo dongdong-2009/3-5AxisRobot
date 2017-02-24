@@ -1047,7 +1047,6 @@ void ICVirtualHost::InitAddrToSysPosMap_()
     moldParamToAddrPos_.insert(ICMold::TryProduct, SM_TryProduct); //试产
     moldParamToAddrPos_.insert(ICMold::Sampling, SM_Sampling); //取样
     //    moldParamToAddrPos_.insert(ICMold::)
-
     //    addrToSysPos_.insert(SM_MAINUP, ACT_MainUp);			//主上限制
     //    addrToSysPos_.insert(SM_MAINDOWN, ACT_MainDown);		//主下限制
     //    addrToSysPos_.insert(SM_MAININ, ACT_MainBackward);			//主入限制

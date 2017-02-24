@@ -207,7 +207,7 @@ void ICKeyboardHandler::Keypressed(int keyValue)
         //            commandProcessor->ExecuteVirtualKeyCommand(virtualKeyMap_.value(keyValue));
         if(commandProcessor->ExecuteHCCommand(IC::CMD_TurnZero, virtualKeyMap_.value(keyValue)))
         {
-            //                icMainFrame->ShowOrigin();
+//                            icMainFrame->ShowOrigin();
         }
     }
         break;

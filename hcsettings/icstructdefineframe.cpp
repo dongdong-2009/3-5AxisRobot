@@ -6,6 +6,8 @@
 #include "icvirtualhost.h"
 #include "icparameterssave.h"
 #include "icconfigstring.h"
+#include "icvirtualkey.h"
+#include "icactioncommand.h"
 
 #include <QVector>
 //#include "icmessagebox.h"
@@ -302,6 +304,7 @@ void ICStructDefineFrame::retranslateUi_()
     ui->label_28->setText(tr("In Mold Limit"));
     ui->fixtureComboBox->setItemText(0, tr("Limit"));
     ui->fixtureComboBox->setItemText(1, tr("NoLimit"));
+    ui->originButton->setText(tr("Origin Return"));
 
 
 
@@ -533,3 +536,16 @@ void ICStructDefineFrame::on_fixtureComboBox_currentIndexChanged(int index)
 }
 
 ICLogFunctions(ICStructDefineFrame)
+
+
+void ICStructDefineFrame::on_originButton_clicked()
+{
+    static ICVirtualHost* virtualHost = ICVirtualHost::GlobalVirtualHost();
+    uint status = virtualHost->CurrentStatus();
+    if(status != ICVirtualHost::Stop) return;
+    ICCommandProcessor* commandProcessor = ICCommandProcessor::Instance();
+    if(commandProcessor->ExecuteHCCommand(IC::CMD_TurnZero,0))
+    {
+//        icMainFrame->ShowOrigin();
+    }
+}

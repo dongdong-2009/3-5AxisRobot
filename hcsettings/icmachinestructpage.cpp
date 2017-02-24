@@ -61,7 +61,9 @@ ICMachineStructPage::ICMachineStructPage(QWidget *parent) :
     editorToConfigIDs_.insert(ui->distanceRotationEdit, ICConfigString::kCS_AXIS_Rotate_X1);
 
     ui->pushButton->hide();
-
+    ui->minimumDisplacementLineEdit->SetDecimalPlaces(1);
+    ui->minimumDisplacementLineEdit->SetThisIntToThisText(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::ACT_Z_Sec1).toUInt());
+    ui->minimumDisplacementLineEdit->setValidator(ui->maximumDisplacementLineEdit->validator());
     ICLogInit
             axisDefine_ = -1;
 }
@@ -266,6 +268,9 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
         maxText = tr("Max pos inside mold");
         ui->distanceRotationEdit->SetDecimalPlaces(2);      
         ui->label_2->setText(tr("Maximum displacement"));
+        ui->label_9->hide();
+        ui->label_10->hide();
+        ui->minimumDisplacementLineEdit->hide();
 
     }
     else if(currentAxis_ == ICVirtualHost::ICAxis_AxisY1)
@@ -281,7 +286,9 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
         ui->label_2->setText(tr("Maximum displacement"));
         minSecValidator_->setBottom(10);
         maxSecValidator_->setBottom(500);
-
+        ui->label_9->hide();
+        ui->label_10->hide();
+        ui->minimumDisplacementLineEdit->hide();
     }
     else if(currentAxis_ == ICVirtualHost::ICAxis_AxisZ)
     {
@@ -295,7 +302,10 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
         ui->distanceRotationEdit->SetDecimalPlaces(2);
         ui->label_2->setText(tr("Maximum displacement"));
         minSecValidator_->setBottom(1);
-
+        ui->label_9->setText(tr("Minimum displacement"));
+        ui->label_9->show();
+        ui->label_10->show();
+        ui->minimumDisplacementLineEdit->show();
     }
     else if(currentAxis_ == ICVirtualHost::ICAxis_AxisX2)
     {
@@ -308,6 +318,9 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
         maxText = tr("Max pos inside mold");
         ui->distanceRotationEdit->SetDecimalPlaces(2);
         ui->label_2->setText(tr("Maximum displacement"));
+        ui->label_9->hide();
+        ui->label_10->hide();
+        ui->minimumDisplacementLineEdit->hide();
     }
     else if(currentAxis_ == ICVirtualHost::ICAxis_AxisY2)
     {
@@ -322,6 +335,9 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
         ui->label_2->setText(tr("Maximum displacement"));
         minSecValidator_->setBottom(10);
         maxSecValidator_->setBottom(500);
+        ui->label_9->hide();
+        ui->label_10->hide();
+        ui->minimumDisplacementLineEdit->hide();
 
     }
     else if(currentAxis_ == ICVirtualHost::ICAxis_AxisA)
@@ -350,6 +366,9 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
 //        maximumValidator_->setBottom(-900);
         ui->maximumDisplacementLineEdit->setValidator(originValidator_);
         ui->label_2->setText(tr("Origin Offset"));
+        ui->label_9->hide();
+        ui->label_10->hide();
+        ui->minimumDisplacementLineEdit->hide();
     }
     else if(currentAxis_ == ICVirtualHost::ICAxis_AxisB)
     {
@@ -377,6 +396,9 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
 //        maximumValidator_->setBottom(-900);
         ui->maximumDisplacementLineEdit->setValidator(originValidator_);
         ui->label_2->setText(tr("Origin Offset"));
+        ui->label_9->hide();
+        ui->label_10->hide();
+        ui->minimumDisplacementLineEdit->hide();
     }
     else if(currentAxis_ == ICVirtualHost::ICAxis_AxisC)
     {
@@ -402,6 +424,9 @@ void ICMachineStructPage::SetCurrentAxis(int axis)
         ui->label_11->setText(tr("degree"));
         ui->label->setText(tr("Max Rotate")); //最大旋转
         ui->label_8->setText(tr("Machine Per")); //电机每圈
+        ui->label_9->hide();
+        ui->label_10->hide();
+        ui->minimumDisplacementLineEdit->hide();
     }
     else
     {
@@ -619,6 +644,7 @@ void ICMachineStructPage::on_saveToolButton_clicked()
     {
         ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
         host->SaveAxisParam(currentAxis_);
+        host->SetSystemParameter(ICVirtualHost::ACT_Z_Sec1, ui->minimumDisplacementLineEdit->TransThisTextToThisInt());
         //        host->ReConfigure();
         ICMessageBox::ICWarning(this, tr("Information"), tr("Save Successfully!"));
         //        UpdateAxisDefine_();
