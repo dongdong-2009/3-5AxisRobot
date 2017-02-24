@@ -34,7 +34,9 @@ for ct in zhNameToContextMap:
         enMessages = enNameToContextMap[ct]
     for source in zhMessages:
         zhMessage = zhMessages[source]
-        enMessage = enMessages[source]
+        #print(source, zhMessage)
+        if source in enMessages:
+            enMessage = enMessages[source]
         enTr = enMessage["tr"]
         zhTr = zhMessage["tr"]
         toWriteSource = '"' + zhMessage["source"] + '"'

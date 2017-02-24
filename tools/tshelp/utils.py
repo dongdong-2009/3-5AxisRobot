@@ -15,7 +15,7 @@ def buildData(contexts):
             else:
                 type = ""
             if type != "obsolete":
-                source = m.find("source").text
+                source = str(m.find("source").text)
                 lineToMessageMap[source] = {"source":source, "tr":tr}
         ret[ct.find("name").text] = lineToMessageMap
     #print(ret)
