@@ -57,6 +57,7 @@ void ICParametersSave::SaveParameter(const QString & group,const QString & key, 
     {
         this->sync();
         ::system("sync");
+//        ::sync();
     }
 }
 

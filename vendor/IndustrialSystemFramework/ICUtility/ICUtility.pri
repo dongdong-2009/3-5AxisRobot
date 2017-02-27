@@ -10,7 +10,8 @@ SOURCES += $$PWD/icutility.cpp \
     $$PWD/icpic32uartbootloaderprotocol.cpp \
     $$PWD/icalarmclock.cpp \
     $$PWD/icregister.cpp \
-    $$PWD/iccommonappsettings.cpp
+    $$PWD/iccommonappsettings.cpp \
+    $$PWD/icsettings.cpp
 
 HEADERS += $$PWD/icutility.h\
         $$PWD/ICUtility_global.h \
@@ -24,5 +25,6 @@ HEADERS += $$PWD/icutility.h\
     $$PWD/icpic32uartbootloaderprotocol.h \
     $$PWD/icalarmclock.h \
     $$PWD/icregister.h \
-    $$PWD/iccommonappsettings.h
+    $$PWD/iccommonappsettings.h \
+    $$PWD/icsettings.h
 
