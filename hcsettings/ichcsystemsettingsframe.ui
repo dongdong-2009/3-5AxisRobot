@@ -40,7 +40,7 @@
       <enum>QTabWidget::Rounded</enum>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>2</number>
      </property>
      <widget class="QWidget" name="systemSettingPage">
       <attribute name="title">
@@ -866,7 +866,7 @@ QRadioButton::indicator:unchecked:disabled
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>150</y>
+         <y>200</y>
          <width>641</width>
          <height>141</height>
         </rect>
@@ -974,6 +974,16 @@ QRadioButton::indicator:unchecked:disabled
           </property>
          </widget>
         </item>
+        <item row="4" column="1">
+         <widget class="ICLineEditWithVirtualNumericKeypad" name="factoryCode">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
         <item row="3" column="1">
          <widget class="ICLineEditWithVirtualKeyboard" name="supperPwdEdit">
           <property name="enabled">
@@ -997,16 +1007,6 @@ QRadioButton::indicator:unchecked:disabled
           </property>
           <property name="text">
            <string>Factory Code:</string>
-          </property>
-         </widget>
-        </item>
-        <item row="4" column="1">
-         <widget class="ICLineEditWithVirtualNumericKeypad" name="factoryCode">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
           </property>
          </widget>
         </item>
@@ -1053,7 +1053,7 @@ QRadioButton::indicator:unchecked:disabled
          <x>9</x>
          <y>9</y>
          <width>311</width>
-         <height>141</height>
+         <height>166</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_2">
@@ -1173,8 +1173,63 @@ QRadioButton::indicator:unchecked:disabled
           </property>
          </widget>
         </item>
+        <item row="4" column="1">
+         <widget class="QCheckBox" name="limitMaxSpeedBox">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+          </property>
+          <property name="text">
+           <string>Use</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="maxSpeedLabel">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Max Speed 200</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
        </layout>
       </widget>
+      <zorder>registerContainer</zorder>
+      <zorder>layoutWidget</zorder>
+      <zorder>limitMaxSpeedBox</zorder>
+      <zorder>maxSpeedLabel</zorder>
+      <zorder>limitMaxSpeedBox</zorder>
+      <zorder>limitMaxSpeedBox</zorder>
+      <zorder>maxSpeedLabel</zorder>
      </widget>
      <widget class="QWidget" name="tab">
       <attribute name="title">

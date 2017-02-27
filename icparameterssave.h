@@ -76,6 +76,9 @@ public:
     bool IsExtentFunctionUsed() {return GetParameter(SystemMachine, "AdminSettings", false).toBool();}
     void SetExtentFunctionUsed(bool isUsed, bool isSync = true) {SaveParameter(SystemMachine, "AdminSettings", isUsed, isSync);}
 
+    bool IsLimitMaxSpeedOn() { return GetParameter(SystemMachine, "MaxSpeed", false).toBool();}
+    void LimitMaxSpeed(bool isUsed, bool isSync = true) {SaveParameter(SystemMachine, "MaxSpeed", isUsed, isSync);}
+
     uint BackLightTime() { return GetParameter(ProductConfig, "BackLight", 5).toUInt();}
     void SetBackLightTime(uint time) { SaveParameter(ProductConfig, "BackLight", time);}
 

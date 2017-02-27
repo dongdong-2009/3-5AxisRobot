@@ -540,9 +540,6 @@ ICLogFunctions(ICStructDefineFrame)
 
 void ICStructDefineFrame::on_originButton_clicked()
 {
-    static ICVirtualHost* virtualHost = ICVirtualHost::GlobalVirtualHost();
-    uint status = virtualHost->CurrentStatus();
-    if(status != ICVirtualHost::Stop) return;
     ICCommandProcessor* commandProcessor = ICCommandProcessor::Instance();
     if(commandProcessor->ExecuteHCCommand(IC::CMD_TurnZero,0))
     {

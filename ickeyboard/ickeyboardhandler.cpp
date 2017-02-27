@@ -160,9 +160,15 @@ void ICKeyboardHandler::Keypressed(int keyValue)
             }
             if(currentSpeed > 200)
             {
-                currentSpeed = 200;
+                if(ICParametersSave::Instance()->IsLimitMaxSpeedOn())
+                {
+                    currentSpeed = 200;
+                }
+                else
+                {
+                    currentSpeed = 100;
+                }
             }
-
             host->SetGlobalSpeed(currentSpeed);
             host->SetTuneSpeed(true);
         }
