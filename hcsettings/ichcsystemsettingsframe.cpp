@@ -997,9 +997,38 @@ void ICHCSystemSettingsFrame::on_clearButton_clicked()
     ui->oldPwdEdit->clear();
 }
 
+
 void ICHCSystemSettingsFrame::on_limitFunctionBox_toggled(bool checked)
 {
     ICParametersSave::Instance()->SetRegisterFunction(checked);
+    qDebug()<<ICParametersSave::Instance();
+
+
+//    icset.beginGroup("www");
+//    icset.setValue("aaa","xxx");
+//    icset.setValue("bbb","xxx");
+//    icset.setValue("ccc","xxx");
+//    icset.endGroup();
+
+//    icset.beginGroup("qqq");
+//    icset.setValue("aaa","zzz");
+//    icset.setValue("bbb","zzz");
+//    icset.setValue("ccc","zzz");
+//    icset.endGroup();
+//    QVariant test;
+//    icset.beginGroup("www");
+//    test=icset.value("aaa");
+//    test=icset.value("bbb");
+//    test=icset.value("ccc");
+//    icset.endGroup();
+
+//    icset.beginGroup("qqq");
+//    test=icset.value("aaa")
+//    test=icset.value("bbb");
+//    test=icset.value("ccc");
+//    icset.endGroup();
+
+//    icset->sync();
 }
 
 void ICHCSystemSettingsFrame::on_generateBtn_clicked()
