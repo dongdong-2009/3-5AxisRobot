@@ -5077,7 +5077,7 @@ Reason</source>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="598"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="471"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="287"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="288"/>
         <source>Save</source>
         <translation>保存</translation>
     </message>
@@ -5436,141 +5436,141 @@ Reason</source>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="148"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="221"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="295"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="296"/>
         <source>Key Tone(ON)</source>
         <translation>按键音(开)</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="155"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="226"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="302"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="303"/>
         <source>Key Tone(OFF)</source>
         <translation>按键音(关)</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="284"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="285"/>
         <source>Set to %1</source>
         <translation>设为%1</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="297"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="298"/>
         <source>ON</source>
         <translation>开</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="304"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="305"/>
         <source>OFF</source>
         <translation>关</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="316"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="343"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="440"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="444"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="317"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="344"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="442"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="446"/>
         <source>Information</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="317"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="318"/>
         <source>Please enter the old password and new password!</source>
         <oldsource>Please enter the olp password and new password!</oldsource>
         <translation>请输入旧密码和新密码！</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="335"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="399"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="421"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="483"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="526"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="560"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="709"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="873"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1079"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="336"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="401"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="423"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="485"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="528"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="562"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="711"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="875"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1081"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="336"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="337"/>
         <source>Old password is wrong!</source>
         <translation>旧密码错误！</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="344"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="345"/>
         <source>Change password successfully!</source>
         <translation>变更密码成功!</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="399"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="421"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="483"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="526"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="560"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="709"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="401"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="423"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="485"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="528"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="562"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="711"/>
         <source>USB is not connected!</source>
         <translation>没有检测到U盘！</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="402"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="424"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="489"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="404"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="426"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="491"/>
         <source>Backuping, please wait...</source>
         <translation>备份中，请稍后...</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="440"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="442"/>
         <source>Operation finished!</source>
         <translation>操作完成！</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="444"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="446"/>
         <source>Operation fail!</source>
         <translation>操作失败！</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="529"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="563"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="714"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="531"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="565"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="716"/>
         <source>Restoring, please wait...</source>
         <translation>还原中，请稍后...</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="539"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="571"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="541"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="573"/>
         <source>Backup files is broken!</source>
         <translation>备份文件不完整！</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="752"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="765"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="772"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="794"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="924"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="929"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="951"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="956"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="968"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="979"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="754"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="767"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="774"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="796"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="926"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="931"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="953"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="958"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="970"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="981"/>
         <source>Warnning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="752"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="754"/>
         <source>%1 wrong program format! Will skip this record!</source>
         <translation>%1 错误的程序格式！将会跳过这个模号！</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="765"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="772"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="767"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="774"/>
         <source>%1 wrong config format! Will skip this record!</source>
         <translation>%1 错误的程序参数！将会跳过这个模号！</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="794"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="796"/>
         <source>%1 wrong program format! Will skip this sub!</source>
         <translation>%1 错误的程序格式！将会跳过这个子程序！</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="867"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="869"/>
         <source>
 App %1; Host:</source>
         <oldsource>App %1; Host:</oldsource>
@@ -5578,45 +5578,45 @@ App %1; Host:</source>
 手控版本:%1;主控版本:</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="878"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="880"/>
         <source>Recal</source>
         <translation>重新校准</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="895"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="897"/>
         <source>Tune down to %1</source>
         <translation>调小到%1</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="909"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="911"/>
         <source>Tune up to %1</source>
         <translation>调大到%1</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1028"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1034"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1030"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1036"/>
         <source>Wrong Register Code!</source>
         <translation>注册码错误！</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1040"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1042"/>
         <source>Register Success!</source>
         <translation>注册成功！</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="266"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1043"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="267"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1045"/>
         <source>No Limit</source>
         <translation>无限制</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="270"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1047"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="271"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1049"/>
         <source>hour</source>
         <translation>小时</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1080"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1082"/>
         <source>The system will be for storage to repair ! Do you want to continue?</source>
         <translation>系统会进行存储修复，确定要继续吗？</translation>
     </message>
@@ -5653,25 +5653,25 @@ App %1; Host:</source>
         <translation type="obsolete">离开原点位置</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="874"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="876"/>
         <source>The system will be reboot to calibrate! Do you want to continue?</source>
         <translation>系统需要重启来校准屏幕!要继续吗?</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="924"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="929"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="926"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="931"/>
         <source>Wrong system config format!</source>
         <translation>错误的系统参数格式！</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="951"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="956"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="953"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="958"/>
         <source>Wrong Axis config format!</source>
         <translation>错误的轴参数格式！</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="968"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="979"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="970"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="981"/>
         <source>Wrong Rotation config format!</source>
         <translation>错误的每转距离参数格式！</translation>
     </message>
