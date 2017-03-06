@@ -6,8 +6,8 @@ ICSettings::ICSettings( const QString & fileName, Format format, QObject * paren
     {
         this->fileName_ = fileName;
         this->groupName_ = '\0';
-        this->icSettingsTimer_ = new QTimer(this);
-        connect(icSettingsTimer_,SIGNAL(timeout()),this,SLOT(sync()));
+//        this->icSettingsTimer_ = new QTimer(this);
+//        connect(icSettingsTimer_,SIGNAL(timeout()),this,SLOT(sync()));
     }
     else this->fileName_ = '\0';
 }
@@ -28,7 +28,8 @@ void ICSettings::endGroup ()
 {
     if(this->fileName_=='\0') return;
     this->groupName_ = '\0';
-    this->icSettingsTimer_->start(300000);
+//    this->icSettingsTimer_->start(300000);
+    QTimer::singleShot(5000,this,SLOT(sync()));
 }
 
 void ICSettings::setValue( const QString & key, const QVariant & value )
