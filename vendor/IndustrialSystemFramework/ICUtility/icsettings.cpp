@@ -6,6 +6,7 @@ ICSettings::ICSettings( const QString & fileName, Format format, QObject * paren
     {
         this->fileName_ = fileName;
         this->groupName_ = '\0';
+        this->fileToMap();
 //        this->icSettingsTimer_ = new QTimer(this);
 //        connect(icSettingsTimer_,SIGNAL(timeout()),this,SLOT(sync()));
     }
