@@ -997,6 +997,7 @@ void ICHCSystemSettingsFrame::on_clearButton_clicked()
     ui->oldPwdEdit->clear();
 }
 
+
 void ICHCSystemSettingsFrame::on_limitFunctionBox_toggled(bool checked)
 {
     ICParametersSave::Instance()->SetRegisterFunction(checked);

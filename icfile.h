@@ -20,6 +20,7 @@ public:
     ICFile(const QString& filename);
 //    bool open(ICFileOpenMode openMode);
 //    void close();
+    QString ICRead();
     bool ICWrite(const QByteArray& toWrite);
 
 private:

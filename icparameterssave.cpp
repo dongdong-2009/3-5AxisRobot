@@ -1,14 +1,15 @@
 #include "icparameterssave.h"
 
-#include <QApplication>
+#include <QDebug>
 #include <QFile>
 #include <QTextStream>
-#include <QDebug>
+#include <QApplication>
+#include <QTranslator>
 
 ICParametersSave * ICParametersSave::instance_ = NULL;
 
 ICParametersSave::ICParametersSave(const QString fileName)
-    : QSettings(fileName, QSettings::IniFormat),
+    : ICSettings(fileName, ICSettings::IniFormat),
       ProductOperationer("ProductOperationer"),
       ProductAdministrator("ProductAdministrator"),
       ProductAlarmHistory("ProductAlarmHistory"),

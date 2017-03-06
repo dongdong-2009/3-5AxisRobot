@@ -4,10 +4,21 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <stdio.h>
+#include <QFile>
+#include <QTextStream>
 
 ICFile::ICFile(const QString& filename):
     fileName_(filename)
 {
+}
+
+QString ICFile::ICRead()
+{
+    QFile file(this->fileName_);
+    if(!file.open(QFile::ReadOnly | QFile::Text)) return "\0";
+    QTextStream in(&file);
+    return QString(in.readAll());
+    file.close();
 }
 
 bool ICFile::ICWrite(const QByteArray &toWrite)
