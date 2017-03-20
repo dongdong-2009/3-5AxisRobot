@@ -50,11 +50,11 @@ void ICAlarmString::OnCurrentLanguageChanged()
         alarmChInfoFile.setFileName(AlarmSpanishInfoPathName);
         hintFile.setFileName(HintEspInfoPathName);
         break;
-    case QLocale::Netherlands:
+    case QLocale::Dutch:
         alarmChInfoFile.setFileName(AlarmNederlandInfoPathName);
         hintFile.setFileName(HintNederlandInfoPathName);
         break;
-    case QLocale::France:
+    case QLocale::French:
         alarmChInfoFile.setFileName(AlarmFranceInfoPathName);
         hintFile.setFileName(HintFranceInfoPathName);
         break;
