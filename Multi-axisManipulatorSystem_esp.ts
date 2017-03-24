@@ -4214,57 +4214,62 @@ de ciclo</translation>
         <translation>Y-X-Z</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="339"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="364"/>
+        <source>Z-Y-X</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="377"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="366"/>
         <source>Direction</source>
         <translation>Dirección</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="388"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="426"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="427"/>
         <source>X PP</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="417"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="455"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="456"/>
         <source>X RP</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="455"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="493"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="494"/>
         <source>Y PP</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="481"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="519"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="520"/>
         <source>Y RP</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="519"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="557"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="558"/>
         <source>Z PP</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="545"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="583"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="584"/>
         <source>Z RP</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="576"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="614"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="615"/>
         <source>Step</source>
         <translation>escalón</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="583"/>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="606"/>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="709"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="621"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="644"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="747"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="622"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="645"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="748"/>
@@ -4272,15 +4277,15 @@ de ciclo</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="616"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="654"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="655"/>
         <source>Lattice</source>
         <translation>Número</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="623"/>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="637"/>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="745"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="661"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="675"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="783"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="662"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="676"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="784"/>
@@ -4288,69 +4293,69 @@ de ciclo</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="630"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="668"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="669"/>
         <source>Z</source>
         <translation>Z</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="644"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="682"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="683"/>
         <source>X</source>
         <translation>X</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="666"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="704"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="705"/>
         <source>Stack Counter</source>
         <translation>contador de pila</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="674"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="712"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="713"/>
         <source>All</source>
         <translation>Todo</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="679"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="717"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="718"/>
         <source>Good</source>
         <translation>Producto bueno</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="684"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="722"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="723"/>
         <source>Stack-1</source>
         <translation>Apilamiento-1</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="689"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="727"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="728"/>
         <source>Stack-2</source>
         <translation>Apilamiento-2</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="694"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="732"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="733"/>
         <source>Stack-3</source>
         <translation>Pila-3</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="699"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="737"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="738"/>
         <source>Stack-4</source>
         <translation>Apilamiento-4</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="778"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="816"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="817"/>
         <source>Y</source>
         <translation>Y</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="785"/>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="798"/>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="811"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="823"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="836"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="849"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="824"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="837"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="850"/>
@@ -4358,7 +4363,7 @@ de ciclo</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="852"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="890"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="891"/>
         <source>Is Sub Arm</source>
         <translation>Apilar sub-brazo</translation>
@@ -4695,13 +4700,13 @@ la tecla (off)</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="259"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1035"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1036"/>
         <source>No Limit</source>
         <translation>No límite</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="263"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1039"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1040"/>
         <source>hour</source>
         <translation>hora</translation>
     </message>
@@ -4742,7 +4747,7 @@ la tecla (off)</translation>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="552"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="701"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="865"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1071"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1072"/>
         <source>Warning</source>
         <translation>Advertencia</translation>
     </message>
@@ -4871,18 +4876,18 @@ App %1; Host:</source>
         <translation>Formato de configuración de rotación malo</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1020"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1026"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1021"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1027"/>
         <source>Wrong Register Code!</source>
         <translation>Código de registro no correcto</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1032"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1033"/>
         <source>Register Success!</source>
         <translation>¡Registra con éxito!</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1072"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1073"/>
         <source>The system will be for storage to repair ! Do you want to continue?</source>
         <translation>El sistema será para el almacenamiento de reparar! ¿Quieres continuar?</translation>
     </message>
@@ -7981,16 +7986,21 @@ de producción</translation>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icstackeditor.cpp" line="136"/>
-        <location filename="hcinstruction/icstackeditor.cpp" line="145"/>
-        <location filename="hcinstruction/icstackeditor.cpp" line="154"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="133"/>
+        <source>Z-&gt;Y-&gt;X</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icstackeditor.cpp" line="140"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="149"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="158"/>
         <source>RP</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icstackeditor.cpp" line="136"/>
-        <location filename="hcinstruction/icstackeditor.cpp" line="145"/>
-        <location filename="hcinstruction/icstackeditor.cpp" line="154"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="140"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="149"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="158"/>
         <source>P</source>
         <translation>PP</translation>
     </message>
