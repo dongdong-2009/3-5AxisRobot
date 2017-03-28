@@ -9,8 +9,8 @@
 #ifndef Q_WS_WIN32
 #include <fcntl.h>
 #include <sys/ioctl.h>
-#include "icsettings.h"
 #endif
+#include "icsettings.h"
 
 class ICParametersSave : public ICSettings
 {
