@@ -14,6 +14,7 @@ tar -xzf ./WenQuanYi.ttf.tar.gz -C /opt/Qt/fonts
 cp QtAutorun.sh /usr/bin -f
 cp 3-5AxisRobotDatabase /opt/Qt/apps -f
 cp qt_ko.qm /opt/Qt/apps -f
+cp qt_zh_TW.qm /opt/Qt/apps -f
 
 #cd 3a8
 #cp -rf records subs sysconfig /mnt/database

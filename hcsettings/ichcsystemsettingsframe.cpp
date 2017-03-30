@@ -49,6 +49,7 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
     ui->languageButtonGroup->setId(ui->nederlandBox, 3);
     ui->languageButtonGroup->setId(ui->franceBox, 4);
     ui->languageButtonGroup->setId(ui->koreanBox, 5);
+    ui->languageButtonGroup->setId(ui->hkBox, 6);
     InitParameter();
     ui->extentFunctionCheckBox->blockSignals(true);
     ui->extentFunctionCheckBox->setChecked(ICParametersSave::Instance()->IsExtentFunctionUsed());
@@ -136,6 +137,8 @@ void ICHCSystemSettingsFrame::InitParameter()
         ui->franceBox->setChecked(true);
     else if(paraSave->Country() == QLocale::RepublicOfKorea)
         ui->koreanBox->setChecked(true);
+    else if(paraSave->Country() == QLocale::HongKong)
+        ui->hkBox->setChecked(true);
     // ui->languageComboBox->setCurrentIndex(index);
     if(paraSave->KeyTone())
     {
@@ -181,6 +184,10 @@ void ICHCSystemSettingsFrame::languageBoxChange()
     {
         paraSave->SetCountry(QLocale::RepublicOfKorea);
     }
+    else if(ui->languageButtonGroup->checkedId() == 6)
+    {
+        paraSave->SetCountry(QLocale::HongKong);
+    }
 }
 
 
@@ -206,6 +213,8 @@ void ICHCSystemSettingsFrame::changeEvent(QEvent *e)
             ui->franceBox->setChecked(true);
         else if(paraSave->Country() == QLocale::RepublicOfKorea)
             ui->koreanBox->setChecked(true);
+        else if(paraSave->Country() == QLocale::HongKong)
+            ui->hkBox->setChecked(true);
         //    ui->languageComboBox->setCurrentIndex(index);
         ui->dateTimeEdit->setDateTime(QDateTime::currentDateTime());
 

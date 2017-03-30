@@ -175,16 +175,9 @@ TRANSLATIONS += Multi-axisManipulatorSystem_ch.ts \
     Multi-axisManipulatorSystem_esp.ts \
     Multi-axisManipulatorSystem_nl.ts \
     Multi-axisManipulatorSystem_fr.ts \
-    Multi-axisManipulatorSystem_kr.ts
+    Multi-axisManipulatorSystem_kr.ts \
+    Multi-axisManipulatorSystem_hk.ts
 
-
-OTHER_FILES += \
-    sysconfig/alarminfomation-en \
-    sysconfig/alarminfomation-ch \
-    sysconfig/alarminfomation-esp \
-    sysconfig/hintinfomation-ch \
-    sysconfig/hintinfomation-en \
-    sysconfig/hintinfomation-esp
 
 QMAKE_POST_LINK += "cp *.qm $$DESTDIR"
 QMAKE_PRE_LINK += "lrelease $${TARGET}.pro"
@@ -212,6 +205,7 @@ stylesheet.path = /opt/Qt/apps/stylesheet
 stylesheet.files += $${configsPathBase}/stylesheet/*
 others.path = /opt/Qt/apps
 others.files += $${configsPathBase}/3-5AxisRobotDatabase
+others.files += $${configsPathBase}/*.qm
 scripts.path = /usr/bin
 scripts.files += $${configsPathBase}/$${SK_SIZE}RunApp/*
 keymap.path = /home/root

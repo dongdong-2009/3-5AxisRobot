@@ -44,7 +44,7 @@ void ICAlarmDetailsDialog::ShowDetails(int alarmID)
     QSqlQuery query;
     QString tableName = "tb_alarm_helper_";
     int c = ICParametersSave::Instance()->Country();
-    if(c == QLocale::China)
+    if(c == QLocale::China || c == QLocale::HongKong)
     {
         tableName += "zh_cn";
     }
