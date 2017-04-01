@@ -28,22 +28,6 @@
 28:Sobrevelocidad Z
 29:Fallar en escribir memoria
 30:fallar en debug
-31:X1 CAN Bus falla en comunicación
-32:Y1 CAN Bus falla en comunicación
-33:Z CAN Bus falla en comunicación
-34:X2 CAN Bus falla en comunicación
-35:Y2 CAN Bus falla en comunicación
-36:A CAN Bus falla en comunicación
-37:B CAN Bus falla en comunicación
-38:C CAN Bus falla en comunicación
-39:Está corriendo antes de correr la curva
-40:Está preparado antes de correr la curva
-41:Está corriendo antes de correr la línea
-42:Está corriendo antes de correr el ciclo
-43:CAN falla en escribir
-44:CAN falla en escribir
-45:CAN falla en leer
-46:Falla en cambiar velocidad
 60:Sobrevelocidad de A
 61:Sobrevelocidad de B
 62:Sobrevelocidad de C
@@ -218,7 +202,21 @@
 505:Lista de Sync no es correcta
 506:Tiempo ha sobrepasado durante la espera de señal
 507:Modificar parámetros en estado de no paro
+530:ZSIO communicate fail
+531:IO-1 communicate fail
+532:IO-2 communicate fail
+533:IO-3 communicate fail
+534:IO-4 communicate fail
+535:IO-5 communicate fail
+536:IO-6 communicate fail
+537:IO-7 communicate fail
+538:IO-8 communicate fail
+539:IO-9 communicate fail
 550:Posición de X1 y X2 ha sobrepasado el límite
+580:X1 port alarm
+581:Y1 port alarm
+582:Z port alarm
+583:X2 port alarm
 600:Z mueve hacia afuera, pero Z señal in ON
 601:Z mueve hacia afuera, pero Z señal in OFF
 602:Z mueve hacia interior, but Z fuera seguro señal ON
@@ -227,6 +225,7 @@
 605:Y es dentro de la zona de seguridad pero origen off
 606:B  no es zona de seguridad pero origen On
 607:B es dentro de la zona de seguridad pero origen off
+608:Y origin is off when in security section
 700:Tiempo ha sobrepasado cuando espere X043
 701:Tiempo ha sobrepasado cuando espere X044
 702:Tiempo ha sobrepasado cuando espere accesorio-1
@@ -239,6 +238,15 @@
 709:Tiempo ha sobrepasado cuando espere eyector hacia atrás
 710:Tiempo ha sobrepasado cuando espere core en
 711:Tiempo ha sobrepasado cuando espere core fuera
+714:Time is over while wating for X045
+715:Time is over while wating for X046
+716:Time is over while wating for X047
+717:Time is over while wating for X026
+718:Time is over while wating for X040
+719:Time is over while wating for X023
+720:Time is over while wating for X037
+721:Time is over while wating for X017
+722:Time is over while wating for X036
 1000:Molde medio señal es off cuando brazo baje
 1001:Señal de molde abierto es off cuando brazo baje
 1002:Puerta de seguridad es abierto cuando brazo baje
@@ -265,8 +273,12 @@
 1023:La psocisión es vertical cuando cruce
 1024:La psocisión es horizontal cuando regrese
 1025:La posición no es correcta cuando baje dentro
+1026:The psition horizontal-2 and vertical-2 limit are both on
 1027:no ha terminado de cerrar molde
 1028:hace que pueda
+1029: niet in automatisch
+1030:Horizontal position 2 no vertical
+1031:The position is horizontal 2 when traving
 1038：El ajuste del eje Z no se encuentra en la zona de seguridad interior cuando producto de mala calidad
 1039：las configuraciones de ajuste del eje Z no se encuentra en la zona de seguridad interior cuando producto de mala calidad
 1040:la acción anterior no es eje Z
@@ -290,15 +302,15 @@
 1107:Límite Sub descen está apagado después de sub brazo ha descened
 1108:La señal del medio molde es apagado cuando descen principal brazo
 1109:La señal del medio molde es apagado cuando principal sub descen
-1.121:no se puede comprobar la zona de seguridad interior y exterior cuando ascienda Brazo principal
-1.121:no se puede comprobar la zona de seguridad interior y exterior cuando ascienda Brazo Sub
+1120:no se puede comprobar la zona de seguridad interior y exterior cuando ascienda Brazo principal
+1121:no se puede comprobar la zona de seguridad interior y exterior cuando ascienda Brazo Sub
 1122:Es demasiado rápido cuando Brazo Principal ascenda
 1123:Es demasiado rápido cuando ascienda Brazo Sub
 1124:señal de Molde-abierto está apagado cuando Brazo Principal ascender
 1125:señal de Molde-abierto está apagado cuando ascienda Sub Brazo
 1126:límite superior principal es después de que el brazo principal ascende
 1127:límite superior Sub esté apagado después de Sub Brazo ascende
-1141:Límite Sub de espalda es después de que principal Brazo remita
+1140:Límite Sub de espalda es después de que principal Brazo remita
 1141:Límite Sub de espalda es después de que Sub Brazo remita
 1142:límite principal es off después de principal Brazo vaya hacia atrás
 1143:Límite Sub de espalda es después de Sub Brazo backwarded
@@ -306,7 +318,7 @@
 1145:límite hacia adelante Sub es después de sub brazo tiene hacia adelante
 1146:límite hacia adelante principal es después del brazo principal está de vuelta
 1147:límite hacia adelante Sub es después de sub brazo está de vuelta
-1161:No se puede comprobar el límite superior de brazo principal al cambiar de posición
+1160:No se puede comprobar el límite superior de brazo principal al cambiar de posición
 1161:No se puede comprobar el límite superior sub al cambiar de posición
 1162:señal de Mold-abierto es off durante el cambio de posición
 1163:límite horizontal está apagado después del cambio de condiciones de horizonte
@@ -331,7 +343,8 @@
 1191:No se puede comprobar el límite superior cuando viaje en el área de riesgo sólo en el estado de manual de
 1192:Posición actual es manor que zona de seguridad móvil
 1193:Posición actual es mayor que zona de seguridad móvil
-Y2 no está en posición de subir
+1194:Y2 no está en posición de subir
+1195:Wati Y1 and Y2 up limit over time when travel out
 1200:Broche1 señal off, Broche1 válvula on.
 1201:Broche1 señal on, Broche1 válvula off.
 1202:Broche2 señal off, Broche2 válvula on.
@@ -371,3 +384,51 @@ Y2 no está en posición de subir
 1401:Punto actual y punto de espera no están en el mismo lado
 1402:Punto actual y punto de espera no están en el mismo lado
 1403:No se puede comprobar el límite superior de Y2
+1410:Security signal is off when down outside
+1411:wait security signal overtime
+2000:SERVO ALARM, PLEASE CHECK THE SERVO DRIVER
+2001:SERVO OVER CURRENT
+2002:SERVO OVER VOLTAGE
+2003:SERVO LOW VOLTAGE
+2004:RESISTANCE ABNORMAL
+2005:SERVO OVER LOAD
+2006:SERVO OVER SPEED
+2007:POSITION CONTROL ERROR IS TOO LARGE
+2008:ENCODER INSIDE ERROR
+2009:ELECTRONIC GEAR RATIO SETTING ERROR, POSITION SETTING ERROR
+2010:EMERGENCY STOP
+2011:TRANSISTOR OVERHEATING
+2012:MAIN CIRCUIT POWER ABNORMAL
+2013:PRE OVERLOAD WARNING
+2014: SERVO MOTOR COLLISION ERROR
+2015:UVW CONNECTING ERROR, PLEASE CHECK THE UVW CONNECTING LINE
+2016:CLOSED LOOP POSITION CONTROL LARGE ERROR
+2017:PDO RECEIVE OVERFLOW
+2018:PDO ACCESS ABNORMAL
+2019:CONTROL NODE PROTECTION FUNCTION ERROR
+2020:CAN BUS HARDWARE ABNORMAL
+2021:CAN COMMUNICATION SYNCHRONIZATION ABNORMAL
+2022:SPECIAL FILTER SETTING OVER SETTING RANGE
+2023:SERVO FORWARD  DIRECTION LIMIT
+2024:SERVO REVERSE DIRECTION LIMIT
+2100:SERVO ALARM
+2101:SERVO OVER CURRENT
+2102:MAIN CIRCUIT POWER OVER RANGE
+2103:MAIN CIRCUIT POWER LIMIT
+2104:SERVO CONTROL POWER LIMIT
+2105:SERVO OUTPUT SHORT CIRCUIT TO GROUND
+2106:POWER LINE MISSING PHASE WARNING
+2107:BRAKE RESISTANCE OVERLOAD
+2108:SERVO DRIVER OVERLOAD WARNING
+2109:SERVO MOTOR POWER LINE DISCONNECTION
+2110:SERVO DRIVER RADIATOR OVERHEATED
+2111:SERVO DRIVER DATA STORAGE FAULT
+2112:SERVO DRIVER DATA SETTING ABNORMAL
+2113:SERVO MOTOR BLOCK RUNNING
+2114:ENCODER INTERNAL FAULT
+2115:SERVO MOTOR OVER SPEED
+2116:SERVO DRIVER POSITION DEVIATION TOO LARGE
+2117:SERVO DRIVER PULSE ABNORMAL
+2118:CAN OPEN NODE PROTECTION OVER TIME
+2119:CAN OPEN PDO TRANSMISSION LENGTH ERROR
+4000:TRIAL TIME OUT, PLEASE REGISTER.

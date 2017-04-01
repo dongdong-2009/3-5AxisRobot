@@ -195,14 +195,28 @@
 405:macro init fail
 406:Échec du programme paramètres init
 500:connect host fail
-501:Se connecter faute de Conseil I/O 
+501:Se connecter faute de Conseil I/O
 502:Cible du produit a fait
 503:pression trop bas
 504:time out communication
 505:program crc erreur
 506:Attendez le signal time out
 507:Modifier configure en mode non stop
+530:ZSIO communicate fail
+531:IO-1 communicate fail
+532:IO-2 communicate fail
+533:IO-3 communicate fail
+534:IO-4 communicate fail
+535:IO-5 communicate fail
+536:IO-6 communicate fail
+537:IO-7 communicate fail
+538:IO-8 communicate fail
+539:IO-9 communicate fail
 550: conflict axe
+580:X1 port alarm
+581:Y1 port alarm
+582:Z port alarm
+583:X2 port alarm
 600:Signal de sécurité dans le moule est allumé quand Z déplacer vers Out-moule
 601:Signal de sécurité dans le moule est éteint quand Z se déplacent à out-moule
 602:Out-moule sécurité signal est allumé quand Z aller dans le moule
@@ -224,6 +238,15 @@
 709:attend ejecteur retour time out
 710:attend noyaux entre time out
 711:attend noyaux sorti time out
+714:Time is over while wating for X045
+715:Time is over while wating for X046
+716:Time is over while wating for X047
+717:Time is over while wating for X026
+718:Time is over while wating for X040
+719:Time is over while wating for X023
+720:Time is over while wating for X037
+721:Time is over while wating for X017
+722:Time is over while wating for X036
 1000:Mid moule signal est hors tension lorsque vous Y vers le bas
 1001:Mid moule signal est hors tension lorsque vous Y vers le bas
 1002:Porte de sécurité est ouvert quand Y vers le bas
@@ -250,6 +273,7 @@
 1023:Position verticale est éteint quand Z bouge
 1024:Position horizontale est éteint quand Z bouge
 1025:Position-2 est faux quand Y2 vers le bas dans le moule
+1026:The psition horizontal-2 and vertical-2 limit are both on
 1027:fermeture moule non terminer
 1028:Fault clearing
 1029: pas en automatique
@@ -320,6 +344,7 @@
 1192:Pos actuels est plus petit que le pos de sécurité mobile
 1193:Pos actuels est plus grand que pos de sécurité mobile
 1194:Y2 n’est pas sur la position haute
+1195:Wati Y1 and Y2 up limit over time when travel out
 1200:pince 1 vanne sur mais limite pince 1 est hors
 1201:pince 1 vanne est éteint mais limite pince 1 est sur
 1202:pince 2 vanne sur mais limite pince 2 est hors
@@ -356,9 +381,11 @@
 1315:vérifier les pos X2 à l’étape de la maison
 1316:vérifier les pos Y2 à l’étape de la maison
 1400:Limite de Y1 UP est désactivé
-1401:Y1 et Y2 ne sont pas sur la dans le moule 
-1402:Y1 et Y2 ne sont pas sur l’out-mold 
-L1403:imite de Y2 UP est désactivé
+1401:Y1 et Y2 ne sont pas sur la dans le moule
+1402:Y1 et Y2 ne sont pas sur l’out-mold
+1403:imite de Y2 UP est désactivé
+1410:Security signal is off when down outside
+1411:wait security signal overtime
 2000: Servo défaut, vérifier le lecteur
 2001 Servo surintensité
 2002: Over-tension servo
@@ -377,7 +404,7 @@ L1403:imite de Y2 UP est désactivé
 2015: UVW erreur de câblage
 2016: boucle fermée erreur de contrôle de position est trop grande
 2017: PDO recevoir trop-plein
-accès exception pdo: 2018
+2018:accès exception pdo
 2019: rythme cardiaque ou la protection de nœud erreur
 2020: can matériel bus exception
 2021: permet de synchroniser l'anomalie de communication
@@ -401,8 +428,7 @@ accès exception pdo: 2018
 2114: Encoder défaut interne
 2115: survitesse
 2116: Drive erreur de position
-impulsion motrice anormale: 2117
+2117:impulsion motrice anormale
 2118: CANopen protection de nœud ou timeout rythme cardiaque
 2119: CANopen PDO erreur de longueur de transmission
 4000: le temps de première instance est en place, s'il vous plaît inscrivez-vous
-

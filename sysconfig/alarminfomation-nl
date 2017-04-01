@@ -46,7 +46,7 @@
 105:Z servo alarm fout
 106:X1 servo alarm
 107:Y1 servo alarm
-108:Z servo alarm  
+108:Z servo alarm
 109:X1 niet in positie
 110:Y1 niet in positie
 111:Z niet in positie
@@ -202,7 +202,21 @@
 505:programma crc fout
 506:wacht signaal time out
 507:Modify configures in non-stop mode
+530:ZSIO communicate fail
+531:IO-1 communicate fail
+532:IO-2 communicate fail
+533:IO-3 communicate fail
+534:IO-4 communicate fail
+535:IO-5 communicate fail
+536:IO-6 communicate fail
+537:IO-7 communicate fail
+538:IO-8 communicate fail
+539:IO-9 communicate fail
 550: as conflict
+580:X1 port alarm
+581:Y1 port alarm
+582:Z port alarm
+583:X2 port alarm
 600:matrijs beveiligingssignaal is aan bij Z bewegen uit matrijs
 601:matrijs beveiligingssignaal is uit bij Z bewegen uit matrijs
 602:Out-mold security signal is on when Z move to in-mold
@@ -224,6 +238,15 @@
 709:wacht uitwerper terug time out
 710:wacht kerntrek in time out
 711:wacht kerntrek uit time out
+714:Time is over while wating for X045
+715:Time is over while wating for X046
+716:Time is over while wating for X047
+717:Time is over while wating for X026
+718:Time is over while wating for X040
+719:Time is over while wating for X023
+720:Time is over while wating for X037
+721:Time is over while wating for X017
+722:Time is over while wating for X036
 1000:matrijs tussen pos is laag wanneer Y onder
 1001:matrijs open signaal is laag wanneer Y onder
 1002:veiligheidsdeur is open bij Y beneden
@@ -250,6 +273,7 @@
 1023:vertikale positie is uit wanneer Z beweegt
 1024:horizontale positie is uit wanneer Z beweegt
 1025:positie 2 is fout bij Y2 tussen matrijs
+1026:The psition horizontal-2 and vertical-2 limit are both on
 1027: matrijs sluiten niet beeindigd
 1028:Fault clearing
 1029: niet in automatisch
@@ -320,6 +344,7 @@
 1192:huidige positie is kleiner dan beweegbare veiligheidspositie
 1193:huidige positie is groter dan beweegbare veiligheidspositie
 1194:Y2 is niet boven
+1195:Wati Y1 and Y2 up limit over time when travel out
 1200:grijper 1 ventiel is aan maar eindpositie is laag
 1201:grijper 1 ventiel is uit maar eindpositie is hoog
 1202:grijper 2 ventiel is aan maar eindpositie is laag
@@ -359,6 +384,8 @@
 1401:Y1 en Y2 zijn niet tussen de matrijs
 1402:Y1 en Y2 zijn niet buiten de matrijs
 1403:Y2 boven is uit
+1410:Security signal is off when down outside
+1411:wait security signal overtime
 2000: Servo storing, controleert u de schijf
 2001: Servo overstroom
 2002: Over-voltage servo
@@ -377,7 +404,7 @@
 2015: UVW bedrading error
 2016: Closed-loop puntsbesturing fout is te groot
 2017: BOB ontvangen overflow
-toegang uitzondering pdo: 2018
+2018:toegang uitzondering pdo
 2019: hartslag of bescherming knooppunt fout
 2020: can uitzondering bus hardware
 2021: kan de communicatie anomalie te synchroniseren
@@ -396,7 +423,7 @@ toegang uitzondering pdo: 2018
 2109: motorvermogen kabelbreuk
 2110: Drive oververhitting radiator
 2111: Drive parameter opslag falen
-uitzondering Drive ingestelde parameters: 2112
+2112: uitzondering Drive ingestelde parameters
 2113: Motor Stall
 2114: Encoder interne fout
 2115: Motor snelheidsoverschrijding
@@ -405,4 +432,3 @@ uitzondering Drive ingestelde parameters: 2112
 2118: CANopen knooppunt bescherming of hartslag timeout
 2119: CANopen BOB transmissie lengte fout
 4000: Trial tijd verstreken is, kunt u zich inschrijven
-

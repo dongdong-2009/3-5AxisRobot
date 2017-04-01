@@ -202,7 +202,21 @@
 505:Sync program list wrong
 506:Time overlay when waiting signal
 507:Modify parameter not in stop status is not premit
+530:ZSIO communicate fail
+531:IO-1 communicate fail
+532:IO-2 communicate fail
+533:IO-3 communicate fail
+534:IO-4 communicate fail
+535:IO-5 communicate fail
+536:IO-6 communicate fail
+537:IO-7 communicate fail
+538:IO-8 communicate fail
+539:IO-9 communicate fail
 550:X axis conflict
+580:X1 port alarm
+581:Y1 port alarm
+582:Z port alarm
+583:X2 port alarm
 600:Z move outside, but Z insafe signal ON
 601:Z move outside, but Z insafe signal OFF
 602:Z move inside, but Z outsafe signal ON
@@ -224,6 +238,15 @@
 709:Time is over while wating for ejector backward
 710:Time is over while wating for core in
 711:Time is over while wating for core out
+714:Time is over while wating for X045
+715:Time is over while wating for X046
+716:Time is over while wating for X047
+717:Time is over while wating for X026
+718:Time is over while wating for X040
+719:Time is over while wating for X023
+720:Time is over while wating for X037
+721:Time is over while wating for X017
+722:Time is over while wating for X036
 1000:Mid-mold signal is off when Arm descend.
 1001:Mold Opened signal is off when Arm descend.
 1002:Safety door is opened when Arm descend.
@@ -250,6 +273,7 @@
 1023:The position is vertical when traving
 1024:The position is horizontal when traving
 1025:The position is wrong when down inside
+1026:The psition horizontal-2 and vertical-2 limit are both on
 1027:Close mold is not finish
 1028:Fault clearing
 1029:No automatic signal
@@ -320,6 +344,7 @@
 1192:Current position is less than the moveabel security position
 1193:Current position is larger than the moveable security position
 1194:Y2 is not on the up pos
+1195:Wati Y1 and Y2 up limit over time when travel out
 1200:Clip1 signal off, Clip1 valve on.
 1201:Clip1 signal on, Clip1 valve off.
 1202:Clip2 signal off, Clip2 valve on.
@@ -359,6 +384,8 @@
 1401:Currnt point and waiting point are not both inside
 1402:Currnt point and waiting point are not both outside
 1403:Can not check the Y2 up limit
+1410:Security signal is off when down outside
+1411:wait security signal overtime
 2000:SERVO ALARM, PLEASE CHECK THE SERVO DRIVER
 2001:SERVO OVER CURRENT
 2002:SERVO OVER VOLTAGE
