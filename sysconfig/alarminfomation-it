@@ -1,0 +1,358 @@
+1:Virtual erro
+2:caracteres estranhos
+3:programa sem fim
+4:carac ignorados
+5:orion caos
+6:fora posicao final
+7:definicao arco
+8:sequencia
+9:raio largo
+10:excede veloc
+11: dupla definicao IO
+12:nada define IO
+13:erro em acao em 
+14:grsobe o espera esta errado
+15:encontrar proximo passo errado
+16:checar fora faixa 
+17:registro contexto errado
+18:checar final acao principal
+19:registro num contexto errado
+20:registro Sub contexto errado
+21:registro acao encerrado
+22:X esta ainda movendo  qdo gerar acao
+23:esta ainda moven gerar acao
+24:Z esta ainda moven qdo gerar acao
+25:o tempo desce a zero qdo G tem tempo retardo
+26:X acima veloc
+27:Y acima veloc
+28:Z acima veloc
+29:falha registro memoria
+30:depurar falha 
+60:A excede veloc
+61:B excesso veloc
+62:C excesso veloc
+63:A ainda move qdo gerar acao
+64:B ainda move qdo gerar acao
+65:C ainda move qdo gerar acao
+70:X2 excedida veloc
+71:Y2 excedida veloc
+72:X2 esta ainda move qdo gerar acao
+73:Y2 esta ainda move qdo gerar acao
+100:X largo empenam
+101:Y largo empena
+102:Z largo empenam
+103:X axial z-pulso erro
+104: erro pulso eixo Z
+105:Z axial Z-pulso erro
+106: alarme X-servo 
+107:alarme Y-servo 
+108:alarme Z-servo 
+109:X pos perdida
+110:Y pos perdida
+111:Z-pos perdida
+112:X-Max alarme 
+113:X-Min alarme 
+114:Y-Max alarme 
+115:Y-Min alarme 
+116:Z-Max alarme 
+117:Z-Min alarme 
+118:X-Pos muito largo
+119:X-Pos muito pequena 
+120:Y-Pos muito largo
+121:Y-Pos muito pequena 
+122:Z-Pos muito grande
+123:Z-Pos muito pequena 
+124:X esta grande qdo move 
+125:X esta pequena qdo move 
+126: Y esta grande qdo move 
+127:Y esta pequeno qdo move
+128:Z esta grande qdo move
+129:Z esta pequeno qdo move
+130:X eixo falha ao salvar 
+131:Y eixo falha ao salvar 
+132:Z eixo falha ao salvar 
+133:estrutura falha ao salvar 
+134:X eixo comparar 
+135:Y eixo comparar 
+136:Z eixo comparar 
+137:comparar estrutura 
+138:X esta sem servo
+139:Y esta sem servo
+140:Z esta sem servo
+160:X2 largo empenam
+161:Y2 largo empenam
+162:axial z-pulso erro
+163:axial z-pulso erro
+164:X2-servo alarme 
+165:Y2-servo alarme 
+166:X2 pos perdida
+167:Y2 pos perdida
+168:X2-Max alarme 
+169:X2-min alarme 
+170:Y2-Max alarme 
+171:Y2-min alarme 
+172:X2-Pos muito largo
+173:X2-Pos muito pequena 
+174:Y2-Pos muito largo
+175:Y2-Pos muitp pequena 
+176:X2 esta largo qdo movendo 
+177:X2 esta pequena qdo movendo 
+178:Y2 esta largo qdo movendo 
+179:Y2 esta pequena qdo movendo 
+180:X2 eixo falha ao salvar 
+181:Y2 eixo falha ao salvar 
+182:X2 eixo comparar 
+183:Y2 eixo comparar 
+184:X2 esta sem servo
+185:Y2 esta sem servo
+200:A largo empenam
+201:B largo empenam
+202:C largo empenam
+203:A axial z-pulso erro
+204:B axial z-pulso erro
+205:C axial z-pulso erro
+206:A-servo alarme 
+207:B-servo alarme 
+208:C-servo alarme 
+209:A pos perdida
+210:B pos perdida
+211:C pos perdida
+212:A-Max alarme 
+213:A-min alarme 
+214:B-Max alarme 
+215:B-min alarme 
+216:C-Max alarme 
+217:C-min alarme 
+218:A-Pos muito largo
+219:A-Pos muito pequena 
+220:B-Pos muito largo
+221:B-Pos muito pequena 
+222:C-Pos muito largo
+223:C-Pos muito pequena 
+224:A esta largo qdo moven 
+225:A esta pequena qdo moven 
+226:B esta pequena qdo moven 
+227:B esta pequena qdo moven 
+228:C esta pequena qdo moven 
+229:C esta pequena qdo moven 
+230:A eixo falha ao salvar 
+231:B eixo falha ao salvar 
+232:C eixo falha ao salvar 
+233:SPI NULO
+234:A eixo comparar 
+235:B eixo comparar 
+236:C eixo comparar 
+237:comparar NULO
+238:A esta sem servo
+239:B esta sem servo
+240:C esta sem servo
+200:conecte a falha host 
+300:X param erro
+301:Y param erro
+302:Z param erro
+303:acao soma erro verificacoes!
+304:Parada emergencia!
+305:erro ciclo principal
+306:erro ponto de espera
+307:erro acao busca
+308:tolerancia muito grande
+309:erro funcoes molde
+310:iSub muito largo
+311:iSub reconvoca
+312:layout ilegal
+313:sobreposicao layout
+314:acao sequencia esta errada
+315:parametro sistema esta errado
+316:numero acao esta errado
+317:num Sub acao esta errado
+318:numero linha apenas
+319:apenas prosseguir em auto
+320:sequencia ilegal
+321:checar soma esta errado
+322:checar valor GM esta errado
+323:aguardar abertura molde
+324:GM valor esta errado qdo auto ajusta
+325:acao pinca duplicada
+326:acao duplicada
+327:apenas nivel 1
+328:checar entrada qdo mover 
+329:montagem parametros esta falhando 
+330:posicao esta modificada,por favor reinicializar
+331:posicao parametros esta falhando 
+332:saida esta modificada,por favor reinicializar
+333:eixo esta modificada,por favor reinicializar
+360:X2 eixo parametros checar falha 
+361:Y2 eixo parametros checar falha 
+362:A eixo parametros checar falha 
+363:B eixo parametros checar falha 
+364:C eixo parametros checar falha 
+365:estrutura parametros checar falha 
+400:lendo X erro
+401:lendo Y erro
+402:lendo Z erro
+403:lendo erro sistema
+404:lendo erro molde
+405:lendo Sub-Prg erro
+406:lendo erro obtencao de dados
+500:perda contato controle principal!
+501:placa I/O com erro!
+502:excesso produto!
+503:baixa pressao
+504:Comm-WatchDog
+505:sinc programa lista errado
+506:tempo excedido aguardando sinal
+507:modificar parametros sem estar parado nao e permitido
+550:X eixo conflito
+600:Z move fora, mas Z em seguran sinal lig
+601:Z move fora, mas Z em seguran sinal desl
+602:Z move dentro, mas Z saida seg sinal lig
+603:Z move dentro, mas Z saida seg sinal desl
+604:Y desce por sup-lmt lig
+605:Y sobe por sup-lim desl
+606:B descende por sup-lmt lig
+607:B sobe por sup-lim desl
+700:tempo esta excedido enquanto aguarda X043
+701:tempo esta excedido enquanto aguarda X044
+702:tempo esta excedido enquanto aguarda montagem-1
+703:tempo esta excedido enquanto aguarda montagem-2
+704:tempo esta excedido enquanto aguarda montagem-3
+705:tempo esta excedido enquanto aguarda montagem-4
+706:tempo esta excedido enquanto aguarda succao -1
+707:tempo esta excedido enquanto aguarda succao -2
+708:tempo esta excedido enquanto aguarda extratoror avanco 
+709:tempo esta excedido enquanto aguarda extratoror recuo
+710:tempo esta excedido enquanto aguarda extrator fora 
+711:tempo esta excedido enquanto aguarda extrator dentro
+1000:molde-int sinal esta desl qdo braco desce.
+1001: sinal abertura molde esta desl qdo braco desce.
+1002:seguranca porta esta abertura qdo braco desce.
+1003:sinal vertical e horizontal estao ambos ligados
+1004:sinal movimento dentro e movimento estao ambos ligados.
+1005:molde abertura sinal esta desl qdo braco desce
+1006:posicao esta horizontal qdo braco desce interior.
+1007:braco desce dentro interior mas posicao nao esta (Z dentro) seguranca zona.
+1007:braco desce dentro exterior mas posicao nao esta (Z fora) seguranca zona.
+1009: Nao pode checar a zona de seguranca qdo braco desce.
+1010:Nao pode checar a zona seguranca qdo Y1 descendo.
+1011:Nao pode checar a zona seguranca qdo braco descendo
+1012: reboque posicao esta todos entra horizontal
+1013:limite sub-avanco e recuo estao ambos lig
+1014:limite Sub-sobe e desce limite ambos lig
+1015:limite principal avanco e recuo estao ambos lig
+1016:limite principal sobe e desce estao ambos lig
+1017:seguranca porta esta aberta qdo trabalhando 
+1018:acao sub-braco sem depender liga o molde
+1019:o sinal abertura molde esta desl origem 
+1020: sinal molde intermediario esta desl origem 
+1021: posicao esta vertical qd origem 
+1022: posicao esta horizontal qdo origem 
+1023:posicao esta vertical qdo movendo
+1024:posicao esta horizontal qdo movendo
+1025:posicao esta errada qdo dentro
+1027:fechamento molde nao esta encerrado
+1038:eixo Z nao esta dentra o interior seguranca zona qdo produto ruim
+1039:eixo Z programacao nao esta dentro da zona seguranca qdo produto ruim
+1040:acao de avanco nao e eixo Z
+1052: sinal eixo Z, Z saida seg sinal e principal sobe sinal esta ambos desl 
+1053:NULO
+1054:sem eixo X mas X acao
+1055:sem eixo Y mas Y acao
+1056:sem eixo Z mas Z acao
+1057:sem eixo X2 mas X2 acao
+1058:sem eixo Y2 mas Y2 acao
+1059:sem eixo A mas A acao
+1060:sem B eixo mas B acao
+1061:sem C eixo mas C acao
+1100:nao pode checar a zona seguranca qdo braco principal desce
+1101:nao pode checar a zona seguranca qdo braco secundario desce
+1102:sinal molde-abertura esta desl qdo braco principal desce
+1103:sinal molde-abertura esta desl qdo Sub braco desce
+1104:limite principal superior esta lig apos braco principal descer
+1105:limite sub-superior esta lig apos Sub braco descer
+1106:limite principal desce esta desl depois braco principal descendo
+1107:limite Sub descendo esta desl depois sub braco descendo
+1108:sinal molde intermediario esta desl qdo principal braco descendo
+1109:sinal molde intermediario esta desl qdo principal sub descendo
+1194:Y2 data
+1120:nao pode checar zona seguranca interior e exterior qdo braco princ subindo
+1121:nao pode checar zona seguranca interior e exterior qdo braco sub subindo
+1122: Braco principal subindo muito rapido
+1123: Braco Sub subindo muito rapido
+1124:sinal molde aberto esta desl qdo braco principal subindo
+1125:sinal molde aberto esta desl qdo braco sub subindo
+1126:limite principal superior esta desl depois braco principal subir
+1127:limite sub superior esta desl depois braco sub subir
+1140:limite principal traseiro esta lig apos braco principal avanco 
+1141:limite Sub traseiro esta lig apos Sub braco avanco 
+1142:limite principal traseiro esta desl depois principal braco recuado
+1143:limite Sub traseiro esta desl depois Sub braco recuado
+1144:principal avanco limite esta desl depois principal braco avanco 
+1145:Sub avanco limite esta desl depois sub braco avanco 
+1146:limite avanco principal esta lig apos principal braco esta volta
+1147:limite Sub avanco esta lig apos sub braco esta volta
+1160:sem pode checar o limite principal superior qdo posicao muda 
+1161:sem pode checar o limite sub superior qdo posicao muda 
+1162:sinal abertura molde esta desl qdo posicao muda 
+1163:horizontal limite esta desl depois posicao modificada horizontal 
+1164:limite vertical esta desl depois posicao modificada vertical
+1165:fora area seguranca qdo horizontal
+1170:sem pode checar o limite principal superior qdo posicao-2 muda 
+1171:sem pode checar o limite sub superior qdo posicao-2 muda 
+1172:sinal abertura molde esta desl qdo posicao-2 muda 
+1173:limite horizontal esta desl depois posicao-2 modificada horizontal 
+1174:area seguranca fora qdo horizontal-2
+1180:limite principal superior esta desl acao ar move dentra e movimento fora
+1181:limite Sub superior esta desl acao ar move dentra e movimento fora
+1182:limite move dentro esta desl depois move dentro
+1183:limite movimento fora esta desl depois movimento fora
+1184:posicao nao esta o igual com a instrucao qdo movimento fora
+1185:sinal abertura-molde esta desl qdo move dentro
+1186:principal superior limite esta desl q move dentra perigo zona
+1187:limite Sub superior esta desl qdo move dentro zona perigo
+1188:Y1 nao esta dentro zona seguranca qdo move dentro zona perigo
+1189:limite principal superior nao estao ambos lig qdo move para subir
+1190:limite principal superior nao estao ambos lig qdo movimento do interior
+1191:nao pode checar o limite superior qdo move dentro zona perigo status manual
+1192:posicao corrente esta menor que a posicao de seguranca movel
+1193:posicao corrente esta maior que a posicao de seguranca movel
+1194:Y2 nao esta lig na pos sobe 
+1200:pinca 1 sinal desl, pinca 1 valvula  lig.
+1201:pinca 1 sinal lig, pinca 1 valvula desl.
+1202:pinca 2 sinal desl, pinca 2 valvula  lig.
+1203:pinca 2 sinal lig, pinca 2 valvula desl.
+1204:pinca 3 sinal desl, pinca 3 valvula  lig.
+1205:pinca 3 sinal lig, pinca 3 valvula desl.
+1206:pinca 4 sinal desl, pinca 4 valvula  lig.
+1207:pinca 4 sinal lig, pinca 4 valvula desl.
+1208:succao 1 sinal desl, succao 1 valvula lig.
+1209:succao 1 sinal lig, succao 1 valvula desl.
+1210:succao 2 sinal desl, succao 2 valvula lig.
+1211:succao 2 sinal lig, succao 2 valvula desl.
+1212:pinca 7 sinal desl, pinca 7 valvula lig.
+1213:pinca 7 sinal lig, pinca 7 valvula desl.
+1214:pinca 8 sinal desl, pinca 8 valvula lig.
+1215:pinca 8 sinal lig, pinca 8 valvula desl.
+1250:nao pode checar X037
+1251:nao pode checar X023
+1300:Por favor checar aguardar postura 
+1301:Por favor checar sinal sobe principal
+1302:Por favor checar vice sinal sobe
+1303:Por favor checar ponto de espera  X
+1304:Por favor checar ponto de espera  Y
+1305:Por favor checar ponto de espera  Z
+1306:Por favor checar ponto de espera pinca 1
+1307:Por favor checar ponto de espera pinca 2
+1308:Por favor checar ponto de espera pinca 3
+1309:Por favor checar ponto de espera pinca 4
+1310:Por favor checar ponto de espera pinca 5
+1311:Por favor checar ponto de espera pinca 6
+1312:Por favor checar ponto de espera A
+1313:Por favor checar ponto de espera B
+1314:Por favor checar ponto de espera C
+1315:Por favor checar ponto de espera X2
+1316:Por favor checar ponto de espera Y2
+1400:nem todos sinal sobe ligados
+1401:pont atual e ponto de espera nao estao ambos dentro
+1402:pont atual e ponto de espera nao estao ambos fora
+1403:nao pode checar o limite Y2 sobe
+
