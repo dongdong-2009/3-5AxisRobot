@@ -1936,6 +1936,11 @@ QRadioButton::indicator:unchecked:disabled
           </item>
           <item>
            <property name="text">
+            <string>A</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
             <string>B</string>
            </property>
           </item>
@@ -1986,6 +1991,11 @@ QRadioButton::indicator:unchecked:disabled
           </item>
           <item>
            <property name="text">
+            <string>A</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
             <string>B</string>
            </property>
           </item>
@@ -2032,6 +2042,11 @@ QRadioButton::indicator:unchecked:disabled
           <item>
            <property name="text">
             <string>Y2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>A</string>
            </property>
           </item>
           <item>
@@ -2089,6 +2104,11 @@ QRadioButton::indicator:unchecked:disabled
           <item>
            <property name="text">
             <string>Y2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>A</string>
            </property>
           </item>
           <item>
@@ -2164,6 +2184,11 @@ QRadioButton::indicator:unchecked:disabled
           </item>
           <item>
            <property name="text">
+            <string>A</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
             <string>B</string>
            </property>
           </item>
@@ -2210,6 +2235,11 @@ QRadioButton::indicator:unchecked:disabled
           <item>
            <property name="text">
             <string>Y2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>A</string>
            </property>
           </item>
           <item>
@@ -2278,6 +2308,11 @@ QRadioButton::indicator:unchecked:disabled
           </item>
           <item>
            <property name="text">
+            <string>A</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
             <string>B</string>
            </property>
           </item>
@@ -2324,6 +2359,11 @@ QRadioButton::indicator:unchecked:disabled
           <item>
            <property name="text">
             <string>Y2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>A</string>
            </property>
           </item>
           <item>

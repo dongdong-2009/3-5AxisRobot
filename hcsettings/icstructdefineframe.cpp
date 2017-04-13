@@ -33,19 +33,18 @@ uint port;
 
 typedef union{
     struct {
-        quint16 a1 : 3;
-        quint16 a2 : 3;
-        quint16 a3 : 3;
-        quint16 a4 : 3;
-        quint16 a5 : 3;
-        quint16 a6 : 3;
-        quint16 a7 : 3;
-        quint16 a8 : 3;
-        quint16 resv : 7;
+        quint16 a1 : 4;
+        quint16 a2 : 4;
+        quint16 a3 : 4;
+        quint16 a4 : 4;
+        quint16 a5 : 4;
+        quint16 a6 : 4;
+        quint16 a7 : 4;
+        quint16 a8 : 4;
+        quint16 resv : 15;
         quint16 en: 1;
     }mode;
-    quint16 all16Mode[2];
-    quint32 all32Mode;
+    quint16 all16Mode[3];
 }AxisMode;
 
 ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
@@ -214,8 +213,9 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
 
 
     AxisMode axisMode;
-    axisMode.all16Mode[0] = host->SystemParameter(ICVirtualHost::ACT_C_Sec3).toInt();
-    axisMode.all16Mode[1] =  host->SystemParameter(ICVirtualHost::ACT_C_Sec4).toInt();
+    axisMode.all16Mode[0] = host->SystemParameter(ICVirtualHost::ACT_C_Sec2).toInt();
+    axisMode.all16Mode[1] =  host->SystemParameter(ICVirtualHost::ACT_C_Sec3).toInt();
+    axisMode.all16Mode[2] =  host->SystemParameter(ICVirtualHost::ACT_C_Sec4).toInt();
     ui->os1->setCurrentIndex(axisMode.mode.a1);
     ui->os2->setCurrentIndex(axisMode.mode.a2);
     ui->os3->setCurrentIndex(axisMode.mode.a3);
@@ -459,8 +459,9 @@ void ICStructDefineFrame::on_saveButton_clicked()
         axisMode.mode.a8 = ui->os8->currentIndex();
         axisMode.mode.resv = 0;
         axisMode.mode.en = ui->originSeqBox->isChecked();
-        host->SetSystemParameter(ICVirtualHost::ACT_C_Sec3, axisMode.all16Mode[0]);
-        host->SetSystemParameter(ICVirtualHost::ACT_C_Sec4, axisMode.all16Mode[1]);
+        host->SetSystemParameter(ICVirtualHost::ACT_C_Sec2, axisMode.all16Mode[0]);
+        host->SetSystemParameter(ICVirtualHost::ACT_C_Sec3, axisMode.all16Mode[1]);
+        host->SetSystemParameter(ICVirtualHost::ACT_C_Sec4, axisMode.all16Mode[2]);
 //        host->SystemParameter(ICVirtualHost::SYS_Function);
         host->SaveSystemConfig();
 //        ICMessageBox::ICWarning(this, tr("Tips"), tr("Save Sucessfully!"));
