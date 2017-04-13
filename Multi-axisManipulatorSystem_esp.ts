@@ -8010,7 +8010,7 @@ de producción</translation>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="14"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="14"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="247"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="281"/>
         <source>Form</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8019,8 +8019,8 @@ de producción</translation>
         <location filename="hcsettings/icstructdefineframe.ui" line="38"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="44"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="50"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="259"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="357"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="293"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="391"/>
         <source>Arm Define</source>
         <translation>Definir eje</translation>
     </message>
@@ -8041,6 +8041,14 @@ de producción</translation>
         <location filename="hcsettings/icstructdefineframe.ui" line="662"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="741"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="792"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1909"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1959"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2009"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2066"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2137"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2187"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2251"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2301"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="84"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="143"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="174"/>
@@ -8057,14 +8065,14 @@ de producción</translation>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="692"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="771"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="822"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="261"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="265"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="269"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="273"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="277"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="281"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="285"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="289"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="295"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="299"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="303"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="307"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="311"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="315"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="319"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="323"/>
         <source>None</source>
         <translation>Nada</translation>
     </message>
@@ -8085,14 +8093,14 @@ de producción</translation>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="286"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="324"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="362"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="262"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="266"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="270"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="274"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="278"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="282"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="286"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="290"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="296"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="300"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="304"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="308"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="312"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="316"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="320"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="324"/>
         <source>Pneumatic</source>
         <translation>Eje neumático</translation>
     </message>
@@ -8113,41 +8121,65 @@ de producción</translation>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="291"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="329"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="367"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="263"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="267"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="271"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="275"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="279"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="283"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="287"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="291"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="297"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="301"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="305"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="309"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="313"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="317"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="321"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="325"/>
         <source>Servo</source>
         <translation>Eje de servicio</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="84"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="700"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1914"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1964"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2014"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2071"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2142"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2192"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2256"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2306"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="102"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="730"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="260"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="294"/>
         <source>X1</source>
         <translation>X1</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="91"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="721"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1944"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1994"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2044"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2101"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2172"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2222"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2286"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2336"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="109"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="751"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="264"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="298"/>
         <source>C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="98"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="366"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1924"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1974"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2024"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2081"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2152"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2202"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2266"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2316"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="116"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="396"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="268"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="302"/>
         <source>Z</source>
         <translation>Z</translation>
     </message>
@@ -8156,43 +8188,75 @@ de producción</translation>
         <location filename="hcsettings/icstructdefineframe.ui" line="380"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="123"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="410"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="272"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="306"/>
         <source>A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="205"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="642"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1939"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1989"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2039"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2096"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2167"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2217"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2281"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2331"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="223"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="672"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="276"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="310"/>
         <source>B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="243"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="714"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1919"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1969"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2019"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2076"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2147"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2197"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2261"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2311"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="261"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="744"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="280"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="314"/>
         <source>Y1</source>
         <translation>Y1</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="281"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="707"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1929"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1979"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2029"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2086"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2157"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2207"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2271"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2321"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="299"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="737"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="284"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="318"/>
         <source>X2</source>
         <translation>X2</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="319"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="373"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1934"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1984"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2034"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2091"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2162"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2212"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2276"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2326"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="337"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="403"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="288"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="322"/>
         <source>Y2</source>
         <translation>Y2</translation>
     </message>
@@ -8327,8 +8391,8 @@ de producción</translation>
         <location filename="hcsettings/icstructdefineframe.ui" line="840"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="864"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="870"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="292"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="358"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="326"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="392"/>
         <source>Out Define</source>
         <translation>definición de reserva</translation>
     </message>
@@ -8349,14 +8413,14 @@ de producción</translation>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1480"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1515"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1550"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="333"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="335"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="337"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="339"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="341"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="343"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="345"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="347"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="367"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="369"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="371"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="373"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="375"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="377"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="379"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="381"/>
         <source>Extent</source>
         <translation>Extender</translation>
     </message>
@@ -8383,14 +8447,14 @@ de producción</translation>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1366"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1404"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1442"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="332"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="334"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="336"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="338"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="340"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="342"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="344"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="346"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="366"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="368"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="370"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="372"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="374"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="376"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="378"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="380"/>
         <source>Normal</source>
         <translation>Ajustar</translation>
     </message>
@@ -8399,29 +8463,29 @@ de producción</translation>
         <location filename="hcsettings/icstructdefineframe.ui" line="1540"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1564"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1570"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="248"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="359"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="282"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="393"/>
         <source>Signal Define</source>
         <translation>Definir señal</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1593"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1629"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="249"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="283"/>
         <source>Single Arm</source>
         <translation>Alarma sola</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1641"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1677"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="250"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="284"/>
         <source>Double Arm</source>
         <translation>Brazo doble</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1678"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1711"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="251"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="285"/>
         <source>Main Arm</source>
         <translation>Brazo principal</translation>
     </message>
@@ -8430,8 +8494,8 @@ de producción</translation>
         <location filename="hcsettings/icstructdefineframe.ui" line="1804"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1742"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1849"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="252"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="256"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="286"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="290"/>
         <source>Down Limit</source>
         <translation>Límite de bajar </translation>
     </message>
@@ -8450,152 +8514,162 @@ de producción</translation>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1798"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1837"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="255"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="289"/>
         <source>Sub Arm</source>
         <translation>Sub brazo </translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1814"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1859"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="253"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="257"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="287"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="291"/>
         <source>Backword Limit</source>
         <translation>Límite hacia atrás</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1824"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1869"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="254"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="258"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="288"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="292"/>
         <source>Forward Limit</source>
         <translation>Límite adelante</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1856"/>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1862"/>
+        <source>Origin</source>
+        <translation type="unfinished">Origen</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="1893"/>
+        <source>Origin Sequence</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2373"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2379"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1904"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1910"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="348"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="360"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="382"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="394"/>
         <source>Other Define</source>
         <translation>Otra definición</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2123"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="353"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2640"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="387"/>
         <source>Ret On Close</source>
         <translation>Cuando retorno
  Cerrar</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1989"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2506"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2086"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="364"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="398"/>
         <source>Adjust</source>
         <translation>Ajustar</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2021"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2538"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1993"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2069"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="361"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="395"/>
         <source>Use</source>
         <translation>Uso</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2174"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="349"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2691"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="383"/>
         <source>SE Door Mode</source>
         <translation>Modelo de
 SE</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1881"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2398"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1961"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="363"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="397"/>
         <source>Servo Flex</source>
         <translation>movimiento
 rígido</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1897"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2414"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2140"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="302"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="336"/>
         <source>In Mold Limit</source>
         <translation>En pos
 de mol</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2079"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2596"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2148"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="303"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="337"/>
         <source>Limit</source>
         <translation>limitar</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2084"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2601"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2153"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="304"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="338"/>
         <source>NoLimit</source>
         <translation>No límite</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1905"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2422"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2094"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="294"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="328"/>
         <source>0-soft</source>
         <translation>0-suave</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1940"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2457"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2129"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="301"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="335"/>
         <source>7-hard</source>
         <translation>7-duro</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2155"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2672"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1954"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2031"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="362"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="396"/>
         <source>No Use</source>
         <translation>No utilizar</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="1979"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="352"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2496"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="386"/>
         <source>Run On Close</source>
         <translation>Cuando ejecuta
  Cerrar</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2065"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="354"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2582"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="388"/>
         <source>Stop On Close</source>
         <translation>Cuando detener
  Cerrar</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2206"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2723"/>
         <source>ODST</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2219"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2736"/>
         <source>s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2260"/>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2777"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2195"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="355"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="426"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="389"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="473"/>
         <source>Save</source>
         <translation>guardar</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="999"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="293"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="327"/>
         <source>1</source>
         <translation>Y017</translation>
     </message>
@@ -8640,18 +8714,18 @@ de mol</translation>
         <translation>Escapar</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="365"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="366"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="399"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="400"/>
         <source>Reserve</source>
         <translation>Extender</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="420"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="467"/>
         <source>Tips</source>
         <translation>Sugerencia</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="420"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="467"/>
         <source>Save Sucessfully!</source>
         <translation>Guardar con éxito!</translation>
     </message>

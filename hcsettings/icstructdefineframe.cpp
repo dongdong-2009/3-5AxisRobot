@@ -31,6 +31,23 @@ struct {
 uint port;
 }AXIS_MODIFY_DATA;
 
+typedef union{
+    struct {
+        quint16 a1 : 3;
+        quint16 a2 : 3;
+        quint16 a3 : 3;
+        quint16 a4 : 3;
+        quint16 a5 : 3;
+        quint16 a6 : 3;
+        quint16 a7 : 3;
+        quint16 a8 : 3;
+        quint16 resv : 7;
+        quint16 en: 1;
+    }mode;
+    quint16 all16Mode[2];
+    quint32 all32Mode;
+}AxisMode;
+
 ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::ICStructDefineFrame)
@@ -194,6 +211,23 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
     ui->odst->setValidator(new QIntValidator(0, 30000, this));
     ui->odstEn->setChecked(ICVirtualHost::GlobalVirtualHost()->IsOutDownSecurityCheck());
     ui->odst->SetThisIntToThisText(ICVirtualHost::GlobalVirtualHost()->SystemParameter(ICVirtualHost::ACT_GBSUB).toUInt());
+
+
+    AxisMode axisMode;
+    axisMode.all16Mode[0] = host->SystemParameter(ICVirtualHost::ACT_C_Sec3).toInt();
+    axisMode.all16Mode[1] =  host->SystemParameter(ICVirtualHost::ACT_C_Sec4).toInt();
+    ui->os1->setCurrentIndex(axisMode.mode.a1);
+    ui->os2->setCurrentIndex(axisMode.mode.a2);
+    ui->os3->setCurrentIndex(axisMode.mode.a3);
+    ui->os4->setCurrentIndex(axisMode.mode.a4);
+    ui->os5->setCurrentIndex(axisMode.mode.a5);
+    ui->os6->setCurrentIndex(axisMode.mode.a6);
+    ui->os7->setCurrentIndex(axisMode.mode.a7);
+    ui->os8->setCurrentIndex(axisMode.mode.a8);
+    ui->originSeqBox->setChecked(axisMode.mode.en);
+
+
+
     editorToConfigIDs_.insert(ui->x1Box, ICConfigString::kCS_STRUCT_Axis_Define_X1);
     editorToConfigIDs_.insert(ui->y1Box, ICConfigString::kCS_STRUCT_Axis_Define_Y1);
     editorToConfigIDs_.insert(ui->zBox, ICConfigString::kCS_STRUCT_Axis_Define_Z);
@@ -414,6 +448,19 @@ void ICStructDefineFrame::on_saveButton_clicked()
         host->SetSystemParameter(ICVirtualHost::SYS_Config_Xorsum, dataBuffer.at(6));
         host->SetOutDownSecurityCheck(ui->odstEn->isChecked());
         host->SetSystemParameter(ICVirtualHost::ACT_GBSUB, ui->odst->TransThisTextToThisInt());
+        AxisMode axisMode;
+        axisMode.mode.a1 = ui->os1->currentIndex();
+        axisMode.mode.a2 = ui->os2->currentIndex();
+        axisMode.mode.a3 = ui->os3->currentIndex();
+        axisMode.mode.a4 = ui->os4->currentIndex();
+        axisMode.mode.a5 = ui->os5->currentIndex();
+        axisMode.mode.a6 = ui->os6->currentIndex();
+        axisMode.mode.a7 = ui->os7->currentIndex();
+        axisMode.mode.a8 = ui->os8->currentIndex();
+        axisMode.mode.resv = 0;
+        axisMode.mode.en = ui->originSeqBox->isChecked();
+        host->SetSystemParameter(ICVirtualHost::ACT_C_Sec3, axisMode.all16Mode[0]);
+        host->SetSystemParameter(ICVirtualHost::ACT_C_Sec4, axisMode.all16Mode[1]);
 //        host->SystemParameter(ICVirtualHost::SYS_Function);
         host->SaveSystemConfig();
 //        ICMessageBox::ICWarning(this, tr("Tips"), tr("Save Sucessfully!"));

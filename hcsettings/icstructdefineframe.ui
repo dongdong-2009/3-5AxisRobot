@@ -1865,16 +1865,16 @@ QCheckBox::indicator:unchecked:disabled
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">::indicator {
+        <string notr="true">#originSeqBox::indicator {
      width: 32px;
      height: 32px;
  }
 
-::indicator:unchecked 
+#originSeqBox::indicator:unchecked 
 {
      image: url(:/resource/check_unchecked.png);
  }
-::indicator:checked 
+#originSeqBox::indicator:checked 
 {
      image: url(:/resource/check_checked.png);
  }
@@ -1900,7 +1900,7 @@ QRadioButton::indicator:unchecked:disabled
          <widget class="QComboBox" name="os7">
           <property name="minimumSize">
            <size>
-            <width>0</width>
+            <width>80</width>
             <height>32</height>
            </size>
           </property>
@@ -1950,7 +1950,7 @@ QRadioButton::indicator:unchecked:disabled
          <widget class="QComboBox" name="os4">
           <property name="minimumSize">
            <size>
-            <width>0</width>
+            <width>80</width>
             <height>32</height>
            </size>
           </property>
@@ -2000,7 +2000,7 @@ QRadioButton::indicator:unchecked:disabled
          <widget class="QComboBox" name="os6">
           <property name="minimumSize">
            <size>
-            <width>0</width>
+            <width>80</width>
             <height>32</height>
            </size>
           </property>
@@ -2057,7 +2057,7 @@ QRadioButton::indicator:unchecked:disabled
          <widget class="QComboBox" name="os5">
           <property name="minimumSize">
            <size>
-            <width>0</width>
+            <width>80</width>
             <height>32</height>
            </size>
           </property>
@@ -2128,7 +2128,7 @@ QRadioButton::indicator:unchecked:disabled
          <widget class="QComboBox" name="os2">
           <property name="minimumSize">
            <size>
-            <width>0</width>
+            <width>80</width>
             <height>32</height>
            </size>
           </property>
@@ -2178,7 +2178,7 @@ QRadioButton::indicator:unchecked:disabled
          <widget class="QComboBox" name="os8">
           <property name="minimumSize">
            <size>
-            <width>0</width>
+            <width>80</width>
             <height>32</height>
            </size>
           </property>
@@ -2242,7 +2242,7 @@ QRadioButton::indicator:unchecked:disabled
          <widget class="QComboBox" name="os1">
           <property name="minimumSize">
            <size>
-            <width>0</width>
+            <width>80</width>
             <height>32</height>
            </size>
           </property>
@@ -2292,7 +2292,7 @@ QRadioButton::indicator:unchecked:disabled
          <widget class="QComboBox" name="os3">
           <property name="minimumSize">
            <size>
-            <width>0</width>
+            <width>80</width>
             <height>32</height>
            </size>
           </property>
@@ -2797,15 +2797,15 @@ QRadioButton::indicator:unchecked:disabled
  <resources/>
  <connections/>
  <buttongroups>
+  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroupA"/>
   <buttongroup name="buttonGroupB"/>
   <buttongroup name="buttonGroupC"/>
+  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroupD"/>
   <buttongroup name="buttonGroupE"/>
   <buttongroup name="buttonGroupF"/>
-  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroupG"/>
   <buttongroup name="buttonGroupH"/>
-  <buttongroup name="buttonGroup_2"/>
-  <buttongroup name="buttonGroupA"/>
  </buttongroups>
 </ui>
