@@ -123,6 +123,14 @@ QList<ICMoldItem> ICWaitConditionEditor::CreateCommandImpl() const
     {
         item.SetSVal(25);
     }
+    else if(ui->eucoreinCheckBox_2->isChecked())
+    {
+        item.SetSVal(15);
+    }
+    else if(ui->eucoreoutCheckBox_2->isChecked())
+    {
+        item.SetSVal(16);
+    }
     else return ret;
     ret.append(item);
     return ret;

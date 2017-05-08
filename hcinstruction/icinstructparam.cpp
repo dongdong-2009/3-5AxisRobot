@@ -316,6 +316,14 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             {
                 commandStr += tr("EUCOREOUT");
             }
+            else if(moldItem.SVal() == 15)
+            {
+                commandStr += tr("EUCOREIn-2");
+            }
+            else if(moldItem.SVal() == 16)
+            {
+                commandStr += tr("EUCOREOUT-2");
+            }
             else if(moldItem.SVal() == 17)
             {
                 commandStr += tr("X045");
