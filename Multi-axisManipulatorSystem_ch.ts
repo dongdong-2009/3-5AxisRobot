@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_CN" sourcelanguage="en_US">
+<TS version="2.0" language="zh_CN" sourcelanguage="en_US">
 <context>
     <name>ActionSettingFrame</name>
     <message>
@@ -4807,19 +4807,19 @@ Reason</source>
         <translation>第4组</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="682"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="711"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="683"/>
         <source>X</source>
         <translation>X轴</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="816"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="845"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="817"/>
         <source>Y</source>
         <translation>Y轴</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="668"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="694"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="669"/>
         <source>Z</source>
         <translation>Z轴</translation>
@@ -4827,55 +4827,60 @@ Reason</source>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="364"/>
         <source>Z-Y-X</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Z-&gt;Y-&gt;X</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="704"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="390"/>
+        <source>X-Y-Z</source>
+        <translation type="unfinished">X-&gt;Y-&gt;Z</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="733"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="705"/>
         <source>Stack Counter</source>
         <oldsource>Count Way</oldsource>
         <translation>堆叠计数器</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="712"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="741"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="713"/>
         <source>All</source>
         <translation>全部</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="717"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="746"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="718"/>
         <source>Good</source>
         <translation>良品</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="722"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="751"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="723"/>
         <source>Stack-1</source>
         <translation>堆叠1组</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="727"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="756"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="728"/>
         <source>Stack-2</source>
         <translation>堆叠2组</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="732"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="761"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="733"/>
         <source>Stack-3</source>
         <translation>堆叠3组</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="737"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="766"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="738"/>
         <source>Stack-4</source>
         <translation>堆叠4组</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="823"/>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="836"/>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="849"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="855"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="868"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="881"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="824"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="837"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="850"/>
@@ -4883,15 +4888,15 @@ Reason</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="890"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="922"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="891"/>
         <source>Is Sub Arm</source>
         <translation>副臂堆叠</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="621"/>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="644"/>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="747"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="647"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="670"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="776"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="622"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="645"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="748"/>
@@ -4945,57 +4950,57 @@ Reason</source>
         <translation>Y-&gt;Z-&gt;X</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="377"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="403"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="366"/>
         <source>Direction</source>
         <translation>方向</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="426"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="452"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="427"/>
         <source>X PP</source>
         <translation>X轴正向</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="493"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="519"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="494"/>
         <source>Y PP</source>
         <translation>Y轴正向</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="557"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="583"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="558"/>
         <source>Z PP</source>
         <translation>Z轴正向</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="614"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="640"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="615"/>
         <source>Step</source>
         <translation>间距</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="455"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="481"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="456"/>
         <source>X RP</source>
         <translation>X轴反向</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="519"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="545"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="520"/>
         <source>Y RP</source>
         <translation>Y轴反向</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="583"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="609"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="584"/>
         <source>Z RP</source>
         <translation>Z轴反向</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="661"/>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="675"/>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="783"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="687"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="704"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="812"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="662"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="676"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="784"/>
@@ -5003,7 +5008,7 @@ Reason</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="654"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.ui" line="680"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="655"/>
         <source>Lattice</source>
         <translation>个数</translation>
@@ -5314,7 +5319,7 @@ Reason</source>
         <source>Mechanical length</source>
         <translation type="obsolete">机械长度</translation>
     </message>
-    <message>
+    <message utf8="true">
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="172"/>
         <source>中文</source>
         <translation></translation>
