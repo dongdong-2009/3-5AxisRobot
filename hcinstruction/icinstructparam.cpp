@@ -231,6 +231,34 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             {
                 commandStr += tr("X036 OFF");
             }
+            else if(moldItem.IFVal() == 14)
+            {
+                commandStr += tr("X045");
+            }
+            else if(moldItem.IFVal() == 15)
+            {
+                commandStr += tr("X046");
+            }
+            else if(moldItem.IFVal() == 16)
+            {
+                commandStr += tr("X047");
+            }
+            else if(moldItem.IFVal() == 17)
+            {
+                commandStr += tr("X026");
+            }
+            else if(moldItem.IFVal() == 18)
+            {
+                commandStr += tr("X040");
+            }
+            else if(moldItem.IFVal() == 19)
+            {
+                commandStr += tr("X023");
+            }
+            else if(moldItem.IFVal() == 20)
+            {
+                commandStr += tr("X037");
+            }
             commandStr += " ";
             //            commandStr += " " + tr("ON:Macro") + QString::number(moldItem.RVal()) + " ";
             if(moldItem.SVal() == 5)
