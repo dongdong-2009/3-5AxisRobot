@@ -2628,17 +2628,17 @@ iser</translation>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="742"/>
         <source>X045</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X045</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="774"/>
         <source>X046</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X046</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="806"/>
         <source>X047</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X047</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="838"/>
@@ -8141,16 +8141,21 @@ e depart</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icstackeditor.cpp" line="140"/>
-        <location filename="hcinstruction/icstackeditor.cpp" line="149"/>
-        <location filename="hcinstruction/icstackeditor.cpp" line="158"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="137"/>
+        <source>X-&gt;Y-&gt;Z</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icstackeditor.cpp" line="144"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="153"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="162"/>
         <source>RP</source>
         <translation type="unfinished">RP</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icstackeditor.cpp" line="140"/>
-        <location filename="hcinstruction/icstackeditor.cpp" line="149"/>
-        <location filename="hcinstruction/icstackeditor.cpp" line="158"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="144"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="153"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="162"/>
         <source>P</source>
         <translation type="unfinished">av-
 ant</translation>

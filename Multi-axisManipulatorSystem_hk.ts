@@ -7765,16 +7765,21 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/icstackeditor.cpp" line="140"/>
-        <location filename="hcinstruction/icstackeditor.cpp" line="149"/>
-        <location filename="hcinstruction/icstackeditor.cpp" line="158"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="137"/>
+        <source>X-&gt;Y-&gt;Z</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icstackeditor.cpp" line="144"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="153"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="162"/>
         <source>RP</source>
         <translation type="unfinished">反向</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icstackeditor.cpp" line="140"/>
-        <location filename="hcinstruction/icstackeditor.cpp" line="149"/>
-        <location filename="hcinstruction/icstackeditor.cpp" line="158"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="144"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="153"/>
+        <location filename="hcinstruction/icstackeditor.cpp" line="162"/>
         <source>P</source>
         <translation type="unfinished">正向</translation>
     </message>
