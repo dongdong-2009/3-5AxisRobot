@@ -151,6 +151,10 @@ void ICHCStackedSettingsFrame::RefreshStackParams_(int group)
     {
         ui->zyxCheckBox->setChecked(true);
     }
+    else if(seqL == 5)
+    {
+        ui->xyzCheckBox->setChecked(true);
+    }
     ui->xRPLatticeLineEdit->SetThisIntToThisText(stackParams.at(ICMold::X_Array) & 0x7FFF);
     seqH & 32 ? ui->xRPCheckBox->click() : ui->xPPCheckBox->click();
     stackParams.at(ICMold::X_Array) >> 15 ? ui->xUnit->setChecked(true) : ui->xUnit_2->setChecked(true);
@@ -201,8 +205,15 @@ QList<int> ICHCStackedSettingsFrame::GetCurrentStatus_() const
     {
         seqL = 3;
     }
-    else
+    else if(checkedButton == ui->zyxCheckBox)
+    {
         seqL = 4;
+    }
+    else if(checkedButton == ui->xyzCheckBox)
+    {
+        seqL = 5;
+    }
+
     if(ui->xRPCheckBox->isChecked())
     {
         seqH |= 32;

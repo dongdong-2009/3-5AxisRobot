@@ -368,6 +368,32 @@
             </attribute>
            </widget>
           </item>
+          <item row="2" column="1">
+           <widget class="QCheckBox" name="xyzCheckBox">
+            <property name="styleSheet">
+             <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+</string>
+            </property>
+            <property name="text">
+             <string>X-Y-Z</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
+           </widget>
+          </item>
          </layout>
         </widget>
        </item>
@@ -667,6 +693,9 @@
          <property name="text">
           <string>Z</string>
          </property>
+         <property name="buddy">
+          <cstring>label_8</cstring>
+         </property>
         </widget>
        </item>
        <item row="2" column="5">
@@ -814,6 +843,9 @@
         <widget class="QLabel" name="label_7">
          <property name="text">
           <string>Y</string>
+         </property>
+         <property name="buddy">
+          <cstring>label_7</cstring>
          </property>
         </widget>
        </item>

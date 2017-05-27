@@ -132,6 +132,10 @@ void ICStackEditor::showEvent(QShowEvent *e)
         {
             group.seq->setText(tr("Z->Y->X"));
         }
+        else if(seqL == 5)
+        {
+            group.seq->setText(tr("X->Y->Z"));
+        }
         //        ui->xRPLatticeLineEdit->SetThisIntToThisText(stackParams.at(ICMold::X_Array));
         int decimal = 2 - (stackParams.at(ICMold::X_Array) >> 15);
         qreal multi = qPow(10, decimal);
