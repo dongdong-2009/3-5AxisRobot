@@ -6,6 +6,7 @@
 #include "icvirtualhost.h"
 #include "icparameterssave.h"
 #include "icconfigstring.h"
+#include "icactioncommand.h"
 
 #include <QVector>
 //#include "icmessagebox.h"
@@ -226,6 +227,8 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
     ui->os8->setCurrentIndex(axisMode.mode.a8);
     ui->originSeqBox->setChecked(axisMode.mode.en);
 
+    ui->absServo->setChecked(ICParametersSave::Instance()->IsAbsServo());
+
 
 
     editorToConfigIDs_.insert(ui->x1Box, ICConfigString::kCS_STRUCT_Axis_Define_X1);
@@ -438,6 +441,7 @@ void ICStructDefineFrame::on_saveButton_clicked()
     if(process->ExecuteCommand(command).toBool())
 #endif
     {
+        ICParametersSave::Instance()->SetAbsServo(ui->absServo->isChecked());
         ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
         host->SetSystemParameter(ICVirtualHost::SYS_Config_Signal, armStruct_);
         host->SetAxisDefine(axisDefine_);
@@ -581,3 +585,8 @@ void ICStructDefineFrame::on_fixtureComboBox_currentIndexChanged(int index)
 }
 
 ICLogFunctions(ICStructDefineFrame)
+
+void ICStructDefineFrame::on_originBtn_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteHCCommand(IC::CMD_TurnZero, 0);
+}

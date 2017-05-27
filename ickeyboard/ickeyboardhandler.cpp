@@ -204,6 +204,7 @@ void ICKeyboardHandler::Keypressed(int keyValue)
         {
             return;
         }
+        if(ICParametersSave::Instance()->IsAbsServo()) return;
         //            commandProcessor->ExecuteVirtualKeyCommand(virtualKeyMap_.value(keyValue));
         if(commandProcessor->ExecuteHCCommand(IC::CMD_TurnZero, virtualKeyMap_.value(keyValue)))
         {

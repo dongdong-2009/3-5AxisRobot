@@ -118,6 +118,9 @@ public:
 
     bool IsSuperLogin() { return isSuperLogin_;}
 
+    bool IsAbsServo() { return GetParameter(SystemMachine, "IsAbsServo", false).toBool();}
+    void SetAbsServo(bool en) { SaveParameter(SystemMachine, "IsAbsServo", en);}
+
 signals:
     void CurrentLanguageChanged();
 

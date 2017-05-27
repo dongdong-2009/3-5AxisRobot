@@ -71,6 +71,8 @@ private slots:
     void OnConfigChanged(int v);
     void OnConfigChanged(int v, int ov);
     void OnConfigChanged(bool b);
+    void on_originBtn_clicked();
+
 private:
     QMap<QObject*, int> editorToConfigIDs_;
 
