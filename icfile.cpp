@@ -14,11 +14,18 @@ ICFile::ICFile(const QString& filename):
 
 QString ICFile::ICRead()
 {
+    QString ret;
     QFile file(this->fileName_);
-    if(!file.open(QFile::ReadOnly | QFile::Text)) return "\0";
-    QTextStream in(&file);
-    return QString(in.readAll());
-    file.close();
+    if(file.open(QFile::ReadOnly | QFile::Text))
+    {
+
+        //    if(!file.open(QFile::ReadOnly | QFile::Text)) return "\0";
+        //    QTextStream in(&file);
+        //    return QString(in.readAll());
+        ret = QString::fromUtf8(file.readAll());
+        file.close();
+    }
+    return  ret;
 }
 
 bool ICFile::ICWrite(const QByteArray &toWrite)
