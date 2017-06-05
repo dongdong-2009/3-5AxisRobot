@@ -9,7 +9,8 @@ ICHCConditionPage::ICHCConditionPage(QWidget *parent) :
 {
     ui->setupUi(this);
 //    ui->returnLineEdit->setValidator(new QIntValidator(-32767, 32767, this));
-    buttonGroup = new QButtonGroup ;
+    buttonGroup = new QButtonGroup;
+    onOffButtonGroup = new QButtonGroup;
     ui->subComboBox->setCurrentIndex(5);
     ui->subComboBox->setEnabled(false);
 //    ui->returnLineEdit->setText("1");
@@ -57,7 +58,19 @@ QList<ICMoldItem> ICHCConditionPage::CreateCommandImpl() const
     ICMoldItem item;
     item.SetAction(ICMold::ACTCHECKINPUT);
     item.SetPos(0);
-    item.SetIFVal(buttonGroup->checkedId());
+    //////////////////////////////////////////////
+    uint ifValTemp = buttonGroup->checkedId();
+    ifValTemp &= 0xff7f;
+    if(onOffButtonGroup->checkedId() == 0)
+    {
+        ifValTemp |= 1 << 7;
+    }
+    else if(onOffButtonGroup->checkedId() == 1)
+    {
+        ifValTemp |= 0 << 7;
+    }
+    item.SetIFVal(ifValTemp);
+    ////////////////////////////////////////////////
     if(item.IFVal() == 3)
     {
         item.SetSVal(7);
@@ -107,6 +120,9 @@ void ICHCConditionPage::InitCheckPointBox()
     buttonGroup->addButton(ui->x040checkBox, 18);
     buttonGroup->addButton(ui->x023checkBox, 19);
     buttonGroup->addButton(ui->x037checkBox, 20);
+
+    onOffButtonGroup->addButton(ui->oncheckBox, 0);
+    onOffButtonGroup->addButton(ui->offcheckBox, 1);
 
 
     QList<QAbstractButton*> buttons = buttonGroup->buttons();

@@ -175,90 +175,102 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
         else if(action == ACTCHECKINPUT)
         {
             //            drs
-            if(moldItem.IFVal() == 0)
+            uint ifValTemp = moldItem.IFVal();
+            uint ifValLow7Bit = ifValTemp & 0x007f;
+            if(ifValLow7Bit == 0)
             {
                 //                commandStr += tr("Defective Products");
             }
-            else if(moldItem.IFVal() == 1)
+            else if(ifValLow7Bit == 1)
             {
                 commandStr += tr("X043");
             }
-            else if(moldItem.IFVal() ==2)
+            else if(ifValLow7Bit ==2)
             {
                 commandStr += tr("X044");
             }
-            else if(moldItem.IFVal() ==3)
+            else if(ifValLow7Bit ==3)
             {
                 //                commandStr += tr("Try Product");
             }
-            else if(moldItem.IFVal() ==4)
+            else if(ifValLow7Bit ==4)
             {
                 //                commandStr += tr("Sampling");
             }
-            else if(moldItem.IFVal() == 5)
+            else if(ifValLow7Bit == 5)
             {
-                commandStr += tr("X012 OFF");
+                commandStr += tr("X012 ");
             }
-            else if(moldItem.IFVal() == 6)
+            else if(ifValLow7Bit == 6)
             {
-                commandStr += tr("X013 OFF");
+                commandStr += tr("X013 ");
             }
-            else if(moldItem.IFVal() == 7)
+            else if(ifValLow7Bit == 7)
             {
-                commandStr += tr("X034 OFF");
+                commandStr += tr("X034 ");
             }
-            else if(moldItem.IFVal() == 8)
+            else if(ifValLow7Bit == 8)
             {
-                commandStr += tr("X021 OFF");
+                commandStr += tr("X021 ");
             }
-            else if(moldItem.IFVal() == 9)
+            else if(ifValLow7Bit == 9)
             {
-                commandStr += tr("X015 OFF");
+                commandStr += tr("X015 ");
             }
-            else if(moldItem.IFVal() == 10)
+            else if(ifValLow7Bit == 10)
             {
-                commandStr += tr("X014 OFF");
+                commandStr += tr("X014 ");
             }
-            else if(moldItem.IFVal() == 11)
+            else if(ifValLow7Bit == 11)
             {
                 commandStr += tr("Mold Count") + ":" + QString::number(moldItem.IFPos());
             }
-            else if(moldItem.IFVal() == 12)
+            else if(ifValLow7Bit == 12)
             {
-                commandStr += tr("X017 OFF");
+                commandStr += tr("X017 ");
             }
-            else if(moldItem.IFVal() == 13)
+            else if(ifValLow7Bit == 13)
             {
-                commandStr += tr("X036 OFF");
+                commandStr += tr("X036 ");
             }
-            else if(moldItem.IFVal() == 14)
+            else if(ifValLow7Bit == 14)
             {
                 commandStr += tr("X045");
             }
-            else if(moldItem.IFVal() == 15)
+            else if(ifValLow7Bit == 15)
             {
                 commandStr += tr("X046");
             }
-            else if(moldItem.IFVal() == 16)
+            else if(ifValLow7Bit == 16)
             {
                 commandStr += tr("X047");
             }
-            else if(moldItem.IFVal() == 17)
+            else if(ifValLow7Bit == 17)
             {
                 commandStr += tr("X026");
             }
-            else if(moldItem.IFVal() == 18)
+            else if(ifValLow7Bit == 18)
             {
                 commandStr += tr("X040");
             }
-            else if(moldItem.IFVal() == 19)
+            else if(ifValLow7Bit == 19)
             {
                 commandStr += tr("X023");
             }
-            else if(moldItem.IFVal() == 20)
+            else if(ifValLow7Bit == 20)
             {
                 commandStr += tr("X037");
             }
+            ////////////////////////////////
+            if((ifValTemp & 0x80) == 0x80)
+            {
+                commandStr += tr("ON");
+            }
+            else
+            {
+                commandStr += tr("OFF");
+            }
+            ////////////////////////////////
             commandStr += " ";
             //            commandStr += " " + tr("ON:Macro") + QString::number(moldItem.RVal()) + " ";
             if(moldItem.SVal() == 5)

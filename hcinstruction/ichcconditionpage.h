@@ -27,6 +27,7 @@ protected:
 private:
     Ui::ICHCConditionPage *ui;
     QButtonGroup* buttonGroup;
+    QButtonGroup* onOffButtonGroup;
     void InitCheckPointBox();
 
 private slots:
