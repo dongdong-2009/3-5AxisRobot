@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="en_US">
+<TS version="2.1" language="en_US">
 <context>
     <name>ActionSettingFrame</name>
     <message>
@@ -3406,7 +3406,8 @@ Infomation</translation>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="117"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="134"/>
         <source>Other</source>
-        <translation>Manipulator I/O</translation>
+        <translation>Manipul-
+ator I/O</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="118"/>
@@ -4495,7 +4496,7 @@ Infomation</translation>
         <source>umount</source>
         <translation type="unfinished">umount</translation>
     </message>
-    <message utf8="true">
+    <message>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="172"/>
         <source>中文</source>
         <translation type="unfinished">Chinese</translation>
