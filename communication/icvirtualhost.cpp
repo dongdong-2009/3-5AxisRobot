@@ -27,6 +27,7 @@
 #include "icfile.h"
 
 
+
 #define REFRESH_TIME 10
 static QTime testTime;
 
@@ -67,6 +68,8 @@ ICVirtualHost::ICVirtualHost(QObject *parent) :
     InitSystemMap_();
     InitAddrToSysPosMap_();
     InitICStatusMap_();
+
+    CheckSubs();
     InitSubs_();
     InitMold_();
     InitMoldParam_();
@@ -129,6 +132,13 @@ ICVirtualHost::ICVirtualHost(QObject *parent) :
     //#ifdef HC_ARMV6
     //    QTimer::singleShot(REFRESH_TIME, this, SLOT(RefreshStatus()));
     //#else
+    if(!ICParametersSave::Instance()->IsProductSave())
+    {
+        SetFinishProductCount(0);
+        ICCommandProcessor::Instance()->ModifySysParam(SYS_RsvReadMold, 0);
+        ICCommandProcessor::Instance()->ModifySysParam(SYS_RsvWorkmold, 0);
+
+    }
     timer_->start(15);
     //#endif
     //#endif
@@ -1138,4 +1148,36 @@ ICVirtualHost::~ICVirtualHost()
 {
     timer_->stop();
     delete timer_;
+}
+
+void ICVirtualHost::CheckSubs()
+{
+    QDir subs("./subs");
+    QStringList t = subs.entryList(QStringList()<<"MoldName_*.sub");
+    if(!t.isEmpty())
+    {
+        QString mold = t.at(0);
+        mold.chop(4);
+        mold = mold.mid(9);
+        QString subName = mold + ".sub";
+
+        system(QString("cp ./records/%1%2 ./subs/sub%2.prg.bak -f").arg(subName).arg(0).toUtf8());
+        system(QString("cp ./records/%1%2 ./subs/sub%2.prg.bak -f").arg(subName).arg(1).toUtf8());
+        system(QString("cp ./records/%1%2 ./subs/sub%2.prg.bak -f").arg(subName).arg(2).toUtf8());
+        system(QString("cp ./records/%1%2 ./subs/sub%2.prg.bak -f").arg(subName).arg(3).toUtf8());
+        system(QString("cp ./records/%1%2 ./subs/sub%2.prg.bak -f").arg(subName).arg(4).toUtf8());
+        system(QString("cp ./records/%1%2 ./subs/sub%2.prg.bak -f").arg(subName).arg(5).toUtf8());
+        system(QString("cp ./records/%1%2 ./subs/sub%2.prg.bak -f").arg(subName).arg(6).toUtf8());
+        system(QString("cp ./records/%1%2 ./subs/sub%2.prg.bak -f").arg(subName).arg(7).toUtf8());
+
+        rename("./subs/sub0.prg.bak", "./subs/sub0.prg");
+        rename("./subs/sub1.prg.bak", "./subs/sub1.prg");
+        rename("./subs/sub2.prg.bak", "./subs/sub2.prg");
+        rename("./subs/sub3.prg.bak", "./subs/sub3.prg");
+        rename("./subs/sub4.prg.bak", "./subs/sub4.prg");
+        rename("./subs/sub5.prg.bak", "./subs/sub5.prg");
+        rename("./subs/sub6.prg.bak", "./subs/sub6.prg");
+        rename("./subs/sub7.prg.bak", "./subs/sub7.prg");
+        system(QString("rm ./subs/MoldName_%1").arg(subName).toUtf8());
+    }
 }

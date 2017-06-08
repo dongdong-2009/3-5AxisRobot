@@ -398,14 +398,26 @@ void MoldInformation::on_loadToolButton_clicked()
                 //                ICMold::CurrentMold()->ReadMoldFile(
                 return;
             }
-            system(QString("cp ./records/%1%2 ./subs/sub%2.prg -f").arg(subName).arg(0).toUtf8());
-            system(QString("cp ./records/%1%2 ./subs/sub%2.prg -f").arg(subName).arg(1).toUtf8());
-            system(QString("cp ./records/%1%2 ./subs/sub%2.prg -f").arg(subName).arg(2).toUtf8());
-            system(QString("cp ./records/%1%2 ./subs/sub%2.prg -f").arg(subName).arg(3).toUtf8());
-            system(QString("cp ./records/%1%2 ./subs/sub%2.prg -f").arg(subName).arg(4).toUtf8());
-            system(QString("cp ./records/%1%2 ./subs/sub%2.prg -f").arg(subName).arg(5).toUtf8());
-            system(QString("cp ./records/%1%2 ./subs/sub%2.prg -f").arg(subName).arg(6).toUtf8());
-            system(QString("cp ./records/%1%2 ./subs/sub%2.prg -f").arg(subName).arg(7).toUtf8());
+            system(QString("touch ./subs/MoldName_%1").arg(subName).toUtf8());
+            system(QString("cp ./records/%1%2 ./subs/sub%2.prg.bak -f").arg(subName).arg(0).toUtf8());
+            system(QString("cp ./records/%1%2 ./subs/sub%2.prg.bak -f").arg(subName).arg(1).toUtf8());
+            system(QString("cp ./records/%1%2 ./subs/sub%2.prg.bak -f").arg(subName).arg(2).toUtf8());
+            system(QString("cp ./records/%1%2 ./subs/sub%2.prg.bak -f").arg(subName).arg(3).toUtf8());
+            system(QString("cp ./records/%1%2 ./subs/sub%2.prg.bak -f").arg(subName).arg(4).toUtf8());
+            system(QString("cp ./records/%1%2 ./subs/sub%2.prg.bak -f").arg(subName).arg(5).toUtf8());
+            system(QString("cp ./records/%1%2 ./subs/sub%2.prg.bak -f").arg(subName).arg(6).toUtf8());
+            system(QString("cp ./records/%1%2 ./subs/sub%2.prg.bak -f").arg(subName).arg(7).toUtf8());
+
+            rename("./subs/sub0.prg.bak", "./subs/sub0.prg");
+            rename("./subs/sub1.prg.bak", "./subs/sub1.prg");
+            rename("./subs/sub2.prg.bak", "./subs/sub2.prg");
+            rename("./subs/sub3.prg.bak", "./subs/sub3.prg");
+            rename("./subs/sub4.prg.bak", "./subs/sub4.prg");
+            rename("./subs/sub5.prg.bak", "./subs/sub5.prg");
+            rename("./subs/sub6.prg.bak", "./subs/sub6.prg");
+            rename("./subs/sub7.prg.bak", "./subs/sub7.prg");
+            system(QString("rm ./subs/MoldName_%1").arg(subName).toUtf8());
+
             ICMacroSubroutine::Instance()->ReadMacroSubroutieFiles("./subs");
             ICTipsWidget tipsWidget(tr("Loading..."));
             tipsWidget.show();qApp->processEvents();

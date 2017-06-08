@@ -677,6 +677,7 @@ private Q_SLOTS:
     void RefreshStatus();
 
 private:
+    void CheckSubs();
     void InitSubs_();
     void InitSystem_();
     void InitMold_();
