@@ -2517,44 +2517,44 @@ ting</translation>
         <translation type="unfinished">voorwaarde</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="123"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="129"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="574"/>
         <source>Sub-1</source>
         <translation type="unfinished">macro 1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="128"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="134"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="579"/>
         <source>Sub-2</source>
         <translation type="unfinished">macro 2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="133"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="139"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="584"/>
         <source>Sub-3</source>
         <translation type="unfinished">macro 3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="138"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="144"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="589"/>
         <source>Sub-4</source>
         <translation type="unfinished">macro 4</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="143"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="149"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="594"/>
         <source>Sub-5</source>
         <translation type="unfinished">macro 5</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="148"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="154"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="599"/>
         <source>Bad Product</source>
         <translation type="unfinished">teller slechte</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="153"/>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="286"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="159"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="757"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="447"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="604"/>
         <source>Sampling</source>
@@ -2562,138 +2562,138 @@ ting</translation>
 e teller</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="158"/>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="607"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="164"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="476"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="99"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="609"/>
         <source>Try Product</source>
         <translation type="unfinished">Try Product</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="184"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="190"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="617"/>
         <source>Go to flag</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="209"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="215"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="554"/>
         <source>Use Macro</source>
         <translation type="unfinished">gebruik</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="537"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="912"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="543"/>
         <source>Sucker-4</source>
         <translation type="unfinished">vacuum 4</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="709"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="944"/>
         <source>X045</source>
         <translation type="unfinished">X045</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="958"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="1008"/>
         <source>ON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="990"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="1040"/>
         <source>OFF</source>
         <translation type="unfinished">uit</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="677"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="795"/>
         <source>X046</source>
         <translation type="unfinished">X046</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="862"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="438"/>
         <source>X047</source>
         <translation type="unfinished">X047</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="505"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="976"/>
         <source>X026</source>
         <translation type="unfinished">X026</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="894"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="546"/>
         <source>X040</source>
         <translation type="unfinished">X040</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="639"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="693"/>
         <source>X023</source>
         <translation type="unfinished">X023</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="569"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="629"/>
         <source>X037</source>
         <translation type="unfinished">X037</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="324"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="406"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="383"/>
         <source>Sucker-1</source>
         <translation type="unfinished">vacuum 1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="254"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="260"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="351"/>
         <source>Sucker-2</source>
         <translation type="unfinished">vacuum 2</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="356"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="330"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="131"/>
         <source>Product Count</source>
         <translation type="unfinished">cyclus interval</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="438"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="839"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="252"/>
         <source>Defective Products</source>
         <translation type="unfinished">teller slechte</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="798"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="880"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="208"/>
         <source>Fixture-3</source>
         <translation type="unfinished">grijper 3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="926"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="597"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="415"/>
         <source>X043</source>
         <translation type="unfinished">X043</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="473"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="661"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="511"/>
         <source>Sucker-3</source>
         <translation type="unfinished">vacuum 3</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="830"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="725"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="479"/>
         <source>X044</source>
         <translation type="unfinished">X044</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="1031"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="368"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="287"/>
         <source>Fixture-4</source>
         <translation type="unfinished">grijper 4</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="394"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="298"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="176"/>
         <source>Fixture-1</source>
         <translation type="unfinished">grijper 1</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="747"/>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="514"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="319"/>
         <source>Fixture-2</source>
         <translation type="unfinished">grijper 2</translation>
@@ -9164,7 +9164,7 @@ Please input senior password to confirm.</translation>
 <context>
     <name>ICVirtualHost</name>
     <message>
-        <location filename="communication/icvirtualhost.cpp" line="103"/>
+        <location filename="communication/icvirtualhost.cpp" line="106"/>
         <source>Error</source>
         <translation type="unfinished">fout</translation>
     </message>
@@ -9620,13 +9620,13 @@ r file</translation>
         <location filename="function_settings/moldinformation.cpp" line="266"/>
         <location filename="function_settings/moldinformation.cpp" line="277"/>
         <location filename="function_settings/moldinformation.cpp" line="303"/>
-        <location filename="function_settings/moldinformation.cpp" line="458"/>
-        <location filename="function_settings/moldinformation.cpp" line="471"/>
-        <location filename="function_settings/moldinformation.cpp" line="490"/>
-        <location filename="function_settings/moldinformation.cpp" line="500"/>
-        <location filename="function_settings/moldinformation.cpp" line="518"/>
-        <location filename="function_settings/moldinformation.cpp" line="646"/>
-        <location filename="function_settings/moldinformation.cpp" line="692"/>
+        <location filename="function_settings/moldinformation.cpp" line="466"/>
+        <location filename="function_settings/moldinformation.cpp" line="479"/>
+        <location filename="function_settings/moldinformation.cpp" line="498"/>
+        <location filename="function_settings/moldinformation.cpp" line="508"/>
+        <location filename="function_settings/moldinformation.cpp" line="526"/>
+        <location filename="function_settings/moldinformation.cpp" line="654"/>
+        <location filename="function_settings/moldinformation.cpp" line="700"/>
         <source>warning</source>
         <translation type="unfinished">waarsc-
 huwing</translation>
@@ -9639,12 +9639,12 @@ Please input the file name.</source>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="114"/>
-        <location filename="function_settings/moldinformation.cpp" line="600"/>
-        <location filename="function_settings/moldinformation.cpp" line="730"/>
+        <location filename="function_settings/moldinformation.cpp" line="608"/>
         <location filename="function_settings/moldinformation.cpp" line="738"/>
-        <location filename="function_settings/moldinformation.cpp" line="743"/>
-        <location filename="function_settings/moldinformation.cpp" line="782"/>
-        <location filename="function_settings/moldinformation.cpp" line="1000"/>
+        <location filename="function_settings/moldinformation.cpp" line="746"/>
+        <location filename="function_settings/moldinformation.cpp" line="751"/>
+        <location filename="function_settings/moldinformation.cpp" line="790"/>
+        <location filename="function_settings/moldinformation.cpp" line="1008"/>
         <source>Warnning</source>
         <translation type="unfinished">waarschuwing</translation>
     </message>
@@ -9701,8 +9701,8 @@ Please try a new name</source>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="347"/>
         <location filename="function_settings/moldinformation.cpp" line="364"/>
-        <location filename="function_settings/moldinformation.cpp" line="825"/>
-        <location filename="function_settings/moldinformation.cpp" line="976"/>
+        <location filename="function_settings/moldinformation.cpp" line="833"/>
+        <location filename="function_settings/moldinformation.cpp" line="984"/>
         <source>Warning</source>
         <translation type="unfinished">waarsc-
 huwing</translation>
@@ -9735,113 +9735,113 @@ huwing</translation>
 , vervangt andere modules!</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="414"/>
+        <location filename="function_settings/moldinformation.cpp" line="422"/>
         <source>Loading...</source>
         <translation type="unfinished">Loading...</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="459"/>
-        <location filename="function_settings/moldinformation.cpp" line="491"/>
-        <location filename="function_settings/moldinformation.cpp" line="647"/>
-        <location filename="function_settings/moldinformation.cpp" line="693"/>
+        <location filename="function_settings/moldinformation.cpp" line="467"/>
+        <location filename="function_settings/moldinformation.cpp" line="499"/>
+        <location filename="function_settings/moldinformation.cpp" line="655"/>
+        <location filename="function_settings/moldinformation.cpp" line="701"/>
         <source>The mold file </source>
         <translation type="unfinished">matrijs bestand</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="461"/>
-        <location filename="function_settings/moldinformation.cpp" line="493"/>
-        <location filename="function_settings/moldinformation.cpp" line="649"/>
-        <location filename="function_settings/moldinformation.cpp" line="695"/>
+        <location filename="function_settings/moldinformation.cpp" line="469"/>
+        <location filename="function_settings/moldinformation.cpp" line="501"/>
+        <location filename="function_settings/moldinformation.cpp" line="657"/>
+        <location filename="function_settings/moldinformation.cpp" line="703"/>
         <source> is being used</source>
         <translation type="unfinished">bestaat reeds</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="472"/>
-        <location filename="function_settings/moldinformation.cpp" line="501"/>
+        <location filename="function_settings/moldinformation.cpp" line="480"/>
+        <location filename="function_settings/moldinformation.cpp" line="509"/>
         <source>Stand programs can not be delete!</source>
         <translation type="unfinished">standaard prg kan ni-
 et verwijderd worden</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="519"/>
+        <location filename="function_settings/moldinformation.cpp" line="527"/>
         <source>Are you sure to delete the selected files?</source>
         <translation type="unfinished">ok voor het verwijderen v-
 an de geselecteerde files</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="600"/>
-        <location filename="function_settings/moldinformation.cpp" line="1000"/>
+        <location filename="function_settings/moldinformation.cpp" line="608"/>
+        <location filename="function_settings/moldinformation.cpp" line="1008"/>
         <source>Backup files is not exists!</source>
         <translation type="unfinished">back up files bestaan niet</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="656"/>
-        <location filename="function_settings/moldinformation.cpp" line="685"/>
-        <location filename="function_settings/moldinformation.cpp" line="847"/>
-        <location filename="function_settings/moldinformation.cpp" line="876"/>
+        <location filename="function_settings/moldinformation.cpp" line="664"/>
+        <location filename="function_settings/moldinformation.cpp" line="693"/>
+        <location filename="function_settings/moldinformation.cpp" line="855"/>
+        <location filename="function_settings/moldinformation.cpp" line="884"/>
         <source>tips</source>
         <translation type="unfinished">tips</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="656"/>
-        <location filename="function_settings/moldinformation.cpp" line="685"/>
-        <location filename="function_settings/moldinformation.cpp" line="847"/>
-        <location filename="function_settings/moldinformation.cpp" line="876"/>
+        <location filename="function_settings/moldinformation.cpp" line="664"/>
+        <location filename="function_settings/moldinformation.cpp" line="693"/>
+        <location filename="function_settings/moldinformation.cpp" line="855"/>
+        <location filename="function_settings/moldinformation.cpp" line="884"/>
         <source>%1 is exist,replace it?</source>
         <translation type="unfinished">%1 bestaat, vervangen</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="730"/>
+        <location filename="function_settings/moldinformation.cpp" line="738"/>
         <source>Wrong program format!</source>
         <translation type="unfinished">verkeerd prog-
 ramma formaat</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="738"/>
+        <location filename="function_settings/moldinformation.cpp" line="746"/>
         <source>Wrong config format!!!</source>
         <translation type="unfinished">verkeerd config formaat</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="743"/>
+        <location filename="function_settings/moldinformation.cpp" line="751"/>
         <source>Wrong config format!</source>
         <translation type="unfinished">verkeerd config formaat</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="749"/>
+        <location filename="function_settings/moldinformation.cpp" line="757"/>
         <source>Restoring, please wait...</source>
         <translation type="unfinished">herstellen, wachten aub</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="782"/>
+        <location filename="function_settings/moldinformation.cpp" line="790"/>
         <source>Wrong program format!!!</source>
         <translation type="unfinished">verkeerd programma formaat</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="804"/>
-        <location filename="function_settings/moldinformation.cpp" line="926"/>
+        <location filename="function_settings/moldinformation.cpp" line="812"/>
+        <location filename="function_settings/moldinformation.cpp" line="934"/>
         <source>Information</source>
         <translation type="unfinished">Infor-
 mation</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="804"/>
-        <location filename="function_settings/moldinformation.cpp" line="926"/>
+        <location filename="function_settings/moldinformation.cpp" line="812"/>
+        <location filename="function_settings/moldinformation.cpp" line="934"/>
         <source>Operation finished!</source>
         <translation type="unfinished">operatie beeindigd</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="825"/>
-        <location filename="function_settings/moldinformation.cpp" line="976"/>
+        <location filename="function_settings/moldinformation.cpp" line="833"/>
+        <location filename="function_settings/moldinformation.cpp" line="984"/>
         <source>USB is not connected!</source>
         <translation type="unfinished">USB is niet aangesloten</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="899"/>
+        <location filename="function_settings/moldinformation.cpp" line="907"/>
         <source>Backuping, please wait...</source>
         <translation type="unfinished">Backuping, please wait...</translation>
     </message>
     <message>
-        <location filename="function_settings/moldinformation.cpp" line="1003"/>
+        <location filename="function_settings/moldinformation.cpp" line="1011"/>
         <source>Refresh File List, please wait...</source>
         <translation type="unfinished">actualiseer de lijst, wachten aub</translation>
     </message>
