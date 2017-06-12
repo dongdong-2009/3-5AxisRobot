@@ -51,6 +51,7 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
     ui->languageButtonGroup->setId(ui->koreanBox, 5);
     ui->languageButtonGroup->setId(ui->hkBox, 6);
     ui->languageButtonGroup->setId(ui->itBox, 7);
+    ui->languageButtonGroup->setId(ui->polskiBox, 8);
     InitParameter();
     ui->extentFunctionCheckBox->blockSignals(true);
     ui->extentFunctionCheckBox->setChecked(ICParametersSave::Instance()->IsExtentFunctionUsed());
@@ -142,6 +143,8 @@ void ICHCSystemSettingsFrame::InitParameter()
         ui->hkBox->setChecked(true);
     else if(paraSave->Country() == QLocale::Italy)
         ui->itBox->setChecked(true);
+    else if(paraSave->Country() == QLocale::Poland)
+        ui->polskiBox->setChecked(true);
     // ui->languageComboBox->setCurrentIndex(index);
     if(paraSave->KeyTone())
     {
@@ -195,6 +198,10 @@ void ICHCSystemSettingsFrame::languageBoxChange()
     {
         paraSave->SetCountry(QLocale::Italy);
     }
+    else if(ui->languageButtonGroup->checkedId() == 8)
+    {
+        paraSave->SetCountry(QLocale::Poland);
+    }
 }
 
 
@@ -224,6 +231,8 @@ void ICHCSystemSettingsFrame::changeEvent(QEvent *e)
             ui->hkBox->setChecked(true);
         else if(paraSave->Country() == QLocale::Italy)
             ui->itBox->setChecked(true);
+        else if(paraSave->Country() == QLocale::Poland)
+            ui->polskiBox->setChecked(true);
         //    ui->languageComboBox->setCurrentIndex(index);
         ui->dateTimeEdit->setDateTime(QDateTime::currentDateTime());
 

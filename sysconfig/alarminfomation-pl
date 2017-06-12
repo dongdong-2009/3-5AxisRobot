@@ -1,0 +1,357 @@
+1:Wirtualny błąd
+2:Dziwne znaki
+3:Program nie został zakończony
+4:Ignorowane znaki
+5:Orion chaos
+6:Brak położenia końcowego
+7:Definicja łuku
+8:Sekwencja
+9:Large Radio
+10:Prędkość przekroczona
+11:Podwójna definicja IO
+12:Brak definicji IO
+13:Grupowe działanie jest błędne
+14:Grupowe oczekiwanie jest błędne
+15:Znalezienie następnego kroku nieprawidłowe
+16:Sprawdźkoniec poza zasięgiem.
+17:Zarejestrowany kontekst jest nieprawidłowy
+18:Sprawdź główny koniec działania
+19:Register Num context is wrong
+20:Register Sub context is wrong
+21:Czynność rejestracji została zakończona
+22:X is still running when generate action
+23:Y is still running when generate action
+24:Z is still running when generate action
+25:The timer has down to zero when G has delay time
+26:X nadmierna prędkość
+27:Y nadmierna prędkość
+28:Z nadmierna prędkość
+29:Błąd zapisu pamięci
+30:Błąd debugowania
+60:A nadmierna prędkość
+61:B nadmierna prędkość
+62:C nadmierna prędkość
+63:A is still running when generate action
+64:B is still running when generate action
+65:C is still running when generate action
+70:X2 nadmierna prędkość
+71:Y2 nadmierna prędkość
+72:X2 is still running when generate action
+73:Y2 is still running when generate action
+100:X large warp
+101:Y large warp
+102:Z large warp
+103:X axial z-pluse error
+104:Y axial z-pluse error
+105:Z axial z-pluse error
+106:X-alarm serwa
+107:Y-alarm serwa
+108:Z-alarm serwa
+109:X missed pos
+110:Y missed pos
+111:Z missed pos
+112:X-Maks alarm
+113:X-Min alarm
+114:Y-Maks alarm
+115:Y-Min alarm
+116:Z-Maks alarm
+117:Z-Min alarm
+118:X-Poz. zbyt duża
+119:X-Poz. zbyt mała
+120:Y-Poz. zbyt duża
+121:Y-Poz. zbyt mała
+122:Z-Poz. zbyt duża
+123:Z-Poz. zbyt mała
+124:X is large when running
+125:X is small when running
+126:Y is large when running
+127:Y is small when running
+128:Z is large when running
+129:Z is small when running
+130:X Błąd zapisu osi
+131:Y Błąd zapisu osi
+132:Z Błąd zapisu osi
+133:Struct save fail
+134:X axis compare
+135:Y axis compare
+136:Z axis compare
+137:Struct compare
+138:X is no servo
+139:Y is no servo
+140:Z is no servo
+160:X2 large warp
+161:Y2 large warp
+162:axial z-pluse error
+163:axial z-pluse error
+164:X2-alarm serwa
+165:Y2-alarm serwa
+166:X2 missed pos
+167:Y2 missed pos
+168:X2-Maks alarm
+169:X2-Min alarm
+170:Y2-Maks alarm
+171:Y2-Min alarm
+172:X2-Poz. zbyt duża
+173:X2-Poz. zbyt mała
+174:Y2-Poz. zbyt duża
+175:Y2-Poz. zbyt mała
+176:X2 is large when running
+177:X2 is small when running
+178:Y2 is large when running
+179:Y2 is small when running
+180:X2 Błąd zapisu osi
+181:Y2 Błąd zapisu osi
+182:X2 axis compare
+183:Y2 axis compare
+184:X2 is no servo
+185:Y2 is no servo
+200:A large warp
+201:B large warp
+202:C large warp
+203:A axial z-pluse error
+204:B axial z-pluse error
+205:C axial z-pluse error
+206:A-alarm serwa
+207:B-alarm serwa
+208:C-alarm serwa
+209:A missed pos
+210:B missed pos
+211:C missed pos
+212:A-Maks alarm
+213:A-Min alarm
+214:B-Maks alarm
+215:B-Min alarm
+216:C-Maks alarm
+217:C-Min alarm
+218:A-Poz. zbyt duża
+219:A-Poz. zbyt mała
+220:B-Poz. zbyt duża
+221:B-Poz. zbyt mała
+222:C-Poz. zbyt duża
+223:C-Poz. zbyt mała
+224:A is large when running
+225:A is small when running
+226:B is small when running
+227:B is small when running
+228:C is small when running
+229:C is small when running
+230:A Błąd zapisu osi
+231:B Błąd zapisu osi
+232:C Błąd zapisu osi
+233:SPI NULL
+234:A axis compare
+235:B axis compare
+236:C axis compare
+237:COMPARE NULL
+238:A is no servo
+239:B is no servo
+240:C is no servo
+200:Błąd połączenia z hostem
+300:X param error
+301:Y param error
+302:Z param error
+303:Action checksum error!
+304:Zatrzymanie awaryjne!
+305:Main cycle error
+306:Waiting Point error
+307:Fetching act error
+308:Zbyt duża tolerancja
+309:Mold Function param error
+310:iSub too large
+311:iSub re-called self
+312:illegal layout
+313:Overlap layout
+314:Sekwencja działania jest nieprawidłowa
+315:Parametr systemu jest nieprawidłowy
+316:Numer działania jest nieprawidłowy
+317:Sub action number is wrong
+318:Tylko numer linijki
+319:Just run on auto status
+320:Illega sequence
+321:Check sum is wrong
+322:Check GM value is wrong
+323:Wait Mold Opened
+324:GM value is wrong when auto adjust
+325:Zacisk action is duplicated
+326:Action is duplicated
+327:Just can call in level one
+328:Sprawdź wejście podczas pracy
+329:Uchwyt parameters is fail
+330:Położenie zostało zmienione, proszę zresetować
+331:Position parameters is fail
+332:Wyjście zostało zmienione, proszę zresetować
+333:Oś została zmieniona, proszę zresetować
+360:X2 axis parameters check fail
+361:Y2 axis parameters check fail
+362:A axis parameters check fail
+363:B axis parameters check fail
+364:C axis parameters check fail
+365:Struct parameters check fail
+400:Reading X param error
+401:Reading Y param error
+402:Reading Z param error
+403:Reading System Param error
+404:Reading Mold Param error
+405:Reading Sub-Prg error
+406:Reading Function Param error
+500:Utracono kontakt z MainCtrl!
+501:BoardIO com error!
+502:Over Set Product!
+503:Niskie ciśnienie
+504:Comm-WatchDog
+505:Sync program list wrong
+506:Time overlay when waiting signal
+507:Modify parameter not in stop status is not premit
+550:Konflikt osiX
+600:Z move outside, but Z insafe signal ON
+601:Z move outside, but Z insafe signal OFF
+602:Z move inside, but Z outsafe signal ON
+603:Z move inside, but Z outsafe signal OFF
+604:Y descend by Up-lmt On
+605:Y raised by Up-lmt off
+606:B descend by Up-lmt On
+607:B raised by Up-lmt off
+700:Time is over while wating for X043
+701:Time is over while wating for X044
+702:Time is over while wating for Uchwyt-1
+703:Time is over while wating for Uchwyt-2
+704:Time is over while wating for Uchwyt-3
+705:Time is over while wating for Uchwyt-4
+706:Time is over while wating for Ssawka-1
+707:Time is over while wating for Ssawka-2
+708:Time is over while wating for ejector forward
+709:Time is over while wating for ejector backward
+710:Time is over while wating for core in
+711:Time is over while wating for core out
+1000:Sygnał połowy formy jest wyłączony, gdy ramię jest opuszczane.
+1001:Sygnał otwarcia formy jest wyłączony gdy ramię opada.
+1002:Drzwi bezpieczeństwa są otwarte, gdy ramię jest opuszczane.
+1003:Zarówno sygnał pionowy i poziomy jest włączony.
+1004:Travel in and travel out signal is both on.
+1005:Sygnał otwarcia formy jest wyłączony gdy ramię opada w środku
+1006:Pozycja jest pozioma, gdy ramię jest opuszczane wewnątrz.
+1007:Ramię jest opuszczane wewnątrz, ale położenie nie mieści się w strefie bezpieczeństwa Z
+1008:Ramię jest opuszczane wewnątrz, ale położenie nie mieści się w strefie bezpieczeństwa Z
+1009:Nie można sprawdzić sygnału strefy bezpieczeństwa, gdy ramię jest opuszczane.
+1010:Nie można sprawdzić sygnału strefy bezpieczeństwa, gdy Y1 jest opuszczane.
+1011:Nie można sprawdzić sygnału strefy bezpieczeństwa, gdy ramię jest podnoszone.
+1012:Tow position is all in horizontal
+1013:Sub forward and backward limit is both on
+1014:Sub up and down limit is both on
+1015:Main forward and backward limit is both on
+1016:Main up and down limit is both on
+1017:Drzwi bezpieczeństwa są otwarte podczas pracy
+1018:Sub arm action is not depend on the mold
+1019:The mold opened signal is off when origin
+1020:The mid mold signal is off when origin
+1021: The position is vertical when origin
+1022：The position is horizontal when origin
+1023:The position is vertical when traving
+1024:The position is horizontal when traving
+1025:The position is wrong when down inside
+1027:Zamykanie formy nie zostało zakończone
+1038：Oś Z nie znajduje się w wewnętrznej strefie bezpieczeństwa gdy produkt jest zły
+1039：Ustawienie osi Z nie znajduje się w wewnętrznej strefie bezpieczeństwa gdy produkt jest zły
+1040:The action of forward is not Z axis
+1052:Z insafe signal，Z outsafe signal and main up signal is both off
+1053:NULL
+1054:No X axis but has X action
+1055:No Y axis but has Y action
+1056:No Z axis but has Z action
+1057:No X2 axis but has X2 action
+1058:No Y2 axis but has Y2 action
+1059:No A axis but has A action
+1060:No B axis but has B action
+1061:No C axis but has C action
+1100:Nie można sprawdzić sygnału strefy bezpieczeństwa, gdy główne ramię opada
+1101:Can not check the security zone when Sub Arm descend
+1102:Mold-opened signal is off when Main Arm descend
+1103:Mold-opened signal is off when Sub Arm descend
+1104:Main upper limmit is on after Main Arm descended
+1105:Górny limit jest włączony  po opuszczeniu dolnego ramienia.
+1106:Main descen limit is off after main arm has descened
+1107:Sub descen limit is off after sub arm has descened
+1108:Mid mold signal is off when main arm descen
+1109:Mid mold signal is off when main sub descen
+1194:Y2 dane
+1120:Can not check the inner and outter security zone when Main Arm ascend
+1121:Can not check the inner and outter security zone when Sub Arm ascend
+1122:Główne ramię jest podnoszone zbyt szybko.
+1122:Pomocnicze ramię jest podnoszone zbyt szybko.
+1124:Mold-opened signal is off when Main Arm ascend
+1125:Mold-opened signal is off when Sub Arm ascend
+1126:Main upper limit is off after Main Arm ascended
+1127:Sub upper limit is off after Sub Arm ascended
+1140:Main back limit is on after Main Arm forwarded
+1141:Sub back limit is on after Sub Arm forwarded
+1142:Main back limit is off after Main Arm backwarded
+1143:Sub back limit is off after Sub Arm backwarded
+1144:Main forward limit is off after main arm has forward
+1145:Sub forward limit is off after sub arm has forward
+1146:Main forward limit is on after main arm is back
+1147:Sub forward limit is on after sub arm is back
+1160:Nie można sprawdzić głównego górnego limitu przy zmianie pozycji.
+1161:Can not check the sub upper limmit when position changing
+1162:Sygnał otwarcia formy jest wyłączony, gdy pozycja zmienia się
+1163:Limit poziomy jest wyłączony po zmianie pozycji na poziomą
+1164:Vertical limit is off after position change to verizon
+1165:Out of Security area when horizontal
+1170:Can not check the main upper limmit when position-2 changing
+1171:Can not check the sub upper limmit when position-2 changing
+1172:Sygnał otwarcia formy jest wyłączony, gdy pozycja-2 zmienia się
+1173:Limit poziomy jest wyłączony po zmianie  pozycji-2 na poziomą
+1174:Out of Security area when horizontal-2
+1180:Main upper limmit is off when air action Travel in and Travel out
+1181:Sub upper limmit is off when air action Travel in and Travel out
+1182:Travel in limmit is off after Travel in
+1183:Travel out limmit is off after Travel out
+1184:The position is not the same with the instruction when Travel out
+1185:Mold-opened signal is off when Travel in
+1186:Main upper limmit is off when Travel in the inside dangerous zone
+1187:Sub upper limmit is off when Travel in the inside dangerous zone
+1188:Y1 is no inside the security zone when Travel inside the dangerous zone
+1189:Main upper limmit is not both on when Travelin from oupter
+1190:Main upper limmit is not both on when Travel out from inner
+1191:Can not check the upper limmit when Travel in the dangerous zone in manual status
+1192:Current position is less than the moveabel security position
+1193:Current position is larger than the moveable security position
+1194:Y2 is not on the up pos
+1200:Zacisk1 signal off, Zacisk1 valve on.
+1201:Zacisk1 signal on, Zacisk1 valve off.
+1202:Zacisk2 signal off, Zacisk2 valve on.
+1203:Zacisk2 signal on, Zacisk2 valve off.
+1204:Zacisk3 signal off, Zacisk3 valve on.
+1205:Zacisk3 signal on, Zacisk3 valve off.
+1206:Zacisk4 signal off, Zacisk4 valve on.
+1207:Zacisk4 signal on, Zacisk4 valve off.
+1208:Suck1 signal off, Suck1 valve on.
+1209:Suck1 signal on, Suck1 valve off.
+1210:Suck2 signal off, Suck2 valve on.
+1211:Suck2 signal on, Suck2 valve off.
+1212:Zacisk7 signal off, Zacisk7 valve on.
+1213:Zacisk7 signal on, Zacisk7 valve off.
+1214:Zacisk8 signal off, Zacisk8 valve on.
+1215:Zacisk8 signal on, Zacisk8 valve off.
+1250:Can not check X037
+1251:Can not check X023
+1300:Please check Waiting Pose.
+1301:Please check Main up signal.
+1302:Please check Vice up signal.
+1303:Please check Waiting Point X
+1304:Please check Waiting Point Y
+1305:Please check Waiting Point Z
+1306:Please check Waiting Point Zacisk 1
+1307:Please check Waiting Point Zacisk 2
+1308:Please check Waiting Point Zacisk 3
+1309:Please check Waiting Point Zacisk 4
+1310:Please check Waiting Point Zacisk 5
+1311:Please check Waiting Point Zacisk 6
+1312:Please check Waiting Point A
+1313:Please check Waiting Point B
+1314:Please check Waiting Point C
+1315:Please check Waiting Point X2
+1316:Please check Waiting Point Y2
+1400:Not all up signal on.
+1401:Currnt point and waiting point are not both inside
+1402:Currnt point and waiting point are not both outside
+1403:Can not check the Y2 up limit

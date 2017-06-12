@@ -109,15 +109,16 @@ void ICParametersSave::SetLanguage(QLocale::Language language, bool isSync)
     case QLocale::Dutch:
     {
         translator_->load("Multi-axisManipulatorSystem_nl");
-        //        sysTranslator_->load("qt_es.qm");
-        qApp->installTranslator(sysTranslator_);
+        qApp->removeTranslator(sysTranslator_);
+//        qApp->installTranslator(sysTranslator_);
     }
         break;
     case QLocale::French:
     {
         translator_->load("Multi-axisManipulatorSystem_fr");
         //        sysTranslator_->load("qt_es.qm");
-        qApp->installTranslator(sysTranslator_);
+//        qApp->installTranslator(sysTranslator_);
+        qApp->removeTranslator(sysTranslator_);
     }
         break;
     case QLocale::Korean:
@@ -140,6 +141,15 @@ void ICParametersSave::SetLanguage(QLocale::Language language, bool isSync)
         translator_->load("Multi-axisManipulatorSystem_it");
         sysTranslator_->load("qt_lt");
         qApp->installTranslator(sysTranslator_);
+    }
+        break;
+    case QLocale::Polish:
+    {
+        translator_->load("Multi-axisManipulatorSystem_pl");
+//        sysTranslator_->load("qt_lt");
+//        qApp->installTranslator(sysTranslator_);
+        qApp->removeTranslator(sysTranslator_);
+
     }
         break;
     default:
@@ -205,6 +215,12 @@ void ICParametersSave::SetCountry(QLocale::Country country, bool isSync)
     {
         QLocale::setDefault(QLocale(QLocale::English, country));
         SetLanguage(QLocale::Italian, isSync);
+    }
+        break;
+    case QLocale::Poland:
+    {
+        QLocale::setDefault(QLocale(QLocale::English, country));
+        SetLanguage(QLocale::Polish, isSync);
     }
         break;
     default:
