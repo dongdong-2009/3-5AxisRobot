@@ -4076,12 +4076,18 @@ modificar tempo</translation>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="452"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="427"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="78"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="92"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="104"/>
         <source>X PP</source>
         <translation type="unfinished">X PP</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="481"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="456"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="79"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="93"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="105"/>
         <source>X RP</source>
         <translation type="unfinished">X RP</translation>
     </message>
@@ -4150,6 +4156,9 @@ modificar tempo</translation>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="711"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="683"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="77"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="91"/>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="103"/>
         <source>X</source>
         <translation type="unfinished">X</translation>
     </message>
@@ -4216,6 +4225,21 @@ modificar tempo</translation>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="891"/>
         <source>Is Sub Arm</source>
         <translation type="unfinished">esta Sub braco</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="64"/>
+        <source>B</source>
+        <translation type="unfinished">B</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="65"/>
+        <source>B PP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcstackedsettingsframe.cpp" line="66"/>
+        <source>B RP</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
