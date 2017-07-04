@@ -178,7 +178,8 @@ TRANSLATIONS += Multi-axisManipulatorSystem_ch.ts \
     Multi-axisManipulatorSystem_kr.ts \
     Multi-axisManipulatorSystem_hk.ts \
     Multi-axisManipulatorSystem_it.ts \
-    Multi-axisManipulatorSystem_pl.ts
+    Multi-axisManipulatorSystem_pl.ts \
+    Multi-axisManipulatorSystem_tr.ts
 
 
 QMAKE_POST_LINK += "cp *.qm $$DESTDIR"
