@@ -2513,7 +2513,7 @@ QRadioButton::indicator:unchecked:disabled
            <widget class="QCheckBox" name="sedM2">
             <property name="minimumSize">
              <size>
-              <width>200</width>
+              <width>140</width>
               <height>0</height>
              </size>
             </property>
@@ -2605,7 +2605,7 @@ QRadioButton::indicator:unchecked:disabled
            <widget class="QCheckBox" name="sedM1">
             <property name="minimumSize">
              <size>
-              <width>200</width>
+              <width>140</width>
               <height>0</height>
              </size>
             </property>
@@ -2729,7 +2729,7 @@ QRadioButton::indicator:unchecked:disabled
            <widget class="QCheckBox" name="sedM3">
             <property name="minimumSize">
              <size>
-              <width>200</width>
+              <width>140</width>
               <height>0</height>
              </size>
             </property>
@@ -2879,15 +2879,15 @@ QRadioButton::indicator:unchecked:disabled
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroupD"/>
-  <buttongroup name="buttonGroupE"/>
-  <buttongroup name="buttonGroupF"/>
   <buttongroup name="buttonGroupG"/>
-  <buttongroup name="buttonGroupH"/>
   <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroupH"/>
   <buttongroup name="buttonGroupA"/>
   <buttongroup name="buttonGroupB"/>
   <buttongroup name="buttonGroupC"/>
+  <buttongroup name="buttonGroupD"/>
+  <buttongroup name="buttonGroupE"/>
+  <buttongroup name="buttonGroupF"/>
  </buttongroups>
 </ui>
