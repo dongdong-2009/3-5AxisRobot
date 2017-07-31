@@ -1,0 +1,434 @@
+1: Sanal Hata
+2：Garip karakter
+3：Program hayır uç sembol
+4：Yoksay karakter
+5：koordinat karışıklık
+6：Hayır uç pozisyon
+7：Yay tanımlamak
+8：Sipariş
+9：Yarıçap tutarsız
+10：Aşırı hız
+11: Çift IO tanımla
+12: Hayır IO tanımla
+13：Grubu İşlemi Hata
+14：Bekleme noktaları kombinasyon Hata
+15：Sonraki talimat hatası
+16:Teftiş uç sınır ötesi
+17: Kayıt Bağlantı Hatası
+18：Ana eylem uç teftiş
+19: Kayıt Num Bağlantı Hatası
+20: Kayıt SUB Bağlantı Hatası
+21：Kayıt eylem bittikten
+22: X hala çalışıyor，Ne zaman nesil operasyonu
+23: Y hala çalışıyor，Ne zaman nesil operasyonu
+24: Z hala çalışıyor，Ne zaman nesil operasyonu
+25：G gecikme,kronometre zaten kaldırmak
+26：X aşırı hız
+27：Y aşırı hız
+28：Z aşırı hız
+29：Hafıza yazmak Zaman aşımı
+30：Hata ayıklama başarısız
+60：A aşırı hız
+61：B aşırı hız
+62：C aşırı hız
+63: A hala çalışıyor，Ne zaman nesil operasyonu
+64:B hala çalışıyor，Ne zaman nesil operasyonu
+65:C hala çalışıyor，Ne zaman nesil operasyonu
+70: X2 aşırı hız
+71: Y2 aşırı hız
+72: X2 hala çalışıyor，Ne zaman nesil operasyonu
+73: Y2 hala çalışıyor，Ne zaman nesil operasyonu
+100：X geribesleme nabız sapma çok büyük
+101：Y geribesleme nabız sapma çok büyük
+102：Z geribesleme nabız sapma çok büyük
+103：X eksen Z-nabız Sapma
+104：Y eksen Z-nabız Sapma
+105：Z eksen Z-nabız Sapma
+106:X-servo alarm
+107:Y-servo alarm
+108:Z-servo alarm
+109:X missed poz
+110:Y missed poz
+111:Z missed poz
+112:X-Max alarm
+113:X-Min alarm
+114:Y-Max alarm
+115:Y-Min alarm
+116:Z-Max alarm
+117:Z-Min alarm
+118:X-Poz çok büyük
+119:X-Poz Çok küçük
+120:Y-Poz çok büyük
+121:Y-Poz Çok küçük
+122:Z-Poz çok büyük
+123:Z-Poz Çok küçük
+124:çalıştırırken，X-Poz Çok büyük
+125:çalıştırırken，X-Poz Çok küçük
+126:çalıştırırken，Y-Poz Çok büyük
+127:çalıştırırken，Y-Poz Çok küçük
+128:çalıştırırken，Z-Poz Çok büyük
+129:çalıştırırken，Z-Poz Çok küçük
+130:X Bellek hatası
+131:Y Bellek hatası
+132:Z Bellek hatası
+133:Yapı Bellek hatası
+134:X karşılaştırmak
+135:Y karşılaştırmak
+136:Z karşılaştırmak
+137:Yapı karşılaştırmak
+138:X is no servo
+139:Y is no servo
+140:Z is no servo
+160：X2 geribesleme nabız sapma çok büyük
+161：Y2 geribesleme nabız sapma çok büyük
+162：X2 eksen Z-nabız Sapma
+163：Y2 eksen Z-nabız Sapma
+164:X2-servo alarm
+165:Y2-servo alarm
+166:X2 missed poz
+167:Y2 missed poz
+168:X2-Max alarm
+169:X2-Min alarm
+170:Y2-Max alarm
+171:Y2-Min alarm
+172:X2-Poz çok büyük
+173:X2-Poz Çok küçük
+174:Y2-Poz çok büyük
+175:Y2-Poz Çok küçük
+176:çalıştırırken，X2-Poz Çok büyük
+177:çalıştırırken，X2-Poz Çok küçük
+178:çalıştırırken，Y2-Poz Çok büyük
+179:çalıştırırken，Y2-Poz Çok küçük
+180:X2 Bellek hatası
+181:Y2 Bellek hatası
+182:X2 karşılaştırmak
+183:Y2 karşılaştırmak
+184:X2 is no servo
+185:Y2 is no servo
+200:A geribesleme nabız sapma çok büyük
+201:B geribesleme nabız sapma çok büyük
+202:C geribesleme nabız sapma çok büyük
+203:A eksen Z-nabız Sapma
+204:B eksen Z-nabız Sapma
+205:C eksen Z-nabız Sapma
+206:A-servo alarm
+207:B-servo alarm
+208:C-servo alarm
+209:A missed poz
+210:B missed poz
+211:C missed poz
+212:A-Max alarm
+213:A-Min alarm
+214:B-Max alarm
+215:B-Min alarm
+216:C-Max alarm
+217:C-Min alarm
+218:A-Poz çok büyük
+219:A-Poz Çok küçük
+220:B-Poz çok büyük
+221:B-Poz Çok küçük
+222:C-Poz çok büyük
+223:C-Poz Çok küçük
+224:çalıştırırken，A-Poz Çok büyük
+225:çalıştırırken，A-Poz Çok küçük
+226:çalıştırırken，B-Poz Çok büyük
+227:çalıştırırken，B-Poz Çok küçük
+228:çalıştırırken，C-Poz Çok büyük
+229:çalıştırırken，C-Poz Çok küçük
+230:A Bellek hatası
+231:B Bellek hatası
+232:C Bellek hatası
+233:SPI NULL
+234:A karşılaştırmak
+235:B karşılaştırmak
+236:C karşılaştırmak
+237:COMPARE NULL
+238:A is no servo
+239:B is no servo
+240:C is no servo
+300:X param hata
+301:Y param hata
+302:Z param hata
+303:Eylem kontrollü hata!
+304: Acil Durdurma!
+305:Ana döngü hata
+306:Bekleme Yanlış yerde
+307: Getiriliyor hareket hatası
+308: Çok büyük tolerans
+309:Modülü fonksiyon parametresi hatası
+310: iSub çok büyük
+311: iSub İç içe
+312:İstifleme yasadışı
+313:İstifleme Çakışan
+314: Aksiyon sipariş hata
+315:sistemi parametresi hata
+316: Aksiyon sipariş hata
+317:Alt Aksiyon sipariş hata
+318:Yalnız talimat yan yana
+319:Sadece otomatik çalışma
+320:Kullanım normal değil SEQ
+321: Kontrol toplamı yanlıştır
+322: Check GM değeri yanlış
+323: Kalıp Açıldı Bekle
+324: Otomatik ayarlama zaman GM değeri yanlış
+325:Klip eylemleri Tekrar
+326:Eylemleri Tekrar
+327: Sadece birinci seviyeden de çağırabilir
+328:Teftiş giriş çalıştırırken
+329:Fikstür Parametre başarısız olduğu
+330:Pozisyon değiştirilir，Sen yeniden başlatmanız gerekiyor
+331:Pozisyon Parametre başarısız olduğu
+332:Output değiştirilir，Sen yeniden başlatmanız gerekiyor
+333:Eksen değiştirilir，Sen yeniden başlatmanız gerekiyor
+334:Parametre sağlama hata
+360:X2 Parametre Onay hata
+361:Y2 Parametre Onay hata
+362:A Parametre Onay hata
+363:B Parametre Onay hata
+364:C Parametre Onay hata
+365:Yapı Parametre Onay hata
+400:Okuma X Parametre hata
+401:Okuma Y Parametre hata
+402:Okuma Z Parametre hata
+403:Okuma sistem Parametre hata
+404:Okuma Mold Parametre hata
+405:Okuma Alt Parametre hata
+406:Başlatma işlevi hata
+500:Ana göster bilgisayar ile iletişim kaybetti!
+501：I/O Anormal haberleşme 1
+502:Üretimin sayısı setini ulaşmıştır!
+503: Düşük basınç
+504:Haberleşme watch-dog
+505:Program Senkronizasyon Hatası
+506:Zaman aşımı sinyal bekliyor
+507:Durum parametresi durdurulmazsa, değiştirmek
+530:ZSIO Haberleşme Hata
+531:IO-1 Haberleşme Hata
+532:IO-2 Haberleşme Hata
+533:IO-3 Haberleşme Hata
+534:IO-4 Haberleşme Hata
+535:IO-5 Haberleşme Hata
+536:IO-6 Haberleşme Hata
+537:IO-7 Haberleşme Hata
+538:IO-8 Haberleşme Hata
+539:IO-9 Haberleşme Hata
+550:X1,X2 Konum ayarları aşmak
+580:X1 liman alarm
+581:Y1 liman alarm
+582:Z liman alarm
+583:X2 liman alarm
+600:Z Gitme Dış güvenlik bölgesi，İç güvenlik bölgesi ON
+601:Z Gitme Dış güvenlik bölgesi，İç güvenlik bölgesi OFF
+602:Z Gitme İç güvenlik bölgesi,Dış güvenlik bölgesi ON
+603:Z Gitme İç güvenlik bölgesi,Dış güvenlik bölgesi OFF
+604:Y hayır güvenlik bölgesi,ancak köken parlak
+605:Y güvenlik bölgesi,ancak köken değil parlak
+606:B hayır güvenlik bölgesi,ancak köken parlak
+607:B güvenlik bölgesi,ancak köken değil parlak
+608:Y2 hayır güvenlik bölgesi,ancak köken parlak
+700:Beklemek X043 Zaman aşımı
+701:Beklemek X044 Zaman aşımı
+702:Beklemek CLIP1 Zaman aşımı
+703:Beklemek CLIP2 Zaman aşımı
+704:Beklemek CLIP3 Zaman aşımı
+705:Beklemek CLIP4 Zaman aşımı
+706:Beklemek CLIP5 Zaman aşımı
+707:Beklemek CLIP6 Zaman aşımı
+708:Beklemek Ejektör pimi ileri yeterli Zaman aşımı
+709:Beklemek Ejektör pimi yeterince döndü Zaman aşımı
+710:Beklemek çekirdek Zaman aşımı
+711:Beklemek Dışarı çekirdek Zaman aşımı
+714:Beklemek X045 Zaman aşımı
+715:Beklemek X046 Zaman aşımı
+716:Beklemek X047 Zaman aşımı
+717:Beklemek X026 Zaman aşımı
+718:Beklemek X040 Zaman aşımı
+719:Beklemek X023 Zaman aşımı
+720:Beklemek X037 Zaman aşımı
+721:Beklemek X017 Zaman aşımı
+722:Beklemek X036 Zaman aşımı
+1000:Sinyal Plakalı OFF,Ne zaman kollar damla
+1001:Kalıp Açıldı OFF,Ne zaman kollar damla
+1002:Emniyet kapısı açıldığında,Ne zaman iner
+1003:Duruş Seviye&Dikey sinyal ON
+1004:Z köken&Dış güvenlik bölgesi sinyal ON
+1005:Kalıp Açıldı OFF,Ne zaman iç düşüş
+1006:Duruş1 Hata,Ne zaman iç düşüş
+1007: Kol içeride inerler,ama pozisyon değildir Z iç guvenlik bölgesi
+1008: Dış damla,ama pozisyon değildir Z dış guvenlik bölgesi
+1009: düşüş olduğunda,Güvenli alan sinyali algılanmıyor
+1010:Y1 düşüş,Z ekseni güvenli aralığı değil
+1011:Y1 düşüş,X1 ekseni güvenli aralığı değil
+1012: Çekme pozisyonu yatay olarak hepsi
+1013:Sub-Arm İleri ve geri limit ON
+1014:Sub-Arm Yukarı ve aşağı limit ON
+1015:Main-Arm İleri ve geri limit ON
+1016:Main-Arm Yukarı ve aşağı limit ON
+1017:çalıştırırken，Güvenlik kapısı açık
+1018:Y2 düşüş,X2 ekseni güvenli aralığı değil
+1019: kalıp açılır sinyali kapalı olduğunda kökenli
+1020:Ne zaman P.S.O， plaka kapalı modu sinyali
+1021: Ne  zaman P.S.O, duruş hayır dikey
+1022: Ne  zaman P.S.O, duruş hayır Seviye
+1023:Ne zaman Enine, duruş hayır dikey
+1024:Ne zaman Enine, duruş hayır Seviye
+1025:Ne zaman iç düşüş,duruş2hata
+1026:Seviye&dikey limit ON
+1027:Kilit Kalıp tamamlanmadı
+1028:Arıza temizlenir
+1029: Hiçbir otomatik sinyal
+1030:Ne zaman Enine, duruş 2 hayır dikey
+1031:Ne zaman Enine, duruş 2 hayır Seviye
+1038:Ne zaman kusurlu ürünler,Z ekseni dış kalıp içinde değil
+1039:Ne zaman kusurlu ürünler,Z ekseni Kurmak dış kalıp içinde değil
+1040:Önceki eylem Z ekseni değil
+1052:Enine girmek,Enine dışarı,AnaYukarı limit OFF
+1053: TANIMSIZ
+1054:Hayır X eksen,ancak var X eksen eylem
+1055:Hayır Y eksen,ancak var Y eksen eylem
+1056:Hayır Z eksen,ancak var Z eksen eylem
+1057:Hayır X2 eksen,ancak var X2 eksen eylem
+1058:Hayır Y2 eksen,ancak var Y2 eksen eylem
+1059:Hayır A eksen,ancak var A eksen eylem
+1060:Hayır B eksen,ancak var B eksen eylem
+1061:Hayır C eksen,ancak var C eksen eylem
+1100:Ne zaman Main-Arm Aşağı, hayır Tespit Güvenlik Bölgesi
+1101:Ne zaman Sub-Arm Aşağı, hayır Tespit Güvenlik Bölgesi
+1102:Ne zaman Main-Arm Aşağı, Kalıp Açıldı OFF,
+1103:Ne zaman Sub-Arm Aşağı, Kalıp Açıldı OFF,
+1104:Sonra Main-Arm Aşağı ,AnaYukarı limit ON
+1105:Sonra Sub-Arm Aşağı ,AltYukarı limit ON
+1106:Sonra Main-Arm Aşağı ,Aşağı limit OFF
+1107:Sonra Sub-Arm Aşağı ,Aşağı limit OFF
+1108:Main-Arm Aşağı ,kalıp plaka sinyal OFF
+1109:Sub-Arm Aşağı ,kalıp plaka sinyal OFF
+1120:Ne zaman Main-Arm Yukarı,hayır Dış/İç güvenlik bölgesi
+1121:Ne zaman Sub-Arm Yukarı,hayır Dış/İç güvenlik bölgesi
+1122:Main-Arm Yukarı Çok hızlı
+1123:Sub-Arm Yukarı Çok hızlı
+1124:Ne zaman Main-Arm Yukarı, Kalıp Açıldı OFF
+1125:Ne zaman Sub-Arm Yukarı, Kalıp Açıldı OFF
+1126:Main-Arm Yukarı, AnaYukarı limit OFF
+1127:Sub-Arm Yukarı, AnaYukarı limit OFF
+1140:Main-Arm ileri, Ana çekilme limit ON
+1141:Sub-Arm ileri, Ana çekilme limit ON
+1142:Main-Arm çekilme, Ana çekilme limit OFF
+1143:Sub-Arm çekilme, Alt çekilme limit OFF
+1144:Main-Arm ileri, Ana ileri limit OFF
+1145:Sub-Arm ileri, Alt ileri limit OFF
+1146:Main-Arm çekilme, Ana ileri limit ON
+1147:Sub-Arm çekilme, Alt ileri limit ON
+1160:Ne zaman duruş 1 değişiklikler,hayır Tespit Ana Yukarı limit
+1161:Ne zaman duruş 1 değişiklikler,hayır Tespit Alt Yukarı limit
+1162:Ne zaman duruş 1 değişiklikler,Kalıp Açıldı OFF
+1163:Duruş 1 Seviye,Seviye 1 OFF
+1164:Duruş 1 dikey, dikey 1 OFF
+1165:Ne zaman Duruş Seviye,Değil güvenlik bölgesi
+1170:Ne zaman duruş 2 değişiklikler,hayır Tespit Ana Yukarı limit
+1171:Ne zaman duruş 2 değişiklikler,hayır Tespit Alt Yukarı limit
+1172:Ne zaman duruş 2 değişiklikler,Kalıp Açıldı OFF
+1173:Duruş 2 Seviye,Seviye 2 OFF
+1174:Duruş 2 dikey, dikey 2 OFF
+1180:Ne zaman Pnömatik Enine girmek&Enine dışarı, AnaYukarı limit OFF
+1181:Ne zaman Pnömatik Enine girmek&Enine dışarı, AltYukarı limit OFF
+1182:Enine girmek,Enine girmek limit OFF
+1183:Enine dışarı,Enine dışarı limit OFF
+1184:Ne zaman Enine dışarı,duruş hayır göre Öğretim modeli
+1185:Ne zaman Enine girme, Kalıp Açıldı OFF
+1186:Ne zaman yanal hareket olmayan güvenlik bölgesi，AnaYukarı limit OFF
+1187:Ne zaman yanal hareket olmayan güvenlik bölgesi，Alt Yukarı limit OFF
+1188:Ne zaman yanal hareket olmayan güvenlik bölgesi，Y1 güvenlik bölgede değil
+1189:Yukarı limit hepsi değil ON, dışarıdan girin
+1190:Yukarı limit hepsi değil ON, iç içine
+1191:Güvenli olmayan bir alanda faaliyet gösteren Manuel ，hayır Tespit Yukarı limit
+1192: Güncel pozisyon Sen taşıyabilirsiniz güvenlik konumdan daha azdır
+1193: Güncel pozisyon hareketli güvenlik konumundan daha büyüktür
+1194:Y2 eksen dışarı yukarı pozisyon
+1195:Ne zaman yanal hareket,beklemek Y1，Y2 yukarı limit sinyal Zaman aşımı
+1200:Clip1 sinyal off, Clip1 valf on.
+1201:Clip1 sinyal on, Clip1 valf off.
+1202:Clip2 sinyal off, Clip2 valf on.
+1203:Clip2 sinyal on, Clip2 valf off.
+1204:Clip3 sinyal off, Clip3 valf on.
+1205:Clip3 sinyal on, Clip3 valf off.
+1206:Clip4 sinyal off, Clip4 valf on.
+1207:Clip4 sinyal on, Clip4 valf off.
+1208:Emmek 1 sinyal off，Emmek 1 valf on
+1209:Emmek 1 sinyal on，Emmek 1 valf off
+1210:Emmek 2 sinyal off，Emmek 2 valf on
+1211:Emmek 2 sinyal on，Emmek 2 valf off
+1212:Clip7 sinyal off, Clip7 valf on.
+1213:Clip7 sinyal on, Clip7 valf off.
+1214:Clip8 sinyal off, Clip8 valf on.
+1215:Clip8 sinyal on, Clip8 valf off.
+1250:Hayır Tespit X037
+1251:Hayır Tespit X023
+1300:Lütfen Teftiş Bekleme duruş
+1301:Lütfen Teftiş Bekleme Main-Arm Yukarı limit
+1302:Lütfen Teftiş Bekleme Sub-Arm Yukarı limit
+1303:Lütfen Teftiş Bekleme X pozisyon
+1304:Lütfen Teftiş Bekleme Y pozisyon
+1305:Lütfen Teftiş Bekleme Z pozisyon
+1306:Lütfen Teftiş Bekleme clip1
+1307:Lütfen Teftiş Bekleme clip2
+1308:Lütfen Teftiş Bekleme clip3
+1309:Lütfen Teftiş Bekleme clip4
+1310:Lütfen Teftiş Bekleme Emmek 1
+1311:Lütfen Teftiş Bekleme Emmek 2
+1312:Lütfen Teftiş Bekleme A
+1313:Lütfen Teftiş Bekleme B
+1314:Lütfen Teftiş Bekleme C
+1315:Lütfen Teftiş Bekleme X2
+1316:Lütfen Teftiş Bekleme Y2
+1400:Hayır Teftiş Yukarı limit
+1401: Cari noktası ve bekleyen noktası içeride hem değildir
+1402: Cari noktası ve bekleyen noktası hem dışarıda değil
+1403:Y2 Hayır Teftiş Yukarı limit
+1410:Dış düşüş güvenlik sinyal OFF
+1411:Beklemek dış düşüş güvenlik sinyal zaman aşımı
+2000:SERVO ALARM, PLEASE CHECK THE SERVO DRIVER
+2001:SERVO AŞIRI AKIM
+2002: GERİLİM AŞIRI SERVO
+2003:SERVO ALÇAK GERİLİM
+2004:ANORMAL DİRENCİ
+2005:SERVO AŞIRI YÜK
+2006:SERVO AŞIRI HIZ
+2007: POZİSYON KONTROL HATASI ÇOK BÜYÜK OLDUĞU
+2008: ENCODER İÇİ HATA
+2009: ELEKTRONİK DİŞLİ ORANI AYARI HATA, POZİSYON AYARI HATA
+2010: ACİL DURDURMA
+2011: TRANSİSTÖRÜ aşırı ısınmayı
+2012: ANA DEVRE GÜÇ ANORMAL
+2013: ÖN AŞIRI UYARI
+2014: SERVO MOTOR ÇARPIŞMA HATASI
+2015: UVW BAĞLAMA HATA, UVW BAĞLAMA LINE BAKINIZ
+2016: KAPALI DEVRE POZİSYON KONTROL BÜYÜK HATA
+2017: PDO TAŞMASI ALMAK
+2018: PDO ERİŞİM ANORMAL
+2019: KONTROL DÜĞÜM KORUMA FONKSİYONU HATA
+2020: CAN BUS DONANIM ANORMAL
+2021: CAN İLETİŞİM SENKRONİZASYON ANORMAL
+2022: ayar aralığı üzerinden ÖZEL FİLTRE AYARI
+2023: Servo Doğrudan Limiti
+2024: Servo ters limiti
+2100: SERVO ALARM
+2101: SERVO AŞIRI AKIM
+2102: Ana devre elektrik overstress
+2103: Elektrik ana devre gerilim
+2104: servo kontrol devresi ile düşük gerilim
+2105: Servo çıkışı toprağa kısa devre
+2106: GÜÇ HATTI EKSİK FAZ UYARI
+2107: Fren direnci aşırı yük
+2108: Sürücü Aşırı yük Uyarı
+2109: SERVO MOTOR GÜCÜ HATTI KESİLMESİ
+2110: SERVO SÜRÜCÜ RADYATÖR fazla ısınmış
+2111: SERVO SÜRÜCÜ BİLGİ DEPOLAMA HATA
+2112: SERVO SÜRÜCÜ BİLGİ AYARI ANORMAL
+2113: MOTOR BLOKE
+2114: Dahili kodlayıcı hatası
+2115: SERVO MOTOR AŞIRI HIZ
+2116: SERVO SÜRÜCÜ POZİSYON SAPMA ÇOK BÜYÜK
+2117: SERVO SÜRÜCÜ DARBE ANORMAL
+2118: CAN OPEN DÜĞÜMÜ KORUMA ÜZERİNDEN ZAMAN
+2119: CAN OPEN PDO İLETİM UZUNLUĞU HATASI
+4000: DENEME SÜRESİ OUT, KAYIT LÜTFEN

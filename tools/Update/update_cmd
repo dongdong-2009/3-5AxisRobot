@@ -4,7 +4,6 @@ cp qt_es.qm /opt/Qt/apps -f
 cp Multi-axisManipulatorSystem* /opt/Qt/apps -f
 cp Base.* /opt/Qt/apps/records -f
 cp hwclock.sh /etc/init.d -f
-cp psplash-default /usr/bin/psplash-default -f
 cp closeled.sh /etc/rc0.d/S89closeled.sh
 chmod +x /etc/rc0.d/S89closeled.sh
 cp LedTest_335x /usr/sbin/LedTest_335x -f

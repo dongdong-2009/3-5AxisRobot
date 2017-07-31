@@ -52,6 +52,8 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
     ui->languageButtonGroup->setId(ui->hkBox, 6);
     ui->languageButtonGroup->setId(ui->itBox, 7);
     ui->languageButtonGroup->setId(ui->polskiBox, 8);
+    ui->languageButtonGroup->setId(ui->turkeyBox, 9);
+    ui->languageButtonGroup->setId(ui->portugalBox, 10);
     InitParameter();
     ui->extentFunctionCheckBox->blockSignals(true);
     ui->extentFunctionCheckBox->setChecked(ICParametersSave::Instance()->IsExtentFunctionUsed());
@@ -113,7 +115,8 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
     editorToConfigIDs_.insert(ui->limitFunctionBox, ICConfigString::kCS_PANEL_Register_Extent);
     ICLogInit
 
-//            ui->koreanBox->hide();
+//            ui->turkeyBox->hide();
+            ui->koreanBox->hide();
 }
 
 ICHCSystemSettingsFrame::~ICHCSystemSettingsFrame()
@@ -145,6 +148,10 @@ void ICHCSystemSettingsFrame::InitParameter()
         ui->itBox->setChecked(true);
     else if(paraSave->Country() == QLocale::Poland)
         ui->polskiBox->setChecked(true);
+    else if(paraSave->Country() == QLocale::Turkey)
+        ui->turkeyBox->setChecked(true);
+    else if(paraSave->Country() == QLocale::Portugal)
+        ui->portugalBox->setChecked(true);
     // ui->languageComboBox->setCurrentIndex(index);
     if(paraSave->KeyTone())
     {
@@ -202,6 +209,14 @@ void ICHCSystemSettingsFrame::languageBoxChange()
     {
         paraSave->SetCountry(QLocale::Poland);
     }
+    else if(ui->languageButtonGroup->checkedId() == 9)
+    {
+        paraSave->SetCountry(QLocale::Turkey);
+    }
+    else if(ui->languageButtonGroup->checkedId() == 10)
+    {
+        paraSave->SetCountry(QLocale::Portugal);
+    }
 }
 
 
@@ -233,6 +248,10 @@ void ICHCSystemSettingsFrame::changeEvent(QEvent *e)
             ui->itBox->setChecked(true);
         else if(paraSave->Country() == QLocale::Poland)
             ui->polskiBox->setChecked(true);
+        else if(paraSave->Country() == QLocale::Turkey)
+            ui->turkeyBox->setChecked(true);
+        else if(paraSave->Country() == QLocale::Portugal)
+            ui->portugalBox->setChecked(true);
         //    ui->languageComboBox->setCurrentIndex(index);
         ui->dateTimeEdit->setDateTime(QDateTime::currentDateTime());
 

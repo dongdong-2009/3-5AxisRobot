@@ -39,7 +39,7 @@ UI_DIR = temp_$${suffix}
 MOC_DIR = temp_$${suffix}
 RCC_DIR = temp_$${suffix}
 
-TRUNK_VERSION = 6.1.4
+TRUNK_VERSION = 6.1.6
 APP_VERSION = XS5
 S_VERSION = $${APP_VERSION}_$${HostType}_$${TRUNK_VERSION}
 contains(DEFINES, Compatible6410){
@@ -178,7 +178,8 @@ TRANSLATIONS += Multi-axisManipulatorSystem_ch.ts \
     Multi-axisManipulatorSystem_kr.ts \
     Multi-axisManipulatorSystem_hk.ts \
     Multi-axisManipulatorSystem_it.ts \
-    Multi-axisManipulatorSystem_pl.ts
+    Multi-axisManipulatorSystem_pl.ts \
+    Multi-axisManipulatorSystem_tr.ts
 
 
 QMAKE_POST_LINK += "cp *.qm $$DESTDIR"
@@ -189,6 +190,7 @@ contains(QMAKE_CXX, g++){
 #QMAKE_POST_LINK += "cp *.qm bin_debug"
 }else{
 #system("python rename_ui.py temp_$${SK_SIZE}")
+unix:QMAKE_POST_LINK += " && arm-linux-gnueabihf-strip $$DESTDIR/$$TARGET"
 unix:QMAKE_POST_LINK += " && HCbcrypt.sh -r $$DESTDIR/$$TARGET"
 unix:QMAKE_POST_LINK += "&& chmod +x tools/make_target && tools/make_target $$PWD $$DESTDIR $${HostType} $${S_VERSION}"
 target.path = /opt/Qt/apps

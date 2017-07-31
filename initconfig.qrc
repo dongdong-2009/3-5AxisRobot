@@ -21,5 +21,9 @@
         <file>sysconfig/alarminfomation-it</file>
         <file>sysconfig/hintinfomation-pl</file>
         <file>sysconfig/alarminfomation-pl</file>
+        <file>sysconfig/alarminfomation-tr</file>
+        <file>sysconfig/hintinfomation-tr</file>
+        <file>sysconfig/alarminfomation-pt</file>
+        <file>sysconfig/hintinfomation-pt</file>
     </qresource>
 </RCC>

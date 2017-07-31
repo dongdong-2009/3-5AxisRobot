@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="ko">
+<TS version="2.0" language="tr_TR">
 <context>
     <name>ActionSettingFrame</name>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="14"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="60"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="498"/>
         <source>GC</source>
-        <translation>C</translation>
+        <translation type="unfinished">GC</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="148"/>
@@ -21,7 +21,7 @@
         <location filename="hcinstruction/actionsettingframe_5.ui" line="285"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1512"/>
         <source>Backward</source>
-        <translation type="unfinished">후진</translation>
+        <translation type="unfinished">çekilme</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="189"/>
@@ -29,7 +29,7 @@
         <location filename="hcinstruction/actionsettingframe_5.ui" line="332"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1553"/>
         <source>Forward</source>
-        <translation type="unfinished">전진</translation>
+        <translation type="unfinished">ileri</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="286"/>
@@ -37,7 +37,7 @@
         <location filename="hcinstruction/actionsettingframe_5.ui" line="97"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1023"/>
         <source>Horizon-2</source>
-        <translation type="unfinished">회전2 </translation>
+        <translation type="unfinished">Seviye2</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="327"/>
@@ -45,7 +45,7 @@
         <location filename="hcinstruction/actionsettingframe_5.ui" line="138"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1064"/>
         <source>Vertical-2</source>
-        <translation type="unfinished">회전 복귀</translation>
+        <translation type="unfinished">Dikey2</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="625"/>
@@ -53,7 +53,7 @@
         <location filename="hcinstruction/actionsettingframe_5.ui" line="684"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1315"/>
         <source>Up</source>
-        <translation type="unfinished">상승</translation>
+        <translation type="unfinished">Yukarı</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="666"/>
@@ -61,97 +61,97 @@
         <location filename="hcinstruction/actionsettingframe_5.ui" line="725"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1356"/>
         <source>Down</source>
-        <translation type="unfinished">하강</translation>
+        <translation type="unfinished">Aşağı</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="729"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1431"/>
         <source>GZ</source>
-        <translation>Z</translation>
+        <translation type="unfinished">GZ</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="779"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1631"/>
         <source>GY2</source>
-        <translation>Y2</translation>
+        <translation type="unfinished">GY2</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="845"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="866"/>
         <source>Come In</source>
-        <translation type="unfinished">주행복귀</translation>
+        <translation type="unfinished">Enine girmek</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="886"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="907"/>
         <source>Come Out</source>
-        <translation type="unfinished">주행</translation>
+        <translation type="unfinished">Enine dışarı</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="971"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1697"/>
         <source>GA</source>
-        <translation>A</translation>
+        <translation type="unfinished">GA</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="1006"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1744"/>
         <source>GX1</source>
-        <translation>X1</translation>
+        <translation type="unfinished">GX1</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="1054"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="213"/>
         <source>GX2</source>
-        <translation>X2</translation>
+        <translation type="unfinished">GX2</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="1246"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="800"/>
         <source>GB</source>
-        <translation>B</translation>
+        <translation type="unfinished">GB</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="1268"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1653"/>
         <source>Set=&gt;</source>
-        <translation type="unfinished">설정</translation>
+        <translation type="unfinished">Ayarla=&gt;</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="1275"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1767"/>
         <source>Delay(s)</source>
-        <translation type="unfinished">지연</translation>
+        <translation type="unfinished">Gecikme（s）</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="1338"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1180"/>
         <source>Horizon-1</source>
-        <translation type="unfinished">회전</translation>
+        <translation type="unfinished">Seviye1</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="1379"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="1221"/>
         <source>Vertical-1</source>
-        <translation type="unfinished">회전 복귀</translation>
+        <translation type="unfinished">Dikey1</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="1574"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="530"/>
         <source>   Pos                </source>
-        <translation type="unfinished">위치</translation>
+        <translation type="unfinished">Pozisyon</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="1606"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="574"/>
         <source>GY1</source>
-        <translation>Y1</translation>
+        <translation type="unfinished">GY1</translation>
     </message>
     <message>
         <location filename="hcinstruction/actionsettingframe.ui" line="1650"/>
         <location filename="hcinstruction/actionsettingframe_5.ui" line="618"/>
         <source>Speed(%)</source>
-        <translation type="unfinished">속도</translation>
+        <translation type="unfinished">Hız（%）</translation>
     </message>
 </context>
 <context>
@@ -160,33 +160,33 @@
         <location filename="hcsettings/axissettingsframe.ui" line="14"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="54"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="54"/>
         <source>Security Point</source>
-        <translation type="unfinished">안전점</translation>
+        <translation type="unfinished">Güvenlik Noktası</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="81"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="81"/>
         <source>Maximum displacement</source>
-        <translation type="unfinished">최대 이동</translation>
+        <translation type="unfinished">Maksimum Seyyar</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="107"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="116"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="135"/>
         <source>Internal security zone</source>
-        <translation type="unfinished">형내 안전구역</translation>
+        <translation type="unfinished">İç güvenlik bölgesi</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="133"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="151"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="136"/>
         <source>External security zone</source>
-        <translation type="unfinished">형외 안전구역</translation>
+        <translation type="unfinished">Dış güvenlik bölgesi</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="159"/>
@@ -202,105 +202,105 @@
         <location filename="hcsettings/axissettingsframe.cpp" line="94"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="95"/>
         <source>mm</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">mm</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="242"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="278"/>
         <source>Distance/Rotation</source>
-        <translation type="unfinished">매 회전거리</translation>
+        <translation type="unfinished">Mesafe/Rotasyon</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="290"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="335"/>
         <source>Mechanical length</source>
-        <translation type="unfinished">로보트 전장</translation>
+        <translation type="unfinished">Mekanik uzunluk</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="300"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="345"/>
         <source>Test Feedback</source>
-        <translation type="unfinished">측정 피드백</translation>
+        <translation type="unfinished">Test Geribesleme</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="309"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="360"/>
         <source>Test</source>
-        <translation type="unfinished">측정</translation>
+        <translation type="unfinished">Test</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="323"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="383"/>
         <source>Feedback</source>
-        <translation type="unfinished">피드백</translation>
+        <translation type="unfinished">Geribesleme</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="337"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="406"/>
         <source>Z Signal</source>
-        <translation type="unfinished">Z신호</translation>
+        <translation type="unfinished">Z sinyal</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="365"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="452"/>
         <source>+Test</source>
-        <translation>모터 정방향</translation>
+        <translation type="unfinished">Motor dönüyor</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="384"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="477"/>
         <source>-Test</source>
-        <translation>모터 역방향</translation>
+        <translation type="unfinished">Motor ters</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="403"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="502"/>
         <source>Clear</source>
-        <translation type="unfinished">측정 크레어</translation>
+        <translation type="unfinished">kaldırmak</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.ui" line="440"/>
         <location filename="hcsettings/axissettingsframe_5.ui" line="539"/>
         <source>Set In</source>
-        <translation type="unfinished">저장</translation>
+        <translation type="unfinished">Kaydet</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="106"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="149"/>
         <source>Min pos inside mold</source>
-        <translation type="unfinished">금형내 최소 하강 위치</translation>
+        <translation type="unfinished">Düşüş Asgari pozisyon（İç）</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="107"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="150"/>
         <source>Max pos inside mold</source>
-        <translation type="unfinished">금형내  최대 하강위치</translation>
+        <translation type="unfinished">Düşüş Maksimum pozisyon（İç）</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="120"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="162"/>
         <source>Max standby pos</source>
-        <translation type="unfinished">최대 대기위치</translation>
+        <translation type="unfinished">En fazla bekleme konumu</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="121"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="163"/>
         <source>Leave origin pos</source>
-        <translation type="unfinished">최대 하강위치</translation>
+        <translation type="unfinished">Ayrılmak köken konum</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="179"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="196"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="211"/>
         <source>Transeve security zone(Less)</source>
-        <translation type="unfinished">주행 안전범위(최소)</translation>
+        <translation type="unfinished">Enine güvenlik aralığı (daha az)</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="180"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="197"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="212"/>
         <source>Transeve security zone(Lagger)</source>
-        <translation type="unfinished">주행 안전범위(최대)</translation>
+        <translation type="unfinished">Enine güvenlik aralığı (daha büyük)</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="181"/>
@@ -310,22 +310,22 @@
         <location filename="hcsettings/axissettingsframe.cpp" line="213"/>
         <location filename="hcsettings/axissettingsframe.cpp" line="214"/>
         <source>degree</source>
-        <translation type="unfinished"> 도</translation>
+        <translation type="unfinished">Derece</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="436"/>
         <source>Information</source>
-        <translation type="unfinished">제시</translation>
+        <translation type="unfinished">Uç</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="436"/>
         <source>Save Successfully!</source>
-        <translation type="unfinished"> 저장 성공</translation>
+        <translation type="unfinished">Başarıyla kaydedildi！</translation>
     </message>
     <message>
         <location filename="hcsettings/axissettingsframe.cpp" line="437"/>
         <source>Save</source>
-        <translation type="unfinished">저장</translation>
+        <translation type="unfinished">Kaydet</translation>
     </message>
 </context>
 <context>
@@ -334,126 +334,127 @@
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="14"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished">조합동작선택</translation>
+        <translation type="unfinished">Grubu İşl-
+emi seçin</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="37"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="55"/>
         <source>Y022</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y022</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="90"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="655"/>
         <source>M2 + </source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">M2 + </translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="121"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="593"/>
         <source>M3 + </source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">M3 + </translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="152"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="500"/>
         <source>M1 -</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">M1 -</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="183"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="108"/>
         <source>Machine Reverse</source>
-        <translation type="unfinished">모터 역방향</translation>
+        <translation type="unfinished">Motor Rotasyon-</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="205"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="438"/>
         <location filename="hcmanualoperation/hcmanualadjustframe.cpp" line="77"/>
         <source>Adjust Forbid</source>
-        <translation>x측 설정</translation>
+        <translation type="unfinished">Yasak Adjustment</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="264"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="686"/>
         <source>M2 -</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">M2 -</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="295"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="624"/>
         <source>M3 -</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">M3 -</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="317"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="152"/>
         <source>Y031</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y031</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="361"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="196"/>
         <source>Y032</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y032</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="377"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="212"/>
         <source>Y035</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y035</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="449"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="284"/>
         <source>X033</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X033</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="474"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="469"/>
         <source>M1 +</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">M1 +</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="505"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="531"/>
         <source>M0 + </source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">M0 + </translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="536"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="562"/>
         <source>M0 -</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">M0 -</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="586"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="328"/>
         <source>Y017</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y017</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="630"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="372"/>
         <source>X030</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X030</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="674"/>
         <location filename="hcmanualoperation/hcmanualadjustframe_5.ui" line="416"/>
         <source>X023</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X023</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.ui" line="690"/>
         <source>X040</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X040</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualadjustframe.cpp" line="245"/>
         <source>Adjust En</source>
-        <translation>위치이동가능</translation>
+        <translation type="unfinished">Adjust izin vermek </translation>
     </message>
 </context>
 <context>
@@ -461,12 +462,12 @@
     <message>
         <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="29"/>
         <source>Fixture 1</source>
-        <translation>척크1</translation>
+        <translation type="unfinished">Fikstür 1</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="70"/>
@@ -487,17 +488,17 @@
     <message>
         <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="131"/>
         <source>Fixture 3</source>
-        <translation>척크3</translation>
+        <translation type="unfinished">Fikstür 3</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="204"/>
         <source>Fixture 2</source>
-        <translation>척크2</translation>
+        <translation type="unfinished">Fikstür 2</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="293"/>
         <source>Fixture 4</source>
-        <translation>척크4</translation>
+        <translation type="unfinished">Fikstür 4</translation>
     </message>
 </context>
 <context>
@@ -505,12 +506,12 @@
     <message>
         <location filename="hcmanualoperation/hcmanualotherioframe.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Form</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualotherioframe.ui" line="20"/>
         <source>Injection</source>
-        <translation type="unfinished">급유</translation>
+        <translation type="unfinished">Yakıt enjeksiyon</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualotherioframe.ui" line="45"/>
@@ -529,12 +530,12 @@
     <message>
         <location filename="hcmanualoperation/hcmanualotherioframe.ui" line="144"/>
         <source>Conveyor</source>
-        <translation type="unfinished">콘베어 </translation>
+        <translation type="unfinished">Konveyör</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualotherioframe.ui" line="205"/>
         <source>Feed M</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Besleme makine</translation>
     </message>
 </context>
 <context>
@@ -542,12 +543,13 @@
     <message>
         <location filename="hcmanualoperation/hcmanualreservepage.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished">조합동작선택</translation>
+        <translation type="unfinished">Grubu İşl-
+emi seçin</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualreservepage.ui" line="20"/>
         <source>Reserve1</source>
-        <translation>샘플1</translation>
+        <translation type="unfinished">Rezerv-1</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualreservepage.ui" line="61"/>
@@ -572,27 +574,27 @@
     <message>
         <location filename="hcmanualoperation/hcmanualreservepage.ui" line="216"/>
         <source>Reserve3</source>
-        <translation>샘플3</translation>
+        <translation type="unfinished">Rezerv-3</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualreservepage.ui" line="223"/>
         <source>Reserve5</source>
-        <translation>샘플5</translation>
+        <translation type="unfinished">Rezerv-5</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualreservepage.ui" line="369"/>
         <source>Reserve2</source>
-        <translation>샘플2</translation>
+        <translation type="unfinished">Rezerv-2</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualreservepage.ui" line="376"/>
         <source>Reserve4</source>
-        <translation>샘플4</translation>
+        <translation type="unfinished">Rezerv-4</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualreservepage.ui" line="383"/>
         <source>Reserve6</source>
-        <translation>샘플6</translation>
+        <translation type="unfinished">Rezerv-6</translation>
     </message>
 </context>
 <context>
@@ -600,7 +602,7 @@
     <message>
         <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="44"/>
@@ -608,12 +610,12 @@
         <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="231"/>
         <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="305"/>
         <source>ON</source>
-        <translation> ON</translation>
+        <translation type="unfinished">ON</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="86"/>
         <source>Sucker 2</source>
-        <translation type="unfinished"> 흡착2</translation>
+        <translation type="unfinished">Emmek 2</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="154"/>
@@ -621,22 +623,22 @@
         <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="263"/>
         <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="340"/>
         <source>OFF</source>
-        <translation> OFF</translation>
+        <translation type="unfinished">OFF</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="161"/>
         <source>Sucker 3</source>
-        <translation type="unfinished"> 흡착3</translation>
+        <translation type="unfinished">Emmek 3</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="238"/>
         <source>Sucker 1</source>
-        <translation type="unfinished"> 흡착1</translation>
+        <translation type="unfinished">Emmek 1</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualsockerframe.ui" line="270"/>
         <source>Sucker 4</source>
-        <translation type="unfinished"> 흡착4</translation>
+        <translation type="unfinished">Emmek 4</translation>
     </message>
 </context>
 <context>
@@ -644,22 +646,22 @@
     <message>
         <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="20"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="47"/>
         <source>Current Servo Arm</source>
-        <translation type="unfinished"> 현재 서버측</translation>
+        <translation type="unfinished">Bu servo eksen</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="67"/>
         <source>Total Speed</source>
-        <translation type="unfinished"> 총 속도</translation>
+        <translation type="unfinished">Toplam Hız</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="74"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">TextLabel</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="81"/>
@@ -671,62 +673,62 @@
         <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="124"/>
         <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="275"/>
         <source>High-speed backward</source>
-        <translation type="unfinished"> 고속 후진</translation>
+        <translation type="unfinished">Yüksek hızlı Geri</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="150"/>
         <source>Medium speed backward</source>
-        <translation type="unfinished"> 중속 후진</translation>
+        <translation type="unfinished">Orta hız Geri çekil</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="176"/>
         <source>Low speed backward</source>
-        <translation type="unfinished"> 저속 후진</translation>
+        <translation type="unfinished">Düşük hız Geri</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="198"/>
         <source>Speed</source>
-        <translation type="unfinished"> 속도</translation>
+        <translation type="unfinished">Hız</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="223"/>
         <source>Low speed forward</source>
-        <translation type="unfinished"> 저속 전진</translation>
+        <translation type="unfinished">Düşük hız ileri</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="249"/>
         <source>Medium speed forward</source>
-        <translation type="unfinished"> 중속 전진</translation>
+        <translation type="unfinished">Orta hız Geri ileri</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="318"/>
         <source>-</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">-</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="344"/>
         <source>+</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">+</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="388"/>
         <source>Traverse in fine-tuning</source>
-        <translation type="unfinished">주행복귀 미세조정</translation>
+        <translation type="unfinished">Enine girmek İnce ayar</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="418"/>
         <source>Position</source>
-        <translation type="unfinished"> 위치</translation>
+        <translation type="unfinished">Pozisyon</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="428"/>
         <source>mm</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">mm</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcservoarmcontrolframe.ui" line="448"/>
         <source>Traverse out fine-tuning</source>
-        <translation type="unfinished">주행  미세조정</translation>
+        <translation type="unfinished">Enine dışarı İnce ayar</translation>
     </message>
 </context>
 <context>
@@ -734,22 +736,22 @@
     <message>
         <location filename="icactiondialog.ui" line="14"/>
         <source>Dialog</source>
-        <translation type="unfinished">제시</translation>
+        <translation type="unfinished">Uç</translation>
     </message>
     <message>
         <location filename="icactiondialog.ui" line="20"/>
         <source>Get product fail</source>
-        <translation type="unfinished">취출 실패</translation>
+        <translation type="unfinished">Almak başarısızlık</translation>
     </message>
     <message>
         <location filename="icactiondialog.ui" line="35"/>
         <source>Go On</source>
-        <translation type="unfinished">계속</translation>
+        <translation type="unfinished">Sürdürmek</translation>
     </message>
     <message>
         <location filename="icactiondialog.ui" line="48"/>
         <source>Give Up</source>
-        <translation type="unfinished">포기</translation>
+        <translation type="unfinished">vazgeçmek</translation>
     </message>
 </context>
 <context>
@@ -757,12 +759,12 @@
     <message>
         <location filename="hcsettings/icadminpassworddialog.ui" line="14"/>
         <source>Dialog</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Diyalog</translation>
     </message>
     <message>
         <location filename="hcsettings/icadminpassworddialog.ui" line="22"/>
         <source>Password:</source>
-        <translation type="unfinished">비번</translation>
+        <translation type="unfinished">Şifre：</translation>
     </message>
 </context>
 <context>
@@ -770,32 +772,32 @@
     <message>
         <location filename="custom_widgets/cycletimeandfinished/icalarmdetailsdialog.ui" line="14"/>
         <source>Alarm Details</source>
-        <translation type="unfinished">경보디테일</translation>
+        <translation type="unfinished">Alarm Ayrıntılar</translation>
     </message>
     <message>
         <location filename="custom_widgets/cycletimeandfinished/icalarmdetailsdialog.ui" line="26"/>
         <source>Alarm ID:</source>
-        <translation type="unfinished">경보CODE</translation>
+        <translation type="unfinished">Alarm ID:</translation>
     </message>
     <message>
         <location filename="custom_widgets/cycletimeandfinished/icalarmdetailsdialog.ui" line="42"/>
         <source>Alarm Text:</source>
-        <translation type="unfinished">경보내용</translation>
+        <translation type="unfinished">Alarm Içerik：</translation>
     </message>
     <message>
         <location filename="custom_widgets/cycletimeandfinished/icalarmdetailsdialog.ui" line="83"/>
         <source>Alarm Reason:</source>
-        <translation type="unfinished">경보원인</translation>
+        <translation type="unfinished">Alarm Sebep：</translation>
     </message>
     <message>
         <location filename="custom_widgets/cycletimeandfinished/icalarmdetailsdialog.ui" line="118"/>
         <source>Alarm Solution:</source>
-        <translation type="unfinished">해결방법</translation>
+        <translation type="unfinished">Alarm çözümdür：</translation>
     </message>
     <message>
         <location filename="custom_widgets/cycletimeandfinished/icalarmdetailsdialog.ui" line="153"/>
         <source>Close</source>
-        <translation type="unfinished">닫기</translation>
+        <translation type="unfinished">Yakın</translation>
     </message>
 </context>
 <context>
@@ -803,46 +805,46 @@
     <message>
         <location filename="categorypage/icalarmframe.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="categorypage/icalarmframe.ui" line="50"/>
         <source>Alarm History</source>
-        <translation type="unfinished">에러기록</translation>
+        <translation type="unfinished">Alarm değiştirme</translation>
     </message>
     <message>
         <location filename="categorypage/icalarmframe.ui" line="94"/>
         <source>Alarm 
 Number</source>
-        <translation type="unfinished"> 에러 번호</translation>
+        <translation type="unfinished">Alarm ID:</translation>
     </message>
     <message>
         <location filename="categorypage/icalarmframe.ui" line="100"/>
         <source>Alarm 
 Infomation</source>
-        <translation type="unfinished"> 에러 정보</translation>
+        <translation type="unfinished">Alarm bilgi</translation>
     </message>
     <message>
         <location filename="categorypage/icalarmframe.ui" line="106"/>
         <source>Alarm 
 DateTime</source>
-        <translation type="unfinished"> 에러 시간</translation>
+        <translation type="unfinished">Alarm zamanı</translation>
     </message>
     <message>
         <location filename="categorypage/icalarmframe.ui" line="112"/>
         <source>Alarm 
 ModifyTime</source>
-        <translation type="unfinished"> 에러해제 시간</translation>
+        <translation type="unfinished">Alarm saatini iptal</translation>
     </message>
     <message>
         <location filename="categorypage/icalarmframe.ui" line="122"/>
         <source>Modify Log</source>
-        <translation type="unfinished"> 수정 기록</translation>
+        <translation type="unfinished">Bir kay deği</translation>
     </message>
     <message>
         <location filename="categorypage/icalarmframe.ui" line="147"/>
         <source>Log</source>
-        <translation type="unfinished"> 일지</translation>
+        <translation type="unfinished">Kayıt</translation>
     </message>
     <message>
         <location filename="categorypage/icalarmframe.cpp" line="112"/>
@@ -851,17 +853,17 @@ ModifyTime</source>
         <location filename="categorypage/icalarmframe.cpp" line="216"/>
         <location filename="categorypage/icalarmframe.cpp" line="311"/>
         <source>no-solve</source>
-        <translation type="unfinished"> 미해결</translation>
+        <translation type="unfinished">çözümlenmemiş</translation>
     </message>
     <message>
         <location filename="categorypage/icalarmframe.cpp" line="370"/>
         <source>%1    %2[%3]    from    %4 to %5</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1    %2[%3]    from  %4  to %5  </translation>
     </message>
     <message>
         <location filename="categorypage/icalarmframe.cpp" line="379"/>
         <source>%1    %2[%3]    %4</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1    %2[%3]    %4</translation>
     </message>
 </context>
 <context>
@@ -869,30 +871,30 @@ ModifyTime</source>
     <message>
         <location filename="hcinstruction/icautorunrevise.ui" line="26"/>
         <source>Dialog</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Diyalog</translation>
     </message>
     <message>
         <location filename="hcinstruction/icautorunrevise.ui" line="49"/>
         <location filename="hcinstruction/icautorunrevise.cpp" line="76"/>
         <source>Delay Time:</source>
-        <translation type="unfinished">지연시간</translation>
+        <translation type="unfinished">Gecikme Zaman：</translation>
     </message>
     <message>
         <location filename="hcinstruction/icautorunrevise.ui" line="66"/>
         <location filename="hcinstruction/icautorunrevise.ui" line="96"/>
         <source>s</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">s</translation>
     </message>
     <message>
         <location filename="hcinstruction/icautorunrevise.ui" line="79"/>
         <location filename="hcinstruction/icautorunrevise.cpp" line="100"/>
         <source>Limit Time:</source>
-        <translation type="unfinished">제한시간</translation>
+        <translation type="unfinished">Limit Zaman：</translation>
     </message>
     <message>
         <location filename="hcinstruction/icautorunrevise.ui" line="109"/>
         <source>Speed:</source>
-        <translation type="unfinished"> 속도</translation>
+        <translation type="unfinished">Hız</translation>
     </message>
     <message>
         <location filename="hcinstruction/icautorunrevise.ui" line="126"/>
@@ -902,22 +904,22 @@ ModifyTime</source>
     <message>
         <location filename="hcinstruction/icautorunrevise.ui" line="139"/>
         <source>Pos(+/-5):</source>
-        <translation type="unfinished">위치</translation>
+        <translation type="unfinished">Poz(+/-5):</translation>
     </message>
     <message>
         <location filename="hcinstruction/icautorunrevise.ui" line="156"/>
         <source>mm</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">mm</translation>
     </message>
     <message>
         <location filename="hcinstruction/icautorunrevise.ui" line="163"/>
         <source>Go to flag</source>
-        <translation type="unfinished">화면전환</translation>
+        <translation type="unfinished">Etikete atla</translation>
     </message>
     <message>
         <location filename="hcinstruction/icautorunrevise.ui" line="182"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">TextLabel</translation>
     </message>
 </context>
 <context>
@@ -925,53 +927,54 @@ ModifyTime</source>
     <message>
         <location filename="icbackupdialog.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished">백업</translation>
+        <translation type="unfinished">Yedekleme</translation>
     </message>
     <message>
         <location filename="icbackupdialog.ui" line="20"/>
         <source>You pressed the backup sequence.Need to backups?</source>
-        <translation type="unfinished">데이터 백업을 눌렀음.백업진행할까요?</translation>
+        <translation type="unfinished">Bir parametre yedekleme dizisi -
+basın.Sen yedeklemek gerekiyor?</translation>
     </message>
     <message>
         <location filename="icbackupdialog.ui" line="38"/>
         <source>No(F4)</source>
-        <translation type="unfinished">아님</translation>
+        <translation type="unfinished">No(F4)</translation>
     </message>
     <message>
         <location filename="icbackupdialog.ui" line="51"/>
         <source>Yes(F5)</source>
-        <translation type="unfinished">예</translation>
+        <translation type="unfinished">Yes(F5)</translation>
     </message>
     <message>
         <location filename="icbackupdialog.cpp" line="45"/>
         <source>Warning</source>
-        <translation type="unfinished">경보</translation>
+        <translation type="unfinished">Alarm</translation>
     </message>
     <message>
         <location filename="icbackupdialog.cpp" line="45"/>
         <source>USB is not connected!</source>
-        <translation type="unfinished">USB 확인않됨</translation>
+        <translation type="unfinished">USB bağlı değil!</translation>
     </message>
     <message>
         <location filename="icbackupdialog.cpp" line="48"/>
         <source>Backuping, please wait...</source>
-        <translation type="unfinished">백업중 </translation>
+        <translation type="unfinished">Yedekleme,Lütfen bekleyin…</translation>
     </message>
     <message>
         <location filename="icbackupdialog.cpp" line="67"/>
         <location filename="icbackupdialog.cpp" line="71"/>
         <source>Backup</source>
-        <translation type="unfinished">백업</translation>
+        <translation type="unfinished">Yedekleme</translation>
     </message>
     <message>
         <location filename="icbackupdialog.cpp" line="67"/>
         <source>Backup all configs successfully!</source>
-        <translation type="unfinished">백업성공</translation>
+        <translation type="unfinished">Yedekleme başarısı！</translation>
     </message>
     <message>
         <location filename="icbackupdialog.cpp" line="71"/>
         <source>Backup all configs fail!</source>
-        <translation type="unfinished">백업실패</translation>
+        <translation type="unfinished">Yedekleme başarısız oldu！</translation>
     </message>
 </context>
 <context>
@@ -979,37 +982,37 @@ ModifyTime</source>
     <message>
         <location filename="iccaretipui.ui" line="14"/>
         <source>Dialog</source>
-        <translation type="unfinished">보수 제시</translation>
+        <translation type="unfinished">Diyalog</translation>
     </message>
     <message>
         <location filename="iccaretipui.ui" line="20"/>
         <source>Please Care on time!</source>
-        <translation type="unfinished">제떄에 보수바람</translation>
+        <translation type="unfinished">Lütfen korumaTimely！</translation>
     </message>
     <message>
         <location filename="iccaretipui.ui" line="72"/>
         <source>Item</source>
-        <translation type="unfinished">항목</translation>
+        <translation type="unfinished">Item</translation>
     </message>
     <message>
         <location filename="iccaretipui.ui" line="77"/>
         <source>Left Day</source>
-        <translation type="unfinished">남은 일자</translation>
+        <translation type="unfinished">Kalan gün sayısı</translation>
     </message>
     <message>
         <location filename="iccaretipui.ui" line="82"/>
         <source>Next Date</source>
-        <translation type="unfinished">차기 보수 일자</translation>
+        <translation type="unfinished">Sonraki tarihi</translation>
     </message>
     <message>
         <location filename="iccaretipui.ui" line="87"/>
         <source>Cycle</source>
-        <translation type="unfinished">주기</translation>
+        <translation type="unfinished">Cycle</translation>
     </message>
     <message>
         <location filename="iccaretipui.ui" line="92"/>
         <source>Action</source>
-        <translation type="unfinished">동작</translation>
+        <translation type="unfinished">Action</translation>
     </message>
     <message>
         <location filename="iccaretipui.ui" line="112"/>
@@ -1025,42 +1028,42 @@ ModifyTime</source>
     <message>
         <location filename="iccaretipui.cpp" line="13"/>
         <source>Item-1</source>
-        <translation>구리스 급유(요구：기계  작동부분에 급유요망)</translation>
+        <translation type="unfinished">Item-1</translation>
     </message>
     <message>
         <location filename="iccaretipui.cpp" line="13"/>
         <source>Item-2</source>
-        <translation>에어 유니트 배수확인</translation>
+        <translation type="unfinished">Item-2</translation>
     </message>
     <message>
         <location filename="iccaretipui.cpp" line="13"/>
         <source>Item-3</source>
-        <translation>흡착패드.척크.실린더상태 확인</translation>
+        <translation type="unfinished">Item-3</translation>
     </message>
     <message>
         <location filename="iccaretipui.cpp" line="14"/>
         <source>Item-4</source>
-        <translation>기계 고정볼트상태 확인</translation>
+        <translation type="unfinished">Item-4</translation>
     </message>
     <message>
         <location filename="iccaretipui.cpp" line="14"/>
         <source>Item-5</source>
-        <translation>사출기.리모컨 연결 콘넥터 확인</translation>
+        <translation type="unfinished">Item-5</translation>
     </message>
     <message>
         <location filename="iccaretipui.cpp" line="14"/>
         <source>Item-6</source>
-        <translation>진공발생기 정검</translation>
+        <translation type="unfinished">Item-6</translation>
     </message>
     <message>
         <location filename="iccaretipui.cpp" line="14"/>
         <source>Item-7</source>
-        <translation>전기 박스내 문지 제거</translation>
+        <translation type="unfinished">Item-7</translation>
     </message>
     <message>
         <location filename="iccaretipui.cpp" line="19"/>
         <source>Has Care</source>
-        <translation type="unfinished">보수 완료</translation>
+        <translation type="unfinished">koruma</translation>
     </message>
 </context>
 <context>
@@ -1068,7 +1071,7 @@ ModifyTime</source>
     <message>
         <location filename="categorypage/iccategorypagebaseframe.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
 </context>
 <context>
@@ -1076,12 +1079,12 @@ ModifyTime</source>
     <message>
         <location filename="hcinstruction/iccommenteditor.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Form</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccommenteditor.ui" line="20"/>
         <source>Comment</source>
-        <translation type="unfinished">메모장</translation>
+        <translation type="unfinished">Açıklama</translation>
     </message>
 </context>
 <context>
@@ -1089,1027 +1092,1072 @@ ModifyTime</source>
     <message>
         <location filename="icconfigstring.cpp" line="14"/>
         <source>kCS_Global_Speed</source>
-        <translation type="unfinished">전체 속도</translation>
+        <translation type="unfinished">Küresel hız</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="15"/>
         <source>kCS_User_Changed</source>
-        <translation type="unfinished">현재권한</translation>
+        <translation type="unfinished">Geçerli izinler</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="16"/>
         <source>kCS_Mold_Changed</source>
-        <translation type="unfinished">현재 금형번호</translation>
+        <translation type="unfinished">Geçerli modu numarası</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="17"/>
         <source>kCS_SIG_Fixture1</source>
-        <translation>척크1 확인</translation>
+        <translation type="unfinished">Fikstür 1 muayene</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="18"/>
         <source>kCS_SIG_Fixture2</source>
-        <translation type="unfinished">척크2 확인</translation>
+        <translation type="unfinished">Fikstür 2 muayene</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="19"/>
         <source>kCS_SIG_Fixture3</source>
-        <translation type="unfinished">척크3 확인</translation>
+        <translation type="unfinished">Fikstür 3 muayene</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="20"/>
         <source>kCS_SIG_Fixture4</source>
-        <translation type="unfinished">척크4 확인</translation>
+        <translation type="unfinished">Fikstür 4 inceleme</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="21"/>
         <source>kCS_SIG_IMM_Stop</source>
-        <translation type="unfinished">사출기 비상정지</translation>
+        <translation type="unfinished">Enjeksiyon kalıplama ma-
+kine acil durum durdurma</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="22"/>
         <source>kCS_SIG_Z_Move_Pos</source>
-        <translation type="unfinished">주행자세</translation>
+        <translation type="unfinished">Rampage duruş</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="23"/>
         <source>kCS_SIG_Origin</source>
-        <translation type="unfinished">원점복귀&apos;</translation>
+        <translation type="unfinished">Reversion kökenli</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="24"/>
         <source>kCS_SIG_Y_Origin_Pos</source>
-        <translation type="unfinished">취출방향</translation>
+        <translation type="unfinished">Duruş aşağı ters</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="25"/>
         <source>kCS_SIG_Hor_Standby</source>
-        <translation type="unfinished">회전 대기</translation>
+        <translation type="unfinished">Düzey bekleme</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="26"/>
         <source>kCS_SIG_CM_Limit</source>
-        <translation type="unfinished">형폐 완료</translation>
+        <translation type="unfinished">Kilit modu yerde</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="27"/>
         <source>kCS_SIG_SEDoor</source>
-        <translation type="unfinished">안전문 확인</translation>
+        <translation type="unfinished">Emniyet kapı algılama</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="28"/>
         <source>kCS_SIG_Press</source>
-        <translation type="unfinished">압력 확인</translation>
+        <translation type="unfinished">Basınç algılama</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="29"/>
         <source>kCS_SIG_Mid_Mold</source>
-        <translation type="unfinished">3단금형 확인</translation>
+        <translation type="unfinished">Orta plaka kalıp muayene</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="30"/>
         <source>kCS_SIG_EJE_Linked</source>
-        <translation type="unfinished">에젝터 연속</translation>
+        <translation type="unfinished">Yüksük zinciri</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="31"/>
         <source>kCS_SIG_Auto</source>
-        <translation type="unfinished">전자동</translation>
+        <translation type="unfinished">Otomatik</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="32"/>
         <source>kCS_PRD_Number</source>
-        <translation type="unfinished">양산량 설정</translation>
+        <translation type="unfinished">Çıkış ayarı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="33"/>
         <source>kCS_PRD_Wait_OM_Limit</source>
-        <translation type="unfinished">형개완료 대기</translation>
+        <translation type="unfinished">Açılış saati bekliyor</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="34"/>
         <source>kCS_PRD_Alarm_Time</source>
-        <translation type="unfinished">경보시간</translation>
+        <translation type="unfinished">Alarm saati</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="35"/>
         <source>kCS_PRD_Cycle_Time</source>
-        <translation type="unfinished">성형 싸이클 타임</translation>
+        <translation type="unfinished">Kalıplama döngüsü</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="36"/>
         <source>kCS_PRD_Fixture_Define</source>
-        <translation type="unfinished">지그 정의</translation>
+        <translation type="unfinished">Bir fikstür tanımı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="37"/>
         <source>kCS_PRD_Alarm_Occasion_When_Get_Fail</source>
-        <translation type="unfinished">제품 취출실패 경보</translation>
+        <translation type="unfinished">Başarısız olan alarm zamanlaması</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="38"/>
         <source>kCS_PRD_Transport_Count_Way</source>
-        <translation type="unfinished">제품개방 선택</translation>
+        <translation type="unfinished">Konveyör bant sayaç</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="39"/>
         <source>kCS_PRD_Save_Count</source>
-        <translation type="unfinished">양산 기억</translation>
+        <translation type="unfinished">Çıktı bellek</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="40"/>
         <source>kCS_PRD_Product_Clear</source>
-        <translation type="unfinished">제품 리셋</translation>
+        <translation type="unfinished">Ürün sıfırlama</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="41"/>
         <source>kCS_PRD_Try_number</source>
-        <translation type="unfinished">샘플수량</translation>
+        <translation type="unfinished">Deneme üretim modülü</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="42"/>
         <source>kCS_PRD_Sample_cycle</source>
-        <translation type="unfinished">샘플취출</translation>
+        <translation type="unfinished">Örnekleme aralığı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="43"/>
         <source>kCS_PRD_Reclcle_Mode</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Modu geri dönüşüm</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="44"/>
         <source>kCS_PRD_Reclcle_Time</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Zaman geri dönüşüm</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="45"/>
         <source>kCS_RUN_Tolerance</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tolerans</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="46"/>
         <source>kCS_RUN_Distance_X1_X2</source>
-        <translation type="unfinished">인발력 거리</translation>
+        <translation type="unfinished">Beraberlik mesafe</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="47"/>
         <source>kCS_RUN_Acc_Time_X1</source>
-        <translation type="unfinished">X1측 가/감속시간</translation>
+        <translation type="unfinished">X1 Dingil artı De-
+selerasyon Zamanı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="48"/>
         <source>kCS_RUN_Acc_Time_Y1</source>
-        <translation type="unfinished">Y1측 가/감소시간</translation>
+        <translation type="unfinished">Y1 aks artı Des-
+elerasyon Zamanı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="49"/>
         <source>kCS_RUN_Acc_Time_Z</source>
-        <translation type="unfinished">Z측 가/감속 시간</translation>
+        <translation type="unfinished">Z ekseni artı De-
+selerasyon Zamanı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="50"/>
         <source>kCS_RUN_Acc_Time_X2</source>
-        <translation type="unfinished">X2측 가/감속시간</translation>
+        <translation type="unfinished">X2 Dingil artı De-
+selerasyon Zamanı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="51"/>
         <source>kCS_RUN_Acc_Time_Y2</source>
-        <translation type="unfinished">Y2측 가/감속시간</translation>
+        <translation type="unfinished">Y2 aks artı Des-
+elerasyon Zamanı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="52"/>
         <source>kCS_RUN_Acc_Time_A</source>
-        <translation type="unfinished">A측 가/감속도시간</translation>
+        <translation type="unfinished">A-eksen artı Des-
+elerasyon Zamanı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="53"/>
         <source>kCS_RUN_Acc_Time_B</source>
-        <translation type="unfinished">B측 가/감속 시간</translation>
+        <translation type="unfinished">B-ekseni artı De-
+selerasyon Zamanı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="54"/>
         <source>kCS_RUN_Acc_Time_C</source>
-        <translation type="unfinished">C측 가/감속 시간</translation>
+        <translation type="unfinished">C-ekseni artı De-
+selerasyon Zamanı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="55"/>
         <source>kCS_RUN_Speed_Limit_X1</source>
-        <translation type="unfinished">X1최고 속도</translation>
+        <translation type="unfinished">X1 Azami hızda</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="56"/>
         <source>kCS_RUN_Speed_Limit_Y1</source>
-        <translation type="unfinished">Y1최고 속도</translation>
+        <translation type="unfinished">Y1 maksimum hız</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="57"/>
         <source>kCS_RUN_Speed_Limit_Z</source>
-        <translation type="unfinished">Z 최고 속도</translation>
+        <translation type="unfinished">Z maksimum hız</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="58"/>
         <source>kCS_RUN_Speed_Limit_X2</source>
-        <translation type="unfinished">X2최고 속도</translation>
+        <translation type="unfinished">X2 Azami hızda</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="59"/>
         <source>kCS_RUN_Speed_Limit_Y2</source>
-        <translation type="unfinished">Y2최고속도</translation>
+        <translation type="unfinished">Y2 maksimum hız</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="60"/>
         <source>kCS_RUN_Speed_Limit_A</source>
-        <translation type="unfinished">A최고 속도</translation>
+        <translation type="unfinished">Maksimum hız</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="61"/>
         <source>kCS_RUN_Speed_Limit_B</source>
-        <translation type="unfinished">B최고 속도</translation>
+        <translation type="unfinished">B maksimum hız</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="62"/>
         <source>kCS_RUN_Speed_Limit_C</source>
-        <translation type="unfinished">C최고 속도</translation>
+        <translation type="unfinished">C Maksimum hız</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="63"/>
         <source>kCS_SECP_Inside_X_Min</source>
-        <translation type="unfinished">금형내 X측 상승 최소위치</translation>
+        <translation type="unfinished">Kalıp içi artan x e-
+kseni en az pozisyon</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="64"/>
         <source>kCS_SECP_Inside_X_Max</source>
-        <translation type="unfinished">금형내 X측 상승 최대위치</translation>
+        <translation type="unfinished">Artan maksimum pozi-
+syon x ekseni kalıp</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="65"/>
         <source>kCS_SECP_Outside_X_Min</source>
-        <translation type="unfinished">금형외 상승X측 최소위치</translation>
+        <translation type="unfinished">Artan en az pozisyon -
+x ekseni dışında kalıp</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="66"/>
         <source>kCS_SECP_Outside_X_Max</source>
-        <translation type="unfinished">금형외 상승X측 최대위치</translation>
+        <translation type="unfinished">Kalıp yükselen x eks-
+eni maksimum konumunu</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="67"/>
         <source>kCS_STRUCT_Axis_Define_X1</source>
-        <translation type="unfinished">X1측 정의</translation>
+        <translation type="unfinished">X1 eksen tanımı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="68"/>
         <source>kCS_STRUCT_Axis_Define_Y1</source>
-        <translation type="unfinished">Y1정의</translation>
+        <translation type="unfinished">Y1 Eksen tanımı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="69"/>
         <source>kCS_STRUCT_Axis_Define_Z</source>
-        <translation type="unfinished">Z측 정의</translation>
+        <translation type="unfinished">Z ekseni tanımı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="70"/>
         <source>kCS_STRUCT_Axis_Define_X2</source>
-        <translation type="unfinished">X2측 정의</translation>
+        <translation type="unfinished">X2 eksen tanımı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="71"/>
         <source>kCS_STRUCT_Axis_Define_Y2</source>
-        <translation type="unfinished">Y2측 정의</translation>
+        <translation type="unfinished">Y2 Eksen tanımı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="72"/>
         <source>kCS_STRUCT_Axis_Define_A</source>
-        <translation type="unfinished">A측 정의</translation>
+        <translation type="unfinished">Bir eksen tanımı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="73"/>
         <source>kCS_STRUCT_Axis_Define_B</source>
-        <translation type="unfinished">B측 정의</translation>
+        <translation type="unfinished">B-ekseni tanımı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="74"/>
         <source>kCS_STRUCT_Axis_Define_C</source>
-        <translation type="unfinished">C측 정의</translation>
+        <translation type="unfinished">C-ekseni tanımı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="75"/>
         <source>kCS_STRUCT_Reserve_Define_Y017</source>
-        <translation type="unfinished">Y017 정의</translation>
+        <translation type="unfinished">Y017 tanımı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="76"/>
         <source>kCS_STRUCT_Reserve_Define_Y022</source>
-        <translation type="unfinished">Y022정의</translation>
+        <translation type="unfinished">Y022 tanımı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="77"/>
         <source>kCS_STRUCT_Reserve_Define_Y031</source>
-        <translation type="unfinished">Y031정의</translation>
+        <translation type="unfinished">Y031 tanımı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="78"/>
         <source>kCS_STRUCT_Reserve_Define_Y032</source>
-        <translation type="unfinished">Y032정의</translation>
+        <translation type="unfinished">Y032 tanımı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="79"/>
         <source>kCS_STRUCT_Reserve_Define_Y035</source>
-        <translation type="unfinished">Y035 정의</translation>
+        <translation type="unfinished">Y035 tanımı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="80"/>
         <source>kCS_STRUCT_Reserve_Define_Y036</source>
-        <translation type="unfinished">Y036정의</translation>
+        <translation type="unfinished">Y036 tanımı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="81"/>
         <source>kCS_STRUCT_Reserve_Define_R1</source>
-        <translation type="unfinished">리시브 정의</translation>
+        <translation type="unfinished">Alternatif tanımı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="82"/>
         <source>kCS_STRUCT_Reserve_Define_R2</source>
-        <translation>샘플 정의</translation>
+        <translation type="unfinished">Alternatif tanımı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="83"/>
         <source>kCS_STRUCT_Limit_Define_Arm_Num</source>
-        <translation type="unfinished">팔 수량</translation>
+        <translation type="unfinished">kCS_STRUCT_Limit_Define_Arm_Num</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="84"/>
         <source>kCS_STRUCT_Limit_Define_MArm_DW_Limit</source>
-        <translation type="unfinished">제품 하강완료</translation>
+        <translation type="unfinished">Ana kol alt sınırı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="85"/>
         <source>kCS_STRUCT_Limit_Define_MArm_FW_Limit</source>
-        <translation type="unfinished">제품전진완료</translation>
+        <translation type="unfinished">Ana kol ileri sınırı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="86"/>
         <source>kCS_STRUCT_Limit_Define_MArm_BW_Limit</source>
-        <translation type="unfinished">제품후진완료</translation>
+        <translation type="unfinished">Ana kol geri sınırlamak</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="87"/>
         <source>kCS_STRUCT_Limit_Define_SArm_DW_Limit</source>
-        <translation type="unfinished">런너 하강완료</translation>
+        <translation type="unfinished">Alt kol açılan sınır</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="88"/>
         <source>kCS_STRUCT_Limit_Define_SArm_FW_Limit</source>
-        <translation type="unfinished">런너 전진완료</translation>
+        <translation type="unfinished">Kanatçık kol ileri sınırı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="89"/>
         <source>kCS_STRUCT_Limit_Define_SArm_BW_Limit</source>
-        <translation type="unfinished">런너 후진 </translation>
+        <translation type="unfinished">Kol arka sınırı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="90"/>
         <source>kCS_STRUCT_Other_Define_Escape</source>
-        <translation type="unfinished">형내 이탈</translation>
+        <translation type="unfinished">Kaçış türü</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="91"/>
         <source>kCS_STRUCT_Other_Define_Tune_bit</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Konumunu ayarla</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="92"/>
         <source>kCS_STRUCT_Other_Define_Inside_Position</source>
-        <translation type="unfinished">금형내 측면자세</translation>
+        <translation type="unfinished">Medial duruş ölmek</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="93"/>
         <source>kCS_STRUCT_Other_Define_Servo_Flex</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Hareket sertlik</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="94"/>
         <source>kCS_STRUCT_Config_Save</source>
-        <translation type="unfinished">결과 치수</translation>
+        <translation type="unfinished">Sonuç parametreleri</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="95"/>
         <source>kCS_TIME_Ver1</source>
-        <translation type="unfinished">회전복귀 1 제한시간</translation>
+        <translation type="unfinished">Dikey 1 Limit zaman</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="96"/>
         <source>kCS_TIME_Hor1</source>
-        <translation type="unfinished">회전1 제한시간</translation>
+        <translation type="unfinished">Düzey 1 süre-
+sini sınırla</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="97"/>
         <source>kCS_TIME_Ver2</source>
-        <translation type="unfinished">회전복귀2 제한시간</translation>
+        <translation type="unfinished">Dikey 2 Limit zaman</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="98"/>
         <source>kCS_TIME_Hor2</source>
-        <translation type="unfinished">회전2 제한시간</translation>
+        <translation type="unfinished">Düzey 2 Limit zaman</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="99"/>
         <source>kCS_TIME_MArm_UP</source>
-        <translation type="unfinished">제품상승 제한시간</translation>
+        <translation type="unfinished">Ana kol sınırı süresi</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="100"/>
         <source>kCS_TIME_MArm_Dw</source>
-        <translation type="unfinished">제품하강 제한시간</translation>
+        <translation type="unfinished">Ana kol iniş s-
+üresini sınırla</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="101"/>
         <source>kCS_TIME_MArm_FW</source>
-        <translation type="unfinished">제품전진 제한시간</translation>
+        <translation type="unfinished">Ana kol ileri limit zaman</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="102"/>
         <source>kCS_TIME_MArm_BW</source>
-        <translation type="unfinished">제품후진 제한시간</translation>
+        <translation type="unfinished">Ana kol geri zaman sınırı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="103"/>
         <source>kCS_TIME_Z_FW</source>
-        <translation type="unfinished">주행 제한시간</translation>
+        <translation type="unfinished">Sınırı zaman çapraz</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="104"/>
         <source>kCS_TIME_Z_BW</source>
-        <translation type="unfinished">주행복귀 제한시간</translation>
+        <translation type="unfinished">Çapraz geçiş s-
+üresini sınırla</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="105"/>
         <source>kCS_TIME_SArm_UP</source>
-        <translation type="unfinished">런너상승 제한시간</translation>
+        <translation type="unfinished">Flok artış sınırı zaman</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="106"/>
         <source>kCS_TIME_SArm_DW</source>
-        <translation type="unfinished">런너하강 제한시간</translation>
+        <translation type="unfinished">Limit zaman aşağı alt kol</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="107"/>
         <source>kCS_TIME_SArm_FW</source>
-        <translation type="unfinished">런너전진 제한시간</translation>
+        <translation type="unfinished">Kol ileri süresini sınırla</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="108"/>
         <source>kCS_TIME_SArm_BW</source>
-        <translation type="unfinished">런너후진 제한시간</translation>
+        <translation type="unfinished">Flok geri zaman sınırı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="109"/>
         <source>kCS_STACK_Group1_Seq</source>
-        <translation type="unfinished">다단1조 순서</translation>
+        <translation type="unfinished">Yığını 1 sipariş</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="110"/>
         <source>kCS_STACK_Group2_Seq</source>
-        <translation type="unfinished">다단2조순서</translation>
+        <translation type="unfinished">Yığını 2 sipariş</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="111"/>
         <source>kCS_STACK_Group3_Seq</source>
-        <translation type="unfinished">다단3조 순서</translation>
+        <translation type="unfinished">3 sipariş yığını</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="112"/>
         <source>kCS_STACK_Group4_Seq</source>
-        <translation type="unfinished">다단4조 순서</translation>
+        <translation type="unfinished">4 sipariş yığını</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="113"/>
         <source>kCS_STACK_Group1_X_Dir</source>
-        <translation type="unfinished">다단1조 X툭 방향</translation>
+        <translation type="unfinished">Yığın 1-Grup x ekseni yönü</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="114"/>
         <source>kCS_STACK_Group2_X_Dir</source>
-        <translation type="unfinished">다단2조X측방향</translation>
+        <translation type="unfinished">Yığın 2-grup x ekseni yönü</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="115"/>
         <source>kCS_STACK_Group3_X_Dir</source>
-        <translation type="unfinished">다단3조X측 방향</translation>
+        <translation type="unfinished">3-grup x ekseni yönünde yığını</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="116"/>
         <source>kCS_STACK_Group4_X_Dir</source>
-        <translation type="unfinished">다단4조X측 방향</translation>
+        <translation type="unfinished">4-grup x ekseni yönünde yığını</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="117"/>
         <source>kCS_STACK_Group1_Y_Dir</source>
-        <translation type="unfinished">다단1조 Y측 방향</translation>
+        <translation type="unfinished">Yığın 1-Grup y yönü</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="118"/>
         <source>kCS_STACK_Group2_Y_Dir</source>
-        <translation type="unfinished">다단2조Y측 방향</translation>
+        <translation type="unfinished">Yığın 2-grup y yönü</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="119"/>
         <source>kCS_STACK_Group3_Y_Dir</source>
-        <translation type="unfinished">다단3조 Y측 방향</translation>
+        <translation type="unfinished">Yığın 3-grup y yönü</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="120"/>
         <source>kCS_STACK_Group4_Y_Dir</source>
-        <translation type="unfinished">다단4조 Y측 방향</translation>
+        <translation type="unfinished">Yığın 4-grup y yönü</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="121"/>
         <source>kCS_STACK_Group1_Z_Dir</source>
-        <translation type="unfinished">다단1조 Z측 방향</translation>
+        <translation type="unfinished">Yığın 1-grubu z ekseni yönü</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="122"/>
         <source>kCS_STACK_Group2_Z_Dir</source>
-        <translation type="unfinished">다단2조Z측 방향</translation>
+        <translation type="unfinished">Yığın 2-grup z ekseni yönü</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="123"/>
         <source>kCS_STACK_Group3_Z_Dir</source>
-        <translation type="unfinished">다단3조Z측 방향</translation>
+        <translation type="unfinished">Yığın 3-grup z ekseni yönü</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="124"/>
         <source>kCS_STACK_Group4_Z_Dir</source>
-        <translation type="unfinished">다단4조 Z측 방향</translation>
+        <translation type="unfinished">Yığın 4-grup z ekseni yönü</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="125"/>
         <source>kCS_STACK_Group1_X_Number</source>
-        <translation type="unfinished">다단1조 X측 개수</translation>
+        <translation type="unfinished">1 set x eksenleri istifleme</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="126"/>
         <source>kCS_STACK_Group2_X_Number</source>
-        <translation type="unfinished">다단2조 X측개수</translation>
+        <translation type="unfinished">X eksenleri yığın 2 kümesi</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="127"/>
         <source>kCS_STACK_Group3_X_Number</source>
-        <translation type="unfinished">다단3조 X측 개수</translation>
+        <translation type="unfinished">X eksenleri yığın 3 set</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="128"/>
         <source>kCS_STACK_Group4_X_Number</source>
-        <translation type="unfinished">다단4조 X측 개수</translation>
+        <translation type="unfinished">X eksenleri yığın 4 set</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="129"/>
         <source>kCS_STACK_Group1_Y_Number</source>
-        <translation type="unfinished">다단1조 Y측개수</translation>
+        <translation type="unfinished">1-Grup Axes yığını</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="130"/>
         <source>kCS_STACK_Group2_Y_Number</source>
-        <translation type="unfinished">다단2조Y측개수</translation>
+        <translation type="unfinished">2-grup Axes yığını</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="131"/>
         <source>kCS_STACK_Group3_Y_Number</source>
-        <translation type="unfinished">다단3조 Y측 개수</translation>
+        <translation type="unfinished">3-grup Axes yığını</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="132"/>
         <source>kCS_STACK_Group4_Y_Number</source>
-        <translation type="unfinished">다단4조 Y측개수</translation>
+        <translation type="unfinished">4-grup Axes yığını</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="133"/>
         <source>kCS_STACK_Group1_Z_Number</source>
-        <translation type="unfinished">다단1조Z측개수</translation>
+        <translation type="unfinished">1-Grup z-ekseni yığını</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="134"/>
         <source>kCS_STACK_Group2_Z_Number</source>
-        <translation type="unfinished">다단2조 Z측 개수</translation>
+        <translation type="unfinished">2-grup z-ekseni yığını</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="135"/>
         <source>kCS_STACK_Group3_Z_Number</source>
-        <translation type="unfinished">다단3조Z측개수</translation>
+        <translation type="unfinished">3-grup z-ekseni yığını</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="136"/>
         <source>kCS_STACK_Group4_Z_Number</source>
-        <translation type="unfinished">다단4조 Z 측 개수</translation>
+        <translation type="unfinished">4-grup z-ekseni yığını</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="137"/>
         <source>kCS_STACK_Group1_X_Space</source>
-        <translation type="unfinished">다단1조 X측 간격</translation>
+        <translation type="unfinished">X ekseni aralığı kümesi yığını 1</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="138"/>
         <source>kCS_STACK_Group2_X_Space</source>
-        <translation type="unfinished">다단2조X측 간격</translation>
+        <translation type="unfinished">X ekseni aralığı kümesi yığını 2</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="139"/>
         <source>kCS_STACK_Group3_X_Space</source>
-        <translation type="unfinished">다단3조 X측간격</translation>
+        <translation type="unfinished">X ekseni aralığını 3 set yığını</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="140"/>
         <source>kCS_STACK_Group4_X_Space</source>
-        <translation type="unfinished">다단4조 X측 간격</translation>
+        <translation type="unfinished">X ekseni aralığını 4 set yığını</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="141"/>
         <source>kCS_STACK_Group1_Y_Space</source>
-        <translation type="unfinished">다단1조Y측 간격</translation>
+        <translation type="unfinished">Yığını 1-Grup y ekseni aralığı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="142"/>
         <source>kCS_STACK_Group2_Y_Space</source>
-        <translation type="unfinished">다단2조 Y측 간격</translation>
+        <translation type="unfinished">Yığın 2-grup y ekseni aralığı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="143"/>
         <source>kCS_STACK_Group3_Y_Space</source>
-        <translation type="unfinished">다단3조 Y측 간격</translation>
+        <translation type="unfinished">Yığın 3-grup y ekseni aralığı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="144"/>
         <source>kCS_STACK_Group4_Y_Space</source>
-        <translation type="unfinished">다단4조Y측 간격</translation>
+        <translation type="unfinished">Yığın 4-grup y ekseni aralığı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="145"/>
         <source>kCS_STACK_Group1_Z_Space</source>
-        <translation type="unfinished">다단1조Z측간격</translation>
+        <translation type="unfinished">Yığını 1-grubu z ekseni aralığı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="146"/>
         <source>kCS_STACK_Group2_Z_Space</source>
-        <translation type="unfinished">다단2조 Z측 간격</translation>
+        <translation type="unfinished">Yığın 2-grup z ekseni aralığı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="147"/>
         <source>kCS_STACK_Group3_Z_Space</source>
-        <translation type="unfinished">다단3조 Z측 거리</translation>
+        <translation type="unfinished">Yığın 3-grup z ekseni aralığı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="148"/>
         <source>kCS_STACK_Group4_Z_Space</source>
-        <translation type="unfinished">다단4조Z측 간격</translation>
+        <translation type="unfinished">Yığın 4-grup z ekseni aralığı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="149"/>
         <source>kCS_STACK_Group1_Is_SArm</source>
-        <translation type="unfinished">다단1조 런너 다단여부</translation>
+        <translation type="unfinished">1 istifleme grupları ola-
+n bir çift kol yığınları</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="150"/>
         <source>kCS_STACK_Group2_Is_SArm</source>
-        <translation type="unfinished">다단2조 런너 다단여부</translation>
+        <translation type="unfinished">2 istifleme grupları ola-
+n bir çift kol yığınları</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="151"/>
         <source>kCS_STACK_Group3_Is_SArm</source>
-        <translation type="unfinished">다단3조 런너 다단여부</translation>
+        <translation type="unfinished">3 istifleme grupları ola-
+n bir çift kol yığınları</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="152"/>
         <source>kCS_STACK_Group4_Is_SArm</source>
-        <translation type="unfinished">다단4조 런너 겹참여부</translation>
+        <translation type="unfinished">4 istifleme grupları ola-
+n bir çift kol yığınları</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="153"/>
         <source>kCS_STACK_Group1_Count_Way</source>
-        <translation type="unfinished">다단1조 다단계수기</translation>
+        <translation type="unfinished">1 yığın sayaçları istifleme</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="154"/>
         <source>kCS_STACK_Group2_Count_Way</source>
-        <translation type="unfinished">다단2조 다단계수기</translation>
+        <translation type="unfinished">Yığın 2 yığını sayaçları</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="155"/>
         <source>kCS_STACK_Group3_Count_Way</source>
-        <translation type="unfinished">다단3조 다단계수기</translation>
+        <translation type="unfinished">Yığın 3 yığın sayaçları</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="156"/>
         <source>kCS_STACK_Group4_Count_Way</source>
-        <translation type="unfinished">다단4조 다단계수기</translation>
+        <translation type="unfinished">Yığın 4 yığın sayaçları</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="157"/>
         <source>kCS_AXIS_Length_X1</source>
-        <translation type="unfinished">X1측 기계 전장</translation>
+        <translation type="unfinished">X1 Milli Küçük -
+makine uzunluğu</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="158"/>
         <source>kCS_AXIS_Length_Y1</source>
-        <translation type="unfinished">Y1측 제품 전장</translation>
+        <translation type="unfinished">Y1 Şaft makinesi uzunluğu</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="159"/>
         <source>kCS_AXIS_Length_Z</source>
-        <translation type="unfinished">Z측 기계 전장</translation>
+        <translation type="unfinished">Z ekseni makinesi uzunluğu</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="160"/>
         <source>kCS_AXIS_Length_X2</source>
-        <translation type="unfinished">X2측 기계 전장</translation>
+        <translation type="unfinished">X2 Milli Küçük -
+makine uzunluğu</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="161"/>
         <source>kCS_AXIS_Length_Y2</source>
-        <translation type="unfinished">Y2기계 전장</translation>
+        <translation type="unfinished">Y2 Şaft makinesi uzunluğu</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="162"/>
         <source>kCS_AXIS_Length_A</source>
-        <translation type="unfinished">A측 최대회전</translation>
+        <translation type="unfinished">Bir ekseni mak-
+simum rotasyon</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="163"/>
         <source>kCS_AXIS_Length_B</source>
-        <translation type="unfinished">B측 최대 회전</translation>
+        <translation type="unfinished">B-ekseni maksimum rotasyon</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="164"/>
         <source>kCS_AXIS_Length_C</source>
-        <translation type="unfinished">C측 최대회전</translation>
+        <translation type="unfinished">C ekseni maksimum rotasyon</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="165"/>
         <source>kCS_AXIS_Move_Limit_X1</source>
-        <translation type="unfinished">X1측 최대이동</translation>
+        <translation type="unfinished">X1 en fazla askı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="166"/>
         <source>kCS_AXIS_Move_Limit_Y1</source>
-        <translation type="unfinished">Y1측 최대이동</translation>
+        <translation type="unfinished">Y1 En fazla askı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="167"/>
         <source>kCS_AXIS_Move_Limit_Z</source>
-        <translation type="unfinished">Z측 최대 이동</translation>
+        <translation type="unfinished">En büyük z ekseni hareketi</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="168"/>
         <source>kCS_AXIS_Move_Limit_X2</source>
-        <translation type="unfinished">X2측 최대이동</translation>
+        <translation type="unfinished">X2 en fazla askı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="169"/>
         <source>kCS_AXIS_Move_Limit_Y2</source>
-        <translation type="unfinished">Y2측 최대이동</translation>
+        <translation type="unfinished">Y2 Ekseni maksimum hareket</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="170"/>
         <source>kCS_AXIS_Move_Limit_A</source>
-        <translation type="unfinished">A측 원점</translation>
+        <translation type="unfinished">Bir eksen başlangıç uzaklığı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="171"/>
         <source>kCS_AXIS_Move_Limit_B</source>
-        <translation type="unfinished">B측 원점 </translation>
+        <translation type="unfinished">B-ekseni kaynağı önyargı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="172"/>
         <source>kCS_AXIS_Move_Limit_C</source>
-        <translation type="unfinished">C측 원점 </translation>
+        <translation type="unfinished">C eksen kökenli önyargı</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="173"/>
         <source>kCS_AXIS_Min_X1</source>
-        <translation type="unfinished">X1측 금형내 최소위치</translation>
+        <translation type="unfinished">X1 mili kalıp -
+en az pozisyon</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="174"/>
         <source>kCS_AXIS_Min_Y1</source>
-        <translation type="unfinished">Y1측 최대대기위치</translation>
+        <translation type="unfinished">Y1 eksen Max -
+Standby konumu</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="175"/>
         <source>kCS_AXIS_Min_Z</source>
-        <translation type="unfinished">Z측 형내 안전영역</translation>
+        <translation type="unfinished">Z ekseni iç gü-
+venlik bölgesi</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="176"/>
         <source>kCS_AXIS_Min_X2</source>
-        <translation type="unfinished">금형내 X2측 최소위치</translation>
+        <translation type="unfinished">X2 mili kalıp -
+en az pozisyon</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="177"/>
         <source>kCS_AXIS_Min_Y2</source>
-        <translation type="unfinished">Y2최대 대기위치</translation>
+        <translation type="unfinished">Y2 eksen Max -
+Standby konumu</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="178"/>
         <source>kCS_AXIS_Min_A</source>
-        <translation type="unfinished">A측 주행 안전범위(최소)</translation>
+        <translation type="unfinished">A-eksen çapraz Em-
+anet aralığı (az)</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="179"/>
         <source>kCS_AXIS_Min_B</source>
-        <translation type="unfinished">B측 주행 안전범위(최소)</translation>
+        <translation type="unfinished">B-eksen çapraz geçiş -
+güvenlik aralığı (az)</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="180"/>
         <source>kCS_AXIS_Min_C</source>
-        <translation type="unfinished">C측 주행 안전범위(최소)</translation>
+        <translation type="unfinished">C eksenli çapraz E-
+manet aralığı (az)</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="181"/>
         <source>kCS_AXIS_Max_X1</source>
-        <translation type="unfinished">금형내 X1측  최대위치</translation>
+        <translation type="unfinished">X1 en fazla bulund-
+uğu Milli Küçük die</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="182"/>
         <source>kCS_AXIS_Max_Y1</source>
-        <translation type="unfinished">Y1측 원점위치 벗어나다</translation>
+        <translation type="unfinished">Y1 ekseni kayna-
+ğı konum bırakır</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="183"/>
         <source>kCS_AXIS_Max_Z</source>
-        <translation type="unfinished">Z측 형외 안전구역</translation>
+        <translation type="unfinished">Z ekseni haric-
+i emniyet bölge</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="184"/>
         <source>kCS_AXIS_Max_X2</source>
-        <translation type="unfinished">21측 금형내 최대 위치</translation>
+        <translation type="unfinished">21 eksen kalıp m-
+aksimum pozisyon</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="185"/>
         <source>kCS_AXIS_Max_Y2</source>
-        <translation type="unfinished">Y2측 원점위치 벗어나다</translation>
+        <translation type="unfinished">Y2 ekseni kayna-
+ğı konum bırakır</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="186"/>
         <source>kCS_AXIS_Max_A</source>
-        <translation type="unfinished">A측 주행 안전범위(최대)</translation>
+        <translation type="unfinished">A-eksen çapraz Ema-
+net aralığı (büyük)</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="187"/>
         <source>kCS_AXIS_Max_B</source>
-        <translation type="unfinished">B측 주행 안전번위(최대)</translation>
+        <translation type="unfinished">B-eksen çapraz geçiş g-
+üvenlik aralığı (büyük)</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="188"/>
         <source>kCS_AXIS_Max_C</source>
-        <translation type="unfinished">C측 주행 안전범위(최대)</translation>
+        <translation type="unfinished">C eksenli çapraz Em-
+anet aralığı (büyük)</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="189"/>
         <source>kCS_AXIS_Rotate_X1</source>
-        <translation type="unfinished">X1측 매 회전 간격</translation>
+        <translation type="unfinished">X1 eksen başına-
+ dönüş mesafesi</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="190"/>
         <source>kCS_AXIS_Rotate_Y1</source>
-        <translation type="unfinished">Y1측 매 회전 거리</translation>
+        <translation type="unfinished">Y1 eksen başına-
+ dönüş mesafesi</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="191"/>
         <source>kCS_AXIS_Rotate_Z</source>
-        <translation type="unfinished">Z측 매 회전 거리</translation>
+        <translation type="unfinished">Z ekseni dönüş-
+ mesafe başına</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="192"/>
         <source>kCS_AXIS_Rotate_X2</source>
-        <translation type="unfinished">X2측 매 회전간격</translation>
+        <translation type="unfinished">X2 eksen başına-
+ dönüş mesafesi</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="193"/>
         <source>kCS_AXIS_Rotate_Y2</source>
-        <translation type="unfinished">Y2측 매 회전거리</translation>
+        <translation type="unfinished">Y2 eksen başına-
+ dönüş mesafesi</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="194"/>
         <source>kCS_AXIS_Rotate_A</source>
-        <translation type="unfinished">A측 모터의 회전</translation>
+        <translation type="unfinished">A-eksen motorlu Tur başına</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="195"/>
         <source>kCS_AXIS_Rotate_B</source>
-        <translation type="unfinished">B측 모터의 회전</translation>
+        <translation type="unfinished">B-ekseni motorlu Tur başına</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="196"/>
         <source>kCS_AXIS_Rotate_C</source>
-        <translation type="unfinished">C측 모터의 회전</translation>
+        <translation type="unfinished">C-ekseni motorlu Tur başına</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="197"/>
         <source>kCS_AXIS_Config_Save</source>
-        <translation type="unfinished">측 설정치수</translation>
+        <translation type="unfinished">Eksen parametreleri</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="198"/>
         <source>kCS_PANEL_Key_Tone</source>
-        <translation type="unfinished">터치음량</translation>
+        <translation type="unfinished">Tuş sesi</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="199"/>
         <source>kCS_PANEL_Touch_Recal</source>
-        <translation type="unfinished">터치패널</translation>
+        <translation type="unfinished">Dokunmatik ekran</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="200"/>
         <source>kCS_PANEL_Language</source>
-        <translation type="unfinished">패널 언어</translation>
+        <translation type="unfinished">Panel dil</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="201"/>
         <source>kCS_PANEL_Datetime</source>
-        <translation type="unfinished">판넬 일자</translation>
+        <translation type="unfinished">Panel tarihi</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="202"/>
         <source>kCS_PANEL_Backlight</source>
-        <translation type="unfinished">팬널 백라이트 시간</translation>
+        <translation type="unfinished">Perde backlight zaman</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="203"/>
         <source>kCS_PANEL_Bright</source>
-        <translation type="unfinished">팬널 밝기</translation>
+        <translation type="unfinished">Ekran parlaklık</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="204"/>
         <source>kCS_PANEL_Admin_Password</source>
-        <translation type="unfinished">관리원 비번</translation>
+        <translation type="unfinished">Yönetici parolası</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="205"/>
         <source>kCS_PANEL_Root_Password</source>
-        <translation type="unfinished">고급관리 비번</translation>
+        <translation type="unfinished">Gelişmiş yönetici parolası</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="206"/>
         <source>kCS_PANEL_Super_Password</source>
-        <translation type="unfinished">고급 비번</translation>
+        <translation type="unfinished">Süper şifre</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="207"/>
         <source>kCS_PANEL_Function_Extent</source>
-        <translation type="unfinished">기능 확장</translation>
+        <translation type="unfinished">Özellik uzantıları</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="208"/>
         <source>kCS_PANEL_Register_Extent</source>
-        <translation type="unfinished">로그인 기능</translation>
+        <translation type="unfinished">Kayıt özellikleri</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="209"/>
         <source>kCS_PANEL_Config_Save</source>
-        <translation type="unfinished">팬널 참조수치</translation>
+        <translation type="unfinished">Paneli parametreleri</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="210"/>
         <source>kCS_CARE_Item1_Cycle</source>
-        <translation type="unfinished">보수항목 1주</translation>
+        <translation type="unfinished">Bakım öğe 1 haftalık süre</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="211"/>
         <source>kCS_CARE_Item2_Cycle</source>
-        <translation type="unfinished">보수 항목2주</translation>
+        <translation type="unfinished">Bakım öğe 2 haftalık süre</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="212"/>
         <source>kCS_CARE_Item3_Cycle</source>
-        <translation type="unfinished">보수 항목3주기</translation>
+        <translation type="unfinished">Bakım öğe 3 haftalık süre</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="213"/>
         <source>kCS_CARE_Item4_Cycle</source>
-        <translation type="unfinished">보수항목 4주</translation>
+        <translation type="unfinished">Bakım öğe 4 haftalık dönem</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="214"/>
         <source>kCS_CARE_Item5_Cycle</source>
-        <translation type="unfinished">보수 항목5주</translation>
+        <translation type="unfinished">Bakım öğe 5 haftalık süre</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="215"/>
         <source>kCS_CARE_Item6_Cycle</source>
-        <translation type="unfinished">보수항목6주</translation>
+        <translation type="unfinished">Bakım öğe 6 haftalık dönemde</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="216"/>
         <source>kCS_CARE_Item7_Cycle</source>
-        <translation type="unfinished">보수 항목7주</translation>
+        <translation type="unfinished">Bakım madde 7 haftalık süre</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="217"/>
         <source>kCS_Err</source>
-        <translation type="unfinished">비 내부 설정치수</translation>
+        <translation type="unfinished">Sigara İç P-
+arametreler</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="218"/>
         <source>No IMPL</source>
-        <translation type="unfinished">실현 안됨</translation>
+        <translation type="unfinished">Uygulanmadı</translation>
     </message>
 </context>
 <context>
@@ -2117,76 +2165,76 @@ ModifyTime</source>
     <message>
         <location filename="hcinstruction/iccurveeditor.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Form</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccurveeditor.ui" line="62"/>
         <source>Line</source>
-        <translation type="unfinished">직선</translation>
+        <translation type="unfinished">çizgi</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccurveeditor.ui" line="103"/>
         <source>Curve</source>
-        <translation type="unfinished">곡선</translation>
+        <translation type="unfinished">Eğri</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccurveeditor.ui" line="120"/>
         <source>Point-1</source>
-        <translation type="unfinished">포인트1</translation>
+        <translation type="unfinished">Nokta-1</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccurveeditor.ui" line="129"/>
         <location filename="hcinstruction/iccurveeditor.ui" line="286"/>
         <source>Z</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Z</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccurveeditor.ui" line="136"/>
         <location filename="hcinstruction/iccurveeditor.ui" line="241"/>
         <source>X1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X1</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccurveeditor.ui" line="181"/>
         <location filename="hcinstruction/iccurveeditor.ui" line="293"/>
         <source>Y1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccurveeditor.ui" line="219"/>
         <location filename="hcinstruction/iccurveeditor.ui" line="331"/>
         <source>Set In</source>
-        <translation type="unfinished">설정</translation>
+        <translation type="unfinished">Ayarla</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccurveeditor.ui" line="232"/>
         <source>Point-2</source>
-        <translation type="unfinished">포인트2</translation>
+        <translation type="unfinished">Nokta-2</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccurveeditor.ui" line="357"/>
         <source>a</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">a</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccurveeditor.ui" line="364"/>
         <source>Dir</source>
-        <translation type="unfinished">방향</translation>
+        <translation type="unfinished">Yön</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccurveeditor.ui" line="372"/>
         <source>PP</source>
-        <translation type="unfinished">정방향</translation>
+        <translation type="unfinished">İleri</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccurveeditor.ui" line="377"/>
         <source>RP</source>
-        <translation type="unfinished">역방향</translation>
+        <translation type="unfinished">Ters</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccurveeditor.ui" line="392"/>
         <source>Speed:</source>
-        <translation type="unfinished">속도</translation>
+        <translation type="unfinished">Hız:</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccurveeditor.ui" line="418"/>
@@ -2196,12 +2244,12 @@ ModifyTime</source>
     <message>
         <location filename="hcinstruction/iccurveeditor.ui" line="425"/>
         <source>Delay:</source>
-        <translation type="unfinished">시간지연</translation>
+        <translation type="unfinished">Gecikme：</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccurveeditor.ui" line="451"/>
         <source>s</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">s</translation>
     </message>
 </context>
 <context>
@@ -2210,129 +2258,130 @@ ModifyTime</source>
         <location filename="hcinstruction/iccutpage.ui" line="14"/>
         <location filename="hcinstruction/iccutpage_5.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished">조합동작선택</translation>
+        <translation type="unfinished">Grubu İşl-
+emi seçin</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="20"/>
         <location filename="hcinstruction/iccutpage_5.ui" line="26"/>
         <source>Cut</source>
-        <translation type="unfinished"> 확인</translation>
+        <translation type="unfinished">Makaslama</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="110"/>
         <location filename="hcinstruction/iccutpage_5.ui" line="116"/>
         <source>Fixture1</source>
-        <translation>척크1 확인</translation>
+        <translation type="unfinished">Fikstür 1 test</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="115"/>
         <location filename="hcinstruction/iccutpage_5.ui" line="121"/>
         <source>Fixture2</source>
-        <translation type="unfinished">지그2  확인</translation>
+        <translation type="unfinished">Fikstür2 test</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="120"/>
         <location filename="hcinstruction/iccutpage_5.ui" line="126"/>
         <source>Fixture3</source>
-        <translation type="unfinished"> 척크3 확인</translation>
+        <translation type="unfinished">Fikstür3 test</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="125"/>
         <location filename="hcinstruction/iccutpage_5.ui" line="131"/>
         <source>Fixture4</source>
-        <translation type="unfinished">척크4 확인</translation>
+        <translation type="unfinished">Fikstür4 test</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="130"/>
         <location filename="hcinstruction/iccutpage_5.ui" line="136"/>
         <source>Sucker1</source>
-        <translation type="unfinished"> 흡착1 확인</translation>
+        <translation type="unfinished">Emmek 1 test</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="135"/>
         <location filename="hcinstruction/iccutpage_5.ui" line="141"/>
         <source>Sucker2</source>
-        <translation type="unfinished"> 흡착2 확인</translation>
+        <translation type="unfinished">Emmek 2 test</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="140"/>
         <source>Sucker3</source>
-        <translation type="unfinished">흡착 3 확인</translation>
+        <translation type="unfinished">Emmek 3 test</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="145"/>
         <source>Sucker4</source>
-        <translation type="unfinished"> 흡착4 확인</translation>
+        <translation type="unfinished">Emmek 4 test</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="150"/>
         <location filename="hcinstruction/iccutpage_5.ui" line="156"/>
         <source>En</source>
-        <translation type="unfinished"> 사용</translation>
+        <translation type="unfinished">En</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.ui" line="158"/>
         <location filename="hcinstruction/iccutpage_5.ui" line="164"/>
         <source>Setting</source>
-        <translation type="unfinished"> 설정</translation>
+        <translation type="unfinished">Mevcut ayar</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage_5.ui" line="146"/>
         <source>X037</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X037</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage_5.ui" line="151"/>
         <source>X023</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X023</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
         <location filename="hcinstruction/iccutpage.cpp" line="120"/>
         <source>Fixture1  </source>
-        <translation>척크1 확인</translation>
+        <translation type="unfinished">Fikstür 1 test</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
         <location filename="hcinstruction/iccutpage.cpp" line="120"/>
         <source>Fixture2  </source>
-        <translation>척크2 확인</translation>
+        <translation type="unfinished">Fikstür2 test</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
         <location filename="hcinstruction/iccutpage.cpp" line="120"/>
         <source>Fixture3  </source>
-        <translation>척크3 확인</translation>
+        <translation type="unfinished">Fikstür3 test</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
         <location filename="hcinstruction/iccutpage.cpp" line="120"/>
         <source>Fixture4  </source>
-        <translation>척크4 확인</translation>
+        <translation type="unfinished">Fikstür 4 test</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="21"/>
         <location filename="hcinstruction/iccutpage.cpp" line="121"/>
         <source>Sucker1   </source>
-        <translation type="unfinished"> 흡착1 확인</translation>
+        <translation type="unfinished">Emmek 1 test</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="22"/>
         <location filename="hcinstruction/iccutpage.cpp" line="122"/>
         <source>Sucker2   </source>
-        <translation type="unfinished"> 흡착2 확인</translation>
+        <translation type="unfinished">Emmek 2 test</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="23"/>
         <location filename="hcinstruction/iccutpage.cpp" line="123"/>
         <source>Sucker3  </source>
-        <translation type="unfinished"> 흡착3 확인</translation>
+        <translation type="unfinished">Emmek 3 test</translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="24"/>
         <location filename="hcinstruction/iccutpage.cpp" line="124"/>
         <source>Sucker4  </source>
-        <translation type="unfinished"> 흡착4 확인</translation>
+        <translation type="unfinished">Emmek 4 test</translation>
     </message>
 </context>
 <context>
@@ -2340,22 +2389,22 @@ ModifyTime</source>
     <message>
         <location filename="custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.ui" line="101"/>
         <source>Detail</source>
-        <translation type="unfinished">도움</translation>
+        <translation type="unfinished">Yardım</translation>
     </message>
     <message>
         <location filename="custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.ui" line="116"/>
         <source>Loop Time</source>
-        <translation type="unfinished">로보트 주기</translation>
+        <translation type="unfinished">Robot döngü zamanı</translation>
     </message>
     <message>
         <location filename="custom_widgets/cycletimeandfinished/iccycletimeandfinishedframe.ui" line="142"/>
         <source>Finished Products</source>
-        <translation type="unfinished">완제품 수량</translation>
+        <translation type="unfinished">Bitmiş Ürünler</translation>
     </message>
 </context>
 <context>
@@ -2363,22 +2412,24 @@ ModifyTime</source>
     <message>
         <location filename="hcinstruction/icflagseditor.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Grubu İşl-
+emi seçin</translation>
     </message>
     <message>
         <location filename="hcinstruction/icflagseditor.ui" line="20"/>
         <source>Flags</source>
-        <translation>취출영역</translation>
+        <translation type="unfinished">Aksiyon d-
+izilerinin</translation>
     </message>
     <message>
         <location filename="hcinstruction/icflagseditor.ui" line="37"/>
         <source>Main Arm Get Product inside</source>
-        <translation>제품측 금형내 취출영역</translation>
+        <translation type="unfinished">Main-Arm almaya product（iç）</translation>
     </message>
     <message>
         <location filename="hcinstruction/icflagseditor.ui" line="42"/>
         <source>Sub Arm Get Product inside</source>
-        <translation>런너측 금형내 취출영역</translation>
+        <translation type="unfinished">Sub-Arm almaya product（iç）</translation>
     </message>
 </context>
 <context>
@@ -2386,7 +2437,7 @@ ModifyTime</source>
     <message>
         <location filename="categorypage/icfunctionpagebackframe.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
 </context>
 <context>
@@ -2394,66 +2445,47 @@ ModifyTime</source>
     <message>
         <location filename="categorypage/icfunctionpageframe.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="categorypage/icfunctionpageframe.cpp" line="203"/>
         <source>Security Point Settings</source>
-        <translation type="unfinished">안전 포인트 설정</translation>
+        <translation type="unfinished">Güvenlik Noktası ayarları</translation>
     </message>
     <message>
         <location filename="categorypage/icfunctionpageframe.cpp" line="204"/>
         <source>System Settings</source>
-        <translation type="unfinished">시스템 설정</translation>
+        <translation type="unfinished">Sistem ayarları</translation>
     </message>
     <message>
         <location filename="categorypage/icfunctionpageframe.cpp" line="205"/>
         <source>Struct Settings</source>
-        <translation type="unfinished">기계 세팅 치수</translation>
+        <translation type="unfinished">Türkçe çevirisi</translation>
     </message>
     <message>
         <location filename="categorypage/icfunctionpageframe.cpp" line="206"/>
         <source>Stack Settings</source>
-        <translation type="unfinished">개방설정</translation>
+        <translation type="unfinished">İstifleme ayarları</translation>
     </message>
     <message>
         <location filename="categorypage/icfunctionpageframe.cpp" line="207"/>
         <source>Maintains</source>
-        <translation type="unfinished">유지/보수</translation>
+        <translation type="unfinished">Idame</translation>
     </message>
     <message>
         <location filename="categorypage/icfunctionpageframe.cpp" line="208"/>
         <source>Signal Settings</source>
-        <translation type="unfinished">신호 설정</translation>
+        <translation type="unfinished">Sinyal ayarları</translation>
     </message>
     <message>
         <location filename="categorypage/icfunctionpageframe.cpp" line="209"/>
         <source>Product Settings</source>
-        <translation type="unfinished">제품 설정</translation>
+        <translation type="unfinished">Product ayarları</translation>
     </message>
     <message>
         <location filename="categorypage/icfunctionpageframe.cpp" line="210"/>
         <source>Machine Configure</source>
-        <translation type="unfinished">시행 설정 치수</translation>
-    </message>
-</context>
-<context>
-    <name>ICGuideFixtureEditor</name>
-    <message>
-        <source>Name</source>
-        <translation type="obsolete">명칭</translation>
-    </message>
-    <message>
-        <source>Sucker3   </source>
-        <translation type="obsolete">흡착3 </translation>
-    </message>
-    <message>
-        <source>Sucker4   </source>
-        <translation type="obsolete">흡착4</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="obsolete"> 무</translation>
+        <translation type="unfinished">İşletim parametreleri</translation>
     </message>
 </context>
 <context>
@@ -2462,49 +2494,49 @@ ModifyTime</source>
         <location filename="hcinstruction/ichcconditionpage.ui" line="14"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="71"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="41"/>
         <source>Conditions</source>
-        <translation type="unfinished">조건</translation>
+        <translation type="unfinished">Koşullar</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="129"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="574"/>
         <source>Sub-1</source>
-        <translation type="unfinished">예비1</translation>
+        <translation type="unfinished">Alt program1</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="134"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="579"/>
         <source>Sub-2</source>
-        <translation type="unfinished">예비2</translation>
+        <translation type="unfinished">Alt program2</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="139"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="584"/>
         <source>Sub-3</source>
-        <translation type="unfinished">예비3</translation>
+        <translation type="unfinished">Alt program3</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="144"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="589"/>
         <source>Sub-4</source>
-        <translation type="unfinished">예비4</translation>
+        <translation type="unfinished">Alt program4</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="149"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="594"/>
         <source>Sub-5</source>
-        <translation type="unfinished">예비5</translation>
+        <translation type="unfinished">Alt program5</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="154"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="599"/>
         <source>Bad Product</source>
-        <translation type="unfinished">불량품</translation>
+        <translation type="unfinished">Kusurlu ürünler</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="159"/>
@@ -2512,7 +2544,7 @@ ModifyTime</source>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="447"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="604"/>
         <source>Sampling</source>
-        <translation type="unfinished">샘플확인</translation>
+        <translation type="unfinished">örnekleme</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="164"/>
@@ -2520,100 +2552,65 @@ ModifyTime</source>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="99"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="609"/>
         <source>Try Product</source>
-        <translation type="unfinished">샘플</translation>
+        <translation type="unfinished">Deneme üreten</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="190"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="617"/>
         <source>Go to flag</source>
-        <translation>화면전환</translation>
+        <translation type="unfinished">Etikete atla</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="215"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="554"/>
         <source>Use Macro</source>
-        <translation type="unfinished">사용</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="912"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="543"/>
-        <source>Sucker-4</source>
-        <translation type="unfinished">흡착4</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="944"/>
-        <source>X045</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="1008"/>
-        <source>ON</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="1040"/>
-        <source>OFF</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="795"/>
-        <source>X046</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="438"/>
-        <source>X047</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="976"/>
-        <source>X026</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="546"/>
-        <source>X040</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="693"/>
-        <source>X023</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="629"/>
-        <source>X037</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="406"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="383"/>
-        <source>Sucker-1</source>
-        <translation type="unfinished">흡착1</translation>
+        <translation type="unfinished">Makro kullanın</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="260"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="351"/>
         <source>Sucker-2</source>
-        <translation type="unfinished">흡착2</translation>
+        <translation type="unfinished">Emmek 2</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="298"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="176"/>
+        <source>Fixture-1</source>
+        <translation type="unfinished">Fikstür 1</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="330"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="131"/>
         <source>Product Count</source>
-        <translation type="unfinished">샘플간격</translation>
+        <translation type="unfinished">Ürün Sayısı</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="839"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="252"/>
-        <source>Defective Products</source>
-        <translation type="unfinished">불량품</translation>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="368"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="287"/>
+        <source>Fixture-4</source>
+        <translation type="unfinished">Fikstür 4</translation>
     </message>
     <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="880"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="208"/>
-        <source>Fixture-3</source>
-        <translation type="unfinished">척크 3</translation>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="406"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="383"/>
+        <source>Sucker-1</source>
+        <translation type="unfinished">Emmek 1</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="438"/>
+        <source>X047</source>
+        <translation type="unfinished">X047</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="514"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="319"/>
+        <source>Fixture-2</source>
+        <translation type="unfinished">Fikstür 2</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="546"/>
+        <source>X040</source>
+        <translation type="unfinished">X040</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="597"/>
@@ -2622,39 +2619,74 @@ ModifyTime</source>
         <translation type="unfinished">X043</translation>
     </message>
     <message>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="629"/>
+        <source>X037</source>
+        <translation type="unfinished">X037</translation>
+    </message>
+    <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="661"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="511"/>
         <source>Sucker-3</source>
-        <translation type="unfinished">흡착3</translation>
+        <translation type="unfinished">Emmek 3</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="693"/>
+        <source>X023</source>
+        <translation type="unfinished">X023</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="725"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="479"/>
         <source>X044</source>
+        <translation type="unfinished">X044</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="795"/>
+        <source>X046</source>
+        <translation type="unfinished">X046</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="839"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="252"/>
+        <source>Defective Products</source>
+        <translation type="unfinished">Kusurlu ürünler</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="880"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="208"/>
+        <source>Fixture-3</source>
+        <translation type="unfinished">Fikstür 3</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="912"/>
+        <location filename="hcinstruction/ichcconditionpage_5.ui" line="543"/>
+        <source>Sucker-4</source>
+        <translation type="unfinished">Emmek 4</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="944"/>
+        <source>X045</source>
+        <translation type="unfinished">X045</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="976"/>
+        <source>X026</source>
+        <translation type="unfinished">X026</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="1008"/>
+        <source>ON</source>
+        <translation type="unfinished">ON</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/ichcconditionpage.ui" line="1040"/>
+        <source>OFF</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="368"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="287"/>
-        <source>Fixture-4</source>
-        <translation type="unfinished">척크4</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="298"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="176"/>
-        <source>Fixture-1</source>
-        <translation type="unfinished">척크1</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/ichcconditionpage.ui" line="514"/>
-        <location filename="hcinstruction/ichcconditionpage_5.ui" line="319"/>
-        <source>Fixture-2</source>
-        <translation type="unfinished">척크2</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="144"/>
         <source>Check Point</source>
-        <translation type="unfinished">포인트 검사</translation>
+        <translation type="unfinished">Teftiş</translation>
     </message>
 </context>
 <context>
@@ -2663,7 +2695,7 @@ ModifyTime</source>
         <location filename="hcsettings/ichcdetectionframe.ui" line="14"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="45"/>
@@ -2682,7 +2714,7 @@ ModifyTime</source>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="621"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="195"/>
         <source>Not Use</source>
-        <translation type="unfinished">미사용</translation>
+        <translation type="unfinished">Kullanmayın</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="50"/>
@@ -2701,7 +2733,7 @@ ModifyTime</source>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="626"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="194"/>
         <source>Use</source>
-        <translation type="unfinished">사용</translation>
+        <translation type="unfinished">kullanın</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="77"/>
@@ -2714,7 +2746,7 @@ ModifyTime</source>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="460"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="192"/>
         <source>Reversed Phase</source>
-        <translation type="unfinished">미사용</translation>
+        <translation type="unfinished">Ters Faz</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="82"/>
@@ -2727,56 +2759,56 @@ ModifyTime</source>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="465"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="193"/>
         <source>Positive Phase</source>
-        <translation type="unfinished">사용</translation>
+        <translation type="unfinished">Pozitif faz</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="90"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="90"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="240"/>
         <source>Hor Standby</source>
-        <translation type="unfinished">회전 대기</translation>
+        <translation type="unfinished">Seviye bekleme</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="97"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="97"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="196"/>
         <source>Detect fixture 1</source>
-        <translation type="unfinished">척크 1 확인</translation>
+        <translation type="unfinished">Fikstür 1 test</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="104"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="104"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="226"/>
         <source>Detect Postion</source>
-        <translation type="unfinished">주행자세</translation>
+        <translation type="unfinished">Enine duruş</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="143"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="143"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="211"/>
         <source>Detect fixture 4</source>
-        <translation type="unfinished">척크4 확인</translation>
+        <translation type="unfinished">Fikstür 4 test</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="182"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="182"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="208"/>
         <source>Detect fixture 3</source>
-        <translation type="unfinished">척크 3 확인</translation>
+        <translation type="unfinished">Fikstür 3 test</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="247"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="247"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="202"/>
         <source>Detect fixture 2</source>
-        <translation type="unfinished">척크2 확인</translation>
+        <translation type="unfinished">Fikstür 2 test</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="254"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="254"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="223"/>
         <source>Ejection Link Lock</source>
-        <translation type="unfinished">에젝터 연속</translation>
+        <translation type="unfinished">Ejeksiyon bağlantı kilidi</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="280"/>
@@ -2786,7 +2818,7 @@ ModifyTime</source>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="230"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="234"/>
         <source>Vertical</source>
-        <translation type="unfinished">지그 회전복귀</translation>
+        <translation type="unfinished">Dikey</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="285"/>
@@ -2796,109 +2828,110 @@ ModifyTime</source>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="231"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="235"/>
         <source>Horizontal</source>
-        <translation>지그회복</translation>
+        <translation type="unfinished">Seviye</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="290"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="290"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="236"/>
         <source>No Limit</source>
-        <translation type="unfinished">무제한</translation>
+        <translation type="unfinished">Limitsiz</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="298"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="298"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="199"/>
         <source>Close Mold</source>
-        <translation type="unfinished">형패완료</translation>
+        <translation type="unfinished">Kilit Kalıp</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="324"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="324"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="242"/>
         <source>No Limit Lock Mold</source>
-        <translation type="unfinished">형패 제한없음</translation>
+        <translation type="unfinished">Limitsiz Kilit Kalıp</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="329"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="329"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="241"/>
         <source>Limit Lock Mold</source>
-        <translation type="unfinished">형개 제한함</translation>
+        <translation type="unfinished">Limit Kilit Kalıp</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="337"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="337"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="233"/>
         <source>U/D Position</source>
-        <translation>원점복귀자세</translation>
+        <translation type="unfinished">Yukarı ve aş-
+ağı pozisyon</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="376"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="376"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="217"/>
         <source>Detect Security Door</source>
-        <translation type="unfinished">안전문 확인</translation>
+        <translation type="unfinished">Emniyet kapısı test</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="473"/>
         <source>Out Down Security</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Out Down Security</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="499"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="499"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="228"/>
         <source>Don&apos;t need Mold Opened Signal</source>
-        <translation type="unfinished">형개후 정지하지 않음 </translation>
+        <translation type="unfinished">Gerek yok kalıp sonlandırma sinyal</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="504"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="504"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="227"/>
         <source>Need Mold Opened Signal</source>
-        <translation type="unfinished">형개후 정지</translation>
+        <translation type="unfinished">şart kalıp sonlandırma</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="541"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="541"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="232"/>
         <source>Don&apos;t Limit</source>
-        <translation type="unfinished">무제한</translation>
+        <translation type="unfinished">Limitsiz</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="549"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="549"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="205"/>
         <source>Auto Run</source>
-        <translation type="unfinished">전자동</translation>
+        <translation type="unfinished">Otomatik</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="556"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="556"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="218"/>
         <source>Detect Pressure</source>
-        <translation type="unfinished">압력 확인</translation>
+        <translation type="unfinished">Basınç testi</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="563"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="563"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="214"/>
         <source>Detect Mid Mold</source>
-        <translation type="unfinished">3단금형 확인</translation>
+        <translation type="unfinished">Belirlemek orta kalıp</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="634"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="634"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="229"/>
         <source>Detect Origin</source>
-        <translation type="unfinished">원점복귀&apos;</translation>
+        <translation type="unfinished">P.S.O</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="473"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="237"/>
         <source>IMM Emergency</source>
-        <translation type="unfinished">사출기 비상정지</translation>
+        <translation type="unfinished">IMM-Acil durdurma</translation>
     </message>
 </context>
 <context>
@@ -2907,127 +2940,127 @@ ModifyTime</source>
         <location filename="hcinstruction/ichcfixturepage.ui" line="14"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.ui" line="26"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="26"/>
         <source>Fixture Action</source>
-        <translation type="unfinished">지그동작</translation>
+        <translation type="unfinished">Fikstür İşlemi </translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.ui" line="116"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="116"/>
         <source>Fixture1</source>
-        <translation type="unfinished">고정측 탈환유</translation>
+        <translation type="unfinished">Fikstür 1</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.ui" line="121"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="121"/>
         <source>Fixture2</source>
-        <translation type="unfinished">고정측 에어 불어줌</translation>
+        <translation type="unfinished">Ön kalıp darbe(F2)</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.ui" line="126"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="126"/>
         <source>Fixture3</source>
-        <translation type="unfinished">이동측 탈환유</translation>
+        <translation type="unfinished">Fikstür 3</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.ui" line="131"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="131"/>
         <source>Fixture4</source>
-        <translation type="unfinished">고정측 에어 불어줌</translation>
+        <translation type="unfinished">Ön kalıp darbe(F4)</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.ui" line="136"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="136"/>
         <source>Sucker1</source>
-        <translation type="unfinished">흡착1</translation>
+        <translation type="unfinished">Emmek 1</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.ui" line="141"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="141"/>
         <source>Sucker2</source>
-        <translation type="unfinished">흡착2</translation>
+        <translation type="unfinished">Emmek 2</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.ui" line="146"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="146"/>
         <source>Sucker3</source>
-        <translation type="unfinished">흡착 3</translation>
+        <translation type="unfinished">Emmek 3</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.ui" line="151"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="151"/>
         <source>Sucker4</source>
-        <translation type="unfinished">흡착4</translation>
+        <translation type="unfinished">Emmek 4</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.ui" line="156"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="156"/>
         <source>En</source>
-        <translation type="unfinished">사용</translation>
+        <translation type="unfinished">En</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.ui" line="164"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="164"/>
         <source>Current/Setting</source>
-        <translation type="unfinished">현재 설정</translation>
+        <translation type="unfinished">Mevcut ayar</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.ui" line="169"/>
         <location filename="hcinstruction/ichcfixturepage_5.ui" line="169"/>
         <source>Delay</source>
-        <translation type="unfinished">지연</translation>
+        <translation type="unfinished">Gecikme</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="156"/>
         <source>Fixture1  </source>
-        <translation>척크1</translation>
+        <translation type="unfinished">Fikstür 1</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="156"/>
         <source>Fixture2  </source>
-        <translation>척크2</translation>
+        <translation type="unfinished">Fikstür 2</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="156"/>
         <source>Fixture3  </source>
-        <translation>척크3</translation>
+        <translation type="unfinished">Fikstür 3</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="156"/>
         <source>Fixture4  </source>
-        <translation>척크4</translation>
+        <translation type="unfinished">Fikstür 4</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="25"/>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="157"/>
         <source>Sucker1   </source>
-        <translation type="unfinished">흡착1</translation>
+        <translation type="unfinished">Emmek 1</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="26"/>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="158"/>
         <source>Sucker2   </source>
-        <translation type="unfinished">흡착2</translation>
+        <translation type="unfinished">Emmek 2</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="27"/>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="159"/>
         <source>Sucker3   </source>
-        <translation type="unfinished">흡착3 </translation>
+        <translation type="unfinished">Emmek 3</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="28"/>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="160"/>
         <source>Sucker4   </source>
-        <translation type="unfinished">흡착4</translation>
+        <translation type="unfinished">Emmek 4</translation>
     </message>
 </context>
 <context>
@@ -3036,120 +3069,120 @@ ModifyTime</source>
         <location filename="hcinstruction/ichcinjectionpage.ui" line="14"/>
         <location filename="hcinstruction/ichcinjectionpage_5.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.ui" line="63"/>
         <location filename="hcinstruction/ichcinjectionpage_5.ui" line="69"/>
         <source>Injection</source>
-        <translation type="unfinished">사출</translation>
+        <translation type="unfinished">Enjeksiyon</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.ui" line="128"/>
         <location filename="hcinstruction/ichcinjectionpage_5.ui" line="134"/>
         <source>Close Mold Permit</source>
-        <translation type="unfinished">형폐 인터록</translation>
+        <translation type="unfinished">kapatma mold</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.ui" line="133"/>
         <location filename="hcinstruction/ichcinjectionpage_5.ui" line="139"/>
         <source>Ejection Permit</source>
-        <translation type="unfinished">에.전 인터록</translation>
+        <translation type="unfinished">Ejector</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.ui" line="138"/>
         <source>Ejection BW Permit</source>
-        <translation type="unfinished">에.후 인터록</translation>
+        <translation type="unfinished">Ejector Geri</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.ui" line="143"/>
         <source>Core1 In Permit</source>
-        <translation type="unfinished">코어1입가능 </translation>
+        <translation type="unfinished">IMM-PC1-Içine</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.ui" line="148"/>
         <source>Core1 Out Permit</source>
-        <translation type="unfinished">코어1출가능</translation>
+        <translation type="unfinished">IMM-PC1-Dışarı</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.ui" line="153"/>
         <source>Core2 In Permit</source>
-        <translation type="unfinished">코어2입가능</translation>
+        <translation type="unfinished">IMM-PC2-Içine</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.ui" line="158"/>
         <source>Core2 Out Permit</source>
-        <translation type="unfinished">코어2출가능</translation>
+        <translation type="unfinished">IMM-PC2-Dışarı</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.ui" line="163"/>
         <location filename="hcinstruction/ichcinjectionpage_5.ui" line="154"/>
         <source>En</source>
-        <translation type="unfinished">사용</translation>
+        <translation type="unfinished">En</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.ui" line="168"/>
         <location filename="hcinstruction/ichcinjectionpage_5.ui" line="159"/>
         <source>Current/Setting</source>
-        <translation type="unfinished">현재 설정</translation>
+        <translation type="unfinished">Mevcut ayar</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.ui" line="173"/>
         <location filename="hcinstruction/ichcinjectionpage_5.ui" line="164"/>
         <source>Delay</source>
-        <translation type="unfinished">지연시간</translation>
+        <translation type="unfinished">Gecikme</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage_5.ui" line="144"/>
         <source>Core1 Permit</source>
-        <translation type="unfinished">코어1인터록</translation>
+        <translation type="unfinished">IMM-PC1-Çekme</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage_5.ui" line="149"/>
         <source>Core2 Permit</source>
-        <translation type="unfinished">코어2인터록</translation>
+        <translation type="unfinished">IMM-PC2-Çekme</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="21"/>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="114"/>
         <source>Close Mold Permit  </source>
-        <translation>형폐 인터록</translation>
+        <translation type="unfinished">kapatma mold</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="21"/>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="114"/>
         <source>Ejection Permit  </source>
-        <translation>에.전 인터록</translation>
+        <translation type="unfinished">Ejector</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="22"/>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="115"/>
         <source>Ejection BW Permit  </source>
-        <translation>에.후 인터록</translation>
+        <translation type="unfinished">Ejector Geri</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="23"/>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="116"/>
         <source>Core1 Permit  </source>
-        <translation>코어1입가능</translation>
+        <translation type="unfinished">IMM-PC1-Içine</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="24"/>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="117"/>
         <source>Core1 Out Permit  </source>
-        <translation>코어1출가능</translation>
+        <translation type="unfinished">IMM-PC1-Dışarı</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="25"/>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="118"/>
         <source>Core2 Permit  </source>
-        <translation>코어2입가능</translation>
+        <translation type="unfinished">IMM-PC2-Içine</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="26"/>
         <location filename="hcinstruction/ichcinjectionpage.cpp" line="119"/>
         <source>Core2 Out Permit  </source>
-        <translation>코어2출가능</translation>
+        <translation type="unfinished">IMM-PC2-Dışarı</translation>
     </message>
 </context>
 <context>
@@ -3158,162 +3191,163 @@ ModifyTime</source>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="14"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="20"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="121"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="285"/>
         <source>Line</source>
-        <translation type="unfinished">측 동작</translation>
+        <translation type="unfinished">Line</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="159"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="513"/>
         <source>Stack</source>
-        <translation type="unfinished">다단적재</translation>
+        <translation type="unfinished">Beklemek</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="197"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="323"/>
         <source>Fixture</source>
-        <translation type="unfinished">지그</translation>
+        <translation type="unfinished">Fikstür</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="235"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="361"/>
         <source>Injection</source>
-        <translation type="unfinished">사출기 신호</translation>
+        <translation type="unfinished">IMM sinyal</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="273"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="475"/>
         <source>Periphery</source>
-        <translation type="unfinished">보조설비</translation>
+        <translation type="unfinished">Yardımcı ekipman</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="311"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="437"/>
         <source>Reserve</source>
-        <translation>샘플</translation>
+        <translation type="unfinished">Rezerv</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="349"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="551"/>
         <source>Cut</source>
-        <translation type="unfinished">확인</translation>
+        <translation type="unfinished">Makaslama</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="387"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="399"/>
         <source>Wait</source>
-        <translation type="unfinished">대기</translation>
+        <translation type="unfinished">Beklemek</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="425"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="627"/>
         <source>Other</source>
-        <translation type="unfinished">기타</translation>
+        <translation type="unfinished">Diğer</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="463"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="665"/>
         <source>Conditions</source>
-        <translation type="unfinished">조건</translation>
+        <translation type="unfinished">Koşullar</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="501"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="703"/>
         <source>Comment</source>
-        <translation>메모기록</translation>
+        <translation type="unfinished">Açıklama</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="539"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="589"/>
         <source>Flags</source>
-        <translation>취출영역</translation>
+        <translation type="unfinished">Aksiyon d-
+izilerinin</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="577"/>
         <source>Curve</source>
-        <translation type="unfinished">경로</translation>
+        <translation type="unfinished">Yol</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="608"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="64"/>
         <source>Editing:</source>
-        <translation type="unfinished">편집중</translation>
+        <translation type="unfinished"> Editör：</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="615"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="71"/>
         <source>Main</source>
-        <translation type="unfinished">메인</translation>
+        <translation type="unfinished">Ana program</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="661"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="117"/>
         <source>Guide</source>
-        <translation type="unfinished">설정</translation>
+        <translation type="unfinished">Kılavuz</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="707"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="159"/>
         <source>Program</source>
-        <translation type="unfinished">동작선택</translation>
+        <translation type="unfinished">Program</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="798"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="752"/>
         <source>Modify</source>
-        <translation type="unfinished">편집 </translation>
+        <translation type="unfinished"> Editör</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="836"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="790"/>
         <source>Delete</source>
-        <translation type="unfinished">삭제</translation>
+        <translation type="unfinished">Silmek</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="874"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="828"/>
         <source>Decompose</source>
-        <translation type="unfinished">분해</translation>
+        <translation type="unfinished">Ayrışma</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="915"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="869"/>
         <source>Compose</source>
-        <translation type="unfinished">조합</translation>
+        <translation type="unfinished">Kombina</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="956"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="997"/>
         <source>Try</source>
-        <translation type="unfinished">시행</translation>
+        <translation type="unfinished">Dene</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="990"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="923"/>
         <source>A+</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">A+</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1027"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="960"/>
         <source>A-</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">A-</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1078"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="1070"/>
         <source>Menu</source>
-        <translation type="unfinished">메뉴</translation>
+        <translation type="unfinished">Menü</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="1103"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="1095"/>
         <source>Insert</source>
-        <translation type="unfinished">삽입</translation>
+        <translation type="unfinished">Ekle</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="459"/>
@@ -3321,48 +3355,48 @@ ModifyTime</source>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="896"/>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1004"/>
         <source>warning</source>
-        <translation type="unfinished">경보</translation>
+        <translation type="unfinished">Alarm</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="460"/>
         <source>Stand program can not be insert action</source>
-        <translation type="unfinished">표준 프로그램 동작삽입 불가능</translation>
+        <translation type="unfinished">Standart prosedürler yapamam Ekle eylemler</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="487"/>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="732"/>
         <source>Warning</source>
-        <translation type="unfinished">경보</translation>
+        <translation type="unfinished">Alarm</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="488"/>
         <source>Can not add standby position program</source>
-        <translation type="unfinished">대기측 순서 추가 불가능</translation>
+        <translation type="unfinished">yapamam Ekle Bekleme nokta Adımları</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="717"/>
         <source>Stand program can not be delete action</source>
-        <translation type="unfinished">표준 프로그램 동작삭제 불가능</translation>
+        <translation type="unfinished">Standart prosedürler yapamam silmek eylemler</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="733"/>
         <source>Can not delete standby position program</source>
-        <translation type="unfinished">대기측 순서 삭제 불가능</translation>
+        <translation type="unfinished">Sen silemezsiniz Bekleme nokta Adımları</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="897"/>
         <source>Stand program can not do Up action</source>
-        <translation type="unfinished">표준 프로그램 동작조합 불가능</translation>
+        <translation type="unfinished">Standart prosedürler yapamam  kombine eylem</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1005"/>
         <source>Stand program can not do Down action</source>
-        <translation type="unfinished">표준 프로그램 동작분해 불가능</translation>
+        <translation type="unfinished">Standart prosedürler yapamam Ayrışma eylem</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.cpp" line="1297"/>
         <source>Flag[%1]:%2</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Etiket[%1]:%2</translation>
     </message>
 </context>
 <context>
@@ -3371,110 +3405,110 @@ ModifyTime</source>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="14"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe_5.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="149"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe_5.ui" line="158"/>
         <source>A+</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">A+</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="174"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe_5.ui" line="183"/>
         <source>A-</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">A-</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="199"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe_5.ui" line="208"/>
         <source>B+</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">B+</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.ui" line="224"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe_5.ui" line="233"/>
         <source>B-</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">B-</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="115"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="132"/>
         <source>Fixture</source>
-        <translation>척크</translation>
+        <translation type="unfinished">Fikstür</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="116"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="133"/>
         <source>Sucker</source>
-        <translation type="unfinished">흡착</translation>
+        <translation type="unfinished">Emmek</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="117"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="134"/>
         <source>Other</source>
-        <translation type="unfinished">기타</translation>
+        <translation type="unfinished">Diğer</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="118"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="135"/>
         <source>Adjust</source>
-        <translation type="unfinished">2측설정</translation>
+        <translation type="unfinished">Adjust</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="119"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="136"/>
         <source>Reserve</source>
-        <translation>샘플</translation>
+        <translation type="unfinished">Rezerv</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="302"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="330"/>
         <source>Horizontal-1 Limit On</source>
-        <translation>회전1 완료</translation>
+        <translation type="unfinished">Seviye-1 Limit ON</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="306"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="326"/>
         <source>Vertical-1 Limit On</source>
-        <translation type="unfinished">회전복귀1완료</translation>
+        <translation type="unfinished">/Dikey1-Limit ON</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="315"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="343"/>
         <source>/Horizontal-2 Limit On</source>
-        <translation type="unfinished">회전2 완료</translation>
+        <translation type="unfinished">/Seviye-2 Limit ON</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="319"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="339"/>
         <source>/Vertical-2 Limit On</source>
-        <translation type="unfinished">회전복귀2완료</translation>
+        <translation type="unfinished">/Dikey2-Limit ON</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="358"/>
         <source>Horizontal-1</source>
-        <translation type="unfinished">회전1 </translation>
+        <translation type="unfinished">Seviye-1</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="366"/>
         <source>Vertical-1</source>
-        <translation type="unfinished">회전복귀1</translation>
+        <translation type="unfinished">Dikey-1</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="374"/>
         <source>Horizontal-2</source>
-        <translation type="unfinished">회전2</translation>
+        <translation type="unfinished">Seviye-2</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="382"/>
         <source>Vertical-2</source>
-        <translation type="unfinished">회전복귀2</translation>
+        <translation type="unfinished">Dikey-2</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="386"/>
         <source>Vertical-1/Vertical-2</source>
-        <translation type="unfinished">회전복귀1/회전복귀2</translation>
+        <translation type="unfinished">Dikey-1/Dikey-2</translation>
     </message>
 </context>
 <context>
@@ -3482,12 +3516,12 @@ ModifyTime</source>
     <message>
         <location filename="hcsettings/ichcmovementframe.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcmovementframe.ui" line="32"/>
         <source>Main arm down</source>
-        <translation type="unfinished">제품 하강</translation>
+        <translation type="unfinished">Main-Arm Aşağı</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcmovementframe.ui" line="46"/>
@@ -3499,7 +3533,7 @@ ModifyTime</source>
         <location filename="hcsettings/ichcmovementframe.ui" line="244"/>
         <location filename="hcsettings/ichcmovementframe.ui" line="277"/>
         <source>Main forward</source>
-        <translation type="unfinished"> 제품 전진</translation>
+        <translation type="unfinished">Main-Arm ileri</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcmovementframe.ui" line="51"/>
@@ -3511,42 +3545,42 @@ ModifyTime</source>
         <location filename="hcsettings/ichcmovementframe.ui" line="249"/>
         <location filename="hcsettings/ichcmovementframe.ui" line="282"/>
         <source>Main backward</source>
-        <translation type="unfinished">제품 후진</translation>
+        <translation type="unfinished">Main-Arm çekilme</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcmovementframe.ui" line="65"/>
         <source>Main arm up</source>
-        <translation type="unfinished">제품 상승</translation>
+        <translation type="unfinished">Main-Arm Yukarı</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcmovementframe.ui" line="98"/>
         <source>Secondary arm down</source>
-        <translation type="unfinished"> 런너 하강</translation>
+        <translation type="unfinished">Sub-Arm Aşağı</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcmovementframe.ui" line="131"/>
         <source>Secondary arm up</source>
-        <translation type="unfinished">런너 상승</translation>
+        <translation type="unfinished">Sub-Arm Yukarı</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcmovementframe.ui" line="164"/>
         <source>Main arm traverse out</source>
-        <translation type="unfinished">제품 주행 </translation>
+        <translation type="unfinished">Main-Arm Enine dışarı</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcmovementframe.ui" line="197"/>
         <source>Main arm traverse in</source>
-        <translation type="unfinished">제품 주행복귀</translation>
+        <translation type="unfinished">Main-Arm Enine girmek</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcmovementframe.ui" line="230"/>
         <source>Secondary arm traverse out</source>
-        <translation type="unfinished">런너 주행 </translation>
+        <translation type="unfinished">Sub-Arm Enine dışarı</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcmovementframe.ui" line="263"/>
         <source>Secondary arm traverse in</source>
-        <translation type="unfinished">런너 주행복귀</translation>
+        <translation type="unfinished">Sub-Arm Enine girmek</translation>
     </message>
 </context>
 <context>
@@ -3554,17 +3588,17 @@ ModifyTime</source>
     <message>
         <location filename="hcinstruction/ichcotherpage.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished">기타</translation>
+        <translation type="unfinished">Diğer</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcotherpage.ui" line="20"/>
         <source>Other</source>
-        <translation type="unfinished">기타</translation>
+        <translation type="unfinished">Diğer</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcotherpage.ui" line="52"/>
         <source>Product Clear</source>
-        <translation type="unfinished">재품 리셋</translation>
+        <translation type="unfinished">Product kaldırmak</translation>
     </message>
 </context>
 <context>
@@ -3574,76 +3608,14 @@ ModifyTime</source>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="14"/>
         <location filename="hcsettings/ichcproductsettingframe.cpp" line="207"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="108"/>
-        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="214"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="212"/>
-        <source>TryProduct</source>
-        <translation type="unfinished">샘플수량</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="275"/>
-        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="132"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="221"/>
-        <source>Positive Phase</source>
-        <translation type="unfinished">사용</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="325"/>
-        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="176"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="220"/>
-        <source>Reversed Phase</source>
-        <translation type="unfinished">미사용</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="202"/>
-        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="412"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="224"/>
-        <source>All</source>
-        <translation type="unfinished">전부</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="207"/>
-        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="417"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="225"/>
-        <source>Good</source>
-        <translation type="unfinished">양품 </translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="212"/>
-        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="422"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="226"/>
-        <source>Stack-1</source>
-        <translation type="unfinished">다단1조</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="217"/>
-        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="427"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="227"/>
-        <source>Stack-2</source>
-        <translation type="unfinished">다단2조</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="222"/>
-        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="432"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="228"/>
-        <source>Stack-3</source>
-        <translation type="unfinished">다단3조</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="227"/>
-        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="437"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="229"/>
-        <source>Stack-4</source>
-        <translation type="unfinished">다단4조</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="148"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="238"/>
-        <source>Recycle-T</source>
-        <translation>재순환시간</translation>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="26"/>
+        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="345"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="231"/>
+        <source>Get Fail</source>
+        <translation type="unfinished">Almak başarısızlık</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="33"/>
@@ -3654,133 +3626,195 @@ ModifyTime</source>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="292"/>
         <location filename="hcsettings/ichcproductsettingframe.cpp" line="210"/>
         <source>s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="360"/>
-        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="404"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="230"/>
-        <source>Count Ways</source>
-        <translation type="unfinished">제품개방 선택</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="350"/>
-        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="246"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="209"/>
-        <source>Wait Mold Opened Limit Time</source>
-        <translation type="unfinished">형개완료 시간</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="138"/>
-        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="322"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="214"/>
-        <source>Bad Product</source>
-        <translation type="unfinished">불량품 수량</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="477"/>
-        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="269"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="232"/>
-        <source>Recycle Time</source>
-        <translation type="unfinished">싸이클 타임</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="368"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="235"/>
-        <source>Recycle Mode-1</source>
-        <translation>형폐지연OFF</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="373"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="236"/>
-        <source>Recycle Mode-2</source>
-        <translation>취출대기위치</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="378"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="237"/>
-        <source>Recycle Mode-3</source>
-        <translation>상승완료후형폐</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="85"/>
-        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="88"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="215"/>
-        <source>Alarm Times</source>
-        <translation type="unfinished">경보시간</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="171"/>
-        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="98"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="217"/>
-        <source>Fixture</source>
-        <translation type="unfinished">척크신호</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="131"/>
-        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="207"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="208"/>
-        <source>Product</source>
-        <translation type="unfinished">제품수량</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="386"/>
-        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="299"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="213"/>
-        <source>Sampling Interval</source>
-        <translation type="unfinished">샘플취출</translation>
+        <translation type="unfinished">s</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="43"/>
         <location filename="hcsettings/ichcproductsettingframe.cpp" line="234"/>
         <source>Recycle Mode</source>
-        <translation type="unfinished">재순환모드</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="26"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="216"/>
-        <source>Times</source>
-        <translation type="unfinished"> 시간 ,싸이클 타임</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="26"/>
-        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="345"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="231"/>
-        <source>Get Fail</source>
-        <translation type="unfinished">취출 실패</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="445"/>
-        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="353"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="222"/>
-        <source>Alarm When Up</source>
-        <translation type="unfinished">상승완료 경보</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcproductsettingframe.ui" line="450"/>
-        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="358"/>
-        <location filename="hcsettings/ichcproductsettingframe.cpp" line="223"/>
-        <source>Alarm Once</source>
-        <translation type="unfinished">즉시경보</translation>
+        <translation type="unfinished">Geri dönüşüm Mode</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="75"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="391"/>
         <location filename="hcsettings/ichcproductsettingframe.cpp" line="233"/>
         <source>Product Save</source>
-        <translation type="unfinished">생산량 기억</translation>
+        <translation type="unfinished">ürün Kaydet</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="85"/>
+        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="88"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="215"/>
+        <source>Alarm Times</source>
+        <translation type="unfinished">Alarm Zamanı</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="108"/>
+        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="214"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="212"/>
+        <source>TryProduct</source>
+        <translation type="unfinished">Deneme üreten</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="131"/>
+        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="207"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="208"/>
+        <source>Product</source>
+        <translation type="unfinished">ürün</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="138"/>
+        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="322"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="214"/>
+        <source>Bad Product</source>
+        <translation type="unfinished">Kusurlu ürünler</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="148"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="238"/>
+        <source>Recycle-T</source>
+        <translation type="unfinished">Geri Dönüşüm Zamanı</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="171"/>
+        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="98"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="217"/>
+        <source>Fixture</source>
+        <translation type="unfinished">Fikstür</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="202"/>
+        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="412"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="224"/>
+        <source>All</source>
+        <translation type="unfinished">Hepsinde</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="207"/>
+        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="417"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="225"/>
+        <source>Good</source>
+        <translation type="unfinished">Iyi ürün</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="212"/>
+        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="422"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="226"/>
+        <source>Stack-1</source>
+        <translation type="unfinished">İstifleme-1</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="217"/>
+        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="427"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="227"/>
+        <source>Stack-2</source>
+        <translation type="unfinished">İstifleme-2</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="222"/>
+        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="432"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="228"/>
+        <source>Stack-3</source>
+        <translation type="unfinished">İstifleme-3</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="227"/>
+        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="437"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="229"/>
+        <source>Stack-4</source>
+        <translation type="unfinished">İstifleme-4</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="275"/>
+        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="132"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="221"/>
+        <source>Positive Phase</source>
+        <translation type="unfinished">Pozitif faz</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="325"/>
+        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="176"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="220"/>
+        <source>Reversed Phase</source>
+        <translation type="unfinished">Ters Faz</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="350"/>
+        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="246"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="209"/>
+        <source>Wait Mold Opened Limit Time</source>
+        <translation type="unfinished">Kalıp Açıldı Bekleme Süresi</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="360"/>
+        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="404"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="230"/>
+        <source>Count Ways</source>
+        <translation type="unfinished">Konveyör sayaç</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="368"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="235"/>
+        <source>Recycle Mode-1</source>
+        <translation type="unfinished">Geri Dönüşüm Mode-1</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="373"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="236"/>
+        <source>Recycle Mode-2</source>
+        <translation type="unfinished">Geri Dönüşüm Mode-2</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="378"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="237"/>
+        <source>Recycle Mode-3</source>
+        <translation type="unfinished">Geri Dönüşüm Mode-3</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="386"/>
+        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="299"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="213"/>
+        <source>Sampling Interval</source>
+        <translation type="unfinished">örnekleme aralık</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="405"/>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="233"/>
         <location filename="hcsettings/ichcproductsettingframe.cpp" line="211"/>
         <source>Product Clear</source>
-        <translation type="unfinished">재품리셋</translation>
+        <translation type="unfinished">Product kaldırmak</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="445"/>
+        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="353"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="222"/>
+        <source>Alarm When Up</source>
+        <translation type="unfinished">Alarm ne zaman Yukarı</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="450"/>
+        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="358"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="223"/>
+        <source>Alarm Once</source>
+        <translation type="unfinished">Anında alarmı</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe.ui" line="477"/>
+        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="269"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="232"/>
+        <source>Recycle Time</source>
+        <translation type="unfinished">Devir süresi</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcproductsettingframe_5.ui" line="26"/>
+        <location filename="hcsettings/ichcproductsettingframe.cpp" line="216"/>
+        <source>Times</source>
+        <translation type="unfinished">Times</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.cpp" line="257"/>
         <source>Product clear</source>
-        <translation type="unfinished">제품 리셋</translation>
+        <translation type="unfinished">Product kaldırmak</translation>
     </message>
 </context>
 <context>
@@ -3789,62 +3823,63 @@ ModifyTime</source>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="14"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="93"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="93"/>
         <source>Good products</source>
-        <translation type="unfinished">양품 개수</translation>
+        <translation type="unfinished">Ichiban miktar</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="103"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="103"/>
         <source>Setted products</source>
-        <translation type="unfinished">양산 설정</translation>
+        <translation type="unfinished">Sayısını ayarla</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="164"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="164"/>
         <source>Stacked products</source>
-        <translation type="unfinished">다단개수</translation>
+        <translation type="unfinished">İstifleme</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="185"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="185"/>
         <source>Get Time</source>
-        <translation type="unfinished">취출 시간</translation>
+        <translation type="unfinished">Almak zamanı</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="227"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="227"/>
         <source>Time</source>
-        <translation type="unfinished">성형 싸이클 타임</translation>
+        <translation type="unfinished">Kalıplam-
+a döngüsü</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="293"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="293"/>
         <source>Edit</source>
-        <translation type="unfinished">편집</translation>
+        <translation type="unfinished"> Editör</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="331"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="331"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="849"/>
         <source>No Follow</source>
-        <translation type="unfinished">동행 않함</translation>
+        <translation type="unfinished">Takip etme</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="363"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="363"/>
         <source>Single Step</source>
-        <translation type="unfinished">싱글 스탭</translation>
+        <translation type="unfinished">Tek adım</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="395"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="395"/>
         <source>Cycle</source>
-        <translation type="unfinished">1싸이클</translation>
+        <translation type="unfinished">Bir döngü</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="427"/>
@@ -3854,90 +3889,90 @@ ModifyTime</source>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="858"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="868"/>
         <source>Speed Disable</source>
-        <translation>속도조절금지</translation>
+        <translation type="unfinished">Hız yasağı</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.ui" line="459"/>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="459"/>
         <source>Pause</source>
-        <translation type="unfinished">일시 정지</translation>
+        <translation type="unfinished">Durduruldu</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe_5.ui" line="178"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">TextLabel</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="73"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="106"/>
         <source>Has not teach check Fixture-1!</source>
-        <translation type="unfinished">척크1 확인 동작 없음</translation>
+        <translation type="unfinished">Hayır öğretim Fikstür1 test！</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="74"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="107"/>
         <source>Has not teach check Fixture-2!</source>
-        <translation type="unfinished">척크2 확인 동작 없음</translation>
+        <translation type="unfinished">Hayır öğretim Fikstür 2 test！</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="75"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="108"/>
         <source>Has not teach check Fixture-3!</source>
-        <translation type="unfinished">척크3 확인 동작 없음</translation>
+        <translation type="unfinished">Hayır öğretim Fikstür 3 test！</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="76"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="109"/>
         <source>Has not teach check Fixture-4!</source>
-        <translation type="unfinished">척크4 확인 동작 없음</translation>
+        <translation type="unfinished">Hayır öğretim Fikstür 4 test！</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="77"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="110"/>
         <source>Has not teach check Sucker-1!</source>
-        <translation type="unfinished">흡착1 확인 동작 없음</translation>
+        <translation type="unfinished">Hayır öğretim Emmek 1 test！</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="78"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="111"/>
         <source>Has not teach check Sucker-2!</source>
-        <translation type="unfinished">흡착2 확인 동작 없음</translation>
+        <translation type="unfinished">Hayır öğretim Emmek 2 test！</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="222"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="556"/>
         <source>Warning</source>
-        <translation type="unfinished">경보</translation>
+        <translation type="unfinished">Uyarı</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="355"/>
         <source>Single run ready</source>
-        <translation type="unfinished">싱글 스탭 준비 상태</translation>
+        <translation type="unfinished">Tek aşamalı hazır durum</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="359"/>
         <source>Single cycle ready</source>
-        <translation type="unfinished">1싸이클 준비상태</translation>
+        <translation type="unfinished">Bir döngü hazır</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="557"/>
         <source>Can not edit standby position program</source>
-        <translation type="unfinished">대기위치 수정불가능</translation>
+        <translation type="unfinished">Düzenlenemiyor bekleme pozisyon</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="843"/>
         <source>Follow</source>
-        <translation type="unfinished">동행</translation>
+        <translation type="unfinished">Takip</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="858"/>
         <source>Speed Enable</source>
-        <translation>속도조절가능</translation>
+        <translation type="unfinished">Hız ayarı</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="918"/>
         <source>Flag[%1]:%2</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Etiket[%1]:%2</translation>
     </message>
 </context>
 <context>
@@ -3945,61 +3980,61 @@ ModifyTime</source>
     <message>
         <location filename="hcsettings/ichcsettingsframe.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="24"/>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="67"/>
         <source>X1 Axis</source>
-        <translation type="unfinished">X1측</translation>
+        <translation type="unfinished">X1 Axis</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="25"/>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="68"/>
         <source>Y1 Axis</source>
-        <translation type="unfinished">Y1측</translation>
+        <translation type="unfinished">Y1 Axis</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="26"/>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="69"/>
         <source>Z Axis</source>
-        <translation type="unfinished">Z측</translation>
+        <translation type="unfinished">Z Axis</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="27"/>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="70"/>
         <source>X2 Axis</source>
-        <translation type="unfinished">X2측</translation>
+        <translation type="unfinished">X2 Axis</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="28"/>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="71"/>
         <source>Y2 Axis</source>
-        <translation type="unfinished">Y2측</translation>
+        <translation type="unfinished">Y2 Axis</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="29"/>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="72"/>
         <source>A Axis</source>
-        <translation type="unfinished">A측</translation>
+        <translation type="unfinished">A Axis</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="30"/>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="73"/>
         <source>B Axis</source>
-        <translation type="unfinished">B측</translation>
+        <translation type="unfinished">B Axis</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="31"/>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="74"/>
         <source>C Axis</source>
-        <translation type="unfinished">C측</translation>
+        <translation type="unfinished">C Axis</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="32"/>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="75"/>
         <source>Figure</source>
-        <translation type="unfinished">제한</translation>
+        <translation type="unfinished">Limit</translation>
     </message>
 </context>
 <context>
@@ -4008,66 +4043,66 @@ ModifyTime</source>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="14"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="51"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="66"/>
         <source>Group-1</source>
-        <translation type="unfinished">제1조</translation>
+        <translation type="unfinished">Grup-1</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="85"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="100"/>
         <source>Group-2</source>
-        <translation type="unfinished">제2조</translation>
+        <translation type="unfinished">Grup-2</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="116"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="131"/>
         <source>Group-3</source>
-        <translation type="unfinished">제3조</translation>
+        <translation type="unfinished">Grup-3</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="147"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="162"/>
         <source>Group-4</source>
-        <translation type="unfinished">제4조</translation>
+        <translation type="unfinished">Grup-4</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="181"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="196"/>
         <source>Sequence</source>
-        <translation type="unfinished">순서</translation>
+        <translation type="unfinished">Sipariş</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="230"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="257"/>
         <source>X-Z-Y</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X-Z-Y</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="268"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="295"/>
         <source>Z-X-Y</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Z-X-Y</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="294"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="321"/>
         <source>Y-Z-X</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y-Z-X</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="326"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="353"/>
         <source>Y-X-Z</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y-X-Z</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="364"/>
         <source>Z-Y-X</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Z-Y-X</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="390"/>
@@ -4078,49 +4113,49 @@ ModifyTime</source>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="403"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="366"/>
         <source>Direction</source>
-        <translation type="unfinished">방향</translation>
+        <translation type="unfinished">Yön</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="452"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="427"/>
         <source>X PP</source>
-        <translation type="unfinished">X측정</translation>
+        <translation type="unfinished">X Pozitif yönü</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="481"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="456"/>
         <source>X RP</source>
-        <translation type="unfinished">X측역</translation>
+        <translation type="unfinished">X Ters yönde</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="519"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="494"/>
         <source>Y PP</source>
-        <translation type="unfinished">Y측정</translation>
+        <translation type="unfinished">Y Pozitif yönü</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="545"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="520"/>
         <source>Y RP</source>
-        <translation type="unfinished">Y측역</translation>
+        <translation type="unfinished">Y Ters yönde</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="583"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="558"/>
         <source>Z PP</source>
-        <translation type="unfinished">Z측정</translation>
+        <translation type="unfinished">Z Pozitif yönü</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="609"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="584"/>
         <source>Z RP</source>
-        <translation type="unfinished">Z측역</translation>
+        <translation type="unfinished">Z Ters yönde</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="640"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="615"/>
         <source>Step</source>
-        <translation type="unfinished">간격</translation>
+        <translation type="unfinished">Mesafe</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="647"/>
@@ -4130,13 +4165,13 @@ ModifyTime</source>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="645"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="748"/>
         <source>0.1mm</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">0.1mm</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="680"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="655"/>
         <source>Lattice</source>
-        <translation type="unfinished">개수</translation>
+        <translation type="unfinished">sayısı</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="687"/>
@@ -4146,67 +4181,67 @@ ModifyTime</source>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="676"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="784"/>
         <source>mm</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">mm</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="694"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="669"/>
         <source>Z</source>
-        <translation type="unfinished">Z측</translation>
+        <translation type="unfinished">Z</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="711"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="683"/>
         <source>X</source>
-        <translation type="unfinished">X측</translation>
+        <translation type="unfinished">X</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="733"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="705"/>
         <source>Stack Counter</source>
-        <translation type="unfinished">다단수량</translation>
+        <translation type="unfinished">İstifleme sayaç</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="741"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="713"/>
         <source>All</source>
-        <translation type="unfinished">전부</translation>
+        <translation type="unfinished">Hepsinde</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="746"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="718"/>
         <source>Good</source>
-        <translation type="unfinished">양품</translation>
+        <translation type="unfinished">Iyi ürün</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="751"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="723"/>
         <source>Stack-1</source>
-        <translation type="unfinished">다단1조</translation>
+        <translation type="unfinished">İstifleme-1 </translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="756"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="728"/>
         <source>Stack-2</source>
-        <translation type="unfinished">다단2조</translation>
+        <translation type="unfinished">İstifleme-2</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="761"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="733"/>
         <source>Stack-3</source>
-        <translation type="unfinished">다단3조</translation>
+        <translation type="unfinished">İstifleme-3</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="766"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="738"/>
         <source>Stack-4</source>
-        <translation type="unfinished">다단4조</translation>
+        <translation type="unfinished">İstifleme-4</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="845"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="817"/>
         <source>Y</source>
-        <translation type="unfinished">Y측</translation>
+        <translation type="unfinished">Y</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="855"/>
@@ -4216,13 +4251,13 @@ ModifyTime</source>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="837"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="850"/>
         <source>0.01mm</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">0.01mm</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcstackedsettingsframe.ui" line="922"/>
         <location filename="hcsettings/ichcstackedsettingsframe_5.ui" line="891"/>
         <source>Is Sub Arm</source>
-        <translation type="unfinished">런너 다단</translation>
+        <translation type="unfinished">Sub-Arm İstifleme</translation>
     </message>
 </context>
 <context>
@@ -4231,137 +4266,128 @@ ModifyTime</source>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="14"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="20"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="47"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="53"/>
         <source>System Settings</source>
-        <translation type="unfinished">시스템 설정</translation>
+        <translation type="unfinished">Sistem ayarları</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="79"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="88"/>
         <source>Key Tone(On)</source>
-        <translation type="unfinished">터치음량 (ON)</translation>
+        <translation type="unfinished">Anahtar sesi（Açık）</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="120"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="129"/>
         <source>Calibration</source>
-        <translation type="unfinished">터치 교정</translation>
+        <translation type="unfinished">Dokunmatik -
+Kalibrasyon</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="245"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="140"/>
         <source>Language:</source>
-        <translation type="unfinished">언어</translation>
-    </message>
-    <message utf8="true">
-        <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="172"/>
-        <source>中文</source>
-        <translation type="unfinished">중문</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="210"/>
-        <source>English</source>
-        <translation type="unfinished">영어</translation>
+        <translation type="unfinished">Dil：</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="558"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="237"/>
         <source>Data Time:</source>
-        <translation type="unfinished">일자와 시간</translation>
+        <translation type="unfinished">Tarih &amp;Zaman</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="611"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="290"/>
         <source>yyyy / MM  /  dd   hh : mm</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="732"/>
-        <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="317"/>
-        <source>Back Light Time:</source>
-        <translation type="unfinished"> 백라이트 시간</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="742"/>
-        <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="334"/>
-        <source>min</source>
-        <translation type="unfinished"> 분</translation>
+        <translation type="unfinished">yyyy / MM  /  dd   hh : mm</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="641"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="361"/>
         <source>Brightness</source>
-        <translation type="unfinished">화면밝기</translation>
+        <translation type="unfinished">Ekran parlaklığı</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="732"/>
+        <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="317"/>
+        <source>Back Light Time:</source>
+        <translation type="unfinished">Arka Işık Zaman：</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="742"/>
+        <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="334"/>
+        <source>min</source>
+        <translation type="unfinished">Min</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="784"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="471"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="326"/>
         <source>Save</source>
-        <translation type="unfinished">저장</translation>
+        <translation type="unfinished">Kaydet</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="822"/>
         <source>Memory fix</source>
-        <translation type="unfinished"> 저장 복원</translation>
+        <translation type="unfinished">Bellek düzeltme</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="839"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="494"/>
         <source>Level Management</source>
-        <translation type="unfinished">관리권한</translation>
+        <translation type="unfinished">Hak Yönetimi</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="860"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="515"/>
         <source>Level</source>
-        <translation type="unfinished">권한</translation>
+        <translation type="unfinished">İzinler：</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="892"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="547"/>
         <source>Machine Admin</source>
-        <translation type="unfinished">관리자</translation>
+        <translation type="unfinished">Yönetici</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="930"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="591"/>
         <source>Advance Admin</source>
-        <translation type="unfinished"> 고급 관리자</translation>
+        <translation type="unfinished">Gelişmiş yönetici </translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="943"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="604"/>
         <source>Old Password</source>
-        <translation type="unfinished">구 비번</translation>
+        <translation type="unfinished">Eski şifre</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="969"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="633"/>
         <source>New Password</source>
-        <translation type="unfinished">신규 비번</translation>
+        <translation type="unfinished">Yeni Şifre</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1013"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="680"/>
         <source>Change</source>
-        <translation type="unfinished"> 변경</translation>
+        <translation type="unfinished">Değişim</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1038"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="705"/>
         <source>Clear</source>
-        <translation type="unfinished">삭제</translation>
+        <translation type="unfinished">kaldırmak</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1049"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="716"/>
         <source>Admin Settings</source>
-        <translation type="unfinished"> 고급관리 항목</translation>
+        <translation type="unfinished">Gelişmiş seçenek</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1076"/>
@@ -4369,25 +4395,26 @@ ModifyTime</source>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="856"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="943"/>
         <source>Register</source>
-        <translation type="unfinished">코드</translation>
+        <translation type="unfinished">Kayıt</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1096"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="876"/>
         <source>MachineCode:</source>
-        <translation type="unfinished">기계 코드</translation>
+        <translation type="unfinished">Makine kodu</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1103"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="895"/>
         <source>Generate</source>
-        <translation type="unfinished">기계코드 생성</translation>
+        <translation type="unfinished">Makine ko-
+du oluştur</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1116"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="908"/>
         <source>RegisterCode:</source>
-        <translation type="unfinished">로그 코드</translation>
+        <translation type="unfinished">Kayıt kod：</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1159"/>
@@ -4395,25 +4422,25 @@ ModifyTime</source>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="722"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="991"/>
         <source>Verify</source>
-        <translation type="unfinished">검증</translation>
+        <translation type="unfinished">Doğrulama</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1185"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1017"/>
         <source>Factory Code:</source>
-        <translation type="unfinished"> 제조업체 코드</translation>
+        <translation type="unfinished">Fabrika Kodu：</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1230"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="971"/>
         <source>RestTime:</source>
-        <translation type="unfinished">남은 시간</translation>
+        <translation type="unfinished">Kalan Zaman：</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1272"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="754"/>
         <source>Extent Function</source>
-        <translation type="unfinished">기능 확장</translation>
+        <translation type="unfinished">Uzatma fonksiyon</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1310"/>
@@ -4421,154 +4448,166 @@ ModifyTime</source>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="792"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="840"/>
         <source>Use</source>
-        <translation type="unfinished">사용</translation>
+        <translation type="unfinished">Makro k-
+ullanın</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1320"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="802"/>
         <source>Limit Function</source>
-        <translation type="unfinished">로그인 기능</translation>
+        <translation type="unfinished">Kayıt fonksiyon</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1367"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1045"/>
         <source>BackUp/Restore</source>
-        <translation type="unfinished"> 백업/복원</translation>
+        <translation type="unfinished">Yedekleme / Geri Yükleme</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1375"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1053"/>
         <source>Backup</source>
-        <translation type="unfinished"> 백업</translation>
+        <translation type="unfinished">Yedekleme</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1387"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1065"/>
         <source>Backup Machine Configures</source>
-        <translation type="unfinished">기계치수 백업</translation>
+        <translation type="unfinished">Yedekleme makine parametreleri</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1400"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1078"/>
         <source>Backup System Configures</source>
-        <translation type="unfinished">시스템 치수 백업</translation>
+        <translation type="unfinished">Yedekleme sistemi parametresi</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1413"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1091"/>
         <source>Backup All</source>
-        <translation type="unfinished"> 전부 백업</translation>
+        <translation type="unfinished">Tümünü Yedekle</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1423"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1101"/>
         <source>Restore</source>
-        <translation type="unfinished">원상 회복</translation>
+        <translation type="unfinished">Geri yükleme</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1435"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1113"/>
         <source>Restore Machine Configures</source>
-        <translation type="unfinished">기계치수 복원</translation>
+        <translation type="unfinished">Geri Makine parametreleri</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1448"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1126"/>
         <source>Restore System Configures</source>
-        <translation type="unfinished">시스템 치수 복원</translation>
+        <translation type="unfinished">Sistemi Geri Yükleme Yapılandırır</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1461"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1139"/>
         <source>Restore All</source>
-        <translation type="unfinished"> 전부 복원</translation>
+        <translation type="unfinished">Her şeyi eski-
+ haline getir</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1503"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="1181"/>
         <source>umount</source>
-        <translation type="unfinished">USB나옴</translation>
+        <translation type="unfinished">U disk çıkmak</translation>
+    </message>
+    <message utf8="true">
+        <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="172"/>
+        <source>中文</source>
+        <translation type="unfinished">中文</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="210"/>
+        <source>English</source>
+        <translation type="unfinished">English</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="75"/>
         <source>None</source>
-        <translation type="unfinished"> 무</translation>
+        <translation type="unfinished">Yok</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="76"/>
         <source>Only Backward Limit</source>
-        <translation type="unfinished">후진완료</translation>
+        <translation type="unfinished">Sadece geri limit</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="77"/>
         <source>Only Forward Limit</source>
-        <translation type="unfinished">전진완료</translation>
+        <translation type="unfinished">Sadece ileri limit</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="78"/>
         <source>Both</source>
-        <translation type="unfinished"> 전부 있음</translation>
+        <translation type="unfinished">Hepsinde</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="79"/>
         <source>Only Up Limit</source>
-        <translation type="unfinished">상승완료</translation>
+        <translation type="unfinished">Sadece Yukarı limit</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="80"/>
         <source>Up and Donw Limit</source>
-        <translation type="unfinished">상승/하강 완료</translation>
+        <translation type="unfinished">Yukarı&amp;Aşağı Limit</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="81"/>
         <source>Single Arm</source>
-        <translation type="unfinished">싱글 핸드</translation>
+        <translation type="unfinished">Tek Kol</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="82"/>
         <source>Double Arm</source>
-        <translation type="unfinished"> 더블 </translation>
+        <translation type="unfinished">Çift Kol</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="158"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="261"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="334"/>
         <source>Key Tone(ON)</source>
-        <translation type="unfinished">터치음량 (ON)</translation>
+        <translation type="unfinished">Anahtar sesi（Açık）</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="165"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="266"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="341"/>
         <source>Key Tone(OFF)</source>
-        <translation type="unfinished">터치음량 (OFF)</translation>
+        <translation type="unfinished">Anahtar sesi（Kapat）</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="305"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1082"/>
         <source>No Limit</source>
-        <translation type="unfinished">무제한</translation>
+        <translation type="unfinished">Limitsiz</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="309"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1086"/>
         <source>hour</source>
-        <translation type="unfinished">시간</translation>
+        <translation type="unfinished">Saat</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="323"/>
         <source>Set to %1</source>
-        <translation type="unfinished"> 1%로 설정</translation>
+        <translation type="unfinished">Set to %1</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="336"/>
         <source>ON</source>
-        <translation type="unfinished"> 열림</translation>
+        <translation type="unfinished">ON</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="343"/>
         <source>OFF</source>
-        <translation type="unfinished">끄기</translation>
+        <translation type="unfinished">KAPALI</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="355"/>
@@ -4576,12 +4615,12 @@ ModifyTime</source>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="478"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="482"/>
         <source>Information</source>
-        <translation type="unfinished"> 제시</translation>
+        <translation type="unfinished">Uç</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="356"/>
         <source>Please enter the old password and new password!</source>
-        <translation type="unfinished"> 구 비번과 신규 비번 입력</translation>
+        <translation type="unfinished">Lütfen eski şifreyi ve yeni şifreyi gir!</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="374"/>
@@ -4594,17 +4633,17 @@ ModifyTime</source>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="911"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1118"/>
         <source>Warning</source>
-        <translation type="unfinished"> 경보</translation>
+        <translation type="unfinished">Alarm</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="375"/>
         <source>Old password is wrong!</source>
-        <translation type="unfinished"> 구 비번 기본림</translation>
+        <translation type="unfinished">Eski şifre yanlış！</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="383"/>
         <source>Change password successfully!</source>
-        <translation type="unfinished"> 비번 교체 성공</translation>
+        <translation type="unfinished">Şifreyi başarıyla güncelleyin!</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="437"/>
@@ -4614,37 +4653,37 @@ ModifyTime</source>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="598"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="747"/>
         <source>USB is not connected!</source>
-        <translation type="unfinished">USB 확인 함</translation>
+        <translation type="unfinished">USB bağlı değil!</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="440"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="462"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="527"/>
         <source>Backuping, please wait...</source>
-        <translation type="unfinished">백업중 </translation>
+        <translation type="unfinished">Backuping,Lütfen bekleyin…</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="478"/>
         <source>Operation finished!</source>
-        <translation type="unfinished"> 조작 완료</translation>
+        <translation type="unfinished">İşlem sona erdi!</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="482"/>
         <source>Operation fail!</source>
-        <translation type="unfinished"> 조작 실패</translation>
+        <translation type="unfinished">Operasyon başarısız oldu!</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="567"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="601"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="752"/>
         <source>Restoring, please wait...</source>
-        <translation type="unfinished"> 복원중 </translation>
+        <translation type="unfinished">Geri Yükleme, lütfen bekleyin …</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="577"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="609"/>
         <source>Backup files is broken!</source>
-        <translation type="unfinished">백업 문서 불완전함</translation>
+        <translation type="unfinished">Yedekleme dosyası tamamlanmadı!</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="790"/>
@@ -4658,83 +4697,85 @@ ModifyTime</source>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1006"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1017"/>
         <source>Warnning</source>
-        <translation type="unfinished"> 경보</translation>
+        <translation type="unfinished">Alarm</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="790"/>
         <source>%1 wrong program format! Will skip this record!</source>
-        <translation type="unfinished">%1 기본린 프로그램 격식으로 건너뜀</translation>
+        <translation type="unfinished">%1Yanlış program formatı !!!Bu kaydı atlayacak!</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="803"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="810"/>
         <source>%1 wrong config format! Will skip this record!</source>
-        <translation type="unfinished">%1 기본린 프로그램 치수므로 건너 뜀！</translation>
+        <translation type="unfinished">%1Yanlış program parametre !!!Bu kaydı atlayacak!</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="832"/>
         <source>%1 wrong program format! Will skip this sub!</source>
-        <translation type="unfinished">%1 기본린 프로그램 겫식으로 건너뜀</translation>
+        <translation type="unfinished">%1Yanlış program formatı !!!Bu rutin atlayacak！</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="905"/>
         <source>
 App %1; Host:</source>
-        <translation type="unfinished"> 수동 버전%1;메인 버전</translation>
+        <translation>Manuel versiyon：%1；
+Usta versiyonu：</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="912"/>
         <source>The system will be reboot to calibrate! Do you want to continue?</source>
-        <translation type="unfinished">프로그램 터치교정하므로 계속 하시겠어요?</translation>
+        <translation type="unfinished">Kalibre etmek için sistem yeniden başlatılacak! Devam etmek istiyor musun?</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="916"/>
         <source>Recal</source>
-        <translation type="unfinished">재 교정</translation>
+        <translation type="unfinished">Tekrar ka-
+librasyon</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="933"/>
         <source>Tune down to %1</source>
-        <translation type="unfinished">%1 작게 설정</translation>
+        <translation type="unfinished">Kurmak küçük için 1%</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="947"/>
         <source>Tune up to %1</source>
-        <translation type="unfinished"> 조정 %1</translation>
+        <translation type="unfinished">İlâ%1</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="962"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="967"/>
         <source>Wrong system config format!</source>
-        <translation type="unfinished"> 츨린 시스템 치수 격식</translation>
+        <translation type="unfinished">Yanlış sistem yapılandırma biçimi!</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="989"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="994"/>
         <source>Wrong Axis config format!</source>
-        <translation type="unfinished">기본린 측의 치수격식</translation>
+        <translation type="unfinished">Yanlış eksen parametre biçimi!</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1006"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1017"/>
         <source>Wrong Rotation config format!</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Döndürme yapılandırma biçimi yanlış！</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1067"/>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1073"/>
         <source>Wrong Register Code!</source>
-        <translation type="unfinished"> 로그 코드 기본림</translation>
+        <translation type="unfinished">Kayıt kodu hatası</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1079"/>
         <source>Register Success!</source>
-        <translation type="unfinished"> 로그인 성공</translation>
+        <translation type="unfinished">Kayıt başarı!</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1119"/>
         <source>The system will be for storage to repair ! Do you want to continue?</source>
-        <translation type="unfinished">시스템 저장 복귀중 계속 시행하시겠나요？</translation>
+        <translation type="unfinished">Sistem onarım depolar, emin Devam etmek istiyor?</translation>
     </message>
 </context>
 <context>
@@ -4742,17 +4783,17 @@ App %1; Host:</source>
     <message>
         <location filename="hcsettings/ichctimeframe.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="hcsettings/ichctimeframe.ui" line="40"/>
         <source>Secondary arm go forward</source>
-        <translation type="unfinished">런너전진</translation>
+        <translation type="unfinished">Sub-Arm ileri </translation>
     </message>
     <message>
         <location filename="hcsettings/ichctimeframe.ui" line="47"/>
         <source>Main Arm Forward</source>
-        <translation type="unfinished">제품 전진</translation>
+        <translation type="unfinished">Main-Arm ileri </translation>
     </message>
     <message>
         <location filename="hcsettings/ichctimeframe.ui" line="54"/>
@@ -4770,67 +4811,67 @@ App %1; Host:</source>
         <location filename="hcsettings/ichctimeframe.ui" line="318"/>
         <location filename="hcsettings/ichctimeframe.ui" line="339"/>
         <source>s</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">s</translation>
     </message>
     <message>
         <location filename="hcsettings/ichctimeframe.ui" line="75"/>
         <source>Vertical-2</source>
-        <translation type="unfinished">회전복귀2</translation>
+        <translation type="unfinished">Dikey2</translation>
     </message>
     <message>
         <location filename="hcsettings/ichctimeframe.ui" line="89"/>
         <source>Main Arm Down</source>
-        <translation type="unfinished">제품하강</translation>
+        <translation type="unfinished">Main-Arm Aşağı</translation>
     </message>
     <message>
         <location filename="hcsettings/ichctimeframe.ui" line="96"/>
         <source>Main Arm Up</source>
-        <translation type="unfinished">제품상승</translation>
+        <translation type="unfinished">Main-Arm Yukarı</translation>
     </message>
     <message>
         <location filename="hcsettings/ichctimeframe.ui" line="144"/>
         <source>Secondary arm down</source>
-        <translation type="unfinished">런너하강</translation>
+        <translation type="unfinished">Sub-Arm Aşağı</translation>
     </message>
     <message>
         <location filename="hcsettings/ichctimeframe.ui" line="192"/>
         <source>Secondary arm up</source>
-        <translation type="unfinished">런너상승</translation>
+        <translation type="unfinished">Sub-Arm Yukarı</translation>
     </message>
     <message>
         <location filename="hcsettings/ichctimeframe.ui" line="199"/>
         <source>Main Arm Backward</source>
-        <translation type="unfinished">제품후진</translation>
+        <translation type="unfinished">Main-Arm çekilme</translation>
     </message>
     <message>
         <location filename="hcsettings/ichctimeframe.ui" line="234"/>
         <source>Secondary arm go backward</source>
-        <translation type="unfinished">런너후진</translation>
+        <translation type="unfinished">Sub-Arm çekilme</translation>
     </message>
     <message>
         <location filename="hcsettings/ichctimeframe.ui" line="241"/>
         <source>Horizontal-2</source>
-        <translation type="unfinished">회전2 </translation>
+        <translation type="unfinished">Seviye2</translation>
     </message>
     <message>
         <location filename="hcsettings/ichctimeframe.ui" line="269"/>
         <source>Horizontal-1</source>
-        <translation type="unfinished">회전1</translation>
+        <translation type="unfinished">Seviye1</translation>
     </message>
     <message>
         <location filename="hcsettings/ichctimeframe.ui" line="290"/>
         <source>Vertical-1</source>
-        <translation type="unfinished">회전복귀</translation>
+        <translation type="unfinished">Dikey1</translation>
     </message>
     <message>
         <location filename="hcsettings/ichctimeframe.ui" line="297"/>
         <source>Come In</source>
-        <translation>주행복귀</translation>
+        <translation type="unfinished">Enine girmek</translation>
     </message>
     <message>
         <location filename="hcsettings/ichctimeframe.ui" line="325"/>
         <source>Go Out</source>
-        <translation>주행</translation>
+        <translation type="unfinished">Enine dışarı</translation>
     </message>
 </context>
 <context>
@@ -4838,50 +4879,52 @@ App %1; Host:</source>
     <message>
         <location filename="ichostcomparepage.ui" line="14"/>
         <source>Dialog</source>
-        <translation type="unfinished">참조 수치 비교</translation>
+        <translation type="unfinished">Diyalog</translation>
     </message>
     <message>
         <location filename="ichostcomparepage.ui" line="31"/>
         <source>Host machine configure is different with HMI.</source>
-        <translation type="unfinished">메인 참조 수치 와 수동 참조수치 불일치</translation>
+        <translation type="unfinished">Anakart Parametreler ve HMI aynı değildir.</translation>
     </message>
     <message>
         <location filename="ichostcomparepage.ui" line="46"/>
         <source>Select Host</source>
-        <translation type="unfinished">메인보드 참조수치 선택?</translation>
+        <translation type="unfinished">Seçmek Anakar-
+t Parametreler</translation>
     </message>
     <message>
         <location filename="ichostcomparepage.ui" line="59"/>
         <source>Select HMI</source>
-        <translation type="unfinished">수동 참조수치선택</translation>
+        <translation type="unfinished">Seçmek HMI</translation>
     </message>
     <message>
         <location filename="ichostcomparepage.cpp" line="37"/>
         <location filename="ichostcomparepage.cpp" line="87"/>
         <source>Warning</source>
-        <translation type="unfinished">경보</translation>
+        <translation type="unfinished">Alarm</translation>
     </message>
     <message>
         <location filename="ichostcomparepage.cpp" line="38"/>
         <source>Do you really want to check out all the host machine configures?</source>
-        <translation type="unfinished">메인보드 참조수치 전부 선택 ?</translation>
+        <translation type="unfinished">Belirlemek tam Seçmek Anakart Parametreler？</translation>
     </message>
     <message>
         <location filename="ichostcomparepage.cpp" line="74"/>
         <location filename="ichostcomparepage.cpp" line="117"/>
         <source>Critical</source>
-        <translation type="unfinished">착오</translation>
+        <translation type="unfinished">Hata</translation>
     </message>
     <message>
         <location filename="ichostcomparepage.cpp" line="75"/>
         <location filename="ichostcomparepage.cpp" line="118"/>
         <source>Operator fail! Please reboot system</source>
-        <translation type="unfinished">조작 실패 ! 시스템 다시 시작</translation>
+        <translation type="unfinished">Operasyon başarısız oldu! -
+Sisteminizi tekrar başlatın</translation>
     </message>
     <message>
         <location filename="ichostcomparepage.cpp" line="88"/>
         <source>Do you really want to rewrite all the machine configures to host?</source>
-        <translation type="unfinished">수동 참조수치 전부 선택?</translation>
+        <translation type="unfinished">Belirlemek tam Seçmek HMI？ </translation>
     </message>
 </context>
 <context>
@@ -4889,366 +4932,373 @@ App %1; Host:</source>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="209"/>
         <source>Reserve-1</source>
-        <translation>샘플1</translation>
+        <translation type="unfinished">Rezerv-1</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="213"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="382"/>
         <source>M0</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">M0</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="217"/>
         <source>Reserve-2</source>
-        <translation>샘플2</translation>
+        <translation type="unfinished">Rezerv-2</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="221"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="346"/>
         <source>M1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">M1</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="225"/>
         <source>Reserve-3</source>
-        <translation>샘플3</translation>
+        <translation type="unfinished">Rezerv-3</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="229"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="365"/>
         <source>M2</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">M2</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="233"/>
         <source>Reserve-4</source>
-        <translation>샘플4</translation>
+        <translation type="unfinished">Rezerv-4</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="237"/>
         <source>M3</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">M3</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="242"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="249"/>
         <source>Motor Invert</source>
-        <translation type="unfinished">모터 역전</translation>
+        <translation type="unfinished">Motor Rotasyon-</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="244"/>
         <source>Sucker-3 Valve</source>
-        <translation type="unfinished">흡착3밸브</translation>
+        <translation type="unfinished">Emmek3-valf</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="255"/>
         <source>C Origin</source>
-        <translation type="unfinished">C측 원점</translation>
+        <translation type="unfinished">C köken</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="256"/>
         <source>C end limit</source>
-        <translation>C측 최대한계</translation>
+        <translation type="unfinished">X2 Başlangıç -
+noktası limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="262"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="270"/>
         <source>Horizon-1 Limit</source>
-        <translation type="unfinished">회전1</translation>
+        <translation type="unfinished">Seviye-1-Limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="263"/>
         <source>Vertical-1 Limit </source>
-        <translation type="unfinished">회전복귀1</translation>
+        <translation type="unfinished">Dikey1 limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="265"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="272"/>
         <source>Horizon-1 Valve</source>
-        <translation type="unfinished">회전1밸브</translation>
+        <translation type="unfinished">Seviye1-valf</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="266"/>
         <source>Vertical-1 Valve </source>
-        <translation type="unfinished">회전복귀1 밸브</translation>
+        <translation type="unfinished">Dikey1-valf</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="271"/>
         <source>Vertical-1 Limit</source>
-        <translation type="unfinished">회전복귀1 </translation>
+        <translation type="unfinished">Dikey1 limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="273"/>
         <source>Vertical-1 Valve</source>
-        <translation type="unfinished">회전복귀1밸브</translation>
+        <translation type="unfinished">Dikey1-valf</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="278"/>
         <source>X1 Origin</source>
-        <translation type="unfinished">XI측 원점</translation>
+        <translation type="unfinished">X1 köken</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="279"/>
         <source>X1 end Limit</source>
-        <translation>X1측 최대 한계</translation>
+        <translation type="unfinished">X1 Bitiş noktası limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="283"/>
         <source>X1 BW Limit</source>
-        <translation type="unfinished">제품 후진 </translation>
+        <translation type="unfinished">X1 çekilme limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="284"/>
         <source>X1 FW Limit</source>
-        <translation type="unfinished">제품전진 </translation>
+        <translation type="unfinished">X1-ileri limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="288"/>
         <source>X020</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X020</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="289"/>
         <source>X016</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X016</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="294"/>
         <source>Y1 Begin Limit</source>
-        <translation>Y1측 영점 한계</translation>
+        <translation type="unfinished">Y1 Başlangıç -
+noktası limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="295"/>
         <source>Y1 Origin</source>
-        <translation type="unfinished">Y1측 원점</translation>
+        <translation type="unfinished">Y1 köken</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="296"/>
         <source>Aid Pneu</source>
-        <translation type="unfinished">보조실린더</translation>
+        <translation type="unfinished">Yardım pnömatik</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="300"/>
         <source>Y1 DW Limit</source>
-        <translation type="unfinished">제품 하강 </translation>
+        <translation type="unfinished">Y1 Aşağı  limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="301"/>
         <source>Y1 UP Limit</source>
-        <translation type="unfinished">제품 상승완료</translation>
+        <translation type="unfinished">Y1 Yukarı Limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="302"/>
         <source>Y1 DW Valve</source>
-        <translation type="unfinished">제품하강 밸브</translation>
+        <translation type="unfinished">Y1 DW valf</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="306"/>
         <source>X022</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X022</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="307"/>
         <source>X035</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X035</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="308"/>
         <source>Y023</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y023</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="313"/>
         <source>Z Origin</source>
-        <translation type="unfinished">Z측 원점</translation>
+        <translation type="unfinished">Z köken</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="314"/>
         <source>Z begin Limit</source>
-        <translation type="unfinished">Z측 원점한계</translation>
+        <translation type="unfinished">Z Başlangıç -
+noktası limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="315"/>
         <source>Sec zone outside</source>
-        <translation type="unfinished">형외 안전구역</translation>
+        <translation type="unfinished">Dış güvenlik bölgesi</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="316"/>
         <source>Z end Limit</source>
-        <translation>Z측 최대한계</translation>
+        <translation type="unfinished">Z Bitiş noktası limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="321"/>
         <source>Z BW Limit</source>
-        <translation type="unfinished">주행복귀</translation>
+        <translation type="unfinished">Enine girmek limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="322"/>
         <source>Z FW Limit</source>
-        <translation type="unfinished">주행 개방완료</translation>
+        <translation type="unfinished">Enine dışarı limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="323"/>
         <source>Middle Release</source>
-        <translation type="unfinished">주행중 개방</translation>
+        <translation type="unfinished">Yolda serbest bırakmak</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="324"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="332"/>
         <source>X042</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X042</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="329"/>
         <source>X041</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X041</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="330"/>
         <source>X025</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X025</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="331"/>
         <source>X024</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X024</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="337"/>
         <source>X2 Origin</source>
-        <translation type="unfinished">X2 측 원점</translation>
+        <translation type="unfinished">X2 köken</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="338"/>
         <source>X2 Begin Limit</source>
-        <translation>X2측 영점 한계</translation>
+        <translation type="unfinished">X2 Başlangıç -
+noktası  limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="342"/>
         <source>X2 BW Limit</source>
-        <translation type="unfinished">런너후진 완료</translation>
+        <translation type="unfinished">X2 çekilme  limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="344"/>
         <source>X2 FW Limit</source>
-        <translation type="unfinished">런너 전진 </translation>
+        <translation type="unfinished">X2 ileri Limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="350"/>
         <source>X030</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X030</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="351"/>
         <source>X031</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X031</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="356"/>
         <source>Y2 Origin</source>
-        <translation type="unfinished">Y2측 원점</translation>
+        <translation type="unfinished">Y2 köken</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="357"/>
         <source>Y2 Begin Limit</source>
-        <translation type="unfinished">Y2측 원점한계</translation>
+        <translation type="unfinished">Y2 Başlangıç -
+noktası limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="361"/>
         <source>Y2 UP Limit</source>
-        <translation type="unfinished">런너 상승</translation>
+        <translation type="unfinished">Y2 Yukarı  limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="363"/>
         <source>Y2 DW Limit</source>
-        <translation type="unfinished">런너 하강 </translation>
+        <translation type="unfinished">Y2 Aşağı  limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="369"/>
         <source>X032</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X032</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="370"/>
         <source>X033</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X033</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="375"/>
         <source>A Origin</source>
-        <translation type="unfinished">A측 원점</translation>
+        <translation type="unfinished">A köken</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="376"/>
         <source>A begin limit</source>
-        <translation type="unfinished">A측 원점한계</translation>
+        <translation type="unfinished">A Başlangıç -
+noktası limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="383"/>
         <source>X037</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X037</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="384"/>
         <source>Y024</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y024</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="385"/>
         <source>Y046</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y046</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="389"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="397"/>
         <source>Horizon-2 Limit</source>
-        <translation type="unfinished">회전2 완료</translation>
+        <translation type="unfinished">Seviye-2-Limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="390"/>
         <source>Vertical-2 Limit </source>
-        <translation type="unfinished">회전복귀2 </translation>
+        <translation type="unfinished">Dikey2 limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="392"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="399"/>
         <source>Horizon-2 Valve</source>
-        <translation type="unfinished">회전2 밸브</translation>
+        <translation type="unfinished">Seviye2-valf</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="393"/>
         <source>Vertical-2 Valve </source>
-        <translation type="unfinished">회전복귀2밸브</translation>
+        <translation type="unfinished">Dikey2-valf</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="398"/>
         <source>Vertical-2 Limit</source>
-        <translation type="unfinished">회전복귀2</translation>
+        <translation type="unfinished">Dikey2 limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="400"/>
         <source>Vertical-2 Valve</source>
-        <translation type="unfinished">회전복귀2</translation>
+        <translation type="unfinished">Dikey 2-valf</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="406"/>
         <source>B Begin limit</source>
-        <translation type="unfinished">B측 원점한계</translation>
+        <translation type="unfinished">B Başlangıç -
+noktası limit</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="407"/>
         <source>B Origin</source>
-        <translation type="unfinished">B측 원점</translation>
+        <translation type="unfinished">B köken</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="412"/>
         <source>X026</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X026</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="413"/>
         <source>X040</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X040</translation>
     </message>
 </context>
 <context>
@@ -5256,22 +5306,22 @@ App %1; Host:</source>
     <message>
         <location filename="categorypage/icinitialframe.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="categorypage/icinitialframe.ui" line="45"/>
         <source>poweroff</source>
-        <translation type="unfinished">전원 끔</translation>
+        <translation type="unfinished">Kapatma</translation>
     </message>
     <message>
         <location filename="categorypage/icinitialframe.cpp" line="97"/>
         <source>Warning</source>
-        <translation type="unfinished">경보</translation>
+        <translation type="unfinished">Alarm</translation>
     </message>
     <message>
         <location filename="categorypage/icinitialframe.cpp" line="98"/>
         <source>The system will poweroff ! Do you want to continue?</source>
-        <translation type="unfinished">시스템 전원 꺼짐 계속 진행할것예요?</translation>
+        <translation type="unfinished">Sistem kapanacaktır! Devam etmek istiyor musunuz?</translation>
     </message>
 </context>
 <context>
@@ -5279,7 +5329,7 @@ App %1; Host:</source>
     <message>
         <location filename="hcmaintains/icinputdialog.ui" line="14"/>
         <source>Dialog</source>
-        <translation type="unfinished">입력</translation>
+        <translation type="unfinished">Giriş</translation>
     </message>
 </context>
 <context>
@@ -5288,25 +5338,25 @@ App %1; Host:</source>
         <location filename="custom_widgets/icinputmethodkeyboard.ui" line="17"/>
         <location filename="custom_widgets/icinputmethodkeyboard_5.ui" line="17"/>
         <source>Dialog</source>
-        <translation type="unfinished">입력방식</translation>
+        <translation type="unfinished">Giriş Yöntemi</translation>
     </message>
     <message>
         <location filename="custom_widgets/icinputmethodkeyboard.ui" line="608"/>
         <location filename="custom_widgets/icinputmethodkeyboard_5.ui" line="608"/>
         <source>BS</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Geri tuşu</translation>
     </message>
     <message>
         <location filename="custom_widgets/icinputmethodkeyboard.ui" line="624"/>
         <location filename="custom_widgets/icinputmethodkeyboard_5.ui" line="624"/>
         <source>Space</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Boşluk çubuğu</translation>
     </message>
     <message>
         <location filename="custom_widgets/icinputmethodkeyboard.ui" line="760"/>
         <location filename="custom_widgets/icinputmethodkeyboard_5.ui" line="760"/>
         <source>ENT</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Giriş</translation>
     </message>
 </context>
 <context>
@@ -5314,29 +5364,29 @@ App %1; Host:</source>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="14"/>
         <source>Edit</source>
-        <translation type="unfinished">편집</translation>
+        <translation type="unfinished"> Editör</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="24"/>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="526"/>
         <source>mm</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">mm</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="79"/>
         <location filename="hcinstruction/icinstructmodifydialog.cpp" line="228"/>
         <source>Bad Product</source>
-        <translation>불량품 사용</translation>
+        <translation type="unfinished">Kötü Ürün</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="127"/>
         <source>Backward</source>
-        <translation type="unfinished">후진</translation>
+        <translation type="unfinished">çekilme</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="146"/>
         <source>           End Position</source>
-        <translation type="unfinished">저속위치</translation>
+        <translation type="unfinished">Peşin pozisyon</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="153"/>
@@ -5347,91 +5397,92 @@ App %1; Host:</source>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="192"/>
         <source>Set</source>
-        <translation type="unfinished">설정</translation>
+        <translation type="unfinished">Kurmak</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="310"/>
         <source>Early End</source>
-        <translation type="unfinished">저속위치선택</translation>
+        <translation type="unfinished">zamanından önce -
+Sona bitiş konumu</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="361"/>
         <source>vertical</source>
-        <translation type="unfinished">회전복귀</translation>
+        <translation type="unfinished">Dikey</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="421"/>
         <source>Forward</source>
-        <translation type="unfinished">전진</translation>
+        <translation type="unfinished">ileri</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="437"/>
         <source>Speed</source>
-        <translation type="unfinished">속도</translation>
+        <translation type="unfinished">Hız</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="488"/>
         <source>Early Speed-Down</source>
-        <translation type="unfinished">저속속도</translation>
+        <translation type="unfinished">peşin hızını düşürün</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="533"/>
         <source>Select</source>
-        <translation type="unfinished">선택</translation>
+        <translation type="unfinished">Seçmek</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="571"/>
         <location filename="hcinstruction/icinstructmodifydialog.cpp" line="129"/>
         <source>Delay Time</source>
-        <translation type="unfinished">지연시간</translation>
+        <translation type="unfinished">Gecikme Zamanı</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="619"/>
         <source>Horizontal</source>
-        <translation type="unfinished">회전</translation>
+        <translation type="unfinished">Seviye</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="647"/>
         <source>Go to flag</source>
-        <translation type="unfinished">화면전환</translation>
+        <translation type="unfinished">Etikete atla</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="673"/>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="690"/>
         <source>s</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">s</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="680"/>
         <source>Position</source>
-        <translation type="unfinished">위치</translation>
+        <translation type="unfinished">Pozisyon</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="715"/>
         <location filename="hcinstruction/icinstructmodifydialog.cpp" line="291"/>
         <source>Limit Time</source>
-        <translation type="unfinished">한계시간</translation>
+        <translation type="unfinished">Zaman sınırlaması</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.ui" line="722"/>
         <source>Custom Name</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Özel ad</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.cpp" line="215"/>
         <source>speed</source>
-        <translation type="unfinished">속도</translation>
+        <translation type="unfinished">Hız</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.cpp" line="234"/>
         <source>Suck Page</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Emmek kâğıt</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructmodifydialog.cpp" line="301"/>
         <location filename="hcinstruction/icinstructmodifydialog.cpp" line="317"/>
         <source>Times</source>
-        <translation type="unfinished"> 시간 ,싸이클 타임</translation>
+        <translation type="unfinished">Times</translation>
     </message>
 </context>
 <context>
@@ -5439,109 +5490,110 @@ App %1; Host:</source>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="40"/>
         <source>#Flag[%2]:Comment:%1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">#Etiket[%2]:Açıklama：%1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="45"/>
         <source>Home</source>
-        <translation type="unfinished">시작점</translation>
+        <translation type="unfinished">Başlangı-
+ç noktası</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="74"/>
         <source>Fixture</source>
-        <translation>척크</translation>
+        <translation type="unfinished">Fikstür</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="79"/>
         <source>Sucker</source>
-        <translation type="unfinished">흡착</translation>
+        <translation type="unfinished">Emmek</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="84"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="262"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="393"/>
         <source>X037</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X037</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="88"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="258"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="389"/>
         <source>X023</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X023</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="95"/>
         <source>Begin</source>
-        <translation type="unfinished">시작</translation>
+        <translation type="unfinished">Başlamak</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="99"/>
         <source>End</source>
-        <translation type="unfinished">종료</translation>
+        <translation type="unfinished">Bitiş</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="112"/>
         <source>Line</source>
-        <translation type="unfinished">직선</translation>
+        <translation type="unfinished">çizgi</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="114"/>
         <source>Curve</source>
-        <translation type="unfinished">곡선</translation>
+        <translation type="unfinished">Eğri</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="121"/>
         <source>a:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">a:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="122"/>
         <source>Dir:</source>
-        <translation type="unfinished">방향</translation>
+        <translation type="unfinished">Yön：</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="122"/>
         <source>PP</source>
-        <translation type="unfinished">정방향</translation>
+        <translation type="unfinished">İleri</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="122"/>
         <source>RP</source>
-        <translation type="unfinished">역방향</translation>
+        <translation type="unfinished">Ters</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="131"/>
         <source>Speed:</source>
-        <translation type="unfinished">속도</translation>
+        <translation type="unfinished">Hız:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="138"/>
         <source>Early End,Early Position:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Erken biter，Bitiş konumu：</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="149"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="156"/>
         <source>Early Speed-Down:</source>
-        <translation type="unfinished">사전 감속 사용 </translation>
+        <translation type="unfinished">Peşin hızını düşürün：</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="149"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="156"/>
         <source>SPeed:</source>
-        <translation type="unfinished">속도</translation>
+        <translation type="unfinished">Hız:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="151"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="158"/>
         <source>End Position:</source>
-        <translation type="unfinished">위치 종료</translation>
+        <translation type="unfinished">Bitiş konumu：</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="155"/>
         <source>Early End,</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Erken biter</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="186"/>
@@ -5553,113 +5605,7 @@ App %1; Host:</source>
         <location filename="hcinstruction/icinstructparam.cpp" line="190"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="316"/>
         <source>X044</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="226"/>
-        <source>Mold Count</source>
-        <translation type="unfinished"> 시간 ,싸이클 타임</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="278"/>
-        <source>Defective Products</source>
-        <translation type="unfinished">불량품</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="282"/>
-        <source>Try Product</source>
-        <translation type="unfinished">샘플</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="286"/>
-        <source>Sampling</source>
-        <translation type="unfinished">샘플확인</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="290"/>
-        <source>Sub-</source>
-        <translation type="unfinished">서브루틴</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="293"/>
-        <source>Go to Flag[%1]</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="301"/>
-        <source>Mold Opened</source>
-        <translation type="unfinished">형개완료</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="308"/>
-        <source>Security Door Closed</source>
-        <translation type="unfinished">안전문 ON</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="320"/>
-        <source>CLIP1</source>
-        <translation type="unfinished">척크1확인</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="324"/>
-        <source>CLIP2</source>
-        <translation type="unfinished">척크 2확인</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="328"/>
-        <source>CLIP3</source>
-        <translation type="unfinished">척크3 확인</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="332"/>
-        <source>CLIP4</source>
-        <translation>척크4 확인</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="336"/>
-        <source>CLIP5</source>
-        <translation type="unfinished">흡착 1 확인</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="340"/>
-        <source>CLIP6</source>
-        <translation type="unfinished">흡착2 확인</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="344"/>
-        <source>EUEJF</source>
-        <translation type="unfinished">에젝터 전진완료</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="348"/>
-        <source>EUEJB</source>
-        <translation type="unfinished">애젝트 후진완료</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="353"/>
-        <source>EUCOREIN</source>
-        <translation>코어 입력</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="357"/>
-        <source>EUCOREOUT</source>
-        <translation>코어 출력</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="361"/>
-        <source>EUCOREIn-2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="365"/>
-        <source>EUCOREOUT-2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="238"/>
-        <location filename="hcinstruction/icinstructparam.cpp" line="369"/>
-        <source>X045</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X044</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="202"/>
@@ -5692,6 +5638,11 @@ App %1; Host:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="226"/>
+        <source>Mold Count</source>
+        <translation type="unfinished">Ürün Sayısı</translation>
+    </message>
+    <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="230"/>
         <source>X017 </source>
         <translation type="unfinished"></translation>
@@ -5702,120 +5653,224 @@ App %1; Host:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="238"/>
+        <location filename="hcinstruction/icinstructparam.cpp" line="369"/>
+        <source>X045</source>
+        <translation type="unfinished">X045</translation>
+    </message>
+    <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="242"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="373"/>
         <source>X046</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X046</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="246"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="377"/>
         <source>X047</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X047</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="250"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="381"/>
         <source>X026</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X026</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="254"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="385"/>
         <source>X040</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="397"/>
-        <source>X017</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="401"/>
-        <source>X036</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="411"/>
-        <source>Product Clear</source>
-        <translation>제품 리셋</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="425"/>
-        <source>Eje BW Permit On</source>
-        <translation>에.후 가능</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="433"/>
-        <source>Eje BW Permit Off</source>
-        <translation>에젝터 전후진 정지</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="441"/>
-        <source>Core1 Out Permit On</source>
-        <translation>코어1출가능</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="449"/>
-        <source>Core1 Out Permit Off</source>
-        <translation>코어1입 정지</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="457"/>
-        <source>Core2 Out Permit On</source>
-        <translation>코어2출가능</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icinstructparam.cpp" line="465"/>
-        <source>Core2 Out Permit Off</source>
-        <translation>코어2입 정지</translation>
+        <translation type="unfinished">X040</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="267"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="470"/>
         <source>ON</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ON</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="271"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="470"/>
         <source>OFF</source>
+        <translation type="unfinished">OFF</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="278"/>
+        <source>Defective Products</source>
+        <translation type="unfinished">Kusurlu ürünler</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="282"/>
+        <source>Try Product</source>
+        <translation type="unfinished">Deneme üreten</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="286"/>
+        <source>Sampling</source>
+        <translation type="unfinished">örnekleme</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="290"/>
+        <source>Sub-</source>
+        <translation type="unfinished">Sub-</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="293"/>
+        <source>Go to Flag[%1]</source>
+        <translation type="unfinished">Etikete atla[%1]</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="301"/>
+        <source>Mold Opened</source>
+        <translation type="unfinished">Mold Açıldı</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="308"/>
+        <source>Security Door Closed</source>
+        <translation type="unfinished">Emniyet kapısı kapatmak</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="320"/>
+        <source>CLIP1</source>
+        <translation type="unfinished">CLIP1</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="324"/>
+        <source>CLIP2</source>
+        <translation type="unfinished">CLIP2</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="328"/>
+        <source>CLIP3</source>
+        <translation type="unfinished">CLIP3</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="332"/>
+        <source>CLIP4</source>
+        <translation type="unfinished">CLIP4</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="336"/>
+        <source>CLIP5</source>
+        <translation type="unfinished">CLIP5</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="340"/>
+        <source>CLIP6</source>
+        <translation type="unfinished">CLIP6</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="344"/>
+        <source>EUEJF</source>
+        <translation type="unfinished">Ejektör pimi -
+ileri yeterli</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="348"/>
+        <source>EUEJB</source>
+        <translation type="unfinished">Ejektör pimi y-
+eterince döndü</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="353"/>
+        <source>EUCOREIN</source>
+        <translation type="unfinished">çekirdek</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="357"/>
+        <source>EUCOREOUT</source>
+        <translation type="unfinished">Dışarı çekirdek </translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="361"/>
+        <source>EUCOREIn-2</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="365"/>
+        <source>EUCOREOUT-2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="397"/>
+        <source>X017</source>
+        <translation type="unfinished">X017</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="401"/>
+        <source>X036</source>
+        <translation type="unfinished">X036</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="411"/>
+        <source>Product Clear</source>
+        <translation type="unfinished">Product kaldırmak</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="425"/>
+        <source>Eje BW Permit On</source>
+        <translation type="unfinished">Ejektör pimi dönüş</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="433"/>
+        <source>Eje BW Permit Off</source>
+        <translation type="unfinished">Ejektör pimi geri-
+ dönmek-yasaklamak</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="441"/>
+        <source>Core1 Out Permit On</source>
+        <translation type="unfinished">C1-Dışarı</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="449"/>
+        <source>Core1 Out Permit Off</source>
+        <translation type="unfinished">IMM-C1-F</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="457"/>
+        <source>Core2 Out Permit On</source>
+        <translation type="unfinished">C2-Dışarı</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icinstructparam.cpp" line="465"/>
+        <source>Core2 Out Permit Off</source>
+        <translation type="unfinished">IMM-C2-F</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="482"/>
         <source>Group</source>
-        <translation type="unfinished">조</translation>
+        <translation type="unfinished">Grubu </translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="667"/>
         <source>All</source>
-        <translation type="unfinished">전부</translation>
+        <translation type="unfinished">Hepsinde</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="668"/>
         <source>Good</source>
-        <translation type="unfinished">양품</translation>
+        <translation type="unfinished">Iyi ürün</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="669"/>
         <source>Stacked-1</source>
-        <translation type="unfinished">다단1조</translation>
+        <translation type="unfinished">İstifleme-1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="670"/>
         <source>Stacked-2</source>
-        <translation type="unfinished">다단2조</translation>
+        <translation type="unfinished">İstifleme-2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="671"/>
         <source>Stacked-3</source>
-        <translation type="unfinished">다단3조</translation>
+        <translation type="unfinished">İstifleme-3</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="672"/>
         <source>Stacked-4</source>
-        <translation type="unfinished">다단4조</translation>
+        <translation type="unfinished">İstifleme-4</translation>
     </message>
 </context>
 <context>
@@ -5823,7 +5878,7 @@ App %1; Host:</source>
     <message>
         <location filename="hcinstruction/icinstructioneditorbase.ui" line="20"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
 </context>
 <context>
@@ -5831,12 +5886,12 @@ App %1; Host:</source>
     <message>
         <location filename="ickeyboard/ickeyboardhandler.cpp" line="126"/>
         <source>Warning</source>
-        <translation type="unfinished">경보</translation>
+        <translation type="unfinished">Alarm</translation>
     </message>
     <message>
         <location filename="ickeyboard/ickeyboardhandler.cpp" line="126"/>
         <source>Need to origin!</source>
-        <translation type="unfinished">원점 복귀 안됨</translation>
+        <translation type="unfinished">Hiçbir P.S.O！</translation>
     </message>
 </context>
 <context>
@@ -5845,40 +5900,40 @@ App %1; Host:</source>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/iclineeditwithvirtualnumerickeypad.cpp" line="124"/>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/iclineeditwithvirtualnumerickeypad.cpp" line="137"/>
         <source>Input Error</source>
-        <translation type="unfinished">입력 오류</translation>
+        <translation type="unfinished">Yanlış girilmiş</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/iclineeditwithvirtualnumerickeypad.cpp" line="125"/>
         <source>There are only </source>
-        <translation type="unfinished">ONly </translation>
+        <translation type="unfinished">Sadece</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/iclineeditwithvirtualnumerickeypad.cpp" line="127"/>
         <source> decimal place
 </source>
-        <translation type="unfinished">소수</translation>
+        <translation type="unfinished">Ondalık basamak</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/iclineeditwithvirtualnumerickeypad.cpp" line="128"/>
         <source>Please enter an digit between </source>
-        <translation type="unfinished">입력할 수치</translation>
+        <translation type="unfinished">Için bir değer girin</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/iclineeditwithvirtualnumerickeypad.cpp" line="138"/>
         <source>The value must be an integer
 Please enter an integer between </source>
-        <translation type="unfinished">정수로 입력 (필히)</translation>
+        <translation type="unfinished">Bu değer, bir tam sayı olmalıdır</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/iclineeditwithvirtualnumerickeypad.cpp" line="150"/>
         <source>Out of range</source>
-        <translation type="unfinished">경계 넘음</translation>
+        <translation type="unfinished">Menzil dışında</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/iclineeditwithvirtualnumerickeypad.cpp" line="151"/>
         <source>The value you entered out of range.
 Please enter an digit between </source>
-        <translation type="unfinished">수치 경계 넘음</translation>
+        <translation type="unfinished">Sınır ötesi değeri</translation>
     </message>
 </context>
 <context>
@@ -5886,12 +5941,12 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Form</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="20"/>
         <source>Pull Push Distance</source>
-        <translation type="unfinished">하강거리</translation>
+        <translation type="unfinished">Boyuna ayırma</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="30"/>
@@ -5903,98 +5958,98 @@ Please enter an digit between </source>
         <location filename="hcsettings/icmachineconfigpage.ui" line="383"/>
         <location filename="hcsettings/icmachineconfigpage.ui" line="419"/>
         <source>s</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">s</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="63"/>
         <location filename="hcsettings/icmachineconfigpage.ui" line="264"/>
         <source>mm</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">mm</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="89"/>
         <source>A Max Speed</source>
-        <translation type="unfinished">A최고속도 </translation>
+        <translation type="unfinished">A Max Hız</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="137"/>
         <source>X1 Acceleration and Deceleration</source>
-        <translation type="unfinished">X1측 가/감속 시간</translation>
+        <translation type="unfinished">X1 Hızlanma ve yavaşlama zamanı</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="166"/>
         <source>Tolerance</source>
-        <translation type="unfinished">허용오차</translation>
+        <translation type="unfinished">Tolerans</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="176"/>
         <source>B Max Speed</source>
-        <translation type="unfinished">B최고속도</translation>
+        <translation type="unfinished">B Max Hız</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="373"/>
         <source>Z Max Speed</source>
-        <translation type="unfinished">Z최고속도</translation>
+        <translation type="unfinished">Z Max Hız</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="390"/>
         <source>Y1 Acceleration and Deceleration</source>
-        <translation type="unfinished">Y1측 가/감속 시간</translation>
+        <translation type="unfinished">Y1 Hızlanma ve yavaşlama zamanı</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="426"/>
         <source>X1 Max Speed</source>
-        <translation type="unfinished">X1최고 속도</translation>
+        <translation type="unfinished">X1 Max Hız</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="436"/>
         <source>A Acceleration and Deceleration</source>
-        <translation type="unfinished">A측  가/감속 시간</translation>
+        <translation type="unfinished">A Hızlanma ve yavaşlama zamanı</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="459"/>
         <source>C Acceleration and Deceleration</source>
-        <translation type="unfinished">C측 가/감속 시간</translation>
+        <translation type="unfinished">C Hızlanma ve yavaşlama zamanı</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="469"/>
         <source>Y2 Max Speed</source>
-        <translation type="unfinished">Y2최고속도</translation>
+        <translation type="unfinished">Y2 Max Hız</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="498"/>
         <source>Y2 Acceleration and Deceleration</source>
-        <translation type="unfinished">Y2측  가/감속 시간</translation>
+        <translation type="unfinished">Y2 Hızlanma ve yavaşlama zamanı</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="508"/>
         <source>Z Acceleration and Deceleration</source>
-        <translation type="unfinished">Z측 가/감속 시간</translation>
+        <translation type="unfinished">Z Hızlanma ve yavaşlama zamanı</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="531"/>
         <source>B Acceleration and Deceleration</source>
-        <translation type="unfinished">B측  가/감속 시간</translation>
+        <translation type="unfinished">B Hızlanma ve yavaşlama zamanı</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="560"/>
         <source>X2 Max Speed</source>
-        <translation type="unfinished">X2최고속도</translation>
+        <translation type="unfinished">X2 Max Hız</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="608"/>
         <source>X2 Acceleration and Deceleration</source>
-        <translation type="unfinished">X2측 가/감속 시간</translation>
+        <translation type="unfinished">X2 Hızlanma ve yavaşlama zamanı</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="618"/>
         <source>Y1 Max Speed</source>
-        <translation type="unfinished">Y1최고속도</translation>
+        <translation type="unfinished">Y1 Max Hız</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="628"/>
         <source>C Max Speed</source>
-        <translation type="unfinished">C최고속도</translation>
+        <translation type="unfinished">C Max Hız</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="638"/>
@@ -6014,43 +6069,49 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Form</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="47"/>
         <source>Outside Up X Min</source>
-        <translation type="unfinished">금형외  X측상승 최소위치</translation>
+        <translation type="unfinished">X1 Yukar Asgari-
+ pozisyon （Dış）</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="54"/>
         <source>Inside Up X Max</source>
-        <translation type="unfinished">금형내 X측 상승최대위치</translation>
+        <translation type="unfinished">X1 Yukar Maksim-
+um pozisyon （İç）</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="67"/>
         <location filename="hcsettings/icmachinefigure.ui" line="139"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">TextLabel</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="93"/>
         <source>Outside Up X Max</source>
-        <translation type="unfinished">금형외 X측 상승최대위치</translation>
+        <translation type="unfinished">X1 Yukar Maksimu-
+m pozisyon （Dış）</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="119"/>
         <source>Inside Down X Min</source>
-        <translation type="unfinished">금형내  X측하강 최소 위치</translation>
+        <translation type="unfinished">X1 Düşüş Asgar-
+i pozisyon（İç）</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="126"/>
         <source>Inside Down X Max</source>
-        <translation type="unfinished">금형내 X측 하강 최대위치</translation>
+        <translation type="unfinished">X1 Düşüş Maksim-
+um pozisyon（İç）</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="178"/>
         <source>Inside Up X Min</source>
-        <translation type="unfinished">금형내 X측 상승최소위치</translation>
+        <translation type="unfinished">X1 Yukarı Asga-
+ri pozisyon（İç）</translation>
     </message>
 </context>
 <context>
@@ -6059,13 +6120,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icmachinestructpage.ui" line="14"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished">조합동작선택</translation>
+        <translation type="unfinished">Grubu İşl-
+emi seçin</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="300"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="360"/>
         <source>Security Point</source>
-        <translation type="unfinished">안전점</translation>
+        <translation type="unfinished">Güvenlik Noktası</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="318"/>
@@ -6084,14 +6146,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icmachinestructpage.cpp" line="244"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="245"/>
         <source>mm</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">MM</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="337"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="391"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="246"/>
         <source>Mechanical length</source>
-        <translation type="unfinished">로보트 전장</translation>
+        <translation type="unfinished">Mekanik uzunluk</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="382"/>
@@ -6102,175 +6164,175 @@ Please enter an digit between </source>
         <location filename="hcsettings/icmachinestructpage.cpp" line="310"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="322"/>
         <source>Maximum displacement</source>
-        <translation type="unfinished">최대 이동</translation>
+        <translation type="unfinished">Maksimum Seyyar</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="427"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="487"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="293"/>
         <source>Internal security zone</source>
-        <translation type="unfinished">형내 안전구역</translation>
+        <translation type="unfinished">İç güvenlik bölgesi</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="453"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="535"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="294"/>
         <source>External security zone</source>
-        <translation type="unfinished">형외 안전구역</translation>
+        <translation type="unfinished">Dış güvenlik bölgesi</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="498"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="583"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="247"/>
         <source>Distance/Rotation</source>
-        <translation type="unfinished">매 회전 거리</translation>
+        <translation type="unfinished">Mesafe/Rotasyon</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="549"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="637"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="625"/>
         <source>Save</source>
-        <translation type="unfinished">저장</translation>
+        <translation type="unfinished">Kaydet</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="559"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="647"/>
         <source>Test Feedback</source>
-        <translation type="unfinished">측정 피드백</translation>
+        <translation type="unfinished">Test Geribesleme</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="571"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="665"/>
         <source>Test</source>
-        <translation type="unfinished">측정</translation>
+        <translation type="unfinished">Test</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="585"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="688"/>
         <source>Feedback</source>
-        <translation type="unfinished">피드백</translation>
+        <translation type="unfinished">Geribesleme</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="599"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="711"/>
         <source>Z Signal</source>
-        <translation type="unfinished">Z 신호</translation>
+        <translation type="unfinished">Z sinyal</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="627"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="751"/>
         <source>+Test</source>
-        <translation>모터 정방향</translation>
+        <translation type="unfinished">Motor dönüyor</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="646"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="770"/>
         <source>-Test</source>
-        <translation>모터 역방향</translation>
+        <translation type="unfinished">Motor Rotasyon-</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.ui" line="665"/>
         <location filename="hcsettings/icmachinestructpage_5.ui" line="789"/>
         <source>Clear</source>
-        <translation type="unfinished">측정 크레어</translation>
+        <translation type="unfinished">kaldırmak</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="24"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="81"/>
         <source>X1 Axis</source>
-        <translation type="unfinished">X1측</translation>
+        <translation type="unfinished">X1 Eksen</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="25"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="82"/>
         <source>Y1 Axis</source>
-        <translation type="unfinished">Y1측</translation>
+        <translation type="unfinished">Y1 Eksen</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="26"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="83"/>
         <source>Z Axis</source>
-        <translation type="unfinished">Z측</translation>
+        <translation type="unfinished">Z Eksen</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="27"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="84"/>
         <source>X2 Axis</source>
-        <translation type="unfinished">X2측</translation>
+        <translation type="unfinished">X2 Eksen</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="28"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="85"/>
         <source>Y2 Axis</source>
-        <translation type="unfinished">Y2측</translation>
+        <translation type="unfinished">Y2 Eksen</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="29"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="86"/>
         <source>A Axis</source>
-        <translation type="unfinished">A측</translation>
+        <translation type="unfinished">A Eksen</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="30"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="87"/>
         <source>B Axis</source>
-        <translation type="unfinished">B측</translation>
+        <translation type="unfinished">B Eksen</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="31"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="88"/>
         <source>C Axis</source>
-        <translation type="unfinished">C측</translation>
+        <translation type="unfinished">C Eksen</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="32"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="89"/>
         <source>Struct Define</source>
-        <translation type="unfinished">기구</translation>
+        <translation type="unfinished">Yapısı</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="33"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="90"/>
         <source>Time</source>
-        <translation type="unfinished">시간</translation>
+        <translation type="unfinished">Zaman</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="265"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="307"/>
         <source>Min pos inside mold</source>
-        <translation type="unfinished">금형내 최소 하강위치</translation>
+        <translation type="unfinished">Düşüş Asgari pozisyon（İç）</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="266"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="308"/>
         <source>Max pos inside mold</source>
-        <translation type="unfinished">금형내 최대 하강위치</translation>
+        <translation type="unfinished">Düşüş Maksimum pozisyon（İç）</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="278"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="319"/>
         <source>Max standby pos</source>
-        <translation type="unfinished">최대 대기 위치</translation>
+        <translation type="unfinished">En fazla bekleme konumu</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="279"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="320"/>
         <source>Leave origin pos</source>
-        <translation type="unfinished">원점위치 벗어나다</translation>
+        <translation type="unfinished">Ayrılmak köken konum</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="336"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="363"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="388"/>
         <source>Transever security zone(Less)</source>
-        <translation type="unfinished">주행 안전범위(최소)</translation>
+        <translation type="unfinished">Enine güvenlik aralığı (daha az)</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="337"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="364"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="389"/>
         <source>Transever security zone(Lagger)</source>
-        <translation type="unfinished">주행 안전범위(최대)</translation>
+        <translation type="unfinished">Enine güvenlik aralığı (daha büyük)</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="338"/>
@@ -6289,38 +6351,38 @@ Please enter an digit between </source>
         <location filename="hcsettings/icmachinestructpage.cpp" line="401"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="402"/>
         <source>degree</source>
-        <translation type="unfinished">도</translation>
+        <translation type="unfinished">Derece</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="343"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="370"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="403"/>
         <source>Max Rotate</source>
-        <translation type="unfinished">최대 회전</translation>
+        <translation type="unfinished">Maksimum rotasyon</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="344"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="371"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="404"/>
         <source>Machine Per</source>
-        <translation type="unfinished">매 회전 </translation>
+        <translation type="unfinished">Motor her</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="352"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="379"/>
         <location filename="hcsettings/icmachinestructpage.cpp" line="397"/>
         <source>Origin Offset</source>
-        <translation type="unfinished">원점</translation>
+        <translation type="unfinished">köken Seyyar</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="623"/>
         <source>Information</source>
-        <translation type="unfinished">제시</translation>
+        <translation type="unfinished">Uç</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinestructpage.cpp" line="623"/>
         <source>Save Successfully!</source>
-        <translation type="unfinished">저장 성공</translation>
+        <translation type="unfinished">Başarıyla kaydedildi！</translation>
     </message>
 </context>
 <context>
@@ -6328,544 +6390,554 @@ Please enter an digit between </source>
     <message>
         <location filename="categorypage/icmonitorpageframe.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="43"/>
         <source>Horizontal-1</source>
-        <translation type="unfinished">회전1 </translation>
+        <translation type="unfinished">Seviye1 limit</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="44"/>
         <source>Vertical-1</source>
-        <translation type="unfinished">회전복귀1 </translation>
+        <translation type="unfinished">Dikey1 limit</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="45"/>
         <source>Fixtur1</source>
-        <translation type="unfinished">척크1 확인 </translation>
+        <translation type="unfinished">Fikstür 3</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="46"/>
         <source>Fixtur2</source>
-        <translation type="unfinished">척크2 확인 </translation>
+        <translation type="unfinished">Fikstür 2</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="47"/>
         <source>Sucker2</source>
-        <translation type="unfinished">흡착2 확인 </translation>
+        <translation type="unfinished">Emmek 2</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="48"/>
         <source>Sucker1</source>
-        <translation type="unfinished">흡착1 확인 </translation>
+        <translation type="unfinished">Emmek 1</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="49"/>
         <source>X1 Out Limit</source>
-        <translation type="unfinished">X1측 종점 한계</translation>
+        <translation type="unfinished">X1 Bitiş noktası limit</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="51"/>
         <source>X1 In Limit</source>
-        <translation type="unfinished">흡착3 확인 </translation>
+        <translation type="unfinished">X1 Başlangıç -
+noktası limit</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="53"/>
         <source>Sucker3</source>
-        <translation>흡착3 확인 </translation>
+        <translation type="unfinished">Emmek 3</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="56"/>
         <source>X1 Origin</source>
-        <translation type="unfinished">X1측 원점</translation>
+        <translation type="unfinished">X1 köken</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="57"/>
         <source>Fixtur4</source>
-        <translation>척크4 확인 </translation>
+        <translation type="unfinished">Fikstür 4</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="58"/>
         <source>Y1 In Limit</source>
-        <translation type="unfinished">Y1측 시작점 한계</translation>
+        <translation type="unfinished">Y1 Başlangıç -
+noktası limit</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="59"/>
         <source>A Origin/Horizontal-2</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">A köken/Seviye-2</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="60"/>
         <source>Out Safe Area</source>
-        <translation type="unfinished">형외 안전 구역</translation>
+        <translation type="unfinished">Dış güvenlik bölgesi</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="61"/>
         <source>Come In Origin</source>
-        <translation type="unfinished">Z측 원점</translation>
+        <translation type="unfinished">Z köken</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="63"/>
         <source>B Origin Limit</source>
-        <translation type="unfinished">B측 원점한계</translation>
+        <translation type="unfinished">B Başlangıç -
+noktası limit</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="64"/>
         <source>Pressure</source>
-        <translation type="unfinished">에어 확인</translation>
+        <translation type="unfinished">Basınç</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="66"/>
         <source>X2 In Limit</source>
-        <translation type="unfinished">X2측 시작점 한계</translation>
+        <translation type="unfinished">X2 Başlangıç -
+noktası limit</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="67"/>
         <source>X2 Origin</source>
-        <translation type="unfinished">X2측 원점</translation>
+        <translation type="unfinished">X2 köken</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="68"/>
         <source>Y2 Origin</source>
-        <translation type="unfinished">Y2측 원점</translation>
+        <translation type="unfinished">Y2 köken</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="69"/>
         <source>Y2 In Limit</source>
-        <translation type="unfinished">Y2측 원점한계</translation>
+        <translation type="unfinished">Y2 Başlangıç -
+noktası limit</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="70"/>
         <source>Fixture3</source>
-        <translation type="unfinished">척크3 확인 </translation>
+        <translation type="unfinished">Fikstür 3</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="71"/>
         <source>Y1 Origin</source>
-        <translation type="unfinished">Y1측 원점</translation>
+        <translation type="unfinished">Y1 köken</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="73"/>
         <source>Y1 Out Limit</source>
-        <translation type="unfinished">흡착4 확인 </translation>
+        <translation type="unfinished">Y1 Bitiş noktası limit</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="75"/>
         <source>Sucker4</source>
-        <translation>흡착4 확인 </translation>
+        <translation type="unfinished">Emmek 4</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="77"/>
         <source>Vertical-2</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Dikey-2</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="79"/>
         <source>B Origin</source>
-        <translation type="unfinished">B측 원점</translation>
+        <translation type="unfinished">B köken</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="80"/>
         <source>Z In Limit</source>
-        <translation type="unfinished">Z측 원점한계</translation>
+        <translation type="unfinished">Z Başlangıç -
+noktası limit</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="81"/>
         <source>Z Out Limit</source>
-        <translation type="unfinished">Z측 종점한계</translation>
+        <translation type="unfinished">Z Bitiş noktası limit</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="82"/>
         <source>Check In0</source>
-        <translation type="unfinished">예비 입력5</translation>
+        <translation type="unfinished">Rezerv Giriş 5</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="83"/>
         <source>Check In1</source>
-        <translation type="unfinished">예비 입력6</translation>
+        <translation type="unfinished">Rezerv Giriş 6</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="84"/>
         <source>Watch Dog</source>
-        <translation type="unfinished">예비 입력7</translation>
+        <translation type="unfinished">Rezerv Giriş 7</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="85"/>
         <source>Next Cycle App</source>
-        <translation type="unfinished">예비입력8</translation>
+        <translation type="unfinished">Rezerv Giriş 8</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="86"/>
         <source>Mold Close App</source>
-        <translation type="unfinished">예비 입력9</translation>
+        <translation type="unfinished">Dış düşüş gü-
+venlik sinyal</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="88"/>
         <source>X1 Servo Alarm</source>
-        <translation type="unfinished">X1측 서버 경보</translation>
+        <translation type="unfinished">X1 Servo Alarm</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="89"/>
         <source>Y1 Servo Alarm</source>
-        <translation type="unfinished">Y1측 서버 경보</translation>
+        <translation type="unfinished">Y1 Servo Alarm</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="90"/>
         <source>Z Servo Alarm</source>
-        <translation type="unfinished">Z측 서버 경보</translation>
+        <translation type="unfinished">Z Servo Alarm</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="91"/>
         <source>X2 Servo Alarm</source>
-        <translation type="unfinished">X2측 서버 경보</translation>
+        <translation type="unfinished">X2 Servo Alarm</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="92"/>
         <source>Y2 Servo Alarm</source>
-        <translation type="unfinished">Y2측 서버 경보</translation>
+        <translation type="unfinished">Y2 Servo Alarm</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="93"/>
         <source>A Servo Alarm</source>
-        <translation type="unfinished">A측 서버 경보</translation>
+        <translation type="unfinished">A Servo Alarm</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="94"/>
         <source>B Servo Alarm</source>
-        <translation type="unfinished">B측 서버 경보</translation>
+        <translation type="unfinished">B Servo Alarm</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="95"/>
         <source>C Servo Alarm</source>
-        <translation type="unfinished">C측 서버 경보</translation>
+        <translation type="unfinished">C Servo Alarm</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="96"/>
         <location filename="categorypage/icmonitorpageframe.cpp" line="97"/>
         <source>Other</source>
-        <translation type="unfinished">사출기 I/O신호</translation>
+        <translation type="unfinished">Robot I/-
+O sinyal</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="102"/>
         <source>Horizontal-1 Valve</source>
-        <translation type="unfinished">회전1 밸브</translation>
+        <translation type="unfinished">Seviye1 Valf</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="103"/>
         <source>Vertical-1 Valve</source>
-        <translation type="unfinished">회전복귀1 밸브</translation>
+        <translation type="unfinished">Dikey1-valf</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="104"/>
         <source>Fixtur1 Valve</source>
-        <translation type="unfinished">척크1밸브</translation>
+        <translation type="unfinished">Fikstür 1valf</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="105"/>
         <source>Fixtur2 Valve</source>
-        <translation type="unfinished">척크2 밸브</translation>
+        <translation type="unfinished">Fikstür 2 valf</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="106"/>
         <source>Sucker2 Valve</source>
-        <translation type="unfinished">흡착2 밸브</translation>
+        <translation type="unfinished">Emmek 2 Valf</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="107"/>
         <source>Sucke1 Valve</source>
-        <translation type="unfinished">흡착1 밸브</translation>
+        <translation type="unfinished">Emmek 1valf</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="108"/>
         <source>Main Forward Valve</source>
-        <translation type="unfinished">제품전진 밸브</translation>
+        <translation type="unfinished">Main Arm ileri valf</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="109"/>
         <source>Adjust Sub Back</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">M0</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="111"/>
         <source>Fixtur4 Valve</source>
-        <translation type="unfinished">척크4 밸브</translation>
+        <translation type="unfinished">Fikstür 4 valf</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="112"/>
         <source>Alarm</source>
-        <translation type="unfinished">경보</translation>
+        <translation type="unfinished">Alarm</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="113"/>
         <source>Adjust Sub Forward</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">M1</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="114"/>
         <source>Next Cycle Sp2</source>
-        <translation type="unfinished">제품하강밸브</translation>
+        <translation type="unfinished">Main-Arm Düşüş valf</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="115"/>
         <source>Horizontal-2 Valve</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Seviye2-valf</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="116"/>
         <source>Paint Oil</source>
-        <translation type="unfinished">급유</translation>
+        <translation type="unfinished">enjeksiyon</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="117"/>
         <source>Next Cycle Sp</source>
-        <translation type="unfinished">예비 출력5</translation>
+        <translation type="unfinished">Rezerv Çıkış 5</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="118"/>
         <source>Mold Close Sp</source>
-        <translation type="unfinished">형폐 허락 추가</translation>
+        <translation type="unfinished">İzin verilen-
+ kapatma ek </translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="120"/>
         <source>Vice Forward Valve</source>
-        <translation type="unfinished">런너전진 밸브</translation>
+        <translation type="unfinished">Yardımcısı ileri valf</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="121"/>
         <source>Adjust Sub Up</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">M2</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="122"/>
         <source>Adjust Sub Down</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">M3</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="123"/>
         <source>Vice Sub Down</source>
-        <translation type="unfinished">런너하강 밸브</translation>
+        <translation type="unfinished">Yardımcısı düşüş valf</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="124"/>
         <source>Fixture3 Valve</source>
-        <translation type="unfinished">척크3 밸브</translation>
+        <translation type="unfinished">Fikstür 3 Valf</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="126"/>
         <source>Machine Reversal</source>
-        <translation type="unfinished">모터 역전</translation>
+        <translation type="unfinished">Motor Rotasyon-</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="127"/>
         <source>Run Led</source>
-        <translation type="unfinished">흡착4 밸브</translation>
+        <translation type="unfinished">ışıklar Koşu</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="129"/>
         <source>Sucker3 Valve</source>
-        <translation>흡착3 밸브</translation>
+        <translation type="unfinished">Emmek 3Valf</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="130"/>
         <source>Sucker4 Valve</source>
-        <translation>흡착4 밸브</translation>
+        <translation type="unfinished">Emmek 4 Valf</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="132"/>
         <source> Transport</source>
-        <translation type="unfinished">콘베어</translation>
+        <translation type="unfinished">konveyör</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="134"/>
         <source>Y040</source>
-        <translation type="unfinished">주행복귀완료</translation>
+        <translation type="unfinished">Y040</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="135"/>
         <source>Y041</source>
-        <translation type="unfinished">주행완료</translation>
+        <translation type="unfinished">Y041</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="136"/>
         <source>Y042</source>
-        <translation type="unfinished">주행저속</translation>
+        <translation type="unfinished">Y042</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="137"/>
         <source>Y043</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y043</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="138"/>
         <source>Y044</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y044</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="139"/>
         <source>Y045</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y045</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="140"/>
         <source>Y046</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y046</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="141"/>
         <source>Y047</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y047</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="153"/>
         <location filename="categorypage/icmonitorpageframe.cpp" line="154"/>
         <source>EU</source>
-        <translation type="unfinished">사출기 I/O신호</translation>
+        <translation type="unfinished">EU</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="157"/>
         <source>Mold Opened</source>
-        <translation type="unfinished">형개 중지</translation>
+        <translation type="unfinished">kalıp sonlandırma</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="158"/>
         <source>Mold Closed</source>
-        <translation type="unfinished">형폐 종료</translation>
+        <translation type="unfinished">kalıp Kapalı</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="159"/>
         <source>Eject Forward</source>
-        <translation type="unfinished">에젝터 전진 완료</translation>
+        <translation type="unfinished">Ejektör pimi ileri</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="160"/>
         <source>Eject Backward</source>
-        <translation type="unfinished">에젝터 후진 완료</translation>
+        <translation type="unfinished">Ejektör pimi çekilme</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="162"/>
         <source>Core 1 In</source>
-        <translation>코어1 입가능</translation>
+        <translation type="unfinished">IMM-C1-Içine</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="163"/>
         <source>Core 1 Out</source>
-        <translation>코어1 출가능</translation>
+        <translation type="unfinished">IMM-C1-Dışarı</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="164"/>
         <source>Core 2 In</source>
-        <translation>코어2 입가능</translation>
+        <translation type="unfinished">IMM-C2-Içine</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="165"/>
         <source>Core 2 Out</source>
-        <translation>코어2 출가능</translation>
+        <translation type="unfinished">IMM-C2-Dışarı</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="168"/>
         <source>IMM Reject</source>
-        <translation type="unfinished">불량품</translation>
+        <translation type="unfinished">Kusurlu ürünler</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="169"/>
         <source>ZC5</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ZC5</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="170"/>
         <source>ZC6</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ZC6</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="171"/>
         <source>ZC7</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ZC7</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="172"/>
         <source>Safe Door</source>
-        <translation type="unfinished">안전문</translation>
+        <translation type="unfinished">Emniyet kapısı </translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="173"/>
         <source>ES</source>
-        <translation type="unfinished">비상정지</translation>
+        <translation type="unfinished">Acil d-
+urdurma</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="174"/>
         <source>Mold Inter</source>
-        <translation type="unfinished">3단 금형</translation>
+        <translation type="unfinished">kalıp İnter</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="175"/>
         <source>IMM Auto</source>
-        <translation type="unfinished">전자동</translation>
+        <translation type="unfinished">Otomatik</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="181"/>
         <source>Mold Open Permit</source>
-        <translation>형개 인터록</translation>
+        <translation type="unfinished">kalıp açma izni</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="182"/>
         <source>Mold Close Permit</source>
-        <translation>형폐 인터록</translation>
+        <translation type="unfinished">Kilit Kalıp permit</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="183"/>
         <source>Eject Forward Permit</source>
-        <translation>에젝터 인터록</translation>
+        <translation type="unfinished">Ejector</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="185"/>
         <source>Eject Backward Permit</source>
-        <translation type="unfinished">에.후 인터록</translation>
+        <translation type="unfinished">Ejektör geri dönmek</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="188"/>
         <source>Core 1 In Permit</source>
-        <translation>코어1 입 인터록</translation>
+        <translation type="unfinished">IMM-PC1-Içine</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="189"/>
         <source>Core 1 Out Permit</source>
-        <translation>코어1 출 인터록</translation>
+        <translation type="unfinished">IMM-PC1-Dışarı</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="190"/>
         <source>Core 2 In Permit</source>
-        <translation>코어2 입 인터록</translation>
+        <translation type="unfinished">IMM-PC2-Içine</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="191"/>
         <source>Core 2 Out Permit</source>
-        <translation>코어2 출 인터록</translation>
+        <translation type="unfinished">IMM-PC2-Dışarı</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="193"/>
         <source>Robot</source>
-        <translation>로보트모드</translation>
+        <translation type="unfinished">Robot</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="194"/>
         <source>En C6</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">En C6</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="195"/>
         <source>En C7</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">En C7</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="196"/>
         <source>En A8</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">En A8</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="198"/>
         <source>Recycle</source>
-        <translation type="unfinished">재순환</translation>
+        <translation type="unfinished">Geri dönüşüm</translation>
     </message>
 </context>
 <context>
@@ -6873,44 +6945,44 @@ Please enter an digit between </source>
     <message>
         <location filename="icorigindialog.ui" line="14"/>
         <source>Origin</source>
-        <translation type="unfinished">원점복귀 실행</translation>
+        <translation type="unfinished">P.S.O</translation>
     </message>
     <message>
         <location filename="icorigindialog.ui" line="41"/>
         <source>Stop</source>
-        <translation type="unfinished"> 정지</translation>
+        <translation type="unfinished">Dur</translation>
     </message>
     <message>
         <location filename="icorigindialog.ui" line="70"/>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Hayır</translation>
     </message>
     <message>
         <location filename="icorigindialog.ui" line="86"/>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Evet</translation>
     </message>
     <message>
         <location filename="icorigindialog.cpp" line="39"/>
         <location filename="icorigindialog.cpp" line="101"/>
         <source>Please press the start button to start execute origin action</source>
-        <translation type="unfinished"> 시작 버튼을 눌러 원점 복귀바람</translation>
+        <translation type="unfinished">P.S.O，Başlat düğmesine basın</translation>
     </message>
     <message>
         <location filename="icorigindialog.cpp" line="97"/>
         <source>Originning...</source>
-        <translation type="unfinished"> 원점복귀중</translation>
+        <translation type="unfinished">Kökenli dönüş…..</translation>
     </message>
     <message>
         <location filename="icorigindialog.cpp" line="130"/>
         <source>Do you need to auto position?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">İhtiyacınız Otomatik seviye?</translation>
     </message>
     <message>
         <location filename="icorigindialog.cpp" line="167"/>
         <location filename="icorigindialog.cpp" line="173"/>
         <source>Originning</source>
-        <translation type="unfinished"> 원점 실행중</translation>
+        <translation type="unfinished">Kökenli dönüş…..</translation>
     </message>
 </context>
 <context>
@@ -6918,42 +6990,42 @@ Please enter an digit between </source>
     <message>
         <location filename="custom_widgets/icpasswordmodifydialog.ui" line="14"/>
         <source>Dialog</source>
-        <translation type="unfinished">비번 수정</translation>
+        <translation type="unfinished">Diyalog</translation>
     </message>
     <message>
         <location filename="custom_widgets/icpasswordmodifydialog.ui" line="20"/>
         <source>Old Super Password:</source>
-        <translation type="unfinished">구 고급비번</translation>
+        <translation type="unfinished">Eski Süper Şifre</translation>
     </message>
     <message>
         <location filename="custom_widgets/icpasswordmodifydialog.ui" line="30"/>
         <source>New Super Password:</source>
-        <translation type="unfinished">고급 비번</translation>
+        <translation type="unfinished">Yeni Süper Şifre：</translation>
     </message>
     <message>
         <location filename="custom_widgets/icpasswordmodifydialog.ui" line="40"/>
         <source>Confirm New Super Password:</source>
-        <translation type="unfinished">신규 비번 중복</translation>
+        <translation type="unfinished">Yeni şifre tekrar：</translation>
     </message>
     <message>
         <location filename="custom_widgets/icpasswordmodifydialog.ui" line="56"/>
         <source>Cancel</source>
-        <translation type="unfinished">취소</translation>
+        <translation type="unfinished">Iptal edildi</translation>
     </message>
     <message>
         <location filename="custom_widgets/icpasswordmodifydialog.ui" line="69"/>
         <source>Ok</source>
-        <translation type="unfinished">확정</translation>
+        <translation type="unfinished">OK</translation>
     </message>
     <message>
         <location filename="custom_widgets/icpasswordmodifydialog.cpp" line="34"/>
         <source>warning</source>
-        <translation type="unfinished">경보</translation>
+        <translation type="unfinished">Alarm</translation>
     </message>
     <message>
         <location filename="custom_widgets/icpasswordmodifydialog.cpp" line="35"/>
         <source>Two password is not the same!</source>
-        <translation type="unfinished">비번 2차 입력 불일치</translation>
+        <translation type="unfinished">İki kez tutarsız şifreyi girin!</translation>
     </message>
 </context>
 <context>
@@ -6961,60 +7033,61 @@ Please enter an digit between </source>
     <message>
         <location filename="hcinstruction/icperipherypage.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished">조합동작선택</translation>
+        <translation type="unfinished">Grubu İşl-
+emi seçin</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.ui" line="20"/>
         <source>Periphery Action</source>
-        <translation type="unfinished"> 보조 설비</translation>
+        <translation type="unfinished">Yardımcı ekipman</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.ui" line="110"/>
         <source>Injector</source>
-        <translation type="unfinished">급유</translation>
+        <translation type="unfinished">Yakıt enjeksiyon</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.ui" line="115"/>
         <source>Conveyor</source>
-        <translation type="unfinished"> 콘베어</translation>
+        <translation type="unfinished">Konveyör</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.ui" line="120"/>
         <source>FeedM</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FeedM</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.ui" line="125"/>
         <source>En</source>
-        <translation type="unfinished"> 인에이 블링</translation>
+        <translation type="unfinished">En</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.ui" line="133"/>
         <source>Current/Setting</source>
-        <translation type="unfinished">현재 설정</translation>
+        <translation type="unfinished">Mevcut ayar</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.ui" line="138"/>
         <source>Action Time/Times</source>
-        <translation type="unfinished"> 시간 ,싸이클 타임</translation>
+        <translation type="unfinished">Zaman Ürün Sayısı</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.cpp" line="25"/>
         <location filename="hcinstruction/icperipherypage.cpp" line="88"/>
         <source>Injector   </source>
-        <translation type="unfinished">급유</translation>
+        <translation type="unfinished">Yakıt enjeksiyon</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.cpp" line="25"/>
         <location filename="hcinstruction/icperipherypage.cpp" line="88"/>
         <source>conveyor  </source>
-        <translation type="unfinished"> 콘베어</translation>
+        <translation type="unfinished">Konveyör</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.cpp" line="26"/>
         <location filename="hcinstruction/icperipherypage.cpp" line="89"/>
         <source>Feed M</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Besleme makine</translation>
     </message>
 </context>
 <context>
@@ -7023,13 +7096,14 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icperipheryparametereditor.ui" line="14"/>
         <location filename="hcinstruction/icperipheryparametereditor_5.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished">조합동작선택</translation>
+        <translation type="unfinished">Grubu İşl-
+emi seçin</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipheryparametereditor.ui" line="39"/>
         <location filename="hcinstruction/icperipheryparametereditor_5.ui" line="57"/>
         <source>s</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">S</translation>
     </message>
 </context>
 <context>
@@ -7037,17 +7111,17 @@ Please enter an digit between </source>
     <message>
         <location filename="custom_widgets/icpictureview/icpictureview.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished">파일보기</translation>
+        <translation type="unfinished">Resim Önizleme</translation>
     </message>
     <message>
         <location filename="custom_widgets/icpictureview/icpictureview.cpp" line="36"/>
         <source>Tips</source>
-        <translation type="unfinished">제시</translation>
+        <translation type="unfinished">Uç</translation>
     </message>
     <message>
         <location filename="custom_widgets/icpictureview/icpictureview.cpp" line="36"/>
         <source>No find picture!</source>
-        <translation type="unfinished">사용할 파일 없음</translation>
+        <translation type="unfinished">Hayır mevcut resim！</translation>
     </message>
 </context>
 <context>
@@ -7056,101 +7130,101 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="14"/>
         <location filename="hcinstruction/icpneumaticactionpage_5.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Form</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="20"/>
         <location filename="hcinstruction/icpneumaticactionpage_5.ui" line="35"/>
         <source>Reserve Action</source>
-        <translation type="unfinished"> 예비</translation>
+        <translation type="unfinished">Rezerv</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="110"/>
         <location filename="hcinstruction/icpneumaticactionpage_5.ui" line="125"/>
         <source>Reserve1</source>
-        <translation type="unfinished"> 예비1</translation>
+        <translation type="unfinished">Rezerv 1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="115"/>
         <location filename="hcinstruction/icpneumaticactionpage_5.ui" line="130"/>
         <source>Reserve2</source>
-        <translation type="unfinished"> 예비2</translation>
+        <translation type="unfinished">Rezerv 2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="120"/>
         <location filename="hcinstruction/icpneumaticactionpage_5.ui" line="135"/>
         <source>Reserve3</source>
-        <translation type="unfinished"> 예비3</translation>
+        <translation type="unfinished">Rezerv 3</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="125"/>
         <location filename="hcinstruction/icpneumaticactionpage_5.ui" line="140"/>
         <source>Reserve4</source>
-        <translation type="unfinished"> 예비4</translation>
+        <translation type="unfinished">Rezerv 4</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="130"/>
         <source>Reserve5</source>
-        <translation type="unfinished">예비5</translation>
+        <translation type="unfinished">Rezerv 5</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="135"/>
         <source>Reserve6</source>
-        <translation type="unfinished">예비6</translation>
+        <translation type="unfinished">Rezerv 6</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="140"/>
         <location filename="hcinstruction/icpneumaticactionpage_5.ui" line="145"/>
         <source>En</source>
-        <translation type="unfinished"> 사용</translation>
+        <translation type="unfinished">En</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="148"/>
         <location filename="hcinstruction/icpneumaticactionpage_5.ui" line="153"/>
         <source>Current/Setting</source>
-        <translation type="unfinished"> 현재 설정</translation>
+        <translation type="unfinished">Mevcut ayar</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.ui" line="153"/>
         <location filename="hcinstruction/icpneumaticactionpage_5.ui" line="158"/>
         <source>Delay/Times</source>
-        <translation type="unfinished">지연  샘플간격</translation>
+        <translation type="unfinished">Gecikme/Sayısı</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="23"/>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="105"/>
         <source>Reserve1  </source>
-        <translation>샘플1</translation>
+        <translation type="unfinished">Rezerv 1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="23"/>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="105"/>
         <source>Reserve2  </source>
-        <translation>샘플2</translation>
+        <translation type="unfinished">Rezerv 2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="24"/>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="106"/>
         <source>Reserve3  </source>
-        <translation>샘플3</translation>
+        <translation type="unfinished">Rezerv 3</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="24"/>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="106"/>
         <source>Reserve4  </source>
-        <translation>샘플4</translation>
+        <translation type="unfinished">Rezerv 4</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="24"/>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="106"/>
         <source>Reserve5  </source>
-        <translation>샘플5</translation>
+        <translation type="unfinished">Rezerv 5</translation>
     </message>
     <message>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="24"/>
         <location filename="hcinstruction/icpneumaticactionpage.cpp" line="106"/>
         <source>Reserve6  </source>
-        <translation>샘플6</translation>
+        <translation type="unfinished">Rezerv 6</translation>
     </message>
 </context>
 <context>
@@ -7159,31 +7233,31 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage.ui" line="14"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="14"/>
         <source>StackedWidget</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">StackedWidget</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="73"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="67"/>
         <source>Select Arm</source>
-        <translation type="unfinished">핸드 설택</translation>
+        <translation type="unfinished">seçmek Arm</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="91"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="85"/>
         <source>Main Arm</source>
-        <translation type="unfinished">제품측</translation>
+        <translation type="unfinished">Main Arm</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="101"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="107"/>
         <source>Sub Arm</source>
-        <translation type="unfinished">런너측</translation>
+        <translation type="unfinished">Sub-Arm</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="111"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="117"/>
         <source>Get Product Fixture</source>
-        <translation type="unfinished">완제품 취출지그</translation>
+        <translation type="unfinished">Ürün fikstürü</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="129"/>
@@ -7191,7 +7265,7 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="150"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="246"/>
         <source>Use Fixture:</source>
-        <translation type="unfinished">지그 사용</translation>
+        <translation type="unfinished">Kullanım fikstürü</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="137"/>
@@ -7199,7 +7273,7 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="164"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="263"/>
         <source>Fixture-1</source>
-        <translation type="unfinished">척크1</translation>
+        <translation type="unfinished">Fikstür 1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="142"/>
@@ -7207,7 +7281,7 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="169"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="268"/>
         <source>Fixture-2</source>
-        <translation type="unfinished">척크2</translation>
+        <translation type="unfinished">Fikstür 2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="147"/>
@@ -7215,7 +7289,7 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="174"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="273"/>
         <source>Fixture-3</source>
-        <translation type="unfinished">척크 3</translation>
+        <translation type="unfinished">Fikstür 3</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="152"/>
@@ -7223,7 +7297,7 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="179"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="278"/>
         <source>Fixture-4</source>
-        <translation type="unfinished">척크4</translation>
+        <translation type="unfinished">Fikstür 4</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="157"/>
@@ -7231,7 +7305,7 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="184"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="283"/>
         <source>Sucker-1</source>
-        <translation type="unfinished">흡착1</translation>
+        <translation type="unfinished">Emmek 1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="162"/>
@@ -7239,7 +7313,7 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="189"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="288"/>
         <source>Sucker-2</source>
-        <translation type="unfinished">흡착2</translation>
+        <translation type="unfinished">Emmek 2 </translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="170"/>
@@ -7247,35 +7321,31 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="203"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="302"/>
         <source>Check Fixture</source>
-        <translation>지그확인</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="obsolete"> 무</translation>
+        <translation type="unfinished">Fikstür onaylamak</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="183"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="216"/>
         <source>Get Outlet Fixture</source>
-        <translation type="unfinished">게이트 취출 지그</translation>
+        <translation type="unfinished">Outlet Fikstür </translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="286"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="349"/>
         <source>Standby Settings</source>
-        <translation type="unfinished">대기위치 설정</translation>
+        <translation type="unfinished">Bekleme ayarı</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="293"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="368"/>
         <source>Set In</source>
-        <translation type="unfinished">입력</translation>
+        <translation type="unfinished">Ayarla</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="320"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="398"/>
         <source>GZ:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">GZ:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="338"/>
@@ -7283,7 +7353,7 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="443"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1170"/>
         <source>Come In</source>
-        <translation type="unfinished">주행복귀</translation>
+        <translation type="unfinished">Enine girmek</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="351"/>
@@ -7291,13 +7361,13 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="468"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1145"/>
         <source>Come Out</source>
-        <translation type="unfinished">주행</translation>
+        <translation type="unfinished">Enine dışarı</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="365"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="482"/>
         <source>GA:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">GA:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="383"/>
@@ -7311,7 +7381,7 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1241"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1337"/>
         <source>Horizontal</source>
-        <translation type="unfinished">회전</translation>
+        <translation type="unfinished">Seviye</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="396"/>
@@ -7325,32 +7395,32 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1269"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1362"/>
         <source>Vertical</source>
-        <translation type="unfinished">회전복귀</translation>
+        <translation type="unfinished">Dikey</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="410"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="566"/>
         <source>GB:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">GB:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="455"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="650"/>
         <source>GC:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">GC:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="503"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="737"/>
         <location filename="hcinstruction/icprogramguidepage.cpp" line="999"/>
         <source>Product</source>
-        <translation type="unfinished">제품위치 설정</translation>
+        <translation type="unfinished">Ürün</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="524"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="761"/>
         <source>GX1:</source>
-        <translation type="unfinished">X1:</translation>
+        <translation type="unfinished">GX1:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="545"/>
@@ -7358,7 +7428,7 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="806"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1001"/>
         <source>Backward</source>
-        <translation type="unfinished">후진</translation>
+        <translation type="unfinished">çekilme</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="555"/>
@@ -7366,13 +7436,13 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="828"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1023"/>
         <source>Forward</source>
-        <translation type="unfinished">전진</translation>
+        <translation type="unfinished">ileri</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="572"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="845"/>
         <source>GY1:</source>
-        <translation type="unfinished">Y1:</translation>
+        <translation type="unfinished">GY1:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="593"/>
@@ -7380,7 +7450,7 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="890"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1085"/>
         <source>Up</source>
-        <translation type="unfinished">상승</translation>
+        <translation type="unfinished">Yukarı</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="603"/>
@@ -7388,38 +7458,38 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="912"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1107"/>
         <source>Down</source>
-        <translation type="unfinished">하강</translation>
+        <translation type="unfinished">Aşağı</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="623"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="932"/>
         <location filename="hcinstruction/icprogramguidepage.cpp" line="1000"/>
         <source>Outlet</source>
-        <translation type="unfinished">게이트 위치 설정</translation>
+        <translation type="unfinished">Outlet</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="644"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="956"/>
         <source>GX2:</source>
-        <translation type="unfinished">X2:</translation>
+        <translation type="unfinished">GX2:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="689"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1040"/>
         <source>GY2:</source>
-        <translation type="unfinished">Y2:</translation>
+        <translation type="unfinished">GY2:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="734"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1124"/>
         <source>Release Outlet:</source>
-        <translation type="unfinished">게이트 오픈 설정</translation>
+        <translation type="unfinished">Serbest bırakmak Outlet：</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="803"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1208"/>
         <source>Come Out Position</source>
-        <translation type="unfinished">주행자세</translation>
+        <translation type="unfinished">Enine dışarı</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="835"/>
@@ -7427,19 +7497,19 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1291"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1384"/>
         <source>Running Horizon</source>
-        <translation type="unfinished">주행시 회전상태로</translation>
+        <translation type="unfinished">Enine dışarı seviye</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="848"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1304"/>
         <source>Come In Position</source>
-        <translation type="unfinished">주행 복귀자세</translation>
+        <translation type="unfinished">Enine girmek duruş</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="892"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1411"/>
         <source>Stacked En</source>
-        <translation type="unfinished">다단 사용</translation>
+        <translation type="unfinished">Kullanım İstifleme</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="902"/>
@@ -7451,19 +7521,19 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage.ui" line="920"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1451"/>
         <source>Pre</source>
-        <translation type="unfinished">이전</translation>
+        <translation type="unfinished">önceki</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="927"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1470"/>
         <source>Next</source>
-        <translation type="unfinished">다음</translation>
+        <translation type="unfinished">Sonraki</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="934"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1489"/>
         <source>Finish</source>
-        <translation type="unfinished">완료</translation>
+        <translation type="unfinished">Bitiş</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="422"/>
@@ -7475,30 +7545,30 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="980"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1064"/>
         <source>0.0</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">0.0</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.cpp" line="985"/>
         <location filename="hcinstruction/icprogramguidepage.cpp" line="1075"/>
         <source>Get Position Settings</source>
-        <translation type="unfinished">제품 취출위치 설정</translation>
+        <translation type="unfinished">Almak Pozisyon</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.cpp" line="1005"/>
         <location filename="hcinstruction/icprogramguidepage.cpp" line="1093"/>
         <source>Release Product Position Settings</source>
-        <translation type="unfinished">제품 개방위치 설정</translation>
+        <translation type="unfinished">Konum ayarları kanal</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.cpp" line="1026"/>
         <location filename="hcinstruction/icprogramguidepage.cpp" line="1114"/>
         <source>Release Outlet Position Settings</source>
-        <translation type="unfinished">게이트 개방위치 설정</translation>
+        <translation type="unfinished">Outlet Konum ayarları</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.cpp" line="1160"/>
         <source>Stanby Settings</source>
-        <translation type="unfinished">대기위치 설정</translation>
+        <translation type="unfinished">Bekleme ayarı</translation>
     </message>
 </context>
 <context>
@@ -7506,42 +7576,42 @@ Please enter an digit between </source>
     <message>
         <location filename="custom_widgets/programhead/icprogramheadframe.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="custom_widgets/programhead/icprogramheadframe.ui" line="96"/>
         <source>Mold:</source>
-        <translation type="unfinished">금형번호</translation>
+        <translation type="unfinished">Mold:</translation>
     </message>
     <message>
         <location filename="custom_widgets/programhead/icprogramheadframe.ui" line="142"/>
         <source>Run Time:</source>
-        <translation type="unfinished">자동작동</translation>
+        <translation type="unfinished">Otomatik işletim</translation>
     </message>
     <message>
         <location filename="custom_widgets/programhead/icprogramheadframe.ui" line="214"/>
         <source>Machine Operator</source>
-        <translation type="unfinished">조작자</translation>
+        <translation type="unfinished">Operatör</translation>
     </message>
     <message>
         <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="85"/>
         <source>%1 h</source>
-        <translation type="unfinished">%1 시간</translation>
+        <translation type="unfinished">%1 h</translation>
     </message>
     <message>
         <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="128"/>
         <source>No Limit</source>
-        <translation type="unfinished">무제한</translation>
+        <translation type="unfinished">Limitsiz</translation>
     </message>
     <message>
         <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="134"/>
         <source>Spare Time: %1 h</source>
-        <translation type="unfinished">나머지 시간%1h</translation>
+        <translation type="unfinished">Kalan Zaman：%1 h</translation>
     </message>
     <message>
         <location filename="custom_widgets/programhead/icprogramheadframe.cpp" line="136"/>
         <source>No Register!</source>
-        <translation type="unfinished">미등록</translation>
+        <translation type="unfinished">Yok Kayıt!</translation>
     </message>
 </context>
 <context>
@@ -7549,62 +7619,63 @@ Please enter an digit between </source>
     <message>
         <location filename="hcinstruction/icprogramselector.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished">조합동작선택</translation>
+        <translation type="unfinished">Grubu İşl-
+emi seçin</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramselector.ui" line="29"/>
         <source>Program</source>
-        <translation type="unfinished">프로그램 선택</translation>
+        <translation type="unfinished">Program</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramselector.ui" line="46"/>
         <source>Main</source>
-        <translation type="unfinished">메인</translation>
+        <translation type="unfinished">Ana program</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramselector.ui" line="51"/>
         <source>Sub-1</source>
-        <translation type="unfinished">서브루틴1</translation>
+        <translation type="unfinished">Alt program-1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramselector.ui" line="56"/>
         <source>Sub-2</source>
-        <translation type="unfinished">서브루틴2</translation>
+        <translation type="unfinished">Alt program-2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramselector.ui" line="61"/>
         <source>Sub-3</source>
-        <translation type="unfinished">서브루틴3</translation>
+        <translation type="unfinished">Alt program-3</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramselector.ui" line="66"/>
         <source>Sub-4</source>
-        <translation type="unfinished">서브루틴4</translation>
+        <translation type="unfinished">Alt program-4</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramselector.ui" line="71"/>
         <source>Sub-5</source>
-        <translation type="unfinished">서브루틴5</translation>
+        <translation type="unfinished">Alt program-5</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramselector.ui" line="76"/>
         <source>Bad Product</source>
-        <translation type="unfinished">불량품</translation>
+        <translation type="unfinished">Kusurlu ürünler</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramselector.ui" line="81"/>
         <source>Sampling</source>
-        <translation type="unfinished">샘플확인</translation>
+        <translation type="unfinished">örnekleme</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramselector.ui" line="86"/>
         <source>TryProduct</source>
-        <translation type="unfinished">샘플</translation>
+        <translation type="unfinished">Deneme üreten</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramselector.ui" line="115"/>
         <source>Select</source>
-        <translation type="unfinished">선택</translation>
+        <translation type="unfinished">Seçmek</translation>
     </message>
 </context>
 <context>
@@ -7612,22 +7683,23 @@ Please enter an digit between </source>
     <message>
         <location filename="icrecaldialog.ui" line="14"/>
         <source>Dialog</source>
-        <translation type="unfinished">화면 터치</translation>
+        <translation type="unfinished">Diyalog</translation>
     </message>
     <message>
         <location filename="icrecaldialog.ui" line="20"/>
         <source>You pressed the recal sequence.Need to recal?</source>
-        <translation type="unfinished">화면 터치을 눌렀음。화면터치 설정을 하시겠나요？</translation>
+        <translation type="unfinished">Sen ekran kalibrasyonu sırasını-
+ basın. Ekranı kalibre gerekir?</translation>
     </message>
     <message>
         <location filename="icrecaldialog.ui" line="38"/>
         <source>No(F4)</source>
-        <translation type="unfinished">아니요</translation>
+        <translation type="unfinished">No(F4)</translation>
     </message>
     <message>
         <location filename="icrecaldialog.ui" line="51"/>
         <source>Yes(F5)</source>
-        <translation type="unfinished">예</translation>
+        <translation type="unfinished">Yes(F5)</translation>
     </message>
 </context>
 <context>
@@ -7635,22 +7707,23 @@ Please enter an digit between </source>
     <message>
         <location filename="icreturnpage.ui" line="14"/>
         <source>Return</source>
-        <translation type="unfinished">복귀</translation>
+        <translation type="unfinished">Dönüş</translation>
     </message>
     <message>
         <location filename="icreturnpage.ui" line="39"/>
         <source>Stop</source>
-        <translation type="unfinished">정지</translation>
+        <translation type="unfinished">Dur</translation>
     </message>
     <message>
         <location filename="icreturnpage.cpp" line="25"/>
         <source>Please press the start button to execute return</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Dönüşünü gerçekleştirmek için-
+ Lütfen başla düğmesine basın</translation>
     </message>
     <message>
         <location filename="icreturnpage.cpp" line="77"/>
         <source>Returnning</source>
-        <translation type="unfinished">복귀중</translation>
+        <translation type="unfinished">Dönüş…..</translation>
     </message>
 </context>
 <context>
@@ -7658,46 +7731,12 @@ Please enter an digit between </source>
     <message>
         <location filename="icscreensaver.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Form</translation>
     </message>
     <message>
         <location filename="icscreensaver.ui" line="45"/>
         <source>Open</source>
-        <translation type="unfinished">잠금 해제</translation>
-    </message>
-</context>
-<context>
-    <name>ICSimpleAutoEditor</name>
-    <message>
-        <source>Z</source>
-        <translation type="obsolete">Z축</translation>
-    </message>
-</context>
-<context>
-    <name>ICSimpleTeachPage</name>
-    <message>
-        <source>Z</source>
-        <translation type="obsolete">Z축</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="obsolete">삭제</translation>
-    </message>
-    <message>
-        <source>Modify</source>
-        <translation type="obsolete">편집 </translation>
-    </message>
-    <message>
-        <source>%</source>
-        <translation type="obsolete">%</translation>
-    </message>
-    <message>
-        <source>Pos</source>
-        <translation type="obsolete">정방향</translation>
-    </message>
-    <message>
-        <source>Use</source>
-        <translation type="obsolete">사용</translation>
+        <translation type="unfinished">Kilidini açmak</translation>
     </message>
 </context>
 <context>
@@ -7705,22 +7744,22 @@ Please enter an digit between </source>
     <message>
         <location filename="icsplashscreen.cpp" line="16"/>
         <source>SW Version:</source>
-        <translation type="unfinished">소프트웨어 버전</translation>
+        <translation type="unfinished">Yazılım Sürümü:</translation>
     </message>
     <message>
         <location filename="icsplashscreen.cpp" line="18"/>
         <source>HW Version:</source>
-        <translation type="unfinished">하드웨어 버전</translation>
+        <translation type="unfinished">Donanım versiyonu:</translation>
     </message>
     <message>
         <location filename="icsplashscreen.cpp" line="20"/>
         <source>Client:</source>
-        <translation type="unfinished">고객</translation>
+        <translation type="unfinished">Müşteri：</translation>
     </message>
     <message>
         <location filename="icsplashscreen.cpp" line="28"/>
         <source>Shiment Date:</source>
-        <translation type="unfinished">일자</translation>
+        <translation type="unfinished">Tarih:</translation>
     </message>
 </context>
 <context>
@@ -7728,32 +7767,32 @@ Please enter an digit between </source>
     <message>
         <location filename="hcinstruction/icstackeditor.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Form</translation>
     </message>
     <message>
         <location filename="hcinstruction/icstackeditor.ui" line="41"/>
         <source>Seq</source>
-        <translation type="unfinished">순서</translation>
+        <translation type="unfinished">Sipariş</translation>
     </message>
     <message>
         <location filename="hcinstruction/icstackeditor.ui" line="56"/>
         <source>S:</source>
-        <translation type="unfinished">측</translation>
+        <translation type="unfinished">S:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icstackeditor.ui" line="72"/>
         <source>Pos</source>
-        <translation type="unfinished">방향</translation>
+        <translation type="unfinished">Pozisyon</translation>
     </message>
     <message>
         <location filename="hcinstruction/icstackeditor.ui" line="88"/>
         <source>Num</source>
-        <translation type="unfinished">개수</translation>
+        <translation type="unfinished">sayısı</translation>
     </message>
     <message>
         <location filename="hcinstruction/icstackeditor.ui" line="104"/>
         <source>Step</source>
-        <translation type="unfinished">간격</translation>
+        <translation type="unfinished">Mesafe</translation>
     </message>
     <message>
         <location filename="hcinstruction/icstackeditor.ui" line="124"/>
@@ -7762,12 +7801,12 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icstackeditor.ui" line="706"/>
         <location filename="hcinstruction/icstackeditor.ui" line="948"/>
         <source>X:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icstackeditor.ui" line="197"/>
         <source>Group-1</source>
-        <translation type="unfinished">제1조</translation>
+        <translation type="unfinished">Grup-1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icstackeditor.ui" line="218"/>
@@ -7776,7 +7815,7 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icstackeditor.ui" line="753"/>
         <location filename="hcinstruction/icstackeditor.ui" line="958"/>
         <source>Y:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icstackeditor.ui" line="265"/>
@@ -7785,52 +7824,52 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icstackeditor.ui" line="800"/>
         <location filename="hcinstruction/icstackeditor.ui" line="968"/>
         <source>Z:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Z:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icstackeditor.ui" line="394"/>
         <source>Group-2</source>
-        <translation type="unfinished">제2조</translation>
+        <translation type="unfinished">Grup-2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icstackeditor.ui" line="544"/>
         <source>Group-3</source>
-        <translation type="unfinished">제3조</translation>
+        <translation type="unfinished">Grup-3</translation>
     </message>
     <message>
         <location filename="hcinstruction/icstackeditor.ui" line="885"/>
         <source>Group-4</source>
-        <translation type="unfinished">제4조</translation>
+        <translation type="unfinished">Grup-4</translation>
     </message>
     <message>
         <location filename="hcinstruction/icstackeditor.ui" line="941"/>
         <source>Start Point</source>
-        <translation type="unfinished">시작점</translation>
+        <translation type="unfinished">Başlangıç noktası</translation>
     </message>
     <message>
         <location filename="hcinstruction/icstackeditor.cpp" line="114"/>
         <source>X-&gt;Z-&gt;Y</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X-&gt;Z-&gt;Y</translation>
     </message>
     <message>
         <location filename="hcinstruction/icstackeditor.cpp" line="119"/>
         <source>Z-&gt;X-&gt;Y</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Z-&gt;X-&gt;Y</translation>
     </message>
     <message>
         <location filename="hcinstruction/icstackeditor.cpp" line="124"/>
         <source>Y-&gt;X-&gt;Z</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y-&gt;X-&gt;Z</translation>
     </message>
     <message>
         <location filename="hcinstruction/icstackeditor.cpp" line="129"/>
         <source>Y-&gt;Z-&gt;X</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y-&gt;Z-&gt;X</translation>
     </message>
     <message>
         <location filename="hcinstruction/icstackeditor.cpp" line="133"/>
         <source>Z-&gt;Y-&gt;X</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Z-&gt;Y-&gt;X</translation>
     </message>
     <message>
         <location filename="hcinstruction/icstackeditor.cpp" line="137"/>
@@ -7842,14 +7881,14 @@ Please enter an digit between </source>
         <location filename="hcinstruction/icstackeditor.cpp" line="153"/>
         <location filename="hcinstruction/icstackeditor.cpp" line="162"/>
         <source>RP</source>
-        <translation type="unfinished">역</translation>
+        <translation type="unfinished">Ters</translation>
     </message>
     <message>
         <location filename="hcinstruction/icstackeditor.cpp" line="144"/>
         <location filename="hcinstruction/icstackeditor.cpp" line="153"/>
         <location filename="hcinstruction/icstackeditor.cpp" line="162"/>
         <source>P</source>
-        <translation type="unfinished">정</translation>
+        <translation type="unfinished">İleri</translation>
     </message>
 </context>
 <context>
@@ -7859,7 +7898,8 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="14"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="284"/>
         <source>Form</source>
-        <translation type="unfinished">조합동작선택</translation>
+        <translation type="unfinished">Grubu İşl-
+emi seçin</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="32"/>
@@ -7869,7 +7909,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.cpp" line="296"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="394"/>
         <source>Arm Define</source>
-        <translation type="unfinished">측 정의</translation>
+        <translation type="unfinished">Arm tanımlamak</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="66"/>
@@ -7921,7 +7961,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.cpp" line="322"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="326"/>
         <source>None</source>
-        <translation type="unfinished"> 무</translation>
+        <translation type="unfinished">Hayır</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="71"/>
@@ -7949,7 +7989,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.cpp" line="323"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="327"/>
         <source>Pneumatic</source>
-        <translation type="unfinished">에어측</translation>
+        <translation type="unfinished">Pnömatik</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="76"/>
@@ -7977,7 +8017,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.cpp" line="324"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="328"/>
         <source>Servo</source>
-        <translation type="unfinished">서보측</translation>
+        <translation type="unfinished">Servo</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="84"/>
@@ -7994,7 +8034,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="730"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="297"/>
         <source>X1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X1</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="91"/>
@@ -8011,7 +8051,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="751"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="301"/>
         <source>C</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">C</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="98"/>
@@ -8028,7 +8068,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="396"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="305"/>
         <source>Z</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Z</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="105"/>
@@ -8045,7 +8085,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="410"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="309"/>
         <source>A</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">A</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="205"/>
@@ -8062,7 +8102,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="672"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="313"/>
         <source>B</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">B</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="243"/>
@@ -8079,7 +8119,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="744"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="317"/>
         <source>Y1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="281"/>
@@ -8096,7 +8136,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="737"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="321"/>
         <source>X2</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X2</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="319"/>
@@ -8113,13 +8153,14 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="403"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="325"/>
         <source>Y2</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y2</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="360"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="378"/>
         <source>Port Define</source>
-        <translation type="unfinished">포트</translation>
+        <translation type="unfinished">Bağlantı nokt-
+as tanımlamak</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="405"/>
@@ -8139,7 +8180,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="776"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="827"/>
         <source>S1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">S1</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="410"/>
@@ -8159,7 +8200,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="781"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="832"/>
         <source>S2</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">S2</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="415"/>
@@ -8179,7 +8220,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="786"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="837"/>
         <source>S3</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">S3</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="420"/>
@@ -8199,7 +8240,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="791"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="842"/>
         <source>S4</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">S4</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="425"/>
@@ -8219,7 +8260,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="796"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="847"/>
         <source>S5</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">S5</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="430"/>
@@ -8239,7 +8280,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="801"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="852"/>
         <source>S6</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">S6</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="834"/>
@@ -8249,7 +8290,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.cpp" line="329"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="395"/>
         <source>Out Define</source>
-        <translation>샘플정의</translation>
+        <translation type="unfinished">Rezerv tanımları</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="889"/>
@@ -8277,13 +8318,13 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.cpp" line="382"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="384"/>
         <source>Extent</source>
-        <translation>샘플</translation>
+        <translation type="unfinished">Rezerv</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="990"/>
         <location filename="hcsettings/icstructdefineframe.ui" line="1037"/>
         <source>Rev</source>
-        <translation type="unfinished">리시브</translation>
+        <translation type="unfinished">Rez</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1076"/>
@@ -8311,7 +8352,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.cpp" line="381"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="383"/>
         <source>Normal</source>
-        <translation type="unfinished">2측설정</translation>
+        <translation type="unfinished">Normal</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1534"/>
@@ -8321,28 +8362,28 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.cpp" line="285"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="396"/>
         <source>Signal Define</source>
-        <translation type="unfinished">리미트 정의</translation>
+        <translation type="unfinished">Sinyal Açıklama</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1593"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1629"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="286"/>
         <source>Single Arm</source>
-        <translation type="unfinished">싱글</translation>
+        <translation type="unfinished">Tek Kol</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1641"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1677"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="287"/>
         <source>Double Arm</source>
-        <translation type="unfinished">더블</translation>
+        <translation type="unfinished">Çift Kol</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1678"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1711"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="288"/>
         <source>Main Arm</source>
-        <translation type="unfinished">제품측</translation>
+        <translation type="unfinished">Main Arm</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1703"/>
@@ -8352,26 +8393,26 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.cpp" line="289"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="293"/>
         <source>Down Limit</source>
-        <translation type="unfinished">하강완료</translation>
+        <translation type="unfinished">Düşüş limit</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1729"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1768"/>
         <source>Backward Limit</source>
-        <translation type="unfinished">후진완료</translation>
+        <translation type="unfinished">çekilme limit</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1756"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1795"/>
         <source>Forword Limit</source>
-        <translation type="unfinished">전진완료</translation>
+        <translation type="unfinished">Ileri limit</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1798"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1837"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="292"/>
         <source>Sub Arm</source>
-        <translation type="unfinished">런너측</translation>
+        <translation type="unfinished">Sub-Arm</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1814"/>
@@ -8379,7 +8420,7 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.cpp" line="290"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="294"/>
         <source>Backword Limit</source>
-        <translation type="unfinished">후진완료</translation>
+        <translation type="unfinished">çekilme limit</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1824"/>
@@ -8387,12 +8428,12 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.cpp" line="291"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="295"/>
         <source>Forward Limit</source>
-        <translation type="unfinished">전진완료</translation>
+        <translation type="unfinished">Ileri limit</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1856"/>
         <source>Origin</source>
-        <translation type="unfinished">원점복귀 실행</translation>
+        <translation type="unfinished">P.S.O</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1893"/>
@@ -8407,12 +8448,108 @@ Please enter an digit between </source>
         <location filename="hcsettings/icstructdefineframe.cpp" line="385"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="397"/>
         <source>Other Define</source>
-        <translation type="unfinished">기타 정의</translation>
+        <translation type="unfinished">Diğer tanımlamalar</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2431"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="386"/>
+        <source>SE Door Mode</source>
+        <translation type="unfinished">Güvenlik kapı modu</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2439"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="2094"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="331"/>
+        <source>0-soft</source>
+        <translation type="unfinished">0-Yumuşak</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2474"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="2129"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="338"/>
+        <source>7-hard</source>
+        <translation type="unfinished">7-hard</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2489"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="2148"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="340"/>
+        <source>Limit</source>
+        <translation type="unfinished">Limit</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2494"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="2153"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="341"/>
+        <source>NoLimit</source>
+        <translation type="unfinished">Limitsiz</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2546"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="390"/>
+        <source>Ret On Close</source>
+        <translation type="unfinished">Dönüş Kapıyı kapat</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2562"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="2140"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="339"/>
+        <source>In Mold Limit</source>
+        <translation type="unfinished">Seviye İç kalıp</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2594"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1993"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="2069"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="398"/>
+        <source>Use</source>
+        <translation type="unfinished">Kullanın</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2638"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="389"/>
+        <source>Run On Close</source>
+        <translation type="unfinished">Çalıştır deva-
+m Kapıyı kapat</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2648"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="2086"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="401"/>
+        <source>Adjust</source>
+        <translation type="unfinished">Adjust</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2680"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1954"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="2031"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="399"/>
+        <source>No Use</source>
+        <translation type="unfinished">Kullanmayın</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2721"/>
+        <source>ODST</source>
+        <translation type="unfinished">Dış düşüş-
+ güvenlik</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2762"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="391"/>
+        <source>Stop On Close</source>
+        <translation type="unfinished">Dur kapatma</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2769"/>
         <source>s</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">s</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/icstructdefineframe.ui" line="2776"/>
+        <location filename="hcsettings/icstructdefineframe_5.ui" line="1961"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="400"/>
+        <source>Servo Flex</source>
+        <translation type="unfinished">Servo Flex</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2808"/>
@@ -8425,110 +8562,12 @@ Please enter an digit between </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2648"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="2086"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="401"/>
-        <source>Adjust</source>
-        <translation type="unfinished">2측설정</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2721"/>
-        <source>ODST</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2594"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1993"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="2069"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="398"/>
-        <source>Use</source>
-        <translation type="unfinished">사용</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2680"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1954"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="2031"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="399"/>
-        <source>No Use</source>
-        <translation type="unfinished">사용 않함</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2431"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="386"/>
-        <source>SE Door Mode</source>
-        <translation type="unfinished">안전문모드</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2562"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="2140"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="339"/>
-        <source>In Mold Limit</source>
-        <translation type="unfinished">형내주행안전</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2489"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="2148"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="340"/>
-        <source>Limit</source>
-        <translation type="unfinished">완료</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2494"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="2153"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="341"/>
-        <source>NoLimit</source>
-        <translation type="unfinished">무제한</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2776"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="1961"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="400"/>
-        <source>Servo Flex</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2439"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="2094"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="331"/>
-        <source>0-soft</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2474"/>
-        <location filename="hcsettings/icstructdefineframe_5.ui" line="2129"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="338"/>
-        <source>7-hard</source>
-        <translation type="unfinished">하드</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2638"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="389"/>
-        <source>Run On Close</source>
-        <translation type="unfinished">문 닫으면 계속진행</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2762"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="391"/>
-        <source>Stop On Close</source>
-        <translation type="unfinished">문 닫으면 정지</translation>
-    </message>
-    <message>
-        <location filename="hcsettings/icstructdefineframe.ui" line="2546"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="390"/>
-        <source>Ret On Close</source>
-        <translation type="unfinished">문 닫으면 복귀</translation>
-    </message>
-    <message>
-        <source>%</source>
-        <translation type="obsolete">%</translation>
-    </message>
-    <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2859"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2195"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="392"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="478"/>
         <source>Save</source>
-        <translation type="unfinished">저장</translation>
+        <translation type="unfinished">Kaydet</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="999"/>
@@ -8574,23 +8613,23 @@ Please enter an digit between </source>
     <message>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2079"/>
         <source>Escape</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">kaçış</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.cpp" line="402"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="403"/>
         <source>Reserve</source>
-        <translation>샘플</translation>
+        <translation type="unfinished">Rezerv</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.cpp" line="472"/>
         <source>Tips</source>
-        <translation type="unfinished">도움?</translation>
+        <translation type="unfinished">Uç</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.cpp" line="472"/>
         <source>Save Sucessfully!</source>
-        <translation type="unfinished">저장 성공</translation>
+        <translation type="unfinished">Başarıyla kaydedildi！</translation>
     </message>
 </context>
 <context>
@@ -8598,12 +8637,12 @@ Please enter an digit between </source>
     <message>
         <location filename="custom_widgets/systemstatusframe/icsystemstatusframe.ui" line="20"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="custom_widgets/systemstatusframe/icsystemstatusframe.ui" line="205"/>
         <source>IMM Signal</source>
-        <translation type="unfinished">사출기 신호</translation>
+        <translation type="unfinished">IMM sinyal</translation>
     </message>
 </context>
 <context>
@@ -8611,7 +8650,7 @@ Please enter an digit between </source>
     <message>
         <location filename="ictipswidget.ui" line="14"/>
         <source>Dialog</source>
-        <translation type="unfinished">제시</translation>
+        <translation type="unfinished">Uç</translation>
     </message>
 </context>
 <context>
@@ -8619,27 +8658,27 @@ Please enter an digit between </source>
     <message>
         <location filename="custom_widgets/systemstatusframe/ictunemolddialog.ui" line="14"/>
         <source>Dialog</source>
-        <translation type="unfinished">사출기 신호</translation>
+        <translation type="unfinished">Dialog</translation>
     </message>
     <message>
         <location filename="custom_widgets/systemstatusframe/ictunemolddialog.ui" line="20"/>
         <source>Tunning Mold </source>
-        <translation type="unfinished">사출기 신호</translation>
+        <translation type="unfinished">IMM sinyal</translation>
     </message>
     <message>
         <location filename="custom_widgets/systemstatusframe/ictunemolddialog.ui" line="29"/>
         <source>Long Output</source>
-        <translation type="unfinished">사출기 신호 출력 제어</translation>
+        <translation type="unfinished">Uzun Output</translation>
     </message>
     <message>
         <location filename="custom_widgets/systemstatusframe/ictunemolddialog.ui" line="42"/>
         <source>Start</source>
-        <translation type="unfinished">열기</translation>
+        <translation type="unfinished">Başlangıç</translation>
     </message>
     <message>
         <location filename="custom_widgets/systemstatusframe/ictunemolddialog.ui" line="58"/>
         <source>Cancel</source>
-        <translation type="unfinished">취소</translation>
+        <translation type="unfinished">Iptal edildi</translation>
     </message>
 </context>
 <context>
@@ -8647,60 +8686,60 @@ Please enter an digit between </source>
     <message>
         <location filename="hcmaintains/icupdatelogodialog.ui" line="14"/>
         <source>Dialog</source>
-        <translation type="unfinished">로고 업데이트</translation>
+        <translation type="unfinished">Diyalog</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatelogodialog.ui" line="44"/>
         <source>Set to Startup Page</source>
-        <translation type="unfinished">페이지 표지로 선정</translation>
+        <translation type="unfinished">Ayarla başlangıç sayfası</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatelogodialog.ui" line="74"/>
         <source>Set to Standby Page</source>
-        <translation type="unfinished">대기화면을 선택</translation>
+        <translation type="unfinished">Ayarla Bekleme sayfa</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatelogodialog.ui" line="104"/>
         <source>Set to App ICON</source>
-        <translation type="unfinished">프로그래 도면 선택</translation>
+        <translation type="unfinished">Ayarla Program simgesi</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatelogodialog.ui" line="147"/>
         <source>Scan Pictures</source>
-        <translation type="unfinished">파일 읽기</translation>
+        <translation type="unfinished">Tarama resim</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatelogodialog.ui" line="179"/>
         <source>Exit</source>
-        <translation type="unfinished">나가기</translation>
+        <translation type="unfinished">çıkmak</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="43"/>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="66"/>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="116"/>
         <source>warning</source>
-        <translation type="unfinished">경보</translation>
+        <translation type="unfinished">Alarm</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="43"/>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="66"/>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="116"/>
         <source>No select picture!</source>
-        <translation type="unfinished">선택할 도면이 없음</translation>
+        <translation type="unfinished">Hayır seçmek resim！</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="59"/>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="82"/>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="132"/>
         <source>Tips</source>
-        <translation type="unfinished">제시</translation>
+        <translation type="unfinished">Uç</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="59"/>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="82"/>
         <location filename="hcmaintains/icupdatelogodialog.cpp" line="132"/>
         <source>Setting success,In operation after reboot!</source>
-        <translation type="unfinished"> 설정 성공 ,다시 켜기후 사용</translation>
+        <translation type="unfinished">kurmak başarı，Yeniden etkili ol！</translation>
     </message>
 </context>
 <context>
@@ -8709,91 +8748,94 @@ Please enter an digit between </source>
         <location filename="hcmaintains/icupdatesystempage.ui" line="20"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="20"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="56"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="56"/>
         <source>Maintain</source>
-        <translation type="unfinished">유지</translation>
+        <translation type="unfinished">Sürdürmek</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="105"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="99"/>
         <source>Update Logo</source>
-        <translation type="unfinished">파일 업데이트</translation>
+        <translation type="unfinished">Güncelleme Resimleri</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="124"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="118"/>
         <source>Scan Panel</source>
-        <translation type="unfinished"> 업데이트 스캔</translation>
+        <translation type="unfinished">Güncelleme dosy-
+alarını taramak</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="146"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="140"/>
         <source>Update HMI</source>
-        <translation type="unfinished">업데이트 시작</translation>
+        <translation type="unfinished">Güncelleştirme HMI</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="165"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="159"/>
         <source>Scan Host</source>
-        <translation type="unfinished">메인 업데이트 스캔 </translation>
+        <translation type="unfinished">Tarama barındıran günc-
+elleme paketi dosyasını</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="187"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="181"/>
         <source>Update Host</source>
-        <translation type="unfinished">메인 업데이트</translation>
+        <translation type="unfinished">Güncelleştirm-
+e Ev Sahipliği</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="206"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="200"/>
         <source>Update Super Password</source>
-        <translation type="unfinished">고급 비번 교체</translation>
+        <translation type="unfinished">Yeni Süper Şifre</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="225"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="219"/>
         <source>Back To Factory</source>
-        <translation type="unfinished">공장 초기화</translation>
+        <translation type="unfinished">Fabrikası Restore</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="254"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="248"/>
         <source>Update Host Process:</source>
-        <translation type="unfinished">진도 업데이트</translation>
+        <translation type="unfinished">Güncelleme İlerleme：</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="273"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="267"/>
         <source>Care</source>
-        <translation type="unfinished">보수</translation>
+        <translation type="unfinished">Idame</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="324"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="318"/>
         <source>Item</source>
-        <translation type="unfinished">항목</translation>
+        <translation type="unfinished">Item</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="329"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="323"/>
         <source>Left Day</source>
-        <translation type="unfinished"> 남은 일자</translation>
+        <translation type="unfinished">Kalan gün sayısı</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="334"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="328"/>
         <source>Next Date</source>
-        <translation type="unfinished">차기 보수일자</translation>
+        <translation type="unfinished">Sonraki tarihi</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="339"/>
         <location filename="hcmaintains/icupdatesystempage_5.ui" line="333"/>
         <source>Cycle</source>
-        <translation type="unfinished">주기</translation>
+        <translation type="unfinished">Cycle</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.ui" line="344"/>
@@ -8801,140 +8843,143 @@ Please enter an digit between </source>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="89"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="154"/>
         <source>Restart</source>
-        <translation type="unfinished">다시 시작</translation>
+        <translation type="unfinished">Yeniden</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="72"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="143"/>
         <source>Name</source>
-        <translation type="unfinished">명칭</translation>
+        <translation type="unfinished">isim</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="73"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="144"/>
         <source>Create Time</source>
-        <translation type="unfinished"> 만든 일자</translation>
+        <translation type="unfinished">Oluşturulma tarihi</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="84"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="149"/>
         <source>Item-1</source>
-        <translation type="unfinished">구리스 급유(요구：기계  작동부분에 급유요망)</translation>
+        <translation type="unfinished">Item-1</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="84"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="149"/>
         <source>Item-2</source>
-        <translation type="unfinished">에어 유니트 배수확인</translation>
+        <translation type="unfinished">Item-2</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="84"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="149"/>
         <source>Item-3</source>
-        <translation>흡착패드.척크.실린더상태 확인</translation>
+        <translation type="unfinished">Item-3</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="85"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="150"/>
         <source>Item-4</source>
-        <translation type="unfinished">기계 고정볼트상태 확인</translation>
+        <translation type="unfinished">Item-4</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="85"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="150"/>
         <source>Item-5</source>
-        <translation type="unfinished">사출기.리모컨 연결 콘넥터 확인</translation>
+        <translation type="unfinished">Item-5</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="85"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="150"/>
         <source>Item-6</source>
-        <translation type="unfinished">진공발생기 청결</translation>
+        <translation type="unfinished">Item-6</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="85"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="150"/>
         <source>Item-7</source>
-        <translation type="unfinished">전기 박스내 분진 제거</translation>
+        <translation type="unfinished">Item-7</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="209"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="386"/>
         <source>System Updating...</source>
-        <translation type="unfinished"> 시스템 업데이트중</translation>
+        <translation type="unfinished">Sistem Güncelleme….</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="239"/>
         <source>No available New SuperPassward</source>
-        <translation type="unfinished">사용가능한 고급비번 없음</translation>
+        <translation type="unfinished">Hiçbir kullanılabilir Yeni Süper Şifre</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="241"/>
         <source>New SuperPassward</source>
-        <translation type="unfinished">신규 고급비번</translation>
+        <translation type="unfinished">Yeni Süper Şifre</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="348"/>
         <source>tips</source>
-        <translation type="unfinished">제시</translation>
+        <translation type="unfinished">Uç</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="348"/>
         <source>Update Host Successful!</source>
-        <translation type="unfinished"> 메인 업데이트 성공</translation>
+        <translation type="unfinished">Ana bilgisayar gü-
+ncelleme başarılı!</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="415"/>
         <source>warning</source>
-        <translation type="unfinished"> 경보</translation>
+        <translation type="unfinished">Alarm</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="415"/>
         <source>USB is not exist!</source>
-        <translation type="unfinished">USB 발견못함</translation>
+        <translation type="unfinished">Ben U disk bulamadık!</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="480"/>
         <source>Warning</source>
-        <translation type="unfinished">경보</translation>
+        <translation type="unfinished">Alarm</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="481"/>
         <source>Old password is wrong</source>
-        <translation type="unfinished">구 비번 기본림</translation>
+        <translation type="unfinished">Eski şifre yanlış！</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="488"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="499"/>
         <source>Scanning...</source>
-        <translation type="unfinished">스캔중</translation>
+        <translation type="unfinished">Tarama….</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="536"/>
         <source>Back to Factory</source>
-        <translation type="unfinished">초기화 </translation>
+        <translation type="unfinished">Fabrikası Restore</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="536"/>
         <source>Back to factory will lost all the sysconfig and panel settings.
 Please input the root password to confirm.</source>
-        <translation type="unfinished">기본린 모듈 치수격식</translation>
+        <translation type="unfinished">Modül parametreleri korunur tüm makine parametrelerini ve manuel parametrele-
+r sıfırlanır fabrikayı geri yükleyin.
+Üst düzey yönetici şifresi onayı girin.</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="583"/>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="590"/>
         <source>Tips</source>
-        <translation type="unfinished">제시</translation>
+        <translation type="unfinished">Uç</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="583"/>
         <source>Back to factory successfully! Now reboot!</source>
-        <translation type="unfinished"> 공장초기화 성공 다시 켜기 바람</translation>
+        <translation type="unfinished">Geri fabrikaya başarıyla! Şimdi yeniden!</translation>
     </message>
     <message>
         <location filename="hcmaintains/icupdatesystempage.cpp" line="590"/>
         <source>Wrong password!</source>
-        <translation type="unfinished">비번오류</translation>
+        <translation type="unfinished">Şifre yanlış!</translation>
     </message>
 </context>
 <context>
@@ -8942,7 +8987,7 @@ Please input the root password to confirm.</source>
     <message>
         <location filename="communication/icvirtualhost.cpp" line="106"/>
         <source>Error</source>
-        <translation type="unfinished">에러</translation>
+        <translation type="unfinished">Hata</translation>
     </message>
 </context>
 <context>
@@ -8951,43 +8996,145 @@ Please input the root password to confirm.</source>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="14"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Form</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="91"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="55"/>
         <source>Wait Condition</source>
-        <translation type="unfinished">대기조건</translation>
+        <translation type="unfinished">Beklemek Koşullar</translation>
     </message>
     <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="302"/>
-        <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="91"/>
-        <source>Wait Mold Opened</source>
-        <translation type="unfinished">형개완료 대기</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="152"/>
-        <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="113"/>
-        <source>Wait Security Door Closed</source>
-        <translation type="unfinished">안전문 대기</translation>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="112"/>
+        <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="333"/>
+        <source>Wait EUEJB</source>
+        <translation type="unfinished">Beklemek Ejektör p-
+imi yeterince döndü</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="122"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="377"/>
         <source>Wait EUCOREOUT</source>
-        <translation>코어 출력대기</translation>
+        <translation type="unfinished">Beklemek Dış-
+arı çekirdek </translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="132"/>
+        <source>Wait X046</source>
+        <translation type="unfinished">Beklemek X046</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="142"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="289"/>
         <source>Wait XCLIP6</source>
-        <translation type="unfinished">흡착2 확인대기</translation>
+        <translation type="unfinished">Beklemek XCLIP6</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="152"/>
+        <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="113"/>
+        <source>Wait Security Door Closed</source>
+        <translation type="unfinished">Beklemek Emniyet kapısı kapatmak</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="162"/>
+        <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="267"/>
+        <source>Wait XCLIP5</source>
+        <translation type="unfinished">Beklemek XCLIP5</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="172"/>
+        <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="223"/>
+        <source>Wait XCLIP3</source>
+        <translation type="unfinished">Beklemek X CLIP3</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="182"/>
+        <source>Wait X040</source>
+        <translation type="unfinished">Beklemek X040</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="192"/>
+        <source>Wait X036</source>
+        <translation type="unfinished">Beklemek X036</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="202"/>
+        <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="245"/>
+        <source>Wait XCLIP4</source>
+        <translation type="unfinished">Beklemek XCLIP4</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="212"/>
+        <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="179"/>
+        <source>Wait XCLIP1</source>
+        <translation type="unfinished">Beklemek X CLIP1</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="222"/>
+        <source>Wait X047</source>
+        <translation type="unfinished">Beklemek X047</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="232"/>
+        <source>Wait X045</source>
+        <translation type="unfinished">Beklemek X045</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="242"/>
+        <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="311"/>
+        <source>Wait EUEJF</source>
+        <translation type="unfinished">Beklemek Ejektör -
+pimi ileri yeterli</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="252"/>
+        <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="201"/>
+        <source>Wait XCLIP2</source>
+        <translation type="unfinished">Beklemek XCLIP2</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="262"/>
+        <source>Wait X026</source>
+        <translation type="unfinished">Beklemek X026</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="272"/>
+        <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="135"/>
+        <source>Wait X043</source>
+        <translation type="unfinished">Beklemek X043</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="282"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="157"/>
         <source>Wait X044</source>
-        <translation type="unfinished">X044 대기</translation>
+        <translation type="unfinished">Beklemek X044</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="292"/>
+        <source>Wait X023</source>
+        <translation type="unfinished">Beklemek X023</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="302"/>
+        <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="91"/>
+        <source>Wait Mold Opened</source>
+        <translation type="unfinished">Beklemek Mold Açıldı</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="312"/>
+        <source>Wait X037</source>
+        <translation type="unfinished">Beklemek X037</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="322"/>
+        <source>Wait X017</source>
+        <translation type="unfinished">Beklemek X017</translation>
+    </message>
+    <message>
+        <location filename="hcinstruction/icwaitconditioneditor.ui" line="332"/>
+        <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="355"/>
+        <source>Wait EUCOREIN</source>
+        <translation type="unfinished">Beklemek çekirdek</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="342"/>
@@ -8999,105 +9146,6 @@ Please input the root password to confirm.</source>
         <source>Wait EUCOREOUT-2</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="252"/>
-        <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="201"/>
-        <source>Wait XCLIP2</source>
-        <translation type="unfinished">척크2 확인대기</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="182"/>
-        <source>Wait X040</source>
-        <translation>X040 대기</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="332"/>
-        <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="355"/>
-        <source>Wait EUCOREIN</source>
-        <translation>코어 입력대기</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="242"/>
-        <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="311"/>
-        <source>Wait EUEJF</source>
-        <translation type="unfinished">에젝터 대기</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="162"/>
-        <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="267"/>
-        <source>Wait XCLIP5</source>
-        <translation type="unfinished">흡착1 확인대기</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="202"/>
-        <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="245"/>
-        <source>Wait XCLIP4</source>
-        <translation type="unfinished">척크4 확인대기</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="292"/>
-        <source>Wait X023</source>
-        <translation>X023 대기</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="232"/>
-        <source>Wait X045</source>
-        <translation>X045 대기</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="312"/>
-        <source>Wait X037</source>
-        <translation>X037 대기</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="212"/>
-        <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="179"/>
-        <source>Wait XCLIP1</source>
-        <translation type="unfinished">척크1 확인대기</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="112"/>
-        <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="333"/>
-        <source>Wait EUEJB</source>
-        <translation type="unfinished">에.후 대기</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="172"/>
-        <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="223"/>
-        <source>Wait XCLIP3</source>
-        <translation type="unfinished">척크3 확인대기</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="132"/>
-        <source>Wait X046</source>
-        <translation>X046 대기</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="262"/>
-        <source>Wait X026</source>
-        <translation>X026 대기</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="222"/>
-        <source>Wait X047</source>
-        <translation>X047 대기</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="272"/>
-        <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="135"/>
-        <source>Wait X043</source>
-        <translation>X043 대기</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="322"/>
-        <source>Wait X017</source>
-        <translation>X017 대기</translation>
-    </message>
-    <message>
-        <location filename="hcinstruction/icwaitconditioneditor.ui" line="192"/>
-        <source>Wait X036</source>
-        <translation>X036 대기</translation>
-    </message>
 </context>
 <context>
     <name>MainFrame</name>
@@ -9105,13 +9153,14 @@ Please input the root password to confirm.</source>
         <location filename="mainframe.ui" line="20"/>
         <location filename="mainframe_5.ui" line="32"/>
         <source>MainFrame</source>
-        <translation type="unfinished">다측 노로트 제어 시스템</translation>
+        <translation type="unfinished">Çok eksenli bir ro-
+bot kontrol sistemi</translation>
     </message>
     <message>
         <location filename="mainframe.ui" line="192"/>
         <location filename="mainframe_5.ui" line="216"/>
         <source>Z:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Z:</translation>
     </message>
     <message>
         <location filename="mainframe.ui" line="224"/>
@@ -9125,37 +9174,37 @@ Please input the root password to confirm.</source>
         <location filename="mainframe_5.ui" line="383"/>
         <location filename="mainframe_5.ui" line="428"/>
         <source>mm    </source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">MM</translation>
     </message>
     <message>
         <location filename="mainframe.ui" line="237"/>
         <location filename="mainframe_5.ui" line="261"/>
         <source>X1:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X1:</translation>
     </message>
     <message>
         <location filename="mainframe.ui" line="282"/>
         <location filename="mainframe_5.ui" line="306"/>
         <source>Y1:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1:</translation>
     </message>
     <message>
         <location filename="mainframe.ui" line="327"/>
         <location filename="mainframe_5.ui" line="351"/>
         <source>X2:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X2:</translation>
     </message>
     <message>
         <location filename="mainframe.ui" line="372"/>
         <location filename="mainframe_5.ui" line="396"/>
         <source>Y2:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y2:</translation>
     </message>
     <message>
         <location filename="mainframe.ui" line="489"/>
         <location filename="mainframe_5.ui" line="513"/>
         <source>A:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">A:</translation>
     </message>
     <message>
         <location filename="mainframe.ui" line="521"/>
@@ -9165,61 +9214,61 @@ Please input the root password to confirm.</source>
         <location filename="mainframe_5.ui" line="590"/>
         <location filename="mainframe_5.ui" line="635"/>
         <source>Degree</source>
-        <translation type="unfinished">도</translation>
+        <translation type="unfinished">Derece</translation>
     </message>
     <message>
         <location filename="mainframe.ui" line="534"/>
         <location filename="mainframe_5.ui" line="558"/>
         <source>B:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">B:</translation>
     </message>
     <message>
         <location filename="mainframe.ui" line="579"/>
         <location filename="mainframe_5.ui" line="603"/>
         <source>C:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">C:</translation>
     </message>
     <message>
         <location filename="mainframe.ui" line="631"/>
         <location filename="mainframe_5.ui" line="655"/>
         <source>Step</source>
-        <translation type="unfinished">순서</translation>
+        <translation type="unfinished">Adım</translation>
     </message>
     <message>
         <location filename="mainframe.cpp" line="688"/>
         <source>Function</source>
-        <translation type="unfinished">기능</translation>
+        <translation type="unfinished">Fonksiyon</translation>
     </message>
     <message>
         <location filename="mainframe.cpp" line="689"/>
         <source>Monitor</source>
-        <translation type="unfinished">I/O</translation>
+        <translation type="unfinished">Monitor</translation>
     </message>
     <message>
         <location filename="mainframe.cpp" line="690"/>
         <source>Alarm</source>
-        <translation type="unfinished">알람/수정</translation>
+        <translation type="unfinished">Alarm</translation>
     </message>
     <message>
         <location filename="mainframe.cpp" line="691"/>
         <source>Record</source>
-        <translation type="unfinished">파일</translation>
+        <translation type="unfinished">Dosya</translation>
     </message>
     <message>
         <location filename="mainframe.cpp" line="692"/>
         <source>Return</source>
-        <translation type="unfinished">돌아가기</translation>
+        <translation type="unfinished">Dönüş</translation>
     </message>
     <message>
         <location filename="mainframe.cpp" line="894"/>
         <location filename="mainframe.cpp" line="912"/>
         <source>Hint</source>
-        <translation type="unfinished">제시</translation>
+        <translation type="unfinished">Uç</translation>
     </message>
     <message>
         <location filename="mainframe.cpp" line="1132"/>
         <source>Instruct</source>
-        <translation type="unfinished">도움</translation>
+        <translation type="unfinished">öğretmek</translation>
     </message>
     <message>
         <location filename="mainframe.cpp" line="1144"/>
@@ -9227,48 +9276,48 @@ Please input the root password to confirm.</source>
         <location filename="mainframe.cpp" line="1552"/>
         <location filename="mainframe.cpp" line="1629"/>
         <source>tips</source>
-        <translation type="unfinished">제시</translation>
+        <translation type="unfinished">Uç</translation>
     </message>
     <message>
         <location filename="mainframe.cpp" line="1144"/>
         <source>Spear Time %1 Hour</source>
-        <translation type="unfinished">남은 시간:%1시간</translation>
+        <translation type="unfinished">Kalan zaman：%1 h</translation>
     </message>
     <message>
         <location filename="mainframe.cpp" line="1148"/>
         <source>No Register</source>
-        <translation type="unfinished">로그인 안함</translation>
+        <translation type="unfinished">Kayıt yok！</translation>
     </message>
     <message>
         <location filename="mainframe.cpp" line="1181"/>
         <source>Records</source>
-        <translation type="unfinished">파일</translation>
+        <translation type="unfinished">Dosya</translation>
     </message>
     <message>
         <location filename="mainframe.cpp" line="1552"/>
         <source>No Register. System Restart Now...</source>
-        <translation type="unfinished">로그인 안함.시스템 리프팅</translation>
+        <translation type="unfinished">Kayıt yok. Sistem Şimdi Yeniden Başlatın …</translation>
     </message>
     <message>
         <location filename="mainframe.cpp" line="1629"/>
         <source>Spare Time %1 Hour</source>
-        <translation type="unfinished">남은 시간:%1시간</translation>
+        <translation type="unfinished">Kalan zaman：%1 h</translation>
     </message>
     <message>
         <location filename="mainframe.cpp" line="1672"/>
         <location filename="mainframe.cpp" line="1688"/>
         <source>warning</source>
-        <translation type="unfinished">경보</translation>
+        <translation type="unfinished">Alarm</translation>
     </message>
     <message>
         <location filename="mainframe.cpp" line="1673"/>
         <source>%1 fnc is broken. Please remove this mold!</source>
-        <translation type="unfinished">모듈 데이터 깨짐.기타 모듈선택후 업데이터 바람</translation>
+        <translation type="unfinished">%1 Parametre eksik！Bu model numarası silin!</translation>
     </message>
     <message>
         <location filename="mainframe.cpp" line="1689"/>
         <source>%1 mold fixed. Please check the sub program!</source>
-        <translation type="unfinished">금형번호 격식 업데이트.사용하는 금형번호의 프로그램 확인!</translation>
+        <translation type="unfinished">%1 Kalıp güncelleştirme，kontrol edin</translation>
     </message>
 </context>
 <context>
@@ -9277,112 +9326,112 @@ Please input the root password to confirm.</source>
         <location filename="function_settings/moldinformation.ui" line="26"/>
         <location filename="function_settings/moldinformation_5.ui" line="20"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="93"/>
         <location filename="function_settings/moldinformation_5.ui" line="136"/>
         <source>Inverse</source>
-        <translation>선택/취소</translation>
+        <translation type="unfinished">Seçimi Ters Çevir</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="106"/>
         <source>Search</source>
-        <translation>검색.</translation>
+        <translation type="unfinished">Arama</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="141"/>
         <location filename="function_settings/moldinformation_5.ui" line="108"/>
         <source>All unselect</source>
-        <translation type="unfinished">전체 선택하지 않음</translation>
+        <translation type="unfinished">Hepsi seçilmemiş</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="174"/>
         <location filename="function_settings/moldinformation_5.ui" line="445"/>
         <source>Source File Name</source>
-        <translation type="unfinished">기존파일</translation>
+        <translation type="unfinished">Kaynak dosya adı</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="209"/>
         <location filename="function_settings/moldinformation_5.ui" line="486"/>
         <source>New File Name</source>
-        <translation type="unfinished">신규 파일명</translation>
+        <translation type="unfinished">Yeni dosya adı</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="240"/>
         <source>Clear</source>
-        <translation>검색삭제</translation>
+        <translation type="unfinished">Kaldırmak</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="262"/>
         <source>Local </source>
-        <translation type="unfinished">현 금형번호</translation>
+        <translation type="unfinished">Bu makine Mold</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="290"/>
         <location filename="function_settings/moldinformation_5.ui" line="80"/>
         <source>All seclect</source>
-        <translation type="unfinished">전부 선택</translation>
+        <translation type="unfinished">Hepsini seç</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="318"/>
         <location filename="function_settings/moldinformation_5.ui" line="177"/>
         <source>USB Export</source>
-        <translation type="unfinished">USB불러오기</translation>
+        <translation type="unfinished">USB verme</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="361"/>
         <location filename="function_settings/moldinformation_5.ui" line="253"/>
         <source>Mold Name</source>
-        <translation type="unfinished">금형번호</translation>
+        <translation type="unfinished">Mold isim</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="366"/>
         <location filename="function_settings/moldinformation_5.ui" line="258"/>
         <source>Create Date</source>
-        <translation type="unfinished">최종수정일자</translation>
+        <translation type="unfinished">Son Düzenleme</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="394"/>
         <location filename="function_settings/moldinformation_5.ui" line="286"/>
         <source>New</source>
-        <translation type="unfinished">새로 만들기</translation>
+        <translation type="unfinished">Yeni</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="419"/>
         <location filename="function_settings/moldinformation_5.ui" line="311"/>
         <source>Copy</source>
-        <translation type="unfinished">복사</translation>
+        <translation type="unfinished">kopya</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="444"/>
         <location filename="function_settings/moldinformation_5.ui" line="336"/>
         <source>Load</source>
-        <translation type="unfinished">선택</translation>
+        <translation type="unfinished">Yükleme</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="469"/>
         <location filename="function_settings/moldinformation_5.ui" line="361"/>
         <source>Delete</source>
-        <translation type="unfinished">삭제</translation>
+        <translation type="unfinished">Silmek</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="494"/>
         <location filename="function_settings/moldinformation_5.ui" line="386"/>
         <source>Export</source>
-        <translation type="unfinished">USB/저장</translation>
+        <translation type="unfinished">Çıkışı</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="522"/>
         <location filename="function_settings/moldinformation_5.ui" line="414"/>
         <source>Import</source>
-        <translation type="unfinished">USB/불러오기</translation>
+        <translation type="unfinished">içe</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="548"/>
         <location filename="function_settings/moldinformation_5.ui" line="205"/>
         <source>USB Import</source>
-        <translation type="unfinished">USB저장</translation>
+        <translation type="unfinished">USB alma</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="92"/>
@@ -9399,13 +9448,13 @@ Please input the root password to confirm.</source>
         <location filename="function_settings/moldinformation.cpp" line="654"/>
         <location filename="function_settings/moldinformation.cpp" line="700"/>
         <source>warning</source>
-        <translation type="unfinished">경보</translation>
+        <translation type="unfinished">Uyarı</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="93"/>
         <source>New file name is empty,
 Please input the file name.</source>
-        <translation type="unfinished">신규 문서명 없음.문서명 입력</translation>
+        <translation type="unfinished">Dosya adı boş, dosya adını girin.</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="114"/>
@@ -9416,57 +9465,58 @@ Please input the file name.</source>
         <location filename="function_settings/moldinformation.cpp" line="790"/>
         <location filename="function_settings/moldinformation.cpp" line="1008"/>
         <source>Warnning</source>
-        <translation type="unfinished">경보</translation>
+        <translation type="unfinished">Uyarı</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="114"/>
         <source>This name can&apos;t not be accept!</source>
-        <translation type="unfinished">제목 사용불가능</translation>
+        <translation type="unfinished">Isim Sen kullanamazsınız！</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="166"/>
         <source>Success</source>
-        <translation type="unfinished">성공</translation>
+        <translation type="unfinished">Success</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="167"/>
         <source>New file success.</source>
-        <translation type="unfinished">새폴드 성공</translation>
+        <translation type="unfinished">Yeni Dosya Success.</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="174"/>
         <source>The file has been existing</source>
-        <translation type="unfinished">파일 있음 </translation>
+        <translation type="unfinished">Zaten var Dosya</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="175"/>
         <source>File already exists,
 Please change a new name.</source>
-        <translation type="unfinished">파일 있음.새 파일로 입력 </translation>
+        <translation type="unfinished">Zaten var Dosya, yeni bir dosya adı girin.</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="214"/>
         <location filename="function_settings/moldinformation.cpp" line="278"/>
         <source>Source file name is empty,
 Please choose an existing file.</source>
-        <translation type="unfinished">파일이 없음.존재하는 파일을 선택</translation>
+        <translation type="unfinished">Kaynak dosya adı boş varolan bir dosyayı seçiniz</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="222"/>
         <source>New file name is empty,
 Please write the destination file name.</source>
-        <translation type="unfinished">신규 문서명 없음.문서명 입력</translation>
+        <translation type="unfinished">Dosya adı boş, dosya adını girin.</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="267"/>
         <source>Destination file already exists!
 Please try a new name</source>
-        <translation type="unfinished">문서명 존재함!재입력 바람</translation>
+        <translation type="unfinished">Hedef dosya zaten var!
+Yeni bir isim deneyin</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="304"/>
         <source>File does not exist!</source>
-        <translation type="unfinished">파일 존재하지 않음</translation>
+        <translation type="unfinished">Dosya yok!</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="347"/>
@@ -9474,38 +9524,38 @@ Please try a new name</source>
         <location filename="function_settings/moldinformation.cpp" line="833"/>
         <location filename="function_settings/moldinformation.cpp" line="984"/>
         <source>Warning</source>
-        <translation type="unfinished">경보</translation>
+        <translation type="unfinished">Uyarı</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="347"/>
         <location filename="function_settings/moldinformation.cpp" line="364"/>
         <source>file name is empty</source>
-        <translation type="unfinished">파일명 추가</translation>
+        <translation type="unfinished">Boş dosya adı</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="388"/>
         <source>Tips</source>
-        <translation type="unfinished">제시</translation>
+        <translation type="unfinished">Uç</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="388"/>
         <source>On the Current mold already!</source>
-        <translation type="unfinished">선택한 금형번호임</translation>
+        <translation type="unfinished">Zaten Mevcut kalıp üzerinde!</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="397"/>
         <source>critical</source>
-        <translation type="unfinished">착오</translation>
+        <translation type="unfinished">Hata</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="397"/>
         <source>Read mold or mold para fail! Please change other mold!</source>
-        <translation type="unfinished">모듈 수치 잃어버림.금형번호 삭제 바람!</translation>
+        <translation type="unfinished">Kalıp bozukunu oku! Lütfen diğer kalıpları değiştirin!</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="422"/>
         <source>Loading...</source>
-        <translation type="unfinished">불러오는 중</translation>
+        <translation type="unfinished">Yükleniyor …</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="467"/>
@@ -9513,7 +9563,7 @@ Please try a new name</source>
         <location filename="function_settings/moldinformation.cpp" line="655"/>
         <location filename="function_settings/moldinformation.cpp" line="701"/>
         <source>The mold file </source>
-        <translation type="unfinished">금형번호 문서</translation>
+        <translation type="unfinished">Mold dosyası</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="469"/>
@@ -9521,24 +9571,24 @@ Please try a new name</source>
         <location filename="function_settings/moldinformation.cpp" line="657"/>
         <location filename="function_settings/moldinformation.cpp" line="703"/>
         <source> is being used</source>
-        <translation type="unfinished">지금 사용중</translation>
+        <translation type="unfinished">Kullanılır….</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="480"/>
         <location filename="function_settings/moldinformation.cpp" line="509"/>
         <source>Stand programs can not be delete!</source>
-        <translation type="unfinished">표준 프로그램 삭제 불가능</translation>
+        <translation type="unfinished">Standart prosedürler silinemez!</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="527"/>
         <source>Are you sure to delete the selected files?</source>
-        <translation type="unfinished">선택한 문서 삭제하시겠어요?</translation>
+        <translation type="unfinished">Seçili dosyaları silmek için emin misiniz?</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="608"/>
         <location filename="function_settings/moldinformation.cpp" line="1008"/>
         <source>Backup files is not exists!</source>
-        <translation type="unfinished">백업 사용가능한 데이터 없음</translation>
+        <translation type="unfinished">Hiçbir mevcut yedek dosyaları!</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="664"/>
@@ -9546,7 +9596,7 @@ Please try a new name</source>
         <location filename="function_settings/moldinformation.cpp" line="855"/>
         <location filename="function_settings/moldinformation.cpp" line="884"/>
         <source>tips</source>
-        <translation type="unfinished">제시</translation>
+        <translation type="unfinished">Uç</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="664"/>
@@ -9554,60 +9604,60 @@ Please try a new name</source>
         <location filename="function_settings/moldinformation.cpp" line="855"/>
         <location filename="function_settings/moldinformation.cpp" line="884"/>
         <source>%1 is exist,replace it?</source>
-        <translation type="unfinished">파일 존재함,교체여부?</translation>
+        <translation type="unfinished">%1zaten var，yedek？</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="738"/>
         <source>Wrong program format!</source>
-        <translation type="unfinished">프로그램 양식 기본림</translation>
+        <translation type="unfinished">Yanlış program formatı !!!</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="746"/>
         <source>Wrong config format!!!</source>
-        <translation type="unfinished">기본린 배치 격식</translation>
+        <translation type="unfinished">Yanlış yapılandırma biçimi !!!</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="751"/>
         <source>Wrong config format!</source>
-        <translation type="unfinished">몰드 종료</translation>
+        <translation type="unfinished">Yanlış yapılandırma biçimi!</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="757"/>
         <source>Restoring, please wait...</source>
-        <translation type="unfinished">복귀중</translation>
+        <translation type="unfinished">Geri Yükleme, lütfen bekleyin …</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="790"/>
         <source>Wrong program format!!!</source>
-        <translation type="unfinished">잘못된 프로그램 양식</translation>
+        <translation type="unfinished">Yanlış program formatı !!!</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="812"/>
         <location filename="function_settings/moldinformation.cpp" line="934"/>
         <source>Information</source>
-        <translation type="unfinished">제시</translation>
+        <translation type="unfinished">Uç</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="812"/>
         <location filename="function_settings/moldinformation.cpp" line="934"/>
         <source>Operation finished!</source>
-        <translation type="unfinished">조작 완료</translation>
+        <translation type="unfinished">İşlem sona erdi!</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="833"/>
         <location filename="function_settings/moldinformation.cpp" line="984"/>
         <source>USB is not connected!</source>
-        <translation type="unfinished">USB 확인 못함</translation>
+        <translation type="unfinished">USB bağlı değil!</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="907"/>
         <source>Backuping, please wait...</source>
-        <translation type="unfinished">백업중</translation>
+        <translation type="unfinished">Yedekleme,Lütfen bekleyin…</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.cpp" line="1011"/>
         <source>Refresh File List, please wait...</source>
-        <translation type="unfinished">파일목록 경신중</translation>
+        <translation type="unfinished">Dosya Listesini Yenile, lütfen bekleyin …</translation>
     </message>
 </context>
 <context>
@@ -9616,13 +9666,13 @@ Please try a new name</source>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="14"/>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="37"/>
         <source>Handwheel Speed</source>
-        <translation type="unfinished">핸드휠 속도</translation>
+        <translation type="unfinished">el çarkı hız</translation>
     </message>
     <message>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="43"/>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="169"/>
         <source>X1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X1</translation>
     </message>
     <message>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="49"/>
@@ -9631,62 +9681,62 @@ Please try a new name</source>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="82"/>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="92"/>
         <source>buttonGroup</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Düğme Grubu</translation>
     </message>
     <message>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="56"/>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="202"/>
         <source>X20</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X20</translation>
     </message>
     <message>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="66"/>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="189"/>
         <source>X5</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X5</translation>
     </message>
     <message>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="79"/>
         <source>X50</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X50</translation>
     </message>
     <message>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="89"/>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="179"/>
         <source>X10</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X10</translation>
     </message>
     <message>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="115"/>
         <source>Handwheel Axis</source>
-        <translation type="unfinished">핸드휠 선택</translation>
+        <translation type="unfinished">el çarkı eksen seçmek</translation>
     </message>
     <message>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="121"/>
         <source>X</source>
-        <translation type="unfinished">X측</translation>
+        <translation type="unfinished">X</translation>
     </message>
     <message>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="127"/>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="140"/>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="150"/>
         <source>buttonGroup_3</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Düğme Grubu_3</translation>
     </message>
     <message>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="134"/>
         <source>Y</source>
-        <translation type="unfinished">Y측</translation>
+        <translation type="unfinished">Y</translation>
     </message>
     <message>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="147"/>
         <source>Z</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Z</translation>
     </message>
     <message>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="160"/>
         <source>Global Speed Step</source>
-        <translation type="unfinished">속도</translation>
+        <translation type="unfinished">Genel Hız</translation>
     </message>
     <message>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="172"/>
@@ -9694,12 +9744,12 @@ Please try a new name</source>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="195"/>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="205"/>
         <source>buttonGroup_2</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Düğme Grubu_2</translation>
     </message>
     <message>
         <location filename="custom_widgets/systemstatusframe/operatingratiosetdialog.ui" line="236"/>
         <source>Ok</source>
-        <translation type="unfinished">확인</translation>
+        <translation type="unfinished">OK</translation>
     </message>
 </context>
 <context>
@@ -9707,23 +9757,23 @@ Please try a new name</source>
     <message>
         <location filename="custom_widgets/iciomonitor/pageswitchbar.ui" line="14"/>
         <source>Frame</source>
-        <translation type="unfinished">기본</translation>
+        <translation type="unfinished">Frame</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/pageswitchbar.ui" line="41"/>
         <location filename="custom_widgets/iciomonitor/pageswitchbar.ui" line="101"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">...</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/pageswitchbar.ui" line="57"/>
         <source>Input</source>
-        <translation type="unfinished">입력</translation>
+        <translation type="unfinished">Giriş</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/pageswitchbar.ui" line="76"/>
         <source>Output</source>
-        <translation type="unfinished">출력</translation>
+        <translation type="unfinished">Çıkış</translation>
     </message>
 </context>
 <context>
@@ -9733,26 +9783,26 @@ Please try a new name</source>
         <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="75"/>
         <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="85"/>
         <source>Machine Operator</source>
-        <translation type="unfinished">작업자</translation>
+        <translation type="unfinished">Operatör</translation>
     </message>
     <message>
         <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="55"/>
         <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="77"/>
         <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="89"/>
         <source>Machine Admin</source>
-        <translation type="unfinished">관리원 </translation>
+        <translation type="unfinished">Yönetici</translation>
     </message>
     <message>
         <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="59"/>
         <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="79"/>
         <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="93"/>
         <source>Advance Admin</source>
-        <translation type="unfinished">고급관리</translation>
+        <translation type="unfinished">Kıdemli Yönetici</translation>
     </message>
     <message>
         <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="81"/>
         <source>None Level</source>
-        <translation type="unfinished">무권한</translation>
+        <translation type="unfinished">Izni yok</translation>
     </message>
 </context>
 <context>
@@ -9761,44 +9811,44 @@ Please try a new name</source>
         <location filename="custom_widgets/programhead/passworddialog.ui" line="14"/>
         <location filename="custom_widgets/programhead/passworddialog_5.ui" line="14"/>
         <source>Switch Level</source>
-        <translation type="unfinished">권한전환</translation>
+        <translation type="unfinished">Level şalter</translation>
     </message>
     <message>
         <location filename="custom_widgets/programhead/passworddialog.ui" line="63"/>
         <location filename="custom_widgets/programhead/passworddialog_5.ui" line="66"/>
         <source>Machine
 Operator</source>
-        <translation type="unfinished">작업자</translation>
+        <translation type="unfinished">Operatör</translation>
     </message>
     <message>
         <location filename="custom_widgets/programhead/passworddialog.ui" line="95"/>
         <location filename="custom_widgets/programhead/passworddialog_5.ui" line="98"/>
         <source>Machine
 Admin</source>
-        <translation type="unfinished">관리자</translation>
+        <translation type="unfinished">Yönetici</translation>
     </message>
     <message>
         <location filename="custom_widgets/programhead/passworddialog.ui" line="127"/>
         <location filename="custom_widgets/programhead/passworddialog_5.ui" line="130"/>
         <source>Advance
 Admin</source>
-        <translation type="unfinished">고급 관리</translation>
+        <translation type="unfinished">Kıdemli Yönetici</translation>
     </message>
     <message>
         <location filename="custom_widgets/programhead/passworddialog.ui" line="145"/>
         <location filename="custom_widgets/programhead/passworddialog_5.ui" line="148"/>
         <source>password</source>
-        <translation type="unfinished">비번</translation>
+        <translation type="unfinished">Şifre</translation>
     </message>
     <message>
         <location filename="custom_widgets/programhead/passworddialog.cpp" line="34"/>
         <source>Error</source>
-        <translation type="unfinished"> 오류</translation>
+        <translation type="unfinished">Hata</translation>
     </message>
     <message>
         <location filename="custom_widgets/programhead/passworddialog.cpp" line="34"/>
         <source>Password is wrong!</source>
-        <translation type="unfinished">비번 오류</translation>
+        <translation type="unfinished">Şifre yanlış!</translation>
     </message>
 </context>
 <context>
@@ -9808,34 +9858,34 @@ Admin</source>
         <location filename="hcinstruction/icinstructparam.cpp" line="303"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="546"/>
         <source>Delay time:</source>
-        <translation type="unfinished">지연시간</translation>
+        <translation type="unfinished">Gecikme zamanı：</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="165"/>
         <source>Bad Product En</source>
-        <translation type="unfinished">불량품 사용</translation>
+        <translation type="unfinished">Kötü Ürün</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="170"/>
         <source>Suck Page En</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Emmek kâğıt</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="294"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="404"/>
         <source>Limit time:</source>
-        <translation type="unfinished">제한시간</translation>
+        <translation type="unfinished">Zaman sınırlaması：</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="478"/>
         <location filename="hcinstruction/icinstructparam.cpp" line="506"/>
         <source>Times:</source>
-        <translation>샘간격시간</translation>
+        <translation type="unfinished">Ürün Sayısı：</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="482"/>
         <source>Selected:</source>
-        <translation type="unfinished">선택</translation>
+        <translation type="unfinished">Seçin</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="495"/>
@@ -9845,332 +9895,332 @@ Admin</source>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="499"/>
         <source>On</source>
-        <translation type="unfinished">ON</translation>
+        <translation type="unfinished">On</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="541"/>
         <source>Action time:</source>
-        <translation type="unfinished">동작시간</translation>
+        <translation type="unfinished">Eylem zamanı：</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="561"/>
         <source>C</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">C</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="562"/>
         <source>X1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="563"/>
         <source>Y1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="564"/>
         <source>Z</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Z</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="565"/>
         <source>X2</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">X2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="566"/>
         <source>Y2</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Y2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="567"/>
         <source>A</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">A</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="568"/>
         <source>B</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">B</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="569"/>
         <source>3-D</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">3-D</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="570"/>
         <source>Main arm up</source>
-        <translation type="unfinished">제품상승</translation>
+        <translation type="unfinished">Main-Arm Yukarı</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="571"/>
         <source>Main arm down</source>
-        <translation type="unfinished">제품하강</translation>
+        <translation type="unfinished">Main-Arm Aşağı</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="572"/>
         <source>Main arm forward</source>
-        <translation type="unfinished">제품전진</translation>
+        <translation type="unfinished">Main-Arm ileri  </translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="573"/>
         <source>Main arm backward</source>
-        <translation type="unfinished">측후진</translation>
+        <translation type="unfinished">Main-Arm çekilme</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="574"/>
         <source>Horizontal posture 1</source>
-        <translation type="unfinished">회전1</translation>
+        <translation type="unfinished">Duruş Seviye1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="575"/>
         <source>Vertical posture 1</source>
-        <translation type="unfinished">회전복귀1</translation>
+        <translation type="unfinished">Duruş Dikey-1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="576"/>
         <source>Horizontal posture 2</source>
-        <translation type="unfinished">회전2</translation>
+        <translation type="unfinished">Duruş Seviye2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="577"/>
         <source>Vertical posture 2</source>
-        <translation type="unfinished">회전복귀2</translation>
+        <translation type="unfinished">Duruş Dikey2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="578"/>
         <source>Vice arm up</source>
-        <translation type="unfinished">런너 상승</translation>
+        <translation type="unfinished">Sub-Arm Yukarı</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="579"/>
         <source>Vice arm down</source>
-        <translation type="unfinished">런너하강</translation>
+        <translation type="unfinished">Sub-Arm Aşağı</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="580"/>
         <source>Vice arm forward</source>
-        <translation type="unfinished">런너 전진</translation>
+        <translation type="unfinished">Sub-Arm ileri</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="581"/>
         <source>Vice arm backward</source>
-        <translation type="unfinished">런너 후진</translation>
+        <translation type="unfinished">Sub-Arm çekilme</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="582"/>
         <source>Traverse out</source>
-        <translation type="unfinished">주행</translation>
+        <translation type="unfinished">Enine dışarı</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="583"/>
         <source>Traverse in</source>
-        <translation type="unfinished">주행복귀</translation>
+        <translation type="unfinished">Enine girmek</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="587"/>
         <source>Check</source>
-        <translation type="unfinished">확인</translation>
+        <translation type="unfinished">Test</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="588"/>
         <source>Mold end</source>
-        <translation>몰드 종료</translation>
+        <translation type="unfinished">Modülü Bitiş</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="589"/>
         <source>Parallel</source>
-        <translation type="unfinished">서열</translation>
+        <translation type="unfinished">paralel</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="590"/>
         <source>Wait</source>
-        <translation type="unfinished">대기</translation>
+        <translation type="unfinished">Beklemek</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="591"/>
         <source>Cut</source>
-        <translation type="unfinished">확인</translation>
+        <translation type="unfinished">Makaslama</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="592"/>
         <source>Other</source>
-        <translation type="unfinished">기타</translation>
+        <translation type="unfinished">Diğer</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="595"/>
         <source>Clip1 ON</source>
-        <translation type="unfinished">척크1 ON</translation>
+        <translation type="unfinished">Clip1 ON</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="596"/>
         <source>Clip2 ON</source>
-        <translation type="unfinished">척크2 ON</translation>
+        <translation type="unfinished">Clip2 ON</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="597"/>
         <source>Clip3 ON</source>
-        <translation type="unfinished">척크3 ON</translation>
+        <translation type="unfinished">Clip3 ON</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="598"/>
         <source>Clip4 ON</source>
-        <translation type="unfinished">척크4 ON</translation>
+        <translation type="unfinished">Clip4 ON</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="599"/>
         <source>Sucker1: ON</source>
-        <translation type="unfinished">흡착1 ON</translation>
+        <translation type="unfinished">Emmek 1：ON</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="600"/>
         <source>Sucker2: ON</source>
-        <translation type="unfinished">흡착2 ON</translation>
+        <translation type="unfinished">Emmek 2：ON</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="601"/>
         <source>Injection ON</source>
-        <translation type="unfinished">급유 ON</translation>
+        <translation type="unfinished">Injection ON</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="602"/>
         <source>Conveyor ON</source>
-        <translation type="unfinished">콘베어 ON</translation>
+        <translation type="unfinished">Konveyör ON</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="603"/>
         <source>Lock Mold ON</source>
-        <translation type="unfinished">형폐가능</translation>
+        <translation type="unfinished">Kilit Kalıp ON</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="605"/>
         <source>Eject ON</source>
-        <translation type="unfinished">에.전 가능 </translation>
+        <translation type="unfinished">Eject ON</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="606"/>
         <source>Layout ON</source>
-        <translation type="unfinished">다단 ON</translation>
+        <translation type="unfinished">İstifleme ON</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="608"/>
         <source>Core1 Permit</source>
-        <translation>코어1 가능</translation>
+        <translation type="unfinished">IMM-PC1-Içine</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="609"/>
         <source>Core2 Permit</source>
-        <translation>코어2 가능</translation>
+        <translation type="unfinished">IMM-PC2-Içine</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="613"/>
         <source>Clip1 OFF</source>
-        <translation>척크1 OFF</translation>
+        <translation type="unfinished">Clip1 OFF</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="614"/>
         <source>Clip2 OFF</source>
-        <translation>척크2 OFF</translation>
+        <translation type="unfinished">Clip2 OFF</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="615"/>
         <source>Clip3 OFF</source>
-        <translation>척크3 OFF</translation>
+        <translation type="unfinished">Clip3 OFF</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="616"/>
         <source>Clip4 OFF</source>
-        <translation>척크4 OFF</translation>
+        <translation type="unfinished">Clip4 OFF</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="617"/>
         <source>Sucker1: OFF</source>
-        <translation>흡착1 OFF</translation>
+        <translation type="unfinished">Emmek 1：OFF</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="618"/>
         <source>Sucker2: OFF</source>
-        <translation>흡착2 OFF</translation>
+        <translation type="unfinished">Emmek 2：OFF</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="619"/>
         <source>Injection OFF</source>
-        <translation type="unfinished">급유 OFF</translation>
+        <translation type="unfinished">Injection OFF</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="620"/>
         <source>Conveyor OFF</source>
-        <translation type="unfinished">콘베어 OFF</translation>
+        <translation type="unfinished">Konveyör OFF</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="621"/>
         <source>Lock Mold OFF</source>
-        <translation>형폐완료</translation>
+        <translation type="unfinished">Kilit Kalıp OFF</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="623"/>
         <source>Eject OFF</source>
-        <translation type="unfinished">에젝터 금지</translation>
+        <translation type="unfinished">Eject OFF</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="624"/>
         <source>Layout OFF</source>
-        <translation type="unfinished">다단종료</translation>
+        <translation type="unfinished">İstifleme Bitiş</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="626"/>
         <source>Core1 OFF</source>
-        <translation>코어1입 정지</translation>
+        <translation type="unfinished">IMM-PC1-Içine OFF</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="627"/>
         <source>Core2 OFF</source>
-        <translation>코어2입 정지</translation>
+        <translation type="unfinished">Core2 OFF</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="628"/>
         <source>Reserve 1</source>
-        <translation>샘플1</translation>
+        <translation type="unfinished">Rezerv 1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="630"/>
         <source>Reserve 2</source>
-        <translation>샘플2</translation>
+        <translation type="unfinished">Rezerv 2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="631"/>
         <source>Reserve 3</source>
-        <translation>샘플3</translation>
+        <translation type="unfinished">Rezerv 3</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="632"/>
         <source>Reserve 4</source>
-        <translation>샘플4</translation>
+        <translation type="unfinished">Rezerv 4</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="633"/>
         <source>Sucker 3</source>
-        <translation type="unfinished">흡착3</translation>
+        <translation type="unfinished">Emmek 3</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="634"/>
         <source>Sucker 4</source>
-        <translation type="unfinished">흡착4</translation>
+        <translation type="unfinished">Emmek 4</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="636"/>
         <source>Reserve 5</source>
-        <translation type="unfinished">샘플5</translation>
+        <translation type="unfinished">Rezerv 5</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="637"/>
         <source>Reserve 6</source>
-        <translation type="unfinished">샘플6</translation>
+        <translation type="unfinished">Rezerv 6</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="642"/>
         <source>Clip End</source>
-        <translation>척크개방</translation>
+        <translation type="unfinished">Clip açık</translation>
     </message>
 </context>
 <context>
@@ -10178,22 +10228,22 @@ Admin</source>
     <message>
         <location filename="simulateknob.ui" line="14"/>
         <source>Dialog</source>
-        <translation type="unfinished">회전 소잡이 모드</translation>
+        <translation type="unfinished">Simülasyon</translation>
     </message>
     <message>
         <location filename="simulateknob.ui" line="26"/>
         <source>Manual</source>
-        <translation type="unfinished">수동</translation>
+        <translation type="unfinished">Manuel</translation>
     </message>
     <message>
         <location filename="simulateknob.ui" line="39"/>
         <source>Stop</source>
-        <translation type="unfinished">정지</translation>
+        <translation type="unfinished">Dur</translation>
     </message>
     <message>
         <location filename="simulateknob.ui" line="52"/>
         <source>Auto</source>
-        <translation type="unfinished">자동</translation>
+        <translation type="unfinished">Auto</translation>
     </message>
 </context>
 <context>
@@ -10202,40 +10252,40 @@ Admin</source>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="14"/>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="14"/>
         <source>Keyboard</source>
-        <translation type="unfinished"> 키보드</translation>
+        <translation type="unfinished">Klavye</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1299"/>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1299"/>
         <source>Backspace</source>
-        <translation type="unfinished">  백스</translation>
+        <translation type="unfinished">Geri tuşu</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1335"/>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1335"/>
         <source>Cancel</source>
-        <translation type="unfinished"> 취소</translation>
+        <translation type="unfinished">Iptal edildi</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.ui" line="1371"/>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1371"/>
         <source>OK</source>
-        <translation type="unfinished"> 확정</translation>
+        <translation type="unfinished">OK</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1405"/>
         <source>(</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">(</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog_5.ui" line="1439"/>
         <source>)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">)</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualkeyboard/virtualkeyboarddialog.cpp" line="19"/>
         <source>VirtualKeyboard</source>
-        <translation type="unfinished"> 키보드</translation>
+        <translation type="unfinished">Klavye</translation>
     </message>
 </context>
 <context>
@@ -10244,7 +10294,7 @@ Admin</source>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog.ui" line="14"/>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="14"/>
         <source>Keyboard</source>
-        <translation type="unfinished">키보드</translation>
+        <translation type="unfinished">Klavye</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog.ui" line="45"/>
@@ -10256,36 +10306,36 @@ Admin</source>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog.ui" line="458"/>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="458"/>
         <source>+</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">+</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog.ui" line="486"/>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="486"/>
         <source>-</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">-</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog.ui" line="516"/>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="516"/>
         <source>Backspace</source>
-        <translation type="unfinished">돌아가기</translation>
+        <translation type="unfinished">Geri tuşu</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog.ui" line="544"/>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="544"/>
         <source>Cancel</source>
-        <translation type="unfinished">취소</translation>
+        <translation type="unfinished">Iptal edildi</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog.ui" line="572"/>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="572"/>
         <source>OK</source>
-        <translation type="unfinished">확인</translation>
+        <translation type="unfinished">OK</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="362"/>
         <source>CE</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">CE</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="421"/>
@@ -10299,42 +10349,43 @@ Admin</source>
     <message>
         <location filename="hcinstruction/icactionsix.ui" line="26"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Form</translation>
     </message>
     <message>
         <location filename="hcinstruction/icactionsix.ui" line="50"/>
         <source>close</source>
-        <translation>닫기</translation>
+        <translation type="unfinished">Yakın</translation>
     </message>
     <message>
         <location filename="hcinstruction/icactionsix.ui" line="72"/>
         <source>start-up</source>
-        <translation>시작</translation>
+        <translation type="unfinished">Başlangıç</translation>
     </message>
     <message>
         <location filename="hcinstruction/icactionsix.ui" line="85"/>
         <source>stop it</source>
-        <translation>정지</translation>
+        <translation type="unfinished">Dur</translation>
     </message>
     <message>
         <location filename="hcinstruction/icactionsix.ui" line="98"/>
         <source>return</source>
-        <translation>복귀</translation>
+        <translation type="unfinished">Dönmek</translation>
     </message>
     <message>
         <location filename="hcinstruction/icactionsix.ui" line="111"/>
         <source>origin</source>
-        <translation>원점</translation>
+        <translation type="unfinished">köken</translation>
     </message>
     <message>
         <location filename="hcinstruction/icactionsix.ui" line="124"/>
         <source>up</source>
-        <translation>가속</translation>
+        <translation type="unfinished">Artış hızı</translation>
     </message>
     <message>
         <location filename="hcinstruction/icactionsix.ui" line="137"/>
         <source>down</source>
-        <translation>감속</translation>
+        <translation type="unfinished">Hızını -
+azaltmak</translation>
     </message>
 </context>
 </TS>
