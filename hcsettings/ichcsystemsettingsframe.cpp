@@ -115,7 +115,7 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
     editorToConfigIDs_.insert(ui->limitFunctionBox, ICConfigString::kCS_PANEL_Register_Extent);
     ICLogInit
 
-            ui->turkeyBox->hide();
+//            ui->turkeyBox->hide();
             ui->koreanBox->hide();
 }
 
