@@ -271,7 +271,7 @@ void ICStructDefineFrame::changeEvent(QEvent *e)
     QWidget::changeEvent(e);
     switch (e->type()) {
     case QEvent::LanguageChange:
-     //  ui->retranslateUi(this);
+//       ui->retranslateUi(this);
        retranslateUi_();
         break;
     default:
@@ -394,13 +394,26 @@ void ICStructDefineFrame::retranslateUi_()
     ui->tabWidget->setTabText(0,tr("Arm Define"));
     ui->tabWidget->setTabText(1,tr("Out Define"));
     ui->tabWidget->setTabText(2,tr("Signal Define"));
-    ui->tabWidget->setTabText(3,tr("Other Define"));
+    ui->tabWidget->setTabText(3,tr("Origin"));
+    ui->tabWidget->setTabText(4,tr("Other Define"));
     ui->adjUse->setText(tr("Use"));
     ui->adjNoUse->setText(tr("No Use"));
     ui->label_27->setText(tr("Servo Flex"));
     ui->label_19->setText(tr("Adjust"));
     ui->label_10->setText(tr("Reserve"));
     ui->label_11->setText(tr("Reserve"));
+    ui->originSeqBox->setTitle(tr("Origin Sequence"));
+    ui->os1->setItemText(0,tr("None"));
+    ui->os2->setItemText(0,tr("None"));
+    ui->os3->setItemText(0,tr("None"));
+    ui->os4->setItemText(0,tr("None"));
+    ui->os5->setItemText(0,tr("None"));
+    ui->os6->setItemText(0,tr("None"));
+    ui->os7->setItemText(0,tr("None"));
+    ui->os8->setItemText(0,tr("None"));
+    ui->odstEn->setText(tr("ODST"));
+    ui->absServo->setText(tr("Abs Servo"));
+    ui->originBtn->setText(tr("Start Origin"));
 }
 
 void ICStructDefineFrame::on_saveButton_clicked()
