@@ -897,7 +897,7 @@ pgelost</translation>
     </message>
     <message>
         <location filename="hcinstruction/icautorunrevise.ui" line="79"/>
-        <location filename="hcinstruction/icautorunrevise.cpp" line="100"/>
+        <location filename="hcinstruction/icautorunrevise.cpp" line="101"/>
         <source>Limit Time:</source>
         <translation type="unfinished">Limit Time:</translation>
     </message>
@@ -8121,6 +8121,14 @@ ruit</translation>
         <location filename="hcsettings/icstructdefineframe.cpp" line="318"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="322"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="326"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="406"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="407"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="408"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="409"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="410"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="411"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="412"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="413"/>
         <source>None</source>
         <translation type="unfinished">geen</translation>
     </message>
@@ -8594,11 +8602,13 @@ efiniëren</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1856"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="397"/>
         <source>Origin</source>
         <translation type="unfinished">home</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="1893"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="405"/>
         <source>Origin Sequence</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8608,7 +8618,7 @@ efiniëren</translation>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1904"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1910"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="385"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="397"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="398"/>
         <source>Other Define</source>
         <translation type="unfinished">Andere d-
 efiniëren</translation>
@@ -8616,17 +8626,19 @@ efiniëren</translation>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2648"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2086"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="401"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="402"/>
         <source>Adjust</source>
         <translation type="unfinished">tune bit</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2808"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="415"/>
         <source>Abs Servo</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2818"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="416"/>
         <source>Start Origin</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8634,7 +8646,7 @@ efiniëren</translation>
         <location filename="hcsettings/icstructdefineframe.ui" line="2594"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1993"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2069"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="398"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="399"/>
         <source>Use</source>
         <translation type="unfinished">Uitsch-
 akelen</translation>
@@ -8643,7 +8655,7 @@ akelen</translation>
         <location filename="hcsettings/icstructdefineframe.ui" line="2680"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1954"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2031"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="399"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="400"/>
         <source>No Use</source>
         <translation type="unfinished">Uitsch-
 akelen</translation>
@@ -8656,6 +8668,7 @@ akelen</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2721"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="414"/>
         <source>ODST</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8692,7 +8705,7 @@ akelen</translation>
     <message>
         <location filename="hcsettings/icstructdefineframe.ui" line="2776"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1961"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="400"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="401"/>
         <source>Servo Flex</source>
         <translation type="unfinished">Servo Flex</translation>
     </message>
@@ -8740,7 +8753,7 @@ akelen</translation>
         <location filename="hcsettings/icstructdefineframe.ui" line="2859"/>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2195"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="392"/>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="478"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="491"/>
         <source>Save</source>
         <translation type="unfinished">bewaar</translation>
     </message>
@@ -8791,18 +8804,18 @@ akelen</translation>
         <translation type="unfinished">escape</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="402"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="403"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="404"/>
         <source>Reserve</source>
         <translation type="unfinished">reserve</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="472"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="485"/>
         <source>Tips</source>
         <translation type="unfinished">Tips</translation>
     </message>
     <message>
-        <location filename="hcsettings/icstructdefineframe.cpp" line="472"/>
+        <location filename="hcsettings/icstructdefineframe.cpp" line="485"/>
         <source>Save Sucessfully!</source>
         <translation type="unfinished">succesvol opgeslagen</translation>
     </message>

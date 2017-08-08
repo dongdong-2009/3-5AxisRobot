@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1196</width>
+    <width>888</width>
     <height>463</height>
    </rect>
   </property>
@@ -633,7 +633,7 @@ QRadioButton::indicator:unchecked:disabled
        <item row="6" column="0" colspan="2">
         <layout class="QHBoxLayout" name="horizontalLayout_8">
          <property name="rightMargin">
-          <number>200</number>
+          <number>150</number>
          </property>
          <item>
           <widget class="QLabel" name="label_40">
@@ -1531,7 +1531,7 @@ QRadioButton::indicator:unchecked:disabled
  </resources>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="languageButtonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
  </buttongroups>
 </ui>

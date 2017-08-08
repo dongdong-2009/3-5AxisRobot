@@ -727,7 +727,6 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
                 ICMold::CurrentMold()->SetMoldContent(ICMold::UIItemToMoldItem(programList_));
             }
             isModify_ = isModify_ || isM;
-
         }
     }
     qDebug()<<"Modify"<<isModify_;

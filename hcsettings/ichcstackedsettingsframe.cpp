@@ -8,6 +8,7 @@
 #include "icconfigstring.h"
 
 #include <QDebug>
+#include <QMessageBox>
 
 ICHCStackedSettingsFrame::ICHCStackedSettingsFrame(QWidget *parent) :
     QFrame(parent),
@@ -323,6 +324,13 @@ void ICHCStackedSettingsFrame::on_zUnit_toggled(bool checked)
 
 void ICHCStackedSettingsFrame::on_xRPStepLineEdit_textChanged(const QString &arg1)
 {
+//    if(ui->xRPStepLineEdit->TransThisTextToThisInt() < 0)
+//    {
+//        QMessageBox::warning(this,tr("Input Error"),
+//                             tr("Stack spacing can not be negative!"));
+//        int StackGap = ICMold::CurrentMold()->StackParam(currentPage_, ICMold::X_Gap);
+//        ui->xRPStepLineEdit->SetThisIntToThisText(StackGap);
+//    }
     double v = arg1.toDouble();
     ui->xRPStepLineEdit->blockSignals(true);
 
