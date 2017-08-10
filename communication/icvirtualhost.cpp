@@ -137,7 +137,7 @@ ICVirtualHost::ICVirtualHost(QObject *parent) :
         SetFinishProductCount(0);
         ICCommandProcessor::Instance()->ModifySysParam(SYS_RsvReadMold, 0);
         ICCommandProcessor::Instance()->ModifySysParam(SYS_RsvWorkmold, 0);
-
+        SaveSystemConfig();
     }
     timer_->start(15);
     //#endif
