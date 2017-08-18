@@ -169,10 +169,13 @@ void ICInputMethodKeyboard::on_btn_bs_clicked()
     }
     else
     {
-        QKeyEvent *e = new QKeyEvent(QKeyEvent::KeyPress,
-                                     Qt::Key_Backspace,
-                                     Qt::NoModifier);
-        qApp->postEvent(ui->plainTextEdit, e);
+        QTextCursor textCursor = ui->plainTextEdit->textCursor();
+        textCursor.deletePreviousChar();
+        ui->plainTextEdit->setTextCursor(textCursor);
+//        QKeyEvent *e = new QKeyEvent(QKeyEvent::KeyPress,
+//                                     Qt::Key_Backspace,
+//                                     Qt::NoModifier);
+//        qApp->postEvent(ui->plainTextEdit, e);
     }
 }
 
