@@ -7,7 +7,7 @@
 HCManualReservePage::HCManualReservePage(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::HCManualReservePage),
-    clips_(6, false)
+    clips_(8, false)
 {
     ui->setupUi(this);
     ui->reserve1InLabel->hide();
@@ -40,6 +40,10 @@ HCManualReservePage::HCManualReservePage(QWidget *parent) :
     wrappers_.append(wrapper);
     wrapper = new ICCommandKeyWrapper(ui->connectReserve6ToolButton, IC::VKEY_RESERVE6_ON);
     wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->connectReserve7ToolButton, IC::VKEY_RESERVE7_ON);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->connectReserve8ToolButton, IC::VKEY_RESERVE8_ON);
+    wrappers_.append(wrapper);
 
     wrapper = new ICCommandKeyWrapper(ui->disconnectReserve1ToolButton, IC::VKEY_RESERVE1_OFF);
     wrappers_.append(wrapper);
@@ -52,6 +56,10 @@ HCManualReservePage::HCManualReservePage(QWidget *parent) :
     wrapper = new ICCommandKeyWrapper(ui->disconnectReserve5ToolButton, IC::VKEY_RESERVE5_OFF);
     wrappers_.append(wrapper);
     wrapper = new ICCommandKeyWrapper(ui->disconnectReserve6ToolButton, IC::VKEY_RESERVE6_OFF);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->disconnectReserve7ToolButton, IC::VKEY_RESERVE7_OFF);
+    wrappers_.append(wrapper);
+    wrapper = new ICCommandKeyWrapper(ui->disconnectReserve8ToolButton, IC::VKEY_RESERVE8_OFF);
     wrappers_.append(wrapper);
 
 }
@@ -214,6 +222,46 @@ void HCManualReservePage::StatusRefreshed()
             {
                 clips_.clearBit(5);
                 ui->reserve6StatusLabel->setPixmap(off);
+            }
+        }
+    }
+
+    if(ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisY1) != ICVirtualHost::ICAxisDefine_Pneumatic)
+    { //Y轴选为非气动轴时
+        if(host->IsOutputOn(28))
+        {
+            if(!clips_.at(6))
+            {
+                clips_.setBit(6);
+                ui->reserve7StatusLabel->setPixmap(on);
+            }
+        }
+        else
+        {
+            if(clips_.at(6))
+            {
+                clips_.clearBit(6);
+                ui->reserve7StatusLabel->setPixmap(off);
+            }
+        }
+    }
+
+    if(ICVirtualHost::GlobalVirtualHost()->AxisDefine(ICVirtualHost::ICAxis_AxisA) != ICVirtualHost::ICAxisDefine_Pneumatic)
+    { //A轴选为非气动轴时
+        if(host->IsOutputOn(30))
+        {
+            if(!clips_.at(7))
+            {
+                clips_.setBit(7);
+                ui->reserve8StatusLabel->setPixmap(on);
+            }
+        }
+        else
+        {
+            if(clips_.at(7))
+            {
+                clips_.clearBit(7);
+                ui->reserve8StatusLabel->setPixmap(off);
             }
         }
     }
