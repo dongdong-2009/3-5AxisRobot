@@ -188,6 +188,8 @@ ICStructDefineFrame::ICStructDefineFrame(QWidget *parent) :
         ui->sedM2->setChecked(true);
     if(host->EscapeWay() == 2)
         ui->sedM3->setChecked(true);
+    if(host->EscapeWay() == 3)
+        ui->sedM4->setChecked(true);
     if(ICParametersSave::Instance()->IsAdjustFunctionOn())
     {
         ui->adjUse->blockSignals(true);
@@ -389,6 +391,7 @@ void ICStructDefineFrame::retranslateUi_()
     ui->sedM1->setText(tr("Run On Close"));
     ui->sedM2->setText(tr("Ret On Close"));
     ui->sedM3->setText(tr("Stop On Close"));
+    ui->sedM4->setText(tr("Run On Close Confirm"));
     ui->saveButton->setText(tr("Save"));
 
     ui->tabWidget->setTabText(0,tr("Arm Define"));
@@ -571,6 +574,7 @@ void ICStructDefineFrame::InitEscapeBox()
     buttongroup_->addButton(ui->sedM1, 0);
     buttongroup_->addButton(ui->sedM2, 1);
     buttongroup_->addButton(ui->sedM3, 2);
+    buttongroup_->addButton(ui->sedM4, 3);
     QList<QAbstractButton*> buttons = buttongroup_->buttons();
     for(int i = 0; i != buttons.size(); ++i)
     {
