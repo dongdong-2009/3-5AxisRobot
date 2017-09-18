@@ -116,7 +116,7 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
     ICLogInit
 
 //            ui->turkeyBox->hide();
-            ui->koreanBox->hide();
+//            ui->koreanBox->hide();
 }
 
 ICHCSystemSettingsFrame::~ICHCSystemSettingsFrame()
