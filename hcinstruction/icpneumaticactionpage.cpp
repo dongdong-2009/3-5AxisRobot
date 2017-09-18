@@ -21,13 +21,17 @@ ICPneumaticActionPage::ICPneumaticActionPage(QWidget *parent) :
 //    ioNames_<<tr("Reserve2  ")
 //           <<tr("Reserve3  ")<<tr("Reserve4  ")<<tr("Reserve5  ")<<tr("Reserve6  ");
     ioNames_<<tr("Reserve1  ")<<tr("Reserve2  ")
-           <<tr("Reserve3  ")<<tr("Reserve4  ")<<tr("Reserve5  ")<<tr("Reserve6  ");
+           <<tr("Reserve3  ")<<tr("Reserve4  ")
+          <<tr("Reserve5  ")<<tr("Reserve6  ")
+        <<tr("Reserve7  ")<<tr("Reserve8  ");
     onClipToOffClip_.insert(ICMold::ACT_AUX1, ICMold::ACT_AUX1);
     onClipToOffClip_.insert(ICMold::ACT_AUX2, ICMold::ACT_AUX2);
     onClipToOffClip_.insert(ICMold::ACT_AUX3, ICMold::ACT_AUX3);
     onClipToOffClip_.insert(ICMold::ACT_AUX4, ICMold::ACT_AUX4);
     onClipToOffClip_.insert(ICMold::ACT_AUX5, ICMold::ACT_AUX5);
     onClipToOffClip_.insert(ICMold::ACT_AUX6, ICMold::ACT_AUX6);
+    onClipToOffClip_.insert(ICMold::ACT_AUX3 + 1000, ICMold::ACT_AUX3 + 1000); //预留7与预留3共用一个动作类型
+    onClipToOffClip_.insert(ICMold::ACT_AUX4 + 1000, ICMold::ACT_AUX4 + 1000); //预留8与预留4共用一个动作类型
 
     offClipToOnClip_.insert(ICMold::ACT_AUX1, ICMold::ACT_AUX1);
     offClipToOnClip_.insert(ICMold::ACT_AUX2, ICMold::ACT_AUX2);
@@ -35,6 +39,8 @@ ICPneumaticActionPage::ICPneumaticActionPage(QWidget *parent) :
     offClipToOnClip_.insert(ICMold::ACT_AUX4, ICMold::ACT_AUX4);
     offClipToOnClip_.insert(ICMold::ACT_AUX5, ICMold::ACT_AUX5);
     offClipToOnClip_.insert(ICMold::ACT_AUX6, ICMold::ACT_AUX6);
+    offClipToOnClip_.insert(ICMold::ACT_AUX3 + 1000, ICMold::ACT_AUX3 + 1000);
+    offClipToOnClip_.insert(ICMold::ACT_AUX4 + 1000, ICMold::ACT_AUX4 + 1000);
     QList<uint> initStatus = onClipToOffClip_.values();
     for(int i = 0; i != ui->tableWidget->rowCount(); ++i)
     {
@@ -70,7 +76,9 @@ ICPneumaticActionPage::ICPneumaticActionPage(QWidget *parent) :
     commandKeyMap_.insert(settingButtons_.at(2), qMakePair(static_cast<int>(IC::VKEY_RESERVE3_ON), static_cast<int>(IC::VKEY_RESERVE3_OFF)));
     commandKeyMap_.insert(settingButtons_.at(3), qMakePair(static_cast<int>(IC::VKEY_RESERVE4_ON), static_cast<int>(IC::VKEY_RESERVE4_OFF)));
     commandKeyMap_.insert(settingButtons_.at(4), qMakePair(static_cast<int>(IC::VKEY_RESERVE5_ON), static_cast<int>(IC::VKEY_RESERVE5_OFF)));
-    commandKeyMap_.insert(settingButtons_.at(5), qMakePair(static_cast<int>(IC::VKEY_RESERVE6_ON), static_cast<int>(IC::VKEY_RESERVE6_OFF)));
+    commandKeyMap_.insert(settingButtons_.at(5), qMakePair(static_cast<int>(IC::VKEY_RESERVE6_ON), static_cast<int>(IC::VKEY_RESERVE6_OFF)));   
+    commandKeyMap_.insert(settingButtons_.at(6), qMakePair(static_cast<int>(IC::VKEY_RESERVE7_ON), static_cast<int>(IC::VKEY_RESERVE7_OFF)));
+    commandKeyMap_.insert(settingButtons_.at(7), qMakePair(static_cast<int>(IC::VKEY_RESERVE8_ON), static_cast<int>(IC::VKEY_RESERVE8_OFF)));
 //    commandKeyMap_.insert(settingButtons_.at(0), qMakePair(static_cast<int>(IC::VKEY_RESERVE1_ON), static_cast<int>(IC::VKEY_RESERVE1_OFF)));
 //    commandKeyMap_.insert(settingButtons_.at(1), qMakePair(static_cast<int>(IC::VKEY_RESERVE2_ON), static_cast<int>(IC::VKEY_RESERVE2_OFF)));
 //    commandKeyMap_.insert(settingButtons_.at(2), qMakePair(static_cast<int>(IC::VKEY_RESERVE3_ON), static_cast<int>(IC::VKEY_RESERVE3_OFF)));
@@ -103,7 +111,9 @@ void ICPneumaticActionPage::changeEvent(QEvent *e)
 //        ioNames_<<tr("Reserve2  ")
 //               <<tr("Reserve3  ")<<tr("Reserve4  ")<<tr("Reserve5  ")<<tr("Reserve6  ");
         ioNames_<<tr("Reserve1  ")<<tr("Reserve2  ")
-               <<tr("Reserve3  ")<<tr("Reserve4  ")<<tr("Reserve5  ")<<tr("Reserve6  ");
+               <<tr("Reserve3  ")<<tr("Reserve4  ")
+              <<tr("Reserve5  ")<<tr("Reserve6  ")
+            <<tr("Reserve7  ")<<tr("Reserve8  ");
         for(int i = 0; i != ui->tableWidget->rowCount(); ++i)
         {
             settingButtons_[i]->setText(ioNames_.at(i));
@@ -159,11 +169,24 @@ QList<ICMoldItem> ICPneumaticActionPage::CreateCommandImpl() const
     {
         if(ui->tableWidget->item(i, 0)->checkState() == Qt::Checked)
         {
-            item.SetIFVal(buttonToLight_.value(qobject_cast<QAbstractButton*>(ui->tableWidget->cellWidget(i, 1))));
-            item.SetClip(buttonToClip_.value(qobject_cast<QAbstractButton*>(ui->tableWidget->cellWidget(i, 1))));
+//            item.SetIFVal(buttonToLight_.value(qobject_cast<QAbstractButton*>(ui->tableWidget->cellWidget(i, 1))));
+//            item.SetClip(buttonToClip_.value(qobject_cast<QAbstractButton*>(ui->tableWidget->cellWidget(i, 1))));
             item.SetDVal(editorVector_.at(i)->Delay());
 //            item.SetSVal(editorVector_.at(i)->Times());
             item.SetActualMoldCount(editorVector_.at(i)->Times());
+            if(buttonToClip_.value(qobject_cast<QAbstractButton*>(ui->tableWidget->cellWidget(i, 1))) == ICMold::ACT_AUX3 + 1000 ||
+               buttonToClip_.value(qobject_cast<QAbstractButton*>(ui->tableWidget->cellWidget(i, 1))) == ICMold::ACT_AUX4 + 1000)
+            {
+                item.SetClip(buttonToClip_.value(qobject_cast<QAbstractButton*>(ui->tableWidget->cellWidget(i, 1))) - 1000);
+                int val = buttonToLight_.value(qobject_cast<QAbstractButton*>(ui->tableWidget->cellWidget(i, 1)));
+                val &= 0xFFDF;
+                item.SetIFVal(val | (1 << 5));
+            }
+            else
+            {
+                item.SetClip(buttonToClip_.value(qobject_cast<QAbstractButton*>(ui->tableWidget->cellWidget(i, 1))));
+                item.SetIFVal(buttonToLight_.value(qobject_cast<QAbstractButton*>(ui->tableWidget->cellWidget(i, 1))));
+            }
             ret.append(item);
         }
     }

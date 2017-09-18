@@ -9,6 +9,7 @@
 #include "config.h"
 
 #include <QDebug>
+#include <QRegExp>
 
 ICInstructParam * ICInstructParam::instance_ = NULL;
 QMap<int, QString> ICInstructParam::actionGroupMap_;
@@ -490,11 +491,27 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
                 action == ICMold::ACT_AUX6)
         {
             commandStr.chop(2);
-            if(moldItem.IFVal() == 0)
+            if((action == ICMold::ACT_AUX3) &&
+               (moldItem.IFVal() & 0x20) == 0x20)
+            {
+//                commandStr.chop(3);
+                commandStr.remove(QRegExp("\\*.*"));
+                commandStr += "*    ";
+                commandStr += QObject::tr("Reserve 7");
+            }
+            if((action == ICMold::ACT_AUX4) &&
+               (moldItem.IFVal() & 0x20) == 0x20)
+            {
+//                commandStr.chop(3);
+                commandStr.remove(QRegExp("\\*.*"));
+                commandStr += "*    ";
+                commandStr += QObject::tr("Reserve 8");
+            }
+            if((moldItem.IFVal() & 0x1F) == 0)
             {
                 commandStr += QObject::tr("Off") + ":";
             }
-            else
+            else if((moldItem.IFVal() & 0x1F) == 1)
             {
                 commandStr += QObject::tr("On") + ":";
             }

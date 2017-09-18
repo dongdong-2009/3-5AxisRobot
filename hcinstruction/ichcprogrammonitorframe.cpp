@@ -316,7 +316,11 @@ void ICHCProgramMonitorFrame::StatusRefreshed()
 
     ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
     newTime_ = host->HostStatus(ICVirtualHost::DbgZ0).toUInt();
-    if(host->CurrentStatus() != ICVirtualHost::Auto) return;
+    if(host->CurrentStatus() != ICVirtualHost::Auto)
+    {
+        MoldNumChanged(8);
+        return;
+    }
     if(host->currentMoldNum() != currentMoldNum_)
     {
         MoldNumChanged(host->currentMoldNum());
@@ -727,7 +731,6 @@ void ICHCProgramMonitorFrame::on_editToolButton_clicked()
                 ICMold::CurrentMold()->SetMoldContent(ICMold::UIItemToMoldItem(programList_));
             }
             isModify_ = isModify_ || isM;
-
         }
     }
     qDebug()<<"Modify"<<isModify_;
