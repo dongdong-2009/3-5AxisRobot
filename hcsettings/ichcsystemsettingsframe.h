@@ -100,6 +100,8 @@ private slots:
 
     void on_machineAdminBox_toggled(bool checked);
 
+    void on_quickGuideCheckBox_toggled(bool checked);
+
 private:
     QMap<QObject*, int> editorToConfigIDs_;
 };

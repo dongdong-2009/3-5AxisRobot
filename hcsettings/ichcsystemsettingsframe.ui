@@ -1236,34 +1236,14 @@ QRadioButton::indicator:unchecked:disabled
       <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
-         <x>9</x>
-         <y>9</y>
-         <width>311</width>
-         <height>141</height>
+         <x>20</x>
+         <y>60</y>
+         <width>351</width>
+         <height>81</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_2">
         <item row="0" column="0">
-         <widget class="QPushButton" name="verifyButton">
-          <property name="text">
-           <string>Verify</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="1">
-         <widget class="ICLineEditWithVirtualKeyboard" name="pwdEdit">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
-          <property name="text">
-           <string notr="true"/>
-          </property>
-          <property name="echoMode">
-           <enum>QLineEdit::Password</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="0">
          <widget class="QLabel" name="extentLabel">
           <property name="enabled">
            <bool>false</bool>
@@ -1276,7 +1256,20 @@ QRadioButton::indicator:unchecked:disabled
           </property>
          </widget>
         </item>
-        <item row="1" column="1">
+        <item row="0" column="2">
+         <widget class="QLabel" name="quickGuideLabel">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Quick Guide</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
          <widget class="QCheckBox" name="extentFunctionCheckBox">
           <property name="enabled">
            <bool>false</bool>
@@ -1311,7 +1304,7 @@ QRadioButton::indicator:unchecked:disabled
           </property>
          </widget>
         </item>
-        <item row="2" column="0">
+        <item row="1" column="0">
          <widget class="QLabel" name="limitFunctionLabel">
           <property name="enabled">
            <bool>false</bool>
@@ -1324,7 +1317,7 @@ QRadioButton::indicator:unchecked:disabled
           </property>
          </widget>
         </item>
-        <item row="2" column="1">
+        <item row="1" column="1">
          <widget class="QCheckBox" name="limitFunctionBox">
           <property name="enabled">
            <bool>false</bool>
@@ -1356,6 +1349,101 @@ QRadioButton::indicator:unchecked:disabled
           </property>
           <property name="text">
            <string>Use</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QCheckBox" name="quickGuideCheckBox">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+          </property>
+          <property name="text">
+           <string>Use</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>18</y>
+         <width>349</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="verifyButton">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Verify</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>5</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="ICLineEditWithVirtualKeyboard" name="pwdEdit">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string notr="true"/>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
           </property>
          </widget>
         </item>
@@ -1531,7 +1619,7 @@ QRadioButton::indicator:unchecked:disabled
  </resources>
  <connections/>
  <buttongroups>
-  <buttongroup name="languageButtonGroup"/>
   <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="languageButtonGroup"/>
  </buttongroups>
 </ui>

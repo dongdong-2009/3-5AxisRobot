@@ -115,6 +115,15 @@ void ICHCInstructionPageFrame::showEvent(QShowEvent *e)
         ui->flagsButton->hide();
         ui->conditionsToolButton->hide();
     }
+
+    if(ICParametersSave::Instance()->IsQuickGuideUsed())
+    {
+        ui->guideButton->show();
+    }
+    else
+    {
+        ui->guideButton->hide();
+    }
     QFrame::showEvent(e);
 //    connect(ICVirtualHost::GlobalVirtualHost(),
 //            SIGNAL(StepChanged(int)),
