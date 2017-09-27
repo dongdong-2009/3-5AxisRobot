@@ -5,6 +5,7 @@
 #include "icparameterssave.h"
 #include "config.h"
 #include <qmath.h>
+#include <QMessageBox>
 
 
 ICProgramGuidePage::ICProgramGuidePage(QWidget *parent) :
@@ -1628,6 +1629,13 @@ bool ICProgramGuidePage::SetAxisICMoldItem_(ICMoldItem *item, const _ICAxis_ *ax
 
 void ICProgramGuidePage::on_finishButton_clicked()
 {
+    if(QMessageBox::No == QMessageBox::question(this, tr("Hint"),
+                             tr("The current mold will be deleted as clicking YES,If you "
+                                "do not want to delete it,please create another mold."),
+                             QMessageBox::Yes | QMessageBox::No, QMessageBox::No))
+    {
+        return;
+    }
     if(ui->stackedWidget->currentIndex() == 1)
     {
         SaveAxis_(pageIndex_);

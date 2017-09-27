@@ -77,6 +77,9 @@ public:
     bool IsExtentFunctionUsed() {return GetParameter(SystemMachine, "AdminSettings", false).toBool();}
     void SetExtentFunctionUsed(bool isUsed, bool isSync = true) {SaveParameter(SystemMachine, "AdminSettings", isUsed, isSync);}
 
+    bool IsQuickGuideUsed() {return GetParameter(SystemMachine, "QuickGuide", false).toBool();}
+    void SetQuickGuideUse(bool isUsed, bool isSync = true) {SaveParameter(SystemMachine, "QuickGuide", isUsed, isSync);}
+
     uint BackLightTime() { return GetParameter(ProductConfig, "BackLight", 5).toUInt();}
     void SetBackLightTime(uint time) { SaveParameter(ProductConfig, "BackLight", time);}
 

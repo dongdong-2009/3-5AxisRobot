@@ -61,6 +61,9 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
     ui->limitFunctionBox->blockSignals(true);
     ui->limitFunctionBox->setChecked(ICParametersSave::Instance()->IsRegisterFunctinOn());
     ui->limitFunctionBox->blockSignals(false);
+    ui->quickGuideCheckBox->blockSignals(true);
+    ui->quickGuideCheckBox->setChecked(ICParametersSave::Instance()->IsQuickGuideUsed());
+    ui->quickGuideCheckBox->blockSignals(false);
 
     QAbstractButton* button;
     foreach(button, buttonGroup_->buttons())
@@ -113,6 +116,7 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
     editorToConfigIDs_.insert(ui->backLightTimeEdit, ICConfigString::kCS_PANEL_Backlight);
     editorToConfigIDs_.insert(ui->extentFunctionCheckBox, ICConfigString::kCS_PANEL_Function_Extent);
     editorToConfigIDs_.insert(ui->limitFunctionBox, ICConfigString::kCS_PANEL_Register_Extent);
+    editorToConfigIDs_.insert(ui->quickGuideCheckBox, ICConfigString::kCS_PANEL_Quick_Guide);
     ICLogInit
 
 //            ui->turkeyBox->hide();
@@ -293,6 +297,8 @@ void ICHCSystemSettingsFrame::showEvent(QShowEvent *e)
     ui->extentFunctionCheckBox->setEnabled(false);
     ui->limitFunctionBox->setEnabled(false);
     ui->limitFunctionLabel->setEnabled(false);
+    ui->quickGuideLabel->setEnabled(false);
+    ui->quickGuideCheckBox->setEnabled(false);
 
     //    ICVirtualHost* host = ICVirtualHost::GlobalVirtualHost();
     //    ui->hmiMachienLenghtLabel->setText(host->SystemParameter(ICVirtualHost::SYS_));
@@ -404,6 +410,8 @@ void ICHCSystemSettingsFrame::on_verifyButton_clicked()
         ui->extentFunctionCheckBox->setEnabled(true);
         ui->limitFunctionLabel->setEnabled(true);
         ui->limitFunctionBox->setEnabled(true);
+        ui->quickGuideLabel->setEnabled(true);
+        ui->quickGuideCheckBox->setEnabled(true);
     }
     ui->pwdEdit->clear();
 }
@@ -1134,4 +1142,9 @@ void ICHCSystemSettingsFrame::on_machineAdminBox_toggled(bool checked)
     {
         ui->oldPwdEdit->setEnabled(true);
     }
+}
+
+void ICHCSystemSettingsFrame::on_quickGuideCheckBox_toggled(bool checked)
+{
+    ICParametersSave::Instance()->SetQuickGuideUse(checked);
 }

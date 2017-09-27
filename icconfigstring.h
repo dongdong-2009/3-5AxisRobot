@@ -305,6 +305,7 @@ public:
         kCS_PANEL_Function_Extent,
         kCS_PANEL_Register_Extent,
         kCS_PANEL_Config_Save,
+        kCS_PANEL_Quick_Guide,
 
         kCS_CARE_START = 1000,
         kCS_CARE_Item1_Cycle,
