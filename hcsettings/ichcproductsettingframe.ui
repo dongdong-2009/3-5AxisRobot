@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>838</width>
-    <height>364</height>
+    <width>859</width>
+    <height>556</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -57,25 +57,6 @@
      </property>
     </widget>
    </item>
-   <item row="5" column="1">
-    <widget class="QPushButton" name="stackGroup2ClearButton">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>35</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>Stack Group2 Clear</string>
-     </property>
-    </widget>
-   </item>
    <item row="1" column="5">
     <widget class="ICLineEditWithVirtualNumericKeypad" name="alarmTimesEdit">
      <property name="minimumSize">
@@ -115,14 +96,14 @@
      </property>
     </widget>
    </item>
-   <item row="7" column="0">
+   <item row="9" column="0">
     <widget class="QLabel" name="label_9">
      <property name="text">
       <string>Bad Product</string>
      </property>
     </widget>
    </item>
-   <item row="7" column="1">
+   <item row="9" column="1">
     <widget class="ICLineEditWithVirtualNumericKeypad" name="samplingEdit_3">
      <property name="minimumSize">
       <size>
@@ -270,25 +251,6 @@
      </property>
     </widget>
    </item>
-   <item row="5" column="0">
-    <widget class="QPushButton" name="stackGroup1ClearButton">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>35</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>Stack Group1 Clear</string>
-     </property>
-    </widget>
-   </item>
    <item row="2" column="1">
     <widget class="ICLineEditWithVirtualNumericKeypad" name="samplingEdit">
      <property name="minimumSize">
@@ -369,16 +331,6 @@ QRadioButton::indicator:unchecked:disabled
      </property>
     </widget>
    </item>
-   <item row="5" column="3">
-    <widget class="QLabel" name="label_17">
-     <property name="styleSheet">
-      <string notr="true">height:27px ;</string>
-     </property>
-     <property name="text">
-      <string>Fixture</string>
-     </property>
-    </widget>
-   </item>
    <item row="1" column="0">
     <widget class="QLabel" name="label_7">
      <property name="text">
@@ -410,13 +362,23 @@ QRadioButton::indicator:unchecked:disabled
      </property>
     </widget>
    </item>
-   <item row="5" column="5" colspan="2">
+   <item row="5" column="3">
+    <widget class="QLabel" name="label_17">
+     <property name="styleSheet">
+      <string notr="true">height:27px ;</string>
+     </property>
+     <property name="text">
+      <string>Fixture</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="5">
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <widget class="QCheckBox" name="positiveCheckBox">
        <property name="minimumSize">
         <size>
-         <width>150</width>
+         <width>0</width>
          <height>0</height>
         </size>
        </property>
@@ -460,7 +422,7 @@ QRadioButton::indicator:unchecked:disabled
       <widget class="QCheckBox" name="reversedCheckBox">
        <property name="minimumSize">
         <size>
-         <width>160</width>
+         <width>0</width>
          <height>0</height>
         </size>
        </property>
@@ -511,44 +473,6 @@ QRadioButton::indicator:unchecked:disabled
      </item>
     </layout>
    </item>
-   <item row="6" column="0">
-    <widget class="QPushButton" name="stackGroup3ClearButton">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>35</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>Stack Group3 Clear</string>
-     </property>
-    </widget>
-   </item>
-   <item row="6" column="1">
-    <widget class="QPushButton" name="stackGroup4ClearButton">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>35</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>Stack Group4 Clear</string>
-     </property>
-    </widget>
-   </item>
    <item row="6" column="3">
     <widget class="QLabel" name="label_18">
      <property name="styleSheet">
@@ -591,6 +515,82 @@ QRadioButton::indicator:unchecked:disabled
        <string>Stack-4</string>
       </property>
      </item>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QPushButton" name="stackGroup1ClearButton">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Stack Group1 Clear</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QPushButton" name="stackGroup2ClearButton">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Stack Group2 Clear</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QPushButton" name="stackGroup3ClearButton">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Stack Group3 Clear</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QPushButton" name="stackGroup4ClearButton">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Stack Group4 Clear</string>
+     </property>
     </widget>
    </item>
   </layout>
