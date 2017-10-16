@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>838</width>
-    <height>256</height>
+    <height>364</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,10 +20,196 @@
    <enum>QFrame::Plain</enum>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="4" column="0">
-    <widget class="QLabel" name="label_10">
+   <item row="2" column="5">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="recycleTimeEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="ICComboBox" name="getFailWay">
+     <item>
+      <property name="text">
+       <string>Alarm When Up</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Alarm Once</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_8">
      <property name="text">
-      <string>Get Fail</string>
+      <string>Sampling Interval</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QPushButton" name="stackGroup2ClearButton">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Stack Group2 Clear</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="5">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="alarmTimesEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3" colspan="2">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Wait Mold Opened Limit Time</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="productLineEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>Bad Product</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="samplingEdit_3">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="6">
+    <widget class="QLabel" name="label_12">
+     <property name="text">
+      <string>s</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="6">
+    <widget class="QLabel" name="label_11">
+     <property name="text">
+      <string>s</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="tryProductEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="5">
+    <widget class="ICComboBox" name="recycleMode">
+     <item>
+      <property name="text">
+       <string>Recycle Mode-1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Recycle Mode-2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Recycle Mode-3</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="4" column="5">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="realRecycleTimeEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QLabel" name="label_19">
+     <property name="styleSheet">
+      <string notr="true">height:27px ;</string>
+     </property>
+     <property name="text">
+      <string>Recycle Time</string>
      </property>
     </widget>
    </item>
@@ -31,6 +217,46 @@
     <widget class="QLabel" name="label_13">
      <property name="text">
       <string>s</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="6">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>s</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QPushButton" name="productClearButton">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Product Clear</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>Get Fail</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="6">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string notr="true">s</string>
      </property>
     </widget>
    </item>
@@ -45,6 +271,70 @@
     </widget>
    </item>
    <item row="5" column="0">
+    <widget class="QPushButton" name="stackGroup1ClearButton">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Stack Group1 Clear</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="samplingEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="5">
+    <widget class="ICLineEditWithVirtualNumericKeypad" name="waitTimeEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="0">
     <widget class="QCheckBox" name="productSave">
      <property name="styleSheet">
       <string notr="true">::indicator {
@@ -79,89 +369,6 @@ QRadioButton::indicator:unchecked:disabled
      </property>
     </widget>
    </item>
-   <item row="1" column="3">
-    <widget class="QLabel" name="label_5">
-     <property name="text">
-      <string>Alarm Times</string>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="5">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="waitTimeEdit">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>27</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>27</height>
-      </size>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="0">
-    <widget class="QLabel" name="label_7">
-     <property name="text">
-      <string>TryProduct</string>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="5">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="realRecycleTimeEdit">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>27</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>27</height>
-      </size>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="0">
-    <widget class="QLabel" name="label">
-     <property name="text">
-      <string>Product</string>
-     </property>
-    </widget>
-   </item>
-   <item row="6" column="0">
-    <widget class="QLabel" name="label_9">
-     <property name="text">
-      <string>Bad Product</string>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="3">
-    <widget class="QLabel" name="label_3">
-     <property name="styleSheet">
-      <string notr="true">height:27px ;</string>
-     </property>
-     <property name="text">
-      <string>Recycle-T</string>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="2">
-    <spacer name="horizontalSpacer">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>40</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
    <item row="5" column="3">
     <widget class="QLabel" name="label_17">
      <property name="styleSheet">
@@ -172,67 +379,34 @@ QRadioButton::indicator:unchecked:disabled
      </property>
     </widget>
    </item>
-   <item row="1" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="tryProductEdit">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>27</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>27</height>
-      </size>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="6">
-    <widget class="QLabel" name="label_4">
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_7">
      <property name="text">
-      <string>s</string>
+      <string>TryProduct</string>
      </property>
     </widget>
    </item>
-   <item row="6" column="5">
-    <widget class="ICComboBox" name="countUnitBox">
-     <item>
-      <property name="text">
-       <string>All</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Good</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Stack-1</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Stack-2</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Stack-3</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Stack-4</string>
-      </property>
-     </item>
+   <item row="1" column="3">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Alarm Times</string>
+     </property>
     </widget>
    </item>
-   <item row="3" column="6">
-    <widget class="QLabel" name="label_12">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
      <property name="text">
-      <string>s</string>
+      <string>Product</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="3">
+    <widget class="QLabel" name="label_3">
+     <property name="styleSheet">
+      <string notr="true">height:27px ;</string>
+     </property>
+     <property name="text">
+      <string>Recycle-T</string>
      </property>
     </widget>
    </item>
@@ -337,58 +511,8 @@ QRadioButton::indicator:unchecked:disabled
      </item>
     </layout>
    </item>
-   <item row="1" column="6">
-    <widget class="QLabel" name="label_6">
-     <property name="text">
-      <string notr="true">s</string>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="3" colspan="2">
-    <widget class="QLabel" name="label_2">
-     <property name="text">
-      <string>Wait Mold Opened Limit Time</string>
-     </property>
-    </widget>
-   </item>
-   <item row="6" column="3">
-    <widget class="QLabel" name="label_18">
-     <property name="styleSheet">
-      <string notr="true">height:27px ;</string>
-     </property>
-     <property name="text">
-      <string>Count Ways</string>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="5">
-    <widget class="ICComboBox" name="recycleMode">
-     <item>
-      <property name="text">
-       <string>Recycle Mode-1</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Recycle Mode-2</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Recycle Mode-3</string>
-      </property>
-     </item>
-    </widget>
-   </item>
-   <item row="2" column="0">
-    <widget class="QLabel" name="label_8">
-     <property name="text">
-      <string>Sampling Interval</string>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="1">
-    <widget class="QPushButton" name="productClearButton">
+   <item row="6" column="0">
+    <widget class="QPushButton" name="stackGroup3ClearButton">
      <property name="minimumSize">
       <size>
        <width>0</width>
@@ -402,119 +526,71 @@ QRadioButton::indicator:unchecked:disabled
       </size>
      </property>
      <property name="text">
-      <string>Product Clear</string>
+      <string>Stack Group3 Clear</string>
      </property>
-    </widget>
-   </item>
-   <item row="2" column="5">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="recycleTimeEdit">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>27</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>27</height>
-      </size>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="productLineEdit">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>27</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>27</height>
-      </size>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="1">
-    <widget class="ICComboBox" name="getFailWay">
-     <item>
-      <property name="text">
-       <string>Alarm When Up</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Alarm Once</string>
-      </property>
-     </item>
     </widget>
    </item>
    <item row="6" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="samplingEdit_3">
+    <widget class="QPushButton" name="stackGroup4ClearButton">
      <property name="minimumSize">
       <size>
        <width>0</width>
-       <height>27</height>
+       <height>35</height>
       </size>
      </property>
      <property name="maximumSize">
       <size>
        <width>16777215</width>
-       <height>27</height>
+       <height>30</height>
       </size>
+     </property>
+     <property name="text">
+      <string>Stack Group4 Clear</string>
      </property>
     </widget>
    </item>
-   <item row="2" column="3">
-    <widget class="QLabel" name="label_19">
+   <item row="6" column="3">
+    <widget class="QLabel" name="label_18">
      <property name="styleSheet">
       <string notr="true">height:27px ;</string>
      </property>
      <property name="text">
-      <string>Recycle Time</string>
+      <string>Count Ways</string>
      </property>
     </widget>
    </item>
-   <item row="2" column="1">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="samplingEdit">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>27</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>27</height>
-      </size>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="6">
-    <widget class="QLabel" name="label_11">
-     <property name="text">
-      <string>s</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="5">
-    <widget class="ICLineEditWithVirtualNumericKeypad" name="alarmTimesEdit">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>27</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>27</height>
-      </size>
-     </property>
+   <item row="6" column="5">
+    <widget class="ICComboBox" name="countUnitBox">
+     <item>
+      <property name="text">
+       <string>All</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Good</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Stack-1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Stack-2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Stack-3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Stack-4</string>
+      </property>
+     </item>
     </widget>
    </item>
   </layout>

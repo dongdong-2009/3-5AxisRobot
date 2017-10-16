@@ -126,6 +126,10 @@ public:
         kCS_PRD_Sample_cycle,
         kCS_PRD_Reclcle_Mode,
         kCS_PRD_Reclcle_Time,
+        kCS_PRD_Stack_Group1_Clear,
+        kCS_PRD_Stack_Group2_Clear,
+        kCS_PRD_Stack_Group3_Clear,
+        kCS_PRD_Stack_Group4_Clear,
 
         kCS_RUN_START = 300,
         kCS_RUN_Tolerance,

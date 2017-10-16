@@ -209,6 +209,10 @@ void ICHCProductSettingFrame::retranslateUi_()
     ui->label_2->setText(tr("Wait Mold Opened Limit Time"));
     ui->label_4->setText(tr("s"));
     ui->productClearButton->setText(tr("Product Clear"));
+    ui->stackGroup1ClearButton->setText(tr("Stack Group1 Clear"));
+    ui->stackGroup2ClearButton->setText(tr("Stack Group2 Clear"));
+    ui->stackGroup3ClearButton->setText(tr("Stack Group3 Clear"));
+    ui->stackGroup4ClearButton->setText(tr("Stack Group4 Clear"));
     ui->label_7->setText(tr("TryProduct")); //试产模数
     ui->label_8->setText(tr("Sampling Interval"));
     ui->label_9->setText(tr("Bad Product"));
@@ -321,4 +325,40 @@ void ICHCProductSettingFrame::on_recycleMode_currentIndexChanged(int index)
 void ICHCProductSettingFrame::on_realRecycleTimeEdit_textChanged(const QString &arg1)
 {
     ICVirtualHost::GlobalVirtualHost()->SetRecycleTime(ui->realRecycleTimeEdit->TransThisTextToThisInt());
+}
+
+void ICHCProductSettingFrame::on_stackGroup1ClearButton_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_STACK_GROUP1_CLEAR);
+    ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_PRD_Stack_Group1_Clear,
+                                                tr("Stack Group1 Clear"),
+                                                "");
+//    ICVirtualHost::GlobalVirtualHost()->SaveSystemConfig();
+}
+
+void ICHCProductSettingFrame::on_stackGroup2ClearButton_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_STACK_GROUP2_CLEAR);
+    ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_PRD_Stack_Group2_Clear,
+                                                tr("Stack Group2 Clear"),
+                                                "");
+//    ICVirtualHost::GlobalVirtualHost()->SaveSystemConfig();
+}
+
+void ICHCProductSettingFrame::on_stackGroup3ClearButton_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_STACK_GROUP3_CLEAR);
+    ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_PRD_Stack_Group3_Clear,
+                                                tr("Stack Group3 Clear"),
+                                                "");
+//    ICVirtualHost::GlobalVirtualHost()->SaveSystemConfig();
+}
+
+void ICHCProductSettingFrame::on_stackGroup4ClearButton_clicked()
+{
+    ICCommandProcessor::Instance()->ExecuteVirtualKeyCommand(IC::VKEY_STACK_GROUP4_CLEAR);
+    ICAlarmFrame::Instance()->OnActionTriggered(ICConfigString::kCS_PRD_Stack_Group4_Clear,
+                                                tr("Stack Group4 Clear"),
+                                                "");
+//    ICVirtualHost::GlobalVirtualHost()->SaveSystemConfig();
 }

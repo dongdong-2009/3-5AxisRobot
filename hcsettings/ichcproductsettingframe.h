@@ -57,6 +57,14 @@ private slots:
 
     void on_realRecycleTimeEdit_textChanged(const QString &arg1);
 
+    void on_stackGroup1ClearButton_clicked();
+
+    void on_stackGroup2ClearButton_clicked();
+
+    void on_stackGroup3ClearButton_clicked();
+
+    void on_stackGroup4ClearButton_clicked();
+
 private:
     QMap<QObject*, int> editorToConfigIDs_;
 };
