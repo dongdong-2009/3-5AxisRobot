@@ -8958,81 +8958,81 @@ Please enter an digit between </source>
         <translation type="unfinished">전기 박스내 분진 제거</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="209"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="386"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="210"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="387"/>
         <source>System Updating...</source>
         <translation type="unfinished"> 시스템 업데이트중</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="239"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="240"/>
         <source>No available New SuperPassward</source>
         <translation type="unfinished">사용가능한 고급비번 없음</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="241"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="242"/>
         <source>New SuperPassward</source>
         <translation type="unfinished">신규 고급비번</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="348"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="349"/>
         <source>tips</source>
         <translation type="unfinished">제시</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="348"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="349"/>
         <source>Update Host Successful!</source>
         <translation type="unfinished"> 메인 업데이트 성공</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="415"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="416"/>
         <source>warning</source>
         <translation type="unfinished"> 경보</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="415"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="416"/>
         <source>USB is not exist!</source>
         <translation type="unfinished">USB 발견못함</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="480"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="481"/>
         <source>Warning</source>
         <translation type="unfinished">경보</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="481"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="482"/>
         <source>Old password is wrong</source>
         <translation type="unfinished">구 비번 기본림</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="488"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="499"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="489"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="500"/>
         <source>Scanning...</source>
         <translation type="unfinished">스캔중</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="536"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="537"/>
         <source>Back to Factory</source>
         <translation type="unfinished">초기화 </translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="536"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="537"/>
         <source>Back to factory will lost all the sysconfig and panel settings.
 Please input the root password to confirm.</source>
         <translation type="unfinished">기본린 모듈 치수격식</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="583"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="590"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="584"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="591"/>
         <source>Tips</source>
         <translation type="unfinished">제시</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="583"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="584"/>
         <source>Back to factory successfully! Now reboot!</source>
         <translation type="unfinished"> 공장초기화 성공 다시 켜기 바람</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="590"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="591"/>
         <source>Wrong password!</source>
         <translation type="unfinished">비번오류</translation>
     </message>

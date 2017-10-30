@@ -8930,82 +8930,82 @@ Please enter an digit between </source>
         <translation type="unfinished">電控箱內除塵</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="209"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="386"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="210"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="387"/>
         <source>System Updating...</source>
         <translation type="unfinished">系統更新中...</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="239"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="240"/>
         <source>No available New SuperPassward</source>
         <translation type="unfinished">沒有可以用的超級密碼</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="241"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="242"/>
         <source>New SuperPassward</source>
         <translation type="unfinished">新超級密碼</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="348"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="349"/>
         <source>tips</source>
         <translation type="unfinished">提示</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="348"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="349"/>
         <source>Update Host Successful!</source>
         <translation type="unfinished">主機更新成功！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="415"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="416"/>
         <source>warning</source>
         <translation type="unfinished">警告</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="415"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="416"/>
         <source>USB is not exist!</source>
         <translation type="unfinished">沒有找到U盤！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="480"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="481"/>
         <source>Warning</source>
         <translation type="unfinished">警告</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="481"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="482"/>
         <source>Old password is wrong</source>
         <translation type="unfinished">舊密碼錯誤！</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="488"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="499"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="489"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="500"/>
         <source>Scanning...</source>
         <translation type="unfinished">掃描中...</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="536"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="537"/>
         <source>Back to Factory</source>
         <translation type="unfinished">恢復出廠</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="536"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="537"/>
         <source>Back to factory will lost all the sysconfig and panel settings.
 Please input the root password to confirm.</source>
         <translation type="unfinished">恢復出廠會重新設定所有的機器參數和手控參數.模組參數會保留.
 請輸入高級管理員密碼確認.</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="583"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="590"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="584"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="591"/>
         <source>Tips</source>
         <translation type="unfinished">提示</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="583"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="584"/>
         <source>Back to factory successfully! Now reboot!</source>
         <translation type="unfinished">恢復出廠成功!現在將會重啟!</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="590"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="591"/>
         <source>Wrong password!</source>
         <translation type="unfinished">密碼錯誤！</translation>
     </message>

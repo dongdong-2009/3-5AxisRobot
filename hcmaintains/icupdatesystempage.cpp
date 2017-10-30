@@ -201,6 +201,7 @@ void ICUpdateSystemPage::hideEvent(QHideEvent *e)
 
 void ICUpdateSystemPage::on_updateToolButton_clicked()
 {
+    system("mount -t tmpfs -o size=128m tmpfs /tmp");
     SystemUpdateStart();
 }
 

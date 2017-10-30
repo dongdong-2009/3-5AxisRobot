@@ -8948,82 +8948,82 @@ Por favor digitar um valor valido </translation>
         <translation type="unfinished">item-7</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="209"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="386"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="210"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="387"/>
         <source>System Updating...</source>
         <translation type="unfinished">atualização do sistema</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="239"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="240"/>
         <source>No available New SuperPassward</source>
         <translation type="unfinished">nova super senha nao disponivel</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="241"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="242"/>
         <source>New SuperPassward</source>
         <translation type="unfinished">nova super senha </translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="348"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="349"/>
         <source>tips</source>
         <translation type="unfinished">dicas</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="348"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="349"/>
         <source>Update Host Successful!</source>
         <translation type="unfinished">atualizar Host sucesso!</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="415"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="416"/>
         <source>warning</source>
         <translation type="unfinished">Aviso!</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="415"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="416"/>
         <source>USB is not exist!</source>
         <translation type="unfinished">USB nao existe!</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="480"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="481"/>
         <source>Warning</source>
         <translation type="unfinished">Aviso!</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="481"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="482"/>
         <source>Old password is wrong</source>
         <translation type="unfinished">Senha antiga esta errada</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="488"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="499"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="489"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="500"/>
         <source>Scanning...</source>
         <translation type="unfinished">escaneando...</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="536"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="537"/>
         <source>Back to Factory</source>
         <translation type="unfinished">padrao de fabrica</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="536"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="537"/>
         <source>Back to factory will lost all the sysconfig and panel settings.
 Please input the root password to confirm.</source>
         <translation type="unfinished">padrao de fabrica ira perder todos o sysconfig e painel programacao.
 Por favor entrar com senha root confirm.</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="583"/>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="590"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="584"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="591"/>
         <source>Tips</source>
         <translation type="unfinished">dicas</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="583"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="584"/>
         <source>Back to factory successfully! Now reboot!</source>
         <translation type="unfinished">padrao de fabrica com sucesso! agora reinicializar!</translation>
     </message>
     <message>
-        <location filename="hcmaintains/icupdatesystempage.cpp" line="590"/>
+        <location filename="hcmaintains/icupdatesystempage.cpp" line="591"/>
         <source>Wrong password!</source>
         <translation type="unfinished">erro senha!</translation>
     </message>

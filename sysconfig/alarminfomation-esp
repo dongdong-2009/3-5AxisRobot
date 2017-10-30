@@ -13,7 +13,7 @@
 13:Acción de grupo es error
 14:Espera de grupo es error
 15:la próxima etapa de sacar es mala
-16:chequear fin fuera de rango
+16:Checa fin fuera de rango
 17:Contexto registrado es malo
 18:chequeo del acción principal final
 19:Contexto de NUM de registro es malo
@@ -174,8 +174,8 @@
 325:Se duplica acción de broche
 326:Se repite acción
 327:Solo se puede utilizar en nivel 1
-328:Chequear la introducción durante el funcionamiento
-329:Error de parámetros de accesorio
+328:Checa la introducción durante el funcionamiento
+329:Error de parámetros de tenaza
 330:Posción ha cambiado, por favor, reinicie.
 331:error de parámetros de posición
 332:salida ha cambiado, por favor, reinicie
@@ -228,16 +228,16 @@
 608:Y origin is off when in security section
 700:Tiempo ha sobrepasado cuando espere X043
 701:Tiempo ha sobrepasado cuando espere X044
-702:Tiempo ha sobrepasado cuando espere accesorio-1
-703:Tiempo ha sobrepasado cuando espere accesorio-2
-704:Tiempo ha sobrepasado cuando espere accesorio-3
-705:Tiempo ha sobrepasado cuando espere accesorio-4
-706:Tiempo ha sobrepasado cuando espere chupador-1
-707:Tiempo ha sobrepasado cuando espere chupador-2
+702:Tiempo ha sobrepasado cuando espere tenaza-1
+703:Tiempo ha sobrepasado cuando espere tenaza-2
+704:Tiempo ha sobrepasado cuando espere tenaza-3
+705:Tiempo ha sobrepasado cuando espere tenaza-4
+706:Tiempo ha sobrepasado cuando espere Vacio-1
+707:Tiempo ha sobrepasado cuando espere Vacio-2
 708:Tiempo ha sobrepasado cuando espere eyector hacia adelante
 709:Tiempo ha sobrepasado cuando espere eyector hacia atrás
-710:Tiempo ha sobrepasado cuando espere core en
-711:Tiempo ha sobrepasado cuando espere core fuera
+710:Tiempo ha sobrepasado cuando espere Noyo en
+711:Tiempo ha sobrepasado cuando espere Noyo fuera
 714:Time is over while wating for X045
 715:Time is over while wating for X046
 716:Time is over while wating for X047
@@ -257,8 +257,8 @@
 1007:Brazo baje dentro pero posición ni es dentro de Z en  zona de serguridad
 1008:Brazo baje fuera pero posición ni es dentro de Z en  zona de serguridad
 1009:Cuando el brazo baje no se puede detectar señal de zona de seguridad
-1010:No puede chequear zona de seguridad Z cuando Y1 baje
-1011:No puede chequear zona de seguridad X cuando Y1 baje
+1010:No puede Checa zona de seguridad Z cuando Y1 baje
+1011:No puede Checa zona de seguridad X cuando Y1 baje
 1012:Ambas posiciones son horizontales
 1013:Sub brazo hacia delante y atrás son on
 1014:Sub brazo que sube y baja es on
@@ -292,8 +292,8 @@
 1059:No hay eje A pero hay acción de A
 1060:No hay eje B pero hay acción de B
 1061:No hay eje C pero hay acción de C
-1100:No puede chequear zona de seguridad cuando brazo principal baje
-1101:No puede chequear zona de seguridad cuando brazo secundario baje
+1100:No puede Checa zona de seguridad cuando brazo principal baje
+1101:No puede Checa zona de seguridad cuando brazo secundario baje
 1102:Señal de Mold-abierto está apagado cuando Brazo Principal descende
 1103:Señal de Mold-abierto está apagado cuando brazo secundario descender
 1104:Límite superior de brazo principal es on cuando el principal brazo descende
@@ -353,16 +353,16 @@
 1205:Broche3 señal on, Broche3 válvula off.
 1206:Broche4 señal off, Broche4 válvula on.
 1207:Broche4 señal on, Broche4 válvula off.
-1208:Chupador1 señal off, Chupador1 válvula on.
-1209:Chupador1 señal on, Chupador1 válvula off.
-1210:Chupador2 señal off, Chupador2 válvula on.
-1211:Chupador2 señal on, Chupador2 válvula off.
+1208:Vacio1 señal off, Vacio1 válvula on.
+1209:Vacio1 señal on, Vacio1 válvula off.
+1210:Vacio2 señal off, Vacio2 válvula on.
+1211:Vacio2 señal on, Vacio2 válvula off.
 1212:Broche7 señal off, Broche7 válvula on.
 1213:Broche7 señal on, Broche7 válvula off.
 1214:Broche8 señal off, Broche8 válvula on.
 1215:Broche8 señal on, Broche8 válvula off.
-1250:No puede chequear X037
-1251:No puede chequear X023
+1250:No puede Checa X037
+1251:No puede Checa X023
 1300:Por favor, chequee postura de espera.
 1301:Por favor, chequee señal de brazo principal que sube
 1302:Por favor, chequee señal de vice brazo que sube
