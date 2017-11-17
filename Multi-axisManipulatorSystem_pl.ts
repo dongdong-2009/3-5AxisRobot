@@ -466,7 +466,7 @@
     <message>
         <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="29"/>
         <source>Fixture 1</source>
-        <translation type="unfinished">Uchwyt 1</translation>
+        <translation type="unfinished">Chwytak 1</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="70"/>
@@ -487,17 +487,17 @@
     <message>
         <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="131"/>
         <source>Fixture 3</source>
-        <translation type="unfinished">Uchwyt 3</translation>
+        <translation type="unfinished">Chwytak 3</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="204"/>
         <source>Fixture 2</source>
-        <translation type="unfinished">Uchwyt 2</translation>
+        <translation type="unfinished">Chwytak 2</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualfixtureframe.ui" line="293"/>
         <source>Fixture 4</source>
-        <translation type="unfinished">Uchwyt 4</translation>
+        <translation type="unfinished">Chwytak 4</translation>
     </message>
 </context>
 <context>
@@ -529,7 +529,7 @@
     <message>
         <location filename="hcmanualoperation/hcmanualotherioframe.ui" line="144"/>
         <source>Conveyor</source>
-        <translation type="unfinished">Przenośnik</translation>
+        <translation type="unfinished">Taśmociąg</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/hcmanualotherioframe.ui" line="205"/>
@@ -1099,7 +1099,7 @@ Zmień Czas</translation>
     <message>
         <location filename="hcinstruction/iccommenteditor.ui" line="20"/>
         <source>Comment</source>
-        <translation type="unfinished">Uwaga</translation>
+        <translation type="unfinished">Komentarz</translation>
     </message>
 </context>
 <context>
@@ -1122,22 +1122,22 @@ Zmień Czas</translation>
     <message>
         <location filename="icconfigstring.cpp" line="17"/>
         <source>kCS_SIG_Fixture1</source>
-        <translation type="unfinished">kCS_SIG_Uchwyt1</translation>
+        <translation type="unfinished">kCS_SIG_Chwytak1</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="18"/>
         <source>kCS_SIG_Fixture2</source>
-        <translation type="unfinished">kCS_SIG_Uchwyt2</translation>
+        <translation type="unfinished">kCS_SIG_Chwytak2</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="19"/>
         <source>kCS_SIG_Fixture3</source>
-        <translation type="unfinished">kCS_SIG_Uchwyt3</translation>
+        <translation type="unfinished">kCS_SIG_Chwytak3</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="20"/>
         <source>kCS_SIG_Fixture4</source>
-        <translation type="unfinished">kCS_SIG_Uchwyt4</translation>
+        <translation type="unfinished">kCS_SIG_Chwytak4</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="21"/>
@@ -1217,7 +1217,7 @@ Zmień Czas</translation>
     <message>
         <location filename="icconfigstring.cpp" line="36"/>
         <source>kCS_PRD_Fixture_Define</source>
-        <translation type="unfinished">kCS_PRD_Uchwyt_Define</translation>
+        <translation type="unfinished">kCS_PRD_Chwytak_Define</translation>
     </message>
     <message>
         <location filename="icconfigstring.cpp" line="37"/>
@@ -2308,25 +2308,25 @@ Zmień Czas</translation>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
         <location filename="hcinstruction/iccutpage.cpp" line="120"/>
         <source>Fixture1  </source>
-        <translation type="unfinished">Uchwyt1  </translation>
+        <translation type="unfinished">Chwytak1  </translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
         <location filename="hcinstruction/iccutpage.cpp" line="120"/>
         <source>Fixture2  </source>
-        <translation type="unfinished">Uchwyt2  </translation>
+        <translation type="unfinished">Chwytak2  </translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
         <location filename="hcinstruction/iccutpage.cpp" line="120"/>
         <source>Fixture3  </source>
-        <translation type="unfinished">Uchwyt3  </translation>
+        <translation type="unfinished">Chwytak3  </translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="20"/>
         <location filename="hcinstruction/iccutpage.cpp" line="120"/>
         <source>Fixture4  </source>
-        <translation type="unfinished">Uchwyt4  </translation>
+        <translation type="unfinished">Chwytak4  </translation>
     </message>
     <message>
         <location filename="hcinstruction/iccutpage.cpp" line="21"/>
@@ -2391,12 +2391,12 @@ Zmień Czas</translation>
     <message>
         <location filename="hcinstruction/icflagseditor.ui" line="37"/>
         <source>Main Arm Get Product inside</source>
-        <translation type="unfinished">Ramię główne poobieranie produktu wewnątrz</translation>
+        <translation type="unfinished">Ramię główne pobieranie produktu wewnątrz</translation>
     </message>
     <message>
         <location filename="hcinstruction/icflagseditor.ui" line="42"/>
         <source>Sub Arm Get Product inside</source>
-        <translation type="unfinished">Ramię pomocnicze poobieranie produktu wewnątrz</translation>
+        <translation type="unfinished">Ramię pomocnicze pobieranie produktu wewnątrz</translation>
     </message>
 </context>
 <context>
@@ -2543,7 +2543,7 @@ Zmień Czas</translation>
         <location filename="hcinstruction/ichcconditionpage.ui" line="298"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="176"/>
         <source>Fixture-1</source>
-        <translation type="unfinished">Uchwyt-1</translation>
+        <translation type="unfinished">Chwytak-1</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="330"/>
@@ -2555,7 +2555,7 @@ Zmień Czas</translation>
         <location filename="hcinstruction/ichcconditionpage.ui" line="368"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="287"/>
         <source>Fixture-4</source>
-        <translation type="unfinished">Uchwyt-4</translation>
+        <translation type="unfinished">Chwytak-4</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="406"/>
@@ -2572,7 +2572,7 @@ Zmień Czas</translation>
         <location filename="hcinstruction/ichcconditionpage.ui" line="514"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="319"/>
         <source>Fixture-2</source>
-        <translation type="unfinished">Uchwyt-2</translation>
+        <translation type="unfinished">Chwytak-2</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="546"/>
@@ -2622,7 +2622,7 @@ Zmień Czas</translation>
         <location filename="hcinstruction/ichcconditionpage.ui" line="880"/>
         <location filename="hcinstruction/ichcconditionpage_5.ui" line="208"/>
         <source>Fixture-3</source>
-        <translation type="unfinished">Uchwyt-3</translation>
+        <translation type="unfinished">Chwytak-3</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcconditionpage.ui" line="912"/>
@@ -2740,7 +2740,7 @@ Zmień Czas</translation>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="97"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="196"/>
         <source>Detect fixture 1</source>
-        <translation type="unfinished">Wykrywanie uchwytu 1</translation>
+        <translation type="unfinished">Wykrywanie Chwytaku 1</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="104"/>
@@ -2754,21 +2754,21 @@ Zmień Czas</translation>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="143"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="211"/>
         <source>Detect fixture 4</source>
-        <translation type="unfinished">Wykrywanie uchwytu 4</translation>
+        <translation type="unfinished">Wykrywanie Chwytaku 4</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="182"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="182"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="208"/>
         <source>Detect fixture 3</source>
-        <translation type="unfinished">Wykrywanie uchwytu 3</translation>
+        <translation type="unfinished">Wykrywanie Chwytaku 3</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="247"/>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="247"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="202"/>
         <source>Detect fixture 2</source>
-        <translation type="unfinished">Wykrywanie uchwytu 2</translation>
+        <translation type="unfinished">Wykrywanie chwytaka 2</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="254"/>
@@ -2863,7 +2863,7 @@ Zmień Czas</translation>
         <location filename="hcsettings/ichcdetectionframe_5.ui" line="541"/>
         <location filename="hcsettings/ichcdetectionframe.cpp" line="232"/>
         <source>Don&apos;t Limit</source>
-        <translation type="unfinished">Brak limitu</translation>
+        <translation type="unfinished">Nie ograniczaj</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcdetectionframe.ui" line="549"/>
@@ -2984,25 +2984,25 @@ Zmień Czas</translation>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="156"/>
         <source>Fixture1  </source>
-        <translation type="unfinished">Uchwyt1  </translation>
+        <translation type="unfinished">Chwytak1  </translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="156"/>
         <source>Fixture2  </source>
-        <translation type="unfinished">Uchwyt2  </translation>
+        <translation type="unfinished">Chwytak2  </translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="156"/>
         <source>Fixture3  </source>
-        <translation type="unfinished">Uchwyt3  </translation>
+        <translation type="unfinished">Chwytak3  </translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="24"/>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="156"/>
         <source>Fixture4  </source>
-        <translation type="unfinished">Uchwyt4  </translation>
+        <translation type="unfinished">Chwytak4  </translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcfixturepage.cpp" line="25"/>
@@ -3169,13 +3169,13 @@ Zmień Czas</translation>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="159"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="513"/>
         <source>Stack</source>
-        <translation type="unfinished">Stos</translation>
+        <translation type="unfinished">Sztaplowanie</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="197"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="323"/>
         <source>Fixture</source>
-        <translation type="unfinished">Uchwyt</translation>
+        <translation type="unfinished">Chwytak</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="235"/>
@@ -3223,7 +3223,7 @@ Zmień Czas</translation>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="501"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="703"/>
         <source>Comment</source>
-        <translation type="unfinished">Uwaga</translation>
+        <translation type="unfinished">Komentarz</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="539"/>
@@ -3264,7 +3264,7 @@ Zmień Czas</translation>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="798"/>
         <location filename="hcinstruction/ichcinstructionpageframe_5.ui" line="752"/>
         <source>Modify</source>
-        <translation type="unfinished">Modyfikacja</translation>
+        <translation type="unfinished">Modyfikuj</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcinstructionpageframe.ui" line="836"/>
@@ -3400,7 +3400,7 @@ Zmień Czas</translation>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="115"/>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="132"/>
         <source>Fixture</source>
-        <translation type="unfinished">Uchwyt</translation>
+        <translation type="unfinished">Chwytak</translation>
     </message>
     <message>
         <location filename="hcmanualoperation/ichcmanualoperationpageframe.cpp" line="116"/>
@@ -3645,7 +3645,7 @@ Zmień Czas</translation>
         <location filename="hcsettings/ichcproductsettingframe_5.ui" line="98"/>
         <location filename="hcsettings/ichcproductsettingframe.cpp" line="221"/>
         <source>Fixture</source>
-        <translation type="unfinished">Uchwyt</translation>
+        <translation type="unfinished">Chwytak</translation>
     </message>
     <message>
         <location filename="hcsettings/ichcproductsettingframe.ui" line="554"/>
@@ -3898,25 +3898,25 @@ Zmień Czas</translation>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="73"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="106"/>
         <source>Has not teach check Fixture-1!</source>
-        <translation type="unfinished">Has not teach check Uchwyt-1!</translation>
+        <translation type="unfinished">Has not teach check Chwytak-1!</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="74"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="107"/>
         <source>Has not teach check Fixture-2!</source>
-        <translation type="unfinished">Has not teach check Uchwyt-2!</translation>
+        <translation type="unfinished">Has not teach check Chwytak-2!</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="75"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="108"/>
         <source>Has not teach check Fixture-3!</source>
-        <translation type="unfinished">Has not teach check Uchwyt-3!</translation>
+        <translation type="unfinished">Has not teach check Chwytak-3!</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="76"/>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="109"/>
         <source>Has not teach check Fixture-4!</source>
-        <translation type="unfinished">Has not teach check Uchwyt-4!</translation>
+        <translation type="unfinished">Has not teach check Chwytak-4!</translation>
     </message>
     <message>
         <location filename="hcinstruction/ichcprogrammonitorframe.cpp" line="77"/>
@@ -4026,7 +4026,7 @@ Zmień Czas</translation>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="32"/>
         <location filename="hcsettings/ichcsettingsframe.cpp" line="75"/>
         <source>Figure</source>
-        <translation type="unfinished">Rysunek</translation>
+        <translation type="unfinished">Kształt</translation>
     </message>
 </context>
 <context>
@@ -4869,7 +4869,7 @@ Aplikacja %1; Host:</translation>
     <message>
         <location filename="hcsettings/ichctimeframe.ui" line="325"/>
         <source>Go Out</source>
-        <translation type="unfinished">Go Out</translation>
+        <translation type="unfinished">Wyjście na zew.</translation>
     </message>
 </context>
 <context>
@@ -4993,12 +4993,12 @@ Aplikacja %1; Host:</translation>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="262"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="270"/>
         <source>Horizon-1 Limit</source>
-        <translation type="unfinished">Poziomo-1 Limit</translation>
+        <translation type="unfinished">Poziomo-1 granica</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="263"/>
         <source>Vertical-1 Limit </source>
-        <translation type="unfinished">Pionowo-1 Limit </translation>
+        <translation type="unfinished">Pionowo-1 granica</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="265"/>
@@ -5014,7 +5014,7 @@ Aplikacja %1; Host:</translation>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="271"/>
         <source>Vertical-1 Limit</source>
-        <translation type="unfinished">Pionowo-1 Limit</translation>
+        <translation type="unfinished">Pionowo-1 granica</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="273"/>
@@ -5104,7 +5104,7 @@ Aplikacja %1; Host:</translation>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="314"/>
         <source>Z begin Limit</source>
-        <translation type="unfinished">Limit Z pocz.</translation>
+        <translation type="unfinished">Granica Z pocz.</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="315"/>
@@ -5241,12 +5241,12 @@ Aplikacja %1; Host:</translation>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="389"/>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="397"/>
         <source>Horizon-2 Limit</source>
-        <translation type="unfinished">Poziomo-2 Limit</translation>
+        <translation type="unfinished">Poziomo-2 granica</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="390"/>
         <source>Vertical-2 Limit </source>
-        <translation type="unfinished">Pionowo-2 Limit </translation>
+        <translation type="unfinished">Pionowo-2 granica</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="392"/>
@@ -5262,7 +5262,7 @@ Aplikacja %1; Host:</translation>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="398"/>
         <source>Vertical-2 Limit</source>
-        <translation type="unfinished">Pionowo-2 Limit</translation>
+        <translation type="unfinished">Pionowo-2 granica</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="400"/>
@@ -5272,7 +5272,7 @@ Aplikacja %1; Host:</translation>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="406"/>
         <source>B Begin limit</source>
-        <translation type="unfinished">Limit B pocz.</translation>
+        <translation type="unfinished">Granica B pocz.</translation>
     </message>
     <message>
         <location filename="custom_widgets/iciomonitor/iciopage.cpp" line="407"/>
@@ -5478,7 +5478,7 @@ Aplikacja %1; Host:</translation>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="41"/>
         <source>#Flag[%2]:Comment:%1</source>
-        <translation type="unfinished">#Flaga[%2]:Uwaga:%1</translation>
+        <translation type="unfinished">#Flaga[%2]:Komentarz:%1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="46"/>
@@ -5488,7 +5488,7 @@ Aplikacja %1; Host:</translation>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="75"/>
         <source>Fixture</source>
-        <translation type="unfinished">Uchwyt</translation>
+        <translation type="unfinished">Chwytak</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="80"/>
@@ -5889,7 +5889,7 @@ Aplikacja %1; Host:</translation>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/iclineeditwithvirtualnumerickeypad.cpp" line="125"/>
         <source>There are only </source>
-        <translation type="unfinished">Jest tylko </translation>
+        <translation type="unfinished">Są tylko </translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/iclineeditwithvirtualnumerickeypad.cpp" line="127"/>
@@ -5908,7 +5908,7 @@ Aplikacja %1; Host:</translation>
         <source>The value must be an integer
 Please enter an integer between </source>
         <translation type="unfinished">Wartość musi być liczbą całkowitą
-Proszę podać liczbę całkowitą między </translation>
+Proszę podać liczbę całkowitą pomiędzy </translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/iclineeditwithvirtualnumerickeypad.cpp" line="150"/>
@@ -5956,7 +5956,7 @@ Wpisz cyfrę pomiędzy </translation>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="89"/>
         <source>A Max Speed</source>
-        <translation type="unfinished">Mak. prędkość A</translation>
+        <translation type="unfinished">Max. prędkość A</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="137"/>
@@ -5976,7 +5976,7 @@ Wpisz cyfrę pomiędzy </translation>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="373"/>
         <source>Z Max Speed</source>
-        <translation type="unfinished">Mak. prędkość Z</translation>
+        <translation type="unfinished">Max. prędkość Z</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="390"/>
@@ -6001,7 +6001,7 @@ Wpisz cyfrę pomiędzy </translation>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="469"/>
         <source>Y2 Max Speed</source>
-        <translation type="unfinished">Mak. prędkość Y2</translation>
+        <translation type="unfinished">Max. prędkość Y2</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="498"/>
@@ -6021,7 +6021,7 @@ Wpisz cyfrę pomiędzy </translation>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="560"/>
         <source>X2 Max Speed</source>
-        <translation type="unfinished">Mak. prędkość X2</translation>
+        <translation type="unfinished">Max. prędkość X2</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="608"/>
@@ -6031,12 +6031,12 @@ Wpisz cyfrę pomiędzy </translation>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="618"/>
         <source>Y1 Max Speed</source>
-        <translation type="unfinished">Mak. prędkość Y1</translation>
+        <translation type="unfinished">Max. prędkość Y1</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="628"/>
         <source>C Max Speed</source>
-        <translation type="unfinished">Mak. prędkość C</translation>
+        <translation type="unfinished">Max. prędkość C</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachineconfigpage.ui" line="638"/>
@@ -6066,7 +6066,7 @@ Wpisz cyfrę pomiędzy </translation>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="54"/>
         <source>Inside Up X Max</source>
-        <translation type="unfinished">Wewnątrz w górę X Maks.</translation>
+        <translation type="unfinished">Wewnątrz w górę X Max</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="67"/>
@@ -6077,7 +6077,7 @@ Wpisz cyfrę pomiędzy </translation>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="93"/>
         <source>Outside Up X Max</source>
-        <translation type="unfinished">Na zewnątrz w dół X Maks.</translation>
+        <translation type="unfinished">Na zewnątrz w dół X Max</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="119"/>
@@ -6087,7 +6087,7 @@ Wpisz cyfrę pomiędzy </translation>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="126"/>
         <source>Inside Down X Max</source>
-        <translation type="unfinished">Wewnątrz w dół X Maks.</translation>
+        <translation type="unfinished">Wewnątrz w dół X Max</translation>
     </message>
     <message>
         <location filename="hcsettings/icmachinefigure.ui" line="178"/>
@@ -6385,12 +6385,12 @@ Wpisz cyfrę pomiędzy </translation>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="45"/>
         <source>Fixtur1</source>
-        <translation type="unfinished">Uchwyt1</translation>
+        <translation type="unfinished">Chwytak1</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="46"/>
         <source>Fixtur2</source>
-        <translation type="unfinished">Uchwyt2</translation>
+        <translation type="unfinished">Chwytak2</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="47"/>
@@ -6425,7 +6425,7 @@ Wpisz cyfrę pomiędzy </translation>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="57"/>
         <source>Fixtur4</source>
-        <translation type="unfinished">Uchwyt4</translation>
+        <translation type="unfinished">Chwytak4</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="58"/>
@@ -6480,7 +6480,7 @@ Wpisz cyfrę pomiędzy </translation>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="70"/>
         <source>Fixture3</source>
-        <translation type="unfinished">Uchwyt3</translation>
+        <translation type="unfinished">Chwytak3</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="71"/>
@@ -6601,12 +6601,12 @@ Wpisz cyfrę pomiędzy </translation>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="104"/>
         <source>Fixtur1 Valve</source>
-        <translation type="unfinished">Zawór Uchwytu 1</translation>
+        <translation type="unfinished">Zawór Chwytaku 1</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="105"/>
         <source>Fixtur2 Valve</source>
-        <translation type="unfinished">Zawór Uchwytu 2</translation>
+        <translation type="unfinished">Zawór Chwytaku 2</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="106"/>
@@ -6631,7 +6631,7 @@ Wpisz cyfrę pomiędzy </translation>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="111"/>
         <source>Fixtur4 Valve</source>
-        <translation type="unfinished">Zawór Uchwytu 4</translation>
+        <translation type="unfinished">Zawór Chwytaku 4</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="112"/>
@@ -6691,7 +6691,7 @@ Wpisz cyfrę pomiędzy </translation>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="124"/>
         <source>Fixture3 Valve</source>
-        <translation type="unfinished">Zawór Uchwytu 3</translation>
+        <translation type="unfinished">Zawór Chwytaku 3</translation>
     </message>
     <message>
         <location filename="categorypage/icmonitorpageframe.cpp" line="126"/>
@@ -6915,7 +6915,7 @@ Wpisz cyfrę pomiędzy </translation>
     <message>
         <location filename="icorigindialog.ui" line="14"/>
         <source>Origin</source>
-        <translation type="unfinished">Pochodzenie</translation>
+        <translation type="unfinished">Początek</translation>
     </message>
     <message>
         <location filename="icorigindialog.ui" line="41"/>
@@ -7018,7 +7018,7 @@ Wpisz cyfrę pomiędzy </translation>
     <message>
         <location filename="hcinstruction/icperipherypage.ui" line="115"/>
         <source>Conveyor</source>
-        <translation type="unfinished">Przenośnik</translation>
+        <translation type="unfinished">Taśmociąg</translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.ui" line="120"/>
@@ -7050,7 +7050,7 @@ Wpisz cyfrę pomiędzy </translation>
         <location filename="hcinstruction/icperipherypage.cpp" line="25"/>
         <location filename="hcinstruction/icperipherypage.cpp" line="88"/>
         <source>conveyor  </source>
-        <translation type="unfinished">przenośnik  </translation>
+        <translation type="unfinished">Taśmociąg  </translation>
     </message>
     <message>
         <location filename="hcinstruction/icperipherypage.cpp" line="26"/>
@@ -7247,7 +7247,7 @@ Wpisz cyfrę pomiędzy </translation>
         <location filename="hcinstruction/icprogramguidepage.ui" line="111"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="117"/>
         <source>Get Product Fixture</source>
-        <translation type="unfinished">Get Product Fixture</translation>
+        <translation type="unfinished">Chwytak produktu</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="129"/>
@@ -7255,7 +7255,7 @@ Wpisz cyfrę pomiędzy </translation>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="150"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="246"/>
         <source>Use Fixture:</source>
-        <translation type="unfinished">Użyj Uchwytu:</translation>
+        <translation type="unfinished">Użyj Chwytaku:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="137"/>
@@ -7263,7 +7263,7 @@ Wpisz cyfrę pomiędzy </translation>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="164"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="263"/>
         <source>Fixture-1</source>
-        <translation type="unfinished">Uchwyt-1</translation>
+        <translation type="unfinished">Chwytak-1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="142"/>
@@ -7271,7 +7271,7 @@ Wpisz cyfrę pomiędzy </translation>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="169"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="268"/>
         <source>Fixture-2</source>
-        <translation type="unfinished">Uchwyt-2</translation>
+        <translation type="unfinished">Chwytak-2</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="147"/>
@@ -7279,7 +7279,7 @@ Wpisz cyfrę pomiędzy </translation>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="174"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="273"/>
         <source>Fixture-3</source>
-        <translation type="unfinished">Uchwyt-3</translation>
+        <translation type="unfinished">Chwytak-3</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="152"/>
@@ -7287,7 +7287,7 @@ Wpisz cyfrę pomiędzy </translation>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="179"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="278"/>
         <source>Fixture-4</source>
-        <translation type="unfinished">Uchwyt-4</translation>
+        <translation type="unfinished">Chwytak-4</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="157"/>
@@ -7311,13 +7311,13 @@ Wpisz cyfrę pomiędzy </translation>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="203"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="302"/>
         <source>Check Fixture</source>
-        <translation type="unfinished">Sprawdź uchwyt</translation>
+        <translation type="unfinished">Sprawdź chwytak</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="183"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="216"/>
         <source>Get Outlet Fixture</source>
-        <translation type="unfinished">Get Outlet Fixture</translation>
+        <translation type="unfinished">Chwytak wyjście</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="286"/>
@@ -7329,7 +7329,7 @@ Wpisz cyfrę pomiędzy </translation>
         <location filename="hcinstruction/icprogramguidepage.ui" line="293"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="368"/>
         <source>Set In</source>
-        <translation type="unfinished">Ustawienie</translation>
+        <translation type="unfinished">Ustawienie wej.</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="320"/>
@@ -7404,7 +7404,7 @@ Wpisz cyfrę pomiędzy </translation>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="737"/>
         <location filename="hcinstruction/icprogramguidepage.cpp" line="1000"/>
         <source>Product</source>
-        <translation type="unfinished">Moczenie</translation>
+        <translation type="unfinished">Produkt</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="524"/>
@@ -7473,7 +7473,7 @@ Wpisz cyfrę pomiędzy </translation>
         <location filename="hcinstruction/icprogramguidepage.ui" line="734"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1124"/>
         <source>Release Outlet:</source>
-        <translation type="unfinished">Release Outlet:</translation>
+        <translation type="unfinished">Zwolnienie wyjścia:</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="803"/>
@@ -7499,7 +7499,7 @@ Wpisz cyfrę pomiędzy </translation>
         <location filename="hcinstruction/icprogramguidepage.ui" line="892"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1411"/>
         <source>Stacked En</source>
-        <translation type="unfinished">Stacked En</translation>
+        <translation type="unfinished">Sztaplowanie En</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="902"/>
@@ -7523,7 +7523,7 @@ Wpisz cyfrę pomiędzy </translation>
         <location filename="hcinstruction/icprogramguidepage.ui" line="934"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1489"/>
         <source>Finish</source>
-        <translation type="unfinished">Zakończono</translation>
+        <translation type="unfinished">Koniec</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="422"/>
@@ -7547,13 +7547,13 @@ Wpisz cyfrę pomiędzy </translation>
         <location filename="hcinstruction/icprogramguidepage.cpp" line="1006"/>
         <location filename="hcinstruction/icprogramguidepage.cpp" line="1094"/>
         <source>Release Product Position Settings</source>
-        <translation type="unfinished">Release Product Position Settings</translation>
+        <translation type="unfinished">Ustawienie pozycji zwolnienia produktu</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.cpp" line="1027"/>
         <location filename="hcinstruction/icprogramguidepage.cpp" line="1115"/>
         <source>Release Outlet Position Settings</source>
-        <translation type="unfinished">Release Outlet Position Settings</translation>
+        <translation type="unfinished">Ustawienie zwolnienia pozycji zewnętrznej</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.cpp" line="1161"/>
@@ -8685,7 +8685,7 @@ Wpisz cyfrę pomiędzy </translation>
     <message>
         <location filename="custom_widgets/systemstatusframe/ictunemolddialog.ui" line="42"/>
         <source>Start</source>
-        <translation type="unfinished">Początkowa</translation>
+        <translation type="unfinished">Start</translation>
     </message>
     <message>
         <location filename="custom_widgets/systemstatusframe/ictunemolddialog.ui" line="58"/>
@@ -9138,7 +9138,7 @@ Proszę wpisać hasło roota, aby potwierdzić.</translation>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="332"/>
         <location filename="hcinstruction/icwaitconditioneditor_5.ui" line="355"/>
         <source>Wait EUCOREIN</source>
-        <translation type="unfinished">Czekaj EUCOREIN</translation>
+        <translation type="unfinished">Czekaj EUrdzeńIN</translation>
     </message>
     <message>
         <location filename="hcinstruction/icwaitconditioneditor.ui" line="342"/>
@@ -9398,7 +9398,7 @@ Proszę wpisać hasło roota, aby potwierdzić.</translation>
         <location filename="function_settings/moldinformation.ui" line="394"/>
         <location filename="function_settings/moldinformation_5.ui" line="286"/>
         <source>New</source>
-        <translation type="unfinished">Nowe</translation>
+        <translation type="unfinished">Nowy</translation>
     </message>
     <message>
         <location filename="function_settings/moldinformation.ui" line="419"/>
@@ -9809,7 +9809,7 @@ Wprowadź nową nazwę</translation>
     <message>
         <location filename="custom_widgets/programhead/passwdlevellabel.cpp" line="81"/>
         <source>None Level</source>
-        <translation type="unfinished">None Level</translation>
+        <translation type="unfinished">Brak poziomu</translation>
     </message>
 </context>
 <context>
@@ -10105,7 +10105,7 @@ admin</translation>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="619"/>
         <source>Conveyor ON</source>
-        <translation type="unfinished">Przenośnik ON</translation>
+        <translation type="unfinished">Taśmociąg ON</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="620"/>
@@ -10170,7 +10170,7 @@ admin</translation>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="637"/>
         <source>Conveyor OFF</source>
-        <translation type="unfinished">Przenośnik OFF</translation>
+        <translation type="unfinished">Taśmociąg OFF</translation>
     </message>
     <message>
         <location filename="hcinstruction/icinstructparam.cpp" line="638"/>
