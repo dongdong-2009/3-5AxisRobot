@@ -411,8 +411,14 @@ QString ICInstructParam::ConvertCommandStr(const ICMoldItem & moldItem)
             {
                 commandStr += tr("Product Clear");
             }
+            else if(moldItem.IFVal() == 8)
+            {
+                commandStr += actionGroupMap_.value(moldItem.DVal())
+                        + (moldItem.SVal() == 1 ? tr("PP"):tr("RP")) + tr("Offset Ready");
+            }
             return commandStr;
         }
+
     }
     else
     {

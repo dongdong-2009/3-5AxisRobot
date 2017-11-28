@@ -34,6 +34,12 @@ QList<ICMoldItem> ICHCOtherPage::CreateCommandImpl() const
     {
         item.SetIFVal(1);
     }
+    else if(ui->offsetSel->isChecked())
+    {
+        item.SetIFVal(8);
+        item.SetSVal(ui->rpSel->isChecked()? 2 : 1);
+        item.SetDVal(ui->offsetAxis->currentIndex());
+    }
     else
         return ret;
     ret.append(item);
