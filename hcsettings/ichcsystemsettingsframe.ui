@@ -548,6 +548,41 @@ QRadioButton::indicator:unchecked:disabled
            </attribute>
           </widget>
          </item>
+         <item row="1" column="6">
+          <widget class="QCheckBox" name="vietnameseBox">
+           <property name="styleSheet">
+            <string notr="true">::indicator {
+     width: 32px;
+     height: 32px;
+ }
+
+::indicator:unchecked 
+{
+     image: url(:/resource/check_unchecked.png);
+ }
+::indicator:checked 
+{
+     image: url(:/resource/check_checked.png);
+ }
+
+QRadioButton::indicator:checked:disabled
+{
+ image: url(:/resource/check_checked_disable.png);
+}
+
+QRadioButton::indicator:unchecked:disabled
+{
+ image: url(:/resource/check_unchecked_disable.png);
+}</string>
+           </property>
+           <property name="text">
+            <string notr="true">Tiếng Việt</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">languageButtonGroup</string>
+           </attribute>
+          </widget>
+         </item>
         </layout>
        </item>
        <item row="3" column="0" colspan="2">
@@ -1389,7 +1424,7 @@ QRadioButton::indicator:unchecked:disabled
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -1619,7 +1654,7 @@ QRadioButton::indicator:unchecked:disabled
  </resources>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="languageButtonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
  </buttongroups>
 </ui>

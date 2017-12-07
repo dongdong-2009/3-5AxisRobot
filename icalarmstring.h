@@ -58,6 +58,8 @@ public:
     const QString AlarmPolishInfoPathName;
     const QString AlarmTurkeyInfoPathName;
     const QString AlarmPortugalInfoPathName;
+    const QString AlarmVIInfoPathName;
+
 
 
 
@@ -72,6 +74,7 @@ public:
     const QString HintPolishInfoPathName;
     const QString HintTurkeyInfoPathName;
     const QString HintPortugalInfoPathName;
+    const QString HintVIInfoPathName;
 
 
 

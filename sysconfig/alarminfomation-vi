@@ -1,0 +1,435 @@
+1:Lỗi hiệu dụng/ Virtual Error
+2:Xuất hiện ký tự lạ
+3:Chương trình không có ký tự kết thúc
+4:Bỏ qua ký tự
+5:Lẫn lộn hệ tọa độ
+6:Không có điểm kết thúc
+7:Xác định hình cung
+8:Trình tự
+9:Bán kính không khớp
+10:Quá tốc độ
+11:Xác định được hai IO
+12:Không xác định được IO
+13:Lỗi thao tác tổ hợp
+14:Lỗi nhóm chế độ chờ
+15:Sai bước tìm kiếm kế tiếp
+16:Thao tác kết thúc vượt định mức
+17:Lỗi đăng ký biểu mẫu
+18:Kiểm tra kết thúc thao tác chính
+19:Lỗi số đăng ký
+20:Lỗi ký tự đăng ký
+21:Hoàn tất thủ tục đăng ký
+22:X vẫn đang chạy khi đang tạo thao tác
+23:Y vẫn đang chạy khi đang tạo thao tác
+24:Z vẫn đang chạy khi đang tạo thao tác
+25:G trì hoãn nhưng bộ đếm thời gian đã quy về 0
+26:X vượt quá tốc độ cho phép
+27:Y vượt quá tốc độ cho phép
+28:Z vượt quá tốc độ cho phép
+29:Hết thời gian nhập bộ nhớ
+30:Gỡ lỗi không thành công
+60:A vượt quá tốc độ cho phép
+61:B vượt quá tốc độ cho phép
+62:C vượt quá tốc độ cho phép
+63:A vẫn đang chạy khi đang tạo thao tác
+64:B vẫn đang chạy khi đang tạo thao tác
+65:C vẫn đang chạy khi đang tạo thao tác
+70:X2 vượt quá tốc độ cho phép
+71:Y2 vượt quá tốc độ cho phép
+72:X2 vẫn đang chạy khi đang tạo thao tác
+73:Y2 vẫn đang chạy khi đang tạo thao tác
+100:Xung mạch X sai lệch quá lớn
+101:Xung mạch Y sai lệch quá lớn
+102:Xung mạch Z sai lệch quá lớn
+103:Lỗi xung mạch Z trục X
+104:Lỗi xung mạch Z trục Y
+105:Lỗi xung mạch Z trục Z
+106:Động cơ servo X báo động
+107:Động cơ servo Y báo động
+108:Động cơ servo Z báo động
+109:Sai vị trí X
+110:Sai vị trí Y
+111:Sai vị trí Z
+112:Trục X vượt quá điểm cuối
+113:Trục X vượt quá khởi điểm
+114:Trục Y vượt quá điểm cuối
+115:Trục Y vượt quá khởi điểm
+116:Trục Z vượt quá điểm cuối
+117:Trục Z vượt quá khởi điểm
+118:Giá trị X hiện tại quá lớn
+119:Giá trị X hiện tại quá nhỏ
+120:Giá trị Y hiện tại quá lớn
+121:Giá trị Y hiện tại quá nhỏ
+122:Giá trị Z hiện tại quá lớn
+123:Giá trị Z hiện tại quá nhỏ
+124:X được thiết lập quá lớn trong lúc chạy
+125:X được thiết lập quá nhỏ trong lúc chạy
+126:Y được thiết lập quá lớn trong lúc chạy
+127:Y được thiết lập quá nhỏ trong lúc chạy
+128:Z được thiết lập quá lớn trong lúc chạy
+129:Z được thiết lập quá nhỏ trong lúc chạy
+130:Sai bộ nhớ trục X
+131:Sai bộ nhớ trục Y
+132:Sai bộ nhớ trục Z
+133:Sai bộ nhớ kết cấu
+134:So sánh trục X
+135:So sánh trục Y
+136:So sánh trục Z
+137:So sánh kết cấu
+138:X không phải trục servo
+139:Y không phải trục servo
+140:Z không phải trục servo
+160:Xung mạch X2 sai lệch quá lớn
+161:Xung mạch Y2 sai lệch quá lớn
+162:Lỗi tín hiệu Z X2
+163:Lỗi tín hiệu Z Y2
+164:Động cơ servo X2 báo động
+165:Động cơ servo Y2 báo động
+166:Sai vị trí X2
+167:Sai vị trí Y2
+168:Trục X2 vượt quá điểm cuối
+169:Trục X2 vượt quá khởi điểm
+170:Trục Y2 vượt quá điểm cuối
+171:Trục Y2 vượt quá khởi điểm
+172:Vị trí X2 quá lớn
+173:Vị trí X2 quá nhỏ
+174:Vị trí Y2quá lớn
+175:Vị trí Y2 quá nhỏ
+176:X2 được thiết lập quá lớn trong lúc chạy
+177:X2 được thiết lập quá nhỏ trong lúc chạy
+178:Y2 được thiết lập quá lớn trong lúc chạy
+179:Y2 được thiết lập quá nhỏ trong lúc chạy
+180:Sai bộ nhớ trục X2
+181:Sai bộ nhớ trục Y2
+182:So sánh trục X2
+183:So sánh trục Y2
+184:X2 không phải trục servo
+185:Y2 không phải trục servo
+200:Xung mạch A sai lệch quá lớn
+201:Xung mạch B sai lệch quá lớn
+202:Xung mạch C sai lệch quá lớn
+203:Lỗi tín hiệu Z trục A
+204:Lỗi tín hiệu Z trục B
+205:Lỗi tín hiệu Z trục C
+206:Động cơ servo A báo động
+207:Động cơ servo B báo động
+208:Động cơ servo C báo động
+209:Sai vị trí A
+210:Sai vị trí B
+211:Sai vị trí C
+212:Trục A vượt quá điểm cuối
+213:Trục A vượt quá khởi điểm
+214:Trục B vượt quá điểm cuối
+215:Trục B vượt quá khởi điểm
+216:Trục C vượt quá điểm cuối
+217:Trục C vượt quá khởi điểm
+218:Vị trí A hiện tại quá lớn
+219:Vị trí A hiện tại quá nhỏ
+220:Vị trí B hiện tại quá lớn
+221:Vị trí B hiện tại quá nhỏ
+222:Vị trí C hiện tại quá lớn
+223:Vị trí C hiện tại quá nhỏ
+224:A được thiết lập quá lớn trong lúc chạy
+225:A được thiết lập quá nhỏ trong lúc chạy
+226:B được thiết lập quá lớn trong lúc chạy
+227:B được thiết lập quá nhỏ trong lúc chạy
+228:C được thiết lập quá lớn trong lúc chạy
+229:C được thiết lập quá nhỏ trong lúc chạy
+230:Sai bộ nhớ trục A
+231:Sai bộ nhớ trục B
+232:Sai bộ nhớ trục C
+233:SPI NULL
+234:So sánh trục A
+235:So sánh trục B
+236:So sánh trục C
+237:COMPARE NULL
+238:A không phải trục servo
+239:B không phải trục servo
+240:C không phải trục servo
+300:Lỗi thiết lập trục X
+301:Lỗi thiết lập trục Y
+302:Lỗi thiết lập trục Z
+303:Lỗi thao tác hiệu nghiệm
+304:Dừng ngay việc nhập!
+305:Lỗi vòng quay chính
+306:Lỗi vị trí đợi động cơ
+307:Lỗi lấy khuôn
+308:Dung sai quá lớn
+309:Sai tham số chức năng khuôn
+310:iSub macro quá lớn
+311:Sử dụng lệnh iSub
+312:Trạng thái xếp chồng không tồn tại
+313:Trạng thái nối chồng
+314:Sai trình tự thao tác
+315:Hệ thống tham số
+316:Sai trình tự thao tác
+317:Sai trình tự thao tác
+318:Dãy lệnh đơn
+319:Chỉ chạy với chế độ tự động
+320:SEQ không bình thường
+321:Kết quả kiểm tra sai
+322:Sai giá trị GM
+323:Chờ mở khuôn
+324:Giá trị GM lỗi khi đang điều chỉnh tự động
+325:Trùng lặp thao tác cắp
+326:Thao tác trùng lặp
+327:Chỉ có thể dùng trong level 1
+328:Kiểm tra số liệu khi có thao tác
+329:Kiểm tra tham số cắp hút
+330:Vị trí đã xác định, vui lòng khởi động lại
+331:Sai vị trí lựa chọn tham số
+332:Đã xác định đầu ra, vui lòng khởi động lại
+333:Đã thay đổi trục xác định, vui lòng khởi động lại
+334:Xuất hiện lỗi tham số sau khi tổng kiểm tra
+360:Kiểm tra thông số trục X2
+361:Kiểm tra thông số trục Y2
+362:Kiểm tra thông số trục A
+363:Kiểm tra thông số trục B
+364:Kiểm tra thông số trục C
+365:Kiểm tra thông số kết cấu
+400:Đọc lỗi thông số trục X
+401:Đọc lỗi thông số trục Y
+402:Đọc lỗi thông số trục Z
+403:Đọc lỗi thông số hệ thống
+404:Đọc lỗi thông số khuôn
+405:Đọc lỗi thông số macro
+406:Đọc lỗi thông số chức năng
+500:Ngắt kết nối với động cơ chính
+501:Lỗi đường truyền I/O
+502:Đã đạt tới sản lượng được thiết lập
+503:Áp suất thấp
+504:Thông tin WatchDog
+505:Danh sách chương trình đồng bộ hóa sai
+506:Hết thời gian chờ tín hiệu
+507:Không cho phép sửa đổi tham số khi đang hoạt động
+530:Đường truyền ZSIO hỏng
+531:Đường truyền IO-1 hỏng
+532:Đường truyền IO-2 hỏng
+533:Đường truyền IO-3 hỏng
+534:Đường truyền IO-4 hỏng
+535:Đường truyền IO-5 hỏng
+536:Đường truyền IO-6 hỏng
+537:Đường truyền IO-7 hỏng
+538:Đường truyền IO-8 hỏng
+539:Đường truyền IO-9 hỏng
+550:Vị trí thiết lập trục X1, X2 quá giới hạn cho phép
+580:Cổng X1 báo động
+581:Cổng Y1 báo động
+582:Cổng Z báo động
+583:Cổng X2 báo động
+600:Khi Z di chuyển ra ngoài khu vực an toàn, tín hiệu an toàn bên trong sáng
+601:Khi Z di chuyển ra ngoài khu vực an toàn, tín hiệu an toàn bên trong tắt
+602:Khi Z di chuyển vào trong khu vực an toàn, tín hiệu an toàn bên ngoài sáng
+603:Khi Z di chuyển vào trong khu vực an toàn, tín hiệu an toàn bên ngoài tắt
+604:Y không nằm trong vùng an toàn nhưng đèn sáng
+605:Y nằm trong vùng an toàn nhưng đèn không sáng
+606:B không nằm trong vùng an toàn nhưng đèn sáng
+607:B nằm trong vùng an toàn nhưng đèn không sáng
+608:Y2 không nằm trong vùng an toàn nhưng đèn sáng
+700:Hết thời gian chờ X043
+701:Hết thời gian chờ X044
+702:Hết thời gian xác nhận fixture-1
+703:Hết thời gian xác nhận fixture-2
+704:Hết thời gian xác nhận fixture-3
+705:Hết thời gian xác nhận fixture-4
+706:Hết thời gian xác nhận sucker-1
+707:Hết thời gian xác nhận sucker-2
+708:Hết thời gian chờ ejector forward
+709:Hết thời gian chờ ejector backward
+710:Hết thời gian chờ lõi vào
+711:Hết thời gian chờ lõi ra
+714:Hết thời gian chờ X045
+715:Hết thời gian chờ X046
+716:Hết thời gian chờ X047
+717:Hết thời gian chờ X026
+718:Hết thời gian chờ X040
+719:Hết thời gian chờ X023
+720:Hết thời gian chờ X037
+721:Hết thời gian chờ X017
+722:Hết thời gian chờ X036
+1000:Tín hiệu khuôn giữa ngắt trong khi hạ cánh
+1001:Tín hiệu mở khuôn ngắt trong khi hạ cánh
+1002:Cửa an toàn mở khi cánh đang hạ
+1003:Tín hiệu horizontal và vertical mở
+1004:Tín hiệu vị trí gốc trục Z và tín hiệu an toàn bên ngoài: Mở
+1005:Khi hạ cánh trong, tín hiệu mở khuôn ngắt
+1006:Sai vị trí 1 khi đang hạ cánh trong
+1007:Cánh trong đang hạ nhưng không nằm trong vị trí an toàn trục Z
+1008:Cánh ngoài đang hạ nhưng không nằm trong vị trí an toàn trục Z
+1009:Không thể kiểm tra tín hiệu khu vực an toàn khi cánh đang hạ
+1010:Y1 hạ không nằm trong vùng an toàn trục Z
+1011:Y1 hạ không nằm trong vùng an toàn trục X1
+1012:Hai vị trí ngang nhau
+1013:Giới hạn tiến - lui phụ mở
+1014:Giới hạn nâng - hạ phụ mở
+1015:Giới hạn tiến - lui chính mở
+1016:Giới hạn nâng - hạ chính mở
+1017:Cửa an toàn mở khi đang hoạt động
+1018:Y2 được hạ không trong phạm vi an toàn của X2
+1019:Tín hiệu mở khuôn được tắt khi về vị trí ban đầu
+1020:Tín hiệu khuôn giữa được tắt khi về vị trí ban đầu
+1021:Tư thế không vertical khi về vị trí cũ
+1022:Tư thế không horizontal khi về vị trí cũ
+1023:Tư thế di chuyển không vertical
+1024:Tư thế di chuyển không horizontal
+1025:Sai vị trí 2 khi cánh trong đang hạ
+1026:Giới hạn vị trí horizontal-2 và vertical-2 mở
+1027:Chưa hoàn tất việc đóng khuôn
+1028:Đang xóa lỗi
+1029:Không có tín hiệu tự động
+1030:Vị trí 2 chuyển động không thẳng
+1031:Vị trí 2 không chuyển động ngang
+1038:Trục Z không nằm bên ngoài khi sản phẩm không đạt yêu cầu
+1039:Thiết lập trục Z không nằm bên ngoài khi sản phẩm không đạt yêu cầu
+1040:Thao tác trước đó không phải của trục Z
+1052:Ngắt toàn bộ tín hiệu di chuyển vào, di chuyển ra và giới hạn nâng cánh chính
+1053:Không xác định
+1054:Không có trục X nhưng tồn tại thao tác X
+1055:Không có trục Y nhưng tồn tại thao tác Y
+1056:Không có trục Z nhưng tồn tại thao tác Z
+1057:Không có trục X2 nhưng tồn tại thao tác X2
+1058:Không có trục Y2 nhưng tồn tại thao tác Y2
+1059:Không có trục A nhưng tồn tại thao tác A
+1060:Không có trục B nhưng tồn tại thao tác B
+1061:Không có trục C nhưng tồn tại thao tác C
+1100:Không thể kiểm tra vùng an toàn khi hạ cánh chính
+1101:Không thể kiểm tra vùng an toàn khi hạ cánh phụ
+1102:Tín hiệu mở khuôn tắt khi hạ cánh chính
+1103:Tín hiệu mở khuôn tắt khi hạ cánh phụ
+1104:Giới hạn nâng chính mở sau khi hạ cánh chính
+1105:Giới hạn nâng phụ mở sau khi hạ cánh phụ
+1106:Giới hạn hạ ngắt sau khi hạ cánh chính
+1107:Giới hạn hạ ngắt sau khi hạ cánh phụ
+1108:Cánh chính hạ, tín hiệu khuôn giữa ngắt
+1109:Cánh phụ hạ, tín hiệu khuôn giữa ngắt
+1120:Không thể kiểm tra vùng an toàn bên trong bên ngoài khi nâng cánh chính
+1121:Không thể kiểm tra vùng an toàn bên trong bên ngoài khi nâng cánh phụ
+1122:Nâng cánh chính quá nhanh
+1123:Nâng cánh phụ quá nhanh
+1124:Tín hiệu mở khuôn ngắt khi đang nâng cánh chính
+1125:Tín hiệu mở khuôn ngắt khi dđang nâng cánh phụ
+1126:Giới hạn nâng cánh chính ngắt sau khi nâng cánh chính
+1127:Giới hạn nâng cánh chính ngắt sau khi nâng cánh phụ
+1140:Giới hạn lui cánh chính mở sau khi tiến cánh chính
+1141:Giới hạn lui cánh chính mở sau khi tiến cánh phụ
+1142:Giới hạn lui cánh chính ngắt sau khi lui cánh chính
+1143:Giới hạn lui cánh phụ ngắt sau khi lui cánh phụ
+1144:Giới hạn tiến cánh chính ngắt sau khi tiến cánh chính
+1145:Giới hạn tiến cánh phụ ngắt sau khi tiến cánh phụ
+1146:Giới hạn tiến cánh chính mở sau khi lui cánh chính
+1147:Giới hạn tiến cánh phụ mở sau khi lui cánh phụ
+1160:Không kiểm tra được giới hạn nâng chính khi vị trí 1 thay đổi
+1161:Không kiểm tra được giới hạn nâng phụ khi vị trí 1 thay đổi
+1162:Tín hiệu mở khuôn ngắt khi vị trí 1 thay đổi
+1163:Giới hạn horizontal-1 ngắt sau khi đổi vị trí 1 thành horizontal
+1164:Giới hạn vertical-1 ngắt sau khi đổi vị trí 1 thành vertical
+1165:Không nằm trong vùng an toàn khi horizontal
+1170:Không kiểm tra được giới hạn nâng chính khi vị trí 2 thay đổi
+1171:Không kiểm tra được giới hạn nâng phụ khi vị trí 2 thay đổi
+1172:Ngắt tín hiệu mở khuôn khi vị trí 2 thay đổi
+1173:Giới hạn horizontal-2 ngắt sau khi đổi vị trí 2 thành horizontal
+1174:Giới hạn vertical-2 ngắt sau khi đổi vị trí 2 thành vertical
+1180:Giới hạn nâng cánh chính ngắt khi không khí chuyển động ra vào
+1181:Giới hjan nâng cánh phụ ngắt khi không khí chuyển động ra vào
+1182:Ngắt giới hạn chuyển động vào sau khi đã vào
+1183:Ngắt giới hạn chuyển động ra sau khi đã ra
+1184:Vị trí di chuyển không khớp với hướng dẫn
+1185:Tín hiệu mở khuôn ngắt khi di chuyển vào
+1186:Giới hạn nâng cánh chính ngắt khi di chuyển trong vùng nguy hiểm
+1187:Giới hạn nâng cánh phụ ngắt khi di chuyển trong vùng nguy hiểm
+1188:Y1 không nằm trong vùng bảo vệ khi di chuyển ngoài khu vực an toàn
+1189:Sẽ di chuyển từ ngoài vào trong khi giới hạn nâng ko mở
+1190:Sẽ di chuyển từ trong ra ngoài khi giới hạn nâng không mở
+1191:Không tìm thấy giới hạn nâng khi đang di chuyển trong vùng nguy hiểm dưới chế độ thủ công
+1192:Vị trí hiện tại nhỏ hơn vị trí có thể di chuyển an toàn
+1193:Vị trí hiện tại lớn hơn vị trí có thể di chuyển an toàn
+1194:Trục Y2 không ở vị trí nâng
+1195:Hết thời gian chờ tín hiệu nâng Y1, Y2 trong lúc di chuyển
+1200:Tín hiệu Clip1 tắt, van Clip1 mở
+1201:Tín hiệu Clip1 sáng, van Clip1 tắt
+1202:Tín hiệu Clip2 tắt, van Clip2 mở
+1203:Tín hiệu Clip2 sáng, van Clip2tắt
+1204:Tín hiệu Clip3 tắt, van Clip3 mở
+1205:Tín hiệu Clip3 sáng, van Clip3 tắt
+1206:Tín hiệu Clip4 tắt, van Clip4 mở
+1207:Tín hiệu Clip4 sáng, van Clip4 tắt
+1208:Tín hiệu Suck1 tắt, van Suck1 mở
+1209:Tín hiệu Suck1 sáng, van Suck1 tắt
+1210:Tín hiệu Suck2 tắt, van Suck2 mở
+1211:Tín hiệu Suck2 sáng, van Suck2 tắt
+1212:Tín hiệu Suck3 tắt, van Suck3 mở
+1213:Tín hiệu Suck3 sáng, van Suck3 tắt
+1214:Tín hiệu Suck4 tắt, van Suck4 mở
+1215:Tín hiệu Suck4 sáng, van Suck tắt
+1250:Không thấy tín hiệu X037
+1251:Không thấy tín hiệu X023
+1300:Vui lòng kiểm tra tư thế đợi
+1301:Vui lòng kiểm tra giới hạn nâng cánh chính
+1302:Vui lòng kiểm tra giới hạn nâng cánh phụ
+1303:Vui lòng kiểm tra vị trí đợi X
+1304:Vui lòng kiểm tra vị trí đợi Y
+1305:Vui lòng kiểm tra vị trí đợi Z
+1306:Vui lòng kiểm tra vị trí đợi clip 1
+1307:Vui lòng kiểm tra vị trí đợi clip 2
+1308:Vui lòng kiểm tra vị trí đợi clip 3
+1309:Vui lòng kiểm tra vị trí đợi clip 4
+1310:Vui lòng kiểm tra vị trí đợi clip 5
+1311:Vui lòng kiểm tra vị trí đợi clip 6
+1312:Vui lòng kiểm tra vị trí đợi A
+1313:Vui lòng kiểm tra vị trí đợi B
+1314:Vui lòng kiểm tra vị trí đợi C
+1315:Vui lòng kiểm tra vị trí đợi X2
+1316:Vui lòng kiểm tra vị trí đợi Y2
+1400:Chưa kiểm tra mức nâng
+1401:Vị trí hiện tại và vị trí đợi không cùng nằm bên trong
+1402:Vị trí hiện tại và vị trí đợi không cùng nằm bên ngoài
+1403:Chưa kiểm tra mức nâng Y2
+1410:Tín hiệu an toàn ngắt khi hạ bên ngoài
+1411:Hết thời gian chờ tín hiệu an toàn
+2000:Servo báo động, vui lòng kiểm tra bộ điều khiển
+2001:Dòng điện servo quá mức
+2002:Điện áp servo quá mức
+2003:Điện áp servo thấp
+2004:Điện trở tái tạo bất thường
+2005:Servo quá tải
+2006:Servo vượt quá tốc độ cho phép
+2007:Vị trí điều khiển sai lệch quá lớn
+2008:Lỗi bộ mã hóa trong
+2009:Lỗ thiết lập số truyền động, lỗi thiết lập vị trí
+2010:Dừng gấp động cơ
+2011:Đèn bán dẫn quá nóng
+2012:Nguồn điện mạch chính bất thường
+2013:Cảnh báo trước khi quá tải
+2014:Lỗi va chạm động cơ servo
+2015:Lỗi kết nối UVW, vui lòng kiểm tra lại đường truyền
+2016:Vị trí vòng lặp sai lệch quá lớn
+2017:Nhận tràn PDO
+2018:PDO truy cập bất thường
+2019:Lỗi các nút điều khiển chức năng bảo vệ
+2020:Ổ cứng can bus bất thường
+2021:Đồng bộ can bất thường
+2022:Bộ lọc đặt biệt được thiết lập quá lớn
+2023:Giới hạn servo forward
+2024:Giới hạn servo reverse
+2100:Cảnh báo servo
+2101:Servo vượt quá dòng điện định mức
+2102:Mạch chính vượt quá công suất cho phép
+2103:Giới hạn công suất mạch chính
+2104:Giới hạn công suất điều khiển servo
+2105:Ngắn mạch nối đất đầu ra servo
+2106:Cảnh báo mất pha nguồn
+2107:Phanh điện trở quá tải
+2108:Cảnh báo servo quá tải
+2109:Ngắt kết nối dây servo
+2110:Bộ tản nhiệt điều khiển servo quá nóng
+2111:Lỗi lưu trữ dữ liệu động cơ servo
+2112:Dữ liệu cài đặt bộ điều khiển servo bất thường
+2113:Tắc nghẽn động cơ servo
+2114:Lỗi bộ mã hóa trong
+2115:Tốc độ động cơ servo vượt quá định mức cho phép
+2116:Vị trí điều khiển servo sai lệch quá lớn
+2117:Xung điều khiển servo bất thường
+2118:Hết thời gian bảo vệ nút CANopen
+2119:Nhập sai độ dài CANopen PDO
+4000:Hết hạn dùng thử, vui lòng đăng ký
+

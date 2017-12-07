@@ -4392,7 +4392,7 @@ ModifyTime</source>
     <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="784"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="471"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="332"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="341"/>
         <source>Save</source>
         <translation type="unfinished">저장</translation>
     </message>
@@ -4589,249 +4589,249 @@ ModifyTime</source>
         <translation type="unfinished">USB나옴</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="78"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="79"/>
         <source>None</source>
         <translation type="unfinished"> 무</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="79"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="80"/>
         <source>Only Backward Limit</source>
         <translation type="unfinished">후진완료</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="80"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="81"/>
         <source>Only Forward Limit</source>
         <translation type="unfinished">전진완료</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="81"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="82"/>
         <source>Both</source>
         <translation type="unfinished"> 전부 있음</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="82"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="83"/>
         <source>Only Up Limit</source>
         <translation type="unfinished">상승완료</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="83"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="84"/>
         <source>Up and Donw Limit</source>
         <translation type="unfinished">상승/하강 완료</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="84"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="85"/>
         <source>Single Arm</source>
         <translation type="unfinished">싱글 핸드</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="85"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="86"/>
         <source>Double Arm</source>
         <translation type="unfinished"> 더블 </translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="162"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="265"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="340"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="165"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="274"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="349"/>
         <source>Key Tone(ON)</source>
         <translation type="unfinished">터치음량 (ON)</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="169"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="270"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="347"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="172"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="279"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="356"/>
         <source>Key Tone(OFF)</source>
         <translation type="unfinished">터치음량 (OFF)</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="311"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1090"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="320"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1099"/>
         <source>No Limit</source>
         <translation type="unfinished">무제한</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="315"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1094"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="324"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1103"/>
         <source>hour</source>
         <translation type="unfinished">시간</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="329"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="338"/>
         <source>Set to %1</source>
         <translation type="unfinished"> 1%로 설정</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="342"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="351"/>
         <source>ON</source>
         <translation type="unfinished"> 열림</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="349"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="358"/>
         <source>OFF</source>
         <translation type="unfinished">끄기</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="361"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="388"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="486"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="490"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="370"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="397"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="495"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="499"/>
         <source>Information</source>
         <translation type="unfinished"> 제시</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="362"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="371"/>
         <source>Please enter the old password and new password!</source>
         <translation type="unfinished"> 구 비번과 신규 비번 입력</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="380"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="445"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="467"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="529"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="572"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="606"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="755"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="919"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1126"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="389"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="454"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="476"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="538"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="581"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="615"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="764"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="928"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1135"/>
         <source>Warning</source>
         <translation type="unfinished"> 경보</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="381"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="390"/>
         <source>Old password is wrong!</source>
         <translation type="unfinished"> 구 비번 기본림</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="389"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="398"/>
         <source>Change password successfully!</source>
         <translation type="unfinished"> 비번 교체 성공</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="445"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="467"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="529"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="572"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="606"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="755"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="454"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="476"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="538"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="581"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="615"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="764"/>
         <source>USB is not connected!</source>
         <translation type="unfinished">USB 확인 함</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="448"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="470"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="535"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="457"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="479"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="544"/>
         <source>Backuping, please wait...</source>
         <translation type="unfinished">백업중 </translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="486"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="495"/>
         <source>Operation finished!</source>
         <translation type="unfinished"> 조작 완료</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="490"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="499"/>
         <source>Operation fail!</source>
         <translation type="unfinished"> 조작 실패</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="575"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="609"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="760"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="584"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="618"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="769"/>
         <source>Restoring, please wait...</source>
         <translation type="unfinished"> 복원중 </translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="585"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="617"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="594"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="626"/>
         <source>Backup files is broken!</source>
         <translation type="unfinished">백업 문서 불완전함</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="798"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="811"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="818"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="840"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="970"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="975"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="997"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1002"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1014"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1025"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="807"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="820"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="827"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="849"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="979"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="984"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1006"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1011"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1023"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1034"/>
         <source>Warnning</source>
         <translation type="unfinished"> 경보</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="798"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="807"/>
         <source>%1 wrong program format! Will skip this record!</source>
         <translation type="unfinished">%1 기본린 프로그램 격식으로 건너뜀</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="811"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="818"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="820"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="827"/>
         <source>%1 wrong config format! Will skip this record!</source>
         <translation type="unfinished">%1 기본린 프로그램 치수므로 건너 뜀！</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="840"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="849"/>
         <source>%1 wrong program format! Will skip this sub!</source>
         <translation type="unfinished">%1 기본린 프로그램 겫식으로 건너뜀</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="913"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="922"/>
         <source>
 App %1; Host:</source>
         <translation type="unfinished"> 수동 버전%1;메인 버전</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="920"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="929"/>
         <source>The system will be reboot to calibrate! Do you want to continue?</source>
         <translation type="unfinished">프로그램 터치교정하므로 계속 하시겠어요?</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="924"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="933"/>
         <source>Recal</source>
         <translation type="unfinished">재 교정</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="941"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="950"/>
         <source>Tune down to %1</source>
         <translation type="unfinished">%1 작게 설정</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="955"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="964"/>
         <source>Tune up to %1</source>
         <translation type="unfinished"> 조정 %1</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="970"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="975"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="979"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="984"/>
         <source>Wrong system config format!</source>
         <translation type="unfinished"> 츨린 시스템 치수 격식</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="997"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1002"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1006"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1011"/>
         <source>Wrong Axis config format!</source>
         <translation type="unfinished">기본린 측의 치수격식</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1014"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1025"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1023"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1034"/>
         <source>Wrong Rotation config format!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1075"/>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1081"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1084"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1090"/>
         <source>Wrong Register Code!</source>
         <translation type="unfinished"> 로그 코드 기본림</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1087"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1096"/>
         <source>Register Success!</source>
         <translation type="unfinished"> 로그인 성공</translation>
     </message>
     <message>
-        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1127"/>
+        <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="1136"/>
         <source>The system will be for storage to repair ! Do you want to continue?</source>
         <translation type="unfinished">시스템 저장 복귀중 계속 시행하시겠나요？</translation>
     </message>
