@@ -164,6 +164,12 @@ void ICParametersSave::SetLanguage(QLocale::Language language, bool isSync)
         qApp->removeTranslator(sysTranslator_);
     }
         break;
+    case QLocale::Vietnamese:
+    {
+        translator_->load("Multi-axisManipulatorSystem_vi");
+        qApp->removeTranslator(sysTranslator_);
+    }
+        break;
     default:
     {
         return;
@@ -245,6 +251,12 @@ void ICParametersSave::SetCountry(QLocale::Country country, bool isSync)
     {
         QLocale::setDefault(QLocale(QLocale::English, country));
         SetLanguage(QLocale::Portuguese, isSync);
+    }
+        break;
+    case QLocale::VietNam:
+    {
+        QLocale::setDefault(QLocale(QLocale::English, country));
+        SetLanguage(QLocale::Vietnamese, isSync);
     }
         break;
     default:

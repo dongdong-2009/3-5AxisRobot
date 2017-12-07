@@ -54,6 +54,7 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
     ui->languageButtonGroup->setId(ui->polskiBox, 8);
     ui->languageButtonGroup->setId(ui->turkeyBox, 9);
     ui->languageButtonGroup->setId(ui->portugalBox, 10);
+    ui->languageButtonGroup->setId(ui->vietnameseBox, 11);
     InitParameter();
     ui->extentFunctionCheckBox->blockSignals(true);
     ui->extentFunctionCheckBox->setChecked(ICParametersSave::Instance()->IsExtentFunctionUsed());
@@ -156,6 +157,8 @@ void ICHCSystemSettingsFrame::InitParameter()
         ui->turkeyBox->setChecked(true);
     else if(paraSave->Country() == QLocale::Portugal)
         ui->portugalBox->setChecked(true);
+    else if(paraSave->Country() == QLocale::VietNam)
+        ui->vietnameseBox->setChecked(true);
     // ui->languageComboBox->setCurrentIndex(index);
     if(paraSave->KeyTone())
     {
@@ -221,6 +224,10 @@ void ICHCSystemSettingsFrame::languageBoxChange()
     {
         paraSave->SetCountry(QLocale::Portugal);
     }
+    else if(ui->languageButtonGroup->checkedId() == 11)
+    {
+        paraSave->SetCountry(QLocale::VietNam);
+    }
 }
 
 
@@ -256,6 +263,8 @@ void ICHCSystemSettingsFrame::changeEvent(QEvent *e)
             ui->turkeyBox->setChecked(true);
         else if(paraSave->Country() == QLocale::Portugal)
             ui->portugalBox->setChecked(true);
+        else if(paraSave->Country() == QLocale::VietNam)
+            ui->vietnameseBox->setChecked(true);
         //    ui->languageComboBox->setCurrentIndex(index);
         ui->dateTimeEdit->setDateTime(QDateTime::currentDateTime());
 
