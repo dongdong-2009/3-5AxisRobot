@@ -122,6 +122,7 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
 
 //            ui->turkeyBox->hide();
 //            ui->koreanBox->hide();
+            ui->vietnameseBox->hide();
 }
 
 ICHCSystemSettingsFrame::~ICHCSystemSettingsFrame()
