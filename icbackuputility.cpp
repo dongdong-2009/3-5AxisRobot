@@ -127,3 +127,41 @@ bool ICBackupUtility::_CopyFiles_(const QStringList &nameFilter) const
     }
     return ret;
 }
+
+void ICBackupUtility::MakeGhost(const QString &name)
+{
+#ifdef Q_WS_QWS
+    QDir dir("/mnt/udisk");
+#else
+    QDir dir = QDir::current();
+#endif
+    ::system(QString("tar -zcvf - %1 | openssl des3 -salt -k szhcSZHCGaussCheng | dd of=%2")
+             .arg(QDir::current().absolutePath())
+             .arg(dir.absoluteFilePath(name + ".ghost.hcdbxs5")).toUtf8());
+}
+
+void ICBackupUtility::LoadGhost(const QString &name)
+{
+#ifdef Q_WS_QWS
+    QDir dir("/mnt/udisk");
+#else
+    QDir dir = QDir::current();
+#endif
+    if(dir.exists(name))
+    {
+        ::system(QString("cd %2 && dd if=%1 | openssl des3 -d -k szhcSZHCGaussCheng | tar zxf - -C /")
+                   .arg(dir.absoluteFilePath(name))
+                   .arg(dir.absolutePath()).toUtf8());
+    }
+}
+
+
+QStringList ICBackupUtility::ScanGhost()
+{
+#ifdef Q_WS_QWS
+    QDir dir("/mnt/udisk");
+#else
+    QDir dir = QDir::current();
+#endif
+    return dir.entryList(QStringList()<<"*.ghost.hcdbxs5", QDir::Files);
+}

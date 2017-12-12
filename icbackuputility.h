@@ -25,6 +25,9 @@ public:
     QStringList DestDirFiles(bool isShowHidden = false) const;
     void SetBackupSrcDir(const QString& src) { srcDir_ = src;}
     void SetBackupDestDir(const QString& dest);
+    void MakeGhost(const QString& name);
+    void LoadGhost(const QString& name);
+    QStringList ScanGhost();
 
 private:
     void _CleanDestDir_(const QStringList& nameFilter) const;
