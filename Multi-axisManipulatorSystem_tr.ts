@@ -1037,7 +1037,7 @@ basın.Sen yedeklemek gerekiyor?</translation>
         <location filename="iccaretipui.ui" line="212"/>
         <location filename="iccaretipui.ui" line="232"/>
         <source>0</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">0</translation>
     </message>
     <message>
         <location filename="iccaretipui.cpp" line="13"/>
@@ -4621,6 +4621,26 @@ ullanın</translation>
         <source>umount</source>
         <translation type="unfinished">U disk çıkmak</translation>
     </message>
+    <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1634"/>
+        <source>Ghost</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1675"/>
+        <source>New</source>
+        <translation type="unfinished">Yeni</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1688"/>
+        <source>Scan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1701"/>
+        <source>Load</source>
+        <translation type="unfinished">Yükleme</translation>
+    </message>
     <message utf8="true">
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="172"/>
         <source>中文</source>
@@ -7647,7 +7667,7 @@ emi seçin</translation>
         <location filename="hcinstruction/icprogramguidepage.ui" line="902"/>
         <location filename="hcinstruction/icprogramguidepage_5.ui" line="1421"/>
         <source>1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">1</translation>
     </message>
     <message>
         <location filename="hcinstruction/icprogramguidepage.ui" line="920"/>
@@ -8734,42 +8754,42 @@ m Kapıyı kapat</translation>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="999"/>
         <location filename="hcsettings/icstructdefineframe.cpp" line="332"/>
         <source>1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">1</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1006"/>
         <source>5</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">5</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1013"/>
         <source>2</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">2</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1020"/>
         <source>8</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">8</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1053"/>
         <source>6</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">6</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1060"/>
         <source>3</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">3</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1067"/>
         <source>7</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">7</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="1074"/>
         <source>4</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">4</translation>
     </message>
     <message>
         <location filename="hcsettings/icstructdefineframe_5.ui" line="2079"/>
@@ -10471,7 +10491,7 @@ Admin</source>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog.ui" line="45"/>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog_5.ui" line="45"/>
         <source>0</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">0</translation>
     </message>
     <message>
         <location filename="custom_widgets/lineeditwithvirtualnumerickeypad/virtualnumerickeypaddialog.ui" line="458"/>

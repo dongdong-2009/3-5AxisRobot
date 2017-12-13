@@ -4492,6 +4492,26 @@ ator I/O</translation>
         <translation type="unfinished">Use</translation>
     </message>
     <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1634"/>
+        <source>Ghost</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1675"/>
+        <source>New</source>
+        <translation type="unfinished">New</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1688"/>
+        <source>Scan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1701"/>
+        <source>Load</source>
+        <translation type="unfinished">Load</translation>
+    </message>
+    <message>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1194"/>
         <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1446"/>
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="722"/>

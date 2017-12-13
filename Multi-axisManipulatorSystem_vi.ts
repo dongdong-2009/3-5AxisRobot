@@ -4558,6 +4558,26 @@ ModifyTime</source>
         <source>umount</source>
         <translation type="unfinished">Rút USB</translation>
     </message>
+    <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1634"/>
+        <source>Ghost</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1675"/>
+        <source>New</source>
+        <translation type="unfinished">Tạo mới</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1688"/>
+        <source>Scan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1701"/>
+        <source>Load</source>
+        <translation type="unfinished">Tải</translation>
+    </message>
     <message utf8="true">
         <location filename="hcsettings/ichcsystemsettingsframe_5.ui" line="172"/>
         <source>中文</source>

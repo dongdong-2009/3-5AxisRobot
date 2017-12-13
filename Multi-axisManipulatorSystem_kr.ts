@@ -4589,6 +4589,26 @@ ModifyTime</source>
         <translation type="unfinished">USB나옴</translation>
     </message>
     <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1634"/>
+        <source>Ghost</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1675"/>
+        <source>New</source>
+        <translation type="unfinished">새로 만들기</translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1688"/>
+        <source>Scan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="hcsettings/ichcsystemsettingsframe.ui" line="1701"/>
+        <source>Load</source>
+        <translation type="unfinished">선택</translation>
+    </message>
+    <message>
         <location filename="hcsettings/ichcsystemsettingsframe.cpp" line="79"/>
         <source>None</source>
         <translation type="unfinished"> 무</translation>

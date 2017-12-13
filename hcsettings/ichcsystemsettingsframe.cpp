@@ -108,7 +108,7 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
 #endif
 
     testvalue = FALSE;
-    ui->systemConfigPages->removeTab(4);
+//    ui->systemConfigPages->removeTab(4);
     ui->factoryCode->blockSignals(true);
     ui->factoryCode->setText(ICParametersSave::Instance()->FacotryCode());
     ui->factoryCode->blockSignals(false);
