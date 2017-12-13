@@ -3,6 +3,7 @@
 #include <QFile>
 #include "icmessagebox.h"
 #include <QFileDialog>
+#include <QStringListModel>
 
 #include "ichcsystemsettingsframe.h"
 #include "ui_ichcsystemsettingsframe.h"
@@ -19,7 +20,6 @@
 #include "mainframe.h"
 #include "icutility.h"
 #include "icconfigstring.h"
-
 
 #include "iccycletimeandfinishedframe.h"
 
@@ -1157,4 +1157,29 @@ void ICHCSystemSettingsFrame::on_machineAdminBox_toggled(bool checked)
 void ICHCSystemSettingsFrame::on_quickGuideCheckBox_toggled(bool checked)
 {
     ICParametersSave::Instance()->SetQuickGuideUse(checked);
+}
+
+void ICHCSystemSettingsFrame::on_scanGhost_clicked()
+{
+#if defined(Q_WS_WIN32) || defined(Q_WS_X11)
+#else
+    if(!CheckIsUsbAttached())
+    {
+        ICMessageBox::ICWarning(this, tr("Warning"), tr("USB is not connected!"));
+        return;
+    }
+#endif
+    ICBackupUtility backupUtility;
+    ghostFileListModel_.setStringList(backupUtility.ScanGhost());
+    ui->listView->setModel(&ghostFileListModel_);
+}
+
+void ICHCSystemSettingsFrame::on_newGhost_clicked()
+{
+
+}
+
+void ICHCSystemSettingsFrame::on_loadGhost_clicked()
+{
+
 }

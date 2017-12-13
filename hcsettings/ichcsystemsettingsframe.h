@@ -3,6 +3,7 @@
 
 #include <QFrame>
 #include <QMap>
+#include <QStringListModel>
 #ifndef Q_WS_WIN32
 #include <sys/utsname.h>
 #include <QButtonGroup>
@@ -102,8 +103,15 @@ private slots:
 
     void on_quickGuideCheckBox_toggled(bool checked);
 
+    void on_scanGhost_clicked();
+
+    void on_newGhost_clicked();
+
+    void on_loadGhost_clicked();
+
 private:
     QMap<QObject*, int> editorToConfigIDs_;
+    QStringListModel ghostFileListModel_;
 };
 
 #endif // ICHCSYSTEMSETTINGSFRAME_H
