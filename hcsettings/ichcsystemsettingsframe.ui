@@ -40,7 +40,7 @@
       <enum>QTabWidget::Rounded</enum>
      </property>
      <property name="currentIndex">
-      <number>4</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="systemSettingPage">
       <attribute name="title">
@@ -1641,6 +1641,9 @@ QRadioButton::indicator:unchecked:disabled
          <width>371</width>
          <height>381</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
        </property>
       </widget>
       <widget class="QWidget" name="layoutWidget">

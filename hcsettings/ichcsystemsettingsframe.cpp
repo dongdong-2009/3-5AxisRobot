@@ -112,6 +112,7 @@ ICHCSystemSettingsFrame::ICHCSystemSettingsFrame(QWidget *parent) :
     ui->factoryCode->blockSignals(true);
     ui->factoryCode->setText(ICParametersSave::Instance()->FacotryCode());
     ui->factoryCode->blockSignals(false);
+    ui->listView->setSpacing(2);
 
     editorToConfigIDs_.insert(ui->languageButtonGroup, ICConfigString::kCS_PANEL_Language);
     editorToConfigIDs_.insert(ui->backLightTimeEdit, ICConfigString::kCS_PANEL_Backlight);
@@ -1176,10 +1177,43 @@ void ICHCSystemSettingsFrame::on_scanGhost_clicked()
 
 void ICHCSystemSettingsFrame::on_newGhost_clicked()
 {
-
+#if defined(Q_WS_WIN32) || defined(Q_WS_X11)
+//    QString getFileDir = QFileDialog::getExistingDirectory();
+#else
+    if(!CheckIsUsbAttached())
+    {
+        ICMessageBox::ICWarning(this, tr("Warning"), tr("USB is not connected!"));
+        return;
+    }
+//    QString getFileDir = "/mnt/udisk";
+#endif
+    ICBackupUtility backupUtility;
+    if(ui->lineEdit->text().isEmpty()) return;
+    ICTipsWidget tipsWidget(tr("Ghosting, please wait..."));
+    tipsWidget.show();qApp->processEvents();
+    backupUtility.MakeGhost(ui->lineEdit->text());
+    Information(true);
 }
 
 void ICHCSystemSettingsFrame::on_loadGhost_clicked()
 {
-
+#if defined(Q_WS_WIN32) || defined(Q_WS_X11)
+//    QString getFileDir = QFileDialog::getExistingDirectory();
+#else
+    if(!CheckIsUsbAttached())
+    {
+        ICMessageBox::ICWarning(this, tr("Warning"), tr("USB is not connected!"));
+        return;
+    }
+//    QString getFileDir = "/mnt/udisk";
+#endif
+    QString ghostFileName;
+    QModelIndex index = ui->listView->selectionModel()->currentIndex();
+    ghostFileName = ghostFileListModel_.data(index,Qt::DisplayRole).toString();
+    ICTipsWidget tipsWidget(tr("Loading, please wait..."));
+    tipsWidget.show();qApp->processEvents();
+    ICBackupUtility backupUtility;
+    backupUtility.LoadGhost(ghostFileName);
+    Information(true);
+    ::system("reboot");
 }
