@@ -138,6 +138,7 @@ void ICBackupUtility::MakeGhost(const QString &name)
     ::system(QString("tar -zcvf - %1 | openssl des3 -salt -k szhcSZHCGaussCheng | dd of=%2")
              .arg(QDir::current().absolutePath())
              .arg(dir.absoluteFilePath(name + ".ghost.hcdbxs5")).toUtf8());
+    ::system("sync");
 }
 
 void ICBackupUtility::LoadGhost(const QString &name)
@@ -152,6 +153,7 @@ void ICBackupUtility::LoadGhost(const QString &name)
         ::system(QString("cd %2 && dd if=%1 | openssl des3 -d -k szhcSZHCGaussCheng | tar zxf - -C /")
                    .arg(dir.absoluteFilePath(name))
                    .arg(dir.absolutePath()).toUtf8());
+        ::system("sync");
     }
 }
 
